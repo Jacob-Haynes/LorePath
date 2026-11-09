@@ -1,0 +1,13 @@
+## Interface: 16001
+## Title: Chronicler
+## Notes: See every questline in each zone as a storyline map: what you've done, what you've missed, and where the next quest starts.
+## Author: Jacob Haynes
+## Version: 0.1.0
+## SavedVariables: ChroniclerDB
+## IconTexture: Interface\Icons\INV_Misc_Book_09
+## Category-enUS: Quests
+
+Data\Quests.lua
+Core.lua
+UI.lua
+Main.lua
