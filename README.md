@@ -96,7 +96,7 @@ This runs the addon's Lua against a fake WoW API with the real quest data, as a 
 
 ## Releasing
 
-Tagged pushes (`v*`) build the addon with [BigWigsMods/packager](https://github.com/BigWigsMods/packager) and attach it to a GitHub Release. The `tools` folder and this README are left out of the package. CurseForge upload needs a `## X-Curse-Project-ID` in `LorePath.toc` and a `CF_API_KEY` repository secret.
+Tagged pushes (`v*`) build the addon with [BigWigsMods/packager](https://github.com/BigWigsMods/packager) and attach it to a GitHub Release. The `tools` folder and this README are left out of the package. It also uploads to CurseForge (project 1793930, set by `## X-Curse-Project-ID` in `LorePath.toc`) using the `CF_API_KEY` repository secret. Tags containing "beta" or "alpha" upload as beta or alpha files.
 
 ## Licence
 

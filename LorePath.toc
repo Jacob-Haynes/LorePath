@@ -7,6 +7,7 @@
 ## IconTexture: Interface\Icons\INV_Misc_Book_09
 ## Category-enUS: Quests
 ## AddonCompartmentFunc: LorePath_OnAddonCompartmentClick
+## X-Curse-Project-ID: 1793930
 
 Data\Quests.lua
 Core.lua
