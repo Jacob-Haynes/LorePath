@@ -256,7 +256,13 @@ local function StyleNode(node, id, storyline)
     node.questID = id
     node.storyline = storyline
     node.bg:SetColorTexture(c[1], c[2], c[3], 0.9)
-    node.level:SetText(ns.Quests[id].l or 1)
+    if ns.GetSetting("showLevels") then
+        node.level:SetText(ns.Quests[id].l or 1)
+        node.level:SetWidth(20)
+    else
+        node.level:SetText("")
+        node.level:SetWidth(1)
+    end
     node.text:SetText(ns.GetQuestNameOrID(id))
     if status == S.MISSED or status == S.BLOCKED then
         node.text:SetTextColor(0.7, 0.7, 0.7)
@@ -405,13 +411,26 @@ local function RenderZone()
     local viewWidth = frame.graphScroll:GetWidth()
     local storylines, others = ns.BuildStorylines(selectedZone)
 
-    local top, maxWidth = PAD, viewWidth
+    local top, maxWidth, hidden = PAD, viewWidth, 0
+    local hideCompleted = ns.GetSetting("hideCompleted")
     for _, storyline in ipairs(storylines) do
-        local w, h = RenderStoryline(canvas, storyline, top)
-        maxWidth = math.max(maxWidth, w)
-        top = top + h + SECTION_GAP
+        if hideCompleted and ns.GetNextStep(storyline) == "complete" then
+            hidden = hidden + 1
+        else
+            local w, h = RenderStoryline(canvas, storyline, top)
+            maxWidth = math.max(maxWidth, w)
+            top = top + h + SECTION_GAP
+        end
     end
-    if #others > 0 then
+    if hidden > 0 then
+        local note = AcquireHeader(canvas)
+        note:SetFontObject("GameFontDisableSmall")
+        note:ClearAllPoints()
+        note:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD, -top)
+        note:SetText(string.format("%d finished %s hidden (see Settings)", hidden, hidden == 1 and "storyline" or "storylines"))
+        top = top + 20 + SECTION_GAP
+    end
+    if #others > 0 and ns.GetSetting("showOthers") then
         top = top + RenderOthers(canvas, others, top, viewWidth) + SECTION_GAP
     end
     if #storylines == 0 and #others == 0 then
@@ -561,7 +580,17 @@ local function CreateMainFrame()
     f:SetScript("OnDragStart", f.StartMoving)
     f:SetScript("OnDragStop", f.StopMovingOrSizing)
     f:Hide()
+    f:SetScale(ns.GetSetting("scale"))
     table.insert(UISpecialFrames, "ChroniclerFrame")
+    ns.mainFrame = f
+
+    local settingsButton = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
+    settingsButton:SetSize(80, 20)
+    settingsButton:SetPoint("TOPRIGHT", f, "TOPRIGHT", -28, -2)
+    settingsButton:SetText("Settings")
+    settingsButton:SetScript("OnClick", function()
+        ns.OpenSettings()
+    end)
 
     local title = type(f.TitleText) == "table" and f.TitleText or nil
     if not title then
@@ -683,7 +712,8 @@ function ns.Toggle(openCurrentZone)
         frame:Hide()
         return
     end
-    if openCurrentZone then
+    ns.RefreshPlayer() -- the current-zone lookup needs to know which quests are yours
+    if openCurrentZone or (not frame:IsShown() and ns.GetSetting("openOnCurrentZone")) then
         selectedZone = CurrentZone() or selectedZone
     end
     if frame:IsShown() then

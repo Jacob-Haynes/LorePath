@@ -28,6 +28,10 @@ local function MockObject(kind)
         CreateFontString = function() return MockObject("FontString") end,
         CreateLine = function() return MockObject("Line") end,
         Enable = function(self) self.__enabled = true end,
+        SetScale = function(self, v) self.__scale = v end,
+        GetCenter = function() return 100, 100 end,
+        GetChecked = function(self) return self.__checked end,
+        SetChecked = function(self, v) self.__checked = v end,
         Disable = function(self) self.__enabled = false end,
     }
     -- Like real frames: unknown methods (capitalised names) are no-ops, unknown fields are nil.
@@ -101,5 +105,22 @@ OpenWorldMap = function(m) harness.openedMap = m end
 C_Item = { GetItemNameByID = function(id) return "Item" .. id end, GetItemQualityByID = function() return 2 end }
 C_AddOns = { GetAddOnMetadata = function() return "0.1.0" end }
 SlashCmdList = {}
+Minimap = MockObject("Minimap")
+GetBindingKey = function() return nil end
+Settings = {
+    RegisterCanvasLayoutCategory = function(panel, name)
+        harness.settingsCategory = { panel = panel, name = name, GetID = function() return 77 end }
+        return harness.settingsCategory
+    end,
+    RegisterAddOnCategory = function(cat) harness.registeredCategory = cat end,
+    OpenToCategory = function(id) harness.openedSettings = id end,
+}
+-- Fires an event at every frame that has an OnEvent script.
+function harness.Fire(event, ...)
+    for _, f in ipairs(harness.all) do
+        local fn = f.__scripts.OnEvent
+        if fn then fn(f, event, ...) end
+    end
+end
 
 return harness

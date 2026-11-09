@@ -8,6 +8,7 @@ ns.VERSION = (GetMetadata and GetMetadata(addonName, "Version")) or "?"
 local events = CreateFrame("Frame")
 for _, event in ipairs({
     "ADDON_LOADED",
+    "PLAYER_LOGIN",
     "QUEST_TURNED_IN",
     "QUEST_ACCEPTED",
     "QUEST_REMOVED",
@@ -21,8 +22,11 @@ end
 events:SetScript("OnEvent", function(_, event, arg1)
     if event == "ADDON_LOADED" then
         if arg1 == addonName then
-            ChroniclerDB = ChroniclerDB or {}
+            ns.InitDB()
+            ns.CreateSettingsPanel()
         end
+    elseif event == "PLAYER_LOGIN" then
+        ns.CreateMinimapButton()
     elseif event == "QUEST_TURNED_IN" then
         -- The completed-quest list updates a moment after the turn-in.
         ns.QueueRefresh(0.6)
@@ -42,9 +46,16 @@ SlashCmdList["CHRONICLER"] = function(msg)
         ns.Toggle(false)
     elseif command == "here" then
         ns.Toggle(true)
+    elseif command == "config" or command == "settings" or command == "options" then
+        ns.OpenSettings()
+    elseif command == "minimap" then
+        ns.SetSetting("showMinimapButton", not ns.GetSetting("showMinimapButton"))
+        ns.Print("Minimap button " .. (ns.GetSetting("showMinimapButton") and "shown." or "hidden."))
     else
         ns.Print("v" .. ns.VERSION .. " commands:")
         ns.Print("  |cffffd100/chron|r - open or close the window")
         ns.Print("  |cffffd100/chron here|r - open on the zone you're in")
+        ns.Print("  |cffffd100/chron config|r - open the settings")
+        ns.Print("  |cffffd100/chron minimap|r - show or hide the minimap button")
     end
 end

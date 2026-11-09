@@ -6,8 +6,10 @@
 ## SavedVariables: ChroniclerDB
 ## IconTexture: Interface\Icons\INV_Misc_Book_09
 ## Category-enUS: Quests
+## AddonCompartmentFunc: Chronicler_OnAddonCompartmentClick
 
 Data\Quests.lua
 Core.lua
 UI.lua
+Settings.lua
 Main.lua

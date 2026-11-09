@@ -509,7 +509,7 @@ function ns.ShowQuestStart(id)
     if C_SuperTrack and C_SuperTrack.SetSuperTrackedUserWaypoint then
         C_SuperTrack.SetSuperTrackedUserWaypoint(true)
     end
-    if not InCombatLockdown() then
+    if ns.GetSetting("openMapOnWaypoint") and not InCombatLockdown() then
         if type(OpenWorldMap) == "function" then
             pcall(OpenWorldMap, q.m)
         elseif WorldMapFrame then

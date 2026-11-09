@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Core.lua", "UI.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Core.lua", "UI.lua", "Settings.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -29,8 +29,14 @@ def check(cond, msg):
 g = lua.globals()
 char = harness["char"]
 
-events_fire = lua.eval("function(ns) ChroniclerDB = {} end")
-events_fire(ns)
+# Load like the game does: saved variables are empty on first run, then the events fire.
+harness.Fire("ADDON_LOADED", "Chronicler")
+harness.Fire("PLAYER_LOGIN")
+check(g.ChroniclerDB["showMinimapButton"] is True and g.ChroniclerDB["scale"] == 1.0, "first load fills in default settings")
+check(harness["registeredCategory"] is not None and harness["settingsCategory"]["name"] == "Chronicler",
+      "settings page is registered under Options > AddOns as 'Chronicler'")
+minimap_button = harness["frames"]["ChroniclerMinimapButton"]
+check(minimap_button is not None and minimap_button.IsShown(minimap_button), "minimap button is created and shown")
 
 # --- Eligibility: Human Warrior Alliance ---
 ns.RefreshPlayer()
@@ -131,6 +137,60 @@ check(not ns.IsEligible(783), "Alliance quest 783 is no longer eligible for an o
 check(ns.IsEligible(92706), "Forever quest 92706 (neutral) is eligible for an orc")
 storylines, others = ns.BuildStorylines(1413)
 print(f"Barrens for an Orc Warrior: {len(list(storylines.values()))} storylines + {len(list(others.values()))} other")
+# --- Minimap button ---
+frame.Hide(frame)
+minimap_button["__scripts"]["OnClick"](minimap_button, "LeftButton")
+check(frame.IsShown(frame), "left-clicking the minimap button opens the window")
+minimap_button["__scripts"]["OnClick"](minimap_button, "LeftButton")
+check(not frame.IsShown(frame), "left-clicking again closes it")
+frame.Show(frame)
+harness["openedSettings"] = None
+minimap_button["__scripts"]["OnClick"](minimap_button, "RightButton")
+check(harness["openedSettings"] == 77, "right-clicking the minimap button opens Chronicler's settings page")
+check(not frame.IsShown(frame), "opening settings closes the window so it doesn't cover the page")
+g.Chronicler_OnAddonCompartmentClick("Chronicler", "LeftButton")
+check(frame.IsShown(frame), "the addon compartment entry opens the window")
+
+# --- Settings take effect ---
+ns.SetSetting("scale", 1.2)
+check(frame["__scale"] == 1.2, "window size setting rescales the window")
+ns.SetSetting("showMinimapButton", False)
+check(not minimap_button.IsShown(minimap_button), "turning off the minimap button hides it")
+ns.SetSetting("showMinimapButton", True)
+check(minimap_button.IsShown(minimap_button), "turning it back on shows it")
+
+# Count the tiles shown in The Barrens with standalone quests on and off.
+def shown_tiles():
+    return len([f for f in harness["all"].values() if f["questID"] is not None and f.IsShown(f)])
+with_others = shown_tiles()
+ns.SetSetting("showOthers", False)
+without_others = shown_tiles()
+check(without_others == with_others - 34, f"hiding standalone quests drops the 34 'other' tiles ({with_others} -> {without_others})")
+ns.SetSetting("showOthers", True)
+
+# Finish a whole storyline, then hide finished storylines.
+storylines, _ = ns.BuildStorylines(1413)
+first = list(storylines.values())[0]
+for n in first["nodes"].values():
+    char["completed"][n["id"]] = True
+ns.SetSetting("hideCompleted", True)
+check(shown_tiles() == with_others - len(list(first["nodes"].values())), "hiding finished storylines removes the completed one")
+ns.SetSetting("hideCompleted", False)
+
+ns.SetSetting("showLevels", False)
+tile = [f for f in harness["all"].values() if f["questID"] is not None and f.IsShown(f)][0]
+check(tile["level"]["__text"] == "", "turning off quest levels blanks the level on tiles")
+ns.SetSetting("showLevels", True)
+
+harness["openedMap"] = None
+ns.SetSetting("openMapOnWaypoint", False)
+ns.ShowQuestStart(92706)
+check(harness["openedMap"] is None and harness["waypoint"]["m"] == 1413, "with 'open the map' off, a waypoint is set without opening the map")
+ns.SetSetting("openMapOnWaypoint", True)
+
+g.SlashCmdList["CHRONICLER"]("config")
+check(harness["openedSettings"] == 77, "/chron config opens the settings page")
+
 print("chat:", list(harness["chat"].values())[-3:])
 print()
 print("FAILED:" if failures else "All checks passed.", *failures, sep="\n  ")

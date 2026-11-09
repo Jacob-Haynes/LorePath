@@ -4,7 +4,7 @@
 
 It's not a quest helper. There are no map pins and no objective tracking, so it sits happily alongside the default quest UI.
 
-> **Status: prototype (0.1.0).** It covers outdoor zone quests only. Dungeon quests, lore and settings come later.
+> **Status: prototype (0.1.0).** It covers outdoor zone quests only. Dungeon quests and lore come later.
 
 ---
 
@@ -32,11 +32,28 @@ It's not a quest helper. There are no map pins and no objective tracking, so it 
 
 | Action | How |
 | :--- | :--- |
-| Open or close | `/chron`, or a key binding (*Options → Key Bindings → AddOns → Chronicler*) |
+| Open or close | Left-click the minimap button, `/chron`, the addons menu by the minimap, or a key binding (*Options → Key Bindings → AddOns → Chronicler*) |
 | Open on your current zone | `/chron here` |
+| Settings | Right-click the minimap button, the **Settings** button in the window, `/chron config`, or *Options → AddOns → Chronicler* |
+| Show or hide the minimap button | `/chron minimap`, or the settings page |
+| Move the minimap button | Drag it around the minimap |
 | Scroll | Mouse wheel, or Shift + wheel to scroll sideways |
 | Pan around a large graph | Drag with the left mouse button |
 | Close | Escape |
+
+### Settings
+
+| Option | Default | What it does |
+| :--- | :--- | :--- |
+| Show minimap button | On | Left-click opens Chronicler, right-click opens settings. |
+| Open on the zone you're in | On | Each time the window opens, it jumps to your current zone. Off: it reopens on the last zone you looked at. |
+| Hide finished storylines | Off | Leaves out storylines where every quest is done. |
+| Show standalone quests | On | Lists quests that aren't part of a chain under each zone's storylines. |
+| Show quest levels on tiles | On | Shows each quest's minimum level on its tile. |
+| Open the map when setting a waypoint | On | Opens the world map at the quest's start when you click a quest. |
+| Window size | 100% | Scales the window from 60% to 140%. |
+
+Settings are saved per account in `ChroniclerDB`. The settings page also has **Reset to defaults**.
 
 ---
 
@@ -67,7 +84,7 @@ python3 tools/extract_att.py att
 python3 tools/test/run_tests.py
 ```
 
-This runs the addon's Lua against a fake WoW API with the real quest data, as a Human Warrior and an Orc Warrior. It checks eligibility, quest statuses, storyline building, waypoints, and that the window and tooltips render without errors. It can't check how things look in game.
+This runs the addon's Lua against a fake WoW API with the real quest data, as a Human Warrior and an Orc Warrior. It checks eligibility, quest statuses, storyline building, waypoints, the minimap button, every setting, and that the window, settings page and tooltips build without errors. It can't check how things look in game.
 
 ---
 
