@@ -1,4 +1,4 @@
--- Chronicler: events, saved settings and slash commands.
+-- LorePath: events, saved settings and slash commands.
 
 local addonName, ns = ...
 
@@ -38,9 +38,9 @@ events:SetScript("OnEvent", function(_, event, arg1)
     end
 end)
 
-SLASH_CHRONICLER1 = "/chron"
-SLASH_CHRONICLER2 = "/chronicler"
-SlashCmdList["CHRONICLER"] = function(msg)
+SLASH_LOREPATH1 = "/lp"
+SLASH_LOREPATH2 = "/lorepath"
+SlashCmdList["LOREPATH"] = function(msg)
     local command = string.lower(string.match(msg or "", "^%s*(%S*)") or "")
     if command == "" then
         ns.Toggle(false)
@@ -53,9 +53,9 @@ SlashCmdList["CHRONICLER"] = function(msg)
         ns.Print("Minimap button " .. (ns.GetSetting("showMinimapButton") and "shown." or "hidden."))
     else
         ns.Print("v" .. ns.VERSION .. " commands:")
-        ns.Print("  |cffffd100/chron|r - open or close the window")
-        ns.Print("  |cffffd100/chron here|r - open on the zone you're in")
-        ns.Print("  |cffffd100/chron config|r - open the settings")
-        ns.Print("  |cffffd100/chron minimap|r - show or hide the minimap button")
+        ns.Print("  |cffffd100/lp|r - open or close the window")
+        ns.Print("  |cffffd100/lp here|r - open on the zone you're in")
+        ns.Print("  |cffffd100/lp config|r - open the settings")
+        ns.Print("  |cffffd100/lp minimap|r - show or hide the minimap button")
     end
 end

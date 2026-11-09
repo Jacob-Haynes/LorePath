@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Build Chronicler's quest data from AllTheThings' WoW Forever database.
+"""Build LorePath's quest data from AllTheThings' WoW Forever database.
 
 AllTheThings (https://github.com/ATTWoWAddon/AllTheThings) is MIT-licensed. Its
 WoW Forever data lives in db/Camelot ("camelot" is the game type Forever uses).
 
 This script loads ATT's zone file inside a sandboxed Lua runtime (no os/io/load),
-walks the zone tree, and writes the quest records Chronicler needs to
+walks the zone tree, and writes the quest records LorePath needs to
 Data/Quests.lua.
 
 Usage:

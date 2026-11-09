@@ -1,4 +1,4 @@
--- Minimal fake WoW API so Chronicler's files can run outside the game.
+-- Minimal fake WoW API so LorePath's files can run outside the game.
 -- Frames are permissive mocks: unknown methods do nothing and return nil.
 local harness = {}
 

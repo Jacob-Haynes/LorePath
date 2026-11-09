@@ -1,6 +1,6 @@
-# Chronicler
+# LorePath
 
-**Chronicler** is a lightweight WoW Forever addon that maps *your* story. For every zone it draws each questline as a storyline graph, in the style of Attuned's attunement paths. It shows what you've done, what you've missed, and where the next part of each story starts.
+**LorePath** is a lightweight WoW Forever addon that maps *your* story. For every zone it draws each questline as a storyline graph, in the style of Attuned's attunement paths. It shows what you've done, what you've missed, and where the next part of each story starts.
 
 It's not a quest helper. There are no map pins and no objective tracking, so it sits happily alongside the default quest UI.
 
@@ -32,10 +32,10 @@ It's not a quest helper. There are no map pins and no objective tracking, so it 
 
 | Action | How |
 | :--- | :--- |
-| Open or close | Left-click the minimap button, `/chron`, the addons menu by the minimap, or a key binding (*Options → Key Bindings → AddOns → Chronicler*) |
-| Open on your current zone | `/chron here` |
-| Settings | Right-click the minimap button, the **Settings** button in the window, `/chron config`, or *Options → AddOns → Chronicler* |
-| Show or hide the minimap button | `/chron minimap`, or the settings page |
+| Open or close | Left-click the minimap button, `/lp`, the addons menu by the minimap, or a key binding (*Options → Key Bindings → AddOns → LorePath*) |
+| Open on your current zone | `/lp here` |
+| Settings | Right-click the minimap button, the **Settings** button in the window, `/lp config`, or *Options → AddOns → LorePath* |
+| Show or hide the minimap button | `/lp minimap`, or the settings page |
 | Move the minimap button | Drag it around the minimap |
 | Scroll | Mouse wheel, or Shift + wheel to scroll sideways |
 | Pan around a large graph | Drag with the left mouse button |
@@ -45,7 +45,7 @@ It's not a quest helper. There are no map pins and no objective tracking, so it 
 
 | Option | Default | What it does |
 | :--- | :--- | :--- |
-| Show minimap button | On | Left-click opens Chronicler, right-click opens settings. |
+| Show minimap button | On | Left-click opens LorePath, right-click opens settings. |
 | Open on the zone you're in | On | Each time the window opens, it jumps to your current zone. Off: it reopens on the last zone you looked at. |
 | Hide finished storylines | Off | Leaves out storylines where every quest is done. |
 | Show standalone quests | On | Lists quests that aren't part of a chain under each zone's storylines. |
@@ -53,7 +53,7 @@ It's not a quest helper. There are no map pins and no objective tracking, so it 
 | Open the map when setting a waypoint | On | Opens the world map at the quest's start when you click a quest. |
 | Window size | 100% | Scales the window from 60% to 140%. |
 
-Settings are saved per account in `ChroniclerDB`. The settings page also has **Reset to defaults**.
+Settings are saved per account in `LorePathDB`. The settings page also has **Reset to defaults**.
 
 ---
 
@@ -65,7 +65,7 @@ Settings are saved per account in `ChroniclerDB`. The settings page also has **R
 | What you've completed, what's in your log, your level, race, class, faction, professions | The game client, live |
 | Quest, zone and item names | The game client, in your language |
 
-Gaps in AllTheThings' Forever data show up in Chronicler too. Report missing or wrong quests to AllTheThings so everyone benefits.
+Gaps in AllTheThings' Forever data show up in LorePath too. Report missing or wrong quests to AllTheThings so everyone benefits.
 
 ### Updating the quest data
 
@@ -76,7 +76,7 @@ git clone --depth 1 --filter=blob:none --sparse https://github.com/ATTWoWAddon/A
 python3 tools/extract_att.py att
 ```
 
-`tools/extract_att.py` loads AllTheThings' Forever zone data in a sandboxed Lua runtime, then writes the quest records Chronicler needs. It skips repeatable quests, quests AllTheThings marks as unavailable, and quests removed from the game.
+`tools/extract_att.py` loads AllTheThings' Forever zone data in a sandboxed Lua runtime, then writes the quest records LorePath needs. It skips repeatable quests, quests AllTheThings marks as unavailable, and quests removed from the game.
 
 ### Tests
 
@@ -91,13 +91,13 @@ This runs the addon's Lua against a fake WoW API with the real quest data, as a 
 ## Installing
 
 1. Download the latest release zip, or clone this repository.
-2. Copy the `Chronicler` folder into WoW Forever's `Interface/AddOns` folder. To find it, in the Battle.net app, pick WoW Forever, click the gear icon, choose **Show in Explorer** (**Show in Finder** on macOS), and open the Forever folder.
-3. Start the game (or `/reload`), and type `/chron`.
+2. Copy the `LorePath` folder into WoW Forever's `Interface/AddOns` folder. To find it, in the Battle.net app, pick WoW Forever, click the gear icon, choose **Show in Explorer** (**Show in Finder** on macOS), and open the Forever folder.
+3. Start the game (or `/reload`), and type `/lp`.
 
 ## Releasing
 
-Tagged pushes (`v*`) build the addon with [BigWigsMods/packager](https://github.com/BigWigsMods/packager) and attach it to a GitHub Release. The `tools` folder and this README are left out of the package. CurseForge upload needs a `## X-Curse-Project-ID` in `Chronicler.toc` and a `CF_API_KEY` repository secret.
+Tagged pushes (`v*`) build the addon with [BigWigsMods/packager](https://github.com/BigWigsMods/packager) and attach it to a GitHub Release. The `tools` folder and this README are left out of the package. CurseForge upload needs a `## X-Curse-Project-ID` in `LorePath.toc` and a `CF_API_KEY` repository secret.
 
 ## Licence
 
-Chronicler is MIT-licensed. The quest data in `Data/Quests.lua` is derived from AllTheThings, which is also MIT-licensed; its licence is included in `Data/AllTheThings-LICENSE.txt`.
+LorePath is MIT-licensed. The quest data in `Data/Quests.lua` is derived from AllTheThings, which is also MIT-licensed; its licence is included in `Data/AllTheThings-LICENSE.txt`.

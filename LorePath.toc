@@ -1,12 +1,12 @@
 ## Interface: 16001
-## Title: Chronicler
+## Title: LorePath
 ## Notes: See every questline in each zone as a storyline map: what you've done, what you've missed, and where the next quest starts.
 ## Author: Jacob Haynes
 ## Version: 0.1.0
-## SavedVariables: ChroniclerDB
+## SavedVariables: LorePathDB
 ## IconTexture: Interface\Icons\INV_Misc_Book_09
 ## Category-enUS: Quests
-## AddonCompartmentFunc: Chronicler_OnAddonCompartmentClick
+## AddonCompartmentFunc: LorePath_OnAddonCompartmentClick
 
 Data\Quests.lua
 Core.lua

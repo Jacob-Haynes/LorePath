@@ -1,9 +1,9 @@
--- Chronicler core: who the player is, which quests they can do, each quest's status,
+-- LorePath core: who the player is, which quests they can do, each quest's status,
 -- and how a zone's quests group into storylines. No UI code lives here.
 
 local addonName, ns = ...
 
-ns.CHAT_PREFIX = "|cffd4a017[Chronicler]|r "
+ns.CHAT_PREFIX = "|cffd4a017[LorePath]|r "
 
 function ns.Print(msg)
     DEFAULT_CHAT_FRAME:AddMessage(ns.CHAT_PREFIX .. tostring(msg))

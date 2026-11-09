@@ -1,7 +1,8 @@
-package-as: Chronicler
+package-as: LorePath
 
 enable-nolib-creation: no
 
 ignore:
   - README.md
   - tools
+  - media

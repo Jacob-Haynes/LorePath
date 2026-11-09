@@ -1,10 +1,10 @@
--- Chronicler window: zone list on the left, the selected zone's storylines drawn as
+-- LorePath window: zone list on the left, the selected zone's storylines drawn as
 -- quest graphs on the right. Click a quest to set a waypoint to where it starts.
 
 local addonName, ns = ...
 
-BINDING_HEADER_CHRONICLER = "Chronicler"
-BINDING_NAME_CHRONICLER_TOGGLE = "Open / close Chronicler"
+BINDING_HEADER_LOREPATH = "LorePath"
+BINDING_NAME_LOREPATH_TOGGLE = "Open / close LorePath"
 
 local S = ns.STATUS
 
@@ -472,8 +472,8 @@ end
 
 local function SelectZone(zoneID)
     selectedZone = zoneID
-    if ChroniclerDB then
-        ChroniclerDB.lastZone = zoneID
+    if LorePathDB then
+        LorePathDB.lastZone = zoneID
     end
     for _, row in ipairs(zoneRows) do
         if row.selected then
@@ -555,9 +555,9 @@ end
 -- ============================================================================
 
 local function CreateMainFrame()
-    local ok, f = pcall(CreateFrame, "Frame", "ChroniclerFrame", UIParent, "BasicFrameTemplateWithInset")
+    local ok, f = pcall(CreateFrame, "Frame", "LorePathFrame", UIParent, "BasicFrameTemplateWithInset")
     if not ok then
-        f = CreateFrame("Frame", "ChroniclerFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate" or nil)
+        f = CreateFrame("Frame", "LorePathFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate" or nil)
         if f.SetBackdrop then
             f:SetBackdrop({
                 bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
@@ -581,7 +581,7 @@ local function CreateMainFrame()
     f:SetScript("OnDragStop", f.StopMovingOrSizing)
     f:Hide()
     f:SetScale(ns.GetSetting("scale"))
-    table.insert(UISpecialFrames, "ChroniclerFrame")
+    table.insert(UISpecialFrames, "LorePathFrame")
     ns.mainFrame = f
 
     local settingsButton = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
@@ -597,7 +597,7 @@ local function CreateMainFrame()
         title = f:CreateFontString(nil, "OVERLAY", "GameFontNormal")
         title:SetPoint("TOP", 0, -8)
     end
-    title:SetText("Chronicler")
+    title:SetText("LorePath")
 
     -- Zone list
     local listScroll = CreateFrame("ScrollFrame", nil, f)
@@ -684,7 +684,7 @@ function ns.Refresh()
     ns.RefreshPlayer()
     ns.RefreshCompleted()
     if not selectedZone then
-        selectedZone = CurrentZone() or (ChroniclerDB and ChroniclerDB.lastZone)
+        selectedZone = CurrentZone() or (LorePathDB and LorePathDB.lastZone)
         if not selectedZone then
             local zones = SortedZones()
             selectedZone = zones[1] and zones[1].id
@@ -724,6 +724,6 @@ function ns.Toggle(openCurrentZone)
 end
 
 -- Global so Bindings.xml can call it.
-function Chronicler_Toggle()
+function LorePath_Toggle()
     ns.Toggle(false)
 end

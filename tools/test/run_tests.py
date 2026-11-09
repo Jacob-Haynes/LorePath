@@ -1,4 +1,4 @@
-"""Runs Chronicler's Lua files against a fake WoW API and checks the core logic.
+"""Runs LorePath's Lua files against a fake WoW API and checks the core logic.
 
     pip install lupa
     python3 tools/test/run_tests.py
@@ -15,7 +15,7 @@ lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
 harness = lua.execute(open(os.path.join(ROOT, "tools/test/harness.lua")).read())
 ns = lua.table()
-load_file = lua.eval("function(src, name, ns) return assert(load(src, '@' .. name))('Chronicler', ns) end")
+load_file = lua.eval("function(src, name, ns) return assert(load(src, '@' .. name))('LorePath', ns) end")
 for path in FILES:
     with open(os.path.join(ROOT, path), encoding="utf-8") as f:
         load_file(f.read(), path, ns)
@@ -30,12 +30,12 @@ g = lua.globals()
 char = harness["char"]
 
 # Load like the game does: saved variables are empty on first run, then the events fire.
-harness.Fire("ADDON_LOADED", "Chronicler")
+harness.Fire("ADDON_LOADED", "LorePath")
 harness.Fire("PLAYER_LOGIN")
-check(g.ChroniclerDB["showMinimapButton"] is True and g.ChroniclerDB["scale"] == 1.0, "first load fills in default settings")
-check(harness["registeredCategory"] is not None and harness["settingsCategory"]["name"] == "Chronicler",
-      "settings page is registered under Options > AddOns as 'Chronicler'")
-minimap_button = harness["frames"]["ChroniclerMinimapButton"]
+check(g.LorePathDB["showMinimapButton"] is True and g.LorePathDB["scale"] == 1.0, "first load fills in default settings")
+check(harness["registeredCategory"] is not None and harness["settingsCategory"]["name"] == "LorePath",
+      "settings page is registered under Options > AddOns as 'LorePath'")
+minimap_button = harness["frames"]["LorePathMinimapButton"]
 check(minimap_button is not None and minimap_button.IsShown(minimap_button), "minimap button is created and shown")
 
 # --- Eligibility: Human Warrior Alliance ---
@@ -95,16 +95,16 @@ check(wp is not None and wp["m"] == 1429 and abs(wp["x"] - 0.481) < 1e-6, "waypo
 check(harness["superTracked"] is True and harness["openedMap"] == 1429, "waypoint is super-tracked and the map opens on Elwynn")
 
 # --- UI: open the window and render, with the mock frame API ---
-g.SlashCmdList["CHRONICLER"]("")
-frame = harness["frames"]["ChroniclerFrame"]
-check(frame is not None and frame.IsShown(frame), "/chron opens the window")
+g.SlashCmdList["LOREPATH"]("")
+frame = harness["frames"]["LorePathFrame"]
+check(frame is not None and frame.IsShown(frame), "/lp opens the window")
 title = frame["zoneTitle"]["__text"]
 check(title is not None and title.startswith("Elwynn Forest"), f"opens on the current zone: {title!r}")
-g.SlashCmdList["CHRONICLER"]("")
-check(not frame.IsShown(frame), "/chron again closes it")
-g.SlashCmdList["CHRONICLER"]("here")
+g.SlashCmdList["LOREPATH"]("")
+check(not frame.IsShown(frame), "/lp again closes it")
+g.SlashCmdList["LOREPATH"]("here")
 harness.RunTimers()
-check(frame.IsShown(frame), "/chron here reopens it")
+check(frame.IsShown(frame), "/lp here reopens it")
 
 # Hover every rendered quest tile (builds its tooltip) and click one (waypoint)
 tiles = [f for f in harness["all"].values() if f["questID"] is not None and f.IsShown(f)]
@@ -129,7 +129,7 @@ check(harness["waypoint"] is not None, "clicking a quest tile sets a waypoint")
 # Horde character in The Barrens
 char["race"], char["class"], char["faction"], char["level"], char["map"] = 2, 1, "Horde", 15, 1413
 char["completed"] = lua.table()
-g.SlashCmdList["CHRONICLER"]("here")
+g.SlashCmdList["LOREPATH"]("here")
 harness.RunTimers()
 title = frame["zoneTitle"]["__text"]
 check(title is not None and title.startswith("The Barrens"), f"Horde character opens on The Barrens: {title!r}")
@@ -146,9 +146,9 @@ check(not frame.IsShown(frame), "left-clicking again closes it")
 frame.Show(frame)
 harness["openedSettings"] = None
 minimap_button["__scripts"]["OnClick"](minimap_button, "RightButton")
-check(harness["openedSettings"] == 77, "right-clicking the minimap button opens Chronicler's settings page")
+check(harness["openedSettings"] == 77, "right-clicking the minimap button opens LorePath's settings page")
 check(not frame.IsShown(frame), "opening settings closes the window so it doesn't cover the page")
-g.Chronicler_OnAddonCompartmentClick("Chronicler", "LeftButton")
+g.LorePath_OnAddonCompartmentClick("LorePath", "LeftButton")
 check(frame.IsShown(frame), "the addon compartment entry opens the window")
 
 # --- Settings take effect ---
@@ -188,8 +188,8 @@ ns.ShowQuestStart(92706)
 check(harness["openedMap"] is None and harness["waypoint"]["m"] == 1413, "with 'open the map' off, a waypoint is set without opening the map")
 ns.SetSetting("openMapOnWaypoint", True)
 
-g.SlashCmdList["CHRONICLER"]("config")
-check(harness["openedSettings"] == 77, "/chron config opens the settings page")
+g.SlashCmdList["LOREPATH"]("config")
+check(harness["openedSettings"] == 77, "/lp config opens the settings page")
 
 print("chat:", list(harness["chat"].values())[-3:])
 print()

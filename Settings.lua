@@ -1,4 +1,4 @@
--- Chronicler settings: saved options, the Options -> AddOns page, and the minimap button.
+-- LorePath settings: saved options, the Options -> AddOns page, and the minimap button.
 
 local addonName, ns = ...
 
@@ -17,16 +17,16 @@ ns.DEFAULTS = DEFAULTS
 local SCALE_MIN, SCALE_MAX, SCALE_STEP = 0.6, 1.4, 0.1
 
 function ns.InitDB()
-    ChroniclerDB = ChroniclerDB or {}
+    LorePathDB = LorePathDB or {}
     for key, value in pairs(DEFAULTS) do
-        if ChroniclerDB[key] == nil then
-            ChroniclerDB[key] = value
+        if LorePathDB[key] == nil then
+            LorePathDB[key] = value
         end
     end
 end
 
 function ns.GetSetting(key)
-    local value = ChroniclerDB and ChroniclerDB[key]
+    local value = LorePathDB and LorePathDB[key]
     if value == nil then
         return DEFAULTS[key]
     end
@@ -37,7 +37,7 @@ local RefreshPanel -- set once the settings page exists
 
 function ns.SetSetting(key, value)
     ns.InitDB()
-    ChroniclerDB[key] = value
+    LorePathDB[key] = value
     ns.ApplySettings()
 end
 
@@ -71,11 +71,11 @@ RefreshPanel = function()
         panel.scaleValue:SetText(string.format("%d%%", math.floor(ns.GetSetting("scale") * 100 + 0.5)))
     end
     if panel and panel.bindingText then
-        local key = GetBindingKey and GetBindingKey("CHRONICLER_TOGGLE")
+        local key = GetBindingKey and GetBindingKey("LOREPATH_TOGGLE")
         if key then
-            panel.bindingText:SetText("Open/close key: |cffffd100" .. key .. "|r  (change it in Key Bindings > AddOns > Chronicler)")
+            panel.bindingText:SetText("Open/close key: |cffffd100" .. key .. "|r  (change it in Key Bindings > AddOns > LorePath)")
         else
-            panel.bindingText:SetText("Open/close key: |cff888888not bound|r  (set one in Key Bindings > AddOns > Chronicler)")
+            panel.bindingText:SetText("Open/close key: |cff888888not bound|r  (set one in Key Bindings > AddOns > LorePath)")
         end
     end
 end
@@ -110,13 +110,13 @@ function ns.CreateSettingsPanel()
     if panel then
         return
     end
-    panel = CreateFrame("Frame", "ChroniclerSettingsPanel", UIParent)
-    panel.name = "Chronicler"
+    panel = CreateFrame("Frame", "LorePathSettingsPanel", UIParent)
+    panel.name = "LorePath"
     panel:Hide()
 
     local title = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
     title:SetPoint("TOPLEFT", 16, -16)
-    title:SetText("Chronicler |cff888888v" .. (ns.VERSION or "?") .. "|r")
+    title:SetText("LorePath |cff888888v" .. (ns.VERSION or "?") .. "|r")
 
     local subtitle = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
     subtitle:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -8)
@@ -126,7 +126,7 @@ function ns.CreateSettingsPanel()
     panel.subtitle = subtitle
 
     local anchor = AddCheckbox(subtitle, "showMinimapButton", "Show minimap button",
-        "Left-click opens Chronicler, right-click opens these settings, and you can drag it around the minimap.")
+        "Left-click opens LorePath, right-click opens these settings, and you can drag it around the minimap.")
     anchor = AddCheckbox(anchor, "openOnCurrentZone", "Open on the zone you're in",
         "Each time the window opens, jump to your current zone. Off: reopen on the last zone you looked at.")
     anchor = AddCheckbox(anchor, "hideCompleted", "Hide finished storylines",
@@ -170,7 +170,7 @@ function ns.CreateSettingsPanel()
     local open = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
     open:SetSize(150, 24)
     open:SetPoint("TOPLEFT", bindingText, "BOTTOMLEFT", 0, -16)
-    open:SetText("Open Chronicler")
+    open:SetText("Open LorePath")
     open:SetScript("OnClick", function()
         if SettingsPanel and SettingsPanel:IsShown() and HideUIPanel then
             HideUIPanel(SettingsPanel)
@@ -184,7 +184,7 @@ function ns.CreateSettingsPanel()
     reset:SetText("Reset to defaults")
     reset:SetScript("OnClick", function()
         for key, value in pairs(DEFAULTS) do
-            ChroniclerDB[key] = value
+            LorePathDB[key] = value
         end
         ns.ApplySettings()
     end)
@@ -204,7 +204,7 @@ function ns.OpenSettings()
         ns.Print("Settings can't be opened in combat.")
         return
     end
-    -- The settings page sits underneath the Chronicler window, so close the window first.
+    -- The settings page sits underneath the LorePath window, so close the window first.
     if ns.mainFrame and ns.mainFrame:IsShown() then
         ns.mainFrame:Hide()
     end
@@ -218,7 +218,7 @@ function ns.OpenSettings()
         InterfaceOptionsFrame_OpenToCategory(panel)
         InterfaceOptionsFrame_OpenToCategory(panel)
     else
-        ns.Print("Open Options > AddOns > Chronicler.")
+        ns.Print("Open Options > AddOns > LorePath.")
     end
 end
 
@@ -252,7 +252,7 @@ function ns.CreateMinimapButton()
     if minimapButton or not Minimap then
         return
     end
-    local b = CreateFrame("Button", "ChroniclerMinimapButton", Minimap)
+    local b = CreateFrame("Button", "LorePathMinimapButton", Minimap)
     b:SetSize(31, 31)
     b:SetFrameStrata("MEDIUM")
     b:SetFrameLevel(8)
@@ -282,7 +282,7 @@ function ns.CreateMinimapButton()
     end)
     b:SetScript("OnEnter", function(self)
         GameTooltip:SetOwner(self, "ANCHOR_LEFT")
-        GameTooltip:AddLine("Chronicler", 1, 0.82, 0)
+        GameTooltip:AddLine("LorePath", 1, 0.82, 0)
         GameTooltip:AddLine("Left-click: open or close", 1, 1, 1)
         GameTooltip:AddLine("Right-click: settings", 1, 1, 1)
         GameTooltip:AddLine("Drag: move this button", 0.7, 0.7, 0.7)
@@ -295,7 +295,7 @@ function ns.CreateMinimapButton()
             local cx, cy = GetCursorPosition()
             local scale = Minimap:GetEffectiveScale()
             local angle = math.deg(atan2(cy / scale - my, cx / scale - mx))
-            ChroniclerDB.minimapAngle = angle % 360
+            LorePathDB.minimapAngle = angle % 360
             PositionMinimapButton()
         end)
     end)
@@ -309,7 +309,7 @@ function ns.CreateMinimapButton()
 end
 
 -- Addon compartment (the addons menu by the minimap), declared in the TOC.
-function Chronicler_OnAddonCompartmentClick(_, mouseButton)
+function LorePath_OnAddonCompartmentClick(_, mouseButton)
     if mouseButton == "RightButton" then
         ns.OpenSettings()
     else

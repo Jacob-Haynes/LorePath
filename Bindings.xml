@@ -1,5 +1,5 @@
 <Bindings>
-	<Binding name="CHRONICLER_TOGGLE" header="CHRONICLER" category="ADDONS">
-		Chronicler_Toggle()
+	<Binding name="LOREPATH_TOGGLE" header="LOREPATH" category="ADDONS">
+		LorePath_Toggle()
 	</Binding>
 </Bindings>
