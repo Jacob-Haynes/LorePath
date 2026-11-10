@@ -32,11 +32,6 @@ events:SetScript("OnEvent", function(_, event, arg1, arg2)
         ns.CreateMinimapButton()
         -- Save the text of everything already in your log once it has loaded.
         C_Timer.After(5, ns.CaptureQuestLog)
-        -- Fill gaps from the Lore Forever addon's quest history, if it's installed.
-        local imported = ns.ImportLoreForever()
-        if imported > 0 then
-            ns.Print(string.format("Imported quest text for %d quests from Lore Forever.", imported))
-        end
     elseif event == "QUEST_TURNED_IN" then
         -- The completed-quest list updates a moment after the turn-in.
         ns.QueueRefresh(0.6)
