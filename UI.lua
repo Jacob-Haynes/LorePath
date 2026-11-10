@@ -334,8 +334,8 @@ local function AcquireNode(parent)
         node.icon:SetPoint("LEFT", 4, 0)
         node.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
         node.mark = node:CreateTexture(nil, "OVERLAY")
-        node.mark:SetSize(14, 14)
-        node.mark:SetPoint("BOTTOMRIGHT", node.icon, "BOTTOMRIGHT", 4, -3)
+        node.mark:SetSize(20, 20)
+        node.mark:SetPoint("BOTTOMRIGHT", node.icon, "BOTTOMRIGHT", 6, -4)
         node.text = node:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
         node.text:SetPoint("TOPLEFT", node.icon, "TOPRIGHT", 6, -1)
         node.text:SetPoint("RIGHT", -5, 0)
@@ -443,23 +443,22 @@ local function StyleNode(node, id, storyline)
     if status == S.LEVEL then
         node.mark:SetShown(true)
         node.mark:SetTexture(STATUS_MARK[S.AVAILABLE])
-        node.mark:SetVertexColor(0.75, 0.75, 0.75)
-    else
-        node.mark:SetVertexColor(1, 1, 1)
     end
 
-    -- Red always means "too high for you"; quests you can take are yellow (your
-    -- level), green (easy) or grey (low level), as in the quest log.
+    -- The level number carries the difficulty colour: red when it's too high for
+    -- you, then yellow (your level), green (easy) or grey (low level), as in the
+    -- quest log. Names of quests you can't take yet stay neutral.
     local tc = style.text or DifficultyColor(q.l or 1)
     if status == S.LEVEL then
-        tc = DIFFICULTY.impossible
+        tc = { 0.85, 0.85, 0.85 }
     end
     node.text:SetText(ns.GetQuestNameOrID(id))
     node.text:SetTextColor(tc[1], tc[2], tc[3])
     if status == S.LEVEL then
+        -- Shown even with levels turned off, since it's the only sign of why.
         local playerLevel = UnitLevel("player") or 1
         if q.l and playerLevel < q.l then
-            node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Needs level " .. q.l .. "|r")
+            node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Lv " .. q.l .. "|r")
         else
             node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Needs skill " .. (q.sl or "?") .. "|r")
         end
@@ -1017,12 +1016,11 @@ local function CreateMainFrame()
         -- The same corner marker the quest boxes use, so similar tints stay tellable apart.
         local markPath = STATUS_MARK[status] or STATUS_MARK[S.AVAILABLE]
         local mark = swatch:CreateTexture(nil, "OVERLAY")
-        mark:SetSize(12, 12)
+        mark:SetSize(16, 16)
         mark:SetPoint("CENTER")
         mark:SetTexture(markPath)
         if status == S.LEVEL then
             mark:SetDesaturated(true)
-            mark:SetVertexColor(0.75, 0.75, 0.75)
         end
         local label = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
         label:SetPoint("LEFT", swatch, "RIGHT", 5, 0)
@@ -1031,7 +1029,7 @@ local function CreateMainFrame()
     end
     local names = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     names:SetPoint("BOTTOMLEFT", f, "BOTTOMLEFT", x + 8, 11)
-    names:SetText("Quest names:  " .. Hex(DIFFICULTY.impossible) .. "too high|r  "
+    names:SetText("Level colours:  " .. Hex(DIFFICULTY.impossible) .. "too high|r  "
         .. Hex(DIFFICULTY.difficult) .. "your level|r  " .. Hex(DIFFICULTY.standard) .. "easy|r  "
         .. Hex(DIFFICULTY.trivial) .. "low level|r")
 
