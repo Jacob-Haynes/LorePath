@@ -367,6 +367,11 @@ local function AcquireNode(parent)
         local hl = node:CreateTexture(nil, "HIGHLIGHT")
         hl:SetAllPoints()
         hl:SetColorTexture(1, 1, 1, 0.10)
+        -- Gold wash on the quest you just jumped to.
+        node.flash = node:CreateTexture(nil, "OVERLAY", nil, 2)
+        node.flash:SetAllPoints()
+        node.flash:SetColorTexture(1, 0.82, 0, 0.35)
+        node.flash:Hide()
         node:SetScript("OnEnter", ShowNodeTooltip)
         node:SetScript("OnLeave", GameTooltip_Hide)
         node:SetScript("OnClick", function(self)
@@ -420,9 +425,39 @@ local function AcquireSection(parent)
         s.count = s:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
         s.count:SetPoint("LEFT", s.title, "RIGHT", 8, 0)
         s.next = CreateFrame("Button", nil, s, "UIPanelButtonTemplate")
-        s.next:SetSize(120, 20)
-        s.next:SetText("Show next quest")
-        s.step = s:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+        s.next:SetSize(100, 20)
+        s.next:SetText("Show on map")
+        s.next:SetScript("OnEnter", function(self)
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+            GameTooltip:AddLine("Show on map", 1, 0.82, 0)
+            GameTooltip:AddLine(string.format("Sets a waypoint where %s starts%s.",
+                ns.GetQuestNameOrID(self.targetQuest),
+                ns.GetSetting("openMapOnWaypoint") and " and opens the world map" or ""), 1, 1, 1, true)
+            GameTooltip:Show()
+        end)
+        s.next:SetScript("OnLeave", GameTooltip_Hide)
+        -- "Next: ..." / "First finish: ..." - click to jump to that quest.
+        s.stepButton = CreateFrame("Button", nil, s)
+        s.stepButton:SetHeight(HEADER_H - 4)
+        s.step = s.stepButton:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+        s.step:SetPoint("LEFT", 2, 0)
+        local stepHL = s.stepButton:CreateTexture(nil, "HIGHLIGHT")
+        stepHL:SetAllPoints()
+        stepHL:SetColorTexture(1, 1, 1, 0.08)
+        s.stepButton:SetScript("OnClick", function(self)
+            ns.FocusQuest(self.targetQuest)
+        end)
+        s.stepButton:SetScript("OnEnter", function(self)
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+            GameTooltip:AddLine(ns.GetQuestNameOrID(self.targetQuest), 1, 0.82, 0)
+            local q = ns.Quests[self.targetQuest]
+            if q and q.z ~= selectedZone then
+                GameTooltip:AddLine("In " .. ns.GetMapName(q.z), 0.75, 0.75, 0.75)
+            end
+            GameTooltip:AddLine("Click to show this quest.", 0.5, 0.8, 1)
+            GameTooltip:Show()
+        end)
+        s.stepButton:SetScript("OnLeave", GameTooltip_Hide)
         s.line = s:CreateTexture(nil, "ARTWORK")
         s.line:SetPoint("BOTTOMLEFT", 0, 0)
         s.line:SetPoint("BOTTOMRIGHT", 0, 0)
@@ -447,6 +482,7 @@ local function StyleNode(node, id, storyline)
     local style = STATUS_STYLE[status]
     node.questID = id
     node.storyline = storyline
+    node.flash:SetShown(id == ns.focusedQuest)
     node.bg:SetColorTexture(style.bg[1], style.bg[2], style.bg[3], 0.95)
     node:SetBorderColor(style.border[1], style.border[2], style.border[3], 1)
     node.icon:SetTexture(QuestIcon(q))
@@ -538,6 +574,8 @@ local function RenderSection(canvas, key, title, done, total, complete, width, t
         or string.format("|cffaaaaaa%d / %d|r", done, total))
     s.next:Hide()
     s.step:SetText("")
+    s.stepButton.targetQuest = nil
+    s.stepButton:EnableMouse(false)
     return s, collapsed, top + HEADER_H + 8
 end
 
@@ -571,19 +609,27 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
     if kind == "blocked" and detail and ns.Quests[detail] then
         target = detail
     end
-    s.step:ClearAllPoints()
+    s.stepButton:ClearAllPoints()
     if target and ns.Quests[target] and ns.Quests[target].m then
         s.next:ClearAllPoints()
         s.next:SetPoint("LEFT", s.count, "RIGHT", 14, 0)
         s.next:Show()
+        s.next.targetQuest = target
         s.next:SetScript("OnClick", function()
             ns.ShowQuestStart(target)
         end)
-        s.step:SetPoint("LEFT", s.next, "RIGHT", 8, 0)
+        s.stepButton:SetPoint("LEFT", s.next, "RIGHT", 6, 0)
     else
-        s.step:SetPoint("LEFT", s.count, "RIGHT", 14, 0)
+        s.stepButton:SetPoint("LEFT", s.count, "RIGHT", 12, 0)
     end
     s.step:SetText(NextStepText(kind, nextID, detail))
+    -- The step text jumps to the quest it names: the next quest, or for a blocked
+    -- storyline the earlier quest it's waiting on (which may be in another zone).
+    local stepTarget = (kind == "blocked") and detail or nextID
+    s.stepButton.targetQuest = stepTarget
+    s.stepButton:SetWidth(s.step:GetStringWidth() + 6)
+    s.stepButton:SetShown(true)
+    s.stepButton:EnableMouse(stepTarget ~= nil and ns.Quests[stepTarget] ~= nil)
 
     if collapsed then
         return viewWidth, HEADER_H
@@ -594,6 +640,7 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
         local node = AcquireNode(canvas)
         node:ClearAllPoints()
         node:SetPoint("TOPLEFT", canvas, "TOPLEFT", NodeX(n.col), -NodeY(graphTop, n.row))
+        node.px, node.py = NodeX(n.col), NodeY(graphTop, n.row)
         StyleNode(node, n.id, storyline)
         cells[n.id] = n
     end
@@ -653,6 +700,7 @@ local function RenderOthers(canvas, others, top, viewWidth)
         local node = AcquireNode(canvas)
         node:ClearAllPoints()
         node:SetPoint("TOPLEFT", canvas, "TOPLEFT", NodeX(col), -NodeY(gridTop, row))
+        node.px, node.py = NodeX(col), NodeY(gridTop, row)
         StyleNode(node, id, nil)
     end
     local rows = math.ceil(#others / perRow)
@@ -736,6 +784,7 @@ local RenderZoneList
 
 local function SelectZone(zoneID)
     selectedZone = zoneID
+    ns.focusedQuest = nil
     if LorePathDB then
         LorePathDB.lastZone = zoneID
     end
@@ -869,6 +918,92 @@ RenderZoneList = function()
         y = y + 4
     end
     list:SetHeight(y + 4)
+end
+
+-- ============================================================================
+-- Jumping to a quest
+-- ============================================================================
+
+local function FocusedNode()
+    for i = 1, used.nodes do
+        local node = pools.nodes[i]
+        if node.questID == ns.focusedQuest then
+            return node
+        end
+    end
+end
+
+-- Scrolls the graph so the focused quest sits near the top left.
+local function ScrollToFocus()
+    local node = frame and FocusedNode()
+    if not node or not node.px then
+        return
+    end
+    local scroll = frame.graphScroll
+    if scroll.UpdateScrollChildRect then
+        scroll:UpdateScrollChildRect()
+    end
+    scroll:SetVerticalScroll(math.max(0, math.min(node.py - 60, scroll:GetVerticalScrollRange())))
+    scroll:SetHorizontalScroll(math.max(0, math.min(node.px - 40, scroll:GetHorizontalScrollRange())))
+end
+
+-- Shows a quest in the window: switches to its zone, opens the storyline (or
+-- "Other quests") it belongs to, scrolls to it and highlights it for a moment.
+function ns.FocusQuest(id)
+    local q = id and ns.Quests[id]
+    if not q or not frame then
+        return
+    end
+    local zone = q.z
+    local storylines, others = ns.BuildStorylines(zone)
+    local key
+    for _, storyline in ipairs(storylines) do
+        for _, n in ipairs(storyline.nodes) do
+            if n.id == id then
+                key = "s" .. storyline.first
+            end
+        end
+    end
+    if not key then
+        for _, other in ipairs(others) do
+            if other == id then
+                key = "o" .. zone
+            end
+        end
+    end
+    if not key then
+        ns.Print(ns.GetQuestNameOrID(id) .. " isn't shown for this character.")
+        return
+    end
+    if key:sub(1, 1) == "o" and not ns.GetSetting("showOthers") then
+        ns.Print(ns.GetQuestNameOrID(id) .. " is a standalone quest; turn on \"Show standalone quests\" in Settings to see it.")
+    end
+    CollapsedTable("collapsed")[key] = false
+    for _, z in ipairs(SortedZones()) do
+        if z.id == zone then
+            CollapsedTable("collapsedContinents")[z.continentName] = nil
+        end
+    end
+
+    selectedZone = zone
+    if LorePathDB then
+        LorePathDB.lastZone = zone
+    end
+    ns.focusedQuest = id
+    RenderZoneList()
+    RenderZone()
+    ScrollToFocus()
+    C_Timer.After(0, ScrollToFocus) -- the scroll range updates a frame later in game
+    C_Timer.After(2.5, function()
+        if ns.focusedQuest == id then
+            ns.focusedQuest = nil
+            for i = 1, used.nodes do
+                if pools.nodes[i].questID == id then
+                    pools.nodes[i].flash:Hide()
+                end
+            end
+        end
+    end)
 end
 
 -- ============================================================================

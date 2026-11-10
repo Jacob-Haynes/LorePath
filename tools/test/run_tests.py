@@ -230,6 +230,35 @@ ns.ShowQuestStart(92706)
 check(harness["openedMap"] is None and harness["waypoint"]["m"] == 1413, "with 'open the map' off, a waypoint is set without opening the map")
 ns.SetSetting("openMapOnWaypoint", True)
 
+# --- "First finish: X" jumps to the quest it's waiting on ---
+blocked = None
+for z in ns.GetZones().values():
+    sls, _ = ns.BuildStorylines(z["id"])
+    for st in sls.values():
+        kind, nid, det = ns.GetNextStep(st)
+        if kind == "blocked" and det is not None and ns.Quests[det] is not None:
+            blocked = (z["id"], st, det)
+            break
+    if blocked:
+        break
+check(blocked is not None, "found a storyline waiting on a quest outside it")
+if blocked:
+    zone_id, st, det = blocked
+    ns.FocusQuest(st["first"])
+    key = "s" + str(st["first"])
+    sec = [f for f in harness["all"].values() if f["key"] == key and f.IsShown(f)][0]
+    check(sec["next"]["__text"] == "Show on map", "the header button is labelled 'Show on map'")
+    step = sec["stepButton"]
+    check(step["targetQuest"] == det, f"the step text targets the blocking quest {det}")
+    step["__scripts"]["OnClick"](step)
+    det_zone = ns.Quests[det]["z"]
+    title = frame["zoneTitle"]["__text"]
+    check(title == ns.GetMapName(det_zone), f"clicking it switches to the blocking quest's zone ({title})")
+    shown = [f for f in harness["all"].values() if f["questID"] == det and f.IsShown(f) and f["flash"] is not None]
+    check(len(shown) == 1 and shown[0]["flash"].IsShown(shown[0]["flash"]), "the blocking quest is shown and highlighted")
+    harness.RunTimers()
+    check(not shown[0]["flash"].IsShown(shown[0]["flash"]), "the highlight fades after a moment")
+
 g.SlashCmdList["LOREPATH"]("config")
 check(harness["openedSettings"] == 77, "/lp config opens the settings page")
 
