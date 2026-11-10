@@ -12,5 +12,6 @@
 Data\Quests.lua
 Core.lua
 UI.lua
+Detail.lua
 Settings.lua
 Main.lua

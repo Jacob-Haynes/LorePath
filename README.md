@@ -28,7 +28,8 @@ It's not a quest helper. There are no map pins and no objective tracking, so it 
   | Dark grey | A breadcrumb you went past |
 
 - **Tooltips:** hover a quest to see its level, what it needs, what comes before and after it, where it starts, and its rewards.
-- **Waypoints:** click any quest to set the game's own waypoint on where it starts and open the map there. Each storyline also has a **Show next quest** button that finds the next quest you can pick up.
+- **Quest details:** click a quest to open a panel beside the window with its requirements, where it starts (and who gives it), its objectives and text, its rewards (items, plus gold and XP once you've accepted it or seen it at the quest giver) and the quests before and after it. Click the same quest again to close the panel.
+- **Waypoints:** Ctrl+click a quest, or use **Show on map** in its details, to set the game's own waypoint where it starts and open the map there. Each storyline also has a **Show on map** button for its next quest, and clicking **Next** or **First finish** in a storyline's header jumps to that quest.
 
 ### Controls
 
@@ -52,7 +53,7 @@ It's not a quest helper. There are no map pins and no objective tracking, so it 
 | Hide finished storylines | Off | Leaves out storylines where every quest is done. |
 | Show standalone quests | On | Lists quests that aren't part of a chain under each zone's storylines. |
 | Show quest levels on tiles | On | Shows each quest's minimum level on its tile. |
-| Open the map when setting a waypoint | On | Opens the world map at the quest's start when you click a quest. |
+| Open the map when setting a waypoint | On | Opens the world map at the quest's start when you set a waypoint. |
 | Window size | 100% | Scales the window from 60% to 140%. |
 
 Settings are saved per account in `LorePathDB`. The settings page also has **Reset to defaults**.

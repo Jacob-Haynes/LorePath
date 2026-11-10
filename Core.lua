@@ -180,6 +180,7 @@ end
 local function IsOnQuest(id)
     return C_QuestLog and C_QuestLog.IsOnQuest and C_QuestLog.IsOnQuest(id) or false
 end
+ns.IsOnQuest = IsOnQuest
 
 -- ============================================================================
 -- Eligibility and status
@@ -480,6 +481,24 @@ end
 -- done, total, repeatables for a zone.
 function ns.GetZoneProgress(zoneID)
     return ns.CountProgress(ns.GetZoneQuests(zoneID))
+end
+
+-- Quests that list `id` as a prerequisite (built once, on first use).
+local followOns
+function ns.GetFollowOns(id)
+    if not followOns then
+        followOns = {}
+        for qid, q in pairs(ns.Quests) do
+            for _, pre in ipairs(q.pre or {}) do
+                followOns[pre] = followOns[pre] or {}
+                table.insert(followOns[pre], qid)
+            end
+        end
+        for _, list in pairs(followOns) do
+            table.sort(list)
+        end
+    end
+    return followOns[id] or {}
 end
 
 -- Zones (and dungeon/raid pages) that have at least one quest for this character,

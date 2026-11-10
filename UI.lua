@@ -244,6 +244,21 @@ local function MakeScrollable(scroll, allowPan)
     end)
 end
 
+-- Shared with Detail.lua (the quest detail panel), so both draw quests the same way.
+ns.ui = {
+    Hex = Hex,
+    DifficultyColor = DifficultyColor,
+    ItemText = ItemText,
+    QuestIcon = QuestIcon,
+    AddBorder = AddBorder,
+    SetFade = SetFade,
+    MakeScrollable = MakeScrollable,
+    STATUS_STYLE = STATUS_STYLE,
+    STATUS_TEXT = STATUS_TEXT,
+    DIFFICULTY = DIFFICULTY,
+    REPEATABLE_BLUE = REPEATABLE_BLUE,
+}
+
 -- ============================================================================
 -- Collapsed state (saved per account)
 -- ============================================================================
@@ -356,9 +371,10 @@ local function ShowNodeTooltip(node)
             GameTooltip:AddLine("  " .. ItemText(itemID), 1, 1, 1)
         end
     end
+    GameTooltip:AddLine(" ")
+    GameTooltip:AddLine("Click for details.", 0.5, 0.8, 1)
     if q.m then
-        GameTooltip:AddLine(" ")
-        GameTooltip:AddLine("Click to set a waypoint to where it starts.", 0.5, 0.8, 1)
+        GameTooltip:AddLine("Ctrl+click to set a waypoint where it starts.", 0.5, 0.8, 1)
     end
     GameTooltip:Show()
 end
@@ -399,8 +415,13 @@ local function AcquireNode(parent)
         node.flash:Hide()
         node:SetScript("OnEnter", ShowNodeTooltip)
         node:SetScript("OnLeave", GameTooltip_Hide)
+        -- Click opens the detail panel (again to close it); Ctrl+click sets the waypoint.
         node:SetScript("OnClick", function(self)
-            ns.ShowQuestStart(self.questID)
+            if IsControlKeyDown() then
+                ns.ShowQuestStart(self.questID)
+            else
+                ns.ToggleDetail(self.questID)
+            end
         end)
         pools.nodes[used.nodes] = node
     end
@@ -512,6 +533,9 @@ local function StyleNode(node, id, storyline)
     local border = style.border
     if q.rp and (status == S.LEVEL or status == S.BLOCKED) then
         border = REPEATABLE_LOCKED_BORDER
+    end
+    if id == ns.detailQuest then
+        border = { 1, 0.82, 0 } -- the quest shown in the detail panel
     end
     node:SetBorderColor(border[1], border[2], border[3], 1)
     node.icon:SetTexture(QuestIcon(q))
@@ -1447,6 +1471,9 @@ function ns.Refresh()
     end
     RenderZoneList()
     RenderZone()
+    if ns.RefreshDetail then
+        ns.RefreshDetail()
+    end
 end
 
 local refreshPending = false

@@ -16,6 +16,7 @@ for _, event in ipairs({
     "QUEST_DATA_LOAD_RESULT",
     "SKILL_LINES_CHANGED",
     "UPDATE_FACTION",
+    "QUEST_DETAIL",
 }) do
     pcall(events.RegisterEvent, events, event)
 end
@@ -31,6 +32,9 @@ events:SetScript("OnEvent", function(_, event, arg1)
     elseif event == "QUEST_TURNED_IN" then
         -- The completed-quest list updates a moment after the turn-in.
         ns.QueueRefresh(0.6)
+    elseif event == "QUEST_DETAIL" then
+        -- A quest giver is showing a quest: keep its text and rewards for the detail panel.
+        ns.CaptureQuestDetail()
     elseif event == "QUEST_DATA_LOAD_RESULT" then
         -- Quest names arrive in bursts while the window loads them; redraw once.
         ns.QueueRefresh(0.5)

@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Core.lua", "UI.lua", "Settings.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Core.lua", "UI.lua", "Detail.lua", "Settings.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -126,8 +126,78 @@ rewarded[0]["__scripts"]["OnEnter"](rewarded[0])
 lines = list(g.GameTooltip.lines.values())
 check(any("Rewards" in str(l) for l in lines), "a quest with rewards lists them in its tooltip: " + " | ".join(str(l) for l in lines[:8]))
 harness["waypoint"] = None
+harness["ctrl"] = True
 tiles[0]["__scripts"]["OnClick"](tiles[0])
-check(harness["waypoint"] is not None, "clicking a quest tile sets a waypoint")
+harness["ctrl"] = False
+check(harness["waypoint"] is not None, "Ctrl+clicking a quest tile sets a waypoint")
+check(g.LorePathDetailFrame is None or not g.LorePathDetailFrame.IsShown(g.LorePathDetailFrame),
+      "Ctrl+click doesn't open the detail panel")
+
+# --- Quest detail panel ---
+same = lua.eval("function(a, b) return rawequal(a, b) end")
+def detail_texts():
+    panel = g.LorePathDetailFrame
+    out = []
+    for f in harness["all"].values():
+        if f["__kind"] != "FontString" or not f.IsShown(f) or f["__text"] is None:
+            continue
+        p = f["__parent"]
+        while p is not None and not same(p, panel):
+            p = p["__parent"]
+        if p is not None:
+            out.append(str(f["__text"]))
+    return out
+def tile_for(qid):
+    return [f for f in harness["all"].values() if f["questID"] == qid and f["sub"] is not None and f.IsShown(f)][0]
+harness["waypoint"] = None
+t0 = tile_for(rewarded[0]["questID"])
+t0["__scripts"]["OnClick"](t0)
+panel = g.LorePathDetailFrame
+check(panel is not None and panel.IsShown(panel) and ns.detailQuest == t0["questID"], "clicking a quest opens the detail panel on it")
+check(harness["waypoint"] is None, "a plain click no longer sets a waypoint")
+texts = detail_texts()
+check(any(("Q" + str(t0["questID"])) in s for s in texts), "the panel shows the quest's name")
+check(any("Requires level" in s for s in texts) and any("Starts in" in s for s in texts), "the panel shows its level and where it starts")
+items = [f for f in harness["all"].values() if f["itemID"] is not None and f.IsShown(f)]
+check(len(items) == len(list(ns.Quests[t0["questID"]]["rw"].values())), f"each reward item is listed ({len(items)})")
+check(any("show once you accept" in s for s in texts), "gold and XP say they show once accepted, for a quest not in your log")
+t0 = tile_for(t0["questID"])
+t0["__scripts"]["OnClick"](t0)
+check(not panel.IsShown(panel) and ns.detailQuest is None, "clicking the same quest again closes the panel")
+
+# In your log: gold and XP come from the quest log.
+qid = t0["questID"]
+char["log"][qid] = True
+g.GetQuestLogRewardMoney = lua.eval("function(id) return 1250 end")
+g.GetQuestLogRewardXP = lua.eval("function(id) return 1400 end")
+ns.ShowDetail(qid)
+texts = detail_texts()
+check(any("12s 50c" in s for s in texts) and any("1400 experience" in s for s in texts),
+      "a quest in your log shows its gold and XP: " + " | ".join(s for s in texts if "experience" in s or "s " in s)[:80])
+char["log"][qid] = None
+
+# Text and rewards seen at a quest giver are kept for later.
+g.GetQuestID = lua.eval(f"function() return {qid} end")
+g.GetQuestText = lua.eval("function() return 'The Defias have taken the mine.' end")
+g.GetObjectiveText = lua.eval("function() return 'Slay 10 Defias.' end")
+g.GetRewardMoney = lua.eval("function() return 300 end")
+g.GetRewardXP = lua.eval("function() return 900 end")
+harness.Fire("QUEST_DETAIL")
+check(g.LorePathDB["questCache"][qid]["xp"] == 900, "QUEST_DETAIL saves the quest's text and rewards")
+texts = detail_texts()
+check(any("Defias have taken the mine" in s for s in texts) and any("900 experience" in s for s in texts),
+      "the panel then shows the saved description and rewards")
+
+# Storyline links jump to the earlier quest and show it.
+with_pre = next(i for i in [f["questID"] for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)]
+                if ns.Quests[i]["pre"] is not None and ns.Quests[ns.Quests[i]["pre"][1]] is not None)
+ns.ShowDetail(with_pre)
+pre = ns.Quests[with_pre]["pre"][1]
+links = [f for f in harness["all"].values() if f["questID"] == pre and f["sub"] is None and f.IsShown(f) and f["__scripts"]["OnClick"] is not None and f["text"] is not None and f["icon"] is None]
+check(len(links) >= 1, "the panel lists the quest it comes after")
+links[0]["__scripts"]["OnClick"](links[0])
+check(ns.detailQuest == pre and ns.focusedQuest == pre, "clicking it shows that quest in the graph and the panel")
+ns.HideDetail()
 
 # Horde character in The Barrens
 char["race"], char["class"], char["faction"], char["level"], char["map"] = 2, 1, "Horde", 15, 1413

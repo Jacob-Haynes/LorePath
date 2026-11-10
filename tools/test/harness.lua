@@ -6,7 +6,7 @@ local function MockObject(kind)
     local o = { __kind = kind, __shown = false, __scripts = {}, __w = 800, __h = 500 }
     local methods = {
         Show = function(self) self.__shown = true; if self.__scripts.OnShow then self.__scripts.OnShow(self) end end,
-        Hide = function(self) self.__shown = false end,
+        Hide = function(self) local was = self.__shown; self.__shown = false; if was and self.__scripts.OnHide then self.__scripts.OnHide(self) end end,
         IsShown = function(self) return self.__shown end,
         SetShown = function(self, v) self.__shown = v and true or false end,
         SetScript = function(self, name, fn) self.__scripts[name] = fn end,
@@ -28,7 +28,8 @@ local function MockObject(kind)
         GetVerticalScrollRange = function(self) return self.__vrange or 0 end,
         GetEffectiveScale = function() return 1 end,
         CreateTexture = function() return MockObject("Texture") end,
-        CreateFontString = function() return MockObject("FontString") end,
+        -- Font strings remember their parent (and are listed in harness.all) so tests can read a panel's text.
+        CreateFontString = function(self) local fs = MockObject("FontString"); fs.__parent = self; table.insert(harness.all, fs); return fs end,
         CreateLine = function() return MockObject("Line") end,
         Enable = function(self) self.__enabled = true end,
         SetScale = function(self, v) self.__scale = v end,
@@ -50,6 +51,7 @@ harness.frames = {}
 harness.all = {}
 function CreateFrame(kind, name, parent, template)
     local f = MockObject(kind)
+    f.__parent = parent
     table.insert(harness.all, f)
     f.__template = template
     if name then _G[name] = f; harness.frames[name] = f end
@@ -70,6 +72,7 @@ C_Timer = { After = function(_, fn) table.insert(harness.timers, fn) end }
 harness.timers = {}
 function harness.RunTimers() local t = harness.timers; harness.timers = {}; for _, fn in ipairs(t) do fn() end end
 IsShiftKeyDown = function() return false end
+IsControlKeyDown = function() return harness.ctrl or false end
 IsMouseButtonDown = function() return false end
 GetCursorPosition = function() return 0, 0 end
 InCombatLockdown = function() return false end
