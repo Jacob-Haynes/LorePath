@@ -103,7 +103,7 @@ python3 tools/merge_quest_text.py --dry-run path/to/LorePath.lua   # see what it
 python3 tools/merge_quest_text.py path/to/LorePath.lua
 ```
 
-It also reads Lore Forever's `LoreForever.lua`. It only adds text for quests LorePath knows, never overwrites existing community text (unless `--replace`), strips character names, colour codes and links, skips text the bundled vanilla text already has, and loads each file in a sandbox with no Lua libraries. Review the diff before committing.
+It only adds text for quests LorePath knows, never overwrites existing community text (unless `--replace`), strips character names, colour codes and links, skips text the bundled vanilla text already has, and loads each file in a sandbox with no Lua libraries. Review the diff before committing.
 
 ### Tests
 

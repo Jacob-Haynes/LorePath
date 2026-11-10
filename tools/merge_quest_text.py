@@ -6,10 +6,9 @@ objectives, progress and completion text). This script takes those saved files
 and adds any quest text LorePath doesn't ship yet to Data/CommunityText.lua, so
 every LorePath user gets it in the next release.
 
-It reads saved-variables files from:
-  - LorePath   (LorePath.lua: LorePathDB.questCache)  - your own game, or a player's
-  - Lore Forever (LoreForever.lua: LoreForeverDB.quests) - older history
-They're in the game's folder at WTF/Account/<account>/SavedVariables/.
+It reads LorePath's saved-variables file (LorePath.lua: LorePathDB.questCache),
+from your own game or a player's. It's in the game's folder at
+WTF/Account/<account>/SavedVariables/LorePath.lua.
 
 Usage:
     pip install lupa
@@ -91,21 +90,6 @@ def load_table(lua, path, name):
     return out
 
 
-def character_names(lua_table, depth=0, names=None):
-    """Character names in a saved file: 'Name-Realm' keys and name/full fields."""
-    names = set() if names is None else names
-    if depth > 5 or lua_table is None or not hasattr(lua_table, "items"):
-        return names
-    for k, v in lua_table.items():
-        if isinstance(k, str) and re.match(r"^[A-Z][a-zà-ÿ']{1,11}-[A-Za-z0-9]", k):
-            names.add(k.split("-")[0])
-        if k in ("name", "full", "playerName") and isinstance(v, str) and depth <= 4:
-            names.update(p for p in v.split() if len(p) > 2 and p[0].isupper())
-        if hasattr(v, "items"):
-            character_names(v, depth + 1, names)
-    return names
-
-
 def read_submission(lua, path):
     """Returns ({questID: {field: text}}, character names, format) for one file."""
     lorepath = load_lua_data(lua, path, "LorePathDB")
@@ -117,14 +101,6 @@ def read_submission(lua, path):
         if lorepath["characters"] is not None:
             names.update(str(n) for n in lorepath["characters"].keys())
         return quests, names, "LorePath"
-    lore = load_lua_data(lua, path, "LoreForeverDB")
-    if lore is not None and lore["quests"] is not None:
-        quests = {}
-        for qid, e in lore["quests"].items():
-            if e is not None:
-                quests[qid] = {"t": e["title"], "o": e["objectives"], "d": e["text"],
-                               "p": e["progress"], "c": e["completion"]}
-        return quests, character_names(lore["collection"]), "Lore Forever"
     return None, set(), None
 
 
@@ -148,7 +124,7 @@ def cleaner(names):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("files", nargs="+", help="LorePath.lua or LoreForever.lua saved-variables files")
+    parser.add_argument("files", nargs="+", help="LorePath.lua saved-variables files")
     parser.add_argument("--dry-run", action="store_true", help="report what would change, write nothing")
     parser.add_argument("--replace", action="store_true", help="let submitted text replace existing fields")
     args = parser.parse_args()
@@ -166,7 +142,7 @@ def main():
             print(f"{path}: couldn't read it ({str(e).splitlines()[0][:120]}), skipped")
             continue
         if quests is None:
-            print(f"{path}: not a LorePath or Lore Forever saved file, skipped")
+            print(f"{path}: not a LorePath saved file, skipped")
             continue
         clean = cleaner(names)
         new_quests, fields, skipped = 0, 0, 0
