@@ -18,6 +18,7 @@ Run it again whenever ATT updates its Forever data.
 """
 
 import os
+import shutil
 import subprocess
 import sys
 
@@ -200,14 +201,17 @@ def main():
     walk(categories["Zones"], None, None)
 
     try:
+        # "<short hash> (<commit date>)", so a release can be traced to its data.
         att_commit = subprocess.check_output(
-            ["git", "-C", att_root, "rev-parse", "--short", "HEAD"], text=True).strip()
+            ["git", "-C", att_root, "log", "-1", "--format=%h (%cs)"], text=True).strip()
     except Exception:
         att_commit = "unknown"
 
-    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Data")
-    out_path = os.path.normpath(os.path.join(out_dir, "Quests.lua"))
+    out_dir = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Data"))
+    out_path = os.path.join(out_dir, "Quests.lua")
     write_lua(out_path, quests, zones, att_commit)
+    # Re-copy ATT's licence on every run, in case it changes.
+    shutil.copyfile(os.path.join(att_root, "LICENSE"), os.path.join(out_dir, "AllTheThings-LICENSE.txt"))
 
     print(f"Wrote {len(quests)} quests in {len(zones)} zones to {out_path}")
     print(f"Skipped: {skipped}")

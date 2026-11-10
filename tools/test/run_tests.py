@@ -116,7 +116,9 @@ for tile in tiles:
     except Exception as e:
         errors += 1
         print("tooltip error:", e)
-check(len(tiles) == 75 and errors == 0, f"all {len(tiles)} Elwynn quest tiles build a tooltip without errors")
+# One tile per Elwynn quest the character can see (derived from the data, so ATT syncs don't break it).
+check(zone_quests > 0 and len(tiles) == zone_quests and errors == 0,
+      f"all {len(tiles)} Elwynn quest tiles (of {zone_quests} zone quests) build a tooltip without errors")
 rewarded = [t for t in tiles if ns.Quests[t["questID"]]["rw"] is not None]
 g.GameTooltip.lines = lua.table()
 rewarded[0]["__scripts"]["OnEnter"](rewarded[0])
@@ -136,7 +138,9 @@ check(title is not None and title.startswith("The Barrens"), f"Horde character o
 check(not ns.IsEligible(783), "Alliance quest 783 is no longer eligible for an orc")
 check(ns.IsEligible(92706), "Forever quest 92706 (neutral) is eligible for an orc")
 storylines, others = ns.BuildStorylines(1413)
-print(f"Barrens for an Orc Warrior: {len(list(storylines.values()))} storylines + {len(list(others.values()))} other")
+barrens_others = len(list(others.values()))
+print(f"Barrens for an Orc Warrior: {len(list(storylines.values()))} storylines + {barrens_others} other")
+check(barrens_others > 0, "the Barrens has standalone ('other') quests for an orc")
 # --- Minimap button ---
 frame.Hide(frame)
 minimap_button["__scripts"]["OnClick"](minimap_button, "LeftButton")
@@ -165,7 +169,8 @@ def shown_tiles():
 with_others = shown_tiles()
 ns.SetSetting("showOthers", False)
 without_others = shown_tiles()
-check(without_others == with_others - 34, f"hiding standalone quests drops the 34 'other' tiles ({with_others} -> {without_others})")
+check(without_others == with_others - barrens_others,
+      f"hiding standalone quests drops the {barrens_others} 'other' tiles ({with_others} -> {without_others})")
 ns.SetSetting("showOthers", True)
 
 # Finish a whole storyline: it collapses by default, and can be reopened.

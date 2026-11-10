@@ -1,0 +1,113 @@
+# Re-extracts Data/Quests.lua from AllTheThings' WoW Forever data and, if the
+# quest data changed, opens (or updates) a PR from the data/att-sync branch.
+# Merging and releasing stay manual: the PR is a prompt to review and tag.
+name: Sync quest data from AllTheThings
+
+on:
+  schedule:
+    - cron: "23 6 * * 1" # Mondays, 06:23 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-att-data
+  cancel-in-progress: false
+
+env:
+  SYNC_BRANCH: data/att-sync
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install lupa
+        run: pip install lupa
+
+      - name: Fetch AllTheThings (db/Camelot only)
+        run: |
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/ATTWoWAddon/AllTheThings.git att
+          (cd att && git sparse-checkout set db/Camelot)
+          {
+            echo "ATT_SHA=$(git -C att rev-parse HEAD)"
+            echo "ATT_DATE=$(git -C att log -1 --format=%cs)"
+          } >> "$GITHUB_ENV"
+
+      - name: Extract quest data
+        run: |
+          cp Data/Quests.lua "$RUNNER_TEMP/Quests.old.lua"
+          python3 tools/extract_att.py att
+
+      # Fails the run (no PR) if the new data loses more than 10% of quests,
+      # loses a zone, or doesn't load as Lua. Writes the PR summary as it goes.
+      - name: Sanity-check and summarise the change
+        run: python3 tools/diff_quests.py --check "$RUNNER_TEMP/Quests.old.lua" Data/Quests.lua > "$RUNNER_TEMP/diff.md"
+
+      - name: Run tests against the new data
+        run: python3 tools/test/run_tests.py
+
+      # The header names ATT's commit, which moves on every ATT push, so a
+      # header-only change doesn't count.
+      - name: Check for data changes
+        id: changes
+        run: |
+          if git diff --quiet -I '^-- Source:' -- Data/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No quest data changes since the committed file."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --stat -- Data/
+          fi
+
+      - name: Open or update the sync PR
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BASE: ${{ github.event.repository.default_branch }}
+        run: |
+          short="${ATT_SHA:0:7}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C "$SYNC_BRANCH"
+          git add Data/Quests.lua Data/AllTheThings-LICENSE.txt
+          git commit -m "Sync quest data from AllTheThings $short" \
+            -m "Source: https://github.com/ATTWoWAddon/AllTheThings/commit/$ATT_SHA ($ATT_DATE)"
+          # The branch is rebuilt from the default branch on every run, so it
+          # always holds exactly one sync commit on top of it.
+          git push --force origin "$SYNC_BRANCH"
+
+          body="$RUNNER_TEMP/body.md"
+          {
+            echo "Automated sync of \`Data/Quests.lua\` from AllTheThings' WoW Forever data (\`db/Camelot\`)."
+            echo
+            echo "**ATT commit:** [\`$short\`](https://github.com/ATTWoWAddon/AllTheThings/commit/$ATT_SHA) ($ATT_DATE)"
+            echo
+            cat "$RUNNER_TEMP/diff.md"
+            echo
+            echo "Sanity checks and \`tools/test/run_tests.py\` passed in [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."
+            echo "Merging doesn't release anything: review in game, then tag a release by hand."
+          } > "$body"
+
+          title="Sync quest data from AllTheThings ($short)"
+          pr=$(gh pr list --head "$SYNC_BRANCH" --base "$BASE" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$pr" ]; then
+            gh pr edit "$pr" --title "$title" --body-file "$body"
+            echo "Updated PR #$pr"
+          else
+            # Needs Settings > Actions > General > "Allow GitHub Actions to
+            # create and approve pull requests" to be on.
+            gh pr create --base "$BASE" --head "$SYNC_BRANCH" --title "$title" --body-file "$body" || {
+              echo "::error::Couldn't open the PR. The data is on the $SYNC_BRANCH branch. If GitHub refused because Actions may not create pull requests, turn on Settings > Actions > General > 'Allow GitHub Actions to create and approve pull requests'."
+              exit 1
+            }
+          fi
