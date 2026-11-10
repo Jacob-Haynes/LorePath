@@ -36,7 +36,7 @@ local function Get(fn, ...)
     end
 end
 
-local LogQuestText, QuestLinkText -- defined below
+local LogQuestText, QuestLinkText, ReputationRewards -- defined below
 
 -- The game fills your character's name into quest text. Saved text puts the
 -- $N placeholder back, so it reads right on other characters and is safe to
@@ -124,6 +124,10 @@ function ns.CaptureLogQuest(id)
     if (money and money > 0) or (xp and xp > 0) then
         entry.money, entry.xp = money or 0, xp or 0
     end
+    local rep = ReputationRewards(id)
+    if #rep > 0 then
+        entry.rep = rep -- { {factionID, amount}, ... }
+    end
     AfterCapture(id)
 end
 
@@ -184,22 +188,8 @@ local function Objectives(id)
     return lines
 end
 
--- Gold (copper) and XP: from the quest log for quests you've accepted, else from
--- what LorePath saw at the quest giver. nil when unknown.
-local function MoneyAndXP(id)
-    if IsOnQuest(id) then
-        local money = type(GetQuestLogRewardMoney) == "function" and GetQuestLogRewardMoney(id) or 0
-        local xp = type(GetQuestLogRewardXP) == "function" and GetQuestLogRewardXP(id) or 0
-        return money, xp
-    end
-    local cached = Cache()[id]
-    if cached and (cached.money or cached.xp) then
-        return cached.money or 0, cached.xp or 0
-    end
-end
-
 -- Reputation rewards of a quest in your log: { {factionID, amount}, ... }.
-local function ReputationRewards(id)
+function ReputationRewards(id)
     local list = {}
     if not IsOnQuest(id) or type(GetNumQuestLogRewardFactions) ~= "function" then
         return list
@@ -232,21 +222,6 @@ function ns.FillQuestText(text)
     text = text:gsub("%$C", class):gsub("%$c", class:lower())
     text = text:gsub("%$R", race):gsub("%$r", race:lower())
     return text
-end
-
-local function CoinText(copper)
-    if type(GetCoinTextureString) == "function" then
-        local ok, text = pcall(GetCoinTextureString, copper)
-        if ok and text then
-            return text
-        end
-    end
-    local g, s, c = math.floor(copper / 10000), math.floor(copper / 100) % 100, copper % 100
-    local parts = {}
-    if g > 0 then table.insert(parts, g .. "g") end
-    if s > 0 then table.insert(parts, s .. "s") end
-    if c > 0 or #parts == 0 then table.insert(parts, c .. "c") end
-    return table.concat(parts, " ")
 end
 
 -- Name of an NPC by ID, from the game's creature tooltip (nil until it's cached).
@@ -581,37 +556,14 @@ local function Render(id)
         AddText("Text from LorePath's bundled quest database (pfQuest). WoW Forever's wording may differ slightly; the game's own text replaces it once you see the quest.", "GameFontDisableSmall", { 0.55, 0.55, 0.55 }, 6)
     end
 
-    -- Rewards
+    -- Rewards: items only. Gold, XP and reputation are still saved as you play
+    -- (questCache money/xp/rep), just not shown for now.
     AddHeader("Rewards")
-    local anyReward = false
     for _, itemID in ipairs(q.rw or {}) do
         AddItem(itemID)
-        anyReward = true
     end
-    local money, xp = MoneyAndXP(id)
-    if money then
-        if money > 0 then
-            AddText(CoinText(money), "GameFontHighlightSmall", nil, 6)
-            anyReward = true
-        end
-        if xp and xp > 0 then
-            AddText(xp .. " experience", "GameFontHighlightSmall", nil, 2)
-            anyReward = true
-        end
-    else
-        if done then
-            AddText("Gold and XP weren't recorded (completed before LorePath saw it).", "GameFontDisableSmall", nil, 6)
-        else
-            AddText("Gold and XP show once you accept the quest (or open it at the quest giver).", "GameFontDisableSmall", nil, 6)
-        end
-        anyReward = true
-    end
-    for _, rep in ipairs(ReputationRewards(id)) do
-        AddText(string.format("+%d reputation with %s", rep[2], ns.GetFactionName(rep[1])), "GameFontHighlightSmall", nil, 2)
-        anyReward = true
-    end
-    if not anyReward then
-        AddText("None.", "GameFontDisableSmall", nil, 4)
+    if not q.rw then
+        AddText("No item rewards.", "GameFontDisableSmall", nil, 4)
     end
 
     -- The chain around it

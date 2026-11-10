@@ -162,21 +162,29 @@ check(any(("Q" + str(t0["questID"])) in s for s in texts), "the panel shows the 
 check(any("Requires level" in s for s in texts) and any("Starts in" in s for s in texts), "the panel shows its level and where it starts")
 items = [f for f in harness["all"].values() if f["itemID"] is not None and f.IsShown(f)]
 check(len(items) == len(list(ns.Quests[t0["questID"]]["rw"].values())), f"each reward item is listed ({len(items)})")
-check(any("show once you accept" in s for s in texts), "gold and XP say they show once accepted, for a quest not in your log")
+check(not any("experience" in s or "Gold and XP" in s for s in texts), "gold and XP aren't shown in the panel")
 t0 = tile_for(t0["questID"])
 t0["__scripts"]["OnClick"](t0)
 check(not panel.IsShown(panel) and ns.detailQuest is None, "clicking the same quest again closes the panel")
 
-# In your log: gold and XP come from the quest log.
+# In your log: gold, XP and reputation rewards are saved (not shown).
 qid = t0["questID"]
 char["log"][qid] = True
 g.GetQuestLogRewardMoney = lua.eval("function(id) return 1250 end")
 g.GetQuestLogRewardXP = lua.eval("function(id) return 1400 end")
+g.GetNumQuestLogRewardFactions = lua.eval("function(id) return 1 end")
+g.GetQuestLogRewardFactionInfo = lua.eval("function(i, id) return 72, 250 end")
+g.C_QuestLog.SetSelectedQuest = lua.eval("function(id) end")
+g.C_QuestLog.GetSelectedQuest = lua.eval("function() return 0 end")
+g.GetQuestLogQuestText = lua.eval("function() return 'In-log text.', 'In-log objectives.' end")
+ns.CaptureLogQuest(qid)
+saved = g.LorePathDB["questCache"][qid]
+check(saved["money"] == 1250 and saved["xp"] == 1400, "a quest in your log has its gold and XP saved")
+check(saved["rep"] is not None and saved["rep"][1][1] == 72 and saved["rep"][1][2] == 250, "and its reputation rewards")
 ns.ShowDetail(qid)
-texts = detail_texts()
-check(any("12s 50c" in s for s in texts) and any("1400 experience" in s for s in texts),
-      "a quest in your log shows its gold and XP: " + " | ".join(s for s in texts if "experience" in s or "s " in s)[:80])
+check(not any("experience" in s or "reputation with" in s for s in detail_texts()), "none of which the panel shows")
 char["log"][qid] = None
+g.LorePathDB["questCache"][qid] = None
 
 # Text and rewards seen at a quest giver are kept for later.
 g.GetQuestID = lua.eval(f"function() return {qid} end")
@@ -187,8 +195,7 @@ g.GetRewardXP = lua.eval("function() return 900 end")
 harness.Fire("QUEST_DETAIL")
 check(g.LorePathDB["questCache"][qid]["xp"] == 900, "QUEST_DETAIL saves the quest's text and rewards")
 texts = detail_texts()
-check(any("Defias have taken the mine" in s for s in texts) and any("900 experience" in s for s in texts),
-      "the panel then shows the saved description and rewards")
+check(any("Defias have taken the mine" in s for s in texts), "the panel then shows the saved description")
 
 # Bundled quest text (pfQuest) fills gaps; what the game showed you wins.
 check(ns.FillQuestText("Hello $N, $glad:lass;!$BBye $c") == "Hello adventurer, lad!\nBye warrior",
@@ -208,7 +215,7 @@ char["completed"][6] = True
 ns.RefreshCompleted()
 ns.RefreshDetail()
 texts = detail_texts()
-check(any("weren't recorded" in s for s in texts), "a quest completed before LorePath says its gold and XP weren't recorded")
+check(any("What the game said." in s for s in texts), "a completed quest still shows its saved text")
 char["completed"][6] = None
 ns.RefreshCompleted()
 

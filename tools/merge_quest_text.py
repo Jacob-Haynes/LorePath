@@ -38,13 +38,15 @@ from lupa import LuaRuntime
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 OUT = os.path.join(ROOT, "Data", "CommunityText.lua")
 FIELDS = ("t", "o", "d", "p", "c")  # title, objectives, description, progress, completion
+REWARDS = ("m", "x", "r")  # gold (copper), XP, reputation {{factionID, amount}, ...}; saved, not shown yet
 MAX_LEN = 4000
 
 HEADER = [
     "-- Quest text collected by LorePath's players (see issue #14), for quests the",
     "-- bundled vanilla text doesn't cover, such as WoW Forever's own. Updated with",
     "-- tools/merge_quest_text.py from players' saved files; edit with care.",
-    "-- Fields: t title, o objectives, d description, p progress, c completion.",
+    "-- Fields: t title, o objectives, d description, p progress, c completion;",
+    "-- rewards m gold (copper), x XP, r reputation {{factionID, amount}}.",
     "-- $N/$C/$R/$G/$B are filled in game.",
     "local _, ns = ...",
     "ns.CommunityText = {",
@@ -87,7 +89,27 @@ def load_table(lua, path, name):
     out = {}
     for qid, entry in (ns[name] or lua.table()).items():
         out[int(qid)] = {k: entry[k] for k in FIELDS if entry[k]}
+        for k in REWARDS:
+            value = reward_value(k, entry[k])
+            if value is not None:
+                out[int(qid)][k] = value
     return out
+
+
+def reward_value(kind, value):
+    """A sane gold/XP number or reputation list, or None."""
+    if kind in ("m", "x"):
+        return int(value) if isinstance(value, (int, float)) and 0 < value < 10_000_000 else None
+    if value is None or not hasattr(value, "values"):
+        return None
+    out = []
+    for pair in value.values():
+        if pair is None or not hasattr(pair, "values"):
+            continue
+        faction, amount = pair[1], pair[2]
+        if isinstance(faction, (int, float)) and isinstance(amount, (int, float)) and 0 < faction < 100_000 and -100_000 < amount < 100_000:
+            out.append((int(faction), int(amount)))
+    return out or None
 
 
 def read_submission(lua, path):
@@ -96,7 +118,8 @@ def read_submission(lua, path):
     if lorepath is not None and lorepath["questCache"] is not None:
         quests = {}
         for qid, e in lorepath["questCache"].items():
-            quests[qid] = {"o": e["obj"], "d": e["text"], "p": e["prog"], "c": e["done"]}
+            quests[qid] = {"o": e["obj"], "d": e["text"], "p": e["prog"], "c": e["done"],
+                           "m": e["money"], "x": e["xp"], "r": e["rep"]}
         names = set()
         if lorepath["characters"] is not None:
             names.update(str(n) for n in lorepath["characters"].keys())
@@ -163,6 +186,11 @@ def main():
                 if field not in target or (args.replace and target[field] != value):
                     target[field] = value
                     fields += 1
+            for field in REWARDS:
+                value = reward_value(field, entry.get(field))
+                if value is not None and (field not in target or (args.replace and target[field] != value)):
+                    target[field] = value
+                    fields += 1
             if target:
                 community[qid] = target
                 new_quests += had == 0 and len(target) > 0
@@ -181,7 +209,11 @@ def main():
         return
     lines = list(HEADER)
     for qid in sorted(community):
-        parts = [f"{k}={lua_string(community[qid][k])}" for k in FIELDS if k in community[qid]]
+        entry = community[qid]
+        parts = [f"{k}={lua_string(entry[k])}" for k in FIELDS if k in entry]
+        parts += [f"{k}={entry[k]}" for k in ("m", "x") if k in entry]
+        if "r" in entry:
+            parts.append("r={" + ",".join(f"{{{f},{a}}}" for f, a in entry["r"]) + "}")
         lines.append(f"[{qid}]={{{','.join(parts)}}},")
     lines.append("}")
     with open(OUT, "w", encoding="utf-8") as f:
