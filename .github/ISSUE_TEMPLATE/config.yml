@@ -2,4 +2,4 @@ blank_issues_enabled: true
 contact_links:
   - name: Missing or wrong quest data
     url: https://github.com/ATTWoWAddon/AllTheThings/issues
-    about: LorePath's quest data comes from AllTheThings. Data fixes there reach every addon that uses it.
+    about: LorePath's quest list, chains, levels and start points come from AllTheThings. Fixes there reach every addon that uses it. (Quest text problems belong in LorePath's own issues.)

@@ -1,5 +1,6 @@
 -- LorePath window: zone list on the left, the selected zone's storylines drawn as
--- quest graphs on the right. Click a quest to set a waypoint to where it starts.
+-- quest graphs on the right. Click a quest for its details (Detail.lua); Ctrl+click
+-- sets a waypoint where it starts.
 
 local addonName, ns = ...
 
@@ -456,7 +457,7 @@ local function AcquireText(parent, font)
     return text
 end
 
--- A collapsible section header: [+/-] Title  3 / 7   [Show next quest]  Next: ...
+-- A collapsible section header: [+/-] Title  3 / 7   [Show on map]  Next: ...
 local function AcquireSection(parent)
     used.sections = used.sections + 1
     local s = pools.sections[used.sections]
@@ -1417,8 +1418,9 @@ local function CreateMainFrame()
     help:SetScript("OnEnter", function(self)
         GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT")
         GameTooltip:AddLine("Using LorePath", 1, 0.82, 0)
-        GameTooltip:AddLine("Click a quest to set a waypoint where it starts.", 1, 1, 1, true)
-        GameTooltip:AddLine("Click \"Next\" or \"First finish\" in a storyline header to jump to that quest.", 1, 1, 1, true)
+        GameTooltip:AddLine("Click a quest for its details; click it again to close them.", 1, 1, 1, true)
+        GameTooltip:AddLine("Ctrl+click a quest to set a waypoint where it starts.", 1, 1, 1, true)
+        GameTooltip:AddLine("Click \"Next\" or \"First finish\" in a storyline header to jump to that quest; Back returns you.", 1, 1, 1, true)
         GameTooltip:AddLine("Drag to pan; Shift+mouse wheel scrolls sideways.", 1, 1, 1, true)
         GameTooltip:AddLine(" ")
         GameTooltip:AddLine("Level colours, as in your quest log:", 1, 0.82, 0)

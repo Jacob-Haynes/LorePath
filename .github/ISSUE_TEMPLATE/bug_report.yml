@@ -7,7 +7,7 @@ body:
       value: |
         Thanks for reporting! If you saw a Lua error, turn on error pop-ups with `/console scriptErrors 1`, do the same thing again, and paste the error below.
 
-        **Missing or wrong quest?** LorePath's quest data comes from AllTheThings. Please report it here, and to [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings/issues) too if you can, so everyone benefits.
+        **Missing quest, or wrong chain, level or start point?** LorePath's quest list and chains come from AllTheThings. Please report it here, and to [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings/issues) too if you can, so everyone benefits. Wrong or missing **quest text** is LorePath's own: report that here only.
   - type: textarea
     id: what
     attributes:
@@ -25,7 +25,7 @@ body:
     id: version
     attributes:
       label: LorePath version
-      description: Shown on the settings page (Options > AddOns > LorePath), or in the name of the file you downloaded, e.g. 0.1.0-beta1.
+      description: Shown on the settings page (Options > AddOns > LorePath), in the name of the file you downloaded, or by typing `/lp help`, e.g. 1.0.0.
     validations:
       required: true
   - type: input

@@ -107,7 +107,7 @@ g.SlashCmdList["LOREPATH"]("here")
 harness.RunTimers()
 check(frame.IsShown(frame), "/lp here reopens it")
 
-# Hover every rendered quest tile (builds its tooltip) and click one (waypoint)
+# Hover every rendered quest tile (builds its tooltip) and Ctrl+click one (waypoint)
 tiles = [f for f in harness["all"].values() if f["questID"] is not None and f.IsShown(f)]
 errors = 0
 for tile in tiles:

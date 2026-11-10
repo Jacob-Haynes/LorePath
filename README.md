@@ -2,34 +2,43 @@
 
 "Hold your own hand"
 
-**LorePath** is a lightweight WoW Forever addon that maps *your* story. For every zone it draws each questline as a storyline graph, in the style of Attuned's attunement paths. It shows what you've done, what you've missed, and where the next part of each story starts.
+**LorePath** is a lightweight WoW Forever addon that maps *your* story. For every zone, dungeon and raid it draws each questline as a storyline graph, in the style of Attune's attunement paths. It shows what you've done, what you've missed and where the next part of each story starts. Click any quest to read its story.
 
 It's not a quest helper. There are no map pins and no objective tracking, so it sits happily alongside the default quest UI.
 
-> **Status: prototype (0.1.0).** It covers outdoor zone, dungeon and raid quests. Lore comes later.
+> **Version 1.0.0.** Lore beyond quest text (zones, characters, a codex) is planned.
 
 ---
 
 ## What it shows
 
-- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75*). Dungeons and raids get their own pages, under **Dungeons** and **Raids** headings. Inside an instance, the window opens on its page.
-- **Storylines:** each zone's quest chains, drawn left to right from the first quest to the last. Lines join each quest to the ones it unlocks.
-- **Other quests:** standalone quests with no chain, listed under each zone's storylines.
+- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons and raids get their own pages under **Dungeons** and **Raids** headings, and inside an instance the window opens on its page. Headings collapse, and the whole list can be hidden to give the graph more room.
+- **Storylines:** each page's quest chains, drawn left to right from the first quest to the last, with lines joining each quest to the ones it unlocks. Each storyline can be collapsed, and finished ones start collapsed. **Expand all** and **Collapse all** sit at the top.
+- **Other quests:** standalone quests with no chain, under each page's storylines.
 - **Only your quests:** quests for another faction, race or class are left out. Profession quests show only if you have that profession.
-- **Quest colours:**
+- **Quest boxes:**
 
-  | Colour | Meaning |
+  | Look | Meaning |
   | :--- | :--- |
-  | Green | Completed |
-  | Gold | In your quest log |
-  | Blue | Available now |
-  | Orange | Needs a higher level |
-  | Grey | Needs an earlier quest first |
-  | Dark grey | A breadcrumb you went past |
+  | Green box, ✓ | Completed |
+  | Gold box, ? | In your quest log |
+  | Dark box, yellow ! | Available now. The name is coloured by difficulty, as in your quest log |
+  | Blue box, blue ! | Repeatable (daily and repeatable quests). Never counts toward progress |
+  | Dark box, grey !, red level | Too high level, or your profession skill or reputation is too low |
+  | Dimmed box, padlock | Needs an earlier quest first |
+  | Dimmest box, ✗ | Skipped: a breadcrumb you went past, or a quest your reputation is now too high for |
 
-- **Tooltips:** hover a quest to see its level, what it needs, what comes before and after it, where it starts, and its rewards.
-- **Quest details:** click a quest to open a panel beside the window with its requirements, where it starts (and who gives it), its objectives and text, its rewards (items, plus gold and XP once you've accepted it or seen it at the quest giver) and the quests before and after it. Click the same quest again to close the panel.
-- **Waypoints:** Ctrl+click a quest, or use **Show on map** in its details, to set the game's own waypoint where it starts and open the map there. Each storyline also has a **Show on map** button for its next quest, and clicking **Next** or **First finish** in a storyline's header jumps to that quest.
+  Class quests show your class icon, and breadcrumbs a letter. The "?" button in the footer explains the level colours.
+- **Tooltips:** hover a quest for its level, status, what it needs (earlier quests, reputation, skill), what comes before and after it, where it starts, and its item rewards.
+- **Quest details:** click a quest to open a panel beside the window, and click it again to close it. The panel shows:
+  - requirements;
+  - where it starts and who gives it;
+  - its objectives and description, plus progress and completion text;
+  - its item rewards;
+  - the quests before and after it, as links;
+  - its address on WarcraftDB, to copy.
+- **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
+- **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
 
 ### Controls
 
@@ -37,26 +46,43 @@ It's not a quest helper. There are no map pins and no objective tracking, so it 
 | :--- | :--- |
 | Open or close | Left-click the minimap button, `/lp`, the addons menu by the minimap, or a key binding (*Options → Key Bindings → AddOns → LorePath*) |
 | Open on your current zone | `/lp here` |
-| Settings | Right-click the minimap button, the **Settings** button in the window, `/lp config`, or *Options → AddOns → LorePath* |
+| Settings | Right-click the minimap button or the addons-menu entry, the **Settings** button in the window, `/lp config` (or `/lp settings`, `/lp options`), or *Options → AddOns → LorePath* |
+| Quest details | Click a quest; click it again to close the panel |
+| Waypoint | Ctrl+click a quest, or **Show on map** |
+| Collapse | Click a storyline's or heading's +/−, or **Expand all** / **Collapse all** |
+| Hide the zone list | The arrow button left of the zone name |
+| Show or hide repeatable quests | The **Repeatable** tick box, `/lp repeatable`, or the settings page |
 | Show or hide the minimap button | `/lp minimap`, or the settings page |
+| Move the window | Drag its title bar |
 | Move the minimap button | Drag it around the minimap |
 | Scroll | Mouse wheel, or Shift + wheel to scroll sideways |
 | Pan around a large graph | Drag with the left mouse button |
 | Close | Escape |
+
+`/lorepath` works the same as `/lp`, and `/lp help` lists the commands and shows your version.
 
 ### Settings
 
 | Option | Default | What it does |
 | :--- | :--- | :--- |
 | Show minimap button | On | Left-click opens LorePath, right-click opens settings. |
-| Open on the zone you're in | On | Each time the window opens, it jumps to your current zone. Off: it reopens on the last zone you looked at. |
+| Open on the zone you're in | On | Each time the window opens, it jumps to your current zone (or instance). Off: it reopens on the last page you looked at. |
 | Hide finished storylines | Off | Leaves out storylines where every quest is done. |
-| Show standalone quests | On | Lists quests that aren't part of a chain under each zone's storylines. |
-| Show quest levels on tiles | On | Shows each quest's minimum level on its tile. |
+| Show standalone quests | On | Lists quests that aren't part of a chain under each page's storylines. |
+| Show repeatable quests | On | Shows daily and repeatable quests, in blue. Same as the **Repeatable** tick box. |
+| Show quest levels on tiles | On | Shows each quest's minimum level on its tile. Quests that are too high level always show it, in red. |
 | Open the map when setting a waypoint | On | Opens the world map at the quest's start when you set a waypoint. |
 | Window size | 100% | Scales the window from 60% to 140%. |
 
-Settings are saved per account in `LorePathDB`. The settings page also has **Reset to defaults**.
+**Reset to defaults** on the settings page puts every setting back, re-opens collapsed storylines and headings, and shows the zone list again. It keeps your saved quest text.
+
+### What LorePath saves
+
+Everything is saved per account in `LorePathDB` (`WTF/Account/<account>/SavedVariables/LorePath.lua`):
+- **Settings:** the settings above, plus where the minimap button sits and the last page you looked at.
+- **Window layout:** which storylines and headings are collapsed, and whether the zone list is hidden.
+- **Quest text (`questCache`):** what the game shows you, saved as you play: description, objectives, progress and completion text. Your character's name is stored as `$N`. Gold, XP and reputation rewards are saved too, but not shown yet.
+- **Character names (`characters`):** your account's character names, so `tools/merge_quest_text.py` can strip any that slip into shared text.
 
 ---
 
@@ -64,13 +90,12 @@ Settings are saved per account in `LorePathDB`. The settings page also has **Res
 
 | Data | Source |
 | :--- | :--- |
-| Which quests exist, their chains, level, faction/race/class, start location, rewards | [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings)' WoW Forever database (MIT), extracted into `Data/Quests.lua` |
-| What you've completed, what's in your log, your level, race, class, faction, professions | The game client, live |
-| Quest, zone and item names | The game client, in your language |
-| Quest text (objectives, description, closing text) and gold/XP rewards | Saved from the game as you play: when a quest giver shows a quest, when you accept it, at the turn-in screen, and everything in your log at login. Kept per account in `LorePathDB` |
-| Quest text for quests you haven't seen since installing LorePath | [pfQuest](https://github.com/shagu/pfQuest)'s English quest database (MIT, originally from VMaNGOS), extracted into `Data/QuestText.lua`. It covers vanilla quests only, not WoW Forever's own, and the game's text replaces it once you see the quest |
+| Which quests exist, their chains, level, faction/race/class, profession and reputation requirements, repeatables, start location, quest giver, item rewards, and dungeon and raid pages | [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings)' WoW Forever database (MIT), extracted into `Data/Quests.lua`: 4,184 quests on 50 zone pages and 27 dungeon and raid pages |
+| What you've completed, what's in your log, your level, race, class, faction, professions and reputation | The game client, live |
+| Quest, zone, item, NPC and faction names | The game client, in your language |
+| Quest text: description, objectives, progress and completion text | In this order:<br>1. **What you've seen:** saved from the game as you play (when a quest giver shows a quest, when you accept it, when you hand items in, at the turn-in screen, and your quest log at login).<br>2. **Community text:** `Data/CommunityText.lua`, collected by players, including WoW Forever's own quests (250 quests so far).<br>3. **The game's own quest-link tooltip:** the quest's goal and requirements, even for quests completed long ago.<br>4. **Bundled vanilla text:** [pfQuest](https://github.com/shagu/pfQuest)'s English quest database (MIT, originally from VMaNGOS), in `Data/QuestText.lua`: 3,285 vanilla quests, not WoW Forever's own. |
 
-Gaps in AllTheThings' Forever data show up in LorePath too. Report missing or wrong quests to AllTheThings so everyone benefits.
+Missing quests, or wrong chains, levels or start points, come from AllTheThings' Forever data. Please report them to AllTheThings too, so everyone benefits. Wrong or missing quest text is LorePath's own.
 
 ### Updating the quest data
 
@@ -81,7 +106,10 @@ git clone --depth 1 --filter=blob:none --sparse https://github.com/ATTWoWAddon/A
 python3 tools/extract_att.py att
 ```
 
-`tools/extract_att.py` loads AllTheThings' Forever zone data in a sandboxed Lua runtime, then writes the quest records LorePath needs. It skips repeatable quests, quests AllTheThings marks as unavailable, and quests removed from the game. The header of `Data/Quests.lua` records the AllTheThings commit the data came from.
+`tools/extract_att.py` loads AllTheThings' Forever zone data (`Categories/Zones.lua`) and dungeon and raid data (`Categories/Instances.lua`) in a sandboxed Lua runtime, then writes the quest records LorePath needs.
+- **Kept:** repeatable quests, flagged `rp`.
+- **Skipped:** quests AllTheThings marks unavailable, and quests added after or removed by Forever's build.
+- **Recorded:** the header of `Data/Quests.lua` names the AllTheThings commit the data came from.
 
 To see what changed, compare against the committed file:
 
@@ -90,41 +118,73 @@ git show HEAD:Data/Quests.lua > /tmp/Quests.old.lua
 python3 tools/diff_quests.py /tmp/Quests.old.lua Data/Quests.lua
 ```
 
-The [Sync quest data from AllTheThings](.github/workflows/sync-att-data.yml) workflow does this every Monday (or on demand from the Actions tab). If the quest data changed, it opens or updates a PR from the `data/att-sync` branch with the summary. It fails instead if the quest count drops by more than 10%, a zone disappears, the data doesn't load, or the tests fail. Merging and releasing stay manual.
+The [Sync quest data from AllTheThings](.github/workflows/sync-att-data.yml) workflow does this every Monday, or on demand from the Actions tab:
+- **If the quest data changed,** it opens or updates a PR from the `data/att-sync` branch with the summary.
+- **It fails instead** if the quest count drops by more than 10%, a zone disappears, the data doesn't load, or the tests fail.
+- **Merging and releasing stay manual.**
+- **Repository setting:** opening the PR needs *Settings → Actions → General → Allow GitHub Actions to create and approve pull requests* turned on.
 
-`Data/QuestText.lua` (the bundled vanilla quest text) is a one-off import: vanilla quest text doesn't change, so it isn't part of the weekly sync. `python3 tools/extract_pfquest.py` rebuilds it if ever needed, for example after new vanilla quests appear in `Data/Quests.lua`.
+`Data/QuestText.lua`, the bundled vanilla text, is a one-off import and isn't part of the weekly sync, because vanilla quest text doesn't change. `python3 tools/extract_pfquest.py` rebuilds it if ever needed, for example after new vanilla quests appear in `Data/Quests.lua`.
 
 ### Adding players' quest text
 
-LorePath saves the quest text each player sees (with their name swapped for `$N`). To add what someone has collected to `Data/CommunityText.lua`, so everyone gets it in the next release, take their saved file from `WTF/Account/<account>/SavedVariables/LorePath.lua` (or your own) and run:
+To add the quest text someone has collected to `Data/CommunityText.lua`, so everyone gets it in the next release, take their saved file (`WTF/Account/<account>/SavedVariables/LorePath.lua`), or your own, and run:
 
 ```bash
 python3 tools/merge_quest_text.py --dry-run path/to/LorePath.lua   # see what it would add
 python3 tools/merge_quest_text.py path/to/LorePath.lua
 ```
 
-It only adds text for quests LorePath knows, never overwrites existing community text (unless `--replace`), strips character names, colour codes and links, skips text the bundled vanilla text already has, and loads each file in a sandbox with no Lua libraries. Review the diff before committing.
+What it does:
+- **Scope:** only adds text for quests LorePath knows, and never overwrites existing community text unless you pass `--replace`.
+- **Clean-up:** strips character names (to `$N`), colour codes and links, and skips text the bundled vanilla text already has.
+- **Rewards:** carries saved gold, XP and reputation rewards over too.
+- **Safety:** loads each file in a sandbox with no Lua libraries.
+
+Review the diff before committing. A saved file also contains the player's character names and settings.
 
 ### Tests
 
 ```bash
+pip install lupa
 python3 tools/test/run_tests.py
 ```
 
-This runs the addon's Lua against a fake WoW API with the real quest data, as a Human Warrior and an Orc Warrior. It checks eligibility, quest statuses, storyline building, waypoints, the minimap button, every setting, and that the window, settings page and tooltips build without errors. It can't check how things look in game.
+This runs the addon's Lua against a fake WoW API with the real quest data, as Human, Orc and other characters, about 190 checks in all. It covers:
+- eligibility, reputation and repeatable quests;
+- quest statuses and storyline building;
+- dungeon and raid pages;
+- jumping and **Back**;
+- the detail panel and its text sources;
+- saving quest text as you play;
+- waypoints, the minimap button and every setting;
+- **Reset to defaults**;
+- error safety: any error the addon catches fails the run.
+
+It can't check how things look in game.
 
 ---
 
 ## Installing
 
-1. Download the latest release zip, or clone this repository.
-2. Copy the `LorePath` folder into WoW Forever's `Interface/AddOns` folder. To find it, in the Battle.net app, pick WoW Forever, click the gear icon, choose **Show in Explorer** (**Show in Finder** on macOS), and open the Forever folder.
-3. Start the game (or `/reload`), and type `/lp`.
+1. **Get it:** install from [CurseForge](https://www.curseforge.com/projects/1793930) (or the CurseForge app), or download the latest release zip from GitHub Releases. Cloning this repository also works, but brings the `tools` and `media` folders along.
+2. **Copy it:** put the `LorePath` folder into WoW Forever's `Interface/AddOns` folder. To find it, in the Battle.net app, pick WoW Forever, click the gear icon, choose **Show in Explorer** (**Show in Finder** on macOS), and open the Forever folder.
+3. **Start it:** start the game, or `/reload`, and type `/lp`.
 
 ## Releasing
 
-Tagged pushes (`v*`) build the addon with [BigWigsMods/packager](https://github.com/BigWigsMods/packager) and attach it to a GitHub Release. The `tools` folder and this README are left out of the package. It also uploads to CurseForge (project 1793930, set by `## X-Curse-Project-ID` in `LorePath.toc`) using the `CF_API_KEY` repository secret. Tags containing "beta" or "alpha" upload as beta or alpha files.
+1. Bump `## Version` in `LorePath.toc` and add the release to `CHANGELOG.md`.
+2. Push a tag (`v*`). [BigWigsMods/packager](https://github.com/BigWigsMods/packager) builds the addon, attaches it to a GitHub Release and uploads it to CurseForge.
+   - **CurseForge:** project 1793930, set by `## X-Curse-Project-ID` in `LorePath.toc`, using the `CF_API_KEY` repository secret.
+   - **Release type:** tags containing "beta" or "alpha" upload as beta or alpha files; other tags are full releases.
+   - **Release notes:** `CHANGELOG.md`.
+   - **Left out of the package:** `README.md`, `CHANGELOG.md`, `tools` and `media`.
 
 ## Licence
 
-LorePath is MIT-licensed. The quest data in `Data/Quests.lua` is derived from AllTheThings, which is also MIT-licensed; its licence is included in `Data/AllTheThings-LICENSE.txt`. The bundled quest text in `Data/QuestText.lua` comes from pfQuest (MIT, licence in `Data/pfQuest-LICENSE.txt`), which took it from the VMaNGOS project; the quest text itself is Blizzard's.
+LorePath is MIT-licensed. Its bundled data:
+- **`Data/Quests.lua`** is derived from AllTheThings, also MIT-licensed. Its licence is in `Data/AllTheThings-LICENSE.txt`.
+- **`Data/QuestText.lua`** comes from pfQuest (MIT, licence in `Data/pfQuest-LICENSE.txt`), which took it from the VMaNGOS project.
+- **`Data/CommunityText.lua`** was collected in game by LorePath's players.
+
+The quest text itself is Blizzard's.

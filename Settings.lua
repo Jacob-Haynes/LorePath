@@ -156,7 +156,7 @@ function ns.CreateSettingsPanel()
     anchor = AddCheckbox(anchor, "showLevels", "Show quest levels on tiles",
         "Show each quest's minimum level at the left of its tile.")
     anchor = AddCheckbox(anchor, "openMapOnWaypoint", "Open the map when setting a waypoint",
-        "Clicking a quest sets the game's waypoint on where it starts. With this on, the world map also opens there.")
+        "Ctrl+clicking a quest, or Show on map, sets the game's waypoint where it starts. With this on, the world map also opens there.")
 
     -- Window scale: - / + buttons (works on every client, unlike slider templates)
     local scaleLabel = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")

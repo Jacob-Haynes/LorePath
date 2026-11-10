@@ -22,7 +22,7 @@ The first full release. Everything from the betas, plus:
 - **Ctrl+click** a quest to set its waypoint (a plain click used to).
 - **Quest text saved as you play:** when a quest giver shows a quest, when you accept it, when you hand items in, at the turn-in screen, and everything in your log at login. Your character's name is stored as `$N`.
 - **Filling gaps for quests from before you installed LorePath:**
-  - community text, seeded with 250 quests, 126 of them WoW Forever's own;
+  - community text, seeded with 250 quests, 126 of them with no other source of text (almost all WoW Forever's own);
   - the game's own quest link goal and requirements;
   - bundled vanilla quest text from pfQuest, covering 3,285 quests.
 - **Recipe, mount and toy rewards** are now listed (79 quests gained rewards).

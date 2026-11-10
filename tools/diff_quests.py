@@ -7,7 +7,9 @@ Usage:
     python3 tools/diff_quests.py /tmp/Quests.old.lua Data/Quests.lua
 
 Prints a Markdown report: quests added, removed and changed, per zone mapID.
-The header comment is ignored; only the data is compared.
+The header comment is ignored; only the data is compared: ns.Quests and
+ns.ZoneContinents. Changes to instance pages (ns.InstanceZones/InstanceInfo:
+dungeon or raid, names) aren't reported.
 
 With --check, it also fails (exit 1) if the new file looks broken:
   - it has more than 10% fewer quests than the old one,

@@ -1,6 +1,6 @@
 ## Interface: 16001
 ## Title: LorePath
-## Notes: See every questline in each zone as a storyline map: what you've done, what you've missed, and where the next quest starts.
+## Notes: See every questline in each zone, dungeon and raid as a storyline map: what you've done, what you've missed, where the next quest starts, and each quest's story.
 ## Author: Jacob Haynes
 ## Version: 1.0.0
 ## SavedVariables: LorePathDB

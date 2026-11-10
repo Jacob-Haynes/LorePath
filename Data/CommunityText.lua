@@ -1,7 +1,8 @@
 -- Quest text collected by LorePath's players (see issue #14), for quests the
--- bundled vanilla text doesn't cover, such as WoW Forever's own. Seeded from a
--- player's saved quest history; edit with care.
--- Fields: t title, o objectives, d description, p progress, c completion.
+-- bundled vanilla text doesn't cover, such as WoW Forever's own. Updated with
+-- tools/merge_quest_text.py from players' saved files; edit with care.
+-- Fields: t title, o objectives, d description, p progress, c completion;
+-- rewards m gold (copper), x XP, r reputation {{factionID, amount}}.
 -- $N/$C/$R/$G/$B are filled in game.
 local _, ns = ...
 ns.CommunityText = {

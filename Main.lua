@@ -1,4 +1,5 @@
--- LorePath: events, saved settings and slash commands.
+-- LorePath: events (including saving quest text as you play), error safety and
+-- slash commands.
 
 local addonName, ns = ...
 

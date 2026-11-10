@@ -1,6 +1,7 @@
 -- LorePath quest detail panel: pops out from the right edge of the main window
 -- when you click a quest, and shows what the game (and LorePath's data) knows
--- about it: requirements, where it starts, quest text, rewards and the chain.
+-- about it: requirements, where it starts, quest text, item rewards and the chain.
+-- Also saves quest text and rewards as you play (LorePathDB.questCache).
 
 local addonName, ns = ...
 
@@ -224,7 +225,6 @@ function ns.FillQuestText(text)
     return text
 end
 
--- Name of an NPC by ID, from the game's creature tooltip (nil until it's cached).
 -- The quest's link tooltip (what you see hovering a quest link in chat): its
 -- one-line goal and its requirements. The client gives this for any quest it
 -- can load, including completed ones and WoW Forever's own.
@@ -252,6 +252,7 @@ function QuestLinkText(id)
     return #summary > 0 and table.concat(summary, " ") or nil, goals
 end
 
+-- Name of an NPC by ID, from the game's creature tooltip (nil until it's cached).
 local function NPCName(npcID)
     if not (C_TooltipInfo and C_TooltipInfo.GetHyperlink) then
         return nil

@@ -23,6 +23,8 @@ Rules:
     links are stripped, and implausibly long text is rejected.
   - Quest text that the bundled vanilla text (Data/QuestText.lua) already has
     word for word isn't duplicated.
+  - Saved gold, XP and reputation rewards are carried over too (m, x, r), within
+    sane limits. LorePath doesn't display them yet.
 
 The files run in a sandboxed Lua state with no libraries, so a submitted file
 can't do anything but define data.
