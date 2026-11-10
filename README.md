@@ -67,6 +67,8 @@ Settings are saved per account in `LorePathDB`. The settings page also has **Res
 | Which quests exist, their chains, level, faction/race/class, start location, rewards | [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings)' WoW Forever database (MIT), extracted into `Data/Quests.lua` |
 | What you've completed, what's in your log, your level, race, class, faction, professions | The game client, live |
 | Quest, zone and item names | The game client, in your language |
+| Quest text (objectives, description, closing text) and gold/XP rewards | Saved from the game as you play: when a quest giver shows a quest, when you accept it, at the turn-in screen, and everything in your log at login. Kept per account in `LorePathDB` |
+| Quest text for quests you haven't seen since installing LorePath | [pfQuest](https://github.com/shagu/pfQuest)'s English quest database (MIT, originally from VMaNGOS), extracted into `Data/QuestText.lua`. It covers vanilla quests only, not WoW Forever's own, and the game's text replaces it once you see the quest |
 
 Gaps in AllTheThings' Forever data show up in LorePath too. Report missing or wrong quests to AllTheThings so everyone benefits.
 
@@ -77,6 +79,7 @@ pip install lupa
 git clone --depth 1 --filter=blob:none --sparse https://github.com/ATTWoWAddon/AllTheThings.git att
 (cd att && git sparse-checkout set db/Camelot)
 python3 tools/extract_att.py att
+python3 tools/extract_pfquest.py
 ```
 
 `tools/extract_att.py` loads AllTheThings' Forever zone data in a sandboxed Lua runtime, then writes the quest records LorePath needs. It skips repeatable quests, quests AllTheThings marks as unavailable, and quests removed from the game. The header of `Data/Quests.lua` records the AllTheThings commit the data came from.
@@ -112,4 +115,4 @@ Tagged pushes (`v*`) build the addon with [BigWigsMods/packager](https://github.
 
 ## Licence
 
-LorePath is MIT-licensed. The quest data in `Data/Quests.lua` is derived from AllTheThings, which is also MIT-licensed; its licence is included in `Data/AllTheThings-LICENSE.txt`.
+LorePath is MIT-licensed. The quest data in `Data/Quests.lua` is derived from AllTheThings, which is also MIT-licensed; its licence is included in `Data/AllTheThings-LICENSE.txt`. The bundled quest text in `Data/QuestText.lua` comes from pfQuest (MIT, licence in `Data/pfQuest-LICENSE.txt`), which took it from the VMaNGOS project; the quest text itself is Blizzard's.

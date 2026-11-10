@@ -17,11 +17,12 @@ for _, event in ipairs({
     "SKILL_LINES_CHANGED",
     "UPDATE_FACTION",
     "QUEST_DETAIL",
+    "QUEST_COMPLETE",
 }) do
     pcall(events.RegisterEvent, events, event)
 end
 
-events:SetScript("OnEvent", function(_, event, arg1)
+events:SetScript("OnEvent", function(_, event, arg1, arg2)
     if event == "ADDON_LOADED" then
         if arg1 == addonName then
             ns.InitDB()
@@ -29,9 +30,19 @@ events:SetScript("OnEvent", function(_, event, arg1)
         end
     elseif event == "PLAYER_LOGIN" then
         ns.CreateMinimapButton()
+        -- Save the text of everything already in your log once it has loaded.
+        C_Timer.After(5, ns.CaptureQuestLog)
     elseif event == "QUEST_TURNED_IN" then
         -- The completed-quest list updates a moment after the turn-in.
         ns.QueueRefresh(0.6)
+    elseif event == "QUEST_ACCEPTED" then
+        -- Newer clients pass (questID), older ones (logIndex, questID).
+        local questID = arg2 or arg1
+        C_Timer.After(0.5, function() ns.CaptureLogQuest(questID) end)
+        ns.QueueRefresh(0.3)
+    elseif event == "QUEST_COMPLETE" then
+        -- The turn-in screen: keep the quest's closing text.
+        ns.CaptureQuestComplete()
     elseif event == "QUEST_DETAIL" then
         -- A quest giver is showing a quest: keep its text and rewards for the detail panel.
         ns.CaptureQuestDetail()

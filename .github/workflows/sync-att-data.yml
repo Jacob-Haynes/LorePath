@@ -47,6 +47,8 @@ jobs:
         run: |
           cp Data/Quests.lua "$RUNNER_TEMP/Quests.old.lua"
           python3 tools/extract_att.py att
+          # Bundled quest text from pfQuest, for the quests now in Data/Quests.lua.
+          python3 tools/extract_pfquest.py
 
       # Fails the run (no PR) if the new data loses more than 10% of quests,
       # loses a zone, or doesn't load as Lua. Writes the PR summary as it goes.
@@ -79,7 +81,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -C "$SYNC_BRANCH"
-          git add Data/Quests.lua Data/AllTheThings-LICENSE.txt
+          git add Data/Quests.lua Data/AllTheThings-LICENSE.txt Data/QuestText.lua Data/pfQuest-LICENSE.txt
           git commit -m "Sync quest data from AllTheThings $short" \
             -m "Source: https://github.com/ATTWoWAddon/AllTheThings/commit/$ATT_SHA ($ATT_DATE)"
           # The branch is rebuilt from the default branch on every run, so it

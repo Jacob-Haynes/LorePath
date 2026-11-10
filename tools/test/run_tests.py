@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Core.lua", "UI.lua", "Detail.lua", "Settings.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestText.lua", "Core.lua", "UI.lua", "Detail.lua", "Settings.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -189,6 +189,55 @@ check(g.LorePathDB["questCache"][qid]["xp"] == 900, "QUEST_DETAIL saves the ques
 texts = detail_texts()
 check(any("Defias have taken the mine" in s for s in texts) and any("900 experience" in s for s in texts),
       "the panel then shows the saved description and rewards")
+
+# Bundled quest text (pfQuest) fills gaps; what the game showed you wins.
+check(ns.FillQuestText("Hello $N, $glad:lass;!$BBye $c") == "Hello adventurer, lad!\nBye warrior",
+      "quest text placeholders are filled in: " + repr(ns.FillQuestText("Hello $N, $glad:lass;!$BBye $c")))
+check(ns.QuestText[6] is not None and "Garrick Padfoot" in ns.QuestText[6]["o"], "quest 6 (Garrick Padfoot) has bundled text")
+g.LorePathDB["questCache"][6] = None
+ns.ShowDetail(6)
+texts = detail_texts()
+check(any("bounty" in s.lower() and "$N" not in s for s in texts), "a quest you haven't seen shows its bundled description, placeholders filled")
+check(any("bundled quest database" in s for s in texts), "and says the text is from the bundled database")
+g.LorePathDB["questCache"][6] = lua.table_from({"text": "What the game said."})
+ns.RefreshDetail()
+texts = detail_texts()
+check(any("What the game said." in s for s in texts) and not any("Garrick has gathered" in s for s in texts),
+      "text saved from the game replaces the bundled description")
+char["completed"][6] = True
+ns.RefreshCompleted()
+ns.RefreshDetail()
+texts = detail_texts()
+check(any("weren't recorded" in s for s in texts), "a quest completed before LorePath says its gold and XP weren't recorded")
+char["completed"][6] = None
+ns.RefreshCompleted()
+
+# The turn-in screen's closing text is kept and shown.
+g.GetQuestID = lua.eval("function() return 6 end")
+g.GetRewardText = lua.eval("function() return 'Good work, $N. Here is your bounty.' end")
+harness.Fire("QUEST_COMPLETE")
+check(g.LorePathDB["questCache"][6]["done"] is not None, "QUEST_COMPLETE saves the quest's closing text")
+texts = detail_texts()
+check(any("Good work, adventurer" in s for s in texts), "the panel shows it under Completion")
+
+# Accepting a quest saves its log text, so it's still there after you turn it in.
+g.C_QuestLog.SetSelectedQuest = lua.eval("function(id) end")
+g.C_QuestLog.GetSelectedQuest = lua.eval("function() return 0 end")
+g.GetQuestLogQuestText = lua.eval("function() return 'Log description.', 'Log objectives.' end")
+char["log"][783] = True
+harness.Fire("QUEST_ACCEPTED", 783)
+harness.RunTimers()
+check(g.LorePathDB["questCache"][783]["text"] == "Log description.", "QUEST_ACCEPTED saves the quest log's text")
+char["log"][783] = None
+
+# A Forever-only quest you've done, with nothing saved, explains the gap.
+forever_done = next(qid for qid in ns.Quests.keys() if qid >= 90000 and ns.QuestText[qid] is None and ns.IsEligible(qid))
+char["completed"][forever_done] = True
+ns.RefreshCompleted()
+ns.ShowDetail(forever_done)
+check(any("completed this before LorePath" in s for s in detail_texts()), "a done Forever quest with no text says why it's missing")
+char["completed"][forever_done] = None
+ns.RefreshCompleted()
 
 # Storyline links jump to the earlier quest and show it.
 with_pre = next(i for i in [f["questID"] for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)]

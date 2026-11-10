@@ -27,35 +27,92 @@ local function Cache()
     return LorePathDB.questCache
 end
 
--- Saves the text and rewards the game shows when a quest giver offers a quest,
--- so they're still there later for quests you haven't accepted.
-function ns.CaptureQuestDetail()
-    local id = type(GetQuestID) == "function" and GetQuestID()
-    if not id or id == 0 or not ns.Quests[id] then
-        return
-    end
-    local entry = Cache()[id] or {}
-    local function Get(fn)
-        if type(fn) == "function" then
-            local ok, value = pcall(fn)
-            if ok then
-                return value
-            end
+local function Get(fn, ...)
+    if type(fn) == "function" then
+        local ok, value = pcall(fn, ...)
+        if ok and value ~= "" then
+            return value
         end
     end
-    entry.text = Get(GetQuestText) or entry.text
-    entry.obj = Get(GetObjectiveText) or entry.obj
-    entry.money = Get(GetRewardMoney) or entry.money
-    entry.xp = Get(GetRewardXP) or entry.xp
+end
+
+local LogQuestText -- defined below
+
+local function Saved(id)
+    local entry = Cache()[id] or {}
     Cache()[id] = entry
+    return entry
+end
+
+local function AfterCapture(id)
     if panel and panel:IsShown() and ns.detailQuest == id then
         ns.RefreshDetail()
     end
 end
 
+-- What a quest giver shows when it offers a quest (QUEST_DETAIL): its text,
+-- objectives and rewards, kept for quests you don't accept straight away.
+function ns.CaptureQuestDetail()
+    local id = Get(GetQuestID)
+    if not id or id == 0 or not ns.Quests[id] then
+        return
+    end
+    local entry = Saved(id)
+    entry.text = Get(GetQuestText) or entry.text
+    entry.obj = Get(GetObjectiveText) or entry.obj
+    entry.money = Get(GetRewardMoney) or entry.money
+    entry.xp = Get(GetRewardXP) or entry.xp
+    AfterCapture(id)
+end
+
+-- The reward screen at turn-in (QUEST_COMPLETE): the quest's closing text,
+-- which is the end of that part of the story.
+function ns.CaptureQuestComplete()
+    local id = Get(GetQuestID)
+    if not id or id == 0 or not ns.Quests[id] then
+        return
+    end
+    local entry = Saved(id)
+    entry.done = Get(GetRewardText) or entry.done
+    entry.money = Get(GetRewardMoney) or entry.money
+    entry.xp = Get(GetRewardXP) or entry.xp
+    AfterCapture(id)
+end
+
+-- A quest in your log: its text, objectives and rewards, saved so they're
+-- still there after you turn it in.
+function ns.CaptureLogQuest(id)
+    if not id or not ns.Quests[id] or not IsOnQuest(id) then
+        return
+    end
+    local entry = Saved(id)
+    local text, objectives = LogQuestText(id)
+    entry.text = text or entry.text
+    entry.obj = objectives or entry.obj
+    local money, xp = Get(GetQuestLogRewardMoney, id), Get(GetQuestLogRewardXP, id)
+    if (money and money > 0) or (xp and xp > 0) then
+        entry.money, entry.xp = money or 0, xp or 0
+    end
+    AfterCapture(id)
+end
+
+-- Everything currently in your log (at login, so installing LorePath mid-quest
+-- still captures those quests).
+function ns.CaptureQuestLog()
+    if not (C_QuestLog.GetNumQuestLogEntries and C_QuestLog.GetInfo) then
+        return
+    end
+    for i = 1, C_QuestLog.GetNumQuestLogEntries() do
+        local info = C_QuestLog.GetInfo(i)
+        if info and not info.isHeader and info.questID then
+            ns.CaptureLogQuest(info.questID)
+        end
+    end
+end
+
 -- Description and objectives text of a quest in your log (the log reads the
 -- selected quest, so select it briefly and put the old selection back).
-local function LogQuestText(id)
+function LogQuestText(id)
     if not (IsOnQuest(id) and C_QuestLog.SetSelectedQuest and type(GetQuestLogQuestText) == "function") then
         return nil
     end
@@ -124,6 +181,26 @@ local function ReputationRewards(id)
         end
     end
     return list
+end
+
+-- Fills in quest text placeholders: $N name, $C class, $R race, $G male:female;
+-- and $B line breaks.
+function ns.FillQuestText(text)
+    if type(text) ~= "string" then
+        return text
+    end
+    local name = (UnitName and UnitName("player")) or "adventurer"
+    local class = (UnitClass and UnitClass("player")) or "adventurer"
+    local race = (UnitRace and UnitRace("player")) or "traveller"
+    local female = UnitSex and UnitSex("player") == 3
+    text = text:gsub("%$[Gg]%s*([^:;]-)%s*:%s*([^;]-)%s*;", function(male, fem)
+        return female and fem or male
+    end)
+    text = text:gsub("%$[Bb]", "\n")
+    text = text:gsub("%$[Nn]", name)
+    text = text:gsub("%$C", class):gsub("%$c", class:lower())
+    text = text:gsub("%$R", race):gsub("%$r", race:lower())
+    return text
 end
 
 local function CoinText(copper)
@@ -383,24 +460,56 @@ local function Render(id)
         cursor = cursor + 22
     end
 
-    -- Quest text
+    -- Quest text: what the game showed you (saved as you play) comes first; the
+    -- bundled text (pfQuest) only fills gaps, such as quests done before LorePath.
     local logText, logObjectives = LogQuestText(id)
     local cached = Cache()[id] or {}
-    local objectives = Objectives(id)
+    local bundled = ns.QuestText and ns.QuestText[id] or {}
+    local done = status == S.DONE
+    local usedBundled = false
+
     AddHeader("Objectives")
-    if #objectives > 0 then
+    local objectives = Objectives(id)
+    if not done and #objectives > 0 then
         for _, o in ipairs(objectives) do
             AddText((o.done and "|cff6bd35f" or "") .. "- " .. o.text .. (o.done and "|r" or ""), "GameFontHighlightSmall", nil, 2, 6)
         end
-    elseif logObjectives or cached.obj then
-        AddText(logObjectives or cached.obj, "GameFontHighlightSmall", nil, 4)
     else
-        AddText("Not loaded yet.", "GameFontDisableSmall", nil, 4)
+        local summary = logObjectives or cached.obj
+        if not summary and bundled.o then
+            summary, usedBundled = bundled.o, true
+        end
+        if summary then
+            AddText(ns.FillQuestText(summary), "GameFontHighlightSmall", done and { 0.42, 0.83, 0.37 } or nil, 4)
+        elseif done and #objectives > 0 then
+            -- Completed: the live counters would read 0/N, so show the goals as done.
+            for _, o in ipairs(objectives) do
+                local goal = o.text:gsub(":?%s*%d+%s*/%s*%d+%s*$", "")
+                AddText("- " .. goal, "GameFontHighlightSmall", { 0.42, 0.83, 0.37 }, 2, 6)
+            end
+        else
+            AddText("Not loaded yet.", "GameFontDisableSmall", nil, 4)
+        end
     end
+
+    AddHeader("Description")
     local description = logText or cached.text
-    if description and description ~= "" then
-        AddHeader("Description")
-        AddText(description, "GameFontHighlightSmall", { 0.9, 0.86, 0.75 }, 4)
+    if not description and bundled.d then
+        description, usedBundled = bundled.d, true
+    end
+    if description then
+        AddText(ns.FillQuestText(description), "GameFontHighlightSmall", { 0.9, 0.86, 0.75 }, 4)
+    elseif done then
+        AddText("You completed this before LorePath could save its text, and it isn't in the bundled quest text (WoW Forever's own quests aren't).", "GameFontDisableSmall", nil, 4)
+    else
+        AddText("Saved the first time a quest giver shows you this quest.", "GameFontDisableSmall", nil, 4)
+    end
+    if cached.done then
+        AddHeader("Completion")
+        AddText(ns.FillQuestText(cached.done), "GameFontHighlightSmall", { 0.9, 0.86, 0.75 }, 4)
+    end
+    if usedBundled then
+        AddText("Text from LorePath's bundled quest database (pfQuest). WoW Forever's wording may differ slightly; the game's own text replaces it once you see the quest.", "GameFontDisableSmall", { 0.55, 0.55, 0.55 }, 6)
     end
 
     -- Rewards
@@ -421,7 +530,11 @@ local function Render(id)
             anyReward = true
         end
     else
-        AddText("Gold and XP show once you accept the quest (or open it at the quest giver).", "GameFontDisableSmall", nil, 6)
+        if done then
+            AddText("Gold and XP weren't recorded (completed before LorePath saw it).", "GameFontDisableSmall", nil, 6)
+        else
+            AddText("Gold and XP show once you accept the quest (or open it at the quest giver).", "GameFontDisableSmall", nil, 6)
+        end
         anyReward = true
     end
     for _, rep in ipairs(ReputationRewards(id)) do

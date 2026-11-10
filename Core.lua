@@ -344,7 +344,8 @@ function ns.GetQuestName(id)
 end
 
 function ns.GetQuestNameOrID(id)
-    return ns.GetQuestName(id) or ("Quest #" .. id)
+    -- The client's name first; the bundled title while it loads (or if it never does).
+    return ns.GetQuestName(id) or (ns.QuestText and ns.QuestText[id] and ns.QuestText[id].t) or ("Quest #" .. id)
 end
 
 -- Name of an instance page (see ns.InstanceZones): the Encounter Journal's name,
