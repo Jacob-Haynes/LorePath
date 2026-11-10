@@ -8,46 +8,80 @@ BINDING_NAME_LOREPATH_TOGGLE = "Open / close LorePath"
 
 local S = ns.STATUS
 
-local STATUS_COLORS = {
-    [S.DONE]      = { 0.18, 0.55, 0.22 },
-    [S.ACTIVE]    = { 0.85, 0.65, 0.10 },
-    [S.AVAILABLE] = { 0.20, 0.45, 0.85 },
-    [S.LEVEL]     = { 0.70, 0.38, 0.12 },
-    [S.BLOCKED]   = { 0.30, 0.30, 0.33 },
-    [S.MISSED]    = { 0.18, 0.18, 0.18 },
+-- Quest boxes are tinted by status (Attune style); the quest name is coloured by
+-- difficulty, the same way your quest log colours it.
+local STATUS_STYLE = {
+    [S.DONE]      = { bg = { 0.20, 0.36, 0.15 }, border = { 0.42, 0.66, 0.30 }, text = { 1, 1, 1 } },
+    [S.ACTIVE]    = { bg = { 0.42, 0.33, 0.07 }, border = { 0.90, 0.72, 0.22 }, text = { 1, 1, 1 } },
+    [S.AVAILABLE] = { bg = { 0.12, 0.12, 0.12 }, border = { 0.45, 0.45, 0.45 } }, -- text: difficulty colour
+    [S.LEVEL]     = { bg = { 0.10, 0.10, 0.10 }, border = { 0.32, 0.32, 0.32 } },             -- text: difficulty colour
+    [S.BLOCKED]   = { bg = { 0.08, 0.08, 0.08 }, border = { 0.26, 0.26, 0.26 }, text = { 0.55, 0.55, 0.55 } },
+    [S.MISSED]    = { bg = { 0.06, 0.06, 0.06 }, border = { 0.18, 0.18, 0.18 }, text = { 0.40, 0.40, 0.40 } },
 }
 
 local STATUS_TEXT = {
     [S.DONE]      = "Completed",
     [S.ACTIVE]    = "In your quest log",
     [S.AVAILABLE] = "Available now",
-    [S.LEVEL]     = "Needs a higher level",
+    [S.LEVEL]     = "Your level is too low",
     [S.BLOCKED]   = "Needs an earlier quest",
     [S.MISSED]    = "Skipped (you went past this breadcrumb)",
 }
 
+-- Second line of a quest box.
+local STATUS_SHORT = {
+    [S.DONE]      = "Completed",
+    [S.ACTIVE]    = "In quest log",
+    [S.AVAILABLE] = "Available",
+    [S.LEVEL]     = "Too high level",
+    [S.BLOCKED]   = "Locked",
+    [S.MISSED]    = "Skipped",
+}
+
+-- Small marker drawn on the corner of a quest's icon.
+local STATUS_MARK = {
+    [S.DONE]      = "Interface\\RaidFrame\\ReadyCheck-Ready",
+    [S.ACTIVE]    = "Interface\\GossipFrame\\ActiveQuestIcon",
+    [S.AVAILABLE] = "Interface\\GossipFrame\\AvailableQuestIcon",
+    [S.BLOCKED]   = "Interface\\LFGFrame\\UI-LFG-ICON-LOCK",
+    [S.MISSED]    = "Interface\\RaidFrame\\ReadyCheck-NotReady",
+}
+
 local LEGEND_ORDER = { S.DONE, S.ACTIVE, S.AVAILABLE, S.LEVEL, S.BLOCKED }
 
-local FRAME_W, FRAME_H = 1100, 640
-local LIST_W = 230
-local NODE_W, NODE_H = 150, 24
-local COL_GAP, ROW_GAP = 26, 8
-local PAD = 12
-local SECTION_GAP = 22
+-- WoW's quest difficulty colours (QuestDifficultyColors in Blizzard's UI code).
+local DIFFICULTY = {
+    impossible    = { 1.00, 0.10, 0.10 },
+    verydifficult = { 1.00, 0.50, 0.25 },
+    difficult     = { 1.00, 0.82, 0.00 },
+    standard      = { 0.25, 0.75, 0.25 },
+    trivial       = { 0.50, 0.50, 0.50 },
+}
+
+local QUEST_ICON = "Interface\\Icons\\INV_Misc_Note_01"
+local BREADCRUMB_ICON = "Interface\\Icons\\INV_Letter_15"
+local ROCK = "Interface\\FrameGeneral\\UI-Background-Rock"
+local PLUS = "Interface\\Buttons\\UI-PlusButton-Up"
+local MINUS = "Interface\\Buttons\\UI-MinusButton-Up"
+
+local FRAME_W, FRAME_H = 1120, 660
+local LIST_W = 220
+local NODE_W, NODE_H = 186, 36
+local COL_GAP, ROW_GAP = 34, 10
+local PAD = 14
+local HEADER_H = 26
+local SECTION_GAP = 18
 
 local frame
 local selectedZone
 local zoneRows = {}
-local pools = { nodes = {}, lines = {}, headers = {}, buttons = {} }
-local used = { nodes = 0, lines = 0, headers = 0, buttons = 0 }
+local renderedKeys = {}
+local pools = { nodes = {}, lines = {}, sections = {}, texts = {} }
+local used = { nodes = 0, lines = 0, sections = 0, texts = 0 }
 
 -- ============================================================================
 -- Small helpers
 -- ============================================================================
-
-local function Hex(color)
-    return string.format("%02x%02x%02x", color[1] * 255, color[2] * 255, color[3] * 255)
-end
 
 local function ItemText(itemID)
     local name = C_Item and C_Item.GetItemNameByID and C_Item.GetItemNameByID(itemID)
@@ -71,6 +105,77 @@ local function NameList(ids)
         table.insert(names, ns.GetQuestNameOrID(id))
     end
     return table.concat(names, ", ")
+end
+
+-- The level below which quests turn grey (Classic's formula).
+local function GrayLevel(level)
+    if level <= 5 then
+        return 0
+    elseif level <= 39 then
+        return level - math.floor(level / 10) - 5
+    end
+    return level - math.floor(level / 5) - 1
+end
+
+-- Colour for a quest of this level, matching the quest log.
+local function DifficultyColor(questLevel)
+    local level = UnitLevel("player") or 1
+    local diff = questLevel - level
+    if diff >= 5 then
+        return DIFFICULTY.impossible
+    elseif diff >= 3 then
+        return DIFFICULTY.verydifficult
+    elseif diff >= -2 then
+        return DIFFICULTY.difficult
+    elseif questLevel > GrayLevel(level) then
+        return DIFFICULTY.standard
+    end
+    return DIFFICULTY.trivial
+end
+
+local function Hex(c)
+    return string.format("|cff%02x%02x%02x", math.floor(c[1] * 255 + 0.5), math.floor(c[2] * 255 + 0.5), math.floor(c[3] * 255 + 0.5))
+end
+
+-- Icon for a quest box: your class icon for class quests, a letter for
+-- breadcrumbs, a scroll for everything else.
+local function QuestIcon(q)
+    if q.cl then
+        local _, token = UnitClass("player")
+        if token then
+            return "Interface\\Icons\\ClassIcon_" .. token:sub(1, 1) .. token:sub(2):lower()
+        end
+    end
+    if q.bc then
+        return BREADCRUMB_ICON
+    end
+    return QUEST_ICON
+end
+
+-- 1px border made of four textures, so it works without BackdropTemplate.
+local function AddBorder(f, layer)
+    local edges = {}
+    for i = 1, 4 do
+        edges[i] = f:CreateTexture(nil, layer or "BORDER")
+    end
+    edges[1]:SetPoint("TOPLEFT"); edges[1]:SetPoint("TOPRIGHT"); edges[1]:SetHeight(1)
+    edges[2]:SetPoint("BOTTOMLEFT"); edges[2]:SetPoint("BOTTOMRIGHT"); edges[2]:SetHeight(1)
+    edges[3]:SetPoint("TOPLEFT"); edges[3]:SetPoint("BOTTOMLEFT"); edges[3]:SetWidth(1)
+    edges[4]:SetPoint("TOPRIGHT"); edges[4]:SetPoint("BOTTOMRIGHT"); edges[4]:SetWidth(1)
+    f.SetBorderColor = function(_, r, g, b, a)
+        for _, e in ipairs(edges) do
+            e:SetColorTexture(r, g, b, a or 1)
+        end
+    end
+end
+
+-- Horizontal fade, used for header underlines. Falls back to a flat colour.
+local function SetFade(tex, r, g, b, a)
+    tex:SetColorTexture(1, 1, 1, 1)
+    local ok = CreateColor and pcall(tex.SetGradient, tex, "HORIZONTAL", CreateColor(r, g, b, a), CreateColor(r, g, b, 0))
+    if not ok then
+        tex:SetColorTexture(r, g, b, a * 0.5)
+    end
 end
 
 -- Makes a scroll frame scroll with the mouse wheel (shift for sideways) and pan
@@ -119,6 +224,34 @@ local function MakeScrollable(scroll, allowPan)
 end
 
 -- ============================================================================
+-- Collapsed state (saved per account)
+-- ============================================================================
+
+local function CollapsedTable(name)
+    if not LorePathDB then
+        return {}
+    end
+    LorePathDB[name] = LorePathDB[name] or {}
+    return LorePathDB[name]
+end
+
+-- Sections you haven't opened or closed yourself start collapsed once finished.
+local function IsSectionCollapsed(key, complete)
+    local value = CollapsedTable("collapsed")[key]
+    if value == nil then
+        return complete
+    end
+    return value
+end
+
+local RenderZone -- defined below
+
+local function SetSectionCollapsed(key, collapsed)
+    CollapsedTable("collapsed")[key] = collapsed
+    RenderZone()
+end
+
+-- ============================================================================
 -- Pools (frames are reused between renders)
 -- ============================================================================
 
@@ -137,16 +270,26 @@ local function ShowNodeTooltip(node)
     local status = ns.GetStatus(id)
     GameTooltip:SetOwner(node, "ANCHOR_RIGHT")
     GameTooltip:AddLine(ns.GetQuestNameOrID(id), 1, 0.82, 0)
-    GameTooltip:AddLine("Level " .. (q.l or 1), 1, 1, 1)
-    local c = STATUS_COLORS[status]
-    GameTooltip:AddLine(STATUS_TEXT[status], c[1] + 0.25, c[2] + 0.25, c[3] + 0.25)
+    local dc = DifficultyColor(q.l or 1)
+    GameTooltip:AddLine("Requires level " .. (q.l or 1), dc[1], dc[2], dc[3])
+    local style = STATUS_STYLE[status]
+    local sc = style.text or { 1, 1, 1 }
+    if status == S.DONE or status == S.ACTIVE then
+        sc = style.border
+    end
+    GameTooltip:AddLine(STATUS_TEXT[status], sc[1], sc[2], sc[3])
     if status == S.BLOCKED then
         local missing = ns.MissingPrereq(id)
         if missing then
             GameTooltip:AddLine("Needs: " .. ns.GetQuestNameOrID(missing), 0.9, 0.9, 0.9, true)
         end
-    elseif status == S.LEVEL and q.l then
+    elseif status == S.LEVEL and q.l and (UnitLevel("player") or 1) < q.l then
         GameTooltip:AddLine("Needs level " .. q.l, 0.9, 0.9, 0.9)
+    elseif status == S.LEVEL and q.sl then
+        GameTooltip:AddLine("Needs profession skill " .. q.sl, 0.9, 0.9, 0.9)
+    end
+    if q.bc then
+        GameTooltip:AddLine("Breadcrumb: leads you to another quest", 0.75, 0.75, 0.75)
     end
     if storyline then
         local before = storyline.parents[id]
@@ -183,24 +326,29 @@ local function AcquireNode(parent)
     if not node then
         node = CreateFrame("Button", nil, parent)
         node:SetSize(NODE_W, NODE_H)
-        local border = node:CreateTexture(nil, "BACKGROUND")
-        border:SetAllPoints()
-        border:SetColorTexture(0, 0, 0, 0.9)
-        node.bg = node:CreateTexture(nil, "BORDER")
-        node.bg:SetPoint("TOPLEFT", 1, -1)
-        node.bg:SetPoint("BOTTOMRIGHT", -1, 1)
-        local hl = node:CreateTexture(nil, "HIGHLIGHT")
-        hl:SetAllPoints()
-        hl:SetColorTexture(1, 1, 1, 0.15)
-        node.level = node:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-        node.level:SetPoint("LEFT", 5, 0)
-        node.level:SetWidth(20)
-        node.level:SetJustifyH("LEFT")
+        node.bg = node:CreateTexture(nil, "BACKGROUND")
+        node.bg:SetAllPoints()
+        AddBorder(node, "BORDER")
+        node.icon = node:CreateTexture(nil, "ARTWORK")
+        node.icon:SetSize(NODE_H - 8, NODE_H - 8)
+        node.icon:SetPoint("LEFT", 4, 0)
+        node.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+        node.mark = node:CreateTexture(nil, "OVERLAY")
+        node.mark:SetSize(14, 14)
+        node.mark:SetPoint("BOTTOMRIGHT", node.icon, "BOTTOMRIGHT", 4, -3)
         node.text = node:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-        node.text:SetPoint("LEFT", node.level, "RIGHT", 2, 0)
-        node.text:SetPoint("RIGHT", -4, 0)
+        node.text:SetPoint("TOPLEFT", node.icon, "TOPRIGHT", 6, -1)
+        node.text:SetPoint("RIGHT", -5, 0)
         node.text:SetJustifyH("LEFT")
         node.text:SetWordWrap(false)
+        node.sub = node:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+        node.sub:SetPoint("BOTTOMLEFT", node.icon, "BOTTOMRIGHT", 6, 1)
+        node.sub:SetPoint("RIGHT", -5, 0)
+        node.sub:SetJustifyH("LEFT")
+        node.sub:SetWordWrap(false)
+        local hl = node:CreateTexture(nil, "HIGHLIGHT")
+        hl:SetAllPoints()
+        hl:SetColorTexture(1, 1, 1, 0.10)
         node:SetScript("OnEnter", ShowNodeTooltip)
         node:SetScript("OnLeave", GameTooltip_Hide)
         node:SetScript("OnClick", function(self)
@@ -218,56 +366,107 @@ local function AcquireLine(parent)
     local line = pools.lines[used.lines]
     if not line then
         line = parent:CreateLine(nil, "ARTWORK")
-        line:SetThickness(2)
+        line:SetThickness(3)
         pools.lines[used.lines] = line
     end
     line:Show()
     return line
 end
 
-local function AcquireHeader(parent)
-    used.headers = used.headers + 1
-    local header = pools.headers[used.headers]
-    if not header then
-        header = parent:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-        header:SetJustifyH("LEFT")
-        pools.headers[used.headers] = header
+local function AcquireText(parent, font)
+    used.texts = used.texts + 1
+    local text = pools.texts[used.texts]
+    if not text then
+        text = parent:CreateFontString(nil, "OVERLAY", font)
+        text:SetJustifyH("LEFT")
+        pools.texts[used.texts] = text
     end
-    header:Show()
-    return header
+    text:SetFontObject(font)
+    text:ClearAllPoints()
+    text:Show()
+    return text
 end
 
-local function AcquireButton(parent)
-    used.buttons = used.buttons + 1
-    local button = pools.buttons[used.buttons]
-    if not button then
-        button = CreateFrame("Button", nil, parent, "UIPanelButtonTemplate")
-        button:SetSize(130, 20)
-        button:SetText("Show next quest")
-        pools.buttons[used.buttons] = button
+-- A collapsible section header: [+/-] Title  3 / 7   [Show next quest]  Next: ...
+local function AcquireSection(parent)
+    used.sections = used.sections + 1
+    local s = pools.sections[used.sections]
+    if not s then
+        s = CreateFrame("Button", nil, parent)
+        s:SetHeight(HEADER_H)
+        s.toggle = s:CreateTexture(nil, "ARTWORK")
+        s.toggle:SetSize(14, 14)
+        s.toggle:SetPoint("LEFT", 0, 0)
+        s.title = s:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+        s.title:SetPoint("LEFT", s.toggle, "RIGHT", 6, 0)
+        s.count = s:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+        s.count:SetPoint("LEFT", s.title, "RIGHT", 8, 0)
+        s.next = CreateFrame("Button", nil, s, "UIPanelButtonTemplate")
+        s.next:SetSize(120, 20)
+        s.next:SetText("Show next quest")
+        s.step = s:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+        s.line = s:CreateTexture(nil, "ARTWORK")
+        s.line:SetPoint("BOTTOMLEFT", 0, 0)
+        s.line:SetPoint("BOTTOMRIGHT", 0, 0)
+        s.line:SetHeight(1)
+        SetFade(s.line, 0.85, 0.68, 0.25, 0.7)
+        local hl = s:CreateTexture(nil, "HIGHLIGHT")
+        hl:SetAllPoints()
+        SetFade(hl, 1, 0.82, 0, 0.10)
+        s:SetScript("OnClick", function(self)
+            SetSectionCollapsed(self.key, not self.collapsed)
+        end)
+        pools.sections[used.sections] = s
     end
-    button:Show()
-    return button
+    s:SetParent(parent)
+    s:Show()
+    return s
 end
 
 local function StyleNode(node, id, storyline)
     local status = ns.GetStatus(id)
-    local c = STATUS_COLORS[status]
+    local q = ns.Quests[id]
+    local style = STATUS_STYLE[status]
     node.questID = id
     node.storyline = storyline
-    node.bg:SetColorTexture(c[1], c[2], c[3], 0.9)
-    if ns.GetSetting("showLevels") then
-        node.level:SetText(ns.Quests[id].l or 1)
-        node.level:SetWidth(20)
+    node.bg:SetColorTexture(style.bg[1], style.bg[2], style.bg[3], 0.95)
+    node:SetBorderColor(style.border[1], style.border[2], style.border[3], 1)
+    node.icon:SetTexture(QuestIcon(q))
+    node.icon:SetDesaturated(status == S.BLOCKED or status == S.MISSED)
+    local mark = STATUS_MARK[status]
+    node.mark:SetShown(mark ~= nil)
+    if mark then
+        node.mark:SetTexture(mark)
+    end
+    -- Too high for you yet: a grey "!", like a quest that isn't available yet.
+    node.mark:SetDesaturated(status == S.LEVEL)
+    if status == S.LEVEL then
+        node.mark:SetShown(true)
+        node.mark:SetTexture(STATUS_MARK[S.AVAILABLE])
+        node.mark:SetVertexColor(0.75, 0.75, 0.75)
     else
-        node.level:SetText("")
-        node.level:SetWidth(1)
+        node.mark:SetVertexColor(1, 1, 1)
+    end
+
+    -- Red always means "too high for you"; quests you can take are yellow (your
+    -- level), green (easy) or grey (low level), as in the quest log.
+    local tc = style.text or DifficultyColor(q.l or 1)
+    if status == S.LEVEL then
+        tc = DIFFICULTY.impossible
     end
     node.text:SetText(ns.GetQuestNameOrID(id))
-    if status == S.MISSED or status == S.BLOCKED then
-        node.text:SetTextColor(0.7, 0.7, 0.7)
+    node.text:SetTextColor(tc[1], tc[2], tc[3])
+    if status == S.LEVEL then
+        local playerLevel = UnitLevel("player") or 1
+        if q.l and playerLevel < q.l then
+            node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Needs level " .. q.l .. "|r")
+        else
+            node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Needs skill " .. (q.sl or "?") .. "|r")
+        end
+    elseif ns.GetSetting("showLevels") then
+        node.sub:SetText(Hex(DifficultyColor(q.l or 1)) .. "Lv " .. (q.l or 1) .. "|r  " .. STATUS_SHORT[status])
     else
-        node.text:SetTextColor(1, 1, 1)
+        node.sub:SetText(STATUS_SHORT[status])
     end
 end
 
@@ -277,21 +476,47 @@ end
 
 local function NextStepText(kind, id, detail)
     if kind == "available" then
-        return "|cff8fd3ffNext: " .. ns.GetQuestNameOrID(id) .. "|r"
+        return "|cffffd100Next:|r " .. ns.GetQuestNameOrID(id)
     elseif kind == "active" then
-        return "|cffffd100In progress: " .. ns.GetQuestNameOrID(id) .. "|r"
+        return "|cffffd100In progress:|r " .. ns.GetQuestNameOrID(id)
     elseif kind == "level" then
-        return "|cffff9a40Next part at level " .. (detail or "?") .. "|r"
+        return "|cffaaaaaaNext part at level " .. (detail or "?") .. "|r"
     elseif kind == "blocked" then
         if detail then
-            return "|cffaaaaaaFirst finish: " .. ns.GetQuestNameOrID(detail) .. "|r"
+            return "|cffaaaaaaFirst finish:|r " .. ns.GetQuestNameOrID(detail)
         end
         return "|cffaaaaaaWaiting on an earlier quest|r"
     end
-    return "|cff4fd35fStoryline complete|r"
+    return "|cff6bd35fStoryline complete|r"
 end
 
-local function RenderStoryline(canvas, storyline, top)
+local function NodeX(col)
+    return PAD + col * (NODE_W + COL_GAP)
+end
+
+local function NodeY(top, row)
+    return top + row * (NODE_H + ROW_GAP)
+end
+
+-- Draws a header and returns the y below it.
+local function RenderSection(canvas, key, title, done, total, complete, width, top)
+    local collapsed = IsSectionCollapsed(key, complete)
+    table.insert(renderedKeys, key)
+    local s = AcquireSection(canvas)
+    s.key, s.collapsed = key, collapsed
+    s:ClearAllPoints()
+    s:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD, -top)
+    s:SetWidth(width)
+    s.toggle:SetTexture(collapsed and PLUS or MINUS)
+    s.title:SetText(title)
+    s.count:SetText(complete and string.format("|cff6bd35f%d / %d|r", done, total)
+        or string.format("|cffaaaaaa%d / %d|r", done, total))
+    s.next:Hide()
+    s.step:SetText("")
+    return s, collapsed, top + HEADER_H + 8
+end
+
+local function RenderStoryline(canvas, storyline, top, viewWidth)
     -- Children within the storyline, for tooltips.
     storyline.childrenOf = {}
     for child, list in pairs(storyline.parents) do
@@ -312,80 +537,89 @@ local function RenderStoryline(canvas, storyline, top)
         end
     end
 
-    local header = AcquireHeader(canvas)
-    header:SetFontObject("GameFontNormal")
-    header:ClearAllPoints()
-    header:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD, -top)
-    header:SetText(string.format("%s  |cffaaaaaa%d / %d|r", ns.GetQuestNameOrID(storyline.first), done, total))
-
     local kind, nextID, detail = ns.GetNextStep(storyline)
-    local button = AcquireButton(canvas)
-    button:ClearAllPoints()
-    button:SetPoint("LEFT", header, "RIGHT", 12, 0)
-    local stepText = AcquireHeader(canvas)
-    stepText:SetFontObject("GameFontHighlightSmall")
-    stepText:ClearAllPoints()
-    stepText:SetPoint("LEFT", button, "RIGHT", 8, 0)
-    stepText:SetText(NextStepText(kind, nextID, detail))
+    local width = math.max(viewWidth - PAD * 2, storyline.cols * (NODE_W + COL_GAP) - COL_GAP)
+    local s, collapsed, graphTop = RenderSection(canvas, "s" .. storyline.first,
+        ns.GetQuestNameOrID(storyline.first), done, total, kind == "complete", viewWidth - PAD * 2, top)
+
     local target = (kind == "available" or kind == "active") and nextID or nil
     if kind == "blocked" and detail and ns.Quests[detail] then
         target = detail
     end
+    s.step:ClearAllPoints()
     if target and ns.Quests[target] and ns.Quests[target].m then
-        button:Enable()
-        button:SetScript("OnClick", function()
+        s.next:ClearAllPoints()
+        s.next:SetPoint("LEFT", s.count, "RIGHT", 14, 0)
+        s.next:Show()
+        s.next:SetScript("OnClick", function()
             ns.ShowQuestStart(target)
         end)
+        s.step:SetPoint("LEFT", s.next, "RIGHT", 8, 0)
     else
-        button:Disable()
-        button:SetScript("OnClick", nil)
+        s.step:SetPoint("LEFT", s.count, "RIGHT", 14, 0)
+    end
+    s.step:SetText(NextStepText(kind, nextID, detail))
+
+    if collapsed then
+        return viewWidth, HEADER_H
     end
 
-    local graphTop = top + 28
-    local nodeByID = {}
+    local cells = {}
     for _, n in ipairs(storyline.nodes) do
         local node = AcquireNode(canvas)
         node:ClearAllPoints()
-        node:SetPoint("TOPLEFT", canvas, "TOPLEFT",
-            PAD + n.col * (NODE_W + COL_GAP),
-            -(graphTop + n.row * (NODE_H + ROW_GAP)))
+        node:SetPoint("TOPLEFT", canvas, "TOPLEFT", NodeX(n.col), -NodeY(graphTop, n.row))
         StyleNode(node, n.id, storyline)
-        nodeByID[n.id] = node
+        cells[n.id] = n
     end
+
+    -- Square connectors: right out of the parent, down/up at the gap, into the child.
     for child, list in pairs(storyline.parents) do
-        local childNode = nodeByID[child]
+        local c = cells[child]
         for _, parent in ipairs(list) do
-            local parentNode = nodeByID[parent]
-            if childNode and parentNode then
-                local line = AcquireLine(canvas)
-                line:SetStartPoint("RIGHT", parentNode, 0, 0)
-                line:SetEndPoint("LEFT", childNode, 0, 0)
-                if ns.IsDone(parent) then
-                    line:SetColorTexture(0.35, 0.75, 0.40, 0.9)
-                else
-                    line:SetColorTexture(0.55, 0.55, 0.55, 0.7)
+            local p = cells[parent]
+            if c and p then
+                local pDone = ns.IsDone(parent)
+                local r, g, b, a = 0.32, 0.32, 0.32, 1
+                if pDone then
+                    r, g, b = 0.40, 0.66, 0.28
+                end
+                local x1 = NodeX(p.col) + NODE_W
+                local y1 = -(NodeY(graphTop, p.row) + NODE_H / 2)
+                local x2 = NodeX(c.col)
+                local y2 = -(NodeY(graphTop, c.row) + NODE_H / 2)
+                local xm = x2 - COL_GAP / 2
+                local points = { { x1, y1 }, { xm, y1 }, { xm, y2 }, { x2, y2 } }
+                if y1 == y2 then
+                    points = { { x1, y1 }, { x2, y2 } }
+                end
+                for i = 1, #points - 1 do
+                    local line = AcquireLine(canvas)
+                    line:SetDrawLayer("ARTWORK", pDone and 2 or 1)
+                    line:SetStartPoint("TOPLEFT", canvas, points[i][1], points[i][2])
+                    line:SetEndPoint("TOPLEFT", canvas, points[i + 1][1], points[i + 1][2])
+                    line:SetColorTexture(r, g, b, a)
                 end
             end
         end
     end
 
-    local width = PAD * 2 + storyline.cols * (NODE_W + COL_GAP)
-    local height = 28 + storyline.rows * (NODE_H + ROW_GAP)
-    return width, height
+    local height = HEADER_H + 8 + storyline.rows * (NODE_H + ROW_GAP)
+    return PAD * 2 + width, height
 end
 
 local function RenderOthers(canvas, others, top, viewWidth)
-    local header = AcquireHeader(canvas)
-    header:SetFontObject("GameFontNormal")
-    header:ClearAllPoints()
-    header:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD, -top)
     local done = 0
     for _, id in ipairs(others) do
         if ns.GetStatus(id) == S.DONE then
             done = done + 1
         end
     end
-    header:SetText(string.format("Other quests  |cffaaaaaa%d / %d|r", done, #others))
+    local _, collapsed, gridTop = RenderSection(canvas, "o" .. selectedZone, "Other quests",
+        done, #others, done == #others, viewWidth - PAD * 2, top)
+    if collapsed then
+        return HEADER_H
+    end
 
     local perRow = math.max(1, math.floor((viewWidth - PAD * 2 + COL_GAP) / (NODE_W + COL_GAP)))
     for i, id in ipairs(others) do
@@ -393,20 +627,19 @@ local function RenderOthers(canvas, others, top, viewWidth)
         local row = math.floor((i - 1) / perRow)
         local node = AcquireNode(canvas)
         node:ClearAllPoints()
-        node:SetPoint("TOPLEFT", canvas, "TOPLEFT",
-            PAD + col * (NODE_W + COL_GAP),
-            -(top + 28 + row * (NODE_H + ROW_GAP)))
+        node:SetPoint("TOPLEFT", canvas, "TOPLEFT", NodeX(col), -NodeY(gridTop, row))
         StyleNode(node, id, nil)
     end
     local rows = math.ceil(#others / perRow)
-    return 28 + rows * (NODE_H + ROW_GAP)
+    return HEADER_H + 8 + rows * (NODE_H + ROW_GAP)
 end
 
-local function RenderZone()
+RenderZone = function()
     if not frame or not selectedZone then
         return
     end
     ResetPools()
+    renderedKeys = {}
     local canvas = frame.canvas
     local viewWidth = frame.graphScroll:GetWidth()
     local storylines, others = ns.BuildStorylines(selectedZone)
@@ -417,15 +650,13 @@ local function RenderZone()
         if hideCompleted and ns.GetNextStep(storyline) == "complete" then
             hidden = hidden + 1
         else
-            local w, h = RenderStoryline(canvas, storyline, top)
+            local w, h = RenderStoryline(canvas, storyline, top, viewWidth)
             maxWidth = math.max(maxWidth, w)
             top = top + h + SECTION_GAP
         end
     end
     if hidden > 0 then
-        local note = AcquireHeader(canvas)
-        note:SetFontObject("GameFontDisableSmall")
-        note:ClearAllPoints()
+        local note = AcquireText(canvas, "GameFontDisableSmall")
         note:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD, -top)
         note:SetText(string.format("%d finished %s hidden (see Settings)", hidden, hidden == 1 and "storyline" or "storylines"))
         top = top + 20 + SECTION_GAP
@@ -434,11 +665,9 @@ local function RenderZone()
         top = top + RenderOthers(canvas, others, top, viewWidth) + SECTION_GAP
     end
     if #storylines == 0 and #others == 0 then
-        local header = AcquireHeader(canvas)
-        header:SetFontObject("GameFontNormal")
-        header:ClearAllPoints()
-        header:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD, -top)
-        header:SetText("No quests for your character in this zone.")
+        local note = AcquireText(canvas, "GameFontNormal")
+        note:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD, -top)
+        note:SetText("No quests for your character in this zone.")
         top = top + 30
     end
     canvas:SetSize(maxWidth, math.max(top, frame.graphScroll:GetHeight()))
@@ -447,8 +676,16 @@ local function RenderZone()
     end
 
     local done, total = ns.GetZoneProgress(selectedZone)
-    frame.zoneTitle:SetText(string.format("%s  |cffaaaaaa%d / %d quests done, %d storylines|r",
-        ns.GetMapName(selectedZone), done, total, #storylines))
+    frame.zoneTitle:SetText(ns.GetMapName(selectedZone))
+    frame.zoneSummary:SetText(string.format("%d / %d quests done  -  %d storylines", done, total, #storylines))
+end
+
+local function SetAllCollapsed(collapsed)
+    local t = CollapsedTable("collapsed")
+    for _, key in ipairs(renderedKeys) do
+        t[key] = collapsed
+    end
+    RenderZone()
 end
 
 -- ============================================================================
@@ -470,6 +707,8 @@ local function SortedZones()
     return zones
 end
 
+local RenderZoneList
+
 local function SelectZone(zoneID)
     selectedZone = zoneID
     if LorePathDB then
@@ -477,7 +716,7 @@ local function SelectZone(zoneID)
     end
     for _, row in ipairs(zoneRows) do
         if row.selected then
-            row.selected:SetShown(row.zoneID == zoneID)
+            row.selected:SetShown(row.zoneID ~= nil and row.zoneID == zoneID)
         end
     end
     frame.graphScroll:SetVerticalScroll(0)
@@ -485,67 +724,124 @@ local function SelectZone(zoneID)
     RenderZone()
 end
 
-local function RenderZoneList()
+RenderZoneList = function()
     local list = frame.listContent
     for _, row in ipairs(zoneRows) do
         row:Hide()
     end
-    local y, index, lastContinent = 4, 0, nil
-    local function NextRow()
+    local y, index = 6, 0
+    local function NextRow(height)
         index = index + 1
         local row = zoneRows[index]
         if not row then
             row = CreateFrame("Button", nil, list)
-            row:SetHeight(18)
+            row.toggle = row:CreateTexture(nil, "ARTWORK")
+            row.toggle:SetSize(12, 12)
+            row.toggle:SetPoint("LEFT", 4, 0)
             row.text = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-            row.text:SetPoint("LEFT", 8, 0)
             row.text:SetJustifyH("LEFT")
             row.count = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-            row.count:SetPoint("RIGHT", -6, 0)
+            row.count:SetPoint("RIGHT", -8, 0)
+            row.lineL = row:CreateTexture(nil, "ARTWORK")
+            row.lineL:SetHeight(1)
+            row.lineR = row:CreateTexture(nil, "ARTWORK")
+            row.lineR:SetHeight(1)
+            row.lineL:SetColorTexture(0.6, 0.6, 0.6, 0.35)
+            row.lineR:SetColorTexture(0.6, 0.6, 0.6, 0.35)
             row.selected = row:CreateTexture(nil, "BACKGROUND")
             row.selected:SetAllPoints()
-            row.selected:SetColorTexture(1, 0.82, 0, 0.18)
+            SetFade(row.selected, 1, 0.82, 0, 0.28)
             local hl = row:CreateTexture(nil, "HIGHLIGHT")
             hl:SetAllPoints()
-            hl:SetColorTexture(1, 1, 1, 0.08)
+            hl:SetColorTexture(1, 1, 1, 0.07)
             zoneRows[index] = row
         end
+        row:SetHeight(height)
         row:ClearAllPoints()
         row:SetPoint("TOPLEFT", list, "TOPLEFT", 0, -y)
         row:SetPoint("RIGHT", list, "RIGHT", 0, 0)
         row:Show()
-        y = y + 18
+        y = y + height
         return row
     end
 
+    -- Group zones by continent, with totals for each heading.
+    local groups, order = {}, {}
     for _, z in ipairs(SortedZones()) do
-        if z.continentName ~= lastContinent then
-            lastContinent = z.continentName
-            local heading = NextRow()
-            heading.zoneID = nil
-            heading:SetScript("OnClick", nil)
-            heading:Disable()
-            heading.text:SetFontObject("GameFontNormal")
-            heading.text:SetText(z.continentName)
-            heading.count:SetText("")
-            heading.selected:Hide()
-            y = y + 2
+        local g = groups[z.continentName]
+        if not g then
+            g = { name = z.continentName, zones = {}, done = 0, total = 0 }
+            groups[z.continentName] = g
+            table.insert(order, g)
         end
-        local row = NextRow()
-        row.zoneID = z.id
-        row:Enable()
-        row.text:SetFontObject("GameFontHighlightSmall")
-        row.text:SetText("  " .. z.name)
-        local done, total = ns.GetZoneProgress(z.id)
-        if total > 0 and done == total then
-            row.count:SetText("|cff4fd35f" .. done .. "/" .. total .. "|r")
-        else
-            row.count:SetText(done .. "/" .. total)
-        end
-        row.selected:SetShown(z.id == selectedZone)
-        row:SetScript("OnClick", function(self)
-            SelectZone(self.zoneID)
+        z.done, z.total = ns.GetZoneProgress(z.id)
+        g.done, g.total = g.done + z.done, g.total + z.total
+        table.insert(g.zones, z)
+    end
+
+    local collapsedContinents = CollapsedTable("collapsedContinents")
+    for _, g in ipairs(order) do
+        local collapsed = collapsedContinents[g.name] == true
+        local heading = NextRow(24)
+        heading.zoneID = nil
+        heading.selected:Hide()
+        heading.toggle:Show()
+        heading.toggle:SetTexture(collapsed and PLUS or MINUS)
+        heading.text:SetFontObject("GameFontNormalSmall")
+        heading.text:ClearAllPoints()
+        heading.text:SetPoint("CENTER", 0, 0)
+        heading.text:SetText(string.upper(g.name))
+        heading.text:SetTextColor(0.85, 0.85, 0.85)
+        heading.count:SetText("")
+        heading.lineL:Show()
+        heading.lineR:Show()
+        heading.lineL:ClearAllPoints()
+        heading.lineL:SetPoint("LEFT", heading.toggle, "RIGHT", 6, 0)
+        heading.lineL:SetPoint("RIGHT", heading.text, "LEFT", -6, 0)
+        heading.lineR:ClearAllPoints()
+        heading.lineR:SetPoint("LEFT", heading.text, "RIGHT", 6, 0)
+        heading.lineR:SetPoint("RIGHT", heading, "RIGHT", -8, 0)
+        heading.continent = g.name
+        heading:SetScript("OnClick", function(self)
+            collapsedContinents[self.continent] = not collapsedContinents[self.continent] or nil
+            RenderZoneList()
         end)
+        heading:SetScript("OnEnter", function(self)
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+            GameTooltip:AddLine(g.name, 1, 0.82, 0)
+            GameTooltip:AddLine(string.format("%d / %d quests done", g.done, g.total), 1, 1, 1)
+            GameTooltip:Show()
+        end)
+        heading:SetScript("OnLeave", GameTooltip_Hide)
+
+        if not collapsed then
+            for _, z in ipairs(g.zones) do
+                local row = NextRow(20)
+                row.zoneID = z.id
+                row.toggle:Hide()
+                row.lineL:Hide()
+                row.lineR:Hide()
+                row.text:SetFontObject("GameFontHighlightSmall")
+                row.text:ClearAllPoints()
+                row.text:SetPoint("LEFT", 14, 0)
+                row.text:SetPoint("RIGHT", row.count, "LEFT", -4, 0)
+                row.text:SetText(z.name)
+                if z.total > 0 and z.done == z.total then
+                    row.text:SetTextColor(0.42, 0.83, 0.37)
+                    row.count:SetText("|cff6bd35f" .. z.done .. "/" .. z.total .. "|r")
+                else
+                    row.text:SetTextColor(1, 1, 1)
+                    row.count:SetText("|cffaaaaaa" .. z.done .. "/" .. z.total .. "|r")
+                end
+                row.selected:SetShown(z.id == selectedZone)
+                row:SetScript("OnClick", function(self)
+                    SelectZone(self.zoneID)
+                end)
+                row:SetScript("OnEnter", nil)
+                row:SetScript("OnLeave", nil)
+            end
+        end
+        y = y + 4
     end
     list:SetHeight(y + 4)
 end
@@ -554,9 +850,45 @@ end
 -- Frame
 -- ============================================================================
 
-local function CreateMainFrame()
-    local ok, f = pcall(CreateFrame, "Frame", "LorePathFrame", UIParent, "BasicFrameTemplateWithInset")
+local function CreateInset(parent)
+    local ok, inset = pcall(CreateFrame, "Frame", nil, parent, "InsetFrameTemplate")
     if not ok then
+        inset = CreateFrame("Frame", nil, parent)
+        local bg = inset:CreateTexture(nil, "BACKGROUND")
+        bg:SetAllPoints()
+        bg:SetColorTexture(0.04, 0.04, 0.04, 0.9)
+        AddBorder(inset, "BORDER")
+        inset:SetBorderColor(0.3, 0.3, 0.3, 1)
+    end
+    return inset
+end
+
+-- Shows or hides the zone list, giving the graph the whole width.
+local function ApplyListVisibility(f)
+    local hidden = LorePathDB and LorePathDB.listHidden
+    f.listInset:SetShown(not hidden)
+    f.graphInset:ClearAllPoints()
+    if hidden then
+        f.graphInset:SetPoint("TOPLEFT", f, "TOPLEFT", 10, -62)
+    else
+        f.graphInset:SetPoint("TOPLEFT", f.listInset, "TOPRIGHT", 6, 0)
+    end
+    f.graphInset:SetPoint("BOTTOMRIGHT", f, "BOTTOMRIGHT", -8, 32)
+    local prefix = hidden and "Interface\\Buttons\\UI-SpellbookIcon-NextPage-" or "Interface\\Buttons\\UI-SpellbookIcon-PrevPage-"
+    f.listToggle:SetNormalTexture(prefix .. "Up")
+    f.listToggle:SetPushedTexture(prefix .. "Down")
+end
+
+local function CreateMainFrame()
+    local f
+    for _, template in ipairs({ "PortraitFrameTemplate", "BasicFrameTemplateWithInset" }) do
+        local ok, made = pcall(CreateFrame, "Frame", "LorePathFrame", UIParent, template)
+        if ok then
+            f = made
+            break
+        end
+    end
+    if not f then
         f = CreateFrame("Frame", "LorePathFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate" or nil)
         if f.SetBackdrop then
             f:SetBackdrop({
@@ -584,48 +916,47 @@ local function CreateMainFrame()
     table.insert(UISpecialFrames, "LorePathFrame")
     ns.mainFrame = f
 
-    local settingsButton = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
-    settingsButton:SetSize(80, 20)
-    settingsButton:SetPoint("TOPRIGHT", f, "TOPRIGHT", -28, -2)
-    settingsButton:SetText("Settings")
-    settingsButton:SetScript("OnClick", function()
-        ns.OpenSettings()
-    end)
-
-    local title = type(f.TitleText) == "table" and f.TitleText or nil
-    if not title then
-        title = f:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-        title:SetPoint("TOP", 0, -8)
+    if f.SetTitle then
+        f:SetTitle("LorePath")
+    else
+        local title = type(f.TitleText) == "table" and f.TitleText or f:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+        if title ~= f.TitleText then
+            title:SetPoint("TOP", 0, -6)
+        end
+        title:SetText("LorePath")
     end
-    title:SetText("LorePath")
+    if f.SetPortraitToAsset then
+        pcall(f.SetPortraitToAsset, f, "Interface\\Icons\\INV_Misc_Book_09")
+    end
 
-    -- Zone list
-    local listScroll = CreateFrame("ScrollFrame", nil, f)
-    listScroll:SetPoint("TOPLEFT", f, "TOPLEFT", 10, -30)
-    listScroll:SetPoint("BOTTOMLEFT", f, "BOTTOMLEFT", 10, 34)
-    listScroll:SetWidth(LIST_W)
+    -- Zone list (left)
+    local listInset = CreateInset(f)
+    listInset:SetPoint("TOPLEFT", f, "TOPLEFT", 10, -62)
+    listInset:SetPoint("BOTTOMLEFT", f, "BOTTOMLEFT", 10, 32)
+    listInset:SetWidth(LIST_W)
+    f.listInset = listInset
+    local listScroll = CreateFrame("ScrollFrame", nil, listInset)
+    listScroll:SetPoint("TOPLEFT", 4, -4)
+    listScroll:SetPoint("BOTTOMRIGHT", -4, 4)
     local listContent = CreateFrame("Frame", nil, listScroll)
-    listContent:SetSize(LIST_W, 10)
+    listContent:SetSize(LIST_W - 8, 10)
     listScroll:SetScrollChild(listContent)
     MakeScrollable(listScroll, false)
     f.listContent = listContent
 
-    local divider = f:CreateTexture(nil, "ARTWORK")
-    divider:SetColorTexture(1, 1, 1, 0.12)
-    divider:SetPoint("TOPLEFT", listScroll, "TOPRIGHT", 4, 0)
-    divider:SetPoint("BOTTOMLEFT", listScroll, "BOTTOMRIGHT", 4, 0)
-    divider:SetWidth(1)
-
-    -- Zone title above the graph
-    local zoneTitle = f:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    zoneTitle:SetPoint("TOPLEFT", listScroll, "TOPRIGHT", 16, -2)
-    zoneTitle:SetJustifyH("LEFT")
-    f.zoneTitle = zoneTitle
-
-    -- Storyline graph
-    local graphScroll = CreateFrame("ScrollFrame", nil, f)
-    graphScroll:SetPoint("TOPLEFT", listScroll, "TOPRIGHT", 10, -26)
-    graphScroll:SetPoint("BOTTOMRIGHT", f, "BOTTOMRIGHT", -10, 34)
+    -- Storyline graph (right), on a stone background
+    local graphInset = CreateInset(f)
+    f.graphInset = graphInset
+    local rock = graphInset:CreateTexture(nil, "BACKGROUND", nil, 1)
+    rock:SetPoint("TOPLEFT", 3, -3)
+    rock:SetPoint("BOTTOMRIGHT", -3, 3)
+    rock:SetTexture(ROCK, "REPEAT", "REPEAT")
+    rock:SetHorizTile(true)
+    rock:SetVertTile(true)
+    rock:SetVertexColor(0.55, 0.55, 0.55)
+    local graphScroll = CreateFrame("ScrollFrame", nil, graphInset)
+    graphScroll:SetPoint("TOPLEFT", 4, -4)
+    graphScroll:SetPoint("BOTTOMRIGHT", -4, 4)
     local canvas = CreateFrame("Frame", nil, graphScroll)
     canvas:SetSize(10, 10)
     graphScroll:SetScrollChild(canvas)
@@ -633,23 +964,89 @@ local function CreateMainFrame()
     f.graphScroll = graphScroll
     f.canvas = canvas
 
-    -- Legend and hint along the bottom
-    local x = 14
-    for _, status in ipairs(LEGEND_ORDER) do
-        local swatch = f:CreateTexture(nil, "ARTWORK")
-        swatch:SetSize(12, 12)
-        swatch:SetPoint("BOTTOMLEFT", f, "BOTTOMLEFT", x, 12)
-        local c = STATUS_COLORS[status]
-        swatch:SetColorTexture(c[1], c[2], c[3], 1)
-        local label = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-        label:SetPoint("LEFT", swatch, "RIGHT", 4, 0)
-        label:SetText(STATUS_TEXT[status])
-        x = x + 20 + label:GetStringWidth() + 14
-    end
-    local hint = f:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    hint:SetPoint("BOTTOMRIGHT", f, "BOTTOMRIGHT", -14, 12)
-    hint:SetText("Drag to pan  -  Shift+wheel scrolls sideways  -  Click a quest for a waypoint")
+    -- Header row: list toggle, zone name and progress, expand/collapse buttons
+    local listToggle = CreateFrame("Button", nil, f)
+    listToggle:SetSize(26, 26)
+    listToggle:SetPoint("TOPLEFT", f, "TOPLEFT", 62, -30)
+    listToggle:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight", "ADD")
+    listToggle:SetScript("OnClick", function()
+        LorePathDB.listHidden = not LorePathDB.listHidden or nil
+        ApplyListVisibility(f)
+        RenderZone()
+    end)
+    listToggle:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+        GameTooltip:AddLine(LorePathDB.listHidden and "Show the zone list" or "Hide the zone list", 1, 1, 1)
+        GameTooltip:Show()
+    end)
+    listToggle:SetScript("OnLeave", GameTooltip_Hide)
+    f.listToggle = listToggle
 
+    local zoneTitle = f:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+    zoneTitle:SetPoint("LEFT", listToggle, "RIGHT", 6, 0)
+    zoneTitle:SetJustifyH("LEFT")
+    f.zoneTitle = zoneTitle
+    local zoneSummary = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    zoneSummary:SetPoint("LEFT", zoneTitle, "RIGHT", 12, -1)
+    zoneSummary:SetTextColor(0.7, 0.7, 0.7)
+    f.zoneSummary = zoneSummary
+
+    local expandAll = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
+    expandAll:SetSize(90, 20)
+    expandAll:SetPoint("TOPRIGHT", f, "TOPRIGHT", -12, -33)
+    expandAll:SetText("Expand all")
+    expandAll:SetScript("OnClick", function() SetAllCollapsed(false) end)
+    local collapseAll = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
+    collapseAll:SetSize(90, 20)
+    collapseAll:SetPoint("RIGHT", expandAll, "LEFT", -4, 0)
+    collapseAll:SetText("Collapse all")
+    collapseAll:SetScript("OnClick", function() SetAllCollapsed(true) end)
+
+    -- Footer: legend, hint, settings
+    local x = 16
+    for _, status in ipairs(LEGEND_ORDER) do
+        local swatch = CreateFrame("Frame", nil, f)
+        swatch:SetSize(14, 14)
+        swatch:SetPoint("BOTTOMLEFT", f, "BOTTOMLEFT", x, 10)
+        local style = STATUS_STYLE[status]
+        local fill = swatch:CreateTexture(nil, "BACKGROUND")
+        fill:SetAllPoints()
+        fill:SetColorTexture(style.bg[1], style.bg[2], style.bg[3], 1)
+        AddBorder(swatch, "BORDER")
+        swatch:SetBorderColor(style.border[1], style.border[2], style.border[3], 1)
+        -- The same corner marker the quest boxes use, so similar tints stay tellable apart.
+        local markPath = STATUS_MARK[status] or STATUS_MARK[S.AVAILABLE]
+        local mark = swatch:CreateTexture(nil, "OVERLAY")
+        mark:SetSize(12, 12)
+        mark:SetPoint("CENTER")
+        mark:SetTexture(markPath)
+        if status == S.LEVEL then
+            mark:SetDesaturated(true)
+            mark:SetVertexColor(0.75, 0.75, 0.75)
+        end
+        local label = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+        label:SetPoint("LEFT", swatch, "RIGHT", 5, 0)
+        label:SetText(STATUS_SHORT[status])
+        x = x + 24 + label:GetStringWidth() + 12
+    end
+    local names = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    names:SetPoint("BOTTOMLEFT", f, "BOTTOMLEFT", x + 8, 11)
+    names:SetText("Quest names:  " .. Hex(DIFFICULTY.impossible) .. "too high|r  "
+        .. Hex(DIFFICULTY.difficult) .. "your level|r  " .. Hex(DIFFICULTY.standard) .. "easy|r  "
+        .. Hex(DIFFICULTY.trivial) .. "low level|r")
+
+    local settingsButton = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
+    settingsButton:SetSize(80, 20)
+    settingsButton:SetPoint("BOTTOMRIGHT", f, "BOTTOMRIGHT", -10, 7)
+    settingsButton:SetText("Settings")
+    settingsButton:SetScript("OnClick", function()
+        ns.OpenSettings()
+    end)
+    local hint = f:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    hint:SetPoint("RIGHT", settingsButton, "LEFT", -10, 0)
+    hint:SetText("Drag to pan  -  Shift+wheel scrolls sideways")
+
+    ApplyListVisibility(f)
     f:SetScript("OnShow", function()
         ns.Refresh()
     end)

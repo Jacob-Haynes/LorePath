@@ -168,18 +168,55 @@ without_others = shown_tiles()
 check(without_others == with_others - 34, f"hiding standalone quests drops the 34 'other' tiles ({with_others} -> {without_others})")
 ns.SetSetting("showOthers", True)
 
-# Finish a whole storyline, then hide finished storylines.
+# Finish a whole storyline: it collapses by default, and can be reopened.
 storylines, _ = ns.BuildStorylines(1413)
 first = list(storylines.values())[0]
+first_n = len(list(first["nodes"].values()))
 for n in first["nodes"].values():
     char["completed"][n["id"]] = True
+ns.Refresh()
+check(shown_tiles() == with_others - first_n, f"a finished storyline starts collapsed ({with_others} -> {shown_tiles()} tiles)")
+def section(key):
+    for f in harness["all"].values():
+        if f["key"] == key and f.IsShown(f):
+            return f
+key = "s" + str(first["first"])
+sec = section(key)
+check(sec is not None and sec["collapsed"] is True, "its header shows as collapsed")
+sec["__scripts"]["OnClick"](sec)
+check(shown_tiles() == with_others, "clicking the header expands it again")
+sec = section(key)
+sec["__scripts"]["OnClick"](sec)
+check(shown_tiles() == with_others - first_n, "clicking again collapses it, and the choice is saved")
+check(g.LorePathDB["collapsed"][key] is True, "collapsed state is stored in LorePathDB")
+other = section("s" + str(list(storylines.values())[1]["first"]))
+other["__scripts"]["OnClick"](other)
+second_n = len(list(list(storylines.values())[1]["nodes"].values()))
+check(shown_tiles() == with_others - first_n - second_n, "an unfinished storyline can be collapsed too")
+g.LorePathDB["collapsed"] = lua.table()
+ns.Refresh()
 ns.SetSetting("hideCompleted", True)
-check(shown_tiles() == with_others - len(list(first["nodes"].values())), "hiding finished storylines removes the completed one")
+check(section(key) is None and shown_tiles() == with_others - first_n, "'Hide finished storylines' removes the finished one entirely")
 ns.SetSetting("hideCompleted", False)
+
+# Zone list: continents collapse, and the whole list can be hidden.
+def zone_rows():
+    return [f for f in harness["all"].values() if f["zoneID"] is not None and f.IsShown(f)]
+heading = [f for f in harness["all"].values() if f["continent"] == "Kalimdor" and f.IsShown(f)][0]
+before = len(zone_rows())
+heading["__scripts"]["OnClick"](heading)
+after = len(zone_rows())
+check(after < before, f"collapsing Kalimdor hides its zones ({before} -> {after})")
+heading["__scripts"]["OnClick"](heading)
+check(len(zone_rows()) == before, "expanding it shows them again")
+frame["listToggle"]["__scripts"]["OnClick"](frame["listToggle"])
+check(not frame["listInset"].IsShown(frame["listInset"]) and g.LorePathDB["listHidden"] is True, "the list toggle hides the zone list")
+frame["listToggle"]["__scripts"]["OnClick"](frame["listToggle"])
+check(frame["listInset"].IsShown(frame["listInset"]), "and shows it again")
 
 ns.SetSetting("showLevels", False)
 tile = [f for f in harness["all"].values() if f["questID"] is not None and f.IsShown(f)][0]
-check(tile["level"]["__text"] == "", "turning off quest levels blanks the level on tiles")
+check("Lv" not in tile["sub"]["__text"], "turning off quest levels removes the level from tiles: " + tile["sub"]["__text"])
 ns.SetSetting("showLevels", True)
 
 harness["openedMap"] = None
