@@ -80,6 +80,26 @@ UnitLevel = function() return harness.char.level end
 GetProfessions = function() return nil end
 GetProfessionInfo = function() return nil end
 
+-- Reputation: char.reputation[factionID] = cumulative standing (Neutral = 0).
+-- Factions missing from it are unknown to the client (GetFactionDataByID returns nil).
+harness.char.reputation = {}
+harness.factionNames = { [576] = "Timbermaw Hold", [609] = "Cenarion Circle", [529] = "Argent Dawn" }
+harness.factionCalls = 0
+C_Reputation = {
+    GetFactionDataByID = function(id)
+        harness.factionCalls = harness.factionCalls + 1
+        local standing = harness.char.reputation[id]
+        if standing == nil then return nil end
+        return { factionID = id, name = harness.factionNames[id] or ("Faction" .. id), currentStanding = standing, reaction = 4 }
+    end,
+}
+-- The pre-mainline API, for testing the fallback: name, description, standingID, barMin, barMax, barValue, ...
+function harness.LegacyGetFactionInfoByID(id)
+    local standing = harness.char.reputation[id]
+    if standing == nil then return nil end
+    return harness.factionNames[id] or ("Faction" .. id), "", 4, 0, 3000, standing
+end
+
 C_QuestLog = {
     GetAllCompletedQuestIDs = function()
         local ids = {}

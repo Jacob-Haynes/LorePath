@@ -15,6 +15,7 @@ for _, event in ipairs({
     "PLAYER_LEVEL_UP",
     "QUEST_DATA_LOAD_RESULT",
     "SKILL_LINES_CHANGED",
+    "UPDATE_FACTION",
 }) do
     pcall(events.RegisterEvent, events, event)
 end
