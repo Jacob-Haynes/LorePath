@@ -17,7 +17,15 @@ ns.STATUS = {
     LEVEL = "level",         -- prerequisites done, but your level, skill or reputation is too low
     BLOCKED = "blocked",     -- an earlier quest isn't done yet
     MISSED = "missed",       -- a breadcrumb you skipped past (or reputation went too high); it can't be taken any more
+    REPEATABLE = "repeatable", -- a daily or repeatable quest you can take now; it's never "done"
 }
+
+-- Repeatable quests (rp=1 in the data) never count towards progress: the game
+-- doesn't record them as completed.
+function ns.IsRepeatable(id)
+    local q = ns.Quests[id]
+    return q and q.rp == 1 or false
+end
 
 -- ============================================================================
 -- Player
@@ -239,6 +247,8 @@ local function RelevantPrereqs(q)
 end
 
 -- Returns the first prerequisite still needed, or nil when enough are done.
+-- A repeatable prerequisite always counts as done: the game never flags it
+-- completed, so requiring it would lock the quests after it forever.
 function ns.MissingPrereq(id)
     local q = ns.Quests[id]
     if not q then
@@ -251,7 +261,7 @@ function ns.MissingPrereq(id)
     local needed = math.min(q.prn or #prereqs, #prereqs)
     local done, firstMissing = 0, nil
     for _, pre in ipairs(prereqs) do
-        if ns.IsDone(pre) then
+        if ns.IsDone(pre) or ns.IsRepeatable(pre) then
             done = done + 1
         elseif not firstMissing then
             firstMissing = pre
@@ -266,7 +276,8 @@ end
 function ns.GetStatus(id)
     local q = ns.Quests[id]
     local S = ns.STATUS
-    if ns.IsDone(id) then
+    local repeatable = q and q.rp == 1
+    if not repeatable and ns.IsDone(id) then
         return S.DONE
     end
     if IsOnQuest(id) then
@@ -288,7 +299,7 @@ function ns.GetStatus(id)
     if ns.GetLockReason(id) then
         return S.LEVEL
     end
-    return S.AVAILABLE
+    return repeatable and S.REPEATABLE or S.AVAILABLE
 end
 
 -- Why a quest isn't open to you (yet): "level", "skill", "minrep" (not yet) or
@@ -426,26 +437,34 @@ local function BuildZoneIndex()
     end
 end
 
--- Quests in a zone that this character can do.
+-- Quests in a zone that this character can do. Repeatable quests are left out
+-- when "Show repeatable quests" is off.
 function ns.GetZoneQuests(zoneID)
     if not zoneQuests then
         BuildZoneIndex()
     end
+    local showRepeatable = ns.GetSetting("showRepeatable")
     local list = {}
     for _, id in ipairs(zoneQuests[zoneID] or {}) do
-        if ns.IsEligible(id) then
+        if ns.IsEligible(id) and (showRepeatable or not ns.IsRepeatable(id)) then
             table.insert(list, id)
         end
     end
     return list
 end
 
--- done, total for a zone. Missed breadcrumbs don't count against you.
+-- Does a quest count towards "x / y" progress? Missed breadcrumbs don't count
+-- against you, and repeatable quests don't count at all.
+function ns.CountsForProgress(id, status)
+    return status ~= ns.STATUS.MISSED and not ns.IsRepeatable(id)
+end
+
+-- done, total for a zone.
 function ns.GetZoneProgress(zoneID)
     local done, total = 0, 0
     for _, id in ipairs(ns.GetZoneQuests(zoneID)) do
         local status = ns.GetStatus(id)
-        if status ~= ns.STATUS.MISSED then
+        if ns.CountsForProgress(id, status) then
             total = total + 1
             if status == ns.STATUS.DONE then
                 done = done + 1
@@ -637,13 +656,22 @@ end
 --   "reputation", id, text - next quest needs more reputation ("Friendly with Darnassus")
 --   "blocked", id, preID   - waiting on a quest outside this storyline
 --   "complete"             - every quest done
+-- Repeatable quests are skipped, unless the storyline has nothing else left.
 function ns.GetNextStep(storyline)
     local S = ns.STATUS
     local active, levelID, blockedID
-    -- nodes are in column order, so earlier quests in the story come first
+    local nodes, repeatables = {}, {}
     for _, node in ipairs(storyline.nodes) do
+        table.insert(ns.IsRepeatable(node.id) and repeatables or nodes, node)
+    end
+    local onlyRepeatables = #nodes == 0
+    if onlyRepeatables then
+        nodes = repeatables
+    end
+    -- nodes are in column order, so earlier quests in the story come first
+    for _, node in ipairs(nodes) do
         local status = ns.GetStatus(node.id)
-        if status == S.AVAILABLE then
+        if status == S.AVAILABLE or status == S.REPEATABLE then
             return "available", node.id
         elseif status == S.ACTIVE and not active then
             active = node.id

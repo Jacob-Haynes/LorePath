@@ -86,7 +86,8 @@ for s in list(storylines.values())[:5]:
     check(ok, f"  storyline {s['first']}: every prerequisite sits in an earlier column")
 
 done, total = ns.GetZoneProgress(1429)
-check(total == zone_quests and done >= 1, f"zone progress counts {done}/{total}")
+elwynn_rp = len([qid for qid in ns.GetZoneQuests(1429).values() if ns.Quests[qid]["rp"]])
+check(total == zone_quests - elwynn_rp and done >= 1, f"zone progress counts {done}/{total} (repeatables left out: {elwynn_rp})")
 
 # --- Waypoint ---
 ns.ShowQuestStart(783)
@@ -207,7 +208,8 @@ ns.SetSetting("hideCompleted", False)
 # Zone list: continents collapse, and the whole list can be hidden.
 def zone_rows():
     return [f for f in harness["all"].values() if f["zoneID"] is not None and f.IsShown(f)]
-heading = [f for f in harness["all"].values() if f["continent"] == "Kalimdor" and f.IsShown(f)][0]
+# Pooled rows keep .continent after turning into zone rows, so match headings only.
+heading = [f for f in harness["all"].values() if f["continent"] == "Kalimdor" and f["zoneID"] is None and f.IsShown(f)][0]
 before = len(zone_rows())
 heading["__scripts"]["OnClick"](heading)
 after = len(zone_rows())
@@ -220,7 +222,9 @@ frame["listToggle"]["__scripts"]["OnClick"](frame["listToggle"])
 check(frame["listInset"].IsShown(frame["listInset"]), "and shows it again")
 
 ns.SetSetting("showLevels", False)
-tile = [f for f in harness["all"].values() if f["questID"] is not None and f.IsShown(f)][0]
+# Level-locked tiles always show the level (it's why they're locked), so pick an open one.
+tile = [f for f in harness["all"].values() if f["questID"] is not None and f.IsShown(f)
+        and ns.GetStatus(f["questID"]) not in (S.LEVEL, S.MISSED)][0]
 check("Lv" not in tile["sub"]["__text"], "turning off quest levels removes the level from tiles: " + tile["sub"]["__text"])
 ns.SetSetting("showLevels", True)
 
@@ -373,6 +377,155 @@ check(fresh_status(6031) == S.AVAILABLE and ns.ReputationText(ns.Quests[6031]["m
 g.C_Reputation = saved
 ns.Quests[capped]["xr"] = None
 
+
+# --- Repeatable quests ---
+check(len([q for q in ns.Quests.values() if q["rp"] == 1]) > 200, "the extractor keeps repeatable quests, flagged rp=1")
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
+char["completed"], char["log"] = lua.table(), lua.table()
+for k in list(rep.keys()):
+    rep[k] = None
+ns.RefreshPlayer()
+ns.RefreshCompleted()
+# A repeatable quest with no prerequisites or locks that a level-60 Human Warrior can take.
+rp_id = next(qid for qid, q in sorted(ns.Quests.items()) if q["rp"] == 1 and not q["pre"] and not q["mr"] and not q["xr"]
+             and not q["sk"] and ns.IsEligible(qid) and (q["l"] or 1) <= 60)
+rp_zone = ns.Quests[rp_id]["z"]
+check(ns.GetStatus(rp_id) == S.REPEATABLE, f"repeatable quest {rp_id} shows as REPEATABLE")
+char["completed"][rp_id] = True
+ns.RefreshCompleted()
+check(ns.GetStatus(rp_id) == S.REPEATABLE, "a repeatable is never DONE, even if the client flags it completed")
+char["log"][rp_id] = True
+check(ns.GetStatus(rp_id) == S.ACTIVE, "a repeatable in your log shows as ACTIVE")
+char["log"][rp_id] = None
+char["completed"][rp_id] = None
+ns.RefreshCompleted()
+lowlevel = next(qid for qid, q in sorted(ns.Quests.items()) if q["rp"] == 1 and not q["pre"] and not q["mr"] and not q["xr"]
+                and not q["sk"] and ns.IsEligible(qid) and (q["l"] or 1) > 1)
+char["level"] = 1
+ns.RefreshPlayer()
+check(ns.GetStatus(lowlevel) == S.LEVEL, f"a repeatable too high for you ({lowlevel}, level {ns.Quests[lowlevel]['l']}) is level-locked")
+char["level"] = 60
+ns.RefreshPlayer()
+
+# Progress: the repeatable counts neither way.
+zq = list(ns.GetZoneQuests(rp_zone).values())
+d0, t0 = ns.GetZoneProgress(rp_zone)
+non_rp = [qid for qid in zq if not ns.Quests[qid]["rp"] and ns.GetStatus(qid) != S.MISSED]
+check(t0 == len(non_rp), f"zone progress total ({t0}) leaves out repeatables")
+char["log"][rp_id] = True
+d1, t1 = ns.GetZoneProgress(rp_zone)
+check((d1, t1) == (d0, t0), "picking up a repeatable doesn't change zone progress")
+char["log"][rp_id] = None
+
+# Chains continue past a repeatable prerequisite (91736 is repeatable, 91738 needs it).
+check(ns.Quests[91736]["rp"] == 1 and 91736 in list(ns.Quests[91738]["pre"].values()), "91738 has repeatable prerequisite 91736")
+check(ns.MissingPrereq(91738) is None, "a repeatable prerequisite counts as satisfied")
+check(ns.GetStatus(91738) not in (S.BLOCKED,), f"91738 isn't blocked by its repeatable prerequisite ({ns.GetStatus(91738)})")
+
+# GetNextStep skips repeatables unless nothing else is left; storyline x / y leaves them out.
+fake = lua.eval("function(a, b) return { first = a, nodes = { { id = a, col = 0, row = 0 }, { id = b, col = 1, row = 0 } }, parents = { [b] = { a } } } end")
+plain = next(qid for qid, q in sorted(ns.Quests.items()) if not q["rp"] and not q["pre"] and not q["mr"] and not q["sk"]
+             and not q["bc"] and ns.IsEligible(qid) and (q["l"] or 1) <= 60 and qid != rp_id)
+st = fake(rp_id, plain)
+kind, nid = ns.GetNextStep(st)
+check(kind == "available" and nid == plain, f"Next skips an available repeatable for a normal quest ({kind}, {nid})")
+char["completed"][plain] = True
+ns.RefreshCompleted()
+check(ns.GetNextStep(st) == "complete", "a storyline whose only unfinished quest is repeatable is complete")
+char["completed"][plain] = None
+ns.RefreshCompleted()
+kind, nid = ns.GetNextStep(fake(rp_id, lowlevel))
+check(kind == "available" and nid == rp_id, "a storyline of only repeatables points Next at one")
+
+# UI: blue box, "Repeatable" second line, tooltip; then the three toggles.
+g.SlashCmdList["LOREPATH"]("here") if not frame.IsShown(frame) else None
+ns.FocusQuest(rp_id)
+t = tile_for(rp_id)
+check(t is not None and "Repeatable" in t["sub"]["__text"], f"repeatable tile's second line: {t and t['sub']['__text']!r}")
+g.GameTooltip.lines = lua.table()
+t["__scripts"]["OnEnter"](t)
+lines = [str(l) for l in g.GameTooltip.lines.values()]
+check(any(l.startswith("Repeatable") for l in lines), "repeatable tooltip says so: " + " | ".join(lines[:4]))
+def zone_rp_tiles():
+    return len([f for f in harness["all"].values() if f["questID"] is not None and f.IsShown(f) and ns.Quests[f["questID"]]["rp"]])
+def zone_tiles():
+    return len([f for f in harness["all"].values() if f["questID"] is not None and f.IsShown(f)])
+g.LorePathDB["collapsed"] = lua.table()
+g.LorePathDB["hideCompleted"] = False
+ns.Refresh()
+shown_rp, shown_all = zone_rp_tiles(), zone_tiles()
+check(shown_rp > 0, f"{shown_rp} repeatable tiles show in {ns.GetMapName(rp_zone)}")
+def hidden_ok(how):
+    sls, others = ns.BuildStorylines(rp_zone)
+    ids = [n["id"] for s_ in sls.values() for n in s_["nodes"].values()] + list(others.values())
+    check(g.LorePathDB["showRepeatable"] is False and zone_rp_tiles() == 0 and zone_tiles() == shown_all - shown_rp
+          and not any(ns.Quests[i]["rp"] for i in ids),
+          f"{how} hides repeatables from storylines and 'Other quests' ({shown_all} -> {zone_tiles()} tiles)")
+    for s_ in sls.values():
+        nodes = list(s_["nodes"].values())
+        col_of = {n["id"]: n["col"] for n in nodes}
+        if not all(col_of[p] < col_of[c] for c, ps in s_["parents"].items() if c in col_of for p in ps.values() if p in col_of):
+            check(False, f"{how}: storyline {s_['first']} layout is broken")
+def shown_ok(how):
+    check(g.LorePathDB["showRepeatable"] is True and zone_rp_tiles() == shown_rp and zone_tiles() == shown_all,
+          f"{how} shows them again")
+box = frame["repeatToggle"]
+panel_box = [f for f in harness["all"].values() if f["__template"] == "UICheckButtonTemplate" and f is not box
+             and f["__checked"] is not None]
+check(box.GetChecked(box) is True, "the header 'Repeatable' box starts ticked")
+# 1. header tick box
+box.SetChecked(box, False)
+box["__scripts"]["OnClick"](box)
+hidden_ok("unticking the header box")
+check(any(f.GetChecked(f) is False for f in panel_box), "the settings page box follows the header box")
+box.SetChecked(box, True)
+box["__scripts"]["OnClick"](box)
+shown_ok("ticking the header box")
+# 2. /lp repeatable
+g.SlashCmdList["LOREPATH"]("repeatable")
+hidden_ok("/lp repeatable")
+check(box.GetChecked(box) is False, "the header box follows /lp repeatable")
+g.SlashCmdList["LOREPATH"]("repeatable")
+shown_ok("/lp repeatable again")
+check(box.GetChecked(box) is True, "and is ticked again")
+# 3. settings page check box
+cb = None
+for f in harness["all"].values():
+    if f["__template"] == "UICheckButtonTemplate" and f is not box and f["__scripts"]["OnClick"] is not None:
+        f.SetChecked(f, False)
+        f["__scripts"]["OnClick"](f)
+        if g.LorePathDB["showRepeatable"] is False:
+            cb = f
+            break
+        f.SetChecked(f, True)
+        f["__scripts"]["OnClick"](f)
+check(cb is not None, "the settings page has a 'Show repeatable quests' box")
+if cb is not None:
+    hidden_ok("unticking 'Show repeatable quests' in settings")
+    check(box.GetChecked(box) is False, "the header box follows the settings page")
+    cb.SetChecked(cb, True)
+    cb["__scripts"]["OnClick"](cb)
+    shown_ok("ticking it in settings")
+check(ns.DEFAULTS["showRepeatable"] is True, "'Show repeatable quests' is on by default")
+
+# A real storyline with a repeatable in it: the header's "x / y" leaves it out.
+found = None
+for z in ns.GetZones().values():
+    for st in ns.BuildStorylines(z["id"])[0].values():
+        ids = [n["id"] for n in st["nodes"].values()]
+        if any(ns.Quests[i]["rp"] for i in ids) and not all(ns.Quests[i]["rp"] for i in ids):
+            found = (st, ids)
+            break
+    if found:
+        break
+check(found is not None, "some storyline contains a repeatable quest")
+if found:
+    st, ids = found
+    ns.FocusQuest(st["first"])
+    sec = [f for f in harness["all"].values() if f["key"] == "s" + str(st["first"]) and f.IsShown(f)][0]
+    expected = len([i for i in ids if not ns.Quests[i]["rp"] and ns.GetStatus(i) != S.MISSED])
+    check(sec["count"]["__text"].endswith(f"/ {expected}|r"),
+          f"storyline {st['first']} counts {expected} of its {len(ids)} quests: {sec['count']['__text']!r}")
 # --- Dungeons and raids (issue #2) ---
 char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
 char["completed"], char["log"] = lua.table(), lua.table()

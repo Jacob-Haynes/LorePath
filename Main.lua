@@ -52,11 +52,15 @@ SlashCmdList["LOREPATH"] = function(msg)
     elseif command == "minimap" then
         ns.SetSetting("showMinimapButton", not ns.GetSetting("showMinimapButton"))
         ns.Print("Minimap button " .. (ns.GetSetting("showMinimapButton") and "shown." or "hidden."))
+    elseif command == "repeatable" or command == "repeatables" then
+        ns.SetSetting("showRepeatable", not ns.GetSetting("showRepeatable"))
+        ns.Print("Repeatable quests " .. (ns.GetSetting("showRepeatable") and "shown." or "hidden."))
     else
         ns.Print("v" .. ns.VERSION .. " commands:")
         ns.Print("  |cffffd100/lp|r - open or close the window")
         ns.Print("  |cffffd100/lp here|r - open on the zone you're in")
         ns.Print("  |cffffd100/lp config|r - open the settings")
         ns.Print("  |cffffd100/lp minimap|r - show or hide the minimap button")
+        ns.Print("  |cffffd100/lp repeatable|r - show or hide repeatable quests")
     end
 end
