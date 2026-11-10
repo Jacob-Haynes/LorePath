@@ -73,6 +73,19 @@ local HEADER_H = 26
 local SECTION_GAP = 18
 
 local frame
+local history = {} -- where you were before each jump to a quest: { zone, v, h }
+local HISTORY_MAX = 20
+
+local function UpdateBackButton()
+    if frame and frame.backButton then
+        frame.backButton:SetShown(#history > 0)
+    end
+end
+
+local function ClearHistory()
+    wipe(history)
+    UpdateBackButton()
+end
 local selectedZone
 local zoneRows = {}
 local renderedKeys = {}
@@ -785,6 +798,7 @@ local RenderZoneList
 local function SelectZone(zoneID)
     selectedZone = zoneID
     ns.focusedQuest = nil
+    ClearHistory() -- picking a zone yourself starts a fresh trail
     if LorePathDB then
         LorePathDB.lastZone = zoneID
     end
@@ -835,6 +849,7 @@ RenderZoneList = function()
         row:SetPoint("TOPLEFT", list, "TOPLEFT", 0, -y)
         row:SetPoint("RIGHT", list, "RIGHT", 0, 0)
         row:Show()
+        row.top = y
         y = y + height
         return row
     end
@@ -933,6 +948,27 @@ local function FocusedNode()
     end
 end
 
+-- Scrolls the zone list so the selected zone's row is in view.
+local function ScrollListToSelected()
+    if not frame or not frame.listScroll then
+        return
+    end
+    for _, row in ipairs(zoneRows) do
+        if row:IsShown() and row.zoneID == selectedZone and row.top then
+            local scroll = frame.listScroll
+            if scroll.UpdateScrollChildRect then
+                scroll:UpdateScrollChildRect()
+            end
+            local view = scroll:GetHeight()
+            local current = scroll:GetVerticalScroll()
+            if row.top < current or row.top + row:GetHeight() > current + view then
+                scroll:SetVerticalScroll(math.max(0, math.min(row.top - view / 3, scroll:GetVerticalScrollRange())))
+            end
+            return
+        end
+    end
+end
+
 -- Scrolls the graph so the focused quest sits near the top left.
 local function ScrollToFocus()
     local node = frame and FocusedNode()
@@ -985,6 +1021,19 @@ function ns.FocusQuest(id)
         end
     end
 
+    -- Remember where you were, for the Back button.
+    if selectedZone then
+        table.insert(history, {
+            zone = selectedZone,
+            v = frame.graphScroll:GetVerticalScroll(),
+            h = frame.graphScroll:GetHorizontalScroll(),
+        })
+        if #history > HISTORY_MAX then
+            table.remove(history, 1)
+        end
+    end
+    UpdateBackButton()
+
     selectedZone = zone
     if LorePathDB then
         LorePathDB.lastZone = zone
@@ -992,6 +1041,8 @@ function ns.FocusQuest(id)
     ns.focusedQuest = id
     RenderZoneList()
     RenderZone()
+    ScrollListToSelected()
+    C_Timer.After(0, ScrollListToSelected)
     ScrollToFocus()
     C_Timer.After(0, ScrollToFocus) -- the scroll range updates a frame later in game
     C_Timer.After(2.5, function()
@@ -1004,6 +1055,33 @@ function ns.FocusQuest(id)
             end
         end
     end)
+end
+
+-- Returns to the zone and scroll position you were at before the last jump.
+function ns.GoBack()
+    local entry = table.remove(history)
+    UpdateBackButton()
+    if not entry or not frame then
+        return
+    end
+    ns.focusedQuest = nil
+    selectedZone = entry.zone
+    if LorePathDB then
+        LorePathDB.lastZone = entry.zone
+    end
+    RenderZoneList()
+    RenderZone()
+    ScrollListToSelected()
+    local function Restore()
+        local scroll = frame.graphScroll
+        if scroll.UpdateScrollChildRect then
+            scroll:UpdateScrollChildRect()
+        end
+        scroll:SetVerticalScroll(math.max(0, math.min(entry.v, scroll:GetVerticalScrollRange())))
+        scroll:SetHorizontalScroll(math.max(0, math.min(entry.h, scroll:GetHorizontalScrollRange())))
+    end
+    Restore()
+    C_Timer.After(0, Restore) -- the scroll range updates a frame later in game
 end
 
 -- ============================================================================
@@ -1102,6 +1180,7 @@ local function CreateMainFrame()
     listContent:SetSize(LIST_W - 8, 10)
     listScroll:SetScrollChild(listContent)
     MakeScrollable(listScroll, false)
+    f.listScroll = listScroll
     f.listContent = listContent
 
     -- Storyline graph (right), on a stone background
@@ -1161,6 +1240,24 @@ local function CreateMainFrame()
     collapseAll:SetPoint("RIGHT", expandAll, "LEFT", -4, 0)
     collapseAll:SetText("Collapse all")
     collapseAll:SetScript("OnClick", function() SetAllCollapsed(true) end)
+
+    -- Back: returns to where you were before jumping to a quest.
+    local back = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
+    back:SetSize(70, 20)
+    back:SetPoint("RIGHT", collapseAll, "LEFT", -12, 0)
+    back:SetText("Back")
+    back:SetScript("OnClick", function() ns.GoBack() end)
+    back:SetScript("OnEnter", function(self)
+        local entry = history[#history]
+        if entry then
+            GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
+            GameTooltip:AddLine("Back to " .. ns.GetMapName(entry.zone), 1, 1, 1)
+            GameTooltip:Show()
+        end
+    end)
+    back:SetScript("OnLeave", GameTooltip_Hide)
+    back:Hide()
+    f.backButton = back
 
     -- Footer: legend, hint, settings
     local x = 16
@@ -1271,12 +1368,14 @@ function ns.Toggle(openCurrentZone)
     ns.RefreshPlayer() -- the current-zone lookup needs to know which quests are yours
     if openCurrentZone or (not frame:IsShown() and ns.GetSetting("openOnCurrentZone")) then
         selectedZone = CurrentZone() or selectedZone
+        ClearHistory()
     end
     if frame:IsShown() then
         ns.Refresh()
     else
         frame:Show()
     end
+    ScrollListToSelected()
 end
 
 -- Global so Bindings.xml can call it.

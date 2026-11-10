@@ -259,6 +259,33 @@ if blocked:
     harness.RunTimers()
     check(not shown[0]["flash"].IsShown(shown[0]["flash"]), "the highlight fades after a moment")
 
+    # Back returns along the trail of jumps; picking a zone yourself clears it.
+    back = frame["backButton"]
+    start_zone = ns.Quests[st["first"]]["z"]
+    check(back.IsShown(back), "a Back button appears after jumping")
+    back["__scripts"]["OnClick"](back)
+    check(frame["zoneTitle"]["__text"] == ns.GetMapName(start_zone), "Back returns to the zone you jumped from")
+    while back.IsShown(back):
+        back["__scripts"]["OnClick"](back)
+    check(frame["zoneTitle"]["__text"] == "The Barrens", "Back again walks the trail back to where you started")
+    step["__scripts"]["OnClick"](step)
+    check(back.IsShown(back), "jumping again shows Back")
+    row = [f for f in harness["all"].values() if f["zoneID"] == 1413 and f.IsShown(f)][0]
+    row["__scripts"]["OnClick"](row)
+    check(not back.IsShown(back), "choosing a zone in the list clears the Back trail")
+
+    # The zone list scrolls to bring a far-away selected zone into view.
+    ls = frame["listScroll"]
+    ls["__vrange"], ls["__vs"] = 10000, 0
+    rows = sorted([f for f in harness["all"].values() if f["zoneID"] is not None and f.IsShown(f)], key=lambda f: f["top"])
+    far = rows[-1]
+    far_quest = next(qid for qid, q in ns.Quests.items() if q["z"] == far["zoneID"] and ns.IsEligible(qid))
+    ns.FocusQuest(far_quest)
+    vs = ls["__vs"]
+    far = [f for f in harness["all"].values() if f["zoneID"] == far["zoneID"] and f.IsShown(f)][0]
+    check(vs > 0 and far["top"] >= vs and far["top"] + 20 <= vs + ls.GetHeight(ls),
+          f"jumping to a zone low in the list scrolls it into view (row at {far['top']}, scrolled to {vs})")
+
 g.SlashCmdList["LOREPATH"]("config")
 check(harness["openedSettings"] == 77, "/lp config opens the settings page")
 
