@@ -6,6 +6,8 @@
 
 It's not a quest helper. There are no map pins and no objective tracking, so it sits happily alongside the default quest UI.
 
+LorePath supports English game clients only.
+
 > **Version 1.0.0.** Lore beyond quest text (zones, characters, a codex) is planned.
 
 ---

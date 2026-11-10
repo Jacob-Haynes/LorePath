@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.0.1
 
 - **No spoilers:** quests you haven't started show "Find what awaits you." in their details, with a **Reveal** button, instead of their objectives and story. Quests in your log show their objectives and description, but not how they end. Completed quests show everything. A new **Show spoilers** setting (and `/lp spoilers`) shows everything always.
 - **Quest details:** the WarcraftDB link is now at the very bottom of the panel.
