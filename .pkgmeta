@@ -2,7 +2,13 @@ package-as: LorePath
 
 enable-nolib-creation: no
 
+# Used as the release notes on CurseForge and GitHub Releases.
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
 ignore:
   - README.md
+  - CHANGELOG.md
   - tools
   - media
