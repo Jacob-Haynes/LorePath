@@ -17,7 +17,13 @@ local STATUS_STYLE = {
     [S.LEVEL]     = { bg = { 0.10, 0.10, 0.10 }, border = { 0.32, 0.32, 0.32 } },             -- text: difficulty colour
     [S.BLOCKED]   = { bg = { 0.08, 0.08, 0.08 }, border = { 0.26, 0.26, 0.26 }, text = { 0.55, 0.55, 0.55 } },
     [S.MISSED]    = { bg = { 0.06, 0.06, 0.06 }, border = { 0.18, 0.18, 0.18 }, text = { 0.40, 0.40, 0.40 } },
+    [S.REPEATABLE] = { bg = { 0.07, 0.14, 0.26 }, border = { 0.35, 0.65, 1.00 } }, -- text: difficulty colour
 }
+
+-- WoW's daily/repeatable quest blue, for the "!" marker and the border.
+local REPEATABLE_BLUE = { 0.35, 0.65, 1.00 }
+-- A repeatable quest you can't take yet keeps its locked look, with a dim blue border.
+local REPEATABLE_LOCKED_BORDER = { 0.20, 0.36, 0.55 }
 
 local STATUS_TEXT = {
     [S.DONE]      = "Completed",
@@ -26,6 +32,7 @@ local STATUS_TEXT = {
     [S.LEVEL]     = "Your level is too low",
     [S.BLOCKED]   = "Needs an earlier quest",
     [S.MISSED]    = "Skipped (you went past this breadcrumb)",
+    [S.REPEATABLE] = "Repeatable: you can take it again and again",
 }
 
 -- Second line of a quest box.
@@ -36,6 +43,7 @@ local STATUS_SHORT = {
     [S.LEVEL]     = "Too high level",
     [S.BLOCKED]   = "Locked",
     [S.MISSED]    = "Skipped",
+    [S.REPEATABLE] = "Repeatable",
 }
 
 -- Small marker drawn on the corner of a quest's icon.
@@ -47,7 +55,7 @@ local STATUS_MARK = {
     [S.MISSED]    = "Interface\\RaidFrame\\ReadyCheck-NotReady",
 }
 
-local LEGEND_ORDER = { S.DONE, S.ACTIVE, S.AVAILABLE, S.LEVEL, S.BLOCKED }
+local LEGEND_ORDER = { S.DONE, S.ACTIVE, S.AVAILABLE, S.REPEATABLE, S.LEVEL, S.BLOCKED }
 
 -- WoW's quest difficulty colours (QuestDifficultyColors in Blizzard's UI code).
 local DIFFICULTY = {
@@ -297,7 +305,7 @@ local function ShowNodeTooltip(node)
     end
     local style = STATUS_STYLE[status]
     local sc = style.text or { 1, 1, 1 }
-    if status == S.DONE or status == S.ACTIVE then
+    if status == S.DONE or status == S.ACTIVE or status == S.REPEATABLE then
         sc = style.border
     end
     local statusText = STATUS_TEXT[status]
@@ -321,6 +329,10 @@ local function ShowNodeTooltip(node)
     end
     if q.bc then
         GameTooltip:AddLine("Breadcrumb: leads you to another quest", 0.75, 0.75, 0.75)
+    end
+    if q.rp and status ~= S.REPEATABLE then
+        local c = REPEATABLE_BLUE
+        GameTooltip:AddLine("Repeatable: doesn't count towards progress", c[1], c[2], c[3])
     end
     if storyline then
         local before = storyline.parents[id]
@@ -497,7 +509,11 @@ local function StyleNode(node, id, storyline)
     node.storyline = storyline
     node.flash:SetShown(id == ns.focusedQuest)
     node.bg:SetColorTexture(style.bg[1], style.bg[2], style.bg[3], 0.95)
-    node:SetBorderColor(style.border[1], style.border[2], style.border[3], 1)
+    local border = style.border
+    if q.rp and (status == S.LEVEL or status == S.BLOCKED) then
+        border = REPEATABLE_LOCKED_BORDER
+    end
+    node:SetBorderColor(border[1], border[2], border[3], 1)
     node.icon:SetTexture(QuestIcon(q))
     node.icon:SetDesaturated(status == S.BLOCKED or status == S.MISSED)
     local mark = STATUS_MARK[status]
@@ -507,9 +523,16 @@ local function StyleNode(node, id, storyline)
     end
     -- Too high for you yet: a grey "!", like a quest that isn't available yet.
     node.mark:SetDesaturated(status == S.LEVEL)
+    node.mark:SetVertexColor(1, 1, 1)
     if status == S.LEVEL then
         node.mark:SetShown(true)
         node.mark:SetTexture(STATUS_MARK[S.AVAILABLE])
+    elseif status == S.REPEATABLE then
+        -- The blue "!" of a daily quest: the yellow one, desaturated and tinted.
+        node.mark:SetShown(true)
+        node.mark:SetTexture(STATUS_MARK[S.AVAILABLE])
+        node.mark:SetDesaturated(true)
+        node.mark:SetVertexColor(REPEATABLE_BLUE[1], REPEATABLE_BLUE[2], REPEATABLE_BLUE[3])
     end
 
     -- The level number carries the difficulty colour: red when it's too high for
@@ -535,10 +558,16 @@ local function StyleNode(node, id, storyline)
         else
             node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Needs skill " .. (q.sl or "?") .. "|r")
         end
-    elseif ns.GetSetting("showLevels") then
-        node.sub:SetText(Hex(DifficultyColor(q.l or 1)) .. "Lv " .. (q.l or 1) .. "|r  " .. STATUS_SHORT[status])
     else
-        node.sub:SetText(STATUS_SHORT[status])
+        local short = STATUS_SHORT[status]
+        if status == S.REPEATABLE then
+            short = Hex(REPEATABLE_BLUE) .. short .. "|r"
+        end
+        if ns.GetSetting("showLevels") then
+            node.sub:SetText(Hex(DifficultyColor(q.l or 1)) .. "Lv " .. (q.l or 1) .. "|r  " .. short)
+        else
+            node.sub:SetText(short)
+        end
     end
 end
 
@@ -605,7 +634,7 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
     local done, total = 0, 0
     for _, n in ipairs(storyline.nodes) do
         local status = ns.GetStatus(n.id)
-        if status ~= S.MISSED then
+        if ns.CountsForProgress(n.id, status) then
             total = total + 1
             if status == S.DONE then
                 done = done + 1
@@ -694,14 +723,18 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
 end
 
 local function RenderOthers(canvas, others, top, viewWidth)
-    local done = 0
+    local done, total = 0, 0
     for _, id in ipairs(others) do
-        if ns.GetStatus(id) == S.DONE then
-            done = done + 1
+        local status = ns.GetStatus(id)
+        if ns.CountsForProgress(id, status) then
+            total = total + 1
+            if status == S.DONE then
+                done = done + 1
+            end
         end
     end
     local _, collapsed, gridTop = RenderSection(canvas, "o" .. selectedZone, "Other quests",
-        done, #others, done == #others, viewWidth - PAD * 2, top)
+        done, total, done == total, viewWidth - PAD * 2, top)
     if collapsed then
         return HEADER_H
     end
@@ -1008,7 +1041,11 @@ function ns.FocusQuest(id)
         end
     end
     if not key then
-        ns.Print(ns.GetQuestNameOrID(id) .. " isn't shown for this character.")
+        if q.rp and not ns.GetSetting("showRepeatable") and ns.IsEligible(id) then
+            ns.Print(ns.GetQuestNameOrID(id) .. " is a repeatable quest; tick \"Repeatable\" to show it.")
+        else
+            ns.Print(ns.GetQuestNameOrID(id) .. " isn't shown for this character.")
+        end
         return
     end
     if key:sub(1, 1) == "o" and not ns.GetSetting("showOthers") then
@@ -1241,10 +1278,31 @@ local function CreateMainFrame()
     collapseAll:SetText("Collapse all")
     collapseAll:SetScript("OnClick", function() SetAllCollapsed(true) end)
 
+    -- Quick show/hide for repeatable quests (the same setting as on the settings page).
+    local repeatToggle = CreateFrame("CheckButton", nil, f, "UICheckButtonTemplate")
+    repeatToggle:SetSize(22, 22)
+    local repeatLabel = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    repeatLabel:SetPoint("RIGHT", collapseAll, "LEFT", -10, 0)
+    repeatLabel:SetText("Repeatable")
+    repeatLabel:SetTextColor(REPEATABLE_BLUE[1], REPEATABLE_BLUE[2], REPEATABLE_BLUE[3])
+    repeatToggle:SetPoint("RIGHT", repeatLabel, "LEFT", -1, 0)
+    repeatToggle:SetChecked(ns.GetSetting("showRepeatable") and true or false)
+    repeatToggle:SetScript("OnClick", function(self)
+        ns.SetSetting("showRepeatable", self:GetChecked() and true or false)
+    end)
+    repeatToggle:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
+        GameTooltip:AddLine("Show repeatable quests", 1, 0.82, 0)
+        GameTooltip:AddLine("Daily and repeatable quests, in blue. They never count towards progress.", 1, 1, 1, true)
+        GameTooltip:Show()
+    end)
+    repeatToggle:SetScript("OnLeave", GameTooltip_Hide)
+    f.repeatToggle = repeatToggle
+
     -- Back: returns to where you were before jumping to a quest.
     local back = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
     back:SetSize(70, 20)
-    back:SetPoint("RIGHT", collapseAll, "LEFT", -12, 0)
+    back:SetPoint("RIGHT", repeatToggle, "LEFT", -8, 0)
     back:SetText("Back")
     back:SetScript("OnClick", function() ns.GoBack() end)
     back:SetScript("OnEnter", function(self)
@@ -1279,6 +1337,9 @@ local function CreateMainFrame()
         mark:SetTexture(markPath)
         if status == S.LEVEL then
             mark:SetDesaturated(true)
+        elseif status == S.REPEATABLE then
+            mark:SetDesaturated(true)
+            mark:SetVertexColor(REPEATABLE_BLUE[1], REPEATABLE_BLUE[2], REPEATABLE_BLUE[3])
         end
         local label = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
         label:SetPoint("LEFT", swatch, "RIGHT", 5, 0)
@@ -1287,7 +1348,7 @@ local function CreateMainFrame()
     end
     local names = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     names:SetPoint("BOTTOMLEFT", f, "BOTTOMLEFT", x + 8, 11)
-    names:SetText("Level colours:  " .. Hex(DIFFICULTY.impossible) .. "too high|r  "
+    names:SetText("Levels:  " .. Hex(DIFFICULTY.impossible) .. "too high|r  "
         .. Hex(DIFFICULTY.difficult) .. "your level|r  " .. Hex(DIFFICULTY.standard) .. "easy|r  "
         .. Hex(DIFFICULTY.trivial) .. "low level|r")
 
@@ -1336,6 +1397,7 @@ function ns.Refresh()
     end
     ns.RefreshPlayer()
     ns.RefreshCompleted()
+    frame.repeatToggle:SetChecked(ns.GetSetting("showRepeatable") and true or false)
     if not selectedZone then
         selectedZone = CurrentZone() or (LorePathDB and LorePathDB.lastZone)
         if not selectedZone then
