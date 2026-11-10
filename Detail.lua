@@ -36,7 +36,7 @@ local function Get(fn, ...)
     end
 end
 
-local LogQuestText -- defined below
+local LogQuestText, QuestLinkText -- defined below
 
 local function Saved(id)
     local entry = Cache()[id] or {}
@@ -219,6 +219,33 @@ local function CoinText(copper)
 end
 
 -- Name of an NPC by ID, from the game's creature tooltip (nil until it's cached).
+-- The quest's link tooltip (what you see hovering a quest link in chat): its
+-- one-line goal and its requirements. The client gives this for any quest it
+-- can load, including completed ones and WoW Forever's own.
+function QuestLinkText(id)
+    if not (C_TooltipInfo and C_TooltipInfo.GetHyperlink) then
+        return nil, {}
+    end
+    local ok, data = pcall(C_TooltipInfo.GetHyperlink, "quest:" .. id)
+    if not ok or type(data) ~= "table" or type(data.lines) ~= "table" then
+        return nil, {}
+    end
+    local summary, goals, inRequirements = {}, {}, false
+    for i = 2, #data.lines do -- line 1 is the title
+        local text = data.lines[i].leftText
+        if type(text) == "string" and text ~= "" and text ~= " " then
+            if text:match("^Requirements") then
+                inRequirements = true
+            elseif inRequirements then
+                table.insert(goals, (text:gsub("^%s*%-%s*", "")))
+            else
+                table.insert(summary, text)
+            end
+        end
+    end
+    return #summary > 0 and table.concat(summary, " ") or nil, goals
+end
+
 local function NPCName(npcID)
     if not (C_TooltipInfo and C_TooltipInfo.GetHyperlink) then
         return nil
@@ -470,24 +497,27 @@ local function Render(id)
 
     AddHeader("Objectives")
     local objectives = Objectives(id)
-    if not done and #objectives > 0 then
+    local tipSummary, tipGoals = QuestLinkText(id)
+    if IsOnQuest(id) and #objectives > 0 then
+        -- In your log: the live objectives, with your progress.
         for _, o in ipairs(objectives) do
             AddText((o.done and "|cff6bd35f" or "") .. "- " .. o.text .. (o.done and "|r" or ""), "GameFontHighlightSmall", nil, 2, 6)
         end
     else
-        local summary = logObjectives or cached.obj
+        -- Otherwise the quest's one-line goal: saved from the game, else the quest
+        -- link's tooltip (the game's own current wording, done or not), else bundled.
+        local summary = logObjectives or cached.obj or tipSummary
         if not summary and bundled.o then
             summary, usedBundled = bundled.o, true
         end
+        local green = done and { 0.42, 0.83, 0.37 } or nil
         if summary then
-            AddText(ns.FillQuestText(summary), "GameFontHighlightSmall", done and { 0.42, 0.83, 0.37 } or nil, 4)
-        elseif done and #objectives > 0 then
-            -- Completed: the live counters would read 0/N, so show the goals as done.
-            for _, o in ipairs(objectives) do
-                local goal = o.text:gsub(":?%s*%d+%s*/%s*%d+%s*$", "")
-                AddText("- " .. goal, "GameFontHighlightSmall", { 0.42, 0.83, 0.37 }, 2, 6)
-            end
-        else
+            AddText(ns.FillQuestText(summary), "GameFontHighlightSmall", green, 4)
+        end
+        for _, goal in ipairs(tipGoals) do
+            AddText("- " .. goal, "GameFontHighlightSmall", green, 2, 6)
+        end
+        if not summary and #tipGoals == 0 then
             AddText("Not loaded yet.", "GameFontDisableSmall", nil, 4)
         end
     end

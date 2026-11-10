@@ -239,6 +239,25 @@ check(any("completed this before LorePath" in s for s in detail_texts()), "a don
 char["completed"][forever_done] = None
 ns.RefreshCompleted()
 
+# The quest link tooltip gives the goal and requirements, even for a completed Forever quest.
+g.C_TooltipInfo = lua.eval("""{ GetHyperlink = function(link)
+    if link == "quest:" .. FOREVER_ID then
+        return { lines = { { leftText = "Harmony in Balance" }, { leftText = " " },
+            { leftText = "Slay 8 Vuldren Juveniles in Thendal Grove" }, { leftText = " " },
+            { leftText = "Requirements:" }, { leftText = " - 8 x Juvenile Vuldren" } } }
+    end
+end }""".replace("FOREVER_ID", str(forever_done)))
+char["completed"][forever_done] = True
+ns.RefreshCompleted()
+ns.ShowDetail(forever_done)
+texts = detail_texts()
+check(any("Slay 8 Vuldren Juveniles" in s for s in texts) and any(s == "- 8 x Juvenile Vuldren" for s in texts),
+      "a completed Forever quest shows its goal and requirements from the quest link tooltip")
+check(not any("bundled quest database" in s for s in texts), "tooltip text is the game's own, not labelled as bundled")
+char["completed"][forever_done] = None
+ns.RefreshCompleted()
+g.C_TooltipInfo = None
+
 # Storyline links jump to the earlier quest and show it.
 with_pre = next(i for i in [f["questID"] for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)]
                 if ns.Quests[i]["pre"] is not None and ns.Quests[ns.Quests[i]["pre"][1]] is not None)
