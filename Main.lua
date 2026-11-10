@@ -5,6 +5,32 @@ local addonName, ns = ...
 local GetMetadata = (C_AddOns and C_AddOns.GetAddOnMetadata) or GetAddOnMetadata
 ns.VERSION = (GetMetadata and GetMetadata(addonName, "Version")) or "?"
 
+-- Runs fn, and if it errors, reports it (to BugSack/the error frame, and once per
+-- kind in chat) instead of letting one broken part stop everything else.
+local reported = {}
+function ns.Safely(label, fn, ...)
+    local ok, err = pcall(fn, ...)
+    if not ok then
+        if not reported[label] then
+            reported[label] = true
+            ns.Print("|cffff6060Something went wrong (" .. label .. ").|r The rest of LorePath keeps working. "
+                .. "Please report it at github.com/Jacob-Haynes/LorePath/issues: " .. tostring(err))
+        end
+        local handler = geterrorhandler and geterrorhandler()
+        if handler then
+            pcall(handler, err)
+        end
+    end
+    return ok
+end
+
+local function Later(delay, label, fn, ...)
+    local args = { ... }
+    C_Timer.After(delay, function()
+        ns.Safely(label, fn, unpack(args))
+    end)
+end
+
 local events = CreateFrame("Frame")
 for _, event in ipairs({
     "ADDON_LOADED",
@@ -23,7 +49,7 @@ for _, event in ipairs({
     pcall(events.RegisterEvent, events, event)
 end
 
-events:SetScript("OnEvent", function(_, event, arg1, arg2)
+local function OnEvent(event, arg1, arg2)
     if event == "ADDON_LOADED" then
         if arg1 == addonName then
             ns.InitDB()
@@ -39,14 +65,14 @@ events:SetScript("OnEvent", function(_, event, arg1, arg2)
             LorePathDB.characters[name] = true
         end
         -- Save the text of everything already in your log once it has loaded.
-        C_Timer.After(5, ns.CaptureQuestLog)
+        Later(5, "saving your quest log", ns.CaptureQuestLog)
     elseif event == "QUEST_TURNED_IN" then
         -- The completed-quest list updates a moment after the turn-in.
         ns.QueueRefresh(0.6)
     elseif event == "QUEST_ACCEPTED" then
         -- Newer clients pass (questID), older ones (logIndex, questID).
         local questID = arg2 or arg1
-        C_Timer.After(0.5, function() ns.CaptureLogQuest(questID) end)
+        Later(0.5, "saving a quest", ns.CaptureLogQuest, questID)
         ns.QueueRefresh(0.3)
     elseif event == "QUEST_PROGRESS" then
         -- Handing in mid-quest: keep what the quest giver says.
@@ -63,11 +89,15 @@ events:SetScript("OnEvent", function(_, event, arg1, arg2)
     else
         ns.QueueRefresh(0.3)
     end
+end
+
+events:SetScript("OnEvent", function(_, event, ...)
+    ns.Safely(event, OnEvent, event, ...)
 end)
 
 SLASH_LOREPATH1 = "/lp"
 SLASH_LOREPATH2 = "/lorepath"
-SlashCmdList["LOREPATH"] = function(msg)
+local function SlashCommand(msg)
     local command = string.lower(string.match(msg or "", "^%s*(%S*)") or "")
     if command == "" then
         ns.Toggle(false)
@@ -89,4 +119,8 @@ SlashCmdList["LOREPATH"] = function(msg)
         ns.Print("  |cffffd100/lp minimap|r - show or hide the minimap button")
         ns.Print("  |cffffd100/lp repeatable|r - show or hide repeatable quests")
     end
+end
+
+SlashCmdList["LOREPATH"] = function(msg)
+    ns.Safely("/lp", SlashCommand, msg)
 end

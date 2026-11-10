@@ -36,6 +36,23 @@ end
 
 local RefreshPanel -- set once the settings page exists
 
+-- Settings back to their defaults, and the window's saved layout cleared
+-- (collapsed storylines and headings, hidden zone list). Saved quest text
+-- (questCache) and character names are kept.
+function ns.ResetToDefaults()
+    ns.InitDB()
+    for key, value in pairs(DEFAULTS) do
+        LorePathDB[key] = value
+    end
+    LorePathDB.collapsed = nil
+    LorePathDB.collapsedContinents = nil
+    LorePathDB.listHidden = nil
+    if ns.ApplyListVisibility then
+        ns.ApplyListVisibility()
+    end
+    ns.ApplySettings()
+end
+
 function ns.SetSetting(key, value)
     ns.InitDB()
     LorePathDB[key] = value
@@ -185,11 +202,15 @@ function ns.CreateSettingsPanel()
     reset:SetSize(150, 24)
     reset:SetPoint("LEFT", open, "RIGHT", 10, 0)
     reset:SetText("Reset to defaults")
+    reset:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+        GameTooltip:AddLine("Reset to defaults", 1, 0.82, 0)
+        GameTooltip:AddLine("Puts every setting back, re-opens collapsed storylines and zone list headings, and shows the zone list again. Your saved quest text is kept.", 1, 1, 1, true)
+        GameTooltip:Show()
+    end)
+    reset:SetScript("OnLeave", GameTooltip_Hide)
     reset:SetScript("OnClick", function()
-        for key, value in pairs(DEFAULTS) do
-            LorePathDB[key] = value
-        end
-        ns.ApplySettings()
+        ns.ResetToDefaults()
     end)
 
     panel:SetScript("OnShow", RefreshPanel)

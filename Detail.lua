@@ -493,6 +493,17 @@ local function Render(id)
         cursor = cursor + 22
     end
 
+    -- The quest's WarcraftDB page, to copy into a browser (addons can't open one).
+    AddText("WarcraftDB (click, then Ctrl+C to copy):", "GameFontDisableSmall", nil, 8)
+    local link = panel.linkBox
+    link.url = ns.WarcraftDBLink(id)
+    link:SetText(link.url)
+    link:SetCursorPosition(0)
+    link:ClearAllPoints()
+    link:SetPoint("TOPLEFT", content, "TOPLEFT", 14, -(cursor + 2))
+    link:Show()
+    cursor = cursor + 24
+
     -- Quest text, best source first: what the game showed you (saved as you play),
     -- then LorePath's community text (real Forever text other players collected),
     -- then the quest link tooltip's goal, then the bundled vanilla text (pfQuest).
@@ -603,6 +614,11 @@ local function Render(id)
     content:SetHeight(cursor + 12)
 end
 
+-- The quest's page on WarcraftDB's WoW Forever database.
+function ns.WarcraftDBLink(id)
+    return "https://forever.warcraftdb.com/data/quest/" .. id
+end
+
 -- Shows a quest in the panel, opening it if needed.
 function ns.ShowDetail(id)
     if not ns.Quests[id] or not ns.mainFrame then
@@ -617,6 +633,23 @@ function ns.ShowDetail(id)
             ns.ShowQuestStart(ns.detailQuest)
         end)
         panel.mapButton = map
+
+        -- Read-only text box holding the WarcraftDB address: click selects it all.
+        local box = CreateFrame("EditBox", nil, content, "InputBoxTemplate")
+        box:SetSize(TEXT_W - 12, 20)
+        box:SetAutoFocus(false)
+        box:SetFontObject("GameFontHighlightSmall")
+        box:SetScript("OnEditFocusGained", function(self) self:HighlightText() end)
+        box:SetScript("OnMouseUp", function(self) self:SetFocus(); self:HighlightText() end)
+        box:SetScript("OnTextChanged", function(self, userInput)
+            if userInput and self.url then -- typing can't change it
+                self:SetText(self.url)
+                self:HighlightText()
+            end
+        end)
+        box:SetScript("OnEscapePressed", function(self) self:ClearFocus() end)
+        box:SetScript("OnEnterPressed", function(self) self:ClearFocus() end)
+        panel.linkBox = box
     end
     if C_QuestLog.RequestLoadQuestByID then
         C_QuestLog.RequestLoadQuestByID(id)

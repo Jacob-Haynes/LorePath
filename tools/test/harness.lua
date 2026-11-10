@@ -76,6 +76,9 @@ IsControlKeyDown = function() return harness.ctrl or false end
 IsMouseButtonDown = function() return false end
 GetCursorPosition = function() return 0, 0 end
 InCombatLockdown = function() return false end
+-- Errors that ns.Safely catches are recorded here; the test run fails if any are unexpected.
+harness.errors = {}
+geterrorhandler = function() return function(err) table.insert(harness.errors, tostring(err)) end end
 
 -- The test character
 harness.char = { race = 1, class = 1, faction = "Alliance", level = 10, completed = {}, log = {}, map = 1429 }

@@ -1202,6 +1202,13 @@ local function ApplyListVisibility(f)
     f.listToggle:SetPushedTexture(prefix .. "Down")
 end
 
+-- For Settings' "Reset to defaults": show the zone list again if it was hidden.
+function ns.ApplyListVisibility()
+    if frame then
+        ApplyListVisibility(frame)
+    end
+end
+
 local function CreateMainFrame()
     local f
     for _, template in ipairs({ "PortraitFrameTemplate", "BasicFrameTemplateWithInset" }) do
@@ -1484,7 +1491,11 @@ function ns.QueueRefresh(delay)
     refreshPending = true
     C_Timer.After(delay or 0.3, function()
         refreshPending = false
-        ns.Refresh()
+        if ns.Safely then
+            ns.Safely("refresh", ns.Refresh)
+        else
+            ns.Refresh()
+        end
     end)
 end
 

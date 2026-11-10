@@ -470,6 +470,40 @@ if blocked:
     check(vs > 0 and far["top"] >= vs and far["top"] + 20 <= vs + ls.GetHeight(ls),
           f"jumping to a zone low in the list scrolls it into view (row at {far['top']}, scrolled to {vs})")
 
+# --- 1.0.0: WarcraftDB link, Reset to defaults, error safety ---
+ns.ShowDetail(783)
+box = g.LorePathDetailFrame["linkBox"]
+check(box is not None and box["__text"] == "https://forever.warcraftdb.com/data/quest/783", "the panel shows the quest's WarcraftDB address to copy")
+box["__scripts"]["OnTextChanged"](box, True)
+check(box["__text"] == "https://forever.warcraftdb.com/data/quest/783", "typing in it can't change the address")
+ns.HideDetail()
+
+g.LorePathDB["collapsed"] = lua.table_from({"s7": True})
+g.LorePathDB["collapsedContinents"] = lua.table_from({"Kalimdor": True})
+g.LorePathDB["listHidden"] = True
+g.LorePathDB["showLevels"] = False
+g.LorePathDB["questCache"][42] = lua.table_from({"text": "keep me"})
+ns.ResetToDefaults()
+empty = lambda t: t is None or len(list(t.items())) == 0
+check(empty(g.LorePathDB["collapsed"]) and empty(g.LorePathDB["collapsedContinents"]) and g.LorePathDB["listHidden"] is None,
+      "Reset to defaults clears collapsed storylines, headings and the hidden zone list")
+check(g.LorePathDB["showLevels"] is True and frame["listInset"].IsShown(frame["listInset"]), "and puts settings back, showing the zone list again")
+check(g.LorePathDB["questCache"][42]["text"] == "keep me", "it keeps your saved quest text")
+g.LorePathDB["questCache"][42] = None
+
+real_capture = ns.CaptureQuestDetail
+ns.CaptureQuestDetail = lua.eval("function() error('boom') end")
+before_chat = len(list(harness["chat"].values()))
+harness.Fire("QUEST_DETAIL")
+ns.CaptureQuestDetail = real_capture
+caught = list(harness["errors"].values())
+check(len(caught) == 1 and "boom" in caught[0], "an error in one event is caught and reported, not thrown")
+check(any("Something went wrong" in str(m) for m in list(harness["chat"].values())[before_chat:]), "and mentioned once in chat")
+harness["errors"] = lua.table()
+harness.Fire("QUEST_ACCEPTED", 783)
+harness.RunTimers()
+check(len(list(harness["errors"].values())) == 0, "other events keep working afterwards")
+
 g.SlashCmdList["LOREPATH"]("config")
 check(harness["openedSettings"] == 77, "/lp config opens the settings page")
 
@@ -798,6 +832,8 @@ g.SlashCmdList["LOREPATH"]("here")
 check(frame["zoneTitle"]["__text"] == "Elwynn Forest", "back outside, /lp here opens the outdoor zone again")
 g.IsInInstance, g.GetRealZoneText, C_Map.GetAreaInfo = None, None, None
 
+unexpected = list(harness["errors"].values())
+check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])
 print()
 print("FAILED:" if failures else "All checks passed.", *failures, sep="\n  ")
