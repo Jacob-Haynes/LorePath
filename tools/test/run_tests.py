@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Data/QuestText.lua", "Core.lua", "UI.lua", "Detail.lua", "Settings.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "Settings.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -257,6 +257,27 @@ check(not any("bundled quest database" in s for s in texts), "tooltip text is th
 char["completed"][forever_done] = None
 ns.RefreshCompleted()
 g.C_TooltipInfo = None
+
+# Community text (Forever quests other players collected) fills gaps; your own saved text wins.
+cid = next(k for k, v in ns.CommunityText.items() if v["d"] is not None and v["c"] is not None)
+g.LorePathDB["questCache"][cid] = None
+ns.ShowDetail(cid)
+texts = detail_texts()
+check(any(ns.FillQuestText(ns.CommunityText[cid]["d"])[:40] in s for s in texts), f"quest {cid} shows its community description")
+check(any(ns.FillQuestText(ns.CommunityText[cid]["c"])[:30] in s for s in texts), "and its community completion text")
+check(not any("bundled quest database" in s for s in texts), "community text isn't labelled as the bundled vanilla text")
+g.LorePathDB["questCache"][cid] = lua.table_from({"text": "My own saved text."})
+ns.RefreshDetail()
+check(any("My own saved text." in s for s in detail_texts()), "your own saved text replaces community text")
+g.LorePathDB["questCache"][cid] = None
+
+# QUEST_PROGRESS keeps what the quest giver says mid-quest.
+g.GetQuestID = lua.eval(f"function() return {cid} end")
+g.GetProgressText = lua.eval("function() return 'Have you got them yet, $N?' end")
+harness.Fire("QUEST_PROGRESS")
+check(g.LorePathDB["questCache"][cid]["prog"] == "Have you got them yet, $N?", "QUEST_PROGRESS saves the progress text")
+check(any("Have you got them yet, adventurer?" in s for s in detail_texts()), "the panel shows it under Progress")
+g.LorePathDB["questCache"][cid] = None
 
 # Storyline links jump to the earlier quest and show it.
 with_pre = next(i for i in [f["questID"] for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)]

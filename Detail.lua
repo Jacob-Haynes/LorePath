@@ -65,6 +65,18 @@ function ns.CaptureQuestDetail()
     AfterCapture(id)
 end
 
+-- Handing items in mid-quest (QUEST_PROGRESS): what the quest giver says while
+-- you're still working on it.
+function ns.CaptureQuestProgress()
+    local id = Get(GetQuestID)
+    if not id or id == 0 or not ns.Quests[id] then
+        return
+    end
+    local entry = Saved(id)
+    entry.prog = Get(GetProgressText) or entry.prog
+    AfterCapture(id)
+end
+
 -- The reward screen at turn-in (QUEST_COMPLETE): the quest's closing text,
 -- which is the end of that part of the story.
 function ns.CaptureQuestComplete()
@@ -487,10 +499,12 @@ local function Render(id)
         cursor = cursor + 22
     end
 
-    -- Quest text: what the game showed you (saved as you play) comes first; the
-    -- bundled text (pfQuest) only fills gaps, such as quests done before LorePath.
+    -- Quest text, best source first: what the game showed you (saved as you play),
+    -- then LorePath's community text (real Forever text other players collected),
+    -- then the quest link tooltip's goal, then the bundled vanilla text (pfQuest).
     local logText, logObjectives = LogQuestText(id)
     local cached = Cache()[id] or {}
+    local community = ns.CommunityText and ns.CommunityText[id] or {}
     local bundled = ns.QuestText and ns.QuestText[id] or {}
     local done = status == S.DONE
     local usedBundled = false
@@ -506,7 +520,7 @@ local function Render(id)
     else
         -- Otherwise the quest's one-line goal: saved from the game, else the quest
         -- link's tooltip (the game's own current wording, done or not), else bundled.
-        local summary = logObjectives or cached.obj or tipSummary
+        local summary = logObjectives or cached.obj or community.o or tipSummary
         if not summary and bundled.o then
             summary, usedBundled = bundled.o, true
         end
@@ -523,20 +537,26 @@ local function Render(id)
     end
 
     AddHeader("Description")
-    local description = logText or cached.text
+    local description = logText or cached.text or community.d
     if not description and bundled.d then
         description, usedBundled = bundled.d, true
     end
     if description then
         AddText(ns.FillQuestText(description), "GameFontHighlightSmall", { 0.9, 0.86, 0.75 }, 4)
     elseif done then
-        AddText("You completed this before LorePath could save its text, and it isn't in the bundled quest text (WoW Forever's own quests aren't).", "GameFontDisableSmall", nil, 4)
+        AddText("You completed this before LorePath could save its text, and LorePath's quest text doesn't have it yet.", "GameFontDisableSmall", nil, 4)
     else
         AddText("Saved the first time a quest giver shows you this quest.", "GameFontDisableSmall", nil, 4)
     end
-    if cached.done then
+    local progress = cached.prog or community.p
+    if progress then
+        AddHeader("Progress")
+        AddText(ns.FillQuestText(progress), "GameFontHighlightSmall", { 0.9, 0.86, 0.75 }, 4)
+    end
+    local completion = cached.done or community.c
+    if completion then
         AddHeader("Completion")
-        AddText(ns.FillQuestText(cached.done), "GameFontHighlightSmall", { 0.9, 0.86, 0.75 }, 4)
+        AddText(ns.FillQuestText(completion), "GameFontHighlightSmall", { 0.9, 0.86, 0.75 }, 4)
     end
     if usedBundled then
         AddText("Text from LorePath's bundled quest database (pfQuest). WoW Forever's wording may differ slightly; the game's own text replaces it once you see the quest.", "GameFontDisableSmall", { 0.55, 0.55, 0.55 }, 6)

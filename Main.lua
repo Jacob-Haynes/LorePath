@@ -18,6 +18,7 @@ for _, event in ipairs({
     "UPDATE_FACTION",
     "QUEST_DETAIL",
     "QUEST_COMPLETE",
+    "QUEST_PROGRESS",
 }) do
     pcall(events.RegisterEvent, events, event)
 end
@@ -40,6 +41,9 @@ events:SetScript("OnEvent", function(_, event, arg1, arg2)
         local questID = arg2 or arg1
         C_Timer.After(0.5, function() ns.CaptureLogQuest(questID) end)
         ns.QueueRefresh(0.3)
+    elseif event == "QUEST_PROGRESS" then
+        -- Handing in mid-quest: keep what the quest giver says.
+        ns.CaptureQuestProgress()
     elseif event == "QUEST_COMPLETE" then
         -- The turn-in screen: keep the quest's closing text.
         ns.CaptureQuestComplete()
