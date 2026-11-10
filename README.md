@@ -1,5 +1,7 @@
 # LorePath
 
+"Hold your own hand"
+
 **LorePath** is a lightweight WoW Forever addon that maps *your* story. For every zone it draws each questline as a storyline graph, in the style of Attuned's attunement paths. It shows what you've done, what you've missed, and where the next part of each story starts.
 
 It's not a quest helper. There are no map pins and no objective tracking, so it sits happily alongside the default quest UI.
