@@ -1,0 +1,16 @@
+name: Feature request
+description: An idea to make LorePath better.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: Describe the feature, and what you'd use it for.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it matter to you?
+      description: What's missing or awkward today?

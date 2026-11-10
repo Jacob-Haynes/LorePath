@@ -1,0 +1,52 @@
+name: Bug report
+description: Something in LorePath doesn't work or looks wrong.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! If you saw a Lua error, turn on error pop-ups with `/console scriptErrors 1`, do the same thing again, and paste the error below.
+
+        **Missing or wrong quest?** LorePath's quest data comes from AllTheThings. Please report it here, and to [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings/issues) too if you can, so everyone benefits.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Lua error (if any)
+      description: Paste the full error text, including the stack trace.
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: LorePath version
+      description: Shown on the settings page (Options > AddOns > LorePath), or in the name of the file you downloaded, e.g. 0.1.0-beta1.
+    validations:
+      required: true
+  - type: input
+    id: character
+    attributes:
+      label: Character
+      description: Race, class, faction and level, e.g. "Orc Warrior, Horde, level 15".
+    validations:
+      required: true
+  - type: input
+    id: zone
+    attributes:
+      label: Zone (and quest, if it's about one)
+      description: e.g. "The Barrens, quest 'Wharfmaster Dizzywig'".
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag an image here if it helps.
+  - type: input
+    id: addons
+    attributes:
+      label: Other quest or map addons
+      description: e.g. Questie, Completao!!, TomTom, or "none".
