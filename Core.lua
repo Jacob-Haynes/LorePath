@@ -459,19 +459,27 @@ function ns.CountsForProgress(id, status)
     return status ~= ns.STATUS.MISSED and not ns.IsRepeatable(id)
 end
 
--- done, total for a zone.
-function ns.GetZoneProgress(zoneID)
-    local done, total = 0, 0
-    for _, id in ipairs(ns.GetZoneQuests(zoneID)) do
+-- done, total, repeatables for any list of quest IDs. Repeatable quests sit
+-- outside done/total (they're never "done"), so they're counted separately.
+function ns.CountProgress(ids)
+    local done, total, repeatables = 0, 0, 0
+    for _, id in ipairs(ids) do
         local status = ns.GetStatus(id)
-        if ns.CountsForProgress(id, status) then
+        if ns.IsRepeatable(id) then
+            repeatables = repeatables + 1
+        elseif ns.CountsForProgress(id, status) then
             total = total + 1
             if status == ns.STATUS.DONE then
                 done = done + 1
             end
         end
     end
-    return done, total
+    return done, total, repeatables
+end
+
+-- done, total, repeatables for a zone.
+function ns.GetZoneProgress(zoneID)
+    return ns.CountProgress(ns.GetZoneQuests(zoneID))
 end
 
 -- Zones (and dungeon/raid pages) that have at least one quest for this character,

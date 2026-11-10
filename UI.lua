@@ -601,8 +601,24 @@ local function NodeY(top, row)
     return top + row * (NODE_H + ROW_GAP)
 end
 
+-- "3 / 10", plus "+4 repeatable" in blue. Repeatables are never "done", so they
+-- sit outside the count; showing them stops a page of dailies reading as empty.
+-- `short` gives the compact form for the zone list ("3/10 +4").
+local function ProgressText(done, total, repeatables, complete, short)
+    local text = ""
+    if total > 0 or repeatables == 0 then
+        local color = complete and "|cff6bd35f" or "|cffaaaaaa"
+        text = color .. string.format(short and "%d/%d" or "%d / %d", done, total) .. "|r"
+    end
+    if repeatables > 0 then
+        local extra = short and ("+" .. repeatables) or ("+" .. repeatables .. " repeatable")
+        text = (text ~= "" and (text .. "  ") or "") .. Hex(REPEATABLE_BLUE) .. extra .. "|r"
+    end
+    return text
+end
+
 -- Draws a header and returns the y below it.
-local function RenderSection(canvas, key, title, done, total, complete, width, top)
+local function RenderSection(canvas, key, title, done, total, complete, width, top, repeatables)
     local collapsed = IsSectionCollapsed(key, complete)
     table.insert(renderedKeys, key)
     local s = AcquireSection(canvas)
@@ -612,8 +628,7 @@ local function RenderSection(canvas, key, title, done, total, complete, width, t
     s:SetWidth(width)
     s.toggle:SetTexture(collapsed and PLUS or MINUS)
     s.title:SetText(title)
-    s.count:SetText(complete and string.format("|cff6bd35f%d / %d|r", done, total)
-        or string.format("|cffaaaaaa%d / %d|r", done, total))
+    s.count:SetText(ProgressText(done, total, repeatables or 0, complete))
     s.next:Hide()
     s.step:SetText("")
     s.stepButton.targetQuest = nil
@@ -631,21 +646,16 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
         end
     end
 
-    local done, total = 0, 0
+    local ids = {}
     for _, n in ipairs(storyline.nodes) do
-        local status = ns.GetStatus(n.id)
-        if ns.CountsForProgress(n.id, status) then
-            total = total + 1
-            if status == S.DONE then
-                done = done + 1
-            end
-        end
+        table.insert(ids, n.id)
     end
+    local done, total, repeatables = ns.CountProgress(ids)
 
     local kind, nextID, detail = ns.GetNextStep(storyline)
     local width = math.max(viewWidth - PAD * 2, storyline.cols * (NODE_W + COL_GAP) - COL_GAP)
     local s, collapsed, graphTop = RenderSection(canvas, "s" .. storyline.first,
-        ns.GetQuestNameOrID(storyline.first), done, total, kind == "complete", viewWidth - PAD * 2, top)
+        ns.GetQuestNameOrID(storyline.first), done, total, kind == "complete", viewWidth - PAD * 2, top, repeatables)
 
     local target = (kind == "available" or kind == "active") and nextID or nil
     if kind == "blocked" and detail and ns.Quests[detail] then
@@ -723,18 +733,11 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
 end
 
 local function RenderOthers(canvas, others, top, viewWidth)
-    local done, total = 0, 0
-    for _, id in ipairs(others) do
-        local status = ns.GetStatus(id)
-        if ns.CountsForProgress(id, status) then
-            total = total + 1
-            if status == S.DONE then
-                done = done + 1
-            end
-        end
-    end
+    local done, total, repeatables = ns.CountProgress(others)
+    -- A section of only repeatables is never "finished", so it doesn't start collapsed.
+    local complete = done == total and (total > 0 or repeatables == 0)
     local _, collapsed, gridTop = RenderSection(canvas, "o" .. selectedZone, "Other quests",
-        done, total, done == total, viewWidth - PAD * 2, top)
+        done, total, complete, viewWidth - PAD * 2, top, repeatables)
     if collapsed then
         return HEADER_H
     end
@@ -794,9 +797,13 @@ RenderZone = function()
         frame.graphScroll:UpdateScrollChildRect()
     end
 
-    local done, total = ns.GetZoneProgress(selectedZone)
+    local done, total, repeatables = ns.GetZoneProgress(selectedZone)
     frame.zoneTitle:SetText(ns.GetMapName(selectedZone))
-    frame.zoneSummary:SetText(string.format("%d / %d quests done  -  %d storylines", done, total, #storylines))
+    local summary = string.format("%d / %d quests done", done, total)
+    if repeatables > 0 then
+        summary = summary .. "  -  " .. Hex(REPEATABLE_BLUE) .. repeatables .. " repeatable|r"
+    end
+    frame.zoneSummary:SetText(summary .. string.format("  -  %d storylines", #storylines))
 end
 
 local function SetAllCollapsed(collapsed)
@@ -904,12 +911,13 @@ RenderZoneList = function()
     for _, z in ipairs(SortedZones()) do
         local g = groups[z.continentName]
         if not g then
-            g = { name = z.continentName, zones = {}, done = 0, total = 0 }
+            g = { name = z.continentName, zones = {}, done = 0, total = 0, repeatables = 0 }
             groups[z.continentName] = g
             table.insert(order, g)
         end
-        z.done, z.total = ns.GetZoneProgress(z.id)
+        z.done, z.total, z.repeatables = ns.GetZoneProgress(z.id)
         g.done, g.total = g.done + z.done, g.total + z.total
+        g.repeatables = g.repeatables + z.repeatables
         table.insert(g.zones, z)
     end
 
@@ -944,6 +952,9 @@ RenderZoneList = function()
             GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
             GameTooltip:AddLine(g.name, 1, 0.82, 0)
             GameTooltip:AddLine(string.format("%d / %d quests done", g.done, g.total), 1, 1, 1)
+            if g.repeatables > 0 then
+                GameTooltip:AddLine(g.repeatables .. " repeatable quests", REPEATABLE_BLUE[1], REPEATABLE_BLUE[2], REPEATABLE_BLUE[3])
+            end
             GameTooltip:Show()
         end)
         heading:SetScript("OnLeave", GameTooltip_Hide)
@@ -961,13 +972,13 @@ RenderZoneList = function()
                 row.text:SetPoint("LEFT", 14, 0)
                 row.text:SetPoint("RIGHT", row.count, "LEFT", -4, 0)
                 row.text:SetText(z.name)
-                if z.total > 0 and z.done == z.total then
+                local complete = z.total > 0 and z.done == z.total
+                if complete then
                     row.text:SetTextColor(0.42, 0.83, 0.37)
-                    row.count:SetText("|cff6bd35f" .. z.done .. "/" .. z.total .. "|r")
                 else
                     row.text:SetTextColor(1, 1, 1)
-                    row.count:SetText("|cffaaaaaa" .. z.done .. "/" .. z.total .. "|r")
                 end
+                row.count:SetText(ProgressText(z.done, z.total, z.repeatables, complete, true))
                 row.selected:SetShown(z.id == selectedZone)
                 row:SetScript("OnClick", function(self)
                     SelectZone(self.zoneID)
@@ -1330,7 +1341,7 @@ local function CreateMainFrame()
     back:Hide()
     f.backButton = back
 
-    -- Footer: legend, hint, settings
+    -- Footer: status legend, help, settings
     local x = 16
     for _, status in ipairs(LEGEND_ORDER) do
         local swatch = CreateFrame("Frame", nil, f)
@@ -1359,12 +1370,6 @@ local function CreateMainFrame()
         label:SetText(STATUS_SHORT[status])
         x = x + 24 + label:GetStringWidth() + 12
     end
-    local names = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    names:SetPoint("BOTTOMLEFT", f, "BOTTOMLEFT", x + 8, 11)
-    names:SetText("Levels:  " .. Hex(DIFFICULTY.impossible) .. "too high|r  "
-        .. Hex(DIFFICULTY.difficult) .. "your level|r  " .. Hex(DIFFICULTY.standard) .. "easy|r  "
-        .. Hex(DIFFICULTY.trivial) .. "low level|r")
-
     local settingsButton = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
     settingsButton:SetSize(80, 20)
     settingsButton:SetPoint("BOTTOMRIGHT", f, "BOTTOMRIGHT", -10, 7)
@@ -1372,9 +1377,25 @@ local function CreateMainFrame()
     settingsButton:SetScript("OnClick", function()
         ns.OpenSettings()
     end)
-    local hint = f:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    hint:SetPoint("RIGHT", settingsButton, "LEFT", -10, 0)
-    hint:SetText("Drag to pan  -  Shift+wheel scrolls sideways")
+
+    -- The finer points live in a "?" tooltip, so the footer stays readable.
+    local help = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
+    help:SetSize(24, 20)
+    help:SetPoint("RIGHT", settingsButton, "LEFT", -6, 0)
+    help:SetText("?")
+    help:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT")
+        GameTooltip:AddLine("Using LorePath", 1, 0.82, 0)
+        GameTooltip:AddLine("Click a quest to set a waypoint where it starts.", 1, 1, 1, true)
+        GameTooltip:AddLine("Click \"Next\" or \"First finish\" in a storyline header to jump to that quest.", 1, 1, 1, true)
+        GameTooltip:AddLine("Drag to pan; Shift+mouse wheel scrolls sideways.", 1, 1, 1, true)
+        GameTooltip:AddLine(" ")
+        GameTooltip:AddLine("Level colours, as in your quest log:", 1, 0.82, 0)
+        GameTooltip:AddLine(Hex(DIFFICULTY.impossible) .. "too high|r  " .. Hex(DIFFICULTY.difficult) .. "your level|r  "
+            .. Hex(DIFFICULTY.standard) .. "easy|r  " .. Hex(DIFFICULTY.trivial) .. "low level|r", 1, 1, 1)
+        GameTooltip:Show()
+    end)
+    help:SetScript("OnLeave", GameTooltip_Hide)
 
     ApplyListVisibility(f)
     f:SetScript("OnShow", function()

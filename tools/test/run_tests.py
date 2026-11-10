@@ -85,7 +85,7 @@ for s in list(storylines.values())[:5]:
     ok = all(col_of[p] < col_of[c] for c, ps in s["parents"].items() if c in col_of for p in ps.values() if p in col_of)
     check(ok, f"  storyline {s['first']}: every prerequisite sits in an earlier column")
 
-done, total = ns.GetZoneProgress(1429)
+done, total, *_ = ns.GetZoneProgress(1429)
 elwynn_rp = len([qid for qid in ns.GetZoneQuests(1429).values() if ns.Quests[qid]["rp"]])
 check(total == zone_quests - elwynn_rp and done >= 1, f"zone progress counts {done}/{total} (repeatables left out: {elwynn_rp})")
 
@@ -323,11 +323,11 @@ capped = next(qid for qid, q in sorted(ns.Quests.items()) if q["z"] == 1414 and 
 ns.Quests[capped]["xr"] = lua.eval("{609, 9000}")
 rep[609] = 8999
 ns.RefreshPlayer()
-done0, total0 = ns.GetZoneProgress(1414)
+done0, total0, *_ = ns.GetZoneProgress(1414)
 check(fresh_status(capped) == S.AVAILABLE, "below the maximum: available")
 rep[609] = 9000
 ns.RefreshPlayer()
-done1, total1 = ns.GetZoneProgress(1414)
+done1, total1, *_ = ns.GetZoneProgress(1414)
 check(ns.GetStatus(capped) == S.MISSED and ns.GetLockReason(capped) == "maxrep", "at the maximum (Honored): no longer available")
 check(total1 == total0 - 1, f"a quest closed by reputation isn't counted as missing ({total0} -> {total1})")
 char["completed"][capped] = True
@@ -409,11 +409,11 @@ ns.RefreshPlayer()
 
 # Progress: the repeatable counts neither way.
 zq = list(ns.GetZoneQuests(rp_zone).values())
-d0, t0 = ns.GetZoneProgress(rp_zone)
+d0, t0, *_ = ns.GetZoneProgress(rp_zone)
 non_rp = [qid for qid in zq if not ns.Quests[qid]["rp"] and ns.GetStatus(qid) != S.MISSED]
 check(t0 == len(non_rp), f"zone progress total ({t0}) leaves out repeatables")
 char["log"][rp_id] = True
-d1, t1 = ns.GetZoneProgress(rp_zone)
+d1, t1, *_ = ns.GetZoneProgress(rp_zone)
 check((d1, t1) == (d0, t0), "picking up a repeatable doesn't change zone progress")
 char["log"][rp_id] = None
 
@@ -524,8 +524,14 @@ if found:
     ns.FocusQuest(st["first"])
     sec = [f for f in harness["all"].values() if f["key"] == "s" + str(st["first"]) and f.IsShown(f)][0]
     expected = len([i for i in ids if not ns.Quests[i]["rp"] and ns.GetStatus(i) != S.MISSED])
-    check(sec["count"]["__text"].endswith(f"/ {expected}|r"),
-          f"storyline {st['first']} counts {expected} of its {len(ids)} quests: {sec['count']['__text']!r}")
+    n_rp = len([i for i in ids if ns.Quests[i]["rp"]])
+    check(f"/ {expected}|r" in sec["count"]["__text"] and f"+{n_rp} repeatable" in sec["count"]["__text"],
+          f"storyline {st['first']} counts {expected} of its {len(ids)} quests, plus {n_rp} repeatable: {sec['count']['__text']!r}")
+    # The zone list and the zone summary show the repeatables too, so a page of dailies doesn't look empty.
+    zd, zt, zr = ns.GetZoneProgress(ns.Quests[st["first"]]["z"])
+    zrow = [f for f in harness["all"].values() if f["zoneID"] == ns.Quests[st["first"]]["z"] and f.IsShown(f)][0]
+    check(zr > 0 and f"+{zr}" in zrow["count"]["__text"], f"the zone list row shows +{zr} repeatable: {zrow['count']['__text']!r}")
+    check(f"{zr} repeatable" in frame["zoneSummary"]["__text"], "the zone summary mentions the repeatables")
 # --- Dungeons and raids (issue #2) ---
 char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
 char["completed"], char["log"] = lua.table(), lua.table()
@@ -545,7 +551,7 @@ zones_by_id = {z["id"]: z for z in ns.GetZones().values()}
 check(zones_by_id.get(291) is not None and zones_by_id[291]["instance"] == "dungeon"
       and zones_by_id.get(1429) is not None and zones_by_id[1429]["instance"] is None,
       "GetZones lists instance pages, tagged 'dungeon', next to outdoor zones")
-done, total = ns.GetZoneProgress(291)
+done, total, *_ = ns.GetZoneProgress(291)
 check(total == len(dm) and done == 0, f"GetZoneProgress works for an instance page ({done}/{total})")
 check(ns.GetMapName(291) == "The Deadmines", "instance pages are named from the Encounter Journal")
 check(ns.GetMapName(-318) == "Tier 0.5 Sets", "a header page uses its stored name")
