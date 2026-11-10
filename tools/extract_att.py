@@ -4,7 +4,7 @@
 AllTheThings (https://github.com/ATTWoWAddon/AllTheThings) is MIT-licensed. Its
 WoW Forever data lives in db/Camelot ("camelot" is the game type Forever uses).
 
-This script loads ATT's zone file inside a sandboxed Lua runtime (no os/io/load),
+This script loads ATT's zone and instance files inside a sandboxed Lua runtime (no os/io/load),
 walks the zone tree, and writes the quest records LorePath needs to
 Data/Quests.lua.
 
@@ -204,6 +204,9 @@ def main():
 
     walk(categories["Zones"], None, None)
 
+    # Dungeons and raids (issue #2): see extract_instances below.
+    instance_zones, instance_info = extract_instances(att_root, lua, lua_type, add_quest, quests)
+
     try:
         # "<short hash> (<commit date>)", so a release can be traced to its data.
         att_commit = subprocess.check_output(
@@ -214,12 +217,160 @@ def main():
     out_dir = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Data"))
     out_path = os.path.join(out_dir, "Quests.lua")
     write_lua(out_path, quests, zones, att_commit)
+    append_instance_tables(out_path, instance_zones, instance_info)
     # Re-copy ATT's licence on every run, in case it changes.
     shutil.copyfile(os.path.join(att_root, "LICENSE"), os.path.join(out_dir, "AllTheThings-LICENSE.txt"))
 
     print(f"Wrote {len(quests)} quests in {len(zones)} zones to {out_path}")
     print(f"Skipped: {skipped}")
+    print(f"Instances: {len(instance_zones)} pages "
+          f"({sum(1 for k in instance_zones.values() if k == 'raid')} raids), "
+          f"{sum(1 for q in quests.values() if q['z'] in instance_zones)} quests")
     print(f"Size: {os.path.getsize(out_path) / 1024:.0f} KB (ATT commit {att_commit})")
+
+
+# ============================================================================
+# Dungeons and raids (db/Camelot/Categories/Instances.lua)
+# ============================================================================
+#
+# Instances.lua is a list of inst(journalInstanceID, {...}) nodes. Each instance
+# gets its own page in LorePath, keyed by:
+#   - the instance's own uiMapID (ATT's `mapID`, e.g. 291 for the Deadmines), or
+#   - -journalInstanceID for WoW Forever's new instances, which ATT gives no mapID
+#     (the game names them from the Encounter Journal or their area ID).
+# A dungeon or a raid is decided by ATT's own `isRaid` flag on the inst() node.
+# Quests under a top-level header instead of an instance (Tier 0.5 Sets, the
+# Dungeon Set 2 chain that spans several dungeons) get one page keyed by -headerID.
+
+# English names for the header pages (from ATT's LocalizationDB).
+HEADER_NAMES = {-318: "Tier 0.5 Sets"}
+
+
+def instance_maps(node, lua_type):
+    """Every map ID an instance's own tree uses (its floors and wings)."""
+    found = set()
+    def visit(n):
+        if lua_type(n) != "table":
+            return
+        if isinstance(n["mapID"], (int, float)):
+            found.add(int(n["mapID"]))
+        found.update(lua_list(n["maps"]) or [])
+        if n["__kind"] != "Quest":
+            kids = n["g"]
+            if kids is not None and lua_type(kids) == "table":
+                for _, child in kids.items():
+                    visit(child)
+    visit(node)
+    return found
+
+
+def outside_coord(coords, inside):
+    """Like first_coord, but prefers a point outside the instance: many dungeon
+    quests are given at the entrance or in town, which is where "Show on map"
+    should point."""
+    if coords is None:
+        return None
+    best = None
+    for map_id in sorted(coords.keys()):
+        points = coords[map_id]
+        if points is None:
+            continue
+        for _, point in points.items():
+            if point is not None and point[1] is not None and point[2] is not None:
+                coord = int(map_id), round(float(point[1]), 1), round(float(point[2]), 1)
+                if coord[0] not in inside:
+                    return coord
+                best = best or coord
+                break
+    return best
+
+
+def extract_instances(att_root, lua, lua_type, add_quest, quests):
+    """Adds every instance quest to `quests` (with the same filters as zone quests,
+    via add_quest). Quests already found in Zones.lua keep their zone page.
+    Returns ({pageKey: "dungeon"|"raid"}, {pageKey: {ej, ar, n}})."""
+    path = os.path.join(att_root, "db", "Camelot", "Categories", "Instances.lua")
+    with open(path, encoding="utf-8-sig") as f:
+        root = lua.execute(LOADER, f.read())["Instances"]
+
+    pages, info = {}, {}
+    # Every instance's maps, for the header pages that span several instances.
+    all_inside = set()
+    for _, node in root["g"].items():
+        if lua_type(node) == "table" and node["__kind"] == "Instance":
+            all_inside |= instance_maps(node, lua_type)
+
+    def collect(node, page, inside):
+        """Walks one page's tree, adding its quests. Returns how many were added."""
+        added = 0
+        if lua_type(node) != "table":
+            return 0
+        if node["__kind"] == "Quest":
+            qid = int(node["__id"])
+            if qid not in quests:
+                add_quest(node, None, page)
+                if qid in quests:
+                    rec = quests[qid]
+                    rec.pop("m", None), rec.pop("x", None), rec.pop("y", None)
+                    coord = outside_coord(node["coords"], inside)
+                    if coord:
+                        rec["m"], rec["x"], rec["y"] = coord
+                    added += 1
+            return added  # quests inside a quest's g are objectives/rewards, not quests
+        kids = node["g"]
+        if kids is not None and lua_type(kids) == "table":
+            for _, child in kids.items():
+                added += collect(child, page, inside)
+        return added
+
+    for _, node in root["g"].items():
+        if lua_type(node) != "table":
+            continue
+        kind = node["__kind"]
+        node_id = int(node["__id"])
+        if kind == "Instance":
+            if node["u"] is not None:
+                continue
+            awp = number(node["awp"])
+            if awp and awp > FOREVER_BUILD:
+                continue
+            map_id = node["mapID"]
+            page = int(map_id) if isinstance(map_id, (int, float)) else -node_id
+            entry = {"ej": node_id}
+            area = number(node["zoneTextAreaID"]) or (lua_list(node["zoneTextAreaIDs"]) or [None])[0]
+            if area:
+                entry["ar"] = area
+            inside = instance_maps(node, lua_type) | {page}
+            page_kind = "raid" if node["isRaid"] else "dungeon"
+        else:
+            page = node_id  # a negative header ID
+            entry = {"n": HEADER_NAMES.get(node_id, f"Header {node_id}")}
+            inside = all_inside
+            page_kind = "dungeon"
+        if collect(node, page, inside) > 0:
+            pages[page] = page_kind
+            info[page] = entry
+    return pages, info
+
+
+def append_instance_tables(path, pages, info):
+    """Writes ns.InstanceZones and ns.InstanceInfo at the end of Data/Quests.lua."""
+    lines = [
+        "-- Instance pages: \"dungeon\" or \"raid\" (from ATT's isRaid). Keys are the instance's",
+        "-- uiMapID, or -journalInstanceID when ATT has no map, or -headerID for a header page.",
+        "ns.InstanceZones = {",
+    ]
+    lines += [f'[{k}]="{pages[k]}",' for k in sorted(pages)]
+    lines.append("}")
+    lines.append("-- ej Encounter Journal instance ID, ar area ID (for the name), n English name.")
+    lines.append("ns.InstanceInfo = {")
+    for k in sorted(info):
+        e = info[k]
+        body = ",".join(f'{f}="{e[f]}"' if f == "n" else f"{f}={e[f]}" for f in ("ej", "ar", "n") if f in e)
+        lines.append(f"[{k}]={{{body}}},")
+    lines.append("}")
+    with open(path, "a", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
 
 
 def fmt(value):
