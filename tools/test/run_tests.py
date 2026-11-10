@@ -233,6 +233,88 @@ ns.SetSetting("openMapOnWaypoint", True)
 g.SlashCmdList["LOREPATH"]("config")
 check(harness["openedSettings"] == 77, "/lp config opens the settings page")
 
+# --- Reputation requirements ---
+# 6031 (Timbermaw Hold, neutral, level 40) needs Friendly (3000) with faction 576.
+char["level"], char["map"] = 60, 1414
+rep = char["reputation"]
+def fresh_status(qid):
+    ns.RefreshPlayer()  # clears the cached standings, like a refresh after UPDATE_FACTION
+    return ns.GetStatus(qid)
+check(ns.Quests[6031]["mr"][1] == 576 and ns.Quests[6031]["mr"][2] == 3000, "extractor kept 6031's minReputation as mr={576,3000}")
+check(fresh_status(6031) == S.AVAILABLE and ns.GetLockReason(6031) is None,
+      "unknown faction standing doesn't lock or hide the quest")
+check(ns.IsEligible(6031) and 6031 in list(ns.GetZoneQuests(1414).values()), "a reputation quest stays in its zone list")
+rep[576] = 2999
+check(fresh_status(6031) == S.LEVEL and ns.GetLockReason(6031) == "minrep", "below Friendly: 6031 is not yet available")
+rep[576] = 3000
+check(fresh_status(6031) == S.AVAILABLE, "exactly Friendly: 6031 is available")
+rep[576] = 42000
+check(fresh_status(6031) == S.AVAILABLE, "well above the minimum: still available")
+check(ns.StandingName(-42000) == "Hated" and ns.StandingName(-1) == "Unfriendly" and ns.StandingName(0) == "Neutral"
+      and ns.StandingName(9000) == "Honored" and ns.StandingName(20999) == "Honored" and ns.StandingName(42000) == "Exalted",
+      "raw values map to standing names with WoW's thresholds")
+
+# A quest with a maxReputation (none in the current Forever data, so give one to
+# a plain Kalimdor quest for the test).
+capped = next(qid for qid, q in sorted(ns.Quests.items()) if q["z"] == 1414 and not q["pre"] and not q["mr"]
+              and not q["sk"] and not q["bc"] and ns.IsEligible(qid) and (q["l"] or 1) <= 60)
+ns.Quests[capped]["xr"] = lua.eval("{609, 9000}")
+rep[609] = 8999
+ns.RefreshPlayer()
+done0, total0 = ns.GetZoneProgress(1414)
+check(fresh_status(capped) == S.AVAILABLE, "below the maximum: available")
+rep[609] = 9000
+ns.RefreshPlayer()
+done1, total1 = ns.GetZoneProgress(1414)
+check(ns.GetStatus(capped) == S.MISSED and ns.GetLockReason(capped) == "maxrep", "at the maximum (Honored): no longer available")
+check(total1 == total0 - 1, f"a quest closed by reputation isn't counted as missing ({total0} -> {total1})")
+char["completed"][capped] = True
+ns.RefreshCompleted()
+check(ns.GetStatus(capped) == S.DONE, "a quest done before your reputation went up still shows as done")
+char["completed"][capped] = None
+ns.RefreshCompleted()
+
+# UI: the tile and tooltip explain the lock, without talking about levels.
+rep[576] = 1500
+g.SlashCmdList["LOREPATH"]("here")
+harness.RunTimers()
+def tile_for(qid):
+    for f in harness["all"].values():
+        if f["questID"] == qid and f.IsShown(f):
+            return f
+t = tile_for(6031)
+sub = t and t["sub"]["__text"] or ""
+check(t is not None and "Needs Friendly with Timbermaw Hold" in sub and "level" not in sub, f"rep-locked tile's second line: {sub!r}")
+g.GameTooltip.lines = lua.table()
+t["__scripts"]["OnEnter"](t)
+lines = [str(l) for l in g.GameTooltip.lines.values()]
+check("Requires Friendly with Timbermaw Hold" in lines and "Your reputation is too low" in lines
+      and "Your level is too low" not in lines, "rep-locked tooltip: " + " | ".join(lines[:5]))
+t = tile_for(capped)
+sub = t and t["sub"]["__text"] or ""
+check(t is not None and "Closed at Honored with Cenarion Circle" in sub, f"rep-closed tile's second line: {sub!r}")
+
+# UPDATE_FACTION redraws with the new standing.
+rep[576] = 3000
+harness.Fire("UPDATE_FACTION")
+check(len(list(harness["timers"].values())) > 0, "UPDATE_FACTION queues a refresh")
+harness.RunTimers()
+sub = tile_for(6031)["sub"]["__text"]
+check("Needs" not in sub, f"after gaining Friendly the tile no longer shows the requirement: {sub!r}")
+
+# Older clients: GetFactionInfoByID when C_Reputation is missing.
+saved = g.C_Reputation
+g.C_Reputation = None
+g.GetFactionInfoByID = harness["LegacyGetFactionInfoByID"]
+rep[576] = 100
+check(fresh_status(6031) == S.LEVEL and ns.ReputationText(ns.Quests[6031]["mr"]) == "Friendly with Timbermaw Hold",
+      "falls back to GetFactionInfoByID")
+g.GetFactionInfoByID = None
+check(fresh_status(6031) == S.AVAILABLE and ns.ReputationText(ns.Quests[6031]["mr"]) == "Friendly with faction 576",
+      "with no reputation API at all, the quest stays available")
+g.C_Reputation = saved
+ns.Quests[capped]["xr"] = None
+
 print("chat:", list(harness["chat"].values())[-3:])
 print()
 print("FAILED:" if failures else "All checks passed.", *failures, sep="\n  ")

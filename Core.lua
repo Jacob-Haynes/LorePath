@@ -14,9 +14,9 @@ ns.STATUS = {
     DONE = "done",           -- completed (or an alternative version was)
     ACTIVE = "active",       -- in your quest log
     AVAILABLE = "available", -- you can pick it up now
-    LEVEL = "level",         -- prerequisites done, but your level (or skill) is too low
+    LEVEL = "level",         -- prerequisites done, but your level, skill or reputation is too low
     BLOCKED = "blocked",     -- an earlier quest isn't done yet
-    MISSED = "missed",       -- a breadcrumb you skipped past; it can't be taken any more
+    MISSED = "missed",       -- a breadcrumb you skipped past (or reputation went too high); it can't be taken any more
 }
 
 -- ============================================================================
@@ -57,7 +57,87 @@ function ns.RefreshPlayer()
     player.faction = (factionTag == "Horde" and 1) or (factionTag == "Alliance" and 2) or 0
     player.level = UnitLevel("player") or 1
     player.skills = ReadProfessions()
+    wipe(ns.standings)
 end
+
+-- ============================================================================
+-- Reputation
+-- ============================================================================
+
+-- Standing thresholds, as cumulative reputation from Neutral = 0 (the scale ATT
+-- and the client both use). Index = standing ID (1 Hated ... 8 Exalted).
+local STANDING_MIN = { -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000 }
+local STANDING_NAMES = { "Hated", "Hostile", "Unfriendly", "Neutral", "Friendly", "Honored", "Revered", "Exalted" }
+
+ns.standings = {} -- factionID -> cumulative standing, or false when the client doesn't know it
+
+-- Standing name for a raw reputation value, e.g. 3000 -> "Friendly".
+function ns.StandingName(value)
+    local index = 1
+    for i, min in ipairs(STANDING_MIN) do
+        if value >= min then
+            index = i
+        end
+    end
+    return _G["FACTION_STANDING_LABEL" .. index] or STANDING_NAMES[index]
+end
+
+-- C_Reputation.GetFactionDataByID on the mainline client Forever runs on;
+-- GetFactionInfoByID on older clients.
+local function FactionData(factionID)
+    if C_Reputation and C_Reputation.GetFactionDataByID then
+        local ok, data = pcall(C_Reputation.GetFactionDataByID, factionID)
+        if ok and type(data) == "table" then
+            local standing = data.currentStanding
+            if standing == nil and data.reaction and STANDING_MIN[data.reaction] then
+                standing = STANDING_MIN[data.reaction]
+            end
+            return data.name, standing
+        end
+    end
+    if type(GetFactionInfoByID) == "function" then
+        local ok, name, _, standingID, _, _, barValue = pcall(GetFactionInfoByID, factionID)
+        if ok and name then
+            if barValue == nil and standingID and STANDING_MIN[standingID] then
+                barValue = STANDING_MIN[standingID]
+            end
+            return name, barValue
+        end
+    end
+    return nil, nil
+end
+
+-- The player's cumulative standing with a faction, or nil if the client doesn't know.
+function ns.GetStanding(factionID)
+    local cached = ns.standings[factionID]
+    if cached == nil then
+        local _, standing = FactionData(factionID)
+        cached = type(standing) == "number" and standing or false
+        ns.standings[factionID] = cached
+    end
+    return cached or nil
+end
+
+function ns.GetFactionName(factionID)
+    return FactionData(factionID) or ("faction " .. tostring(factionID))
+end
+
+-- "Friendly with Darnassus" for a {factionID, value} requirement.
+function ns.ReputationText(req)
+    return ns.StandingName(req[2]) .. " with " .. ns.GetFactionName(req[1])
+end
+
+-- Is a reputation requirement unmet? Unknown standing never locks a quest.
+local function BelowMinRep(q)
+    local standing = q.mr and ns.GetStanding(q.mr[1])
+    return standing ~= nil and standing < q.mr[2]
+end
+
+local function AboveMaxRep(q)
+    local standing = q.xr and ns.GetStanding(q.xr[1])
+    return standing ~= nil and standing >= q.xr[2]
+end
+ns.BelowMinRep, ns.AboveMaxRep = BelowMinRep, AboveMaxRep
 
 -- ============================================================================
 -- Completed quests
@@ -199,16 +279,38 @@ function ns.GetStatus(id)
             end
         end
     end
+    if q and AboveMaxRep(q) then
+        return S.MISSED
+    end
     if ns.MissingPrereq(id) then
         return S.BLOCKED
     end
-    if q and q.l and player.level < q.l then
-        return S.LEVEL
-    end
-    if q and q.sk and q.sl and (player.skills[q.sk] or 0) < q.sl then
+    if ns.GetLockReason(id) then
         return S.LEVEL
     end
     return S.AVAILABLE
+end
+
+-- Why a quest isn't open to you (yet): "level", "skill", "minrep" (not yet) or
+-- "maxrep" (never again), or nil. Ignores prerequisites and completion.
+function ns.GetLockReason(id)
+    local q = ns.Quests[id]
+    if not q then
+        return nil
+    end
+    if AboveMaxRep(q) then
+        return "maxrep"
+    end
+    if q.l and player.level < q.l then
+        return "level"
+    end
+    if q.sk and q.sl and (player.skills[q.sk] or 0) < q.sl then
+        return "skill"
+    end
+    if BelowMinRep(q) then
+        return "minrep"
+    end
+    return nil
 end
 
 -- ============================================================================
@@ -459,6 +561,7 @@ end
 --   "available", id        - pick this up next
 --   "active", id           - already in your log
 --   "level", id, level     - next quest needs a higher level
+--   "reputation", id, text - next quest needs more reputation ("Friendly with Darnassus")
 --   "blocked", id, preID   - waiting on a quest outside this storyline
 --   "complete"             - every quest done
 function ns.GetNextStep(storyline)
@@ -481,6 +584,9 @@ function ns.GetNextStep(storyline)
         return "active", active
     end
     if levelID then
+        if ns.GetLockReason(levelID) == "minrep" then
+            return "reputation", levelID, ns.ReputationText(ns.Quests[levelID].mr)
+        end
         return "level", levelID, ns.Quests[levelID].l
     end
     if blockedID then

@@ -272,12 +272,28 @@ local function ShowNodeTooltip(node)
     GameTooltip:AddLine(ns.GetQuestNameOrID(id), 1, 0.82, 0)
     local dc = DifficultyColor(q.l or 1)
     GameTooltip:AddLine("Requires level " .. (q.l or 1), dc[1], dc[2], dc[3])
+    local lock = ns.GetLockReason(id)
+    local pending = status ~= S.DONE and status ~= S.ACTIVE
+    if q.mr then
+        local rc = (pending and ns.BelowMinRep(q)) and DIFFICULTY.impossible or { 0.75, 0.75, 0.75 }
+        GameTooltip:AddLine("Requires " .. ns.ReputationText(q.mr), rc[1], rc[2], rc[3], true)
+    end
+    if q.xr then
+        local rc = (pending and ns.AboveMaxRep(q)) and DIFFICULTY.impossible or { 0.75, 0.75, 0.75 }
+        GameTooltip:AddLine("Only below " .. ns.ReputationText(q.xr), rc[1], rc[2], rc[3], true)
+    end
     local style = STATUS_STYLE[status]
     local sc = style.text or { 1, 1, 1 }
     if status == S.DONE or status == S.ACTIVE then
         sc = style.border
     end
-    GameTooltip:AddLine(STATUS_TEXT[status], sc[1], sc[2], sc[3])
+    local statusText = STATUS_TEXT[status]
+    if status == S.LEVEL and lock == "minrep" then
+        statusText = "Your reputation is too low"
+    elseif status == S.MISSED and lock == "maxrep" and not q.bc then
+        statusText = "No longer available (your reputation is too high)"
+    end
+    GameTooltip:AddLine(statusText, sc[1], sc[2], sc[3])
     if status == S.BLOCKED then
         local missing = ns.MissingPrereq(id)
         if missing then
@@ -285,8 +301,10 @@ local function ShowNodeTooltip(node)
         end
     elseif status == S.LEVEL and q.l and (UnitLevel("player") or 1) < q.l then
         GameTooltip:AddLine("Needs level " .. q.l, 0.9, 0.9, 0.9)
-    elseif status == S.LEVEL and q.sl then
+    elseif status == S.LEVEL and lock == "skill" then
         GameTooltip:AddLine("Needs profession skill " .. q.sl, 0.9, 0.9, 0.9)
+    elseif status == S.LEVEL and lock == "minrep" then
+        GameTooltip:AddLine("Needs " .. ns.ReputationText(q.mr), 0.9, 0.9, 0.9, true)
     end
     if q.bc then
         GameTooltip:AddLine("Breadcrumb: leads you to another quest", 0.75, 0.75, 0.75)
@@ -447,14 +465,20 @@ local function StyleNode(node, id, storyline)
 
     -- The level number carries the difficulty colour: red when it's too high for
     -- you, then yellow (your level), green (easy) or grey (low level), as in the
-    -- quest log. Names of quests you can't take yet stay neutral.
+    -- quest log. Names of quests your level or skill is too low for stay neutral.
+    -- A reputation lock isn't a level problem, so the name keeps its difficulty colour.
+    local lock = ns.GetLockReason(id)
     local tc = style.text or DifficultyColor(q.l or 1)
-    if status == S.LEVEL then
+    if status == S.LEVEL and lock ~= "minrep" then
         tc = { 0.85, 0.85, 0.85 }
     end
     node.text:SetText(ns.GetQuestNameOrID(id))
     node.text:SetTextColor(tc[1], tc[2], tc[3])
-    if status == S.LEVEL then
+    if status == S.LEVEL and lock == "minrep" then
+        node.sub:SetText("|cffccccccNeeds " .. ns.ReputationText(q.mr) .. "|r")
+    elseif status == S.MISSED and lock == "maxrep" and not q.bc then
+        node.sub:SetText("Closed at " .. ns.ReputationText(q.xr))
+    elseif status == S.LEVEL then
         -- Shown even with levels turned off, since it's the only sign of why.
         local playerLevel = UnitLevel("player") or 1
         if q.l and playerLevel < q.l then
@@ -480,6 +504,8 @@ local function NextStepText(kind, id, detail)
         return "|cffffd100In progress:|r " .. ns.GetQuestNameOrID(id)
     elseif kind == "level" then
         return "|cffaaaaaaNext part at level " .. (detail or "?") .. "|r"
+    elseif kind == "reputation" then
+        return "|cffaaaaaaNext part needs " .. (detail or "more reputation") .. "|r"
     elseif kind == "blocked" then
         if detail then
             return "|cffaaaaaaFirst finish:|r " .. ns.GetQuestNameOrID(detail)
