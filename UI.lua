@@ -778,13 +778,25 @@ end
 -- Zone list
 -- ============================================================================
 
+-- Instance pages get their own headings, after the continents.
+local INSTANCE_GROUPS = { dungeon = { name = "Dungeons", rank = 1 }, raid = { name = "Raids", rank = 2 } }
+
 local function SortedZones()
     local zones = ns.GetZones()
     for _, z in ipairs(zones) do
         z.name = ns.GetMapName(z.id)
-        z.continentName = (z.continent ~= 0 and z.continent ~= z.id) and ns.GetMapName(z.continent) or "Other"
+        local group = z.instance and INSTANCE_GROUPS[z.instance]
+        if group then
+            z.continentName, z.groupRank = group.name, group.rank
+        else
+            z.continentName = (z.continent ~= 0 and z.continent ~= z.id) and ns.GetMapName(z.continent) or "Other"
+            z.groupRank = 0
+        end
     end
     table.sort(zones, function(a, b)
+        if a.groupRank ~= b.groupRank then
+            return a.groupRank < b.groupRank
+        end
         if a.continentName ~= b.continentName then
             return a.continentName < b.continentName
         end
@@ -1309,12 +1321,18 @@ local function CreateMainFrame()
     return f
 end
 
--- The zone you're standing in, or the closest parent zone that has quests.
+-- The zone you're standing in (or the instance you're inside), or the closest
+-- parent zone that has quests.
 local function CurrentZone()
     local mapID = C_Map.GetBestMapForUnit and C_Map.GetBestMapForUnit("player")
     local known = {}
     for _, z in ipairs(ns.GetZones()) do
         known[z.id] = true
+    end
+    -- Inside a dungeon or raid, its own page (when it has quests for you).
+    local instancePage = ns.CurrentInstancePage(mapID)
+    if instancePage and known[instancePage] then
+        return instancePage
     end
     while mapID and mapID > 0 do
         if known[mapID] then

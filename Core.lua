@@ -335,9 +335,77 @@ function ns.GetQuestNameOrID(id)
     return ns.GetQuestName(id) or ("Quest #" .. id)
 end
 
+-- Name of an instance page (see ns.InstanceZones): the Encounter Journal's name,
+-- then the map's, then the area's, then the English name stored with the data.
+local function InstanceName(zoneID, info)
+    if info.ej and type(EJ_GetInstanceInfo) == "function" then
+        local ok, name = pcall(EJ_GetInstanceInfo, info.ej)
+        if ok and type(name) == "string" and name ~= "" then
+            return name
+        end
+    end
+    if zoneID > 0 and C_Map and C_Map.GetMapInfo then
+        local map = C_Map.GetMapInfo(zoneID)
+        if map and map.name and map.name ~= "" then
+            return map.name
+        end
+    end
+    if info.ar and C_Map and C_Map.GetAreaInfo then
+        local ok, name = pcall(C_Map.GetAreaInfo, info.ar)
+        if ok and type(name) == "string" and name ~= "" then
+            return name
+        end
+    end
+    return info.n or ("Instance " .. tostring(info.ej or zoneID))
+end
+
+-- Name of a map, or of a zone list page (which may be an instance page).
 function ns.GetMapName(mapID)
+    local instance = mapID and ns.InstanceInfo and ns.InstanceInfo[mapID]
+    if instance then
+        return InstanceName(mapID, instance)
+    end
     local info = mapID and C_Map and C_Map.GetMapInfo and C_Map.GetMapInfo(mapID)
     return info and info.name or ("Map " .. tostring(mapID))
+end
+
+-- "dungeon" or "raid" for an instance page, nil for an outdoor zone.
+function ns.GetInstanceKind(zoneID)
+    return ns.InstanceZones and ns.InstanceZones[zoneID] or nil
+end
+
+-- The instance page for where the player is, when they're inside an instance:
+-- matched by map ID, by the Encounter Journal's instance for the map, or by the
+-- instance's area name. Returns nil outside instances or when nothing matches.
+function ns.CurrentInstancePage(mapID)
+    if not ns.InstanceInfo then
+        return nil
+    end
+    if mapID and ns.InstanceInfo[mapID] then
+        return mapID
+    end
+    if type(IsInInstance) ~= "function" or not IsInInstance() then
+        return nil
+    end
+    local journalID
+    if mapID and type(EJ_GetInstanceForMap) == "function" then
+        local ok, id = pcall(EJ_GetInstanceForMap, mapID)
+        journalID = ok and id ~= 0 and id or nil
+    end
+    local zoneText = type(GetRealZoneText) == "function" and GetRealZoneText() or nil
+    for page, info in pairs(ns.InstanceInfo) do
+        if journalID and info.ej == journalID then
+            return page
+        end
+    end
+    if zoneText and zoneText ~= "" and C_Map and C_Map.GetAreaInfo then
+        for page, info in pairs(ns.InstanceInfo) do
+            if info.ar and C_Map.GetAreaInfo(info.ar) == zoneText then
+                return page
+            end
+        end
+    end
+    return nil
 end
 
 -- ============================================================================
@@ -387,7 +455,8 @@ function ns.GetZoneProgress(zoneID)
     return done, total
 end
 
--- Zones that have at least one quest for this character, with their continent.
+-- Zones (and dungeon/raid pages) that have at least one quest for this character,
+-- with their continent.
 function ns.GetZones()
     if not zoneQuests then
         BuildZoneIndex()
@@ -395,7 +464,11 @@ function ns.GetZones()
     local zones = {}
     for zoneID in pairs(zoneQuests) do
         if #ns.GetZoneQuests(zoneID) > 0 then
-            table.insert(zones, { id = zoneID, continent = ns.ZoneContinents[zoneID] or 0 })
+            table.insert(zones, {
+                id = zoneID,
+                continent = ns.ZoneContinents[zoneID] or 0,
+                instance = ns.GetInstanceKind(zoneID), -- "dungeon", "raid" or nil
+            })
         end
     end
     return zones

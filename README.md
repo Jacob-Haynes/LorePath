@@ -6,13 +6,13 @@
 
 It's not a quest helper. There are no map pins and no objective tracking, so it sits happily alongside the default quest UI.
 
-> **Status: prototype (0.1.0).** It covers outdoor zone quests only. Dungeon quests and lore come later.
+> **Status: prototype (0.1.0).** It covers outdoor zone, dungeon and raid quests. Lore comes later.
 
 ---
 
 ## What it shows
 
-- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75*).
+- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75*). Dungeons and raids get their own pages, under **Dungeons** and **Raids** headings. Inside an instance, the window opens on its page.
 - **Storylines:** each zone's quest chains, drawn left to right from the first quest to the last. Lines join each quest to the ones it unlocks.
 - **Other quests:** standalone quests with no chain, listed under each zone's storylines.
 - **Only your quests:** quests for another faction, race or class are left out. Profession quests show only if you have that profession.

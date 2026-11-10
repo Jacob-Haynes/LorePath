@@ -235,7 +235,9 @@ blocked = None
 for z in ns.GetZones().values():
     sls, _ = ns.BuildStorylines(z["id"])
     for st in sls.values():
-        kind, nid, det = ns.GetNextStep(st)
+        res = ns.GetNextStep(st)
+        res = res if isinstance(res, tuple) else (res,)
+        kind, nid, det = (res + (None, None, None))[:3]
         if kind == "blocked" and det is not None and ns.Quests[det] is not None:
             blocked = (z["id"], st, det)
             break
@@ -370,6 +372,94 @@ check(fresh_status(6031) == S.AVAILABLE and ns.ReputationText(ns.Quests[6031]["m
       "with no reputation API at all, the quest stays available")
 g.C_Reputation = saved
 ns.Quests[capped]["xr"] = None
+
+# --- Dungeons and raids (issue #2) ---
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
+char["completed"], char["log"] = lua.table(), lua.table()
+g.EJ_GetInstanceInfo = lua.eval("function(id) local n = { [63] = 'The Deadmines', [238] = 'The Stockade' }; return n[id] end")
+ns.RefreshPlayer()
+ns.RefreshCompleted()
+IZ = ns.InstanceZones
+check(IZ[291] == "dungeon" and IZ[225] == "dungeon" and IZ[248] == "raid",
+      "the data marks the Deadmines and the Stockade as dungeons, Onyxia's Lair as a raid")
+dm = list(ns.GetZoneQuests(291).values())
+check(166 in dm and ns.Quests[166]["z"] == 291 and ns.IsEligible(166),
+      f"The Defias Brotherhood (166) is on the Deadmines page and eligible for a Human ({len(dm)} Deadmines quests)")
+check(ns.Quests[166]["m"] == 1436, "166 starts outside the instance, in Westfall (its quest giver), for 'Show on map'")
+check(ns.GetStatus(166) == S.BLOCKED and ns.MissingPrereq(166) == 155,
+      "an instance quest is blocked by its zone prerequisite (155 in Westfall)")
+zones_by_id = {z["id"]: z for z in ns.GetZones().values()}
+check(zones_by_id.get(291) is not None and zones_by_id[291]["instance"] == "dungeon"
+      and zones_by_id.get(1429) is not None and zones_by_id[1429]["instance"] is None,
+      "GetZones lists instance pages, tagged 'dungeon', next to outdoor zones")
+done, total = ns.GetZoneProgress(291)
+check(total == len(dm) and done == 0, f"GetZoneProgress works for an instance page ({done}/{total})")
+check(ns.GetMapName(291) == "The Deadmines", "instance pages are named from the Encounter Journal")
+check(ns.GetMapName(-318) == "Tier 0.5 Sets", "a header page uses its stored name")
+
+ns.Refresh()
+headings = {f["continent"]: f for f in harness["all"].values() if f["continent"] is not None and f.IsShown(f)}
+check("Dungeons" in headings and "Raids" in headings, "the zone list has Dungeons and Raids headings")
+check(headings["Dungeons"]["toggle"].IsShown(headings["Dungeons"]["toggle"])
+      and headings["Dungeons"]["text"]["__text"] == "DUNGEONS", "the Dungeons heading is styled like a continent heading")
+check(all(headings[c]["top"] < headings["Dungeons"]["top"] < headings["Raids"]["top"]
+          for c in headings if c not in ("Dungeons", "Raids")), "Dungeons and Raids come after the continents")
+def row_for(zone_id):
+    rows = [f for f in harness["all"].values() if f["zoneID"] == zone_id and f.IsShown(f)]
+    return rows[0] if rows else None
+check(row_for(291) is not None and row_for(291)["top"] > headings["Dungeons"]["top"]
+      and row_for(291)["top"] < headings["Raids"]["top"], "the Deadmines is listed under Dungeons")
+headings["Dungeons"]["__scripts"]["OnClick"](headings["Dungeons"])
+check(row_for(291) is None and row_for(1429) is not None, "collapsing Dungeons hides its instances, not the zones")
+
+# Zone -> instance: Stormwind's storyline from 392 waits on 391 in the Stockade.
+def step_for(first):
+    sec = [f for f in harness["all"].values() if f["key"] == "s" + str(first) and f.IsShown(f)][0]
+    return sec["stepButton"]
+row_for(1453)["__scripts"]["OnClick"](row_for(1453))
+g.LorePathDB["collapsed"] = lua.table()
+ns.Refresh()
+step = step_for(392)
+check(step["targetQuest"] == 391 and ns.Quests[391]["z"] == 225, "Stormwind's 392 storyline says First finish: 391 (Stockade)")
+step["__scripts"]["OnClick"](step)
+check(frame["zoneTitle"]["__text"] == "The Stockade", "clicking it opens the Stockade page")
+check(row_for(225) is not None and row_for(225)["selected"].IsShown(row_for(225)["selected"]),
+      "the collapsed Dungeons heading opens to show the selected instance")
+shown = [f for f in harness["all"].values() if f["questID"] == 391 and f.IsShown(f)]
+check(len(shown) == 1 and shown[0]["flash"].IsShown(shown[0]["flash"]), "391 is shown and highlighted on the instance page")
+back = frame["backButton"]
+back["__scripts"]["OnClick"](back)
+check(frame["zoneTitle"]["__text"] == ns.GetMapName(1453) and not back.IsShown(back), "Back returns to Stormwind")
+
+# Instance -> zone: the Deadmines' 92753 storyline waits on 92752 in Stormwind.
+ns.FocusQuest(92753)
+check(frame["zoneTitle"]["__text"] == "The Deadmines", "jumping to a Deadmines quest opens the Deadmines page")
+step = step_for(92753)
+check(step["targetQuest"] == 92752 and ns.Quests[92752]["z"] == 1453, "its step points at 92752 in Stormwind")
+step["__scripts"]["OnClick"](step)
+check(frame["zoneTitle"]["__text"] == ns.GetMapName(1453), "clicking it goes back out to Stormwind")
+back["__scripts"]["OnClick"](back)
+check(frame["zoneTitle"]["__text"] == "The Deadmines", "Back returns to the Deadmines")
+harness.RunTimers()
+
+# Opening on the current zone: inside the Deadmines on a floor map LorePath doesn't know.
+char["map"] = 292
+g.IsInInstance = lua.eval("function() return true end")
+g.EJ_GetInstanceForMap = lua.eval("function(m) if m == 292 then return 63 end return 0 end")
+g.SlashCmdList["LOREPATH"]("here")
+check(frame["zoneTitle"]["__text"] == "The Deadmines", "inside the Deadmines, /lp here opens its page")
+check(ns.CurrentInstancePage(291) == 291, "standing on the instance's own map finds its page")
+g.EJ_GetInstanceForMap = None
+g.GetRealZoneText = lua.eval("function() return 'Stormwind Stockade' end")
+C_Map = g.C_Map
+C_Map.GetAreaInfo = lua.eval("function(id) if id == 717 then return 'Stormwind Stockade' end end")
+check(ns.CurrentInstancePage(9999) == 225, "without the Encounter Journal, the instance is matched by its area name")
+g.IsInInstance = lua.eval("function() return false end")
+check(ns.CurrentInstancePage(9999) is None, "outside an instance, no instance page is picked")
+char["map"] = 1429
+g.SlashCmdList["LOREPATH"]("here")
+check(frame["zoneTitle"]["__text"] == "Elwynn Forest", "back outside, /lp here opens the outdoor zone again")
+g.IsInInstance, g.GetRealZoneText, C_Map.GetAreaInfo = None, None, None
 
 print("chat:", list(harness["chat"].values())[-3:])
 print()
