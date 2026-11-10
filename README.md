@@ -78,7 +78,16 @@ git clone --depth 1 --filter=blob:none --sparse https://github.com/ATTWoWAddon/A
 python3 tools/extract_att.py att
 ```
 
-`tools/extract_att.py` loads AllTheThings' Forever zone data in a sandboxed Lua runtime, then writes the quest records LorePath needs. It skips repeatable quests, quests AllTheThings marks as unavailable, and quests removed from the game.
+`tools/extract_att.py` loads AllTheThings' Forever zone data in a sandboxed Lua runtime, then writes the quest records LorePath needs. It skips repeatable quests, quests AllTheThings marks as unavailable, and quests removed from the game. The header of `Data/Quests.lua` records the AllTheThings commit the data came from.
+
+To see what changed, compare against the committed file:
+
+```bash
+git show HEAD:Data/Quests.lua > /tmp/Quests.old.lua
+python3 tools/diff_quests.py /tmp/Quests.old.lua Data/Quests.lua
+```
+
+The [Sync quest data from AllTheThings](.github/workflows/sync-att-data.yml) workflow does this every Monday (or on demand from the Actions tab). If the quest data changed, it opens or updates a PR from the `data/att-sync` branch with the summary. It fails instead if the quest count drops by more than 10%, a zone disappears, the data doesn't load, or the tests fail. Merging and releasing stay manual.
 
 ### Tests
 
