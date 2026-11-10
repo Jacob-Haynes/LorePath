@@ -502,7 +502,26 @@ local function Render(id)
     local community = ns.CommunityText and ns.CommunityText[id] or {}
     local bundled = ns.QuestText and ns.QuestText[id] or {}
     local done = status == S.DONE
+    local active = status == S.ACTIVE
     local usedBundled = false
+
+    -- No spoilers: a quest you haven't started keeps its story hidden, and a quest
+    -- in your log keeps how it ends hidden, until you press Reveal (which lasts
+    -- until you look at another quest) or turn on "Show spoilers" in Settings.
+    local revealed = ns.revealedQuest == id or ns.GetSetting("showSpoilers")
+    panel.revealButton:Hide()
+    local function RevealButton()
+        cursor = cursor + 6
+        panel.revealButton:ClearAllPoints()
+        panel.revealButton:SetPoint("TOPLEFT", content, "TOPLEFT", 8, -cursor)
+        panel.revealButton:Show()
+        cursor = cursor + 22
+    end
+    if not done and not active and not revealed then
+        AddHeader("Story")
+        AddText("Find what awaits you.", "GameFontHighlightSmall", { 0.9, 0.86, 0.75 }, 4)
+        RevealButton()
+    else
 
     AddHeader("Objectives")
     local objectives = Objectives(id)
@@ -551,11 +570,18 @@ local function Render(id)
     local completion = cached.done or community.c
     if completion then
         AddHeader("Completion")
-        AddText(ns.FillQuestText(completion), "GameFontHighlightSmall", { 0.9, 0.86, 0.75 }, 4)
+        if done or revealed then
+            AddText(ns.FillQuestText(completion), "GameFontHighlightSmall", { 0.9, 0.86, 0.75 }, 4)
+        else
+            -- In your log: how it ends stays hidden until you turn it in (or reveal it).
+            AddText("Find out when you turn it in.", "GameFontDisableSmall", nil, 4)
+            RevealButton()
+        end
     end
     if usedBundled then
         AddText("Text from LorePath's bundled quest database (pfQuest). WoW Forever's wording may differ slightly; the game's own text replaces it once you see the quest.", "GameFontDisableSmall", { 0.55, 0.55, 0.55 }, 6)
     end
+    end -- spoiler gate
 
     -- Rewards: items only. Gold, XP and reputation are still saved as you play
     -- (questCache money/xp/rep), just not shown for now.
@@ -651,11 +677,30 @@ function ns.ShowDetail(id)
         box:SetScript("OnEscapePressed", function(self) self:ClearFocus() end)
         box:SetScript("OnEnterPressed", function(self) self:ClearFocus() end)
         panel.linkBox = box
+
+        local reveal = CreateFrame("Button", nil, content, "UIPanelButtonTemplate")
+        reveal:SetSize(90, 20)
+        reveal:SetText("Reveal")
+        reveal:SetScript("OnClick", function()
+            ns.revealedQuest = ns.detailQuest
+            ns.RefreshDetail()
+        end)
+        reveal:SetScript("OnEnter", function(self)
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+            GameTooltip:AddLine("Reveal the story", 1, 0.82, 0)
+            GameTooltip:AddLine("Shows this quest's text until you look at another quest.", 1, 1, 1, true)
+            GameTooltip:Show()
+        end)
+        reveal:SetScript("OnLeave", GameTooltip_Hide)
+        panel.revealButton = reveal
     end
     if C_QuestLog.RequestLoadQuestByID then
         C_QuestLog.RequestLoadQuestByID(id)
     end
     local changed = ns.detailQuest ~= id
+    if changed then
+        ns.revealedQuest = nil -- revealing lasts for one quest at a time
+    end
     ns.detailQuest = id
     panel:Show()
     if changed then

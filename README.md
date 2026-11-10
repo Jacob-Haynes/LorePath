@@ -36,7 +36,9 @@ It's not a quest helper. There are no map pins and no objective tracking, so it 
   - its objectives and description, plus progress and completion text;
   - its item rewards;
   - the quests before and after it, as links;
-  - its address on WarcraftDB, to copy.
+  - its address on WarcraftDB, to copy, at the bottom.
+
+  **No spoilers by default:** a quest you haven't started shows "Find what awaits you." with a **Reveal** button, instead of its objectives and story. A quest in your log shows its objectives and description, but not how it ends. A completed quest shows everything. Reveal lasts until you look at another quest. **Show spoilers** in the settings, or `/lp spoilers`, shows everything always.
 - **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
 
@@ -52,6 +54,7 @@ It's not a quest helper. There are no map pins and no objective tracking, so it 
 | Collapse | Click a storyline's or heading's +/−, or **Expand all** / **Collapse all** |
 | Hide the zone list | The arrow button left of the zone name |
 | Show or hide repeatable quests | The **Repeatable** tick box, `/lp repeatable`, or the settings page |
+| Reveal a quest's story | **Reveal** in its details; or **Show spoilers** / `/lp spoilers` for every quest |
 | Show or hide the minimap button | `/lp minimap`, or the settings page |
 | Move the window | Drag its title bar |
 | Move the minimap button | Drag it around the minimap |
@@ -70,6 +73,7 @@ It's not a quest helper. There are no map pins and no objective tracking, so it 
 | Hide finished storylines | Off | Leaves out storylines where every quest is done. |
 | Show standalone quests | On | Lists quests that aren't part of a chain under each page's storylines. |
 | Show repeatable quests | On | Shows daily and repeatable quests, in blue. Same as the **Repeatable** tick box. |
+| Show spoilers | Off | Shows the full story of every quest in its details. Off: quests you haven't started, and how quests in your log end, stay hidden until you press **Reveal**. |
 | Show quest levels on tiles | On | Shows each quest's minimum level on its tile. Quests that are too high level always show it, in red. |
 | Open the map when setting a waypoint | On | Opens the world map at the quest's start when you set a waypoint. |
 | Window size | 100% | Scales the window from 60% to 140%. |
@@ -155,7 +159,7 @@ This runs the addon's Lua against a fake WoW API with the real quest data, as Hu
 - quest statuses and storyline building;
 - dungeon and raid pages;
 - jumping and **Back**;
-- the detail panel and its text sources;
+- the detail panel, its text sources and spoiler hiding;
 - saving quest text as you play;
 - waypoints, the minimap button and every setting;
 - **Reset to defaults**;

@@ -8,6 +8,7 @@ local DEFAULTS = {
     openOnCurrentZone = true,   -- opening the window jumps to the zone you're in
     showOthers = true,          -- list standalone quests under the storylines
     showRepeatable = true,      -- show daily and repeatable quests (in blue)
+    showSpoilers = false,       -- show the story of quests you haven't started (and how quests end)
     hideCompleted = false,      -- hide storylines you've finished
     showLevels = true,          -- show quest levels on the quest tiles
     openMapOnWaypoint = true,   -- open the world map when a waypoint is set
@@ -153,6 +154,8 @@ function ns.CreateSettingsPanel()
         "List quests that aren't part of any chain under each zone's storylines.")
     anchor = AddCheckbox(anchor, "showRepeatable", "Show repeatable quests",
         "Show daily and repeatable quests, in blue. They never count towards progress. Also the \"Repeatable\" tick box at the top of the window.")
+    anchor = AddCheckbox(anchor, "showSpoilers", "Show spoilers",
+        "Show the full story of every quest in its details: quests you haven't started, and how quests in your log end. Off: those stay hidden until you press Reveal.")
     anchor = AddCheckbox(anchor, "showLevels", "Show quest levels on tiles",
         "Show each quest's minimum level at the left of its tile.")
     anchor = AddCheckbox(anchor, "openMapOnWaypoint", "Open the map when setting a waypoint",

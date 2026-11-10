@@ -186,6 +186,9 @@ check(not any("experience" in s or "reputation with" in s for s in detail_texts(
 char["log"][qid] = None
 g.LorePathDB["questCache"][qid] = None
 
+# The quest text tests below read quests you haven't started, so show spoilers for them.
+ns.SetSetting("showSpoilers", True)
+
 # Text and rewards seen at a quest giver are kept for later.
 g.GetQuestID = lua.eval(f"function() return {qid} end")
 g.GetQuestText = lua.eval("function() return 'The Defias have taken the mine.' end")
@@ -295,6 +298,51 @@ check(g.LorePathDB["questCache"][cid]["text"] == "Thank you, $N. Notahville awai
       "captured text stores $N instead of your name (whole words only): " + str(g.LorePathDB["questCache"][cid]["text"]))
 g.LorePathDB["questCache"][cid] = None
 g.UnitName = None
+
+# --- No spoilers: not started = "Find what awaits you", in your log = no ending, done = everything ---
+ns.SetSetting("showSpoilers", False)
+g.LorePathDB["questCache"][6] = lua.table_from({"done": "Garrick is dead. The end."})
+char["completed"][6] = None
+char["log"][6] = None
+ns.RefreshCompleted()
+ns.ShowDetail(6)
+texts = detail_texts()
+reveal = g.LorePathDetailFrame["revealButton"]
+check(any(s == "Find what awaits you." for s in texts) and not any("Garrick has gathered" in s for s in texts),
+      "a quest you haven't started shows 'Find what awaits you.' instead of its story")
+check(reveal.IsShown(reveal) and not any("The end." in s for s in texts), "with a Reveal button, and no ending")
+reveal["__scripts"]["OnClick"](reveal)
+texts = detail_texts()
+check(any("Garrick has gathered" in s for s in texts) and any("The end." in s for s in texts) and not reveal.IsShown(reveal),
+      "Reveal shows its description and ending")
+ns.ShowDetail(783)
+ns.ShowDetail(6)
+check(any(s == "Find what awaits you." for s in detail_texts()), "revealing lasts only until you look at another quest")
+
+char["log"][6] = True
+ns.RefreshDetail()
+texts = detail_texts()
+check(not any(s == "Find what awaits you." for s in texts) and any(s in ("Description", "Objectives") for s in texts)
+      and not any("The end." in s for s in texts) and any("Find out when you turn it in." in s for s in texts),
+      "a quest in your log shows its objectives and description but not how it ends")
+char["log"][6] = None
+char["completed"][6] = True
+ns.RefreshCompleted()
+ns.RefreshDetail()
+texts = detail_texts()
+check(any("Garrick has gathered" in s for s in texts) and any("The end." in s for s in texts) and not reveal.IsShown(reveal),
+      "a completed quest shows everything")
+char["completed"][6] = None
+ns.RefreshCompleted()
+
+g.SlashCmdList["LOREPATH"]("spoilers")
+check(g.LorePathDB["showSpoilers"] is True, "/lp spoilers turns spoilers on")
+ns.RefreshDetail()
+check(any("Garrick has gathered" in s for s in detail_texts()), "with spoilers on, quests you haven't started show their story")
+g.SlashCmdList["LOREPATH"]("spoilers")
+check(g.LorePathDB["showSpoilers"] is False, "and /lp spoilers again hides them")
+g.LorePathDB["questCache"][6] = None
+ns.HideDetail()
 
 # Storyline links jump to the earlier quest and show it.
 with_pre = next(i for i in [f["questID"] for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)]

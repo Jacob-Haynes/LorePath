@@ -19,6 +19,8 @@ Built for **WoW Forever**. It's lightweight: no map pins and no objective tracki
   - its item rewards;
   - the quests before and after it;
   - a WarcraftDB link to copy.
+
+  No spoilers: quests you haven't started show "Find what awaits you" until you press Reveal, and how a quest ends stays hidden until you turn it in. Turn on **Show spoilers** to see everything.
 - **Your story, saved:** LorePath saves the quest text you see as you play, so you can go back and reread it. For quests you did before installing it, it fills in from:
   - community text, including many of WoW Forever's own quests;
   - the game's own quest summaries;
@@ -37,6 +39,7 @@ Built for **WoW Forever**. It's lightweight: no map pins and no objective tracki
 | `/lp here` | Open on the zone you're in |
 | `/lp config` | Open settings |
 | `/lp repeatable` | Show or hide repeatable quests |
+| `/lp spoilers` | Show or hide the story of quests you haven't started |
 | `/lp minimap` | Show or hide the minimap button |
 
 You can also bind a key under *Options → Key Bindings → AddOns → LorePath*.

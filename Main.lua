@@ -109,6 +109,9 @@ local function SlashCommand(msg)
     elseif command == "minimap" then
         ns.SetSetting("showMinimapButton", not ns.GetSetting("showMinimapButton"))
         ns.Print("Minimap button " .. (ns.GetSetting("showMinimapButton") and "shown." or "hidden."))
+    elseif command == "spoilers" then
+        ns.SetSetting("showSpoilers", not ns.GetSetting("showSpoilers"))
+        ns.Print("Spoilers " .. (ns.GetSetting("showSpoilers") and "shown: every quest's story is visible." or "hidden: quests you haven't started show \"Find what awaits you\"."))
     elseif command == "repeatable" or command == "repeatables" then
         ns.SetSetting("showRepeatable", not ns.GetSetting("showRepeatable"))
         ns.Print("Repeatable quests " .. (ns.GetSetting("showRepeatable") and "shown." or "hidden."))
@@ -119,6 +122,7 @@ local function SlashCommand(msg)
         ns.Print("  |cffffd100/lp config|r - open the settings")
         ns.Print("  |cffffd100/lp minimap|r - show or hide the minimap button")
         ns.Print("  |cffffd100/lp repeatable|r - show or hide repeatable quests")
+        ns.Print("  |cffffd100/lp spoilers|r - show or hide the story of quests you haven't started")
     end
 end
 
