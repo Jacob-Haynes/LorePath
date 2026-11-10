@@ -96,6 +96,40 @@ function ns.CaptureLogQuest(id)
     AfterCapture(id)
 end
 
+-- Copies quest text that the Lore Forever addon saved (LoreForeverDB.quests) into
+-- LorePath's own saved text, for quests LorePath hasn't captured itself. It's
+-- your own play history, so it fills gaps from before LorePath was installed.
+-- Never overwrites what LorePath saved. Returns how many quests gained text.
+function ns.ImportLoreForever()
+    local source = type(LoreForeverDB) == "table" and type(LoreForeverDB.quests) == "table" and LoreForeverDB.quests
+    if not source then
+        return 0
+    end
+    local function Clean(s)
+        return type(s) == "string" and s ~= "" and (s:gsub("\r", "")) or nil
+    end
+    local added = 0
+    for key, q in pairs(source) do
+        local id = tonumber(key)
+        if id and ns.Quests[id] and type(q) == "table" then
+            local entry = Saved(id)
+            local before = (entry.text and 1 or 0) + (entry.obj and 1 or 0) + (entry.done and 1 or 0) + (entry.prog and 1 or 0)
+            entry.text = entry.text or Clean(q.text)
+            entry.obj = entry.obj or Clean(q.objectives)
+            entry.done = entry.done or Clean(q.completion)
+            entry.prog = entry.prog or Clean(q.progress)
+            local after = (entry.text and 1 or 0) + (entry.obj and 1 or 0) + (entry.done and 1 or 0) + (entry.prog and 1 or 0)
+            if after > before then
+                entry.src = entry.src or "Lore Forever"
+                added = added + 1
+            elseif next(entry) == nil then
+                Cache()[id] = nil -- nothing to keep
+            end
+        end
+    end
+    return added
+end
+
 -- Everything currently in your log (at login, so installing LorePath mid-quest
 -- still captures those quests).
 function ns.CaptureQuestLog()
@@ -534,9 +568,16 @@ local function Render(id)
     else
         AddText("Saved the first time a quest giver shows you this quest.", "GameFontDisableSmall", nil, 4)
     end
+    if cached.prog then
+        AddHeader("Progress")
+        AddText(ns.FillQuestText(cached.prog), "GameFontHighlightSmall", { 0.9, 0.86, 0.75 }, 4)
+    end
     if cached.done then
         AddHeader("Completion")
         AddText(ns.FillQuestText(cached.done), "GameFontHighlightSmall", { 0.9, 0.86, 0.75 }, 4)
+    end
+    if cached.src then
+        AddText("Some of this text was imported from your Lore Forever history.", "GameFontDisableSmall", { 0.55, 0.55, 0.55 }, 6)
     end
     if usedBundled then
         AddText("Text from LorePath's bundled quest database (pfQuest). WoW Forever's wording may differ slightly; the game's own text replaces it once you see the quest.", "GameFontDisableSmall", { 0.55, 0.55, 0.55 }, 6)

@@ -258,6 +258,27 @@ char["completed"][forever_done] = None
 ns.RefreshCompleted()
 g.C_TooltipInfo = None
 
+# Lore Forever's saved quest history fills gaps, without overwriting LorePath's own text.
+g.LorePathDB["questCache"][forever_done] = None
+g.LorePathDB["questCache"][783] = lua.table_from({"text": "LorePath's own text."})
+g.LoreForeverDB = lua.eval("""{ quests = {
+    [FOREVER_ID] = { id = FOREVER_ID, title = "Test quest", text = "The grove needs you, $N.\\r\\nGo east.",
+        objectives = "Slay 8 Juvenile Vuldren.", completion = "Well done, $C.", progress = "Back so soon?" },
+    [783] = { id = 783, text = "Lore Forever's text." },
+    [999999] = { id = 999999, text = "Not a LorePath quest." },
+} }""".replace("FOREVER_ID", str(forever_done)))
+added = ns.ImportLoreForever()
+check(added == 1, f"importing from Lore Forever fills one quest with no saved text ({added})")
+check(g.LorePathDB["questCache"][783]["text"] == "LorePath's own text.", "it never overwrites text LorePath saved itself")
+check(g.LorePathDB["questCache"][999999] is None, "quests LorePath doesn't know are skipped")
+check(ns.ImportLoreForever() == 0, "importing again adds nothing")
+ns.ShowDetail(forever_done)
+texts = detail_texts()
+check(any("The grove needs you, adventurer." in s and "\r" not in s for s in texts), "the imported description shows, placeholders filled")
+check(any(s == "Back so soon?" for s in texts) and any("Well done, Warrior." in s for s in texts), "imported progress and completion text show")
+check(any("imported from your Lore Forever history" in s for s in texts), "the panel says the text came from Lore Forever")
+g.LoreForeverDB = None
+
 # Storyline links jump to the earlier quest and show it.
 with_pre = next(i for i in [f["questID"] for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)]
                 if ns.Quests[i]["pre"] is not None and ns.Quests[ns.Quests[i]["pre"][1]] is not None)
