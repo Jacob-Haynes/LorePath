@@ -133,6 +133,8 @@ check(harness["waypoint"] is not None, "Ctrl+clicking a quest tile sets a waypoi
 check(g.LorePathDetailFrame is None or not g.LorePathDetailFrame.IsShown(g.LorePathDetailFrame),
       "Ctrl+click doesn't open the detail panel")
 
+check(sorted(ns.Quests[92818]["rw"].values()) == [251390, 251458], "recipe rewards (ATT r()) are kept: 92818 rewards both recipe items")
+
 # --- Quest detail panel ---
 same = lua.eval("function(a, b) return rawequal(a, b) end")
 def detail_texts():

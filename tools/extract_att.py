@@ -200,6 +200,9 @@ def main():
                     rewards.append(int(child["__id"]))
                 elif child["__kind"] == "ItemSource" and isinstance(child["__arg2"], (int, float)):
                     rewards.append(int(child["__arg2"]))
+                elif child["__kind"] in ("Recipe", "Mount", "Toy") and number(child["itemID"]):
+                    # r(spellID, {itemID=...}): the recipe (or mount/toy) item the quest gives you.
+                    rewards.append(number(child["itemID"]))
         if rewards:
             rec["rw"] = rewards
         quests[qid] = rec
