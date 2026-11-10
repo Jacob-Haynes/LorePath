@@ -494,17 +494,6 @@ local function Render(id)
         cursor = cursor + 22
     end
 
-    -- The quest's WarcraftDB page, to copy into a browser (addons can't open one).
-    AddText("WarcraftDB (click, then Ctrl+C to copy):", "GameFontDisableSmall", nil, 8)
-    local link = panel.linkBox
-    link.url = ns.WarcraftDBLink(id)
-    link:SetText(link.url)
-    link:SetCursorPosition(0)
-    link:ClearAllPoints()
-    link:SetPoint("TOPLEFT", content, "TOPLEFT", 14, -(cursor + 2))
-    link:Show()
-    cursor = cursor + 24
-
     -- Quest text, best source first: what the game showed you (saved as you play),
     -- then LorePath's community text (real Forever text other players collected),
     -- then the quest link tooltip's goal, then the bundled vanilla text (pfQuest).
@@ -611,6 +600,17 @@ local function Render(id)
             end
         end
     end
+
+    -- The quest's WarcraftDB page, to copy into a browser (addons can't open one).
+    AddText("WarcraftDB (click, then Ctrl+C to copy):", "GameFontDisableSmall", nil, 14)
+    local link = panel.linkBox
+    link.url = ns.WarcraftDBLink(id)
+    link:SetText(link.url)
+    link:SetCursorPosition(0)
+    link:ClearAllPoints()
+    link:SetPoint("TOPLEFT", content, "TOPLEFT", 14, -(cursor + 2))
+    link:Show()
+    cursor = cursor + 24
 
     content:SetHeight(cursor + 12)
 end

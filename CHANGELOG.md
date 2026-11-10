@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Quest details:** the WarcraftDB link is now at the very bottom of the panel.
+
 ## 1.0.0
 
 The first full release. Everything from the betas, plus:
