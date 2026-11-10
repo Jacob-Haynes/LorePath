@@ -31,6 +31,13 @@ events:SetScript("OnEvent", function(_, event, arg1, arg2)
         end
     elseif event == "PLAYER_LOGIN" then
         ns.CreateMinimapButton()
+        -- Remember this account's character names, so tools/merge_quest_text.py can
+        -- strip any that slipped into saved quest text before it's shared.
+        local name = UnitName and UnitName("player")
+        if name and LorePathDB then
+            LorePathDB.characters = LorePathDB.characters or {}
+            LorePathDB.characters[name] = true
+        end
         -- Save the text of everything already in your log once it has loaded.
         C_Timer.After(5, ns.CaptureQuestLog)
     elseif event == "QUEST_TURNED_IN" then

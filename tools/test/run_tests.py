@@ -279,6 +279,16 @@ check(g.LorePathDB["questCache"][cid]["prog"] == "Have you got them yet, $N?", "
 check(any("Have you got them yet, adventurer?" in s for s in detail_texts()), "the panel shows it under Progress")
 g.LorePathDB["questCache"][cid] = None
 
+# Saved text puts $N back in place of the character's name, so it can be shared.
+g.UnitName = lua.eval("function() return 'Notah' end")
+g.GetQuestID = lua.eval(f"function() return {cid} end")
+g.GetQuestText = lua.eval("function() return 'Thank you, Notah. Notahville awaits.' end")
+harness.Fire("QUEST_DETAIL")
+check(g.LorePathDB["questCache"][cid]["text"] == "Thank you, $N. Notahville awaits.",
+      "captured text stores $N instead of your name (whole words only): " + str(g.LorePathDB["questCache"][cid]["text"]))
+g.LorePathDB["questCache"][cid] = None
+g.UnitName = None
+
 # Storyline links jump to the earlier quest and show it.
 with_pre = next(i for i in [f["questID"] for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)]
                 if ns.Quests[i]["pre"] is not None and ns.Quests[ns.Quests[i]["pre"][1]] is not None)

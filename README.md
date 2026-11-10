@@ -94,6 +94,17 @@ The [Sync quest data from AllTheThings](.github/workflows/sync-att-data.yml) wor
 
 `Data/QuestText.lua` (the bundled vanilla quest text) is a one-off import: vanilla quest text doesn't change, so it isn't part of the weekly sync. `python3 tools/extract_pfquest.py` rebuilds it if ever needed, for example after new vanilla quests appear in `Data/Quests.lua`.
 
+### Adding players' quest text
+
+LorePath saves the quest text each player sees (with their name swapped for `$N`). To add what someone has collected to `Data/CommunityText.lua`, so everyone gets it in the next release, take their saved file from `WTF/Account/<account>/SavedVariables/LorePath.lua` (or your own) and run:
+
+```bash
+python3 tools/merge_quest_text.py --dry-run path/to/LorePath.lua   # see what it would add
+python3 tools/merge_quest_text.py path/to/LorePath.lua
+```
+
+It also reads Lore Forever's `LoreForever.lua`. It only adds text for quests LorePath knows, never overwrites existing community text (unless `--replace`), strips character names, colour codes and links, skips text the bundled vanilla text already has, and loads each file in a sandbox with no Lua libraries. Review the diff before committing.
+
 ### Tests
 
 ```bash

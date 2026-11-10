@@ -38,6 +38,25 @@ end
 
 local LogQuestText, QuestLinkText -- defined below
 
+-- The game fills your character's name into quest text. Saved text puts the
+-- $N placeholder back, so it reads right on other characters and is safe to
+-- share (see tools/merge_quest_text.py).
+local function Unfill(text)
+    if type(text) ~= "string" then
+        return text
+    end
+    local name = UnitName and UnitName("player")
+    if type(name) == "string" and name ~= "" then
+        local pattern = "%f[%w]" .. name:gsub("[%^%$%(%)%%%.%[%]%*%+%-%?]", "%%%0") .. "%f[%W]"
+        text = text:gsub(pattern, "$N")
+    end
+    return text
+end
+
+local function GetText(fn, ...)
+    return Unfill(Get(fn, ...))
+end
+
 local function Saved(id)
     local entry = Cache()[id] or {}
     Cache()[id] = entry
@@ -58,8 +77,8 @@ function ns.CaptureQuestDetail()
         return
     end
     local entry = Saved(id)
-    entry.text = Get(GetQuestText) or entry.text
-    entry.obj = Get(GetObjectiveText) or entry.obj
+    entry.text = GetText(GetQuestText) or entry.text
+    entry.obj = GetText(GetObjectiveText) or entry.obj
     entry.money = Get(GetRewardMoney) or entry.money
     entry.xp = Get(GetRewardXP) or entry.xp
     AfterCapture(id)
@@ -73,7 +92,7 @@ function ns.CaptureQuestProgress()
         return
     end
     local entry = Saved(id)
-    entry.prog = Get(GetProgressText) or entry.prog
+    entry.prog = GetText(GetProgressText) or entry.prog
     AfterCapture(id)
 end
 
@@ -85,7 +104,7 @@ function ns.CaptureQuestComplete()
         return
     end
     local entry = Saved(id)
-    entry.done = Get(GetRewardText) or entry.done
+    entry.done = GetText(GetRewardText) or entry.done
     entry.money = Get(GetRewardMoney) or entry.money
     entry.xp = Get(GetRewardXP) or entry.xp
     AfterCapture(id)
@@ -99,8 +118,8 @@ function ns.CaptureLogQuest(id)
     end
     local entry = Saved(id)
     local text, objectives = LogQuestText(id)
-    entry.text = text or entry.text
-    entry.obj = objectives or entry.obj
+    entry.text = Unfill(text) or entry.text
+    entry.obj = Unfill(objectives) or entry.obj
     local money, xp = Get(GetQuestLogRewardMoney, id), Get(GetQuestLogRewardXP, id)
     if (money and money > 0) or (xp and xp > 0) then
         entry.money, entry.xp = money or 0, xp or 0
