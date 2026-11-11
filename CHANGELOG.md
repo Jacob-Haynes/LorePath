@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **World map pins, reworked:** they're on by default, and the tick box on the map is gone: **LorePath quests** in the world map's filter menu has three filters instead, also in the settings: **Quests at your level** (a gold "!"), **Low-level quests** (grey) and **Quests above your level** (red), all on. Shift+click a pin to open its quest in LorePath. The "quests in your log" option is gone.
+
 ## 1.2.0-beta1
 
 - **Quests on the world map (optional):** turn on **LorePath quests** on the world map, or **Show quests on the world map** in the settings, to see a "!" where each quest you can pick up starts, coloured by difficulty. Quests at the same spot share one pin; hover for the quest's tooltip, click for a waypoint. Off by default, with two more settings for quests above your level and quests in your log.

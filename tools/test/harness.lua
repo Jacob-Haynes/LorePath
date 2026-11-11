@@ -204,6 +204,28 @@ WorldMapFrame.RemoveAllPinsByTemplate = function(self, template)
 end
 function harness.Pins(template) return WorldMapFrame.__pins[template] or {} end
 
+-- The Menu API (Menu.ModifyMenu), enough to build a menu by tag and record it:
+-- harness.BuildMenu(tag) returns its entries { kind, text, isChecked, onClick }.
+harness.menuModifiers = {}
+Menu = {
+    ModifyMenu = function(tag, fn)
+        harness.menuModifiers[tag] = harness.menuModifiers[tag] or {}
+        table.insert(harness.menuModifiers[tag], fn)
+    end,
+}
+function harness.BuildMenu(tag)
+    local entries = {}
+    local root = {
+        CreateDivider = function() table.insert(entries, { kind = "divider" }) end,
+        CreateTitle = function(_, text) table.insert(entries, { kind = "title", text = text }) end,
+        CreateCheckbox = function(_, text, isChecked, onClick)
+            table.insert(entries, { kind = "checkbox", text = text, isChecked = isChecked, onClick = onClick })
+        end,
+    }
+    for _, fn in ipairs(harness.menuModifiers[tag] or {}) do fn(nil, root, {}) end
+    return entries
+end
+
 -- Fires an event at every frame that has an OnEvent script.
 function harness.Fire(event, ...)
     for _, f in ipairs(harness.all) do
