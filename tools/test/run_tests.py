@@ -1565,6 +1565,34 @@ share_button["__scripts"]["OnClick"](share_button)
 check(any("Nothing new to share" in str(m) for m in list(harness["chat"].values())[before_chat:]),
       "the settings page has a Share quest text button")
 
+# --- Quest icons: portal, then class, profession, starting item ---
+check(ns.Quests[6564]["si"] == 16790, "a quest started by a dropped item records it (Allegiance to the Old Gods: Damp Note)")
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
+char["completed"], char["log"] = lua.table(), lua.table()
+g.GetProfessions = lua.eval("function() return 1, nil end")
+g.GetProfessionInfo = lua.eval("function(i) if i == 1 then return 'Leatherworking', 133611, 300, 300, 0, 0, 165 end end")
+ns.RefreshPlayer(); ns.RefreshCompleted()
+ns.Toggle(True)
+def icon_of(qid):
+    t = [f for f in harness["all"].values() if f["questID"] == qid and f["sub"] is not None and f.IsShown(f)]
+    return t[0]["icon"] if t else None
+lw = next(i for i in ns.GetZoneQuests("prof:165").values() if not ns.Quests[i]["di"] and not ns.Quests[i]["cl"])
+ns.FocusQuest(lw)
+check(icon_of(lw)["__texture"] == 133611, "profession quests show the profession's icon")
+item_q = next(qid for qid, q in sorted(ns.Quests.items()) if q["si"] and not q["di"] and not q["cl"] and not q["sk"] and ns.IsEligible(qid))
+g.C_Item.GetItemIconByID = lua.eval("function(id) return 900000 + (id % 1000) end")
+ns.FocusQuest(item_q)
+check(icon_of(item_q)["__texture"] == 900000 + ns.Quests[item_q]["si"] % 1000, f"a quest started by an item shows the item's icon ({item_q})")
+g.C_Item.GetItemIconByID = None
+ns.Refresh()
+check(icon_of(item_q)["__texture"] in ("Interface\\Icons\\INV_Misc_Note_01", "Interface\\Icons\\INV_Letter_15"),
+      "without the item's icon, it falls back to the usual one")
+ns.FocusQuest(7508)
+check(ns.Quests[7508]["cl"] is not None and icon_of(7508)["__texture"] == "Interface\\Icons\\Spell_Arcane_PortalUnderCity",
+      "a class quest picked up inside an instance shows the portal: it comes first")
+g.GetProfessions = lua.eval("function() return nil end")
+ns.RefreshPlayer()
+
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])

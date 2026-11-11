@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- **More quest icons:** profession quests show the profession's icon, and quests started by an item (like a dropped note) show that item's icon. A quest picked up inside a dungeon or raid shows its portal first, even a class quest.
 - **Level ranges always visible:** the range now has its own column before the progress count, so a long name (Stonetalon Mountains) is shortened instead of hiding the range. Hover a zone for its full name, range and progress.
 
 ## 1.1.0-beta3
