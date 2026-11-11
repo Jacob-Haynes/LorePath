@@ -3,6 +3,7 @@
 ## Unreleased
 
 - **One version of each quest:** quests that come in several versions, one per starting area, now show once. The Shaman totem quests (Call of Earth, and Zephras Isle's Call of Fire) appeared once per starting area on the Class page. LorePath shows the version you've done or have, else the one that starts nearest your race's home. Breadcrumbs that only lead into a hidden version are hidden too, since you couldn't complete them; every other breadcrumb stays.
+- **Progress colours in the zone list:** zone, dungeon, raid, Class and profession names are grey until you start them, then go from red through orange (40%) and WoW's gold (80%) towards green as you finish their quests. Only finished ones are fully green.
 
 ## 1.1.0-beta1
 
