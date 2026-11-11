@@ -3,6 +3,7 @@
 ## Unreleased
 
 - **Open in quest log:** a quest you're on has an **Open in quest log** button in its details, and Shift+clicking it in the graph does the same. It opens the game's quest log at that quest, with its live objectives. Not in combat.
+- **Show in LorePath:** a LorePath book button on the game's quest log opens the selected quest in LorePath, in its storyline with its details. `/lp quest` does the same, and `/lp quest <ID>` opens any quest.
 
 ## 1.0.1
 

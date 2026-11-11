@@ -56,8 +56,11 @@ local function OnEvent(event, arg1, arg2)
             ns.InitDB()
             ns.CreateSettingsPanel()
         end
+        -- The quest log may load on demand (Blizzard_WorldMap and friends).
+        ns.AttachQuestLogButton()
     elseif event == "PLAYER_LOGIN" then
         ns.CreateMinimapButton()
+        ns.AttachQuestLogButton()
         -- Remember this account's character names, so tools/merge_quest_text.py can
         -- strip any that slipped into saved quest text before it's shared.
         local name = UnitName and UnitName("player")
@@ -112,6 +115,10 @@ local function SlashCommand(msg)
     elseif command == "spoilers" then
         ns.SetSetting("showSpoilers", not ns.GetSetting("showSpoilers"))
         ns.Print("Spoilers " .. (ns.GetSetting("showSpoilers") and "shown: every quest's story is visible." or "hidden: quests you haven't started show \"Find what awaits you\"."))
+    elseif command == "quest" then
+        -- /lp quest: the quest selected in your quest log; /lp quest 783: that quest.
+        local id = tonumber(string.match(msg, "^%s*%S+%s+(%d+)"))
+        ns.ShowInLorePath(id or ns.SelectedLogQuest())
     elseif command == "repeatable" or command == "repeatables" then
         ns.SetSetting("showRepeatable", not ns.GetSetting("showRepeatable"))
         ns.Print("Repeatable quests " .. (ns.GetSetting("showRepeatable") and "shown." or "hidden."))
@@ -119,6 +126,7 @@ local function SlashCommand(msg)
         ns.Print("v" .. ns.VERSION .. " commands:")
         ns.Print("  |cffffd100/lp|r - open or close the window")
         ns.Print("  |cffffd100/lp here|r - open on the zone you're in")
+        ns.Print("  |cffffd100/lp quest|r - show the quest selected in your quest log")
         ns.Print("  |cffffd100/lp config|r - open the settings")
         ns.Print("  |cffffd100/lp minimap|r - show or hide the minimap button")
         ns.Print("  |cffffd100/lp repeatable|r - show or hide repeatable quests")

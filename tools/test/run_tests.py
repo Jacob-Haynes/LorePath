@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "Settings.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Settings.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -580,6 +580,45 @@ check(opened() == [tid] and g.LorePathDetailFrame.IsShown(g.LorePathDetailFrame)
       "Shift+clicking a quest you're not on opens its details as usual")
 g.QuestMapFrame_OpenToQuestDetails = None
 ns.HideDetail()
+
+# --- The other way: from the game's quest log to LorePath ---
+check(ns.questLogButton is None, "with no quest log frame loaded, no LorePath button is made")
+details = harness.MockObject("Frame")
+g.QuestMapFrame = lua.table_from({"DetailsFrame": details})
+harness.Fire("ADDON_LOADED", "Blizzard_WorldMap")
+qlb = ns.questLogButton
+check(qlb is not None and same(qlb["__parent"], details), "once the quest log loads, it gets a LorePath button")
+harness.Fire("ADDON_LOADED", "SomethingElse")
+check(same(ns.questLogButton, qlb), "and only one")
+g.C_QuestLog.GetSelectedQuest = lua.eval(f"function() return {tid} end")
+check(ns.SelectedLogQuest() == tid, "the selected quest log quest is read with C_QuestLog.GetSelectedQuest")
+frame.Hide(frame)
+qlb["__scripts"]["OnClick"](qlb)
+check(frame.IsShown(frame) and ns.focusedQuest == tid and ns.detailQuest == tid
+      and g.LorePathDetailFrame.IsShown(g.LorePathDetailFrame),
+      "the button opens LorePath on that quest, with its details")
+g.GameTooltip.lines = lua.table()
+qlb["__scripts"]["OnEnter"](qlb)
+check(any("Show in LorePath" in str(l) for l in g.GameTooltip.lines.values()), "the button has a tooltip")
+ns.HideDetail()
+g.C_QuestLog.GetSelectedQuest = lua.eval("function() return 0 end")
+g.GetQuestLogSelection = lua.eval("function() return 3 end")
+g.C_QuestLog.GetInfo = lua.eval(f"function(i) if i == 3 then return {{ questID = {tid} }} end end")
+check(ns.SelectedLogQuest() == tid, "a classic quest log's selection (a log index) works too")
+g.GetQuestLogSelection = None
+g.C_QuestLog.GetInfo = None
+check(ns.SelectedLogQuest() is None and ns.ShowInLorePath(None) is False, "with nothing selected, it says so")
+check(ns.ShowInLorePath(999999) is False, "a quest LorePath doesn't have isn't opened")
+g.SlashCmdList["LOREPATH"](f"quest {tid}")
+check(ns.detailQuest == tid, f"/lp quest {tid} opens that quest")
+ns.HideDetail()
+g.C_QuestLog.GetSelectedQuest = lua.eval(f"function() return {tid} end")
+g.SlashCmdList["LOREPATH"]("quest")
+check(ns.detailQuest == tid, "/lp quest opens the quest selected in your quest log")
+g.C_QuestLog.GetSelectedQuest = lua.eval("function() return 0 end")
+g.QuestMapFrame = None
+ns.HideDetail()
+harness.RunTimers()
 
 g.LorePathDB["collapsed"] = lua.table_from({"s7": True})
 g.LorePathDB["collapsedContinents"] = lua.table_from({"Kalimdor": True})
