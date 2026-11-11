@@ -234,6 +234,8 @@ local function Contains(list, value)
     return false
 end
 
+local checkingCrumb = {} -- guards against breadcrumbs that lead round in a loop
+
 -- Can this character ever do the quest (faction, race, class, profession)?
 -- With ignoreSkill, a profession you don't have doesn't count against it (for
 -- the Professions page's "show professions you don't have").
@@ -253,6 +255,23 @@ function ns.IsEligible(id, ignoreSkill)
     end
     if q.sk and not ignoreSkill and player.skills[q.sk] == nil then
         return false
+    end
+    -- A breadcrumb is only worth showing if you can do a quest it leads to.
+    -- (In Search of Thaelrid is open to the Horde, but leads only to an
+    -- Alliance quest.) Quests LorePath doesn't know count as possible.
+    if q.bc and q.nx and not checkingCrumb[id] then
+        checkingCrumb[id] = true
+        local reachable = false
+        for _, nextID in ipairs(q.nx) do
+            if not ns.Quests[nextID] or ns.IsEligible(nextID, ignoreSkill) then
+                reachable = true
+                break
+            end
+        end
+        checkingCrumb[id] = nil
+        if not reachable then
+            return false
+        end
     end
     return true
 end
@@ -469,14 +488,24 @@ end
 
 -- Name of an instance page (see ns.InstanceZones): the Encounter Journal's name,
 -- then the map's, then the area's, then the English name stored with the data.
-local function InstanceName(zoneID, info)
+-- A wing's page is "<instance> - <wing>", e.g. "Scarlet Monastery - Library".
+local InstanceName
+local function WingName(info)
+    local base = InstanceName(nil, { ej = info.ej, ar = info.ar })
+    return base .. " - " .. info.wg
+end
+
+InstanceName = function(zoneID, info)
+    if info.wg then
+        return WingName(info)
+    end
     if info.ej and type(EJ_GetInstanceInfo) == "function" then
         local ok, name = pcall(EJ_GetInstanceInfo, info.ej)
         if ok and type(name) == "string" and name ~= "" then
             return name
         end
     end
-    if zoneID > 0 and C_Map and C_Map.GetMapInfo then
+    if zoneID and zoneID > 0 and C_Map and C_Map.GetMapInfo then
         local map = C_Map.GetMapInfo(zoneID)
         if map and map.name and map.name ~= "" then
             return map.name
@@ -554,6 +583,12 @@ local function LoadLevelRanges()
     return ranges
 end
 
+-- Forgets the ranges read so far, so the next lookup reads the game's list
+-- again (for tests).
+function ns.ResetLevelRanges()
+    levelRanges = nil
+end
+
 -- min, max suggested level for a zone or instance page, or nil when the game
 -- doesn't say (capital cities, the Class and profession pages). Names that
 -- differ only a little ("The Stockade" and "Stormwind Stockades") still match:
@@ -608,10 +643,18 @@ function ns.CurrentInstancePage(mapID)
         journalID = ok and id ~= 0 and id or nil
     end
     local zoneText = type(GetRealZoneText) == "function" and GetRealZoneText() or nil
+    -- The whole instance's page rather than one of its wings, when it has one.
+    local wing
     for page, info in pairs(ns.InstanceInfo) do
         if journalID and info.ej == journalID then
-            return page
+            if not info.wg then
+                return page
+            end
+            wing = wing or page
         end
+    end
+    if wing then
+        return wing
     end
     if zoneText and zoneText ~= "" and C_Map and C_Map.GetAreaInfo then
         for page, info in pairs(ns.InstanceInfo) do

@@ -1440,6 +1440,59 @@ check(row["text"]["__text"] == "Elwynn Forest |cff9d9d9d1-10|r", f"the zone list
 check(frame["zoneSummary"]["__text"].startswith("Levels 1-10"), f"and so does the line above the graph: {frame['zoneSummary']['__text'][:30]!r}")
 g.C_LFGList = None
 
+# --- Scarlet Monastery's wings, and breadcrumbs that lead nowhere you can go ---
+check(ns.Quests[1051]["z"] == -361 and all(ns.Quests[i]["z"] == -362 for i in (1049, 1050, 1160, 1951)),
+      "Graveyard and Library quests are on their own wing pages")
+check(all(ns.Quests[i]["z"] == 435 for i in (1048, 1053, 1113)), "quests that span the monastery stay on its page")
+g.EJ_GetInstanceInfo = lua.eval("function(id) if id == 316 then return 'Scarlet Monastery' end end")
+check(ns.GetMapName(-361) == "Scarlet Monastery - Graveyard" and ns.GetMapName(-362) == "Scarlet Monastery - Library",
+      f"wing pages are named after the instance and wing: {ns.GetMapName(-361)!r}")
+g.C_LFGList = lua.eval("""{ GetAvailableActivities = function() return { 1, 2 } end,
+  GetActivityInfoTable = function(id) return ({
+    { fullName = "Scarlet Monastery - Graveyard", minLevelSuggestion = 26, maxLevelSuggestion = 36 },
+    { fullName = "Scarlet Monastery - Library", minLevelSuggestion = 29, maxLevelSuggestion = 39 } })[id] end }""")
+ns.ResetLevelRanges()
+check(ns.GetLevelRange(-361) == (26, 36) and ns.GetLevelRange(-362) == (29, 39), "each wing gets its own range from the game")
+check(ns.GetLevelRange(435) == (26, 39), "and the monastery's page spans them")
+g.C_LFGList = None
+g.IsInInstance = lua.eval("function() return true end")
+g.EJ_GetInstanceForMap = lua.eval("function(m) if m == 302 then return 316 end return 0 end")
+check(ns.CurrentInstancePage(302) == 435, "inside the monastery, LorePath opens on its page, not a wing")
+g.IsInInstance, g.EJ_GetInstanceForMap = None, None
+
+char["race"], char["class"], char["faction"] = 2, 1, "Horde"
+ns.RefreshPlayer()
+check(not ns.IsEligible(1198) and not ns.IsEligible(1200),
+      "Horde don't see In Search of Thaelrid: it only leads to an Alliance quest")
+char["race"], char["faction"] = 1, "Alliance"
+ns.RefreshPlayer()
+check(ns.IsEligible(1198) and ns.IsEligible(1200), "Alliance still do")
+
+# --- Shift+click a reward to link it in chat ---
+rewarded_q = next(qid for qid, q in sorted(ns.Quests.items()) if q["rw"] is not None and ns.IsEligible(qid))
+ns.ShowDetail(rewarded_q)
+item_btn = [f for f in harness["all"].values() if f["itemID"] is not None and f.IsShown(f)][0]
+linked = lua.eval("{}")
+g.HandleModifiedItemClick = lua.eval("function(t) return function(link) table.insert(t, link) end end")(linked)
+g.C_Item.GetItemInfo = lua.eval("function(id) return 'Item' .. id, '|cff1eff00|Hitem:' .. id .. '|h[Item' .. id .. ']|h|r' end")
+item_btn["__scripts"]["OnClick"](item_btn)
+check(len(list(linked.values())) == 0, "a plain click does nothing")
+harness["shift"] = True
+item_btn["__scripts"]["OnClick"](item_btn)
+check(list(linked.values()) == [f"|cff1eff00|Hitem:{item_btn['itemID']}|h[Item{item_btn['itemID']}]|h|r"],
+      "clicking a reward hands its link to the game (Shift+click links it in chat)")
+g.GameTooltip.lines = lua.table()
+item_btn["__scripts"]["OnEnter"](item_btn)
+check(any("Shift+click to link it in chat" in str(l) for l in g.GameTooltip.lines.values()), "its tooltip says so")
+g.C_Item.GetItemInfo = lua.eval("function() return nil end")
+before_chat = len(list(harness["chat"].values()))
+item_btn["__scripts"]["OnClick"](item_btn)
+check(len(list(linked.values())) == 1 and any("still loading" in str(m) for m in list(harness["chat"].values())[before_chat:]),
+      "an item the game hasn't loaded yet says to try again")
+harness["shift"] = False
+g.HandleModifiedItemClick, g.C_Item.GetItemInfo = None, None
+ns.HideDetail()
+
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])

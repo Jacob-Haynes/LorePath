@@ -15,7 +15,7 @@ LorePath supports English game clients only.
 ## What it shows
 
 - **Class and Professions:** at the top of the zone list, **Class** gathers every quest for your class from all zones, so class chains that travel (say, from a capital city to another zone) show as one storyline. **Professions** has a page for each profession you have, with its quests. Their tooltips say which zone each quest is in. Quests your skill is too low for say what they need, for example *Needs Leatherworking 225*.
-- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons and raids get their own pages under **Dungeons** and **Raids** headings, and inside an instance the window opens on its page. Names are coloured by progress: grey before you start, then red, orange at 40%, WoW's gold at 80% and on towards green, turning fully green only once finished. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and the whole list can be hidden to give the graph more room.
+- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons and raids get their own pages under **Dungeons** and **Raids** headings (Scarlet Monastery's Graveyard and Library wings have their own too), and inside an instance the window opens on its page. Zones, dungeons and raids show WoW Forever's suggested level range after their name, read from the game's Looking for Group list. Names are coloured by progress: grey before you start, then red, orange at 40%, WoW's gold at 80% and on towards green, turning fully green only once finished. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and the whole list can be hidden to give the graph more room.
 - **Storylines:** each page's quest chains, drawn left to right from the first quest to the last, with lines joining each quest to the ones it unlocks. Each storyline can be collapsed, and finished ones start collapsed. **Expand all** and **Collapse all** sit at the top.
 - **Other quests:** standalone quests with no chain, under each page's storylines.
 - **Only your quests:** quests for another faction, race or class are left out. Profession quests show only if you have that profession.
@@ -37,7 +37,7 @@ LorePath supports English game clients only.
   - requirements;
   - where it starts and who gives it;
   - its objectives and description, plus progress and completion text;
-  - its item rewards;
+  - its item rewards (Shift+click one to link it in chat, Ctrl+click to try it on);
   - the quests before and after it, as links;
   - its address on WarcraftDB, to copy, at the bottom.
 

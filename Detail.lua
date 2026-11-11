@@ -357,6 +357,39 @@ local function AddQuestLink(id, indent)
 end
 
 -- One reward item: icon (with the real item tooltip) and its name.
+-- The item's chat link, or nil while the client hasn't loaded it yet.
+local function ItemLink(itemID)
+    local getInfo = (C_Item and C_Item.GetItemInfo) or GetItemInfo
+    if type(getInfo) == "function" then
+        local ok, _, link = pcall(getInfo, itemID)
+        if ok and type(link) == "string" then
+            return link
+        end
+    end
+    if C_Item and C_Item.RequestLoadItemDataByID then
+        pcall(C_Item.RequestLoadItemDataByID, itemID)
+    end
+    return nil
+end
+
+-- Shift+click links the item in chat, Ctrl+click tries it on, as anywhere in
+-- the game's own windows.
+local function ItemClick(self)
+    if not (IsShiftKeyDown() or IsControlKeyDown()) then
+        return
+    end
+    local link = ItemLink(self.itemID)
+    if not link then
+        ns.Print("That item is still loading; try again in a moment.")
+        return
+    end
+    if type(HandleModifiedItemClick) == "function" then
+        HandleModifiedItemClick(link)
+    elseif IsShiftKeyDown() and type(ChatEdit_InsertLink) == "function" then
+        ChatEdit_InsertLink(link)
+    end
+end
+
 local function AddItem(itemID)
     used.items = used.items + 1
     local b = pools.items[used.items]
@@ -377,8 +410,10 @@ local function AddItem(itemID)
             else
                 GameTooltip:AddLine(ns.ui.ItemText(self.itemID))
             end
+            GameTooltip:AddLine("Shift+click to link it in chat.", 0.5, 0.8, 1)
             GameTooltip:Show()
         end)
+        b:SetScript("OnClick", ItemClick)
         b:SetScript("OnLeave", GameTooltip_Hide)
         pools.items[used.items] = b
     end

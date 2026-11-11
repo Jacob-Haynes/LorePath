@@ -19,6 +19,7 @@ Run it again whenever ATT updates its Forever data.
 
 import collections
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -350,6 +351,18 @@ def extract_professions(att_root, lua, lua_type, add_quest, quests, zones):
 HEADER_NAMES = {-318: "Tier 0.5 Sets"}
 
 
+def read_header_names(att_root):
+    """English names of ATT's custom headers ([-361] = "Graveyard", ...), from
+    LocalizationDB.lua."""
+    path = os.path.join(att_root, "db", "Camelot", "LocalizationDB.lua")
+    names = {}
+    if os.path.exists(path):
+        with open(path, encoding="utf-8-sig") as f:
+            for key, name in re.findall(r'\[(-\d+)\]\s*=\s*"([^"\n]*)"', f.read()):
+                names.setdefault(int(key), name)
+    return names
+
+
 def instance_maps(node, lua_type):
     """Every map ID an instance's own tree uses (its floors and wings)."""
     found = set()
@@ -398,6 +411,7 @@ def extract_instances(att_root, lua, lua_type, add_quest, quests):
         root = lua.execute(LOADER, f.read())["Instances"]
 
     pages, info = {}, {}
+    header_names = read_header_names(att_root)
     # Every instance's maps, for the header pages that span several instances.
     all_inside = set()
     for _, node in root["g"].items():
@@ -458,6 +472,19 @@ def extract_instances(att_root, lua, lua_type, add_quest, quests):
                 entry["ar"] = area
             inside = instance_maps(node, lua_type) | {page}
             page_kind = "raid" if node["isRaid"] else "dungeon"
+            # Wings (Scarlet Monastery's Graveyard, Library, Armory and
+            # Cathedral): headers with their own level get their own page,
+            # keyed -headerID, collected first so the instance's page keeps
+            # only the quests that span it.
+            kids = node["g"]
+            if kids is not None and lua_type(kids) == "table":
+                for _, wing in kids.items():
+                    if lua_type(wing) != "table" or wing["__kind"] != "CustomHeader" or number(wing["lvl"]) is None:
+                        continue
+                    wing_page = int(wing["__id"])
+                    if collect(wing, wing_page, inside) > 0:
+                        pages[wing_page] = page_kind
+                        info[wing_page] = dict(entry, wg=header_names.get(wing_page, f"Wing {-wing_page}"))
         else:
             page = node_id  # a negative header ID
             entry = {"n": HEADER_NAMES.get(node_id, f"Header {node_id}")}
@@ -469,7 +496,7 @@ def extract_instances(att_root, lua, lua_type, add_quest, quests):
     # Header pages (Tier 0.5 Sets) gather chains given in towns too, so a missing
     # start point there doesn't mean the quest was picked up inside.
     for rec in quests.values():
-        if rec.get("di") and "n" in info.get(rec["z"], {}):
+        if rec.get("di") and "ej" not in info.get(rec["z"], {}):
             del rec["di"]
     # A quest can be filed under one instance but given in another: Quel'Serrar
     # is under Onyxia's Lair, but Lorekeeper Lydros gives it in Dire Maul. A
@@ -493,11 +520,12 @@ def append_instance_tables(path, pages, info):
     ]
     lines += [f'[{k}]="{pages[k]}",' for k in sorted(pages)]
     lines.append("}")
-    lines.append("-- ej Encounter Journal instance ID, ar area ID (for the name), n English name, ic icon file ID.")
+    lines.append("-- ej Encounter Journal instance ID, ar area ID (for the name), n English name, ic icon file ID,")
+    lines.append("-- wg wing name (a wing's page is named \"<instance> - <wing>\").")
     lines.append("ns.InstanceInfo = {")
     for k in sorted(info):
         e = info[k]
-        body = ",".join(f'{f}="{e[f]}"' if f == "n" else f"{f}={e[f]}" for f in ("ej", "ar", "n", "ic") if f in e)
+        body = ",".join(f'{f}="{e[f]}"' if f in ("n", "wg") else f"{f}={e[f]}" for f in ("ej", "ar", "n", "ic", "wg") if f in e)
         lines.append(f"[{k}]={{{body}}},")
     lines.append("}")
     with open(path, "a", encoding="utf-8") as f:
