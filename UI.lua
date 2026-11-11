@@ -1483,7 +1483,7 @@ function ns.FocusQuest(id)
     if not q or not frame then
         return
     end
-    local zone = q.z
+    local zone = ns.HomePage(id) -- its zone, or the Class page for the Tier 0.5 chains
     -- On the Class or a profession page, stay there if the quest is on it.
     if ns.IsSpecialPage(selectedZone) then
         for _, other in ipairs(ns.GetZoneQuests(selectedZone)) do

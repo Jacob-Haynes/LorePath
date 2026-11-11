@@ -1069,8 +1069,9 @@ check(ns.Quests[5141]["sk"] == 165 and ns.Quests[5141]["sl"] == 225 and ns.Quest
       "the extractor reads Professions.lua: Leatherworking (5141) and Blacksmithing (5283) quests")
 cls = list(ns.GetZoneQuests("class").values())
 zones_in_class = {ns.Quests[i]["z"] for i in cls}
-check(len(cls) > 20 and all(1 in list(ns.Quests[i]["cl"].values()) for i in cls) and len(zones_in_class) > 3,
-      f"the Class page has every Warrior quest, from {len(zones_in_class)} zones ({len(cls)} quests)")
+check(len(cls) > 20 and all(1 in list(ns.Quests[i]["cl"].values()) for i in cls if ns.Quests[i]["cl"] is not None)
+      and all(ns.HomePage(i) == "class" for i in cls if ns.Quests[i]["cl"] is None) and len(zones_in_class) > 3,
+      f"the Class page has every Warrior quest, from {len(zones_in_class)} zones ({len(cls)} quests), and Tier 0.5's shared steps")
 sls, _ = ns.BuildStorylines("class")
 travelling = [st for st in sls.values() if len({ns.Quests[n["id"]]["z"] for n in st["nodes"].values()}) > 1]
 check(len(travelling) > 0, f"class chains that travel between zones are one storyline ({len(travelling)} of them)")
@@ -2260,6 +2261,22 @@ fake_titles[999001] = TITLES[783]
 check((783, 999001) in find_duplicates(fake, fake_titles, EXTRA, SEPARATE), "a new copy of a quest under another ID is caught")
 stale = [sorted(s) for i, s in enumerate(SEPARATE) if not find_duplicates(PLAIN, TITLES, EXTRA, SEPARATE[:i] + SEPARATE[i + 1:])]
 check(not stale, f"every SEPARATE entry is still needed: {stale}")
+# --- Tier 0.5 (Dungeon Set 2): on the Class page, whole, with no page of its own ---
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+check(all(z["id"] != -318 for z in ns.GetZones().values()), "there's no Tier 0.5 Sets page in the zone list")
+cls_page = set(ns.GetZoneQuests("class").values())
+check(8912 in cls_page and 8922 in cls_page and 8921 in cls_page and 8905 not in cls_page,
+      "the Class page has a Warrior's Tier 0.5 chain, with the steps every class shares, and not other classes' steps")
+t05 = next(st for st in ns.BuildStorylines("class")[0].values() if 8912 in [n["id"] for n in st["nodes"].values()])
+t05_ids = {n["id"] for n in t05["nodes"].values()}
+check({8912, 8922, 8921, 8924} <= t05_ids, f"and it's one storyline, from An Earnest Proposition on ({len(t05_ids)} quests)")
+check(ns.HomePage(8921) == "class" and ns.HomePage(783) == ns.Quests[783]["z"], "a Tier 0.5 quest's home page is the Class page")
+ns.Toggle(True)
+ns.FocusQuest(8921)
+check(ns.focusedQuest == 8921 and frame["zoneTitle"]["__text"] == "Warrior quests", "jumping to one opens the Class page")
+ns.Toggle(False)
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
