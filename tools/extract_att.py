@@ -212,6 +212,9 @@ def main():
 
     walk(categories["Zones"], None, None)
 
+    # Profession quests that live only in Professions.lua (issue #8).
+    profession_added = extract_professions(att_root, lua, lua_type, add_quest, quests, zones)
+
     # Dungeons and raids (issue #2): see extract_instances below.
     instance_zones, instance_info = extract_instances(att_root, lua, lua_type, add_quest, quests)
 
@@ -234,6 +237,8 @@ def main():
     shutil.copyfile(os.path.join(att_root, "LICENSE"), os.path.join(out_dir, "AllTheThings-LICENSE.txt"))
 
     print(f"Wrote {len(quests)} quests in {len(zones)} zones to {out_path}")
+    print(f"Profession quests: {sum(1 for q in quests.values() if q.get('sk'))} "
+          f"({profession_added} from Professions.lua)")
     print(f"Repeatable: {sum(1 for q in quests.values() if q.get('rp'))}")
     print(f"Skipped: {skipped}")
     print(f"Instances: {len(instance_zones)} pages "
@@ -242,6 +247,49 @@ def main():
     print(f"Zone icons: {len(zone_icons)} of {len(wanted)} zones and continents; "
           f"instance icons: {sum(1 for e in instance_info.values() if 'ic' in e)} of {len(instance_info)}")
     print(f"Size: {os.path.getsize(out_path) / 1024:.0f} KB (ATT commit {att_commit})")
+
+
+# ============================================================================
+# Profession quests (db/Camelot/Categories/Professions.lua)
+# ============================================================================
+#
+# Most profession quests are in Zones.lua already. Professions.lua holds a few
+# more (Blacksmithing and Leatherworking specialisations). They go on the page of
+# the zone where they start, and keep their profession (requireSkill, which may
+# be set on a header above them) and skill level (learnedAt).
+
+def extract_professions(att_root, lua, lua_type, add_quest, quests, zones):
+    path = os.path.join(att_root, "db", "Camelot", "Categories", "Professions.lua")
+    with open(path, encoding="utf-8-sig") as f:
+        root = lua.execute(LOADER, f.read())["Professions"]
+    added = 0
+
+    def visit(node, skill):
+        nonlocal added
+        if lua_type(node) != "table":
+            return
+        if node["__kind"] == "Profession":
+            skill = number(node["__id"]) or skill
+        own = number(node["requireSkill"])
+        skill = own or skill
+        if node["__kind"] == "Quest":
+            qid = int(node["__id"])
+            coord = first_coord(node["coords"])
+            if qid in quests or not coord or coord[0] not in zones:
+                return
+            if own is None and skill:
+                node["requireSkill"] = skill
+            add_quest(node, zones[coord[0]], coord[0])
+            if qid in quests:
+                added += 1
+            return
+        kids = node["g"]
+        if kids is not None and lua_type(kids) == "table":
+            for _, child in kids.items():
+                visit(child, skill)
+
+    visit(root, None)
+    return added
 
 
 # ============================================================================

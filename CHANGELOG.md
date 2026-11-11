@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- **Class and Professions pages:** at the top of the zone list. **Class** shows every quest for your class from all zones, with chains that travel between zones as one storyline. **Professions** has a page per profession you have; a new **Show professions you don't have** setting lists the rest, greyed out. Tooltips on these pages say which zone each quest is in.
+- **Profession requirements** read "Needs Leatherworking 225" instead of "Needs skill 225".
+- **10 more profession quests:** the Blacksmithing and Leatherworking specialisation quests from AllTheThings' Professions data.
 - **Zone list icons:** every zone, dungeon and raid in the zone list has an icon, with a tick on zones you've finished. Continent, Dungeons and Raids headings have icons too, and so does the zone name above the graph. The icons come from AllTheThings' data, with a generic icon where it has none.
 
 ## 1.0.1
