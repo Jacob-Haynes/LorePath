@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Portal icon for quests picked up inside dungeons and raids:** 113 quests that you get from an NPC or item inside an instance show its entrance portal instead of the scroll, and their tooltip and details say "Picked up inside <instance>" instead of "Start location unknown".
+
 ## 1.1.0-beta2
 
 - **Progress colours in the zone list:** zone, dungeon, raid, Class and profession names are grey until you start them, then go from red through orange (40%) and WoW's gold (80%) towards green as you finish their quests. Only finished ones are fully green.

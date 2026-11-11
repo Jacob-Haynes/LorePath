@@ -1342,6 +1342,38 @@ check(rgb(other["text"]["__color"]) == (0.62, 0.62, 0.62), "zones you haven't st
 char["completed"] = lua.table()
 ns.Refresh()
 
+# --- Portal icon on quests picked up inside a dungeon or raid ---
+check(ns.Quests[4342]["di"] == 1 and ns.Quests[3802]["di"] == 1, "quests given inside Blackrock Depths are marked as picked up inside")
+check(ns.Quests[4341]["di"] is None and ns.Quests[166]["di"] is None, "quests given outside (Ironforge, Westfall) aren't")
+check(not any(q["di"] for q in ns.Quests.values() if q["z"] == -318), "nor are Tier 0.5 Sets quests, which are given in towns")
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+ns.RefreshPlayer()
+def tile_of(qid):
+    t = [f for f in harness["all"].values() if f["questID"] == qid and f["sub"] is not None and f.IsShown(f)]
+    return t[0] if t else None
+ns.FocusQuest(3802)
+t = tile_of(3802)
+check(t is not None and t["icon"]["__texture"] == "Interface\\Icons\\Spell_Arcane_PortalUnderCity",
+      "without the map's portal art, the box shows a portal icon")
+g.C_Texture = lua.eval("{ GetAtlasInfo = function(a) if a == 'Dungeon' or a == 'Raid' then return {} end end }")
+ns.Refresh()
+t = tile_of(3802)
+check(t["icon"]["__atlas"] == "Dungeon", "with it, the box shows the dungeon entrance swirl")
+g.GameTooltip.lines = lua.table()
+t["__scripts"]["OnEnter"](t)
+check(any(str(l).startswith("Picked up inside ") for l in g.GameTooltip.lines.values()), "its tooltip says it's picked up inside the instance")
+ns.ShowDetail(3802)
+check(any(s.startswith("Picked up inside ") for s in detail_texts()), "and so do its details")
+ns.HideDetail()
+other = [f for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)
+         and not ns.Quests[f["questID"]]["di"] and not ns.Quests[f["questID"]]["cl"]][0]
+check(other["icon"]["__atlas"] is None and other["icon"]["__texture"] is not None, "other quests on the page keep their usual icon")
+raid_q = next((qid for qid, q in sorted(ns.Quests.items()) if q["di"] and ns.InstanceZones[q["z"]] == "raid" and ns.IsEligible(qid)), None)
+if raid_q:
+    ns.FocusQuest(raid_q)
+    check(tile_of(raid_q)["icon"]["__atlas"] == "Raid", "raid quests get the raid entrance swirl")
+g.C_Texture = None
+
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])
