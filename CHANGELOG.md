@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.2.0-beta5
 
 - **Four quests across before wrapping:** the window is a little wider (1140 instead of 1120), so a long storyline shows four quests side by side before it wraps, instead of three.
 - **Close buttons work in combat:** the close buttons on LorePath's window, the quest details and the share window did nothing during combat. They now close them, the same as Escape.
