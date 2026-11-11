@@ -15,7 +15,7 @@ LorePath supports English game clients only.
 ## What it shows
 
 - **Class and Professions:** at the top of the zone list, **Class** gathers every quest for your class from all zones, so class chains that travel (say, from a capital city to another zone) show as one storyline. **Professions** has a page for each profession you have, with its quests. Their tooltips say which zone each quest is in. Quests your skill is too low for say what they need, for example *Needs Leatherworking 225*.
-- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons and raids get their own pages under **Dungeons** and **Raids** headings, and inside an instance the window opens on its page. Names are coloured by progress: grey before you start, then red, orange at 40%, WoW's gold at 80% and on towards green, turning fully green only once finished. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and the whole list can be hidden to give the graph more room.
+- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons, raids and battlegrounds get their own pages under **Dungeons**, **Raids** and **Battlegrounds** headings (Scarlet Monastery's Graveyard and Library wings have their own too), and inside an instance the window opens on its page. Zones, dungeons and raids show WoW Forever's suggested level range after their name, read from the game's Looking for Group list (`/lp levels` lists them all). Names are coloured by progress: grey before you start, then red, orange at 40%, WoW's gold at 80% and on towards green, turning fully green only once finished. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and the whole list can be hidden to give the graph more room.
 - **Storylines:** each page's quest chains, drawn left to right from the first quest to the last, with lines joining each quest to the ones it unlocks. Each storyline can be collapsed, and finished ones start collapsed. **Expand all** and **Collapse all** sit at the top.
 - **Other quests:** standalone quests with no chain, under each page's storylines.
 - **Only your quests:** quests for another faction, race or class are left out. Profession quests show only if you have that profession.
@@ -31,13 +31,14 @@ LorePath supports English game clients only.
   | Dimmed box, padlock | Needs an earlier quest first |
   | Dimmest box, ✗ | Skipped: a breadcrumb you went past, or a quest your reputation is now too high for |
 
-  Class quests show your class icon, and breadcrumbs a letter. The "?" button in the footer explains the level colours.
-- **Tooltips:** hover a quest for its level, status, what it needs (earlier quests, reputation, skill), what comes before and after it, where it starts, and its item rewards.
+  Class quests show your class icon, quests you pick up inside a dungeon or raid its entrance portal, and breadcrumbs a letter. The "?" button in the footer explains the level colours.
+- **Tooltips:** hover a quest for its level, status, what it needs (earlier quests, reputation, skill), what comes before and after it, where it starts, its item rewards, and AllTheThings' note on it when there is one.
 - **Quest details:** click a quest to open a panel beside the window, and click it again to close it. The panel shows:
   - requirements;
   - where it starts and who gives it;
+  - **Good to know:** AllTheThings' note on the quest, when it has one (where an item drops, what finishing it locks you out of, and so on);
   - its objectives and description, plus progress and completion text;
-  - its item rewards;
+  - its item rewards (Shift+click one to link it in chat, Ctrl+click to try it on);
   - the quests before and after it, as links;
   - its address on WarcraftDB, to copy, at the bottom.
 
@@ -53,6 +54,7 @@ LorePath supports English game clients only.
 | :--- | :--- |
 | Open or close | Left-click the minimap button, `/lp`, the addons menu by the minimap, or a key binding (*Options → Key Bindings → AddOns → LorePath*) |
 | Open on your current zone | `/lp here` |
+| List level ranges | `/lp levels` |
 | Settings | Right-click the minimap button or the addons-menu entry, the **Settings** button in the window, `/lp config` (or `/lp settings`, `/lp options`), or *Options → AddOns → LorePath* |
 | Find a quest | Type in the search box above the zone list, or `/lp search <name>`; Escape clears it |
 | Quest details | Click a quest; click it again to close the panel |

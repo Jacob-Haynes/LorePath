@@ -17,7 +17,9 @@ Usage:
 Run it again whenever ATT updates its Forever data.
 """
 
+import collections
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -44,6 +46,11 @@ local handlers = {}
 local ns = setmetatable({}, {__index = function(_, k)
   if k == "AddEventHandler" then
     return function(event, fn) handlers[event] = fn end
+  end
+  -- ResolveQuestData({aqd = {...}, hqd = {...}, shared fields}): one quest with
+  -- Alliance and Horde versions (different givers, start points, prerequisites).
+  if k == "ResolveQuestData" then
+    return function(t) t.__rqd = true return t end
   end
   if type(k) == "string" and k:sub(1, 6) == "Create" then
     local kind = k:sub(7)
@@ -121,6 +128,7 @@ def main():
     quests = {}
     zones = {}  # zone mapID -> continent mapID (or 0)
     map_icons = {}  # mapID -> ATT's icon (a texture file ID), for the zone list
+    notes = {}  # questID -> ATT's note about it ("For this to drop, you need to be on ...")
     skipped = {"removed": 0, "unavailable": 0}
 
     def walk(node, continent, zone):
@@ -157,7 +165,36 @@ def main():
         if zone_id is None:
             return
         zones.setdefault(zone_id, continent or 0)
+        if node["__rqd"]:
+            quests[qid] = faction_record(node, zone_id)
+        else:
+            quests[qid] = make_record(node, zone_id)
+        if isinstance(node["description"], str) and node["description"].strip():
+            notes[qid] = node["description"].strip()
 
+    def faction_record(node, zone_id):
+        """A quest with Alliance (aqd) and Horde (hqd) versions: fields both share
+        stay on the record; the rest go in fv = {[1] = Horde, [2] = Alliance}."""
+        versions = {}
+        for faction, key in ((2, "aqd"), (1, "hqd")):
+            if node[key] is not None:
+                versions[faction] = make_record(merge(node, node[key]), zone_id)
+        if len(versions) == 1:
+            (faction, rec), = versions.items()
+            rec["f"] = faction
+            return rec
+        a, h = versions[2], versions[1]
+        rec = {k: v for k, v in a.items() if h.get(k) == v}
+        fv = {}
+        for faction, version in versions.items():
+            diff = {k: v for k, v in version.items() if k not in rec}
+            if diff:
+                fv[faction] = diff
+        if fv:
+            rec["fv"] = fv
+        return rec
+
+    def make_record(node, zone_id):
         rec = {"z": zone_id}
         level = number(node["lvl"])
         if level and level > 1:
@@ -208,7 +245,15 @@ def main():
                     rewards.append(number(child["itemID"]))
         if rewards:
             rec["rw"] = rewards
-        quests[qid] = rec
+        return rec
+
+    merge = lua.eval("""function(base, over)
+      local t = {}
+      for k, v in pairs(base) do t[k] = v end
+      for k, v in pairs(over) do t[k] = v end
+      t.aqd, t.hqd, t.__rqd = nil, nil, nil
+      return t
+    end""")
 
     walk(categories["Zones"], None, None)
 
@@ -217,6 +262,11 @@ def main():
 
     # Dungeons and raids (issue #2): see extract_instances below.
     instance_zones, instance_info = extract_instances(att_root, lua, lua_type, add_quest, quests)
+    # Battlegrounds: one page each, beside the dungeons and raids.
+    for page, icon in extract_battlegrounds(att_root, lua, lua_type, add_quest, quests).items():
+        instance_zones[page] = "battleground"
+        if icon:
+            map_icons.setdefault(page, icon)
 
     try:
         # "<short hash> (<commit date>)", so a release can be traced to its data.
@@ -233,14 +283,18 @@ def main():
     wanted = set(zones) | {c for c in zones.values() if c}
     zone_icons = {k: v for k, v in map_icons.items() if k in wanted}
     append_zone_icons(out_path, zone_icons)
+    write_notes(os.path.join(out_dir, "QuestNotes.lua"), notes, att_commit)
     # Re-copy ATT's licence on every run, in case it changes.
     shutil.copyfile(os.path.join(att_root, "LICENSE"), os.path.join(out_dir, "AllTheThings-LICENSE.txt"))
 
     print(f"Wrote {len(quests)} quests in {len(zones)} zones to {out_path}")
     print(f"Profession quests: {sum(1 for q in quests.values() if q.get('sk'))} "
           f"({profession_added} from Professions.lua)")
+    print(f"Notes: {len(notes)} quests")
     print(f"Repeatable: {sum(1 for q in quests.values() if q.get('rp'))}")
     print(f"Skipped: {skipped}")
+    print(f"Battlegrounds: {sum(1 for k in instance_zones.values() if k == 'battleground')} pages, "
+          f"{sum(1 for q in quests.values() if instance_zones.get(q['z']) == 'battleground')} quests")
     print(f"Instances: {len(instance_zones)} pages "
           f"({sum(1 for k in instance_zones.values() if k == 'raid')} raids), "
           f"{sum(1 for q in quests.values() if q['z'] in instance_zones)} quests")
@@ -293,6 +347,60 @@ def extract_professions(att_root, lua, lua_type, add_quest, quests, zones):
 
 
 # ============================================================================
+# Battlegrounds (db/Camelot/Categories/PVP.lua)
+# ============================================================================
+#
+# PVP.lua lists each battleground as a map (Alterac Valley, Arathi Basin,
+# Warsong Gulch, and WoW Forever's own) with its quests. Each gets a page keyed
+# by its map ID. A few general PvP quests outside any battleground are left out.
+
+def extract_battlegrounds(att_root, lua, lua_type, add_quest, quests):
+    """Adds battleground quests; returns {mapID: icon or None} for pages with any."""
+    path = os.path.join(att_root, "db", "Camelot", "Categories", "PVP.lua")
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8-sig") as f:
+        root = lua.execute(LOADER, f.read())["PVP"]
+    found = {}
+
+    def maps(node):
+        if lua_type(node) != "table" or node["__kind"] == "Quest":
+            return
+        if node["__kind"] == "Map":
+            yield node
+            return
+        kids = node["g"]
+        if kids is not None and lua_type(kids) == "table":
+            for _, child in kids.items():
+                yield from maps(child)
+
+    def collect(node, page):
+        if lua_type(node) != "table":
+            return 0
+        if node["__kind"] == "Quest":
+            qid = int(node["__id"])
+            if qid in quests:
+                return 0
+            add_quest(node, None, page)
+            return 1 if qid in quests else 0
+        added = 0
+        kids = node["g"]
+        if kids is not None and lua_type(kids) == "table":
+            for _, child in kids.items():
+                added += collect(child, page)
+        return added
+
+    for node in maps(root):
+        awp = number(node["awp"])
+        if node["u"] is not None or (awp and awp > FOREVER_BUILD):
+            continue
+        page = int(node["__id"])
+        if collect(node, page) > 0:
+            found[page] = number(node["icon"])
+    return found
+
+
+# ============================================================================
 # Dungeons and raids (db/Camelot/Categories/Instances.lua)
 # ============================================================================
 #
@@ -307,6 +415,18 @@ def extract_professions(att_root, lua, lua_type, add_quest, quests, zones):
 
 # English names for the header pages (from ATT's LocalizationDB).
 HEADER_NAMES = {-318: "Tier 0.5 Sets"}
+
+
+def read_header_names(att_root):
+    """English names of ATT's custom headers ([-361] = "Graveyard", ...), from
+    LocalizationDB.lua."""
+    path = os.path.join(att_root, "db", "Camelot", "LocalizationDB.lua")
+    names = {}
+    if os.path.exists(path):
+        with open(path, encoding="utf-8-sig") as f:
+            for key, name in re.findall(r'\[(-\d+)\]\s*=\s*"([^"\n]*)"', f.read()):
+                names.setdefault(int(key), name)
+    return names
 
 
 def instance_maps(node, lua_type):
@@ -357,6 +477,7 @@ def extract_instances(att_root, lua, lua_type, add_quest, quests):
         root = lua.execute(LOADER, f.read())["Instances"]
 
     pages, info = {}, {}
+    header_names = read_header_names(att_root)
     # Every instance's maps, for the header pages that span several instances.
     all_inside = set()
     for _, node in root["g"].items():
@@ -372,12 +493,22 @@ def extract_instances(att_root, lua, lua_type, add_quest, quests):
             qid = int(node["__id"])
             if qid not in quests:
                 add_quest(node, None, page)
-                if qid in quests:
+                if qid in quests and node["__rqd"]:
+                    added += 1  # its start points are per faction (fv); keep them
+                elif qid in quests:
                     rec = quests[qid]
                     rec.pop("m", None), rec.pop("x", None), rec.pop("y", None)
                     coord = outside_coord(node["coords"], inside)
                     if coord:
                         rec["m"], rec["x"], rec["y"] = coord
+                    elif node["qgs"] is not None or node["qg"] is not None or node["providers"] is not None:
+                        # ATT maps no points inside instances, so a quest whose
+                        # giver (an NPC, item or object) is listed but has no point
+                        # outside was picked up inside. With no giver listed at
+                        # all, ATT just doesn't say (some are handed out in town),
+                        # so those aren't marked. di is the instance page it's
+                        # picked up in (fixed up below for givers in another one).
+                        rec["di"] = page
                     added += 1
             return added  # quests inside a quest's g are objectives/rewards, not quests
         kids = node["g"]
@@ -407,6 +538,19 @@ def extract_instances(att_root, lua, lua_type, add_quest, quests):
                 entry["ar"] = area
             inside = instance_maps(node, lua_type) | {page}
             page_kind = "raid" if node["isRaid"] else "dungeon"
+            # Wings (Scarlet Monastery's Graveyard, Library, Armory and
+            # Cathedral): headers with their own level get their own page,
+            # keyed -headerID, collected first so the instance's page keeps
+            # only the quests that span it.
+            kids = node["g"]
+            if kids is not None and lua_type(kids) == "table":
+                for _, wing in kids.items():
+                    if lua_type(wing) != "table" or wing["__kind"] != "CustomHeader" or number(wing["lvl"]) is None:
+                        continue
+                    wing_page = int(wing["__id"])
+                    if collect(wing, wing_page, inside) > 0:
+                        pages[wing_page] = page_kind
+                        info[wing_page] = dict(entry, wg=header_names.get(wing_page, f"Wing {-wing_page}"))
         else:
             page = node_id  # a negative header ID
             entry = {"n": HEADER_NAMES.get(node_id, f"Header {node_id}")}
@@ -415,6 +559,21 @@ def extract_instances(att_root, lua, lua_type, add_quest, quests):
         if collect(node, page, inside) > 0:
             pages[page] = page_kind
             info[page] = entry
+    # Header pages (Tier 0.5 Sets) gather chains given in towns too, so a missing
+    # start point there doesn't mean the quest was picked up inside.
+    for rec in quests.values():
+        if rec.get("di") and "ej" not in info.get(rec["z"], {}):
+            del rec["di"]
+    # A quest can be filed under one instance but given in another: Quel'Serrar
+    # is under Onyxia's Lair, but Lorekeeper Lydros gives it in Dire Maul. A
+    # giver stands in the instance where most of its quests are picked up.
+    where = {}
+    for rec in quests.values():
+        if rec.get("di") and rec.get("qg"):
+            where.setdefault(rec["qg"], collections.Counter())[rec["di"]] += 1
+    for rec in quests.values():
+        if rec.get("di") and rec.get("qg"):
+            rec["di"] = where[rec["qg"]].most_common(1)[0][0]
     return pages, info
 
 
@@ -427,11 +586,12 @@ def append_instance_tables(path, pages, info):
     ]
     lines += [f'[{k}]="{pages[k]}",' for k in sorted(pages)]
     lines.append("}")
-    lines.append("-- ej Encounter Journal instance ID, ar area ID (for the name), n English name, ic icon file ID.")
+    lines.append("-- ej Encounter Journal instance ID, ar area ID (for the name), n English name, ic icon file ID,")
+    lines.append("-- wg wing name (a wing's page is named \"<instance> - <wing>\").")
     lines.append("ns.InstanceInfo = {")
     for k in sorted(info):
         e = info[k]
-        body = ",".join(f'{f}="{e[f]}"' if f == "n" else f"{f}={e[f]}" for f in ("ej", "ar", "n", "ic") if f in e)
+        body = ",".join(f'{f}="{e[f]}"' if f in ("n", "wg") else f"{f}={e[f]}" for f in ("ej", "ar", "n", "ic", "wg") if f in e)
         lines.append(f"[{k}]={{{body}}},")
     lines.append("}")
     with open(path, "a", encoding="utf-8") as f:
@@ -447,7 +607,28 @@ def append_zone_icons(path, icons):
         f.write("\n".join(lines) + "\n")
 
 
+def write_notes(path, notes, att_commit):
+    """Writes Data/QuestNotes.lua: ATT's notes about quests, shown in the details."""
+    def lua_string(text):
+        return '"' + text.replace("\\", "\\\\").replace('"', '\\"').replace("\r", "").replace("\n", "\\n") + '"'
+    lines = [
+        "-- Generated by tools/extract_att.py. Do not edit by hand.",
+        f"-- Source: AllTheThings WoW Forever data (db/Camelot), commit {att_commit}.",
+        "-- AllTheThings is MIT-licensed; see Data/AllTheThings-LICENSE.txt.",
+        "-- Notes about quests: where an item drops, what a quest locks you out of, and so on.",
+        "local _, ns = ...",
+        "ns.QuestNotes = {",
+    ]
+    lines += [f"[{qid}]={lua_string(notes[qid])}," for qid in sorted(notes)]
+    lines.append("}")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+
 def fmt(value):
+    if isinstance(value, dict):  # fv: {faction: {field: value}}
+        return "{" + ",".join(
+            f"[{k}]={{" + ",".join(f"{f}={fmt(v[f])}" for f in v) + "}" for k, v in sorted(value.items())) + "}"
     if isinstance(value, list):
         return "{" + ",".join(fmt(v) for v in value) + "}"
     if isinstance(value, float):
@@ -456,7 +637,7 @@ def fmt(value):
 
 
 def write_lua(path, quests, zones, att_commit):
-    key_order = ["z", "l", "m", "x", "y", "qg", "f", "rc", "cl", "pre", "prn", "alt", "nx", "bc", "rp", "sk", "sl", "mr", "xr", "rw"]
+    key_order = ["z", "l", "m", "x", "y", "qg", "f", "rc", "cl", "pre", "prn", "alt", "nx", "bc", "rp", "sk", "sl", "mr", "xr", "rw", "di", "fv"]
     lines = [
         "-- Generated by tools/extract_att.py. Do not edit by hand.",
         f"-- Source: AllTheThings WoW Forever data (db/Camelot), commit {att_commit}.",
@@ -467,7 +648,8 @@ def write_lua(path, quests, zones, att_commit):
         "-- prn how many prerequisites are needed (default all), alt alternative quests,",
         "-- nx quests a breadcrumb leads to, bc breadcrumb, rp repeatable, sk/sl profession skill line/level,",
         "-- mr/xr min/max reputation {factionID, standing} (0 Neutral, 3000 Friendly, 9000 Honored,",
-        "-- 21000 Revered, 42000 Exalted), rw reward item IDs.",
+        "-- 21000 Revered, 42000 Exalted), rw reward item IDs, di the instance page it's picked up inside,",
+        "-- fv per-faction fields {[1] = Horde, [2] = Alliance} for quests whose versions differ (start, giver).",
         "local _, ns = ...",
         "ns.ZoneContinents = {",
     ]

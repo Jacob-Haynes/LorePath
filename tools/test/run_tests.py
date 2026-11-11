@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -983,7 +983,8 @@ check("Dungeons" in headings and "Raids" in headings, "the zone list has Dungeon
 check(headings["Dungeons"]["toggle"].IsShown(headings["Dungeons"]["toggle"])
       and headings["Dungeons"]["text"]["__text"] == "DUNGEONS", "the Dungeons heading is styled like a continent heading")
 check(all(headings[c]["top"] < headings["Dungeons"]["top"] < headings["Raids"]["top"]
-          for c in headings if c not in ("Dungeons", "Raids")), "Dungeons and Raids come after the continents")
+          for c in headings if c not in ("Dungeons", "Raids", "Battlegrounds")), "Dungeons and Raids come after the continents")
+check("Battlegrounds" in headings and headings["Battlegrounds"]["top"] > headings["Raids"]["top"], "Battlegrounds come after Raids")
 def row_for(zone_id):
     rows = [f for f in harness["all"].values() if f["zoneID"] == zone_id and f.IsShown(f)]
     return rows[0] if rows else None
@@ -1359,6 +1360,204 @@ other = [f for f in harness["all"].values() if f["zoneID"] is not None and f["zo
 check(rgb(other["text"]["__color"]) == (0.62, 0.62, 0.62), "zones you haven't started stay grey")
 char["completed"] = lua.table()
 ns.Refresh()
+
+# --- Portal icon on quests picked up inside a dungeon or raid ---
+check(ns.Quests[4342]["di"] == 242 and ns.Quests[3802]["di"] == 242, "quests given inside Blackrock Depths are marked as picked up there")
+check(ns.Quests[7508]["z"] == 248 and ns.Quests[7508]["di"] == 234,
+      "Quel'Serrar is filed under Onyxia's Lair, but marked as picked up in Dire Maul, where Lorekeeper Lydros gives it")
+check(ns.Quests[4341]["di"] is None and ns.Quests[166]["di"] is None, "quests given outside (Ironforge, Westfall) aren't")
+check(not any(q["di"] for q in ns.Quests.values() if q["z"] == -318), "nor are Tier 0.5 Sets quests, which are given in towns")
+check(ns.Quests[2204]["di"] is None and ns.Quests[2861]["di"] is None,
+      "nor quests with no giver recorded, which may be handed out in town (Restoring the Necklace, Tabetha's Task)")
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+ns.RefreshPlayer()
+def tile_of(qid):
+    t = [f for f in harness["all"].values() if f["questID"] == qid and f["sub"] is not None and f.IsShown(f)]
+    return t[0] if t else None
+ns.FocusQuest(3802)
+t = tile_of(3802)
+check(t is not None and t["icon"]["__texture"] == "Interface\\Icons\\Spell_Arcane_PortalUnderCity",
+      "without the map's portal art, the box shows a portal icon")
+g.C_Texture = lua.eval("{ GetAtlasInfo = function(a) if a == 'Dungeon' or a == 'Raid' then return {} end end }")
+ns.Refresh()
+t = tile_of(3802)
+check(t["icon"]["__atlas"] == "Dungeon", "with it, the box shows the dungeon entrance swirl")
+g.GameTooltip.lines = lua.table()
+t["__scripts"]["OnEnter"](t)
+check(any(str(l).startswith("Picked up inside ") for l in g.GameTooltip.lines.values()), "its tooltip says it's picked up inside the instance")
+ns.ShowDetail(3802)
+check(any(s.startswith("Picked up inside ") for s in detail_texts()), "and so do its details")
+ns.HideDetail()
+other = [f for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)
+         and not ns.Quests[f["questID"]]["di"] and not ns.Quests[f["questID"]]["cl"]][0]
+check(other["icon"]["__atlas"] is None and other["icon"]["__texture"] is not None, "other quests on the page keep their usual icon")
+ns.Quests[3802]["di"] = 248  # as if given inside Onyxia's Lair
+ns.Refresh()
+check(tile_of(3802)["icon"]["__atlas"] == "Raid", "a quest picked up inside a raid gets the raid entrance swirl")
+ns.Quests[3802]["di"] = 242
+g.C_Texture = None
+
+# --- Quests with Alliance and Horde versions (ATT's ResolveQuestData) ---
+check(ns.Quests[8151]["l"] == 50 and list(ns.Quests[8151]["cl"].values()) == [3],
+      "a faction-split quest keeps its level and class (8151 is a level 50 Hunter quest)")
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+ns.RefreshPlayer()
+q = ns.Quests[8151]
+check(q["m"] == 1453 and q["qg"] == 4205 and not ns.IsEligible(8151), "an Alliance character sees its Stormwind trainer, and a Warrior doesn't get the Hunter quest")
+check(list(ns.Quests[687]["pre"].values()) == [653] and ns.Quests[687]["m"] == 1455, "its Alliance prerequisite and start (Ironforge)")
+check(ns.Quests[2861]["m"] == 1453 and ns.Quests[2861]["l"] == 40, "Tabetha's Task starts in Stormwind for the Alliance")
+char["race"], char["faction"] = 2, "Horde"
+ns.RefreshPlayer()
+q = ns.Quests[8151]
+check(q["m"] == 1454 and q["qg"] == 3039, "a Horde character sees its Orgrimmar trainer")
+check(list(ns.Quests[687]["pre"].values()) == [688] and ns.Quests[687]["m"] == 1417, "and the Horde prerequisite and start (Arathi Highlands)")
+check(687 in list(ns.GetFollowOns(688).values()) and 687 not in list(ns.GetFollowOns(653).values()),
+      "the storyline follows your faction's prerequisite")
+char["race"], char["faction"] = 1, "Alliance"
+ns.RefreshPlayer()
+
+# --- Level ranges from the game's Looking for Group activities ---
+g.EJ_GetInstanceInfo = lua.eval("""function(id) local n = { [63] = 'The Deadmines', [238] = 'The Stockade', [226] = 'Ragefire Chasm',
+    [316] = 'Scarlet Monastery' }; return n[id] end""")
+check(ns.GetLevelRange(213) is None, "without the game's activity list, no range is shown")
+g.C_LFGList = lua.eval("""{
+  GetAvailableActivities = function() return { 1, 2, 3, 4, 5, 6, 7, 8 } end,
+  GetActivityInfoTable = function(id)
+    local a = {
+      { fullName = "Ragefire Chasm", minLevel = 0, minLevelSuggestion = 13, maxLevelSuggestion = 18 },
+      { fullName = "Stormwind Stockades", minLevel = 0, minLevelSuggestion = 23, maxLevelSuggestion = 32 },
+      { fullName = "Scarlet Monastery - Graveyard", minLevel = 0, minLevelSuggestion = 30, maxLevelSuggestion = 38 },
+      { fullName = "Scarlet Monastery - Cathedral", minLevel = 0, minLevelSuggestion = 38, maxLevelSuggestion = 45 },
+      { fullName = "Elwynn Forest", minLevel = 0, minLevelSuggestion = 1, maxLevelSuggestion = 10 },
+      { fullName = "Hillsbrad Foothills", minLevel = 0, minLevelSuggestion = 18, maxLevelSuggestion = 34 },
+      { fullName = "Custom", minLevel = 0, minLevelSuggestion = 0, maxLevelSuggestion = 0 },
+      { fullName = "Warsong Gulch", minLevel = 0, minLevelSuggestion = 20, maxLevelSuggestion = 29 },
+    }
+    return a[id]
+  end }""")
+def rng(page):
+    r = ns.GetLevelRange(page)
+    return r if isinstance(r, tuple) else (r,)
+check(rng(213) == (13, 18), f"Ragefire Chasm gets the game's 13-18: {rng(213)}")
+check(rng(225) == (23, 32), "The Stockade matches the game's 'Stormwind Stockades'")
+check(rng(435) == (30, 45), "Scarlet Monastery's wings make one range, 30-45")
+real_map_info = g.C_Map.GetMapInfo
+g.C_Map.GetMapInfo = lua.eval("""function(real) return function(id)
+    if id == 1424 then return { name = "Hillsbrad Foothills", parentMapID = 1415 } end
+    return real(id) end end""")(real_map_info)
+check(rng(1429) == (1, 10) and rng(1424) == (18, 34), "zones get theirs too (Elwynn Forest 1-10, Hillsbrad Foothills 18-34)")
+g.C_Map.GetMapInfo = real_map_info
+check(rng(1453) == (None,) and rng("class") == (None,), "capital cities and the Class page show none")
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+g.SlashCmdList["LOREPATH"]("here")
+g.LorePathDB["collapsedContinents"] = lua.table()
+ns.Refresh()
+row = [f for f in harness["all"].values() if f["zoneID"] == 1429 and f.IsShown(f)][0]
+check(row["text"]["__text"] == "Elwynn Forest |cff9d9d9d1-10|r", f"the zone list shows the range after the name: {row['text']['__text']!r}")
+check(frame["zoneSummary"]["__text"].startswith("Levels 1-10"), f"and so does the line above the graph: {frame['zoneSummary']['__text'][:30]!r}")
+g.C_LFGList = None
+
+# --- Scarlet Monastery's wings, and breadcrumbs that lead nowhere you can go ---
+check(ns.Quests[1051]["z"] == -361 and all(ns.Quests[i]["z"] == -362 for i in (1049, 1050, 1160, 1951)),
+      "Graveyard and Library quests are on their own wing pages")
+check(all(ns.Quests[i]["z"] == 435 for i in (1048, 1053, 1113)), "quests that span the monastery stay on its page")
+g.EJ_GetInstanceInfo = lua.eval("function(id) if id == 316 then return 'Scarlet Monastery' end end")
+check(ns.GetMapName(-361) == "Scarlet Monastery - Graveyard" and ns.GetMapName(-362) == "Scarlet Monastery - Library",
+      f"wing pages are named after the instance and wing: {ns.GetMapName(-361)!r}")
+g.C_LFGList = lua.eval("""{ GetAvailableActivities = function() return { 1, 2 } end,
+  GetActivityInfoTable = function(id) return ({
+    { fullName = "Scarlet Monastery - Graveyard", minLevelSuggestion = 26, maxLevelSuggestion = 36 },
+    { fullName = "Scarlet Monastery - Library", minLevelSuggestion = 29, maxLevelSuggestion = 39 } })[id] end }""")
+ns.ResetLevelRanges()
+check(ns.GetLevelRange(-361) == (26, 36) and ns.GetLevelRange(-362) == (29, 39), "each wing gets its own range from the game")
+check(ns.GetLevelRange(435) == (26, 39), "and the monastery's page spans them")
+g.C_LFGList = None
+g.IsInInstance = lua.eval("function() return true end")
+g.EJ_GetInstanceForMap = lua.eval("function(m) if m == 302 then return 316 end return 0 end")
+check(ns.CurrentInstancePage(302) == 435, "inside the monastery, LorePath opens on its page, not a wing")
+g.IsInInstance, g.EJ_GetInstanceForMap = None, None
+
+char["race"], char["class"], char["faction"] = 2, 1, "Horde"
+ns.RefreshPlayer()
+check(not ns.IsEligible(1198) and not ns.IsEligible(1200),
+      "Horde don't see In Search of Thaelrid: it only leads to an Alliance quest")
+char["race"], char["faction"] = 1, "Alliance"
+ns.RefreshPlayer()
+check(ns.IsEligible(1198) and ns.IsEligible(1200), "Alliance still do")
+
+# --- Shift+click a reward to link it in chat ---
+rewarded_q = next(qid for qid, q in sorted(ns.Quests.items()) if q["rw"] is not None and ns.IsEligible(qid))
+ns.ShowDetail(rewarded_q)
+item_btn = [f for f in harness["all"].values() if f["itemID"] is not None and f.IsShown(f)][0]
+linked = lua.eval("{}")
+g.HandleModifiedItemClick = lua.eval("function(t) return function(link) table.insert(t, link) end end")(linked)
+g.C_Item.GetItemInfo = lua.eval("function(id) return 'Item' .. id, '|cff1eff00|Hitem:' .. id .. '|h[Item' .. id .. ']|h|r' end")
+item_btn["__scripts"]["OnClick"](item_btn)
+check(len(list(linked.values())) == 0, "a plain click does nothing")
+harness["shift"] = True
+item_btn["__scripts"]["OnClick"](item_btn)
+check(list(linked.values()) == [f"|cff1eff00|Hitem:{item_btn['itemID']}|h[Item{item_btn['itemID']}]|h|r"],
+      "clicking a reward hands its link to the game (Shift+click links it in chat)")
+g.GameTooltip.lines = lua.table()
+item_btn["__scripts"]["OnEnter"](item_btn)
+check(any("Shift+click to link it in chat" in str(l) for l in g.GameTooltip.lines.values()), "its tooltip says so")
+g.C_Item.GetItemInfo = lua.eval("function() return nil end")
+before_chat = len(list(harness["chat"].values()))
+item_btn["__scripts"]["OnClick"](item_btn)
+check(len(list(linked.values())) == 1 and any("still loading" in str(m) for m in list(harness["chat"].values())[before_chat:]),
+      "an item the game hasn't loaded yet says to try again")
+harness["shift"] = False
+g.HandleModifiedItemClick, g.C_Item.GetItemInfo = None, None
+ns.HideDetail()
+
+# --- Battlegrounds ---
+BG = ns.InstanceZones
+check(all(BG[m] == "battleground" for m in (1459, 1460, 1461, 2524)), "Alterac Valley, Warsong Gulch, Arathi Basin and Forever's battleground have pages")
+wsg = list(ns.GetZoneQuests(1460).values())
+check(len(wsg) > 0 and all(ns.Quests[i]["z"] == 1460 for i in wsg), f"Warsong Gulch's page has its quests ({len(wsg)} for this character)")
+check(ns.ui.ZoneIcon(1460) == ns.ZoneIcons[1460], "battlegrounds use their own icons")
+real_map_info = g.C_Map.GetMapInfo
+g.C_Map.GetMapInfo = lua.eval("""function(real) return function(id)
+    if id == 1460 then return { name = "Warsong Gulch", parentMapID = 0 } end
+    return real(id) end end""")(real_map_info)
+g.C_LFGList = lua.eval("""{ GetAvailableActivities = function() return { 1, 2 } end,
+  GetActivityInfoTable = function(id) return ({
+    { fullName = "Warsong Gulch", minLevelSuggestion = 20, maxLevelSuggestion = 29 },
+    { fullName = "Elwynn Forest", minLevelSuggestion = 1, maxLevelSuggestion = 10 } })[id] end }""")
+ns.ResetLevelRanges()
+check(ns.GetLevelRange(1460) == (20, 29), "Warsong Gulch gets its range from the game")
+before_chat = len(list(harness["chat"].values()))
+g.SlashCmdList["LOREPATH"]("levels")
+out = [str(m) for m in list(harness["chat"].values())[before_chat:]]
+check(any("Battlegrounds" in m for m in out) and "  Warsong Gulch: 20-29" in out and "  Elwynn Forest: 1-10" in out,
+      "/lp levels lists each page with its range, grouped like the zone list")
+check(any(m.endswith("no range|r") for m in out), "and says which have no range")
+g.C_LFGList = None
+g.C_Map.GetMapInfo = real_map_info
+ns.ResetLevelRanges()
+
+# --- AllTheThings' notes in quest details ---
+check(ns.QuestNotes[6564] == "For this to drop, you need to be on the Essence of Aku'Mai quest.", "notes are extracted with their quests")
+check(len(list(ns.QuestNotes.keys())) > 50 and all(ns.Quests[k] is not None for k in ns.QuestNotes.keys()), "only for quests LorePath has")
+ns.SetSetting("showSpoilers", False)
+ns.ShowDetail(6564)
+texts = detail_texts()
+check("Good to know" in texts and any(t.startswith("For this to drop") for t in texts), "the details show the note, even with spoilers hidden")
+ns.ShowDetail(783)
+check("Good to know" not in detail_texts(), "quests without a note don't get the heading")
+char["race"], char["faction"] = 2, "Horde"
+ns.RefreshPlayer()
+ns.FocusQuest(6564)
+t = [f for f in harness["all"].values() if f["questID"] == 6564 and f["sub"] is not None and f.IsShown(f)][0]
+g.GameTooltip.lines = lua.table()
+t["__scripts"]["OnEnter"](t)
+lines = [str(l) for l in g.GameTooltip.lines.values()]
+check("Good to know:" in lines and any(l.startswith("For this to drop") for l in lines), "the quest's tooltip in the graph shows the note too")
+char["race"], char["faction"] = 1, "Alliance"
+ns.RefreshPlayer()
+ns.HideDetail()
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])

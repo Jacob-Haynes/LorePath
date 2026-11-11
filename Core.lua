@@ -58,6 +58,42 @@ local function ReadProfessions()
     return skills, info
 end
 
+-- Some quests have Alliance and Horde versions with different givers, start
+-- points or prerequisites (fv = {[1] = Horde, [2] = Alliance} in the data).
+-- Your faction's fields are copied onto the quest, so the rest of LorePath
+-- reads q.m, q.qg, q.pre as usual.
+local factionQuests
+local appliedFaction
+local function ApplyFactionVersions()
+    if appliedFaction == player.faction then
+        return
+    end
+    if not factionQuests then
+        factionQuests = {}
+        for _, q in pairs(ns.Quests) do
+            if q.fv then
+                local keys = {}
+                for _, version in pairs(q.fv) do
+                    for key in pairs(version) do
+                        keys[key] = true
+                    end
+                end
+                table.insert(factionQuests, { q = q, keys = keys })
+            end
+        end
+    end
+    for _, entry in ipairs(factionQuests) do
+        local version = entry.q.fv[player.faction] or {}
+        for key in pairs(entry.keys) do
+            entry.q[key] = version[key]
+        end
+    end
+    appliedFaction = player.faction
+    if ns.ResetFollowOns then
+        ns.ResetFollowOns() -- prerequisites may have changed
+    end
+end
+
 function ns.RefreshPlayer()
     local _, _, raceID = UnitRace("player")
     local _, _, classID = UnitClass("player")
@@ -67,6 +103,7 @@ function ns.RefreshPlayer()
     player.faction = (factionTag == "Horde" and 1) or (factionTag == "Alliance" and 2) or 0
     player.level = UnitLevel("player") or 1
     player.skills, player.professions = ReadProfessions()
+    ApplyFactionVersions()
     wipe(ns.standings)
 end
 
@@ -197,6 +234,8 @@ local function Contains(list, value)
     return false
 end
 
+local checkingCrumb = {} -- guards against breadcrumbs that lead round in a loop
+
 -- Can this character ever do the quest (faction, race, class, profession)?
 -- With ignoreSkill, a profession you don't have doesn't count against it (for
 -- the Professions page's "show professions you don't have").
@@ -216,6 +255,23 @@ function ns.IsEligible(id, ignoreSkill)
     end
     if q.sk and not ignoreSkill and player.skills[q.sk] == nil then
         return false
+    end
+    -- A breadcrumb is only worth showing if you can do a quest it leads to.
+    -- (In Search of Thaelrid is open to the Horde, but leads only to an
+    -- Alliance quest.) Quests LorePath doesn't know count as possible.
+    if q.bc and q.nx and not checkingCrumb[id] then
+        checkingCrumb[id] = true
+        local reachable = false
+        for _, nextID in ipairs(q.nx) do
+            if not ns.Quests[nextID] or ns.IsEligible(nextID, ignoreSkill) then
+                reachable = true
+                break
+            end
+        end
+        checkingCrumb[id] = nil
+        if not reachable then
+            return false
+        end
     end
     return true
 end
@@ -432,14 +488,24 @@ end
 
 -- Name of an instance page (see ns.InstanceZones): the Encounter Journal's name,
 -- then the map's, then the area's, then the English name stored with the data.
-local function InstanceName(zoneID, info)
+-- A wing's page is "<instance> - <wing>", e.g. "Scarlet Monastery - Library".
+local InstanceName
+local function WingName(info)
+    local base = InstanceName(nil, { ej = info.ej, ar = info.ar })
+    return base .. " - " .. info.wg
+end
+
+InstanceName = function(zoneID, info)
+    if info.wg then
+        return WingName(info)
+    end
     if info.ej and type(EJ_GetInstanceInfo) == "function" then
         local ok, name = pcall(EJ_GetInstanceInfo, info.ej)
         if ok and type(name) == "string" and name ~= "" then
             return name
         end
     end
-    if zoneID > 0 and C_Map and C_Map.GetMapInfo then
+    if zoneID and zoneID > 0 and C_Map and C_Map.GetMapInfo then
         local map = C_Map.GetMapInfo(zoneID)
         if map and map.name and map.name ~= "" then
             return map.name
@@ -468,7 +534,120 @@ function ns.GetMapName(mapID)
     return info and info.name or ("Map " .. tostring(mapID))
 end
 
--- "dungeon" or "raid" for an instance page, nil for an outdoor zone.
+-- ============================================================================
+-- Level ranges (from the game's Looking for Group activities)
+-- ============================================================================
+-- WoW Forever's own suggested levels, e.g. Ragefire Chasm 13-18 or Hillsbrad
+-- Foothills 18-34, read at run time so they follow the game. Matched to zone
+-- and instance pages by name; wings ("Scarlet Monastery - Armory") also count
+-- towards the whole instance.
+
+local levelRanges -- normalised name -> { min, max }
+
+local function NormaliseName(name)
+    name = string.lower(name or "")
+    name = name:gsub("^the%s+", ""):gsub("[^%w ]", ""):gsub("%s+", " ")
+    return name:match("^%s*(.-)%s*$")
+end
+
+local function LoadLevelRanges()
+    if not (C_LFGList and C_LFGList.GetAvailableActivities and C_LFGList.GetActivityInfoTable) then
+        return nil
+    end
+    local ok, ids = pcall(C_LFGList.GetAvailableActivities)
+    if not ok or type(ids) ~= "table" or #ids == 0 then
+        return nil -- not loaded yet; try again next time
+    end
+    local ranges = {}
+    local function Add(name, low, high)
+        local r = ranges[name]
+        if r then
+            r[1], r[2] = math.min(r[1], low), math.max(r[2], high)
+        else
+            ranges[name] = { low, high }
+        end
+    end
+    for _, id in ipairs(ids) do
+        local okInfo, a = pcall(C_LFGList.GetActivityInfoTable, id)
+        local high = okInfo and type(a) == "table" and a.maxLevelSuggestion or 0
+        if high > 0 and type(a.fullName) == "string" then
+            local low = (a.minLevelSuggestion and a.minLevelSuggestion > 0) and a.minLevelSuggestion or a.minLevel or 0
+            local full = a.fullName
+            Add(NormaliseName(full), low, high)
+            local whole = full:match("^(.-)%s+[%-:]%s+.+$") -- "Scarlet Monastery - Armory"
+            if whole then
+                Add(NormaliseName(whole), low, high)
+            end
+        end
+    end
+    return ranges
+end
+
+-- Forgets the ranges read so far, so the next lookup reads the game's list
+-- again (for tests).
+function ns.ResetLevelRanges()
+    levelRanges = nil
+end
+
+-- min, max suggested level for a zone or instance page, or nil when the game
+-- doesn't say (capital cities, the Class and profession pages). Names that
+-- differ only a little ("The Stockade" and "Stormwind Stockades") still match:
+-- one name may contain the other.
+function ns.GetLevelRange(page)
+    if type(page) ~= "number" then
+        return nil
+    end
+    levelRanges = levelRanges or LoadLevelRanges()
+    if not levelRanges then
+        return nil
+    end
+    local name = NormaliseName(ns.GetMapName(page))
+    if name == "" then
+        return nil
+    end
+    local r = levelRanges[name]
+    if not r then
+        for other, range in pairs(levelRanges) do
+            if #other >= 6 and (other:find(name, 1, true) or name:find(other, 1, true)) then
+                r = range
+                break
+            end
+        end
+    end
+    if r then
+        return r[1], r[2]
+    end
+end
+
+-- /lp levels: every page in the zone list with the level range LorePath
+-- matched from the game, or "no range", grouped like the zone list.
+function ns.PrintLevelRanges()
+    local groups = { { kind = nil, title = "Zones" }, { kind = "dungeon", title = "Dungeons" },
+        { kind = "raid", title = "Raids" }, { kind = "battleground", title = "Battlegrounds" } }
+    local zones = ns.GetZones()
+    for _, z in ipairs(zones) do
+        z.name = ns.GetMapName(z.id)
+    end
+    table.sort(zones, function(a, b) return a.name < b.name end)
+    for _, group in ipairs(groups) do
+        local lines = {}
+        for _, z in ipairs(zones) do
+            if z.instance == group.kind then
+                local low, high = ns.GetLevelRange(z.id)
+                local range = low and ((low == high) and tostring(low) or (low .. "-" .. high)) or "|cff9d9d9dno range|r"
+                table.insert(lines, "  " .. z.name .. ": " .. range)
+            end
+        end
+        if #lines > 0 then
+            ns.Print("|cffffd100" .. group.title .. "|r")
+            for _, line in ipairs(lines) do
+                DEFAULT_CHAT_FRAME:AddMessage(line)
+            end
+        end
+    end
+end
+
+-- "dungeon", "raid" or "battleground" for an instance page, nil for an outdoor zone.
 function ns.GetInstanceKind(zoneID)
     return ns.InstanceZones and ns.InstanceZones[zoneID] or nil
 end
@@ -492,10 +671,18 @@ function ns.CurrentInstancePage(mapID)
         journalID = ok and id ~= 0 and id or nil
     end
     local zoneText = type(GetRealZoneText) == "function" and GetRealZoneText() or nil
+    -- The whole instance's page rather than one of its wings, when it has one.
+    local wing
     for page, info in pairs(ns.InstanceInfo) do
         if journalID and info.ej == journalID then
-            return page
+            if not info.wg then
+                return page
+            end
+            wing = wing or page
         end
+    end
+    if wing then
+        return wing
     end
     if zoneText and zoneText ~= "" and C_Map and C_Map.GetAreaInfo then
         for page, info in pairs(ns.InstanceInfo) do
@@ -853,6 +1040,9 @@ end
 
 -- Quests that list `id` as a prerequisite (built once, on first use).
 local followOns
+function ns.ResetFollowOns()
+    followOns = nil
+end
 function ns.GetFollowOns(id)
     if not followOns then
         followOns = {}

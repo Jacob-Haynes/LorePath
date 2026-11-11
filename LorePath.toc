@@ -10,6 +10,7 @@
 ## X-Curse-Project-ID: 1793930
 
 Data\Quests.lua
+Data\QuestNotes.lua
 Data\QuestText.lua
 Data\CommunityText.lua
 Core.lua
