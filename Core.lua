@@ -636,6 +636,10 @@ end
 -- differ only a little ("The Stockade" and "Stormwind Stockades") still match:
 -- one name may contain the other.
 function ns.GetLevelRange(page)
+    local att = ns.GetAttunement(page)
+    if att then
+        page = att.instance -- an attunement shows its dungeon's or raid's range
+    end
     if type(page) ~= "number" then
         return nil
     end
@@ -715,6 +719,7 @@ end
 local zoneQuests -- zone mapID -> list of quest IDs (built once)
 local classQuests -- class-restricted quests, from every zone
 local professionQuests -- profession skill line -> its quests, from every zone
+local attunementQuests -- attunement id -> its quest steps (Data/Attunements.lua)
 
 -- Blacksmithing's specialisations have their own skill lines in the data; they
 -- belong on the Blacksmithing page.
@@ -726,6 +731,16 @@ end
 
 local function BuildZoneIndex()
     zoneQuests, classQuests, professionQuests = {}, {}, {}
+    attunementQuests = {}
+    for _, att in ipairs(ns.Attunements or {}) do
+        local list = {}
+        for _, step in ipairs(att.steps) do
+            if step.quest and ns.Quests[step.quest] then
+                table.insert(list, step.quest)
+            end
+        end
+        attunementQuests[att.id] = list
+    end
     local function Add(t, key, id)
         t[key] = t[key] or {}
         table.insert(t[key], id)
@@ -748,10 +763,10 @@ end
 -- ============================================================================
 -- Class and profession pages (issue #8)
 -- ============================================================================
--- Besides zones (map IDs) and instances, the zone list has two kinds of page,
+-- Besides zones (map IDs) and instances, the zone list has three kinds of page,
 -- keyed by string: "class" (every quest for your class, from all zones, so class
--- chains that travel show as one storyline) and "prof:<skill line>" (one
--- profession's quests).
+-- chains that travel show as one storyline), "prof:<skill line>" (one
+-- profession's quests) and "att:<id>" (an attunement's quests, issue #16).
 
 -- English names and icons, for professions you don't have (the client names the
 -- ones you do).
@@ -800,21 +815,79 @@ function ns.IsSpecialPage(page)
     return type(page) == "string"
 end
 
+-- The attunement (Data/Attunements.lua) an "att:<id>" page shows, or nil.
+function ns.GetAttunement(page)
+    local id = type(page) == "string" and string.match(page, "^att:(.+)$")
+    if not id then
+        return nil
+    end
+    for _, att in ipairs(ns.Attunements or {}) do
+        if att.id == id then
+            return att
+        end
+    end
+end
+
+-- The zone list heading a special page sits under.
+function ns.SpecialGroupName(page)
+    if page == "class" then
+        return "Class"
+    end
+    return ns.GetAttunement(page) and "Attunements" or "Professions"
+end
+
 function ns.SpecialPageName(page)
     if page == "class" then
         local className = UnitClass("player")
         return (className or "Class") .. " quests"
     end
+    local att = ns.GetAttunement(page)
+    if att then
+        return att.name
+    end
     local skill = PageSkill(page)
     return skill and ns.ProfessionName(skill) or page
 end
 
--- The quests on a Class or profession page. Professions you don't have are
--- included (as locked quests) only when "Show professions you don't have" is on.
+-- How many of an item you have, bags and bank (where the client says).
+local function ItemCount(itemID)
+    local fn = (C_Item and C_Item.GetItemCount) or GetItemCount
+    if type(fn) ~= "function" then
+        return 0
+    end
+    local ok, count = pcall(fn, itemID, true)
+    return ok and tonumber(count) or 0
+end
+
+-- An attunement's steps that aren't quests, in order, each with whether it's
+-- done: { kind = "item", item = ID, done = true }, { kind = "level", level = 55 },
+-- { kind = "rep", rep = { factionID, standing } }.
+function ns.GetAttunementRequirements(page)
+    local att = ns.GetAttunement(page)
+    local list = {}
+    for _, step in ipairs(att and att.steps or {}) do
+        if step.item then
+            table.insert(list, { kind = "item", item = step.item, done = ItemCount(step.item) > 0 })
+        elseif step.level then
+            table.insert(list, { kind = "level", level = step.level, done = player.level >= step.level })
+        elseif step.rep then
+            local standing = ns.GetStanding(step.rep[1])
+            table.insert(list, { kind = "rep", rep = step.rep, done = standing ~= nil and standing >= step.rep[2] })
+        end
+    end
+    return list
+end
+
+-- The quests on a Class, profession or attunement page. Professions you don't
+-- have are included (as locked quests) only when "Show professions you don't
+-- have" is on.
 local function SpecialPageQuests(page)
     local source, ignoreSkill
+    local att = ns.GetAttunement(page)
     if page == "class" then
         source = classQuests
+    elseif att then
+        source = attunementQuests[att.id] or {}
     else
         local skill = PageSkill(page)
         source = skill and professionQuests[skill] or {}
@@ -1020,6 +1093,15 @@ function ns.GetSpecialGroups()
     if #pages > 0 then
         table.insert(groups, { name = "Professions", pages = pages })
     end
+    local attunements = {}
+    for _, att in ipairs(ns.Attunements or {}) do
+        if #ns.GetZoneQuests("att:" .. att.id) > 0 then
+            table.insert(attunements, "att:" .. att.id)
+        end
+    end
+    if #attunements > 0 then
+        table.insert(groups, { name = "Attunements", pages = attunements })
+    end
     return groups
 end
 
@@ -1047,9 +1129,17 @@ function ns.CountProgress(ids)
     return done, total, repeatables
 end
 
--- done, total, repeatables for a zone.
+-- done, total, repeatables for a zone. An attunement's other steps (its key,
+-- level or reputation) count too.
 function ns.GetZoneProgress(zoneID)
-    return ns.CountProgress(ns.GetZoneQuests(zoneID))
+    local done, total, repeatables = ns.CountProgress(ns.GetZoneQuests(zoneID))
+    if ns.GetAttunement(zoneID) then
+        for _, req in ipairs(ns.GetAttunementRequirements(zoneID)) do
+            total = total + 1
+            done = done + (req.done and 1 or 0)
+        end
+    end
+    return done, total, repeatables
 end
 
 -- Quests that list `id` as a prerequisite (built once, on first use).

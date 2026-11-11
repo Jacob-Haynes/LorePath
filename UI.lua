@@ -238,9 +238,12 @@ local ZONE_ICON_OVERRIDES = {
 }
 
 local function ZoneIcon(zoneID)
+    local att = ns.GetAttunement(zoneID)
     if zoneID == "class" then
         local _, token = UnitClass("player")
         return token and ("Interface\\Icons\\ClassIcon_" .. token:sub(1, 1) .. token:sub(2):lower()) or GENERIC_ICON.map
+    elseif att then
+        return ZoneIcon(att.instance) -- its dungeon's or raid's icon
     elseif ns.IsSpecialPage(zoneID) then
         return ns.ProfessionIcon(tonumber(string.match(zoneID, "%d+")))
     end
@@ -1029,6 +1032,32 @@ RenderZone = function()
 
     local top, maxWidth, hidden = PAD, viewWidth, 0
     local hideCompleted = ns.GetSetting("hideCompleted")
+
+    -- An attunement's steps that aren't quests (issue #16): its key, and any
+    -- level or reputation it needs, ticked off above its quests.
+    local requirements = ns.GetAttunement(selectedZone) and ns.GetAttunementRequirements(selectedZone) or {}
+    if #requirements > 0 then
+        local heading = AcquireText(canvas, "GameFontNormal")
+        heading:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD, -top)
+        heading:SetText("Also needed")
+        top = top + 20
+        for _, req in ipairs(requirements) do
+            local text
+            if req.kind == "item" then
+                text = "Have " .. ItemText(req.item) .. " (in your bags or bank)"
+            elseif req.kind == "level" then
+                text = "Reach level " .. req.level
+            else
+                text = "Be " .. ns.ReputationText(req.rep)
+            end
+            local icon = req.done and "Interface\\RaidFrame\\ReadyCheck-Ready" or "Interface\\RaidFrame\\ReadyCheck-NotReady"
+            local line = AcquireText(canvas, req.done and "GameFontHighlightSmall" or "GameFontDisableSmall")
+            line:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
+            line:SetText("|T" .. icon .. ":14|t " .. text)
+            top = top + 18
+        end
+        top = top + SECTION_GAP
+    end
     for _, storyline in ipairs(storylines) do
         if hideCompleted and ns.GetNextStep(storyline) == "complete" then
             hidden = hidden + 1
@@ -1061,7 +1090,7 @@ RenderZone = function()
     local done, total, repeatables = ns.GetZoneProgress(selectedZone)
     frame.zoneTitle:SetText(ns.GetMapName(selectedZone))
     frame.zoneIcon:SetTexture(ZoneIcon(selectedZone))
-    local summary = string.format("%d / %d quests done", done, total)
+    local summary = string.format(#requirements > 0 and "%d / %d steps done" or "%d / %d quests done", done, total)
     if repeatables > 0 then
         summary = summary .. "  -  " .. Hex(REPEATABLE_BLUE) .. repeatables .. " repeatable|r"
     end
@@ -1261,12 +1290,13 @@ RenderZoneList = function()
         return
     end
 
-    -- Class and Professions first (issue #8), then zones grouped by continent,
-    -- with totals for each heading.
+    -- Class, Professions and Attunements first (issues #8 and #16), then zones
+    -- grouped by continent, with totals for each heading.
+    local SPECIAL_ICONS = { Professions = "Interface\\Icons\\INV_Pick_02", Attunements = "Interface\\Icons\\INV_Misc_Key_14" }
     local groups, order = {}, {}
     for _, special in ipairs(ns.GetSpecialGroups()) do
         local g = { name = special.name, zones = {}, done = 0, total = 0, repeatables = 0,
-                    icon = special.name == "Class" and ZoneIcon("class") or "Interface\\Icons\\INV_Pick_02" }
+                    icon = special.name == "Class" and ZoneIcon("class") or SPECIAL_ICONS[special.name] or SPECIAL_ICONS.Professions }
         for _, page in ipairs(special.pages) do
             local z = { id = page, name = ns.GetMapName(page) }
             local skill = tonumber(string.match(page, "^prof:(%d+)$"))
@@ -1498,7 +1528,7 @@ function ns.FocusQuest(id)
         end
     end
     if ns.IsSpecialPage(zone) then
-        CollapsedTable("collapsedContinents")[zone == "class" and "Class" or "Professions"] = false
+        CollapsedTable("collapsedContinents")[ns.SpecialGroupName(zone)] = false
     end
 
     -- Remember where you were, for the Back button.
