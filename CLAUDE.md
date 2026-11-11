@@ -22,6 +22,7 @@ All checked in game. The client is mainline-based, but don't assume retail behav
   - A quest with no recorded giver isn't necessarily picked up inside an instance; only mark `di` when ATT names a giver.
   - Instance wings are headers with their own `lvl`; their names are in `LocalizationDB.lua`.
   - ATT files some quests under an instance they aren't given in (Quel'Serrar is under Onyxia's Lair, given in Dire Maul).
+  - Places that aren't zones are headers straight under a continent, with the maps they span: Timbermaw Hold is `h(-388, {maps = {1448, 1452}})` under Kalimdor. Their quests go in the zone they start in, if it's one of those maps, else the first; without that they'd land on the continent's page.
 - **pfQuest** (`tools/extract_pfquest.py`, `tools/extract_quest_starts.py`): creatures and objects are placed by the game's zone **area** IDs, not map IDs; `AREA_TO_MAP` converts them. A creature can spawn both outdoors and in an instance (Blackfathom Tide Priestess), so a dungeon quest's item source is placed in the dungeon.
 - **Regenerating data:** run the extractor against the ATT commit named in `Data/Quests.lua`'s header unless you mean to update the data too, so a feature's diff contains only its own change. `tools/diff_quests.py --check` summarises what changed.
 

@@ -654,7 +654,7 @@ check(harness["openedSettings"] == 77, "/lp config opens the settings page")
 
 # --- Reputation requirements ---
 # 6031 (Timbermaw Hold, neutral, level 40) needs Friendly (3000) with faction 576.
-char["level"], char["map"] = 60, 1414
+char["level"], char["map"] = 60, 1448
 rep = char["reputation"]
 def fresh_status(qid):
     ns.RefreshPlayer()  # clears the cached standings, like a refresh after UPDATE_FACTION
@@ -662,7 +662,7 @@ def fresh_status(qid):
 check(ns.Quests[6031]["mr"][1] == 576 and ns.Quests[6031]["mr"][2] == 3000, "extractor kept 6031's minReputation as mr={576,3000}")
 check(fresh_status(6031) == S.AVAILABLE and ns.GetLockReason(6031) is None,
       "unknown faction standing doesn't lock or hide the quest")
-check(ns.IsEligible(6031) and 6031 in list(ns.GetZoneQuests(1414).values()), "a reputation quest stays in its zone list")
+check(ns.IsEligible(6031) and 6031 in list(ns.GetZoneQuests(1448).values()), "a reputation quest stays in its zone list (Felwood)")
 rep[576] = 2999
 check(fresh_status(6031) == S.LEVEL and ns.GetLockReason(6031) == "minrep", "below Friendly: 6031 is not yet available")
 rep[576] = 3000
@@ -674,17 +674,18 @@ check(ns.StandingName(-42000) == "Hated" and ns.StandingName(-1) == "Unfriendly"
       "raw values map to standing names with WoW's thresholds")
 
 # A quest with a maxReputation (none in the current Forever data, so give one to
-# a plain Kalimdor quest for the test).
-capped = next(qid for qid, q in sorted(ns.Quests.items()) if q["z"] == 1414 and not q["pre"] and not q["mr"]
-              and not q["sk"] and not q["bc"] and ns.IsEligible(qid) and (q["l"] or 1) <= 60)
+# a plain Felwood quest for the test).
+capped = next(qid for qid, q in sorted(ns.Quests.items()) if q["z"] == 1448 and not q["pre"] and not q["mr"]
+              and not q["sk"] and not q["bc"] and not q["rp"] and ns.IsEligible(qid) and (q["l"] or 1) <= 60
+              and ns.GetStatus(qid) == S.AVAILABLE and qid in list(ns.GetZoneQuests(1448).values()))
 ns.Quests[capped]["xr"] = lua.eval("{609, 9000}")
 rep[609] = 8999
 ns.RefreshPlayer()
-done0, total0, *_ = ns.GetZoneProgress(1414)
+done0, total0, *_ = ns.GetZoneProgress(1448)
 check(fresh_status(capped) == S.AVAILABLE, "below the maximum: available")
 rep[609] = 9000
 ns.RefreshPlayer()
-done1, total1, *_ = ns.GetZoneProgress(1414)
+done1, total1, *_ = ns.GetZoneProgress(1448)
 check(ns.GetStatus(capped) == S.MISSED and ns.GetLockReason(capped) == "maxrep", "at the maximum (Honored): no longer available")
 check(total1 == total0 - 1, f"a quest closed by reputation isn't counted as missing ({total0} -> {total1})")
 char["completed"][capped] = True
@@ -2363,6 +2364,10 @@ check(tiles and max(t["px"] for t in tiles) + 186 <= view_w,
 ns.Toggle(False)
 char["level"] = 60
 ns.RefreshPlayer()
+# --- Timbermaw Hold's quests are in the zones they start in, not on a Kalimdor page ---
+check(all(ns.Quests[q]["z"] == 1448 for q in (6031, 8460, 8461, 8470, 8481)) and all(ns.Quests[q]["z"] == 1452 for q in (8464, 8469)),
+      "Timbermaw Hold's quests are on Felwood's page, or Winterspring's for the Winterfall ones")
+check(not any(q["z"] == 1414 for q in ns.Quests.values()), "and no quest is left on the Kalimdor continent page")
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
