@@ -456,8 +456,12 @@ local function Render(id)
     local dc = UI.DifficultyColor(q.l or 1)
     AddText(UI.Hex(dc) .. "Requires level " .. (q.l or 1) .. "|r", "GameFontHighlightSmall", nil, 4)
     local sc = (status == S.DONE or status == S.ACTIVE or status == S.REPEATABLE) and style.border or style.text or { 1, 1, 1 }
-    AddText(UI.STATUS_TEXT[status], "GameFontHighlightSmall", sc, 2)
     local lock = ns.GetLockReason(id)
+    local statusText = UI.STATUS_TEXT[status]
+    if status == S.LEVEL and lock == "skill" then
+        statusText = ns.HasProfession(q.sk) and "Your skill is too low" or "You don't have this profession"
+    end
+    AddText(statusText, "GameFontHighlightSmall", sc, 2)
     if status == S.BLOCKED then
         local missing = ns.MissingPrereq(id)
         if missing then
@@ -466,8 +470,8 @@ local function Render(id)
         end
     elseif lock == "minrep" and q.mr then
         AddText("Needs " .. ns.ReputationText(q.mr), "GameFontHighlightSmall", { 0.9, 0.9, 0.9 }, 2)
-    elseif lock == "skill" and q.sl then
-        AddText("Needs profession skill " .. q.sl, "GameFontHighlightSmall", { 0.9, 0.9, 0.9 }, 2)
+    elseif lock == "skill" then
+        AddText("Needs " .. ns.SkillText(q), "GameFontHighlightSmall", { 0.9, 0.9, 0.9 }, 2)
     end
     if q.bc then
         AddText("Breadcrumb: it leads you to another quest.", "GameFontDisableSmall", nil, 2)

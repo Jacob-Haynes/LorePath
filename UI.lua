@@ -188,6 +188,12 @@ local ZONE_ICON_OVERRIDES = {
 }
 
 local function ZoneIcon(zoneID)
+    if zoneID == "class" then
+        local _, token = UnitClass("player")
+        return token and ("Interface\\Icons\\ClassIcon_" .. token:sub(1, 1) .. token:sub(2):lower()) or GENERIC_ICON.map
+    elseif ns.IsSpecialPage(zoneID) then
+        return ns.ProfessionIcon(tonumber(string.match(zoneID, "%d+")))
+    end
     local icon = ZONE_ICON_OVERRIDES[zoneID] or (ns.ZoneIcons and ns.ZoneIcons[zoneID])
     if icon then
         return icon
@@ -206,6 +212,9 @@ end
 
 -- Icon for a zone list heading: the continent's, or Dungeons / Raids.
 local function HeadingIcon(group)
+    if group.icon then
+        return group.icon
+    end
     if group.kind then
         return GENERIC_ICON[group.kind] or GENERIC_ICON.dungeon
     end
@@ -366,6 +375,8 @@ local function ShowNodeTooltip(node)
     local statusText = STATUS_TEXT[status]
     if status == S.LEVEL and lock == "minrep" then
         statusText = "Your reputation is too low"
+    elseif status == S.LEVEL and lock == "skill" then
+        statusText = ns.HasProfession(q.sk) and "Your skill is too low" or "You don't have this profession"
     elseif status == S.MISSED and lock == "maxrep" and not q.bc then
         statusText = "No longer available (your reputation is too high)"
     end
@@ -378,7 +389,7 @@ local function ShowNodeTooltip(node)
     elseif status == S.LEVEL and q.l and (UnitLevel("player") or 1) < q.l then
         GameTooltip:AddLine("Needs level " .. q.l, 0.9, 0.9, 0.9)
     elseif status == S.LEVEL and lock == "skill" then
-        GameTooltip:AddLine("Needs profession skill " .. q.sl, 0.9, 0.9, 0.9)
+        GameTooltip:AddLine("Needs " .. ns.SkillText(q), 0.9, 0.9, 0.9)
     elseif status == S.LEVEL and lock == "minrep" then
         GameTooltip:AddLine("Needs " .. ns.ReputationText(q.mr), 0.9, 0.9, 0.9, true)
     end
@@ -398,6 +409,10 @@ local function ShowNodeTooltip(node)
         if after and #after > 0 then
             GameTooltip:AddLine("Leads to: " .. NameList(after), 0.75, 0.75, 0.75, true)
         end
+    end
+    if ns.IsSpecialPage(selectedZone) then
+        -- The Class and profession pages gather quests from every zone.
+        GameTooltip:AddLine("Zone: " .. ns.GetMapName(q.z), 0.75, 0.75, 0.75)
     end
     if q.m then
         GameTooltip:AddLine(string.format("Starts in %s (%.1f, %.1f)", ns.GetMapName(q.m), q.x, q.y), 0.75, 0.75, 0.75)
@@ -620,7 +635,7 @@ local function StyleNode(node, id, storyline)
         if q.l and playerLevel < q.l then
             node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Lv " .. q.l .. "|r")
         else
-            node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Needs skill " .. (q.sl or "?") .. "|r")
+            node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Needs " .. ns.SkillText(q) .. "|r")
         end
     else
         local short = STATUS_SHORT[status]
@@ -979,8 +994,24 @@ RenderZoneList = function()
         return row
     end
 
-    -- Group zones by continent, with totals for each heading.
+    -- Class and Professions first (issue #8), then zones grouped by continent,
+    -- with totals for each heading.
     local groups, order = {}, {}
+    for _, special in ipairs(ns.GetSpecialGroups()) do
+        local g = { name = special.name, zones = {}, done = 0, total = 0, repeatables = 0,
+                    icon = special.name == "Class" and ZoneIcon("class") or "Interface\\Icons\\INV_Pick_02" }
+        for _, page in ipairs(special.pages) do
+            local z = { id = page, name = ns.GetMapName(page) }
+            local skill = tonumber(string.match(page, "^prof:(%d+)$"))
+            z.greyed = skill ~= nil and not ns.HasProfession(skill) -- a profession you don't have
+            z.done, z.total, z.repeatables = ns.GetZoneProgress(page)
+            g.done, g.total = g.done + z.done, g.total + z.total
+            g.repeatables = g.repeatables + z.repeatables
+            table.insert(g.zones, z)
+        end
+        groups[g.name] = g
+        table.insert(order, g)
+    end
     for _, z in ipairs(SortedZones()) do
         local g = groups[z.continentName]
         if not g then
@@ -1057,7 +1088,10 @@ RenderZoneList = function()
                 row.text:SetText(z.name)
                 local complete = z.total > 0 and z.done == z.total
                 row.check:SetShown(complete)
-                if complete then
+                row.icon:SetDesaturated(z.greyed or false)
+                if z.greyed then
+                    row.text:SetTextColor(0.5, 0.5, 0.5)
+                elseif complete then
                     row.text:SetTextColor(0.42, 0.83, 0.37)
                 else
                     row.text:SetTextColor(1, 1, 1)
@@ -1132,6 +1166,15 @@ function ns.FocusQuest(id)
         return
     end
     local zone = q.z
+    -- On the Class or a profession page, stay there if the quest is on it.
+    if ns.IsSpecialPage(selectedZone) then
+        for _, other in ipairs(ns.GetZoneQuests(selectedZone)) do
+            if other == id then
+                zone = selectedZone
+                break
+            end
+        end
+    end
     local storylines, others = ns.BuildStorylines(zone)
     local key
     for _, storyline in ipairs(storylines) do
@@ -1164,6 +1207,9 @@ function ns.FocusQuest(id)
         if z.id == zone then
             CollapsedTable("collapsedContinents")[z.continentName] = nil
         end
+    end
+    if ns.IsSpecialPage(zone) then
+        CollapsedTable("collapsedContinents")[zone == "class" and "Class" or "Professions"] = nil
     end
 
     -- Remember where you were, for the Back button.
