@@ -1267,9 +1267,19 @@ RenderZoneList = function()
         table.insert(g.zones, z)
     end
 
+    -- A heading you haven't opened or closed yourself starts collapsed once
+    -- every quest under it is done (like a finished storyline), unless it holds
+    -- the page you're looking at.
     local collapsedContinents = CollapsedTable("collapsedContinents")
     for _, g in ipairs(order) do
-        local collapsed = collapsedContinents[g.name] == true
+        local collapsed = collapsedContinents[g.name]
+        if collapsed == nil then
+            local holdsSelected = false
+            for _, z in ipairs(g.zones) do
+                holdsSelected = holdsSelected or z.id == selectedZone
+            end
+            collapsed = g.total > 0 and g.done == g.total and not holdsSelected
+        end
         local heading = NextRow(24)
         heading.zoneID = nil
         heading.selected:Hide()
@@ -1295,8 +1305,9 @@ RenderZoneList = function()
         heading.lineR:SetPoint("LEFT", heading.text, "RIGHT", 6, 0)
         heading.lineR:SetPoint("RIGHT", heading, "RIGHT", -8, 0)
         heading.continent = g.name
+        heading.collapsed = collapsed
         heading:SetScript("OnClick", function(self)
-            collapsedContinents[self.continent] = not collapsedContinents[self.continent] or nil
+            collapsedContinents[self.continent] = not self.collapsed -- remembered either way
             RenderZoneList()
         end)
         heading:SetScript("OnEnter", function(self)
@@ -1457,11 +1468,11 @@ function ns.FocusQuest(id)
     CollapsedTable("collapsed")[key] = false
     for _, z in ipairs(SortedZones()) do
         if z.id == zone then
-            CollapsedTable("collapsedContinents")[z.continentName] = nil
+            CollapsedTable("collapsedContinents")[z.continentName] = false
         end
     end
     if ns.IsSpecialPage(zone) then
-        CollapsedTable("collapsedContinents")[zone == "class" and "Class" or "Professions"] = nil
+        CollapsedTable("collapsedContinents")[zone == "class" and "Class" or "Professions"] = false
     end
 
     -- Remember where you were, for the Back button.
