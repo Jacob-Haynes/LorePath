@@ -918,6 +918,14 @@ local EXTRA_VERSIONS = {
     -- Zephras Isle's own Call of Fire chain, for WoW Forever's Horde race, which
     -- the data also allows on the Barrens chain. Both end in the Fire Totem.
     [97243] = { 1524 },
+    -- Amongst the Ruins (Blackfathom Deeps) is in the data twice, as 908 and
+    -- 6921, with the same giver, start and level; you can only ever have one,
+    -- so the other showed as still available beside it.
+    [6921] = { 908 },
+    -- Call of Air, the Horde Shaman quest, from Orgrimmar (1531) or Thunder
+    -- Bluff (1532): the same quest and reward for the same races, so a Horde
+    -- Shaman saw both. Home picks which one shows.
+    [1531] = { 1532 },
 }
 
 -- Some quests come in several versions, one per starting area: the Shaman

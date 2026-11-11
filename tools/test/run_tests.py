@@ -2050,6 +2050,47 @@ ns.FocusQuest(4182)
 check(frame["zoneTitle"]["__text"] == "Onyxia's Lair", "focusing one of its quests stays on the attunement page")
 ns.Toggle(False)
 
+# --- Amongst the Ruins, in the data twice (908 and 6921) ---
+char["race"], char["class"], char["faction"], char["level"] = 2, 1, "Horde", 25
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+def ruins():
+    return sorted(q for q in ns.GetZoneQuests(221).values() if q in (908, 6921))
+check(len(ruins()) == 1, f"Blackfathom Deeps shows Amongst the Ruins once: {ruins()}")
+char["log"][6921] = True
+check(ruins() == [6921], "the one in your log, when you have 6921")
+char["log"] = lua.table()
+char["log"][908] = True
+check(ruins() == [908], "or 908")
+char["log"] = lua.table()
+
+# Call of Air: Orgrimmar's (1531) and Thunder Bluff's (1532) are one quest.
+char["class"] = 7
+def air(race):
+    char["race"] = race
+    ns.RefreshPlayer()
+    return sorted(q for q in ns.GetZoneQuests("class").values() if q in (1531, 1532))
+check(air(2) == [1531] and air(6) == [1532], f"a Horde Shaman sees Call of Air once: an orc Orgrimmar's, a tauren Thunder Bluff's ({air(2)}, {air(6)})")
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+ns.RefreshPlayer()
+
+# A shared map pin takes its best quest's colour: gold if any is at your level, else grey, else red.
+mixed, wrong = 0, []
+for race, faction, maps in ((1, "Alliance", (1429, 1436, 1433, 1453)), (2, "Horde", (1411, 1413, 1454))):
+    char["race"], char["faction"] = race, faction
+    for level in (8, 15, 25):
+        char["level"] = level
+        for m in maps:
+            for grp in ns.MapPinGroups(m).values():
+                bands = [ns.PinBand(q) for q in grp["quests"].values()]
+                if len(set(bands)) > 1:
+                    mixed += 1
+                if grp["band"] != min(bands):
+                    wrong.append((m, level, list(grp["quests"].values())))
+check(mixed > 0 and not wrong, f"a pin shared by quests of different levels shows the best: gold, else grey, else red ({mixed} mixed pins, wrong: {wrong[:3]})")
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+ns.RefreshPlayer()
+
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])
