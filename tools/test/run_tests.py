@@ -1310,6 +1310,39 @@ check(s == {"k": "u", "n": 99, "i": 1429}, f"a quest giver beats the object, and
 s = offer(KNOWN, "Player-1234-0ABCDEF0")
 check(s is None, "a quest another player shares with you isn't saved as a start")
 quest_window["x"], quest_window["y"] = 0.4567, 0.1234
+
+# Secret values (1.2.0-beta3 in game): the client can give UnitGUID("questnpc")
+# as a value addons may not compare or read. Faked here as a table that errors
+# on any use, which issecretvalue recognises.
+secret = lua.eval("""(function()
+    local s = setmetatable({}, {
+        __index = function() error("attempt to index a secret string value") end,
+        __eq = function() error("attempt to compare a secret string value") end,
+        __lt = function() error("attempt to compare a secret string value") end,
+        __le = function() error("attempt to compare a secret string value") end,
+        __concat = function() error("attempt to concatenate a secret string value") end,
+        __len = function() error("attempt to get length of a secret string value") end,
+    })
+    issecretvalue = function(v) return rawequal(v, s) end
+    return s
+end)()""")
+SECRET_Q = next(qid for qid in sorted(ns.Quests.keys()) if qid >= 90000 and no_start(qid) and qid not in (NOSTART, ITEMQ)
+                and cache[qid] is None)
+harness["errors"] = lua.table()
+before_chat = len(list(harness["chat"].values()))
+g.GetQuestText = lua.eval("function() return 'Bring me ten boar ribs.' end")
+s = offer(SECRET_Q, secret)
+check(len(list(harness["errors"].values())) == 0 and not any("Something went wrong" in str(m) for m in list(harness["chat"].values())[before_chat:]),
+      "a quest giver the game keeps secret doesn't break the quest window")
+check(s is None and cache[SECRET_Q]["text"] == "Bring me ten boar ribs.",
+      "its start isn't saved (it isn't mistaken for an item), but its text still is")
+g.GetQuestText = lua.eval("function() return SECRET end")
+lua.globals().SECRET = secret
+cache[SECRET_Q]["text"] = None
+harness.Fire("QUEST_DETAIL")
+check(len(list(harness["errors"].values())) == 0 and cache[SECRET_Q]["text"] is None, "secret quest text is skipped, not compared or saved")
+g.GetQuestText = None
+g.issecretvalue = None
 offer(KNOWN, "Creature-0-1-2-3-11-0000ABCDEF")
 
 codes, count = ns.BuildShareCodes()

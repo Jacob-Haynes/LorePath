@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Fixed an error at quest givers:** "Something went wrong (QUEST_DETAIL) ... a secret string value" when a quest giver offered you a quest. The game keeps some quest givers' details secret from addons; LorePath now skips those instead of failing, so it still saves the quest's text (just not where it started).
+
 ## 1.2.0-beta3
 
 - **Quests shown twice, fixed:** Amongst the Ruins (Blackfathom Deeps) is in the quest data twice, under two IDs, so it showed as available even while it was in your log. And Horde Shamans saw Call of Air twice, from Orgrimmar and from Thunder Bluff. Now each shows once: the one you have or have done, else the one nearest your race's home.

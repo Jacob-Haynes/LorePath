@@ -28,10 +28,23 @@ local function Cache()
     return LorePathDB.questCache
 end
 
+-- WoW Forever's client can hand addons "secret" values: ones they may pass on
+-- but not compare, read or test (issecretvalue says which). Using one is an
+-- error, so anything secret is treated as unknown. (UnitGUID("questnpc") is
+-- one, in some quest windows.)
+local function IsSecret(value)
+    if type(issecretvalue) ~= "function" then
+        return false
+    end
+    local ok, secret = pcall(issecretvalue, value)
+    return ok and secret == true
+end
+ns.IsSecret = IsSecret
+
 local function Get(fn, ...)
     if type(fn) == "function" then
         local ok, value = pcall(fn, ...)
-        if ok and value ~= "" then
+        if ok and not IsSecret(value) and value ~= "" then
             return value
         end
     end
@@ -43,6 +56,9 @@ local LogQuestText, QuestLinkText, ReputationRewards -- defined below
 -- $N placeholder back, so it reads right on other characters and is safe to
 -- share (see tools/merge_quest_text.py).
 local function Unfill(text)
+    if IsSecret(text) then
+        return nil
+    end
     if type(text) ~= "string" then
         return text
     end
@@ -74,9 +90,16 @@ end
 -- { k = "u" creature / "o" object / "i" item, n = creature or object ID,
 --   m, x, y = your map and position (%), or i = the instance you're in }.
 -- A quest another player shares with you (the quest window's unit is a player)
--- says nothing about where it starts, so it isn't kept.
+-- says nothing about where it starts, so it isn't kept. Nor is one whose
+-- giver the game keeps secret: an unknown giver mustn't be mistaken for an item.
 local function SeenStart()
     local start = {}
+    if type(UnitGUID) == "function" then
+        local ok, raw = pcall(UnitGUID, "questnpc")
+        if ok and IsSecret(raw) then
+            return nil
+        end
+    end
     local guid = Get(UnitGUID, "questnpc")
     local kind, objectID
     if type(guid) == "string" then
@@ -102,7 +125,7 @@ local function SeenStart()
     end
     local pos = Get(C_Map.GetPlayerMapPosition, map, "player")
     local ok, x, y = pcall(function() return pos:GetXY() end)
-    if ok and type(x) == "number" and type(y) == "number" and (x > 0 or y > 0) then
+    if ok and not IsSecret(x) and not IsSecret(y) and type(x) == "number" and type(y) == "number" and (x > 0 or y > 0) then
         start.m = map
         start.x = math.floor(x * 1000 + 0.5) / 10
         start.y = math.floor(y * 1000 + 0.5) / 10
@@ -213,7 +236,7 @@ function LogQuestText(id)
         C_QuestLog.SetSelectedQuest(previous)
     end
     if ok then
-        return text, objectives
+        return (not IsSecret(text)) and text or nil, (not IsSecret(objectives)) and objectives or nil
     end
 end
 
@@ -293,7 +316,7 @@ function QuestLinkText(id)
     local summary, goals, inRequirements = {}, {}, false
     for i = 2, #data.lines do -- line 1 is the title
         local text = data.lines[i].leftText
-        if type(text) == "string" and text ~= "" and text ~= " " then
+        if not IsSecret(text) and type(text) == "string" and text ~= "" and text ~= " " then
             if text:match("^Requirements") then
                 inRequirements = true
             elseif inRequirements then
@@ -313,7 +336,10 @@ local function NPCName(npcID)
     end
     local ok, data = pcall(C_TooltipInfo.GetHyperlink, ("unit:Creature-0-0-0-0-%d-0000000000"):format(npcID))
     local line = ok and data and data.lines and data.lines[1]
-    return line and line.leftText ~= "" and line.leftText or nil
+    if not line or IsSecret(line.leftText) then
+        return nil
+    end
+    return line.leftText ~= "" and line.leftText or nil
 end
 
 -- ============================================================================
