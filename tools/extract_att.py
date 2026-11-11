@@ -17,6 +17,7 @@ Usage:
 Run it again whenever ATT updates its Forever data.
 """
 
+import collections
 import os
 import shutil
 import subprocess
@@ -383,8 +384,9 @@ def extract_instances(att_root, lua, lua_type, add_quest, quests):
                         # giver (an NPC, item or object) is listed but has no point
                         # outside was picked up inside. With no giver listed at
                         # all, ATT just doesn't say (some are handed out in town),
-                        # so those aren't marked.
-                        rec["di"] = 1
+                        # so those aren't marked. di is the instance page it's
+                        # picked up in (fixed up below for givers in another one).
+                        rec["di"] = page
                     added += 1
             return added  # quests inside a quest's g are objectives/rewards, not quests
         kids = node["g"]
@@ -427,6 +429,16 @@ def extract_instances(att_root, lua, lua_type, add_quest, quests):
     for rec in quests.values():
         if rec.get("di") and "n" in info.get(rec["z"], {}):
             del rec["di"]
+    # A quest can be filed under one instance but given in another: Quel'Serrar
+    # is under Onyxia's Lair, but Lorekeeper Lydros gives it in Dire Maul. A
+    # giver stands in the instance where most of its quests are picked up.
+    where = {}
+    for rec in quests.values():
+        if rec.get("di") and rec.get("qg"):
+            where.setdefault(rec["qg"], collections.Counter())[rec["di"]] += 1
+    for rec in quests.values():
+        if rec.get("di") and rec.get("qg"):
+            rec["di"] = where[rec["qg"]].most_common(1)[0][0]
     return pages, info
 
 
@@ -479,7 +491,7 @@ def write_lua(path, quests, zones, att_commit):
         "-- prn how many prerequisites are needed (default all), alt alternative quests,",
         "-- nx quests a breadcrumb leads to, bc breadcrumb, rp repeatable, sk/sl profession skill line/level,",
         "-- mr/xr min/max reputation {factionID, standing} (0 Neutral, 3000 Friendly, 9000 Honored,",
-        "-- 21000 Revered, 42000 Exalted), rw reward item IDs, di picked up inside a dungeon or raid.",
+        "-- 21000 Revered, 42000 Exalted), rw reward item IDs, di the instance page it's picked up inside.",
         "local _, ns = ...",
         "ns.ZoneContinents = {",
     ]

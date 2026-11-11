@@ -1343,7 +1343,9 @@ char["completed"] = lua.table()
 ns.Refresh()
 
 # --- Portal icon on quests picked up inside a dungeon or raid ---
-check(ns.Quests[4342]["di"] == 1 and ns.Quests[3802]["di"] == 1, "quests given inside Blackrock Depths are marked as picked up inside")
+check(ns.Quests[4342]["di"] == 242 and ns.Quests[3802]["di"] == 242, "quests given inside Blackrock Depths are marked as picked up there")
+check(ns.Quests[7508]["z"] == 248 and ns.Quests[7508]["di"] == 234,
+      "Quel'Serrar is filed under Onyxia's Lair, but marked as picked up in Dire Maul, where Lorekeeper Lydros gives it")
 check(ns.Quests[4341]["di"] is None and ns.Quests[166]["di"] is None, "quests given outside (Ironforge, Westfall) aren't")
 check(not any(q["di"] for q in ns.Quests.values() if q["z"] == -318), "nor are Tier 0.5 Sets quests, which are given in towns")
 check(ns.Quests[2204]["di"] is None and ns.Quests[2861]["di"] is None,
@@ -1370,10 +1372,10 @@ ns.HideDetail()
 other = [f for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)
          and not ns.Quests[f["questID"]]["di"] and not ns.Quests[f["questID"]]["cl"]][0]
 check(other["icon"]["__atlas"] is None and other["icon"]["__texture"] is not None, "other quests on the page keep their usual icon")
-raid_q = next((qid for qid, q in sorted(ns.Quests.items()) if q["di"] and ns.InstanceZones[q["z"]] == "raid" and ns.IsEligible(qid)), None)
-if raid_q:
-    ns.FocusQuest(raid_q)
-    check(tile_of(raid_q)["icon"]["__atlas"] == "Raid", "raid quests get the raid entrance swirl")
+ns.Quests[3802]["di"] = 248  # as if given inside Onyxia's Lair
+ns.Refresh()
+check(tile_of(3802)["icon"]["__atlas"] == "Raid", "a quest picked up inside a raid gets the raid entrance swirl")
+ns.Quests[3802]["di"] = 242
 g.C_Texture = None
 
 unexpected = list(harness["errors"].values())

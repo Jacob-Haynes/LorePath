@@ -186,7 +186,7 @@ end
 
 -- Puts a quest's icon on a texture, using the portal atlas when the client has it.
 local function SetQuestIcon(tex, q)
-    local atlas = q.di and not q.cl and PORTAL_ATLAS[ns.GetInstanceKind(q.z) or ""]
+    local atlas = q.di and not q.cl and PORTAL_ATLAS[ns.GetInstanceKind(q.di) or ""]
     if atlas and C_Texture and C_Texture.GetAtlasInfo and C_Texture.GetAtlasInfo(atlas) then
         tex:SetAtlas(atlas)
         return
@@ -474,7 +474,7 @@ local function ShowQuestTooltip(owner, id, storyline)
         GameTooltip:AddLine(string.format("Starts in %s (%.1f, %.1f)", ns.GetMapName(q.m), q.x, q.y), 0.75, 0.75, 0.75)
     else
         if q.di then
-            GameTooltip:AddLine("Picked up inside " .. ns.GetMapName(q.z), 0.75, 0.75, 0.75)
+            GameTooltip:AddLine("Picked up inside " .. ns.GetMapName(q.di), 0.75, 0.75, 0.75)
         else
             GameTooltip:AddLine("Start location unknown", 0.6, 0.6, 0.6)
         end

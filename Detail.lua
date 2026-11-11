@@ -483,7 +483,7 @@ local function Render(id)
         AddText(string.format("Starts in %s (%.1f, %.1f)", ns.GetMapName(q.m), q.x, q.y), "GameFontHighlightSmall", nil, 4)
     else
         if q.di then
-            AddText("Picked up inside " .. ns.GetMapName(q.z) .. ".", "GameFontHighlightSmall", nil, 4)
+            AddText("Picked up inside " .. ns.GetMapName(q.di) .. ".", "GameFontHighlightSmall", nil, 4)
         else
             AddText("Start location unknown.", "GameFontDisableSmall", nil, 4)
         end
