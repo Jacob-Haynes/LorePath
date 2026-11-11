@@ -2,23 +2,23 @@
 
 "Hold your own hand"
 
-**LorePath** is a lightweight WoW Forever addon that maps *your* story. For every zone, dungeon and raid it draws each questline as a storyline graph, in the style of Attune's attunement paths. It shows what you've done, what you've missed and where the next part of each story starts. Click any quest to read its story.
+**LorePath** is a lightweight WoW Forever addon that maps *your* story. For every zone, dungeon, raid and battleground it draws each questline as a storyline graph, in the style of Attune's attunement paths. It shows what you've done, what you've missed and where the next part of each story starts. Click any quest to read its story.
 
 It's not a quest helper. There are no map pins and no objective tracking, so it sits happily alongside the default quest UI.
 
 LorePath supports English game clients only.
 
-> **Version 1.0.0.** Lore beyond quest text (zones, characters, a codex) is planned.
+> **Version 1.1.0.** Lore beyond quest text (zones, characters, a codex) is planned.
 
 ---
 
 ## What it shows
 
 - **Class and Professions:** at the top of the zone list, **Class** gathers every quest for your class from all zones, so class chains that travel (say, from a capital city to another zone) show as one storyline. **Professions** has a page for each profession you have, with its quests. Their tooltips say which zone each quest is in. Quests your skill is too low for say what they need, for example *Needs Leatherworking 225*.
-- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons, raids and battlegrounds get their own pages under **Dungeons**, **Raids** and **Battlegrounds** headings (Scarlet Monastery's Graveyard and Library wings have their own too), and inside an instance the window opens on its page. Zones, dungeons and raids show WoW Forever's suggested level range after their name, read from the game's Looking for Group list. Names are coloured by progress: grey before you start, then red, orange at 40%, WoW's gold at 80% and on towards green, turning fully green only once finished. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and the whole list can be hidden to give the graph more room.
+- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons, raids and battlegrounds get their own pages under **Dungeons**, **Raids** and **Battlegrounds** headings (Scarlet Monastery's Graveyard and Library wings have their own too), and inside an instance the window opens on its page. Zones, dungeons, raids and battlegrounds show WoW Forever's suggested level range in a column before the count, read from the game's Looking for Group list; hover a row for its full name, range and progress. Names are coloured by progress: grey before you start, then red, orange at 40%, WoW's gold at 80% and on towards green, turning fully green only once finished. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and a heading whose quests are all done starts collapsed (unless it holds the page you're on). The whole list can be hidden to give the graph more room.
 - **Storylines:** each page's quest chains, drawn left to right from the first quest to the last, with lines joining each quest to the ones it unlocks. Each storyline can be collapsed, and finished ones start collapsed. **Expand all** and **Collapse all** sit at the top.
 - **Other quests:** standalone quests with no chain, under each page's storylines.
-- **Only your quests:** quests for another faction, race or class are left out. Profession quests show only if you have that profession.
+- **Only your quests:** quests for another faction, race or class are left out. Profession quests show only if you have that profession (or, with **Show professions you don't have**, greyed out on the Professions page). Quests that come in one version per starting area, like the Shaman totem quests, show once: the version you did, else the one from your race's home. Breadcrumbs that only lead to quests you can't do are left out.
 - **Quest boxes:**
 
   | Look | Meaning |
@@ -112,9 +112,10 @@ WoW Forever's own quests aren't in any quest database, so the only source for th
 
 | Data | Source |
 | :--- | :--- |
-| Which quests exist, their chains, level, faction/race/class, profession and reputation requirements, repeatables, start location, quest giver, item rewards, and dungeon and raid pages | [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings)' WoW Forever database (MIT), extracted into `Data/Quests.lua`: 4,184 quests on 50 zone pages and 27 dungeon and raid pages |
+| Which quests exist, their chains, level, faction/race/class, profession and reputation requirements, repeatables, start location, quest giver, item rewards, and dungeon and raid pages | [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings)' WoW Forever database (MIT), extracted into `Data/Quests.lua`: 4,334 quests on 50 zone pages and 33 instance pages (28 dungeon pages, counting Scarlet Monastery's two wings, 1 raid and 4 battlegrounds). Also each quest's starting item, where it's picked up inside an instance, and AllTheThings' notes on 89 quests, in `Data/QuestNotes.lua` |
 | What you've completed, what's in your log, your level, race, class, faction, professions and reputation | The game client, live |
 | Quest, zone, item, NPC and faction names | The game client, in your language |
+| Level ranges of zones, dungeons, raids and battlegrounds | The game client's Looking for Group list, live |
 | What drops or holds an item that starts a quest, with chances and locations | [pfQuest](https://github.com/shagu/pfQuest)'s item, creature and object data (MIT, originally from VMaNGOS), in `Data/QuestStarts.lua`: sources for 56 item-started quests |
 | Quest text: description, objectives, progress and completion text | In this order:<br>1. **What you've seen:** saved from the game as you play (when a quest giver shows a quest, when you accept it, when you hand items in, at the turn-in screen, and your quest log at login).<br>2. **Community text:** `Data/CommunityText.lua`, collected by players, including WoW Forever's own quests (250 quests so far).<br>3. **The game's own quest-link tooltip:** the quest's goal and requirements, even for quests completed long ago.<br>4. **Bundled vanilla text:** [pfQuest](https://github.com/shagu/pfQuest)'s English quest database (MIT, originally from VMaNGOS), in `Data/QuestText.lua`: 3,285 vanilla quests, not WoW Forever's own. |
 
@@ -129,10 +130,11 @@ git clone --depth 1 --filter=blob:none --sparse https://github.com/ATTWoWAddon/A
 python3 tools/extract_att.py att
 ```
 
-`tools/extract_att.py` loads AllTheThings' Forever zone data (`Categories/Zones.lua`) and dungeon and raid data (`Categories/Instances.lua`) in a sandboxed Lua runtime, then writes the quest records LorePath needs.
+`tools/extract_att.py` loads AllTheThings' Forever zone, dungeon and raid, profession and PvP data (`Categories/Zones.lua`, `Instances.lua`, `Professions.lua` and `PVP.lua`, plus header names from `LocalizationDB.lua`) in a sandboxed Lua runtime, then writes the quest records LorePath needs to `Data/Quests.lua` and AllTheThings' quest notes to `Data/QuestNotes.lua`.
 - **Kept:** repeatable quests, flagged `rp`.
 - **Skipped:** quests AllTheThings marks unavailable, and quests added after or removed by Forever's build.
-- **Recorded:** the header of `Data/Quests.lua` names the AllTheThings commit the data came from.
+- **Faction versions:** a quest with separate Alliance and Horde versions keeps both, in `fv`.
+- **Recorded:** the headers of `Data/Quests.lua` and `Data/QuestNotes.lua` name the AllTheThings commit the data came from.
 
 To see what changed, compare against the committed file:
 
@@ -182,14 +184,16 @@ pip install lupa
 python3 tools/test/run_tests.py
 ```
 
-This runs the addon's Lua against a fake WoW API with the real quest data, as Human, Orc and other characters, about 190 checks in all. It covers:
-- eligibility, reputation and repeatable quests;
+This runs the addon's Lua against a fake WoW API with the real quest data, as characters of several races and classes (Human, Orc, Tauren and WoW Forever's own race among them), about 370 checks in all. It covers:
+- eligibility, reputation, repeatable quests, faction versions and one version per starting area;
 - quest statuses and storyline building;
-- dungeon and raid pages;
-- jumping and **Back**;
-- the detail panel, its text sources and spoiler hiding;
-- saving quest text as you play;
-- waypoints, the minimap button and every setting;
+- zone, dungeon, raid, battleground, Class and profession pages, and level ranges;
+- the zone list: icons, progress colours and collapsing;
+- search, jumping and **Back**, and dragging the graph;
+- the detail panel, its text sources, notes and spoiler hiding;
+- quest icons, the quest log both ways and linking rewards;
+- saving and sharing quest text, including the merge tool;
+- waypoints, the minimap button, slash commands and every setting;
 - **Reset to defaults**;
 - error safety: any error the addon catches fails the run.
 
@@ -215,7 +219,7 @@ It can't check how things look in game.
 ## Licence
 
 LorePath is MIT-licensed. Its bundled data:
-- **`Data/Quests.lua`** is derived from AllTheThings, also MIT-licensed. Its licence is in `Data/AllTheThings-LICENSE.txt`.
+- **`Data/Quests.lua`** and **`Data/QuestNotes.lua`** are derived from AllTheThings, also MIT-licensed. Its licence is in `Data/AllTheThings-LICENSE.txt`.
 - **`Data/QuestText.lua`** and **`Data/QuestStarts.lua`** come from pfQuest (MIT, licence in `Data/pfQuest-LICENSE.txt`), which took the data from the VMaNGOS project.
 - **`Data/CommunityText.lua`** was collected in game by LorePath's players.
 
