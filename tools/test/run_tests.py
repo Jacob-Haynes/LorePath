@@ -2091,6 +2091,152 @@ check(mixed > 0 and not wrong, f"a pin shared by quests of different levels show
 char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
 ns.RefreshPlayer()
 
+# --- Quests in the data twice (runs on every AllTheThings sync) ---
+# Two quests with the same name on one page, that one character could have
+# together, and that don't lead to each other, show twice: once as done or in
+# your log, once as still available (Amongst the Ruins, 908 and 6921). A new one
+# fails here, so a person decides once: add it to EXTRA_VERSIONS in Core.lua if
+# it's one quest twice, or to SEPARATE below if they really are two quests.
+import re as _re
+from collections import defaultdict
+SEPARATE = [  # same name, but really different quests (or known data gaps, left alone for now)
+    {1380, 1381},              # Khan Hratha: one for each centaur faction (Magram, Gelkis)
+    {1471, 1474, 1795},        # The Binding (Undercity): Voidwalker, Succubus, Felhunter
+    {1504, 1513, 1795},        # The Binding (Orgrimmar)
+    {1689, 1739, 1795},        # The Binding (Stormwind)
+    {1685, 1717},              # Gakin's Summons: the Voidwalker and Succubus breadcrumbs
+    {7802, 7807}, {7803, 7808}, {7804, 7809}, {7805, 7811},  # cloth for Ironforge and for Gnomeregan
+    {7826, 7833}, {7827, 7834}, {7831, 7835}, {7824, 7836},  # cloth for Orgrimmar and for the Darkspear
+    {1471, 1474, 1504, 1513},  # The Binding: Undercity's and Orgrimmar's are different demons
+    {2951, 2952, 4601, 4602, 4605, 4606},  # The Sparklematic 5200!: one for each item you clean, with its second step
+    {2278, 2279, 2280, 2439, 2440},  # The Platinum Discs: one chain, but the data doesn't link 2278 to the item it gives you
+]
+
+def quest_titles():
+    out = {}
+    for name in ("Data/QuestText.lua", "Data/CommunityText.lua"):
+        text = open(os.path.join(ROOT, name), encoding="utf-8").read()
+        for m in _re.finditer(r'^\[(\d+)\]=\{t="((?:[^"\\]|\\.)*)"', text, _re.M):
+            out.setdefault(int(m.group(1)), m.group(2))
+    return out
+
+def plain_quests():
+    def ids(v):
+        return set(v.values()) if v is not None else set()
+    out = {}
+    for qid, q in ns.Quests.items():
+        out[qid] = {"z": q["z"], "f": q["f"], "rc": ids(q["rc"]), "cl": ids(q["cl"]), "sk": ns.ProfessionOf(q),
+                    "pre": ids(q["pre"]), "nx": ids(q["nx"]), "alt": ids(q["alt"]), "rp": q["rp"] is not None}
+    return out
+
+# Which factions can do a quest: its own, or its races' (1 Horde, 2 Alliance).
+RACE_FACTION = {1: 2, 3: 2, 4: 2, 7: 2, 95: 2, 2: 1, 5: 1, 6: 1, 8: 1, 96: 1}
+def factions_of(q):
+    if q["f"]:
+        return {q["f"]}
+    return {RACE_FACTION[r] for r in q["rc"] if r in RACE_FACTION}
+
+# Quests that lead to each other, through prerequisites and breadcrumbs.
+def leads_to(quests):
+    reach = {}
+    def reaches(a):
+        if a not in reach:
+            seen, todo = set(), [a]
+            while todo:
+                x = todo.pop()
+                for y in quests[x]["pre"] | quests[x]["nx"]:
+                    if y in quests and y not in seen:
+                        seen.add(y)
+                        todo.append(y)
+            reach[a] = seen
+        return reach[a]
+    return reaches
+
+def find_duplicates(quests, titles, extra_versions, separate):
+    """Groups of quest IDs one character could see twice under one name, on one
+    page: a zone or instance, the Class page, or a profession's page."""
+    # Versions of each other (alt in the data, or EXTRA_VERSIONS), joined up.
+    parent = {}
+    def root(a):
+        while parent.get(a, a) != a:
+            a = parent[a]
+        return a
+    for qid, q in quests.items():
+        for other in q["alt"] | set(extra_versions.get(qid, ())):
+            parent[root(qid)] = root(other)
+    reaches = leads_to(quests)
+    known = [set(s) for s in separate]
+    # Quests in one storyline are steps, even with the same name (Call of
+    # Water's two steps after 1534). And a page shows one version of each quest,
+    # hiding the steps after the versions it doesn't show (OneVersionEach in
+    # Core.lua). So two quests whose chains share a quest, or versions of one,
+    # never show as one quest twice.
+    chain_roots = {}
+    def roots_of(a):
+        if a not in chain_roots:
+            chain_roots[a] = {root(x) for x in reaches(a) | {a}}
+        return chain_roots[a]
+
+    def together(a, b):
+        qa, qb = quests[a], quests[b]
+        if qa["rp"] or qb["rp"]:
+            return False  # repeatables, and first-time quests beside their repeatable version
+        if roots_of(a) & roots_of(b):
+            return False
+        fa, fb = factions_of(qa), factions_of(qb)
+        if fa and fb and not (fa & fb):
+            return False
+        if qa["rc"] and qb["rc"] and not (qa["rc"] & qb["rc"]):
+            return False
+        if qa["cl"] and qb["cl"] and not (qa["cl"] & qb["cl"]):
+            return False
+        return not any(a in s and b in s for s in known)
+
+    pages = defaultdict(lambda: defaultdict(list))
+    for qid, q in quests.items():
+        if qid not in titles:
+            continue
+        pages[("zone", q["z"])][titles[qid]].append(qid)
+        if q["cl"]:
+            pages[("class",)][titles[qid]].append(qid)
+        if q["sk"]:
+            pages[("prof", q["sk"])][titles[qid]].append(qid)
+    found = set()
+    for page in pages.values():
+        for ids in page.values():
+            ids = sorted(ids)
+            for i, a in enumerate(ids):
+                for b in ids[i + 1:]:
+                    if together(a, b):
+                        found.add((a, b))
+    return sorted(found)
+
+TITLES = quest_titles()
+PLAIN = plain_quests()
+EXTRA = {k: list(v.values()) for k, v in ns.EXTRA_VERSIONS.items()}
+dupes = find_duplicates(PLAIN, TITLES, EXTRA, SEPARATE)
+def describe(qid):
+    q = PLAIN[qid]
+    return f"{qid} (zone {q['z']}, faction {q['f']}, races {sorted(q['rc'])}, classes {sorted(q['cl'])})"
+for a, b in dupes:
+    print(f"  shown twice? {TITLES[a]!r}: {describe(a)} and {describe(b)}")
+check(not dupes, f"no quest shows twice under one name ({len(dupes)} pairs, listed above)"
+      + (": add each to EXTRA_VERSIONS in Core.lua (one quest twice) or SEPARATE in run_tests.py (really two quests)" if dupes else ""))
+
+# The check catches what it should, and its lists don't go stale.
+without_ruins = {k: v for k, v in EXTRA.items() if k != 6921}
+check((908, 6921) in find_duplicates(PLAIN, TITLES, without_ruins, SEPARATE),
+      "without its EXTRA_VERSIONS entry, Amongst the Ruins is caught")
+without_air = {k: v for k, v in EXTRA.items() if k != 1531}
+check((1531, 1532) in find_duplicates(PLAIN, TITLES, without_air, SEPARATE), "and so is Call of Air")
+fake = dict(PLAIN)
+fake[999001] = dict(PLAIN[783], pre=set(), nx=set(), alt=set())
+fake_titles = dict(TITLES)
+fake_titles[999001] = TITLES[783]
+check((783, 999001) in find_duplicates(fake, fake_titles, EXTRA, SEPARATE), "a new copy of a quest under another ID is caught")
+stale = [sorted(s) for i, s in enumerate(SEPARATE) if not find_duplicates(PLAIN, TITLES, EXTRA, SEPARATE[:i] + SEPARATE[i + 1:])]
+check(not stale, f"every SEPARATE entry is still needed: {stale}")
+
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])

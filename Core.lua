@@ -927,6 +927,7 @@ local EXTRA_VERSIONS = {
     -- Shaman saw both. Home picks which one shows.
     [1531] = { 1532 },
 }
+ns.EXTRA_VERSIONS = EXTRA_VERSIONS -- read by the tests' duplicate check
 
 -- Some quests come in several versions, one per starting area: the Shaman
 -- totem quests (Call of Earth in Durotar, Mulgore and Zephras Isle), marked as
