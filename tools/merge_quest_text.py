@@ -32,6 +32,10 @@ Rules:
     word for word isn't duplicated.
   - Saved gold, XP and reputation rewards are carried over too (m, x, r), within
     sane limits. LorePath doesn't display them yet.
+  - Where a quest was offered (s: a creature, object or item, and the map and
+    position or instance) is kept the same way the game keeps it: the first one
+    seen, unless a later one is from a quest giver and the first wasn't. --replace
+    doesn't change that.
 
 Saved-variables files run in a sandboxed Lua state with no libraries, so a
 submitted file can't do anything but define data. Share codes are plain JSON.
@@ -56,7 +60,9 @@ HEADER = [
     "-- bundled vanilla text doesn't cover, such as WoW Forever's own. Updated with",
     "-- tools/merge_quest_text.py from players' saved files; edit with care.",
     "-- Fields: t title, o objectives, d description, p progress, c completion;",
-    "-- rewards m gold (copper), x XP, r reputation {{factionID, amount}}.",
+    "-- rewards m gold (copper), x XP, r reputation {{factionID, amount}};",
+    "-- s where it was offered (issue #37): k \"u\" creature, \"o\" object, \"i\" item;",
+    "-- n creature or object ID; m/x/y map ID and position (%), or i the instance.",
     "-- $N/$C/$R/$G/$B are filled in game.",
     "local _, ns = ...",
     "ns.CommunityText = {",
@@ -103,7 +109,69 @@ def load_table(lua, path, name):
             value = reward_value(k, entry[k])
             if value is not None:
                 out[int(qid)][k] = value
+        start = start_value(entry["s"])
+        if start is not None:
+            out[int(qid)]["s"] = start
     return out
+
+
+def start_value(value):
+    """A sane quest start {k, n, m, x, y, i} from a share code (dict) or a Lua
+    table, or None."""
+    if value is None:
+        return None
+    if isinstance(value, dict):
+        get = value.get
+    elif hasattr(value, "values"):
+        get = lambda k: value[k]
+    else:
+        return None
+    kind = get("k")
+    if kind not in ("u", "o", "i"):
+        return None
+    out = {"k": kind}
+
+    def whole(v, top):
+        return int(v) if isinstance(v, (int, float)) and not isinstance(v, bool) and 0 < v < top and v == int(v) else None
+
+    n = whole(get("n"), 10_000_000)
+    if n is not None and kind != "i":
+        out["n"] = n
+    instance = whole(get("i"), 100_000)
+    m = whole(get("m"), 100_000)
+    x, y = get("x"), get("y")
+    if instance is not None:
+        out["i"] = instance
+    elif m is not None and all(isinstance(v, (int, float)) and not isinstance(v, bool) and 0 <= v <= 100 for v in (x, y)):
+        out["m"], out["x"], out["y"] = m, round(float(x), 1), round(float(y), 1)
+    return out
+
+
+def better_start(old, new):
+    """One start per quest: the first seen, unless a quest giver offers it after
+    an item or object did (the same rule LorePath uses in game)."""
+    if new is None:
+        return old
+    if old is None or (old["k"] != "u" and new["k"] == "u"):
+        return new
+    return old
+
+
+def lua_number(v):
+    return str(int(v)) if v == int(v) else str(v)
+
+
+def entry_line(qid, entry):
+    """One line of Data/CommunityText.lua."""
+    parts = [f"{k}={lua_string(entry[k])}" for k in FIELDS if k in entry]
+    parts += [f"{k}={entry[k]}" for k in ("m", "x") if k in entry]
+    if "r" in entry:
+        parts.append("r={" + ",".join(f"{{{f},{a}}}" for f, a in entry["r"]) + "}")
+    if "s" in entry:
+        s = entry["s"]
+        fields = [f'k="{s["k"]}"'] + [f"{k}={lua_number(s[k])}" for k in ("n", "m", "x", "y", "i") if k in s]
+        parts.append("s={" + ",".join(fields) + "}")
+    return f"[{qid}]={{{','.join(parts)}}},"
 
 
 def reward_value(kind, value):
@@ -138,7 +206,7 @@ def read_share_codes(text):
             raise ValueError("not a version 1 share code")
         for qid, entry in payload["q"].items():
             if isinstance(entry, dict):
-                quests[qid] = {k: entry.get(k) for k in FIELDS + REWARDS}
+                quests[qid] = {k: entry.get(k) for k in FIELDS + REWARDS + ("s",)}
     return quests
 
 
@@ -166,7 +234,7 @@ def read_submission(lua, path):
         quests = {}
         for qid, e in lorepath["questCache"].items():
             quests[qid] = {"o": e["obj"], "d": e["text"], "p": e["prog"], "c": e["done"],
-                           "m": e["money"], "x": e["xp"], "r": e["rep"]}
+                           "m": e["money"], "x": e["xp"], "r": e["rep"], "s": e["start"]}
         names = set()
         if lorepath["characters"] is not None:
             names.update(str(n) for n in lorepath["characters"].keys())
@@ -245,6 +313,11 @@ def main():
                 if value is not None and (field not in target or (args.replace and target[field] != value)):
                     target[field] = value
                     fields += 1
+            start = start_value(entry.get("s"))
+            best = better_start(target.get("s"), start)
+            if best is not None and best is not target.get("s"):
+                target["s"] = best
+                fields += 1
             if target:
                 community[qid] = target
                 new_quests += had == 0 and len(target) > 0
@@ -275,12 +348,7 @@ def main():
         return
     lines = list(HEADER)
     for qid in sorted(community):
-        entry = community[qid]
-        parts = [f"{k}={lua_string(entry[k])}" for k in FIELDS if k in entry]
-        parts += [f"{k}={entry[k]}" for k in ("m", "x") if k in entry]
-        if "r" in entry:
-            parts.append("r={" + ",".join(f"{{{f},{a}}}" for f, a in entry["r"]) + "}")
-        lines.append(f"[{qid}]={{{','.join(parts)}}},")
+        lines.append(entry_line(qid, community[qid]))
     lines.append("}")
     with open(OUT, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")

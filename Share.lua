@@ -5,7 +5,10 @@
 --
 -- The code is "LP1:" followed by JSON, one line:
 --   LP1:{"v":1,"q":{"<questID>":{"t":title,"o":objectives,"d":description,
---        "p":progress,"c":completion,"m":copper,"x":xp,"r":[[factionID,amount],...]}}}
+--        "p":progress,"c":completion,"m":copper,"x":xp,"r":[[factionID,amount],...],
+--        "s":{"k":"u"|"o"|"i","n":creature or object ID,"m":mapID,"x":x,"y":y,"i":instance}}}}
+-- s is where the quest was offered (issue #37), shared only for quests whose
+-- start LorePath's own data doesn't have.
 -- A big collection is split into several codes, each small enough for one
 -- GitHub issue.
 
@@ -73,6 +76,34 @@ local function SameRep(a, b)
     return true
 end
 
+-- Whether a quest's start is worth sharing: LorePath's own data has no start
+-- point or quest giver for it, or it starts from an item pfQuest doesn't know.
+local function WantStart(id)
+    local q = ns.Quests[id]
+    if q.cs then
+        return true -- only what players have shared so far
+    end
+    if not q.m and not q.di then
+        return true
+    end
+    if not q.qg and not q.si then
+        return true
+    end
+    return q.si ~= nil and not (ns.QuestStarts and ns.QuestStarts[id])
+end
+
+-- A saved start, when it's worth sharing and LorePath doesn't already have it
+-- (or a better one: a quest giver beats an item or object).
+local function ShareStart(id, start, shipped)
+    if type(start) ~= "table" or not start.k or not WantStart(id) then
+        return nil
+    end
+    if ns.BetterStart(shipped, start) ~= start then
+        return nil
+    end
+    return start
+end
+
 -- The fields of one saved quest worth sharing: anything that isn't already in
 -- LorePath's community text or bundled vanilla text, word for word.
 local function ShareEntry(id, saved, names)
@@ -101,6 +132,7 @@ local function ShareEntry(id, saved, names)
     if type(saved.rep) == "table" and #saved.rep > 0 and not SameRep(saved.rep, shipped.r) then
         out.r = saved.rep
     end
+    out.s = ShareStart(id, saved.start, shipped.s)
     local fields = 0
     for _ in pairs(out) do
         fields = fields + 1
@@ -110,6 +142,19 @@ local function ShareEntry(id, saved, names)
         return nil
     end
     return out
+end
+
+local function EncodeStart(s)
+    local parts = { '"k":' .. JsonString(s.k) }
+    for _, field in ipairs({ "n", "m", "i" }) do
+        if type(s[field]) == "number" then
+            table.insert(parts, string.format('"%s":%d', field, s[field]))
+        end
+    end
+    if type(s.m) == "number" and type(s.x) == "number" and type(s.y) == "number" then
+        table.insert(parts, string.format('"x":%.1f,"y":%.1f', s.x, s.y))
+    end
+    return "{" .. table.concat(parts, ",") .. "}"
 end
 
 local function EncodeEntry(id, e)
@@ -134,6 +179,9 @@ local function EncodeEntry(id, e)
         if #pairsOut > 0 then
             table.insert(parts, '"r":[' .. table.concat(pairsOut, ",") .. "]")
         end
+    end
+    if e.s then
+        table.insert(parts, '"s":' .. EncodeStart(e.s))
     end
     return '"' .. id .. '":{' .. table.concat(parts, ",") .. "}"
 end
@@ -274,9 +322,9 @@ function ns.ShowSharePart(part)
     f.box:SetCursorPosition(0)
     local which = #f.codes > 1 and string.format(" This is code %d of %d: send each one, in its own issue.", part, #f.codes) or ""
     f.info:SetText(string.format(
-        "Quest text you've saved that LorePath doesn't have yet: %d %s.%s\n\n"
+        "Quest text and quest starts you've saved that LorePath doesn't have yet: %d %s.%s\n\n"
         .. "Click the code, press Ctrl+C to copy it, then paste it into a new \"Share quest text\" issue at %s. "
-        .. "Your character names are replaced with $N; nothing else about you is in the code.",
+        .. "Your character names are replaced with $N. Quest starts say who offered each quest and where, nothing about you.",
         f.count, f.count == 1 and "quest" or "quests", which, ns.SHARE_URL))
     f.prev:SetShown(#f.codes > 1)
     f.next:SetShown(#f.codes > 1)
@@ -288,7 +336,7 @@ end
 function ns.OpenShare()
     local codes, count = ns.BuildShareCodes()
     if count == 0 then
-        ns.Print("Nothing new to share: LorePath already has the text of every quest you've saved. Thank you!")
+        ns.Print("Nothing new to share: LorePath already has the text and start of every quest you've saved. Thank you!")
         if shareFrame then
             shareFrame:Hide()
         end

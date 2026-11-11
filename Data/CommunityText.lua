@@ -2,7 +2,9 @@
 -- bundled vanilla text doesn't cover, such as WoW Forever's own. Updated with
 -- tools/merge_quest_text.py from players' saved files; edit with care.
 -- Fields: t title, o objectives, d description, p progress, c completion;
--- rewards m gold (copper), x XP, r reputation {{factionID, amount}}.
+-- rewards m gold (copper), x XP, r reputation {{factionID, amount}};
+-- s where it was offered (issue #37): k "u" creature, "o" object, "i" item;
+-- n creature or object ID; m/x/y map ID and position (%), or i the instance.
 -- $N/$C/$R/$G/$B are filled in game.
 local _, ns = ...
 ns.CommunityText = {

@@ -94,6 +94,47 @@ local function ApplyFactionVersions()
     end
 end
 
+-- Where players saw quests offered (Data/CommunityText.lua's s, from /lp share;
+-- issue #37), filled in where LorePath's own data has no start point or quest
+-- giver, so tooltips, details and Show on map use them like any other start.
+-- q.cs marks a start that came from players. Quests with Alliance and Horde
+-- versions are left alone: one faction's start would be wrong for the other.
+-- An item's start isn't a place the quest starts, so it's only a hint
+-- (ns.ItemStartHint).
+local function ApplyCommunityStarts()
+    for id, c in pairs(ns.CommunityText or {}) do
+        local q, s = ns.Quests[id], c.s
+        if q and not q.fv and type(s) == "table" and (s.k == "u" or s.k == "o") then
+            if not q.m and not q.di then
+                if s.i then
+                    q.di, q.cs = s.i, true
+                elseif s.m and s.x and s.y then
+                    q.m, q.x, q.y, q.cs = s.m, s.x, s.y, true
+                end
+            end
+            if s.k == "u" and s.n and not q.qg then
+                q.qg, q.cs = s.n, true
+            end
+        end
+    end
+end
+
+-- "Picked up from an item around Ashenvale (34.5, 48.2)": where a player was
+-- when an item offered them the quest, for item-started quests with no known
+-- source. nil when there's no such hint.
+function ns.ItemStartHint(id)
+    local c = ns.CommunityText and ns.CommunityText[id]
+    local s = c and c.s
+    if type(s) ~= "table" or s.k ~= "i" then
+        return nil
+    end
+    if s.i then
+        return "Picked up from an item in " .. ns.GetMapName(s.i)
+    elseif s.m and s.x and s.y then
+        return string.format("Picked up from an item around %s (%.1f, %.1f)", ns.GetMapName(s.m), s.x, s.y)
+    end
+end
+
 function ns.RefreshPlayer()
     local _, _, raceID = UnitRace("player")
     local _, _, classID = UnitClass("player")
@@ -104,6 +145,7 @@ function ns.RefreshPlayer()
     player.level = UnitLevel("player") or 1
     player.skills, player.professions = ReadProfessions()
     ApplyFactionVersions()
+    ApplyCommunityStarts()
     wipe(ns.standings)
 end
 
