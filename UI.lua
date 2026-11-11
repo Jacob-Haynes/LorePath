@@ -491,6 +491,13 @@ local function ShowQuestTooltip(owner, id, storyline)
             GameTooltip:AddLine("  " .. ItemText(itemID), 1, 1, 1)
         end
     end
+    -- AllTheThings' note (also in the details), e.g. where its item drops.
+    local note = ns.QuestNotes and ns.QuestNotes[id]
+    if note then
+        GameTooltip:AddLine(" ")
+        GameTooltip:AddLine("Good to know:", 1, 0.82, 0)
+        GameTooltip:AddLine(note, 0.65, 0.82, 1, true)
+    end
     GameTooltip:AddLine(" ")
     GameTooltip:AddLine("Click for details.", 0.5, 0.8, 1)
     if q.m then

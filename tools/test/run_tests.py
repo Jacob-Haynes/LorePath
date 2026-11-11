@@ -1529,6 +1529,16 @@ texts = detail_texts()
 check("Good to know" in texts and any(t.startswith("For this to drop") for t in texts), "the details show the note, even with spoilers hidden")
 ns.ShowDetail(783)
 check("Good to know" not in detail_texts(), "quests without a note don't get the heading")
+char["race"], char["faction"] = 2, "Horde"
+ns.RefreshPlayer()
+ns.FocusQuest(6564)
+t = [f for f in harness["all"].values() if f["questID"] == 6564 and f["sub"] is not None and f.IsShown(f)][0]
+g.GameTooltip.lines = lua.table()
+t["__scripts"]["OnEnter"](t)
+lines = [str(l) for l in g.GameTooltip.lines.values()]
+check("Good to know:" in lines and any(l.startswith("For this to drop") for l in lines), "the quest's tooltip in the graph shows the note too")
+char["race"], char["faction"] = 1, "Alliance"
+ns.RefreshPlayer()
 ns.HideDetail()
 
 unexpected = list(harness["errors"].values())
