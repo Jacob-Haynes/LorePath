@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Progress colours as a gradient:** zone list names you've started go smoothly from red through orange and yellow to green as you finish their quests, replacing beta2's white-to-green. Finished ones are fully green, with a tick.
+
 ## 1.2.0-beta2
 
 - **Attunements:** a new **Attunements** heading in the zone list has a page for each key chain: **Onyxia's Lair** (the Drakefire Amulet), **Upper Blackrock Spire** (the Seal of Ascension), **Scholomance** (the Skeleton Key) and **Shadowforge City** (the Shadowforge Key). Each page shows your faction's chain as one storyline, even where it crosses zones and dungeons, and ticks off the key once it's in your bags or bank. Its progress counts the quests and the key.
