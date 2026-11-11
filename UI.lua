@@ -73,7 +73,9 @@ local ROCK = "Interface\\FrameGeneral\\UI-Background-Rock"
 local PLUS = "Interface\\Buttons\\UI-PlusButton-Up"
 local MINUS = "Interface\\Buttons\\UI-MinusButton-Up"
 
-local FRAME_W, FRAME_H = 1120, 660
+-- 1140 wide leaves the graph room for four quests side by side before a long
+-- storyline wraps (four need 874 of its 888).
+local FRAME_W, FRAME_H = 1140, 660
 local LIST_W = 220
 local NODE_W, NODE_H = 186, 36
 local COL_GAP, ROW_GAP = 34, 10
@@ -1728,6 +1730,18 @@ function ns.ApplyListVisibility()
     end
 end
 
+-- The game's frame templates give a close button that closes through
+-- HideUIPanel, which the game blocks for addons in combat, so it did nothing
+-- then. LorePath's windows aren't UI panels: their close buttons just hide them.
+function ns.ui.CloseDirectly(frame, button)
+    button = button or frame.CloseButton
+    if type(button) == "table" and button.SetScript then
+        button:SetScript("OnClick", function()
+            frame:Hide()
+        end)
+    end
+end
+
 local function CreateMainFrame()
     local f
     for _, template in ipairs({ "PortraitFrameTemplate", "BasicFrameTemplateWithInset" }) do
@@ -1749,7 +1763,9 @@ local function CreateMainFrame()
         end
         local close = CreateFrame("Button", nil, f, "UIPanelCloseButton")
         close:SetPoint("TOPRIGHT", -4, -4)
+        f.CloseButton = close
     end
+    ns.ui.CloseDirectly(f)
     f:SetSize(FRAME_W, FRAME_H)
     f:SetPoint("CENTER")
     f:SetFrameStrata("HIGH")

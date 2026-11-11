@@ -234,7 +234,9 @@ local function CreateShareFrame()
         bg:SetColorTexture(0.05, 0.05, 0.05, 0.95)
         local close = CreateFrame("Button", nil, f, "UIPanelCloseButton")
         close:SetPoint("TOPRIGHT", 2, 2)
+        f.CloseButton = close
     end
+    ns.ui.CloseDirectly(f) -- works in combat too
     f:SetSize(540, 380)
     f:SetPoint("CENTER")
     f:SetFrameStrata("DIALOG")

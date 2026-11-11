@@ -66,7 +66,20 @@ function CreateFrame(kind, name, parent, template)
     table.insert(harness.all, f)
     f.__template = template
     if name then _G[name] = f; harness.frames[name] = f end
+    -- Like the game's window templates: a close button that closes through
+    -- HideUIPanel (which the game blocks in combat; see below).
+    if template == "PortraitFrameTemplate" or template == "BasicFrameTemplateWithInset" then
+        local close = MockObject("Button")
+        close.__parent = f
+        close:SetScript("OnClick", function() HideUIPanel(f) end)
+        table.insert(harness.all, close)
+        f.CloseButton = close
+    end
     return f
+end
+-- In combat (harness.inCombat) the game blocks addons from HideUIPanel.
+function HideUIPanel(frame)
+    if not harness.inCombat then frame:Hide() end
 end
 
 UIParent = MockObject("Frame")
@@ -86,7 +99,7 @@ IsShiftKeyDown = function() return harness.shift or false end
 IsControlKeyDown = function() return harness.ctrl or false end
 IsMouseButtonDown = function() return harness.mouseDown or false end
 GetCursorPosition = function() return harness.cx or 0, harness.cy or 0 end
-InCombatLockdown = function() return false end
+InCombatLockdown = function() return harness.inCombat or false end
 -- Errors that ns.Safely catches are recorded here; the test run fails if any are unexpected.
 harness.errors = {}
 geterrorhandler = function() return function(err) table.insert(harness.errors, tostring(err)) end end

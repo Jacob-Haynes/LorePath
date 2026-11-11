@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- **Four quests across before wrapping:** the window is a little wider (1140 instead of 1120), so a long storyline shows four quests side by side before it wraps, instead of three.
+- **Close buttons work in combat:** the close buttons on LorePath's window, the quest details and the share window did nothing during combat. They now close them, the same as Escape.
+
 ## 1.2.0-beta4
 
 - **Fixed an error at quest givers:** "Something went wrong (QUEST_DETAIL) ... a secret string value" when a quest giver offered you a quest. The game keeps some quest givers' details secret from addons; LorePath now skips those instead of failing, so it still saves the quest's text (just not where it started).

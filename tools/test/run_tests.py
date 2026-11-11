@@ -2374,6 +2374,9 @@ check(b3 == 1 and x3 == x0 and y3 > y0 + 2 * 46, "column 4 starts the second ban
 pts = list(lay.Route(lua.eval("{ col = 2, row = 1 }"), lua.eval("{ col = 3, row = 0 }")).values())
 ys = [p[2] for p in pts]
 check(len(pts) == 6 and -ys[2] > y0 + 2 * 46 - 10 and -ys[2] < y3, "the line into the next band runs along the gap between the bands")
+# The real window: its graph area is the frame less the zone list and margins.
+graph_w = frame["__w"] - (10 + 220 + 6 + 8 + 8)
+check(WL(long_line, graph_w, 40)["perBand"] == 4, f"in LorePath's window ({frame['__w']} wide, graph {graph_w}), a long storyline wraps every 4 quests")
 short_line = lua.eval("{ cols = 2, rows = 3 }")
 lay2 = WL(short_line, 800, 40)
 check(lay2["bands"] == 1 and lay2["height"] == 26 + 8 + 3 * (36 + 10), "a storyline that fits isn't changed")
@@ -2401,6 +2404,26 @@ ns.RefreshPlayer()
 check(all(ns.Quests[q]["z"] == 1448 for q in (6031, 8460, 8461, 8470, 8481)) and all(ns.Quests[q]["z"] == 1452 for q in (8464, 8469)),
       "Timbermaw Hold's quests are on Felwood's page, or Winterspring's for the Winterfall ones")
 check(not any(q["z"] == 1414 for q in ns.Quests.values()), "and no quest is left on the Kalimdor continent page")
+
+# --- Close buttons work in combat ---
+# The game's window templates close through HideUIPanel, which it blocks for addons in combat.
+harness["inCombat"] = True
+ns.Toggle(True)
+frame["CloseButton"]["__scripts"]["OnClick"](frame["CloseButton"])
+check(not frame.IsShown(frame), "in combat, the window's close button still closes it")
+ns.Toggle(True)
+ns.ShowDetail(783)
+detail = g.LorePathDetailFrame
+detail["CloseButton"]["__scripts"]["OnClick"](detail["CloseButton"])
+check(not detail.IsShown(detail), "and so does the quest details' close button")
+g.LorePathDB["questCache"][783] = lua.table_from({"text": "Something only you saw."})
+if ns.OpenShare():
+    share_f = g.LorePathShareFrame
+    share_f["CloseButton"]["__scripts"]["OnClick"](share_f["CloseButton"])
+    check(not share_f.IsShown(share_f), "and the share window's")
+g.LorePathDB["questCache"][783] = None
+harness["inCombat"] = False
+ns.Toggle(False)
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
