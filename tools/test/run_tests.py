@@ -1440,7 +1440,13 @@ ns.Toggle(True)
 g.LorePathDB["collapsedContinents"] = lua.table()
 ns.Refresh()
 row = [f for f in harness["all"].values() if f["zoneID"] == 1429 and f.IsShown(f)][0]
-check(row["text"]["__text"] == "Elwynn Forest |cff9d9d9d1-10|r", f"the zone list shows the range after the name: {row['text']['__text']!r}")
+check(row["text"]["__text"] == "Elwynn Forest" and row["range"]["__text"] == "1-10",
+      f"the zone list shows the range in its own column, so a long name can't push it off: {row['range']['__text']!r}")
+g.GameTooltip.lines = lua.table()
+row["__scripts"]["OnEnter"](row)
+lines = [str(l) for l in g.GameTooltip.lines.values()]
+check(lines[:2] == ["Elwynn Forest", "Levels 1-10"] and any("quests done" in l for l in lines),
+      "hovering a zone shows its full name, range and progress")
 check(frame["zoneSummary"]["__text"].startswith("Levels 1-10"), f"and so does the line above the graph: {frame['zoneSummary']['__text'][:30]!r}")
 g.C_LFGList = None
 

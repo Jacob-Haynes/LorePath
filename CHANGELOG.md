@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Level ranges always visible:** the range now has its own column before the progress count, so a long name (Stonetalon Mountains) is shortened instead of hiding the range. Hover a zone for its full name, range and progress.
+
 ## 1.1.0-beta3
 
 - **Level ranges:** zones, dungeons and raids in the zone list show WoW Forever's suggested level range after their name (for example *Ragefire Chasm 13-18*, *Hillsbrad Foothills 18-34*), and so does the line above the graph. LorePath reads them from the game's Looking for Group list, so they follow the game.
