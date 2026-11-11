@@ -42,6 +42,7 @@ LorePath supports English game clients only.
   - its address on WarcraftDB, to copy, at the bottom.
 
   **No spoilers by default:** a quest you haven't started shows "Find what awaits you." with a **Reveal** button, instead of its objectives and story. A quest in your log shows its objectives and description, but not how it ends. A completed quest shows everything. Reveal lasts until you look at another quest. **Show spoilers** in the settings, or `/lp spoilers`, shows everything always.
+- **Search:** type part of a quest's name, or its ID, in the box above the zone list. The list shows up to 50 matching quests you can do, with their zone, status and level; click one to jump to it. Escape clears the search. `/lp search <name>` opens LorePath with the search filled in.
 - **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
 
@@ -52,6 +53,7 @@ LorePath supports English game clients only.
 | Open or close | Left-click the minimap button, `/lp`, the addons menu by the minimap, or a key binding (*Options → Key Bindings → AddOns → LorePath*) |
 | Open on your current zone | `/lp here` |
 | Settings | Right-click the minimap button or the addons-menu entry, the **Settings** button in the window, `/lp config` (or `/lp settings`, `/lp options`), or *Options → AddOns → LorePath* |
+| Find a quest | Type in the search box above the zone list, or `/lp search <name>`; Escape clears it |
 | Quest details | Click a quest; click it again to close the panel |
 | Waypoint | Ctrl+click a quest, or **Show on map** |
 | Collapse | Click a storyline's or heading's +/−, or **Expand all** / **Collapse all** |

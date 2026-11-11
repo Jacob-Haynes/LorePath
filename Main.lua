@@ -112,6 +112,8 @@ local function SlashCommand(msg)
     elseif command == "spoilers" then
         ns.SetSetting("showSpoilers", not ns.GetSetting("showSpoilers"))
         ns.Print("Spoilers " .. (ns.GetSetting("showSpoilers") and "shown: every quest's story is visible." or "hidden: quests you haven't started show \"Find what awaits you\"."))
+    elseif command == "search" or command == "find" then
+        ns.Search(string.match(msg, "^%s*%S+%s*(.-)%s*$"))
     elseif command == "repeatable" or command == "repeatables" then
         ns.SetSetting("showRepeatable", not ns.GetSetting("showRepeatable"))
         ns.Print("Repeatable quests " .. (ns.GetSetting("showRepeatable") and "shown." or "hidden."))
@@ -119,6 +121,7 @@ local function SlashCommand(msg)
         ns.Print("v" .. ns.VERSION .. " commands:")
         ns.Print("  |cffffd100/lp|r - open or close the window")
         ns.Print("  |cffffd100/lp here|r - open on the zone you're in")
+        ns.Print("  |cffffd100/lp search <name>|r - find a quest by name or ID")
         ns.Print("  |cffffd100/lp config|r - open the settings")
         ns.Print("  |cffffd100/lp minimap|r - show or hide the minimap button")
         ns.Print("  |cffffd100/lp repeatable|r - show or hide repeatable quests")

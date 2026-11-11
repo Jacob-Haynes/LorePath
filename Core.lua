@@ -355,6 +355,81 @@ function ns.GetQuestNameOrID(id)
         or ("Quest #" .. id)
 end
 
+-- ============================================================================
+-- Search
+-- ============================================================================
+
+ns.SEARCH_LIMIT = 50
+
+-- Lower-case names from the client, kept once loaded. Bundled titles fill in
+-- (uncached, so the client's Forever wording replaces them once it arrives).
+local searchNames = {}
+local function SearchName(id)
+    local name = searchNames[id]
+    if name then
+        return name
+    end
+    local client = ns.GetQuestName(id) -- asks the client to load it, once
+    if client then
+        searchNames[id] = string.lower(client)
+        return searchNames[id]
+    end
+    local bundled = (ns.CommunityText and ns.CommunityText[id] and ns.CommunityText[id].t)
+        or (ns.QuestText and ns.QuestText[id] and ns.QuestText[id].t)
+    return bundled and string.lower(bundled)
+end
+
+-- Quests this character can see whose name contains every word of `text`
+-- (any order, ignoring case), or whose ID is `text`. Names that start with the
+-- text come first. Returns at most `limit` IDs, and how many matched in all.
+function ns.SearchQuests(text, limit)
+    text = string.lower(string.match(text or "", "^%s*(.-)%s*$"))
+    if text == "" then
+        return {}, 0
+    end
+    local words = {}
+    for word in string.gmatch(text, "%S+") do
+        table.insert(words, word)
+    end
+    local wantedID = tonumber(text)
+    local showRepeatable = ns.GetSetting("showRepeatable")
+    local found = {}
+    for id in pairs(ns.Quests) do
+        if ns.IsEligible(id) and (showRepeatable or not ns.IsRepeatable(id)) then
+            local name = SearchName(id) or ""
+            local rank
+            if id == wantedID then
+                rank = 0
+            elseif name ~= "" then
+                rank = string.find(name, text, 1, true) == 1 and 1 or 2
+                for _, word in ipairs(words) do
+                    if not string.find(name, word, 1, true) then
+                        rank = nil
+                        break
+                    end
+                end
+            end
+            if rank then
+                table.insert(found, { id = id, rank = rank, name = name })
+            end
+        end
+    end
+    table.sort(found, function(a, b)
+        if a.rank ~= b.rank then
+            return a.rank < b.rank
+        end
+        if a.name ~= b.name then
+            return a.name < b.name
+        end
+        return a.id < b.id
+    end)
+    local ids = {}
+    for i = 1, math.min(#found, limit or ns.SEARCH_LIMIT) do
+        ids[i] = found[i].id
+    end
+    return ids, #found
+end
+
 -- Name of an instance page (see ns.InstanceZones): the Encounter Journal's name,
 -- then the map's, then the area's, then the English name stored with the data.
 local function InstanceName(zoneID, info)
