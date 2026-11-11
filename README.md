@@ -36,6 +36,7 @@ LorePath supports English game clients only.
 - **Quest details:** click a quest to open a panel beside the window, and click it again to close it. The panel shows:
   - requirements;
   - where it starts and who gives it;
+  - **Good to know:** AllTheThings' note on the quest, when it has one (where an item drops, what finishing it locks you out of, and so on);
   - its objectives and description, plus progress and completion text;
   - its item rewards (Shift+click one to link it in chat, Ctrl+click to try it on);
   - the quests before and after it, as links;
