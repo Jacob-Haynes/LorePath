@@ -83,7 +83,8 @@ function ns.MapPinGroups(mapID)
     for id, q in pairs(ns.Quests) do
         if q.m == mapID and q.x and q.y then
             table.insert(candidates, id)
-            zones[q.z] = zones[q.z] or false
+            local home = ns.HomePage(id)
+            zones[home] = zones[home] or false
         end
     end
     for zone in pairs(zones) do
@@ -97,7 +98,7 @@ function ns.MapPinGroups(mapID)
     local pins = {}
     for _, id in ipairs(candidates) do
         local q = ns.Quests[id]
-        local onPage = zones[q.z]
+        local onPage = zones[ns.HomePage(id)]
         local band = onPage and onPage[id] and PinBand(id)
         if band and ns.GetSetting(BAND_SETTING[band]) then
             table.insert(pins, { id = id, band = band, l = q.l or 1, x = q.x, y = q.y })
