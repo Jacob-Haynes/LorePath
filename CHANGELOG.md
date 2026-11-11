@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **One version of each quest:** quests that come in several versions, one per starting area, now show once. The Shaman totem quests (Call of Earth, and Zephras Isle's Call of Fire) appeared once per starting area on the Class page. LorePath shows the version you've done or have, else the one that starts nearest your race's home. Breadcrumbs that only lead into a hidden version are hidden too, since you couldn't complete them; every other breadcrumb stays.
+
 ## 1.1.0-beta1
 
 - **Quest search:** a search box above the zone list finds quests by name (any words, any order) or ID. Up to 50 results replace the zone list, showing each quest's zone, status and level; click one to jump to it. Escape clears the search. `/lp search <name>` opens LorePath with the search filled in.

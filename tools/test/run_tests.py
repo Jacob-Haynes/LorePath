@@ -1273,6 +1273,46 @@ with tempfile.TemporaryDirectory() as tmp:
 check(out.returncode == 0 and "1 new quests" in report, f"a dry run reports what the code adds: {report.strip()[:120]}")
 g.LorePathDB["questCache"] = saved_cache
 
+# --- One version of each quest (Shaman Call of Earth and Call of Fire) ---
+EARTH = {"durotar": [1516, 1517, 1518], "mulgore": [1519, 1520, 1521], "zephras": [92466, 92467, 92468]}
+FIRE_CRUMBS = [1522, 1523, 2983, 2984]
+def shaman(race):
+    char["race"], char["class"], char["faction"], char["level"] = race, 7, "Horde", 30
+    char["completed"], char["log"] = lua.table(), lua.table()
+    ns.RefreshPlayer()
+    ns.RefreshCompleted()
+    return set(ns.GetZoneQuests("class").values())
+def earth_shown(page):
+    return {k for k, ids in EARTH.items() if any(i in page for i in ids)}
+page = shaman(2)
+check(earth_shown(page) == {"durotar"} and all(i in page for i in EARTH["durotar"]),
+      f"an orc Shaman's Class page has one Call of Earth chain, Durotar's: {earth_shown(page)}")
+check([i for i in FIRE_CRUMBS if i in page] == FIRE_CRUMBS and 1524 in page,
+      "every Call of Fire breadcrumb stays: each is a different place to start")
+page = shaman(6)
+check(earth_shown(page) == {"mulgore"}, "a tauren Shaman gets Mulgore's chain")
+page = shaman(96)
+check(earth_shown(page) == {"zephras"} and all(i in page for i in EARTH["zephras"]),
+      f"a Zephras Isle Shaman gets Zephras Isle's chain: {earth_shown(page)}")
+FIRE_BARRENS, FIRE_ZEPHRAS = [1524, 1525, 1526, 1527], [97243, 97244, 97245, 97257]
+check(all(i in page for i in FIRE_ZEPHRAS) and not any(i in page for i in FIRE_BARRENS + FIRE_CRUMBS),
+      "and Zephras Isle's own Call of Fire, without the Barrens chain or the breadcrumbs that only lead into it")
+page = shaman(2)
+char["completed"][1519] = True
+ns.RefreshCompleted()
+page = set(ns.GetZoneQuests("class").values())
+check(earth_shown(page) == {"mulgore"}, "the version you've actually done is the one shown")
+char["completed"] = lua.table()
+ns.RefreshCompleted()
+page = shaman(2)
+durotar, barrens = set(ns.GetZoneQuests(1411).values()), set(ns.GetZoneQuests(1413).values())
+check(all(i in durotar for i in EARTH["durotar"]), "a zone with one version keeps it")
+check([i for i in FIRE_CRUMBS if i in barrens] == FIRE_CRUMBS and 1524 in barrens,
+      "The Barrens keeps all four Call of Fire breadcrumbs")
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+ns.RefreshPlayer()
+ns.RefreshCompleted()
+
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])
