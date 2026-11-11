@@ -3,6 +3,7 @@
 ## Unreleased
 
 - **Storylines that cross zones:** a storyline that starts from a quest in another zone, or goes on into one, now shows those quests too, as faded tiles with a blue border joined to the graph: *< From Elwynn Forest* before the quest they unlock, *Continues in Westfall >* after the one that leads there. Hover one to see where it is; click it to go there. They don't count towards the storyline's progress. About a third of storylines cross a zone somewhere.
+- **Long storylines wrap:** a storyline wider than the window carries on in another band below, like text, instead of running off to the right, with its lines following it round. The longest chains (Zephras Isle's, and the Tier 0.5 chain on the Class page) now read without scrolling sideways.
 
 ## 1.2.0-beta2
 

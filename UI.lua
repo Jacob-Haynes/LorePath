@@ -871,6 +871,50 @@ local function NodeY(top, row)
     return top + row * (NODE_H + ROW_GAP)
 end
 
+-- Where a storyline's tiles go: as many columns as fit the window side by side,
+-- then the rest in bands below, BAND_GAP apart. Returns
+-- { Pos(n) -> x, y; Route(parent, child) -> line points; width; height; bands; perBand }.
+local BAND_GAP = 22
+function ns.ui.WrapLayout(storyline, viewWidth, graphTop)
+    local perBand = math.max(2, math.floor((viewWidth - PAD * 2 + COL_GAP) / (NODE_W + COL_GAP)))
+    if storyline.cols <= perBand then
+        perBand = storyline.cols
+    end
+    local bands = math.ceil(storyline.cols / perBand)
+    local bandH = storyline.rows * (NODE_H + ROW_GAP) + BAND_GAP
+    local layout = {
+        perBand = perBand,
+        bands = bands,
+        width = math.max(viewWidth - PAD * 2, perBand * (NODE_W + COL_GAP) - COL_GAP),
+        height = HEADER_H + 8 + bands * bandH - BAND_GAP,
+    }
+    local function BandTop(band)
+        return graphTop + band * bandH
+    end
+    function layout.Pos(n)
+        local band = math.floor(n.col / perBand)
+        return NodeX(n.col % perBand), NodeY(BandTop(band), n.row), band
+    end
+    function layout.Route(p, c)
+        local px, py, pBand = layout.Pos(p)
+        local cx, cy, cBand = layout.Pos(c)
+        local x1, y1 = px + NODE_W, -(py + NODE_H / 2)
+        local x2, y2 = cx, -(cy + NODE_H / 2)
+        if pBand == cBand then
+            if y1 == y2 then
+                return { { x1, y1 }, { x2, y2 } }
+            end
+            local xm = x2 - COL_GAP / 2
+            return { { x1, y1 }, { xm, y1 }, { xm, y2 }, { x2, y2 } }
+        end
+        local xr = x1 + COL_GAP / 2
+        local xl = math.max(2, x2 - COL_GAP / 2)
+        local yg = -(BandTop(cBand) - (BAND_GAP + ROW_GAP) / 2)
+        return { { x1, y1 }, { xr, y1 }, { xr, yg }, { xl, yg }, { xl, y2 }, { x2, y2 } }
+    end
+    return layout
+end
+
 -- "3 / 10", plus "+4 repeatable" in blue. Repeatables are never "done", so they
 -- sit outside the count; showing them stops a page of dailies reading as empty.
 -- `short` gives the compact form for the zone list ("3/10 +4").
@@ -988,26 +1032,38 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
         return viewWidth, HEADER_H
     end
 
+    -- A storyline longer than the window is wide wraps, like text: its columns
+    -- fill the width, then carry on in another band below (a 29-quest Tier 0.5
+    -- chain reads in a few bands instead of one long row to scroll along).
+    local layout = ns.ui.WrapLayout(storyline, viewWidth, graphTop)
+    local Pos = layout.Pos
+    width = layout.width
+
     local cells = {}
-    for _, n in ipairs(storyline.nodes) do
+    local function Place(n, link)
         local node = AcquireNode(canvas)
+        local x, y = Pos(n)
         node:ClearAllPoints()
-        node:SetPoint("TOPLEFT", canvas, "TOPLEFT", NodeX(n.col), -NodeY(graphTop, n.row))
-        node.px, node.py = NodeX(n.col), NodeY(graphTop, n.row)
-        StyleNode(node, n.id, storyline)
+        node:SetPoint("TOPLEFT", canvas, "TOPLEFT", x, -y)
+        node.px, node.py = x, y
+        if link then
+            StyleLinkNode(node, n, storyline)
+        else
+            StyleNode(node, n.id, storyline)
+        end
         cells[n.id] = n
+    end
+    for _, n in ipairs(storyline.nodes) do
+        Place(n, false)
     end
     -- Quests on other pages just before or after the storyline: linked tiles.
     for _, n in ipairs(storyline.links or {}) do
-        local node = AcquireNode(canvas)
-        node:ClearAllPoints()
-        node:SetPoint("TOPLEFT", canvas, "TOPLEFT", NodeX(n.col), -NodeY(graphTop, n.row))
-        node.px, node.py = NodeX(n.col), NodeY(graphTop, n.row)
-        StyleLinkNode(node, n, storyline)
-        cells[n.id] = n
+        Place(n, true)
     end
 
-    -- Square connectors: right out of the parent, down/up at the gap, into the child.
+    -- Square connectors: right out of the parent, down/up at the gap, into the
+    -- child. Into a later band: right out of the parent, down to the gap above
+    -- the child's band, back along it, and down into the child.
     for child, list in pairs(storyline.parents) do
         local c = cells[child]
         for _, parent in ipairs(list) do
@@ -1018,15 +1074,7 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
                 if pDone then
                     r, g, b = 0.40, 0.66, 0.28
                 end
-                local x1 = NodeX(p.col) + NODE_W
-                local y1 = -(NodeY(graphTop, p.row) + NODE_H / 2)
-                local x2 = NodeX(c.col)
-                local y2 = -(NodeY(graphTop, c.row) + NODE_H / 2)
-                local xm = x2 - COL_GAP / 2
-                local points = { { x1, y1 }, { xm, y1 }, { xm, y2 }, { x2, y2 } }
-                if y1 == y2 then
-                    points = { { x1, y1 }, { x2, y2 } }
-                end
+                local points = layout.Route(p, c)
                 for i = 1, #points - 1 do
                     local line = AcquireLine(canvas)
                     line:SetDrawLayer("ARTWORK", pDone and 2 or 1)
@@ -1038,8 +1086,7 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
         end
     end
 
-    local height = HEADER_H + 8 + storyline.rows * (NODE_H + ROW_GAP)
-    return PAD * 2 + width, height
+    return PAD * 2 + width, layout.height
 end
 
 local function RenderOthers(canvas, others, top, viewWidth)
