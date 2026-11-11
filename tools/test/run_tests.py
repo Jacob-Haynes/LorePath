@@ -1426,13 +1426,15 @@ def rgb(c):
     return tuple(round(v, 2) for v in c.values())
 check(rgb(PC(0, 10)) == (0.62, 0.62, 0.62) and rgb(PC(0, 0)) == (0.62, 0.62, 0.62), "a zone you haven't started is grey")
 check(rgb(PC(10, 10)) == (0.42, 0.83, 0.37), "a finished zone is green, as before")
-start = rgb(PC(1, 100))
-check(start[0] == start[1] and start[0] > 0.9, f"just started is near white: {start}")
+check(rgb(PC(1, 100))[:2] == (1.0, 0.26), "just started is red")
+check(rgb(PC(33, 100)) == (1.0, 0.55, 0.15), "a third done is orange")
+check(rgb(PC(67, 100)) == (1.0, 0.88, 0.2), "two thirds done is yellow")
 near = rgb(PC(99, 100))
-check(near[1] > near[0] and near[1] > near[2] and near != (0.42, 0.83, 0.37) and near[0] - 0.42 >= 0.15,
-      f"nearly done is green, but paler than a finished zone: {near}")
+check(near[1] > near[0] and abs(near[0] - 0.42) < 0.05, f"nearly done is all but green: {near}")
+greens = [rgb(PC(d, 100))[1] for d in range(1, 68)]
 reds = [rgb(PC(d, 100))[0] for d in range(1, 100)]
-check(reds == sorted(reds, reverse=True), "colours fade steadily from white towards green")
+check(greens == sorted(greens) and reds == sorted(reds, reverse=True) and reds[-1] < 0.5,
+      "the gradient runs steadily: red to yellow, then the red fades out to green")
 ns.Toggle(True)
 char["completed"] = lua.table()
 elwynn_ids = list(ns.GetZoneQuests(1429).values())
