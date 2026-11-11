@@ -758,3 +758,42 @@ function ns.ShowQuestStart(id)
     ns.Print(string.format("Waypoint set: %s (%s %.1f, %.1f).", ns.GetQuestNameOrID(id), ns.GetMapName(q.m), q.x, q.y))
     return true
 end
+
+-- Opens the game's quest log at a quest you're on. Tries the modern quest log
+-- (beside the world map) first, then the classic quest log window, then just
+-- opening the log with the quest selected. Every call is guarded, so a client
+-- missing one of these falls through to the next instead of erroring.
+local function Try(fn, ...)
+    return type(fn) == "function" and pcall(fn, ...)
+end
+
+function ns.OpenInQuestLog(id)
+    if not IsOnQuest(id) then
+        ns.Print(string.format("%s isn't in your quest log.", ns.GetQuestNameOrID(id)))
+        return false
+    end
+    if InCombatLockdown() then
+        ns.Print("Can't open the quest log in combat.")
+        return false
+    end
+    -- Modern client: the quest log lives beside the world map.
+    if Try(QuestMapFrame_OpenToQuestDetails, id) then
+        return true
+    end
+    -- Classic-style quest log window, selected by log index.
+    local index = C_QuestLog.GetLogIndexForQuestID and C_QuestLog.GetLogIndexForQuestID(id)
+    if index and QuestLogFrame and type(QuestLog_SetSelection) == "function" then
+        Try(ShowUIPanel, QuestLogFrame)
+        if Try(QuestLog_SetSelection, index) then
+            Try(QuestLog_Update)
+            return true
+        end
+    end
+    -- Last resort: select the quest, then open whichever log the client has.
+    Try(C_QuestLog.SetSelectedQuest, id)
+    if Try(ToggleQuestLog) then
+        return true
+    end
+    ns.Print("Couldn't open the quest log on this client.")
+    return false
+end

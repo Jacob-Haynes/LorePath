@@ -43,6 +43,7 @@ LorePath supports English game clients only.
   **No spoilers by default:** a quest you haven't started shows "Find what awaits you." with a **Reveal** button, instead of its objectives and story. A quest in your log shows its objectives and description, but not how it ends. A completed quest shows everything. Reveal lasts until you look at another quest. **Show spoilers** in the settings, or `/lp spoilers`, shows everything always.
 - **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
+- **Quest log:** for a quest you're on, **Open in quest log** in its details, or Shift+click it, opens the game's quest log at that quest.
 
 ### Controls
 
@@ -53,6 +54,7 @@ LorePath supports English game clients only.
 | Settings | Right-click the minimap button or the addons-menu entry, the **Settings** button in the window, `/lp config` (or `/lp settings`, `/lp options`), or *Options → AddOns → LorePath* |
 | Quest details | Click a quest; click it again to close the panel |
 | Waypoint | Ctrl+click a quest, or **Show on map** |
+| Open in your quest log | Shift+click a quest you're on, or **Open in quest log** in its details |
 | Collapse | Click a storyline's or heading's +/−, or **Expand all** / **Collapse all** |
 | Hide the zone list | The arrow button left of the zone name |
 | Show or hide repeatable quests | The **Repeatable** tick box, `/lp repeatable`, or the settings page |

@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Open in quest log:** a quest you're on has an **Open in quest log** button in its details, and Shift+clicking it in the graph does the same. It opens the game's quest log at that quest, with its live objectives. Not in combat.
+
 ## 1.0.1
 
 - **No spoilers:** quests you haven't started show "Find what awaits you." in their details, with a **Reveal** button, instead of their objectives and story. Quests in your log show their objectives and description, but not how they end. Completed quests show everything. A new **Show spoilers** setting (and `/lp spoilers`) shows everything always.

@@ -71,7 +71,7 @@ wipe = function(t) for k in pairs(t) do t[k] = nil end return t end
 C_Timer = { After = function(_, fn) table.insert(harness.timers, fn) end }
 harness.timers = {}
 function harness.RunTimers() local t = harness.timers; harness.timers = {}; for _, fn in ipairs(t) do fn() end end
-IsShiftKeyDown = function() return false end
+IsShiftKeyDown = function() return harness.shift or false end
 IsControlKeyDown = function() return harness.ctrl or false end
 IsMouseButtonDown = function() return false end
 GetCursorPosition = function() return 0, 0 end
