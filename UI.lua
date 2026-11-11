@@ -1111,6 +1111,11 @@ RenderZoneList = function()
             row.text:SetWordWrap(false)
             row.count = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
             row.count:SetPoint("RIGHT", -8, 0)
+            -- Level range, in its own column before the count, so a long name
+            -- is what gets shortened, not the range.
+            row.range = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+            row.range:SetPoint("RIGHT", row.count, "LEFT", -6, 0)
+            row.range:SetTextColor(0.62, 0.62, 0.62)
             -- Second line, used by search results only.
             row.sub = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
             row.sub:SetPoint("BOTTOMLEFT", 10, 4)
@@ -1148,6 +1153,7 @@ RenderZoneList = function()
         row.icon:Hide()
         row.check:Hide()
         row.count:SetText("")
+        row.range:SetText("")
         row:SetScript("OnEnter", nil)
         row:SetScript("OnLeave", nil)
         return row
@@ -1295,14 +1301,11 @@ RenderZoneList = function()
                 row.icon:SetPoint("LEFT", 12, 0)
                 row.text:ClearAllPoints()
                 row.text:SetPoint("LEFT", row.icon, "RIGHT", 5, 0)
-                row.text:SetPoint("RIGHT", row.count, "LEFT", -4, 0)
+                row.text:SetPoint("RIGHT", row.range, "LEFT", -4, 0)
+                row.text:SetText(z.name)
                 -- Zones, dungeons and raids show the game's suggested level range.
                 local low, high = ns.GetLevelRange(z.id)
-                if low then
-                    row.text:SetText(z.name .. " |cff9d9d9d" .. LevelRangeText(low, high) .. "|r")
-                else
-                    row.text:SetText(z.name)
-                end
+                row.range:SetText(low and LevelRangeText(low, high) or "")
                 local complete = z.total > 0 and z.done == z.total
                 row.check:SetShown(complete)
                 row.icon:SetDesaturated(z.greyed or false)
@@ -1314,8 +1317,20 @@ RenderZoneList = function()
                 row:SetScript("OnClick", function(self)
                     SelectZone(self.zoneID)
                 end)
-                row:SetScript("OnEnter", nil)
-                row:SetScript("OnLeave", nil)
+                -- The full name (it may be shortened in the row), range and progress.
+                row:SetScript("OnEnter", function(self)
+                    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+                    GameTooltip:AddLine(z.name, 1, 0.82, 0)
+                    if low then
+                        GameTooltip:AddLine("Levels " .. LevelRangeText(low, high), 1, 1, 1)
+                    end
+                    GameTooltip:AddLine(string.format("%d / %d quests done", z.done, z.total), 1, 1, 1)
+                    if z.repeatables > 0 then
+                        GameTooltip:AddLine(z.repeatables .. " repeatable quests", REPEATABLE_BLUE[1], REPEATABLE_BLUE[2], REPEATABLE_BLUE[3])
+                    end
+                    GameTooltip:Show()
+                end)
+                row:SetScript("OnLeave", GameTooltip_Hide)
             end
         end
         y = y + 4
