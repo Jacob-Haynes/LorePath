@@ -44,6 +44,10 @@ local function MockObject(kind)
         SetDesaturated = function(self, v) self.__desaturated = v end,
         SetAlpha = function(self, v) self.__alpha = v end,
         GetFrameLevel = function() return 1 end,
+        -- Anchors are recorded (not laid out), so tests can check where things go.
+        SetPoint = function(self, ...) self.__points = self.__points or {}; table.insert(self.__points, { ... }) end,
+        ClearAllPoints = function(self) self.__points = {} end,
+        SetScrollChild = function(self, child) self.__scrollChild = child end,
     }
     -- Like real frames: unknown methods (capitalised names) are no-ops, unknown fields are nil.
     return setmetatable(o, { __index = function(_, k)

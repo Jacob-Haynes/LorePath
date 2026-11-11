@@ -17,8 +17,8 @@ local DEFAULTS = {
     -- A "!" on the world map where quests start (Pins.lua), by level; also in
     -- the map's filter menu.
     mapPinsCurrent = true,      -- quests at your level, in gold
-    mapPinsLow = true,          -- low-level quests, in grey
-    mapPinsHigh = true,         -- quests you're not high enough level for yet, in red
+    mapPinsLow = false,         -- low-level quests, in grey
+    mapPinsHigh = false,        -- quests you're not high enough level for yet, in red
 }
 ns.DEFAULTS = DEFAULTS
 
@@ -115,10 +115,46 @@ RefreshPanel = function()
     end
 end
 
-local function AddCheckbox(anchor, key, label, description)
-    local cb = CreateFrame("CheckButton", nil, panel, "UICheckButtonTemplate")
+-- The page is laid out top to bottom in `body` (inside a scroll frame, so it
+-- never overflows): each element sits under the previous one, `indent` pixels
+-- in from the left. Place returns the element, which becomes the next anchor.
+local LEFT, WIDTH = 16, 560
+local body, last
+
+local function Place(element, indent, gap)
+    element:ClearAllPoints()
+    if last then
+        element:SetPoint("TOP", last, "BOTTOM", 0, -(gap or 8))
+    else
+        element:SetPoint("TOP", body, "TOP", 0, -16)
+    end
+    element:SetPoint("LEFT", body, "LEFT", LEFT + (indent or 0), 0)
+    last = element
+    return element
+end
+
+local function AddText(text, font, indent, gap, color)
+    local s = body:CreateFontString(nil, "ARTWORK", font)
+    s:SetWidth(WIDTH - (indent or 0))
+    s:SetJustifyH("LEFT")
+    if color then
+        s:SetTextColor(color[1], color[2], color[3])
+    end
+    s:SetText(text)
+    return Place(s, indent, gap)
+end
+
+-- A section heading: "Window", "Quests", "World map".
+local function AddHeading(text)
+    return AddText(text, "GameFontNormal", 0, last and 22 or 0)
+end
+
+-- A tick box with its label, and an optional grey description under it.
+local function AddCheckbox(key, label, description, indent)
+    indent = indent or 0
+    local cb = CreateFrame("CheckButton", nil, body, "UICheckButtonTemplate")
     cb:SetSize(26, 26)
-    cb:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", anchor == panel.subtitle and 0 or -30, -12)
+    Place(cb, indent, 6)
 
     local text = (type(cb.text) == "table" and cb.text) or (type(cb.Text) == "table" and cb.Text)
         or cb:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
@@ -127,18 +163,22 @@ local function AddCheckbox(anchor, key, label, description)
     text:SetPoint("LEFT", cb, "RIGHT", 4, 1)
     text:SetText(label)
 
-    local desc = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
-    desc:SetPoint("TOPLEFT", cb, "BOTTOMLEFT", 30, 2)
-    desc:SetWidth(540)
-    desc:SetJustifyH("LEFT")
-    desc:SetTextColor(0.75, 0.75, 0.75)
-    desc:SetText(description)
-
     cb:SetScript("OnClick", function(self)
         ns.SetSetting(key, self:GetChecked() and true or false)
     end)
     checkboxes[key] = cb
-    return desc
+    if description then
+        AddText(description, "GameFontHighlightSmall", indent + 30, 0, { 0.75, 0.75, 0.75 })
+    end
+    return cb
+end
+
+-- The scroll frame's content is as tall as what's in it.
+local function FitBody()
+    local top, bottom = body:GetTop(), last and last:GetBottom()
+    if top and bottom then
+        body:SetHeight(math.max(1, top - bottom + 24))
+    end
 end
 
 function ns.CreateSettingsPanel()
@@ -149,56 +189,47 @@ function ns.CreateSettingsPanel()
     panel.name = "LorePath"
     panel:Hide()
 
-    local title = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
-    title:SetPoint("TOPLEFT", 16, -16)
-    title:SetText("LorePath |cff888888v" .. (ns.VERSION or "?") .. "|r")
+    -- Scrolls with the mouse wheel; the template adds a scroll bar where the client has it.
+    local ok, scroll = pcall(CreateFrame, "ScrollFrame", "LorePathSettingsScroll", panel, "UIPanelScrollFrameTemplate")
+    if not ok then
+        scroll = CreateFrame("ScrollFrame", "LorePathSettingsScroll", panel)
+    end
+    scroll:SetPoint("TOPLEFT", panel, "TOPLEFT", 0, -4)
+    scroll:SetPoint("BOTTOMRIGHT", panel, "BOTTOMRIGHT", -28, 4)
+    scroll:EnableMouseWheel(true)
+    scroll:SetScript("OnMouseWheel", function(self, delta)
+        local y = self:GetVerticalScroll() - delta * 40
+        self:SetVerticalScroll(math.max(0, math.min(y, self:GetVerticalScrollRange())))
+    end)
+    body = CreateFrame("Frame", nil, scroll)
+    body:SetSize(WIDTH + LEFT * 2, 1)
+    scroll:SetScrollChild(body)
+    panel.scroll, panel.body = scroll, body
+    last = nil
 
-    local subtitle = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
-    subtitle:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -8)
-    subtitle:SetWidth(560)
-    subtitle:SetJustifyH("LEFT")
-    subtitle:SetText("Your questlines, zone by zone: what you've done, what you've missed, and where the next quest starts.")
-    panel.subtitle = subtitle
+    AddText("LorePath |cff888888v" .. (ns.VERSION or "?") .. "|r", "GameFontNormalLarge")
+    panel.subtitle = AddText("Your questlines, zone by zone: what you've done, what you've missed, and where the next quest starts.",
+        "GameFontHighlightSmall")
 
-    local anchor = AddCheckbox(subtitle, "showMinimapButton", "Show minimap button",
+    AddHeading("Window")
+    AddCheckbox("showMinimapButton", "Show minimap button",
         "Left-click opens LorePath, right-click opens these settings, and you can drag it around the minimap.")
-    anchor = AddCheckbox(anchor, "openOnCurrentZone", "Open on the zone you're in",
+    AddCheckbox("openOnCurrentZone", "Open on the zone you're in",
         "Each time the window opens, jump to your current zone. Off: reopen on the last zone you looked at.")
-    anchor = AddCheckbox(anchor, "hideCompleted", "Hide finished storylines",
-        "Leave out storylines where you've completed every quest, so only unfinished stories show.")
-    anchor = AddCheckbox(anchor, "showOthers", "Show standalone quests",
-        "List quests that aren't part of any chain under each zone's storylines.")
-    anchor = AddCheckbox(anchor, "showRepeatable", "Show repeatable quests",
-        "Show daily and repeatable quests, in blue. They never count towards progress. Also the \"Repeatable\" tick box at the top of the window.")
-    anchor = AddCheckbox(anchor, "showAllProfessions", "Show professions you don't have",
-        "List every profession under Professions in the zone list, with the ones you don't have greyed out, so you can see their quests.")
-    anchor = AddCheckbox(anchor, "showSpoilers", "Show spoilers",
-        "Show the full story of every quest in its details: quests you haven't started, and how quests in your log end. Off: those stay hidden until you press Reveal.")
-    anchor = AddCheckbox(anchor, "showLevels", "Show quest levels on tiles",
-        "Show each quest's minimum level at the left of its tile.")
-    anchor = AddCheckbox(anchor, "openMapOnWaypoint", "Open the map when setting a waypoint",
-        "Ctrl+clicking a quest, or Show on map, sets the game's waypoint where it starts. With this on, the world map also opens there.")
-    local MAP_HINT = " Hover a \"!\" for the quest, click it to set a waypoint, Shift+click to open it in LorePath. Also in the world map's filter menu."
-    anchor = AddCheckbox(anchor, "mapPinsCurrent", "Map: quests at your level",
-        "A gold \"!\" on the zone map where each quest at your level starts." .. MAP_HINT)
-    anchor = AddCheckbox(anchor, "mapPinsLow", "Map: low-level quests",
-        "A grey \"!\" where quests too low to give you much experience start." .. MAP_HINT)
-    anchor = AddCheckbox(anchor, "mapPinsHigh", "Map: quests above your level",
-        "A red \"!\" where quests you'll be able to pick up once you're high enough level start." .. MAP_HINT)
 
     -- Window scale: - / + buttons (works on every client, unlike slider templates)
-    local scaleLabel = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
-    scaleLabel:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", -26, -22)
+    local scaleLabel = body:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
+    Place(scaleLabel, 4, 14)
     scaleLabel:SetText("Window size:")
-    local minus = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
+    local minus = CreateFrame("Button", nil, body, "UIPanelButtonTemplate")
     minus:SetSize(24, 22)
     minus:SetPoint("LEFT", scaleLabel, "RIGHT", 10, 0)
     minus:SetText("-")
-    local scaleValue = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
+    local scaleValue = body:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
     scaleValue:SetPoint("LEFT", minus, "RIGHT", 8, 0)
     scaleValue:SetWidth(44)
     panel.scaleValue = scaleValue
-    local plus = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
+    local plus = CreateFrame("Button", nil, body, "UIPanelButtonTemplate")
     plus:SetSize(24, 22)
     plus:SetPoint("LEFT", scaleValue, "RIGHT", 8, 0)
     plus:SetText("+")
@@ -210,14 +241,38 @@ function ns.CreateSettingsPanel()
     minus:SetScript("OnClick", function() Step(-SCALE_STEP) end)
     plus:SetScript("OnClick", function() Step(SCALE_STEP) end)
 
-    local bindingText = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
-    bindingText:SetPoint("TOPLEFT", scaleLabel, "BOTTOMLEFT", 0, -20)
+    local bindingText = body:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
+    Place(bindingText, 4, 14)
     bindingText:SetJustifyH("LEFT")
     panel.bindingText = bindingText
 
-    local open = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
+    AddHeading("Quests")
+    AddCheckbox("hideCompleted", "Hide finished storylines",
+        "Leave out storylines where you've completed every quest, so only unfinished stories show.")
+    AddCheckbox("showOthers", "Show standalone quests",
+        "List quests that aren't part of any chain under each zone's storylines.")
+    AddCheckbox("showRepeatable", "Show repeatable quests",
+        "Show daily and repeatable quests, in blue. They never count towards progress. Also the \"Repeatable\" tick box at the top of the window.")
+    AddCheckbox("showAllProfessions", "Show professions you don't have",
+        "List every profession under Professions in the zone list, with the ones you don't have greyed out, so you can see their quests.")
+    AddCheckbox("showLevels", "Show quest levels on tiles",
+        "Show each quest's minimum level at the left of its tile.")
+    AddCheckbox("showSpoilers", "Show spoilers",
+        "Show the full story of every quest in its details: quests you haven't started, and how quests in your log end. Off: those stay hidden until you press Reveal.")
+
+    AddHeading("World map")
+    AddCheckbox("openMapOnWaypoint", "Open the map when setting a waypoint",
+        "Ctrl+clicking a quest, or Show on map, sets the game's waypoint where it starts. With this on, the world map also opens there.")
+    AddText("Show quests on the map", "GameFontHighlight", 4, 14)
+    AddText("A \"!\" where each quest starts: hover it for the quest, click it to set a waypoint, Shift+click to open it in LorePath. "
+        .. "Also under LorePath quests in the world map's filter menu.", "GameFontHighlightSmall", 4, 2, { 0.75, 0.75, 0.75 })
+    AddCheckbox("mapPinsCurrent", "Quests at your level (gold)", nil, 20)
+    AddCheckbox("mapPinsLow", "Low-level quests (grey)", nil, 20)
+    AddCheckbox("mapPinsHigh", "Quests above your level (red)", nil, 20)
+
+    local open = CreateFrame("Button", nil, body, "UIPanelButtonTemplate")
     open:SetSize(150, 24)
-    open:SetPoint("TOPLEFT", bindingText, "BOTTOMLEFT", 0, -16)
+    Place(open, 0, 24)
     open:SetText("Open LorePath")
     open:SetScript("OnClick", function()
         if SettingsPanel and SettingsPanel:IsShown() and HideUIPanel then
@@ -226,7 +281,7 @@ function ns.CreateSettingsPanel()
         ns.Toggle(false)
     end)
 
-    local reset = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
+    local reset = CreateFrame("Button", nil, body, "UIPanelButtonTemplate")
     reset:SetSize(150, 24)
     reset:SetPoint("LEFT", open, "RIGHT", 10, 0)
     reset:SetText("Reset to defaults")
@@ -242,7 +297,7 @@ function ns.CreateSettingsPanel()
     end)
 
     -- Sharing collected quest text (also /lp share).
-    local share = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
+    local share = CreateFrame("Button", nil, body, "UIPanelButtonTemplate")
     share:SetSize(150, 24)
     share:SetPoint("LEFT", reset, "RIGHT", 10, 0)
     share:SetText("Share quest text")
@@ -261,7 +316,14 @@ function ns.CreateSettingsPanel()
     end)
     panel.shareButton = share
 
-    panel:SetScript("OnShow", RefreshPanel)
+    panel:SetScript("OnShow", function()
+        RefreshPanel()
+        FitBody()
+        C_Timer.After(0, FitBody) -- again once wrapped text has its final height
+    end)
+    panel:SetScript("OnSizeChanged", function()
+        FitBody()
+    end)
 
     if Settings and Settings.RegisterCanvasLayoutCategory and Settings.RegisterAddOnCategory then
         category = Settings.RegisterCanvasLayoutCategory(panel, panel.name)

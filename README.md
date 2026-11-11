@@ -16,7 +16,7 @@ LorePath supports English game clients only.
 
 - **Class and Professions:** at the top of the zone list, **Class** gathers every quest for your class from all zones, so class chains that travel (say, from a capital city to another zone) show as one storyline. **Professions** has a page for each profession you have, with its quests. Their tooltips say which zone each quest is in. Quests your skill is too low for say what they need, for example *Needs Leatherworking 225*.
 - **Attunements:** under **Attunements** in the zone list, a page for each chain that unlocks a dungeon or raid (Onyxia's Lair, Upper Blackrock Spire, Scholomance, Shadowforge City), with your faction's quests as one storyline across zones, and the key it ends in, ticked once you have it. They're listed by hand in `Data/Attunements.lua`, since AllTheThings doesn't model attunements.
-- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons, raids and battlegrounds get their own pages under **Dungeons**, **Raids** and **Battlegrounds** headings (Scarlet Monastery's Graveyard and Library wings have their own too), and inside an instance the window opens on its page. Zones, dungeons, raids and battlegrounds show WoW Forever's suggested level range in a column before the count, read from the game's Looking for Group list; hover a row for its full name, range and progress. Names are coloured by progress: grey before you start, then white fading towards green as you go, turning fully green only once finished. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and a heading whose quests are all done starts collapsed (unless it holds the page you're on). The whole list can be hidden to give the graph more room.
+- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons, raids and battlegrounds get their own pages under **Dungeons**, **Raids** and **Battlegrounds** headings (Scarlet Monastery's Graveyard and Library wings have their own too), and inside an instance the window opens on its page. Zones, dungeons, raids and battlegrounds show WoW Forever's suggested level range in a column before the count, read from the game's Looking for Group list; hover a row for its full name, range and progress. Names are coloured by progress: grey before you start, then a gradient from red through orange and yellow to green as you go, fully green once finished. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and a heading whose quests are all done starts collapsed (unless it holds the page you're on). The whole list can be hidden to give the graph more room.
 - **Storylines:** each page's quest chains, drawn left to right from the first quest to the last, with lines joining each quest to the ones it unlocks. Each storyline can be collapsed, and finished ones start collapsed. **Expand all** and **Collapse all** sit at the top.
 - **Other quests:** standalone quests with no chain, under each page's storylines.
 - **Only your quests:** quests for another faction, race or class are left out. Profession quests show only if you have that profession (or, with **Show professions you don't have**, greyed out on the Professions page). Quests that come in one version per starting area, like the Shaman totem quests, show once: the version you did, else the one from your race's home. Breadcrumbs that only lead to quests you can't do are left out.
@@ -47,7 +47,7 @@ LorePath supports English game clients only.
 - **Search:** type part of a quest's name, or its ID, in the box above the zone list. The list shows up to 50 matching quests you can do, with their zone, status and level; click one to jump to it. Escape clears the search.
 - **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
-- **World map pins:** a "!" where each quest starts on the zone map you're viewing: gold for quests at your level, grey for low-level ones, red for quests you're not high enough level for yet (a blue "!" for repeatable quests). Each of the three has its own entry under **LorePath quests** in the world map's filter menu, and in the settings; all are on by default. Quests that start at the same spot share a pin, with a count. Hover a pin for the quest's tooltip, click it to set a waypoint there, or Shift+click it to open the quest in LorePath.
+- **World map pins:** a "!" where each quest starts on the zone map you're viewing: gold for quests at your level, grey for low-level ones, red for quests you're not high enough level for yet (a blue "!" for repeatable quests). Each of the three has its own entry under **LorePath quests** in the world map's filter menu, and in the settings. Only quests at your level are on by default. Quests that start at the same spot share a pin, with a count. Hover a pin for the quest's tooltip, click it to set a waypoint there, or Shift+click it to open the quest in LorePath.
 - **Quest log, both ways:** for a quest you're on, **Open in quest log** in its details, or Shift+click it, opens the game's quest log at that quest. The other way, the LorePath book button on the game's quest log opens the selected quest in LorePath with its details.
 
 ### Controls
@@ -78,21 +78,26 @@ LorePath supports English game clients only.
 
 ### Settings
 
+The settings page scrolls, and groups its options under three headings.
+
 | Option | Default | What it does |
 | :--- | :--- | :--- |
+| **Window** | | |
 | Show minimap button | On | Left-click opens LorePath, right-click opens settings. |
 | Open on the zone you're in | On | Each time the window opens, it jumps to your current zone (or instance). Off: it reopens on the last page you looked at. |
+| Window size | 100% | Scales the window from 60% to 140%. |
+| **Quests** | | |
 | Hide finished storylines | Off | Leaves out storylines where every quest is done. |
 | Show standalone quests | On | Lists quests that aren't part of a chain under each page's storylines. |
-| Show professions you don't have | Off | Lists every profession under **Professions**, with the ones you don't have greyed out and their quests locked. |
 | Show repeatable quests | On | Shows daily and repeatable quests, in blue. Same as the **Repeatable** tick box. |
-| Show spoilers | Off | Shows the full story of every quest in its details. Off: quests you haven't started, and how quests in your log end, stay hidden until you press **Reveal**. |
+| Show professions you don't have | Off | Lists every profession under **Professions**, with the ones you don't have greyed out and their quests locked. |
 | Show quest levels on tiles | On | Shows each quest's minimum level on its tile. Quests that are too high level always show it, in red. |
+| Show spoilers | Off | Shows the full story of every quest in its details. Off: quests you haven't started, and how quests in your log end, stay hidden until you press **Reveal**. |
+| **World map** | | |
 | Open the map when setting a waypoint | On | Opens the world map at the quest's start when you set a waypoint. |
-| Map: quests at your level | On | A gold "!" on the zone map where each quest at your level starts. Also in the world map's filter menu. |
-| Map: low-level quests | On | A grey "!" where quests too low to give you much experience start. |
-| Map: quests above your level | On | A red "!" where quests you're not high enough level for yet start. |
-| Window size | 100% | Scales the window from 60% to 140%. |
+| Show quests on the map: quests at your level | On | A gold "!" on the zone map where each quest at your level starts. Also in the world map's filter menu, like the next two. |
+| Show quests on the map: low-level quests | Off | A grey "!" where quests too low to give you much experience start. |
+| Show quests on the map: quests above your level | Off | A red "!" where quests you're not high enough level for yet start. |
 
 **Reset to defaults** on the settings page puts every setting back, re-opens collapsed storylines and headings, and shows the zone list again. It keeps your saved quest text.
 
@@ -151,7 +156,7 @@ python3 tools/diff_quests.py /tmp/Quests.old.lua Data/Quests.lua
 
 The [Sync quest data from AllTheThings](.github/workflows/sync-att-data.yml) workflow does this every Monday, or on demand from the Actions tab:
 - **If the quest data changed,** it opens or updates a PR from the `data/att-sync` branch with the summary.
-- **It fails instead** if the quest count drops by more than 10%, a zone disappears, the data doesn't load, or the tests fail.
+- **It fails instead** if the quest count drops by more than 10%, a zone disappears, the data doesn't load, or the tests fail. The tests include a check for quests that would show twice (see [Tests](#tests)).
 - **Merging and releasing stay manual.**
 - **Repository setting:** opening the PR needs *Settings → Actions → General → Allow GitHub Actions to create and approve pull requests* turned on.
 
@@ -202,9 +207,16 @@ This runs the addon's Lua against a fake WoW API with the real quest data, as ch
 - world map pins: which quests get one, grouping, colours, tooltips, clicks and refreshing;
 - waypoints, the minimap button, slash commands and every setting;
 - **Reset to defaults**;
-- error safety: any error the addon catches fails the run.
+- error safety: any error the addon catches fails the run;
+- quests in the data twice (below).
 
 It can't check how things look in game.
+
+**Quests in the data twice.** AllTheThings sometimes has one quest under two IDs (Amongst the Ruins was 908 and 6921), so it showed once as done or in your log and once as still available. The tests look for quests with the same name on one page that one character could have together (same faction or none, overlapping races and classes) and that aren't steps of one storyline or versions of each other. When one turns up, usually after an AllTheThings sync, the test lists the pair and someone decides once:
+- **one quest twice:** add it to `EXTRA_VERSIONS` in `Core.lua`, so only one shows;
+- **really two quests** (a quest for each faction's cloth quartermaster, say): add it to `SEPARATE` in `tools/test/run_tests.py`, with a comment saying why.
+
+The test also fails if a `SEPARATE` entry is no longer needed, so the list stays short. Quests with no name in LorePath's text (about 900, mostly WoW Forever's own) can't be checked this way.
 
 ---
 

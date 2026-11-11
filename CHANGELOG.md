@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- **Quests shown twice, fixed:** Amongst the Ruins (Blackfathom Deeps) is in the quest data twice, under two IDs, so it showed as available even while it was in your log. And Horde Shamans saw Call of Air twice, from Orgrimmar and from Thunder Bluff. Now each shows once: the one you have or have done, else the one nearest your race's home.
+- **Fewer map pins by default:** only **Quests at your level** is on; low-level quests and quests above your level are off until you tick them in the map's filter menu or the settings. If you already have beta2, your current choices are kept.
+- **Tidier settings page:** it scrolls instead of running off the bottom, and its options are grouped under **Window**, **Quests** and **World map**, with the three map filters indented under **Show quests on the map**.
+- **Progress colours as a gradient:** zone list names you've started go smoothly from red through orange and yellow to green as you finish their quests, replacing beta2's white-to-green. Finished ones are fully green, with a tick.
 - **Tier 0.5 on the Class page:** the Dungeon Set 2 upgrade chain no longer has its own "Tier 0.5 Sets" page under Dungeons. It's on your Class page instead, whole: your class's quests and the steps every class shares in between, which the Class page used to leave out.
 
 ## 1.2.0-beta2
