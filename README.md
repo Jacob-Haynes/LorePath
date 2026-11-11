@@ -31,7 +31,7 @@ LorePath supports English game clients only.
   | Dimmed box, padlock | Needs an earlier quest first |
   | Dimmest box, ✗ | Skipped: a breadcrumb you went past, or a quest your reputation is now too high for |
 
-  Class quests show your class icon, quests you pick up inside a dungeon or raid its entrance portal, and breadcrumbs a letter. The "?" button in the footer explains the level colours.
+  Quests you pick up inside a dungeon or raid show its entrance portal, class quests your class icon, profession quests the profession's icon, quests started by an item that item's icon, and breadcrumbs a letter. The "?" button in the footer explains the level colours.
 - **Tooltips:** hover a quest for its level, status, what it needs (earlier quests, reputation, skill), what comes before and after it, where it starts, its item rewards, and AllTheThings' note on it when there is one.
 - **Quest details:** click a quest to open a panel beside the window, and click it again to close it. The panel shows:
   - requirements;

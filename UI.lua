@@ -169,18 +169,41 @@ end
 local PORTAL_ATLAS = { dungeon = "Dungeon", raid = "Raid" }
 local PORTAL_ICON = "Interface\\Icons\\Spell_Arcane_PortalUnderCity"
 
--- Icon for a quest box: your class icon for class quests, a portal for quests
--- picked up inside a dungeon or raid, a letter for breadcrumbs, a scroll for
--- everything else.
+-- The icon of the item that starts a quest (a dropped note, say), or nil.
+local function StartItemIcon(q)
+    if not q.si then
+        return nil
+    end
+    local getIcon = (C_Item and C_Item.GetItemIconByID) or GetItemIcon
+    if type(getIcon) == "function" then
+        local ok, icon = pcall(getIcon, q.si)
+        if ok and icon then
+            return icon
+        end
+    end
+    return nil
+end
+
+-- Icon for a quest box, most telling first: a portal for quests picked up
+-- inside a dungeon or raid, your class icon for class quests, the profession's
+-- icon for profession quests, the icon of the item that starts it, a letter
+-- for breadcrumbs, and a scroll for everything else.
 local function QuestIcon(q)
+    if q.di then
+        return PORTAL_ICON
+    end
     if q.cl then
         local _, token = UnitClass("player")
         if token then
             return "Interface\\Icons\\ClassIcon_" .. token:sub(1, 1) .. token:sub(2):lower()
         end
     end
-    if q.di then
-        return PORTAL_ICON
+    if q.sk then
+        return ns.ProfessionIcon(ns.ProfessionOf(q))
+    end
+    local itemIcon = StartItemIcon(q)
+    if itemIcon then
+        return itemIcon
     end
     if q.bc then
         return BREADCRUMB_ICON
@@ -188,9 +211,10 @@ local function QuestIcon(q)
     return QUEST_ICON
 end
 
--- Puts a quest's icon on a texture, using the portal atlas when the client has it.
+-- Puts a quest's icon on a texture, using the map's portal art for quests
+-- picked up inside an instance when the client has it.
 local function SetQuestIcon(tex, q)
-    local atlas = q.di and not q.cl and PORTAL_ATLAS[ns.GetInstanceKind(q.di) or ""]
+    local atlas = q.di and PORTAL_ATLAS[ns.GetInstanceKind(q.di) or ""]
     if atlas and C_Texture and C_Texture.GetAtlasInfo and C_Texture.GetAtlasInfo(atlas) then
         tex:SetAtlas(atlas)
         return
