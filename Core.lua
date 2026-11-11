@@ -1258,31 +1258,51 @@ end
 -- ============================================================================
 
 -- Sets the game's own waypoint on where a quest starts and opens the map there.
-function ns.ShowQuestStart(id)
-    local q = ns.Quests[id]
-    if not q or not q.m then
-        ns.Print(string.format("No start location known for %s.", ns.GetQuestNameOrID(id)))
+-- Sets the game's waypoint at a map position (x, y in %), opening the map
+-- there if that setting is on. `label` names it in the chat message.
+function ns.SetWaypoint(m, x, y, label)
+    if C_Map.CanSetUserWaypointOnMap and not C_Map.CanSetUserWaypointOnMap(m) then
+        ns.Print(string.format("Can't place a waypoint on %s.", ns.GetMapName(m)))
         return false
     end
-    if C_Map.CanSetUserWaypointOnMap and not C_Map.CanSetUserWaypointOnMap(q.m) then
-        ns.Print(string.format("Can't place a waypoint on %s.", ns.GetMapName(q.m)))
-        return false
-    end
-    local point = UiMapPoint.CreateFromCoordinates(q.m, q.x / 100, q.y / 100)
+    local point = UiMapPoint.CreateFromCoordinates(m, x / 100, y / 100)
     C_Map.SetUserWaypoint(point)
     if C_SuperTrack and C_SuperTrack.SetSuperTrackedUserWaypoint then
         C_SuperTrack.SetSuperTrackedUserWaypoint(true)
     end
     if ns.GetSetting("openMapOnWaypoint") and not InCombatLockdown() then
         if type(OpenWorldMap) == "function" then
-            pcall(OpenWorldMap, q.m)
+            pcall(OpenWorldMap, m)
         elseif WorldMapFrame then
             pcall(ShowUIPanel, WorldMapFrame)
-            pcall(WorldMapFrame.SetMapID, WorldMapFrame, q.m)
+            pcall(WorldMapFrame.SetMapID, WorldMapFrame, m)
         end
     end
-    ns.Print(string.format("Waypoint set: %s (%s %.1f, %.1f).", ns.GetQuestNameOrID(id), ns.GetMapName(q.m), q.x, q.y))
+    ns.Print(string.format("Waypoint set: %s (%s %.1f, %.1f).", label, ns.GetMapName(m), x, y))
     return true
+end
+
+function ns.ShowQuestStart(id)
+    local q = ns.Quests[id]
+    if not q or not q.m then
+        ns.Print(string.format("No start location known for %s.", ns.GetQuestNameOrID(id)))
+        return false
+    end
+    return ns.SetWaypoint(q.m, q.x, q.y, ns.GetQuestNameOrID(id))
+end
+
+-- Where a quest's starting item comes from (Data/QuestStarts.lua, from pfQuest):
+-- "Dropped by Blackfathom Tide Priestess (33%)" and where: " in Blackfathom
+-- Deeps", or " in Darkshore (31.3, 93.6)". Returns the two parts.
+function ns.StartSourceText(source)
+    local verb = source.k == "o" and "Found in " or "Dropped by "
+    local what = verb .. source.n .. " (" .. tostring(source.c) .. "%)"
+    if source.i then
+        return what, "in " .. ns.GetMapName(source.i)
+    elseif source.m then
+        return what, string.format("in %s (%.1f, %.1f)", ns.GetMapName(source.m), source.x, source.y)
+    end
+    return what, nil
 end
 
 -- Opens the game's quest log at a quest you're on. Tries the modern quest log
