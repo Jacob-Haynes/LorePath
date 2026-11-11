@@ -123,6 +123,8 @@ local function SlashCommand(msg)
         ns.ShowInLorePath(id or ns.SelectedLogQuest())
     elseif command == "share" then
         ns.OpenShare()
+    elseif command == "levels" then
+        ns.PrintLevelRanges()
     elseif command == "repeatable" or command == "repeatables" then
         ns.SetSetting("showRepeatable", not ns.GetSetting("showRepeatable"))
         ns.Print("Repeatable quests " .. (ns.GetSetting("showRepeatable") and "shown." or "hidden."))
@@ -130,6 +132,7 @@ local function SlashCommand(msg)
         ns.Print("v" .. ns.VERSION .. " commands:")
         ns.Print("  |cffffd100/lp|r - open or close the window")
         ns.Print("  |cffffd100/lp here|r - open on the zone you're in")
+        ns.Print("  |cffffd100/lp levels|r - list every zone, dungeon, raid and battleground with its level range")
         ns.Print("  |cffffd100/lp search <name>|r - find a quest by name or ID")
         ns.Print("  |cffffd100/lp quest|r - show the quest selected in your quest log")
         ns.Print("  |cffffd100/lp config|r - open the settings")

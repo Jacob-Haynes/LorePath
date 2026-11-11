@@ -983,7 +983,8 @@ check("Dungeons" in headings and "Raids" in headings, "the zone list has Dungeon
 check(headings["Dungeons"]["toggle"].IsShown(headings["Dungeons"]["toggle"])
       and headings["Dungeons"]["text"]["__text"] == "DUNGEONS", "the Dungeons heading is styled like a continent heading")
 check(all(headings[c]["top"] < headings["Dungeons"]["top"] < headings["Raids"]["top"]
-          for c in headings if c not in ("Dungeons", "Raids")), "Dungeons and Raids come after the continents")
+          for c in headings if c not in ("Dungeons", "Raids", "Battlegrounds")), "Dungeons and Raids come after the continents")
+check("Battlegrounds" in headings and headings["Battlegrounds"]["top"] > headings["Raids"]["top"], "Battlegrounds come after Raids")
 def row_for(zone_id):
     rows = [f for f in harness["all"].values() if f["zoneID"] == zone_id and f.IsShown(f)]
     return rows[0] if rows else None
@@ -1492,6 +1493,32 @@ check(len(list(linked.values())) == 1 and any("still loading" in str(m) for m in
 harness["shift"] = False
 g.HandleModifiedItemClick, g.C_Item.GetItemInfo = None, None
 ns.HideDetail()
+
+# --- Battlegrounds ---
+BG = ns.InstanceZones
+check(all(BG[m] == "battleground" for m in (1459, 1460, 1461, 2524)), "Alterac Valley, Warsong Gulch, Arathi Basin and Forever's battleground have pages")
+wsg = list(ns.GetZoneQuests(1460).values())
+check(len(wsg) > 0 and all(ns.Quests[i]["z"] == 1460 for i in wsg), f"Warsong Gulch's page has its quests ({len(wsg)} for this character)")
+check(ns.ui.ZoneIcon(1460) == ns.ZoneIcons[1460], "battlegrounds use their own icons")
+real_map_info = g.C_Map.GetMapInfo
+g.C_Map.GetMapInfo = lua.eval("""function(real) return function(id)
+    if id == 1460 then return { name = "Warsong Gulch", parentMapID = 0 } end
+    return real(id) end end""")(real_map_info)
+g.C_LFGList = lua.eval("""{ GetAvailableActivities = function() return { 1, 2 } end,
+  GetActivityInfoTable = function(id) return ({
+    { fullName = "Warsong Gulch", minLevelSuggestion = 20, maxLevelSuggestion = 29 },
+    { fullName = "Elwynn Forest", minLevelSuggestion = 1, maxLevelSuggestion = 10 } })[id] end }""")
+ns.ResetLevelRanges()
+check(ns.GetLevelRange(1460) == (20, 29), "Warsong Gulch gets its range from the game")
+before_chat = len(list(harness["chat"].values()))
+g.SlashCmdList["LOREPATH"]("levels")
+out = [str(m) for m in list(harness["chat"].values())[before_chat:]]
+check(any("Battlegrounds" in m for m in out) and "  Warsong Gulch: 20-29" in out and "  Elwynn Forest: 1-10" in out,
+      "/lp levels lists each page with its range, grouped like the zone list")
+check(any(m.endswith("no range|r") for m in out), "and says which have no range")
+g.C_LFGList = None
+g.C_Map.GetMapInfo = real_map_info
+ns.ResetLevelRanges()
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])

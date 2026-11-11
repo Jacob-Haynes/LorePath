@@ -259,6 +259,11 @@ def main():
 
     # Dungeons and raids (issue #2): see extract_instances below.
     instance_zones, instance_info = extract_instances(att_root, lua, lua_type, add_quest, quests)
+    # Battlegrounds: one page each, beside the dungeons and raids.
+    for page, icon in extract_battlegrounds(att_root, lua, lua_type, add_quest, quests).items():
+        instance_zones[page] = "battleground"
+        if icon:
+            map_icons.setdefault(page, icon)
 
     try:
         # "<short hash> (<commit date>)", so a release can be traced to its data.
@@ -283,6 +288,8 @@ def main():
           f"({profession_added} from Professions.lua)")
     print(f"Repeatable: {sum(1 for q in quests.values() if q.get('rp'))}")
     print(f"Skipped: {skipped}")
+    print(f"Battlegrounds: {sum(1 for k in instance_zones.values() if k == 'battleground')} pages, "
+          f"{sum(1 for q in quests.values() if instance_zones.get(q['z']) == 'battleground')} quests")
     print(f"Instances: {len(instance_zones)} pages "
           f"({sum(1 for k in instance_zones.values() if k == 'raid')} raids), "
           f"{sum(1 for q in quests.values() if q['z'] in instance_zones)} quests")
@@ -332,6 +339,60 @@ def extract_professions(att_root, lua, lua_type, add_quest, quests, zones):
 
     visit(root, None)
     return added
+
+
+# ============================================================================
+# Battlegrounds (db/Camelot/Categories/PVP.lua)
+# ============================================================================
+#
+# PVP.lua lists each battleground as a map (Alterac Valley, Arathi Basin,
+# Warsong Gulch, and WoW Forever's own) with its quests. Each gets a page keyed
+# by its map ID. A few general PvP quests outside any battleground are left out.
+
+def extract_battlegrounds(att_root, lua, lua_type, add_quest, quests):
+    """Adds battleground quests; returns {mapID: icon or None} for pages with any."""
+    path = os.path.join(att_root, "db", "Camelot", "Categories", "PVP.lua")
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8-sig") as f:
+        root = lua.execute(LOADER, f.read())["PVP"]
+    found = {}
+
+    def maps(node):
+        if lua_type(node) != "table" or node["__kind"] == "Quest":
+            return
+        if node["__kind"] == "Map":
+            yield node
+            return
+        kids = node["g"]
+        if kids is not None and lua_type(kids) == "table":
+            for _, child in kids.items():
+                yield from maps(child)
+
+    def collect(node, page):
+        if lua_type(node) != "table":
+            return 0
+        if node["__kind"] == "Quest":
+            qid = int(node["__id"])
+            if qid in quests:
+                return 0
+            add_quest(node, None, page)
+            return 1 if qid in quests else 0
+        added = 0
+        kids = node["g"]
+        if kids is not None and lua_type(kids) == "table":
+            for _, child in kids.items():
+                added += collect(child, page)
+        return added
+
+    for node in maps(root):
+        awp = number(node["awp"])
+        if node["u"] is not None or (awp and awp > FOREVER_BUILD):
+            continue
+        page = int(node["__id"])
+        if collect(node, page) > 0:
+            found[page] = number(node["icon"])
+    return found
 
 
 # ============================================================================

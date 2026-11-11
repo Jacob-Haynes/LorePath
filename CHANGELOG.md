@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- **Battlegrounds:** Alterac Valley, Arathi Basin, Warsong Gulch and WoW Forever's own battleground have pages under a new **Battlegrounds** heading, with their 140 quests and level ranges.
+- **`/lp levels`:** lists every zone, dungeon, raid and battleground with the level range LorePath found for it.
 - **Scarlet Monastery wings:** the Graveyard and Library have their own pages, each with its level range; quests that span the monastery stay on its page.
 - **Link rewards in chat:** Shift+click an item reward in a quest's details to link it in chat, or Ctrl+click to try it on.
 - **Breadcrumbs you can't follow are hidden:** a breadcrumb that only leads to quests your character can't do no longer shows (In Search of Thaelrid for the Horde).

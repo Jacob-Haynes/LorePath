@@ -206,6 +206,7 @@ local GENERIC_ICON = {
     map = "Interface\\Icons\\INV_Misc_Map_01",
     dungeon = "Interface\\Icons\\INV_Misc_Key_03",
     raid = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+    battleground = "Interface\\Icons\\INV_BannerPVP_02",
 }
 -- Zones whose ATT icon is ATT's own texture, which LorePath doesn't ship.
 local ZONE_ICON_OVERRIDES = {
@@ -1027,7 +1028,11 @@ end
 -- ============================================================================
 
 -- Instance pages get their own headings, after the continents.
-local INSTANCE_GROUPS = { dungeon = { name = "Dungeons", rank = 1 }, raid = { name = "Raids", rank = 2 } }
+local INSTANCE_GROUPS = {
+    dungeon = { name = "Dungeons", rank = 1 },
+    raid = { name = "Raids", rank = 2 },
+    battleground = { name = "Battlegrounds", rank = 3 },
+}
 
 local function SortedZones()
     local zones = ns.GetZones()
