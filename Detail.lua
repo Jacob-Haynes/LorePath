@@ -577,7 +577,9 @@ local function CreatePanel()
         p:SetBorderColor(0.4, 0.4, 0.4, 1)
         local close = CreateFrame("Button", nil, p, "UIPanelCloseButton")
         close:SetPoint("TOPRIGHT", 2, 2)
+        p.CloseButton = close
     end
+    ns.ui.CloseDirectly(p) -- works in combat too
     -- Docked to the main window's right edge, a little shorter, like a drawer.
     p:SetWidth(PANEL_W)
     p:SetPoint("TOPLEFT", main, "TOPRIGHT", -2, -24)
