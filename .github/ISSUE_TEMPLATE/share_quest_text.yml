@@ -1,0 +1,21 @@
+name: Share quest text
+description: Send the quest text LorePath collected while you played, so everyone gets it in the next release.
+title: "Quest text from a player"
+labels: [quest-text]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! In game, type `/lp share`, click the code, press Ctrl+C, and paste it below.
+        If LorePath gave you more than one code, send each in its own issue.
+
+        The code holds only quest text and rewards. Your character names are replaced with `$N`.
+        A check runs on it straight away and replies here; a maintainer reviews the text before it goes into a release.
+  - type: textarea
+    id: code
+    attributes:
+      label: Share code
+      description: Starts with `LP1:`. Paste the whole thing.
+      placeholder: LP1:{"v":1,"q":{...}}
+    validations:
+      required: true

@@ -112,6 +112,8 @@ local function SlashCommand(msg)
     elseif command == "spoilers" then
         ns.SetSetting("showSpoilers", not ns.GetSetting("showSpoilers"))
         ns.Print("Spoilers " .. (ns.GetSetting("showSpoilers") and "shown: every quest's story is visible." or "hidden: quests you haven't started show \"Find what awaits you\"."))
+    elseif command == "share" then
+        ns.OpenShare()
     elseif command == "repeatable" or command == "repeatables" then
         ns.SetSetting("showRepeatable", not ns.GetSetting("showRepeatable"))
         ns.Print("Repeatable quests " .. (ns.GetSetting("showRepeatable") and "shown." or "hidden."))
@@ -123,6 +125,7 @@ local function SlashCommand(msg)
         ns.Print("  |cffffd100/lp minimap|r - show or hide the minimap button")
         ns.Print("  |cffffd100/lp repeatable|r - show or hide repeatable quests")
         ns.Print("  |cffffd100/lp spoilers|r - show or hide the story of quests you haven't started")
+        ns.Print("  |cffffd100/lp share|r - share the quest text you've collected, for everyone's LorePath")
     end
 end
 
