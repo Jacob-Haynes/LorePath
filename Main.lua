@@ -58,9 +58,11 @@ local function OnEvent(event, arg1, arg2)
         end
         -- The quest log may load on demand (Blizzard_WorldMap and friends).
         ns.AttachQuestLogButton()
+        ns.AttachMapPins()
     elseif event == "PLAYER_LOGIN" then
         ns.CreateMinimapButton()
         ns.AttachQuestLogButton()
+        ns.AttachMapPins()
         -- Remember this account's character names, so tools/merge_quest_text.py can
         -- strip any that slipped into saved quest text before it's shared.
         local name = UnitName and UnitName("player")
@@ -73,11 +75,13 @@ local function OnEvent(event, arg1, arg2)
     elseif event == "QUEST_TURNED_IN" then
         -- The completed-quest list updates a moment after the turn-in.
         ns.QueueRefresh(0.6)
+        ns.QueueMapPinsRefresh(0.6)
     elseif event == "QUEST_ACCEPTED" then
         -- Newer clients pass (questID), older ones (logIndex, questID).
         local questID = arg2 or arg1
         Later(0.5, "saving a quest", ns.CaptureLogQuest, questID)
         ns.QueueRefresh(0.3)
+        ns.QueueMapPinsRefresh(0.3)
     elseif event == "QUEST_PROGRESS" then
         -- Handing in mid-quest: keep what the quest giver says.
         ns.CaptureQuestProgress()
@@ -92,6 +96,7 @@ local function OnEvent(event, arg1, arg2)
         ns.QueueRefresh(0.5)
     else
         ns.QueueRefresh(0.3)
+        ns.QueueMapPinsRefresh(0.3)
     end
 end
 

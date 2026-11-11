@@ -1,0 +1,7 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <!-- LorePath's world map pin (Pins.lua). The map canvas sets its mouse
+         scripts, so none are set here. -->
+    <Frame name="LorePathQuestPinTemplate" mixin="LorePathQuestPinMixin" enableMouse="true" virtual="true">
+        <Size x="20" y="20"/>
+    </Frame>
+</Ui>

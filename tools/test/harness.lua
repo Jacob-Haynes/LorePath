@@ -40,6 +40,10 @@ local function MockObject(kind)
         GetChecked = function(self) return self.__checked end,
         SetChecked = function(self, v) self.__checked = v end,
         Disable = function(self) self.__enabled = false end,
+        SetVertexColor = function(self, r, g, b) self.__vertex = { r, g, b } end,
+        SetDesaturated = function(self, v) self.__desaturated = v end,
+        SetAlpha = function(self, v) self.__alpha = v end,
+        GetFrameLevel = function() return 1 end,
     }
     -- Like real frames: unknown methods (capitalised names) are no-ops, unknown fields are nil.
     return setmetatable(o, { __index = function(_, k)
@@ -147,6 +151,59 @@ Settings = {
     RegisterAddOnCategory = function(cat) harness.registeredCategory = cat end,
     OpenToCategory = function(id) harness.openedSettings = id end,
 }
+-- The world map's canvas (MapCanvasMixin), enough for a data provider and its
+-- pins. Templates map a pin template name to its mixin's global name; the test
+-- reads them from the addon's XML. Like the real canvas, a pin's OnEnter/OnLeave
+-- become its OnMouseEnter/OnMouseLeave, and a click calls OnMouseClickAction.
+MapCanvasPinMixin = {
+    SetPosition = function(self, x, y) self.__pos = { x, y } end,
+    UseFrameLevelType = function(self, kind) self.__levelType = kind end,
+    SetScalingLimits = function() end,
+    OnAcquired = function() end,
+    OnReleased = function() end,
+}
+MapCanvasDataProviderMixin = {
+    OnAdded = function(self, map) self.owningMap = map end,
+    GetMap = function(self) return self.owningMap end,
+    RemoveAllData = function() end,
+    RefreshAllData = function() end,
+    OnMapChanged = function(self) self:RefreshAllData() end,
+}
+harness.templates = {}
+WorldMapFrame = MockObject("Frame")
+WorldMapFrame.ScrollContainer = MockObject("Frame")
+WorldMapFrame.__providers = {}
+WorldMapFrame.__pins = {}
+WorldMapFrame.__mapID = 1429
+WorldMapFrame.AddDataProvider = function(self, p) table.insert(self.__providers, p); p:OnAdded(self) end
+WorldMapFrame.GetMapID = function(self) return self.__mapID end
+WorldMapFrame.SetMapID = function(self, m)
+    self.__mapID = m
+    for _, p in ipairs(self.__providers) do p:OnMapChanged() end
+end
+WorldMapFrame.Show = function(self)
+    self.__shown = true
+    for _, p in ipairs(self.__providers) do p:RefreshAllData(true) end
+end
+WorldMapFrame.AcquirePin = function(self, template, ...)
+    local mixin = assert(_G[assert(harness.templates[template], "unknown pin template " .. tostring(template))])
+    local pin = MockObject("Frame")
+    for k, v in pairs(mixin) do pin[k] = v end
+    pin.__shown = true
+    pin:SetScript("OnEnter", pin.OnMouseEnter)
+    pin:SetScript("OnLeave", pin.OnMouseLeave)
+    pin:SetScript("OnMouseUp", function(p, button) p:OnMouseClickAction(button) end)
+    self.__pins[template] = self.__pins[template] or {}
+    table.insert(self.__pins[template], pin)
+    pin:OnAcquired(...)
+    return pin
+end
+WorldMapFrame.RemoveAllPinsByTemplate = function(self, template)
+    for _, pin in ipairs(self.__pins[template] or {}) do pin:OnReleased(); pin.__shown = false end
+    self.__pins[template] = {}
+end
+function harness.Pins(template) return WorldMapFrame.__pins[template] or {} end
+
 -- Fires an event at every frame that has an OnEvent script.
 function harness.Fire(event, ...)
     for _, f in ipairs(harness.all) do

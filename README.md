@@ -46,6 +46,7 @@ LorePath supports English game clients only.
 - **Search:** type part of a quest's name, or its ID, in the box above the zone list. The list shows up to 50 matching quests you can do, with their zone, status and level; click one to jump to it. Escape clears the search.
 - **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
+- **World map pins (optional, off by default):** tick **LorePath quests** at the bottom left of the world map, or **Show quests on the world map** in the settings, for a "!" where each quest you can pick up starts on the zone map you're viewing, coloured by difficulty like the quest tiles (blue for repeatable quests). Quests that start at the same spot share a pin, with a count. Hover a pin for the quest's tooltip; click it to set a waypoint there. Two more settings add quests above your level (a grey "!") and quests in your log (a "?" where they started).
 - **Quest log, both ways:** for a quest you're on, **Open in quest log** in its details, or Shift+click it, opens the game's quest log at that quest. The other way, the LorePath book button on the game's quest log opens the selected quest in LorePath with its details.
 
 ### Controls
@@ -58,6 +59,7 @@ LorePath supports English game clients only.
 | Quest details | Click a quest; click it again to close the panel |
 | Waypoint | Ctrl+click a quest, or **Show on map** |
 | Open in your quest log | Shift+click a quest you're on, or **Open in quest log** in its details |
+| Quests on the world map | The **LorePath quests** tick box on the world map, or the settings page; click a pin for a waypoint |
 | Open a quest log quest in LorePath | The LorePath book button on the game's quest log |
 | Collapse | Click a storyline's or heading's +/−, or **Expand all** / **Collapse all** |
 | Hide the zone list | The arrow button left of the zone name |
@@ -86,6 +88,9 @@ LorePath supports English game clients only.
 | Show spoilers | Off | Shows the full story of every quest in its details. Off: quests you haven't started, and how quests in your log end, stay hidden until you press **Reveal**. |
 | Show quest levels on tiles | On | Shows each quest's minimum level on its tile. Quests that are too high level always show it, in red. |
 | Open the map when setting a waypoint | On | Opens the world map at the quest's start when you set a waypoint. |
+| Show quests on the world map | Off | A "!" on the zone map where each quest you can pick up starts. Same as the **LorePath quests** tick box on the map. |
+| Map: also quests above your level | Off | Also pins quests you're not high enough level for yet, as a grey "!". |
+| Map: also quests in your log | Off | Also pins quests you're on, as a "?" where they started. |
 | Window size | 100% | Scales the window from 60% to 140%. |
 
 **Reset to defaults** on the settings page puts every setting back, re-opens collapsed storylines and headings, and shows the zone list again. It keeps your saved quest text.
@@ -193,6 +198,7 @@ This runs the addon's Lua against a fake WoW API with the real quest data, as ch
 - the detail panel, its text sources, notes and spoiler hiding;
 - quest icons, the quest log both ways and linking rewards;
 - saving and sharing quest text, including the merge tool;
+- world map pins: which quests get one, grouping, colours, tooltips, clicks and refreshing;
 - waypoints, the minimap button, slash commands and every setting;
 - **Reset to defaults**;
 - error safety: any error the addon catches fails the run.

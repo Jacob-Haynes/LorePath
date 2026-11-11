@@ -20,4 +20,6 @@ Detail.lua
 QuestLog.lua
 Share.lua
 Settings.lua
+Pins.lua
+Pins.xml
 Main.lua
