@@ -434,8 +434,9 @@ local function ResetPools()
     end
 end
 
--- A quest's tooltip, shown by its box in the graph or its row in search results.
-local function ShowQuestTooltip(owner, id, storyline)
+-- A quest's tooltip, shown by its box in the graph or its row in search results
+-- (and by its world map pin, Pins.lua, which passes its own click hints).
+local function ShowQuestTooltip(owner, id, storyline, hints)
     local q = ns.Quests[id]
     local status = ns.GetStatus(id)
     GameTooltip:SetOwner(owner, "ANCHOR_RIGHT")
@@ -540,6 +541,13 @@ local function ShowQuestTooltip(owner, id, storyline)
         GameTooltip:AddLine(note, 0.65, 0.82, 1, true)
     end
     GameTooltip:AddLine(" ")
+    if hints then
+        for _, hint in ipairs(hints) do
+            GameTooltip:AddLine(hint, 0.5, 0.8, 1)
+        end
+        GameTooltip:Show()
+        return
+    end
     GameTooltip:AddLine("Click for details.", 0.5, 0.8, 1)
     if q.m then
         GameTooltip:AddLine("Ctrl+click to set a waypoint where it starts.", 0.5, 0.8, 1)
@@ -549,6 +557,7 @@ local function ShowQuestTooltip(owner, id, storyline)
     end
     GameTooltip:Show()
 end
+ns.ui.ShowQuestTooltip = ShowQuestTooltip
 
 local function ShowNodeTooltip(node)
     if IsPanning() then

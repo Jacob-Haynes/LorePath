@@ -14,6 +14,9 @@ local DEFAULTS = {
     showLevels = true,          -- show quest levels on the quest tiles
     openMapOnWaypoint = true,   -- open the world map when a waypoint is set
     scale = 1.0,                -- window scale
+    showMapPins = false,        -- "!" on the world map where quests you can pick up start
+    mapPinsHigherLevel = false, -- ...and quests you're not high enough level for yet
+    mapPinsActive = false,      -- ...and a "?" where quests in your log started
 }
 ns.DEFAULTS = DEFAULTS
 
@@ -73,6 +76,9 @@ function ns.ApplySettings()
     end
     if ns.Refresh then
         ns.Refresh()
+    end
+    if ns.RefreshMapPins then
+        ns.RefreshMapPins()
     end
 end
 
@@ -163,6 +169,12 @@ function ns.CreateSettingsPanel()
         "Show each quest's minimum level at the left of its tile.")
     anchor = AddCheckbox(anchor, "openMapOnWaypoint", "Open the map when setting a waypoint",
         "Ctrl+clicking a quest, or Show on map, sets the game's waypoint where it starts. With this on, the world map also opens there.")
+    anchor = AddCheckbox(anchor, "showMapPins", "Show quests on the world map",
+        "A \"!\" on the zone map where each quest you can pick up starts, coloured by difficulty. Hover one for the quest, click it to set a waypoint. Also the \"LorePath quests\" tick box on the map.")
+    anchor = AddCheckbox(anchor, "mapPinsHigherLevel", "Map: also quests above your level",
+        "Also pin quests you'll be able to pick up once you're high enough level, as a grey \"!\".")
+    anchor = AddCheckbox(anchor, "mapPinsActive", "Map: also quests in your log",
+        "Also pin quests you're on, as a \"?\" where they started (LorePath doesn't know where they're handed in).")
 
     -- Window scale: - / + buttons (works on every client, unlike slider templates)
     local scaleLabel = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")

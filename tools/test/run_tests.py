@@ -9,11 +9,16 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestStarts.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestStarts.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Pins.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
 harness = lua.execute(open(os.path.join(ROOT, "tools/test/harness.lua")).read())
+# Pin templates from the addon's XML, so the fake map canvas builds pins with the mixin the XML names.
+import re
+for xml in ("Pins.xml",):
+    for tname, mixin in re.findall(r'name="(\w+)"\s+mixin="(\w+)"', open(os.path.join(ROOT, xml)).read()):
+        harness["templates"][tname] = mixin
 ns = lua.table()
 load_file = lua.eval("function(src, name, ns) return assert(load(src, '@' .. name))('LorePath', ns) end")
 for path in FILES:
@@ -1755,6 +1760,167 @@ t["__scripts"]["OnEnter"](t)
 lines = [str(l) for l in g.GameTooltip.lines.values()]
 check(any(l.startswith("Starts from ") for l in lines) and any("Dropped by Gruff Swiftbite" in l for l in lines),
       "the quest's tooltip says what item starts it and what drops it")
+
+# --- World map pins (issue #11) ---
+toc = open(os.path.join(ROOT, "LorePath.toc")).read().split()
+check("Pins.lua" in toc and "Pins.xml" in toc and toc.index("Pins.lua") < toc.index("Pins.xml"),
+      "the TOC loads Pins.lua, then Pins.xml (whose template names Pins.lua's mixin)")
+check(harness["templates"]["LorePathQuestPinTemplate"] == "LorePathQuestPinMixin" and g.LorePathQuestPinMixin is not None,
+      "Pins.xml's pin template uses the mixin Pins.lua defines")
+WM = g.WorldMapFrame
+PIN_T = "LorePathQuestPinTemplate"
+def pins():
+    return [p for p in harness.Pins(PIN_T).values() if p.IsShown(p)]
+def pinned_ids():
+    return sorted(qid for p in pins() for qid in p["group"]["quests"].values())
+def pin_for(qid):
+    return next((p for p in pins() if qid in list(p["group"]["quests"].values())), None)
+
+ns.HideDetail()
+frame.Hide(frame)
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 5, 1429
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer()
+ns.RefreshCompleted()
+toggle = harness["frames"]["LorePathMapPinsToggle"]
+check(ns.mapPinsProvider is not None and len(list(WM["__providers"].values())) == 1, "LorePath adds one data provider to the world map")
+check(toggle is not None and not toggle.GetChecked(toggle)
+      and any(f["__text"] == "LorePath quests" for f in harness["all"].values()),
+      "the map gets a 'LorePath quests' tick box, unticked (pins are off by default)")
+check(g.LorePathDB["showMapPins"] is False and g.LorePathDB["mapPinsHigherLevel"] is False and g.LorePathDB["mapPinsActive"] is False,
+      "pins and both extras are off by default")
+WM.SetMapID(WM, 1429)
+WM.Show(WM)
+check(len(pins()) == 0, "with pins off, the map shows none")
+
+toggle.SetChecked(toggle, True)
+toggle["__scripts"]["OnClick"](toggle)
+check(g.LorePathDB["showMapPins"] is True, "ticking the map's box turns the setting on")
+
+def expected_on(map_id, statuses):
+    ids = []
+    for qid, q in ns.Quests.items():
+        if q["m"] == map_id and q["x"] is not None and qid in list(ns.GetZoneQuests(q["z"]).values()) and ns.GetStatus(qid) in statuses:
+            ids.append(qid)
+    return sorted(ids)
+want = expected_on(1429, (S.AVAILABLE, S.REPEATABLE))
+got = pinned_ids()
+print(f"Elwynn at level 5: {len(got)} quests pinned in {len(pins())} pins")
+check(len(want) > 5 and got == want, f"Elwynn pins every quest starting there you can pick up, and only those ({len(got)} vs {len(want)})")
+check(len(set(got)) == len(got), "each quest has one pin")
+p783 = pin_for(783)
+check(p783 is not None and p783["icon"]["__texture"] == "Interface\\GossipFrame\\AvailableQuestIcon", "783 gets a '!' pin")
+check(p783 is not None and p783["icon"]["__desaturated"] is True and tuple(p783["icon"]["__vertex"].values()) == tuple(ns.ui.DIFFICULTY.standard.values()),
+      "coloured green: a level-1 quest at level 5 is standard difficulty")
+g783 = p783["group"]
+check(abs(p783["__pos"][1] - g783["x"] / 100) < 1e-9 and abs(p783["__pos"][2] - g783["y"] / 100) < 1e-9, "the pin sits at its start (map fractions)")
+groups = [p["group"] for p in pins()]
+close = [(a, b) for i, a in enumerate(groups) for b in groups[i + 1:] if (a["x"] - b["x"]) ** 2 + (a["y"] - b["y"]) ** 2 <= 1.5 ** 2]
+check(not close, "no two pins sit on top of each other")
+multi = next((p for p in pins() if len(list(p["group"]["quests"].values())) > 1), None)
+check(multi is not None and multi["count"]["__text"] == str(len(list(multi["group"]["quests"].values()))),
+      "quests at one spot share a pin, which shows how many")
+single = next(p for p in pins() if len(list(p["group"]["quests"].values())) == 1)
+check(all(single["count"]["__text"] == "" for single in [single]), "a pin for one quest shows no count")
+
+# Tooltip and click
+def hover(p):
+    g.GameTooltip.lines = lua.table()
+    p["__scripts"]["OnEnter"](p)
+    return [str(l) for l in g.GameTooltip.lines.values()]
+sid = single["group"]["quests"][1]
+lines = hover(single)
+check(lines[0] == ns.GetQuestNameOrID(sid) and any(l.startswith("Requires level") for l in lines) and any(l.startswith("Starts in") for l in lines),
+      "a pin's tooltip is the quest's usual tooltip")
+check("Click to set a waypoint here." in lines and "Click for details." not in lines and not any("Ctrl+click" in l for l in lines),
+      "with the pin's own click hint instead of the window's")
+mlines = hover(multi)
+n = len(list(multi["group"]["quests"].values()))
+check(mlines[0] == f"{n} quests" and sum(1 for l in mlines if l.startswith("[")) == n, f"a shared pin's tooltip lists its {n} quests")
+harness["waypoint"] = None
+single["__scripts"]["OnMouseUp"](single, "LeftButton")
+sq = ns.Quests[sid]
+check(harness["waypoint"] is not None and harness["waypoint"]["m"] == 1429 and abs(harness["waypoint"]["x"] - sq["x"] / 100) < 1e-9,
+      "clicking a pin sets the waypoint where its quest starts")
+harness["waypoint"] = None
+multi["__scripts"]["OnMouseUp"](multi, "LeftButton")
+mg = multi["group"]
+check(harness["waypoint"] is not None and abs(harness["waypoint"]["x"] - mg["x"] / 100) < 1e-9 and "and %d more" % (n - 1) in harness["chat"][len(harness["chat"])],
+      "clicking a shared pin sets the waypoint at it")
+harness["waypoint"] = None
+single["__scripts"]["OnMouseUp"](single, "RightButton")
+check(harness["waypoint"] is None, "right-clicking a pin does nothing (the map uses it to zoom out)")
+
+# Only the map being viewed
+WM.SetMapID(WM, 1415)
+check(len(pins()) == 0, "the Eastern Kingdoms continent map shows no pins")
+WM.SetMapID(WM, 1429)
+check(pinned_ids() == want, "back on Elwynn, its pins return")
+
+# Optional extras
+level_locked = expected_on(1429, (S.LEVEL,))
+level_locked = [q for q in level_locked if ns.GetLockReason(q) == "level"]
+check(level_locked and not any(q in pinned_ids() for q in level_locked), "quests above your level aren't pinned by default")
+ns.SetSetting("mapPinsHigherLevel", True)
+check(all(q in pinned_ids() for q in level_locked), f"with that setting on, they are ({len(level_locked)})")
+lp = next(p for p in pins() if p["group"]["kind"] == ns.PIN_KIND.LEVEL)
+check(lp["icon"]["__desaturated"] is True and lp["icon"]["__vertex"][1] == lp["icon"]["__vertex"][2] and lp["__alpha"] < 1,
+      "as a grey, faded '!'")
+ns.SetSetting("mapPinsHigherLevel", False)
+check(pinned_ids() == want, "and turning it off removes them again")
+
+char["log"][783] = True
+WM.SetMapID(WM, 1429)
+check(783 not in pinned_ids(), "a quest in your log loses its '!'")
+ns.SetSetting("mapPinsActive", True)
+p = pin_for(783)
+check(p is not None, "with 'quests in your log' on, it's pinned again")
+active = [p for p in pins() if p["group"]["kind"] == ns.PIN_KIND.ACTIVE]
+check(len(active) >= 1 and all(p["icon"]["__texture"] == "Interface\\GossipFrame\\IncompleteQuestIcon" for p in active),
+      "a pin of only quests in your log is a '?'")
+check(p is not None and (p["group"]["quests"][1] != 783 or p["group"]["kind"] == ns.PIN_KIND.ACTIVE),
+      "a shared pin shows its best quest's icon: one you can pick up before one you're on")
+char["log"][783] = None
+ns.SetSetting("mapPinsActive", False)
+
+# Refreshing on events
+harness.RunTimers()
+check(783 in pinned_ids(), "783 is pinned before it's turned in")
+char["completed"][783] = True
+harness.Fire("QUEST_TURNED_IN", 783)
+harness.RunTimers()
+check(783 not in pinned_ids(), "turning a quest in removes its pin")
+before = len(pinned_ids())
+char["level"] = 10
+harness.Fire("PLAYER_LEVEL_UP", 10)
+harness.RunTimers()
+check(len(pinned_ids()) != before or not level_locked, "levelling up redraws the pins (newly available quests appear)")
+WM.Hide(WM)
+char["completed"] = lua.table()
+harness.Fire("QUEST_REMOVED", 1)
+harness.RunTimers()
+check(783 not in pinned_ids(), "while the map is closed, pins wait for it to open")
+WM.Show(WM)
+check(783 in pinned_ids(), "and redraw when it does")
+
+# Off again
+ns.SetSetting("showMapPins", False)
+check(len(pins()) == 0 and not toggle.GetChecked(toggle), "turning the setting off clears the pins and unticks the map's box")
+check(harness["frames"]["LorePathSettingsPanel"] is not None, "the settings page exists")
+labels = [str(f["__text"]) for f in harness["all"].values() if f["__text"]]
+check("Show quests on the world map" in labels and "Map: also quests above your level" in labels and "Map: also quests in your log" in labels,
+      "the settings page has the map pins option and its two extras")
+
+# Without the map canvas API, Pins.lua does nothing (and doesn't error)
+saved_wm, saved_mixin = g.WorldMapFrame, g.LorePathQuestPinMixin
+g.WorldMapFrame = None
+ns2 = lua.table()
+load_file(open(os.path.join(ROOT, "Pins.lua")).read(), "Pins.lua", ns2)
+check(ns2.AttachMapPins() is None, "a client without WorldMapFrame:AddDataProvider gets no pins and no error")
+g.WorldMapFrame, g.LorePathQuestPinMixin = saved_wm, saved_mixin
+
+g.SlashCmdList["LOREPATH"]("pins")
+check(any("/lp config" in str(l) for l in list(harness["chat"].values())[-4:]), "there's no /lp pins: it prints the usual help")
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
