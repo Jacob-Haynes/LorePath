@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.2.0-beta3
 
 - **Quests shown twice, fixed:** Amongst the Ruins (Blackfathom Deeps) is in the quest data twice, under two IDs, so it showed as available even while it was in your log. And Horde Shamans saw Call of Air twice, from Orgrimmar and from Thunder Bluff. Now each shows once: the one you have or have done, else the one nearest your race's home.
 - **Fewer map pins by default:** only **Quests at your level** is on; low-level quests and quests above your level are off until you tick them in the map's filter menu or the settings. If you already have beta2, your current choices are kept.
