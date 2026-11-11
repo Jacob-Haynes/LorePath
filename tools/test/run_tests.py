@@ -2329,6 +2329,41 @@ ns.Toggle(False)
 char["level"] = 60
 ns.RefreshPlayer()
 
+# --- Long storylines wrap to the window's width ---
+WL = ns.ui.WrapLayout
+long_line = lua.eval("{ cols = 10, rows = 2 }")
+lay = WL(long_line, 800, 40)
+check(lay["perBand"] == 3 and lay["bands"] == 4, f"a 10-column storyline in an 800-wide window wraps into bands of 3 ({lay['perBand']} x {lay['bands']})")
+x0, y0, b0 = lay.Pos(lua.eval("{ col = 0, row = 0 }"))
+x3, y3, b3 = lay.Pos(lua.eval("{ col = 3, row = 0 }"))
+check(b3 == 1 and x3 == x0 and y3 > y0 + 2 * 46, "column 4 starts the second band, back at the left, below the first band's rows")
+pts = list(lay.Route(lua.eval("{ col = 2, row = 1 }"), lua.eval("{ col = 3, row = 0 }")).values())
+ys = [p[2] for p in pts]
+check(len(pts) == 6 and -ys[2] > y0 + 2 * 46 - 10 and -ys[2] < y3, "the line into the next band runs along the gap between the bands")
+short_line = lua.eval("{ cols = 2, rows = 3 }")
+lay2 = WL(short_line, 800, 40)
+check(lay2["bands"] == 1 and lay2["height"] == 26 + 8 + 3 * (36 + 10), "a storyline that fits isn't changed")
+
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 30, 1429
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+ns.Toggle(True)
+view_w = frame["graphScroll"].GetWidth(frame["graphScroll"])
+widest = None
+for page in [z["id"] for z in ns.GetZones().values()]:
+    for st in ns.BuildStorylines(page)[0].values():
+        if st["cols"] > 3 and (widest is None or st["cols"] > widest[1]["cols"]):
+            widest = (page, st)
+page, st = widest
+ns.FocusQuest(st["first"])
+ids = {n["id"] for n in st["nodes"].values()}
+tiles = [f for f in harness["all"].values() if f["questID"] in ids and f["sub"] is not None and f.IsShown(f)]
+check(tiles and max(t["px"] for t in tiles) + 186 <= view_w,
+      f"on screen, the longest storyline ({st['cols']} columns, in {ns.GetMapName(page)}) fits the window's width ({max(t['px'] for t in tiles) + 186} <= {view_w})")
+ns.Toggle(False)
+char["level"] = 60
+ns.RefreshPlayer()
+
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])
