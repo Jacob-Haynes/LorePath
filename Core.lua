@@ -922,6 +922,10 @@ local EXTRA_VERSIONS = {
     -- 6921, with the same giver, start and level; you can only ever have one,
     -- so the other showed as still available beside it.
     [6921] = { 908 },
+    -- Call of Air, the Horde Shaman quest, from Orgrimmar (1531) or Thunder
+    -- Bluff (1532): the same quest and reward for the same races, so a Horde
+    -- Shaman saw both. Home picks which one shows.
+    [1531] = { 1532 },
 }
 
 -- Some quests come in several versions, one per starting area: the Shaman

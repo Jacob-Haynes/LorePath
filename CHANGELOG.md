@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- **Amongst the Ruins shown once:** the Blackfathom Deeps quest is in the quest data twice, under two IDs, so it showed as available even while it was in your log. Now only one shows: the one you have, or have done.
+- **Quests shown twice, fixed:** Amongst the Ruins (Blackfathom Deeps) is in the quest data twice, under two IDs, so it showed as available even while it was in your log. And Horde Shamans saw Call of Air twice, from Orgrimmar and from Thunder Bluff. Now each shows once: the one you have or have done, else the one nearest your race's home.
 
 ## 1.2.0-beta2
 
