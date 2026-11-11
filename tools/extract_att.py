@@ -132,7 +132,12 @@ def main():
     notes = {}  # questID -> ATT's note about it ("For this to drop, you need to be on ...")
     skipped = {"removed": 0, "unavailable": 0}
 
-    def walk(node, continent, zone):
+    # Some places aren't zones: Timbermaw Hold, the furbolg cave between Felwood
+    # and Winterspring, is a header right under Kalimdor, with the maps it
+    # spans (maps={1448, 1452}). Its quests would land on the continent's page;
+    # instead each goes in the zone it starts in, if that's one of the header's
+    # maps, else the header's first map.
+    def walk(node, continent, zone, area_maps=None):
         if lua_type(node) != "table":
             return
         kind = node["__kind"]
@@ -144,12 +149,21 @@ def main():
                 continent = map_id
             elif zone is None:
                 zone = map_id
+        elif kind != "Quest" and zone is None and continent is not None and area_maps is None:
+            maps = [m for m in (lua_list(node["maps"]) or []) if m != continent]
+            if maps:
+                area_maps = maps
         if kind == "Quest":
-            add_quest(node, continent, zone)
+            if zone is None and area_maps:
+                coord = first_coord(node["coords"])
+                start = coord[0] if coord else None
+                add_quest(node, continent, start if start in area_maps else area_maps[0])
+            else:
+                add_quest(node, continent, zone)
         children = node["g"]
         if children is not None and lua_type(children) == "table":
             for _, child in children.items():
-                walk(child, continent, zone)
+                walk(child, continent, zone, area_maps)
 
     def add_quest(node, continent, zone):
         qid = int(node["__id"])

@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **No more "Kalimdor" page:** the 15 Timbermaw Hold reputation quests (Timbermaw Ally, Deadwood of the North and the rest) were on a page of their own named after the continent, because the cave they're from isn't a zone. They're now in the zones they start in: Felwood, or Winterspring for the Winterfall quests.
+
 ## 1.2.0-beta2
 
 - **Attunements:** a new **Attunements** heading in the zone list has a page for each key chain: **Onyxia's Lair** (the Drakefire Amulet), **Upper Blackrock Spire** (the Seal of Ascension), **Scholomance** (the Skeleton Key) and **Shadowforge City** (the Shadowforge Key). Each page shows your faction's chain as one storyline, even where it crosses zones and dungeons, and ticks off the key once it's in your bags or bank. Its progress counts the quests and the key.
