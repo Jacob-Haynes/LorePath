@@ -11,7 +11,7 @@ Built for **WoW Forever**, on English game clients. It's lightweight: no map pin
 - **Storyline maps:** each page's quest chains, drawn from the first quest to the last, with lines showing what unlocks what. Storylines collapse, and finished ones start collapsed. Drag anywhere on the graph to pan, even from a quest.
 - **A zone list that tells you where to go:**
   - every zone, dungeon, raid and battleground with quests for you, each with an icon and WoW Forever's level range;
-  - names coloured by progress, from grey (not started) through red, orange and gold to green (finished);
+  - names coloured by progress, from grey (not started) through white, fading to green (finished);
   - finished sections start collapsed, and LorePath opens on the zone or instance you're in.
 - **Class and Professions pages:** every quest for your class, and for each of your professions, in one place, with chains that cross zones shown whole.
 - **Search:** find any quest by name or ID from the box above the zone list.

@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Calmer progress colours:** zone list names you've started now fade from white towards green as you finish their quests, instead of going from red through orange and gold. Only finished ones are fully green, with a tick.
+
 ## 1.2.0-beta1
 
 - **Quests on the world map (optional):** turn on **LorePath quests** on the world map, or **Show quests on the world map** in the settings, to see a "!" where each quest you can pick up starts, coloured by difficulty. Quests at the same spot share one pin; hover for the quest's tooltip, click for a waypoint. Off by default, with two more settings for quests above your level and quests in your log.
