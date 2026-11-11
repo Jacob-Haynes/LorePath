@@ -1305,6 +1305,24 @@ check(earth_shown(page) == {"mulgore"}, "the version you've actually done is the
 char["completed"] = lua.table()
 ns.RefreshCompleted()
 page = shaman(2)
+# A real WoW Forever character (race 96, 1.1.0-beta2): the game marks every
+# version of Call of Earth completed, and the first step of the Barrens Call of
+# Fire too, though only Zephras Isle's chains were played.
+page = shaman(96)
+for qid in EARTH["durotar"] + EARTH["mulgore"] + EARTH["zephras"] + [1524] + FIRE_ZEPHRAS:
+    char["completed"][qid] = True
+ns.RefreshCompleted()
+page = set(ns.GetZoneQuests("class").values())
+check(earth_shown(page) == {"zephras"} and all(i in page for i in EARTH["zephras"]),
+      f"with every version marked completed, home decides: only Zephras Isle's Call of Earth ({sorted(i for ids in EARTH.values() for i in ids if i in page)})")
+check(all(i in page for i in FIRE_ZEPHRAS) and not any(i in page for i in FIRE_BARRENS + FIRE_CRUMBS),
+      f"and only Zephras Isle's Call of Fire, not the Barrens chain whose first step is marked done ({sorted(i for i in FIRE_BARRENS + FIRE_ZEPHRAS + FIRE_CRUMBS if i in page)})")
+char["log"][1517] = True
+page = set(ns.GetZoneQuests("class").values())
+check(1517 in page, "a quest in your log is never hidden")
+char["log"], char["completed"] = lua.table(), lua.table()
+ns.RefreshCompleted()
+page = shaman(2)
 durotar, barrens = set(ns.GetZoneQuests(1411).values()), set(ns.GetZoneQuests(1413).values())
 check(all(i in durotar for i in EARTH["durotar"]), "a zone with one version keeps it")
 check([i for i in FIRE_CRUMBS if i in barrens] == FIRE_CRUMBS and 1524 in barrens,
