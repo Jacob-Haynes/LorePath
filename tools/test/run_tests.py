@@ -1593,6 +1593,42 @@ check(ns.Quests[7508]["cl"] is not None and icon_of(7508)["__texture"] == "Inter
 g.GetProfessions = lua.eval("function() return nil end")
 ns.RefreshPlayer()
 
+# --- Finished zone list sections start collapsed ---
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+g.LorePathDB["collapsedContinents"] = lua.table()
+ns.Toggle(True)
+def class_row():
+    rows = [f for f in harness["all"].values() if f["zoneID"] == "class" and f.IsShown(f)]
+    return rows[0] if rows else None
+def class_heading():
+    return [f for f in harness["all"].values() if f["continent"] == "Class" and f["zoneID"] is None and f.IsShown(f)][0]
+check(class_row() is not None, "an unfinished Class section starts open")
+for qid in ns.GetZoneQuests("class").values():
+    char["completed"][qid] = True
+ns.Refresh()
+check(class_row() is None and class_heading()["collapsed"] is True, "once every class quest is done, the Class section starts collapsed")
+h = class_heading()
+h["__scripts"]["OnClick"](h)
+check(class_row() is not None and g.LorePathDB["collapsedContinents"]["Class"] is False, "opening it yourself is remembered")
+ns.Refresh()
+check(class_row() is not None, "and it stays open")
+g.LorePathDB["collapsedContinents"] = lua.table()
+ns.Refresh()
+check(class_row() is None, "with the choice cleared it's collapsed again")
+h = class_heading()
+h["__scripts"]["OnClick"](h)
+class_row()["__scripts"]["OnClick"](class_row())   # view the Class page
+g.LorePathDB["collapsedContinents"] = lua.table()  # forget the choice
+ns.Refresh()
+check(class_row() is not None and class_heading()["collapsed"] is False,
+      "a finished section holding the page you're on stays open")
+char["completed"] = lua.table()
+ns.RefreshCompleted()
+g.LorePathDB["collapsedContinents"] = lua.table()
+ns.Refresh()
+
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])

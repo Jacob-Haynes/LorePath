@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Finished sections start collapsed:** a zone list section where you've done every quest (Class, a continent, Dungeons and so on) starts collapsed, like a finished storyline. Open it and it stays open; the section holding the page you're on is never hidden.
+
 ## 1.1.0
 
 A big update: everything from the 1.1.0 betas (details below), plus two more changes. The highlights:
