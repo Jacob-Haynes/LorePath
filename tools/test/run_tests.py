@@ -1793,7 +1793,9 @@ def filter_boxes():
 entries, boxes = filter_boxes()
 check(any(e["kind"] == "title" and e["text"] == "LorePath quests" for e in entries) and [e["text"] for e in boxes] == FILTER_TEXTS,
       f"under a 'LorePath quests' heading, three filters: {[e['text'] for e in boxes]}")
-check(all(e["isChecked"]() for e in boxes) and all(g.LorePathDB[k] is True for k in FILTER_KEYS), "all three are on by default")
+check([e["isChecked"]() for e in boxes] == [True, False, False]
+      and (g.LorePathDB["mapPinsCurrent"], g.LorePathDB["mapPinsLow"], g.LorePathDB["mapPinsHigh"]) == (True, False, False),
+      "by default only 'Quests at your level' is on")
 WM.SetMapID(WM, 1429)
 WM.Show(WM)
 
@@ -1804,11 +1806,15 @@ def expected_on(map_id, bands):
             ids.append(qid)
     return sorted(ids)
 B = ns.PIN_BAND
-want = expected_on(1429, (B.CURRENT, B.LOW, B.HIGH))
 current = expected_on(1429, (B.CURRENT,))
+check(len(current) > 5 and pinned_ids() == current, f"by default Elwynn pins only quests at your level ({len(current)})")
+# The rest of these checks run with all three on.
+ns.SetSetting("mapPinsLow", True)
+ns.SetSetting("mapPinsHigh", True)
+want = expected_on(1429, (B.CURRENT, B.LOW, B.HIGH))
 got = pinned_ids()
 print(f"Elwynn at level 5: {len(got)} quests pinned in {len(pins())} pins")
-check(len(current) > 5 and got == want, f"Elwynn pins every quest starting there, by default ({len(got)} vs {len(want)})")
+check(got == want and len(want) > len(current), f"with all three on, Elwynn pins every quest starting there ({len(got)} vs {len(want)})")
 check(all(ns.GetStatus(q) in (S.AVAILABLE, S.REPEATABLE) for q in current), "'at your level' ones are quests you can pick up")
 check(len(set(got)) == len(got), "each quest has one pin")
 p783 = pin_for(783)
@@ -1873,7 +1879,7 @@ def box(text):
     return next(e for e in filter_boxes()[1] if e["text"] == text)
 high = expected_on(1429, (B.HIGH,))
 check(high and all(q in pinned_ids() for q in high) and all(ns.GetLockReason(q) == "level" for q in high),
-      f"quests above your level are pinned by default ({len(high)})")
+      f"with that filter on, quests above your level are pinned ({len(high)})")
 hp = next(p for p in pins() if p["group"]["band"] == B.HIGH)
 check(hp["icon"]["__desaturated"] is True and hp["icon"]["__vertex"][1] == 1 and hp["icon"]["__vertex"][2] < 0.5,
       "as a red '!'")
@@ -1936,8 +1942,24 @@ for key in FILTER_KEYS:
     ns.SetSetting(key, True)
 check(harness["frames"]["LorePathSettingsPanel"] is not None, "the settings page exists")
 labels = [str(f["__text"]) for f in harness["all"].values() if f["__text"]]
-check(all(l in labels for l in ("Map: quests at your level", "Map: low-level quests", "Map: quests above your level"))
-      and "Show quests on the world map" not in labels, "the settings page has the same three filters")
+check(all(l in labels for l in ("Quests at your level (gold)", "Low-level quests (grey)", "Quests above your level (red)")),
+      "the settings page has the same three filters")
+
+# The settings page: in a scroll frame, under headings, with the map filters nested.
+sp = harness["frames"]["LorePathSettingsPanel"]
+scroll = harness["frames"]["LorePathSettingsScroll"]
+check(scroll is not None and scroll["__scrollChild"] is not None and same(scroll["__scrollChild"], sp["body"]),
+      "the settings page scrolls: everything is in a scroll frame's content")
+page_texts = [f for f in harness["all"].values() if f["__kind"] == "FontString" and f["__parent"] is not None and same(f["__parent"], sp["body"])]
+headings = [str(f["__text"]) for f in page_texts if str(f["__text"]) in ("Window", "Quests", "World map")]
+check(headings == ["Window", "Quests", "World map"], f"settings are grouped under headings: {headings}")
+def left_of(label):
+    fs = next(f for f in harness["all"].values() if f["__text"] == label and f["__parent"] is not None and f["__parent"]["__kind"] != "FontString")
+    cb = fs["__parent"]
+    return next(p[4] for p in cb["__points"].values() if p[1] == "LEFT")
+nested = [left_of(t) for t in ("Quests at your level (gold)", "Low-level quests (grey)", "Quests above your level (red)")]
+check(len(set(nested)) == 1 and nested[0] > left_of("Show spoilers"), f"the map filters are indented under 'Show quests on the map': {nested} vs {left_of('Show spoilers')}")
+check(any(str(f["__text"]) == "Show quests on the map" for f in page_texts), "under a 'Show quests on the map' label")
 g.LorePathDB["showMapPins"] = False
 ns.InitDB()
 check(g.LorePathDB["showMapPins"] is None, "1.2.0-beta1's old pin setting is cleared")

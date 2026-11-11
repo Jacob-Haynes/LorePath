@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- **Fewer map pins by default:** only **Quests at your level** is on; low-level quests and quests above your level are off until you tick them in the map's filter menu or the settings. If you already have beta2, your current choices are kept.
+- **Tidier settings page:** it scrolls instead of running off the bottom, and its options are grouped under **Window**, **Quests** and **World map**, with the three map filters indented under **Show quests on the map**.
+
 ## 1.2.0-beta2
 
 - **Attunements:** a new **Attunements** heading in the zone list has a page for each key chain: **Onyxia's Lair** (the Drakefire Amulet), **Upper Blackrock Spire** (the Seal of Ascension), **Scholomance** (the Skeleton Key) and **Shadowforge City** (the Shadowforge Key). Each page shows your faction's chain as one storyline, even where it crosses zones and dungeons, and ticks off the key once it's in your bags or bank. Its progress counts the quests and the key.

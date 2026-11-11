@@ -47,7 +47,7 @@ LorePath supports English game clients only.
 - **Search:** type part of a quest's name, or its ID, in the box above the zone list. The list shows up to 50 matching quests you can do, with their zone, status and level; click one to jump to it. Escape clears the search.
 - **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
-- **World map pins:** a "!" where each quest starts on the zone map you're viewing: gold for quests at your level, grey for low-level ones, red for quests you're not high enough level for yet (a blue "!" for repeatable quests). Each of the three has its own entry under **LorePath quests** in the world map's filter menu, and in the settings; all are on by default. Quests that start at the same spot share a pin, with a count. Hover a pin for the quest's tooltip, click it to set a waypoint there, or Shift+click it to open the quest in LorePath.
+- **World map pins:** a "!" where each quest starts on the zone map you're viewing: gold for quests at your level, grey for low-level ones, red for quests you're not high enough level for yet (a blue "!" for repeatable quests). Each of the three has its own entry under **LorePath quests** in the world map's filter menu, and in the settings. Only quests at your level are on by default. Quests that start at the same spot share a pin, with a count. Hover a pin for the quest's tooltip, click it to set a waypoint there, or Shift+click it to open the quest in LorePath.
 - **Quest log, both ways:** for a quest you're on, **Open in quest log** in its details, or Shift+click it, opens the game's quest log at that quest. The other way, the LorePath book button on the game's quest log opens the selected quest in LorePath with its details.
 
 ### Controls
@@ -78,21 +78,26 @@ LorePath supports English game clients only.
 
 ### Settings
 
+The settings page scrolls, and groups its options under three headings.
+
 | Option | Default | What it does |
 | :--- | :--- | :--- |
+| **Window** | | |
 | Show minimap button | On | Left-click opens LorePath, right-click opens settings. |
 | Open on the zone you're in | On | Each time the window opens, it jumps to your current zone (or instance). Off: it reopens on the last page you looked at. |
+| Window size | 100% | Scales the window from 60% to 140%. |
+| **Quests** | | |
 | Hide finished storylines | Off | Leaves out storylines where every quest is done. |
 | Show standalone quests | On | Lists quests that aren't part of a chain under each page's storylines. |
-| Show professions you don't have | Off | Lists every profession under **Professions**, with the ones you don't have greyed out and their quests locked. |
 | Show repeatable quests | On | Shows daily and repeatable quests, in blue. Same as the **Repeatable** tick box. |
-| Show spoilers | Off | Shows the full story of every quest in its details. Off: quests you haven't started, and how quests in your log end, stay hidden until you press **Reveal**. |
+| Show professions you don't have | Off | Lists every profession under **Professions**, with the ones you don't have greyed out and their quests locked. |
 | Show quest levels on tiles | On | Shows each quest's minimum level on its tile. Quests that are too high level always show it, in red. |
+| Show spoilers | Off | Shows the full story of every quest in its details. Off: quests you haven't started, and how quests in your log end, stay hidden until you press **Reveal**. |
+| **World map** | | |
 | Open the map when setting a waypoint | On | Opens the world map at the quest's start when you set a waypoint. |
-| Map: quests at your level | On | A gold "!" on the zone map where each quest at your level starts. Also in the world map's filter menu. |
-| Map: low-level quests | On | A grey "!" where quests too low to give you much experience start. |
-| Map: quests above your level | On | A red "!" where quests you're not high enough level for yet start. |
-| Window size | 100% | Scales the window from 60% to 140%. |
+| Show quests on the map: quests at your level | On | A gold "!" on the zone map where each quest at your level starts. Also in the world map's filter menu, like the next two. |
+| Show quests on the map: low-level quests | Off | A grey "!" where quests too low to give you much experience start. |
+| Show quests on the map: quests above your level | Off | A red "!" where quests you're not high enough level for yet start. |
 
 **Reset to defaults** on the settings page puts every setting back, re-opens collapsed storylines and headings, and shows the zone list again. It keeps your saved quest text.
 
