@@ -61,7 +61,7 @@ LorePath supports English game clients only.
 | Move the window | Drag its title bar |
 | Move the minimap button | Drag it around the minimap |
 | Scroll | Mouse wheel, or Shift + wheel to scroll sideways |
-| Pan around a large graph | Drag with the left mouse button |
+| Pan around a large graph | Drag with the left mouse button, from anywhere on the graph, even on a quest or a storyline header |
 | Close | Escape |
 
 `/lorepath` works the same as `/lp`, and `/lp help` lists the commands and shows your version.
