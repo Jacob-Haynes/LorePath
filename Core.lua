@@ -1182,9 +1182,34 @@ function ns.GetZones()
     return zones
 end
 
+-- Breadcrumbs that lead to a quest: id -> { breadcrumb, ... } (built once).
+local crumbsTo
+local function BreadcrumbsTo(id)
+    if not crumbsTo then
+        crumbsTo = {}
+        for qid, q in pairs(ns.Quests) do
+            if q.bc then
+                for _, nextID in ipairs(q.nx or {}) do
+                    crumbsTo[nextID] = crumbsTo[nextID] or {}
+                    table.insert(crumbsTo[nextID], qid)
+                end
+            end
+        end
+    end
+    return crumbsTo[id] or {}
+end
+
 -- Groups a zone's quests into storylines: quests joined by prerequisite or
 -- breadcrumb links form one storyline. Quests with no links go into `others`.
 -- Each storyline has nodes laid out in columns: { id, col, row }.
+--
+-- Chains that cross zones (issue: cross-zone storylines): the quests just
+-- before and after a storyline that are on another page, and that you could do,
+-- are laid out with it as `links`: { id, col, row, from = true / to = true }.
+-- An earlier quest from another zone sits before the quest it unlocks ("from"),
+-- a later one after the quest that leads to it ("to"). They're drawn as linked
+-- tiles, but aren't part of the storyline: they don't count towards its
+-- progress or its next step.
 function ns.BuildStorylines(zoneID)
     local ids = ns.GetZoneQuests(zoneID)
     local inZone = {}
@@ -1192,11 +1217,55 @@ function ns.BuildStorylines(zoneID)
         inZone[id] = true
     end
 
-    -- Links inside the zone: parents[child] = { parent, ... }
+    -- Would this quest from another page show there? (So a quest for the other
+    -- faction, or a version this character doesn't get, isn't linked.)
+    local shownOn = {}
+    local function ShownElsewhere(id)
+        local q = ns.Quests[id]
+        if not q or inZone[id] or q.z == zoneID then
+            return false
+        end
+        if not shownOn[q.z] then
+            shownOn[q.z] = {}
+            for _, other in ipairs(ns.GetZoneQuests(q.z)) do
+                shownOn[q.z][other] = true
+            end
+        end
+        return shownOn[q.z][id] == true
+    end
+
+    -- Links: parents[child] = { parent, ... }. Inside the zone, and to quests
+    -- just before or after it on other pages.
     local parents, children = {}, {}
+    local external, all = {}, {}
+    for _, id in ipairs(ids) do
+        table.insert(all, id)
+    end
     local function Link(parent, child)
-        if parent == child or not inZone[parent] or not inZone[child] then
+        if parent == child then
             return
+        end
+        local pIn, cIn = inZone[parent], inZone[child]
+        if not (pIn or cIn) then
+            return
+        end
+        for _, other in ipairs({ parent, child }) do
+            if not inZone[other] then
+                if not ShownElsewhere(other) then
+                    return
+                end
+            end
+        end
+        for _, other in ipairs({ parent, child }) do
+            if not inZone[other] and not external[other] then
+                external[other] = true
+                table.insert(all, other)
+            end
+        end
+        for _, existing in ipairs(parents[child] or {}) do
+            if existing == parent then
+                return
+            end
         end
         parents[child] = parents[child] or {}
         children[parent] = children[parent] or {}
@@ -1213,7 +1282,19 @@ function ns.BuildStorylines(zoneID)
                 Link(id, nextID)
             end
         end
+        -- Quests elsewhere that this one leads to, or breadcrumbs elsewhere to it.
+        for _, after in ipairs(ns.GetFollowOns(id)) do
+            if not inZone[after] then
+                Link(id, after)
+            end
+        end
+        for _, crumb in ipairs(BreadcrumbsTo(id)) do
+            if not inZone[crumb] then
+                Link(crumb, id)
+            end
+        end
     end
+    ids = all
 
     -- Connected groups (union-find).
     local root = {}
@@ -1268,7 +1349,9 @@ function ns.BuildStorylines(zoneID)
     local storylines, others = {}, {}
     for _, members in pairs(groups) do
         if #members == 1 then
-            table.insert(others, members[1])
+            if inZone[members[1]] then
+                table.insert(others, members[1])
+            end
         else
             local columns, maxCol = {}, 0
             for _, id in ipairs(members) do
@@ -1278,7 +1361,7 @@ function ns.BuildStorylines(zoneID)
                 maxCol = math.max(maxCol, col)
             end
             -- Rows: order each column by where its parents sit, then level, then ID.
-            local rowOf, nodes, maxRow = {}, {}, 0
+            local rowOf, nodes, links, maxRow = {}, {}, {}, 0
             for col = 0, maxCol do
                 local list = columns[col] or {}
                 local weight = {}
@@ -1303,18 +1386,24 @@ function ns.BuildStorylines(zoneID)
                 for row, id in ipairs(list) do
                     rowOf[id] = row - 1
                     maxRow = math.max(maxRow, row - 1)
-                    table.insert(nodes, { id = id, col = col, row = row - 1 })
+                    if inZone[id] then
+                        table.insert(nodes, { id = id, col = col, row = row - 1 })
+                    else
+                        table.insert(links, { id = id, col = col, row = row - 1,
+                            from = children[id] ~= nil, to = parents[id] ~= nil })
+                    end
                 end
             end
-            -- The storyline is named after its first quest.
-            local first = columns[0] and columns[0][1] or members[1]
+            -- The storyline is named after its first quest on this page.
+            local first = nodes[1] and nodes[1].id or members[1]
             local minLevel = math.huge
-            for _, id in ipairs(members) do
-                minLevel = math.min(minLevel, Level(id))
+            for _, n in ipairs(nodes) do
+                minLevel = math.min(minLevel, Level(n.id))
             end
             table.insert(storylines, {
                 first = first,
                 nodes = nodes,
+                links = links,
                 parents = parents,
                 cols = maxCol + 1,
                 rows = maxRow + 1,

@@ -122,9 +122,11 @@ for tile in tiles:
     except Exception as e:
         errors += 1
         print("tooltip error:", e)
-# One tile per Elwynn quest the character can see (derived from the data, so ATT syncs don't break it).
-check(zone_quests > 0 and len(tiles) == zone_quests and errors == 0,
-      f"all {len(tiles)} Elwynn quest tiles (of {zone_quests} zone quests) build a tooltip without errors")
+# One tile per Elwynn quest the character can see (derived from the data, so ATT syncs don't break it),
+# plus a linked tile for each quest on another page just before or after a storyline.
+elwynn_links = sum(len(list((s["links"] or lua.table()).values())) for s in ns.BuildStorylines(1429)[0].values())
+check(zone_quests > 0 and len(tiles) == zone_quests + elwynn_links and errors == 0,
+      f"all {len(tiles)} Elwynn tiles ({zone_quests} zone quests, {elwynn_links} linked) build a tooltip without errors")
 rewarded = [t for t in tiles if ns.Quests[t["questID"]]["rw"] is not None]
 g.GameTooltip.lines = lua.table()
 rewarded[0]["__scripts"]["OnEnter"](rewarded[0])
@@ -406,7 +408,9 @@ ns.SetSetting("showOthers", True)
 # Finish a whole storyline: it collapses by default, and can be reopened.
 storylines, _ = ns.BuildStorylines(1413)
 first = list(storylines.values())[0]
-first_n = len(list(first["nodes"].values()))
+def tile_count(st):
+    return len(list(st["nodes"].values())) + len(list((st["links"] or lua.table()).values()))
+first_n = tile_count(first)
 for n in first["nodes"].values():
     char["completed"][n["id"]] = True
 ns.Refresh()
@@ -426,7 +430,7 @@ check(shown_tiles() == with_others - first_n, "clicking again collapses it, and 
 check(g.LorePathDB["collapsed"][key] is True, "collapsed state is stored in LorePathDB")
 other = section("s" + str(list(storylines.values())[1]["first"]))
 other["__scripts"]["OnClick"](other)
-second_n = len(list(list(storylines.values())[1]["nodes"].values()))
+second_n = tile_count(list(storylines.values())[1])
 check(shown_tiles() == with_others - first_n - second_n, "an unfinished storyline can be collapsed too")
 g.LorePathDB["collapsed"] = lua.table()
 ns.Refresh()
@@ -2049,6 +2053,54 @@ check("Also needed" in canvas_texts and any("Item16309" in t and "ReadyCheck-Not
 ns.FocusQuest(4182)
 check(frame["zoneTitle"]["__text"] == "Onyxia's Lair", "focusing one of its quests stays on the attunement page")
 ns.Toggle(False)
+
+# --- Storylines that cross zones: linked tiles for the quests on other pages ---
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 20, 1429
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+sls, _ = ns.BuildStorylines(1429)
+sls = list(sls.values())
+linked = [(st, l) for st in sls for l in (st["links"] or lua.table()).values()]
+froms = [(st, l) for st, l in linked if l["from"] and not l["to"]]
+tos = [(st, l) for st, l in linked if l["to"] and not l["from"]]
+print(f"Elwynn at level 20: {len(linked)} linked tiles ({len(froms)} from, {len(tos)} to)")
+check(tos and all(ns.Quests[l["id"]]["z"] != 1429 for _, l in linked), "Elwynn's storylines link on to quests in other zones")
+st, l = tos[0]
+node_ids = {n["id"] for n in st["nodes"].values()}
+check(any(p in node_ids for p in st["parents"][l["id"]].values()), "a 'to' tile follows the quest in this zone that leads to it")
+col_of = {n["id"]: n["col"] for n in list(st["nodes"].values()) + list(st["links"].values())}
+check(all(col_of[p] < col_of[c] for c, ps in st["parents"].items() for p in ps.values() if p in col_of and c in col_of),
+      "linked tiles sit in the right column: before the quest they unlock, after the one that leads to them")
+check(l["id"] not in node_ids and all(ns.Quests[n["id"]]["z"] == 1429 or ns.IsSpecialPage(1429) for n in st["nodes"].values()),
+      "linked quests aren't part of the storyline (its progress and next step)")
+there = ns.Quests[l["id"]]["z"]
+leading = set(st["parents"][l["id"]].values()) & node_ids
+back = [lk["id"] for s2 in ns.BuildStorylines(there)[0].values() for lk in (s2["links"] or lua.table()).values() if lk["from"]]
+check(leading & set(back), f"and {ns.GetMapName(there)}'s page shows the Elwynn quest its storyline starts from")
+char["faction"], char["race"] = "Horde", 2
+ns.RefreshPlayer()
+check(not any(ns.Quests[lk["id"]]["f"] == 2 for s2 in ns.BuildStorylines(1413)[0].values() for lk in (s2["links"] or lua.table()).values()),
+      "a Horde character's storylines never link to Alliance quests")
+char["faction"], char["race"] = "Alliance", 1
+ns.RefreshPlayer()
+
+# In the window.
+ns.Toggle(True)
+ns.FocusQuest(st["first"])
+tile = next(f for f in harness["all"].values() if f["questID"] == l["id"] and f["link"] is not None and f.IsShown(f))
+zone_name = ns.GetMapName(ns.Quests[l["id"]]["z"])
+check(tile["sub"]["__text"].find("Continues in " + zone_name) >= 0 and tile["__alpha"] < 1,
+      f"a 'to' tile says where the story goes on: {tile['sub']['__text']!r}")
+g.GameTooltip.lines = lua.table()
+tile["__scripts"]["OnEnter"](tile)
+lines = [str(x) for x in g.GameTooltip.lines.values()]
+check(any("continues with it, in " + zone_name in x for x in lines) and "Click to go to it." in lines and "Click for details." not in lines,
+      "its tooltip says so, and that a click goes there")
+tile["__scripts"]["OnClick"](tile)
+check(frame["zoneTitle"]["__text"].startswith(zone_name) and ns.focusedQuest == l["id"], f"clicking it goes to {zone_name}, at that quest")
+ns.Toggle(False)
+char["level"] = 60
+ns.RefreshPlayer()
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
