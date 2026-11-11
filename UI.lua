@@ -836,16 +836,14 @@ end
 -- sit outside the count; showing them stops a page of dailies reading as empty.
 -- `short` gives the compact form for the zone list ("3/10 +4").
 -- Colour of a zone list entry by how much of it you've done: grey before you
--- start, then red, orange at 40%, WoW's gold at 80%, and on towards a
--- yellow-green that stays clearly short of the green a finished entry gets
--- (so green always means done).
+-- start, then from white, fading towards green as you go. Only a finished
+-- entry is the full green (with a tick on its icon), so a nearly done one
+-- stays a paler green.
 local PROGRESS_NOT_STARTED = { 0.62, 0.62, 0.62 }
 local PROGRESS_DONE = { 0.42, 0.83, 0.37 } -- the same green as before
 local PROGRESS_STOPS = { -- { fraction done, colour }
-    { 0.0, { 1.00, 0.25, 0.25 } }, -- red: just started
-    { 0.4, { 1.00, 0.55, 0.15 } }, -- orange
-    { 0.8, { 1.00, 0.82, 0.20 } }, -- WoW's gold
-    { 1.0, { 0.80, 0.86, 0.25 } }, -- yellow-green, never quite reached before it's done
+    { 0.0, { 0.95, 0.95, 0.95 } }, -- white: just started
+    { 1.0, { 0.62, 0.88, 0.56 } }, -- pale green, never quite reached before it's done
 }
 
 local function ProgressColor(done, total)

@@ -4,6 +4,7 @@
 
 - **Attunements:** a new **Attunements** heading in the zone list has a page for each key chain: **Onyxia's Lair** (the Drakefire Amulet), **Upper Blackrock Spire** (the Seal of Ascension), **Scholomance** (the Skeleton Key) and **Shadowforge City** (the Shadowforge Key). Each page shows your faction's chain as one storyline, even where it crosses zones and dungeons, and ticks off the key once it's in your bags or bank. Its progress counts the quests and the key.
 - **World map pins, reworked:** they're on by default, and the tick box on the map is gone: **LorePath quests** in the world map's filter menu has three filters instead, also in the settings: **Quests at your level** (a gold "!"), **Low-level quests** (grey) and **Quests above your level** (red), all on. Shift+click a pin to open its quest in LorePath. The "quests in your log" option is gone.
+- **Calmer progress colours:** zone list names you've started now fade from white towards green as you finish their quests, instead of going from red through orange and gold. Only finished ones are fully green, with a tick.
 
 ## 1.2.0-beta1
 
