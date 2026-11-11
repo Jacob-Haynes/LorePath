@@ -9,6 +9,7 @@
 - **Quest search:** a search box above the zone list finds quests by name (any words, any order) or ID. Up to 50 results replace the zone list, showing each quest's zone, status and level; click one to jump to it. Escape clears the search. `/lp search <name>` opens LorePath with the search filled in.
 - **Open in quest log:** a quest you're on has an **Open in quest log** button in its details, and Shift+clicking it in the graph does the same. It opens the game's quest log at that quest, with its live objectives. Not in combat.
 - **Show in LorePath:** a LorePath book button on the game's quest log opens the selected quest in LorePath, in its storyline with its details. `/lp quest` does the same, and `/lp quest <ID>` opens any quest.
+- **Drag from anywhere:** the graph pans when you drag from a quest box or a storyline header too, not only from empty space, so a busy zone is easy to move around. A press that doesn't move is still a click.
 
 ## 1.0.1
 

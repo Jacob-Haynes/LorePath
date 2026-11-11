@@ -74,8 +74,8 @@ harness.timers = {}
 function harness.RunTimers() local t = harness.timers; harness.timers = {}; for _, fn in ipairs(t) do fn() end end
 IsShiftKeyDown = function() return harness.shift or false end
 IsControlKeyDown = function() return harness.ctrl or false end
-IsMouseButtonDown = function() return false end
-GetCursorPosition = function() return 0, 0 end
+IsMouseButtonDown = function() return harness.mouseDown or false end
+GetCursorPosition = function() return harness.cx or 0, harness.cy or 0 end
 InCombatLockdown = function() return false end
 -- Errors that ns.Safely catches are recorded here; the test run fails if any are unexpected.
 harness.errors = {}

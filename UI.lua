@@ -248,6 +248,17 @@ local function SetFade(tex, r, g, b, a)
     end
 end
 
+-- How far (in pixels) the cursor must move with the button held before a press
+-- becomes a drag. Below it, a press on a quest or header is still a click.
+local PAN_THRESHOLD = 5
+
+-- Starts a possible pan of `scroll` from where the cursor is now.
+local function BeginPan(scroll)
+    local cx, cy = GetCursorPosition()
+    scroll.pan = { cx = cx, cy = cy, x = scroll:GetHorizontalScroll(), y = scroll:GetVerticalScroll() }
+    scroll.dragged = false
+end
+
 -- Makes a scroll frame scroll with the mouse wheel (shift for sideways) and pan
 -- when dragged with the left mouse button.
 local function MakeScrollable(scroll, allowPan)
@@ -266,11 +277,9 @@ local function MakeScrollable(scroll, allowPan)
     end
     scroll:EnableMouse(true)
     scroll:SetScript("OnMouseDown", function(self, button)
-        if button ~= "LeftButton" then
-            return
+        if button == "LeftButton" then
+            BeginPan(self)
         end
-        local cx, cy = GetCursorPosition()
-        self.pan = { cx = cx, cy = cy, x = self:GetHorizontalScroll(), y = self:GetVerticalScroll() }
     end)
     scroll:SetScript("OnMouseUp", function(self)
         self.pan = nil
@@ -286,11 +295,37 @@ local function MakeScrollable(scroll, allowPan)
         end
         local cx, cy = GetCursorPosition()
         local scale = self:GetEffectiveScale()
-        local x = pan.x - (cx - pan.cx) / scale
-        local y = pan.y + (cy - pan.cy) / scale
-        self:SetHorizontalScroll(math.max(0, math.min(x, self:GetHorizontalScrollRange())))
-        self:SetVerticalScroll(math.max(0, math.min(y, self:GetVerticalScrollRange())))
+        local dx, dy = (cx - pan.cx) / scale, (cy - pan.cy) / scale
+        if not self.dragged then
+            if math.abs(dx) < PAN_THRESHOLD and math.abs(dy) < PAN_THRESHOLD then
+                return
+            end
+            self.dragged = true -- from here on it's a drag: the release won't click
+            GameTooltip:Hide()
+        end
+        self:SetHorizontalScroll(math.max(0, math.min(pan.x - dx, self:GetHorizontalScrollRange())))
+        self:SetVerticalScroll(math.max(0, math.min(pan.y + dy, self:GetVerticalScrollRange())))
     end)
+end
+
+-- Quest boxes and storyline headers sit on top of the graph and take the mouse,
+-- so they start the graph's pan themselves. A press that turns into a drag pans;
+-- one that doesn't is a normal click.
+local function StartGraphPan(_, button)
+    if button == "LeftButton" and frame and frame.graphScroll then
+        BeginPan(frame.graphScroll)
+    end
+end
+
+-- True if the press now being released was a drag (so it shouldn't click).
+local function WasDragged()
+    return frame and frame.graphScroll and frame.graphScroll.dragged or false
+end
+
+-- True while a drag is moving the graph (so hovering doesn't pop up tooltips).
+local function IsPanning()
+    local scroll = frame and frame.graphScroll
+    return scroll and scroll.pan ~= nil and scroll.dragged or false
 end
 
 -- Shared with Detail.lua (the quest detail panel), so both draw quests the same way.
@@ -439,6 +474,9 @@ local function ShowQuestTooltip(owner, id, storyline)
 end
 
 local function ShowNodeTooltip(node)
+    if IsPanning() then
+        return -- passing over quests while dragging the graph
+    end
     ShowQuestTooltip(node, node.questID, node.storyline)
 end
 
@@ -480,7 +518,12 @@ local function AcquireNode(parent)
         node:SetScript("OnLeave", GameTooltip_Hide)
         -- Click opens the detail panel (again to close it); Ctrl+click sets the waypoint;
         -- Shift+click on a quest you're on opens it in the game's quest log.
+        -- Dragging from a quest pans the graph instead.
+        node:SetScript("OnMouseDown", StartGraphPan)
         node:SetScript("OnClick", function(self)
+            if WasDragged() then
+                return
+            end
             if IsControlKeyDown() then
                 ns.ShowQuestStart(self.questID)
             elseif IsShiftKeyDown() and ns.IsOnQuest(self.questID) then
@@ -556,10 +599,16 @@ local function AcquireSection(parent)
         local stepHL = s.stepButton:CreateTexture(nil, "HIGHLIGHT")
         stepHL:SetAllPoints()
         stepHL:SetColorTexture(1, 1, 1, 0.08)
+        s.stepButton:SetScript("OnMouseDown", StartGraphPan)
         s.stepButton:SetScript("OnClick", function(self)
-            ns.FocusQuest(self.targetQuest)
+            if not WasDragged() then
+                ns.FocusQuest(self.targetQuest)
+            end
         end)
         s.stepButton:SetScript("OnEnter", function(self)
+            if IsPanning() then
+                return
+            end
             GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
             GameTooltip:AddLine(ns.GetQuestNameOrID(self.targetQuest), 1, 0.82, 0)
             local q = ns.Quests[self.targetQuest]
@@ -578,8 +627,11 @@ local function AcquireSection(parent)
         local hl = s:CreateTexture(nil, "HIGHLIGHT")
         hl:SetAllPoints()
         SetFade(hl, 1, 0.82, 0, 0.10)
+        s:SetScript("OnMouseDown", StartGraphPan)
         s:SetScript("OnClick", function(self)
-            SetSectionCollapsed(self.key, not self.collapsed)
+            if not WasDragged() then
+                SetSectionCollapsed(self.key, not self.collapsed)
+            end
         end)
         pools.sections[used.sections] = s
     end
@@ -1659,7 +1711,7 @@ local function CreateMainFrame()
         GameTooltip:AddLine("Search quests by name or ID in the box above the zone list, or with /lp search <name>.", 1, 1, 1, true)
         GameTooltip:AddLine("Shift+click a quest you're on to open it in your quest log.", 1, 1, 1, true)
         GameTooltip:AddLine("Click \"Next\" or \"First finish\" in a storyline header to jump to that quest; Back returns you.", 1, 1, 1, true)
-        GameTooltip:AddLine("Drag to pan; Shift+mouse wheel scrolls sideways.", 1, 1, 1, true)
+        GameTooltip:AddLine("Drag anywhere on the graph to pan, even from a quest; Shift+mouse wheel scrolls sideways.", 1, 1, 1, true)
         GameTooltip:AddLine(" ")
         GameTooltip:AddLine("Level colours, as in your quest log:", 1, 0.82, 0)
         GameTooltip:AddLine(Hex(DIFFICULTY.impossible) .. "too high|r  " .. Hex(DIFFICULTY.difficult) .. "your level|r  "

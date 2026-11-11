@@ -886,6 +886,73 @@ if found:
     zrow = [f for f in harness["all"].values() if f["zoneID"] == ns.Quests[st["first"]]["z"] and f.IsShown(f)][0]
     check(zr > 0 and f"+{zr}" in zrow["count"]["__text"], f"the zone list row shows +{zr} repeatable: {zrow['count']['__text']!r}")
     check(f"{zr} repeatable" in frame["zoneSummary"]["__text"], "the zone summary mentions the repeatables")
+
+# --- Dragging the graph from anywhere (issue #20) ---
+gs = frame["graphScroll"]
+ns.HideDetail()
+g.LorePathDB["collapsed"] = lua.table()
+ns.Refresh()
+def press(btn, x=500, y=500):
+    harness["cx"], harness["cy"], harness["mouseDown"] = x, y, True
+    btn["__scripts"]["OnMouseDown"](btn, "LeftButton")
+def move(x, y):
+    harness["cx"], harness["cy"] = x, y
+    gs["__scripts"]["OnUpdate"](gs)
+def release(btn):
+    harness["mouseDown"] = False
+    gs["__scripts"]["OnUpdate"](gs)
+    btn["__scripts"]["OnClick"](btn)
+def at(h, v):
+    gs["__hrange"], gs["__vrange"], gs["__hs"], gs["__vs"] = 2000, 2000, h, v
+pan_tile = [f for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)][0]
+at(100, 100)
+press(pan_tile)
+move(503, 498)
+check((gs["__hs"], gs["__vs"]) == (100, 100), "a press on a quest that moves a few pixels doesn't pan yet")
+move(400, 450)
+check((gs["__hs"], gs["__vs"]) == (200, 50), f"dragging from a quest pans the graph (to {gs['__hs']}, {gs['__vs']})")
+g.GameTooltip.lines = lua.table()
+other_tile = [f for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f) and f is not pan_tile][0]
+other_tile["__scripts"]["OnEnter"](other_tile)
+check(len(list(g.GameTooltip.lines.values())) == 0, "quests passed over while dragging don't pop up tooltips")
+release(pan_tile)
+check(ns.detailQuest is None and gs["pan"] is None, "letting go after a drag doesn't open the quest's details")
+press(pan_tile)
+move(502, 501)
+release(pan_tile)
+check(ns.detailQuest == pan_tile["questID"], "a press and release without dragging still opens the details")
+ns.HideDetail()
+
+sec = [f for f in harness["all"].values() if f["key"] is not None and f["stepButton"] is not None and f.IsShown(f)][0]
+was = sec["collapsed"]
+at(0, 0)
+press(sec)
+move(520, 530)
+release(sec)
+check(sec["collapsed"] == was and (gs["__hs"], gs["__vs"]) == (0, 30), "dragging from a storyline header pans instead of collapsing it")
+step = sec["stepButton"]
+title_before = frame["zoneTitle"]["__text"]
+focus_before = ns.focusedQuest
+press(step)
+move(460, 500)
+release(step)
+check(frame["zoneTitle"]["__text"] == title_before and ns.focusedQuest == focus_before, "dragging from a header's Next link pans instead of jumping")
+at(0, 0)
+press(gs)
+move(450, 560)
+release_canvas = gs["__scripts"]["OnMouseUp"]
+harness["mouseDown"] = False
+release_canvas(gs)
+check((gs["__hs"], gs["__vs"]) == (50, 60) and gs["pan"] is None, "dragging empty space still pans")
+# A plain click on the header still collapses or expands it.
+press(sec)
+release(sec)
+sec =[f for f in harness["all"].values() if f["key"] == sec["key"] and f.IsShown(f)][0]
+check(sec["collapsed"] != was, "a plain click on a storyline header still collapses or expands it")
+g.LorePathDB["collapsed"] = lua.table()
+ns.Refresh()
+harness["cx"], harness["cy"] = 0, 0
+
 # --- Dungeons and raids (issue #2) ---
 char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
 char["completed"], char["log"] = lua.table(), lua.table()
