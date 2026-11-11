@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.2.0-beta4
 
 - **Fixed an error at quest givers:** "Something went wrong (QUEST_DETAIL) ... a secret string value" when a quest giver offered you a quest. The game keeps some quest givers' details secret from addons; LorePath now skips those instead of failing, so it still saves the quest's text (just not where it started).
 
