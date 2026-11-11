@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Quest search:** a search box above the zone list finds quests by name (any words, any order) or ID. Up to 50 results replace the zone list, showing each quest's zone, status and level; click one to jump to it. Escape clears the search. `/lp search <name>` opens LorePath with the search filled in.
+
 ## 1.0.1
 
 - **No spoilers:** quests you haven't started show "Find what awaits you." in their details, with a **Reveal** button, instead of their objectives and story. Quests in your log show their objectives and description, but not how they end. Completed quests show everything. A new **Show spoilers** setting (and `/lp spoilers`) shows everything always.

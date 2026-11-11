@@ -880,6 +880,67 @@ g.SlashCmdList["LOREPATH"]("here")
 check(frame["zoneTitle"]["__text"] == "Elwynn Forest", "back outside, /lp here opens the outdoor zone again")
 g.IsInInstance, g.GetRealZoneText, C_Map.GetAreaInfo = None, None, None
 
+# --- Quest search (issue #18) ---
+# Unloaded names on a real client: only the bundled titles, plus one Forever quest the client names.
+forever_only = next(qid for qid in sorted(ns.Quests.keys()) if qid >= 90000 and ns.IsEligible(qid)
+                    and ns.QuestText[qid] is None and ns.CommunityText[qid] is None and not ns.Quests[qid]["rp"])
+real_title = g.C_QuestLog.GetTitleForQuestID
+g.C_QuestLog.GetTitleForQuestID = lua.eval(f"function(id) if id == {forever_only} then return 'Zzyx Forever Tale' end end")
+def search(text, limit=None):
+    ids, total = ns.SearchQuests(text, limit)
+    return list(ids.values()), total
+ids, total = search("garrick")
+check(6 in ids, f"searching 'garrick' finds Bounty on Garrick Padfoot (6): {ids[:5]}")
+check(6 in search("padfoot GARRICK")[0], "words match in any order, ignoring case")
+check(search("6")[0][:1] == [6], "a quest ID finds that quest first")
+check(search("")[1] == 0 and search("   ")[1] == 0, "an empty search finds nothing")
+check(search("zzyx forever")[0] == [forever_only], "a Forever quest is found by the name the client gives it")
+check(search("xyzzyq")[1] == 0, "a nonsense search finds nothing")
+horde_titled = next(qid for qid, q in sorted(ns.Quests.items()) if q["f"] == 1 and ns.QuestText[qid] is not None)
+check(horde_titled not in search(ns.QuestText[horde_titled]["t"])[0], "a Horde-only quest isn't found by an Alliance character")
+ids, total = search("the")
+check(len(ids) == 50 and total > 50, f"results stop at 50, with the full count kept ({total})")
+ids, total = search("bounty")
+names = [str(ns.GetQuestNameOrID(i)).lower() for i in ids]
+starts = [n.startswith("bounty") for n in names]
+check(starts[0] and starts == sorted(starts, reverse=True), "names that start with the search come first: " + " | ".join(names[:4]))
+rp_titled = next(qid for qid, q in sorted(ns.Quests.items()) if q["rp"] == 1 and ns.IsEligible(qid) and ns.QuestText[qid] is not None)
+ns.SetSetting("showRepeatable", False)
+check(rp_titled not in search(ns.QuestText[rp_titled]["t"])[0], "repeatable quests aren't found while they're hidden")
+ns.SetSetting("showRepeatable", True)
+check(rp_titled in search(ns.QuestText[rp_titled]["t"])[0], "and are found when shown")
+
+# In the window: results replace the zone list; clicking one jumps to it.
+def result_rows():
+    return sorted([f for f in harness["all"].values() if f["resultQuest"] is not None and f.IsShown(f)], key=lambda f: f["top"])
+def zone_rows_shown():
+    return [f for f in harness["all"].values() if f["zoneID"] is not None and f.IsShown(f)]
+g.LorePathDB["listHidden"] = True
+ns.ApplyListVisibility()
+g.SlashCmdList["LOREPATH"]("search garrick")
+box = frame["searchBox"]
+check(frame.IsShown(frame) and box["__text"] == "garrick", "/lp search garrick opens the window with the search filled in")
+check(frame["listInset"].IsShown(frame["listInset"]) and g.LorePathDB["listHidden"] is None, "and shows the zone list if it was hidden")
+rows = result_rows()
+check(len(rows) > 0 and any(r["resultQuest"] == 6 for r in rows) and len(zone_rows_shown()) == 0,
+      f"the zone list shows {len(rows)} quest results instead of zones")
+row6 = next(r for r in rows if r["resultQuest"] == 6)
+check("Elwynn Forest" in row6["sub"]["__text"], f"a result shows its zone and status: {row6['sub']['__text']!r}")
+g.GameTooltip.lines = lua.table()
+row6["__scripts"]["OnEnter"](row6)
+check(any("Bounty on Garrick" in str(l) for l in g.GameTooltip.lines.values()), "a result has the quest's tooltip")
+row6["__scripts"]["OnClick"](row6)
+check(frame["zoneTitle"]["__text"].startswith("Elwynn Forest") and ns.focusedQuest == 6, "clicking a result jumps to the quest")
+check(len(result_rows()) > 0, "the results stay up after jumping, to try another")
+box.SetText(box, "xyzzyq")
+box["__scripts"]["OnTextChanged"](box, True)
+headers = [f for f in harness["all"].values() if f.IsShown(f) and f["text"] is not None and f["text"]["__text"] == "No quests match"]
+check(len(result_rows()) == 0 and len(headers) == 1, "a search with no matches says so")
+box["__scripts"]["OnEscapePressed"](box)
+check(box["__text"] == "" and len(result_rows()) == 0 and len(zone_rows_shown()) > 0, "Escape clears the search and brings the zones back")
+g.C_QuestLog.GetTitleForQuestID = real_title
+harness.RunTimers()
+
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])
