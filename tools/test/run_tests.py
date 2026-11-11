@@ -1378,6 +1378,25 @@ check(tile_of(3802)["icon"]["__atlas"] == "Raid", "a quest picked up inside a ra
 ns.Quests[3802]["di"] = 242
 g.C_Texture = None
 
+# --- Quests with Alliance and Horde versions (ATT's ResolveQuestData) ---
+check(ns.Quests[8151]["l"] == 50 and list(ns.Quests[8151]["cl"].values()) == [3],
+      "a faction-split quest keeps its level and class (8151 is a level 50 Hunter quest)")
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+ns.RefreshPlayer()
+q = ns.Quests[8151]
+check(q["m"] == 1453 and q["qg"] == 4205 and not ns.IsEligible(8151), "an Alliance character sees its Stormwind trainer, and a Warrior doesn't get the Hunter quest")
+check(list(ns.Quests[687]["pre"].values()) == [653] and ns.Quests[687]["m"] == 1455, "its Alliance prerequisite and start (Ironforge)")
+check(ns.Quests[2861]["m"] == 1453 and ns.Quests[2861]["l"] == 40, "Tabetha's Task starts in Stormwind for the Alliance")
+char["race"], char["faction"] = 2, "Horde"
+ns.RefreshPlayer()
+q = ns.Quests[8151]
+check(q["m"] == 1454 and q["qg"] == 3039, "a Horde character sees its Orgrimmar trainer")
+check(list(ns.Quests[687]["pre"].values()) == [688] and ns.Quests[687]["m"] == 1417, "and the Horde prerequisite and start (Arathi Highlands)")
+check(687 in list(ns.GetFollowOns(688).values()) and 687 not in list(ns.GetFollowOns(653).values()),
+      "the storyline follows your faction's prerequisite")
+char["race"], char["faction"] = 1, "Alliance"
+ns.RefreshPlayer()
+
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])

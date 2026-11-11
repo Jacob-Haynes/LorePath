@@ -58,6 +58,42 @@ local function ReadProfessions()
     return skills, info
 end
 
+-- Some quests have Alliance and Horde versions with different givers, start
+-- points or prerequisites (fv = {[1] = Horde, [2] = Alliance} in the data).
+-- Your faction's fields are copied onto the quest, so the rest of LorePath
+-- reads q.m, q.qg, q.pre as usual.
+local factionQuests
+local appliedFaction
+local function ApplyFactionVersions()
+    if appliedFaction == player.faction then
+        return
+    end
+    if not factionQuests then
+        factionQuests = {}
+        for _, q in pairs(ns.Quests) do
+            if q.fv then
+                local keys = {}
+                for _, version in pairs(q.fv) do
+                    for key in pairs(version) do
+                        keys[key] = true
+                    end
+                end
+                table.insert(factionQuests, { q = q, keys = keys })
+            end
+        end
+    end
+    for _, entry in ipairs(factionQuests) do
+        local version = entry.q.fv[player.faction] or {}
+        for key in pairs(entry.keys) do
+            entry.q[key] = version[key]
+        end
+    end
+    appliedFaction = player.faction
+    if ns.ResetFollowOns then
+        ns.ResetFollowOns() -- prerequisites may have changed
+    end
+end
+
 function ns.RefreshPlayer()
     local _, _, raceID = UnitRace("player")
     local _, _, classID = UnitClass("player")
@@ -67,6 +103,7 @@ function ns.RefreshPlayer()
     player.faction = (factionTag == "Horde" and 1) or (factionTag == "Alliance" and 2) or 0
     player.level = UnitLevel("player") or 1
     player.skills, player.professions = ReadProfessions()
+    ApplyFactionVersions()
     wipe(ns.standings)
 end
 
@@ -851,6 +888,9 @@ end
 
 -- Quests that list `id` as a prerequisite (built once, on first use).
 local followOns
+function ns.ResetFollowOns()
+    followOns = nil
+end
 function ns.GetFollowOns(id)
     if not followOns then
         followOns = {}

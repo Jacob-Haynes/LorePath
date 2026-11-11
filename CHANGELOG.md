@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- **17 quests with Alliance and Horde versions fixed:** quests like the level-50 class quests from your capital's trainers (for example 8151 for Hunters) and Tabetha's Task were missing their level, class, start point and quest giver, so some showed for every class with no start point. They now have them, with your faction's trainer, start point and earlier quest.
 - **Portal icon for quests picked up inside dungeons and raids:** 88 quests that you get from an NPC, item or object inside an instance show its entrance portal instead of the scroll, and their tooltip and details say "Picked up inside <instance>" instead of "Start location unknown".
 
 ## 1.1.0-beta2
