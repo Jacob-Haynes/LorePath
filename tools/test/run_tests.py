@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestStarts.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Pins.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestStarts.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Data/Attunements.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Pins.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -1973,6 +1973,82 @@ g.WorldMapFrame, g.LorePathQuestPinMixin = saved_wm, saved_mixin
 
 g.SlashCmdList["LOREPATH"]("pins")
 check(any("/lp config" in str(l) for l in list(harness["chat"].values())[-4:]), "there's no /lp pins: it prints the usual help")
+
+# --- Attunements (issue #16) ---
+atts = {a["id"]: a for a in ns.Attunements.values()}
+missing = [(a, s["quest"]) for a, att in atts.items() for s in att["steps"].values() if s["quest"] and ns.Quests[s["quest"]] is None]
+check(not missing, f"every attunement quest is in WoW Forever's data: missing {missing}")
+check(all(ns.InstanceZones[att["instance"]] is not None for att in atts.values()), "every attunement names a dungeon or raid page")
+def rewards(qids):
+    return {i for q in qids for i in (ns.Quests[q]["rw"] or lua.table()).values()}
+keys_ok = all(s["item"] in rewards([t["quest"] for t in att["steps"].values() if t["quest"]])
+              for att in atts.values() for s in att["steps"].values() if s["item"])
+check(keys_ok, "each attunement's key is a reward of one of its quests")
+
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+ony = list(ns.GetZoneQuests("att:onyxia").values())
+check(4182 in ony and 6502 in ony and 4903 not in ony, f"an Alliance character's Onyxia page has the Alliance chain only ({len(ony)} quests)")
+sls, others = ns.BuildStorylines("att:onyxia")
+sls = list(sls.values())
+zones = {ns.Quests[n["id"]]["z"] for n in sls[0]["nodes"].values()} if sls else set()
+check(len(sls) == 1 and len(list(sls[0]["nodes"].values())) == len(ony) and len(zones) > 1,
+      f"it's one storyline across zones and instances: {len(sls)} storyline, zones {sorted(zones)}")
+check(ns.GetMapName("att:onyxia") == "Onyxia's Lair" and ns.GetLevelRange("att:onyxia") == ns.GetLevelRange(248),
+      "the page is named after the raid, with the raid's level range")
+reqs = list(ns.GetAttunementRequirements("att:onyxia").values())
+check(len(reqs) == 1 and reqs[0]["kind"] == "item" and reqs[0]["item"] == 16309 and reqs[0]["done"] is False,
+      "its key, the Drakefire Amulet, is a step, not done without it")
+done, total, _ = ns.GetZoneProgress("att:onyxia")
+check((done, total) == (0, len(ony) + 1), f"progress counts the quests and the key: {done} / {total}")
+g.C_Item.GetItemCount = lua.eval("function(id, bank) if id == 16309 and bank then return 1 end return 0 end")
+for qid in ony:
+    char["completed"][qid] = True
+ns.RefreshCompleted()
+done, total, _ = ns.GetZoneProgress("att:onyxia")
+check(ns.GetAttunementRequirements("att:onyxia")[1]["done"] is True and done == total,
+      f"with every quest done and the amulet in your bank, it's complete: {done} / {total}")
+g.C_Item.GetItemCount = None
+char["completed"] = lua.table()
+ns.RefreshCompleted()
+
+char["race"], char["faction"] = 2, "Horde"
+ns.RefreshPlayer()
+ony_h = list(ns.GetZoneQuests("att:onyxia").values())
+scholo_h = list(ns.GetZoneQuests("att:scholomance").values())
+check(4903 in ony_h and 6602 in ony_h and 4182 not in ony_h and 5511 in scholo_h and 5505 not in scholo_h,
+      "a Horde character gets the Horde chains")
+char["race"], char["faction"] = 1, "Alliance"
+ns.RefreshPlayer()
+groups = dict((gr["name"], list(gr["pages"].values())) for gr in ns.GetSpecialGroups().values())
+check(groups.get("Attunements") == ["att:onyxia", "att:ubrs", "att:scholomance", "att:shadowforge"],
+      f"the zone list gets an Attunements group: {groups.get('Attunements')}")
+char["level"] = 10
+ns.RefreshPlayer()
+check(len(list(ns.GetZoneQuests("att:onyxia").values())) > 0, "it shows at any level, as a goal")
+char["level"] = 60
+ns.RefreshPlayer()
+
+# In the window.
+g.LorePathDB["collapsedContinents"] = lua.table()
+ns.Toggle(True)
+ns.Refresh()
+heads = [f["continent"] for f in sorted([f for f in harness["all"].values() if f["continent"] is not None and f["zoneID"] is None and f.IsShown(f)],
+                                       key=lambda f: f["top"])]
+check("Attunements" in heads and heads.index("Attunements") < heads.index("Dungeons"), f"an Attunements heading sits with Class and Professions: {heads[:4]}")
+row = page_row("att:onyxia")
+check(row is not None and row["text"]["__text"] == "Onyxia's Lair" and row["icon"]["__texture"] == ns.InstanceInfo[248]["ic"],
+      "Onyxia's Lair is listed with the raid's icon")
+row["__scripts"]["OnClick"](row)
+canvas_texts = [str(f["__text"]) for f in harness["all"].values() if f["__kind"] == "FontString" and f.IsShown(f) and f["__text"] is not None]
+check(frame["zoneTitle"]["__text"] == "Onyxia's Lair" and "0 / 17 steps done" in frame["zoneSummary"]["__text"],
+      f"clicking it shows the page, counting steps: {frame['zoneSummary']['__text']}")
+check("Also needed" in canvas_texts and any("Item16309" in t and "ReadyCheck-NotReady" in t for t in canvas_texts),
+      "the key is listed above the quests, not ticked yet")
+ns.FocusQuest(4182)
+check(frame["zoneTitle"]["__text"] == "Onyxia's Lair", "focusing one of its quests stays on the attunement page")
+ns.Toggle(False)
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
