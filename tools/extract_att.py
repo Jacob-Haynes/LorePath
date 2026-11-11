@@ -4,9 +4,10 @@
 AllTheThings (https://github.com/ATTWoWAddon/AllTheThings) is MIT-licensed. Its
 WoW Forever data lives in db/Camelot ("camelot" is the game type Forever uses).
 
-This script loads ATT's zone and instance files inside a sandboxed Lua runtime (no os/io/load),
-walks the zone tree, and writes the quest records LorePath needs to
-Data/Quests.lua.
+This script loads ATT's zone, instance, profession and PvP files (and header names
+from LocalizationDB.lua) inside a sandboxed Lua runtime (no os/io/load), walks
+them, and writes the quest records LorePath needs to Data/Quests.lua and ATT's
+notes about quests to Data/QuestNotes.lua.
 
 Usage:
     pip install lupa
