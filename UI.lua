@@ -746,6 +746,39 @@ end
 -- "3 / 10", plus "+4 repeatable" in blue. Repeatables are never "done", so they
 -- sit outside the count; showing them stops a page of dailies reading as empty.
 -- `short` gives the compact form for the zone list ("3/10 +4").
+-- Colour of a zone list entry by how much of it you've done: grey before you
+-- start, then red, orange at 40%, WoW's gold at 80%, and on towards a
+-- yellow-green that stays clearly short of the green a finished entry gets
+-- (so green always means done).
+local PROGRESS_NOT_STARTED = { 0.62, 0.62, 0.62 }
+local PROGRESS_DONE = { 0.42, 0.83, 0.37 } -- the same green as before
+local PROGRESS_STOPS = { -- { fraction done, colour }
+    { 0.0, { 1.00, 0.25, 0.25 } }, -- red: just started
+    { 0.4, { 1.00, 0.55, 0.15 } }, -- orange
+    { 0.8, { 1.00, 0.82, 0.20 } }, -- WoW's gold
+    { 1.0, { 0.80, 0.86, 0.25 } }, -- yellow-green, never quite reached before it's done
+}
+
+local function ProgressColor(done, total)
+    if total <= 0 or done <= 0 then
+        return PROGRESS_NOT_STARTED
+    end
+    if done >= total then
+        return PROGRESS_DONE
+    end
+    local p = done / total
+    for i = 1, #PROGRESS_STOPS - 1 do
+        local from, to = PROGRESS_STOPS[i], PROGRESS_STOPS[i + 1]
+        if p <= to[1] then
+            local t = (p - from[1]) / (to[1] - from[1])
+            local a, b = from[2], to[2]
+            return { a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t, a[3] + (b[3] - a[3]) * t }
+        end
+    end
+    return PROGRESS_STOPS[#PROGRESS_STOPS][2]
+end
+ns.ui.ProgressColor = ProgressColor
+
 local function ProgressText(done, total, repeatables, complete, short)
     local text = ""
     if total > 0 or repeatables == 0 then
@@ -1223,13 +1256,9 @@ RenderZoneList = function()
                 local complete = z.total > 0 and z.done == z.total
                 row.check:SetShown(complete)
                 row.icon:SetDesaturated(z.greyed or false)
-                if z.greyed then
-                    row.text:SetTextColor(0.5, 0.5, 0.5)
-                elseif complete then
-                    row.text:SetTextColor(0.42, 0.83, 0.37)
-                else
-                    row.text:SetTextColor(1, 1, 1)
-                end
+                local color = z.greyed and { 0.45, 0.45, 0.45 } -- a profession you don't have
+                    or ProgressColor(z.done, z.total)
+                row.text:SetTextColor(color[1], color[2], color[3])
                 row.count:SetText(ProgressText(z.done, z.total, z.repeatables, complete, true))
                 row.selected:SetShown(z.id == selectedZone)
                 row:SetScript("OnClick", function(self)

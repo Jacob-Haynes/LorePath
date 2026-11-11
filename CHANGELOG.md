@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Progress colours in the zone list:** zone, dungeon, raid, Class and profession names are grey until you start them, then go from red through orange (40%) and WoW's gold (80%) towards green as you finish their quests. Only finished ones are fully green.
+
 ## 1.1.0-beta1
 
 - **Quest search:** a search box above the zone list finds quests by name (any words, any order) or ID. Up to 50 results replace the zone list, showing each quest's zone, status and level; click one to jump to it. Escape clears the search. `/lp search <name>` opens LorePath with the search filled in.
