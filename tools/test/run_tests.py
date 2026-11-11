@@ -880,6 +880,36 @@ g.SlashCmdList["LOREPATH"]("here")
 check(frame["zoneTitle"]["__text"] == "Elwynn Forest", "back outside, /lp here opens the outdoor zone again")
 g.IsInInstance, g.GetRealZoneText, C_Map.GetAreaInfo = None, None, None
 
+# --- Zone list icons (issue #15) ---
+ZI, II, ZoneIcon = ns.ZoneIcons, ns.InstanceInfo, ns.ui.ZoneIcon
+check(ZI[1429] is not None and ZoneIcon(1429) == ZI[1429], f"Elwynn Forest uses AllTheThings' icon for it ({ZI[1429]})")
+check(ZoneIcon(2521) == "Interface\\Icons\\Spell_Nature_Cyclone", "Zephras Isle uses its hand-picked icon")
+check(ZI[2652] is None and ZoneIcon(2652) == ZI[1414], "a zone with no icon of its own uses its continent's")
+with_ic = next(k for k in sorted(II.keys()) if II[k]["ic"] is not None)
+without_ic = next(k for k in sorted(II.keys()) if II[k]["ic"] is None and ns.InstanceZones[k] == "dungeon")
+check(ZoneIcon(with_ic) == II[with_ic]["ic"], "an instance uses AllTheThings' icon for it")
+check(ZoneIcon(without_ic) == "Interface\\Icons\\INV_Misc_Key_03", "an instance without one uses the generic dungeon icon")
+g.SlashCmdList["LOREPATH"]("here")
+g.LorePathDB["collapsedContinents"] = lua.table()
+ns.Refresh()
+zrows = [f for f in harness["all"].values() if f["zoneID"] is not None and f.IsShown(f)]
+check(len(zrows) > 0 and all(r["icon"].IsShown(r["icon"]) and r["icon"]["__texture"] == ZoneIcon(r["zoneID"]) for r in zrows),
+      f"every zone list row shows its zone's icon ({len(zrows)} rows)")
+heads = {f["continent"]: f for f in harness["all"].values() if f["continent"] is not None and f["zoneID"] is None and f.IsShown(f)}
+check(heads["Eastern Kingdoms"]["icon"]["__texture"] == ZI[1415] and heads["Dungeons"]["icon"]["__texture"] == "Interface\\Icons\\INV_Misc_Key_03"
+      and heads["Raids"]["icon"]["__texture"] == "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+      "headings show their continent's icon, or a dungeon or raid icon")
+check(frame["zoneIcon"]["__texture"] == ZoneIcon(1429), "the zone name above the graph has the zone's icon")
+elwynn = [r for r in zrows if r["zoneID"] == 1429][0]
+check(not elwynn["check"].IsShown(elwynn["check"]), "an unfinished zone has no tick on its icon")
+for qid in ns.GetZoneQuests(1429).values():
+    char["completed"][qid] = True
+ns.Refresh()
+elwynn = [f for f in harness["all"].values() if f["zoneID"] == 1429 and f.IsShown(f)][0]
+check(elwynn["check"].IsShown(elwynn["check"]), "a finished zone gets a tick on its icon")
+char["completed"] = lua.table()
+ns.Refresh()
+
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])

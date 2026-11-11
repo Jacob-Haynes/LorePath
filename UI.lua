@@ -174,6 +174,44 @@ local function QuestIcon(q)
     return QUEST_ICON
 end
 
+-- Zone list icons (issue #15). Zones and most instances use AllTheThings' icon
+-- for them (ns.ZoneIcons, ns.InstanceInfo[].ic); the rest fall back to a hand
+-- pick, then their continent's icon, then a generic one.
+local GENERIC_ICON = {
+    map = "Interface\\Icons\\INV_Misc_Map_01",
+    dungeon = "Interface\\Icons\\INV_Misc_Key_03",
+    raid = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+}
+-- Zones whose ATT icon is ATT's own texture, which LorePath doesn't ship.
+local ZONE_ICON_OVERRIDES = {
+    [2521] = "Interface\\Icons\\Spell_Nature_Cyclone", -- Zephras Isle, an island in the sky
+}
+
+local function ZoneIcon(zoneID)
+    local icon = ZONE_ICON_OVERRIDES[zoneID] or (ns.ZoneIcons and ns.ZoneIcons[zoneID])
+    if icon then
+        return icon
+    end
+    local kind = ns.GetInstanceKind(zoneID)
+    if kind then
+        local info = ns.InstanceInfo and ns.InstanceInfo[zoneID]
+        return info and info.ic or GENERIC_ICON[kind] or GENERIC_ICON.dungeon
+    end
+    local continent = ns.ZoneContinents and ns.ZoneContinents[zoneID]
+    if continent and continent ~= 0 and continent ~= zoneID and ns.ZoneIcons and ns.ZoneIcons[continent] then
+        return ns.ZoneIcons[continent]
+    end
+    return GENERIC_ICON.map
+end
+
+-- Icon for a zone list heading: the continent's, or Dungeons / Raids.
+local function HeadingIcon(group)
+    if group.kind then
+        return GENERIC_ICON[group.kind] or GENERIC_ICON.dungeon
+    end
+    return group.continentID and ns.ZoneIcons and ns.ZoneIcons[group.continentID] or GENERIC_ICON.map
+end
+
 -- 1px border made of four textures, so it works without BackdropTemplate.
 local function AddBorder(f, layer)
     local edges = {}
@@ -254,6 +292,7 @@ ns.ui = {
     AddBorder = AddBorder,
     SetFade = SetFade,
     MakeScrollable = MakeScrollable,
+    ZoneIcon = ZoneIcon,
     STATUS_STYLE = STATUS_STYLE,
     STATUS_TEXT = STATUS_TEXT,
     DIFFICULTY = DIFFICULTY,
@@ -824,6 +863,7 @@ RenderZone = function()
 
     local done, total, repeatables = ns.GetZoneProgress(selectedZone)
     frame.zoneTitle:SetText(ns.GetMapName(selectedZone))
+    frame.zoneIcon:SetTexture(ZoneIcon(selectedZone))
     local summary = string.format("%d / %d quests done", done, total)
     if repeatables > 0 then
         summary = summary .. "  -  " .. Hex(REPEATABLE_BLUE) .. repeatables .. " repeatable|r"
@@ -903,6 +943,14 @@ RenderZoneList = function()
             row.toggle = row:CreateTexture(nil, "ARTWORK")
             row.toggle:SetSize(12, 12)
             row.toggle:SetPoint("LEFT", 4, 0)
+            row.icon = row:CreateTexture(nil, "ARTWORK")
+            row.icon:SetSize(16, 16)
+            row.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+            -- A small tick on the icon of a zone you've finished, like the quest boxes.
+            row.check = row:CreateTexture(nil, "OVERLAY")
+            row.check:SetSize(12, 12)
+            row.check:SetPoint("BOTTOMRIGHT", row.icon, "BOTTOMRIGHT", 4, -3)
+            row.check:SetTexture("Interface\\RaidFrame\\ReadyCheck-Ready")
             row.text = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
             row.text:SetJustifyH("LEFT")
             row.count = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
@@ -936,7 +984,8 @@ RenderZoneList = function()
     for _, z in ipairs(SortedZones()) do
         local g = groups[z.continentName]
         if not g then
-            g = { name = z.continentName, zones = {}, done = 0, total = 0, repeatables = 0 }
+            g = { name = z.continentName, zones = {}, done = 0, total = 0, repeatables = 0, kind = z.instance,
+                  continentID = (not z.instance and z.continent ~= 0 and z.continent ~= z.id) and z.continent or nil }
             groups[z.continentName] = g
             table.insert(order, g)
         end
@@ -962,9 +1011,14 @@ RenderZoneList = function()
         heading.count:SetText("")
         heading.lineL:Show()
         heading.lineR:Show()
+        heading.icon:Show()
+        heading.icon:SetTexture(HeadingIcon(g))
+        heading.icon:ClearAllPoints()
+        heading.icon:SetPoint("RIGHT", heading.text, "LEFT", -5, 0)
+        heading.check:Hide()
         heading.lineL:ClearAllPoints()
         heading.lineL:SetPoint("LEFT", heading.toggle, "RIGHT", 6, 0)
-        heading.lineL:SetPoint("RIGHT", heading.text, "LEFT", -6, 0)
+        heading.lineL:SetPoint("RIGHT", heading.icon, "LEFT", -6, 0)
         heading.lineR:ClearAllPoints()
         heading.lineR:SetPoint("LEFT", heading.text, "RIGHT", 6, 0)
         heading.lineR:SetPoint("RIGHT", heading, "RIGHT", -8, 0)
@@ -993,11 +1047,16 @@ RenderZoneList = function()
                 row.lineL:Hide()
                 row.lineR:Hide()
                 row.text:SetFontObject("GameFontHighlightSmall")
+                row.icon:Show()
+                row.icon:SetTexture(ZoneIcon(z.id))
+                row.icon:ClearAllPoints()
+                row.icon:SetPoint("LEFT", 12, 0)
                 row.text:ClearAllPoints()
-                row.text:SetPoint("LEFT", 14, 0)
+                row.text:SetPoint("LEFT", row.icon, "RIGHT", 5, 0)
                 row.text:SetPoint("RIGHT", row.count, "LEFT", -4, 0)
                 row.text:SetText(z.name)
                 local complete = z.total > 0 and z.done == z.total
+                row.check:SetShown(complete)
                 if complete then
                     row.text:SetTextColor(0.42, 0.83, 0.37)
                 else
@@ -1314,8 +1373,13 @@ local function CreateMainFrame()
     listToggle:SetScript("OnLeave", GameTooltip_Hide)
     f.listToggle = listToggle
 
+    local zoneIcon = f:CreateTexture(nil, "ARTWORK")
+    zoneIcon:SetSize(22, 22)
+    zoneIcon:SetPoint("LEFT", listToggle, "RIGHT", 6, 0)
+    zoneIcon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+    f.zoneIcon = zoneIcon
     local zoneTitle = f:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    zoneTitle:SetPoint("LEFT", listToggle, "RIGHT", 6, 0)
+    zoneTitle:SetPoint("LEFT", zoneIcon, "RIGHT", 6, 0)
     zoneTitle:SetJustifyH("LEFT")
     f.zoneTitle = zoneTitle
     local zoneSummary = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")

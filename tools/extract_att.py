@@ -120,6 +120,7 @@ def main():
 
     quests = {}
     zones = {}  # zone mapID -> continent mapID (or 0)
+    map_icons = {}  # mapID -> ATT's icon (a texture file ID), for the zone list
     skipped = {"removed": 0, "unavailable": 0}
 
     def walk(node, continent, zone):
@@ -128,6 +129,8 @@ def main():
         kind = node["__kind"]
         if kind == "Map":
             map_id = int(node["__id"])
+            if isinstance(node["icon"], (int, float)):
+                map_icons.setdefault(map_id, int(node["icon"]))
             if node["isContinent"]:
                 continent = map_id
             elif zone is None:
@@ -223,6 +226,10 @@ def main():
     out_path = os.path.join(out_dir, "Quests.lua")
     write_lua(out_path, quests, zones, att_commit)
     append_instance_tables(out_path, instance_zones, instance_info)
+    # Icons for the zone list (issue #15): zones and continents that have quests.
+    wanted = set(zones) | {c for c in zones.values() if c}
+    zone_icons = {k: v for k, v in map_icons.items() if k in wanted}
+    append_zone_icons(out_path, zone_icons)
     # Re-copy ATT's licence on every run, in case it changes.
     shutil.copyfile(os.path.join(att_root, "LICENSE"), os.path.join(out_dir, "AllTheThings-LICENSE.txt"))
 
@@ -232,6 +239,8 @@ def main():
     print(f"Instances: {len(instance_zones)} pages "
           f"({sum(1 for k in instance_zones.values() if k == 'raid')} raids), "
           f"{sum(1 for q in quests.values() if q['z'] in instance_zones)} quests")
+    print(f"Zone icons: {len(zone_icons)} of {len(wanted)} zones and continents; "
+          f"instance icons: {sum(1 for e in instance_info.values() if 'ic' in e)} of {len(instance_info)}")
     print(f"Size: {os.path.getsize(out_path) / 1024:.0f} KB (ATT commit {att_commit})")
 
 
@@ -343,6 +352,8 @@ def extract_instances(att_root, lua, lua_type, add_quest, quests):
             map_id = node["mapID"]
             page = int(map_id) if isinstance(map_id, (int, float)) else -node_id
             entry = {"ej": node_id}
+            if isinstance(node["icon"], (int, float)):
+                entry["ic"] = int(node["icon"])
             area = number(node["zoneTextAreaID"]) or (lua_list(node["zoneTextAreaIDs"]) or [None])[0]
             if area:
                 entry["ar"] = area
@@ -368,12 +379,21 @@ def append_instance_tables(path, pages, info):
     ]
     lines += [f'[{k}]="{pages[k]}",' for k in sorted(pages)]
     lines.append("}")
-    lines.append("-- ej Encounter Journal instance ID, ar area ID (for the name), n English name.")
+    lines.append("-- ej Encounter Journal instance ID, ar area ID (for the name), n English name, ic icon file ID.")
     lines.append("ns.InstanceInfo = {")
     for k in sorted(info):
         e = info[k]
-        body = ",".join(f'{f}="{e[f]}"' if f == "n" else f"{f}={e[f]}" for f in ("ej", "ar", "n") if f in e)
+        body = ",".join(f'{f}="{e[f]}"' if f == "n" else f"{f}={e[f]}" for f in ("ej", "ar", "n", "ic") if f in e)
         lines.append(f"[{k}]={{{body}}},")
+    lines.append("}")
+    with open(path, "a", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+
+def append_zone_icons(path, icons):
+    """Writes ns.ZoneIcons (mapID -> texture file ID, from ATT) at the end of Data/Quests.lua."""
+    lines = ["-- Zone list icons: mapID -> texture file ID (ATT's map icons).", "ns.ZoneIcons = {"]
+    lines += [f"[{k}]={icons[k]}," for k in sorted(icons)]
     lines.append("}")
     with open(path, "a", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
