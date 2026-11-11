@@ -8,6 +8,7 @@ local DEFAULTS = {
     openOnCurrentZone = true,   -- opening the window jumps to the zone you're in
     showOthers = true,          -- list standalone quests under the storylines
     showRepeatable = true,      -- show daily and repeatable quests (in blue)
+    showAllProfessions = false, -- list professions you don't have under Professions, greyed out
     showSpoilers = false,       -- show the story of quests you haven't started (and how quests end)
     hideCompleted = false,      -- hide storylines you've finished
     showLevels = true,          -- show quest levels on the quest tiles
@@ -154,6 +155,8 @@ function ns.CreateSettingsPanel()
         "List quests that aren't part of any chain under each zone's storylines.")
     anchor = AddCheckbox(anchor, "showRepeatable", "Show repeatable quests",
         "Show daily and repeatable quests, in blue. They never count towards progress. Also the \"Repeatable\" tick box at the top of the window.")
+    anchor = AddCheckbox(anchor, "showAllProfessions", "Show professions you don't have",
+        "List every profession under Professions in the zone list, with the ones you don't have greyed out, so you can see their quests.")
     anchor = AddCheckbox(anchor, "showSpoilers", "Show spoilers",
         "Show the full story of every quest in its details: quests you haven't started, and how quests in your log end. Off: those stay hidden until you press Reveal.")
     anchor = AddCheckbox(anchor, "showLevels", "Show quest levels on tiles",

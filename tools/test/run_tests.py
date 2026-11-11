@@ -880,6 +880,105 @@ g.SlashCmdList["LOREPATH"]("here")
 check(frame["zoneTitle"]["__text"] == "Elwynn Forest", "back outside, /lp here opens the outdoor zone again")
 g.IsInInstance, g.GetRealZoneText, C_Map.GetAreaInfo = None, None, None
 
+# --- Zone list icons (issue #15) ---
+ZI, II, ZoneIcon = ns.ZoneIcons, ns.InstanceInfo, ns.ui.ZoneIcon
+check(ZI[1429] is not None and ZoneIcon(1429) == ZI[1429], f"Elwynn Forest uses AllTheThings' icon for it ({ZI[1429]})")
+check(ZoneIcon(2521) == "Interface\\Icons\\Spell_Nature_Cyclone", "Zephras Isle uses its hand-picked icon")
+check(ZI[2652] is None and ZoneIcon(2652) == ZI[1414], "a zone with no icon of its own uses its continent's")
+with_ic = next(k for k in sorted(II.keys()) if II[k]["ic"] is not None)
+without_ic = next(k for k in sorted(II.keys()) if II[k]["ic"] is None and ns.InstanceZones[k] == "dungeon")
+check(ZoneIcon(with_ic) == II[with_ic]["ic"], "an instance uses AllTheThings' icon for it")
+check(ZoneIcon(without_ic) == "Interface\\Icons\\INV_Misc_Key_03", "an instance without one uses the generic dungeon icon")
+g.SlashCmdList["LOREPATH"]("here")
+g.LorePathDB["collapsedContinents"] = lua.table()
+ns.Refresh()
+zrows = [f for f in harness["all"].values() if f["zoneID"] is not None and f.IsShown(f)]
+check(len(zrows) > 0 and all(r["icon"].IsShown(r["icon"]) and r["icon"]["__texture"] == ZoneIcon(r["zoneID"]) for r in zrows),
+      f"every zone list row shows its zone's icon ({len(zrows)} rows)")
+heads = {f["continent"]: f for f in harness["all"].values() if f["continent"] is not None and f["zoneID"] is None and f.IsShown(f)}
+check(heads["Eastern Kingdoms"]["icon"]["__texture"] == ZI[1415] and heads["Dungeons"]["icon"]["__texture"] == "Interface\\Icons\\INV_Misc_Key_03"
+      and heads["Raids"]["icon"]["__texture"] == "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+      "headings show their continent's icon, or a dungeon or raid icon")
+check(frame["zoneIcon"]["__texture"] == ZoneIcon(1429), "the zone name above the graph has the zone's icon")
+elwynn = [r for r in zrows if r["zoneID"] == 1429][0]
+check(not elwynn["check"].IsShown(elwynn["check"]), "an unfinished zone has no tick on its icon")
+for qid in ns.GetZoneQuests(1429).values():
+    char["completed"][qid] = True
+ns.Refresh()
+elwynn = [f for f in harness["all"].values() if f["zoneID"] == 1429 and f.IsShown(f)][0]
+check(elwynn["check"].IsShown(elwynn["check"]), "a finished zone gets a tick on its icon")
+char["completed"] = lua.table()
+ns.Refresh()
+
+# --- Class and profession views (issue #8) ---
+check(ns.Quests[5141]["sk"] == 165 and ns.Quests[5141]["sl"] == 225 and ns.Quests[5283]["sk"] == 164,
+      "the extractor reads Professions.lua: Leatherworking (5141) and Blacksmithing (5283) quests")
+cls = list(ns.GetZoneQuests("class").values())
+zones_in_class = {ns.Quests[i]["z"] for i in cls}
+check(len(cls) > 20 and all(1 in list(ns.Quests[i]["cl"].values()) for i in cls) and len(zones_in_class) > 3,
+      f"the Class page has every Warrior quest, from {len(zones_in_class)} zones ({len(cls)} quests)")
+sls, _ = ns.BuildStorylines("class")
+travelling = [st for st in sls.values() if len({ns.Quests[n["id"]]["z"] for n in st["nodes"].values()}) > 1]
+check(len(travelling) > 0, f"class chains that travel between zones are one storyline ({len(travelling)} of them)")
+check(ns.GetMapName("class") == "Warrior quests", "the Class page is named after your class")
+
+# Professions: a Leatherworker with 200 skill.
+g.GetProfessions = lua.eval("function() return 1, nil end")
+g.GetProfessionInfo = lua.eval("function(i) if i == 1 then return 'Leatherworking', 133611, LW_RANK, 300, 0, 0, 165 end end")
+lua.execute("LW_RANK = 200")
+ns.RefreshPlayer()
+lw = list(ns.GetZoneQuests("prof:165").values())
+check(5141 in lw and all(ns.ProfessionOf(ns.Quests[i]) == 165 for i in lw), f"the Leatherworking page has its quests ({len(lw)})")
+check(ns.GetStatus(5141) == S.LEVEL and ns.GetLockReason(5141) == "skill", "a skill that's too low locks the quest")
+check(ns.SkillText(ns.Quests[5141]) == "Leatherworking 225", "and it says which profession and skill it needs")
+lua.execute("LW_RANK = 230")
+ns.RefreshPlayer()
+check(ns.GetStatus(5141) == S.AVAILABLE, "with enough skill it's available")
+groups = [ (gr["name"], list(gr["pages"].values())) for gr in ns.GetSpecialGroups().values()]
+check(groups[0][0] == "Class" and groups[1] == ("Professions", ["prof:165"]),
+      f"the zone list gets Class and Professions groups, with only your professions: {groups}")
+ns.SetSetting("showAllProfessions", True)
+groups = dict((gr["name"], list(gr["pages"].values())) for gr in ns.GetSpecialGroups().values())
+check(groups["Professions"][0] == "prof:165" and "prof:164" in groups["Professions"] and len(groups["Professions"]) > 5,
+      f"'Show professions you don't have' lists the rest after yours: {groups['Professions']}")
+bs = list(ns.GetZoneQuests("prof:164").values())
+check(5283 in bs and ns.GetStatus(5283) == S.LEVEL and ns.GetLockReason(5283) == "skill",
+      "a profession you don't have shows its quests, locked")
+check(not ns.IsEligible(5283), "but they still don't appear in their zone")
+
+# In the window.
+g.LorePathDB["collapsedContinents"] = lua.table()
+ns.Refresh()
+heads = sorted([f for f in harness["all"].values() if f["continent"] is not None and f["zoneID"] is None and f.IsShown(f)], key=lambda f: f["top"])
+check([h["continent"] for h in heads[:2]] == ["Class", "Professions"], f"Class and Professions head the zone list: {[h['continent'] for h in heads[:3]]}")
+check(heads[0]["icon"]["__texture"] == "Interface\\Icons\\ClassIcon_Warrior", "the Class heading has your class icon")
+def page_row(page):
+    rows = [f for f in harness["all"].values() if f["zoneID"] == page and f.IsShown(f)]
+    return rows[0] if rows else None
+lw_row, bs_row = page_row("prof:165"), page_row("prof:164")
+check(lw_row is not None and lw_row["icon"]["__texture"] == 133611 and lw_row["text"]["__text"] == "Leatherworking",
+      "your profession is listed with the client's icon")
+check(bs_row is not None and bs_row["icon"]["__texture"] == "Interface\\Icons\\Trade_BlackSmithing" and bs_row["top"] > lw_row["top"],
+      "a profession you don't have is listed after yours, with its own icon")
+class_row = page_row("class")
+class_row["__scripts"]["OnClick"](class_row)
+check(frame["zoneTitle"]["__text"] == "Warrior quests" and frame["zoneIcon"]["__texture"] == "Interface\\Icons\\ClassIcon_Warrior",
+      "clicking Class shows the Warrior quests page")
+ctile = [f for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)][0]
+g.GameTooltip.lines = lua.table()
+ctile["__scripts"]["OnEnter"](ctile)
+check(any(str(l).startswith("Zone: ") for l in g.GameTooltip.lines.values()), "quests on the Class page say which zone they're in")
+ns.FocusQuest(ctile["questID"])
+check(frame["zoneTitle"]["__text"] == "Warrior quests", "jumping to a quest that's on the Class page stays there")
+bs_row = page_row("prof:164")
+bs_row["__scripts"]["OnClick"](bs_row)
+t5283 = [f for f in harness["all"].values() if f["questID"] == 5283 and f["sub"] is not None and f.IsShown(f)]
+check(len(t5283) == 1 and "Needs Blacksmithing 225" in t5283[0]["sub"]["__text"], f"a locked profession quest's tile says what it needs")
+ns.SetSetting("showAllProfessions", False)
+g.GetProfessions = lua.eval("function() return nil end")
+ns.RefreshPlayer()
+g.SlashCmdList["LOREPATH"]("here")
+
 # --- Quest search (issue #18) ---
 # Unloaded names on a real client: only the bundled titles, plus one Forever quest the client names.
 forever_only = next(qid for qid in sorted(ns.Quests.keys()) if qid >= 90000 and ns.IsEligible(qid)
@@ -925,6 +1024,8 @@ rows = result_rows()
 check(len(rows) > 0 and any(r["resultQuest"] == 6 for r in rows) and len(zone_rows_shown()) == 0,
       f"the zone list shows {len(rows)} quest results instead of zones")
 row6 = next(r for r in rows if r["resultQuest"] == 6)
+check(not any(r["icon"].IsShown(r["icon"]) or r["check"].IsShown(r["check"]) for r in rows),
+      "search results don't keep a zone's icon or tick from the rows they reuse")
 check("Elwynn Forest" in row6["sub"]["__text"], f"a result shows its zone and status: {row6['sub']['__text']!r}")
 g.GameTooltip.lines = lua.table()
 row6["__scripts"]["OnEnter"](row6)

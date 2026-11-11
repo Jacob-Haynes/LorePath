@@ -175,6 +175,53 @@ local function QuestIcon(q)
     return QUEST_ICON
 end
 
+-- Zone list icons (issue #15). Zones and most instances use AllTheThings' icon
+-- for them (ns.ZoneIcons, ns.InstanceInfo[].ic); the rest fall back to a hand
+-- pick, then their continent's icon, then a generic one.
+local GENERIC_ICON = {
+    map = "Interface\\Icons\\INV_Misc_Map_01",
+    dungeon = "Interface\\Icons\\INV_Misc_Key_03",
+    raid = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+}
+-- Zones whose ATT icon is ATT's own texture, which LorePath doesn't ship.
+local ZONE_ICON_OVERRIDES = {
+    [2521] = "Interface\\Icons\\Spell_Nature_Cyclone", -- Zephras Isle, an island in the sky
+}
+
+local function ZoneIcon(zoneID)
+    if zoneID == "class" then
+        local _, token = UnitClass("player")
+        return token and ("Interface\\Icons\\ClassIcon_" .. token:sub(1, 1) .. token:sub(2):lower()) or GENERIC_ICON.map
+    elseif ns.IsSpecialPage(zoneID) then
+        return ns.ProfessionIcon(tonumber(string.match(zoneID, "%d+")))
+    end
+    local icon = ZONE_ICON_OVERRIDES[zoneID] or (ns.ZoneIcons and ns.ZoneIcons[zoneID])
+    if icon then
+        return icon
+    end
+    local kind = ns.GetInstanceKind(zoneID)
+    if kind then
+        local info = ns.InstanceInfo and ns.InstanceInfo[zoneID]
+        return info and info.ic or GENERIC_ICON[kind] or GENERIC_ICON.dungeon
+    end
+    local continent = ns.ZoneContinents and ns.ZoneContinents[zoneID]
+    if continent and continent ~= 0 and continent ~= zoneID and ns.ZoneIcons and ns.ZoneIcons[continent] then
+        return ns.ZoneIcons[continent]
+    end
+    return GENERIC_ICON.map
+end
+
+-- Icon for a zone list heading: the continent's, or Dungeons / Raids.
+local function HeadingIcon(group)
+    if group.icon then
+        return group.icon
+    end
+    if group.kind then
+        return GENERIC_ICON[group.kind] or GENERIC_ICON.dungeon
+    end
+    return group.continentID and ns.ZoneIcons and ns.ZoneIcons[group.continentID] or GENERIC_ICON.map
+end
+
 -- 1px border made of four textures, so it works without BackdropTemplate.
 local function AddBorder(f, layer)
     local edges = {}
@@ -255,6 +302,7 @@ ns.ui = {
     AddBorder = AddBorder,
     SetFade = SetFade,
     MakeScrollable = MakeScrollable,
+    ZoneIcon = ZoneIcon,
     STATUS_STYLE = STATUS_STYLE,
     STATUS_TEXT = STATUS_TEXT,
     DIFFICULTY = DIFFICULTY,
@@ -328,6 +376,8 @@ local function ShowQuestTooltip(owner, id, storyline)
     local statusText = STATUS_TEXT[status]
     if status == S.LEVEL and lock == "minrep" then
         statusText = "Your reputation is too low"
+    elseif status == S.LEVEL and lock == "skill" then
+        statusText = ns.HasProfession(q.sk) and "Your skill is too low" or "You don't have this profession"
     elseif status == S.MISSED and lock == "maxrep" and not q.bc then
         statusText = "No longer available (your reputation is too high)"
     end
@@ -340,7 +390,7 @@ local function ShowQuestTooltip(owner, id, storyline)
     elseif status == S.LEVEL and q.l and (UnitLevel("player") or 1) < q.l then
         GameTooltip:AddLine("Needs level " .. q.l, 0.9, 0.9, 0.9)
     elseif status == S.LEVEL and lock == "skill" then
-        GameTooltip:AddLine("Needs profession skill " .. q.sl, 0.9, 0.9, 0.9)
+        GameTooltip:AddLine("Needs " .. ns.SkillText(q), 0.9, 0.9, 0.9)
     elseif status == S.LEVEL and lock == "minrep" then
         GameTooltip:AddLine("Needs " .. ns.ReputationText(q.mr), 0.9, 0.9, 0.9, true)
     end
@@ -360,6 +410,10 @@ local function ShowQuestTooltip(owner, id, storyline)
         if after and #after > 0 then
             GameTooltip:AddLine("Leads to: " .. NameList(after), 0.75, 0.75, 0.75, true)
         end
+    end
+    if ns.IsSpecialPage(selectedZone) then
+        -- The Class and profession pages gather quests from every zone.
+        GameTooltip:AddLine("Zone: " .. ns.GetMapName(q.z), 0.75, 0.75, 0.75)
     end
     if q.m then
         GameTooltip:AddLine(string.format("Starts in %s (%.1f, %.1f)", ns.GetMapName(q.m), q.x, q.y), 0.75, 0.75, 0.75)
@@ -586,7 +640,7 @@ local function StyleNode(node, id, storyline)
         if q.l and playerLevel < q.l then
             node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Lv " .. q.l .. "|r")
         else
-            node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Needs skill " .. (q.sl or "?") .. "|r")
+            node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Needs " .. ns.SkillText(q) .. "|r")
         end
     else
         local short = STATUS_SHORT[status]
@@ -829,6 +883,7 @@ RenderZone = function()
 
     local done, total, repeatables = ns.GetZoneProgress(selectedZone)
     frame.zoneTitle:SetText(ns.GetMapName(selectedZone))
+    frame.zoneIcon:SetTexture(ZoneIcon(selectedZone))
     local summary = string.format("%d / %d quests done", done, total)
     if repeatables > 0 then
         summary = summary .. "  -  " .. Hex(REPEATABLE_BLUE) .. repeatables .. " repeatable|r"
@@ -908,6 +963,14 @@ RenderZoneList = function()
             row.toggle = row:CreateTexture(nil, "ARTWORK")
             row.toggle:SetSize(12, 12)
             row.toggle:SetPoint("LEFT", 4, 0)
+            row.icon = row:CreateTexture(nil, "ARTWORK")
+            row.icon:SetSize(16, 16)
+            row.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+            -- A small tick on the icon of a zone you've finished, like the quest boxes.
+            row.check = row:CreateTexture(nil, "OVERLAY")
+            row.check:SetSize(12, 12)
+            row.check:SetPoint("BOTTOMRIGHT", row.icon, "BOTTOMRIGHT", 4, -3)
+            row.check:SetTexture("Interface\\RaidFrame\\ReadyCheck-Ready")
             row.text = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
             row.text:SetJustifyH("LEFT")
             row.text:SetWordWrap(false)
@@ -947,6 +1010,8 @@ RenderZoneList = function()
         row.lineL:Hide()
         row.lineR:Hide()
         row.sub:Hide()
+        row.icon:Hide()
+        row.check:Hide()
         row.count:SetText("")
         row:SetScript("OnEnter", nil)
         row:SetScript("OnLeave", nil)
@@ -1005,12 +1070,29 @@ RenderZoneList = function()
         return
     end
 
-    -- Group zones by continent, with totals for each heading.
+    -- Class and Professions first (issue #8), then zones grouped by continent,
+    -- with totals for each heading.
     local groups, order = {}, {}
+    for _, special in ipairs(ns.GetSpecialGroups()) do
+        local g = { name = special.name, zones = {}, done = 0, total = 0, repeatables = 0,
+                    icon = special.name == "Class" and ZoneIcon("class") or "Interface\\Icons\\INV_Pick_02" }
+        for _, page in ipairs(special.pages) do
+            local z = { id = page, name = ns.GetMapName(page) }
+            local skill = tonumber(string.match(page, "^prof:(%d+)$"))
+            z.greyed = skill ~= nil and not ns.HasProfession(skill) -- a profession you don't have
+            z.done, z.total, z.repeatables = ns.GetZoneProgress(page)
+            g.done, g.total = g.done + z.done, g.total + z.total
+            g.repeatables = g.repeatables + z.repeatables
+            table.insert(g.zones, z)
+        end
+        groups[g.name] = g
+        table.insert(order, g)
+    end
     for _, z in ipairs(SortedZones()) do
         local g = groups[z.continentName]
         if not g then
-            g = { name = z.continentName, zones = {}, done = 0, total = 0, repeatables = 0 }
+            g = { name = z.continentName, zones = {}, done = 0, total = 0, repeatables = 0, kind = z.instance,
+                  continentID = (not z.instance and z.continent ~= 0 and z.continent ~= z.id) and z.continent or nil }
             groups[z.continentName] = g
             table.insert(order, g)
         end
@@ -1036,9 +1118,14 @@ RenderZoneList = function()
         heading.count:SetText("")
         heading.lineL:Show()
         heading.lineR:Show()
+        heading.icon:Show()
+        heading.icon:SetTexture(HeadingIcon(g))
+        heading.icon:ClearAllPoints()
+        heading.icon:SetPoint("RIGHT", heading.text, "LEFT", -5, 0)
+        heading.check:Hide()
         heading.lineL:ClearAllPoints()
         heading.lineL:SetPoint("LEFT", heading.toggle, "RIGHT", 6, 0)
-        heading.lineL:SetPoint("RIGHT", heading.text, "LEFT", -6, 0)
+        heading.lineL:SetPoint("RIGHT", heading.icon, "LEFT", -6, 0)
         heading.lineR:ClearAllPoints()
         heading.lineR:SetPoint("LEFT", heading.text, "RIGHT", 6, 0)
         heading.lineR:SetPoint("RIGHT", heading, "RIGHT", -8, 0)
@@ -1067,12 +1154,20 @@ RenderZoneList = function()
                 row.lineL:Hide()
                 row.lineR:Hide()
                 row.text:SetFontObject("GameFontHighlightSmall")
+                row.icon:Show()
+                row.icon:SetTexture(ZoneIcon(z.id))
+                row.icon:ClearAllPoints()
+                row.icon:SetPoint("LEFT", 12, 0)
                 row.text:ClearAllPoints()
-                row.text:SetPoint("LEFT", 14, 0)
+                row.text:SetPoint("LEFT", row.icon, "RIGHT", 5, 0)
                 row.text:SetPoint("RIGHT", row.count, "LEFT", -4, 0)
                 row.text:SetText(z.name)
                 local complete = z.total > 0 and z.done == z.total
-                if complete then
+                row.check:SetShown(complete)
+                row.icon:SetDesaturated(z.greyed or false)
+                if z.greyed then
+                    row.text:SetTextColor(0.5, 0.5, 0.5)
+                elseif complete then
                     row.text:SetTextColor(0.42, 0.83, 0.37)
                 else
                     row.text:SetTextColor(1, 1, 1)
@@ -1147,6 +1242,15 @@ function ns.FocusQuest(id)
         return
     end
     local zone = q.z
+    -- On the Class or a profession page, stay there if the quest is on it.
+    if ns.IsSpecialPage(selectedZone) then
+        for _, other in ipairs(ns.GetZoneQuests(selectedZone)) do
+            if other == id then
+                zone = selectedZone
+                break
+            end
+        end
+    end
     local storylines, others = ns.BuildStorylines(zone)
     local key
     for _, storyline in ipairs(storylines) do
@@ -1179,6 +1283,9 @@ function ns.FocusQuest(id)
         if z.id == zone then
             CollapsedTable("collapsedContinents")[z.continentName] = nil
         end
+    end
+    if ns.IsSpecialPage(zone) then
+        CollapsedTable("collapsedContinents")[zone == "class" and "Class" or "Professions"] = nil
     end
 
     -- Remember where you were, for the Back button.
@@ -1432,8 +1539,13 @@ local function CreateMainFrame()
     listToggle:SetScript("OnLeave", GameTooltip_Hide)
     f.listToggle = listToggle
 
+    local zoneIcon = f:CreateTexture(nil, "ARTWORK")
+    zoneIcon:SetSize(22, 22)
+    zoneIcon:SetPoint("LEFT", listToggle, "RIGHT", 6, 0)
+    zoneIcon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+    f.zoneIcon = zoneIcon
     local zoneTitle = f:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    zoneTitle:SetPoint("LEFT", listToggle, "RIGHT", 6, 0)
+    zoneTitle:SetPoint("LEFT", zoneIcon, "RIGHT", 6, 0)
     zoneTitle:SetJustifyH("LEFT")
     f.zoneTitle = zoneTitle
     local zoneSummary = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
