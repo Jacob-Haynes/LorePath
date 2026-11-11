@@ -1,17 +1,17 @@
 # Changelog
 
-## Unreleased
+## 1.1.0-beta3
 
-- **Fewer slash commands:** just `/lp` (open or close), `/lp config` (settings) and `/lp share`. Everything the others did has a button or setting: the search box, the quest log's LorePath button, the settings page, and a new **Share quest text** button on it.
-- **Good to know:** a quest's tooltip and details show AllTheThings' note about it, when there is one, for 89 quests. For example: the item that starts *Allegiance to the Old Gods* only drops while you're on *The Essence of Aku'Mai*, and *Bodley is standing right outside the entrance to Blackrock Spire*.
+- **Level ranges:** zones, dungeons and raids in the zone list show WoW Forever's suggested level range after their name (for example *Ragefire Chasm 13-18*, *Hillsbrad Foothills 18-34*), and so does the line above the graph. LorePath reads them from the game's Looking for Group list, so they follow the game.
 - **Battlegrounds:** Alterac Valley, Arathi Basin, Warsong Gulch and WoW Forever's own battleground have pages under a new **Battlegrounds** heading, with their 140 quests and level ranges.
 - **Scarlet Monastery wings:** the Graveyard and Library have their own pages, each with its level range; quests that span the monastery stay on its page.
-- **Link rewards in chat:** Shift+click an item reward in a quest's details to link it in chat, or Ctrl+click to try it on.
-- **Breadcrumbs you can't follow are hidden:** a breadcrumb that only leads to quests your character can't do no longer shows (In Search of Thaelrid for the Horde).
-- **17 quests with Alliance and Horde versions fixed:** quests like the level-50 class quests from your capital's trainers (for example 8151 for Hunters) and Tabetha's Task were missing their level, class, start point and quest giver, so some showed for every class with no start point. They now have them, with your faction's trainer, start point and earlier quest.
+- **Good to know:** a quest's tooltip and details show AllTheThings' note about it, when there is one, for 89 quests. For example: the item that starts *Allegiance to the Old Gods* only drops while you're on *The Essence of Aku'Mai*, and *Bodley is standing right outside the entrance to Blackrock Spire*.
 - **Portal icon for quests picked up inside dungeons and raids:** 88 quests that you get from an NPC, item or object inside an instance show its entrance portal instead of the scroll, and their tooltip and details say "Picked up inside <instance>" instead of "Start location unknown".
-- **Level ranges:** zones, dungeons and raids in the zone list show WoW Forever's suggested level range after their name (for example *Ragefire Chasm 13-18*, *Hillsbrad Foothills 18-34*), and so does the line above the graph. LorePath reads them from the game's Looking for Group list, so they follow the game.
+- **Link rewards in chat:** Shift+click an item reward in a quest's details to link it in chat, or Ctrl+click to try it on.
+- **Fewer slash commands:** just `/lp` (open or close), `/lp config` (settings) and `/lp share`. Everything the others did has a button or setting: the search box, the quest log's LorePath button, the settings page, and a new **Share quest text** button on it.
 - **Class quests shown once, for real:** WoW Forever marks every version of a quest like Call of Earth completed when you finish one, so 1.1.0-beta2 could still show two chains (for example Durotar's next to Zephras Isle's). When several versions are marked completed, the one from your race's home now wins, and the others' steps are hidden even though they're marked completed.
+- **17 quests with Alliance and Horde versions fixed:** quests like the level-50 class quests from your capital's trainers (for example 8151 for Hunters) and Tabetha's Task were missing their level, class, start point and quest giver, so some showed for every class with no start point. They now have them, with your faction's trainer, start point and earlier quest.
+- **Breadcrumbs you can't follow are hidden:** a breadcrumb that only leads to quests your character can't do no longer shows (In Search of Thaelrid for the Horde).
 
 ## 1.1.0-beta2
 
