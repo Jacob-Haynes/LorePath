@@ -2050,6 +2050,22 @@ ns.FocusQuest(4182)
 check(frame["zoneTitle"]["__text"] == "Onyxia's Lair", "focusing one of its quests stays on the attunement page")
 ns.Toggle(False)
 
+# --- Amongst the Ruins, in the data twice (908 and 6921) ---
+char["race"], char["class"], char["faction"], char["level"] = 2, 1, "Horde", 25
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+def ruins():
+    return sorted(q for q in ns.GetZoneQuests(221).values() if q in (908, 6921))
+check(len(ruins()) == 1, f"Blackfathom Deeps shows Amongst the Ruins once: {ruins()}")
+char["log"][6921] = True
+check(ruins() == [6921], "the one in your log, when you have 6921")
+char["log"] = lua.table()
+char["log"][908] = True
+check(ruins() == [908], "or 908")
+char["log"] = lua.table()
+char["race"], char["faction"], char["level"] = 1, "Alliance", 60
+ns.RefreshPlayer()
+
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])

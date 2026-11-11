@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Amongst the Ruins shown once:** the Blackfathom Deeps quest is in the quest data twice, under two IDs, so it showed as available even while it was in your log. Now only one shows: the one you have, or have done.
+
 ## 1.2.0-beta2
 
 - **Attunements:** a new **Attunements** heading in the zone list has a page for each key chain: **Onyxia's Lair** (the Drakefire Amulet), **Upper Blackrock Spire** (the Seal of Ascension), **Scholomance** (the Skeleton Key) and **Shadowforge City** (the Shadowforge Key). Each page shows your faction's chain as one storyline, even where it crosses zones and dungeons, and ticks off the key once it's in your bags or bank. Its progress counts the quests and the key.
