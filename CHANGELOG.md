@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Class quests shown once, for real:** WoW Forever marks every version of a quest like Call of Earth completed when you finish one, so 1.1.0-beta2 could still show two chains (for example Durotar's next to Zephras Isle's). When several versions are marked completed, the one from your race's home now wins, and the others' steps are hidden even though they're marked completed.
+
 ## 1.1.0-beta2
 
 - **Progress colours in the zone list:** zone, dungeon, raid, Class and profession names are grey until you start them, then go from red through orange (40%) and WoW's gold (80%) towards green as you finish their quests. Only finished ones are fully green.
