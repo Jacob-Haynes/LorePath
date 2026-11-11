@@ -15,5 +15,6 @@ Data\CommunityText.lua
 Core.lua
 UI.lua
 Detail.lua
+QuestLog.lua
 Settings.lua
 Main.lua

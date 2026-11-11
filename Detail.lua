@@ -490,11 +490,21 @@ local function Render(id)
             AddText("Quest giver: " .. name, "GameFontHighlightSmall", nil, 2)
         end
     end
+    -- "Show on map" when the start is known; "Open in quest log" beside it while
+    -- the quest is in your log.
+    local onQuest = IsOnQuest(id)
     panel.mapButton:SetShown(q.m ~= nil)
-    if q.m then
+    panel.logButton:SetShown(onQuest)
+    if q.m or onQuest then
         cursor = cursor + 6
-        panel.mapButton:ClearAllPoints()
-        panel.mapButton:SetPoint("TOPLEFT", content, "TOPLEFT", 8, -cursor)
+        local x = 8
+        for _, b in ipairs({ panel.mapButton, panel.logButton }) do
+            if b:IsShown() then
+                b:ClearAllPoints()
+                b:SetPoint("TOPLEFT", content, "TOPLEFT", x, -cursor)
+                x = x + b:GetWidth() + 6
+            end
+        end
         cursor = cursor + 22
     end
 
@@ -664,6 +674,21 @@ function ns.ShowDetail(id)
             ns.ShowQuestStart(ns.detailQuest)
         end)
         panel.mapButton = map
+
+        local log = CreateFrame("Button", nil, content, "UIPanelButtonTemplate")
+        log:SetSize(130, 20)
+        log:SetText("Open in quest log")
+        log:SetScript("OnClick", function()
+            ns.OpenInQuestLog(ns.detailQuest)
+        end)
+        log:SetScript("OnEnter", function(self)
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+            GameTooltip:AddLine("Open in quest log", 1, 0.82, 0)
+            GameTooltip:AddLine("Shows this quest in the game's quest log, with its live objectives. Shift+click a quest in the graph does the same.", 1, 1, 1, true)
+            GameTooltip:Show()
+        end)
+        log:SetScript("OnLeave", GameTooltip_Hide)
+        panel.logButton = log
 
         -- Read-only text box holding the WarcraftDB address: click selects it all.
         local box = CreateFrame("EditBox", nil, content, "InputBoxTemplate")

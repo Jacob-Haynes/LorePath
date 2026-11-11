@@ -45,6 +45,7 @@ LorePath supports English game clients only.
 - **Search:** type part of a quest's name, or its ID, in the box above the zone list. The list shows up to 50 matching quests you can do, with their zone, status and level; click one to jump to it. Escape clears the search. `/lp search <name>` opens LorePath with the search filled in.
 - **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
+- **Quest log, both ways:** for a quest you're on, **Open in quest log** in its details, or Shift+click it, opens the game's quest log at that quest. The other way, the LorePath book button on the game's quest log, or `/lp quest`, opens the selected quest in LorePath with its details.
 
 ### Controls
 
@@ -56,6 +57,8 @@ LorePath supports English game clients only.
 | Find a quest | Type in the search box above the zone list, or `/lp search <name>`; Escape clears it |
 | Quest details | Click a quest; click it again to close the panel |
 | Waypoint | Ctrl+click a quest, or **Show on map** |
+| Open in your quest log | Shift+click a quest you're on, or **Open in quest log** in its details |
+| Open a quest log quest in LorePath | The LorePath book button on the game's quest log, or `/lp quest` (`/lp quest <ID>` for any quest) |
 | Collapse | Click a storyline's or heading's +/−, or **Expand all** / **Collapse all** |
 | Hide the zone list | The arrow button left of the zone name |
 | Show or hide repeatable quests | The **Repeatable** tick box, `/lp repeatable`, or the settings page |

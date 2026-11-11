@@ -432,6 +432,9 @@ local function ShowQuestTooltip(owner, id, storyline)
     if q.m then
         GameTooltip:AddLine("Ctrl+click to set a waypoint where it starts.", 0.5, 0.8, 1)
     end
+    if status == S.ACTIVE then
+        GameTooltip:AddLine("Shift+click to open it in your quest log.", 0.5, 0.8, 1)
+    end
     GameTooltip:Show()
 end
 
@@ -475,10 +478,13 @@ local function AcquireNode(parent)
         node.flash:Hide()
         node:SetScript("OnEnter", ShowNodeTooltip)
         node:SetScript("OnLeave", GameTooltip_Hide)
-        -- Click opens the detail panel (again to close it); Ctrl+click sets the waypoint.
+        -- Click opens the detail panel (again to close it); Ctrl+click sets the waypoint;
+        -- Shift+click on a quest you're on opens it in the game's quest log.
         node:SetScript("OnClick", function(self)
             if IsControlKeyDown() then
                 ns.ShowQuestStart(self.questID)
+            elseif IsShiftKeyDown() and ns.IsOnQuest(self.questID) then
+                ns.OpenInQuestLog(self.questID)
             else
                 ns.ToggleDetail(self.questID)
             end
@@ -1651,6 +1657,7 @@ local function CreateMainFrame()
         GameTooltip:AddLine("Click a quest for its details; click it again to close them.", 1, 1, 1, true)
         GameTooltip:AddLine("Ctrl+click a quest to set a waypoint where it starts.", 1, 1, 1, true)
         GameTooltip:AddLine("Search quests by name or ID in the box above the zone list, or with /lp search <name>.", 1, 1, 1, true)
+        GameTooltip:AddLine("Shift+click a quest you're on to open it in your quest log.", 1, 1, 1, true)
         GameTooltip:AddLine("Click \"Next\" or \"First finish\" in a storyline header to jump to that quest; Back returns you.", 1, 1, 1, true)
         GameTooltip:AddLine("Drag to pan; Shift+mouse wheel scrolls sideways.", 1, 1, 1, true)
         GameTooltip:AddLine(" ")
