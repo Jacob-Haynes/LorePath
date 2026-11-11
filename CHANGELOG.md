@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- **Portal icon for quests picked up inside dungeons and raids:** 113 quests that you get from an NPC or item inside an instance show its entrance portal instead of the scroll, and their tooltip and details say "Picked up inside <instance>" instead of "Start location unknown".
+- **Portal icon for quests picked up inside dungeons and raids:** 88 quests that you get from an NPC, item or object inside an instance show its entrance portal instead of the scroll, and their tooltip and details say "Picked up inside <instance>" instead of "Start location unknown".
 
 ## 1.1.0-beta2
 

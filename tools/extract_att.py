@@ -378,10 +378,12 @@ def extract_instances(att_root, lua, lua_type, add_quest, quests):
                     coord = outside_coord(node["coords"], inside)
                     if coord:
                         rec["m"], rec["x"], rec["y"] = coord
-                    else:
-                        # ATT maps no points inside instances, so a quest with no
-                        # start point outside was picked up inside the instance
-                        # (from an NPC or an item there).
+                    elif node["qgs"] is not None or node["qg"] is not None or node["providers"] is not None:
+                        # ATT maps no points inside instances, so a quest whose
+                        # giver (an NPC, item or object) is listed but has no point
+                        # outside was picked up inside. With no giver listed at
+                        # all, ATT just doesn't say (some are handed out in town),
+                        # so those aren't marked.
                         rec["di"] = 1
                     added += 1
             return added  # quests inside a quest's g are objectives/rewards, not quests

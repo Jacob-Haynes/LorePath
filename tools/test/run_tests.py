@@ -1346,6 +1346,8 @@ ns.Refresh()
 check(ns.Quests[4342]["di"] == 1 and ns.Quests[3802]["di"] == 1, "quests given inside Blackrock Depths are marked as picked up inside")
 check(ns.Quests[4341]["di"] is None and ns.Quests[166]["di"] is None, "quests given outside (Ironforge, Westfall) aren't")
 check(not any(q["di"] for q in ns.Quests.values() if q["z"] == -318), "nor are Tier 0.5 Sets quests, which are given in towns")
+check(ns.Quests[2204]["di"] is None and ns.Quests[2861]["di"] is None,
+      "nor quests with no giver recorded, which may be handed out in town (Restoring the Necklace, Tabetha's Task)")
 char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
 ns.RefreshPlayer()
 def tile_of(qid):
