@@ -1342,6 +1342,49 @@ check(rgb(other["text"]["__color"]) == (0.62, 0.62, 0.62), "zones you haven't st
 char["completed"] = lua.table()
 ns.Refresh()
 
+# --- Level ranges from the game's Looking for Group activities ---
+g.EJ_GetInstanceInfo = lua.eval("""function(id) local n = { [63] = 'The Deadmines', [238] = 'The Stockade', [226] = 'Ragefire Chasm',
+    [316] = 'Scarlet Monastery' }; return n[id] end""")
+check(ns.GetLevelRange(213) is None, "without the game's activity list, no range is shown")
+g.C_LFGList = lua.eval("""{
+  GetAvailableActivities = function() return { 1, 2, 3, 4, 5, 6, 7, 8 } end,
+  GetActivityInfoTable = function(id)
+    local a = {
+      { fullName = "Ragefire Chasm", minLevel = 0, minLevelSuggestion = 13, maxLevelSuggestion = 18 },
+      { fullName = "Stormwind Stockades", minLevel = 0, minLevelSuggestion = 23, maxLevelSuggestion = 32 },
+      { fullName = "Scarlet Monastery - Graveyard", minLevel = 0, minLevelSuggestion = 30, maxLevelSuggestion = 38 },
+      { fullName = "Scarlet Monastery - Cathedral", minLevel = 0, minLevelSuggestion = 38, maxLevelSuggestion = 45 },
+      { fullName = "Elwynn Forest", minLevel = 0, minLevelSuggestion = 1, maxLevelSuggestion = 10 },
+      { fullName = "Hillsbrad Foothills", minLevel = 0, minLevelSuggestion = 18, maxLevelSuggestion = 34 },
+      { fullName = "Custom", minLevel = 0, minLevelSuggestion = 0, maxLevelSuggestion = 0 },
+      { fullName = "Warsong Gulch", minLevel = 0, minLevelSuggestion = 20, maxLevelSuggestion = 29 },
+    }
+    return a[id]
+  end }""")
+def rng(page):
+    r = ns.GetLevelRange(page)
+    return r if isinstance(r, tuple) else (r,)
+check(rng(213) == (13, 18), f"Ragefire Chasm gets the game's 13-18: {rng(213)}")
+check(rng(225) == (23, 32), "The Stockade matches the game's 'Stormwind Stockades'")
+check(rng(435) == (30, 45), "Scarlet Monastery's wings make one range, 30-45")
+real_map_info = g.C_Map.GetMapInfo
+g.C_Map.GetMapInfo = lua.eval("""function(real) return function(id)
+    if id == 1424 then return { name = "Hillsbrad Foothills", parentMapID = 1415 } end
+    return real(id) end end""")(real_map_info)
+check(rng(1429) == (1, 10) and rng(1424) == (18, 34), "zones get theirs too (Elwynn Forest 1-10, Hillsbrad Foothills 18-34)")
+g.C_Map.GetMapInfo = real_map_info
+check(rng(1453) == (None,) and rng("class") == (None,), "capital cities and the Class page show none")
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+g.SlashCmdList["LOREPATH"]("here")
+g.LorePathDB["collapsedContinents"] = lua.table()
+ns.Refresh()
+row = [f for f in harness["all"].values() if f["zoneID"] == 1429 and f.IsShown(f)][0]
+check(row["text"]["__text"] == "Elwynn Forest |cff9d9d9d1-10|r", f"the zone list shows the range after the name: {row['text']['__text']!r}")
+check(frame["zoneSummary"]["__text"].startswith("Levels 1-10"), f"and so does the line above the graph: {frame['zoneSummary']['__text'][:30]!r}")
+g.C_LFGList = None
+
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])
 print("chat:", list(harness["chat"].values())[-3:])

@@ -468,6 +468,85 @@ function ns.GetMapName(mapID)
     return info and info.name or ("Map " .. tostring(mapID))
 end
 
+-- ============================================================================
+-- Level ranges (from the game's Looking for Group activities)
+-- ============================================================================
+-- WoW Forever's own suggested levels, e.g. Ragefire Chasm 13-18 or Hillsbrad
+-- Foothills 18-34, read at run time so they follow the game. Matched to zone
+-- and instance pages by name; wings ("Scarlet Monastery - Armory") also count
+-- towards the whole instance.
+
+local levelRanges -- normalised name -> { min, max }
+
+local function NormaliseName(name)
+    name = string.lower(name or "")
+    name = name:gsub("^the%s+", ""):gsub("[^%w ]", ""):gsub("%s+", " ")
+    return name:match("^%s*(.-)%s*$")
+end
+
+local function LoadLevelRanges()
+    if not (C_LFGList and C_LFGList.GetAvailableActivities and C_LFGList.GetActivityInfoTable) then
+        return nil
+    end
+    local ok, ids = pcall(C_LFGList.GetAvailableActivities)
+    if not ok or type(ids) ~= "table" or #ids == 0 then
+        return nil -- not loaded yet; try again next time
+    end
+    local ranges = {}
+    local function Add(name, low, high)
+        local r = ranges[name]
+        if r then
+            r[1], r[2] = math.min(r[1], low), math.max(r[2], high)
+        else
+            ranges[name] = { low, high }
+        end
+    end
+    for _, id in ipairs(ids) do
+        local okInfo, a = pcall(C_LFGList.GetActivityInfoTable, id)
+        local high = okInfo and type(a) == "table" and a.maxLevelSuggestion or 0
+        if high > 0 and type(a.fullName) == "string" then
+            local low = (a.minLevelSuggestion and a.minLevelSuggestion > 0) and a.minLevelSuggestion or a.minLevel or 0
+            local full = a.fullName
+            Add(NormaliseName(full), low, high)
+            local whole = full:match("^(.-)%s+[%-:]%s+.+$") -- "Scarlet Monastery - Armory"
+            if whole then
+                Add(NormaliseName(whole), low, high)
+            end
+        end
+    end
+    return ranges
+end
+
+-- min, max suggested level for a zone or instance page, or nil when the game
+-- doesn't say (capital cities, the Class and profession pages). Names that
+-- differ only a little ("The Stockade" and "Stormwind Stockades") still match:
+-- one name may contain the other.
+function ns.GetLevelRange(page)
+    if type(page) ~= "number" then
+        return nil
+    end
+    levelRanges = levelRanges or LoadLevelRanges()
+    if not levelRanges then
+        return nil
+    end
+    local name = NormaliseName(ns.GetMapName(page))
+    if name == "" then
+        return nil
+    end
+    local r = levelRanges[name]
+    if not r then
+        for other, range in pairs(levelRanges) do
+            if #other >= 6 and (other:find(name, 1, true) or name:find(other, 1, true)) then
+                r = range
+                break
+            end
+        end
+    end
+    if r then
+        return r[1], r[2]
+    end
+end
+
 -- "dungeon" or "raid" for an instance page, nil for an outdoor zone.
 function ns.GetInstanceKind(zoneID)
     return ns.InstanceZones and ns.InstanceZones[zoneID] or nil

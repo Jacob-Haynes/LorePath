@@ -141,6 +141,10 @@ local function GrayLevel(level)
 end
 
 -- Colour for a quest of this level, matching the quest log.
+local function LevelRangeText(low, high)
+    return low == high and tostring(low) or (low .. "-" .. high)
+end
+
 local function DifficultyColor(questLevel)
     local level = UnitLevel("player") or 1
     local diff = questLevel - level
@@ -979,6 +983,10 @@ RenderZone = function()
     if repeatables > 0 then
         summary = summary .. "  -  " .. Hex(REPEATABLE_BLUE) .. repeatables .. " repeatable|r"
     end
+    local low, high = ns.GetLevelRange(selectedZone)
+    if low then
+        summary = "Levels " .. LevelRangeText(low, high) .. "  -  " .. summary
+    end
     frame.zoneSummary:SetText(summary .. string.format("  -  %d storylines", #storylines))
 end
 
@@ -1252,7 +1260,13 @@ RenderZoneList = function()
                 row.text:ClearAllPoints()
                 row.text:SetPoint("LEFT", row.icon, "RIGHT", 5, 0)
                 row.text:SetPoint("RIGHT", row.count, "LEFT", -4, 0)
-                row.text:SetText(z.name)
+                -- Zones, dungeons and raids show the game's suggested level range.
+                local low, high = ns.GetLevelRange(z.id)
+                if low then
+                    row.text:SetText(z.name .. " |cff9d9d9d" .. LevelRangeText(low, high) .. "|r")
+                else
+                    row.text:SetText(z.name)
+                end
                 local complete = z.total > 0 and z.done == z.total
                 row.check:SetShown(complete)
                 row.icon:SetDesaturated(z.greyed or false)

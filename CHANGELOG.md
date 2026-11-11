@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Level ranges:** zones, dungeons and raids in the zone list show WoW Forever's suggested level range after their name (for example *Ragefire Chasm 13-18*, *Hillsbrad Foothills 18-34*), and so does the line above the graph. LorePath reads them from the game's Looking for Group list, so they follow the game.
+
 ## 1.1.0-beta2
 
 - **Progress colours in the zone list:** zone, dungeon, raid, Class and profession names are grey until you start them, then go from red through orange (40%) and WoW's gold (80%) towards green as you finish their quests. Only finished ones are fully green.
