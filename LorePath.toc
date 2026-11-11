@@ -14,6 +14,7 @@ Data\QuestNotes.lua
 Data\QuestStarts.lua
 Data\QuestText.lua
 Data\CommunityText.lua
+Data\Attunements.lua
 Core.lua
 UI.lua
 Detail.lua

@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestStarts.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Pins.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestStarts.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Data/Attunements.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Pins.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -1782,36 +1782,39 @@ char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1,
 char["completed"], char["log"] = lua.table(), lua.table()
 ns.RefreshPlayer()
 ns.RefreshCompleted()
-toggle = harness["frames"]["LorePathMapPinsToggle"]
 check(ns.mapPinsProvider is not None and len(list(WM["__providers"].values())) == 1, "LorePath adds one data provider to the world map")
-check(toggle is not None and not toggle.GetChecked(toggle)
-      and any(f["__text"] == "LorePath quests" for f in harness["all"].values()),
-      "the map gets a 'LorePath quests' tick box, unticked (pins are off by default)")
-check(g.LorePathDB["showMapPins"] is False and g.LorePathDB["mapPinsHigherLevel"] is False and g.LorePathDB["mapPinsActive"] is False,
-      "pins and both extras are off by default")
+check(harness["frames"]["LorePathMapPinsToggle"] is None, "there's no tick box on the map")
+check(ns.mapPinsMenu == "menu", "the filters go in the world map's filter menu (Menu API)")
+FILTER_TEXTS = ["Quests at your level", "Low-level quests", "Quests above your level"]
+FILTER_KEYS = ["mapPinsCurrent", "mapPinsLow", "mapPinsHigh"]
+def filter_boxes():
+    entries = list(harness.BuildMenu("MENU_WORLD_MAP_TRACKING").values())
+    return entries, [e for e in entries if e["kind"] == "checkbox"]
+entries, boxes = filter_boxes()
+check(any(e["kind"] == "title" and e["text"] == "LorePath quests" for e in entries) and [e["text"] for e in boxes] == FILTER_TEXTS,
+      f"under a 'LorePath quests' heading, three filters: {[e['text'] for e in boxes]}")
+check(all(e["isChecked"]() for e in boxes) and all(g.LorePathDB[k] is True for k in FILTER_KEYS), "all three are on by default")
 WM.SetMapID(WM, 1429)
 WM.Show(WM)
-check(len(pins()) == 0, "with pins off, the map shows none")
 
-toggle.SetChecked(toggle, True)
-toggle["__scripts"]["OnClick"](toggle)
-check(g.LorePathDB["showMapPins"] is True, "ticking the map's box turns the setting on")
-
-def expected_on(map_id, statuses):
+def expected_on(map_id, bands):
     ids = []
     for qid, q in ns.Quests.items():
-        if q["m"] == map_id and q["x"] is not None and qid in list(ns.GetZoneQuests(q["z"]).values()) and ns.GetStatus(qid) in statuses:
+        if q["m"] == map_id and q["x"] is not None and qid in list(ns.GetZoneQuests(q["z"]).values()) and ns.PinBand(qid) in bands:
             ids.append(qid)
     return sorted(ids)
-want = expected_on(1429, (S.AVAILABLE, S.REPEATABLE))
+B = ns.PIN_BAND
+want = expected_on(1429, (B.CURRENT, B.LOW, B.HIGH))
+current = expected_on(1429, (B.CURRENT,))
 got = pinned_ids()
 print(f"Elwynn at level 5: {len(got)} quests pinned in {len(pins())} pins")
-check(len(want) > 5 and got == want, f"Elwynn pins every quest starting there you can pick up, and only those ({len(got)} vs {len(want)})")
+check(len(current) > 5 and got == want, f"Elwynn pins every quest starting there, by default ({len(got)} vs {len(want)})")
+check(all(ns.GetStatus(q) in (S.AVAILABLE, S.REPEATABLE) for q in current), "'at your level' ones are quests you can pick up")
 check(len(set(got)) == len(got), "each quest has one pin")
 p783 = pin_for(783)
 check(p783 is not None and p783["icon"]["__texture"] == "Interface\\GossipFrame\\AvailableQuestIcon", "783 gets a '!' pin")
-check(p783 is not None and p783["icon"]["__desaturated"] is True and tuple(p783["icon"]["__vertex"].values()) == tuple(ns.ui.DIFFICULTY.standard.values()),
-      "coloured green: a level-1 quest at level 5 is standard difficulty")
+check(p783 is not None and p783["icon"]["__desaturated"] is False and tuple(p783["icon"]["__vertex"].values()) == (1, 1, 1),
+      "in the '!''s own gold: a level-1 quest at level 5 is at your level")
 g783 = p783["group"]
 check(abs(p783["__pos"][1] - g783["x"] / 100) < 1e-9 and abs(p783["__pos"][2] - g783["y"] / 100) < 1e-9, "the pin sits at its start (map fractions)")
 groups = [p["group"] for p in pins()]
@@ -1832,8 +1835,9 @@ sid = single["group"]["quests"][1]
 lines = hover(single)
 check(lines[0] == ns.GetQuestNameOrID(sid) and any(l.startswith("Requires level") for l in lines) and any(l.startswith("Starts in") for l in lines),
       "a pin's tooltip is the quest's usual tooltip")
-check("Click to set a waypoint here." in lines and "Click for details." not in lines and not any("Ctrl+click" in l for l in lines),
-      "with the pin's own click hint instead of the window's")
+check("Click to set a waypoint here." in lines and "Shift+click to open it in LorePath." in lines
+      and "Click for details." not in lines and not any("Ctrl+click" in l for l in lines),
+      "with the pin's own click hints instead of the window's")
 mlines = hover(multi)
 n = len(list(multi["group"]["quests"].values()))
 check(mlines[0] == f"{n} quests" and sum(1 for l in mlines if l.startswith("[")) == n, f"a shared pin's tooltip lists its {n} quests")
@@ -1850,6 +1854,13 @@ check(harness["waypoint"] is not None and abs(harness["waypoint"]["x"] - mg["x"]
 harness["waypoint"] = None
 single["__scripts"]["OnMouseUp"](single, "RightButton")
 check(harness["waypoint"] is None, "right-clicking a pin does nothing (the map uses it to zoom out)")
+harness["shift"] = True
+single["__scripts"]["OnMouseUp"](single, "LeftButton")
+harness["shift"] = False
+check(harness["waypoint"] is None and frame.IsShown(frame) and ns.detailQuest == sid and ns.focusedQuest == sid,
+      "Shift+clicking a pin opens its quest in LorePath, with its details")
+ns.HideDetail()
+frame.Hide(frame)
 
 # Only the map being viewed
 WM.SetMapID(WM, 1415)
@@ -1857,31 +1868,45 @@ check(len(pins()) == 0, "the Eastern Kingdoms continent map shows no pins")
 WM.SetMapID(WM, 1429)
 check(pinned_ids() == want, "back on Elwynn, its pins return")
 
-# Optional extras
-level_locked = expected_on(1429, (S.LEVEL,))
-level_locked = [q for q in level_locked if ns.GetLockReason(q) == "level"]
-check(level_locked and not any(q in pinned_ids() for q in level_locked), "quests above your level aren't pinned by default")
-ns.SetSetting("mapPinsHigherLevel", True)
-check(all(q in pinned_ids() for q in level_locked), f"with that setting on, they are ({len(level_locked)})")
-lp = next(p for p in pins() if p["group"]["kind"] == ns.PIN_KIND.LEVEL)
-check(lp["icon"]["__desaturated"] is True and lp["icon"]["__vertex"][1] == lp["icon"]["__vertex"][2] and lp["__alpha"] < 1,
-      "as a grey, faded '!'")
-ns.SetSetting("mapPinsHigherLevel", False)
-check(pinned_ids() == want, "and turning it off removes them again")
+# The three filters
+def box(text):
+    return next(e for e in filter_boxes()[1] if e["text"] == text)
+high = expected_on(1429, (B.HIGH,))
+check(high and all(q in pinned_ids() for q in high) and all(ns.GetLockReason(q) == "level" for q in high),
+      f"quests above your level are pinned by default ({len(high)})")
+hp = next(p for p in pins() if p["group"]["band"] == B.HIGH)
+check(hp["icon"]["__desaturated"] is True and hp["icon"]["__vertex"][1] == 1 and hp["icon"]["__vertex"][2] < 0.5,
+      "as a red '!'")
+box("Quests above your level")["onClick"]()
+check(g.LorePathDB["mapPinsHigh"] is False and not box("Quests above your level")["isChecked"]()
+      and not any(q in pinned_ids() for q in high), "unticking 'Quests above your level' in the map's menu removes them")
+box("Quests above your level")["onClick"]()
+check(all(q in pinned_ids() for q in high), "and ticking it brings them back")
+
+char["level"] = 30
+ns.RefreshPlayer()
+WM.SetMapID(WM, 1429)
+p783 = pin_for(783)
+check(ns.PinBand(783) == B.LOW and p783 is not None and p783["icon"]["__desaturated"] is True
+      and p783["icon"]["__vertex"][1] == p783["icon"]["__vertex"][2] == p783["icon"]["__vertex"][3],
+      "at level 30, 783 is a low-level quest: a grey '!'")
+box("Low-level quests")["onClick"]()
+check(783 not in pinned_ids() and g.LorePathDB["mapPinsLow"] is False, "unticking 'Low-level quests' removes it")
+box("Low-level quests")["onClick"]()
+box("Quests at your level")["onClick"]()
+check(g.LorePathDB["mapPinsCurrent"] is False and all(p["group"]["band"] != B.CURRENT for p in pins()) and 783 in pinned_ids(),
+      "unticking 'Quests at your level' leaves the low-level ones")
+box("Quests at your level")["onClick"]()
+char["level"] = 5
+ns.RefreshPlayer()
+WM.SetMapID(WM, 1429)
+check(pinned_ids() == want, "back at level 5, the same pins as before")
 
 char["log"][783] = True
 WM.SetMapID(WM, 1429)
 check(783 not in pinned_ids(), "a quest in your log loses its '!'")
-ns.SetSetting("mapPinsActive", True)
-p = pin_for(783)
-check(p is not None, "with 'quests in your log' on, it's pinned again")
-active = [p for p in pins() if p["group"]["kind"] == ns.PIN_KIND.ACTIVE]
-check(len(active) >= 1 and all(p["icon"]["__texture"] == "Interface\\GossipFrame\\IncompleteQuestIcon" for p in active),
-      "a pin of only quests in your log is a '?'")
-check(p is not None and (p["group"]["quests"][1] != 783 or p["group"]["kind"] == ns.PIN_KIND.ACTIVE),
-      "a shared pin shows its best quest's icon: one you can pick up before one you're on")
 char["log"][783] = None
-ns.SetSetting("mapPinsActive", False)
+WM.SetMapID(WM, 1429)
 
 # Refreshing on events
 harness.RunTimers()
@@ -1894,7 +1919,7 @@ before = len(pinned_ids())
 char["level"] = 10
 harness.Fire("PLAYER_LEVEL_UP", 10)
 harness.RunTimers()
-check(len(pinned_ids()) != before or not level_locked, "levelling up redraws the pins (newly available quests appear)")
+check(len(pinned_ids()) == before and any(ns.PinBand(q) == B.CURRENT for q in high), "levelling up redraws the pins: red ones turn gold")
 WM.Hide(WM)
 char["completed"] = lua.table()
 harness.Fire("QUEST_REMOVED", 1)
@@ -1904,12 +1929,39 @@ WM.Show(WM)
 check(783 in pinned_ids(), "and redraw when it does")
 
 # Off again
-ns.SetSetting("showMapPins", False)
-check(len(pins()) == 0 and not toggle.GetChecked(toggle), "turning the setting off clears the pins and unticks the map's box")
+for key in FILTER_KEYS:
+    ns.SetSetting(key, False)
+check(len(pins()) == 0 and not any(e["isChecked"]() for e in filter_boxes()[1]), "with all three off, no pins, and the menu shows them unticked")
+for key in FILTER_KEYS:
+    ns.SetSetting(key, True)
 check(harness["frames"]["LorePathSettingsPanel"] is not None, "the settings page exists")
 labels = [str(f["__text"]) for f in harness["all"].values() if f["__text"]]
-check("Show quests on the world map" in labels and "Map: also quests above your level" in labels and "Map: also quests in your log" in labels,
-      "the settings page has the map pins option and its two extras")
+check(all(l in labels for l in ("Map: quests at your level", "Map: low-level quests", "Map: quests above your level"))
+      and "Show quests on the world map" not in labels, "the settings page has the same three filters")
+g.LorePathDB["showMapPins"] = False
+ns.InitDB()
+check(g.LorePathDB["showMapPins"] is None, "1.2.0-beta1's old pin setting is cleared")
+
+# Clients whose filter menu is a UIDropDownMenu: the filters go in through the button's InitializeDropDown.
+saved_menu = g.Menu
+g.Menu = None
+added = lua.eval("{}")
+g.UIDropDownMenu_CreateInfo = lua.eval("function() return {} end")
+g.UIDropDownMenu_AddButton = lua.eval("function(info) table.insert(ADDED, info) end")
+lua.globals().ADDED = added
+g.hooksecurefunc = lua.eval("function(t, name, fn) local old = t[name]; t[name] = function(...) old(...); fn(...) end end")
+filter_button = lua.eval("{ InitializeDropDown = function() end }")
+WM["overlayFrames"] = lua.eval("{}")
+WM["overlayFrames"][1] = filter_button
+ns3 = lua.table()
+load_file(open(os.path.join(ROOT, "Pins.lua")).read(), "Pins.lua", ns3)
+ns3.AttachMapPins()
+filter_button.InitializeDropDown(filter_button)
+texts = [a["text"] for a in added.values()]
+check(ns3["mapPinsMenu"] == "dropdown" and texts == ["LorePath quests"] + FILTER_TEXTS, f"older clients get the filters in the dropdown: {texts}")
+g.Menu, g.UIDropDownMenu_CreateInfo, g.UIDropDownMenu_AddButton, g.hooksecurefunc = saved_menu, None, None, None
+WM["overlayFrames"] = None
+WM["__providers"] = lua.table_from([ns.mapPinsProvider])
 
 # Without the map canvas API, Pins.lua does nothing (and doesn't error)
 saved_wm, saved_mixin = g.WorldMapFrame, g.LorePathQuestPinMixin
@@ -1921,6 +1973,82 @@ g.WorldMapFrame, g.LorePathQuestPinMixin = saved_wm, saved_mixin
 
 g.SlashCmdList["LOREPATH"]("pins")
 check(any("/lp config" in str(l) for l in list(harness["chat"].values())[-4:]), "there's no /lp pins: it prints the usual help")
+
+# --- Attunements (issue #16) ---
+atts = {a["id"]: a for a in ns.Attunements.values()}
+missing = [(a, s["quest"]) for a, att in atts.items() for s in att["steps"].values() if s["quest"] and ns.Quests[s["quest"]] is None]
+check(not missing, f"every attunement quest is in WoW Forever's data: missing {missing}")
+check(all(ns.InstanceZones[att["instance"]] is not None for att in atts.values()), "every attunement names a dungeon or raid page")
+def rewards(qids):
+    return {i for q in qids for i in (ns.Quests[q]["rw"] or lua.table()).values()}
+keys_ok = all(s["item"] in rewards([t["quest"] for t in att["steps"].values() if t["quest"]])
+              for att in atts.values() for s in att["steps"].values() if s["item"])
+check(keys_ok, "each attunement's key is a reward of one of its quests")
+
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+ony = list(ns.GetZoneQuests("att:onyxia").values())
+check(4182 in ony and 6502 in ony and 4903 not in ony, f"an Alliance character's Onyxia page has the Alliance chain only ({len(ony)} quests)")
+sls, others = ns.BuildStorylines("att:onyxia")
+sls = list(sls.values())
+zones = {ns.Quests[n["id"]]["z"] for n in sls[0]["nodes"].values()} if sls else set()
+check(len(sls) == 1 and len(list(sls[0]["nodes"].values())) == len(ony) and len(zones) > 1,
+      f"it's one storyline across zones and instances: {len(sls)} storyline, zones {sorted(zones)}")
+check(ns.GetMapName("att:onyxia") == "Onyxia's Lair" and ns.GetLevelRange("att:onyxia") == ns.GetLevelRange(248),
+      "the page is named after the raid, with the raid's level range")
+reqs = list(ns.GetAttunementRequirements("att:onyxia").values())
+check(len(reqs) == 1 and reqs[0]["kind"] == "item" and reqs[0]["item"] == 16309 and reqs[0]["done"] is False,
+      "its key, the Drakefire Amulet, is a step, not done without it")
+done, total, _ = ns.GetZoneProgress("att:onyxia")
+check((done, total) == (0, len(ony) + 1), f"progress counts the quests and the key: {done} / {total}")
+g.C_Item.GetItemCount = lua.eval("function(id, bank) if id == 16309 and bank then return 1 end return 0 end")
+for qid in ony:
+    char["completed"][qid] = True
+ns.RefreshCompleted()
+done, total, _ = ns.GetZoneProgress("att:onyxia")
+check(ns.GetAttunementRequirements("att:onyxia")[1]["done"] is True and done == total,
+      f"with every quest done and the amulet in your bank, it's complete: {done} / {total}")
+g.C_Item.GetItemCount = None
+char["completed"] = lua.table()
+ns.RefreshCompleted()
+
+char["race"], char["faction"] = 2, "Horde"
+ns.RefreshPlayer()
+ony_h = list(ns.GetZoneQuests("att:onyxia").values())
+scholo_h = list(ns.GetZoneQuests("att:scholomance").values())
+check(4903 in ony_h and 6602 in ony_h and 4182 not in ony_h and 5511 in scholo_h and 5505 not in scholo_h,
+      "a Horde character gets the Horde chains")
+char["race"], char["faction"] = 1, "Alliance"
+ns.RefreshPlayer()
+groups = dict((gr["name"], list(gr["pages"].values())) for gr in ns.GetSpecialGroups().values())
+check(groups.get("Attunements") == ["att:onyxia", "att:ubrs", "att:scholomance", "att:shadowforge"],
+      f"the zone list gets an Attunements group: {groups.get('Attunements')}")
+char["level"] = 10
+ns.RefreshPlayer()
+check(len(list(ns.GetZoneQuests("att:onyxia").values())) > 0, "it shows at any level, as a goal")
+char["level"] = 60
+ns.RefreshPlayer()
+
+# In the window.
+g.LorePathDB["collapsedContinents"] = lua.table()
+ns.Toggle(True)
+ns.Refresh()
+heads = [f["continent"] for f in sorted([f for f in harness["all"].values() if f["continent"] is not None and f["zoneID"] is None and f.IsShown(f)],
+                                       key=lambda f: f["top"])]
+check("Attunements" in heads and heads.index("Attunements") < heads.index("Dungeons"), f"an Attunements heading sits with Class and Professions: {heads[:4]}")
+row = page_row("att:onyxia")
+check(row is not None and row["text"]["__text"] == "Onyxia's Lair" and row["icon"]["__texture"] == ns.InstanceInfo[248]["ic"],
+      "Onyxia's Lair is listed with the raid's icon")
+row["__scripts"]["OnClick"](row)
+canvas_texts = [str(f["__text"]) for f in harness["all"].values() if f["__kind"] == "FontString" and f.IsShown(f) and f["__text"] is not None]
+check(frame["zoneTitle"]["__text"] == "Onyxia's Lair" and "0 / 17 steps done" in frame["zoneSummary"]["__text"],
+      f"clicking it shows the page, counting steps: {frame['zoneSummary']['__text']}")
+check("Also needed" in canvas_texts and any("Item16309" in t and "ReadyCheck-NotReady" in t for t in canvas_texts),
+      "the key is listed above the quests, not ticked yet")
+ns.FocusQuest(4182)
+check(frame["zoneTitle"]["__text"] == "Onyxia's Lair", "focusing one of its quests stays on the attunement page")
+ns.Toggle(False)
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])

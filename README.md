@@ -4,7 +4,7 @@
 
 **LorePath** is a lightweight WoW Forever addon that maps *your* story. For every zone, dungeon, raid and battleground it draws each questline as a storyline graph, in the style of Attune's attunement paths. It shows what you've done, what you've missed and where the next part of each story starts. Click any quest to read its story.
 
-It's not a quest helper. There are no map pins and no objective tracking, so it sits happily alongside the default quest UI.
+It's not a quest helper. Its world map pins only show where quests start, and there's no objective tracking, so it sits happily alongside the default quest UI.
 
 LorePath supports English game clients only.
 
@@ -15,6 +15,7 @@ LorePath supports English game clients only.
 ## What it shows
 
 - **Class and Professions:** at the top of the zone list, **Class** gathers every quest for your class from all zones, so class chains that travel (say, from a capital city to another zone) show as one storyline. **Professions** has a page for each profession you have, with its quests. Their tooltips say which zone each quest is in. Quests your skill is too low for say what they need, for example *Needs Leatherworking 225*.
+- **Attunements:** under **Attunements** in the zone list, a page for each chain that unlocks a dungeon or raid (Onyxia's Lair, Upper Blackrock Spire, Scholomance, Shadowforge City), with your faction's quests as one storyline across zones, and the key it ends in, ticked once you have it. They're listed by hand in `Data/Attunements.lua`, since AllTheThings doesn't model attunements.
 - **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons, raids and battlegrounds get their own pages under **Dungeons**, **Raids** and **Battlegrounds** headings (Scarlet Monastery's Graveyard and Library wings have their own too), and inside an instance the window opens on its page. Zones, dungeons, raids and battlegrounds show WoW Forever's suggested level range in a column before the count, read from the game's Looking for Group list; hover a row for its full name, range and progress. Names are coloured by progress: grey before you start, then white fading towards green as you go, turning fully green only once finished. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and a heading whose quests are all done starts collapsed (unless it holds the page you're on). The whole list can be hidden to give the graph more room.
 - **Storylines:** each page's quest chains, drawn left to right from the first quest to the last, with lines joining each quest to the ones it unlocks. Each storyline can be collapsed, and finished ones start collapsed. **Expand all** and **Collapse all** sit at the top.
 - **Other quests:** standalone quests with no chain, under each page's storylines.
@@ -46,7 +47,7 @@ LorePath supports English game clients only.
 - **Search:** type part of a quest's name, or its ID, in the box above the zone list. The list shows up to 50 matching quests you can do, with their zone, status and level; click one to jump to it. Escape clears the search.
 - **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
-- **World map pins (optional, off by default):** tick **LorePath quests** at the bottom left of the world map, or **Show quests on the world map** in the settings, for a "!" where each quest you can pick up starts on the zone map you're viewing, coloured by difficulty like the quest tiles (blue for repeatable quests). Quests that start at the same spot share a pin, with a count. Hover a pin for the quest's tooltip; click it to set a waypoint there. Two more settings add quests above your level (a grey "!") and quests in your log (a "?" where they started).
+- **World map pins:** a "!" where each quest starts on the zone map you're viewing: gold for quests at your level, grey for low-level ones, red for quests you're not high enough level for yet (a blue "!" for repeatable quests). Each of the three has its own entry under **LorePath quests** in the world map's filter menu, and in the settings; all are on by default. Quests that start at the same spot share a pin, with a count. Hover a pin for the quest's tooltip, click it to set a waypoint there, or Shift+click it to open the quest in LorePath.
 - **Quest log, both ways:** for a quest you're on, **Open in quest log** in its details, or Shift+click it, opens the game's quest log at that quest. The other way, the LorePath book button on the game's quest log opens the selected quest in LorePath with its details.
 
 ### Controls
@@ -59,7 +60,7 @@ LorePath supports English game clients only.
 | Quest details | Click a quest; click it again to close the panel |
 | Waypoint | Ctrl+click a quest, or **Show on map** |
 | Open in your quest log | Shift+click a quest you're on, or **Open in quest log** in its details |
-| Quests on the world map | The **LorePath quests** tick box on the world map, or the settings page; click a pin for a waypoint |
+| Choose which quests show on the world map | **LorePath quests** in the world map's filter menu, or the settings page; click a pin for a waypoint, Shift+click it to open the quest in LorePath |
 | Open a quest log quest in LorePath | The LorePath book button on the game's quest log |
 | Collapse | Click a storyline's or heading's +/−, or **Expand all** / **Collapse all** |
 | Hide the zone list | The arrow button left of the zone name |
@@ -88,9 +89,9 @@ LorePath supports English game clients only.
 | Show spoilers | Off | Shows the full story of every quest in its details. Off: quests you haven't started, and how quests in your log end, stay hidden until you press **Reveal**. |
 | Show quest levels on tiles | On | Shows each quest's minimum level on its tile. Quests that are too high level always show it, in red. |
 | Open the map when setting a waypoint | On | Opens the world map at the quest's start when you set a waypoint. |
-| Show quests on the world map | Off | A "!" on the zone map where each quest you can pick up starts. Same as the **LorePath quests** tick box on the map. |
-| Map: also quests above your level | Off | Also pins quests you're not high enough level for yet, as a grey "!". |
-| Map: also quests in your log | Off | Also pins quests you're on, as a "?" where they started. |
+| Map: quests at your level | On | A gold "!" on the zone map where each quest at your level starts. Also in the world map's filter menu. |
+| Map: low-level quests | On | A grey "!" where quests too low to give you much experience start. |
+| Map: quests above your level | On | A red "!" where quests you're not high enough level for yet start. |
 | Window size | 100% | Scales the window from 60% to 140%. |
 
 **Reset to defaults** on the settings page puts every setting back, re-opens collapsed storylines and headings, and shows the zone list again. It keeps your saved quest text.
