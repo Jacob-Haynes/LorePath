@@ -1,9 +1,23 @@
 # Changelog
 
-## Unreleased
+## 1.1.0
 
-- **More quest icons:** profession quests show the profession's icon, and quests started by an item (like a dropped note) show that item's icon. A quest picked up inside a dungeon or raid shows its portal first, even a class quest.
+A big update: everything from the 1.1.0 betas (details below), plus two more changes. The highlights:
+
+- **Quest search:** a search box above the zone list finds any quest by name or ID.
+- **Class and Professions pages:** every quest for your class, and for each of your professions, in one place, with chains that cross zones shown whole.
+- **A richer zone list:** icons, progress colours from red to green, WoW Forever's level ranges, a **Battlegrounds** section, and Scarlet Monastery's wings on their own pages.
+- **Quest log, both ways:** open a quest you're on in the game's quest log, or open the quest log's selected quest in LorePath.
+- **Good to know:** AllTheThings' notes on quests, such as where an item drops, in tooltips and details.
+- **Clearer quest icons:** a portal for quests picked up inside dungeons and raids, and class, profession and starting-item icons. **Shift+click** item rewards to link them in chat.
+- **Drag from anywhere** on the graph to pan, even from a quest.
+- **Share your quest text** (`/lp share`, or the settings page) so everyone gets the story of WoW Forever's own quests.
+- **More accurate quests:** quests with Alliance and Horde versions, race-specific versions (like the Shaman totem quests) and dead-end breadcrumbs are all handled.
+
+Since 1.1.0-beta3:
+
 - **Level ranges always visible:** the range now has its own column before the progress count, so a long name (Stonetalon Mountains) is shortened instead of hiding the range. Hover a zone for its full name, range and progress.
+- **More quest icons:** profession quests show the profession's icon, and quests started by an item (like a dropped note) show that item's icon. A quest picked up inside a dungeon or raid shows its portal first, even a class quest.
 
 ## 1.1.0-beta3
 
