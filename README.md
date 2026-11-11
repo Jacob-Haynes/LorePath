@@ -214,7 +214,7 @@ It can't check how things look in game.
    - **CurseForge:** project 1793930, set by `## X-Curse-Project-ID` in `LorePath.toc`, using the `CF_API_KEY` repository secret.
    - **Release type:** tags containing "beta" or "alpha" upload as beta or alpha files; other tags are full releases.
    - **Release notes:** `CHANGELOG.md`.
-   - **Left out of the package:** `README.md`, `CHANGELOG.md`, `tools` and `media`.
+   - **Left out of the package:** `README.md`, `CHANGELOG.md`, `CLAUDE.md`, `tools` and `media`.
 
 ## Licence
 

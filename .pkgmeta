@@ -10,5 +10,6 @@ manual-changelog:
 ignore:
   - README.md
   - CHANGELOG.md
+  - CLAUDE.md
   - tools
   - media
