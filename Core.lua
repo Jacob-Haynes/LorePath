@@ -729,6 +729,21 @@ function ns.ProfessionOf(q)
     return q.sk and (PROFESSION_PARENT[q.sk] or q.sk) or nil
 end
 
+-- AllTheThings headers whose quests belong on the Class page instead of a page
+-- of their own: the Tier 0.5 (Dungeon Set 2) chains, which start with a quest
+-- for each class and then share steps every class does. All of them go on the
+-- Class page, so the chain shows whole there, and the header gets no page.
+local CLASS_PAGE_HEADERS = { [-318] = true } -- Tier 0.5 Sets
+
+-- The page a quest lives on: its zone, or the Class page for those.
+function ns.HomePage(id)
+    local q = ns.Quests[id]
+    if q and CLASS_PAGE_HEADERS[q.z] then
+        return "class"
+    end
+    return q and q.z
+end
+
 local function BuildZoneIndex()
     zoneQuests, classQuests, professionQuests = {}, {}, {}
     attunementQuests = {}
@@ -746,9 +761,13 @@ local function BuildZoneIndex()
         table.insert(t[key], id)
     end
     for id, q in pairs(ns.Quests) do
-        Add(zoneQuests, q.z, id)
-        if q.cl then
+        if CLASS_PAGE_HEADERS[q.z] then
             table.insert(classQuests, id)
+        else
+            Add(zoneQuests, q.z, id)
+            if q.cl then
+                table.insert(classQuests, id)
+            end
         end
         if q.sk then
             Add(professionQuests, ns.ProfessionOf(q), id)
@@ -918,7 +937,16 @@ local EXTRA_VERSIONS = {
     -- Zephras Isle's own Call of Fire chain, for WoW Forever's Horde race, which
     -- the data also allows on the Barrens chain. Both end in the Fire Totem.
     [97243] = { 1524 },
+    -- Amongst the Ruins (Blackfathom Deeps) is in the data twice, as 908 and
+    -- 6921, with the same giver, start and level; you can only ever have one,
+    -- so the other showed as still available beside it.
+    [6921] = { 908 },
+    -- Call of Air, the Horde Shaman quest, from Orgrimmar (1531) or Thunder
+    -- Bluff (1532): the same quest and reward for the same races, so a Horde
+    -- Shaman saw both. Home picks which one shows.
+    [1531] = { 1532 },
 }
+ns.EXTRA_VERSIONS = EXTRA_VERSIONS -- read by the tests' duplicate check
 
 -- Some quests come in several versions, one per starting area: the Shaman
 -- totem quests (Call of Earth in Durotar, Mulgore and Zephras Isle), marked as
