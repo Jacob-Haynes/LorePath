@@ -1787,7 +1787,7 @@ local function CreateMainFrame()
         GameTooltip:AddLine("Using LorePath", 1, 0.82, 0)
         GameTooltip:AddLine("Click a quest for its details; click it again to close them.", 1, 1, 1, true)
         GameTooltip:AddLine("Ctrl+click a quest to set a waypoint where it starts.", 1, 1, 1, true)
-        GameTooltip:AddLine("Search quests by name or ID in the box above the zone list, or with /lp search <name>.", 1, 1, 1, true)
+        GameTooltip:AddLine("Search quests by name or ID in the box above the zone list.", 1, 1, 1, true)
         GameTooltip:AddLine("Shift+click a quest you're on to open it in your quest log.", 1, 1, 1, true)
         GameTooltip:AddLine("Click \"Next\" or \"First finish\" in a storyline header to jump to that quest; Back returns you.", 1, 1, 1, true)
         GameTooltip:AddLine("Drag anywhere on the graph to pan, even from a quest; Shift+mouse wheel scrolls sideways.", 1, 1, 1, true)
@@ -1887,28 +1887,6 @@ function ns.Toggle(openCurrentZone)
         frame:Show()
     end
     ScrollListToSelected()
-end
-
--- Opens the window with a quest search filled in (for /lp search), showing the
--- zone list if it was hidden. With no text, just puts the cursor in the box.
-function ns.Search(text)
-    frame = frame or CreateMainFrame()
-    if not frame:IsShown() then
-        frame:Show()
-    end
-    if LorePathDB and LorePathDB.listHidden then
-        LorePathDB.listHidden = nil
-        ApplyListVisibility(frame)
-        RenderZone()
-    end
-    text = text or ""
-    frame.searchBox:SetText(text)
-    if frame.searchBox:GetScript("OnTextChanged") then
-        frame.searchBox:GetScript("OnTextChanged")(frame.searchBox, false)
-    end
-    if text == "" then
-        frame.searchBox:SetFocus()
-    end
 end
 
 -- Global so Bindings.xml can call it.

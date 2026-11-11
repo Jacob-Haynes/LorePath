@@ -103,7 +103,7 @@ title = frame["zoneTitle"]["__text"]
 check(title is not None and title.startswith("Elwynn Forest"), f"opens on the current zone: {title!r}")
 g.SlashCmdList["LOREPATH"]("")
 check(not frame.IsShown(frame), "/lp again closes it")
-g.SlashCmdList["LOREPATH"]("here")
+ns.Toggle(True)
 harness.RunTimers()
 check(frame.IsShown(frame), "/lp here reopens it")
 
@@ -335,12 +335,10 @@ check(any("Garrick has gathered" in s for s in texts) and any("The end." in s fo
 char["completed"][6] = None
 ns.RefreshCompleted()
 
-g.SlashCmdList["LOREPATH"]("spoilers")
-check(g.LorePathDB["showSpoilers"] is True, "/lp spoilers turns spoilers on")
+ns.SetSetting("showSpoilers", True)
 ns.RefreshDetail()
 check(any("Garrick has gathered" in s for s in detail_texts()), "with spoilers on, quests you haven't started show their story")
-g.SlashCmdList["LOREPATH"]("spoilers")
-check(g.LorePathDB["showSpoilers"] is False, "and /lp spoilers again hides them")
+ns.SetSetting("showSpoilers", False)
 g.LorePathDB["questCache"][6] = None
 ns.HideDetail()
 
@@ -358,7 +356,7 @@ ns.HideDetail()
 # Horde character in The Barrens
 char["race"], char["class"], char["faction"], char["level"], char["map"] = 2, 1, "Horde", 15, 1413
 char["completed"] = lua.table()
-g.SlashCmdList["LOREPATH"]("here")
+ns.Toggle(True)
 harness.RunTimers()
 title = frame["zoneTitle"]["__text"]
 check(title is not None and title.startswith("The Barrens"), f"Horde character opens on The Barrens: {title!r}")
@@ -609,12 +607,8 @@ g.GetQuestLogSelection = None
 g.C_QuestLog.GetInfo = None
 check(ns.SelectedLogQuest() is None and ns.ShowInLorePath(None) is False, "with nothing selected, it says so")
 check(ns.ShowInLorePath(999999) is False, "a quest LorePath doesn't have isn't opened")
-g.SlashCmdList["LOREPATH"](f"quest {tid}")
-check(ns.detailQuest == tid, f"/lp quest {tid} opens that quest")
-ns.HideDetail()
-g.C_QuestLog.GetSelectedQuest = lua.eval(f"function() return {tid} end")
-g.SlashCmdList["LOREPATH"]("quest")
-check(ns.detailQuest == tid, "/lp quest opens the quest selected in your quest log")
+ns.ShowInLorePath(tid)
+check(ns.detailQuest == tid, f"ShowInLorePath({tid}) opens that quest")
 g.C_QuestLog.GetSelectedQuest = lua.eval("function() return 0 end")
 g.QuestMapFrame = None
 ns.HideDetail()
@@ -692,7 +686,7 @@ ns.RefreshCompleted()
 
 # UI: the tile and tooltip explain the lock, without talking about levels.
 rep[576] = 1500
-g.SlashCmdList["LOREPATH"]("here")
+ns.Toggle(True)
 harness.RunTimers()
 def tile_for(qid):
     for f in harness["all"].values():
@@ -792,7 +786,7 @@ kind, nid = ns.GetNextStep(fake(rp_id, lowlevel))
 check(kind == "available" and nid == rp_id, "a storyline of only repeatables points Next at one")
 
 # UI: blue box, "Repeatable" second line, tooltip; then the three toggles.
-g.SlashCmdList["LOREPATH"]("here") if not frame.IsShown(frame) else None
+ns.Toggle(True) if not frame.IsShown(frame) else None
 ns.FocusQuest(rp_id)
 t = tile_for(rp_id)
 check(t is not None and "Repeatable" in t["sub"]["__text"], f"repeatable tile's second line: {t and t['sub']['__text']!r}")
@@ -835,13 +829,6 @@ check(any(f.GetChecked(f) is False for f in panel_box), "the settings page box f
 box.SetChecked(box, True)
 box["__scripts"]["OnClick"](box)
 shown_ok("ticking the header box")
-# 2. /lp repeatable
-g.SlashCmdList["LOREPATH"]("repeatable")
-hidden_ok("/lp repeatable")
-check(box.GetChecked(box) is False, "the header box follows /lp repeatable")
-g.SlashCmdList["LOREPATH"]("repeatable")
-shown_ok("/lp repeatable again")
-check(box.GetChecked(box) is True, "and is ticked again")
 # 3. settings page check box
 cb = None
 for f in harness["all"].values():
@@ -1027,7 +1014,7 @@ harness.RunTimers()
 char["map"] = 292
 g.IsInInstance = lua.eval("function() return true end")
 g.EJ_GetInstanceForMap = lua.eval("function(m) if m == 292 then return 63 end return 0 end")
-g.SlashCmdList["LOREPATH"]("here")
+ns.Toggle(True)
 check(frame["zoneTitle"]["__text"] == "The Deadmines", "inside the Deadmines, /lp here opens its page")
 check(ns.CurrentInstancePage(291) == 291, "standing on the instance's own map finds its page")
 g.EJ_GetInstanceForMap = None
@@ -1038,7 +1025,7 @@ check(ns.CurrentInstancePage(9999) == 225, "without the Encounter Journal, the i
 g.IsInInstance = lua.eval("function() return false end")
 check(ns.CurrentInstancePage(9999) is None, "outside an instance, no instance page is picked")
 char["map"] = 1429
-g.SlashCmdList["LOREPATH"]("here")
+ns.Toggle(True)
 check(frame["zoneTitle"]["__text"] == "Elwynn Forest", "back outside, /lp here opens the outdoor zone again")
 g.IsInInstance, g.GetRealZoneText, C_Map.GetAreaInfo = None, None, None
 
@@ -1051,7 +1038,7 @@ with_ic = next(k for k in sorted(II.keys()) if II[k]["ic"] is not None)
 without_ic = next(k for k in sorted(II.keys()) if II[k]["ic"] is None and ns.InstanceZones[k] == "dungeon")
 check(ZoneIcon(with_ic) == II[with_ic]["ic"], "an instance uses AllTheThings' icon for it")
 check(ZoneIcon(without_ic) == "Interface\\Icons\\INV_Misc_Key_03", "an instance without one uses the generic dungeon icon")
-g.SlashCmdList["LOREPATH"]("here")
+ns.Toggle(True)
 g.LorePathDB["collapsedContinents"] = lua.table()
 ns.Refresh()
 zrows = [f for f in harness["all"].values() if f["zoneID"] is not None and f.IsShown(f)]
@@ -1139,7 +1126,7 @@ check(len(t5283) == 1 and "Needs Blacksmithing 225" in t5283[0]["sub"]["__text"]
 ns.SetSetting("showAllProfessions", False)
 g.GetProfessions = lua.eval("function() return nil end")
 ns.RefreshPlayer()
-g.SlashCmdList["LOREPATH"]("here")
+ns.Toggle(True)
 
 # --- Quest search (issue #18) ---
 # Unloaded names on a real client: only the bundled titles, plus one Forever quest the client names.
@@ -1176,12 +1163,10 @@ def result_rows():
     return sorted([f for f in harness["all"].values() if f["resultQuest"] is not None and f.IsShown(f)], key=lambda f: f["top"])
 def zone_rows_shown():
     return [f for f in harness["all"].values() if f["zoneID"] is not None and f.IsShown(f)]
-g.LorePathDB["listHidden"] = True
-ns.ApplyListVisibility()
-g.SlashCmdList["LOREPATH"]("search garrick")
+ns.Toggle(True)
 box = frame["searchBox"]
-check(frame.IsShown(frame) and box["__text"] == "garrick", "/lp search garrick opens the window with the search filled in")
-check(frame["listInset"].IsShown(frame["listInset"]) and g.LorePathDB["listHidden"] is None, "and shows the zone list if it was hidden")
+box.SetText(box, "garrick")
+box["__scripts"]["OnTextChanged"](box, True)
 rows = result_rows()
 check(len(rows) > 0 and any(r["resultQuest"] == 6 for r in rows) and len(zone_rows_shown()) == 0,
       f"the zone list shows {len(rows)} quest results instead of zones")
@@ -1345,7 +1330,7 @@ near = rgb(PC(99, 100))
 check(0.8 <= near[0] < 1.0 and abs(near[0] - 0.42) > 0.3, f"nearly done leans towards green, but stays clearly short of it: {near}")
 greens = [rgb(PC(d, 100))[1] for d in range(1, 100)]
 check(greens == sorted(greens), "colours move steadily from red towards green")
-g.SlashCmdList["LOREPATH"]("here")
+ns.Toggle(True)
 char["completed"] = lua.table()
 elwynn_ids = list(ns.GetZoneQuests(1429).values())
 for qid in elwynn_ids[: len(elwynn_ids) // 2]:
@@ -1451,7 +1436,7 @@ check(rng(1453) == (None,) and rng("class") == (None,), "capital cities and the 
 char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
 char["completed"], char["log"] = lua.table(), lua.table()
 ns.RefreshPlayer(); ns.RefreshCompleted()
-g.SlashCmdList["LOREPATH"]("here")
+ns.Toggle(True)
 g.LorePathDB["collapsedContinents"] = lua.table()
 ns.Refresh()
 row = [f for f in harness["all"].values() if f["zoneID"] == 1429 and f.IsShown(f)][0]
@@ -1528,12 +1513,7 @@ g.C_LFGList = lua.eval("""{ GetAvailableActivities = function() return { 1, 2 } 
     { fullName = "Elwynn Forest", minLevelSuggestion = 1, maxLevelSuggestion = 10 } })[id] end }""")
 ns.ResetLevelRanges()
 check(ns.GetLevelRange(1460) == (20, 29), "Warsong Gulch gets its range from the game")
-before_chat = len(list(harness["chat"].values()))
-g.SlashCmdList["LOREPATH"]("levels")
-out = [str(m) for m in list(harness["chat"].values())[before_chat:]]
-check(any("Battlegrounds" in m for m in out) and "  Warsong Gulch: 20-29" in out and "  Elwynn Forest: 1-10" in out,
-      "/lp levels lists each page with its range, grouped like the zone list")
-check(any(m.endswith("no range|r") for m in out), "and says which have no range")
+check(ns.GetLevelRange(1429) == (1, 10), "and zones get theirs from the same list")
 g.C_LFGList = None
 g.C_Map.GetMapInfo = real_map_info
 ns.ResetLevelRanges()
@@ -1558,6 +1538,26 @@ check("Good to know:" in lines and any(l.startswith("For this to drop") for l in
 char["race"], char["faction"] = 1, "Alliance"
 ns.RefreshPlayer()
 ns.HideDetail()
+
+# --- Slash commands: just /lp, /lp config and /lp share ---
+before_chat = len(list(harness["chat"].values()))
+g.SlashCmdList["LOREPATH"]("help")
+out = [str(m) for m in list(harness["chat"].values())[before_chat:]]
+cmds = [m for m in out if "/lp" in m]
+check(len(cmds) == 3 and any("/lp config" in m for m in cmds) and any("/lp share" in m for m in cmds),
+      "/lp help lists three commands: /lp, /lp config and /lp share")
+for gone in ("here", "search garrick", "quest", "minimap", "repeatable", "spoilers", "levels", "settings", "options", "find x"):
+    before_chat = len(list(harness["chat"].values()))
+    g.SlashCmdList["LOREPATH"](gone)
+    if not any("commands:" in str(m) for m in list(harness["chat"].values())[before_chat:]):
+        check(False, f"/lp {gone} should just show the help now")
+check(True, "removed commands just show the help")
+share_button = harness["frames"]["LorePathSettingsPanel"]["shareButton"]
+g.LorePathDB["questCache"] = lua.eval("{}")
+before_chat = len(list(harness["chat"].values()))
+share_button["__scripts"]["OnClick"](share_button)
+check(any("Nothing new to share" in str(m) for m in list(harness["chat"].values())[before_chat:]),
+      "the settings page has a Share quest text button")
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])

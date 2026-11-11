@@ -619,34 +619,6 @@ function ns.GetLevelRange(page)
     end
 end
 
--- /lp levels: every page in the zone list with the level range LorePath
--- matched from the game, or "no range", grouped like the zone list.
-function ns.PrintLevelRanges()
-    local groups = { { kind = nil, title = "Zones" }, { kind = "dungeon", title = "Dungeons" },
-        { kind = "raid", title = "Raids" }, { kind = "battleground", title = "Battlegrounds" } }
-    local zones = ns.GetZones()
-    for _, z in ipairs(zones) do
-        z.name = ns.GetMapName(z.id)
-    end
-    table.sort(zones, function(a, b) return a.name < b.name end)
-    for _, group in ipairs(groups) do
-        local lines = {}
-        for _, z in ipairs(zones) do
-            if z.instance == group.kind then
-                local low, high = ns.GetLevelRange(z.id)
-                local range = low and ((low == high) and tostring(low) or (low .. "-" .. high)) or "|cff9d9d9dno range|r"
-                table.insert(lines, "  " .. z.name .. ": " .. range)
-            end
-        end
-        if #lines > 0 then
-            ns.Print("|cffffd100" .. group.title .. "|r")
-            for _, line in ipairs(lines) do
-                DEFAULT_CHAT_FRAME:AddMessage(line)
-            end
-        end
-    end
-end
-
 -- "dungeon", "raid" or "battleground" for an instance page, nil for an outdoor zone.
 function ns.GetInstanceKind(zoneID)
     return ns.InstanceZones and ns.InstanceZones[zoneID] or nil
