@@ -1287,14 +1287,16 @@ def earth_shown(page):
 page = shaman(2)
 check(earth_shown(page) == {"durotar"} and all(i in page for i in EARTH["durotar"]),
       f"an orc Shaman's Class page has one Call of Earth chain, Durotar's: {earth_shown(page)}")
-check([i for i in FIRE_CRUMBS if i in page] == [2983] and 1524 in page,
-      f"and one Call of Fire breadcrumb, from Durotar: {[i for i in FIRE_CRUMBS if i in page]}")
+check([i for i in FIRE_CRUMBS if i in page] == FIRE_CRUMBS and 1524 in page,
+      "every Call of Fire breadcrumb stays: each is a different place to start")
 page = shaman(6)
-check(earth_shown(page) == {"mulgore"} and [i for i in FIRE_CRUMBS if i in page] == [2984],
-      "a tauren Shaman gets Mulgore's chain and breadcrumb")
+check(earth_shown(page) == {"mulgore"}, "a tauren Shaman gets Mulgore's chain")
 page = shaman(96)
 check(earth_shown(page) == {"zephras"} and all(i in page for i in EARTH["zephras"]),
       f"a Zephras Isle Shaman gets Zephras Isle's chain: {earth_shown(page)}")
+FIRE_BARRENS, FIRE_ZEPHRAS = [1524, 1525, 1526, 1527], [97243, 97244, 97245, 97257]
+check(all(i in page for i in FIRE_ZEPHRAS) and not any(i in page for i in FIRE_BARRENS + FIRE_CRUMBS),
+      "and Zephras Isle's own Call of Fire, without the Barrens chain or the breadcrumbs that only lead into it")
 page = shaman(2)
 char["completed"][1519] = True
 ns.RefreshCompleted()
@@ -1305,8 +1307,8 @@ ns.RefreshCompleted()
 page = shaman(2)
 durotar, barrens = set(ns.GetZoneQuests(1411).values()), set(ns.GetZoneQuests(1413).values())
 check(all(i in durotar for i in EARTH["durotar"]), "a zone with one version keeps it")
-check([i for i in FIRE_CRUMBS if i in barrens] == [2983] and 1524 in barrens,
-      "The Barrens, where all four Call of Fire breadcrumbs are filed, shows one too")
+check([i for i in FIRE_CRUMBS if i in barrens] == FIRE_CRUMBS and 1524 in barrens,
+      "The Barrens keeps all four Call of Fire breadcrumbs")
 char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
 ns.RefreshPlayer()
 ns.RefreshCompleted()

@@ -633,16 +633,27 @@ local HOME_MAPS = {
     [6] = { 1412, 1456 }, -- Tauren: Mulgore, Thunder Bluff
     [7] = { 1426, 1455 }, -- Gnome: Dun Morogh, Ironforge
     [8] = { 1411, 1454 }, -- Troll: Durotar, Orgrimmar
-    [96] = { 2521 },      -- WoW Forever's own race: Zephras Isle
+    [95] = { 2521 },      -- WoW Forever's own race (Alliance): Zephras Isle
+    [96] = { 2521 },      -- WoW Forever's own race (Horde): Zephras Isle
+}
+
+-- Versions the data doesn't mark as alternatives: first quest -> first quests
+-- of the other versions. Keep it short, and report each one to AllTheThings
+-- too, so the data itself gets fixed.
+local EXTRA_VERSIONS = {
+    -- Zephras Isle's own Call of Fire chain, for WoW Forever's Horde race, which
+    -- the data also allows on the Barrens chain. Both end in the Fire Totem.
+    [97243] = { 1524 },
 }
 
 -- Some quests come in several versions, one per starting area: the Shaman
 -- totem quests (Call of Earth in Durotar, Mulgore and Zephras Isle), marked as
--- alternatives of each other, and breadcrumbs from several cities that all lead
--- to the same quest. The data doesn't say which race does which, so a page
--- shows one of each: the one you've done or have, else the one that starts
--- nearest your race's home, else the first. The quests that follow a hidden
--- version are hidden with it.
+-- alternatives of each other. The data doesn't say which race does which, so a
+-- page shows one of each: the one you've done or have, else the one that
+-- starts nearest your race's home, else the first. The quests that follow a
+-- hidden version are hidden with it, and so are breadcrumbs that only lead to
+-- hidden quests (you couldn't complete them). Other breadcrumbs all stay, even
+-- several to the same quest: each is a different place to start.
 local function OneVersionEach(list)
     if #list < 2 then
         return list
@@ -664,8 +675,7 @@ local function OneVersionEach(list)
         return 10
     end
 
-    -- Group the versions: alternatives of each other, or breadcrumbs that lead
-    -- to the same quests.
+    -- Group the versions: alternatives of each other.
     local onPage = {}
     for _, id in ipairs(list) do
         onPage[id] = true
@@ -692,7 +702,6 @@ local function OneVersionEach(list)
             groupOf[a], groupOf[b] = a, a
         end
     end
-    local crumbs = {}
     for _, id in ipairs(list) do
         local q = ns.Quests[id]
         for _, alt in ipairs(q.alt or {}) do
@@ -700,17 +709,9 @@ local function OneVersionEach(list)
                 Join(id, alt)
             end
         end
-        if q.bc and q.nx then
-            local targets = {}
-            for _, nextID in ipairs(q.nx) do
-                table.insert(targets, nextID)
-            end
-            table.sort(targets)
-            local key = table.concat(targets, ",")
-            if crumbs[key] then
-                Join(crumbs[key], id)
-            else
-                crumbs[key] = id
+        for _, other in ipairs(EXTRA_VERSIONS[id] or {}) do
+            if onPage[other] then
+                Join(id, other)
             end
         end
     end
@@ -731,24 +732,29 @@ local function OneVersionEach(list)
     if next(hidden) == nil then
         return list
     end
-    -- Quests whose every prerequisite on the page is hidden go too, unless
-    -- you've done them or have them.
+    -- Quests whose every prerequisite on the page is hidden go too, and so do
+    -- breadcrumbs that only lead to hidden quests, unless you've done them or
+    -- have them.
+    local function AllHidden(ids)
+        local any = false
+        for _, other in ipairs(ids or {}) do
+            if onPage[other] then
+                if not hidden[other] then
+                    return false
+                end
+                any = true
+            end
+        end
+        return any
+    end
     local changed = true
     while changed do
         changed = false
         for _, id in ipairs(list) do
             local q = ns.Quests[id]
-            if not hidden[id] and q.pre and not IsOnQuest(id) and not IsFlaggedCompleted(id) then
-                local any, allHidden = false, true
-                for _, pre in ipairs(q.pre) do
-                    if onPage[pre] then
-                        any = true
-                        allHidden = allHidden and hidden[pre] == true
-                    end
-                end
-                if any and allHidden then
-                    hidden[id], changed = true, true
-                end
+            if not hidden[id] and not IsOnQuest(id) and not IsFlaggedCompleted(id)
+                and (AllHidden(q.pre) or (q.bc and AllHidden(q.nx))) then
+                hidden[id], changed = true, true
             end
         end
     end

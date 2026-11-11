@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- **One version of each quest:** quests that come in several versions, one per starting area, now show once. The Shaman totem quests (Call of Earth, Call of Fire, Call of Water) appeared once per starting area on the Class page. LorePath shows the version you've done or have, else the one that starts nearest your race's home. The same goes for several breadcrumbs that lead to the same quest, and for quests marked as alternatives of each other, so a few zone pages list fewer quests.
+- **One version of each quest:** quests that come in several versions, one per starting area, now show once. The Shaman totem quests (Call of Earth, and Zephras Isle's Call of Fire) appeared once per starting area on the Class page. LorePath shows the version you've done or have, else the one that starts nearest your race's home. Breadcrumbs that only lead into a hidden version are hidden too, since you couldn't complete them; every other breadcrumb stays.
 
 ## 1.1.0-beta1
 
