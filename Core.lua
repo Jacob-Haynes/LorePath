@@ -31,29 +31,31 @@ end
 -- Player
 -- ============================================================================
 
-local player = { race = 0, class = 0, faction = 0, level = 1, skills = {} }
+local player = { race = 0, class = 0, faction = 0, level = 1, skills = {}, professions = {} }
 ns.player = player
 
+-- skill line -> rank, and skill line -> { name, icon } for the professions you have.
 local function ReadProfessions()
-    local skills = {}
+    local skills, info = {}, {}
     if type(GetProfessions) ~= "function" or type(GetProfessionInfo) ~= "function" then
-        return skills
+        return skills, info
     end
     local indices = { pcall(GetProfessions) }
     if not indices[1] then
-        return skills
+        return skills, info
     end
     -- Slots can be empty (nil) in the middle, so walk all of them rather than ipairs.
     for slot = 2, 7 do
         local index = indices[slot]
         if index then
-            local okInfo, _, _, rank, _, _, _, skillLine = pcall(GetProfessionInfo, index)
+            local okInfo, name, icon, rank, _, _, _, skillLine = pcall(GetProfessionInfo, index)
             if okInfo and skillLine then
                 skills[skillLine] = rank or 0
+                info[skillLine] = { name = name, icon = icon }
             end
         end
     end
-    return skills
+    return skills, info
 end
 
 function ns.RefreshPlayer()
@@ -64,7 +66,7 @@ function ns.RefreshPlayer()
     player.class = classID or 0
     player.faction = (factionTag == "Horde" and 1) or (factionTag == "Alliance" and 2) or 0
     player.level = UnitLevel("player") or 1
-    player.skills = ReadProfessions()
+    player.skills, player.professions = ReadProfessions()
     wipe(ns.standings)
 end
 
@@ -196,7 +198,9 @@ local function Contains(list, value)
 end
 
 -- Can this character ever do the quest (faction, race, class, profession)?
-function ns.IsEligible(id)
+-- With ignoreSkill, a profession you don't have doesn't count against it (for
+-- the Professions page's "show professions you don't have").
+function ns.IsEligible(id, ignoreSkill)
     local q = ns.Quests[id]
     if not q then
         return false
@@ -210,7 +214,7 @@ function ns.IsEligible(id)
     if q.cl and not Contains(q.cl, player.class) then
         return false
     end
-    if q.sk and player.skills[q.sk] == nil then
+    if q.sk and not ignoreSkill and player.skills[q.sk] == nil then
         return false
     end
     return true
@@ -316,8 +320,8 @@ function ns.GetLockReason(id)
     if q.l and player.level < q.l then
         return "level"
     end
-    if q.sk and q.sl and (player.skills[q.sk] or 0) < q.sl then
-        return "skill"
+    if q.sk and (player.skills[q.sk] == nil or (q.sl and player.skills[q.sk] < q.sl)) then
+        return "skill" -- skill too low, or (on the Professions page) a profession you don't have
     end
     if BelowMinRep(q) then
         return "minrep"
@@ -351,6 +355,81 @@ function ns.GetQuestNameOrID(id)
         or ("Quest #" .. id)
 end
 
+-- ============================================================================
+-- Search
+-- ============================================================================
+
+ns.SEARCH_LIMIT = 50
+
+-- Lower-case names from the client, kept once loaded. Bundled titles fill in
+-- (uncached, so the client's Forever wording replaces them once it arrives).
+local searchNames = {}
+local function SearchName(id)
+    local name = searchNames[id]
+    if name then
+        return name
+    end
+    local client = ns.GetQuestName(id) -- asks the client to load it, once
+    if client then
+        searchNames[id] = string.lower(client)
+        return searchNames[id]
+    end
+    local bundled = (ns.CommunityText and ns.CommunityText[id] and ns.CommunityText[id].t)
+        or (ns.QuestText and ns.QuestText[id] and ns.QuestText[id].t)
+    return bundled and string.lower(bundled)
+end
+
+-- Quests this character can see whose name contains every word of `text`
+-- (any order, ignoring case), or whose ID is `text`. Names that start with the
+-- text come first. Returns at most `limit` IDs, and how many matched in all.
+function ns.SearchQuests(text, limit)
+    text = string.lower(string.match(text or "", "^%s*(.-)%s*$"))
+    if text == "" then
+        return {}, 0
+    end
+    local words = {}
+    for word in string.gmatch(text, "%S+") do
+        table.insert(words, word)
+    end
+    local wantedID = tonumber(text)
+    local showRepeatable = ns.GetSetting("showRepeatable")
+    local found = {}
+    for id in pairs(ns.Quests) do
+        if ns.IsEligible(id) and (showRepeatable or not ns.IsRepeatable(id)) then
+            local name = SearchName(id) or ""
+            local rank
+            if id == wantedID then
+                rank = 0
+            elseif name ~= "" then
+                rank = string.find(name, text, 1, true) == 1 and 1 or 2
+                for _, word in ipairs(words) do
+                    if not string.find(name, word, 1, true) then
+                        rank = nil
+                        break
+                    end
+                end
+            end
+            if rank then
+                table.insert(found, { id = id, rank = rank, name = name })
+            end
+        end
+    end
+    table.sort(found, function(a, b)
+        if a.rank ~= b.rank then
+            return a.rank < b.rank
+        end
+        if a.name ~= b.name then
+            return a.name < b.name
+        end
+        return a.id < b.id
+    end)
+    local ids = {}
+    for i = 1, math.min(#found, limit or ns.SEARCH_LIMIT) do
+        ids[i] = found[i].id
+    end
+    return ids, #found
+end
+
 -- Name of an instance page (see ns.InstanceZones): the Encounter Journal's name,
 -- then the map's, then the area's, then the English name stored with the data.
 local function InstanceName(zoneID, info)
@@ -375,8 +454,12 @@ local function InstanceName(zoneID, info)
     return info.n or ("Instance " .. tostring(info.ej or zoneID))
 end
 
--- Name of a map, or of a zone list page (which may be an instance page).
+-- Name of a map, or of a zone list page (which may be an instance page, or the
+-- Class or a profession page).
 function ns.GetMapName(mapID)
+    if type(mapID) == "string" then
+        return ns.SpecialPageName(mapID)
+    end
     local instance = mapID and ns.InstanceInfo and ns.InstanceInfo[mapID]
     if instance then
         return InstanceName(mapID, instance)
@@ -429,33 +512,167 @@ end
 -- ============================================================================
 
 local zoneQuests -- zone mapID -> list of quest IDs (built once)
+local classQuests -- class-restricted quests, from every zone
+local professionQuests -- profession skill line -> its quests, from every zone
+
+-- Blacksmithing's specialisations have their own skill lines in the data; they
+-- belong on the Blacksmithing page.
+local PROFESSION_PARENT = { [9787] = 164, [9788] = 164 } -- Weaponsmith, Armorsmith
+
+function ns.ProfessionOf(q)
+    return q.sk and (PROFESSION_PARENT[q.sk] or q.sk) or nil
+end
 
 local function BuildZoneIndex()
-    zoneQuests = {}
+    zoneQuests, classQuests, professionQuests = {}, {}, {}
+    local function Add(t, key, id)
+        t[key] = t[key] or {}
+        table.insert(t[key], id)
+    end
     for id, q in pairs(ns.Quests) do
-        local list = zoneQuests[q.z]
-        if not list then
-            list = {}
-            zoneQuests[q.z] = list
+        Add(zoneQuests, q.z, id)
+        if q.cl then
+            table.insert(classQuests, id)
         end
-        table.insert(list, id)
+        if q.sk then
+            Add(professionQuests, ns.ProfessionOf(q), id)
+        end
+    end
+    table.sort(classQuests)
+    for _, list in pairs(professionQuests) do
+        table.sort(list)
     end
 end
 
--- Quests in a zone that this character can do. Repeatable quests are left out
--- when "Show repeatable quests" is off.
+-- ============================================================================
+-- Class and profession pages (issue #8)
+-- ============================================================================
+-- Besides zones (map IDs) and instances, the zone list has two kinds of page,
+-- keyed by string: "class" (every quest for your class, from all zones, so class
+-- chains that travel show as one storyline) and "prof:<skill line>" (one
+-- profession's quests).
+
+-- English names and icons, for professions you don't have (the client names the
+-- ones you do).
+ns.PROFESSIONS = {
+    [171] = { name = "Alchemy", icon = "Interface\\Icons\\Trade_Alchemy" },
+    [164] = { name = "Blacksmithing", icon = "Interface\\Icons\\Trade_BlackSmithing" },
+    [333] = { name = "Enchanting", icon = "Interface\\Icons\\Trade_Engraving" },
+    [202] = { name = "Engineering", icon = "Interface\\Icons\\Trade_Engineering" },
+    [182] = { name = "Herbalism", icon = "Interface\\Icons\\Trade_Herbalism" },
+    [165] = { name = "Leatherworking", icon = "Interface\\Icons\\INV_Misc_ArmorKit_17" },
+    [186] = { name = "Mining", icon = "Interface\\Icons\\Trade_Mining" },
+    [393] = { name = "Skinning", icon = "Interface\\Icons\\INV_Misc_Pelt_Wolf_01" },
+    [197] = { name = "Tailoring", icon = "Interface\\Icons\\Trade_Tailoring" },
+    [185] = { name = "Cooking", icon = "Interface\\Icons\\INV_Misc_Food_15" },
+    [129] = { name = "First Aid", icon = "Interface\\Icons\\Spell_Holy_SealOfSacrifice" },
+    [356] = { name = "Fishing", icon = "Interface\\Icons\\Trade_Fishing" },
+    [9787] = { name = "Weaponsmithing", icon = "Interface\\Icons\\INV_Sword_25" },
+    [9788] = { name = "Armorsmithing", icon = "Interface\\Icons\\INV_Chest_Plate04" },
+}
+
+function ns.ProfessionName(skill)
+    local mine = player.professions[skill]
+    return (mine and mine.name) or (ns.PROFESSIONS[skill] and ns.PROFESSIONS[skill].name) or ("profession " .. tostring(skill))
+end
+
+function ns.ProfessionIcon(skill)
+    local mine = player.professions[skill]
+    return (mine and mine.icon) or (ns.PROFESSIONS[skill] and ns.PROFESSIONS[skill].icon) or "Interface\\Icons\\INV_Pick_02"
+end
+
+function ns.HasProfession(skill)
+    return player.skills[skill] ~= nil
+end
+
+-- "Alchemy 150", or "Alchemy" when the quest needs no particular skill level.
+function ns.SkillText(q)
+    local name = ns.ProfessionName(q.sk)
+    return q.sl and (name .. " " .. q.sl) or name
+end
+
+local function PageSkill(page)
+    return tonumber(string.match(page, "^prof:(%d+)$"))
+end
+
+function ns.IsSpecialPage(page)
+    return type(page) == "string"
+end
+
+function ns.SpecialPageName(page)
+    if page == "class" then
+        local className = UnitClass("player")
+        return (className or "Class") .. " quests"
+    end
+    local skill = PageSkill(page)
+    return skill and ns.ProfessionName(skill) or page
+end
+
+-- The quests on a Class or profession page. Professions you don't have are
+-- included (as locked quests) only when "Show professions you don't have" is on.
+local function SpecialPageQuests(page)
+    local source, ignoreSkill
+    if page == "class" then
+        source = classQuests
+    else
+        local skill = PageSkill(page)
+        source = skill and professionQuests[skill] or {}
+        ignoreSkill = skill and not ns.HasProfession(skill) and ns.GetSetting("showAllProfessions")
+    end
+    return source, ignoreSkill
+end
+
+-- Quests on a zone list page (a zone, an instance, or the Class or a profession
+-- page) that this character can do. Repeatable quests are left out when "Show
+-- repeatable quests" is off.
 function ns.GetZoneQuests(zoneID)
     if not zoneQuests then
         BuildZoneIndex()
     end
+    local source, ignoreSkill
+    if ns.IsSpecialPage(zoneID) then
+        source, ignoreSkill = SpecialPageQuests(zoneID)
+    else
+        source = zoneQuests[zoneID] or {}
+    end
     local showRepeatable = ns.GetSetting("showRepeatable")
     local list = {}
-    for _, id in ipairs(zoneQuests[zoneID] or {}) do
-        if ns.IsEligible(id) and (showRepeatable or not ns.IsRepeatable(id)) then
+    for _, id in ipairs(source) do
+        if ns.IsEligible(id, ignoreSkill) and (showRepeatable or not ns.IsRepeatable(id)) then
             table.insert(list, id)
         end
     end
     return list
+end
+
+-- The Class and Professions groups at the top of the zone list:
+-- { { name = "Class", pages = { "class" } }, { name = "Professions", pages = { "prof:171", ... } } },
+-- leaving out any page with no quests for you.
+function ns.GetSpecialGroups()
+    if not zoneQuests then
+        BuildZoneIndex()
+    end
+    local groups = {}
+    if #ns.GetZoneQuests("class") > 0 then
+        table.insert(groups, { name = "Class", pages = { "class" } })
+    end
+    local pages = {}
+    for skill in pairs(professionQuests) do
+        if #ns.GetZoneQuests("prof:" .. skill) > 0 then
+            table.insert(pages, "prof:" .. skill)
+        end
+    end
+    table.sort(pages, function(a, b)
+        local ha, hb = ns.HasProfession(PageSkill(a)), ns.HasProfession(PageSkill(b))
+        if ha ~= hb then
+            return ha -- yours first, then the ones you don't have
+        end
+        return ns.SpecialPageName(a) < ns.SpecialPageName(b)
+    end)
+    if #pages > 0 then
+        table.insert(groups, { name = "Professions", pages = pages })
+    end
+    return groups
 end
 
 -- Does a quest count towards "x / y" progress? Missed breadcrumbs don't count

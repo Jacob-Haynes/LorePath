@@ -12,6 +12,7 @@ local function MockObject(kind)
         SetScript = function(self, name, fn) self.__scripts[name] = fn end,
         GetScript = function(self, name) return self.__scripts[name] end,
         SetText = function(self, t) self.__text = t end,
+        SetTexture = function(self, t) self.__texture = t end,
         GetText = function(self) return self.__text end,
         GetWidth = function(self) return self.__w end,
         GetHeight = function(self) return self.__h end,
