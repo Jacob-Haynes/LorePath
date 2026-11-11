@@ -846,20 +846,21 @@ local function OneVersionEach(list)
         return list
     end
     local home = HOME_MAPS[player.race] or {}
+    -- Lower is better: in your log, then completed, then neither; within each,
+    -- your race's starting zone, then its capital, then anywhere else. WoW
+    -- Forever marks every version of these quests completed when you finish
+    -- one, so when they're all completed, home decides.
     local function Score(id)
-        if IsOnQuest(id) then
-            return 0
-        end
-        if IsFlaggedCompleted(id) then
-            return 1
-        end
+        local tier = IsOnQuest(id) and 0 or (IsFlaggedCompleted(id) and 1 or 2)
+        local place = 9
         local start = ns.Quests[id].m
         for rank, map in ipairs(home) do
             if start == map then
-                return 1 + rank
+                place = rank
+                break
             end
         end
-        return 10
+        return tier * 10 + place
     end
 
     -- Group the versions: alternatives of each other.
@@ -920,8 +921,9 @@ local function OneVersionEach(list)
         return list
     end
     -- Quests whose every prerequisite on the page is hidden go too, and so do
-    -- breadcrumbs that only lead to hidden quests, unless you've done them or
-    -- have them.
+    -- breadcrumbs that only lead to hidden quests, unless they're in your log.
+    -- Completed ones go as well: the game marks the other versions' quests
+    -- completed too, and the version you did is the one still showing.
     local function AllHidden(ids)
         local any = false
         for _, other in ipairs(ids or {}) do
@@ -939,7 +941,7 @@ local function OneVersionEach(list)
         changed = false
         for _, id in ipairs(list) do
             local q = ns.Quests[id]
-            if not hidden[id] and not IsOnQuest(id) and not IsFlaggedCompleted(id)
+            if not hidden[id] and not IsOnQuest(id)
                 and (AllHidden(q.pre) or (q.bc and AllHidden(q.nx))) then
                 hidden[id], changed = true, true
             end

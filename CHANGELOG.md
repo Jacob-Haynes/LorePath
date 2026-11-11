@@ -11,6 +11,7 @@
 - **17 quests with Alliance and Horde versions fixed:** quests like the level-50 class quests from your capital's trainers (for example 8151 for Hunters) and Tabetha's Task were missing their level, class, start point and quest giver, so some showed for every class with no start point. They now have them, with your faction's trainer, start point and earlier quest.
 - **Portal icon for quests picked up inside dungeons and raids:** 88 quests that you get from an NPC, item or object inside an instance show its entrance portal instead of the scroll, and their tooltip and details say "Picked up inside <instance>" instead of "Start location unknown".
 - **Level ranges:** zones, dungeons and raids in the zone list show WoW Forever's suggested level range after their name (for example *Ragefire Chasm 13-18*, *Hillsbrad Foothills 18-34*), and so does the line above the graph. LorePath reads them from the game's Looking for Group list, so they follow the game.
+- **Class quests shown once, for real:** WoW Forever marks every version of a quest like Call of Earth completed when you finish one, so 1.1.0-beta2 could still show two chains (for example Durotar's next to Zephras Isle's). When several versions are marked completed, the one from your race's home now wins, and the others' steps are hidden even though they're marked completed.
 
 ## 1.1.0-beta2
 
