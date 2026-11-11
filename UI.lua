@@ -566,6 +566,15 @@ local function ShowNodeTooltip(node)
     if IsPanning() then
         return -- passing over quests while dragging the graph
     end
+    if node.link then
+        -- A quest on another page: say where, and that clicking goes there.
+        local zone = ns.GetMapName(ns.Quests[node.questID].z)
+        local where = node.link.from and not node.link.to and ("This storyline starts from it, in " .. zone .. ".")
+            or (node.link.to and not node.link.from and ("This storyline continues with it, in " .. zone .. "."))
+            or ("This storyline passes through " .. zone .. " here.")
+        ShowQuestTooltip(node, node.questID, node.storyline, { where, "Click to go to it." })
+        return
+    end
     ShowQuestTooltip(node, node.questID, node.storyline)
 end
 
@@ -613,7 +622,9 @@ local function AcquireNode(parent)
             if WasDragged() then
                 return
             end
-            if IsControlKeyDown() then
+            if self.link and not IsControlKeyDown() then
+                ns.FocusQuest(self.questID) -- a quest on another page: go there
+            elseif IsControlKeyDown() then
                 ns.ShowQuestStart(self.questID)
             elseif IsShiftKeyDown() and ns.IsOnQuest(self.questID) then
                 ns.OpenInQuestLog(self.questID)
@@ -735,6 +746,8 @@ local function StyleNode(node, id, storyline)
     local style = STATUS_STYLE[status]
     node.questID = id
     node.storyline = storyline
+    node.link = nil
+    node:SetAlpha(1)
     node.flash:SetShown(id == ns.focusedQuest)
     node.bg:SetColorTexture(style.bg[1], style.bg[2], style.bg[3], 0.95)
     local border = style.border
@@ -800,6 +813,32 @@ local function StyleNode(node, id, storyline)
             node.sub:SetText(short)
         end
     end
+end
+
+-- A quest on another page that leads into this storyline, or that it leads on
+-- to: its usual tile, faded, with a blue border and where it is instead of its
+-- status ("From Westfall", "Continues in Redridge Mountains"). Clicking it goes
+-- there.
+local LINK_BORDER = { 0.45, 0.70, 1.0 }
+local LINK_TEXT = "|cff8cc4ff"
+function ns.ui.LinkLabel(link)
+    local zone = ns.GetMapName(ns.Quests[link.id].z)
+    if link.from and link.to then
+        return "Via " .. zone
+    elseif link.from then
+        return "< From " .. zone
+    end
+    return "Continues in " .. zone .. " >"
+end
+
+local function StyleLinkNode(node, link, storyline)
+    StyleNode(node, link.id, storyline)
+    node.link = link
+    node:SetAlpha(0.8)
+    if link.id ~= ns.detailQuest then
+        node:SetBorderColor(LINK_BORDER[1], LINK_BORDER[2], LINK_BORDER[3], 1)
+    end
+    node.sub:SetText(LINK_TEXT .. ns.ui.LinkLabel(link) .. "|r")
 end
 
 -- ============================================================================
@@ -957,6 +996,15 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
         node:SetPoint("TOPLEFT", canvas, "TOPLEFT", NodeX(n.col), -NodeY(graphTop, n.row))
         node.px, node.py = NodeX(n.col), NodeY(graphTop, n.row)
         StyleNode(node, n.id, storyline)
+        cells[n.id] = n
+    end
+    -- Quests on other pages just before or after the storyline: linked tiles.
+    for _, n in ipairs(storyline.links or {}) do
+        local node = AcquireNode(canvas)
+        node:ClearAllPoints()
+        node:SetPoint("TOPLEFT", canvas, "TOPLEFT", NodeX(n.col), -NodeY(graphTop, n.row))
+        node.px, node.py = NodeX(n.col), NodeY(graphTop, n.row)
+        StyleLinkNode(node, n, storyline)
         cells[n.id] = n
     end
 

@@ -7,6 +7,7 @@
 - **Tidier settings page:** it scrolls instead of running off the bottom, and its options are grouped under **Window**, **Quests** and **World map**, with the three map filters indented under **Show quests on the map**.
 - **Progress colours as a gradient:** zone list names you've started go smoothly from red through orange and yellow to green as you finish their quests, replacing beta2's white-to-green. Finished ones are fully green, with a tick.
 - **Tier 0.5 on the Class page:** the Dungeon Set 2 upgrade chain no longer has its own "Tier 0.5 Sets" page under Dungeons. It's on your Class page instead, whole: your class's quests and the steps every class shares in between, which the Class page used to leave out.
+- **Storylines that cross zones:** a storyline that starts from a quest in another zone, or goes on into one, now shows those quests too, as faded tiles with a blue border joined to the graph: *< From Elwynn Forest* before the quest they unlock, *Continues in Westfall >* after the one that leads there. Hover one to see where it is; click it to go there. They don't count towards the storyline's progress. About a third of storylines cross a zone somewhere.
 
 ## 1.2.0-beta2
 
