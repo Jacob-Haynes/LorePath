@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -1519,6 +1519,17 @@ check(any(m.endswith("no range|r") for m in out), "and says which have no range"
 g.C_LFGList = None
 g.C_Map.GetMapInfo = real_map_info
 ns.ResetLevelRanges()
+
+# --- AllTheThings' notes in quest details ---
+check(ns.QuestNotes[6564] == "For this to drop, you need to be on the Essence of Aku'Mai quest.", "notes are extracted with their quests")
+check(len(list(ns.QuestNotes.keys())) > 50 and all(ns.Quests[k] is not None for k in ns.QuestNotes.keys()), "only for quests LorePath has")
+ns.SetSetting("showSpoilers", False)
+ns.ShowDetail(6564)
+texts = detail_texts()
+check("Good to know" in texts and any(t.startswith("For this to drop") for t in texts), "the details show the note, even with spoilers hidden")
+ns.ShowDetail(783)
+check("Good to know" not in detail_texts(), "quests without a note don't get the heading")
+ns.HideDetail()
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])

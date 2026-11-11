@@ -547,6 +547,15 @@ local function Render(id)
         cursor = cursor + 22
     end
 
+    -- AllTheThings' note, when it has one: where an item drops, what finishing
+    -- the quest locks you out of, and so on. Shown even with spoilers hidden,
+    -- since most are worth knowing before you start.
+    local note = ns.QuestNotes and ns.QuestNotes[id]
+    if note then
+        AddHeader("Good to know")
+        AddText(note, "GameFontHighlightSmall", { 0.65, 0.82, 1 }, 4)
+    end
+
     -- Quest text, best source first: what the game showed you (saved as you play),
     -- then LorePath's community text (real Forever text other players collected),
     -- then the quest link tooltip's goal, then the bundled vanilla text (pfQuest).
