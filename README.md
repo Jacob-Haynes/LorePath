@@ -156,7 +156,7 @@ python3 tools/diff_quests.py /tmp/Quests.old.lua Data/Quests.lua
 
 The [Sync quest data from AllTheThings](.github/workflows/sync-att-data.yml) workflow does this every Monday, or on demand from the Actions tab:
 - **If the quest data changed,** it opens or updates a PR from the `data/att-sync` branch with the summary.
-- **It fails instead** if the quest count drops by more than 10%, a zone disappears, the data doesn't load, or the tests fail.
+- **It fails instead** if the quest count drops by more than 10%, a zone disappears, the data doesn't load, or the tests fail. The tests include a check for quests that would show twice (see [Tests](#tests)).
 - **Merging and releasing stay manual.**
 - **Repository setting:** opening the PR needs *Settings → Actions → General → Allow GitHub Actions to create and approve pull requests* turned on.
 
@@ -207,9 +207,16 @@ This runs the addon's Lua against a fake WoW API with the real quest data, as ch
 - world map pins: which quests get one, grouping, colours, tooltips, clicks and refreshing;
 - waypoints, the minimap button, slash commands and every setting;
 - **Reset to defaults**;
-- error safety: any error the addon catches fails the run.
+- error safety: any error the addon catches fails the run;
+- quests in the data twice (below).
 
 It can't check how things look in game.
+
+**Quests in the data twice.** AllTheThings sometimes has one quest under two IDs (Amongst the Ruins was 908 and 6921), so it showed once as done or in your log and once as still available. The tests look for quests with the same name on one page that one character could have together (same faction or none, overlapping races and classes) and that aren't steps of one storyline or versions of each other. When one turns up, usually after an AllTheThings sync, the test lists the pair and someone decides once:
+- **one quest twice:** add it to `EXTRA_VERSIONS` in `Core.lua`, so only one shows;
+- **really two quests** (a quest for each faction's cloth quartermaster, say): add it to `SEPARATE` in `tools/test/run_tests.py`, with a comment saying why.
+
+The test also fails if a `SEPARATE` entry is no longer needed, so the list stays short. Quests with no name in LorePath's text (about 900, mostly WoW Forever's own) can't be checked this way.
 
 ---
 
