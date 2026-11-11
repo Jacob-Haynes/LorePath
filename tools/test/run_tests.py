@@ -1257,6 +1257,104 @@ with tempfile.TemporaryDirectory() as tmp:
                          capture_output=True, text=True)
     report = open(rep).read() if os.path.exists(rep) else out.stderr
 check(out.returncode == 0 and "1 new quests" in report, f"a dry run reports what the code adds: {report.strip()[:120]}")
+
+# --- Quest starts: saved, shared and used (issue #37) ---
+g.LorePathDB["questCache"] = lua.eval("{}")
+cache = g.LorePathDB["questCache"]
+def no_start(qid):
+    q = ns.Quests[qid]
+    return q["m"] is None and q["di"] is None and q["qg"] is None and q["si"] is None and q["fv"] is None and ns.CommunityText[qid] is None
+NOSTART = next(qid for qid in sorted(ns.Quests.keys()) if qid >= 90000 and no_start(qid) and ns.IsEligible(qid))
+ITEMQ = next(qid for qid in sorted(ns.Quests.keys()) if ns.Quests[qid]["si"] is not None and ns.QuestStarts[qid] is None
+             and ns.Quests[qid]["m"] is None and ns.Quests[qid]["di"] is None and ns.CommunityText[qid] is None)
+KNOWN = next(qid for qid in sorted(ns.Quests.keys()) if ns.Quests[qid]["m"] is not None and ns.Quests[qid]["qg"] is not None
+             and ns.Quests[qid]["si"] is None and ns.Quests[qid]["fv"] is None)
+# The quest window's API, as Lua functions (LorePath only calls real functions).
+quest_window = lua.eval("""(function()
+    local w = { id = 0, instance = false, x = 0.4567, y = 0.1234 }
+    GetQuestID = function() return w.id end
+    UnitGUID = function(unit) if unit == "questnpc" then return w.guid end end
+    IsInInstance = function() return w.instance end
+    C_Map.GetPlayerMapPosition = function() return { GetXY = function() return w.x, w.y end } end
+    return w
+end)()""")
+def offer(qid, guid, instance=False):
+    quest_window["id"], quest_window["guid"], quest_window["instance"] = qid, guid, instance
+    harness.Fire("QUEST_DETAIL")
+    s = cache[qid] and cache[qid]["start"]
+    return None if s is None else {k: s[k] for k in ("k", "n", "m", "x", "y", "i") if s[k] is not None}
+
+char["map"] = 1429
+s = offer(ITEMQ, None)
+check(s == {"k": "i", "m": 1429, "x": 45.7, "y": 12.3}, f"a quest offered with no unit is saved as from an item, with your map and position: {s}")
+s = offer(ITEMQ, "Creature-0-1-2-3-4567-0000ABCDEF")
+check(s == {"k": "u", "n": 4567, "m": 1429, "x": 45.7, "y": 12.3}, f"a quest giver offering it later replaces the item: {s}")
+s = offer(ITEMQ, None)
+check(s["k"] == "u", "but an item doesn't replace a quest giver")
+s = offer(NOSTART, "GameObject-0-1-2-3-178888-0000ABCDEF")
+check(s == {"k": "o", "n": 178888, "m": 1429, "x": 45.7, "y": 12.3}, f"an object (a wanted poster) is saved with its object ID: {s}")
+quest_window["x"], quest_window["y"] = 0.9, 0.9
+s = offer(NOSTART, "Creature-0-1-2-3-99-0000ABCDEF", instance=True)
+check(s == {"k": "u", "n": 99, "i": 1429}, f"a quest giver beats the object, and inside an instance only the instance is kept: {s}")
+s = offer(KNOWN, "Player-1234-0ABCDEF0")
+check(s is None, "a quest another player shares with you isn't saved as a start")
+quest_window["x"], quest_window["y"] = 0.4567, 0.1234
+offer(KNOWN, "Creature-0-1-2-3-11-0000ABCDEF")
+
+codes, count = ns.BuildShareCodes()
+starts = {int(k): v.get("s") for c in codes.values() for k, v in json.loads(c[4:])["q"].items()}
+check(starts.get(NOSTART) == {"k": "u", "n": 99, "i": 1429} and starts.get(ITEMQ) == {"k": "u", "n": 4567, "m": 1429, "x": 45.7, "y": 12.3},
+      f"/lp share carries the starts of quests LorePath has no start for: {starts}")
+check(starts.get(KNOWN) is None, "but not of quests whose start and giver LorePath already has")
+
+# The merge tool keeps starts, validates them, and writes them to Data/CommunityText.lua.
+read = mqt.read_share_codes(list(codes.values())[0])
+check(mqt.start_value(read[str(ITEMQ)]["s"]) == {"k": "u", "n": 4567, "m": 1429, "x": 45.7, "y": 12.3}, "the merge tool reads a start from a share code")
+check(mqt.start_value({"k": "x", "n": 1}) is None and mqt.start_value({"k": "u", "m": 1429, "x": 140, "y": 5}) == {"k": "u"}
+      and mqt.start_value({"k": "i", "n": 5, "i": 291}) == {"k": "i", "i": 291}, "and rejects bad kinds and positions")
+item_s, npc_s = {"k": "i", "m": 1, "x": 1.0, "y": 2.0}, {"k": "u", "n": 7}
+check(mqt.better_start(None, item_s) is item_s and mqt.better_start(item_s, npc_s) is npc_s and mqt.better_start(npc_s, item_s) is npc_s
+      and mqt.better_start(npc_s, {"k": "u", "n": 8}) is npc_s, "it keeps the first start, unless a quest giver comes after an item")
+with tempfile.TemporaryDirectory() as tmp:
+    path = os.path.join(tmp, "CommunityText.lua")
+    with open(path, "w") as f:
+        f.write("\n".join(mqt.HEADER + [mqt.entry_line(NOSTART, {"t": "A", "s": {"k": "u", "n": 99, "m": 1429, "x": 45.7, "y": 12.0}}), "}"]) + "\n")
+    back = mqt.load_table(lua, path, "CommunityText")
+check(back.get(NOSTART) == {"t": "A", "s": {"k": "u", "n": 99, "m": 1429, "x": 45.7, "y": 12}}, f"a start written to community data reads back the same: {back.get(NOSTART)}")
+with tempfile.TemporaryDirectory() as tmp:
+    sv = os.path.join(tmp, "LorePath.lua")
+    with open(sv, "w") as f:
+        f.write(f'LorePathDB = {{ questCache = {{ [{NOSTART}] = {{ start = {{ k = "o", n = 5, m = 1429, x = 1.5, y = 2.5 }} }} }} }}\n')
+    quests, _, kind = mqt.read_submission(lua, sv)
+check(kind == "LorePath" and mqt.start_value(quests[NOSTART]["s"]) == {"k": "o", "n": 5, "m": 1429, "x": 1.5, "y": 2.5},
+      "and from a saved-variables file")
+
+# Community starts fill in quests with none: start point, quest giver, Show on map.
+qs = ns.Quests[NOSTART]
+ns.CommunityText[NOSTART] = lua.eval('{ s = { k = "u", n = 4567, m = 1429, x = 40, y = 50 } }')
+ns.CommunityText[ITEMQ] = lua.eval('{ s = { k = "i", m = 1429, x = 12.5, y = 34.5 } }')
+ns.RefreshPlayer()
+check(qs["m"] == 1429 and qs["x"] == 40 and qs["qg"] == 4567 and qs["cs"] is True, "a shared start gives a quest with none a start point and quest giver")
+check(ns.Quests[ITEMQ]["m"] is None, "an item's start isn't used as a start point")
+ns.ShowDetail(NOSTART)
+texts = detail_texts()
+check("Starts in Elwynn Forest (40.0, 50.0)" in texts and g.LorePathDetailFrame["mapButton"].IsShown(g.LorePathDetailFrame["mapButton"]),
+      "its details show where it starts, with Show on map")
+harness["waypoint"] = None
+check(ns.ShowQuestStart(NOSTART) and harness["waypoint"]["m"] == 1429, "and Show on map sets the waypoint there")
+ns.ShowDetail(ITEMQ)
+texts = detail_texts()
+check("Picked up from an item around Elwynn Forest (12.5, 34.5)." in texts, f"an item-started quest with no known source shows where players picked it up")
+check(ns.ItemStartHint(KNOWN) is None, "quests without one have no hint")
+ns.HideDetail()
+ns.CommunityText[NOSTART] = None
+ns.CommunityText[ITEMQ] = None
+for key in ("m", "x", "y", "qg", "cs"):
+    qs[key] = None
+g.GetQuestID = None
+g.UnitGUID = None
+g.IsInInstance = None
+g.C_Map.GetPlayerMapPosition = None
 g.LorePathDB["questCache"] = saved_cache
 
 # --- One version of each quest (Shaman Call of Earth and Call of Fire) ---

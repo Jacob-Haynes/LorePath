@@ -95,14 +95,14 @@ LorePath supports English game clients only.
 Everything is saved per account in `LorePathDB` (`WTF/Account/<account>/SavedVariables/LorePath.lua`):
 - **Settings:** the settings above, plus where the minimap button sits and the last page you looked at.
 - **Window layout:** which storylines and headings are collapsed, and whether the zone list is hidden.
-- **Quest text (`questCache`):** what the game shows you, saved as you play: description, objectives, progress and completion text. Your character's name is stored as `$N`. Gold, XP and reputation rewards are saved too, but not shown yet.
+- **Quest text (`questCache`):** what the game shows you, saved as you play: description, objectives, progress and completion text. Your character's name is stored as `$N`. Gold, XP and reputation rewards are saved too, but not shown yet. So is where each quest was offered (`start`): by a creature or object (its ID) or an item, and your map and position, or just the instance when you're inside one.
 - **Character names (`characters`):** your account's character names, so `/lp share` and `tools/merge_quest_text.py` can replace any that slip into quest text with `$N`.
 
 ### Sharing quest text
 
 WoW Forever's own quests aren't in any quest database, so the only source for their story is what players see in game. LorePath saves it as you play; `/lp share` sends it to everyone:
 
-1. Press **Share quest text** on the settings page, or type `/lp share`. A window shows a share code (it starts with `LP1:`) holding the quest text you've saved that LorePath doesn't ship yet: titles, objectives, descriptions, progress and closing text, plus gold, XP and reputation rewards. Your character names are replaced with `$N`; nothing else about you is in it.
+1. Press **Share quest text** on the settings page, or type `/lp share`. A window shows a share code (it starts with `LP1:`) holding the quest text you've saved that LorePath doesn't ship yet: titles, objectives, descriptions, progress and closing text, plus gold, XP and reputation rewards, and where quests that LorePath has no start for were offered. Your character names are replaced with `$N`; nothing else about you is in it.
 2. Click the code, press Ctrl+C, and paste it into a new **Share quest text** issue. A big collection comes as several codes; send each one in its own issue.
 3. A check replies on the issue with what it added, and adds the text to a pull request. Once a maintainer has reviewed and merged it, the next release has it.
 

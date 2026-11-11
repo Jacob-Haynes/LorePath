@@ -70,8 +70,61 @@ local function AfterCapture(id)
     end
 end
 
+-- Who or what is offering the quest on screen, and where you are (issue #37):
+-- { k = "u" creature / "o" object / "i" item, n = creature or object ID,
+--   m, x, y = your map and position (%), or i = the instance you're in }.
+-- A quest another player shares with you (the quest window's unit is a player)
+-- says nothing about where it starts, so it isn't kept.
+local function SeenStart()
+    local start = {}
+    local guid = Get(UnitGUID, "questnpc")
+    local kind, objectID
+    if type(guid) == "string" then
+        kind, objectID = guid:match("^(%a+)%-%d+%-%d+%-%d+%-%d+%-(%d+)")
+        kind = kind or guid:match("^(%a+)")
+    end
+    if kind == "Creature" or kind == "Vehicle" then
+        start.k, start.n = "u", tonumber(objectID)
+    elseif kind == "GameObject" then
+        start.k, start.n = "o", tonumber(objectID)
+    elseif kind == nil then
+        start.k = "i" -- no unit: the quest came from an item in your bags
+    else
+        return nil
+    end
+    local map = C_Map and Get(C_Map.GetBestMapForUnit, "player")
+    if type(map) ~= "number" then
+        return start
+    end
+    if Get(IsInInstance) then
+        start.i = map
+        return start
+    end
+    local pos = Get(C_Map.GetPlayerMapPosition, map, "player")
+    local ok, x, y = pcall(function() return pos:GetXY() end)
+    if ok and type(x) == "number" and type(y) == "number" and (x > 0 or y > 0) then
+        start.m = map
+        start.x = math.floor(x * 1000 + 0.5) / 10
+        start.y = math.floor(y * 1000 + 0.5) / 10
+    end
+    return start
+end
+
+-- One start per quest: the first one seen, unless a quest giver offers it
+-- after an item or object did.
+function ns.BetterStart(old, new)
+    if type(new) ~= "table" or not new.k then
+        return old
+    end
+    if type(old) ~= "table" or not old.k or (old.k ~= "u" and new.k == "u") then
+        return new
+    end
+    return old
+end
+
 -- What a quest giver shows when it offers a quest (QUEST_DETAIL): its text,
--- objectives and rewards, kept for quests you don't accept straight away.
+-- objectives and rewards, kept for quests you don't accept straight away, and
+-- where it was offered.
 function ns.CaptureQuestDetail()
     local id = Get(GetQuestID)
     if not id or id == 0 or not ns.Quests[id] then
@@ -82,6 +135,7 @@ function ns.CaptureQuestDetail()
     entry.obj = GetText(GetObjectiveText) or entry.obj
     entry.money = Get(GetRewardMoney) or entry.money
     entry.xp = Get(GetRewardXP) or entry.xp
+    entry.start = ns.BetterStart(entry.start, SeenStart())
     AfterCapture(id)
 end
 
@@ -566,11 +620,15 @@ local function Render(id)
 
     -- Where it starts
     AddHeader("Where")
+    local hint = ns.ItemStartHint(id)
+    local sources = ns.QuestStarts and ns.QuestStarts[id] or {}
     if q.m then
         AddText(string.format("Starts in %s (%.1f, %.1f)", ns.GetMapName(q.m), q.x, q.y), "GameFontHighlightSmall", nil, 4)
     else
         if q.di then
             AddText("Picked up inside " .. ns.GetMapName(q.di) .. ".", "GameFontHighlightSmall", nil, 4)
+        elseif hint and not q.si then
+            AddText(hint .. ".", "GameFontHighlightSmall", nil, 4)
         elseif not q.si then
             AddText("Start location unknown.", "GameFontDisableSmall", nil, 4)
         end
@@ -585,8 +643,12 @@ local function Render(id)
     if q.si then
         AddText("Starts from an item:", "GameFontHighlightSmall", nil, 4)
         AddItem(q.si)
-        for _, source in ipairs(ns.QuestStarts and ns.QuestStarts[id] or {}) do
+        for _, source in ipairs(sources) do
             AddSource(source)
+        end
+        -- No known source: where players were when the item offered it.
+        if #sources == 0 and hint then
+            AddText(hint .. ".", "GameFontHighlightSmall", nil, 2)
         end
     end
     -- "Show on map" when the start is known; "Open in quest log" beside it while
