@@ -164,8 +164,14 @@ local function Hex(c)
     return string.format("|cff%02x%02x%02x", math.floor(c[1] * 255 + 0.5), math.floor(c[2] * 255 + 0.5), math.floor(c[3] * 255 + 0.5))
 end
 
--- Icon for a quest box: your class icon for class quests, a letter for
--- breadcrumbs, a scroll for everything else.
+-- Quests picked up inside a dungeon or raid show its entrance portal, the
+-- swirl the map uses (an atlas on newer clients; a portal icon otherwise).
+local PORTAL_ATLAS = { dungeon = "Dungeon", raid = "Raid" }
+local PORTAL_ICON = "Interface\\Icons\\Spell_Arcane_PortalUnderCity"
+
+-- Icon for a quest box: your class icon for class quests, a portal for quests
+-- picked up inside a dungeon or raid, a letter for breadcrumbs, a scroll for
+-- everything else.
 local function QuestIcon(q)
     if q.cl then
         local _, token = UnitClass("player")
@@ -173,10 +179,24 @@ local function QuestIcon(q)
             return "Interface\\Icons\\ClassIcon_" .. token:sub(1, 1) .. token:sub(2):lower()
         end
     end
+    if q.di then
+        return PORTAL_ICON
+    end
     if q.bc then
         return BREADCRUMB_ICON
     end
     return QUEST_ICON
+end
+
+-- Puts a quest's icon on a texture, using the portal atlas when the client has it.
+local function SetQuestIcon(tex, q)
+    local atlas = q.di and not q.cl and PORTAL_ATLAS[ns.GetInstanceKind(q.di) or ""]
+    if atlas and C_Texture and C_Texture.GetAtlasInfo and C_Texture.GetAtlasInfo(atlas) then
+        tex:SetAtlas(atlas)
+        return
+    end
+    tex:SetTexture(QuestIcon(q))
+    tex:SetTexCoord(0.08, 0.92, 0.08, 0.92) -- trim the icon border (an atlas resets this)
 end
 
 -- Zone list icons (issue #15). Zones and most instances use AllTheThings' icon
@@ -457,7 +477,11 @@ local function ShowQuestTooltip(owner, id, storyline)
     if q.m then
         GameTooltip:AddLine(string.format("Starts in %s (%.1f, %.1f)", ns.GetMapName(q.m), q.x, q.y), 0.75, 0.75, 0.75)
     else
-        GameTooltip:AddLine("Start location unknown", 0.6, 0.6, 0.6)
+        if q.di then
+            GameTooltip:AddLine("Picked up inside " .. ns.GetMapName(q.di), 0.75, 0.75, 0.75)
+        else
+            GameTooltip:AddLine("Start location unknown", 0.6, 0.6, 0.6)
+        end
     end
     if q.rw then
         GameTooltip:AddLine(" ")
@@ -660,7 +684,7 @@ local function StyleNode(node, id, storyline)
         border = { 1, 0.82, 0 } -- the quest shown in the detail panel
     end
     node:SetBorderColor(border[1], border[2], border[3], 1)
-    node.icon:SetTexture(QuestIcon(q))
+    SetQuestIcon(node.icon, q)
     node.icon:SetDesaturated(status == S.BLOCKED or status == S.MISSED)
     local mark = STATUS_MARK[status]
     node.mark:SetShown(mark ~= nil)

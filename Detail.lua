@@ -482,7 +482,11 @@ local function Render(id)
     if q.m then
         AddText(string.format("Starts in %s (%.1f, %.1f)", ns.GetMapName(q.m), q.x, q.y), "GameFontHighlightSmall", nil, 4)
     else
-        AddText("Start location unknown.", "GameFontDisableSmall", nil, 4)
+        if q.di then
+            AddText("Picked up inside " .. ns.GetMapName(q.di) .. ".", "GameFontHighlightSmall", nil, 4)
+        else
+            AddText("Start location unknown.", "GameFontDisableSmall", nil, 4)
+        end
     end
     if q.qg then
         local name = NPCName(q.qg)

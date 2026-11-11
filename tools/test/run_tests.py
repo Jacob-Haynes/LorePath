@@ -1342,6 +1342,61 @@ check(rgb(other["text"]["__color"]) == (0.62, 0.62, 0.62), "zones you haven't st
 char["completed"] = lua.table()
 ns.Refresh()
 
+# --- Portal icon on quests picked up inside a dungeon or raid ---
+check(ns.Quests[4342]["di"] == 242 and ns.Quests[3802]["di"] == 242, "quests given inside Blackrock Depths are marked as picked up there")
+check(ns.Quests[7508]["z"] == 248 and ns.Quests[7508]["di"] == 234,
+      "Quel'Serrar is filed under Onyxia's Lair, but marked as picked up in Dire Maul, where Lorekeeper Lydros gives it")
+check(ns.Quests[4341]["di"] is None and ns.Quests[166]["di"] is None, "quests given outside (Ironforge, Westfall) aren't")
+check(not any(q["di"] for q in ns.Quests.values() if q["z"] == -318), "nor are Tier 0.5 Sets quests, which are given in towns")
+check(ns.Quests[2204]["di"] is None and ns.Quests[2861]["di"] is None,
+      "nor quests with no giver recorded, which may be handed out in town (Restoring the Necklace, Tabetha's Task)")
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+ns.RefreshPlayer()
+def tile_of(qid):
+    t = [f for f in harness["all"].values() if f["questID"] == qid and f["sub"] is not None and f.IsShown(f)]
+    return t[0] if t else None
+ns.FocusQuest(3802)
+t = tile_of(3802)
+check(t is not None and t["icon"]["__texture"] == "Interface\\Icons\\Spell_Arcane_PortalUnderCity",
+      "without the map's portal art, the box shows a portal icon")
+g.C_Texture = lua.eval("{ GetAtlasInfo = function(a) if a == 'Dungeon' or a == 'Raid' then return {} end end }")
+ns.Refresh()
+t = tile_of(3802)
+check(t["icon"]["__atlas"] == "Dungeon", "with it, the box shows the dungeon entrance swirl")
+g.GameTooltip.lines = lua.table()
+t["__scripts"]["OnEnter"](t)
+check(any(str(l).startswith("Picked up inside ") for l in g.GameTooltip.lines.values()), "its tooltip says it's picked up inside the instance")
+ns.ShowDetail(3802)
+check(any(s.startswith("Picked up inside ") for s in detail_texts()), "and so do its details")
+ns.HideDetail()
+other = [f for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)
+         and not ns.Quests[f["questID"]]["di"] and not ns.Quests[f["questID"]]["cl"]][0]
+check(other["icon"]["__atlas"] is None and other["icon"]["__texture"] is not None, "other quests on the page keep their usual icon")
+ns.Quests[3802]["di"] = 248  # as if given inside Onyxia's Lair
+ns.Refresh()
+check(tile_of(3802)["icon"]["__atlas"] == "Raid", "a quest picked up inside a raid gets the raid entrance swirl")
+ns.Quests[3802]["di"] = 242
+g.C_Texture = None
+
+# --- Quests with Alliance and Horde versions (ATT's ResolveQuestData) ---
+check(ns.Quests[8151]["l"] == 50 and list(ns.Quests[8151]["cl"].values()) == [3],
+      "a faction-split quest keeps its level and class (8151 is a level 50 Hunter quest)")
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+ns.RefreshPlayer()
+q = ns.Quests[8151]
+check(q["m"] == 1453 and q["qg"] == 4205 and not ns.IsEligible(8151), "an Alliance character sees its Stormwind trainer, and a Warrior doesn't get the Hunter quest")
+check(list(ns.Quests[687]["pre"].values()) == [653] and ns.Quests[687]["m"] == 1455, "its Alliance prerequisite and start (Ironforge)")
+check(ns.Quests[2861]["m"] == 1453 and ns.Quests[2861]["l"] == 40, "Tabetha's Task starts in Stormwind for the Alliance")
+char["race"], char["faction"] = 2, "Horde"
+ns.RefreshPlayer()
+q = ns.Quests[8151]
+check(q["m"] == 1454 and q["qg"] == 3039, "a Horde character sees its Orgrimmar trainer")
+check(list(ns.Quests[687]["pre"].values()) == [688] and ns.Quests[687]["m"] == 1417, "and the Horde prerequisite and start (Arathi Highlands)")
+check(687 in list(ns.GetFollowOns(688).values()) and 687 not in list(ns.GetFollowOns(653).values()),
+      "the storyline follows your faction's prerequisite")
+char["race"], char["faction"] = 1, "Alliance"
+ns.RefreshPlayer()
+
 # --- Level ranges from the game's Looking for Group activities ---
 g.EJ_GetInstanceInfo = lua.eval("""function(id) local n = { [63] = 'The Deadmines', [238] = 'The Stockade', [226] = 'Ragefire Chasm',
     [316] = 'Scarlet Monastery' }; return n[id] end""")

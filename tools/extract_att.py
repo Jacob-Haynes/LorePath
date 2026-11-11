@@ -17,6 +17,7 @@ Usage:
 Run it again whenever ATT updates its Forever data.
 """
 
+import collections
 import os
 import shutil
 import subprocess
@@ -44,6 +45,11 @@ local handlers = {}
 local ns = setmetatable({}, {__index = function(_, k)
   if k == "AddEventHandler" then
     return function(event, fn) handlers[event] = fn end
+  end
+  -- ResolveQuestData({aqd = {...}, hqd = {...}, shared fields}): one quest with
+  -- Alliance and Horde versions (different givers, start points, prerequisites).
+  if k == "ResolveQuestData" then
+    return function(t) t.__rqd = true return t end
   end
   if type(k) == "string" and k:sub(1, 6) == "Create" then
     local kind = k:sub(7)
@@ -157,7 +163,34 @@ def main():
         if zone_id is None:
             return
         zones.setdefault(zone_id, continent or 0)
+        if node["__rqd"]:
+            quests[qid] = faction_record(node, zone_id)
+        else:
+            quests[qid] = make_record(node, zone_id)
 
+    def faction_record(node, zone_id):
+        """A quest with Alliance (aqd) and Horde (hqd) versions: fields both share
+        stay on the record; the rest go in fv = {[1] = Horde, [2] = Alliance}."""
+        versions = {}
+        for faction, key in ((2, "aqd"), (1, "hqd")):
+            if node[key] is not None:
+                versions[faction] = make_record(merge(node, node[key]), zone_id)
+        if len(versions) == 1:
+            (faction, rec), = versions.items()
+            rec["f"] = faction
+            return rec
+        a, h = versions[2], versions[1]
+        rec = {k: v for k, v in a.items() if h.get(k) == v}
+        fv = {}
+        for faction, version in versions.items():
+            diff = {k: v for k, v in version.items() if k not in rec}
+            if diff:
+                fv[faction] = diff
+        if fv:
+            rec["fv"] = fv
+        return rec
+
+    def make_record(node, zone_id):
         rec = {"z": zone_id}
         level = number(node["lvl"])
         if level and level > 1:
@@ -208,7 +241,15 @@ def main():
                     rewards.append(number(child["itemID"]))
         if rewards:
             rec["rw"] = rewards
-        quests[qid] = rec
+        return rec
+
+    merge = lua.eval("""function(base, over)
+      local t = {}
+      for k, v in pairs(base) do t[k] = v end
+      for k, v in pairs(over) do t[k] = v end
+      t.aqd, t.hqd, t.__rqd = nil, nil, nil
+      return t
+    end""")
 
     walk(categories["Zones"], None, None)
 
@@ -372,12 +413,22 @@ def extract_instances(att_root, lua, lua_type, add_quest, quests):
             qid = int(node["__id"])
             if qid not in quests:
                 add_quest(node, None, page)
-                if qid in quests:
+                if qid in quests and node["__rqd"]:
+                    added += 1  # its start points are per faction (fv); keep them
+                elif qid in quests:
                     rec = quests[qid]
                     rec.pop("m", None), rec.pop("x", None), rec.pop("y", None)
                     coord = outside_coord(node["coords"], inside)
                     if coord:
                         rec["m"], rec["x"], rec["y"] = coord
+                    elif node["qgs"] is not None or node["qg"] is not None or node["providers"] is not None:
+                        # ATT maps no points inside instances, so a quest whose
+                        # giver (an NPC, item or object) is listed but has no point
+                        # outside was picked up inside. With no giver listed at
+                        # all, ATT just doesn't say (some are handed out in town),
+                        # so those aren't marked. di is the instance page it's
+                        # picked up in (fixed up below for givers in another one).
+                        rec["di"] = page
                     added += 1
             return added  # quests inside a quest's g are objectives/rewards, not quests
         kids = node["g"]
@@ -415,6 +466,21 @@ def extract_instances(att_root, lua, lua_type, add_quest, quests):
         if collect(node, page, inside) > 0:
             pages[page] = page_kind
             info[page] = entry
+    # Header pages (Tier 0.5 Sets) gather chains given in towns too, so a missing
+    # start point there doesn't mean the quest was picked up inside.
+    for rec in quests.values():
+        if rec.get("di") and "n" in info.get(rec["z"], {}):
+            del rec["di"]
+    # A quest can be filed under one instance but given in another: Quel'Serrar
+    # is under Onyxia's Lair, but Lorekeeper Lydros gives it in Dire Maul. A
+    # giver stands in the instance where most of its quests are picked up.
+    where = {}
+    for rec in quests.values():
+        if rec.get("di") and rec.get("qg"):
+            where.setdefault(rec["qg"], collections.Counter())[rec["di"]] += 1
+    for rec in quests.values():
+        if rec.get("di") and rec.get("qg"):
+            rec["di"] = where[rec["qg"]].most_common(1)[0][0]
     return pages, info
 
 
@@ -448,6 +514,9 @@ def append_zone_icons(path, icons):
 
 
 def fmt(value):
+    if isinstance(value, dict):  # fv: {faction: {field: value}}
+        return "{" + ",".join(
+            f"[{k}]={{" + ",".join(f"{f}={fmt(v[f])}" for f in v) + "}" for k, v in sorted(value.items())) + "}"
     if isinstance(value, list):
         return "{" + ",".join(fmt(v) for v in value) + "}"
     if isinstance(value, float):
@@ -456,7 +525,7 @@ def fmt(value):
 
 
 def write_lua(path, quests, zones, att_commit):
-    key_order = ["z", "l", "m", "x", "y", "qg", "f", "rc", "cl", "pre", "prn", "alt", "nx", "bc", "rp", "sk", "sl", "mr", "xr", "rw"]
+    key_order = ["z", "l", "m", "x", "y", "qg", "f", "rc", "cl", "pre", "prn", "alt", "nx", "bc", "rp", "sk", "sl", "mr", "xr", "rw", "di", "fv"]
     lines = [
         "-- Generated by tools/extract_att.py. Do not edit by hand.",
         f"-- Source: AllTheThings WoW Forever data (db/Camelot), commit {att_commit}.",
@@ -467,7 +536,8 @@ def write_lua(path, quests, zones, att_commit):
         "-- prn how many prerequisites are needed (default all), alt alternative quests,",
         "-- nx quests a breadcrumb leads to, bc breadcrumb, rp repeatable, sk/sl profession skill line/level,",
         "-- mr/xr min/max reputation {factionID, standing} (0 Neutral, 3000 Friendly, 9000 Honored,",
-        "-- 21000 Revered, 42000 Exalted), rw reward item IDs.",
+        "-- 21000 Revered, 42000 Exalted), rw reward item IDs, di the instance page it's picked up inside,",
+        "-- fv per-faction fields {[1] = Horde, [2] = Alliance} for quests whose versions differ (start, giver).",
         "local _, ns = ...",
         "ns.ZoneContinents = {",
     ]
