@@ -4,7 +4,7 @@
 
 LorePath draws every zone's, dungeon's, raid's and battleground's questlines as storyline maps, in the style of attunement path views. At a glance you can see which quests you've done, which you've missed and where the next part of each story starts. Click any quest to read its story.
 
-Built for **WoW Forever**, on English game clients. It's lightweight: no map pins and no objective tracking, so it works alongside the default quest UI.
+Built for **WoW Forever**, on English game clients. It's lightweight: its map pins only show where quests start, and there's no objective tracking, so it works alongside the default quest UI.
 
 ## Features
 
