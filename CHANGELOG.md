@@ -10,6 +10,7 @@
 - **Open in quest log:** a quest you're on has an **Open in quest log** button in its details, and Shift+clicking it in the graph does the same. It opens the game's quest log at that quest, with its live objectives. Not in combat.
 - **Show in LorePath:** a LorePath book button on the game's quest log opens the selected quest in LorePath, in its storyline with its details. `/lp quest` does the same, and `/lp quest <ID>` opens any quest.
 - **Drag from anywhere:** the graph pans when you drag from a quest box or a storyline header too, not only from empty space, so a busy zone is easy to move around. A press that doesn't move is still a click.
+- **Share your quest text:** `/lp share` shows a code holding the quest text you've saved that LorePath doesn't have yet (titles, objectives, descriptions, progress and closing text, and rewards), with your character names replaced by `$N`. Paste it into a **Share quest text** issue on GitHub, and once it's reviewed, the next release gives everyone the story of WoW Forever's own quests.
 
 ## 1.0.1
 

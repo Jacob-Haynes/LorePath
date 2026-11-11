@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Settings.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -1202,6 +1202,76 @@ box["__scripts"]["OnEscapePressed"](box)
 check(box["__text"] == "" and len(result_rows()) == 0 and len(zone_rows_shown()) > 0, "Escape clears the search and brings the zones back")
 g.C_QuestLog.GetTitleForQuestID = real_title
 harness.RunTimers()
+
+# --- Sharing quest text (issue #14) ---
+import json, subprocess, tempfile
+F = next(qid for qid in sorted(ns.Quests.keys()) if qid >= 90000 and ns.QuestText[qid] is None and ns.CommunityText[qid] is None)
+cid = next(k for k, v in sorted(ns.CommunityText.items()) if v["d"] is not None)
+saved_cache = g.LorePathDB["questCache"]
+g.LorePathDB["characters"] = lua.table_from({"Notah": True, "Altie": True})
+g.LorePathDB["questCache"] = lua.eval("{}")
+cache = g.LorePathDB["questCache"]
+cache[F] = lua.eval("""{ text = "Hello Altie, the |cffff0000storm|r comes.", obj = "Kill 5 | things", done = "Well done, $N.",
+                         prog = "Back so soon?", money = 150, xp = 900, rep = { { 72, 250 } } }""")
+cache[6] = lua.table_from({"text": ns.QuestText[6]["d"]})            # already bundled, word for word
+cache[cid] = lua.table_from({"text": ns.CommunityText[cid]["d"]})    # already community text
+codes, count = ns.BuildShareCodes()
+codes = list(codes.values())
+check(count == 1 and len(codes) == 1 and codes[0].startswith("LP1:"), f"/lp share's code holds only the new quest ({count} quest, {len(codes)} code)")
+check("|" not in codes[0], "the code has no raw | (the edit box would eat colour and link codes)")
+payload = json.loads(codes[0][4:])
+e = payload["q"][str(F)]
+check(e["d"] == "Hello $N, the storm comes." and e["o"] == "Kill 5 | things", f"names on any of your characters become $N, colour codes go: {e['d']!r}")
+check(e["c"] == "Well done, $N." and e["p"] == "Back so soon?" and e["t"] == f"Q{F}", "it carries the closing and progress text, and the title")
+check(e["m"] == 150 and e["x"] == 900 and e["r"] == [[72, 250]], "and gold, XP and reputation")
+check(str(6) not in payload["q"] and str(cid) not in payload["q"], "text LorePath already has isn't shared again")
+
+# Many quests split into codes that each fit in one issue.
+many = [qid for qid in sorted(ns.Quests.keys()) if ns.QuestText[qid] is None and ns.CommunityText[qid] is None][:30]
+for qid in many:
+    cache[qid] = lua.table_from({"text": f"Story of quest {qid}, told at some length to fill the code."})
+codes, count = ns.BuildShareCodes(400)
+codes = list(codes.values())
+shared = set()
+for c in codes:
+    shared |= set(json.loads(c[4:])["q"].keys())
+check(len(codes) > 1 and all(len(c) <= 400 for c in codes) and shared == {str(q) for q in set(many) | {F}},
+      f"a big collection splits into {len(codes)} codes under the limit, covering every quest once")
+
+# The window.
+g.SlashCmdList["LOREPATH"]("share")
+share = g.LorePathShareFrame
+box = share["box"]
+check(share.IsShown(share) and box["__text"] == list(ns.BuildShareCodes()[0].values())[0], "/lp share opens a window showing the code")
+box["__scripts"]["OnTextChanged"](box, True)
+check(box["__text"] == box["code"], "typing in it can't change the code")
+check("quests" in share["info"]["__text"] and "Share quest text" in share["info"]["__text"], "it explains where to send it")
+g.LorePathDB["questCache"] = lua.eval("{}")
+before_chat = len(list(harness["chat"].values()))
+check(ns.OpenShare() is False and any("Nothing new to share" in str(m) for m in list(harness["chat"].values())[before_chat:]),
+      "with nothing new, /lp share says so")
+
+# The GitHub side reads the code back (tools/merge_quest_text.py).
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import merge_quest_text as mqt
+issue_body = "### Share code\n\n" + "LP1:" + json.dumps(payload) + "\n"
+quests = mqt.read_share_codes(issue_body)
+check(quests[str(F)]["d"] == "Hello $N, the storm comes." and quests[str(F)]["c"] == "Well done, $N.", "the merge tool reads a share code from an issue body")
+try:
+    mqt.read_share_codes("LP1:{not json")
+    bad = False
+except ValueError:
+    bad = True
+check(bad, "a broken code is rejected")
+with tempfile.TemporaryDirectory() as tmp:
+    sub, rep = os.path.join(tmp, "issue.txt"), os.path.join(tmp, "report.md")
+    with open(sub, "w") as f:
+        f.write(issue_body)
+    out = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "merge_quest_text.py"), "--dry-run", "--replace", "--report", rep, sub],
+                         capture_output=True, text=True)
+    report = open(rep).read() if os.path.exists(rep) else out.stderr
+check(out.returncode == 0 and "1 new quests" in report, f"a dry run reports what the code adds: {report.strip()[:120]}")
+g.LorePathDB["questCache"] = saved_cache
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])

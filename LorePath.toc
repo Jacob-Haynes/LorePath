@@ -16,5 +16,6 @@ Core.lua
 UI.lua
 Detail.lua
 QuestLog.lua
+Share.lua
 Settings.lua
 Main.lua

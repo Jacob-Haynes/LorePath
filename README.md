@@ -64,6 +64,7 @@ LorePath supports English game clients only.
 | Show or hide repeatable quests | The **Repeatable** tick box, `/lp repeatable`, or the settings page |
 | Reveal a quest's story | **Reveal** in its details; or **Show spoilers** / `/lp spoilers` for every quest |
 | Show or hide the minimap button | `/lp minimap`, or the settings page |
+| Share the quest text you've collected | `/lp share`, then paste the code into a [Share quest text](https://github.com/Jacob-Haynes/LorePath/issues/new/choose) issue |
 | Move the window | Drag its title bar |
 | Move the minimap button | Drag it around the minimap |
 | Scroll | Mouse wheel, or Shift + wheel to scroll sideways |
@@ -95,7 +96,15 @@ Everything is saved per account in `LorePathDB` (`WTF/Account/<account>/SavedVar
 - **Settings:** the settings above, plus where the minimap button sits and the last page you looked at.
 - **Window layout:** which storylines and headings are collapsed, and whether the zone list is hidden.
 - **Quest text (`questCache`):** what the game shows you, saved as you play: description, objectives, progress and completion text. Your character's name is stored as `$N`. Gold, XP and reputation rewards are saved too, but not shown yet.
-- **Character names (`characters`):** your account's character names, so `tools/merge_quest_text.py` can strip any that slip into shared text.
+- **Character names (`characters`):** your account's character names, so `/lp share` and `tools/merge_quest_text.py` can replace any that slip into quest text with `$N`.
+
+### Sharing quest text
+
+WoW Forever's own quests aren't in any quest database, so the only source for their story is what players see in game. LorePath saves it as you play; `/lp share` sends it to everyone:
+
+1. Type `/lp share`. A window shows a share code (it starts with `LP1:`) holding the quest text you've saved that LorePath doesn't ship yet: titles, objectives, descriptions, progress and closing text, plus gold, XP and reputation rewards. Your character names are replaced with `$N`; nothing else about you is in it.
+2. Click the code, press Ctrl+C, and paste it into a new **Share quest text** issue. A big collection comes as several codes; send each one in its own issue.
+3. A check replies on the issue with what it added, and adds the text to a pull request. Once a maintainer has reviewed and merged it, the next release has it.
 
 ---
 
@@ -140,6 +149,15 @@ The [Sync quest data from AllTheThings](.github/workflows/sync-att-data.yml) wor
 `Data/QuestText.lua`, the bundled vanilla text, is a one-off import and isn't part of the weekly sync, because vanilla quest text doesn't change. `python3 tools/extract_pfquest.py` rebuilds it if ever needed, for example after new vanilla quests appear in `Data/Quests.lua`.
 
 ### Adding players' quest text
+
+Shared codes arrive through the **Share quest text** issue form. The `Add shared quest text` workflow (`.github/workflows/community-text.yml`) runs on each one:
+- it merges the code into `Data/CommunityText.lua` with `tools/merge_quest_text.py --replace`, so later submissions replace earlier wording for the same quest (wording usually only changes when the game does);
+- runs the tests, commits to the `data/community-text` branch, and opens or updates one PR from it;
+- replies on the issue with what was added.
+
+Review the PR's text before merging. The workflow needs two things set up once:
+- a `quest-text` label, which the issue form applies: `gh label create quest-text --description "Quest text shared with /lp share"`;
+- **Settings > Actions > General > Allow GitHub Actions to create and approve pull requests**, the same setting the AllTheThings sync needs.
 
 To add the quest text someone has collected to `Data/CommunityText.lua`, so everyone gets it in the next release, take their saved file (`WTF/Account/<account>/SavedVariables/LorePath.lua`), or your own, and run:
 

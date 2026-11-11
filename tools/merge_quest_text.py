@@ -6,19 +6,26 @@ objectives, progress and completion text). This script takes those saved files
 and adds any quest text LorePath doesn't ship yet to Data/CommunityText.lua, so
 every LorePath user gets it in the next release.
 
-It reads LorePath's saved-variables file (LorePath.lua: LorePathDB.questCache),
-from your own game or a player's. It's in the game's folder at
-WTF/Account/<account>/SavedVariables/LorePath.lua.
+It reads either:
+  - share codes ("LP1:{...}", from /lp share in game), in any text file - for
+    example a "Share quest text" issue's body, which is what the
+    community-text workflow passes it; or
+  - LorePath's saved-variables file (LorePath.lua: LorePathDB.questCache), from
+    your own game or a player's, in the game's folder at
+    WTF/Account/<account>/SavedVariables/LorePath.lua.
 
 Usage:
     pip install lupa
     python3 tools/merge_quest_text.py FILE [FILE ...]            # merge
     python3 tools/merge_quest_text.py --dry-run FILE [FILE ...]  # just report
+    python3 tools/merge_quest_text.py --replace --report out.md FILE  # newest wins, report as Markdown
 
 Rules:
   - Only quests in Data/Quests.lua are kept.
   - Text already in Data/CommunityText.lua is never overwritten; only missing
-    fields are added. Use --replace to let newer text replace existing fields.
+    fields are added. Use --replace to let newer text replace existing fields
+    (the community-text workflow does: wording usually only changes when the
+    game does, so the newest submission wins, and a reviewer sees the diff).
   - Character names found in the file are replaced with $N, colour codes and
     links are stripped, and implausibly long text is rejected.
   - Quest text that the bundled vanilla text (Data/QuestText.lua) already has
@@ -26,11 +33,12 @@ Rules:
   - Saved gold, XP and reputation rewards are carried over too (m, x, r), within
     sane limits. LorePath doesn't display them yet.
 
-The files run in a sandboxed Lua state with no libraries, so a submitted file
-can't do anything but define data.
+Saved-variables files run in a sandboxed Lua state with no libraries, so a
+submitted file can't do anything but define data. Share codes are plain JSON.
 """
 
 import argparse
+import json
 import os
 import re
 import sys
@@ -114,8 +122,45 @@ def reward_value(kind, value):
     return out or None
 
 
+SHARE_PREFIX = "LP1:"
+
+
+def read_share_codes(text):
+    """Every share code in `text` -> {questID: {field: value}}. Raises ValueError
+    on a code that doesn't decode."""
+    quests = {}
+    for line in text.splitlines():
+        start = line.find(SHARE_PREFIX)
+        if start < 0:
+            continue
+        payload = json.loads(line[start + len(SHARE_PREFIX):].strip().strip("`"))
+        if not isinstance(payload, dict) or payload.get("v") != 1 or not isinstance(payload.get("q"), dict):
+            raise ValueError("not a version 1 share code")
+        for qid, entry in payload["q"].items():
+            if isinstance(entry, dict):
+                quests[qid] = {k: entry.get(k) for k in FIELDS + REWARDS}
+    return quests
+
+
+class Plain(list):
+    """A JSON list standing in for a Lua table in reward_value."""
+    def values(self):
+        return [Plain(v) if isinstance(v, list) else v for v in self]
+
+    def __getitem__(self, i):  # Lua tables are 1-based
+        return list.__getitem__(self, i - 1) if 0 < i <= len(self) else None
+
+
 def read_submission(lua, path):
     """Returns ({questID: {field: text}}, character names, format) for one file."""
+    with open(path, encoding="utf-8-sig") as f:
+        text = f.read()
+    if SHARE_PREFIX in text:
+        quests = read_share_codes(text)
+        for entry in quests.values():
+            if isinstance(entry.get("r"), list):
+                entry["r"] = Plain(entry["r"])
+        return quests, set(), "share code"
     lorepath = load_lua_data(lua, path, "LorePathDB")
     if lorepath is not None and lorepath["questCache"] is not None:
         quests = {}
@@ -152,7 +197,9 @@ def main():
     parser.add_argument("files", nargs="+", help="LorePath.lua saved-variables files")
     parser.add_argument("--dry-run", action="store_true", help="report what would change, write nothing")
     parser.add_argument("--replace", action="store_true", help="let submitted text replace existing fields")
+    parser.add_argument("--report", help="also write what happened, as Markdown, to this file")
     args = parser.parse_args()
+    report = []
 
     lua = LuaRuntime(unpack_returned_tuples=True, register_eval=False)
     known = ids_in(os.path.join(ROOT, "Data", "Quests.lua"))
@@ -164,13 +211,16 @@ def main():
         try:
             quests, names, kind = read_submission(lua, path)
         except Exception as e:  # a broken or hostile file
-            print(f"{path}: couldn't read it ({str(e).splitlines()[0][:120]}), skipped")
+            reason = (str(e).splitlines() or ["unknown error"])[0][:120]
+            print(f"{path}: couldn't read it ({reason}), skipped")
+            report.append(f"- Couldn't read the share code ({reason}). Copy it again with /lp share and paste the whole line.")
             continue
         if quests is None:
             print(f"{path}: not a LorePath saved file, skipped")
+            report.append("- No share code found. It starts with `LP1:`; copy it with /lp share in game.")
             continue
         clean = cleaner(names)
-        new_quests, fields, skipped = 0, 0, 0
+        new_quests, fields, skipped, changed = 0, 0, 0, []
         for key, entry in quests.items():
             try:
                 qid = int(key)
@@ -186,6 +236,8 @@ def main():
                 if not value or bundled.get(qid, {}).get(field) == value:
                     continue
                 if field not in target or (args.replace and target[field] != value):
+                    if field in target:
+                        changed.append(f"{qid}.{field}")
                     target[field] = value
                     fields += 1
             for field in REWARDS:
@@ -205,7 +257,19 @@ def main():
             notes.append("names replaced with $N: " + ", ".join(sorted(names)))
         print(f"{path}: {kind} file, {new_quests} new quests, {fields} new fields"
               + ("; " + "; ".join(notes) if notes else ""))
+        line = f"- {new_quests} new quests and {fields} new or updated fields"
+        if skipped:
+            line += f"; {skipped} quests LorePath doesn't know were left out"
+        if changed:
+            line += "; replaced earlier wording for " + ", ".join(f"`{c}`" for c in changed[:20])
+            line += " and more" if len(changed) > 20 else ""
+        if fields == 0 and not skipped:
+            line = "- Nothing new: LorePath already has all of this text. Thank you!"
+        report.append(line)
 
+    if args.report:
+        with open(args.report, "w", encoding="utf-8") as f:
+            f.write("\n".join(report) + "\n")
     if args.dry_run:
         print(f"Dry run: would add {total_new_quests} quests and {total_fields} fields.")
         return

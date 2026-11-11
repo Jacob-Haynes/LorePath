@@ -121,6 +121,8 @@ local function SlashCommand(msg)
         -- /lp quest: the quest selected in your quest log; /lp quest 783: that quest.
         local id = tonumber(string.match(msg, "^%s*%S+%s+(%d+)"))
         ns.ShowInLorePath(id or ns.SelectedLogQuest())
+    elseif command == "share" then
+        ns.OpenShare()
     elseif command == "repeatable" or command == "repeatables" then
         ns.SetSetting("showRepeatable", not ns.GetSetting("showRepeatable"))
         ns.Print("Repeatable quests " .. (ns.GetSetting("showRepeatable") and "shown." or "hidden."))
@@ -134,6 +136,7 @@ local function SlashCommand(msg)
         ns.Print("  |cffffd100/lp minimap|r - show or hide the minimap button")
         ns.Print("  |cffffd100/lp repeatable|r - show or hide repeatable quests")
         ns.Print("  |cffffd100/lp spoilers|r - show or hide the story of quests you haven't started")
+        ns.Print("  |cffffd100/lp share|r - share the quest text you've collected, for everyone's LorePath")
     end
 end
 
