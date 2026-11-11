@@ -566,6 +566,15 @@ local function ShowNodeTooltip(node)
     if IsPanning() then
         return -- passing over quests while dragging the graph
     end
+    if node.link then
+        -- A quest on another page: say where, and that clicking goes there.
+        local zone = ns.GetMapName(ns.Quests[node.questID].z)
+        local where = node.link.from and not node.link.to and ("This storyline starts from it, in " .. zone .. ".")
+            or (node.link.to and not node.link.from and ("This storyline continues with it, in " .. zone .. "."))
+            or ("This storyline passes through " .. zone .. " here.")
+        ShowQuestTooltip(node, node.questID, node.storyline, { where, "Click to go to it." })
+        return
+    end
     ShowQuestTooltip(node, node.questID, node.storyline)
 end
 
@@ -613,7 +622,9 @@ local function AcquireNode(parent)
             if WasDragged() then
                 return
             end
-            if IsControlKeyDown() then
+            if self.link and not IsControlKeyDown() then
+                ns.FocusQuest(self.questID) -- a quest on another page: go there
+            elseif IsControlKeyDown() then
                 ns.ShowQuestStart(self.questID)
             elseif IsShiftKeyDown() and ns.IsOnQuest(self.questID) then
                 ns.OpenInQuestLog(self.questID)
@@ -735,6 +746,8 @@ local function StyleNode(node, id, storyline)
     local style = STATUS_STYLE[status]
     node.questID = id
     node.storyline = storyline
+    node.link = nil
+    node:SetAlpha(1)
     node.flash:SetShown(id == ns.focusedQuest)
     node.bg:SetColorTexture(style.bg[1], style.bg[2], style.bg[3], 0.95)
     local border = style.border
@@ -802,6 +815,32 @@ local function StyleNode(node, id, storyline)
     end
 end
 
+-- A quest on another page that leads into this storyline, or that it leads on
+-- to: its usual tile, faded, with a blue border and where it is instead of its
+-- status ("From Westfall", "Continues in Redridge Mountains"). Clicking it goes
+-- there.
+local LINK_BORDER = { 0.45, 0.70, 1.0 }
+local LINK_TEXT = "|cff8cc4ff"
+function ns.ui.LinkLabel(link)
+    local zone = ns.GetMapName(ns.Quests[link.id].z)
+    if link.from and link.to then
+        return "Via " .. zone
+    elseif link.from then
+        return "< From " .. zone
+    end
+    return "Continues in " .. zone .. " >"
+end
+
+local function StyleLinkNode(node, link, storyline)
+    StyleNode(node, link.id, storyline)
+    node.link = link
+    node:SetAlpha(0.8)
+    if link.id ~= ns.detailQuest then
+        node:SetBorderColor(LINK_BORDER[1], LINK_BORDER[2], LINK_BORDER[3], 1)
+    end
+    node.sub:SetText(LINK_TEXT .. ns.ui.LinkLabel(link) .. "|r")
+end
+
 -- ============================================================================
 -- Storyline rendering
 -- ============================================================================
@@ -832,18 +871,63 @@ local function NodeY(top, row)
     return top + row * (NODE_H + ROW_GAP)
 end
 
+-- Where a storyline's tiles go: as many columns as fit the window side by side,
+-- then the rest in bands below, BAND_GAP apart. Returns
+-- { Pos(n) -> x, y; Route(parent, child) -> line points; width; height; bands; perBand }.
+local BAND_GAP = 22
+function ns.ui.WrapLayout(storyline, viewWidth, graphTop)
+    local perBand = math.max(2, math.floor((viewWidth - PAD * 2 + COL_GAP) / (NODE_W + COL_GAP)))
+    if storyline.cols <= perBand then
+        perBand = storyline.cols
+    end
+    local bands = math.ceil(storyline.cols / perBand)
+    local bandH = storyline.rows * (NODE_H + ROW_GAP) + BAND_GAP
+    local layout = {
+        perBand = perBand,
+        bands = bands,
+        width = math.max(viewWidth - PAD * 2, perBand * (NODE_W + COL_GAP) - COL_GAP),
+        height = HEADER_H + 8 + bands * bandH - BAND_GAP,
+    }
+    local function BandTop(band)
+        return graphTop + band * bandH
+    end
+    function layout.Pos(n)
+        local band = math.floor(n.col / perBand)
+        return NodeX(n.col % perBand), NodeY(BandTop(band), n.row), band
+    end
+    function layout.Route(p, c)
+        local px, py, pBand = layout.Pos(p)
+        local cx, cy, cBand = layout.Pos(c)
+        local x1, y1 = px + NODE_W, -(py + NODE_H / 2)
+        local x2, y2 = cx, -(cy + NODE_H / 2)
+        if pBand == cBand then
+            if y1 == y2 then
+                return { { x1, y1 }, { x2, y2 } }
+            end
+            local xm = x2 - COL_GAP / 2
+            return { { x1, y1 }, { xm, y1 }, { xm, y2 }, { x2, y2 } }
+        end
+        local xr = x1 + COL_GAP / 2
+        local xl = math.max(2, x2 - COL_GAP / 2)
+        local yg = -(BandTop(cBand) - (BAND_GAP + ROW_GAP) / 2)
+        return { { x1, y1 }, { xr, y1 }, { xr, yg }, { xl, yg }, { xl, y2 }, { x2, y2 } }
+    end
+    return layout
+end
+
 -- "3 / 10", plus "+4 repeatable" in blue. Repeatables are never "done", so they
 -- sit outside the count; showing them stops a page of dailies reading as empty.
 -- `short` gives the compact form for the zone list ("3/10 +4").
 -- Colour of a zone list entry by how much of it you've done: grey before you
--- start, then from white, fading towards green as you go. Only a finished
--- entry is the full green (with a tick on its icon), so a nearly done one
--- stays a paler green.
+-- start, then a smooth gradient from red through orange and yellow to green
+-- as you go. A finished entry is the full green, with a tick on its icon.
 local PROGRESS_NOT_STARTED = { 0.62, 0.62, 0.62 }
 local PROGRESS_DONE = { 0.42, 0.83, 0.37 } -- the same green as before
 local PROGRESS_STOPS = { -- { fraction done, colour }
-    { 0.0, { 0.95, 0.95, 0.95 } }, -- white: just started
-    { 1.0, { 0.62, 0.88, 0.56 } }, -- pale green, never quite reached before it's done
+    { 0.0, { 1.00, 0.25, 0.25 } },  -- red: just started
+    { 0.33, { 1.00, 0.55, 0.15 } }, -- orange
+    { 0.67, { 1.00, 0.88, 0.20 } }, -- yellow
+    { 1.0, PROGRESS_DONE },         -- green
 }
 
 local function ProgressColor(done, total)
@@ -949,17 +1033,38 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
         return viewWidth, HEADER_H
     end
 
+    -- A storyline longer than the window is wide wraps, like text: its columns
+    -- fill the width, then carry on in another band below (a 29-quest Tier 0.5
+    -- chain reads in a few bands instead of one long row to scroll along).
+    local layout = ns.ui.WrapLayout(storyline, viewWidth, graphTop)
+    local Pos = layout.Pos
+    width = layout.width
+
     local cells = {}
-    for _, n in ipairs(storyline.nodes) do
+    local function Place(n, link)
         local node = AcquireNode(canvas)
+        local x, y = Pos(n)
         node:ClearAllPoints()
-        node:SetPoint("TOPLEFT", canvas, "TOPLEFT", NodeX(n.col), -NodeY(graphTop, n.row))
-        node.px, node.py = NodeX(n.col), NodeY(graphTop, n.row)
-        StyleNode(node, n.id, storyline)
+        node:SetPoint("TOPLEFT", canvas, "TOPLEFT", x, -y)
+        node.px, node.py = x, y
+        if link then
+            StyleLinkNode(node, n, storyline)
+        else
+            StyleNode(node, n.id, storyline)
+        end
         cells[n.id] = n
     end
+    for _, n in ipairs(storyline.nodes) do
+        Place(n, false)
+    end
+    -- Quests on other pages just before or after the storyline: linked tiles.
+    for _, n in ipairs(storyline.links or {}) do
+        Place(n, true)
+    end
 
-    -- Square connectors: right out of the parent, down/up at the gap, into the child.
+    -- Square connectors: right out of the parent, down/up at the gap, into the
+    -- child. Into a later band: right out of the parent, down to the gap above
+    -- the child's band, back along it, and down into the child.
     for child, list in pairs(storyline.parents) do
         local c = cells[child]
         for _, parent in ipairs(list) do
@@ -970,15 +1075,7 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
                 if pDone then
                     r, g, b = 0.40, 0.66, 0.28
                 end
-                local x1 = NodeX(p.col) + NODE_W
-                local y1 = -(NodeY(graphTop, p.row) + NODE_H / 2)
-                local x2 = NodeX(c.col)
-                local y2 = -(NodeY(graphTop, c.row) + NODE_H / 2)
-                local xm = x2 - COL_GAP / 2
-                local points = { { x1, y1 }, { xm, y1 }, { xm, y2 }, { x2, y2 } }
-                if y1 == y2 then
-                    points = { { x1, y1 }, { x2, y2 } }
-                end
+                local points = layout.Route(p, c)
                 for i = 1, #points - 1 do
                     local line = AcquireLine(canvas)
                     line:SetDrawLayer("ARTWORK", pDone and 2 or 1)
@@ -990,8 +1087,7 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
         end
     end
 
-    local height = HEADER_H + 8 + storyline.rows * (NODE_H + ROW_GAP)
-    return PAD * 2 + width, height
+    return PAD * 2 + width, layout.height
 end
 
 local function RenderOthers(canvas, others, top, viewWidth)
@@ -1482,7 +1578,7 @@ function ns.FocusQuest(id)
     if not q or not frame then
         return
     end
-    local zone = q.z
+    local zone = ns.HomePage(id) -- its zone, or the Class page for the Tier 0.5 chains
     -- On the Class or a profession page, stay there if the quest is on it.
     if ns.IsSpecialPage(selectedZone) then
         for _, other in ipairs(ns.GetZoneQuests(selectedZone)) do

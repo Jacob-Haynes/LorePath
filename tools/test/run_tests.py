@@ -122,9 +122,11 @@ for tile in tiles:
     except Exception as e:
         errors += 1
         print("tooltip error:", e)
-# One tile per Elwynn quest the character can see (derived from the data, so ATT syncs don't break it).
-check(zone_quests > 0 and len(tiles) == zone_quests and errors == 0,
-      f"all {len(tiles)} Elwynn quest tiles (of {zone_quests} zone quests) build a tooltip without errors")
+# One tile per Elwynn quest the character can see (derived from the data, so ATT syncs don't break it),
+# plus a linked tile for each quest on another page just before or after a storyline.
+elwynn_links = sum(len(list((s["links"] or lua.table()).values())) for s in ns.BuildStorylines(1429)[0].values())
+check(zone_quests > 0 and len(tiles) == zone_quests + elwynn_links and errors == 0,
+      f"all {len(tiles)} Elwynn tiles ({zone_quests} zone quests, {elwynn_links} linked) build a tooltip without errors")
 rewarded = [t for t in tiles if ns.Quests[t["questID"]]["rw"] is not None]
 g.GameTooltip.lines = lua.table()
 rewarded[0]["__scripts"]["OnEnter"](rewarded[0])
@@ -406,7 +408,9 @@ ns.SetSetting("showOthers", True)
 # Finish a whole storyline: it collapses by default, and can be reopened.
 storylines, _ = ns.BuildStorylines(1413)
 first = list(storylines.values())[0]
-first_n = len(list(first["nodes"].values()))
+def tile_count(st):
+    return len(list(st["nodes"].values())) + len(list((st["links"] or lua.table()).values()))
+first_n = tile_count(first)
 for n in first["nodes"].values():
     char["completed"][n["id"]] = True
 ns.Refresh()
@@ -426,7 +430,7 @@ check(shown_tiles() == with_others - first_n, "clicking again collapses it, and 
 check(g.LorePathDB["collapsed"][key] is True, "collapsed state is stored in LorePathDB")
 other = section("s" + str(list(storylines.values())[1]["first"]))
 other["__scripts"]["OnClick"](other)
-second_n = len(list(list(storylines.values())[1]["nodes"].values()))
+second_n = tile_count(list(storylines.values())[1])
 check(shown_tiles() == with_others - first_n - second_n, "an unfinished storyline can be collapsed too")
 g.LorePathDB["collapsed"] = lua.table()
 ns.Refresh()
@@ -1070,8 +1074,9 @@ check(ns.Quests[5141]["sk"] == 165 and ns.Quests[5141]["sl"] == 225 and ns.Quest
       "the extractor reads Professions.lua: Leatherworking (5141) and Blacksmithing (5283) quests")
 cls = list(ns.GetZoneQuests("class").values())
 zones_in_class = {ns.Quests[i]["z"] for i in cls}
-check(len(cls) > 20 and all(1 in list(ns.Quests[i]["cl"].values()) for i in cls) and len(zones_in_class) > 3,
-      f"the Class page has every Warrior quest, from {len(zones_in_class)} zones ({len(cls)} quests)")
+check(len(cls) > 20 and all(1 in list(ns.Quests[i]["cl"].values()) for i in cls if ns.Quests[i]["cl"] is not None)
+      and all(ns.HomePage(i) == "class" for i in cls if ns.Quests[i]["cl"] is None) and len(zones_in_class) > 3,
+      f"the Class page has every Warrior quest, from {len(zones_in_class)} zones ({len(cls)} quests), and Tier 0.5's shared steps")
 sls, _ = ns.BuildStorylines("class")
 travelling = [st for st in sls.values() if len({ns.Quests[n["id"]]["z"] for n in st["nodes"].values()}) > 1]
 check(len(travelling) > 0, f"class chains that travel between zones are one storyline ({len(travelling)} of them)")
@@ -1427,13 +1432,15 @@ def rgb(c):
     return tuple(round(v, 2) for v in c.values())
 check(rgb(PC(0, 10)) == (0.62, 0.62, 0.62) and rgb(PC(0, 0)) == (0.62, 0.62, 0.62), "a zone you haven't started is grey")
 check(rgb(PC(10, 10)) == (0.42, 0.83, 0.37), "a finished zone is green, as before")
-start = rgb(PC(1, 100))
-check(start[0] == start[1] and start[0] > 0.9, f"just started is near white: {start}")
+check(rgb(PC(1, 100))[:2] == (1.0, 0.26), "just started is red")
+check(rgb(PC(33, 100)) == (1.0, 0.55, 0.15), "a third done is orange")
+check(rgb(PC(67, 100)) == (1.0, 0.88, 0.2), "two thirds done is yellow")
 near = rgb(PC(99, 100))
-check(near[1] > near[0] and near[1] > near[2] and near != (0.42, 0.83, 0.37) and near[0] - 0.42 >= 0.15,
-      f"nearly done is green, but paler than a finished zone: {near}")
+check(near[1] > near[0] and abs(near[0] - 0.42) < 0.05, f"nearly done is all but green: {near}")
+greens = [rgb(PC(d, 100))[1] for d in range(1, 68)]
 reds = [rgb(PC(d, 100))[0] for d in range(1, 100)]
-check(reds == sorted(reds, reverse=True), "colours fade steadily from white towards green")
+check(greens == sorted(greens) and reds == sorted(reds, reverse=True) and reds[-1] < 0.5,
+      "the gradient runs steadily: red to yellow, then the red fades out to green")
 ns.Toggle(True)
 char["completed"] = lua.table()
 elwynn_ids = list(ns.GetZoneQuests(1429).values())
@@ -1794,7 +1801,9 @@ def filter_boxes():
 entries, boxes = filter_boxes()
 check(any(e["kind"] == "title" and e["text"] == "LorePath quests" for e in entries) and [e["text"] for e in boxes] == FILTER_TEXTS,
       f"under a 'LorePath quests' heading, three filters: {[e['text'] for e in boxes]}")
-check(all(e["isChecked"]() for e in boxes) and all(g.LorePathDB[k] is True for k in FILTER_KEYS), "all three are on by default")
+check([e["isChecked"]() for e in boxes] == [True, False, False]
+      and (g.LorePathDB["mapPinsCurrent"], g.LorePathDB["mapPinsLow"], g.LorePathDB["mapPinsHigh"]) == (True, False, False),
+      "by default only 'Quests at your level' is on")
 WM.SetMapID(WM, 1429)
 WM.Show(WM)
 
@@ -1805,11 +1814,15 @@ def expected_on(map_id, bands):
             ids.append(qid)
     return sorted(ids)
 B = ns.PIN_BAND
-want = expected_on(1429, (B.CURRENT, B.LOW, B.HIGH))
 current = expected_on(1429, (B.CURRENT,))
+check(len(current) > 5 and pinned_ids() == current, f"by default Elwynn pins only quests at your level ({len(current)})")
+# The rest of these checks run with all three on.
+ns.SetSetting("mapPinsLow", True)
+ns.SetSetting("mapPinsHigh", True)
+want = expected_on(1429, (B.CURRENT, B.LOW, B.HIGH))
 got = pinned_ids()
 print(f"Elwynn at level 5: {len(got)} quests pinned in {len(pins())} pins")
-check(len(current) > 5 and got == want, f"Elwynn pins every quest starting there, by default ({len(got)} vs {len(want)})")
+check(got == want and len(want) > len(current), f"with all three on, Elwynn pins every quest starting there ({len(got)} vs {len(want)})")
 check(all(ns.GetStatus(q) in (S.AVAILABLE, S.REPEATABLE) for q in current), "'at your level' ones are quests you can pick up")
 check(len(set(got)) == len(got), "each quest has one pin")
 p783 = pin_for(783)
@@ -1874,7 +1887,7 @@ def box(text):
     return next(e for e in filter_boxes()[1] if e["text"] == text)
 high = expected_on(1429, (B.HIGH,))
 check(high and all(q in pinned_ids() for q in high) and all(ns.GetLockReason(q) == "level" for q in high),
-      f"quests above your level are pinned by default ({len(high)})")
+      f"with that filter on, quests above your level are pinned ({len(high)})")
 hp = next(p for p in pins() if p["group"]["band"] == B.HIGH)
 check(hp["icon"]["__desaturated"] is True and hp["icon"]["__vertex"][1] == 1 and hp["icon"]["__vertex"][2] < 0.5,
       "as a red '!'")
@@ -1937,8 +1950,24 @@ for key in FILTER_KEYS:
     ns.SetSetting(key, True)
 check(harness["frames"]["LorePathSettingsPanel"] is not None, "the settings page exists")
 labels = [str(f["__text"]) for f in harness["all"].values() if f["__text"]]
-check(all(l in labels for l in ("Map: quests at your level", "Map: low-level quests", "Map: quests above your level"))
-      and "Show quests on the world map" not in labels, "the settings page has the same three filters")
+check(all(l in labels for l in ("Quests at your level (gold)", "Low-level quests (grey)", "Quests above your level (red)")),
+      "the settings page has the same three filters")
+
+# The settings page: in a scroll frame, under headings, with the map filters nested.
+sp = harness["frames"]["LorePathSettingsPanel"]
+scroll = harness["frames"]["LorePathSettingsScroll"]
+check(scroll is not None and scroll["__scrollChild"] is not None and same(scroll["__scrollChild"], sp["body"]),
+      "the settings page scrolls: everything is in a scroll frame's content")
+page_texts = [f for f in harness["all"].values() if f["__kind"] == "FontString" and f["__parent"] is not None and same(f["__parent"], sp["body"])]
+headings = [str(f["__text"]) for f in page_texts if str(f["__text"]) in ("Window", "Quests", "World map")]
+check(headings == ["Window", "Quests", "World map"], f"settings are grouped under headings: {headings}")
+def left_of(label):
+    fs = next(f for f in harness["all"].values() if f["__text"] == label and f["__parent"] is not None and f["__parent"]["__kind"] != "FontString")
+    cb = fs["__parent"]
+    return next(p[4] for p in cb["__points"].values() if p[1] == "LEFT")
+nested = [left_of(t) for t in ("Quests at your level (gold)", "Low-level quests (grey)", "Quests above your level (red)")]
+check(len(set(nested)) == 1 and nested[0] > left_of("Show spoilers"), f"the map filters are indented under 'Show quests on the map': {nested} vs {left_of('Show spoilers')}")
+check(any(str(f["__text"]) == "Show quests on the map" for f in page_texts), "under a 'Show quests on the map' label")
 g.LorePathDB["showMapPins"] = False
 ns.InitDB()
 check(g.LorePathDB["showMapPins"] is None, "1.2.0-beta1's old pin setting is cleared")
@@ -2051,6 +2080,290 @@ ns.FocusQuest(4182)
 check(frame["zoneTitle"]["__text"] == "Onyxia's Lair", "focusing one of its quests stays on the attunement page")
 ns.Toggle(False)
 
+# --- Amongst the Ruins, in the data twice (908 and 6921) ---
+char["race"], char["class"], char["faction"], char["level"] = 2, 1, "Horde", 25
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+def ruins():
+    return sorted(q for q in ns.GetZoneQuests(221).values() if q in (908, 6921))
+check(len(ruins()) == 1, f"Blackfathom Deeps shows Amongst the Ruins once: {ruins()}")
+char["log"][6921] = True
+check(ruins() == [6921], "the one in your log, when you have 6921")
+char["log"] = lua.table()
+char["log"][908] = True
+check(ruins() == [908], "or 908")
+char["log"] = lua.table()
+
+# Call of Air: Orgrimmar's (1531) and Thunder Bluff's (1532) are one quest.
+char["class"] = 7
+def air(race):
+    char["race"] = race
+    ns.RefreshPlayer()
+    return sorted(q for q in ns.GetZoneQuests("class").values() if q in (1531, 1532))
+check(air(2) == [1531] and air(6) == [1532], f"a Horde Shaman sees Call of Air once: an orc Orgrimmar's, a tauren Thunder Bluff's ({air(2)}, {air(6)})")
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+ns.RefreshPlayer()
+
+# A shared map pin takes its best quest's colour: gold if any is at your level, else grey, else red.
+mixed, wrong = 0, []
+for race, faction, maps in ((1, "Alliance", (1429, 1436, 1433, 1453)), (2, "Horde", (1411, 1413, 1454))):
+    char["race"], char["faction"] = race, faction
+    for level in (8, 15, 25):
+        char["level"] = level
+        for m in maps:
+            for grp in ns.MapPinGroups(m).values():
+                bands = [ns.PinBand(q) for q in grp["quests"].values()]
+                if len(set(bands)) > 1:
+                    mixed += 1
+                if grp["band"] != min(bands):
+                    wrong.append((m, level, list(grp["quests"].values())))
+check(mixed > 0 and not wrong, f"a pin shared by quests of different levels shows the best: gold, else grey, else red ({mixed} mixed pins, wrong: {wrong[:3]})")
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+ns.RefreshPlayer()
+
+# --- Quests in the data twice (runs on every AllTheThings sync) ---
+# Two quests with the same name on one page, that one character could have
+# together, and that don't lead to each other, show twice: once as done or in
+# your log, once as still available (Amongst the Ruins, 908 and 6921). A new one
+# fails here, so a person decides once: add it to EXTRA_VERSIONS in Core.lua if
+# it's one quest twice, or to SEPARATE below if they really are two quests.
+import re as _re
+from collections import defaultdict
+SEPARATE = [  # same name, but really different quests (or known data gaps, left alone for now)
+    {1380, 1381},              # Khan Hratha: one for each centaur faction (Magram, Gelkis)
+    {1471, 1474, 1795},        # The Binding (Undercity): Voidwalker, Succubus, Felhunter
+    {1504, 1513, 1795},        # The Binding (Orgrimmar)
+    {1689, 1739, 1795},        # The Binding (Stormwind)
+    {1685, 1717},              # Gakin's Summons: the Voidwalker and Succubus breadcrumbs
+    {7802, 7807}, {7803, 7808}, {7804, 7809}, {7805, 7811},  # cloth for Ironforge and for Gnomeregan
+    {7826, 7833}, {7827, 7834}, {7831, 7835}, {7824, 7836},  # cloth for Orgrimmar and for the Darkspear
+    {1471, 1474, 1504, 1513},  # The Binding: Undercity's and Orgrimmar's are different demons
+    {2951, 2952, 4601, 4602, 4605, 4606},  # The Sparklematic 5200!: one for each item you clean, with its second step
+    {2278, 2279, 2280, 2439, 2440},  # The Platinum Discs: one chain, but the data doesn't link 2278 to the item it gives you
+]
+
+def quest_titles():
+    out = {}
+    for name in ("Data/QuestText.lua", "Data/CommunityText.lua"):
+        text = open(os.path.join(ROOT, name), encoding="utf-8").read()
+        for m in _re.finditer(r'^\[(\d+)\]=\{t="((?:[^"\\]|\\.)*)"', text, _re.M):
+            out.setdefault(int(m.group(1)), m.group(2))
+    return out
+
+def plain_quests():
+    def ids(v):
+        return set(v.values()) if v is not None else set()
+    out = {}
+    for qid, q in ns.Quests.items():
+        out[qid] = {"z": q["z"], "f": q["f"], "rc": ids(q["rc"]), "cl": ids(q["cl"]), "sk": ns.ProfessionOf(q),
+                    "pre": ids(q["pre"]), "nx": ids(q["nx"]), "alt": ids(q["alt"]), "rp": q["rp"] is not None}
+    return out
+
+# Which factions can do a quest: its own, or its races' (1 Horde, 2 Alliance).
+RACE_FACTION = {1: 2, 3: 2, 4: 2, 7: 2, 95: 2, 2: 1, 5: 1, 6: 1, 8: 1, 96: 1}
+def factions_of(q):
+    if q["f"]:
+        return {q["f"]}
+    return {RACE_FACTION[r] for r in q["rc"] if r in RACE_FACTION}
+
+# Quests that lead to each other, through prerequisites and breadcrumbs.
+def leads_to(quests):
+    reach = {}
+    def reaches(a):
+        if a not in reach:
+            seen, todo = set(), [a]
+            while todo:
+                x = todo.pop()
+                for y in quests[x]["pre"] | quests[x]["nx"]:
+                    if y in quests and y not in seen:
+                        seen.add(y)
+                        todo.append(y)
+            reach[a] = seen
+        return reach[a]
+    return reaches
+
+def find_duplicates(quests, titles, extra_versions, separate):
+    """Groups of quest IDs one character could see twice under one name, on one
+    page: a zone or instance, the Class page, or a profession's page."""
+    # Versions of each other (alt in the data, or EXTRA_VERSIONS), joined up.
+    parent = {}
+    def root(a):
+        while parent.get(a, a) != a:
+            a = parent[a]
+        return a
+    for qid, q in quests.items():
+        for other in q["alt"] | set(extra_versions.get(qid, ())):
+            parent[root(qid)] = root(other)
+    reaches = leads_to(quests)
+    known = [set(s) for s in separate]
+    # Quests in one storyline are steps, even with the same name (Call of
+    # Water's two steps after 1534). And a page shows one version of each quest,
+    # hiding the steps after the versions it doesn't show (OneVersionEach in
+    # Core.lua). So two quests whose chains share a quest, or versions of one,
+    # never show as one quest twice.
+    chain_roots = {}
+    def roots_of(a):
+        if a not in chain_roots:
+            chain_roots[a] = {root(x) for x in reaches(a) | {a}}
+        return chain_roots[a]
+
+    def together(a, b):
+        qa, qb = quests[a], quests[b]
+        if qa["rp"] or qb["rp"]:
+            return False  # repeatables, and first-time quests beside their repeatable version
+        if roots_of(a) & roots_of(b):
+            return False
+        fa, fb = factions_of(qa), factions_of(qb)
+        if fa and fb and not (fa & fb):
+            return False
+        if qa["rc"] and qb["rc"] and not (qa["rc"] & qb["rc"]):
+            return False
+        if qa["cl"] and qb["cl"] and not (qa["cl"] & qb["cl"]):
+            return False
+        return not any(a in s and b in s for s in known)
+
+    pages = defaultdict(lambda: defaultdict(list))
+    for qid, q in quests.items():
+        if qid not in titles:
+            continue
+        pages[("zone", q["z"])][titles[qid]].append(qid)
+        if q["cl"]:
+            pages[("class",)][titles[qid]].append(qid)
+        if q["sk"]:
+            pages[("prof", q["sk"])][titles[qid]].append(qid)
+    found = set()
+    for page in pages.values():
+        for ids in page.values():
+            ids = sorted(ids)
+            for i, a in enumerate(ids):
+                for b in ids[i + 1:]:
+                    if together(a, b):
+                        found.add((a, b))
+    return sorted(found)
+
+TITLES = quest_titles()
+PLAIN = plain_quests()
+EXTRA = {k: list(v.values()) for k, v in ns.EXTRA_VERSIONS.items()}
+dupes = find_duplicates(PLAIN, TITLES, EXTRA, SEPARATE)
+def describe(qid):
+    q = PLAIN[qid]
+    return f"{qid} (zone {q['z']}, faction {q['f']}, races {sorted(q['rc'])}, classes {sorted(q['cl'])})"
+for a, b in dupes:
+    print(f"  shown twice? {TITLES[a]!r}: {describe(a)} and {describe(b)}")
+check(not dupes, f"no quest shows twice under one name ({len(dupes)} pairs, listed above)"
+      + (": add each to EXTRA_VERSIONS in Core.lua (one quest twice) or SEPARATE in run_tests.py (really two quests)" if dupes else ""))
+
+# The check catches what it should, and its lists don't go stale.
+without_ruins = {k: v for k, v in EXTRA.items() if k != 6921}
+check((908, 6921) in find_duplicates(PLAIN, TITLES, without_ruins, SEPARATE),
+      "without its EXTRA_VERSIONS entry, Amongst the Ruins is caught")
+without_air = {k: v for k, v in EXTRA.items() if k != 1531}
+check((1531, 1532) in find_duplicates(PLAIN, TITLES, without_air, SEPARATE), "and so is Call of Air")
+fake = dict(PLAIN)
+fake[999001] = dict(PLAIN[783], pre=set(), nx=set(), alt=set())
+fake_titles = dict(TITLES)
+fake_titles[999001] = TITLES[783]
+check((783, 999001) in find_duplicates(fake, fake_titles, EXTRA, SEPARATE), "a new copy of a quest under another ID is caught")
+stale = [sorted(s) for i, s in enumerate(SEPARATE) if not find_duplicates(PLAIN, TITLES, EXTRA, SEPARATE[:i] + SEPARATE[i + 1:])]
+check(not stale, f"every SEPARATE entry is still needed: {stale}")
+# --- Tier 0.5 (Dungeon Set 2): on the Class page, whole, with no page of its own ---
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+check(all(z["id"] != -318 for z in ns.GetZones().values()), "there's no Tier 0.5 Sets page in the zone list")
+cls_page = set(ns.GetZoneQuests("class").values())
+check(8912 in cls_page and 8922 in cls_page and 8921 in cls_page and 8905 not in cls_page,
+      "the Class page has a Warrior's Tier 0.5 chain, with the steps every class shares, and not other classes' steps")
+t05 = next(st for st in ns.BuildStorylines("class")[0].values() if 8912 in [n["id"] for n in st["nodes"].values()])
+t05_ids = {n["id"] for n in t05["nodes"].values()}
+check({8912, 8922, 8921, 8924} <= t05_ids, f"and it's one storyline, from An Earnest Proposition on ({len(t05_ids)} quests)")
+check(ns.HomePage(8921) == "class" and ns.HomePage(783) == ns.Quests[783]["z"], "a Tier 0.5 quest's home page is the Class page")
+ns.Toggle(True)
+ns.FocusQuest(8921)
+check(ns.focusedQuest == 8921 and frame["zoneTitle"]["__text"] == "Warrior quests", "jumping to one opens the Class page")
+ns.Toggle(False)
+# --- Storylines that cross zones: linked tiles for the quests on other pages ---
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 20, 1429
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+sls, _ = ns.BuildStorylines(1429)
+sls = list(sls.values())
+linked = [(st, l) for st in sls for l in (st["links"] or lua.table()).values()]
+froms = [(st, l) for st, l in linked if l["from"] and not l["to"]]
+tos = [(st, l) for st, l in linked if l["to"] and not l["from"]]
+print(f"Elwynn at level 20: {len(linked)} linked tiles ({len(froms)} from, {len(tos)} to)")
+check(tos and all(ns.Quests[l["id"]]["z"] != 1429 for _, l in linked), "Elwynn's storylines link on to quests in other zones")
+st, l = tos[0]
+node_ids = {n["id"] for n in st["nodes"].values()}
+check(any(p in node_ids for p in st["parents"][l["id"]].values()), "a 'to' tile follows the quest in this zone that leads to it")
+col_of = {n["id"]: n["col"] for n in list(st["nodes"].values()) + list(st["links"].values())}
+check(all(col_of[p] < col_of[c] for c, ps in st["parents"].items() for p in ps.values() if p in col_of and c in col_of),
+      "linked tiles sit in the right column: before the quest they unlock, after the one that leads to them")
+check(l["id"] not in node_ids and all(ns.Quests[n["id"]]["z"] == 1429 or ns.IsSpecialPage(1429) for n in st["nodes"].values()),
+      "linked quests aren't part of the storyline (its progress and next step)")
+there = ns.Quests[l["id"]]["z"]
+leading = set(st["parents"][l["id"]].values()) & node_ids
+back = [lk["id"] for s2 in ns.BuildStorylines(there)[0].values() for lk in (s2["links"] or lua.table()).values() if lk["from"]]
+check(leading & set(back), f"and {ns.GetMapName(there)}'s page shows the Elwynn quest its storyline starts from")
+char["faction"], char["race"] = "Horde", 2
+ns.RefreshPlayer()
+check(not any(ns.Quests[lk["id"]]["f"] == 2 for s2 in ns.BuildStorylines(1413)[0].values() for lk in (s2["links"] or lua.table()).values()),
+      "a Horde character's storylines never link to Alliance quests")
+char["faction"], char["race"] = "Alliance", 1
+ns.RefreshPlayer()
+
+# In the window.
+ns.Toggle(True)
+ns.FocusQuest(st["first"])
+tile = next(f for f in harness["all"].values() if f["questID"] == l["id"] and f["link"] is not None and f.IsShown(f))
+zone_name = ns.GetMapName(ns.Quests[l["id"]]["z"])
+check(tile["sub"]["__text"].find("Continues in " + zone_name) >= 0 and tile["__alpha"] < 1,
+      f"a 'to' tile says where the story goes on: {tile['sub']['__text']!r}")
+g.GameTooltip.lines = lua.table()
+tile["__scripts"]["OnEnter"](tile)
+lines = [str(x) for x in g.GameTooltip.lines.values()]
+check(any("continues with it, in " + zone_name in x for x in lines) and "Click to go to it." in lines and "Click for details." not in lines,
+      "its tooltip says so, and that a click goes there")
+tile["__scripts"]["OnClick"](tile)
+check(frame["zoneTitle"]["__text"].startswith(zone_name) and ns.focusedQuest == l["id"], f"clicking it goes to {zone_name}, at that quest")
+ns.Toggle(False)
+char["level"] = 60
+ns.RefreshPlayer()
+
+# --- Long storylines wrap to the window's width ---
+WL = ns.ui.WrapLayout
+long_line = lua.eval("{ cols = 10, rows = 2 }")
+lay = WL(long_line, 800, 40)
+check(lay["perBand"] == 3 and lay["bands"] == 4, f"a 10-column storyline in an 800-wide window wraps into bands of 3 ({lay['perBand']} x {lay['bands']})")
+x0, y0, b0 = lay.Pos(lua.eval("{ col = 0, row = 0 }"))
+x3, y3, b3 = lay.Pos(lua.eval("{ col = 3, row = 0 }"))
+check(b3 == 1 and x3 == x0 and y3 > y0 + 2 * 46, "column 4 starts the second band, back at the left, below the first band's rows")
+pts = list(lay.Route(lua.eval("{ col = 2, row = 1 }"), lua.eval("{ col = 3, row = 0 }")).values())
+ys = [p[2] for p in pts]
+check(len(pts) == 6 and -ys[2] > y0 + 2 * 46 - 10 and -ys[2] < y3, "the line into the next band runs along the gap between the bands")
+short_line = lua.eval("{ cols = 2, rows = 3 }")
+lay2 = WL(short_line, 800, 40)
+check(lay2["bands"] == 1 and lay2["height"] == 26 + 8 + 3 * (36 + 10), "a storyline that fits isn't changed")
+
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 30, 1429
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+ns.Toggle(True)
+view_w = frame["graphScroll"].GetWidth(frame["graphScroll"])
+widest = None
+for page in [z["id"] for z in ns.GetZones().values()]:
+    for st in ns.BuildStorylines(page)[0].values():
+        if st["cols"] > 3 and (widest is None or st["cols"] > widest[1]["cols"]):
+            widest = (page, st)
+page, st = widest
+ns.FocusQuest(st["first"])
+ids = {n["id"] for n in st["nodes"].values()}
+tiles = [f for f in harness["all"].values() if f["questID"] in ids and f["sub"] is not None and f.IsShown(f)]
+check(tiles and max(t["px"] for t in tiles) + 186 <= view_w,
+      f"on screen, the longest storyline ({st['cols']} columns, in {ns.GetMapName(page)}) fits the window's width ({max(t['px'] for t in tiles) + 186} <= {view_w})")
+ns.Toggle(False)
+char["level"] = 60
+ns.RefreshPlayer()
 # --- Timbermaw Hold's quests are in the zones they start in, not on a Kalimdor page ---
 check(all(ns.Quests[q]["z"] == 1448 for q in (6031, 8460, 8461, 8470, 8481)) and all(ns.Quests[q]["z"] == 1452 for q in (8464, 8469)),
       "Timbermaw Hold's quests are on Felwood's page, or Winterspring's for the Winterfall ones")
