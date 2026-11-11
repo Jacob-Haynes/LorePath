@@ -622,8 +622,147 @@ local function SpecialPageQuests(page)
     return source, ignoreSkill
 end
 
+-- Where each race starts: its starting zone, then its capital. Used to pick
+-- which version of a quest to show when there are several (see OneVersionEach).
+local HOME_MAPS = {
+    [1] = { 1429, 1453 }, -- Human: Elwynn Forest, Stormwind
+    [2] = { 1411, 1454 }, -- Orc: Durotar, Orgrimmar
+    [3] = { 1426, 1455 }, -- Dwarf: Dun Morogh, Ironforge
+    [4] = { 1438, 1457 }, -- Night Elf: Teldrassil, Darnassus
+    [5] = { 1420, 1458 }, -- Undead: Tirisfal Glades, Undercity
+    [6] = { 1412, 1456 }, -- Tauren: Mulgore, Thunder Bluff
+    [7] = { 1426, 1455 }, -- Gnome: Dun Morogh, Ironforge
+    [8] = { 1411, 1454 }, -- Troll: Durotar, Orgrimmar
+    [96] = { 2521 },      -- WoW Forever's own race: Zephras Isle
+}
+
+-- Some quests come in several versions, one per starting area: the Shaman
+-- totem quests (Call of Earth in Durotar, Mulgore and Zephras Isle), marked as
+-- alternatives of each other, and breadcrumbs from several cities that all lead
+-- to the same quest. The data doesn't say which race does which, so a page
+-- shows one of each: the one you've done or have, else the one that starts
+-- nearest your race's home, else the first. The quests that follow a hidden
+-- version are hidden with it.
+local function OneVersionEach(list)
+    if #list < 2 then
+        return list
+    end
+    local home = HOME_MAPS[player.race] or {}
+    local function Score(id)
+        if IsOnQuest(id) then
+            return 0
+        end
+        if IsFlaggedCompleted(id) then
+            return 1
+        end
+        local start = ns.Quests[id].m
+        for rank, map in ipairs(home) do
+            if start == map then
+                return 1 + rank
+            end
+        end
+        return 10
+    end
+
+    -- Group the versions: alternatives of each other, or breadcrumbs that lead
+    -- to the same quests.
+    local onPage = {}
+    for _, id in ipairs(list) do
+        onPage[id] = true
+    end
+    local groupOf, groups = {}, {}
+    local function Join(a, b)
+        local ga, gb = groupOf[a], groupOf[b]
+        if ga and gb then
+            if ga ~= gb then
+                for _, id in ipairs(groups[gb]) do
+                    groupOf[id] = ga
+                    table.insert(groups[ga], id)
+                end
+                groups[gb] = nil
+            end
+        elseif ga then
+            groupOf[b] = ga
+            table.insert(groups[ga], b)
+        elseif gb then
+            groupOf[a] = gb
+            table.insert(groups[gb], a)
+        else
+            groups[a] = { a, b }
+            groupOf[a], groupOf[b] = a, a
+        end
+    end
+    local crumbs = {}
+    for _, id in ipairs(list) do
+        local q = ns.Quests[id]
+        for _, alt in ipairs(q.alt or {}) do
+            if onPage[alt] then
+                Join(id, alt)
+            end
+        end
+        if q.bc and q.nx then
+            local targets = {}
+            for _, nextID in ipairs(q.nx) do
+                table.insert(targets, nextID)
+            end
+            table.sort(targets)
+            local key = table.concat(targets, ",")
+            if crumbs[key] then
+                Join(crumbs[key], id)
+            else
+                crumbs[key] = id
+            end
+        end
+    end
+
+    local hidden = {}
+    for _, members in pairs(groups) do
+        local best, bestScore
+        for _, id in ipairs(members) do
+            local score = Score(id)
+            if not best or score < bestScore or (score == bestScore and id < best) then
+                best, bestScore = id, score
+            end
+        end
+        for _, id in ipairs(members) do
+            hidden[id] = id ~= best or nil
+        end
+    end
+    if next(hidden) == nil then
+        return list
+    end
+    -- Quests whose every prerequisite on the page is hidden go too, unless
+    -- you've done them or have them.
+    local changed = true
+    while changed do
+        changed = false
+        for _, id in ipairs(list) do
+            local q = ns.Quests[id]
+            if not hidden[id] and q.pre and not IsOnQuest(id) and not IsFlaggedCompleted(id) then
+                local any, allHidden = false, true
+                for _, pre in ipairs(q.pre) do
+                    if onPage[pre] then
+                        any = true
+                        allHidden = allHidden and hidden[pre] == true
+                    end
+                end
+                if any and allHidden then
+                    hidden[id], changed = true, true
+                end
+            end
+        end
+    end
+    local kept = {}
+    for _, id in ipairs(list) do
+        if not hidden[id] then
+            table.insert(kept, id)
+        end
+    end
+    return kept
+end
+
 -- Quests on a zone list page (a zone, an instance, or the Class or a profession
--- page) that this character can do. Repeatable quests are left out when "Show
+-- page) that this character can do, one version of each (see OneVersionEach). Repeatable quests are left out when "Show
 -- repeatable quests" is off.
 function ns.GetZoneQuests(zoneID)
     if not zoneQuests then
@@ -642,7 +781,7 @@ function ns.GetZoneQuests(zoneID)
             table.insert(list, id)
         end
     end
-    return list
+    return OneVersionEach(list)
 end
 
 -- The Class and Professions groups at the top of the zone list:
