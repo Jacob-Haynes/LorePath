@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- **Where a quest's item comes from:** a quest that starts from an item says so, in its tooltip and details, with what drops or holds the item and where (for example *Dropped by Blackfathom Tide Priestess (33%), in Blackfathom Deeps*). Click an outdoor source in the details to set a waypoint at it. Sources are known for 56 of the 127 item-started quests, from pfQuest's data.
 - **Finished sections start collapsed:** a zone list section where you've done every quest (Class, a continent, Dungeons and so on) starts collapsed, like a finished storyline. Open it and it stays open; the section holding the page you're on is never hidden.
 
 ## 1.1.0

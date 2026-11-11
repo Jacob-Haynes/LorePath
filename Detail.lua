@@ -12,8 +12,8 @@ local TEXT_W = PANEL_W - 44
 local ICON = 30
 
 local panel
-local pools = { texts = {}, buttons = {}, items = {} }
-local used = { texts = 0, buttons = 0, items = 0 }
+local pools = { texts = {}, buttons = {}, items = {}, sources = {} }
+local used = { texts = 0, buttons = 0, items = 0, sources = 0 }
 ns.detailQuest = nil
 
 -- ============================================================================
@@ -429,6 +429,58 @@ local function AddItem(itemID)
     return b
 end
 
+-- One place a quest's starting item comes from: "Dropped by X (33%)", and
+-- under it where. Click an outdoor one to set a waypoint there.
+local function AddSource(source)
+    used.sources = used.sources + 1
+    local b = pools.sources[used.sources]
+    if not b then
+        b = CreateFrame("Button", nil, content)
+        b.what = b:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+        b.what:SetPoint("TOPLEFT", 0, 0)
+        b.what:SetJustifyH("LEFT")
+        b.what:SetWordWrap(false)
+        b.where = b:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+        b.where:SetPoint("TOPLEFT", b.what, "BOTTOMLEFT", 0, -1)
+        b.where:SetJustifyH("LEFT")
+        b.where:SetWordWrap(false)
+        local hl = b:CreateTexture(nil, "HIGHLIGHT")
+        hl:SetAllPoints()
+        hl:SetColorTexture(1, 1, 1, 0.08)
+        b:SetScript("OnClick", function(self)
+            local src = self.source
+            if src and src.m then
+                ns.SetWaypoint(src.m, src.x, src.y, src.n)
+            end
+        end)
+        b:SetScript("OnEnter", function(self)
+            local src = self.source
+            if src and src.m then
+                GameTooltip:SetOwner(self, "ANCHOR_LEFT")
+                GameTooltip:AddLine(src.n, 1, 0.82, 0)
+                GameTooltip:AddLine("Click to set a waypoint here.", 0.5, 0.8, 1)
+                GameTooltip:Show()
+            end
+        end)
+        b:SetScript("OnLeave", GameTooltip_Hide)
+        pools.sources[used.sources] = b
+    end
+    b.source = source
+    local what, where = ns.StartSourceText(source)
+    b.what:SetText(what)
+    b.where:SetText(where or "")
+    b.what:SetWidth(TEXT_W - 10)
+    b.where:SetWidth(TEXT_W - 10)
+    cursor = cursor + 3
+    b:ClearAllPoints()
+    b:SetPoint("TOPLEFT", content, "TOPLEFT", 18, -cursor)
+    b:SetSize(TEXT_W - 10, where and 28 or 15)
+    b:EnableMouse(source.m ~= nil)
+    b:Show()
+    cursor = cursor + (where and 28 or 15)
+    return b
+end
+
 -- ============================================================================
 -- Panel
 -- ============================================================================
@@ -519,7 +571,7 @@ local function Render(id)
     else
         if q.di then
             AddText("Picked up inside " .. ns.GetMapName(q.di) .. ".", "GameFontHighlightSmall", nil, 4)
-        else
+        elseif not q.si then
             AddText("Start location unknown.", "GameFontDisableSmall", nil, 4)
         end
     end
@@ -527,6 +579,14 @@ local function Render(id)
         local name = NPCName(q.qg)
         if name then
             AddText("Quest giver: " .. name, "GameFontHighlightSmall", nil, 2)
+        end
+    end
+    -- An item that starts the quest, and where it comes from.
+    if q.si then
+        AddText("Starts from an item:", "GameFontHighlightSmall", nil, 4)
+        AddItem(q.si)
+        for _, source in ipairs(ns.QuestStarts and ns.QuestStarts[id] or {}) do
+            AddSource(source)
         end
     end
     -- "Show on map" when the start is known; "Open in quest log" beside it while

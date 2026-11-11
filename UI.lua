@@ -504,8 +504,17 @@ local function ShowQuestTooltip(owner, id, storyline)
     else
         if q.di then
             GameTooltip:AddLine("Picked up inside " .. ns.GetMapName(q.di), 0.75, 0.75, 0.75)
-        else
+        elseif not q.si then
             GameTooltip:AddLine("Start location unknown", 0.6, 0.6, 0.6)
+        end
+    end
+    -- An item that starts it, and its main source.
+    if q.si then
+        GameTooltip:AddLine("Starts from " .. ItemText(q.si), 0.75, 0.75, 0.75)
+        local source = ns.QuestStarts and ns.QuestStarts[id] and ns.QuestStarts[id][1]
+        if source then
+            local what, where = ns.StartSourceText(source)
+            GameTooltip:AddLine("  " .. what .. (where and (", " .. where) or ""), 0.75, 0.75, 0.75, true)
         end
     end
     if q.rw then

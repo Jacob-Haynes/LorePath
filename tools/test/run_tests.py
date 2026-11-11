@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestStarts.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -1628,6 +1628,35 @@ char["completed"] = lua.table()
 ns.RefreshCompleted()
 g.LorePathDB["collapsedContinents"] = lua.table()
 ns.Refresh()
+
+# --- Where a quest's starting item comes from ---
+QS = ns.QuestStarts
+check(QS[6564][1]["n"] == "Blackfathom Tide Priestess" and QS[6564][1]["i"] == 221 and QS[6564][1]["m"] is None,
+      "the Damp Note drops from Blackfathom Tide Priestesses inside Blackfathom Deeps, not at their outdoor spawns")
+check(QS[123][1]["m"] == 1429 and QS[123][1]["x"] is not None, "an outdoor source has a map position (Gruff Swiftbite, Elwynn Forest)")
+g.EJ_GetInstanceInfo = lua.eval("function(id) if id == 227 then return 'Blackfathom Deeps' end end")
+ns.ShowDetail(6564)
+texts = detail_texts()
+srcs = [f for f in harness["all"].values() if f["source"] is not None and f.IsShown(f)]
+check("Starts from an item:" in texts and "Start location unknown." not in texts, "the details say the quest starts from an item")
+check(len(srcs) == 1 and srcs[0]["what"]["__text"] == "Dropped by Blackfathom Tide Priestess (33%)"
+      and srcs[0]["where"]["__text"] == "in Blackfathom Deeps", f"and what drops it, and where: {[srcs[0]['what']['__text'], srcs[0]['where']['__text']] if srcs else None}")
+ns.ShowDetail(123)
+src = [f for f in harness["all"].values() if f["source"] is not None and f.IsShown(f)][0]
+harness["waypoint"] = None
+src["__scripts"]["OnClick"](src)
+check(harness["waypoint"] is not None and harness["waypoint"]["m"] == 1429, "clicking an outdoor source sets a waypoint at it")
+ns.HideDetail()
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
+ns.RefreshPlayer()
+ns.Toggle(True)
+ns.FocusQuest(123)
+t = [f for f in harness["all"].values() if f["questID"] == 123 and f["sub"] is not None and f.IsShown(f)][0]
+g.GameTooltip.lines = lua.table()
+t["__scripts"]["OnEnter"](t)
+lines = [str(l) for l in g.GameTooltip.lines.values()]
+check(any(l.startswith("Starts from ") for l in lines) and any("Dropped by Gruff Swiftbite" in l for l in lines),
+      "the quest's tooltip says what item starts it and what drops it")
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])

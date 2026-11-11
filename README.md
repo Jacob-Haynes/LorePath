@@ -35,7 +35,7 @@ LorePath supports English game clients only.
 - **Tooltips:** hover a quest for its level, status, what it needs (earlier quests, reputation, skill), what comes before and after it, where it starts, its item rewards, and AllTheThings' note on it when there is one.
 - **Quest details:** click a quest to open a panel beside the window, and click it again to close it. The panel shows:
   - requirements;
-  - where it starts and who gives it;
+  - where it starts and who gives it, or the item that starts it and what drops or holds that item (click an outdoor one for a waypoint);
   - **Good to know:** AllTheThings' note on the quest, when it has one (where an item drops, what finishing it locks you out of, and so on);
   - its objectives and description, plus progress and completion text;
   - its item rewards (Shift+click one to link it in chat, Ctrl+click to try it on);
@@ -116,6 +116,7 @@ WoW Forever's own quests aren't in any quest database, so the only source for th
 | What you've completed, what's in your log, your level, race, class, faction, professions and reputation | The game client, live |
 | Quest, zone, item, NPC and faction names | The game client, in your language |
 | Level ranges of zones, dungeons, raids and battlegrounds | The game client's Looking for Group list, live |
+| What drops or holds an item that starts a quest, with chances and locations | [pfQuest](https://github.com/shagu/pfQuest)'s item, creature and object data (MIT, originally from VMaNGOS), in `Data/QuestStarts.lua`: sources for 56 item-started quests |
 | Quest text: description, objectives, progress and completion text | In this order:<br>1. **What you've seen:** saved from the game as you play (when a quest giver shows a quest, when you accept it, when you hand items in, at the turn-in screen, and your quest log at login).<br>2. **Community text:** `Data/CommunityText.lua`, collected by players, including WoW Forever's own quests (250 quests so far).<br>3. **The game's own quest-link tooltip:** the quest's goal and requirements, even for quests completed long ago.<br>4. **Bundled vanilla text:** [pfQuest](https://github.com/shagu/pfQuest)'s English quest database (MIT, originally from VMaNGOS), in `Data/QuestText.lua`: 3,285 vanilla quests, not WoW Forever's own. |
 
 Missing quests, or wrong chains, levels or start points, come from AllTheThings' Forever data. Please report them to AllTheThings too, so everyone benefits. Wrong or missing quest text is LorePath's own.
@@ -148,7 +149,7 @@ The [Sync quest data from AllTheThings](.github/workflows/sync-att-data.yml) wor
 - **Merging and releasing stay manual.**
 - **Repository setting:** opening the PR needs *Settings → Actions → General → Allow GitHub Actions to create and approve pull requests* turned on.
 
-`Data/QuestText.lua`, the bundled vanilla text, is a one-off import and isn't part of the weekly sync, because vanilla quest text doesn't change. `python3 tools/extract_pfquest.py` rebuilds it if ever needed, for example after new vanilla quests appear in `Data/Quests.lua`.
+`Data/QuestText.lua`, the bundled vanilla text, is a one-off import and isn't part of the weekly sync, because vanilla quest text doesn't change. `python3 tools/extract_pfquest.py` rebuilds it if ever needed, for example after new vanilla quests appear in `Data/Quests.lua`. Likewise `python3 tools/extract_quest_starts.py` rebuilds `Data/QuestStarts.lua`, where item-started quests' items come from, after the quest data gains new ones.
 
 ### Adding players' quest text
 
@@ -219,7 +220,7 @@ It can't check how things look in game.
 
 LorePath is MIT-licensed. Its bundled data:
 - **`Data/Quests.lua`** and **`Data/QuestNotes.lua`** are derived from AllTheThings, also MIT-licensed. Its licence is in `Data/AllTheThings-LICENSE.txt`.
-- **`Data/QuestText.lua`** comes from pfQuest (MIT, licence in `Data/pfQuest-LICENSE.txt`), which took it from the VMaNGOS project.
+- **`Data/QuestText.lua`** and **`Data/QuestStarts.lua`** come from pfQuest (MIT, licence in `Data/pfQuest-LICENSE.txt`), which took the data from the VMaNGOS project.
 - **`Data/CommunityText.lua`** was collected in game by LorePath's players.
 
 The quest text itself is Blizzard's.
