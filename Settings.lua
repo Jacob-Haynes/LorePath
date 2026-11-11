@@ -219,6 +219,26 @@ function ns.CreateSettingsPanel()
         ns.ResetToDefaults()
     end)
 
+    -- Sharing collected quest text (also /lp share).
+    local share = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
+    share:SetSize(150, 24)
+    share:SetPoint("LEFT", reset, "RIGHT", 10, 0)
+    share:SetText("Share quest text")
+    share:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+        GameTooltip:AddLine("Share quest text", 1, 0.82, 0)
+        GameTooltip:AddLine("Shows a code holding the quest text you've saved that LorePath doesn't have yet, to paste into a \"Share quest text\" issue on GitHub, so everyone's LorePath gets it.", 1, 1, 1, true)
+        GameTooltip:Show()
+    end)
+    share:SetScript("OnLeave", GameTooltip_Hide)
+    share:SetScript("OnClick", function()
+        if SettingsPanel and SettingsPanel:IsShown() and HideUIPanel then
+            HideUIPanel(SettingsPanel)
+        end
+        ns.OpenShare()
+    end)
+    panel.shareButton = share
+
     panel:SetScript("OnShow", RefreshPanel)
 
     if Settings and Settings.RegisterCanvasLayoutCategory and Settings.RegisterAddOnCategory then

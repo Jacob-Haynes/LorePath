@@ -101,44 +101,19 @@ end)
 
 SLASH_LOREPATH1 = "/lp"
 SLASH_LOREPATH2 = "/lorepath"
+-- Kept to a minimum: everything else has a button or a setting.
 local function SlashCommand(msg)
     local command = string.lower(string.match(msg or "", "^%s*(%S*)") or "")
     if command == "" then
         ns.Toggle(false)
-    elseif command == "here" then
-        ns.Toggle(true)
-    elseif command == "config" or command == "settings" or command == "options" then
+    elseif command == "config" then
         ns.OpenSettings()
-    elseif command == "minimap" then
-        ns.SetSetting("showMinimapButton", not ns.GetSetting("showMinimapButton"))
-        ns.Print("Minimap button " .. (ns.GetSetting("showMinimapButton") and "shown." or "hidden."))
-    elseif command == "spoilers" then
-        ns.SetSetting("showSpoilers", not ns.GetSetting("showSpoilers"))
-        ns.Print("Spoilers " .. (ns.GetSetting("showSpoilers") and "shown: every quest's story is visible." or "hidden: quests you haven't started show \"Find what awaits you\"."))
-    elseif command == "search" or command == "find" then
-        ns.Search(string.match(msg, "^%s*%S+%s*(.-)%s*$"))
-    elseif command == "quest" then
-        -- /lp quest: the quest selected in your quest log; /lp quest 783: that quest.
-        local id = tonumber(string.match(msg, "^%s*%S+%s+(%d+)"))
-        ns.ShowInLorePath(id or ns.SelectedLogQuest())
     elseif command == "share" then
         ns.OpenShare()
-    elseif command == "levels" then
-        ns.PrintLevelRanges()
-    elseif command == "repeatable" or command == "repeatables" then
-        ns.SetSetting("showRepeatable", not ns.GetSetting("showRepeatable"))
-        ns.Print("Repeatable quests " .. (ns.GetSetting("showRepeatable") and "shown." or "hidden."))
     else
         ns.Print("v" .. ns.VERSION .. " commands:")
         ns.Print("  |cffffd100/lp|r - open or close the window")
-        ns.Print("  |cffffd100/lp here|r - open on the zone you're in")
-        ns.Print("  |cffffd100/lp levels|r - list every zone, dungeon, raid and battleground with its level range")
-        ns.Print("  |cffffd100/lp search <name>|r - find a quest by name or ID")
-        ns.Print("  |cffffd100/lp quest|r - show the quest selected in your quest log")
         ns.Print("  |cffffd100/lp config|r - open the settings")
-        ns.Print("  |cffffd100/lp minimap|r - show or hide the minimap button")
-        ns.Print("  |cffffd100/lp repeatable|r - show or hide repeatable quests")
-        ns.Print("  |cffffd100/lp spoilers|r - show or hide the story of quests you haven't started")
         ns.Print("  |cffffd100/lp share|r - share the quest text you've collected, for everyone's LorePath")
     end
 end

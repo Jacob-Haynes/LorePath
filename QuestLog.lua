@@ -1,7 +1,6 @@
 -- From the game's quest log to LorePath: a LorePath button on the quest log
--- that opens the selected quest in LorePath's window and details panel, and
--- /lp quest, which does the same. (The other way, LorePath to the quest log,
--- is ns.OpenInQuestLog in Core.lua.)
+-- that opens the selected quest in LorePath's window and details panel. (The
+-- other way, LorePath to the quest log, is ns.OpenInQuestLog in Core.lua.)
 
 local addonName, ns = ...
 

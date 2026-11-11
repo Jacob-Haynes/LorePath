@@ -15,7 +15,7 @@ LorePath supports English game clients only.
 ## What it shows
 
 - **Class and Professions:** at the top of the zone list, **Class** gathers every quest for your class from all zones, so class chains that travel (say, from a capital city to another zone) show as one storyline. **Professions** has a page for each profession you have, with its quests. Their tooltips say which zone each quest is in. Quests your skill is too low for say what they need, for example *Needs Leatherworking 225*.
-- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons, raids and battlegrounds get their own pages under **Dungeons**, **Raids** and **Battlegrounds** headings (Scarlet Monastery's Graveyard and Library wings have their own too), and inside an instance the window opens on its page. Zones, dungeons and raids show WoW Forever's suggested level range after their name, read from the game's Looking for Group list (`/lp levels` lists them all). Names are coloured by progress: grey before you start, then red, orange at 40%, WoW's gold at 80% and on towards green, turning fully green only once finished. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and the whole list can be hidden to give the graph more room.
+- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons, raids and battlegrounds get their own pages under **Dungeons**, **Raids** and **Battlegrounds** headings (Scarlet Monastery's Graveyard and Library wings have their own too), and inside an instance the window opens on its page. Zones, dungeons and raids show WoW Forever's suggested level range after their name, read from the game's Looking for Group list. Names are coloured by progress: grey before you start, then red, orange at 40%, WoW's gold at 80% and on towards green, turning fully green only once finished. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and the whole list can be hidden to give the graph more room.
 - **Storylines:** each page's quest chains, drawn left to right from the first quest to the last, with lines joining each quest to the ones it unlocks. Each storyline can be collapsed, and finished ones start collapsed. **Expand all** and **Collapse all** sit at the top.
 - **Other quests:** standalone quests with no chain, under each page's storylines.
 - **Only your quests:** quests for another faction, race or class are left out. Profession quests show only if you have that profession.
@@ -42,31 +42,29 @@ LorePath supports English game clients only.
   - the quests before and after it, as links;
   - its address on WarcraftDB, to copy, at the bottom.
 
-  **No spoilers by default:** a quest you haven't started shows "Find what awaits you." with a **Reveal** button, instead of its objectives and story. A quest in your log shows its objectives and description, but not how it ends. A completed quest shows everything. Reveal lasts until you look at another quest. **Show spoilers** in the settings, or `/lp spoilers`, shows everything always.
-- **Search:** type part of a quest's name, or its ID, in the box above the zone list. The list shows up to 50 matching quests you can do, with their zone, status and level; click one to jump to it. Escape clears the search. `/lp search <name>` opens LorePath with the search filled in.
+  **No spoilers by default:** a quest you haven't started shows "Find what awaits you." with a **Reveal** button, instead of its objectives and story. A quest in your log shows its objectives and description, but not how it ends. A completed quest shows everything. Reveal lasts until you look at another quest. **Show spoilers** in the settings shows everything always.
+- **Search:** type part of a quest's name, or its ID, in the box above the zone list. The list shows up to 50 matching quests you can do, with their zone, status and level; click one to jump to it. Escape clears the search.
 - **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
-- **Quest log, both ways:** for a quest you're on, **Open in quest log** in its details, or Shift+click it, opens the game's quest log at that quest. The other way, the LorePath book button on the game's quest log, or `/lp quest`, opens the selected quest in LorePath with its details.
+- **Quest log, both ways:** for a quest you're on, **Open in quest log** in its details, or Shift+click it, opens the game's quest log at that quest. The other way, the LorePath book button on the game's quest log opens the selected quest in LorePath with its details.
 
 ### Controls
 
 | Action | How |
 | :--- | :--- |
 | Open or close | Left-click the minimap button, `/lp`, the addons menu by the minimap, or a key binding (*Options → Key Bindings → AddOns → LorePath*) |
-| Open on your current zone | `/lp here` |
-| List level ranges | `/lp levels` |
-| Settings | Right-click the minimap button or the addons-menu entry, the **Settings** button in the window, `/lp config` (or `/lp settings`, `/lp options`), or *Options → AddOns → LorePath* |
-| Find a quest | Type in the search box above the zone list, or `/lp search <name>`; Escape clears it |
+| Settings | Right-click the minimap button or the addons-menu entry, the **Settings** button in the window, `/lp config`, or *Options → AddOns → LorePath* |
+| Find a quest | Type in the search box above the zone list; Escape clears it |
 | Quest details | Click a quest; click it again to close the panel |
 | Waypoint | Ctrl+click a quest, or **Show on map** |
 | Open in your quest log | Shift+click a quest you're on, or **Open in quest log** in its details |
-| Open a quest log quest in LorePath | The LorePath book button on the game's quest log, or `/lp quest` (`/lp quest <ID>` for any quest) |
+| Open a quest log quest in LorePath | The LorePath book button on the game's quest log |
 | Collapse | Click a storyline's or heading's +/−, or **Expand all** / **Collapse all** |
 | Hide the zone list | The arrow button left of the zone name |
-| Show or hide repeatable quests | The **Repeatable** tick box, `/lp repeatable`, or the settings page |
-| Reveal a quest's story | **Reveal** in its details; or **Show spoilers** / `/lp spoilers` for every quest |
-| Show or hide the minimap button | `/lp minimap`, or the settings page |
-| Share the quest text you've collected | `/lp share`, then paste the code into a [Share quest text](https://github.com/Jacob-Haynes/LorePath/issues/new/choose) issue |
+| Show or hide repeatable quests | The **Repeatable** tick box, or the settings page |
+| Reveal a quest's story | **Reveal** in its details; or **Show spoilers** in the settings for every quest |
+| Show or hide the minimap button | The settings page |
+| Share the quest text you've collected | **Share quest text** on the settings page, or `/lp share`, then paste the code into a [Share quest text](https://github.com/Jacob-Haynes/LorePath/issues/new/choose) issue |
 | Move the window | Drag its title bar |
 | Move the minimap button | Drag it around the minimap |
 | Scroll | Mouse wheel, or Shift + wheel to scroll sideways |
@@ -104,7 +102,7 @@ Everything is saved per account in `LorePathDB` (`WTF/Account/<account>/SavedVar
 
 WoW Forever's own quests aren't in any quest database, so the only source for their story is what players see in game. LorePath saves it as you play; `/lp share` sends it to everyone:
 
-1. Type `/lp share`. A window shows a share code (it starts with `LP1:`) holding the quest text you've saved that LorePath doesn't ship yet: titles, objectives, descriptions, progress and closing text, plus gold, XP and reputation rewards. Your character names are replaced with `$N`; nothing else about you is in it.
+1. Press **Share quest text** on the settings page, or type `/lp share`. A window shows a share code (it starts with `LP1:`) holding the quest text you've saved that LorePath doesn't ship yet: titles, objectives, descriptions, progress and closing text, plus gold, XP and reputation rewards. Your character names are replaced with `$N`; nothing else about you is in it.
 2. Click the code, press Ctrl+C, and paste it into a new **Share quest text** issue. A big collection comes as several codes; send each one in its own issue.
 3. A check replies on the issue with what it added, and adds the text to a pull request. Once a maintainer has reviewed and merged it, the next release has it.
 

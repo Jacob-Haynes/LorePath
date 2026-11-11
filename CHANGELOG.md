@@ -2,9 +2,9 @@
 
 ## Unreleased
 
+- **Fewer slash commands:** just `/lp` (open or close), `/lp config` (settings) and `/lp share`. Everything the others did has a button or setting: the search box, the quest log's LorePath button, the settings page, and a new **Share quest text** button on it.
 - **Good to know:** a quest's tooltip and details show AllTheThings' note about it, when there is one, for 89 quests. For example: the item that starts *Allegiance to the Old Gods* only drops while you're on *The Essence of Aku'Mai*, and *Bodley is standing right outside the entrance to Blackrock Spire*.
 - **Battlegrounds:** Alterac Valley, Arathi Basin, Warsong Gulch and WoW Forever's own battleground have pages under a new **Battlegrounds** heading, with their 140 quests and level ranges.
-- **`/lp levels`:** lists every zone, dungeon, raid and battleground with the level range LorePath found for it.
 - **Scarlet Monastery wings:** the Graveyard and Library have their own pages, each with its level range; quests that span the monastery stay on its page.
 - **Link rewards in chat:** Shift+click an item reward in a quest's details to link it in chat, or Ctrl+click to try it on.
 - **Breadcrumbs you can't follow are hidden:** a breadcrumb that only leads to quests your character can't do no longer shows (In Search of Thaelrid for the Horde).
