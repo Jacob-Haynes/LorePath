@@ -97,6 +97,7 @@ local function ClearHistory()
 end
 local selectedZone
 local zoneRows = {}
+local searchText = "" -- while not empty, the zone list shows quest search results
 local renderedKeys = {}
 local pools = { nodes = {}, lines = {}, sections = {}, texts = {} }
 local used = { nodes = 0, lines = 0, sections = 0, texts = 0 }
@@ -174,6 +175,53 @@ local function QuestIcon(q)
     return QUEST_ICON
 end
 
+-- Zone list icons (issue #15). Zones and most instances use AllTheThings' icon
+-- for them (ns.ZoneIcons, ns.InstanceInfo[].ic); the rest fall back to a hand
+-- pick, then their continent's icon, then a generic one.
+local GENERIC_ICON = {
+    map = "Interface\\Icons\\INV_Misc_Map_01",
+    dungeon = "Interface\\Icons\\INV_Misc_Key_03",
+    raid = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+}
+-- Zones whose ATT icon is ATT's own texture, which LorePath doesn't ship.
+local ZONE_ICON_OVERRIDES = {
+    [2521] = "Interface\\Icons\\Spell_Nature_Cyclone", -- Zephras Isle, an island in the sky
+}
+
+local function ZoneIcon(zoneID)
+    if zoneID == "class" then
+        local _, token = UnitClass("player")
+        return token and ("Interface\\Icons\\ClassIcon_" .. token:sub(1, 1) .. token:sub(2):lower()) or GENERIC_ICON.map
+    elseif ns.IsSpecialPage(zoneID) then
+        return ns.ProfessionIcon(tonumber(string.match(zoneID, "%d+")))
+    end
+    local icon = ZONE_ICON_OVERRIDES[zoneID] or (ns.ZoneIcons and ns.ZoneIcons[zoneID])
+    if icon then
+        return icon
+    end
+    local kind = ns.GetInstanceKind(zoneID)
+    if kind then
+        local info = ns.InstanceInfo and ns.InstanceInfo[zoneID]
+        return info and info.ic or GENERIC_ICON[kind] or GENERIC_ICON.dungeon
+    end
+    local continent = ns.ZoneContinents and ns.ZoneContinents[zoneID]
+    if continent and continent ~= 0 and continent ~= zoneID and ns.ZoneIcons and ns.ZoneIcons[continent] then
+        return ns.ZoneIcons[continent]
+    end
+    return GENERIC_ICON.map
+end
+
+-- Icon for a zone list heading: the continent's, or Dungeons / Raids.
+local function HeadingIcon(group)
+    if group.icon then
+        return group.icon
+    end
+    if group.kind then
+        return GENERIC_ICON[group.kind] or GENERIC_ICON.dungeon
+    end
+    return group.continentID and ns.ZoneIcons and ns.ZoneIcons[group.continentID] or GENERIC_ICON.map
+end
+
 -- 1px border made of four textures, so it works without BackdropTemplate.
 local function AddBorder(f, layer)
     local edges = {}
@@ -200,6 +248,17 @@ local function SetFade(tex, r, g, b, a)
     end
 end
 
+-- How far (in pixels) the cursor must move with the button held before a press
+-- becomes a drag. Below it, a press on a quest or header is still a click.
+local PAN_THRESHOLD = 5
+
+-- Starts a possible pan of `scroll` from where the cursor is now.
+local function BeginPan(scroll)
+    local cx, cy = GetCursorPosition()
+    scroll.pan = { cx = cx, cy = cy, x = scroll:GetHorizontalScroll(), y = scroll:GetVerticalScroll() }
+    scroll.dragged = false
+end
+
 -- Makes a scroll frame scroll with the mouse wheel (shift for sideways) and pan
 -- when dragged with the left mouse button.
 local function MakeScrollable(scroll, allowPan)
@@ -218,11 +277,9 @@ local function MakeScrollable(scroll, allowPan)
     end
     scroll:EnableMouse(true)
     scroll:SetScript("OnMouseDown", function(self, button)
-        if button ~= "LeftButton" then
-            return
+        if button == "LeftButton" then
+            BeginPan(self)
         end
-        local cx, cy = GetCursorPosition()
-        self.pan = { cx = cx, cy = cy, x = self:GetHorizontalScroll(), y = self:GetVerticalScroll() }
     end)
     scroll:SetScript("OnMouseUp", function(self)
         self.pan = nil
@@ -238,11 +295,37 @@ local function MakeScrollable(scroll, allowPan)
         end
         local cx, cy = GetCursorPosition()
         local scale = self:GetEffectiveScale()
-        local x = pan.x - (cx - pan.cx) / scale
-        local y = pan.y + (cy - pan.cy) / scale
-        self:SetHorizontalScroll(math.max(0, math.min(x, self:GetHorizontalScrollRange())))
-        self:SetVerticalScroll(math.max(0, math.min(y, self:GetVerticalScrollRange())))
+        local dx, dy = (cx - pan.cx) / scale, (cy - pan.cy) / scale
+        if not self.dragged then
+            if math.abs(dx) < PAN_THRESHOLD and math.abs(dy) < PAN_THRESHOLD then
+                return
+            end
+            self.dragged = true -- from here on it's a drag: the release won't click
+            GameTooltip:Hide()
+        end
+        self:SetHorizontalScroll(math.max(0, math.min(pan.x - dx, self:GetHorizontalScrollRange())))
+        self:SetVerticalScroll(math.max(0, math.min(pan.y + dy, self:GetVerticalScrollRange())))
     end)
+end
+
+-- Quest boxes and storyline headers sit on top of the graph and take the mouse,
+-- so they start the graph's pan themselves. A press that turns into a drag pans;
+-- one that doesn't is a normal click.
+local function StartGraphPan(_, button)
+    if button == "LeftButton" and frame and frame.graphScroll then
+        BeginPan(frame.graphScroll)
+    end
+end
+
+-- True if the press now being released was a drag (so it shouldn't click).
+local function WasDragged()
+    return frame and frame.graphScroll and frame.graphScroll.dragged or false
+end
+
+-- True while a drag is moving the graph (so hovering doesn't pop up tooltips).
+local function IsPanning()
+    local scroll = frame and frame.graphScroll
+    return scroll and scroll.pan ~= nil and scroll.dragged or false
 end
 
 -- Shared with Detail.lua (the quest detail panel), so both draw quests the same way.
@@ -254,6 +337,7 @@ ns.ui = {
     AddBorder = AddBorder,
     SetFade = SetFade,
     MakeScrollable = MakeScrollable,
+    ZoneIcon = ZoneIcon,
     STATUS_STYLE = STATUS_STYLE,
     STATUS_TEXT = STATUS_TEXT,
     DIFFICULTY = DIFFICULTY,
@@ -301,11 +385,11 @@ local function ResetPools()
     end
 end
 
-local function ShowNodeTooltip(node)
-    local id, storyline = node.questID, node.storyline
+-- A quest's tooltip, shown by its box in the graph or its row in search results.
+local function ShowQuestTooltip(owner, id, storyline)
     local q = ns.Quests[id]
     local status = ns.GetStatus(id)
-    GameTooltip:SetOwner(node, "ANCHOR_RIGHT")
+    GameTooltip:SetOwner(owner, "ANCHOR_RIGHT")
     GameTooltip:AddLine(ns.GetQuestNameOrID(id), 1, 0.82, 0)
     local dc = DifficultyColor(q.l or 1)
     GameTooltip:AddLine("Requires level " .. (q.l or 1), dc[1], dc[2], dc[3])
@@ -327,6 +411,8 @@ local function ShowNodeTooltip(node)
     local statusText = STATUS_TEXT[status]
     if status == S.LEVEL and lock == "minrep" then
         statusText = "Your reputation is too low"
+    elseif status == S.LEVEL and lock == "skill" then
+        statusText = ns.HasProfession(q.sk) and "Your skill is too low" or "You don't have this profession"
     elseif status == S.MISSED and lock == "maxrep" and not q.bc then
         statusText = "No longer available (your reputation is too high)"
     end
@@ -339,7 +425,7 @@ local function ShowNodeTooltip(node)
     elseif status == S.LEVEL and q.l and (UnitLevel("player") or 1) < q.l then
         GameTooltip:AddLine("Needs level " .. q.l, 0.9, 0.9, 0.9)
     elseif status == S.LEVEL and lock == "skill" then
-        GameTooltip:AddLine("Needs profession skill " .. q.sl, 0.9, 0.9, 0.9)
+        GameTooltip:AddLine("Needs " .. ns.SkillText(q), 0.9, 0.9, 0.9)
     elseif status == S.LEVEL and lock == "minrep" then
         GameTooltip:AddLine("Needs " .. ns.ReputationText(q.mr), 0.9, 0.9, 0.9, true)
     end
@@ -360,6 +446,10 @@ local function ShowNodeTooltip(node)
             GameTooltip:AddLine("Leads to: " .. NameList(after), 0.75, 0.75, 0.75, true)
         end
     end
+    if ns.IsSpecialPage(selectedZone) then
+        -- The Class and profession pages gather quests from every zone.
+        GameTooltip:AddLine("Zone: " .. ns.GetMapName(q.z), 0.75, 0.75, 0.75)
+    end
     if q.m then
         GameTooltip:AddLine(string.format("Starts in %s (%.1f, %.1f)", ns.GetMapName(q.m), q.x, q.y), 0.75, 0.75, 0.75)
     else
@@ -377,7 +467,17 @@ local function ShowNodeTooltip(node)
     if q.m then
         GameTooltip:AddLine("Ctrl+click to set a waypoint where it starts.", 0.5, 0.8, 1)
     end
+    if status == S.ACTIVE then
+        GameTooltip:AddLine("Shift+click to open it in your quest log.", 0.5, 0.8, 1)
+    end
     GameTooltip:Show()
+end
+
+local function ShowNodeTooltip(node)
+    if IsPanning() then
+        return -- passing over quests while dragging the graph
+    end
+    ShowQuestTooltip(node, node.questID, node.storyline)
 end
 
 local function AcquireNode(parent)
@@ -416,10 +516,18 @@ local function AcquireNode(parent)
         node.flash:Hide()
         node:SetScript("OnEnter", ShowNodeTooltip)
         node:SetScript("OnLeave", GameTooltip_Hide)
-        -- Click opens the detail panel (again to close it); Ctrl+click sets the waypoint.
+        -- Click opens the detail panel (again to close it); Ctrl+click sets the waypoint;
+        -- Shift+click on a quest you're on opens it in the game's quest log.
+        -- Dragging from a quest pans the graph instead.
+        node:SetScript("OnMouseDown", StartGraphPan)
         node:SetScript("OnClick", function(self)
+            if WasDragged() then
+                return
+            end
             if IsControlKeyDown() then
                 ns.ShowQuestStart(self.questID)
+            elseif IsShiftKeyDown() and ns.IsOnQuest(self.questID) then
+                ns.OpenInQuestLog(self.questID)
             else
                 ns.ToggleDetail(self.questID)
             end
@@ -491,10 +599,16 @@ local function AcquireSection(parent)
         local stepHL = s.stepButton:CreateTexture(nil, "HIGHLIGHT")
         stepHL:SetAllPoints()
         stepHL:SetColorTexture(1, 1, 1, 0.08)
+        s.stepButton:SetScript("OnMouseDown", StartGraphPan)
         s.stepButton:SetScript("OnClick", function(self)
-            ns.FocusQuest(self.targetQuest)
+            if not WasDragged() then
+                ns.FocusQuest(self.targetQuest)
+            end
         end)
         s.stepButton:SetScript("OnEnter", function(self)
+            if IsPanning() then
+                return
+            end
             GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
             GameTooltip:AddLine(ns.GetQuestNameOrID(self.targetQuest), 1, 0.82, 0)
             local q = ns.Quests[self.targetQuest]
@@ -513,8 +627,11 @@ local function AcquireSection(parent)
         local hl = s:CreateTexture(nil, "HIGHLIGHT")
         hl:SetAllPoints()
         SetFade(hl, 1, 0.82, 0, 0.10)
+        s:SetScript("OnMouseDown", StartGraphPan)
         s:SetScript("OnClick", function(self)
-            SetSectionCollapsed(self.key, not self.collapsed)
+            if not WasDragged() then
+                SetSectionCollapsed(self.key, not self.collapsed)
+            end
         end)
         pools.sections[used.sections] = s
     end
@@ -581,7 +698,7 @@ local function StyleNode(node, id, storyline)
         if q.l and playerLevel < q.l then
             node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Lv " .. q.l .. "|r")
         else
-            node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Needs skill " .. (q.sl or "?") .. "|r")
+            node.sub:SetText(Hex(DIFFICULTY.impossible) .. "Needs " .. ns.SkillText(q) .. "|r")
         end
     else
         local short = STATUS_SHORT[status]
@@ -824,6 +941,7 @@ RenderZone = function()
 
     local done, total, repeatables = ns.GetZoneProgress(selectedZone)
     frame.zoneTitle:SetText(ns.GetMapName(selectedZone))
+    frame.zoneIcon:SetTexture(ZoneIcon(selectedZone))
     local summary = string.format("%d / %d quests done", done, total)
     if repeatables > 0 then
         summary = summary .. "  -  " .. Hex(REPEATABLE_BLUE) .. repeatables .. " repeatable|r"
@@ -903,10 +1021,25 @@ RenderZoneList = function()
             row.toggle = row:CreateTexture(nil, "ARTWORK")
             row.toggle:SetSize(12, 12)
             row.toggle:SetPoint("LEFT", 4, 0)
+            row.icon = row:CreateTexture(nil, "ARTWORK")
+            row.icon:SetSize(16, 16)
+            row.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+            -- A small tick on the icon of a zone you've finished, like the quest boxes.
+            row.check = row:CreateTexture(nil, "OVERLAY")
+            row.check:SetSize(12, 12)
+            row.check:SetPoint("BOTTOMRIGHT", row.icon, "BOTTOMRIGHT", 4, -3)
+            row.check:SetTexture("Interface\\RaidFrame\\ReadyCheck-Ready")
             row.text = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
             row.text:SetJustifyH("LEFT")
+            row.text:SetWordWrap(false)
             row.count = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
             row.count:SetPoint("RIGHT", -8, 0)
+            -- Second line, used by search results only.
+            row.sub = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+            row.sub:SetPoint("BOTTOMLEFT", 10, 4)
+            row.sub:SetPoint("RIGHT", row.count, "LEFT", -4, 0)
+            row.sub:SetJustifyH("LEFT")
+            row.sub:SetWordWrap(false)
             row.lineL = row:CreateTexture(nil, "ARTWORK")
             row.lineL:SetHeight(1)
             row.lineR = row:CreateTexture(nil, "ARTWORK")
@@ -928,15 +1061,96 @@ RenderZoneList = function()
         row:Show()
         row.top = y
         y = y + height
+        -- Rows are reused between the zone list and search results.
+        row.zoneID, row.continent, row.resultQuest = nil, nil, nil
+        row.selected:Hide()
+        row.toggle:Hide()
+        row.lineL:Hide()
+        row.lineR:Hide()
+        row.sub:Hide()
+        row.icon:Hide()
+        row.check:Hide()
+        row.count:SetText("")
+        row:SetScript("OnEnter", nil)
+        row:SetScript("OnLeave", nil)
         return row
     end
 
-    -- Group zones by continent, with totals for each heading.
+    -- Searching: quest results replace the zone list.
+    if searchText ~= "" then
+        local ids, total = ns.SearchQuests(searchText)
+        local header = NextRow(22)
+        header.text:SetFontObject("GameFontNormalSmall")
+        header.text:ClearAllPoints()
+        header.text:SetPoint("LEFT", 10, 0)
+        header.text:SetPoint("RIGHT", -8, 0)
+        header.text:SetTextColor(0.85, 0.85, 0.85)
+        if total == 0 then
+            header.text:SetText("No quests match")
+        elseif total > #ids then
+            header.text:SetText(string.format("First %d of %d quests", #ids, total))
+        else
+            header.text:SetText(total == 1 and "1 quest" or (total .. " quests"))
+        end
+        header:SetScript("OnClick", nil)
+        for _, id in ipairs(ids) do
+            local q = ns.Quests[id]
+            local status = ns.GetStatus(id)
+            local row = NextRow(32)
+            row.resultQuest = id
+            row.text:SetFontObject("GameFontHighlightSmall")
+            row.text:ClearAllPoints()
+            row.text:SetPoint("TOPLEFT", 10, -4)
+            row.text:SetPoint("RIGHT", row.count, "LEFT", -4, 0)
+            row.text:SetText(ns.GetQuestNameOrID(id))
+            -- Coloured as in the graph: by status, else by difficulty.
+            local tc = STATUS_STYLE[status].text or DifficultyColor(q.l or 1)
+            if status == S.LEVEL and ns.GetLockReason(id) ~= "minrep" then
+                tc = { 0.85, 0.85, 0.85 }
+            end
+            row.text:SetTextColor(tc[1], tc[2], tc[3])
+            row.sub:SetText(ns.GetMapName(q.z) .. " - " .. STATUS_SHORT[status])
+            row.sub:Show()
+            row.count:SetText(Hex(DifficultyColor(q.l or 1)) .. (q.l or 1) .. "|r")
+            row:SetScript("OnClick", function(self)
+                if IsControlKeyDown() then
+                    ns.ShowQuestStart(self.resultQuest)
+                else
+                    ns.FocusQuest(self.resultQuest)
+                end
+            end)
+            row:SetScript("OnEnter", function(self)
+                ShowQuestTooltip(self, self.resultQuest)
+            end)
+            row:SetScript("OnLeave", GameTooltip_Hide)
+        end
+        list:SetHeight(y + 4)
+        return
+    end
+
+    -- Class and Professions first (issue #8), then zones grouped by continent,
+    -- with totals for each heading.
     local groups, order = {}, {}
+    for _, special in ipairs(ns.GetSpecialGroups()) do
+        local g = { name = special.name, zones = {}, done = 0, total = 0, repeatables = 0,
+                    icon = special.name == "Class" and ZoneIcon("class") or "Interface\\Icons\\INV_Pick_02" }
+        for _, page in ipairs(special.pages) do
+            local z = { id = page, name = ns.GetMapName(page) }
+            local skill = tonumber(string.match(page, "^prof:(%d+)$"))
+            z.greyed = skill ~= nil and not ns.HasProfession(skill) -- a profession you don't have
+            z.done, z.total, z.repeatables = ns.GetZoneProgress(page)
+            g.done, g.total = g.done + z.done, g.total + z.total
+            g.repeatables = g.repeatables + z.repeatables
+            table.insert(g.zones, z)
+        end
+        groups[g.name] = g
+        table.insert(order, g)
+    end
     for _, z in ipairs(SortedZones()) do
         local g = groups[z.continentName]
         if not g then
-            g = { name = z.continentName, zones = {}, done = 0, total = 0, repeatables = 0 }
+            g = { name = z.continentName, zones = {}, done = 0, total = 0, repeatables = 0, kind = z.instance,
+                  continentID = (not z.instance and z.continent ~= 0 and z.continent ~= z.id) and z.continent or nil }
             groups[z.continentName] = g
             table.insert(order, g)
         end
@@ -962,9 +1176,14 @@ RenderZoneList = function()
         heading.count:SetText("")
         heading.lineL:Show()
         heading.lineR:Show()
+        heading.icon:Show()
+        heading.icon:SetTexture(HeadingIcon(g))
+        heading.icon:ClearAllPoints()
+        heading.icon:SetPoint("RIGHT", heading.text, "LEFT", -5, 0)
+        heading.check:Hide()
         heading.lineL:ClearAllPoints()
         heading.lineL:SetPoint("LEFT", heading.toggle, "RIGHT", 6, 0)
-        heading.lineL:SetPoint("RIGHT", heading.text, "LEFT", -6, 0)
+        heading.lineL:SetPoint("RIGHT", heading.icon, "LEFT", -6, 0)
         heading.lineR:ClearAllPoints()
         heading.lineR:SetPoint("LEFT", heading.text, "RIGHT", 6, 0)
         heading.lineR:SetPoint("RIGHT", heading, "RIGHT", -8, 0)
@@ -993,12 +1212,20 @@ RenderZoneList = function()
                 row.lineL:Hide()
                 row.lineR:Hide()
                 row.text:SetFontObject("GameFontHighlightSmall")
+                row.icon:Show()
+                row.icon:SetTexture(ZoneIcon(z.id))
+                row.icon:ClearAllPoints()
+                row.icon:SetPoint("LEFT", 12, 0)
                 row.text:ClearAllPoints()
-                row.text:SetPoint("LEFT", 14, 0)
+                row.text:SetPoint("LEFT", row.icon, "RIGHT", 5, 0)
                 row.text:SetPoint("RIGHT", row.count, "LEFT", -4, 0)
                 row.text:SetText(z.name)
                 local complete = z.total > 0 and z.done == z.total
-                if complete then
+                row.check:SetShown(complete)
+                row.icon:SetDesaturated(z.greyed or false)
+                if z.greyed then
+                    row.text:SetTextColor(0.5, 0.5, 0.5)
+                elseif complete then
                     row.text:SetTextColor(0.42, 0.83, 0.37)
                 else
                     row.text:SetTextColor(1, 1, 1)
@@ -1073,6 +1300,15 @@ function ns.FocusQuest(id)
         return
     end
     local zone = q.z
+    -- On the Class or a profession page, stay there if the quest is on it.
+    if ns.IsSpecialPage(selectedZone) then
+        for _, other in ipairs(ns.GetZoneQuests(selectedZone)) do
+            if other == id then
+                zone = selectedZone
+                break
+            end
+        end
+    end
     local storylines, others = ns.BuildStorylines(zone)
     local key
     for _, storyline in ipairs(storylines) do
@@ -1105,6 +1341,9 @@ function ns.FocusQuest(id)
         if z.id == zone then
             CollapsedTable("collapsedContinents")[z.continentName] = nil
         end
+    end
+    if ns.IsSpecialPage(zone) then
+        CollapsedTable("collapsedContinents")[zone == "class" and "Class" or "Professions"] = nil
     end
 
     -- Remember where you were, for the Back button.
@@ -1266,8 +1505,52 @@ local function CreateMainFrame()
     listInset:SetPoint("BOTTOMLEFT", f, "BOTTOMLEFT", 10, 32)
     listInset:SetWidth(LIST_W)
     f.listInset = listInset
+    -- Quest search, at the top of the zone list.
+    local ok, search = pcall(CreateFrame, "EditBox", "LorePathSearchBox", listInset, "SearchBoxTemplate")
+    if not ok then
+        search = CreateFrame("EditBox", "LorePathSearchBox", listInset, "InputBoxTemplate")
+    end
+    search:SetHeight(20)
+    search:SetPoint("TOPLEFT", listInset, "TOPLEFT", 12, -6)
+    search:SetPoint("TOPRIGHT", listInset, "TOPRIGHT", -8, -6)
+    search:SetAutoFocus(false)
+    search:SetMaxLetters(60)
+    if type(search.Instructions) == "table" then
+        search.Instructions:SetText("Search quests")
+    end
+    search:SetScript("OnTextChanged", function(self, userInput)
+        if type(SearchBoxTemplate_OnTextChanged) == "function" and type(self.Instructions) == "table" then
+            pcall(SearchBoxTemplate_OnTextChanged, self) -- placeholder text and clear button
+        end
+        local text = self:GetText() or ""
+        if text ~= searchText then
+            searchText = text
+            f.listScroll:SetVerticalScroll(0)
+            RenderZoneList()
+            if text == "" then
+                ScrollListToSelected()
+            end
+        end
+    end)
+    search:SetScript("OnEscapePressed", function(self)
+        self:SetText("")
+        self:GetScript("OnTextChanged")(self, true) -- in case SetText didn't fire it
+        self:ClearFocus()
+    end)
+    search:SetScript("OnEnterPressed", function(self)
+        self:ClearFocus()
+    end)
+    search:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+        GameTooltip:AddLine("Search quests", 1, 0.82, 0)
+        GameTooltip:AddLine("Type part of a quest's name, or its ID. Click a result to show it; Escape clears the search.", 1, 1, 1, true)
+        GameTooltip:Show()
+    end)
+    search:SetScript("OnLeave", GameTooltip_Hide)
+    f.searchBox = search
+
     local listScroll = CreateFrame("ScrollFrame", nil, listInset)
-    listScroll:SetPoint("TOPLEFT", 4, -4)
+    listScroll:SetPoint("TOPLEFT", 4, -30)
     listScroll:SetPoint("BOTTOMRIGHT", -4, 4)
     local listContent = CreateFrame("Frame", nil, listScroll)
     listContent:SetSize(LIST_W - 8, 10)
@@ -1314,8 +1597,13 @@ local function CreateMainFrame()
     listToggle:SetScript("OnLeave", GameTooltip_Hide)
     f.listToggle = listToggle
 
+    local zoneIcon = f:CreateTexture(nil, "ARTWORK")
+    zoneIcon:SetSize(22, 22)
+    zoneIcon:SetPoint("LEFT", listToggle, "RIGHT", 6, 0)
+    zoneIcon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+    f.zoneIcon = zoneIcon
     local zoneTitle = f:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    zoneTitle:SetPoint("LEFT", listToggle, "RIGHT", 6, 0)
+    zoneTitle:SetPoint("LEFT", zoneIcon, "RIGHT", 6, 0)
     zoneTitle:SetJustifyH("LEFT")
     f.zoneTitle = zoneTitle
     local zoneSummary = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
@@ -1420,8 +1708,10 @@ local function CreateMainFrame()
         GameTooltip:AddLine("Using LorePath", 1, 0.82, 0)
         GameTooltip:AddLine("Click a quest for its details; click it again to close them.", 1, 1, 1, true)
         GameTooltip:AddLine("Ctrl+click a quest to set a waypoint where it starts.", 1, 1, 1, true)
+        GameTooltip:AddLine("Search quests by name or ID in the box above the zone list, or with /lp search <name>.", 1, 1, 1, true)
+        GameTooltip:AddLine("Shift+click a quest you're on to open it in your quest log.", 1, 1, 1, true)
         GameTooltip:AddLine("Click \"Next\" or \"First finish\" in a storyline header to jump to that quest; Back returns you.", 1, 1, 1, true)
-        GameTooltip:AddLine("Drag to pan; Shift+mouse wheel scrolls sideways.", 1, 1, 1, true)
+        GameTooltip:AddLine("Drag anywhere on the graph to pan, even from a quest; Shift+mouse wheel scrolls sideways.", 1, 1, 1, true)
         GameTooltip:AddLine(" ")
         GameTooltip:AddLine("Level colours, as in your quest log:", 1, 0.82, 0)
         GameTooltip:AddLine(Hex(DIFFICULTY.impossible) .. "too high|r  " .. Hex(DIFFICULTY.difficult) .. "your level|r  "
@@ -1518,6 +1808,28 @@ function ns.Toggle(openCurrentZone)
         frame:Show()
     end
     ScrollListToSelected()
+end
+
+-- Opens the window with a quest search filled in (for /lp search), showing the
+-- zone list if it was hidden. With no text, just puts the cursor in the box.
+function ns.Search(text)
+    frame = frame or CreateMainFrame()
+    if not frame:IsShown() then
+        frame:Show()
+    end
+    if LorePathDB and LorePathDB.listHidden then
+        LorePathDB.listHidden = nil
+        ApplyListVisibility(frame)
+        RenderZone()
+    end
+    text = text or ""
+    frame.searchBox:SetText(text)
+    if frame.searchBox:GetScript("OnTextChanged") then
+        frame.searchBox:GetScript("OnTextChanged")(frame.searchBox, false)
+    end
+    if text == "" then
+        frame.searchBox:SetFocus()
+    end
 end
 
 -- Global so Bindings.xml can call it.

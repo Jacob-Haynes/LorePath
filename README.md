@@ -14,7 +14,8 @@ LorePath supports English game clients only.
 
 ## What it shows
 
-- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons and raids get their own pages under **Dungeons** and **Raids** headings, and inside an instance the window opens on its page. Headings collapse, and the whole list can be hidden to give the graph more room.
+- **Class and Professions:** at the top of the zone list, **Class** gathers every quest for your class from all zones, so class chains that travel (say, from a capital city to another zone) show as one storyline. **Professions** has a page for each profession you have, with its quests. Their tooltips say which zone each quest is in. Quests your skill is too low for say what they need, for example *Needs Leatherworking 225*.
+- **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons and raids get their own pages under **Dungeons** and **Raids** headings, and inside an instance the window opens on its page. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and the whole list can be hidden to give the graph more room.
 - **Storylines:** each page's quest chains, drawn left to right from the first quest to the last, with lines joining each quest to the ones it unlocks. Each storyline can be collapsed, and finished ones start collapsed. **Expand all** and **Collapse all** sit at the top.
 - **Other quests:** standalone quests with no chain, under each page's storylines.
 - **Only your quests:** quests for another faction, race or class are left out. Profession quests show only if you have that profession.
@@ -41,8 +42,10 @@ LorePath supports English game clients only.
   - its address on WarcraftDB, to copy, at the bottom.
 
   **No spoilers by default:** a quest you haven't started shows "Find what awaits you." with a **Reveal** button, instead of its objectives and story. A quest in your log shows its objectives and description, but not how it ends. A completed quest shows everything. Reveal lasts until you look at another quest. **Show spoilers** in the settings, or `/lp spoilers`, shows everything always.
+- **Search:** type part of a quest's name, or its ID, in the box above the zone list. The list shows up to 50 matching quests you can do, with their zone, status and level; click one to jump to it. Escape clears the search. `/lp search <name>` opens LorePath with the search filled in.
 - **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
+- **Quest log, both ways:** for a quest you're on, **Open in quest log** in its details, or Shift+click it, opens the game's quest log at that quest. The other way, the LorePath book button on the game's quest log, or `/lp quest`, opens the selected quest in LorePath with its details.
 
 ### Controls
 
@@ -51,8 +54,11 @@ LorePath supports English game clients only.
 | Open or close | Left-click the minimap button, `/lp`, the addons menu by the minimap, or a key binding (*Options → Key Bindings → AddOns → LorePath*) |
 | Open on your current zone | `/lp here` |
 | Settings | Right-click the minimap button or the addons-menu entry, the **Settings** button in the window, `/lp config` (or `/lp settings`, `/lp options`), or *Options → AddOns → LorePath* |
+| Find a quest | Type in the search box above the zone list, or `/lp search <name>`; Escape clears it |
 | Quest details | Click a quest; click it again to close the panel |
 | Waypoint | Ctrl+click a quest, or **Show on map** |
+| Open in your quest log | Shift+click a quest you're on, or **Open in quest log** in its details |
+| Open a quest log quest in LorePath | The LorePath book button on the game's quest log, or `/lp quest` (`/lp quest <ID>` for any quest) |
 | Collapse | Click a storyline's or heading's +/−, or **Expand all** / **Collapse all** |
 | Hide the zone list | The arrow button left of the zone name |
 | Show or hide repeatable quests | The **Repeatable** tick box, `/lp repeatable`, or the settings page |
@@ -62,7 +68,7 @@ LorePath supports English game clients only.
 | Move the window | Drag its title bar |
 | Move the minimap button | Drag it around the minimap |
 | Scroll | Mouse wheel, or Shift + wheel to scroll sideways |
-| Pan around a large graph | Drag with the left mouse button |
+| Pan around a large graph | Drag with the left mouse button, from anywhere on the graph, even on a quest or a storyline header |
 | Close | Escape |
 
 `/lorepath` works the same as `/lp`, and `/lp help` lists the commands and shows your version.
@@ -75,6 +81,7 @@ LorePath supports English game clients only.
 | Open on the zone you're in | On | Each time the window opens, it jumps to your current zone (or instance). Off: it reopens on the last page you looked at. |
 | Hide finished storylines | Off | Leaves out storylines where every quest is done. |
 | Show standalone quests | On | Lists quests that aren't part of a chain under each page's storylines. |
+| Show professions you don't have | Off | Lists every profession under **Professions**, with the ones you don't have greyed out and their quests locked. |
 | Show repeatable quests | On | Shows daily and repeatable quests, in blue. Same as the **Repeatable** tick box. |
 | Show spoilers | Off | Shows the full story of every quest in its details. Off: quests you haven't started, and how quests in your log end, stay hidden until you press **Reveal**. |
 | Show quest levels on tiles | On | Shows each quest's minimum level on its tile. Quests that are too high level always show it, in red. |

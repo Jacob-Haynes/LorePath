@@ -456,8 +456,12 @@ local function Render(id)
     local dc = UI.DifficultyColor(q.l or 1)
     AddText(UI.Hex(dc) .. "Requires level " .. (q.l or 1) .. "|r", "GameFontHighlightSmall", nil, 4)
     local sc = (status == S.DONE or status == S.ACTIVE or status == S.REPEATABLE) and style.border or style.text or { 1, 1, 1 }
-    AddText(UI.STATUS_TEXT[status], "GameFontHighlightSmall", sc, 2)
     local lock = ns.GetLockReason(id)
+    local statusText = UI.STATUS_TEXT[status]
+    if status == S.LEVEL and lock == "skill" then
+        statusText = ns.HasProfession(q.sk) and "Your skill is too low" or "You don't have this profession"
+    end
+    AddText(statusText, "GameFontHighlightSmall", sc, 2)
     if status == S.BLOCKED then
         local missing = ns.MissingPrereq(id)
         if missing then
@@ -466,8 +470,8 @@ local function Render(id)
         end
     elseif lock == "minrep" and q.mr then
         AddText("Needs " .. ns.ReputationText(q.mr), "GameFontHighlightSmall", { 0.9, 0.9, 0.9 }, 2)
-    elseif lock == "skill" and q.sl then
-        AddText("Needs profession skill " .. q.sl, "GameFontHighlightSmall", { 0.9, 0.9, 0.9 }, 2)
+    elseif lock == "skill" then
+        AddText("Needs " .. ns.SkillText(q), "GameFontHighlightSmall", { 0.9, 0.9, 0.9 }, 2)
     end
     if q.bc then
         AddText("Breadcrumb: it leads you to another quest.", "GameFontDisableSmall", nil, 2)
@@ -486,11 +490,21 @@ local function Render(id)
             AddText("Quest giver: " .. name, "GameFontHighlightSmall", nil, 2)
         end
     end
+    -- "Show on map" when the start is known; "Open in quest log" beside it while
+    -- the quest is in your log.
+    local onQuest = IsOnQuest(id)
     panel.mapButton:SetShown(q.m ~= nil)
-    if q.m then
+    panel.logButton:SetShown(onQuest)
+    if q.m or onQuest then
         cursor = cursor + 6
-        panel.mapButton:ClearAllPoints()
-        panel.mapButton:SetPoint("TOPLEFT", content, "TOPLEFT", 8, -cursor)
+        local x = 8
+        for _, b in ipairs({ panel.mapButton, panel.logButton }) do
+            if b:IsShown() then
+                b:ClearAllPoints()
+                b:SetPoint("TOPLEFT", content, "TOPLEFT", x, -cursor)
+                x = x + b:GetWidth() + 6
+            end
+        end
         cursor = cursor + 22
     end
 
@@ -660,6 +674,21 @@ function ns.ShowDetail(id)
             ns.ShowQuestStart(ns.detailQuest)
         end)
         panel.mapButton = map
+
+        local log = CreateFrame("Button", nil, content, "UIPanelButtonTemplate")
+        log:SetSize(130, 20)
+        log:SetText("Open in quest log")
+        log:SetScript("OnClick", function()
+            ns.OpenInQuestLog(ns.detailQuest)
+        end)
+        log:SetScript("OnEnter", function(self)
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+            GameTooltip:AddLine("Open in quest log", 1, 0.82, 0)
+            GameTooltip:AddLine("Shows this quest in the game's quest log, with its live objectives. Shift+click a quest in the graph does the same.", 1, 1, 1, true)
+            GameTooltip:Show()
+        end)
+        log:SetScript("OnLeave", GameTooltip_Hide)
+        panel.logButton = log
 
         -- Read-only text box holding the WarcraftDB address: click selects it all.
         local box = CreateFrame("EditBox", nil, content, "InputBoxTemplate")

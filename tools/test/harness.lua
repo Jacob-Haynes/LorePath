@@ -12,6 +12,7 @@ local function MockObject(kind)
         SetScript = function(self, name, fn) self.__scripts[name] = fn end,
         GetScript = function(self, name) return self.__scripts[name] end,
         SetText = function(self, t) self.__text = t end,
+        SetTexture = function(self, t) self.__texture = t end,
         GetText = function(self) return self.__text end,
         GetWidth = function(self) return self.__w end,
         GetHeight = function(self) return self.__h end,
@@ -71,10 +72,10 @@ wipe = function(t) for k in pairs(t) do t[k] = nil end return t end
 C_Timer = { After = function(_, fn) table.insert(harness.timers, fn) end }
 harness.timers = {}
 function harness.RunTimers() local t = harness.timers; harness.timers = {}; for _, fn in ipairs(t) do fn() end end
-IsShiftKeyDown = function() return false end
+IsShiftKeyDown = function() return harness.shift or false end
 IsControlKeyDown = function() return harness.ctrl or false end
-IsMouseButtonDown = function() return false end
-GetCursorPosition = function() return 0, 0 end
+IsMouseButtonDown = function() return harness.mouseDown or false end
+GetCursorPosition = function() return harness.cx or 0, harness.cy or 0 end
 InCombatLockdown = function() return false end
 -- Errors that ns.Safely catches are recorded here; the test run fails if any are unexpected.
 harness.errors = {}

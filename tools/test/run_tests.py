@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "Share.lua", "Settings.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -524,7 +524,101 @@ box = g.LorePathDetailFrame["linkBox"]
 check(box is not None and box["__text"] == "https://forever.warcraftdb.com/data/quest/783", "the panel shows the quest's WarcraftDB address to copy")
 box["__scripts"]["OnTextChanged"](box, True)
 check(box["__text"] == "https://forever.warcraftdb.com/data/quest/783", "typing in it can't change the address")
+
+# --- Open in quest log (issue #19) ---
+log_button = g.LorePathDetailFrame["logButton"]
+check(log_button is not None and not log_button.IsShown(log_button), "a quest you're not on has no 'Open in quest log' button")
+check(ns.OpenInQuestLog(783) is False, "OpenInQuestLog refuses a quest that isn't in your log")
+char["log"][783] = True
+ns.RefreshDetail()
+check(log_button.IsShown(log_button), "a quest in your log shows 'Open in quest log' in its details")
+# Recorders are Lua functions: LorePath checks type(fn) == "function", which Python callables fail.
+rec = lua.eval("""function()
+    local r = { opened = {}, selected = {}, toggled = 0 }
+    r.open = function(id) table.insert(r.opened, id) end
+    r.select = function(id) table.insert(r.selected, id) end
+    r.toggle = function() r.toggled = r.toggled + 1 end
+    return r
+end""")
+def opened():
+    return list(r["opened"].values())
+r = rec()
+g.QuestMapFrame_OpenToQuestDetails = r["open"]
+log_button["__scripts"]["OnClick"](log_button)
+check(opened() == [783], f"the button opens the modern quest log at that quest ({opened()})")
+g.QuestMapFrame_OpenToQuestDetails = None
+g.C_QuestLog.SetSelectedQuest = r["select"]
+g.ToggleQuestLog = r["toggle"]
+check(ns.OpenInQuestLog(783) is True and list(r["selected"].values()) == [783] and r["toggled"] == 1,
+      "without the modern quest log, it selects the quest and opens the log")
+g.ToggleQuestLog = None
+check(ns.OpenInQuestLog(783) is False, "with no quest log function at all, it says so instead of erroring")
+r = rec()
+g.QuestMapFrame_OpenToQuestDetails = r["open"]
+g.InCombatLockdown = lua.eval("function() return true end")
+check(ns.OpenInQuestLog(783) is False and opened() == [], "it doesn't try to open the quest log in combat")
+g.InCombatLockdown = lua.eval("function() return false end")
+char["log"][783] = None
 ns.HideDetail()
+
+# Shift+click a quest tile: opens the quest log if you're on it, else acts like a plain click.
+tile = [f for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)][0]
+tid = tile["questID"]
+char["log"][tid] = True
+g.GameTooltip.lines = lua.table()
+tile["__scripts"]["OnEnter"](tile)
+check(any("Shift+click to open it in your quest log" in str(l) for l in g.GameTooltip.lines.values()),
+      "a quest in your log mentions Shift+click in its tooltip")
+harness["shift"] = True
+tile["__scripts"]["OnClick"](tile)
+check(opened() == [tid] and not g.LorePathDetailFrame.IsShown(g.LorePathDetailFrame),
+      "Shift+clicking a quest you're on opens the quest log, not the details")
+char["log"][tid] = None
+tile["__scripts"]["OnClick"](tile)
+harness["shift"] = False
+check(opened() == [tid] and g.LorePathDetailFrame.IsShown(g.LorePathDetailFrame) and ns.detailQuest == tid,
+      "Shift+clicking a quest you're not on opens its details as usual")
+g.QuestMapFrame_OpenToQuestDetails = None
+ns.HideDetail()
+
+# --- The other way: from the game's quest log to LorePath ---
+check(ns.questLogButton is None, "with no quest log frame loaded, no LorePath button is made")
+details = harness.MockObject("Frame")
+g.QuestMapFrame = lua.table_from({"DetailsFrame": details})
+harness.Fire("ADDON_LOADED", "Blizzard_WorldMap")
+qlb = ns.questLogButton
+check(qlb is not None and same(qlb["__parent"], details), "once the quest log loads, it gets a LorePath button")
+harness.Fire("ADDON_LOADED", "SomethingElse")
+check(same(ns.questLogButton, qlb), "and only one")
+g.C_QuestLog.GetSelectedQuest = lua.eval(f"function() return {tid} end")
+check(ns.SelectedLogQuest() == tid, "the selected quest log quest is read with C_QuestLog.GetSelectedQuest")
+frame.Hide(frame)
+qlb["__scripts"]["OnClick"](qlb)
+check(frame.IsShown(frame) and ns.focusedQuest == tid and ns.detailQuest == tid
+      and g.LorePathDetailFrame.IsShown(g.LorePathDetailFrame),
+      "the button opens LorePath on that quest, with its details")
+g.GameTooltip.lines = lua.table()
+qlb["__scripts"]["OnEnter"](qlb)
+check(any("Show in LorePath" in str(l) for l in g.GameTooltip.lines.values()), "the button has a tooltip")
+ns.HideDetail()
+g.C_QuestLog.GetSelectedQuest = lua.eval("function() return 0 end")
+g.GetQuestLogSelection = lua.eval("function() return 3 end")
+g.C_QuestLog.GetInfo = lua.eval(f"function(i) if i == 3 then return {{ questID = {tid} }} end end")
+check(ns.SelectedLogQuest() == tid, "a classic quest log's selection (a log index) works too")
+g.GetQuestLogSelection = None
+g.C_QuestLog.GetInfo = None
+check(ns.SelectedLogQuest() is None and ns.ShowInLorePath(None) is False, "with nothing selected, it says so")
+check(ns.ShowInLorePath(999999) is False, "a quest LorePath doesn't have isn't opened")
+g.SlashCmdList["LOREPATH"](f"quest {tid}")
+check(ns.detailQuest == tid, f"/lp quest {tid} opens that quest")
+ns.HideDetail()
+g.C_QuestLog.GetSelectedQuest = lua.eval(f"function() return {tid} end")
+g.SlashCmdList["LOREPATH"]("quest")
+check(ns.detailQuest == tid, "/lp quest opens the quest selected in your quest log")
+g.C_QuestLog.GetSelectedQuest = lua.eval("function() return 0 end")
+g.QuestMapFrame = None
+ns.HideDetail()
+harness.RunTimers()
 
 g.LorePathDB["collapsed"] = lua.table_from({"s7": True})
 g.LorePathDB["collapsedContinents"] = lua.table_from({"Kalimdor": True})
@@ -792,6 +886,73 @@ if found:
     zrow = [f for f in harness["all"].values() if f["zoneID"] == ns.Quests[st["first"]]["z"] and f.IsShown(f)][0]
     check(zr > 0 and f"+{zr}" in zrow["count"]["__text"], f"the zone list row shows +{zr} repeatable: {zrow['count']['__text']!r}")
     check(f"{zr} repeatable" in frame["zoneSummary"]["__text"], "the zone summary mentions the repeatables")
+
+# --- Dragging the graph from anywhere (issue #20) ---
+gs = frame["graphScroll"]
+ns.HideDetail()
+g.LorePathDB["collapsed"] = lua.table()
+ns.Refresh()
+def press(btn, x=500, y=500):
+    harness["cx"], harness["cy"], harness["mouseDown"] = x, y, True
+    btn["__scripts"]["OnMouseDown"](btn, "LeftButton")
+def move(x, y):
+    harness["cx"], harness["cy"] = x, y
+    gs["__scripts"]["OnUpdate"](gs)
+def release(btn):
+    harness["mouseDown"] = False
+    gs["__scripts"]["OnUpdate"](gs)
+    btn["__scripts"]["OnClick"](btn)
+def at(h, v):
+    gs["__hrange"], gs["__vrange"], gs["__hs"], gs["__vs"] = 2000, 2000, h, v
+pan_tile = [f for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)][0]
+at(100, 100)
+press(pan_tile)
+move(503, 498)
+check((gs["__hs"], gs["__vs"]) == (100, 100), "a press on a quest that moves a few pixels doesn't pan yet")
+move(400, 450)
+check((gs["__hs"], gs["__vs"]) == (200, 50), f"dragging from a quest pans the graph (to {gs['__hs']}, {gs['__vs']})")
+g.GameTooltip.lines = lua.table()
+other_tile = [f for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f) and f is not pan_tile][0]
+other_tile["__scripts"]["OnEnter"](other_tile)
+check(len(list(g.GameTooltip.lines.values())) == 0, "quests passed over while dragging don't pop up tooltips")
+release(pan_tile)
+check(ns.detailQuest is None and gs["pan"] is None, "letting go after a drag doesn't open the quest's details")
+press(pan_tile)
+move(502, 501)
+release(pan_tile)
+check(ns.detailQuest == pan_tile["questID"], "a press and release without dragging still opens the details")
+ns.HideDetail()
+
+sec = [f for f in harness["all"].values() if f["key"] is not None and f["stepButton"] is not None and f.IsShown(f)][0]
+was = sec["collapsed"]
+at(0, 0)
+press(sec)
+move(520, 530)
+release(sec)
+check(sec["collapsed"] == was and (gs["__hs"], gs["__vs"]) == (0, 30), "dragging from a storyline header pans instead of collapsing it")
+step = sec["stepButton"]
+title_before = frame["zoneTitle"]["__text"]
+focus_before = ns.focusedQuest
+press(step)
+move(460, 500)
+release(step)
+check(frame["zoneTitle"]["__text"] == title_before and ns.focusedQuest == focus_before, "dragging from a header's Next link pans instead of jumping")
+at(0, 0)
+press(gs)
+move(450, 560)
+release_canvas = gs["__scripts"]["OnMouseUp"]
+harness["mouseDown"] = False
+release_canvas(gs)
+check((gs["__hs"], gs["__vs"]) == (50, 60) and gs["pan"] is None, "dragging empty space still pans")
+# A plain click on the header still collapses or expands it.
+press(sec)
+release(sec)
+sec =[f for f in harness["all"].values() if f["key"] == sec["key"] and f.IsShown(f)][0]
+check(sec["collapsed"] != was, "a plain click on a storyline header still collapses or expands it")
+g.LorePathDB["collapsed"] = lua.table()
+ns.Refresh()
+harness["cx"], harness["cy"] = 0, 0
+
 # --- Dungeons and raids (issue #2) ---
 char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
 char["completed"], char["log"] = lua.table(), lua.table()
@@ -879,6 +1040,168 @@ char["map"] = 1429
 g.SlashCmdList["LOREPATH"]("here")
 check(frame["zoneTitle"]["__text"] == "Elwynn Forest", "back outside, /lp here opens the outdoor zone again")
 g.IsInInstance, g.GetRealZoneText, C_Map.GetAreaInfo = None, None, None
+
+# --- Zone list icons (issue #15) ---
+ZI, II, ZoneIcon = ns.ZoneIcons, ns.InstanceInfo, ns.ui.ZoneIcon
+check(ZI[1429] is not None and ZoneIcon(1429) == ZI[1429], f"Elwynn Forest uses AllTheThings' icon for it ({ZI[1429]})")
+check(ZoneIcon(2521) == "Interface\\Icons\\Spell_Nature_Cyclone", "Zephras Isle uses its hand-picked icon")
+check(ZI[2652] is None and ZoneIcon(2652) == ZI[1414], "a zone with no icon of its own uses its continent's")
+with_ic = next(k for k in sorted(II.keys()) if II[k]["ic"] is not None)
+without_ic = next(k for k in sorted(II.keys()) if II[k]["ic"] is None and ns.InstanceZones[k] == "dungeon")
+check(ZoneIcon(with_ic) == II[with_ic]["ic"], "an instance uses AllTheThings' icon for it")
+check(ZoneIcon(without_ic) == "Interface\\Icons\\INV_Misc_Key_03", "an instance without one uses the generic dungeon icon")
+g.SlashCmdList["LOREPATH"]("here")
+g.LorePathDB["collapsedContinents"] = lua.table()
+ns.Refresh()
+zrows = [f for f in harness["all"].values() if f["zoneID"] is not None and f.IsShown(f)]
+check(len(zrows) > 0 and all(r["icon"].IsShown(r["icon"]) and r["icon"]["__texture"] == ZoneIcon(r["zoneID"]) for r in zrows),
+      f"every zone list row shows its zone's icon ({len(zrows)} rows)")
+heads = {f["continent"]: f for f in harness["all"].values() if f["continent"] is not None and f["zoneID"] is None and f.IsShown(f)}
+check(heads["Eastern Kingdoms"]["icon"]["__texture"] == ZI[1415] and heads["Dungeons"]["icon"]["__texture"] == "Interface\\Icons\\INV_Misc_Key_03"
+      and heads["Raids"]["icon"]["__texture"] == "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+      "headings show their continent's icon, or a dungeon or raid icon")
+check(frame["zoneIcon"]["__texture"] == ZoneIcon(1429), "the zone name above the graph has the zone's icon")
+elwynn = [r for r in zrows if r["zoneID"] == 1429][0]
+check(not elwynn["check"].IsShown(elwynn["check"]), "an unfinished zone has no tick on its icon")
+for qid in ns.GetZoneQuests(1429).values():
+    char["completed"][qid] = True
+ns.Refresh()
+elwynn = [f for f in harness["all"].values() if f["zoneID"] == 1429 and f.IsShown(f)][0]
+check(elwynn["check"].IsShown(elwynn["check"]), "a finished zone gets a tick on its icon")
+char["completed"] = lua.table()
+ns.Refresh()
+
+# --- Class and profession views (issue #8) ---
+check(ns.Quests[5141]["sk"] == 165 and ns.Quests[5141]["sl"] == 225 and ns.Quests[5283]["sk"] == 164,
+      "the extractor reads Professions.lua: Leatherworking (5141) and Blacksmithing (5283) quests")
+cls = list(ns.GetZoneQuests("class").values())
+zones_in_class = {ns.Quests[i]["z"] for i in cls}
+check(len(cls) > 20 and all(1 in list(ns.Quests[i]["cl"].values()) for i in cls) and len(zones_in_class) > 3,
+      f"the Class page has every Warrior quest, from {len(zones_in_class)} zones ({len(cls)} quests)")
+sls, _ = ns.BuildStorylines("class")
+travelling = [st for st in sls.values() if len({ns.Quests[n["id"]]["z"] for n in st["nodes"].values()}) > 1]
+check(len(travelling) > 0, f"class chains that travel between zones are one storyline ({len(travelling)} of them)")
+check(ns.GetMapName("class") == "Warrior quests", "the Class page is named after your class")
+
+# Professions: a Leatherworker with 200 skill.
+g.GetProfessions = lua.eval("function() return 1, nil end")
+g.GetProfessionInfo = lua.eval("function(i) if i == 1 then return 'Leatherworking', 133611, LW_RANK, 300, 0, 0, 165 end end")
+lua.execute("LW_RANK = 200")
+ns.RefreshPlayer()
+lw = list(ns.GetZoneQuests("prof:165").values())
+check(5141 in lw and all(ns.ProfessionOf(ns.Quests[i]) == 165 for i in lw), f"the Leatherworking page has its quests ({len(lw)})")
+check(ns.GetStatus(5141) == S.LEVEL and ns.GetLockReason(5141) == "skill", "a skill that's too low locks the quest")
+check(ns.SkillText(ns.Quests[5141]) == "Leatherworking 225", "and it says which profession and skill it needs")
+lua.execute("LW_RANK = 230")
+ns.RefreshPlayer()
+check(ns.GetStatus(5141) == S.AVAILABLE, "with enough skill it's available")
+groups = [ (gr["name"], list(gr["pages"].values())) for gr in ns.GetSpecialGroups().values()]
+check(groups[0][0] == "Class" and groups[1] == ("Professions", ["prof:165"]),
+      f"the zone list gets Class and Professions groups, with only your professions: {groups}")
+ns.SetSetting("showAllProfessions", True)
+groups = dict((gr["name"], list(gr["pages"].values())) for gr in ns.GetSpecialGroups().values())
+check(groups["Professions"][0] == "prof:165" and "prof:164" in groups["Professions"] and len(groups["Professions"]) > 5,
+      f"'Show professions you don't have' lists the rest after yours: {groups['Professions']}")
+bs = list(ns.GetZoneQuests("prof:164").values())
+check(5283 in bs and ns.GetStatus(5283) == S.LEVEL and ns.GetLockReason(5283) == "skill",
+      "a profession you don't have shows its quests, locked")
+check(not ns.IsEligible(5283), "but they still don't appear in their zone")
+
+# In the window.
+g.LorePathDB["collapsedContinents"] = lua.table()
+ns.Refresh()
+heads = sorted([f for f in harness["all"].values() if f["continent"] is not None and f["zoneID"] is None and f.IsShown(f)], key=lambda f: f["top"])
+check([h["continent"] for h in heads[:2]] == ["Class", "Professions"], f"Class and Professions head the zone list: {[h['continent'] for h in heads[:3]]}")
+check(heads[0]["icon"]["__texture"] == "Interface\\Icons\\ClassIcon_Warrior", "the Class heading has your class icon")
+def page_row(page):
+    rows = [f for f in harness["all"].values() if f["zoneID"] == page and f.IsShown(f)]
+    return rows[0] if rows else None
+lw_row, bs_row = page_row("prof:165"), page_row("prof:164")
+check(lw_row is not None and lw_row["icon"]["__texture"] == 133611 and lw_row["text"]["__text"] == "Leatherworking",
+      "your profession is listed with the client's icon")
+check(bs_row is not None and bs_row["icon"]["__texture"] == "Interface\\Icons\\Trade_BlackSmithing" and bs_row["top"] > lw_row["top"],
+      "a profession you don't have is listed after yours, with its own icon")
+class_row = page_row("class")
+class_row["__scripts"]["OnClick"](class_row)
+check(frame["zoneTitle"]["__text"] == "Warrior quests" and frame["zoneIcon"]["__texture"] == "Interface\\Icons\\ClassIcon_Warrior",
+      "clicking Class shows the Warrior quests page")
+ctile = [f for f in harness["all"].values() if f["questID"] is not None and f["sub"] is not None and f.IsShown(f)][0]
+g.GameTooltip.lines = lua.table()
+ctile["__scripts"]["OnEnter"](ctile)
+check(any(str(l).startswith("Zone: ") for l in g.GameTooltip.lines.values()), "quests on the Class page say which zone they're in")
+ns.FocusQuest(ctile["questID"])
+check(frame["zoneTitle"]["__text"] == "Warrior quests", "jumping to a quest that's on the Class page stays there")
+bs_row = page_row("prof:164")
+bs_row["__scripts"]["OnClick"](bs_row)
+t5283 = [f for f in harness["all"].values() if f["questID"] == 5283 and f["sub"] is not None and f.IsShown(f)]
+check(len(t5283) == 1 and "Needs Blacksmithing 225" in t5283[0]["sub"]["__text"], f"a locked profession quest's tile says what it needs")
+ns.SetSetting("showAllProfessions", False)
+g.GetProfessions = lua.eval("function() return nil end")
+ns.RefreshPlayer()
+g.SlashCmdList["LOREPATH"]("here")
+
+# --- Quest search (issue #18) ---
+# Unloaded names on a real client: only the bundled titles, plus one Forever quest the client names.
+forever_only = next(qid for qid in sorted(ns.Quests.keys()) if qid >= 90000 and ns.IsEligible(qid)
+                    and ns.QuestText[qid] is None and ns.CommunityText[qid] is None and not ns.Quests[qid]["rp"])
+real_title = g.C_QuestLog.GetTitleForQuestID
+g.C_QuestLog.GetTitleForQuestID = lua.eval(f"function(id) if id == {forever_only} then return 'Zzyx Forever Tale' end end")
+def search(text, limit=None):
+    ids, total = ns.SearchQuests(text, limit)
+    return list(ids.values()), total
+ids, total = search("garrick")
+check(6 in ids, f"searching 'garrick' finds Bounty on Garrick Padfoot (6): {ids[:5]}")
+check(6 in search("padfoot GARRICK")[0], "words match in any order, ignoring case")
+check(search("6")[0][:1] == [6], "a quest ID finds that quest first")
+check(search("")[1] == 0 and search("   ")[1] == 0, "an empty search finds nothing")
+check(search("zzyx forever")[0] == [forever_only], "a Forever quest is found by the name the client gives it")
+check(search("xyzzyq")[1] == 0, "a nonsense search finds nothing")
+horde_titled = next(qid for qid, q in sorted(ns.Quests.items()) if q["f"] == 1 and ns.QuestText[qid] is not None)
+check(horde_titled not in search(ns.QuestText[horde_titled]["t"])[0], "a Horde-only quest isn't found by an Alliance character")
+ids, total = search("the")
+check(len(ids) == 50 and total > 50, f"results stop at 50, with the full count kept ({total})")
+ids, total = search("bounty")
+names = [str(ns.GetQuestNameOrID(i)).lower() for i in ids]
+starts = [n.startswith("bounty") for n in names]
+check(starts[0] and starts == sorted(starts, reverse=True), "names that start with the search come first: " + " | ".join(names[:4]))
+rp_titled = next(qid for qid, q in sorted(ns.Quests.items()) if q["rp"] == 1 and ns.IsEligible(qid) and ns.QuestText[qid] is not None)
+ns.SetSetting("showRepeatable", False)
+check(rp_titled not in search(ns.QuestText[rp_titled]["t"])[0], "repeatable quests aren't found while they're hidden")
+ns.SetSetting("showRepeatable", True)
+check(rp_titled in search(ns.QuestText[rp_titled]["t"])[0], "and are found when shown")
+
+# In the window: results replace the zone list; clicking one jumps to it.
+def result_rows():
+    return sorted([f for f in harness["all"].values() if f["resultQuest"] is not None and f.IsShown(f)], key=lambda f: f["top"])
+def zone_rows_shown():
+    return [f for f in harness["all"].values() if f["zoneID"] is not None and f.IsShown(f)]
+g.LorePathDB["listHidden"] = True
+ns.ApplyListVisibility()
+g.SlashCmdList["LOREPATH"]("search garrick")
+box = frame["searchBox"]
+check(frame.IsShown(frame) and box["__text"] == "garrick", "/lp search garrick opens the window with the search filled in")
+check(frame["listInset"].IsShown(frame["listInset"]) and g.LorePathDB["listHidden"] is None, "and shows the zone list if it was hidden")
+rows = result_rows()
+check(len(rows) > 0 and any(r["resultQuest"] == 6 for r in rows) and len(zone_rows_shown()) == 0,
+      f"the zone list shows {len(rows)} quest results instead of zones")
+row6 = next(r for r in rows if r["resultQuest"] == 6)
+check(not any(r["icon"].IsShown(r["icon"]) or r["check"].IsShown(r["check"]) for r in rows),
+      "search results don't keep a zone's icon or tick from the rows they reuse")
+check("Elwynn Forest" in row6["sub"]["__text"], f"a result shows its zone and status: {row6['sub']['__text']!r}")
+g.GameTooltip.lines = lua.table()
+row6["__scripts"]["OnEnter"](row6)
+check(any("Bounty on Garrick" in str(l) for l in g.GameTooltip.lines.values()), "a result has the quest's tooltip")
+row6["__scripts"]["OnClick"](row6)
+check(frame["zoneTitle"]["__text"].startswith("Elwynn Forest") and ns.focusedQuest == 6, "clicking a result jumps to the quest")
+check(len(result_rows()) > 0, "the results stay up after jumping, to try another")
+box.SetText(box, "xyzzyq")
+box["__scripts"]["OnTextChanged"](box, True)
+headers = [f for f in harness["all"].values() if f.IsShown(f) and f["text"] is not None and f["text"]["__text"] == "No quests match"]
+check(len(result_rows()) == 0 and len(headers) == 1, "a search with no matches says so")
+box["__scripts"]["OnEscapePressed"](box)
+check(box["__text"] == "" and len(result_rows()) == 0 and len(zone_rows_shown()) > 0, "Escape clears the search and brings the zones back")
+g.C_QuestLog.GetTitleForQuestID = real_title
+harness.RunTimers()
 
 # --- Sharing quest text (issue #14) ---
 import json, subprocess, tempfile
