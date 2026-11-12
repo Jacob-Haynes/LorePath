@@ -1077,7 +1077,9 @@ g.IsInInstance, g.GetRealZoneText, C_Map.GetAreaInfo = None, None, None
 ZI, II, ZoneIcon = ns.ZoneIcons, ns.InstanceInfo, ns.ui.ZoneIcon
 check(ZI[1429] is not None and ZoneIcon(1429) == ZI[1429], f"Elwynn Forest uses AllTheThings' icon for it ({ZI[1429]})")
 check(ZoneIcon(2521) == "Interface\\Icons\\Spell_Nature_Cyclone", "Zephras Isle uses its hand-picked icon")
-check(ZI[2652] is None and ZoneIcon(2652) == ZI[1414], "a zone with no icon of its own uses its continent's")
+saved_icon, ZI[2652] = ZI[2652], None
+check(ZoneIcon(2652) == ZI[1414], "a zone with no icon of its own uses its continent's")
+ZI[2652] = saved_icon
 with_ic = next(k for k in sorted(II.keys()) if II[k]["ic"] is not None)
 without_ic = next(k for k in sorted(II.keys()) if II[k]["ic"] is None and ns.InstanceZones[k] == "dungeon")
 check(ZoneIcon(with_ic) == II[with_ic]["ic"], "an instance uses AllTheThings' icon for it")
@@ -1802,22 +1804,22 @@ g.C_Map.GetMapInfo = real_map_info
 ns.ResetLevelRanges()
 
 # --- AllTheThings' notes in quest details ---
-check(ns.QuestNotes[6564] == "For this to drop, you need to be on the Essence of Aku'Mai quest.", "notes are extracted with their quests")
+check(ns.QuestNotes[635] == "If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.", "notes are extracted with their quests")
 check(len(list(ns.QuestNotes.keys())) > 50 and all(ns.Quests[k] is not None for k in ns.QuestNotes.keys()), "only for quests LorePath has")
 ns.SetSetting("showSpoilers", False)
-ns.ShowDetail(6564)
+ns.ShowDetail(635)
 texts = detail_texts()
-check("Good to know" in texts and any(t.startswith("For this to drop") for t in texts), "the details show the note, even with spoilers hidden")
+check("Good to know" in texts and any(t.startswith("If you miss out") for t in texts), "the details show the note, even with spoilers hidden")
 ns.ShowDetail(783)
 check("Good to know" not in detail_texts(), "quests without a note don't get the heading")
 char["race"], char["faction"] = 2, "Horde"
 ns.RefreshPlayer()
-ns.FocusQuest(6564)
-t = [f for f in harness["all"].values() if f["questID"] == 6564 and f["sub"] is not None and f.IsShown(f)][0]
+ns.FocusQuest(635)
+t = [f for f in harness["all"].values() if f["questID"] == 635 and f["sub"] is not None and f.IsShown(f)][0]
 g.GameTooltip.lines = lua.table()
 t["__scripts"]["OnEnter"](t)
 lines = [str(l) for l in g.GameTooltip.lines.values()]
-check("Good to know:" in lines and any(l.startswith("For this to drop") for l in lines), "the quest's tooltip in the graph shows the note too")
+check("Good to know:" in lines and any(l.startswith("If you miss out") for l in lines), "the quest's tooltip in the graph shows the note too")
 char["race"], char["faction"] = 1, "Alliance"
 ns.RefreshPlayer()
 ns.HideDetail()
