@@ -732,6 +732,7 @@ local function CreatePanel()
         title:SetPoint("TOP", 0, -6)
     end
     title:SetText("Quest details")
+    p.titleText = title
 
     local scroll = CreateFrame("ScrollFrame", nil, p)
     scroll:SetPoint("TOPLEFT", 6, -28)
@@ -744,6 +745,7 @@ local function CreatePanel()
 
     -- Closing the panel (its X, or the main window closing) drops the selection.
     p:SetScript("OnHide", function()
+        ns.detailStory = nil
         if ns.detailQuest then
             ns.detailQuest = nil
             if main:IsShown() then
@@ -760,6 +762,7 @@ local function Render(id)
     Reset()
     local status = ns.GetStatus(id)
     local style = UI.STATUS_STYLE[status]
+    panel.titleText:SetText("Quest details")
 
     -- Title and status
     AddText(ns.GetQuestNameOrID(id), "GameFontNormalLarge", { 1, 0.82, 0 }, 4)
@@ -994,18 +997,109 @@ local function Render(id)
     content:SetHeight(cursor + 12)
 end
 
+-- ============================================================================
+-- Story so far (issue #4)
+-- ============================================================================
+
+-- The text of the quests you've finished in a storyline, in the order they
+-- come in it, to read as one story: { {id, d = description, c = completion,
+-- bundled = true when the description is pfQuest's}, ... }. Only finished
+-- quests, so nothing ahead is spoiled; repeatable quests are left out.
+-- Text comes from the same places as the quest details: what you saw in game,
+-- then community text, then (descriptions only) the bundled vanilla text.
+function ns.StorySoFar(storyline)
+    local nodes = {}
+    for _, n in ipairs(storyline.nodes) do
+        table.insert(nodes, n)
+    end
+    table.sort(nodes, function(a, b)
+        if a.col ~= b.col then
+            return a.col < b.col
+        end
+        if a.row ~= b.row then
+            return a.row < b.row
+        end
+        return a.id < b.id
+    end)
+    local list = {}
+    for _, n in ipairs(nodes) do
+        if not ns.IsRepeatable(n.id) and ns.GetStatus(n.id) == S.DONE then
+            local cached = Cache()[n.id] or {}
+            local community = ns.CommunityText and ns.CommunityText[n.id] or {}
+            local bundled = ns.QuestText and ns.QuestText[n.id] or {}
+            local entry = { id = n.id, d = cached.text or community.d, c = cached.done or community.c }
+            if not entry.d and bundled.d then
+                entry.d, entry.bundled = bundled.d, true
+            end
+            table.insert(list, entry)
+        end
+    end
+    return list
+end
+
+local STORY_TEXT = { 0.9, 0.86, 0.75 }
+
+local function RenderStory(storyline)
+    Reset()
+    panel.titleText:SetText("Story so far")
+    for _, b in ipairs({ panel.mapButton, panel.logButton, panel.revealButton, panel.linkBox }) do
+        b:Hide()
+    end
+    AddText(ns.GetQuestNameOrID(ns.StorylineTitleQuest(storyline)), "GameFontNormalLarge", { 1, 0.82, 0 }, 4)
+    local ids = {}
+    for _, n in ipairs(storyline.nodes) do
+        table.insert(ids, n.id)
+    end
+    local done, total = ns.CountProgress(ids)
+    AddText(string.format("%d of %d quests done", done, total), "GameFontDisableSmall", nil, 2)
+    -- Where the chain began, when that's on another page: the earlier chapters.
+    if storyline.origin and ns.Quests[storyline.origin] then
+        AddText(string.format("This chain starts earlier, with %s in %s.",
+            ns.GetQuestNameOrID(storyline.origin), ns.GetMapName(ns.Quests[storyline.origin].z)),
+            "GameFontHighlightSmall", { 0.55, 0.77, 1 }, 6)
+    end
+
+    local entries = ns.StorySoFar(storyline)
+    local usedBundled = false
+    for _, e in ipairs(entries) do
+        AddHeader(ns.GetQuestNameOrID(e.id))
+        if e.d then
+            AddText(ns.FillQuestText(e.d), "GameFontHighlightSmall", STORY_TEXT, 4)
+        else
+            AddText("LorePath doesn't have this quest's text yet.", "GameFontDisableSmall", nil, 4)
+        end
+        if e.c then
+            AddText("On turning it in:", "GameFontDisableSmall", nil, 8)
+            AddText(ns.FillQuestText(e.c), "GameFontHighlightSmall", STORY_TEXT, 2)
+        end
+        usedBundled = usedBundled or e.bundled
+    end
+
+    if #entries == 0 then
+        AddText("Finish this storyline's first quest and its story starts here.", "GameFontDisableSmall", nil, 14)
+    elseif done < total then
+        AddText("The rest of the story is still ahead of you.", "GameFontDisableSmall", nil, 14)
+    else
+        AddText("You've finished this storyline.", "GameFontDisableSmall", { 0.42, 0.83, 0.37 }, 14)
+    end
+    if usedBundled then
+        AddText("Some text is from LorePath's bundled quest database (pfQuest). WoW Forever's wording may differ slightly; the game's own text replaces it once you see the quest.", "GameFontDisableSmall", { 0.55, 0.55, 0.55 }, 6)
+    end
+    content:SetHeight(cursor + 12)
+end
+
 -- The quest's page on WarcraftDB's WoW Forever database.
 function ns.WarcraftDBLink(id)
     return "https://forever.warcraftdb.com/data/quest/" .. id
 end
 
--- Shows a quest in the panel, opening it if needed.
-function ns.ShowDetail(id)
-    if not ns.Quests[id] or not ns.mainFrame then
+-- Creates the panel and its buttons, the first time it's needed.
+local function EnsurePanel()
+    if panel then
         return
     end
-    if not panel then
-        panel = CreatePanel()
+    panel = CreatePanel()
+    do
         local map = CreateFrame("Button", nil, content, "UIPanelButtonTemplate")
         map:SetSize(110, 20)
         map:SetText("Show on map")
@@ -1062,6 +1156,15 @@ function ns.ShowDetail(id)
         reveal:SetScript("OnLeave", GameTooltip_Hide)
         panel.revealButton = reveal
     end
+end
+
+-- Shows a quest in the panel, opening it if needed.
+function ns.ShowDetail(id)
+    if not ns.Quests[id] or not ns.mainFrame then
+        return
+    end
+    EnsurePanel()
+    ns.detailStory = nil -- a quest replaces a storyline's story
     if C_QuestLog.RequestLoadQuestByID then
         C_QuestLog.RequestLoadQuestByID(id)
     end
@@ -1086,6 +1189,25 @@ function ns.ToggleDetail(id)
     end
 end
 
+-- A storyline's "Story so far" button: shows its story in the panel, or closes
+-- the panel if that story is already showing.
+function ns.ToggleStory(storyline)
+    if not ns.mainFrame or not storyline then
+        return
+    end
+    EnsurePanel()
+    if panel:IsShown() and ns.detailStory and ns.detailStory.first == storyline.first then
+        panel:Hide()
+        return
+    end
+    ns.detailStory = storyline
+    ns.detailQuest = nil
+    ns.revealedQuest = nil
+    panel:Show()
+    panel.scroll:SetVerticalScroll(0)
+    ns.Refresh() -- drops the quest highlight in the graph, and draws the story
+end
+
 function ns.HideDetail()
     if panel then
         panel:Hide()
@@ -1094,6 +1216,10 @@ end
 
 function ns.RefreshDetail()
     if not panel or not panel:IsShown() then
+        return
+    end
+    if ns.detailStory then
+        RenderStory(ns.detailStory)
         return
     end
     if not ns.detailQuest or not ns.Quests[ns.detailQuest] then
