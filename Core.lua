@@ -119,6 +119,28 @@ local function ApplyCommunityStarts()
     end
 end
 
+-- A quest started by an item that only drops inside one dungeon or raid
+-- (Data/QuestStarts.lua; An Unholy Alliance, from Charlga Razorflank in
+-- Razorfen Kraul) is picked up inside it, though AllTheThings names no quest
+-- giver to say so: it gets the portal icon and "Picked up inside".
+local function ApplyItemStarts()
+    for id, sources in pairs(ns.QuestStarts or {}) do
+        local q = ns.Quests[id]
+        if q and not q.fv and not q.m and not q.di and #sources > 0 then
+            local inside = sources[1].i
+            for _, source in ipairs(sources) do
+                if source.i ~= inside then
+                    inside = nil
+                    break
+                end
+            end
+            if inside then
+                q.di = inside
+            end
+        end
+    end
+end
+
 -- "Picked up from an item around Ashenvale (34.5, 48.2)": where a player was
 -- when an item offered them the quest, for item-started quests with no known
 -- source. nil when there's no such hint.
@@ -146,6 +168,7 @@ function ns.RefreshPlayer()
     player.skills, player.professions = ReadProfessions()
     ApplyFactionVersions()
     ApplyCommunityStarts()
+    ApplyItemStarts()
     wipe(ns.standings)
     -- Which quests you can do decides storylines, and so chains' names.
     local skills = {}

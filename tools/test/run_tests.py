@@ -1912,6 +1912,17 @@ check(icon_of(item_q)["__texture"] in ("Interface\\Icons\\INV_Misc_Note_01", "In
 ns.FocusQuest(7508)
 check(ns.Quests[7508]["cl"] is not None and icon_of(7508)["__texture"] == "Interface\\Icons\\Spell_Arcane_PortalUnderCity",
       "a class quest picked up inside an instance shows the portal: it comes first")
+# An item that only drops inside an instance starts its quest there: An Unholy Alliance, from Charlga Razorflank.
+char["race"], char["class"], char["faction"] = 2, 1, "Horde"
+ns.RefreshPlayer(); ns.RefreshCompleted()
+ns.Toggle(True)
+ns.FocusQuest(6522)
+check(ns.Quests[6522]["di"] == 301 and icon_of(6522)["__texture"] == "Interface\\Icons\\Spell_Arcane_PortalUnderCity",
+      "a quest started by an item that only drops in Razorfen Kraul is picked up inside it, with the portal icon (An Unholy Alliance)")
+check(ns.Quests[783]["di"] is None and ns.Quests[123]["di"] is None,
+      "quests started outdoors, or by an item that drops outdoors, aren't")
+char["race"], char["class"], char["faction"] = 1, 1, "Alliance"
+ns.RefreshPlayer(); ns.RefreshCompleted()
 g.GetProfessions = lua.eval("function() return nil end")
 ns.RefreshPlayer()
 
