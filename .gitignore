@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .release/
 att/
+
+# wrangler (share/) local state
+share/.wrangler/
+share/node_modules/
