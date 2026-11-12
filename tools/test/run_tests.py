@@ -1608,6 +1608,23 @@ char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 
 ns.RefreshPlayer()
 ns.RefreshCompleted()
 
+# WoW Forever's The Adventurer has a version in each starting area, for either faction: you see your own only.
+ADVENTURER = {1429: [96627, 95998, 96626], 1426: [96628, 96608, 96629], 1438: [96630, 96606, 96634], 2521: [96638, 96101, 96646],
+              1411: [96652, 96604, 96655], 1420: [96656, 96607, 96658], 1412: [96659, 96605, 96661]}
+def adventurer_pages():
+    return {z: [i for i in ids if i in set(ns.GetZoneQuests(z).values())] for z, ids in ADVENTURER.items()}
+for race, fac, home, theirs in [(1, "Alliance", 1429, (1426, 1438, 2521)), (95, "Alliance", 2521, (1429, 1426, 1438)),
+                                (2, "Horde", 1411, (1420, 1412, 2521)), (96, "Horde", 2521, (1411, 1420, 1412))]:
+    char["race"], char["class"], char["faction"], char["level"] = race, 1, fac, 60
+    ns.RefreshPlayer(); ns.RefreshCompleted()
+    pages = adventurer_pages()
+    check(pages[home] == ADVENTURER[home] and not any(pages[z] for z in theirs),
+          f"race {race} sees The Adventurer only in its own starting area, {ns.GetMapName(home)} ({ {z: v for z, v in pages.items() if v} })")
+char["race"], char["class"], char["faction"] = 1, 1, "Alliance"
+ns.RefreshPlayer(); ns.RefreshCompleted()
+check(5517 in set(ns.GetZoneQuests(1423).values()) and 5521 in set(ns.GetZoneQuests(1422).values()),
+      "versions outside starting areas still show in each zone (the Chromatic Mantle of the Dawn in both Plaguelands)")
+
 # --- Zone list colours by completion ---
 PC = ns.ui.ProgressColor
 def rgb(c):

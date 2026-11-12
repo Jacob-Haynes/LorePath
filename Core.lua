@@ -963,6 +963,12 @@ local HOME_MAPS = {
     [96] = { 2521 },      -- WoW Forever's own race (Horde): Zephras Isle
 }
 
+-- Each race's starting zone, the first of its home maps.
+local STARTING_AREAS = {}
+for _, maps in pairs(HOME_MAPS) do
+    STARTING_AREAS[maps[1]] = true
+end
+
 -- Versions the data doesn't mark as alternatives: first quest -> first quests
 -- of the other versions. Keep it short, and report each one to AllTheThings
 -- too, so the data itself gets fixed.
@@ -993,7 +999,10 @@ ns.EXTRA_VERSIONS = EXTRA_VERSIONS -- read by the tests' duplicate check
 -- A class quest's versions count even when they're on another page: the Class
 -- page shows one version, and each zone page agrees with it, so a Skyborne
 -- Shaman who did Zephras Isle's Call of Fire doesn't see the Barrens chain on
--- The Barrens' page. Other quests' versions are each shown in their own zone.
+-- The Barrens' page. So do versions that each start in a different starting
+-- area (WoW Forever's The Adventurer, in each of them): you only ever do one,
+-- in your own. Other quests' versions are each shown in their own zone (the
+-- Chromatic Mantle of the Dawn in either Plaguelands), where you might be.
 
 -- Every quest's versions, both ways round (alt and EXTRA_VERSIONS), built once.
 local versionsOf
@@ -1072,12 +1081,16 @@ local function OneVersionEach(list)
             groupOf[a], groupOf[b] = a, a
         end
     end
-    -- Versions on another page join in only for class quests, and only ones
-    -- you could do; they can win, but they're never added to this page.
+    -- Versions on another page join in only for class quests and starting-area
+    -- versions, and only ones you could do; they can win, but they're never
+    -- added to this page.
     for _, id in ipairs(list) do
-        local isClass = ns.Quests[id].cl ~= nil
+        local q = ns.Quests[id]
         for other in pairs(VersionsOf(id) or {}) do
-            if onPage[other] or (isClass and ns.Quests[other].cl and ns.IsEligible(other)) then
+            local o = ns.Quests[other]
+            local acrossPages = (q.cl and o.cl)
+                or (STARTING_AREAS[q.z] and STARTING_AREAS[o.z] and q.z ~= o.z)
+            if onPage[other] or (acrossPages and ns.IsEligible(other)) then
                 Join(id, other)
             end
         end
