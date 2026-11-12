@@ -250,7 +250,7 @@ local function CreateShareFrame()
         f.CloseButton = close
     end
     ns.ui.CloseDirectly(f) -- works in combat too
-    f:SetSize(540, 380)
+    f:SetSize(540, 440)
     f:SetPoint("CENTER")
     f:SetFrameStrata("DIALOG")
     f:SetClampedToScreen(true)
@@ -273,8 +273,35 @@ local function CreateShareFrame()
     info:SetJustifyH("LEFT")
     f.info = info
 
+    -- Where to send it: the share page, or GitHub's issue form until the page
+    -- is deployed. The game can't open a browser, so it's a box to copy from:
+    -- clicking selects it, and typing puts it back.
+    local linkLabel = f:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    linkLabel:SetPoint("TOPLEFT", 16, -122)
+    f.linkLabel = linkLabel
+    local link = CreateFrame("EditBox", nil, f)
+    link:SetPoint("LEFT", linkLabel, "RIGHT", 8, 0)
+    link:SetPoint("RIGHT", -16, 0)
+    link:SetHeight(20)
+    link:SetAutoFocus(false)
+    link:SetFontObject("GameFontHighlightSmall")
+    link:SetTextInsets(6, 6, 0, 0)
+    local linkBg = link:CreateTexture(nil, "BACKGROUND")
+    linkBg:SetAllPoints()
+    linkBg:SetColorTexture(0, 0, 0, 0.5)
+    link:SetScript("OnTextChanged", function(self, userInput)
+        if userInput and self.url then
+            self:SetText(self.url)
+            self:HighlightText()
+        end
+    end)
+    link:SetScript("OnEditFocusGained", function(self) self:HighlightText() end)
+    link:SetScript("OnMouseUp", function(self) self:SetFocus(); self:HighlightText() end)
+    link:SetScript("OnEscapePressed", function(self) self:ClearFocus(); f:Hide() end)
+    f.link = link
+
     local scroll = CreateFrame("ScrollFrame", nil, f)
-    scroll:SetPoint("TOPLEFT", 16, -96)
+    scroll:SetPoint("TOPLEFT", 16, -150)
     scroll:SetPoint("BOTTOMRIGHT", -16, 44)
     local bg = scroll:CreateTexture(nil, "BACKGROUND")
     bg:SetAllPoints()
@@ -335,19 +362,28 @@ function ns.ShowSharePart(part)
     f.box.code = code
     f.box:SetText(code)
     f.box:SetCursorPosition(0)
-    local where, which
+    local which, steps, url
     if ns.SHARE_PAGE_URL then
+        url = ns.SHARE_PAGE_URL
+        f.linkLabel:SetText("Share page:")
         which = #f.codes > 1 and string.format(" This is code %d of %d: paste them all, one after another.", part, #f.codes) or ""
-        where = string.format("paste it at %s (no account needed), or into a new \"Share quest text\" issue at %s", ns.SHARE_PAGE_URL, ns.SHARE_URL)
+        steps = "Copy the link below into your browser to open LorePath's share page (no account needed). "
+            .. "Then click the code, press Ctrl+C, and paste it there. You can also paste it into a "
+            .. "\"Share quest text\" issue on LorePath's GitHub page."
     else
+        url = ns.SHARE_URL
+        f.linkLabel:SetText("GitHub:")
         which = #f.codes > 1 and string.format(" This is code %d of %d: send each one, in its own issue.", part, #f.codes) or ""
-        where = string.format("paste it into a new \"Share quest text\" issue at %s", ns.SHARE_URL)
+        steps = "Copy the link below into your browser and open a new \"Share quest text\" issue. "
+            .. "Then click the code, press Ctrl+C, and paste it there."
     end
+    f.link.url = url
+    f.link:SetText(url)
+    f.link:SetCursorPosition(0)
     f.info:SetText(string.format(
-        "Quest text and quest starts you've saved that LorePath doesn't have yet: %d %s.%s\n\n"
-        .. "Click the code, press Ctrl+C to copy it, then %s. "
-        .. "Your name, class and race are replaced with $N, $C and $R. Quest starts say who offered each quest and where, nothing about you.",
-        f.count, f.count == 1 and "quest" or "quests", which, where))
+        "Quest text and quest starts you've saved that LorePath doesn't have yet: %d %s.%s\n\n%s "
+        .. "Your name, class and race are replaced with $N, $C and $R.",
+        f.count, f.count == 1 and "quest" or "quests", which, steps))
     f.prev:SetShown(#f.codes > 1)
     f.next:SetShown(#f.codes > 1)
     f.prev:SetEnabled(part > 1)

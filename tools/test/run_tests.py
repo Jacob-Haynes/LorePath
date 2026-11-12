@@ -1297,11 +1297,15 @@ check(share.IsShown(share) and box["__text"] == list(ns.BuildShareCodes()[0].val
 box["__scripts"]["OnTextChanged"](box, True)
 check(box["__text"] == box["code"], "typing in it can't change the code")
 check("quests" in share["info"]["__text"] and "Share quest text" in share["info"]["__text"], "it explains where to send it")
-check("no account needed" not in share["info"]["__text"], "until the share page is deployed, it names only the GitHub issue form")
+link = share["link"]
+check("no account needed" not in share["info"]["__text"] and link["__text"] == ns.SHARE_URL,
+      "until the share page is deployed, the window's link box holds the GitHub issue form")
 ns.SHARE_PAGE_URL = "lorepath-share.example.workers.dev"
 ns.ShowSharePart(1)
-check("lorepath-share.example.workers.dev (no account needed)" in share["info"]["__text"] and "Share quest text" in share["info"]["__text"],
-      "once it is, the window offers the share page first, and still the issue form")
+check(link["__text"] == "lorepath-share.example.workers.dev" and "no account needed" in share["info"]["__text"]
+      and "Share quest text" in share["info"]["__text"], "once it is, the link box holds the share page, and the issue form is still mentioned")
+link["__scripts"]["OnTextChanged"](link, True)
+check(link["__text"] == "lorepath-share.example.workers.dev", "typing in the link box can't change the link")
 ns.SHARE_PAGE_URL = None
 g.LorePathDB["questCache"] = lua.eval("{}")
 before_chat = len(list(harness["chat"].values()))
