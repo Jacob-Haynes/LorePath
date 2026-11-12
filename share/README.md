@@ -1,6 +1,6 @@
 # Share page
 
-A small web page where players paste the codes `/lp share` gives them, with no GitHub account needed. It's a Cloudflare Worker (`worker.js`) that serves the page and, for each code, opens a **Share quest text** issue labelled `quest-text`. From there the `Add shared quest text` workflow handles it exactly as it handles the issue form.
+A small web page where players paste the codes `/lp share` gives them, with no GitHub account needed. It's live at https://lorepath-share.jacobhaynes49.workers.dev, on the maintainer's Cloudflare account. It's a Cloudflare Worker (`worker.js`) that serves the page and, for each code, opens a **Share quest text** issue labelled `quest-text`. From there the `Add shared quest text` workflow handles it exactly as it handles the issue form.
 
 The worker:
 - checks each code before passing it on: a version 1 code, numeric quest IDs, only known fields, sane lengths, at most 10 codes at a time;
@@ -35,11 +35,13 @@ You need a free Cloudflare account and Node.js (for `wrangler`, Cloudflare's CLI
    ```
 
    Wrangler prints the page's address.
-4. **Point LorePath at it:** set `ns.SHARE_PAGE_URL` in `Share.lua` to that address, without `https://`, and mention it in `media/curseforge-description.md`.
+4. **Point LorePath at it:** set `ns.SHARE_PAGE_URL` in `Share.lua` to that address, without `https://`, and mention it in `README.md` and `media/curseforge-description.md`.
+
+If `wrangler login` opens the wrong browser (or one signed in to another Cloudflare account), run `npx wrangler login --browser=false` and open the link it prints in the right one. `npx wrangler whoami` shows which account you're on, and `npx wrangler secret list` shows which secrets are set (names only).
 
 Until all the settings are in, the page tells players to use a GitHub issue instead.
 
-When the token expires, make a new one and run `npx wrangler secret put GITHUB_TOKEN` again.
+When the token expires (GitHub emails a reminder beforehand), the page can't open issues until you make a new one and run `npx wrangler secret put GITHUB_TOKEN` again.
 
 ## Tests
 

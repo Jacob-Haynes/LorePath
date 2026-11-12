@@ -9,7 +9,9 @@ body:
         Thank you! In game, type `/lp share`, click the code, press Ctrl+C, and paste it below.
         If LorePath gave you more than one code, send each in its own issue.
 
-        The code holds only quest text and rewards. Your character names are replaced with `$N`.
+        No GitHub account? Paste your code into the share page instead: https://lorepath-share.jacobhaynes49.workers.dev
+
+        The code holds only quest text, rewards and where quests start. Your character's name, class and race are replaced with `$N`, `$C` and `$R`.
         A check runs on it straight away and replies here; a maintainer reviews the text before it goes into a release.
   - type: textarea
     id: code
