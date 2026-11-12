@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.3.0-beta4
 
 - **Story so far reads on, too:** finished quests on other pages that come after a storyline are now part of its story, so Hillsbrad's Journey to Tarren Mill story carries on into Thunder Bluff. When you've finished a page's part and the chain goes on somewhere you haven't been yet, it says where.
 
