@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.3.0-beta5
 
 - **Latest AllTheThings data:** 81 more quests, among them the racial mount quests, and quest givers and starting points for 111 quests that had none, so they get map pins. Tooga's Quest now has a note on catching its follow-up quest during the escort.
 
