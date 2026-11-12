@@ -7,4 +7,4 @@ compatibility_date = "2026-10-01"
 REPO = "Jacob-Haynes/LorePath"
 # The Turnstile widget's site key (public). Its secret key is a secret:
 #   wrangler secret put TURNSTILE_SECRET
-TURNSTILE_SITE_KEY = ""
+TURNSTILE_SITE_KEY = "0x4AAAAAAF-RmCkfFFfqebVs"
