@@ -44,7 +44,7 @@ end
 
 -- Every character name this account has used (LorePathDB.characters), longest
 -- first, so text saved on one character doesn't carry another's name. And their
--- classes and races (saved since 1.3.0; older entries are just `true`), with the
+-- classes and races (older saves have just `true` for each name), with the
 -- character you're on, for ns.PutPlaceholders.
 local function AccountNames()
     local names, people = {}, { ns.CurrentPerson() }
