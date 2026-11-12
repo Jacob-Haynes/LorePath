@@ -1465,8 +1465,10 @@ function ns.StoryQuests(storyline)
 end
 
 -- A storyline's title: its first quest's name, unless that quest is an errand
--- ("Speak with Ruga", "Report to Kadrak"), when the first quest after it that
--- isn't one names it instead. A storyline that carries on a chain from another
+-- ("Speak with Ruga", "Report to Kadrak", or a breadcrumb named after the NPC
+-- who gives it or the one it sends you to: Ziz Fizziks, Malin's Request), when
+-- the first quest after it that isn't one names it instead. A breadcrumb with a
+-- name of its own (Taking Back Silithus) names the storyline. A storyline that carries on a chain from another
 -- page is named after the whole chain instead: the name it has on the page
 -- where it starts, so it's called the same on every page (Mulgore's The
 -- Hunter's Way goes on in the Barrens with the breadcrumb Sergra Darkthorn, and
@@ -1497,22 +1499,63 @@ local function Name(id)
     return name
 end
 
+-- Is this breadcrumb named after one of its NPCs (Data/BreadcrumbNPCs.lua)?
+-- Any word of the NPC's name will do, so "Stoley's Debt" names Stoley and
+-- "Seeking Strahad" names Strahad Farsan; titles and words like "the", "of" or
+-- "Brother" don't count on their own.
+local NAME_FILLER = { the = true, ["of"] = true, ["and"] = true, ["for"] = true, sir = true, lord = true,
+    lady = true, brother = true, sister = true, mountaineer = true, captain = true, high = true,
+    elder = true, arch = true, druid = true, king = true }
+local function Words(text)
+    local words = {}
+    for found in text:lower():gmatch("[%a'%-]+") do
+        local word = (found:gsub("'s$", ""))
+        if #word >= 3 and not NAME_FILLER[word] then
+            words[word] = true
+        end
+    end
+    return words
+end
+function ns.NamedAfterItsNPC(id, name)
+    local npcs = ns.BreadcrumbNPCs and ns.BreadcrumbNPCs[id]
+    if not npcs or type(name) ~= "string" then
+        return false
+    end
+    local inTitle = Words(name)
+    for _, npc in ipairs(npcs) do
+        for word in pairs(Words(npc)) do
+            if inTitle[word] then
+                return true
+            end
+        end
+    end
+    return false
+end
+
+-- On its own page, a storyline's name skips errands and breadcrumbs named
+-- after their NPC.
+local function IsErrand(id)
+    local name = Name(id)
+    return ns.IsErrandTitle(name) or (ns.Quests[id].bc ~= nil and ns.NamedAfterItsNPC(id, name))
+end
+
 local function OwnTitleQuest(storyline)
     for _, n in ipairs(storyline.nodes) do
-        local name = Name(n.id)
-        if name and not ns.IsErrandTitle(name) then
+        if Name(n.id) and not IsErrand(n.id) then
             return n.id
         end
     end
     return storyline.first
 end
 
--- A breadcrumb or errand only leads to the chain, so it can't name the whole
--- of it: when the page a chain starts on only has its lead-in (Teldrassil's
--- Nessa Shadowsong, before Darkshore's The Bounty of Teldrassil), the
--- storyline keeps its own name.
+-- Carried to another page, any breadcrumb only leads to the chain, so it can't
+-- name the whole of it: a long chain would be called after a travel errand far
+-- back where it began (Scholomance after A Call to Arms: The Plaguelands!).
+-- When the page a chain starts on only has its lead-in (Teldrassil's Nessa
+-- Shadowsong, before Darkshore's The Bounty of Teldrassil), the storyline keeps
+-- its own name.
 local function IsLeadIn(id)
-    return ns.Quests[id].bc or ns.IsErrandTitle(Name(id))
+    return ns.Quests[id].bc ~= nil or ns.IsErrandTitle(Name(id))
 end
 
 -- The name of the chain starting with `origin`, by origin quest: a quest ID, or

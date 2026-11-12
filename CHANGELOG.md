@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- **Better names for storylines that open with a breadcrumb:** a breadcrumb named after the NPC who gives it or the one it sends you to no longer names its storyline; the quest it leads to does. Stonetalon's Ziz Fizziks is now Super Reaper 6000, and Malin's Request is Worth Its Weight in Gold. A breadcrumb with a name of its own, like Taking Back Silithus, still names its storyline.
 - **One version of a starting-area chain:** WoW Forever's The Adventurer chain has a version in every starting area, and you saw each one your faction could take. Now you see your own starting area's, the same way class quests show your own version.
 - **Long chains that come back are one storyline:** a chain that leaves a page for a long stretch and then comes back is now shown as one storyline, not as a separate one where it returns. Swamp of Sorrows' Uniting the Shattered Amulet and Blasted Lands' You Are Rakh'likh, Demon are now part of their chain.
 - **A chain keeps its name across zones:** a storyline that carries on a chain from another zone is now named after the chain, as it is where the chain starts, instead of after its first quest on this page. The hunter chain is The Hunter's Way in the Barrens too, not Sergra Darkthorn. When a chain starts with only a breadcrumb or errand there, the storyline keeps its own name.

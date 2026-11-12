@@ -163,7 +163,7 @@ The [Sync quest data from AllTheThings](.github/workflows/sync-att-data.yml) wor
 - **Merging and releasing stay manual.**
 - **Repository setting:** opening the PR needs *Settings → Actions → General → Allow GitHub Actions to create and approve pull requests* turned on.
 
-`Data/QuestText.lua`, the bundled vanilla text, is a one-off import and isn't part of the weekly sync, because vanilla quest text doesn't change. `python3 tools/extract_pfquest.py` rebuilds it if ever needed, for example after new vanilla quests appear in `Data/Quests.lua`. Likewise `python3 tools/extract_quest_starts.py` rebuilds `Data/QuestStarts.lua`, where item-started quests' items come from, after the quest data gains new ones.
+`Data/QuestText.lua`, the bundled vanilla text, is a one-off import and isn't part of the weekly sync, because vanilla quest text doesn't change. `python3 tools/extract_pfquest.py` rebuilds it if ever needed, for example after new vanilla quests appear in `Data/Quests.lua`. Likewise `python3 tools/extract_quest_starts.py` rebuilds `Data/QuestStarts.lua`, where item-started quests' items come from, after the quest data gains new ones. And `python3 tools/extract_breadcrumb_npcs.py` rebuilds `Data/BreadcrumbNPCs.lua`, the names of the NPCs each breadcrumb is about, after the quest data gains breadcrumbs: a breadcrumb named after one of them (Ziz Fizziks) doesn't name its storyline. Until it's rerun, a new breadcrumb names its storyline as before.
 
 ### Adding players' quest text
 

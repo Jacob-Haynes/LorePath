@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestStarts.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Data/Attunements.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Pins.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestStarts.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Data/BreadcrumbNPCs.lua", "Data/Attunements.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Pins.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -2655,7 +2655,27 @@ char["race"], char["class"], char["faction"] = 6, 1, "Horde"
 ns.RefreshPlayer()
 fa = storyline_with(1456, 1064)
 check(fa["origin"] == 1061 and title_of(fa) == "Forsaken Aid",
-      f"Thunder Bluff's Forsaken Aid keeps its name: its chain starts with the breadcrumb The Spirits of Stonetalon ({title_of(fa)!r})")
+      f"Thunder Bluff's Forsaken Aid keeps its name: on another page, even a breadcrumb with a name of its own (The Spirits of Stonetalon) doesn't name the chain ({title_of(fa)!r})")
+# Breadcrumbs named after their NPC are errands; ones with a name of their own name the storyline.
+real_title = g.C_QuestLog.GetTitleForQuestID
+titles = {1483: "Ziz Fizziks", 1093: "Super Reaper 6000", 690: "Malin's Request", 8275: "Taking Back Silithus",
+          1061: "The Spirits of Stonetalon", 2872: "Stoley's Debt"}
+g.C_QuestLog.GetTitleForQuestID = lambda i: titles.get(int(i)) or real_title(i)
+check(ns.NamedAfterItsNPC(1483, "Ziz Fizziks") and ns.NamedAfterItsNPC(690, "Malin's Request") and ns.NamedAfterItsNPC(2872, "Stoley's Debt"),
+      "a breadcrumb named after the NPC it sends you to, or who gives it, is an errand (Ziz Fizziks, Malin's Request, Stoley's Debt)")
+check(not ns.NamedAfterItsNPC(8275, "Taking Back Silithus") and not ns.NamedAfterItsNPC(1061, "The Spirits of Stonetalon"),
+      "one with a name of its own isn't (Taking Back Silithus, The Spirits of Stonetalon)")
+check(not ns.NamedAfterItsNPC(1483, None) and not ns.NamedAfterItsNPC(783, "A Threat Within"),
+      "nor is a quest whose name hasn't loaded, or one that isn't a breadcrumb")
+char["race"], char["class"], char["faction"] = 2, 1, "Horde"
+ns.RefreshPlayer(); ns.RefreshCompleted(); ns.ClearChainTitles()
+zf = storyline_with(1442, 1483)
+check(ns.StorylineTitleQuest(zf) == 1093,
+      f"Stonetalon's storyline that opens with the breadcrumb Ziz Fizziks is named Super Reaper 6000 ({ns.StorylineTitleQuest(zf)})")
+g.C_QuestLog.GetTitleForQuestID = real_title
+ns.ClearChainTitles()
+char["race"], char["class"], char["faction"] = 6, 1, "Horde"
+ns.RefreshPlayer(); ns.RefreshCompleted()
 
 # Chain names are kept, so redrawing a page doesn't rebuild the pages its chains start on.
 char["race"], char["class"], char["faction"] = 6, 3, "Horde"
