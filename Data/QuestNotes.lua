@@ -2,6 +2,7 @@
 -- Source: AllTheThings WoW Forever data (db/Camelot), commit 007a007 (2026-11-10).
 -- AllTheThings is MIT-licensed; see Data/AllTheThings-LICENSE.txt.
 -- Notes about quests: where an item drops, what a quest locks you out of, and so on.
+-- Includes LorePath's own notes from in game (LOREPATH_NOTES in tools/extract_att.py).
 local _, ns = ...
 ns.QuestNotes = {
 [215]="Every so often, Thorsen will go on patrol. If you follow him, he will be ambushed by two of Kurzen's lackeys - if he survives, he will offer you this quest.",
@@ -33,7 +34,7 @@ ns.QuestNotes = {
 [1579]="Requires fishing skill level 30",
 [2278]="Right click on The Discs of Norgannon after defeating Archaedas to start this quest.",
 [2754]="Plans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
-[2842]="Although this quest is available from level 20, if you take or complete it, it makes it impossible to obtain the 'Rig Wars' quest, which is available at level 25. However, if you take 'Rig Wars' first, you can have both quest without problems.",
+[2842]="Although this quest is available from level 20, if you take or complete it, it makes it impossible to obtain the 'Rig Wars' quest, which is available at level 25. However, if you take 'Rig Wars' first, you can have both quest without problems.\n\nSovik doesn't offer this straight away: talk to him and pick his conversation option first, then the quest appears.",
 [2945]="Take this to The Sparklematic 5200.",
 [3368]="The Singed Letter will be on the ground after you finish escorting Dorius Stonetender.",
 [3369]="She lives in a house on top of the mountain.",

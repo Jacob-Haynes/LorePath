@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Chief Engineer Scooty:** its note now says Sovik only offers it after you pick his conversation option.
+
 ## 1.2.1
 
 Easier sharing, and more shared quest text.

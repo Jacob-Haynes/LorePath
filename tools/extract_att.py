@@ -625,8 +625,19 @@ def append_zone_icons(path, icons):
         f.write("\n".join(lines) + "\n")
 
 
+# LorePath's own notes, for things seen in game that ATT doesn't say. Where ATT
+# has a note too, ours goes after it. Keep them short and factual.
+LOREPATH_NOTES = {
+    2842: "Sovik doesn't offer this straight away: talk to him and pick his conversation option first, then the quest appears.",
+}
+
+
 def write_notes(path, notes, att_commit):
-    """Writes Data/QuestNotes.lua: ATT's notes about quests, shown in the details."""
+    """Writes Data/QuestNotes.lua: ATT's notes about quests, plus LorePath's own
+    (LOREPATH_NOTES), shown in the details."""
+    notes = dict(notes)
+    for qid, ours in LOREPATH_NOTES.items():
+        notes[qid] = notes[qid] + "\n\n" + ours if qid in notes else ours
     def lua_string(text):
         return '"' + text.replace("\\", "\\\\").replace('"', '\\"').replace("\r", "").replace("\n", "\\n") + '"'
     lines = [
@@ -634,6 +645,7 @@ def write_notes(path, notes, att_commit):
         f"-- Source: AllTheThings WoW Forever data (db/Camelot), commit {att_commit}.",
         "-- AllTheThings is MIT-licensed; see Data/AllTheThings-LICENSE.txt.",
         "-- Notes about quests: where an item drops, what a quest locks you out of, and so on.",
+        "-- Includes LorePath's own notes from in game (LOREPATH_NOTES in tools/extract_att.py).",
         "local _, ns = ...",
         "ns.QuestNotes = {",
     ]

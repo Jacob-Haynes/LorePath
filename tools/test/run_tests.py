@@ -336,6 +336,10 @@ check(ns.MatchesBundled("Hey!  Mage!  Come here!\n\nMy raiders and I", "Hey!  $C
 check(not ns.MatchesBundled("Hey!  Mage!  Come here! Different.", "Hey!  $C!  Come here!", mo), "different text doesn't match")
 check(not ns.MatchesBundled("Hey!  Warrior!", "Hey!  $C!", mo), "nor another class than the account's")
 
+# LorePath's own notes (tools/extract_att.py LOREPATH_NOTES) go after ATT's.
+check("Rig Wars" in ns.QuestNotes[2842] and "conversation option" in ns.QuestNotes[2842],
+      "Chief Engineer Scooty's note keeps ATT's and adds that Sovik needs his conversation option first")
+
 # --- No spoilers: not started = "Find what awaits you", in your log = no ending, done = everything ---
 ns.SetSetting("showSpoilers", False)
 g.LorePathDB["questCache"][6] = lua.table_from({"done": "Garrick is dead. The end."})
