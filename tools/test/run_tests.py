@@ -2593,6 +2593,52 @@ check(all(ns.Quests[q]["z"] == 1448 for q in (6031, 8460, 8461, 8470, 8481)) and
       "Timbermaw Hold's quests are on Felwood's page, or Winterspring's for the Winterfall ones")
 check(not any(q["z"] == 1414 for q in ns.Quests.values()), "and no quest is left on the Kalimdor continent page")
 
+# --- Story so far: a storyline's finished quests, read in order (issue #4) ---
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 6, 1, "Horde", 60, 1412
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+mg = next(st for st in ns.BuildStorylines(1412)[0].values()
+          if len([n for n in st["nodes"].values() if not ns.IsRepeatable(n["id"])]) >= 3)
+order = [n["id"] for n in sorted(mg["nodes"].values(), key=lambda n: (n["col"], n["row"], n["id"])) if not ns.IsRepeatable(n["id"])]
+first_q, second_q, ahead = order[0], order[1], order[2]
+char["completed"] = lua.table_from({second_q: True, first_q: True})
+ns.RefreshCompleted()
+cache = g.LorePathDB["questCache"]
+cache[first_q] = lua.table_from({"text": "Take this to the elders, $N.", "done": "The elders thank you."})
+cache[ahead] = lua.table_from({"text": "A secret further on."})
+story = list(ns.StorySoFar(mg).values())
+check([e["id"] for e in story] == [first_q, second_q], f"Story so far lists the finished quests in storyline order: {[e['id'] for e in story]}")
+check(story[0]["d"] == "Take this to the elders, $N." and story[0]["c"] == "The elders thank you.",
+      "with the description and completion text you saw")
+ns.Toggle(True)
+ns.FocusQuest(first_q)
+header = next(f for f in harness["all"].values() if f["key"] == "s" + str(mg["first"]) and f.IsShown(f))
+check(header["story"].IsShown(header["story"]), "a storyline with finished quests has a Story so far button")
+header["story"]["__scripts"]["OnClick"](header["story"])
+panel = g.LorePathDetailFrame
+texts = detail_texts()
+check(panel.IsShown(panel) and panel["titleText"]["__text"] == "Story so far" and ns.detailQuest is None,
+      "clicking it opens the story in the side panel")
+check(any(t.startswith("Take this to the elders, ") and "$N" not in t for t in texts)
+      and "The elders thank you." in texts and "On turning it in:" in texts,
+      "it reads each quest's text, placeholders filled in")
+check(not any("A secret further on." in t for t in texts), "quests you haven't finished stay hidden")
+check(any(t.startswith("2 of ") for t in texts) and "The rest of the story is still ahead of you." in texts,
+      "it says how far through you are")
+header["story"]["__scripts"]["OnClick"](header["story"])
+check(not panel.IsShown(panel) and ns.detailStory is None, "clicking it again closes the panel")
+header["story"]["__scripts"]["OnClick"](header["story"])
+ns.ShowDetail(first_q)
+check(ns.detailStory is None and panel["titleText"]["__text"] == "Quest details", "clicking a quest swaps the story for its details")
+ns.HideDetail()
+char["completed"] = lua.table()
+ns.RefreshCompleted()
+ns.Refresh()
+header = next(f for f in harness["all"].values() if f["key"] == "s" + str(mg["first"]) and f.IsShown(f))
+check(not header["story"].IsShown(header["story"]), "a storyline with nothing finished has no Story so far button")
+cache[first_q], cache[ahead] = None, None
+ns.Toggle(False)
+
 # --- Close buttons work in combat ---
 # The game's window templates close through HideUIPanel, which it blocks for addons in combat.
 harness["inCombat"] = True

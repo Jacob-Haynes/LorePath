@@ -30,6 +30,7 @@ Built for **WoW Forever**, on English game clients. It's lightweight: its map pi
   - a WarcraftDB link to copy.
 
   No spoilers: quests you haven't started show "Find what awaits you" until you press Reveal, and how a quest ends stays hidden until you turn it in. Turn on **Show spoilers** to see everything.
+- **Story so far:** read a storyline as one story: the text of each quest you've finished in it, in order, from its header's **Story so far** button.
 - **Your story, saved:** LorePath saves the quest text you see as you play, so you can go back and reread it. For quests you did before installing it, it fills in from:
   - community text, including many of WoW Forever's own quests;
   - the game's own quest summaries;

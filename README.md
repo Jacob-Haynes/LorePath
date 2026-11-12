@@ -45,6 +45,7 @@ LorePath supports English game clients only.
   - its address on WarcraftDB, to copy, at the bottom.
 
   **No spoilers by default:** a quest you haven't started shows "Find what awaits you." with a **Reveal** button, instead of its objectives and story. A quest in your log shows its objectives and description, but not how it ends. A completed quest shows everything. Reveal lasts until you look at another quest. **Show spoilers** in the settings shows everything always.
+- **Story so far:** once you've finished a quest in a storyline, its header has a **Story so far** button. It opens the storyline's story in the side panel: each finished quest's description and completion text, in order, so you can read the chain as one story. Quests you haven't finished are left out. When the chain began on another page, it says where.
 - **Search:** type part of a quest's name, or its ID, in the box above the zone list. The list shows up to 50 matching quests you can do, with their zone, status and level; click one to jump to it. Escape clears the search.
 - **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
@@ -67,6 +68,7 @@ LorePath supports English game clients only.
 | Hide the zone list | The arrow button left of the zone name |
 | Show or hide repeatable quests | The **Repeatable** tick box, or the settings page |
 | Reveal a quest's story | **Reveal** in its details; or **Show spoilers** in the settings for every quest |
+| Read a storyline as one story | **Story so far** in its header (once you've finished one of its quests) |
 | Show or hide the minimap button | The settings page |
 | Share the quest text you've collected | **Share quest text** on the settings page, or `/lp share`, then paste the code into the [share page](https://lorepath-share.jacobhaynes49.workers.dev) (no account needed) or a [Share quest text](https://github.com/Jacob-Haynes/LorePath/issues/new/choose) issue |
 | Move the window | Drag its title bar |

@@ -721,6 +721,21 @@ local function AcquireSection(parent)
             GameTooltip:Show()
         end)
         s.stepButton:SetScript("OnLeave", GameTooltip_Hide)
+        -- A storyline's "Story so far": its finished quests' text, in order (issue #4).
+        s.story = CreateFrame("Button", nil, s, "UIPanelButtonTemplate")
+        s.story:SetSize(100, 20)
+        s.story:SetPoint("RIGHT", -4, 0)
+        s.story:SetText("Story so far")
+        s.story:SetScript("OnClick", function(self)
+            ns.ToggleStory(self.storyline)
+        end)
+        s.story:SetScript("OnEnter", function(self)
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+            GameTooltip:AddLine("Story so far", 1, 0.82, 0)
+            GameTooltip:AddLine("Read the text of the quests you've finished in this storyline, in order.", 1, 1, 1, true)
+            GameTooltip:Show()
+        end)
+        s.story:SetScript("OnLeave", GameTooltip_Hide)
         s.line = s:CreateTexture(nil, "ARTWORK")
         s.line:SetPoint("BOTTOMLEFT", 0, 0)
         s.line:SetPoint("BOTTOMRIGHT", 0, 0)
@@ -1012,6 +1027,8 @@ local function RenderSection(canvas, key, title, done, total, complete, width, t
     s.stepButton.targetQuest = nil
     s.stepButton:EnableMouse(false)
     s.tooltipLines = nil
+    s.story:Hide()
+    s.story.storyline = nil
     return s, collapsed, top + HEADER_H + 8
 end
 
@@ -1037,6 +1054,11 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
     local s, collapsed, graphTop = RenderSection(canvas, "s" .. storyline.first,
         ns.GetQuestNameOrID(titleQuest), done, total, kind == "complete", viewWidth - PAD * 2, top, repeatables)
     s.tooltipLines = ns.ui.StorylineHeaderLines(storyline, titleQuest)
+    -- "Story so far" once there's a finished quest to read.
+    if ns.StorySoFar and #ns.StorySoFar(storyline) > 0 then
+        s.story.storyline = storyline
+        s.story:Show()
+    end
 
     local target = (kind == "available" or kind == "active") and nextID or nil
     if kind == "blocked" and detail and ns.Quests[detail] then
