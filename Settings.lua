@@ -70,6 +70,10 @@ end
 function ns.SetSetting(key, value)
     ns.InitDB()
     LorePathDB[key] = value
+    -- Showing repeatable quests changes storylines, and so chains' names.
+    if ns.ClearChainTitles then
+        ns.ClearChainTitles()
+    end
     ns.ApplySettings()
 end
 

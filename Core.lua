@@ -147,6 +147,19 @@ function ns.RefreshPlayer()
     ApplyFactionVersions()
     ApplyCommunityStarts()
     wipe(ns.standings)
+    -- Which quests you can do decides storylines, and so chains' names.
+    local skills = {}
+    for line, rank in pairs(player.skills) do
+        table.insert(skills, line .. ":" .. rank)
+    end
+    table.sort(skills)
+    local who = table.concat({ player.race, player.class, player.faction, player.level, table.concat(skills, ",") }, "/")
+    if who ~= player.who then
+        player.who = who
+        if ns.ClearChainTitles then
+            ns.ClearChainTitles()
+        end
+    end
 end
 
 -- ============================================================================
@@ -235,14 +248,34 @@ ns.BelowMinRep, ns.AboveMaxRep = BelowMinRep, AboveMaxRep
 local completed = {}
 
 function ns.RefreshCompleted()
-    wipe(completed)
+    local before = 0
+    for _ in pairs(completed) do
+        before = before + 1
+    end
+    local changed = false
+    local fresh = {}
     if C_QuestLog and C_QuestLog.GetAllCompletedQuestIDs then
         local ids = C_QuestLog.GetAllCompletedQuestIDs()
         if ids then
             for _, id in ipairs(ids) do
-                completed[id] = true
+                if not fresh[id] then
+                    fresh[id] = true
+                    changed = changed or not completed[id]
+                end
             end
         end
+    end
+    local after = 0
+    for _ in pairs(fresh) do
+        after = after + 1
+    end
+    wipe(completed)
+    for id in pairs(fresh) do
+        completed[id] = true
+    end
+    -- Finishing a quest can change which version of a chain is yours.
+    if (changed or before ~= after) and ns.ClearChainTitles then
+        ns.ClearChainTitles()
     end
 end
 
@@ -1420,8 +1453,12 @@ end
 
 -- A storyline's title: its first quest's name, unless that quest is an errand
 -- ("Speak with Ruga", "Report to Kadrak"), when the first quest after it that
--- isn't one names it instead. Names come from the client, so this is worked out
--- when it's drawn.
+-- isn't one names it instead. A storyline that carries on a chain from another
+-- page is named after the whole chain instead: the name it has on the page
+-- where it starts, so it's called the same on every page (Mulgore's The
+-- Hunter's Way goes on in the Barrens with the breadcrumb Sergra Darkthorn, and
+-- is still The Hunter's Way there). Names come from the client, so this is
+-- worked out when it's drawn.
 local ERRANDS = { "speak with ", "speak to ", "talk to ", "report to ", "return to ", "deliver to ",
     "deliveries to ", "seek ", "message to ", "messenger to " }
 function ns.IsErrandTitle(name)
@@ -1437,14 +1474,87 @@ function ns.IsErrandTitle(name)
     return false
 end
 
-function ns.StorylineTitleQuest(storyline)
+-- Names can still be loading (nil); a title worked out without one isn't kept.
+local nameMissing = false
+local function Name(id)
+    local name = ns.GetQuestName(id)
+    if not name then
+        nameMissing = true
+    end
+    return name
+end
+
+local function OwnTitleQuest(storyline)
     for _, n in ipairs(storyline.nodes) do
-        local name = ns.GetQuestName(n.id)
+        local name = Name(n.id)
         if name and not ns.IsErrandTitle(name) then
             return n.id
         end
     end
     return storyline.first
+end
+
+-- A breadcrumb or errand only leads to the chain, so it can't name the whole
+-- of it: when the page a chain starts on only has its lead-in (Teldrassil's
+-- Nessa Shadowsong, before Darkshore's The Bounty of Teldrassil), the
+-- storyline keeps its own name.
+local function IsLeadIn(id)
+    return ns.Quests[id].bc or ns.IsErrandTitle(Name(id))
+end
+
+-- The name of the chain starting with `origin`, by origin quest: a quest ID, or
+-- false when the storyline should keep its own. Finding it builds the
+-- storylines of the origin's page, so it's kept until what it depends on
+-- changes: who you are, what you've finished, your quest log, quest names
+-- loading or the settings (ns.ClearChainTitles).
+local chainTitles = {}
+function ns.ClearChainTitles()
+    wipe(chainTitles)
+end
+
+local TitleQuest
+local function ChainTitle(origin, seen)
+    if chainTitles[origin] ~= nil then
+        return chainTitles[origin]
+    end
+    if seen[origin] then
+        return false
+    end
+    seen[origin] = true
+    local outerMissing = nameMissing
+    nameMissing = false
+    local title = false
+    for _, there in ipairs((ns.BuildStorylines(ns.Quests[origin].z))) do
+        for _, n in ipairs(there.nodes) do
+            if n.id == origin then
+                local id = TitleQuest(there, seen)
+                if not IsLeadIn(id) then
+                    title = id
+                end
+            end
+        end
+    end
+    if not nameMissing then
+        chainTitles[origin] = title
+    end
+    nameMissing = outerMissing or nameMissing
+    return title
+end
+
+function TitleQuest(storyline, seen)
+    local origin = storyline.origin
+    if origin and ns.Quests[origin] then
+        local id = ChainTitle(origin, seen)
+        if id then
+            return id
+        end
+    end
+    return OwnTitleQuest(storyline)
+end
+
+function ns.StorylineTitleQuest(storyline)
+    nameMissing = false
+    return TitleQuest(storyline, {})
 end
 
 -- Groups a zone's quests into storylines: quests joined by prerequisite or
