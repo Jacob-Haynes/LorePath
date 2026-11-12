@@ -18,9 +18,9 @@ local addonName, ns = ...
 ns.SHARE_PREFIX = "LP1:"
 ns.SHARE_PART_LIMIT = 60000 -- characters per code (GitHub issues allow 65536)
 ns.SHARE_URL = "github.com/Jacob-Haynes/LorePath/issues/new/choose"
--- The share page (share/README.md), once it's deployed; until then the window
--- only names the GitHub issue form.
-ns.SHARE_PAGE_URL = nil
+-- The share page (share/, deployed as described in share/README.md). Set to nil
+-- to send players to the GitHub issue form only.
+ns.SHARE_PAGE_URL = "lorepath-share.jacobhaynes49.workers.dev"
 
 -- Saved field -> share field.
 local TEXT_FIELDS = { { "o", "obj" }, { "d", "text" }, { "p", "prog" }, { "c", "done" } }
