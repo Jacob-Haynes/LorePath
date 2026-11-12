@@ -10,13 +10,17 @@
 -- s is where the quest was offered (issue #37), shared only for quests whose
 -- start LorePath's own data doesn't have.
 -- A big collection is split into several codes, each small enough for one
--- GitHub issue.
+-- GitHub issue. Players without a GitHub account paste them into the share page
+-- (share/, a Cloudflare Worker), which opens the issues for them.
 
 local addonName, ns = ...
 
 ns.SHARE_PREFIX = "LP1:"
 ns.SHARE_PART_LIMIT = 60000 -- characters per code (GitHub issues allow 65536)
 ns.SHARE_URL = "github.com/Jacob-Haynes/LorePath/issues/new/choose"
+-- The share page (share/README.md), once it's deployed; until then the window
+-- only names the GitHub issue form.
+ns.SHARE_PAGE_URL = nil
 
 -- Saved field -> share field.
 local TEXT_FIELDS = { { "o", "obj" }, { "d", "text" }, { "p", "prog" }, { "c", "done" } }
@@ -39,20 +43,26 @@ local function JsonString(s)
 end
 
 -- Every character name this account has used (LorePathDB.characters), longest
--- first, so text saved on one character doesn't carry another's name.
+-- first, so text saved on one character doesn't carry another's name. And their
+-- classes and races (saved since 1.3.0; older entries are just `true`), with the
+-- character you're on, for ns.PutPlaceholders.
 local function AccountNames()
-    local names = {}
-    for name in pairs(LorePathDB and LorePathDB.characters or {}) do
+    local names, people = {}, { ns.CurrentPerson() }
+    for name, who in pairs(LorePathDB and LorePathDB.characters or {}) do
         if type(name) == "string" and name ~= "" then
             table.insert(names, name)
         end
+        if type(who) == "table" then
+            table.insert(people, who)
+        end
     end
     table.sort(names, function(a, b) return #a > #b end)
-    return names
+    return names, people
 end
 
--- Text as it should be shared: names back to $N, no colour codes or links.
-local function Scrub(text, names)
+-- Text as it should be shared: names back to $N, no colour codes or links, and
+-- for story text (not objectives) class and race back to $C and $R.
+local function Scrub(text, names, people)
     if type(text) ~= "string" then
         return nil
     end
@@ -60,6 +70,7 @@ local function Scrub(text, names)
     for _, name in ipairs(names) do
         text = text:gsub("%f[%w]" .. name:gsub("[%^%$%(%)%%%.%[%]%*%+%-%?]", "%%%0") .. "%f[%W]", "$N")
     end
+    text = ns.PutPlaceholders(text, people)
     text = text:gsub("\r", ""):match("^%s*(.-)%s*$")
     return text ~= "" and text or nil
 end
@@ -105,20 +116,22 @@ local function ShareStart(id, start, shipped)
 end
 
 -- The fields of one saved quest worth sharing: anything that isn't already in
--- LorePath's community text or bundled vanilla text, word for word.
-local function ShareEntry(id, saved, names)
+-- LorePath's community text, word for word, or the bundled vanilla text once its
+-- placeholders are filled in (which also catches gendered wording).
+local function ShareEntry(id, saved, names, people)
     local shipped = ns.CommunityText and ns.CommunityText[id] or {}
     local bundled = ns.QuestText and ns.QuestText[id] or {}
     local out = {}
     local function New(field, value)
         return value ~= nil and value ~= shipped[field] and value ~= bundled[field]
+            and not ns.MatchesBundled(value, bundled[field], people)
     end
     local title = ns.GetQuestName(id)
     if New("t", title) then
         out.t = title
     end
     for _, pair in ipairs(TEXT_FIELDS) do
-        local value = Scrub(saved[pair[2]], names)
+        local value = Scrub(saved[pair[2]], names, pair[1] ~= "o" and people or nil)
         if New(pair[1], value) then
             out[pair[1]] = value
         end
@@ -190,7 +203,7 @@ end
 function ns.BuildShareCodes(limit)
     limit = limit or ns.SHARE_PART_LIMIT
     local cache = LorePathDB and LorePathDB.questCache or {}
-    local names = AccountNames()
+    local names, people = AccountNames()
     local ids = {}
     for id in pairs(cache) do
         if type(id) == "number" and ns.Quests[id] then
@@ -201,7 +214,7 @@ function ns.BuildShareCodes(limit)
     local head, tail = ns.SHARE_PREFIX .. '{"v":1,"q":{', "}}"
     local codes, current, length, count = {}, {}, 0, 0
     for _, id in ipairs(ids) do
-        local entry = ShareEntry(id, cache[id], names)
+        local entry = ShareEntry(id, cache[id], names, people)
         if entry then
             local encoded = EncodeEntry(id, entry)
             if #current > 0 and #head + length + #encoded + #current + #tail > limit then
@@ -322,12 +335,19 @@ function ns.ShowSharePart(part)
     f.box.code = code
     f.box:SetText(code)
     f.box:SetCursorPosition(0)
-    local which = #f.codes > 1 and string.format(" This is code %d of %d: send each one, in its own issue.", part, #f.codes) or ""
+    local where, which
+    if ns.SHARE_PAGE_URL then
+        which = #f.codes > 1 and string.format(" This is code %d of %d: paste them all, one after another.", part, #f.codes) or ""
+        where = string.format("paste it at %s (no account needed), or into a new \"Share quest text\" issue at %s", ns.SHARE_PAGE_URL, ns.SHARE_URL)
+    else
+        which = #f.codes > 1 and string.format(" This is code %d of %d: send each one, in its own issue.", part, #f.codes) or ""
+        where = string.format("paste it into a new \"Share quest text\" issue at %s", ns.SHARE_URL)
+    end
     f.info:SetText(string.format(
         "Quest text and quest starts you've saved that LorePath doesn't have yet: %d %s.%s\n\n"
-        .. "Click the code, press Ctrl+C to copy it, then paste it into a new \"Share quest text\" issue at %s. "
-        .. "Your character names are replaced with $N. Quest starts say who offered each quest and where, nothing about you.",
-        f.count, f.count == 1 and "quest" or "quests", which, ns.SHARE_URL))
+        .. "Click the code, press Ctrl+C to copy it, then %s. "
+        .. "Your name, class and race are replaced with $N, $C and $R. Quest starts say who offered each quest and where, nothing about you.",
+        f.count, f.count == 1 and "quest" or "quests", which, where))
     f.prev:SetShown(#f.codes > 1)
     f.next:SetShown(#f.codes > 1)
     f.prev:SetEnabled(part > 1)

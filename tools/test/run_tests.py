@@ -306,6 +306,36 @@ check(g.LorePathDB["questCache"][cid]["text"] == "Thank you, $N. Notahville awai
 g.LorePathDB["questCache"][cid] = None
 g.UnitName = None
 
+# ...and your class and race back to $C and $R, where the text is talking to you.
+g.GetQuestText = lua.eval("function() return 'Well done, warrior! Few humans... Thank you, human. The blood of a warrior runs in you.' end")
+harness.Fire("QUEST_DETAIL")
+saved = g.LorePathDB["questCache"][cid]["text"]
+check(saved == "Well done, $c! Few humans... Thank you, $r. The blood of a warrior runs in you.",
+      f"saved story text puts back your class and race when addressed to you, not 'a warrior': {saved!r}")
+g.LorePathDB["questCache"][cid] = None
+
+people = lua.eval('{ { class = "Mage", race = "Orc" }, { class = "Hunter", race = "Tauren" } }')
+for text, want, why in [
+    ("Yes, mighty mage, I sensed your arrival.", "Yes, mighty $c, I sensed your arrival.", "a class word said to you"),
+    ("Hey!  Mage!  Come here!", "Hey!  $C!  Come here!", "a capitalised one keeps its capital"),
+    ("This is no task for a single mage.", "This is no task for a single $c.", "after an adjective"),
+    ("The blood of a hunter streaks through your veins.", "The blood of a hunter streaks through your veins.", "not after an article"),
+    ("Slay 8 Defias Mage and the Mage's apprentice.", "Slay 8 Defias Mage and the Mage's apprentice.", "nor inside a name"),
+    ("Fear not the waters, orc.", "Fear not the waters, $r.", "a race said to you"),
+    ("We tauren have used this pigment; an orc without her scars.", "We tauren have used this pigment; an orc without her scars.", "but not a race in general"),
+]:
+    got = ns.PutPlaceholders(text, people)
+    check(got == want, f"placeholders: {why}: {got!r}")
+
+# Text the bundled vanilla text already has, once its $C, $R and $G are filled in,
+# isn't shared: that's how gendered wording stays out of shared text.
+mo = lua.eval('{ { class = "Mage", race = "Orc" } }')
+v874 = "You have hunted the beasts of the Barrens.  Your spirit is strong.  But a hunter must always be prepared.  A true hunter can stalk prey down any path.  Mountains and swamps will not sway her.\n\nNot even the sea.\n\nFind my sister, Mahren.  She hunts the great water beasts along the coast.  She will be your teacher in their ways.\n\nBut be wary in your search for her, for the Barrens' coast is held by humans."
+check(ns.QuestText[874] is not None and ns.MatchesBundled(v874, ns.QuestText[874]["d"], mo), "a female orc's saved text matches the bundled text with $ghim:her;")
+check(ns.MatchesBundled("Hey!  Mage!  Come here!\n\nMy raiders and I", "Hey!  $C!  Come here!$B$BMy raiders and I", mo), "and a mage's matches $C")
+check(not ns.MatchesBundled("Hey!  Mage!  Come here! Different.", "Hey!  $C!  Come here!", mo), "different text doesn't match")
+check(not ns.MatchesBundled("Hey!  Warrior!", "Hey!  $C!", mo), "nor another class than the account's")
+
 # --- No spoilers: not started = "Find what awaits you", in your log = no ending, done = everything ---
 ns.SetSetting("showSpoilers", False)
 g.LorePathDB["questCache"][6] = lua.table_from({"done": "Garrick is dead. The end."})
@@ -1201,7 +1231,7 @@ g.C_QuestLog.GetTitleForQuestID = real_title
 harness.RunTimers()
 
 # --- Sharing quest text (issue #14) ---
-import json, subprocess, tempfile
+import json, shutil, subprocess, tempfile
 F = next(qid for qid in sorted(ns.Quests.keys()) if qid >= 90000 and ns.QuestText[qid] is None and ns.CommunityText[qid] is None)
 cid = next(k for k, v in sorted(ns.CommunityText.items()) if v["d"] is not None)
 saved_cache = g.LorePathDB["questCache"]
@@ -1223,6 +1253,30 @@ check(e["c"] == "Well done, $N." and e["p"] == "Back so soon?" and e["t"] == f"Q
 check(e["m"] == 150 and e["x"] == 900 and e["r"] == [[72, 250]], "and gold, XP and reputation")
 check(str(6) not in payload["q"] and str(cid) not in payload["q"], "text LorePath already has isn't shared again")
 
+# The share code puts class and race back too, using every character on the
+# account, and leaves out vanilla text the bundled text has with placeholders.
+g.LorePathDB["characters"] = lua.eval('{ Notah = { class = "Mage", race = "Orc" }, Altie = true }')
+g.LorePathDB["questCache"] = lua.eval("{}")
+cache = g.LorePathDB["questCache"]
+cache[F] = lua.eval("""{ done = "Your skill is impressive, mage; well done.", obj = "Kill 3 Dalaran Mage." }""")
+cache[874] = lua.table_from({"text": v874})
+codes, count = ns.BuildShareCodes()
+payload = json.loads(list(codes.values())[0][4:])
+e = payload["q"][str(F)]
+check(e["c"] == "Your skill is impressive, $c; well done." and e["o"] == "Kill 3 Dalaran Mage.",
+      f"/lp share puts $c back for a class on the account, not in objectives: {e!r}")
+check("874" not in payload["q"], "and leaves out vanilla text that matches the bundled text once filled in")
+cache[874] = lua.table_from({"text": v874.replace("Not even the sea.", "Not even the Forever sea.")})
+payload = json.loads(list(ns.BuildShareCodes()[0].values())[0][4:])
+check(payload["q"].get("874", {}).get("d", "").count("Forever sea") == 1,
+      "but WoW Forever's wording, where it differs from the (classic) bundled text by even a word, is still shared")
+g.LorePathDB["characters"] = lua.table_from({"Notah": True, "Altie": True})
+g.LorePathDB["questCache"] = lua.eval("{}")
+cache = g.LorePathDB["questCache"]
+cache[F] = lua.eval("""{ text = "Hello Altie, the |cffff0000storm|r comes.", obj = "Kill 5 | things", done = "Well done, $N.",
+                         prog = "Back so soon?", money = 150, xp = 900, rep = { { 72, 250 } } }""")
+payload = json.loads(list(ns.BuildShareCodes()[0].values())[0][4:])
+
 # Many quests split into codes that each fit in one issue.
 many = [qid for qid in sorted(ns.Quests.keys()) if ns.QuestText[qid] is None and ns.CommunityText[qid] is None][:30]
 for qid in many:
@@ -1243,6 +1297,12 @@ check(share.IsShown(share) and box["__text"] == list(ns.BuildShareCodes()[0].val
 box["__scripts"]["OnTextChanged"](box, True)
 check(box["__text"] == box["code"], "typing in it can't change the code")
 check("quests" in share["info"]["__text"] and "Share quest text" in share["info"]["__text"], "it explains where to send it")
+check("no account needed" not in share["info"]["__text"], "until the share page is deployed, it names only the GitHub issue form")
+ns.SHARE_PAGE_URL = "lorepath-share.example.workers.dev"
+ns.ShowSharePart(1)
+check("lorepath-share.example.workers.dev (no account needed)" in share["info"]["__text"] and "Share quest text" in share["info"]["__text"],
+      "once it is, the window offers the share page first, and still the issue form")
+ns.SHARE_PAGE_URL = None
 g.LorePathDB["questCache"] = lua.eval("{}")
 before_chat = len(list(harness["chat"].values()))
 check(ns.OpenShare() is False and any("Nothing new to share" in str(m) for m in list(harness["chat"].values())[before_chat:]),
@@ -1260,6 +1320,12 @@ try:
 except ValueError:
     bad = True
 check(bad, "a broken code is rejected")
+check(mqt.matches_bundled(v874, ns.QuestText[874]["d"]) and mqt.matches_bundled("Hey!  Mage!\n\nGo.", "Hey!  $C!$B$BGo.")
+      and not mqt.matches_bundled("Hey!  Mage! Other.", "Hey!  $C!"), "the merge tool leaves out vanilla text with its placeholders filled in, too")
+check(not mqt.matches_bundled(v874.replace("Not even the sea.", "Not even the Forever sea."), ns.QuestText[874]["d"]),
+      "and keeps text Forever has reworded")
+check(mqt.player_words("Yes, mighty mage. Fear not the waters, orc. The blood of a hunter; we tauren; Defias Mage.") == ["mage", "orc"],
+      "and its report flags class and race words that may be the player's own")
 with tempfile.TemporaryDirectory() as tmp:
     sub, rep = os.path.join(tmp, "issue.txt"), os.path.join(tmp, "report.md")
     with open(sub, "w") as f:
@@ -1268,6 +1334,17 @@ with tempfile.TemporaryDirectory() as tmp:
                          capture_output=True, text=True)
     report = open(rep).read() if os.path.exists(rep) else out.stderr
 check(out.returncode == 0 and "1 new quests" in report, f"a dry run reports what the code adds: {report.strip()[:120]}")
+
+# The share page (share/worker.js) checks codes and opens the issues the merge
+# tool reads. Its own checks run under node, or macOS's jsc where node is missing.
+js = shutil.which("node") or next((p for p in ["/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Helpers/jsc"] if os.path.exists(p)), None)
+if js:
+    args = [js, "test_worker.js"] if js.endswith("node") else [js, "-m", "test_worker.js"]
+    run = subprocess.run(args, cwd=os.path.join(ROOT, "share"), capture_output=True, text=True)
+    out = (run.stdout + run.stderr).strip()
+    check(run.returncode == 0 and "FAIL" not in out, f"the share page's checks pass ({out.count('PASS')} checks)" + ("" if run.returncode == 0 else ": " + out[-600:]))
+else:
+    print("SKIP the share page's checks: no node or jsc to run them")
 
 # --- Quest starts: saved, shared and used (issue #37) ---
 g.LorePathDB["questCache"] = lua.eval("{}")

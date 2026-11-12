@@ -29,7 +29,11 @@ Rules:
   - Character names found in the file are replaced with $N, colour codes and
     links are stripped, and implausibly long text is rejected.
   - Quest text that the bundled vanilla text (Data/QuestText.lua) already has
-    word for word isn't duplicated.
+    isn't duplicated: word for word, or once its $N/$C/$R/$G placeholders are
+    filled in for any class, race or gender (spacing ignored).
+  - The report warns about class and race names left in new story text, which
+    may be the sharing player's own (the game fills in $C and $R): check them,
+    and put the placeholder back by hand if the text was talking to the player.
   - Saved gold, XP and reputation rewards are carried over too (m, x, r), within
     sane limits. LorePath doesn't display them yet.
   - Where a quest was offered (s: a creature, object or item, and the map and
@@ -192,6 +196,56 @@ def reward_value(kind, value):
 
 SHARE_PREFIX = "LP1:"
 
+# English clients only (see CLAUDE.md). WoW Forever's own races (95, 96) aren't
+# known by name here; in game, Share.lua uses the account's own races.
+CLASSES = ("Warrior", "Paladin", "Hunter", "Rogue", "Priest", "Shaman", "Mage", "Warlock", "Druid")
+RACES = ("Human", "Dwarf", "Night Elf", "Gnome", "Orc", "Undead", "Tauren", "Troll")
+_WORD = lambda words: "|".join(re.escape(w) for w in words)
+CLASS_RE = re.compile(r"(?i:" + _WORD(CLASSES) + r")")
+RACE_RE = re.compile(r"(?i:" + _WORD(RACES) + r")")
+
+
+def matches_bundled(value, bundled):
+    """Whether saved text `value` is the bundled text with its placeholders
+    filled in (any class, race or gender), ignoring spacing. Matches
+    ns.MatchesBundled in Detail.lua."""
+    if not isinstance(value, str) or not isinstance(bundled, str):
+        return False
+    squeeze = lambda s: re.sub(r"\s+", "", s)
+    parts, pos = [], 0
+    for m in re.finditer(r"\$[Gg]\s*([^:;]*?)\s*:\s*([^;]*?)\s*;|\$([A-Za-z])", bundled):
+        parts.append(re.escape(squeeze(bundled[pos:m.start()])))
+        if m.group(1) is not None:
+            parts.append("(?:" + re.escape(squeeze(m.group(1))) + "|" + re.escape(squeeze(m.group(2))) + ")")
+        else:
+            kind = m.group(3).lower()
+            if kind == "n":
+                parts.append(r"\$N")
+            elif kind == "c":
+                parts.append(r"(?:\$[Cc]|" + CLASS_RE.pattern.replace(" ", "") + ")")
+            elif kind == "r":
+                parts.append(r"(?:\$[Rr]|" + RACE_RE.pattern.replace(" ", "") + ")")
+            elif kind != "b":
+                parts.append(re.escape(m.group(0)))
+        pos = m.end()
+    parts.append(re.escape(squeeze(bundled[pos:])))
+    return re.fullmatch("".join(parts), squeeze(value)) is not None
+
+
+def player_words(value):
+    """Class and race names in story text that may be the sharing player's own:
+    classes except after an article, races only when said to someone."""
+    found = []
+    for m in re.finditer(r"\b(" + _WORD(CLASSES) + r")\b", value, re.I):
+        before = re.search(r"([A-Za-z]+)\s+$", value[:m.start()])
+        word = before.group(1) if before else ""
+        if word.lower() in ("a", "an", "the") or (m.group(1)[0].isupper() and word[:1].isupper()):
+            continue
+        found.append(m.group(1))
+    for m in re.finditer(r"(?:,\s+|^)(" + _WORD(RACES) + r")(?=[.!?,;])", value, re.I):
+        found.append(m.group(1))
+    return found
+
 
 def read_share_codes(text):
     """Every share code in `text` -> {questID: {field: value}}. Raises ValueError
@@ -288,7 +342,7 @@ def main():
             report.append("- No share code found. It starts with `LP1:`; copy it with /lp share in game.")
             continue
         clean = cleaner(names)
-        new_quests, fields, skipped, changed = 0, 0, 0, []
+        new_quests, fields, skipped, changed, warnings = 0, 0, 0, [], []
         for key, entry in quests.items():
             try:
                 qid = int(key)
@@ -301,13 +355,16 @@ def main():
             had = len(target)
             for field in FIELDS:
                 value = clean(entry.get(field))
-                if not value or bundled.get(qid, {}).get(field) == value:
+                vanilla = bundled.get(qid, {}).get(field)
+                if not value or vanilla == value or matches_bundled(value, vanilla):
                     continue
                 if field not in target or (args.replace and target[field] != value):
                     if field in target:
                         changed.append(f"{qid}.{field}")
                     target[field] = value
                     fields += 1
+                    if field in ("d", "p", "c"):
+                        warnings.extend(f"`{qid}.{field}` \"{w}\"" for w in player_words(value))
             for field in REWARDS:
                 value = reward_value(field, entry.get(field))
                 if value is not None and (field not in target or (args.replace and target[field] != value)):
@@ -339,6 +396,10 @@ def main():
         if fields == 0 and not skipped:
             line = "- Nothing new: LorePath already has all of this text. Thank you!"
         report.append(line)
+        if warnings:
+            print(f"{path}: check these class and race words: " + ", ".join(warnings))
+            report.append("- Class or race words that may be the sharing player's own (the game fills in `$C` and `$R`), "
+                          "to check before merging: " + ", ".join(warnings[:30]) + (" and more" if len(warnings) > 30 else ""))
 
     if args.report:
         with open(args.report, "w", encoding="utf-8") as f:
