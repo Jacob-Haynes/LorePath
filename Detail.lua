@@ -1002,32 +1002,21 @@ end
 -- ============================================================================
 
 -- The text of the quests you've finished in a storyline, in the order they
--- come in it, to read as one story: { {id, d = description, c = completion,
--- bundled = true when the description is pfQuest's}, ... }. Only finished
--- quests, so nothing ahead is spoiled; repeatable quests are left out.
+-- come in it, to read as one story: { {id, z = its page, d = description,
+-- c = completion, bundled = true when the description is pfQuest's}, ... }.
+-- Includes finished quests on other pages that led to it (ns.StoryQuests).
+-- Only finished quests, so nothing ahead is spoiled; repeatable quests are
+-- left out.
 -- Text comes from the same places as the quest details: what you saw in game,
 -- then community text, then (descriptions only) the bundled vanilla text.
 function ns.StorySoFar(storyline)
-    local nodes = {}
-    for _, n in ipairs(storyline.nodes) do
-        table.insert(nodes, n)
-    end
-    table.sort(nodes, function(a, b)
-        if a.col ~= b.col then
-            return a.col < b.col
-        end
-        if a.row ~= b.row then
-            return a.row < b.row
-        end
-        return a.id < b.id
-    end)
     local list = {}
-    for _, n in ipairs(nodes) do
-        if not ns.IsRepeatable(n.id) and ns.GetStatus(n.id) == S.DONE then
-            local cached = Cache()[n.id] or {}
-            local community = ns.CommunityText and ns.CommunityText[n.id] or {}
-            local bundled = ns.QuestText and ns.QuestText[n.id] or {}
-            local entry = { id = n.id, d = cached.text or community.d, c = cached.done or community.c }
+    for _, id in ipairs(ns.StoryQuests(storyline)) do
+        if not ns.IsRepeatable(id) and ns.GetStatus(id) == S.DONE then
+            local cached = Cache()[id] or {}
+            local community = ns.CommunityText and ns.CommunityText[id] or {}
+            local bundled = ns.QuestText and ns.QuestText[id] or {}
+            local entry = { id = id, z = ns.Quests[id].z, d = cached.text or community.d, c = cached.done or community.c }
             if not entry.d and bundled.d then
                 entry.d, entry.bundled = bundled.d, true
             end
@@ -1051,17 +1040,32 @@ local function RenderStory(storyline)
         table.insert(ids, n.id)
     end
     local done, total = ns.CountProgress(ids)
-    AddText(string.format("%d of %d quests done", done, total), "GameFontDisableSmall", nil, 2)
-    -- Where the chain began, when that's on another page: the earlier chapters.
-    if storyline.origin and ns.Quests[storyline.origin] then
-        AddText(string.format("This chain starts earlier, with %s in %s.",
-            ns.GetQuestNameOrID(storyline.origin), ns.GetMapName(ns.Quests[storyline.origin].z)),
-            "GameFontHighlightSmall", { 0.55, 0.77, 1 }, 6)
-    end
+    AddText(string.format("%d of %d quests done on this page", done, total), "GameFontDisableSmall", nil, 2)
 
     local entries = ns.StorySoFar(storyline)
+    -- Where the chain began, when that's on another page and you haven't done
+    -- it (once you have, it's the story's first chapter).
+    local origin = storyline.origin
+    if origin and ns.Quests[origin] then
+        local told = false
+        for _, e in ipairs(entries) do
+            told = told or e.id == origin
+        end
+        if not told then
+            AddText(string.format("This chain starts earlier, with %s in %s.",
+                ns.GetQuestNameOrID(origin), ns.GetMapName(ns.Quests[origin].z)),
+                "GameFontHighlightSmall", { 0.55, 0.77, 1 }, 6)
+        end
+    end
+
     local usedBundled = false
+    local page = storyline.zone
     for _, e in ipairs(entries) do
+        -- A chapter on another page says where, and so does coming back.
+        if e.z ~= page then
+            AddText("In " .. ns.GetMapName(e.z), "GameFontHighlightSmall", { 0.55, 0.77, 1 }, 14)
+            page = e.z
+        end
         AddHeader(ns.GetQuestNameOrID(e.id))
         if e.d then
             AddText(ns.FillQuestText(e.d), "GameFontHighlightSmall", STORY_TEXT, 4)
