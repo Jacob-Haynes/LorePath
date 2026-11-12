@@ -74,10 +74,12 @@ local function OnEvent(event, arg1, arg2)
         -- Save the text of everything already in your log once it has loaded.
         Later(5, "saving your quest log", ns.CaptureQuestLog)
     elseif event == "QUEST_TURNED_IN" then
+        ns.ClearChainTitles()
         -- The completed-quest list updates a moment after the turn-in.
         ns.QueueRefresh(0.6)
         ns.QueueMapPinsRefresh(0.6)
     elseif event == "QUEST_ACCEPTED" then
+        ns.ClearChainTitles()
         -- Newer clients pass (questID), older ones (logIndex, questID).
         local questID = arg2 or arg1
         Later(0.5, "saving a quest", ns.CaptureLogQuest, questID)
@@ -94,8 +96,11 @@ local function OnEvent(event, arg1, arg2)
         ns.CaptureQuestDetail()
     elseif event == "QUEST_DATA_LOAD_RESULT" then
         -- Quest names arrive in bursts while the window loads them; redraw once.
+        ns.ClearChainTitles()
         ns.QueueRefresh(0.5)
     else
+        -- Turn-ins, abandoned quests, levels, professions, reputation.
+        ns.ClearChainTitles()
         ns.QueueRefresh(0.3)
         ns.QueueMapPinsRefresh(0.3)
     end

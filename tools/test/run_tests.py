@@ -2556,6 +2556,7 @@ char["completed"], char["log"] = lua.table(), lua.table()
 ns.RefreshPlayer(); ns.RefreshCompleted()
 g.C_QuestLog.GetTitleForQuestID = lua.eval(
     "function(ns) return function(id) local t = ns.CommunityText[id] or ns.QuestText[id]; return t and t.t end end")(ns)
+harness.Fire("QUEST_DATA_LOAD_RESULT", 861, True)  # names arriving, as the client tells us
 def storyline_with(page, qid):
     return next((st for st in ns.BuildStorylines(page)[0].values() if qid in [n["id"] for n in st["nodes"].values()]), None)
 title_of = lambda st: ns.GetQuestNameOrID(ns.StorylineTitleQuest(st))
@@ -2601,7 +2602,49 @@ ns.RefreshPlayer()
 fa = storyline_with(1456, 1064)
 check(fa["origin"] == 1061 and title_of(fa) == "Forsaken Aid",
       f"Thunder Bluff's Forsaken Aid keeps its name: its chain starts with the breadcrumb The Spirits of Stonetalon ({title_of(fa)!r})")
+
+# Chain names are kept, so redrawing a page doesn't rebuild the pages its chains start on.
+char["race"], char["class"], char["faction"] = 6, 3, "Horde"
+ns.RefreshPlayer(); ns.RefreshCompleted()
+builds, real_build = lua.eval(
+    "function(ns) local real, n = ns.BuildStorylines, { count = 0 }; "
+    "ns.BuildStorylines = function(z) n.count = n.count + 1; return real(z) end; return n, real end")(ns)
+ns.StorylineTitleQuest(hw_barrens)
+builds["count"] = 0
+check(ns.StorylineTitleQuest(hw_barrens) == 861 and builds["count"] == 0,
+      f"a second lookup of the Barrens' chain name doesn't build Mulgore's storylines again ({builds['count']} builds)")
+ns.RefreshPlayer(); ns.RefreshCompleted()
+ns.StorylineTitleQuest(hw_barrens)
+check(builds["count"] == 0, f"nor does redrawing with nothing changed ({builds['count']} builds)")
+harness.Fire("QUEST_ACCEPTED", 860)
+harness.RunTimers()
+builds["count"] = 0
+check(ns.StorylineTitleQuest(hw_barrens) == 861 and builds["count"] > 0,
+      f"a change to the quest log clears it, so it's worked out again ({builds['count']} builds)")
+harness.Fire("QUEST_REMOVED", 860)
+builds["count"] = 0
+ns.StorylineTitleQuest(hw_barrens)
+check(builds["count"] > 0, "and so does a quest leaving the log")
+char["completed"][861] = True
+ns.RefreshCompleted()
+builds["count"] = 0
+ns.StorylineTitleQuest(hw_barrens)
+check(builds["count"] > 0, "and finishing a quest")
+char["completed"] = lua.table()
+ns.RefreshCompleted()
+# Names load from the client: a name worked out while one was still missing isn't kept.
+bundled = g.C_QuestLog.GetTitleForQuestID
+g.C_QuestLog.GetTitleForQuestID = lua.eval("function(f) return function(id) if id == 861 then return nil end return f(id) end end")(bundled)
+harness.Fire("QUEST_DATA_LOAD_RESULT", 861, False)
+missing_title = ns.StorylineTitleQuest(hw_barrens)
+builds["count"] = 0
+ns.StorylineTitleQuest(hw_barrens)
+check(builds["count"] > 0, f"while a chain's quest name is still loading, its chain name isn't kept (named {missing_title})")
+g.C_QuestLog.GetTitleForQuestID = bundled
+check(ns.StorylineTitleQuest(hw_barrens) == 861, "so once the name arrives, the chain is named properly")
+ns.BuildStorylines = real_build
 g.C_QuestLog.GetTitleForQuestID = real_title
+harness.Fire("QUEST_DATA_LOAD_RESULT", 861, True)
 char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
 ns.RefreshPlayer(); ns.RefreshCompleted()
 ns.RefreshPlayer()
