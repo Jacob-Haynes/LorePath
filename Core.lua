@@ -1227,6 +1227,77 @@ local function BreadcrumbsTo(id)
     return crumbsTo[id] or {}
 end
 
+-- Where the chain a quest belongs to starts: walking back while there's exactly
+-- one quest before it that you could do (shown on its own page), up to 30 steps.
+-- Returns that quest's ID when it's on another page than `zoneID`, else nil.
+local function ShownOnItsPage(id, cache)
+    local q = ns.Quests[id]
+    if not q or not ns.IsEligible(id) then
+        return false
+    end
+    if not cache[q.z] then
+        cache[q.z] = {}
+        for _, other in ipairs(ns.GetZoneQuests(q.z)) do
+            cache[q.z][other] = true
+        end
+    end
+    return cache[q.z][id] == true
+end
+
+local function ChainOrigin(id, zoneID, cache)
+    local seen, at = { [id] = true }, id
+    for _ = 1, 30 do
+        -- A breadcrumb that's also a prerequisite counts once.
+        local before, counted = {}, {}
+        for _, list in ipairs({ ns.Quests[at].pre or {}, BreadcrumbsTo(at) }) do
+            for _, prev in ipairs(list) do
+                if not counted[prev] and ShownOnItsPage(prev, cache) then
+                    counted[prev] = true
+                    table.insert(before, prev)
+                end
+            end
+        end
+        if #before ~= 1 or seen[before[1]] then
+            break
+        end
+        at = before[1]
+        seen[at] = true
+    end
+    if at ~= id and ns.Quests[at].z ~= zoneID then
+        return at
+    end
+    return nil
+end
+
+-- A storyline's title: its first quest's name, unless that quest is an errand
+-- ("Speak with Ruga", "Report to Kadrak"), when the first quest after it that
+-- isn't one names it instead. Names come from the client, so this is worked out
+-- when it's drawn.
+local ERRANDS = { "speak with ", "speak to ", "talk to ", "report to ", "return to ", "deliver to ",
+    "deliveries to ", "seek ", "message to ", "messenger to " }
+function ns.IsErrandTitle(name)
+    if type(name) ~= "string" then
+        return false
+    end
+    local lower = name:lower()
+    for _, prefix in ipairs(ERRANDS) do
+        if lower:sub(1, #prefix) == prefix then
+            return true
+        end
+    end
+    return false
+end
+
+function ns.StorylineTitleQuest(storyline)
+    for _, n in ipairs(storyline.nodes) do
+        local name = ns.GetQuestName(n.id)
+        if name and not ns.IsErrandTitle(name) then
+            return n.id
+        end
+    end
+    return storyline.first
+end
+
 -- Groups a zone's quests into storylines: quests joined by prerequisite or
 -- breadcrumb links form one storyline. Quests with no links go into `others`.
 -- Each storyline has nodes laid out in columns: { id, col, row }.
@@ -1238,6 +1309,14 @@ end
 -- a later one after the quest that leads to it ("to"). They're drawn as linked
 -- tiles, but aren't part of the storyline: they don't count towards its
 -- progress or its next step.
+--
+-- Pieces of one chain on this page that are joined only through quests on
+-- other pages (Thunder Bluff's Forsaken Aid, then Hillsbrad, then The Flying
+-- Machine Airport) are one storyline: the later piece is laid out after the
+-- earlier one's "Continues in" tile, with no line between them.
+--
+-- Each storyline also has `origin`: where its chain starts, when that's on
+-- another page (walking back while each quest has just one quest before it).
 function ns.BuildStorylines(zoneID)
     local ids = ns.GetZoneQuests(zoneID)
     local inZone = {}
@@ -1324,6 +1403,47 @@ function ns.BuildStorylines(zoneID)
     end
     ids = all
 
+    -- Bridges: from a "Continues in" tile, follow the chain through other pages
+    -- (up to a few quests) to a "From" tile of another piece on this page. The
+    -- later tile gets the earlier one as a `bridge` parent: it lays the pieces
+    -- out in order and joins them, but draws no line.
+    local bridges = {}
+    local function Next(id)
+        local list = {}
+        for _, after in ipairs(ns.GetFollowOns(id)) do
+            table.insert(list, after)
+        end
+        local q = ns.Quests[id]
+        if q and q.bc then
+            for _, nextID in ipairs(q.nx or {}) do
+                table.insert(list, nextID)
+            end
+        end
+        return list
+    end
+    for exit in pairs(external) do
+        if parents[exit] then -- leads on from this page
+            local seen, frontier = { [exit] = true }, { exit }
+            for _ = 1, 6 do
+                local nextFrontier = {}
+                for _, at in ipairs(frontier) do
+                    for _, after in ipairs(Next(at)) do
+                        if not seen[after] and not inZone[after] and ns.Quests[after] and ShownElsewhere(after) then
+                            seen[after] = true
+                            if external[after] and children[after] and after ~= exit then
+                                bridges[after] = bridges[after] or {}
+                                table.insert(bridges[after], exit)
+                            else
+                                table.insert(nextFrontier, after)
+                            end
+                        end
+                    end
+                end
+                frontier = nextFrontier
+            end
+        end
+    end
+
     -- Connected groups (union-find).
     local root = {}
     local function Find(x)
@@ -1336,11 +1456,13 @@ function ns.BuildStorylines(zoneID)
     for _, id in ipairs(ids) do
         root[id] = id
     end
-    for child, list in pairs(parents) do
-        for _, parent in ipairs(list) do
-            local a, b = Find(child), Find(parent)
-            if a ~= b then
-                root[a] = b
+    for _, links in ipairs({ parents, bridges }) do
+        for child, list in pairs(links) do
+            for _, parent in ipairs(list) do
+                local a, b = Find(child), Find(parent)
+                if a ~= b then
+                    root[a] = b
+                end
             end
         end
     end
@@ -1365,6 +1487,9 @@ function ns.BuildStorylines(zoneID)
         for _, parent in ipairs(parents[id] or {}) do
             d = math.max(d, Depth(parent, visiting) + 1)
         end
+        for _, parent in ipairs(bridges[id] or {}) do
+            d = math.max(d, Depth(parent, visiting) + 1)
+        end
         visiting[id] = nil
         depth[id] = d
         return d
@@ -1374,7 +1499,7 @@ function ns.BuildStorylines(zoneID)
         return ns.Quests[id].l or 1
     end
 
-    local storylines, others = {}, {}
+    local storylines, others, originCache = {}, {}, {}
     for _, members in pairs(groups) do
         if #members == 1 then
             if inZone[members[1]] then
@@ -1395,9 +1520,11 @@ function ns.BuildStorylines(zoneID)
                 local weight = {}
                 for _, id in ipairs(list) do
                     local sum, n = 0, 0
-                    for _, parent in ipairs(parents[id] or {}) do
-                        if rowOf[parent] then
-                            sum, n = sum + rowOf[parent], n + 1
+                    for _, list in ipairs({ parents[id] or {}, bridges[id] or {} }) do
+                        for _, parent in ipairs(list) do
+                            if rowOf[parent] then
+                                sum, n = sum + rowOf[parent], n + 1
+                            end
                         end
                     end
                     weight[id] = (n > 0) and (sum / n) or 0
@@ -1429,6 +1556,7 @@ function ns.BuildStorylines(zoneID)
                 minLevel = math.min(minLevel, Level(n.id))
             end
             table.insert(storylines, {
+                origin = ChainOrigin(first, zoneID, originCache),
                 first = first,
                 nodes = nodes,
                 links = links,
