@@ -26,6 +26,8 @@ Rules:
     fields are added. Use --replace to let newer text replace existing fields
     (the community-text workflow does: wording usually only changes when the
     game does, so the newest submission wins, and a reviewer sees the diff).
+    Text that only differs by having a placeholder filled in ("mage" for $c)
+    never replaces the placeholder version.
   - Character names found in the file are replaced with $N, colour codes and
     links are stripped, and implausibly long text is rejected.
   - Quest text that the bundled vanilla text (Data/QuestText.lua) already has
@@ -201,8 +203,6 @@ SHARE_PREFIX = "LP1:"
 CLASSES = ("Warrior", "Paladin", "Hunter", "Rogue", "Priest", "Shaman", "Mage", "Warlock", "Druid")
 RACES = ("Human", "Dwarf", "Night Elf", "Gnome", "Orc", "Undead", "Tauren", "Troll")
 _WORD = lambda words: "|".join(re.escape(w) for w in words)
-CLASS_RE = re.compile(r"(?i:" + _WORD(CLASSES) + r")")
-RACE_RE = re.compile(r"(?i:" + _WORD(RACES) + r")")
 
 
 def matches_bundled(value, bundled):
@@ -222,14 +222,22 @@ def matches_bundled(value, bundled):
             if kind == "n":
                 parts.append(r"\$N")
             elif kind == "c":
-                parts.append(r"(?:\$[Cc]|" + CLASS_RE.pattern.replace(" ", "") + ")")
+                parts.append(r"(?:\$[Cc]|(?i:" + _WORD(w.replace(" ", "") for w in CLASSES) + "))")
             elif kind == "r":
-                parts.append(r"(?:\$[Rr]|" + RACE_RE.pattern.replace(" ", "") + ")")
+                parts.append(r"(?:\$[Rr]|(?i:" + _WORD(w.replace(" ", "") for w in RACES) + "))")
             elif kind != "b":
                 parts.append(re.escape(m.group(0)))
         pos = m.end()
     parts.append(re.escape(squeeze(bundled[pos:])))
     return re.fullmatch("".join(parts), squeeze(value)) is not None
+
+
+def same_text(new, old):
+    """Whether `new` says the same as `old`, which LorePath already has: `old`
+    with its placeholders filled in, spacing aside. Then `old` is kept even with
+    --replace, so a code from an older LorePath (which left the player's class
+    and race in) can't undo placeholders already put back."""
+    return matches_bundled(new, old)
 
 
 def player_words(value):
@@ -358,7 +366,7 @@ def main():
                 vanilla = bundled.get(qid, {}).get(field)
                 if not value or vanilla == value or matches_bundled(value, vanilla):
                     continue
-                if field not in target or (args.replace and target[field] != value):
+                if field not in target or (args.replace and target[field] != value and not same_text(value, target[field])):
                     if field in target:
                         changed.append(f"{qid}.{field}")
                     target[field] = value
