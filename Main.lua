@@ -63,12 +63,13 @@ local function OnEvent(event, arg1, arg2)
         ns.CreateMinimapButton()
         ns.AttachQuestLogButton()
         ns.AttachMapPins()
-        -- Remember this account's character names, so tools/merge_quest_text.py can
-        -- strip any that slipped into saved quest text before it's shared.
+        -- Remember this account's characters (name, class and race), so text
+        -- saved on any of them can be shared with $N, $C and $R put back (Share.lua,
+        -- tools/merge_quest_text.py).
         local name = UnitName and UnitName("player")
         if name and LorePathDB then
             LorePathDB.characters = LorePathDB.characters or {}
-            LorePathDB.characters[name] = true
+            LorePathDB.characters[name] = ns.CurrentPerson()
         end
         -- Save the text of everything already in your log once it has loaded.
         Later(5, "saving your quest log", ns.CaptureQuestLog)

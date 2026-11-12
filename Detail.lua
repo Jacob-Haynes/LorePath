@@ -74,6 +74,147 @@ local function GetText(fn, ...)
     return Unfill(Get(fn, ...))
 end
 
+-- ============================================================================
+-- Class and race placeholders
+-- ============================================================================
+-- The game fills your class and race into quest text too ($C, $R). Saved story
+-- text (description, progress, completion) puts them back, or a shared quest
+-- would call everyone a mage. Quest text also uses these words in general
+-- ("the blood of a hunter", "we tauren"), so only the uses that address you are
+-- replaced:
+--   class: any use except after an article ("a hunter") or inside a name
+--          ("Defias Mage");
+--   race:  only when said to you: ", orc." or "Orc, ..." at the start.
+-- Objectives aren't touched: they're full of creature names. Gendered wording
+-- ($Ghe:she;) can't be told apart from the rest; ns.MatchesBundled catches it
+-- for the vanilla quests the bundled text has.
+
+local function Escape(s)
+    return (s:gsub("[%^%$%(%)%%%.%[%]%*%+%-%?]", "%%%0"))
+end
+
+local ARTICLES = { a = true, an = true, the = true, A = true, An = true, The = true }
+
+local function ReplaceClass(text, word, upper, lower)
+    for _, form in ipairs({ word, word:lower() }) do
+        local placeholder = form ~= form:lower() and upper or lower
+        local source = text
+        text = source:gsub("()(%f[%w]" .. Escape(form) .. "%f[%W])", function(at, found)
+            local before = source:sub(1, at - 1):match("(%a+)%s+$")
+            if before and (ARTICLES[before] or (form ~= form:lower() and before:match("^%u"))) then
+                return found
+            end
+            return placeholder
+        end)
+    end
+    return text
+end
+
+local function ReplaceRace(text, word, upper, lower)
+    for _, form in ipairs({ word, word:lower() }) do
+        local placeholder = form ~= form:lower() and upper or lower
+        local p = Escape(form)
+        text = text:gsub("(,%s+)" .. p .. "([%.!%?,;])", "%1" .. placeholder .. "%2")
+        text = text:gsub("^" .. p .. "([,!])", placeholder .. "%1")
+    end
+    return text
+end
+
+-- Puts $C/$c and $R/$r back for each of `people` ({class = "Mage", race = "Orc"}).
+function ns.PutPlaceholders(text, people)
+    if type(text) ~= "string" then
+        return text
+    end
+    for _, who in ipairs(people or {}) do
+        if type(who) == "table" then
+            if type(who.class) == "string" and who.class ~= "" then
+                text = ReplaceClass(text, who.class, "$C", "$c")
+            end
+            if type(who.race) == "string" and who.race ~= "" then
+                text = ReplaceRace(text, who.race, "$R", "$r")
+            end
+        end
+    end
+    return text
+end
+
+-- The character you're playing, as ns.PutPlaceholders wants it.
+function ns.CurrentPerson()
+    return {
+        class = UnitClass and (UnitClass("player")) or nil,
+        race = UnitRace and (UnitRace("player")) or nil,
+    }
+end
+
+-- Whether `text` (saved from the game) is the bundled vanilla text `bundled`
+-- with its placeholders filled in, for any of `people`, either gender. Spacing
+-- is ignored: the game and pfQuest don't always agree on it.
+function ns.MatchesBundled(text, bundled, people)
+    if type(text) ~= "string" or type(bundled) ~= "string" then
+        return false
+    end
+    local function Squeeze(s)
+        return (s:gsub("%s+", ""))
+    end
+    local classes, races = { "$C", "$c" }, { "$R", "$r" }
+    for _, who in ipairs(people or {}) do
+        if type(who) == "table" then
+            for _, pair in ipairs({ { classes, who.class }, { races, who.race } }) do
+                local list, word = pair[1], pair[2]
+                if type(word) == "string" and word ~= "" then
+                    table.insert(list, Squeeze(word))
+                    table.insert(list, Squeeze(word:lower()))
+                end
+            end
+        end
+    end
+    -- The bundled text as a list of steps, each a list of what may stand there.
+    local steps, pos = {}, 1
+    while pos <= #bundled do
+        local s = bundled:find("%$%a", pos)
+        if not s then
+            table.insert(steps, { Squeeze(bundled:sub(pos)) })
+            break
+        end
+        table.insert(steps, { Squeeze(bundled:sub(pos, s - 1)) })
+        local kind = bundled:sub(s + 1, s + 1):lower()
+        local _, gEnd, male, female = bundled:find("^%$[Gg]%s*([^:;]-)%s*:%s*([^;]-)%s*;", s)
+        if gEnd then
+            table.insert(steps, { Squeeze(male), Squeeze(female) })
+            pos = gEnd + 1
+        else
+            if kind == "n" then
+                table.insert(steps, { "$N" })
+            elseif kind == "c" then
+                table.insert(steps, classes)
+            elseif kind == "r" then
+                table.insert(steps, races)
+            elseif kind ~= "b" then -- $B is a line break: spacing, so nothing
+                table.insert(steps, { bundled:sub(s, s + 1) })
+            end
+            pos = s + 2
+        end
+    end
+    local target = Squeeze(text)
+    local function Match(i, at)
+        if i > #steps then
+            return at == #target + 1
+        end
+        for _, option in ipairs(steps[i]) do
+            if target:sub(at, at + #option - 1) == option and Match(i + 1, at + #option) then
+                return true
+            end
+        end
+        return false
+    end
+    return Match(1, 1)
+end
+
+-- Saved story text: your name, class and race back to placeholders.
+local function GetStory(fn, ...)
+    return ns.PutPlaceholders(Unfill(Get(fn, ...)), { ns.CurrentPerson() })
+end
+
 local function Saved(id)
     local entry = Cache()[id] or {}
     Cache()[id] = entry
@@ -154,7 +295,7 @@ function ns.CaptureQuestDetail()
         return
     end
     local entry = Saved(id)
-    entry.text = GetText(GetQuestText) or entry.text
+    entry.text = GetStory(GetQuestText) or entry.text
     entry.obj = GetText(GetObjectiveText) or entry.obj
     entry.money = Get(GetRewardMoney) or entry.money
     entry.xp = Get(GetRewardXP) or entry.xp
@@ -170,7 +311,7 @@ function ns.CaptureQuestProgress()
         return
     end
     local entry = Saved(id)
-    entry.prog = GetText(GetProgressText) or entry.prog
+    entry.prog = GetStory(GetProgressText) or entry.prog
     AfterCapture(id)
 end
 
@@ -182,7 +323,7 @@ function ns.CaptureQuestComplete()
         return
     end
     local entry = Saved(id)
-    entry.done = GetText(GetRewardText) or entry.done
+    entry.done = GetStory(GetRewardText) or entry.done
     entry.money = Get(GetRewardMoney) or entry.money
     entry.xp = Get(GetRewardXP) or entry.xp
     AfterCapture(id)
@@ -196,7 +337,7 @@ function ns.CaptureLogQuest(id)
     end
     local entry = Saved(id)
     local text, objectives = LogQuestText(id)
-    entry.text = Unfill(text) or entry.text
+    entry.text = ns.PutPlaceholders(Unfill(text), { ns.CurrentPerson() }) or entry.text
     entry.obj = Unfill(objectives) or entry.obj
     local money, xp = Get(GetQuestLogRewardMoney, id), Get(GetQuestLogRewardXP, id)
     if (money and money > 0) or (xp and xp > 0) then

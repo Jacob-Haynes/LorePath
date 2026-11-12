@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- **Shared quest text no longer carries your class and race:** where quest text talks to you ("Well done, mage!"), saved and shared text puts `$C` and `$R` back, so it reads right for everyone. Vanilla text LorePath already ships is left out of share codes, which keeps them shorter and keeps out gendered wording.
+- **Share without a GitHub account:** a share page where players paste their codes and it files them for review (once it's deployed).
 - **More community quest text:** 38 more quests from Ashenvale, Stonetalon Mountains, the Barrens and Blackfathom Deeps, shared by a player, and missing progress text, completion text and rewards for 9 more. 288 quests in all.
 
 ## 1.2.0

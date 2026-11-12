@@ -1,0 +1,10 @@
+# LorePath's share page: see README.md here for setting it up.
+name = "lorepath-share"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+REPO = "Jacob-Haynes/LorePath"
+# The Turnstile widget's site key (public). Its secret key is a secret:
+#   wrangler secret put TURNSTILE_SECRET
+TURNSTILE_SITE_KEY = ""
