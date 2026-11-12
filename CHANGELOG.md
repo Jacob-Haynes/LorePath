@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Class quests show your own version on zone pages too:** a zone's page now shows the same version of a class quest as the Class page, so a Skyborne Shaman who did Zephras Isle's Call of Fire no longer sees the Barrens chain, still to do, on The Barrens' page. The same goes for the other Shaman totem quests and other class quests with a version per city or starting area.
+
 ## 1.3.0-beta5
 
 - **Latest AllTheThings data:** 81 more quests, among them the racial mount quests, and quest givers and starting points for 111 quests that had none, so they get map pins. Tooga's Quest now has a note on catching its follow-up quest during the escort.
