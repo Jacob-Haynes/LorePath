@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Story so far follows chains across zones:** a storyline's story now starts where its chain began, and includes the steps in between, even on other pages. Thunder Bluff's Forsaken Aid story starts with The Spirits of Stonetalon in Stonetalon Mountains and goes through Hillsbrad Foothills before The Flying Machine Airport. Each chapter on another page says which zone it's in.
+
 ## 1.3.0-beta2
 
 - **Story so far:** a **Story so far** button in a storyline's header opens its story in the side panel: the text of each quest you've finished in it, in order, from what the quest giver asked to what they said when you turned it in. Only quests you've finished, so nothing ahead is spoiled.

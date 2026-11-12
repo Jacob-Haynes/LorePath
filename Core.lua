@@ -1269,6 +1269,87 @@ local function ChainOrigin(id, zoneID, cache)
     return nil
 end
 
+-- A storyline's whole story so far (issue #4), across pages: its quests on this
+-- page, and the finished quests on other pages that led to them. That's where
+-- its chain began (Stonetalon's The Spirits of Stonetalon, before Thunder
+-- Bluff's Forsaken Aid) and the steps between pieces of it on this page (the
+-- Hillsbrad quests between Forsaken Aid and The Flying Machine Airport). Walks
+-- back through prerequisites and breadcrumbs, only through quests you've
+-- finished and could do, up to 60 of them. Returns quest IDs, each after every
+-- quest before it in the story.
+local MAX_STORY_EXTRA = 60
+function ns.StoryQuests(storyline)
+    local S = ns.STATUS
+    local cache, inStory, list, queue = {}, {}, {}, {}
+    local function Before(id)
+        local out, counted = {}, {}
+        for _, l in ipairs({ ns.Quests[id].pre or {}, BreadcrumbsTo(id) }) do
+            for _, prev in ipairs(l) do
+                if not counted[prev] and ns.Quests[prev] then
+                    counted[prev] = true
+                    table.insert(out, prev)
+                end
+            end
+        end
+        return out
+    end
+    for _, n in ipairs(storyline.nodes) do
+        inStory[n.id] = true
+        table.insert(list, n.id)
+        table.insert(queue, n.id)
+    end
+    local extra, i = 0, 1
+    while i <= #queue and extra < MAX_STORY_EXTRA do
+        for _, prev in ipairs(Before(queue[i])) do
+            if not inStory[prev] and extra < MAX_STORY_EXTRA and ns.GetStatus(prev) == S.DONE
+                and ShownOnItsPage(prev, cache) then
+                inStory[prev] = true
+                extra = extra + 1
+                table.insert(list, prev)
+                table.insert(queue, prev)
+            end
+        end
+        i = i + 1
+    end
+    -- How far into the story each quest is: one more than the furthest quest
+    -- before it. Ties keep a page's quests together, then the page's own order.
+    local depth, col = {}, {}
+    for _, n in ipairs(storyline.nodes) do
+        col[n.id] = n.col
+    end
+    local function Depth(id)
+        if depth[id] then
+            return depth[id]
+        end
+        depth[id] = 0 -- a loop in the data stops here
+        local d = 0
+        for _, prev in ipairs(Before(id)) do
+            if inStory[prev] then
+                d = math.max(d, Depth(prev) + 1)
+            end
+        end
+        depth[id] = d
+        return d
+    end
+    for _, id in ipairs(list) do
+        Depth(id)
+    end
+    table.sort(list, function(a, b)
+        if depth[a] ~= depth[b] then
+            return depth[a] < depth[b]
+        end
+        local za, zb = ns.Quests[a].z, ns.Quests[b].z
+        if za ~= zb then
+            return za < zb
+        end
+        if (col[a] or 0) ~= (col[b] or 0) then
+            return (col[a] or 0) < (col[b] or 0)
+        end
+        return a < b
+    end)
+    return list
+end
+
 -- A storyline's title: its first quest's name, unless that quest is an errand
 -- ("Speak with Ruga", "Report to Kadrak"), when the first quest after it that
 -- isn't one names it instead. Names come from the client, so this is worked out
@@ -1557,6 +1638,7 @@ function ns.BuildStorylines(zoneID)
             end
             table.insert(storylines, {
                 origin = ChainOrigin(first, zoneID, originCache),
+                zone = zoneID,
                 first = first,
                 nodes = nodes,
                 links = links,

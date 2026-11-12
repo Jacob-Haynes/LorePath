@@ -2639,6 +2639,38 @@ check(not header["story"].IsShown(header["story"]), "a storyline with nothing fi
 cache[first_q], cache[ahead] = None, None
 ns.Toggle(False)
 
+# Story so far follows a chain across pages: Thunder Bluff's Forsaken Aid starts in Stonetalon and goes through Hillsbrad.
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 6, 1, "Horde", 60, 1456
+char["completed"], char["log"] = lua.table_from({q: True for q in (1061, 1062, 1063, 1064, 1065, 1066, 1067, 1086, 1060)}), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+tb = next(st for st in ns.BuildStorylines(1456)[0].values() if 1064 in [n["id"] for n in st["nodes"].values()])
+tb_story = [e["id"] for e in ns.StorySoFar(tb).values()]
+check(tb_story == [1061, 1062, 1063, 1064, 1065, 1066, 1067, 1086],
+      f"Thunder Bluff's story starts in Stonetalon and goes through Hillsbrad, in order: {tb_story}")
+check(1060 not in tb_story, "a finished quest on another page that isn't part of the chain stays out")
+hide_was = ns.GetSetting("hideCompleted")
+ns.SetSetting("hideCompleted", False)  # the whole chain is finished here
+ns.Toggle(True)
+ns.FocusQuest(1064)
+header = next(f for f in harness["all"].values() if f["key"] == "s" + str(tb["first"]) and f.IsShown(f))
+header["story"]["__scripts"]["OnClick"](header["story"])
+texts = detail_texts()
+zones = [t for t in texts if t.startswith("In ")]
+check(zones == ["In " + ns.GetMapName(z) for z in (1442, 1456, 1424, 1456)],
+      f"each chapter on another page says where, and so does coming back: {zones}")
+check(not any(t.startswith("This chain starts earlier") for t in texts), "with no 'starts earlier' line once you've done where it starts")
+char["completed"] = lua.table_from({1064: True})
+ns.RefreshCompleted()
+ns.Refresh()
+texts = detail_texts()
+check(any(t.startswith("This chain starts earlier, with ") for t in texts) and not any(t.startswith("In ") for t in texts),
+      "before you've done the earlier part, it says where the chain starts instead")
+ns.HideDetail()
+ns.SetSetting("hideCompleted", hide_was)
+char["completed"] = lua.table()
+ns.RefreshCompleted()
+ns.Toggle(False)
+
 # --- Close buttons work in combat ---
 # The game's window templates close through HideUIPanel, which it blocks for addons in combat.
 harness["inCombat"] = True
