@@ -818,9 +818,9 @@ local function StyleNode(node, id, storyline)
 end
 
 -- A quest on another page that leads into this storyline, or that it leads on
--- to: its usual tile, faded, with a blue border and where it is instead of its
--- status ("From Westfall", "Continues in Redridge Mountains"). Clicking it goes
--- there.
+-- to: its usual tile, faded, with a blue border, its zone's icon, and where it
+-- is instead of its status ("From Westfall", "Continues in Redridge
+-- Mountains"). Clicking it goes there.
 local LINK_BORDER = { 0.45, 0.70, 1.0 }
 local LINK_TEXT = "|cff8cc4ff"
 function ns.ui.LinkLabel(link)
@@ -840,6 +840,8 @@ local function StyleLinkNode(node, link, storyline)
     if link.id ~= ns.detailQuest then
         node:SetBorderColor(LINK_BORDER[1], LINK_BORDER[2], LINK_BORDER[3], 1)
     end
+    node.icon:SetTexture(ZoneIcon(ns.Quests[link.id].z))
+    node.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
     node.sub:SetText(LINK_TEXT .. ns.ui.LinkLabel(link) .. "|r")
 end
 
