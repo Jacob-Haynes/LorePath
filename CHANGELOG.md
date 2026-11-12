@@ -1,9 +1,11 @@
 # Changelog
 
-## Unreleased
+## 1.2.1
 
-- **Shared quest text no longer carries your class and race:** where quest text talks to you ("Well done, mage!"), saved and shared text puts `$C` and `$R` back, so it reads right for everyone. Vanilla text LorePath already ships is left out of share codes, which keeps them shorter and keeps out gendered wording.
-- **Share without a GitHub account:** a share page, lorepath-share.jacobhaynes49.workers.dev, where players paste their codes and it files them for review. The share window has a link box to copy its address from.
+Easier sharing, and more shared quest text.
+
+- **Share without a GitHub account:** paste your `/lp share` code into the new [share page](https://lorepath-share.jacobhaynes49.workers.dev) and press Send. The share window has a box to copy its address from. A GitHub issue still works too.
+- **Shared quest text no longer carries your class and race:** where quest text talks to you ("Well done, mage!"), saved and shared text puts `$C` and `$R` back, so it reads right for everyone, and on your other characters. Text LorePath already has is left out of share codes, which keeps them shorter and keeps out gendered wording. Where WoW Forever has reworded a quest, its wording is still shared.
 - **More community quest text:** 38 more quests from Ashenvale, Stonetalon Mountains, the Barrens and Blackfathom Deeps, shared by a player, and missing progress text, completion text and rewards for 9 more. 288 quests in all.
 
 ## 1.2.0

@@ -8,7 +8,7 @@ It's not a quest helper. Its world map pins only show where quests start, and th
 
 LorePath supports English game clients only.
 
-> **Version 1.2.0.** Lore beyond quest text (zones, characters, a codex) is planned.
+> **Version 1.2.1.** Lore beyond quest text (zones, characters, a codex) is planned.
 
 ---
 
@@ -205,7 +205,7 @@ This runs the addon's Lua against a fake WoW API with the real quest data, as ch
 - search, jumping and **Back**, and dragging the graph;
 - the detail panel, its text sources, notes and spoiler hiding;
 - quest icons, the quest log both ways and linking rewards;
-- saving and sharing quest text and where quests start, including the merge tool, and where starting items come from;
+- saving and sharing quest text and where quests start, with your class and race put back as placeholders, including the merge tool, the share page, and where starting items come from;
 - world map pins: which quests get one, grouping, colours, tooltips, clicks and refreshing;
 - waypoints, the minimap button, slash commands and every setting;
 - **Reset to defaults**;
