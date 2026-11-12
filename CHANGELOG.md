@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.3.0-beta3
 
 - **Story so far follows chains across zones:** a storyline's story now starts where its chain began, and includes the steps in between, even on other pages. Thunder Bluff's Forsaken Aid story starts with The Spirits of Stonetalon in Stonetalon Mountains and goes through Hillsbrad Foothills before The Flying Machine Airport. Each chapter on another page says which zone it's in.
 
