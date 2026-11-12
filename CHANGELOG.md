@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **More community quest text:** 38 more quests from Ashenvale, Stonetalon Mountains, the Barrens and Blackfathom Deeps, shared by a player, and missing progress text, completion text and rewards for 9 more. 288 quests in all.
+
 ## 1.2.0
 
 Everything from the 1.2.0 betas (details below), plus two more changes. The highlights:
