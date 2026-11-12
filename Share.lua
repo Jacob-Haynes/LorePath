@@ -116,7 +116,7 @@ local function ShareStart(id, start, shipped)
 end
 
 -- The fields of one saved quest worth sharing: anything that isn't already in
--- LorePath's community text, word for word, or the bundled vanilla text once its
+-- LorePath's community or bundled vanilla text, word for word or once their
 -- placeholders are filled in (which also catches gendered wording).
 local function ShareEntry(id, saved, names, people)
     local shipped = ns.CommunityText and ns.CommunityText[id] or {}
@@ -125,6 +125,7 @@ local function ShareEntry(id, saved, names, people)
     local function New(field, value)
         return value ~= nil and value ~= shipped[field] and value ~= bundled[field]
             and not ns.MatchesBundled(value, bundled[field], people)
+            and not ns.MatchesBundled(value, shipped[field], people)
     end
     local title = ns.GetQuestName(id)
     if New("t", title) then

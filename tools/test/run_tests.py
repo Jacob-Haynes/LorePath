@@ -1231,7 +1231,7 @@ g.C_QuestLog.GetTitleForQuestID = real_title
 harness.RunTimers()
 
 # --- Sharing quest text (issue #14) ---
-import json, shutil, subprocess, tempfile
+import contextlib, io, json, shutil, subprocess, tempfile
 F = next(qid for qid in sorted(ns.Quests.keys()) if qid >= 90000 and ns.QuestText[qid] is None and ns.CommunityText[qid] is None)
 cid = next(k for k, v in sorted(ns.CommunityText.items()) if v["d"] is not None)
 saved_cache = g.LorePathDB["questCache"]
@@ -1333,6 +1333,37 @@ check(mqt.matches_bundled(v874, ns.QuestText[874]["d"]) and mqt.matches_bundled(
       and not mqt.matches_bundled("Hey!  Mage! Other.", "Hey!  $C!"), "the merge tool leaves out vanilla text with its placeholders filled in, too")
 check(not mqt.matches_bundled(v874.replace("Not even the sea.", "Not even the Forever sea."), ns.QuestText[874]["d"]),
       "and keeps text Forever has reworded")
+check(mqt.matches_bundled("Fear not, night elf.", "Fear not, $r.") and mqt.matches_bundled("Fear not, orc.", "Fear not, $r.")
+      and not mqt.matches_bundled("Fear not, murloc.", "Fear not, $r."), "and fills $r with any race, two-word ones too")
+
+# With --replace (the workflow), a code from an older LorePath that left the
+# player's class in mustn't undo a placeholder already put back; new wording still wins.
+with tempfile.TemporaryDirectory() as tmp:
+    real_out = mqt.OUT
+    mqt.OUT = os.path.join(tmp, "CommunityText.lua")
+    with open(real_out, encoding="utf-8") as f:
+        original = f.read()
+    with open(mqt.OUT, "w", encoding="utf-8") as f:
+        f.write(original)
+    community = mqt.load_table(mqt.LuaRuntime(unpack_returned_tuples=True, register_eval=False), mqt.OUT, "CommunityText")
+    qid = next(q for q, e in sorted(community.items()) if e.get("p") and "$c" in e["p"])
+    old_p = community[qid]["p"]
+    sub = os.path.join(tmp, "code.txt")
+    with open(sub, "w", encoding="utf-8") as f:
+        f.write("LP1:" + json.dumps({"v": 1, "q": {str(qid): {"p": old_p.replace("$c", "mage", 1), "c": "Brand new closing words."}}}) + "\n")
+    argv = sys.argv
+    sys.argv = ["merge_quest_text.py", "--replace", sub]
+    try:
+        with contextlib.redirect_stdout(io.StringIO()):
+            mqt.main()
+    finally:
+        sys.argv = argv
+        merged = mqt.load_table(mqt.LuaRuntime(unpack_returned_tuples=True, register_eval=False), mqt.OUT, "CommunityText")
+        mqt.OUT = real_out
+check(merged[qid]["p"] == old_p and merged[qid]["c"] == "Brand new closing words.",
+      f"--replace keeps quest {qid}'s $c rather than an older code's 'mage', but still takes new wording")
+check(ns.MatchesBundled(old_p.replace("$c", "mage", 1), old_p, lua.eval('{ { class = "Mage" } }')),
+      "in game, /lp share also leaves out text that's LorePath's community text with placeholders filled in")
 check(mqt.player_words("Yes, mighty mage. Fear not the waters, orc. The blood of a hunter; we tauren; Defias Mage.") == ["mage", "orc"],
       "and its report flags class and race words that may be the player's own")
 with tempfile.TemporaryDirectory() as tmp:
