@@ -735,6 +735,19 @@ local function AcquireSection(parent)
                 SetSectionCollapsed(self.key, not self.collapsed)
             end
         end)
+        -- A storyline's header: where it starts, when that isn't obvious.
+        s:SetScript("OnEnter", function(self)
+            if IsPanning() or not self.tooltipLines then
+                return
+            end
+            GameTooltip:SetOwner(self.title, "ANCHOR_TOPLEFT")
+            GameTooltip:AddLine(self.title:GetText(), 1, 0.82, 0)
+            for _, line in ipairs(self.tooltipLines) do
+                GameTooltip:AddLine(line, 1, 1, 1, true)
+            end
+            GameTooltip:Show()
+        end)
+        s:SetScript("OnLeave", GameTooltip_Hide)
         pools.sections[used.sections] = s
     end
     s:SetParent(parent)
@@ -831,6 +844,21 @@ function ns.ui.LinkLabel(link)
         return "< From " .. zone
     end
     return "Continues in " .. zone .. " >"
+end
+
+-- What a storyline's header tooltip says: which quest it starts with, when the
+-- title is a later quest's (the first was an errand), and where its chain began,
+-- when that's on another page. nil when there's nothing to add.
+function ns.ui.StorylineHeaderLines(storyline, titleQuest)
+    local lines = {}
+    if titleQuest ~= storyline.first then
+        table.insert(lines, "Starts with " .. ns.GetQuestNameOrID(storyline.first) .. ".")
+    end
+    if storyline.origin and ns.Quests[storyline.origin] then
+        table.insert(lines, string.format("Part of a chain that starts with %s, in %s.",
+            ns.GetQuestNameOrID(storyline.origin), ns.GetMapName(ns.Quests[storyline.origin].z)))
+    end
+    return #lines > 0 and lines or nil
 end
 
 local function StyleLinkNode(node, link, storyline)
@@ -983,6 +1011,7 @@ local function RenderSection(canvas, key, title, done, total, complete, width, t
     s.step:SetText("")
     s.stepButton.targetQuest = nil
     s.stepButton:EnableMouse(false)
+    s.tooltipLines = nil
     return s, collapsed, top + HEADER_H + 8
 end
 
@@ -1004,8 +1033,10 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
 
     local kind, nextID, detail = ns.GetNextStep(storyline)
     local width = math.max(viewWidth - PAD * 2, storyline.cols * (NODE_W + COL_GAP) - COL_GAP)
+    local titleQuest = ns.StorylineTitleQuest(storyline)
     local s, collapsed, graphTop = RenderSection(canvas, "s" .. storyline.first,
-        ns.GetQuestNameOrID(storyline.first), done, total, kind == "complete", viewWidth - PAD * 2, top, repeatables)
+        ns.GetQuestNameOrID(titleQuest), done, total, kind == "complete", viewWidth - PAD * 2, top, repeatables)
+    s.tooltipLines = ns.ui.StorylineHeaderLines(storyline, titleQuest)
 
     local target = (kind == "available" or kind == "active") and nextID or nil
     if kind == "blocked" and detail and ns.Quests[detail] then

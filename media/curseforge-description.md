@@ -9,7 +9,7 @@ Built for **WoW Forever**, on English game clients. It's lightweight: its map pi
 ## Features
 
 - **Storyline maps:** each page's quest chains, drawn from the first quest to the last, with lines showing what unlocks what. Long storylines wrap to fit the window. Storylines collapse, and finished ones start collapsed. Drag anywhere on the graph to pan, even from a quest.
-- **Storylines that cross zones:** where a story comes from or goes on to another zone, a faded tile with that zone's icon says so (*< From Elwynn Forest*, *Continues in Westfall >*). Click it to follow the story there.
+- **Storylines that cross zones:** where a story comes from or goes on to another zone, a faded tile with that zone's icon says so (*< From Elwynn Forest*, *Continues in Westfall >*). Click it to follow the story there. Hover a storyline's name to see where its chain began.
 - **A zone list that tells you where to go:**
   - every zone, dungeon, raid and battleground with quests for you, each with an icon and WoW Forever's level range, with dungeons in level order;
   - names coloured by progress, from grey (not started), then red through orange and yellow to green (finished);
@@ -53,7 +53,7 @@ You can also bind a key under *Options → Key Bindings → AddOns → LorePath*
 
 ## Coming later
 
-Storylines are currently named after their first quest. Lore for zones, places and characters, and a searchable codex, are planned.
+Storylines are named after their first quest (skipping errands like *Speak with Ruga*). Lore for zones, places and characters, and a searchable codex, are planned.
 
 ## Credits
 

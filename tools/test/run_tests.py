@@ -2498,6 +2498,57 @@ tile["__scripts"]["OnClick"](tile)
 check(frame["zoneTitle"]["__text"].startswith(zone_name) and ns.focusedQuest == l["id"], f"clicking it goes to {zone_name}, at that quest")
 ns.Toggle(False)
 char["level"] = 60
+
+# --- One chain in pieces on a page, joined through other pages; where a chain starts ---
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 6, 1, "Horde", 60, 1456
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+tb = next(st for st in ns.BuildStorylines(1456)[0].values() if 1064 in [n["id"] for n in st["nodes"].values()])
+tb_nodes = {n["id"]: n for n in tb["nodes"].values()}
+tb_links = {n["id"]: n for n in tb["links"].values()}
+check(1086 in tb_nodes, "Thunder Bluff's Forsaken Aid and The Flying Machine Airport, joined only through Hillsbrad, are one storyline")
+check(1065 in tb_links and 1067 in tb_links
+      and tb_nodes[1064]["col"] < tb_links[1065]["col"] < tb_links[1067]["col"] < tb_nodes[1086]["col"],
+      "laid out in order: Forsaken Aid, Continues in Hillsbrad, From Hillsbrad, The Flying Machine Airport")
+check(1065 not in list((tb["parents"][1067] or lua.table()).values()), "with no line drawn between the two Hillsbrad tiles")
+hb = next(st for st in ns.BuildStorylines(1424)[0].values() if 1065 in [n["id"] for n in st["nodes"].values()])
+check(hb["origin"] == 1061, f"Hillsbrad's Journey to Tarren Mill knows its chain starts with The Spirits of Stonetalon ({hb['origin']})")
+hb_lines = list(ns.ui.StorylineHeaderLines(hb, hb["first"]).values())
+check(hb_lines == [f"Part of a chain that starts with Q1061, in {ns.GetMapName(1442)}."], f"and its header tooltip says so: {hb_lines}")
+st_own = next(st for st in ns.BuildStorylines(1442)[0].values() if 1061 in [n["id"] for n in st["nodes"].values()])
+check(st_own["origin"] is None and ns.ui.StorylineHeaderLines(st_own, st_own["first"]) is None,
+      "a storyline that starts on its own page has no such line")
+overlaps = []
+for z in ns.GetZones().values():
+    for st in ns.BuildStorylines(z["id"])[0].values():
+        cells = [(n["col"], n["row"]) for n in list(st["nodes"].values()) + list((st["links"] or lua.table()).values())]
+        if len(cells) != len(set(cells)):
+            overlaps.append(z["id"])
+check(not overlaps, f"no storyline on any page puts two tiles in one place: {overlaps[:5]}")
+
+# Errands don't name storylines: "Speak with Ruga" is named after the quest it leads to.
+check(ns.IsErrandTitle("Speak with Ruga") and ns.IsErrandTitle("Report to Kadrak") and ns.IsErrandTitle("deliveries to sven")
+      and not ns.IsErrandTitle("The Spirits of Stonetalon") and not ns.IsErrandTitle("Speaking of Fortitude"),
+      "errand titles are told apart from real ones")
+errand = next(st for st in ns.BuildStorylines(1413)[0].values() if len(list(st["nodes"].values())) >= 3)
+errand_first = errand["first"]
+second = list(errand["nodes"].values())[1]["id"]
+g.C_QuestLog.GetTitleForQuestID = lua.eval(f"function(id) if id == {errand_first} then return 'Speak with Ruga' end return 'Q' .. id end")
+check(ns.StorylineTitleQuest(errand) == second, "a storyline that opens with an errand takes the next quest's name")
+check(list(ns.ui.StorylineHeaderLines(errand, second).values())[0] == "Starts with Speak with Ruga.", "and its tooltip says which quest it starts with")
+char["map"] = 1413
+ns.Toggle(True)
+ns.FocusQuest(errand_first)
+header = next(f for f in harness["all"].values() if f["key"] == "s" + str(errand_first) and f.IsShown(f))
+check(header["title"]["__text"] == f"Q{second}", f"in the window, its header shows that name: {header['title']['__text']!r}")
+g.GameTooltip.lines = lua.table()
+header["__scripts"]["OnEnter"](header)
+lines = [str(x) for x in g.GameTooltip.lines.values()]
+check("Starts with Speak with Ruga." in lines, f"and hovering it explains: {lines}")
+ns.Toggle(False)
+g.C_QuestLog.GetTitleForQuestID = real_title
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
+ns.RefreshPlayer(); ns.RefreshCompleted()
 ns.RefreshPlayer()
 
 # --- Long storylines wrap to the window's width ---

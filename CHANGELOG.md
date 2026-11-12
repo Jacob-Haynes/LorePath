@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- **Chains split across a page are joined:** parts of one chain that only meet in another zone now show as one storyline, in order. Thunder Bluff's Forsaken Aid and The Flying Machine Airport, either side of Hillsbrad, are one storyline instead of two.
+- **Better storyline names:** a storyline that opens with an errand (*Speak with Ruga*, *Report to Kadrak*) is named after the quest it leads to.
+- **Where a chain began:** hover a storyline's name to see which quest it starts with and, when its chain began in another zone, where (*Part of a chain that starts with The Spirits of Stonetalon, in Stonetalon Mountains*).
 - **Chief Engineer Scooty:** its note now says Sovik only offers it after you pick his conversation option.
 
 ## 1.2.1
