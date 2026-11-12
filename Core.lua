@@ -119,6 +119,28 @@ local function ApplyCommunityStarts()
     end
 end
 
+-- A quest started by an item that only drops inside one dungeon or raid
+-- (Data/QuestStarts.lua; An Unholy Alliance, from Charlga Razorflank in
+-- Razorfen Kraul) is picked up inside it, though AllTheThings names no quest
+-- giver to say so: it gets the portal icon and "Picked up inside".
+local function ApplyItemStarts()
+    for id, sources in pairs(ns.QuestStarts or {}) do
+        local q = ns.Quests[id]
+        if q and not q.fv and not q.m and not q.di and #sources > 0 then
+            local inside = sources[1].i
+            for _, source in ipairs(sources) do
+                if source.i ~= inside then
+                    inside = nil
+                    break
+                end
+            end
+            if inside then
+                q.di = inside
+            end
+        end
+    end
+end
+
 -- "Picked up from an item around Ashenvale (34.5, 48.2)": where a player was
 -- when an item offered them the quest, for item-started quests with no known
 -- source. nil when there's no such hint.
@@ -146,6 +168,7 @@ function ns.RefreshPlayer()
     player.skills, player.professions = ReadProfessions()
     ApplyFactionVersions()
     ApplyCommunityStarts()
+    ApplyItemStarts()
     wipe(ns.standings)
     -- Which quests you can do decides storylines, and so chains' names.
     local skills = {}
@@ -963,6 +986,12 @@ local HOME_MAPS = {
     [96] = { 2521 },      -- WoW Forever's own race (Horde): Zephras Isle
 }
 
+-- Each race's starting zone, the first of its home maps.
+local STARTING_AREAS = {}
+for _, maps in pairs(HOME_MAPS) do
+    STARTING_AREAS[maps[1]] = true
+end
+
 -- Versions the data doesn't mark as alternatives: first quest -> first quests
 -- of the other versions. Keep it short, and report each one to AllTheThings
 -- too, so the data itself gets fixed.
@@ -993,7 +1022,10 @@ ns.EXTRA_VERSIONS = EXTRA_VERSIONS -- read by the tests' duplicate check
 -- A class quest's versions count even when they're on another page: the Class
 -- page shows one version, and each zone page agrees with it, so a Skyborne
 -- Shaman who did Zephras Isle's Call of Fire doesn't see the Barrens chain on
--- The Barrens' page. Other quests' versions are each shown in their own zone.
+-- The Barrens' page. So do versions that each start in a different starting
+-- area (WoW Forever's The Adventurer, in each of them): you only ever do one,
+-- in your own. Other quests' versions are each shown in their own zone (the
+-- Chromatic Mantle of the Dawn in either Plaguelands), where you might be.
 
 -- Every quest's versions, both ways round (alt and EXTRA_VERSIONS), built once.
 local versionsOf
@@ -1072,12 +1104,16 @@ local function OneVersionEach(list)
             groupOf[a], groupOf[b] = a, a
         end
     end
-    -- Versions on another page join in only for class quests, and only ones
-    -- you could do; they can win, but they're never added to this page.
+    -- Versions on another page join in only for class quests and starting-area
+    -- versions, and only ones you could do; they can win, but they're never
+    -- added to this page.
     for _, id in ipairs(list) do
-        local isClass = ns.Quests[id].cl ~= nil
+        local q = ns.Quests[id]
         for other in pairs(VersionsOf(id) or {}) do
-            if onPage[other] or (isClass and ns.Quests[other].cl and ns.IsEligible(other)) then
+            local o = ns.Quests[other]
+            local acrossPages = (q.cl and o.cl)
+                or (STARTING_AREAS[q.z] and STARTING_AREAS[o.z] and q.z ~= o.z)
+            if onPage[other] or (acrossPages and ns.IsEligible(other)) then
                 Join(id, other)
             end
         end
@@ -1452,8 +1488,10 @@ function ns.StoryQuests(storyline)
 end
 
 -- A storyline's title: its first quest's name, unless that quest is an errand
--- ("Speak with Ruga", "Report to Kadrak"), when the first quest after it that
--- isn't one names it instead. A storyline that carries on a chain from another
+-- ("Speak with Ruga", "Report to Kadrak", or a breadcrumb named after the NPC
+-- who gives it or the one it sends you to: Ziz Fizziks, Malin's Request), when
+-- the first quest after it that isn't one names it instead. A breadcrumb with a
+-- name of its own (Taking Back Silithus) names the storyline. A storyline that carries on a chain from another
 -- page is named after the whole chain instead: the name it has on the page
 -- where it starts, so it's called the same on every page (Mulgore's The
 -- Hunter's Way goes on in the Barrens with the breadcrumb Sergra Darkthorn, and
@@ -1484,22 +1522,63 @@ local function Name(id)
     return name
 end
 
+-- Is this breadcrumb named after one of its NPCs (Data/BreadcrumbNPCs.lua)?
+-- Any word of the NPC's name will do, so "Stoley's Debt" names Stoley and
+-- "Seeking Strahad" names Strahad Farsan; titles and words like "the", "of" or
+-- "Brother" don't count on their own.
+local NAME_FILLER = { the = true, ["of"] = true, ["and"] = true, ["for"] = true, sir = true, lord = true,
+    lady = true, brother = true, sister = true, mountaineer = true, captain = true, high = true,
+    elder = true, arch = true, druid = true, king = true }
+local function Words(text)
+    local words = {}
+    for found in text:lower():gmatch("[%a'%-]+") do
+        local word = (found:gsub("'s$", ""))
+        if #word >= 3 and not NAME_FILLER[word] then
+            words[word] = true
+        end
+    end
+    return words
+end
+function ns.NamedAfterItsNPC(id, name)
+    local npcs = ns.BreadcrumbNPCs and ns.BreadcrumbNPCs[id]
+    if not npcs or type(name) ~= "string" then
+        return false
+    end
+    local inTitle = Words(name)
+    for _, npc in ipairs(npcs) do
+        for word in pairs(Words(npc)) do
+            if inTitle[word] then
+                return true
+            end
+        end
+    end
+    return false
+end
+
+-- On its own page, a storyline's name skips errands and breadcrumbs named
+-- after their NPC.
+local function IsErrand(id)
+    local name = Name(id)
+    return ns.IsErrandTitle(name) or (ns.Quests[id].bc ~= nil and ns.NamedAfterItsNPC(id, name))
+end
+
 local function OwnTitleQuest(storyline)
     for _, n in ipairs(storyline.nodes) do
-        local name = Name(n.id)
-        if name and not ns.IsErrandTitle(name) then
+        if Name(n.id) and not IsErrand(n.id) then
             return n.id
         end
     end
     return storyline.first
 end
 
--- A breadcrumb or errand only leads to the chain, so it can't name the whole
--- of it: when the page a chain starts on only has its lead-in (Teldrassil's
--- Nessa Shadowsong, before Darkshore's The Bounty of Teldrassil), the
--- storyline keeps its own name.
+-- Carried to another page, any breadcrumb only leads to the chain, so it can't
+-- name the whole of it: a long chain would be called after a travel errand far
+-- back where it began (Scholomance after A Call to Arms: The Plaguelands!).
+-- When the page a chain starts on only has its lead-in (Teldrassil's Nessa
+-- Shadowsong, before Darkshore's The Bounty of Teldrassil), the storyline keeps
+-- its own name.
 local function IsLeadIn(id)
-    return ns.Quests[id].bc or ns.IsErrandTitle(Name(id))
+    return ns.Quests[id].bc ~= nil or ns.IsErrandTitle(Name(id))
 end
 
 -- The name of the chain starting with `origin`, by origin quest: a quest ID, or
@@ -1576,6 +1655,11 @@ end
 --
 -- Each storyline also has `origin`: where its chain starts, when that's on
 -- another page (walking back while each quest has just one quest before it).
+-- How far a chain is followed through other pages to join two of its pieces on
+-- this one. The Shattered Amulet chain leaves Swamp of Sorrows for eight quests
+-- in Azshara and Stranglethorn before it comes back; long class and
+-- attunement chains go further.
+local MAX_BRIDGE = 30
 function ns.BuildStorylines(zoneID)
     local ids = ns.GetZoneQuests(zoneID)
     local inZone = {}
@@ -1663,7 +1747,7 @@ function ns.BuildStorylines(zoneID)
     ids = all
 
     -- Bridges: from a "Continues in" tile, follow the chain through other pages
-    -- (up to a few quests) to a "From" tile of another piece on this page. The
+    -- (up to MAX_BRIDGE quests) to a "From" tile of another piece on this page. The
     -- later tile gets the earlier one as a `bridge` parent: it lays the pieces
     -- out in order and joins them, but draws no line.
     local bridges = {}
@@ -1683,7 +1767,7 @@ function ns.BuildStorylines(zoneID)
     for exit in pairs(external) do
         if parents[exit] then -- leads on from this page
             local seen, frontier = { [exit] = true }, { exit }
-            for _ = 1, 6 do
+            for _ = 1, MAX_BRIDGE do
                 local nextFrontier = {}
                 for _, at in ipairs(frontier) do
                     for _, after in ipairs(Next(at)) do

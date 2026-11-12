@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestStarts.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Data/Attunements.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Pins.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestStarts.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Data/BreadcrumbNPCs.lua", "Data/Attunements.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Pins.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -1608,6 +1608,23 @@ char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 
 ns.RefreshPlayer()
 ns.RefreshCompleted()
 
+# WoW Forever's The Adventurer has a version in each starting area, for either faction: you see your own only.
+ADVENTURER = {1429: [96627, 95998, 96626], 1426: [96628, 96608, 96629], 1438: [96630, 96606, 96634], 2521: [96638, 96101, 96646],
+              1411: [96652, 96604, 96655], 1420: [96656, 96607, 96658], 1412: [96659, 96605, 96661]}
+def adventurer_pages():
+    return {z: [i for i in ids if i in set(ns.GetZoneQuests(z).values())] for z, ids in ADVENTURER.items()}
+for race, fac, home, theirs in [(1, "Alliance", 1429, (1426, 1438, 2521)), (95, "Alliance", 2521, (1429, 1426, 1438)),
+                                (2, "Horde", 1411, (1420, 1412, 2521)), (96, "Horde", 2521, (1411, 1420, 1412))]:
+    char["race"], char["class"], char["faction"], char["level"] = race, 1, fac, 60
+    ns.RefreshPlayer(); ns.RefreshCompleted()
+    pages = adventurer_pages()
+    check(pages[home] == ADVENTURER[home] and not any(pages[z] for z in theirs),
+          f"race {race} sees The Adventurer only in its own starting area, {ns.GetMapName(home)} ({ {z: v for z, v in pages.items() if v} })")
+char["race"], char["class"], char["faction"] = 1, 1, "Alliance"
+ns.RefreshPlayer(); ns.RefreshCompleted()
+check(5517 in set(ns.GetZoneQuests(1423).values()) and 5521 in set(ns.GetZoneQuests(1422).values()),
+      "versions outside starting areas still show in each zone (the Chromatic Mantle of the Dawn in both Plaguelands)")
+
 # --- Zone list colours by completion ---
 PC = ns.ui.ProgressColor
 def rgb(c):
@@ -1895,6 +1912,17 @@ check(icon_of(item_q)["__texture"] in ("Interface\\Icons\\INV_Misc_Note_01", "In
 ns.FocusQuest(7508)
 check(ns.Quests[7508]["cl"] is not None and icon_of(7508)["__texture"] == "Interface\\Icons\\Spell_Arcane_PortalUnderCity",
       "a class quest picked up inside an instance shows the portal: it comes first")
+# An item that only drops inside an instance starts its quest there: An Unholy Alliance, from Charlga Razorflank.
+char["race"], char["class"], char["faction"] = 2, 1, "Horde"
+ns.RefreshPlayer(); ns.RefreshCompleted()
+ns.Toggle(True)
+ns.FocusQuest(6522)
+check(ns.Quests[6522]["di"] == 301 and icon_of(6522)["__texture"] == "Interface\\Icons\\Spell_Arcane_PortalUnderCity",
+      "a quest started by an item that only drops in Razorfen Kraul is picked up inside it, with the portal icon (An Unholy Alliance)")
+check(ns.Quests[783]["di"] is None and ns.Quests[123]["di"] is None,
+      "quests started outdoors, or by an item that drops outdoors, aren't")
+char["race"], char["class"], char["faction"] = 1, 1, "Alliance"
+ns.RefreshPlayer(); ns.RefreshCompleted()
 g.GetProfessions = lua.eval("function() return nil end")
 ns.RefreshPlayer()
 
@@ -2598,6 +2626,17 @@ ns.FocusQuest(860)
 header = next(f for f in harness["all"].values() if f["key"] == "s860" and f.IsShown(f))
 check(header["title"]["__text"] == "The Hunter's Way", f"in the window, the Barrens' header shows The Hunter's Way: {header['title']['__text']!r}")
 ns.Toggle(False)
+# A chain that leaves a page for a long way: the Shattered Amulet chain goes from Swamp of Sorrows through eight quests
+# in Azshara and Stranglethorn, then comes back. Its pieces are still one storyline, on both pages it comes back to.
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+sos = next(st for st in ns.BuildStorylines(1435)[0].values() if 2744 in [n["id"] for n in st["nodes"].values()])
+check(3627 in [n["id"] for n in sos["nodes"].values()],
+      "Swamp of Sorrows' Uniting the Shattered Amulet joins the chain it came back to, eight quests away on other pages")
+bl = next(st for st in ns.BuildStorylines(1419)[0].values() if 2783 in [n["id"] for n in st["nodes"].values()])
+check(3628 in [n["id"] for n in bl["nodes"].values()],
+      "and Blasted Lands' You Are Rakh'likh, Demon joins the start of that chain on its page")
 # The rule everywhere: a storyline that carries on a chain from another page has the name the chain has where
 # it starts, unless that's only a lead-in (a breadcrumb or an errand), when it keeps its own.
 def lead_in(qid):
@@ -2627,7 +2666,27 @@ char["race"], char["class"], char["faction"] = 6, 1, "Horde"
 ns.RefreshPlayer()
 fa = storyline_with(1456, 1064)
 check(fa["origin"] == 1061 and title_of(fa) == "Forsaken Aid",
-      f"Thunder Bluff's Forsaken Aid keeps its name: its chain starts with the breadcrumb The Spirits of Stonetalon ({title_of(fa)!r})")
+      f"Thunder Bluff's Forsaken Aid keeps its name: on another page, even a breadcrumb with a name of its own (The Spirits of Stonetalon) doesn't name the chain ({title_of(fa)!r})")
+# Breadcrumbs named after their NPC are errands; ones with a name of their own name the storyline.
+real_title = g.C_QuestLog.GetTitleForQuestID
+titles = {1483: "Ziz Fizziks", 1093: "Super Reaper 6000", 690: "Malin's Request", 8275: "Taking Back Silithus",
+          1061: "The Spirits of Stonetalon", 2872: "Stoley's Debt"}
+g.C_QuestLog.GetTitleForQuestID = lambda i: titles.get(int(i)) or real_title(i)
+check(ns.NamedAfterItsNPC(1483, "Ziz Fizziks") and ns.NamedAfterItsNPC(690, "Malin's Request") and ns.NamedAfterItsNPC(2872, "Stoley's Debt"),
+      "a breadcrumb named after the NPC it sends you to, or who gives it, is an errand (Ziz Fizziks, Malin's Request, Stoley's Debt)")
+check(not ns.NamedAfterItsNPC(8275, "Taking Back Silithus") and not ns.NamedAfterItsNPC(1061, "The Spirits of Stonetalon"),
+      "one with a name of its own isn't (Taking Back Silithus, The Spirits of Stonetalon)")
+check(not ns.NamedAfterItsNPC(1483, None) and not ns.NamedAfterItsNPC(783, "A Threat Within"),
+      "nor is a quest whose name hasn't loaded, or one that isn't a breadcrumb")
+char["race"], char["class"], char["faction"] = 2, 1, "Horde"
+ns.RefreshPlayer(); ns.RefreshCompleted(); ns.ClearChainTitles()
+zf = storyline_with(1442, 1483)
+check(ns.StorylineTitleQuest(zf) == 1093,
+      f"Stonetalon's storyline that opens with the breadcrumb Ziz Fizziks is named Super Reaper 6000 ({ns.StorylineTitleQuest(zf)})")
+g.C_QuestLog.GetTitleForQuestID = real_title
+ns.ClearChainTitles()
+char["race"], char["class"], char["faction"] = 6, 1, "Horde"
+ns.RefreshPlayer(); ns.RefreshCompleted()
 
 # Chain names are kept, so redrawing a page doesn't rebuild the pages its chains start on.
 char["race"], char["class"], char["faction"] = 6, 3, "Horde"
