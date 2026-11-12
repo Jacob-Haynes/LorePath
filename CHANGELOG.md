@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Zone icons on cross-zone tiles:** the faded tiles at a storyline's ends (*< From Elwynn Forest*, *Continues in Westfall >*) show that zone's icon, the same one as in the zone list, so you can see at a glance where the story goes.
+
 ## 1.2.0-beta5
 
 - **Four quests across before wrapping:** the window is a little wider (1140 instead of 1120), so a long storyline shows four quests side by side before it wraps, instead of three.

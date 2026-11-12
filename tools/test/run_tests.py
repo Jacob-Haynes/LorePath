@@ -2352,6 +2352,10 @@ tile = next(f for f in harness["all"].values() if f["questID"] == l["id"] and f[
 zone_name = ns.GetMapName(ns.Quests[l["id"]]["z"])
 check(tile["sub"]["__text"].find("Continues in " + zone_name) >= 0 and tile["__alpha"] < 1,
       f"a 'to' tile says where the story goes on: {tile['sub']['__text']!r}")
+check(tile["icon"]["__texture"] == ns.ui.ZoneIcon(ns.Quests[l["id"]]["z"]) and tile["icon"]["__atlas"] is None,
+      f"and shows that zone's icon ({tile['icon']['__texture']})")
+own = next(f for f in harness["all"].values() if f["questID"] in node_ids and f["link"] is None and f["icon"] is not None and f.IsShown(f))
+check(own["icon"]["__texture"] != ns.ui.ZoneIcon(1429), "the storyline's own quests keep their quest icons")
 g.GameTooltip.lines = lua.table()
 tile["__scripts"]["OnEnter"](tile)
 lines = [str(x) for x in g.GameTooltip.lines.values()]
