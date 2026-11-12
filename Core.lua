@@ -1270,13 +1270,18 @@ local function ChainOrigin(id, zoneID, cache)
 end
 
 -- A storyline's whole story so far (issue #4), across pages: its quests on this
--- page, and the finished quests on other pages that led to them. That's where
--- its chain began (Stonetalon's The Spirits of Stonetalon, before Thunder
--- Bluff's Forsaken Aid) and the steps between pieces of it on this page (the
--- Hillsbrad quests between Forsaken Aid and The Flying Machine Airport). Walks
--- back through prerequisites and breadcrumbs, only through quests you've
--- finished and could do, up to 60 of them. Returns quest IDs, each after every
--- quest before it in the story.
+-- page, the finished quests on other pages that led to them, and the finished
+-- quests on other pages that came after them. Before: where its chain began
+-- (Stonetalon's The Spirits of Stonetalon, before Thunder Bluff's Forsaken
+-- Aid) and the steps between pieces of it on this page (the Hillsbrad quests
+-- between Forsaken Aid and The Flying Machine Airport). After: where it went
+-- on (Hillsbrad's Journey to Tarren Mill leads back to Thunder Bluff). Walks
+-- back through prerequisites and breadcrumbs, and on through follow-on quests,
+-- only through quests you've finished and could do, up to 60 each way. Going
+-- on, it stays off this page: quests here are this storyline's or another's.
+-- Returns quest IDs, each after every quest before it in the story, and the
+-- page where the story goes on next, when that's a quest you haven't done on
+-- another page (nil otherwise).
 local MAX_STORY_EXTRA = 60
 function ns.StoryQuests(storyline)
     local S = ns.STATUS
@@ -1307,6 +1312,38 @@ function ns.StoryQuests(storyline)
                 extra = extra + 1
                 table.insert(list, prev)
                 table.insert(queue, prev)
+            end
+        end
+        i = i + 1
+    end
+    local function After(id)
+        local out = {}
+        for _, l in ipairs({ ns.GetFollowOns(id), ns.Quests[id].bc and ns.Quests[id].nx or {} }) do
+            for _, nextID in ipairs(l) do
+                table.insert(out, nextID)
+            end
+        end
+        return out
+    end
+    local goesOn
+    queue = {}
+    for _, n in ipairs(storyline.nodes) do
+        table.insert(queue, n.id)
+    end
+    extra, i = 0, 1
+    while i <= #queue and extra < MAX_STORY_EXTRA do
+        for _, nextID in ipairs(After(queue[i])) do
+            local q = ns.Quests[nextID]
+            if q and not inStory[nextID] and q.z ~= storyline.zone and extra < MAX_STORY_EXTRA
+                and ShownOnItsPage(nextID, cache) then
+                if ns.GetStatus(nextID) == S.DONE then
+                    inStory[nextID] = true
+                    extra = extra + 1
+                    table.insert(list, nextID)
+                    table.insert(queue, nextID)
+                elseif not goesOn and not ns.IsRepeatable(nextID) then
+                    goesOn = q.z
+                end
             end
         end
         i = i + 1
@@ -1347,7 +1384,7 @@ function ns.StoryQuests(storyline)
         end
         return a < b
     end)
-    return list
+    return list, goesOn
 end
 
 -- A storyline's title: its first quest's name, unless that quest is an errand

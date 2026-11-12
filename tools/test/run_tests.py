@@ -2606,7 +2606,7 @@ ns.RefreshCompleted()
 cache = g.LorePathDB["questCache"]
 cache[first_q] = lua.table_from({"text": "Take this to the elders, $N.", "done": "The elders thank you."})
 cache[ahead] = lua.table_from({"text": "A secret further on."})
-story = list(ns.StorySoFar(mg).values())
+story = list(ns.StorySoFar(mg)[0].values())
 check([e["id"] for e in story] == [first_q, second_q], f"Story so far lists the finished quests in storyline order: {[e['id'] for e in story]}")
 check(story[0]["d"] == "Take this to the elders, $N." and story[0]["c"] == "The elders thank you.",
       "with the description and completion text you saw")
@@ -2644,7 +2644,7 @@ char["race"], char["class"], char["faction"], char["level"], char["map"] = 6, 1,
 char["completed"], char["log"] = lua.table_from({q: True for q in (1061, 1062, 1063, 1064, 1065, 1066, 1067, 1086, 1060)}), lua.table()
 ns.RefreshPlayer(); ns.RefreshCompleted()
 tb = next(st for st in ns.BuildStorylines(1456)[0].values() if 1064 in [n["id"] for n in st["nodes"].values()])
-tb_story = [e["id"] for e in ns.StorySoFar(tb).values()]
+tb_story = [e["id"] for e in ns.StorySoFar(tb)[0].values()]
 check(tb_story == [1061, 1062, 1063, 1064, 1065, 1066, 1067, 1086],
       f"Thunder Bluff's story starts in Stonetalon and goes through Hillsbrad, in order: {tb_story}")
 check(1060 not in tb_story, "a finished quest on another page that isn't part of the chain stays out")
@@ -2665,6 +2665,33 @@ ns.Refresh()
 texts = detail_texts()
 check(any(t.startswith("This chain starts earlier, with ") for t in texts) and not any(t.startswith("In ") for t in texts),
       "before you've done the earlier part, it says where the chain starts instead")
+ns.HideDetail()
+ns.SetSetting("hideCompleted", hide_was)
+char["completed"] = lua.table()
+ns.RefreshCompleted()
+ns.Toggle(False)
+
+# And it reads on: Hillsbrad's piece of that chain carries on into Thunder Bluff.
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 6, 1, "Horde", 60, 1424
+char["completed"], char["log"] = lua.table_from({q: True for q in (1061, 1062, 1063, 1064, 1065, 1066, 1067, 1086)}), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+hb = next(st for st in ns.BuildStorylines(1424)[0].values() if 1065 in [n["id"] for n in st["nodes"].values()])
+hb_story = [e["id"] for e in ns.StorySoFar(hb)[0].values()]
+check(hb_story == [1061, 1062, 1063, 1064, 1065, 1066, 1067, 1086],
+      f"Hillsbrad's story includes what came before and after it on other pages: {hb_story}")
+char["completed"][1086] = None
+ns.RefreshCompleted()
+hb_entries, goes_on = ns.StorySoFar(hb)
+check(1086 not in [e["id"] for e in hb_entries.values()] and goes_on == 1456,
+      f"a later quest you haven't done stays out, and the story says it goes on in Thunder Bluff ({goes_on})")
+hide_was = ns.GetSetting("hideCompleted")
+ns.SetSetting("hideCompleted", False)
+ns.Toggle(True)
+ns.FocusQuest(1065)
+header = next(f for f in harness["all"].values() if f["key"] == "s" + str(hb["first"]) and f.IsShown(f))
+header["story"]["__scripts"]["OnClick"](header["story"])
+texts = detail_texts()
+check(("The story goes on in " + ns.GetMapName(1456) + ".") in texts, "and the panel says where it goes on")
 ns.HideDetail()
 ns.SetSetting("hideCompleted", hide_was)
 char["completed"] = lua.table()

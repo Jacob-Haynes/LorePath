@@ -1004,14 +1004,16 @@ end
 -- The text of the quests you've finished in a storyline, in the order they
 -- come in it, to read as one story: { {id, z = its page, d = description,
 -- c = completion, bundled = true when the description is pfQuest's}, ... }.
--- Includes finished quests on other pages that led to it (ns.StoryQuests).
+-- Includes finished quests on other pages that led to it or came after it
+-- (ns.StoryQuests). Also returns the page where the story goes on, if any.
 -- Only finished quests, so nothing ahead is spoiled; repeatable quests are
 -- left out.
 -- Text comes from the same places as the quest details: what you saw in game,
 -- then community text, then (descriptions only) the bundled vanilla text.
 function ns.StorySoFar(storyline)
     local list = {}
-    for _, id in ipairs(ns.StoryQuests(storyline)) do
+    local ids, goesOn = ns.StoryQuests(storyline)
+    for _, id in ipairs(ids) do
         if not ns.IsRepeatable(id) and ns.GetStatus(id) == S.DONE then
             local cached = Cache()[id] or {}
             local community = ns.CommunityText and ns.CommunityText[id] or {}
@@ -1023,7 +1025,7 @@ function ns.StorySoFar(storyline)
             table.insert(list, entry)
         end
     end
-    return list
+    return list, goesOn
 end
 
 local STORY_TEXT = { 0.9, 0.86, 0.75 }
@@ -1042,7 +1044,7 @@ local function RenderStory(storyline)
     local done, total = ns.CountProgress(ids)
     AddText(string.format("%d of %d quests done on this page", done, total), "GameFontDisableSmall", nil, 2)
 
-    local entries = ns.StorySoFar(storyline)
+    local entries, goesOn = ns.StorySoFar(storyline)
     -- Where the chain began, when that's on another page and you haven't done
     -- it (once you have, it's the story's first chapter).
     local origin = storyline.origin
@@ -1083,6 +1085,8 @@ local function RenderStory(storyline)
         AddText("Finish this storyline's first quest and its story starts here.", "GameFontDisableSmall", nil, 14)
     elseif done < total then
         AddText("The rest of the story is still ahead of you.", "GameFontDisableSmall", nil, 14)
+    elseif goesOn then
+        AddText("The story goes on in " .. ns.GetMapName(goesOn) .. ".", "GameFontHighlightSmall", { 0.55, 0.77, 1 }, 14)
     else
         AddText("You've finished this storyline.", "GameFontDisableSmall", { 0.42, 0.83, 0.37 }, 14)
     end
