@@ -68,7 +68,7 @@ LorePath supports English game clients only.
 | Show or hide repeatable quests | The **Repeatable** tick box, or the settings page |
 | Reveal a quest's story | **Reveal** in its details; or **Show spoilers** in the settings for every quest |
 | Show or hide the minimap button | The settings page |
-| Share the quest text you've collected | **Share quest text** on the settings page, or `/lp share`, then paste the code into a [Share quest text](https://github.com/Jacob-Haynes/LorePath/issues/new/choose) issue |
+| Share the quest text you've collected | **Share quest text** on the settings page, or `/lp share`, then paste the code into the [share page](https://lorepath-share.jacobhaynes49.workers.dev) (no account needed) or a [Share quest text](https://github.com/Jacob-Haynes/LorePath/issues/new/choose) issue |
 | Move the window | Drag its title bar |
 | Move the minimap button | Drag it around the minimap |
 | Scroll | Mouse wheel, or Shift + wheel to scroll sideways |
@@ -114,9 +114,9 @@ Everything is saved per account in `LorePathDB` (`WTF/Account/<account>/SavedVar
 
 WoW Forever's own quests aren't in any quest database, so the only source for their story is what players see in game. LorePath saves it as you play; `/lp share` sends it to everyone:
 
-1. Press **Share quest text** on the settings page, or type `/lp share`. A window shows a share code (it starts with `LP1:`) holding the quest text you've saved that LorePath doesn't ship yet: titles, objectives, descriptions, progress and closing text, plus gold, XP and reputation rewards, and where quests that LorePath has no start for were offered. Your character's name, class and race are replaced with `$N`, `$C` and `$R` where the text talks to you, and text the bundled vanilla text already has is left out; nothing else about you is in it.
-2. Click the code, press Ctrl+C, and paste it into a new **Share quest text** issue. A big collection comes as several codes; send each one in its own issue. Players without a GitHub account can paste their codes into the share page instead (`share/`, once it's deployed; see [share/README.md](share/README.md)), which opens the issues for them.
-3. A check replies on the issue with what it added, and adds the text to a pull request. Once a maintainer has reviewed and merged it, the next release has it.
+1. Press **Share quest text** on the settings page, or type `/lp share`. A window shows a share code (it starts with `LP1:`) holding the quest text you've saved that LorePath doesn't ship yet: titles, objectives, descriptions, progress and closing text, plus gold, XP and reputation rewards, and where quests that LorePath has no start for were offered. Your character's name, class and race are replaced with `$N`, `$C` and `$R` where the text talks to you, and text LorePath already has (bundled or community text, once its placeholders are filled in) is left out; nothing else about you is in it.
+2. Copy the share page's address from the window's link box into your browser: [lorepath-share.jacobhaynes49.workers.dev](https://lorepath-share.jacobhaynes49.workers.dev). No account is needed. Click the code, press Ctrl+C, paste it there, tick the check and press **Send**. A big collection comes as several codes; paste them all, one after another. If you'd rather, paste each code into its own **Share quest text** issue on GitHub instead.
+3. Either way it becomes a public **Share quest text** issue. A check replies on it with what it added, and adds the text to a pull request. Once a maintainer has reviewed and merged it, the next release has it.
 
 ---
 
@@ -165,12 +165,12 @@ The [Sync quest data from AllTheThings](.github/workflows/sync-att-data.yml) wor
 
 ### Adding players' quest text
 
-Shared codes arrive through the **Share quest text** issue form. The `Add shared quest text` workflow (`.github/workflows/community-text.yml`) runs on each one:
-- it merges the code into `Data/CommunityText.lua` with `tools/merge_quest_text.py --replace`, so later submissions replace earlier wording for the same quest (wording usually only changes when the game does);
+Shared codes arrive as **Share quest text** issues, from the issue form or from the share page (`share/`, a Cloudflare Worker that opens the issue under the maintainer's account; see [share/README.md](share/README.md)). The `Add shared quest text` workflow (`.github/workflows/community-text.yml`) runs on each one:
+- it merges the code into `Data/CommunityText.lua` with `tools/merge_quest_text.py --replace`, so later submissions replace earlier wording for the same quest (wording usually only changes when the game does), except that text which only fills in a placeholder never replaces it;
 - runs the tests, commits to the `data/community-text` branch, and opens or updates one PR from it;
 - replies on the issue with what was added.
 
-Review the PR's text before merging. The workflow needs two things set up once:
+Review the PR's text before merging, especially the class and race words the report lists: they may be the sharing player's own. The workflow needs two things set up once:
 - a `quest-text` label, which the issue form applies: `gh label create quest-text --description "Quest text shared with /lp share"`;
 - **Settings > Actions > General > Allow GitHub Actions to create and approve pull requests**, the same setting the AllTheThings sync needs.
 
