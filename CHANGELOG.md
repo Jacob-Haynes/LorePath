@@ -1,6 +1,19 @@
 # Changelog
 
-## Unreleased
+## 1.2.0
+
+Everything from the 1.2.0 betas (details below), plus two more changes. The highlights:
+
+- **Quests on the world map:** a "!" where each quest starts, gold for your level, grey for low-level and red for too high, each with its own filter in the world map's menu. Hover for the tooltip, click for a waypoint, Shift+click to open it in LorePath.
+- **Attunements:** a page for each key chain (Onyxia's Lair, Upper Blackrock Spire, Scholomance and Shadowforge City), with your faction's quests as one storyline and a tick once you have the key.
+- **Storylines that cross zones:** faded tiles at a storyline's ends show where it comes from and where it goes on (*< From Elwynn Forest*, *Continues in Westfall >*), with that zone's icon. Click one to go there.
+- **Long storylines wrap** into bands instead of running off the right of the window, which is a little wider too.
+- **Where a quest's item comes from:** item-started quests say what drops or holds the item, and where.
+- **Share where quests start**, so WoW Forever's own quests get start points and **Show on map**.
+- **Tidier zone list and settings:** progress colours as a smooth gradient, finished sections start collapsed, Tier 0.5 on your Class page, dungeons in level order, Timbermaw Hold's quests in their zones, and a settings page grouped under **Window**, **Quests** and **World map**.
+- **Fixes:** an error at some quest givers, quests that showed twice, and close buttons that didn't work in combat.
+
+Since 1.2.0-beta5:
 
 - **Dungeons in level order:** the **Dungeons** heading in the zone list goes from the lowest-level dungeon to the highest, using WoW Forever's level ranges, instead of alphabetically. Raids and battlegrounds stay alphabetical.
 - **Zone icons on cross-zone tiles:** the faded tiles at a storyline's ends (*< From Elwynn Forest*, *Continues in Westfall >*) show that zone's icon, the same one as in the zone list, so you can see at a glance where the story goes.

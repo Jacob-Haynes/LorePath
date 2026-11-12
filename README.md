@@ -8,13 +8,13 @@ It's not a quest helper. Its world map pins only show where quests start, and th
 
 LorePath supports English game clients only.
 
-> **Version 1.1.0.** Lore beyond quest text (zones, characters, a codex) is planned.
+> **Version 1.2.0.** Lore beyond quest text (zones, characters, a codex) is planned.
 
 ---
 
 ## What it shows
 
-- **Class and Professions:** at the top of the zone list, **Class** gathers every quest for your class from all zones, so class chains that travel (say, from a capital city to another zone) show as one storyline. **Professions** has a page for each profession you have, with its quests. Their tooltips say which zone each quest is in. Quests your skill is too low for say what they need, for example *Needs Leatherworking 225*.
+- **Class and Professions:** at the top of the zone list, **Class** gathers every quest for your class from all zones, so class chains that travel (say, from a capital city to another zone) show as one storyline, and so does the Tier 0.5 upgrade chain, with the steps every class shares. **Professions** has a page for each profession you have, with its quests. Their tooltips say which zone each quest is in. Quests your skill is too low for say what they need, for example *Needs Leatherworking 225*.
 - **Attunements:** under **Attunements** in the zone list, a page for each chain that unlocks a dungeon or raid (Onyxia's Lair, Upper Blackrock Spire, Scholomance, Shadowforge City), with your faction's quests as one storyline across zones, and the key it ends in, ticked once you have it. They're listed by hand in `Data/Attunements.lua`, since AllTheThings doesn't model attunements.
 - **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons, raids and battlegrounds get their own pages under **Dungeons**, **Raids** and **Battlegrounds** headings (Scarlet Monastery's Graveyard and Library wings have their own too), and inside an instance the window opens on its page. Dungeons are listed in level order, lowest first; the rest by name. Zones, dungeons, raids and battlegrounds show WoW Forever's suggested level range in a column before the count, read from the game's Looking for Group list; hover a row for its full name, range and progress. Names are coloured by progress: grey before you start, then a gradient from red through orange and yellow to green as you go, fully green once finished. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and a heading whose quests are all done starts collapsed (unless it holds the page you're on). The whole list can be hidden to give the graph more room.
 - **Storylines:** each page's quest chains, drawn left to right from the first quest to the last, with lines joining each quest to the ones it unlocks. A storyline that starts from a quest in another zone, or goes on into one, shows those quests as faded, blue-bordered tiles at its ends, with that zone's icon (*< From Elwynn Forest*, *Continues in Westfall >*); click one to go there. A storyline wider than the window wraps into bands, one under the other. Each storyline can be collapsed, and finished ones start collapsed. **Expand all** and **Collapse all** sit at the top.
@@ -28,7 +28,8 @@ LorePath supports English game clients only.
   | Gold box, ? | In your quest log |
   | Dark box, yellow ! | Available now. The name is coloured by difficulty, as in your quest log |
   | Blue box, blue ! | Repeatable (daily and repeatable quests). Never counts toward progress |
-  | Dark box, grey !, red level | Too high level, or your profession skill or reputation is too low |
+  | Dark box, grey !, red line | Too high level, or your profession skill is too low: the line says *Lv 30* or *Needs Leatherworking 225*, and the name stays neutral instead of taking a difficulty colour |
+  | Dark box, grey !, *Needs \<faction\>* | Your reputation is too low. The name keeps its difficulty colour |
   | Dimmed box, padlock | Needs an earlier quest first |
   | Dimmest box, ✗ | Skipped: a breadcrumb you went past, or a quest your reputation is now too high for |
 
@@ -47,7 +48,7 @@ LorePath supports English game clients only.
 - **Search:** type part of a quest's name, or its ID, in the box above the zone list. The list shows up to 50 matching quests you can do, with their zone, status and level; click one to jump to it. Escape clears the search.
 - **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
-- **World map pins:** a "!" where each quest starts on the zone map you're viewing: gold for quests at your level, grey for low-level ones, red for quests you're not high enough level for yet (a blue "!" for repeatable quests). Each of the three has its own entry under **LorePath quests** in the world map's filter menu, and in the settings. Only quests at your level are on by default. Quests that start at the same spot share a pin, with a count. Hover a pin for the quest's tooltip, click it to set a waypoint there, or Shift+click it to open the quest in LorePath.
+- **World map pins:** a "!" where each quest starts on the zone map you're viewing: gold for quests at your level, grey for low-level ones, red for quests you're not high enough level for yet (a blue "!" for repeatable quests at your level). Each of the three has its own entry under **LorePath quests** in the world map's filter menu, and in the settings. Only quests at your level are on by default. Quests that start at the same spot share a pin, with a count. Hover a pin for the quest's tooltip, click it to set a waypoint there, or Shift+click it to open the quest in LorePath.
 - **Quest log, both ways:** for a quest you're on, **Open in quest log** in its details, or Shift+click it, opens the game's quest log at that quest. The other way, the LorePath book button on the game's quest log opens the selected quest in LorePath with its details.
 
 ### Controls
@@ -123,7 +124,7 @@ WoW Forever's own quests aren't in any quest database, so the only source for th
 
 | Data | Source |
 | :--- | :--- |
-| Which quests exist, their chains, level, faction/race/class, profession and reputation requirements, repeatables, start location, quest giver, item rewards, and dungeon and raid pages | [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings)' WoW Forever database (MIT), extracted into `Data/Quests.lua`: 4,334 quests on 50 zone pages and 33 instance pages (28 dungeon pages, counting Scarlet Monastery's two wings, 1 raid and 4 battlegrounds). Also each quest's starting item, where it's picked up inside an instance, and AllTheThings' notes on 89 quests, in `Data/QuestNotes.lua` |
+| Which quests exist, their chains, level, faction/race/class, profession and reputation requirements, repeatables, start location, quest giver, item rewards, and dungeon and raid pages | [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings)' WoW Forever database (MIT), extracted into `Data/Quests.lua`: 4,334 quests on 49 zone pages and 32 instance pages (27 dungeon pages, counting Scarlet Monastery's two wings, 1 raid and 4 battlegrounds). Also each quest's starting item, where it's picked up inside an instance, and AllTheThings' notes on 89 quests, in `Data/QuestNotes.lua` |
 | What you've completed, what's in your log, your level, race, class, faction, professions and reputation | The game client, live |
 | Quest, zone, item, NPC and faction names | The game client, in your language |
 | Level ranges of zones, dungeons, raids and battlegrounds | The game client's Looking for Group list, live |
@@ -195,15 +196,16 @@ pip install lupa
 python3 tools/test/run_tests.py
 ```
 
-This runs the addon's Lua against a fake WoW API with the real quest data, as characters of several races and classes (Human, Orc, Tauren and WoW Forever's own race among them), about 370 checks in all. It covers:
+This runs the addon's Lua against a fake WoW API with the real quest data, as characters of several races and classes (Human, Orc, Tauren and WoW Forever's own race among them), about 500 checks in all. It covers:
 - eligibility, reputation, repeatable quests, faction versions and one version per starting area;
 - quest statuses and storyline building;
-- zone, dungeon, raid, battleground, Class and profession pages, and level ranges;
+- zone, dungeon, raid, battleground, Class, profession and attunement pages, and level ranges;
+- storylines that cross zones, and wrapping long storylines to the window;
 - the zone list: icons, progress colours and collapsing;
 - search, jumping and **Back**, and dragging the graph;
 - the detail panel, its text sources, notes and spoiler hiding;
 - quest icons, the quest log both ways and linking rewards;
-- saving and sharing quest text, including the merge tool;
+- saving and sharing quest text and where quests start, including the merge tool, and where starting items come from;
 - world map pins: which quests get one, grouping, colours, tooltips, clicks and refreshing;
 - waypoints, the minimap button, slash commands and every setting;
 - **Reset to defaults**;
