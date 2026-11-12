@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.3.0-beta6
 
 - **Dungeon item quests show the portal icon:** a quest started by an item that only drops inside a dungeon or raid, like An Unholy Alliance from Charlga Razorflank in Razorfen Kraul, now has the portal icon and says it's picked up inside.
 - **Better names for storylines that open with a breadcrumb:** a breadcrumb named after the NPC who gives it or the one it sends you to no longer names its storyline; the quest it leads to does. Stonetalon's Ziz Fizziks is now Super Reaper 6000, and Malin's Request is Worth Its Weight in Gold. A breadcrumb with a name of its own, like Taking Back Silithus, still names its storyline.
