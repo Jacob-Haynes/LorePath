@@ -1211,7 +1211,8 @@ end
 -- Zone list
 -- ============================================================================
 
--- Instance pages get their own headings, after the continents.
+-- Instance pages get their own headings, after the continents. Dungeons are
+-- listed in level order, the rest by name.
 local INSTANCE_GROUPS = {
     dungeon = { name = "Dungeons", rank = 1 },
     raid = { name = "Raids", rank = 2 },
@@ -1225,6 +1226,9 @@ local function SortedZones()
         local group = z.instance and INSTANCE_GROUPS[z.instance]
         if group then
             z.continentName, z.groupRank = group.name, group.rank
+            if z.instance == "dungeon" then
+                z.low, z.high = ns.GetLevelRange(z.id)
+            end
         else
             z.continentName = (z.continent ~= 0 and z.continent ~= z.id) and ns.GetMapName(z.continent) or "Other"
             z.groupRank = 0
@@ -1237,10 +1241,22 @@ local function SortedZones()
         if a.continentName ~= b.continentName then
             return a.continentName < b.continentName
         end
+        -- Dungeons go in level order, lowest first; any the game gives no
+        -- range for go after them, by name.
+        if (a.low ~= nil) ~= (b.low ~= nil) then
+            return a.low ~= nil
+        end
+        if a.low and a.low ~= b.low then
+            return a.low < b.low
+        end
+        if a.high and a.high ~= b.high then
+            return a.high < b.high
+        end
         return a.name < b.name
     end)
     return zones
 end
+ns.ui.SortedZones = SortedZones
 
 local RenderZoneList
 

@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- **Dungeons in level order:** the **Dungeons** heading in the zone list goes from the lowest-level dungeon to the highest, using WoW Forever's level ranges, instead of alphabetically. Raids and battlegrounds stay alphabetical.
 - **Zone icons on cross-zone tiles:** the faded tiles at a storyline's ends (*< From Elwynn Forest*, *Continues in Westfall >*) show that zone's icon, the same one as in the zone list, so you can see at a glance where the story goes.
 
 ## 1.2.0-beta5

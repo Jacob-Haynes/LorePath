@@ -1592,6 +1592,18 @@ lines = [str(l) for l in g.GameTooltip.lines.values()]
 check(lines[:2] == ["Elwynn Forest", "Levels 1-10"] and any("quests done" in l for l in lines),
       "hovering a zone shows its full name, range and progress")
 check(frame["zoneSummary"]["__text"].startswith("Levels 1-10"), f"and so does the line above the graph: {frame['zoneSummary']['__text'][:30]!r}")
+dungeons = [z for z in ns.ui.SortedZones().values() if z["instance"] == "dungeon"]
+lows = [z["low"] for z in dungeons]
+ranged = [l for l in lows if l is not None]
+names = [str(z["name"]) for z in dungeons]
+check(ranged and lows[:len(ranged)] == ranged and ranged == sorted(ranged) and all(l is None for l in lows[len(ranged):]),
+      f"Dungeons are listed in level order, lowest first, then any without a range: {list(zip(names, lows))[:5]}")
+check(names.index("The Stockade") < names.index("Scarlet Monastery") and names.index("Scarlet Monastery") < names.index("The Deadmines"),
+      "so The Stockade (23) comes before Scarlet Monastery (30), and The Deadmines, which the game gave no range here, comes after")
+unranged = [n for n, l in zip(names, lows) if l is None]
+check(unranged == sorted(unranged), "dungeons without a range stay in name order")
+not_dungeons = [str(z["name"]) for z in ns.ui.SortedZones().values() if z["instance"] == "raid"]
+check(not_dungeons == sorted(not_dungeons), "raids are still listed by name")
 g.C_LFGList = None
 
 # --- Scarlet Monastery's wings, and breadcrumbs that lead nowhere you can go ---
