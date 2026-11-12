@@ -2548,6 +2548,59 @@ header["__scripts"]["OnEnter"](header)
 lines = [str(x) for x in g.GameTooltip.lines.values()]
 check("Starts with Speak with Ruga." in lines, f"and hovering it explains: {lines}")
 ns.Toggle(False)
+
+# A chain keeps one name on every page: Mulgore's The Hunter's Way goes on in the Barrens with its
+# breadcrumb Sergra Darkthorn, and the Barrens' storyline is still called The Hunter's Way.
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 6, 3, "Horde", 60, 1413
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+g.C_QuestLog.GetTitleForQuestID = lua.eval(
+    "function(ns) return function(id) local t = ns.CommunityText[id] or ns.QuestText[id]; return t and t.t end end")(ns)
+def storyline_with(page, qid):
+    return next((st for st in ns.BuildStorylines(page)[0].values() if qid in [n["id"] for n in st["nodes"].values()]), None)
+title_of = lambda st: ns.GetQuestNameOrID(ns.StorylineTitleQuest(st))
+hw_mulgore, hw_barrens = storyline_with(1412, 861), storyline_with(1413, 860)
+check(title_of(hw_mulgore) == "The Hunter's Way", f"Mulgore's hunter chain is called The Hunter's Way: {title_of(hw_mulgore)!r}")
+check(hw_barrens["first"] == 860 and hw_barrens["origin"] == 861 and title_of(hw_barrens) == "The Hunter's Way",
+      f"on the Barrens' page, the same chain, starting with Sergra Darkthorn, is still The Hunter's Way: {title_of(hw_barrens)!r}")
+hw_lines = list(ns.ui.StorylineHeaderLines(hw_barrens, ns.StorylineTitleQuest(hw_barrens)).values())
+check(hw_lines == ["Starts with Sergra Darkthorn.", f"Part of a chain that starts with The Hunter's Way, in {ns.GetMapName(1412)}."],
+      f"and its header tooltip says where it starts on this page and where the chain began: {hw_lines}")
+ns.Toggle(True)
+ns.FocusQuest(860)
+header = next(f for f in harness["all"].values() if f["key"] == "s860" and f.IsShown(f))
+check(header["title"]["__text"] == "The Hunter's Way", f"in the window, the Barrens' header shows The Hunter's Way: {header['title']['__text']!r}")
+ns.Toggle(False)
+# The rule everywhere: a storyline that carries on a chain from another page has the name the chain has where
+# it starts, unless that's only a lead-in (a breadcrumb or an errand), when it keeps its own.
+def lead_in(qid):
+    return ns.Quests[qid]["bc"] is not None or ns.IsErrandTitle(ns.GetQuestName(qid))
+mismatches, renamed, kept = [], 0, 0
+for race, cls, fac in [(6, 3, "Horde"), (2, 1, "Horde"), (5, 8, "Horde"), (1, 1, "Alliance"), (4, 11, "Alliance"), (7, 9, "Alliance")]:
+    char["race"], char["class"], char["faction"] = race, cls, fac
+    ns.RefreshPlayer()
+    for z in ns.GetZones().values():
+        for st in ns.BuildStorylines(z["id"])[0].values():
+            o = st["origin"]
+            there = o and storyline_with(ns.Quests[o]["z"], o)
+            if not there:
+                continue
+            want = ns.StorylineTitleQuest(there)
+            if lead_in(want):
+                kept += 1
+                ok = ns.StorylineTitleQuest(st) in [n["id"] for n in st["nodes"].values()]
+            else:
+                renamed += 1
+                ok = ns.StorylineTitleQuest(st) == want
+            if not ok:
+                mismatches.append((z["id"], st["first"]))
+check(renamed > 50 and kept > 0 and not mismatches,
+      f"every storyline continuing a chain from another page takes the chain's name ({renamed}), or keeps its own after a lead-in ({kept}): {mismatches[:5]}")
+char["race"], char["class"], char["faction"] = 6, 1, "Horde"
+ns.RefreshPlayer()
+fa = storyline_with(1456, 1064)
+check(fa["origin"] == 1061 and title_of(fa) == "Forsaken Aid",
+      f"Thunder Bluff's Forsaken Aid keeps its name: its chain starts with the breadcrumb The Spirits of Stonetalon ({title_of(fa)!r})")
 g.C_QuestLog.GetTitleForQuestID = real_title
 char["race"], char["class"], char["faction"], char["level"], char["map"] = 1, 1, "Alliance", 60, 1429
 ns.RefreshPlayer(); ns.RefreshCompleted()

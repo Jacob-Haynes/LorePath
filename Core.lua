@@ -1389,8 +1389,12 @@ end
 
 -- A storyline's title: its first quest's name, unless that quest is an errand
 -- ("Speak with Ruga", "Report to Kadrak"), when the first quest after it that
--- isn't one names it instead. Names come from the client, so this is worked out
--- when it's drawn.
+-- isn't one names it instead. A storyline that carries on a chain from another
+-- page is named after the whole chain instead: the name it has on the page
+-- where it starts, so it's called the same on every page (Mulgore's The
+-- Hunter's Way goes on in the Barrens with the breadcrumb Sergra Darkthorn, and
+-- is still The Hunter's Way there). Names come from the client, so this is
+-- worked out when it's drawn.
 local ERRANDS = { "speak with ", "speak to ", "talk to ", "report to ", "return to ", "deliver to ",
     "deliveries to ", "seek ", "message to ", "messenger to " }
 function ns.IsErrandTitle(name)
@@ -1406,7 +1410,7 @@ function ns.IsErrandTitle(name)
     return false
 end
 
-function ns.StorylineTitleQuest(storyline)
+local function OwnTitleQuest(storyline)
     for _, n in ipairs(storyline.nodes) do
         local name = ns.GetQuestName(n.id)
         if name and not ns.IsErrandTitle(name) then
@@ -1414,6 +1418,36 @@ function ns.StorylineTitleQuest(storyline)
         end
     end
     return storyline.first
+end
+
+-- A breadcrumb or errand only leads to the chain, so it can't name the whole
+-- of it: when the page a chain starts on only has its lead-in (Teldrassil's
+-- Nessa Shadowsong, before Darkshore's The Bounty of Teldrassil), the
+-- storyline keeps its own name.
+local function IsLeadIn(id)
+    return ns.Quests[id].bc or ns.IsErrandTitle(ns.GetQuestName(id))
+end
+
+local function TitleQuest(storyline, seen)
+    local origin = storyline.origin
+    if origin and ns.Quests[origin] and not seen[origin] then
+        seen[origin] = true
+        for _, there in ipairs((ns.BuildStorylines(ns.Quests[origin].z))) do
+            for _, n in ipairs(there.nodes) do
+                if n.id == origin then
+                    local id = TitleQuest(there, seen)
+                    if not IsLeadIn(id) then
+                        return id
+                    end
+                end
+            end
+        end
+    end
+    return OwnTitleQuest(storyline)
+end
+
+function ns.StorylineTitleQuest(storyline)
+    return TitleQuest(storyline, {})
 end
 
 -- Groups a zone's quests into storylines: quests joined by prerequisite or

@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **A chain keeps its name across zones:** a storyline that carries on a chain from another zone is now named after the chain, as it is where the chain starts, instead of after its first quest on this page. The hunter chain is The Hunter's Way in the Barrens too, not Sergra Darkthorn. When a chain starts with only a breadcrumb or errand there, the storyline keeps its own name.
+
 ## 1.3.0-beta5
 
 - **Latest AllTheThings data:** 81 more quests, among them the racial mount quests, and quest givers and starting points for 111 quests that had none, so they get map pins. Tooga's Quest now has a note on catching its follow-up quest during the escort.
