@@ -1578,6 +1578,32 @@ durotar, barrens = set(ns.GetZoneQuests(1411).values()), set(ns.GetZoneQuests(14
 check(all(i in durotar for i in EARTH["durotar"]), "a zone with one version keeps it")
 check([i for i in FIRE_CRUMBS if i in barrens] == FIRE_CRUMBS and 1524 in barrens,
       "The Barrens keeps all four Call of Fire breadcrumbs")
+mulgore = set(ns.GetZoneQuests(1412).values())
+check(not any(i in mulgore for i in EARTH["mulgore"]),
+      "a class quest's zone page agrees with the Class page: an orc doesn't see Mulgore's Call of Earth on Mulgore's page")
+check(861 in mulgore and 844 in barrens,
+      "versions of quests that aren't class quests still show in each zone (Plainstrider Menace in Mulgore and The Barrens)")
+# A Skyborne Shaman who did Zephras Isle's Call of Fire: the game doesn't mark
+# the Barrens chain done, and that chain is in the data for race 96 too.
+page = shaman(96)
+barrens = set(ns.GetZoneQuests(1413).values())
+check(not any(i in barrens for i in FIRE_BARRENS + FIRE_CRUMBS),
+      f"a Skyborne Shaman doesn't see the Barrens Call of Fire on The Barrens' page ({sorted(i for i in FIRE_BARRENS + FIRE_CRUMBS if i in barrens)})")
+for qid in FIRE_ZEPHRAS:
+    char["completed"][qid] = True
+ns.RefreshCompleted()
+barrens, zephras = set(ns.GetZoneQuests(1413).values()), set(ns.GetZoneQuests(2521).values())
+page = set(ns.GetZoneQuests("class").values())
+check(not any(i in barrens for i in FIRE_BARRENS + FIRE_CRUMBS),
+      f"nor after finishing Zephras Isle's, with the Barrens chain not marked done ({sorted(i for i in FIRE_BARRENS + FIRE_CRUMBS if i in barrens)})")
+check(all(i in zephras and i in page and ns.GetStatus(i) == S.DONE for i in FIRE_ZEPHRAS)
+      and not any(i in page for i in FIRE_BARRENS + FIRE_CRUMBS),
+      "Zephras Isle's Call of Fire shows as done, on Zephras Isle's page and the Class page")
+durotar, mulgore = set(ns.GetZoneQuests(1411).values()), set(ns.GetZoneQuests(1412).values())
+check(not any(i in durotar for i in EARTH["durotar"]) and not any(i in mulgore for i in EARTH["mulgore"]),
+      "and Call of Earth's Durotar and Mulgore versions stay off those zones' pages for a Skyborne Shaman")
+char["completed"] = lua.table()
+ns.RefreshCompleted()
 char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
 ns.RefreshPlayer()
 ns.RefreshCompleted()

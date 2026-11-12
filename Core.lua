@@ -956,8 +956,42 @@ ns.EXTRA_VERSIONS = EXTRA_VERSIONS -- read by the tests' duplicate check
 -- hidden version are hidden with it, and so are breadcrumbs that only lead to
 -- hidden quests (you couldn't complete them). Other breadcrumbs all stay, even
 -- several to the same quest: each is a different place to start.
+--
+-- A class quest's versions count even when they're on another page: the Class
+-- page shows one version, and each zone page agrees with it, so a Skyborne
+-- Shaman who did Zephras Isle's Call of Fire doesn't see the Barrens chain on
+-- The Barrens' page. Other quests' versions are each shown in their own zone.
+
+-- Every quest's versions, both ways round (alt and EXTRA_VERSIONS), built once.
+local versionsOf
+local function VersionsOf(id)
+    if not versionsOf then
+        versionsOf = {}
+        local function Link(a, b)
+            versionsOf[a] = versionsOf[a] or {}
+            versionsOf[b] = versionsOf[b] or {}
+            versionsOf[a][b], versionsOf[b][a] = true, true
+        end
+        for qid, q in pairs(ns.Quests) do
+            for _, alt in ipairs(q.alt or {}) do
+                if ns.Quests[alt] then
+                    Link(qid, alt)
+                end
+            end
+        end
+        for qid, others in pairs(EXTRA_VERSIONS) do
+            for _, other in ipairs(others) do
+                if ns.Quests[qid] and ns.Quests[other] then
+                    Link(qid, other)
+                end
+            end
+        end
+    end
+    return versionsOf[id]
+end
+
 local function OneVersionEach(list)
-    if #list < 2 then
+    if #list == 0 then
         return list
     end
     local home = HOME_MAPS[player.race] or {}
@@ -1005,15 +1039,12 @@ local function OneVersionEach(list)
             groupOf[a], groupOf[b] = a, a
         end
     end
+    -- Versions on another page join in only for class quests, and only ones
+    -- you could do; they can win, but they're never added to this page.
     for _, id in ipairs(list) do
-        local q = ns.Quests[id]
-        for _, alt in ipairs(q.alt or {}) do
-            if onPage[alt] then
-                Join(id, alt)
-            end
-        end
-        for _, other in ipairs(EXTRA_VERSIONS[id] or {}) do
-            if onPage[other] then
+        local isClass = ns.Quests[id].cl ~= nil
+        for other in pairs(VersionsOf(id) or {}) do
+            if onPage[other] or (isClass and ns.Quests[other].cl and ns.IsEligible(other)) then
                 Join(id, other)
             end
         end
