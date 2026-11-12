@@ -1576,6 +1576,11 @@ end
 --
 -- Each storyline also has `origin`: where its chain starts, when that's on
 -- another page (walking back while each quest has just one quest before it).
+-- How far a chain is followed through other pages to join two of its pieces on
+-- this one. The Shattered Amulet chain leaves Swamp of Sorrows for eight quests
+-- in Azshara and Stranglethorn before it comes back; long class and
+-- attunement chains go further.
+local MAX_BRIDGE = 30
 function ns.BuildStorylines(zoneID)
     local ids = ns.GetZoneQuests(zoneID)
     local inZone = {}
@@ -1663,7 +1668,7 @@ function ns.BuildStorylines(zoneID)
     ids = all
 
     -- Bridges: from a "Continues in" tile, follow the chain through other pages
-    -- (up to a few quests) to a "From" tile of another piece on this page. The
+    -- (up to MAX_BRIDGE quests) to a "From" tile of another piece on this page. The
     -- later tile gets the earlier one as a `bridge` parent: it lays the pieces
     -- out in order and joins them, but draws no line.
     local bridges = {}
@@ -1683,7 +1688,7 @@ function ns.BuildStorylines(zoneID)
     for exit in pairs(external) do
         if parents[exit] then -- leads on from this page
             local seen, frontier = { [exit] = true }, { exit }
-            for _ = 1, 6 do
+            for _ = 1, MAX_BRIDGE do
                 local nextFrontier = {}
                 for _, at in ipairs(frontier) do
                     for _, after in ipairs(Next(at)) do

@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- **Long chains that come back are one storyline:** a chain that leaves a page for a long stretch and then comes back is now shown as one storyline, not as a separate one where it returns. Swamp of Sorrows' Uniting the Shattered Amulet and Blasted Lands' You Are Rakh'likh, Demon are now part of their chain.
 - **A chain keeps its name across zones:** a storyline that carries on a chain from another zone is now named after the chain, as it is where the chain starts, instead of after its first quest on this page. The hunter chain is The Hunter's Way in the Barrens too, not Sergra Darkthorn. When a chain starts with only a breadcrumb or errand there, the storyline keeps its own name.
 - **Class quests show your own version on zone pages too:** a zone's page now shows the same version of a class quest as the Class page, so a Skyborne Shaman who did Zephras Isle's Call of Fire no longer sees the Barrens chain, still to do, on The Barrens' page. The same goes for the other Shaman totem quests and other class quests with a version per city or starting area.
 

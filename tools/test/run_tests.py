@@ -2598,6 +2598,17 @@ ns.FocusQuest(860)
 header = next(f for f in harness["all"].values() if f["key"] == "s860" and f.IsShown(f))
 check(header["title"]["__text"] == "The Hunter's Way", f"in the window, the Barrens' header shows The Hunter's Way: {header['title']['__text']!r}")
 ns.Toggle(False)
+# A chain that leaves a page for a long way: the Shattered Amulet chain goes from Swamp of Sorrows through eight quests
+# in Azshara and Stranglethorn, then comes back. Its pieces are still one storyline, on both pages it comes back to.
+char["race"], char["class"], char["faction"], char["level"] = 1, 1, "Alliance", 60
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted()
+sos = next(st for st in ns.BuildStorylines(1435)[0].values() if 2744 in [n["id"] for n in st["nodes"].values()])
+check(3627 in [n["id"] for n in sos["nodes"].values()],
+      "Swamp of Sorrows' Uniting the Shattered Amulet joins the chain it came back to, eight quests away on other pages")
+bl = next(st for st in ns.BuildStorylines(1419)[0].values() if 2783 in [n["id"] for n in st["nodes"].values()])
+check(3628 in [n["id"] for n in bl["nodes"].values()],
+      "and Blasted Lands' You Are Rakh'likh, Demon joins the start of that chain on its page")
 # The rule everywhere: a storyline that carries on a chain from another page has the name the chain has where
 # it starts, unless that's only a lead-in (a breadcrumb or an errand), when it keeps its own.
 def lead_in(qid):
