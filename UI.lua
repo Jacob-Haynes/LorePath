@@ -1107,7 +1107,12 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
     local stepTarget = (kind == "blocked") and detail or nextID
     s.stepButton.targetQuest = stepTarget
     s.stepButton:SetWidth(s.step:GetStringWidth() + 6)
-    s.stepButton:SetShown(true)
+    -- An open storyline's next quest on this page is already its brightest tile,
+    -- so the header only names it when it's somewhere you can't see: collapsed,
+    -- in another zone, or waiting on an earlier quest elsewhere.
+    local onPage = (kind == "available" or kind == "active") and not collapsed
+        and ns.Quests[nextID] ~= nil and ns.Quests[nextID].z == selectedZone
+    s.stepButton:SetShown(not onPage)
     s.stepButton:EnableMouse(stepTarget ~= nil and ns.Quests[stepTarget] ~= nil)
 
     if collapsed then

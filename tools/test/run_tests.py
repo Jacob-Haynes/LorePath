@@ -1371,11 +1371,33 @@ check(row_for(291) is None and row_for(1429) is not None, "collapsing Dungeons h
 def step_for(first):
     sec = [f for f in harness["all"].values() if f["key"] == "s" + str(first) and f.IsShown(f)][0]
     return sec["stepButton"]
+def step_text(first):
+    sec = [f for f in harness["all"].values() if f["key"] == "s" + str(first) and f.IsShown(f)][0]
+    return str(sec["step"]["__text"])
 row_for(1453)["__scripts"]["OnClick"](row_for(1453))
 g.LorePathDB["collapsed"] = lua.table()
 ns.Refresh()
+# An open storyline's next quest on this page is a tile right there, so its
+# header doesn't name it again; collapsed, it does.
+here = None
+for st in ns.BuildStorylines(1453)[0].values():
+    kind, next_id = list(ns.GetNextStep(st))[:2]
+    if kind in ("available", "active") and ns.Quests[next_id] and ns.Quests[next_id]["z"] == 1453:
+        here = st
+        break
+check(here is not None, "found a Stormwind storyline whose next quest is in Stormwind")
+here_step = step_for(here["first"])
+check(not here_step.IsShown(here_step), "an open storyline's header doesn't repeat Next: for a quest on the page")
+here_sec = [f for f in harness["all"].values() if f["key"] == "s" + str(here["first"]) and f.IsShown(f)][0]
+here_sec["__scripts"]["OnClick"](here_sec)
+here_step = step_for(here["first"])
+check(here_step.IsShown(here_step) and ("Next:" in step_text(here["first"]) or "In progress:" in step_text(here["first"])),
+      "collapsed, it names the next quest again")
+g.LorePathDB["collapsed"] = lua.table()
+ns.Refresh()
 step = step_for(392)
-check(step["targetQuest"] == 391 and ns.Quests[391]["z"] == 225, "Stormwind's 392 storyline says First finish: 391 (Stockade)")
+check(step["targetQuest"] == 391 and ns.Quests[391]["z"] == 225 and step.IsShown(step),
+      "Stormwind's 392 storyline says First finish: 391 (Stockade), since it's in another zone")
 step["__scripts"]["OnClick"](step)
 check(frame["zoneTitle"]["__text"] == "The Stockade", "clicking it opens the Stockade page")
 check(row_for(225) is not None and row_for(225)["selected"].IsShown(row_for(225)["selected"]),
