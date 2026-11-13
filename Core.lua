@@ -900,10 +900,10 @@ end
 -- What a page's About section shows of its lore: the premise (setting only, so
 -- it spoils nothing), then each chapter whose quest you've finished, in order;
 -- with Show spoilers, every chapter. Returns the paragraphs, the articles to
--- credit (the premise's and the shown chapters', each once), and whether a
--- chapter you could still unlock is hidden. A chapter whose quest this
--- character can never do (another race's or class's) stays hidden without
--- counting as one to uncover.
+-- credit (the premise's and the shown chapters', each once), whether a chapter
+-- you could still unlock is hidden, and how many hidden chapters follow quests
+-- this character can never do (another race's or class's). Those show once
+-- you Reveal them (ns.revealedLore), since playing will never unlock them.
 function ns.GetLoreView(lore)
     local texts, articles, seen = { lore.text }, {}, {}
     local function credit(list)
@@ -916,16 +916,33 @@ function ns.GetLoreView(lore)
     end
     credit(lore.articles)
     local spoilers = ns.GetSetting and ns.GetSetting("showSpoilers")
-    local more = false
+    local revealed = ns.revealedLore[lore]
+    local more, others = false, 0
     for _, chapter in ipairs(lore.chapters or {}) do
-        if spoilers or ns.IsDone(chapter.after) then
+        local eligible = ns.IsEligible(chapter.after)
+        if spoilers or ns.IsDone(chapter.after) or (revealed and not eligible) then
             texts[#texts + 1] = chapter.text
             credit(chapter.articles)
-        elseif ns.IsEligible(chapter.after) then
+        elseif eligible then
             more = true
+        else
+            others = others + 1
         end
     end
-    return texts, articles, more
+    return texts, articles, more, others
+end
+
+-- Lore whose other characters' chapters you've chosen to read (Reveal in the
+-- About section), for this session, like a quest's Reveal.
+ns.revealedLore = setmetatable({}, { __mode = "k" })
+
+-- The tooltip on a lore summary's "Sources": the wiki articles it came from,
+-- as the wiki's licence asks.
+function ns.ShowLoreSources(owner, articles)
+    GameTooltip:SetOwner(owner, "ANCHOR_RIGHT")
+    GameTooltip:AddLine("Sources", 1, 0.82, 0)
+    GameTooltip:AddLine(ns.LoreCredit({ articles = articles }), 1, 1, 1, true)
+    GameTooltip:Show()
 end
 
 -- Quest ID -> the lore chapter its completion unlocks, from every page's lore,

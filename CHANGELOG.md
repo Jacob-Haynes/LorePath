@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- **Sources on hover:** the wiki credit under a zone's lore, and under a chapter in Story so far, is now a **Sources** link: hover it to see the articles.
+- **Other characters' chapters:** chapters only other races' or classes' quests unlock (Tirisfal's Bandarion Keep story, for anyone but the Forsaken) no longer vanish without a word. A line says there's more of the zone's story in other characters' quests, with a **Reveal** button to read it.
 - **More lore for the Horde:** the Barrens and Stonetalon Mountains now have lore, with chapters for the Kolkar's new leaders, the hermit tanner above the Dry Hills, trouble on the Dustwallow border, the Venture Company's logging and Sun Rock Retreat's work to heal the land. Zephras Isle's lore now tells who the Skyborne are, and gains chapters for the Al'Aketh cult and the Windshapers' road to the Horde.
 
 ## 1.4.0-beta2

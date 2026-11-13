@@ -12,8 +12,8 @@ local TEXT_W = PANEL_W - 44
 local ICON = 30
 
 local panel
-local pools = { texts = {}, buttons = {}, items = {}, sources = {} }
-local used = { texts = 0, buttons = 0, items = 0, sources = 0 }
+local pools = { texts = {}, buttons = {}, items = {}, sources = {}, loreSources = {} }
+local used = { texts = 0, buttons = 0, items = 0, sources = 0, loreSources = 0 }
 ns.detailQuest = nil
 
 -- ============================================================================
@@ -524,6 +524,35 @@ local function AddText(text, font, color, gap, indent)
     fs:Show()
     cursor = cursor + Height(fs, 14)
     return fs
+end
+
+-- "Sources" under a lore chapter: hover it for the wiki articles it came from.
+local function AddLoreSources(articles, indent)
+    used.loreSources = used.loreSources + 1
+    local b = pools.loreSources[used.loreSources]
+    if not b then
+        b = CreateFrame("Button", nil, content)
+        b.text = b:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+        b.text:SetPoint("LEFT")
+        b.text:SetText("Sources")
+        b:SetSize(b.text:GetStringWidth() + 4, 14)
+        b:SetScript("OnEnter", function(self)
+            self.text:SetFontObject("GameFontHighlightSmall")
+            ns.ShowLoreSources(self, self.articles)
+        end)
+        b:SetScript("OnLeave", function(self)
+            self.text:SetFontObject("GameFontDisableSmall")
+            GameTooltip:Hide()
+        end)
+        pools.loreSources[used.loreSources] = b
+    end
+    b.articles = articles
+    b:ClearAllPoints()
+    cursor = cursor + 2
+    b:SetPoint("TOPLEFT", content, "TOPLEFT", 8 + (indent or 0), -cursor)
+    b:Show()
+    cursor = cursor + 14
+    return b
 end
 
 local function AddHeader(text)
@@ -1082,12 +1111,12 @@ local function RenderStory(storyline)
             AddText(ns.FillQuestText(e.c), "GameFontHighlightSmall", STORY_TEXT, 2)
         end
         -- The lore chapter this quest unlocks: a note set apart from the quest's
-        -- own words, indented, with the wiki articles it came from.
+        -- own words, indented, with its Sources (the wiki articles it came from).
         local chapter = ns.GetChapter(e.id)
         if chapter then
             AddText("Lore", "GameFontNormalSmall", LORE_HEADING, 10, LORE_INDENT)
             AddText(chapter.text, "GameFontHighlightSmall", LORE_TEXT, 2, LORE_INDENT)
-            AddText(ns.LoreCredit(chapter), "GameFontDisableSmall", nil, 2, LORE_INDENT)
+            AddLoreSources(chapter.articles, LORE_INDENT)
         end
         usedBundled = usedBundled or e.bundled
     end
