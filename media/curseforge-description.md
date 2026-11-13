@@ -9,7 +9,8 @@ Built for **WoW Forever**, on English game clients. It's lightweight: its map pi
 ## Features
 
 - **Storyline maps:** each page's quest chains, drawn from the first quest to the last, with lines showing what unlocks what. Long storylines wrap to fit the window. Storylines collapse, and finished ones start collapsed. Drag anywhere on the graph to pan, even from a quest.
-- **Storylines that cross zones:** where a story comes from or goes on to another zone, a faded tile with that zone's icon says so (*< From Elwynn Forest*, *Continues in Westfall >*). Click it to follow the story there. Hover a storyline's name to see where its chain began.
+- **Storylines named for their story:** a storyline that opens with an errand (*Speak with Ruga*) or a breadcrumb named after an NPC is named after the quest it leads to, so Stonetalon's *Ziz Fizziks* reads *Super Reaper 6000*.
+- **Storylines that cross zones:** where a story comes from or goes on to another zone, a faded tile with that zone's icon says so (*< From Elwynn Forest*, *Continues in Westfall >*). Click it to follow the story there. Parts of one chain that only meet in another zone, or that leave and come back, are one storyline, and a chain keeps its name across zones. Hover a storyline's name to see where its chain began.
 - **A zone list that tells you where to go:**
   - every zone, dungeon, raid and battleground with quests for you, each with an icon and WoW Forever's level range, with dungeons in level order;
   - names coloured by progress, from grey (not started), then red through orange and yellow to green (finished);
@@ -18,7 +19,7 @@ Built for **WoW Forever**, on English game clients. It's lightweight: its map pi
 - **Attunements:** a page for each key chain (Onyxia's Lair, Upper Blackrock Spire, Scholomance and Shadowforge City), with your faction's quests as one storyline and a tick once you have the key.
 - **Quests on the world map:** a "!" where each quest starts: gold for your level, grey for low-level, red for too high, each with its own filter in the world map's menu. Hover for details, click for a waypoint, Shift+click to open the quest in LorePath.
 - **Search:** find any quest by name or ID from the box above the zone list.
-- **Only your quests:** quests for another faction, race or class are left out. Quests that come in one version per starting area, like the Shaman totem quests, show once.
+- **Only your quests:** quests for another faction, race or class are left out. Quests that come in one version per class city or starting area, like the Shaman totem quests and WoW Forever's *The Adventurer* chain, show once: your own version, on its zone's page too.
 - **Clear status at a glance:** completed, in your log, available (coloured by difficulty, like your quest log), repeatable (blue), too high level, needs an earlier quest, and skipped.
 - **Telling icons:** a portal for quests picked up inside a dungeon or raid, your class or profession icon, or the icon of the item that starts the quest.
 - **Quest details:** click a quest to open a panel showing:
@@ -30,7 +31,7 @@ Built for **WoW Forever**, on English game clients. It's lightweight: its map pi
   - a WarcraftDB link to copy.
 
   No spoilers: quests you haven't started show "Find what awaits you" until you press Reveal, and how a quest ends stays hidden until you turn it in. Turn on **Show spoilers** to see everything.
-- **Story so far:** read a storyline as one story: the text of each quest you've finished in it, in order, from its header's **Story so far** button.
+- **Story so far:** read a storyline as one story: the text of each quest you've finished in it, in order, from its header's **Story so far** button. It follows the chain across zones, from where it began to where it goes next, and only includes quests you've finished, so nothing ahead is spoiled.
 - **Your story, saved:** LorePath saves the quest text you see as you play, so you can go back and reread it. For quests you did before installing it, it fills in from:
   - community text, including many of WoW Forever's own quests;
   - the game's own quest summaries;
@@ -54,7 +55,7 @@ You can also bind a key under *Options → Key Bindings → AddOns → LorePath*
 
 ## Coming later
 
-Storylines are named after their first quest (skipping errands like *Speak with Ruga*). Lore for zones, places and characters, and a searchable codex, are planned.
+Lore for zones, places and characters, and a searchable codex, are planned.
 
 ## Credits
 
