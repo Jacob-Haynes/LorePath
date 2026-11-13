@@ -897,6 +897,79 @@ function ns.GetZoneLore(page)
     return type(page) == "number" and ns.ZoneLore and ns.ZoneLore[page] or nil
 end
 
+-- What a page's About section shows of its lore: the premise (setting only, so
+-- it spoils nothing), then each chapter whose quest you've finished, in order;
+-- with Show spoilers, every chapter. Returns the paragraphs, the articles to
+-- credit (the premise's and the shown chapters', each once), and whether a
+-- chapter you could still unlock is hidden. A chapter whose quest this
+-- character can never do (another race's or class's) stays hidden without
+-- counting as one to uncover.
+function ns.GetLoreView(lore)
+    local texts, articles, seen = { lore.text }, {}, {}
+    local function credit(list)
+        for _, title in ipairs(list or {}) do
+            if not seen[title] then
+                seen[title] = true
+                articles[#articles + 1] = title
+            end
+        end
+    end
+    credit(lore.articles)
+    local spoilers = ns.GetSetting and ns.GetSetting("showSpoilers")
+    local more = false
+    for _, chapter in ipairs(lore.chapters or {}) do
+        if spoilers or ns.IsDone(chapter.after) then
+            texts[#texts + 1] = chapter.text
+            credit(chapter.articles)
+        elseif ns.IsEligible(chapter.after) then
+            more = true
+        end
+    end
+    return texts, articles, more
+end
+
+-- Quest ID -> the lore chapter its completion unlocks, from every page's lore,
+-- so a quest shows its chapter in any storyline, on any page. Each chapter is
+-- { after, articles, text, zone = the page whose lore it's in }. Built the first
+-- time it's needed; ns.ClearChapterIndex rebuilds it (the tests swap the lore).
+local chapterIndex
+
+function ns.ClearChapterIndex()
+    chapterIndex = nil
+end
+
+function ns.GetChapter(questID)
+    if not chapterIndex then
+        chapterIndex = {}
+        for zone, lore in pairs(ns.ZoneLore or {}) do
+            for _, chapter in ipairs(lore.chapters or {}) do
+                chapterIndex[chapter.after] = {
+                    after = chapter.after, articles = chapter.articles, text = chapter.text, zone = zone,
+                }
+            end
+        end
+    end
+    return chapterIndex[questID]
+end
+
+-- The chapter a quest has revealed: once it's done, or any time with Show
+-- spoilers. nil if it unlocks none, or not yet.
+function ns.RevealedChapter(questID)
+    local chapter = ns.GetChapter(questID)
+    if chapter and (ns.IsDone(questID) or (ns.GetSetting and ns.GetSetting("showSpoilers"))) then
+        return chapter
+    end
+    return nil
+end
+
+-- "Tirisfal Glades'" and "Elwynn Forest's": a name's English possessive.
+function ns.Possessive(name)
+    if string.sub(name, -1) == "s" then
+        return name .. "'"
+    end
+    return name .. "'s"
+end
+
 -- The credit under a lore summary, naming its articles as the wiki's licence asks.
 function ns.LoreCredit(lore)
     local quoted = {}

@@ -536,6 +536,94 @@ check("Long ago, a test." not in canvas_texts() and g.LorePathDB["collapsed"]["l
 lore_sec = section("lore:" + str(lore_zone))
 lore_sec["__scripts"]["OnClick"](lore_sec)
 check("Long ago, a test." in canvas_texts(), "and clicking again shows it")
+
+# Chapters: each shown once its quest is done, or with Show spoilers.
+tirisfal = ns.ZoneLore[1420]
+check(tirisfal["chapters"] is not None and tirisfal["chapters"][1]["after"] == 96898
+      and "Naxxramas" in tirisfal["chapters"][1]["text"] and "Naxxramas" not in tirisfal["text"],
+      "Tirisfal's Naxxramas lore is a chapter after Remnants of War, not in its premise")
+check([c["after"] for c in tirisfal["chapters"].values()] == [96898, 96899, 96896, 91317],
+      "and its chapters follow the Bandarion Keep story in order")
+open_quests = sorted(q for q in ns.Quests.keys() if ns.IsEligible(q) and not ns.IsDone(q)
+                     and not char["completed"][q])[:2]
+closed_quest = [q for q in sorted(ns.Quests.keys()) if not ns.IsEligible(q)][0]
+qa, qc = open_quests
+ns.ZoneLore[lore_zone] = lua.table_from({
+    "articles": lua.table_from(["Test Article"]), "text": "Long ago, a test.",
+    "chapters": lua.table_from([
+        lua.table_from({"after": qa, "articles": lua.table_from(["Chapter A Article", "Test Article"]), "text": "Then came A."}),
+        lua.table_from({"after": closed_quest, "articles": lua.table_from(["Chapter B Article"]), "text": "Elsewhere, B."}),
+        lua.table_from({"after": qc, "articles": lua.table_from(["Chapter C Article"]), "text": "At last, C."}),
+    ])})
+check(ns.Possessive("Tirisfal Glades") == "Tirisfal Glades'" and ns.Possessive("Elwynn Forest") == "Elwynn Forest's",
+      "a name ending in s takes just an apostrophe, others 's")
+lore_name = ns.GetMapName(lore_zone)
+hint_text = "More of " + lore_name + ("'" if lore_name.endswith("s") else "'s") + " story to uncover"
+def lore_body():
+    return [t for t in canvas_texts() if t.startswith("Long ago, a test.")][0]
+lore_row["__scripts"]["OnClick"](lore_row)
+check(lore_body() == "Long ago, a test.", "with no chapter's quest done, only the premise shows")
+check(hint_text in canvas_texts(), "with a line saying there's more to uncover, naming no quest")
+check('From the Warcraft Wiki article "Test Article" (CC BY-SA 4.0)' in canvas_texts(),
+      "and only the premise's article is credited")
+char["completed"][qa] = True
+lore_row["__scripts"]["OnClick"](lore_row)
+check(lore_body() == "Long ago, a test.\n\nThen came A.", "finishing a chapter's quest shows that chapter after the premise")
+check(hint_text in canvas_texts(), "and the hint stays while another chapter is locked")
+check('From the Warcraft Wiki articles "Test Article" and "Chapter A Article" (CC BY-SA 4.0)' in canvas_texts(),
+      "the shown chapter's articles are credited, each article once")
+char["completed"][qc] = True
+lore_row["__scripts"]["OnClick"](lore_row)
+check(lore_body() == "Long ago, a test.\n\nThen came A.\n\nAt last, C.", "chapters show in order")
+check(hint_text not in canvas_texts() and not any("Elsewhere, B." in t for t in canvas_texts()),
+      "a chapter whose quest this character can't do stays hidden, and doesn't count as more to uncover")
+char["completed"][qa] = None
+ns.RefreshCompleted()
+lore_row["__scripts"]["OnClick"](lore_row)
+check(lore_body() == "Long ago, a test.\n\nAt last, C." and hint_text in canvas_texts(),
+      "a later chapter can show before an earlier one whose quest isn't done")
+ns.SetSetting("showSpoilers", True)
+lore_row["__scripts"]["OnClick"](lore_row)
+check(lore_body() == "Long ago, a test.\n\nThen came A.\n\nElsewhere, B.\n\nAt last, C." and hint_text not in canvas_texts(),
+      "Show spoilers shows every chapter, with no hint")
+check('From the Warcraft Wiki articles "Test Article", "Chapter A Article", "Chapter B Article" and "Chapter C Article" (CC BY-SA 4.0)'
+      in canvas_texts(), "and credits every chapter's articles")
+ns.SetSetting("showSpoilers", False)
+char["completed"][qc] = None
+ns.RefreshCompleted()
+
+# Tirisfal's real chapters, for a Forsaken paladin and a troll.
+saved_char = (char["race"], char["class"], char["faction"], char["level"], char["map"])
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 5, 2, "Horde", 13, 1420
+ns.RefreshPlayer()
+texts, articles, more = ns.GetLoreView(tirisfal)
+check(len(list(texts.values())) == 1 and more, "a new Forsaken paladin sees only Tirisfal's premise, with more to uncover")
+char["completed"][96898] = True
+char["completed"][96899] = True
+texts, articles, more = ns.GetLoreView(tirisfal)
+texts, articles = list(texts.values()), list(articles.values())
+check(len(texts) == 3 and "Naxxramas" in texts[1] and "Dawn's Watch" in texts[2] and more,
+      "after Remnants of War and Bandarion Keep, their two chapters show, with more still to uncover")
+check(articles == ["Tirisfal Glades", "Bandarion Keep", "Remnants of War", "Bandarion Keep (quest)"],
+      "crediting the premise's articles, then the chapters', each once")
+char["completed"][96896] = True
+char["completed"][91317] = True
+texts, _, more = ns.GetLoreView(tirisfal)
+check(len(list(texts.values())) == 5 and not more, "with the whole Bandarion Keep story done, every chapter shows and nothing is hinted")
+char["race"], char["class"] = 8, 1
+ns.RefreshPlayer()
+for q in (96898, 96899, 96896, 91317):
+    char["completed"][q] = None
+char["completed"][96898] = True
+ns.RefreshCompleted()
+texts, _, more = ns.GetLoreView(tirisfal)
+check(len(list(texts.values())) == 2 and not more,
+      "a troll warrior who finished Remnants of War sees its chapter, and isn't told of chapters only Forsaken get")
+char["completed"][96898] = None
+char["race"], char["class"], char["faction"], char["level"], char["map"] = saved_char
+ns.RefreshPlayer()
+ns.RefreshCompleted()
+
 ns.ZoneLore[lore_zone] = saved_lore
 g.LorePathDB["collapsed"] = lua.table()
 other_row = [r for r in zone_rows() if isinstance(r["zoneID"], int) and ns.ZoneLore[r["zoneID"]] is None][0]
@@ -600,6 +688,78 @@ with tempfile.TemporaryDirectory() as tmp:
         check(not stale and "None: every summary" in md, "with nothing changed, it says so")
     finally:
         wiki_lore.SNAPSHOTS = saved_snapshots
+# Chapters in zones.txt.
+known_quests = wiki_lore.quest_ids()
+check(known_quests == {int(q) for q in ns.Quests.keys()},
+      "the build reads the quest IDs from Data/Quests.lua")
+check(not wiki_lore.unknown_chapters(lore_entries, known_quests), "every chapter's quest is in Data/Quests.lua")
+chaptered = wiki_lore.parse_zones(
+    "== 5 Somewhere\nsource: Some Page @ 42\n\nThe setting.\n\n"
+    "after 100 First Quest\nsource: Quest Page @ 9\nsource: Some Page @ 42\n\nWhat\nhappened.\n\n"
+    "after 200 Second Quest\nsource: Later Page @\n"
+    "== 6 Later\nsource: Other @ 1\n\nafter the war, a line of text.\n")
+check(chaptered[0]["text"] == "The setting." and [(c["after"], c["name"], c["sources"], c["text"]) for c in chaptered[0]["chapters"]]
+      == [(100, "First Quest", [("Quest Page", 9), ("Some Page", 42)], "What happened."), (200, "Second Quest", [("Later Page", None)], "")],
+      "zones.txt: a chapter's quest, sources and text are read, apart from the premise")
+check(chaptered[1]["text"] == "after the war, a line of text." and not chaptered[1]["chapters"],
+      "and a paragraph that starts with 'after' but no quest ID is just text")
+check('[5]={articles={"Some Page"},text="The setting.",chapters={{after=100,articles={"Quest Page","Some Page"},text="What happened."}}}'
+      in wiki_lore.render_lua(chaptered), "chapters with text are written after the premise, with their articles")
+check([c["after"] for _, c in wiki_lore.unknown_chapters(chaptered, {100})] == [200],
+      "the build finds chapters whose quest LorePath doesn't know")
+for bad, why in [("== 7 X\nsource: Y @ 1\n\nText.\n\nafter 5 Q\n\nChapter.\n", "a chapter with no source"),
+                 ("== 7 X\nsource: Y @ 1\n\nText.\n\nafter 5 Q\nsource: Z @\n\nChapter.\n", "a chapter with text but a source with no revision"),
+                 ("== 7 X\nsource: Y @ 1\n\nText.\nafter 5 Q\nsource: Z @ 1\nafter 5 Q\nsource: Z @ 1\n", "two chapters after one quest"),
+                 ("== 7 X\nsource: Y @\n\nafter 5 Q\nsource: Z @ 1\n\nChapter.\n", "a chapter under a zone with no premise")]:
+    try:
+        wiki_lore.parse_zones(bad)
+        check(False, f"zones.txt: {why} is refused")
+    except SystemExit:
+        check(True, f"zones.txt: {why} is refused")
+saved_quests_path = wiki_lore.QUESTS
+with tempfile.TemporaryDirectory() as tmp:
+    fake_quests = os.path.join(tmp, "Quests.lua")
+    with open(fake_quests, "w", encoding="utf-8") as f:
+        f.write("ns.ZoneContinents = {\n[200]=0,\n}\nns.Quests = {\n[100]={z=5},\n}\nns.Other = {\n[300]={z=1},\n}\n")
+    wiki_lore.QUESTS = fake_quests
+    try:
+        check(wiki_lore.quest_ids() == {100}, "quest IDs come from ns.Quests only, not Data/Quests.lua's other tables")
+    finally:
+        wiki_lore.QUESTS = saved_quests_path
+check(wiki_lore.QUESTBOX_ID.search("{{Forever only|quest}}\n{{Questbox\n | id = 96898\n | name = Remnants of War\n}}").group(1) == "96898"
+      and wiki_lore.QUESTBOX_ID.search("{{Npcbox\n| id = 5\n}}") is None,
+      "fetch reads a quest article's ID from its Questbox, and nothing else's")
+
+# The report checks chapters: their quest must be LorePath's and their quest article's.
+with tempfile.TemporaryDirectory() as tmp:
+    saved_snapshots = wiki_lore.SNAPSHOTS
+    wiki_lore.SNAPSHOTS = tmp
+    try:
+        for title, rev, quest in [("Some Page", 42, None), ("Quest Page", 9, 999), ("Later Page", 3, 200)]:
+            with open(wiki_lore.snapshot_path(title), "w", encoding="utf-8") as f:
+                f.write(wiki_lore.render_snapshot(title, rev, "whole", "Text.", quest))
+        check(wiki_lore.read_snapshot("Quest Page")["quest"] == 999 and wiki_lore.read_snapshot("Some Page")["quest"] is None,
+              "a snapshot keeps a quest article's quest ID, and other articles have none")
+        problems = wiki_lore.chapter_problems(chaptered, {100})
+        check(sorted((c["after"], "quest data" in why, "is quest 999" in why) for _, c, why in problems)
+              == [(100, False, True), (200, True, False)],
+              "the report finds a chapter whose quest article is another quest's, and one whose quest LorePath doesn't know")
+        md, _ = wiki_lore.report(chaptered, {}, quests={100})
+        check("### Chapters to check" in md and "the chapter after 100 First Quest doesn't match its quest article" in md
+              and "200 Second Quest isn't in LorePath's quest data" in md, "and lists them")
+        with open(wiki_lore.snapshot_path("Quest Page"), "w", encoding="utf-8") as f:
+            f.write(wiki_lore.render_snapshot("Quest Page", 10, "whole", "Text.", 100))
+        with open(wiki_lore.snapshot_path("Some Page"), "w", encoding="utf-8") as f:
+            f.write(wiki_lore.render_snapshot("Some Page", 43, "whole", "Text."))
+        md, stale = wiki_lore.report(chaptered, {}, quests={100, 200})
+        check("### Chapters to check" not in md, "a chapter matching its quest article and LorePath's data isn't listed")
+        check([(t, old, new) for _, t, old, new in stale] == [("Some Page", 42, 43), ("Quest Page", 9, 10)],
+              "a chapter's article changing is a summary to update too, and an article used twice is listed once")
+    finally:
+        wiki_lore.SNAPSHOTS = saved_snapshots
+check(not wiki_lore.chapter_problems(lore_entries, known_quests),
+      "every shipped chapter's quest article is its quest (from the committed snapshots)")
+
 check(wiki_lore.render_forever_list({"Forever zones": ["B", "A"]}).endswith("Forever zones: A\nForever zones: B\n"),
       "the Forever article list is sorted, so its diff shows only new articles")
 
@@ -2968,6 +3128,90 @@ ns.Refresh()
 header = next(f for f in harness["all"].values() if f["key"] == "s" + str(mg["first"]) and f.IsShown(f))
 check(not header["story"].IsShown(header["story"]), "a storyline with nothing finished has no Story so far button")
 cache[first_q], cache[ahead] = None, None
+ns.Toggle(False)
+
+# --- Lore chapters in storylines: a marker on the tile, the chapter in its tooltip and the story ---
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 5, 2, "Horde", 13, 1420
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted(); ns.ClearChapterIndex()
+remnants = ns.GetChapter(96898)
+check(remnants is not None and remnants["zone"] == 1420 and "Naxxramas" in remnants["text"]
+      and list(remnants["articles"].values()) == ["Remnants of War"] and ns.GetChapter(96895) is None,
+      "the chapter lookup maps a quest to the chapter it unlocks, and its page")
+def lore_tile(q):
+    tiles = [f for f in harness["all"].values() if f["questID"] == q and f.IsShown(f) and f["link"] is None and f["lore"] is not None]
+    return tiles[0] if tiles else None
+def hover_lines(tile):
+    g.GameTooltip.lines = lua.table()
+    tile["__scripts"]["OnEnter"](tile)
+    return [str(l) for l in g.GameTooltip.lines.values()]
+ns.Toggle(True)
+ns.FocusQuest(96898)
+tile = lore_tile(96898)
+check(tile is not None and not tile["lore"].IsShown(tile["lore"]), "a chapter's quest you haven't done has no lore marker")
+check("Lore" not in hover_lines(tile) and not any("Naxxramas" in l for l in hover_lines(tile)),
+      "and its tooltip doesn't give the chapter away")
+check(not lore_tile(96897)["lore"].IsShown(lore_tile(96897)["lore"]), "a quest with no chapter has no marker")
+char["completed"][96898] = True
+ns.RefreshCompleted(); ns.Refresh()
+tile = lore_tile(96898)
+check(tile["lore"].IsShown(tile["lore"]) and "Book" in str(tile["lore"]["__texture"]),
+      "once it's done, its tile shows the small book marker")
+lines = hover_lines(tile)
+check("Lore" in lines and lines[lines.index("Lore") + 1] == remnants["text"], "and its tooltip has the chapter, under Lore")
+ns.SetSetting("showSpoilers", True)
+tile = lore_tile(96899)
+check(tile["lore"].IsShown(tile["lore"]) and "Lore" in hover_lines(tile),
+      "with Show spoilers, a chapter's quest shows the marker and chapter before it's done")
+ns.SetSetting("showSpoilers", False)
+tile = lore_tile(96899)
+check(not tile["lore"].IsShown(tile["lore"]), "and turning spoilers off hides it again")
+
+# Story so far: the chapter follows the quest that unlocks it, set apart, with its credit.
+# (Remnants of War stands alone in ATT's data; Bandarion Keep leads to A Righteous Cause.)
+char["completed"][96899] = True
+ns.RefreshCompleted()
+keep = ns.GetChapter(96899)
+st = next(s for s in ns.BuildStorylines(1420)[0].values() if any(n["id"] == 96899 for n in s["nodes"].values()))
+ns.detailStory = None
+ns.ToggleStory(st)
+texts = detail_texts()
+quest_name = ns.GetQuestNameOrID(96899)
+check(keep["text"] in texts and texts.count("Lore") == 1
+      and 'From the Warcraft Wiki articles "Bandarion Keep (quest)" and "Bandarion Keep" (CC BY-SA 4.0)' in texts,
+      "Story so far shows the chapter after its finished quest, under Lore, with its credit")
+def detail_order(wanted):
+    out = []
+    for f in harness["all"].values():
+        if f["__kind"] != "FontString" or not f.IsShown(f) or f["__text"] not in wanted:
+            continue
+        p = f["__parent"]
+        while p is not None and not same(p, g.LorePathDetailFrame):
+            p = p["__parent"]
+        if p is not None:
+            out.append(str(f["__text"]))
+    return out
+order = detail_order((quest_name, "Lore", keep["text"]))
+check(order.index(quest_name) < order.index("Lore") < order.index(keep["text"]),
+      "placed after the quest's own text: " + " / ".join(o[:20] for o in order))
+check(not any("Garek" in t for t in texts), "a chapter whose quest isn't done stays out of the story")
+ns.HideDetail()
+
+# A chapter in another page's lore still shows on its quest's tile, wherever that is.
+ns.ZoneLore[99999] = lua.table_from({"articles": lua.table_from(["Far Away"]), "text": "Elsewhere.",
+    "chapters": lua.table_from([lua.table_from({"after": 96897, "articles": lua.table_from(["Cult Article"]),
+                                                 "text": "The cult's tale, told elsewhere."})])})
+ns.ClearChapterIndex()
+char["completed"][96897] = True
+ns.RefreshCompleted(); ns.Refresh()
+tile = lore_tile(96897)
+check(ns.GetChapter(96897)["zone"] == 99999 and tile["lore"].IsShown(tile["lore"])
+      and "The cult's tale, told elsewhere." in hover_lines(tile),
+      "a chapter from another page's lore shows on its quest's tile in this page's storyline")
+ns.ZoneLore[99999] = None
+ns.ClearChapterIndex()
+char["completed"] = lua.table()
+ns.RefreshCompleted()
 ns.Toggle(False)
 
 # Story so far follows a chain across pages: Thunder Bluff's Forsaken Aid starts in Stonetalon and goes through Hillsbrad.

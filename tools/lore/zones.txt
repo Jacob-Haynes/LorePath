@@ -9,6 +9,11 @@
 # Forever). Use the original zone's article for what Forever kept, and leave
 # out what came after vanilla (the Cataclysm, the burning of Teldrassil).
 #
+# The summary is the premise: setting only, nothing a quest reveals. Story
+# outcomes go in chapters ("after <quest ID> <quest name>", then the chapter's
+# own sources and text), each shown in game once that quest is done. Cite the
+# quest's own article among a chapter's sources, so the report can check its ID.
+#
 # Keep each summary to a few sentences. Each "source:" is an article you wrote
 # from, "@" the revision you wrote from (the snapshot's), and is credited in
 # game.
@@ -52,14 +57,32 @@ For all its peace, Mulgore has troubles: quilboar overrun Brambleblade Ravine an
 == 1420 Tirisfal Glades
 source: Tirisfal Glades @ 6834298
 source: Bandarion Keep @ 6967624
-source: Remnants of War @ 6969572
-source: A Righteous Cause @ 6969987
 
 Tirisfal Glades, "Tyr's Fall", is an eerie, wooded region on the northern coast of Lordaeron, named for the Titan Keeper Tyr. It is the land of the Forsaken, soaked through with the Lich King's plague: its sky is a gloomy, blighted green, and its trees cling to their last shreds of life.
 
-Not long ago, the necropolis Naxxramas bore down on the Undercity. The Forsaken and the Argent Dawn drove it off at great cost, and the Cult of the Damned now hunts the shards of its shattered crystal across the glades. In the west, Forsaken paladins under Danitha Morr hold Bandarion Keep, named for Garek Bandarion, the first Forsaken to wield the Light, who fell defending the city. Many of their own people still mistrust them.
+The Forsaken share it with old enemies: the Scarlet Crusade, whose Scarlet Monastery stands in the glades, and the Scourge, who haunt its derelict farms and mills. In the west, on the bluffs by the Whispering Forest, a new order of Forsaken paladins holds Bandarion Keep.
 
-The Forsaken have older enemies here too: the Scarlet Crusade, whose Scarlet Monastery stands in the glades, and the Scourge, who haunt its derelict farms and mills.
+after 96898 Remnants of War
+source: Remnants of War @ 6969572
+
+Not long ago, the necropolis Naxxramas bore down on the Undercity, meaning to wipe the Forsaken off the map. The Forsaken and the Argent Dawn drove it off, and both paid dearly for it. In the battle, the great necrotic crystal atop Naxxramas shattered, scattering its fragments across the glades, and the Cult of the Damned has come to gather them. Even spent, the shards are dangerous to touch.
+
+after 96899 Bandarion Keep
+source: Bandarion Keep (quest) @ 6969984
+source: Bandarion Keep @ 6967624
+
+Bandarion Keep was once Dawn's Watch, where the Argent Dawn readied itself against the Scourge's last push into Tirisfal. When the Dawn withdrew to the Plaguelands it fell into disrepair, until Danitha Morr and her paladins took it over, restored it, and named it after a friend she shared with the Argent emissary Leonid Barthalomew.
+
+after 96896 A Righteous Cause
+source: A Righteous Cause @ 6969987
+source: Bandarion Keep @ 6967624
+
+That friend was Garek Bandarion, perhaps the first Forsaken to wield the Light again, who fell defending the Undercity against Naxxramas. Leonid came on behalf of Lord Tyrosus to offer Danitha's order a place in the Argent Dawn, where its Light would be valued. She refused: the Forsaken are still the people her paladins swore to protect. Many Forsaken, remembering what the living did in the Light's name, mistrust paladins deeply, and that is why she means to stay.
+
+after 91317 The Tarnished
+source: The Tarnished @ 6908640
+
+Not every risen paladin has made peace with undeath. The Tarnished carried their old prejudices into it, and from the ruins of Shadowvale they turned their blades on their fellow Forsaken, each killing feeding the mistrust Danitha's order is trying to overcome. With their commander dead, the order's place in Tirisfal is a little surer, though Danitha expects it may take years, even decades, for the Forsaken to embrace them.
 
 == 2521 Zephras Isle
 source: Zephras Isle @ 6972596

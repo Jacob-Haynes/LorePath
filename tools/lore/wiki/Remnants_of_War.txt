@@ -1,6 +1,7 @@
 title: Remnants of War
 revision: 6969572
 part: whole
+quest: 96898
 url: https://warcraft.wiki.gg/wiki/Remnants_of_War
 
 == Objectives ==
