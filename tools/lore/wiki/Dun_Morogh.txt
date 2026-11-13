@@ -1,0 +1,6 @@
+title: Dun Morogh
+revision: 6731913
+part: intro
+url: https://warcraft.wiki.gg/wiki/Dun_Morogh
+
+Dun Morogh (/ˈduːn mɔːrə/ DOON MOHR-ə or /ˈduːn moʁoʊh/ DOON mo-ROH) also called the Dun Morogh Peaks, is a snowy, forested mountain range in western Khaz Modan. It is the homeland of the dwarves and gnomes and contains the two races' respective capital cities of Ironforge (built into Ironforge Mountain) and Gnomeregan (built into the foothills of Chill Breeze Valley). The mountains of Dun Morogh are the highest in the Eastern Kingdoms—its snowpack glaciers feed the rivers that create the verdant fields across the rest of Khaz Modan and its jagged peaks provide the dwarves with a limitless supply of ore. The region sits between the Searing Gorge to the south, Loch Modan to the east, and the Wetlands to the north. Mountains surround Dun Morogh on all sides, making it accessible only by certain passes that are currently watched over by dwarven troops.

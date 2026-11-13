@@ -663,6 +663,7 @@ local function AcquireText(parent, font)
     end
     text:SetFontObject(font)
     text:ClearAllPoints()
+    text:SetWidth(0) -- unconstrained, unless the caller wraps it
     text:Show()
     return text
 end
@@ -1183,6 +1184,31 @@ RenderZone = function()
 
     local top, maxWidth, hidden = PAD, viewWidth, 0
     local hideCompleted = ns.GetSetting("hideCompleted")
+
+    -- About this zone (issue #5): a short summary from the Warcraft Wiki, with
+    -- the articles it came from (its licence asks for that). Collapsible, and
+    -- remembered per page like a storyline.
+    local lore = ns.GetZoneLore(selectedZone)
+    if lore then
+        local width = viewWidth - PAD * 2
+        local s, collapsed
+        s, collapsed, top = RenderSection(canvas, "lore:" .. selectedZone, "About " .. ns.GetMapName(selectedZone),
+            0, 0, false, width, top)
+        s.count:SetText("")
+        if not collapsed then
+            local body = AcquireText(canvas, "GameFontHighlight")
+            body:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
+            body:SetWidth(width - 16)
+            body:SetText(lore.text)
+            top = top + (body:GetStringHeight() or 0) + 8
+            local credit = AcquireText(canvas, "GameFontDisableSmall")
+            credit:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
+            credit:SetWidth(width - 16)
+            credit:SetText(ns.LoreCredit(lore))
+            top = top + (credit:GetStringHeight() or 0) + 2
+        end
+        top = top + SECTION_GAP
+    end
 
     -- An attunement's steps that aren't quests (issue #16): its key, and any
     -- level or reputation it needs, ticked off above its quests.

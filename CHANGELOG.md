@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **About this zone:** a zone's page now opens with a few lines of its lore as it is in WoW Forever, summarised from the Warcraft Wiki, for the starting zones to begin with, Zephras Isle among them. Tirisfal Glades' tells of Bandarion Keep and the Forsaken paladins. Click its header to collapse it.
+
 ## 1.3.1
 
 - **Show in LorePath from a quest giver:** the quest dialog a quest giver opens now has the same LorePath book button as the quest log, opening the quest it's showing in its storyline, with its details.

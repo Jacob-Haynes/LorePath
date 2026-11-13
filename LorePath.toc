@@ -16,6 +16,7 @@ Data\QuestText.lua
 Data\CommunityText.lua
 Data\BreadcrumbNPCs.lua
 Data\Attunements.lua
+Data\Lore.lua
 Core.lua
 UI.lua
 Detail.lua

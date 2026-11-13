@@ -1,0 +1,104 @@
+# Checks the Warcraft Wiki for changes to the articles LorePath's zone lore is
+# written from, and for new WoW Forever articles (issue #5). If anything
+# changed, opens (or updates) a PR from the data/wiki-lore branch with the new
+# snapshots in tools/lore/wiki/ (so the diff is what changed on the wiki) and a
+# report of the summaries to update. The summaries themselves are written by
+# hand: update tools/lore/zones.txt on that branch or after merging.
+name: Check the Warcraft Wiki for lore changes
+
+on:
+  schedule:
+    - cron: "53 6 * * 1" # Mondays, 06:53 UTC, after the quest data sync
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-wiki-lore
+  cancel-in-progress: false
+
+env:
+  SYNC_BRANCH: data/wiki-lore
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install lupa
+        run: pip install lupa
+
+      - name: Fetch the wiki's articles
+        run: python3 tools/wiki_lore.py fetch --report "$RUNNER_TEMP/report.md"
+
+      - name: Run tests
+        run: python3 tools/test/run_tests.py
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if [ -z "$(git status --porcelain -- tools/lore/wiki)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Nothing has changed on the wiki since the committed snapshots."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git status --short -- tools/lore/wiki
+          fi
+          cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open or update the lore PR
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BASE: ${{ github.event.repository.default_branch }}
+        run: |
+          # Don't overwrite summary updates someone has pushed to the PR's branch.
+          if git rev-parse --verify --quiet "origin/$SYNC_BRANCH" >/dev/null; then
+            others=$(git log --format='%an' "origin/$BASE..origin/$SYNC_BRANCH" | grep -vx 'github-actions\[bot\]' || true)
+            if [ -n "$others" ]; then
+              echo "::notice::$SYNC_BRANCH has commits from $(echo "$others" | sort -u | paste -sd, -); leaving it alone this week. Merge or close its PR and the next run picks up from there."
+              exit 0
+            fi
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C "$SYNC_BRANCH"
+          git add tools/lore/wiki
+          git commit -m "Update Warcraft Wiki snapshots for zone lore"
+          # Rebuilt from the default branch on every run, so it always holds
+          # exactly one snapshot commit on top of it.
+          git push --force origin "$SYNC_BRANCH"
+
+          body="$RUNNER_TEMP/body.md"
+          {
+            echo "The Warcraft Wiki has changed since the last check. This PR updates the snapshots in \`tools/lore/wiki/\`, so its diff shows what changed in each article LorePath's zone lore is written from, and in the list of WoW Forever's own articles."
+            echo
+            cat "$RUNNER_TEMP/report.md"
+            echo
+            echo "**To review:** update the summaries listed above in \`tools/lore/zones.txt\` (on this branch, or after merging), set each source's revision to its snapshot's, and run \`python3 tools/wiki_lore.py build\`. \`python3 tools/wiki_lore.py status\` lists what's left. Merging only records the wiki's text; nothing reaches players until a release."
+            echo
+            echo "From [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID). Refs #5"
+          } > "$body"
+
+          title="Lore: Warcraft Wiki changes ($(date -u +%Y-%m-%d))"
+          pr=$(gh pr list --head "$SYNC_BRANCH" --base "$BASE" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$pr" ]; then
+            gh pr edit "$pr" --title "$title" --body-file "$body"
+            echo "Updated PR #$pr"
+          else
+            gh pr create --base "$BASE" --head "$SYNC_BRANCH" --title "$title" --body-file "$body" || {
+              echo "::error::Couldn't open the PR. The snapshots are on the $SYNC_BRANCH branch. If GitHub refused because Actions may not create pull requests, turn on Settings > Actions > General > 'Allow GitHub Actions to create and approve pull requests'."
+              exit 1
+            }
+          fi
