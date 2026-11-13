@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- **A Quick Craft is Alliance only:** the Ironforge quest no longer shows for the Horde, and for the Alliance it now comes after the Redridge quest that leads to it instead of waiting on a quest you couldn't see. 66 other quests whose chain is only one faction's are now marked as that faction's, which matters most when the chain crosses zones.
+- **A Quick Craft is Alliance only:** the Ironforge quest no longer shows for the Horde, and for the Alliance it now comes after the Redridge quest that leads to it instead of waiting on a quest you couldn't see. Other quests that only follow one faction's quests are now marked as that faction's, which matters most when the chain crosses zones.
 
 ## 1.3.0-beta6
 

@@ -361,9 +361,12 @@ def settle_chains(quests, unavailable_pre, vendor_items):
       faction's: 95816's item is sold by an Alliance (r=2) vendor in Redridge.
     - A quest with no faction whose known prerequisites are all one faction's
       is that faction's too, since nobody else can get to it: 95818 in
-      Ironforge. Not when its races include the other faction's: finishing one
-      version of a quest marks every version done in WoW Forever, so a Horde
-      Skyborne druid can take 94638 after the Alliance 92840.
+      Ironforge. Only one step from a faction ATT or a vendor gives, not from
+      one inferred here: one Alliance quest at the start of Desolace's long
+      Gelkis chain would otherwise make the whole chain Alliance, and ATT says
+      it's open to both. Not when its races include the other faction's either:
+      finishing one version of a quest marks every version done in WoW
+      Forever, so a Horde Skyborne druid can take 94638 after the Alliance 92840.
     """
     fixed = {"pre": 0, "vendor": 0, "chain": 0}
 
@@ -401,18 +404,15 @@ def settle_chains(quests, unavailable_pre, vendor_items):
             q["f"] = next(iter(factions))
             fixed["vendor"] += 1
 
-    changed = True
-    while changed:
-        changed = False
-        for q in quests.values():
-            factions = {quests[p].get("f") for p in q.get("pre", []) if p in quests}
-            if len(factions) != 1 or None in factions:
-                continue
-            faction = factions.pop()
-            if can_take(q, faction):
-                q["f"] = faction
-                fixed["chain"] += 1
-                changed = True
+    given = {qid: q.get("f") for qid, q in quests.items()}  # before inferring any from chains
+    for q in quests.values():
+        factions = {given[p] for p in q.get("pre", []) if p in quests}
+        if len(factions) != 1 or None in factions:
+            continue
+        faction = factions.pop()
+        if can_take(q, faction):
+            q["f"] = faction
+            fixed["chain"] += 1
     return fixed
 
 

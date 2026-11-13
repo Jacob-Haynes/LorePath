@@ -2918,6 +2918,7 @@ qs = {
     4: {"z": 2, "pre": [2], "rc": [1, 2]},  # open to a Horde race too
     5: {"z": 2, "pre": [2, 9], "prn": 1},   # needs only one of them
     6: {"z": 2, "pre": [8]},                # 8 is unavailable, with nothing before it
+    7: {"z": 2, "pre": [3]},                # 3's faction is only inferred
 }
 fixed = settle_chains(qs, {2: [1], 8: []}, {500: {2}})
 check(qs[1].get("f") == 2, "extract_att: a quest started by an Alliance vendor's item is Alliance")
@@ -2926,6 +2927,7 @@ check(qs[3]["pre"] == [1, 2] and qs[3].get("f") == 2,
 check(qs[4]["pre"] == [1, 2] and "f" not in qs[4], "extract_att: but not a faction its races contradict")
 check(qs[5]["pre"] == [2, 9] and "f" not in qs[5], "extract_att: a quest that needs only some of its prerequisites is left alone")
 check(qs[6]["pre"] == [8] and "f" not in qs[6], "extract_att: an unavailable quest with nothing before it adds nothing")
+check("f" not in qs[7], "extract_att: a faction is inferred one step from one ATT or a vendor gives, not further")
 check(fixed == {"pre": 2, "vendor": 1, "chain": 1}, f"extract_att: counts what it filled in: {fixed}")
 
 unexpected = list(harness["errors"].values())
