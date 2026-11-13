@@ -1,0 +1,74 @@
+title: Agitators
+revision: 6889220
+part: whole
+quest: 92465
+url: https://warcraft.wiki.gg/wiki/Agitators
+
+== Objectives ==
+Slay 6 Roiling Winds and 7 Al'Aketh Converts in Thendal Grove.
+
+Al'Aketh Convert slain (7)
+Roiling Winds destroyed (6)
+
+
+== Description ==
+The Al'Aketh cult is a blight upon this island. These cultists are surely the ones responsible for agitating the simple wind sprites that reside here and turning them violent.
+Regrettably, we'll need to disperse these roiling winds here before they harm someone. We also need to send a clear message to the cult that they are not welcome in the grove.
+Will you lend me your aid, <class>?
+
+
+== Rewards ==
+You will receive:
+
+50
+250 XP
++50 reputation with Windshapers ( only)
++50 reputation with High Order ( only)
+
+
+== Progress ==
+Is it done?
+
+
+== Completion ==
+It pains me to shed shen'dorei blood here in the grove, but we do what we must.
+
+
+== Notes ==
+Group up with other players to speed up this quest!
+
+
+== Progression ==
+ [1] Coming of Age
+ [1] Harmony in Balance → class quests
+ [2] Infestation Investigation →  [3] The Cirrusfly Queen
+ [2] Falling With Style
+ [2] The Anchors of Zephras
+ [4] Harvesting Windstones
+ [4] Reading the Leylines -or-  [4] The Gift of Skysight
+ [3] Elemental Unrest
+ [3] Agitators
+ [4] Return to Rorian
+ [4] Aetheen of the Gales
+ [5] Foul Matriarch
+ [4] Aggressive Encroachment
+ [5] The Next Step
+ [5] Al'Aketh Thugs,  [6] The Adventurer →
+Class quests:
+
+  [2] A Student of Nature
+  [2] The Way of the Hunter
+  [2] A Student of the Arcane
+  [2] At Home in the Shadows
+  [2] Embracing the Elements → Call of Earth (Zephras Isle) → Call of Earth (Zephras Isle 2)
+  [2] The Warrior's Path
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

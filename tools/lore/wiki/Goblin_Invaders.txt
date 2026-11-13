@@ -1,0 +1,65 @@
+title: Goblin Invaders
+revision: 6469211
+part: whole
+quest: 1062
+url: https://warcraft.wiki.gg/wiki/Goblin_Invaders
+
+== Objectives ==
+Kill 15 Venture Co. Loggers, then return to Seereth Stonebreak on the border of Stonetalon and the Barrens.
+
+Venture Co. Logger slain (15)
+
+
+== Description ==
+The goblin-run Venture Company moved into the Stonetalon Mountains, chopping down trees and burning huge stretches of forest. The spirits of this place are nearly blind with pain and rage. We must stop the Venture Company!
+Head northwest, beyond the Greatwood Vale and into the Windshear Crag. You will find the goblins and their servants at work—show them the Horde will not allow the exploitation of Stonetalon. Show them in the language they best understand...
+Violence.
+
+
+== Rewards ==
+You will receive:
+
+11
+1450 XP (or 9 at max level)
++250 reputation with Orgrimmar
+
+
+== Progress ==
+The Greatwood Vale lies to the northwest, <name>.  Go.  Strike fear into those who would pillage this land!
+
+
+== Completion ==
+Bravely done, <name>.
+We may ultimately need the wisdom of tauren elders to calm the spirits of Stonetalon, but...
+Ridding the Venture Company of its personnel is a good first move against them.
+
+
+== Notes ==
+Upon completion
+Seereth Stonebreak says: The spirits of Stonetalon still rage, <name>.
+Seereth Stonebreak says: I fear we may never soothe them...
+
+
+== Progression ==
+ [17] The Spirits of Stonetalon
+ [19] Goblin Invaders
+ [23] Shredding Machines &  [18] The Elder Crone
+ [18] Forsaken Aid
+ [18] Journey to Tarren Mill
+ [23] Blood of Innocents
+ [23] Return to Thunder Bluff
+ [23] The Flying Machine Airport
+
+
+== Trivia ==
+During the original beta, this quest required killing 12 Venture Co. Cutters and 10 Venture Co. Grinders.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

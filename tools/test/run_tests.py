@@ -515,6 +515,8 @@ check(ns.LoreCredit(lua.table_from({"articles": lua.table_from(["A"])})) == 'Fro
           == 'From the Warcraft Wiki articles "A", "B" and "C" (CC BY-SA 4.0)',
       "the credit names every article a summary came from")
 check(len(list(ns.ZoneLore[1420]["articles"].values())) > 1, "Tirisfal's summary credits its Forever articles too")
+check(ns.ZoneLore[1413] is not None and ns.ZoneLore[1442] is not None, "the Barrens and Stonetalon Mountains have lore")
+check(len(list(ns.ZoneLore[2521]["chapters"].values())) >= 4, "Zephras Isle has chapters for the Horde Skyborne's story")
 check(ns.ZoneLore[2521] is not None, "and WoW Forever's own Zephras Isle")
 zone_before_lore = frame["zoneTitle"]["__text"]
 lore_row = [r for r in zone_rows() if isinstance(r["zoneID"], int)][0]
@@ -727,6 +729,8 @@ with tempfile.TemporaryDirectory() as tmp:
     finally:
         wiki_lore.QUESTS = saved_quests_path
 check(wiki_lore.QUESTBOX_ID.search("{{Forever only|quest}}\n{{Questbox\n | id = 96898\n | name = Remnants of War\n}}").group(1) == "96898"
+      and wiki_lore.QUESTBOX_ID.search("{{Questbox\n | level = {{level|19|13}}\n | money = {{cost||10}}\n | id = 1062\n}}").group(1) == "1062"
+      and wiki_lore.QUESTBOX_ID.search("{{Questbox\n | name = X\n}}\n{{Npcbox\n| id = 5\n}}") is None
       and wiki_lore.QUESTBOX_ID.search("{{Npcbox\n| id = 5\n}}") is None,
       "fetch reads a quest article's ID from its Questbox, and nothing else's")
 

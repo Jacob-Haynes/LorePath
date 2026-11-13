@@ -1,0 +1,44 @@
+title: Wrongly Blamed, Justly Corrected
+revision: 6957168
+part: whole
+quest: 97250
+url: https://warcraft.wiki.gg/wiki/Wrongly_Blamed%2C_Justly_Corrected
+
+== Objectives ==
+Slay Alliance soldiers encroaching into the Barrens at the border to Dustwallow Marsh, then return to Grunt Logmar at Camp Taurajo.
+
+Encroaching Soldier slain (2)
+Outraged Pillager slain
+
+
+== Description ==
+Traveler, have you plans to head toward Dustwallow Marsh? I have heard mutterings that a few human soldiers have taken a stand at its border and are toppling the landmarks left behind by our tauren pathfinders.
+Rumor has it that a favored tavern has burned to the ground, and in typical Alliance fashion, they immediately cast their blame onto the Horde! I cannot know whether there is any truth to their claim, but their incursion onto OUR land must not stand.
+Kill first, investigate later!
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Encroacher's Claim]
+ [Pathfinder's Clearway]
+ [Traveler's Shawl]
+You will also receive:
+
+2,300 XP
+
+
+== Completion ==
+So the rumors were true! I expected as much, tensions have been rising along the eastern coast for some time. I knew it would only be a matter of time before conflict crept into our territory.
+However, I am skeptical that we played a role in the tavern's destruction. Too many Horde civilians rely on that route for trade and travel. Perhaps you could investigate further if you find the time.
+In any case, today's deed is a victory for the Horde, and a stern warning to the Alliance!
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

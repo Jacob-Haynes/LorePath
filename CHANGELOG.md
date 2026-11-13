@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **More lore for the Horde:** the Barrens and Stonetalon Mountains now have lore, with chapters for the Kolkar's new leaders, the hermit tanner above the Dry Hills, trouble on the Dustwallow border, the Venture Company's logging and Sun Rock Retreat's work to heal the land. Zephras Isle's lore now tells who the Skyborne are, and gains chapters for the Al'Aketh cult and the Windshapers' road to the Horde.
+
 ## 1.4.0-beta2
 
 - **Lore chapters:** a zone's About section now grows as you play. Under its opening lines, each chapter of the zone's story appears once you've finished the quest that reveals it, and a line tells you when there's more of the zone's story to uncover, without naming a quest. Tirisfal Glades has the first: Naxxramas' attack on the Undercity and the story of Bandarion Keep and its Forsaken paladins. A quest that has revealed a chapter gets a small book on its tile: hover it to read the chapter, and **Story so far** tells it after the quest. **Show spoilers** shows every chapter.

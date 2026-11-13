@@ -1,0 +1,51 @@
+title: Kolkar Leaders (Classic)
+revision: 6301357
+part: whole
+quest: 850
+url: https://warcraft.wiki.gg/wiki/Kolkar_Leaders_%28Classic%29
+
+== Objectives ==
+Bring Barak's Head to Regthar Deathgate, west of the Crossroads.
+
+Barak's Head
+
+
+== Description ==
+The centaurs have plagued the Tauren for years. And recently, the Kolkar centaurs of the Barrens have grown into a real threat. Normally they were disorganized in these lands, but new leaders have risen among them. Rallying them.
+To preserve our holdings here, these centaur leaders must be destroyed.
+Bring me the head of Barak Kodobane. He camps near the Forgotten Pools to the north.
+Defeat him, then return to me.
+
+
+== Rewards ==
+You will receive:
+
+8
+875 XP (or 5 40 at max level)
++75 or +150 reputation with Orgrimmar
+
+
+== Progress ==
+Hello, <name>. Do you have Barak's Head for me?
+
+
+== Completion ==
+Well done, <name>. The centaur are low, brutish creatures, but a few have the wit and vision to lead. And those are the most dangerous.
+Barak was such a centaur. It is good that he is dead.
+
+
+== Progression ==
+ [16] Kolkar Leaders
+ [18] Verog the Dervish
+ [19] Hezrul Bloodmark
+ [20] Counterattack!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced by a new version.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

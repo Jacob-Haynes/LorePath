@@ -1,0 +1,49 @@
+title: Trouble in the Valley
+revision: 6921074
+part: whole
+quest: 95621
+url: https://warcraft.wiki.gg/wiki/Trouble_in_the_Valley
+
+== Objectives ==
+Travel to the wrecked caravan and learn more about why the Kul Tirans are here.
+
+Benedict's Orders
+
+
+== Description ==
+This morning I spotted a group of humans searching for something in the valley below. I managed to use my rifle's scope for a better look, and it was clear that they were soldiers sporting the livery of Kul Tiras. 
+If you'd be willing to take work from me, travel to where these soldiers made camp near the wrecked caravan to the south. Kill any you find and try to learn why they are here.
+
+
+== Rewards ==
+You will receive:
+
+10
+1,000 XP
++50 reputation with Orgrimmar
+
+
+== Progress ==
+The remnants of Daelin Proudmoore's fleet who still fly his banner are just as rotten and barbaric as the admiral himself was before he died.
+I don't know why they are so far from Tiragarde, but it can't be good.
+
+
+== Completion ==
+So they are looking for a deserter... Well, it seems that the past has finally caught up to me.
+
+
+== Progression ==
+ [18] Bruised Pride and Lion Hides &  [18] Vrang's Game
+ [18] The Hermit Tanner
+ [18] Trouble in the Valley
+ [18] Unwelcome Guests
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

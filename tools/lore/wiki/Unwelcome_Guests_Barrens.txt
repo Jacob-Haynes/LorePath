@@ -1,0 +1,53 @@
+title: Unwelcome Guests (Barrens)
+revision: 6971470
+part: whole
+quest: 95508
+url: https://warcraft.wiki.gg/wiki/Unwelcome_Guests_%28Barrens%29
+
+== Objectives ==
+Help Walton survive the encounter with Terry Longdrink and the Kul Tiras marines.
+
+Assist Walton
+
+
+== Description ==
+Yes, I used to be a member of the Kul Tiras navy. After Lord Admiral took Theramore and started his campaign in Durotar, I had... "objections" to his methods. Particularly the methods involving executing civilians.
+There's more to the story but... wait... what's that?
+There's a group of men coming up the ridge!
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Keen Skinning Knife]
+ [Wildgore Greatsword]
+ [Walton's Second-Favorite Gun]
+You will also receive:
+
+10
+1,000 XP
++50 reputation with Orgrimmar
+
+
+== Completion ==
+Well, looks like we are all alive. I... knew that someday that would catch up to me. I'm in your debt for your help here today.
+Please, take this. It's not much, but it's the least I can do.
+Safe travels, <class>.
+
+
+== Progression ==
+ [18] Bruised Pride and Lion Hides &  [18] Vrang's Game
+ [18] The Hermit Tanner
+ [18] Trouble in the Valley
+ [18] Unwelcome Guests
+
+
+== Patch changes ==
+ Hotfix (2026-11-09): Fixed a bug keeping Terry Longdrink alive during the quest. 
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

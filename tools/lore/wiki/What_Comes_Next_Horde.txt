@@ -1,0 +1,40 @@
+title: What Comes Next (Horde)
+revision: 6957220
+part: whole
+quest: 93090
+url: https://warcraft.wiki.gg/wiki/What_Comes_Next_%28Horde%29
+
+== Objectives ==
+Speak with Ayessa Dawnsinger when you are prepared to leave Zephras Isle.
+
+
+== Description ==
+Please extend my thanks to Ayessa for all that the Windshapers and your new friends from this "Earthen Ring" have done for Zephras Isle. I'm aware of the plan to take the Windshapers' shamans and leave the island, and your order has my blessing and well-wishes in this expedition.
+I can only hope that whatever solution the Windshapers find can truly provide us with the stability we've lacked these past years.
+Winds be with you, <name>.
+
+
+== Rewards ==
+You will receive:
+
+460 XP
++25 reputation with Windshapers
+
+
+== Completion ==
+I'm pleased to hear that we have High Elder Shadowsong's blessing for our expedition. Now that the cult has been defeated and preparations have been made, I think it's finally time.
+Muln has worked diligently to help us get stable skycutter transport going between Zephras Isle and a place called Mulgore, where the Earthen Ring make their home. We've been doing test voyages and some of our people are already waiting on the other side.
+
+
+== Progression ==
+...
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
