@@ -891,6 +891,12 @@ function ns.IsSpecialPage(page)
 end
 
 -- The attunement (Data/Attunements.lua) an "att:<id>" page shows, or nil.
+-- A page's lore summary from the Warcraft Wiki (issue #5, Data/Lore.lua):
+-- { article = wiki page title, text = summary }, or nil.
+function ns.GetZoneLore(page)
+    return type(page) == "number" and ns.ZoneLore and ns.ZoneLore[page] or nil
+end
+
 function ns.GetAttunement(page)
     local id = type(page) == "string" and string.match(page, "^att:(.+)$")
     if not id then

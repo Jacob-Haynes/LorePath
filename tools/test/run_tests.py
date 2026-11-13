@@ -9,7 +9,7 @@ import sys
 from lupa import LuaRuntime
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."))
-FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestStarts.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Data/BreadcrumbNPCs.lua", "Data/Attunements.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Pins.lua", "Main.lua"]
+FILES = ["Data/Quests.lua", "Data/QuestNotes.lua", "Data/QuestStarts.lua", "Data/QuestText.lua", "Data/CommunityText.lua", "Data/BreadcrumbNPCs.lua", "Data/Attunements.lua", "Data/Lore.lua", "Core.lua", "UI.lua", "Detail.lua", "QuestLog.lua", "Share.lua", "Settings.lua", "Pins.lua", "Main.lua"]
 
 lua = LuaRuntime(unpack_returned_tuples=True)
 lua.execute("unpack = table.unpack")  # WoW runs Lua 5.1, which has a global unpack
@@ -495,6 +495,68 @@ frame["listToggle"]["__scripts"]["OnClick"](frame["listToggle"])
 check(not frame["listInset"].IsShown(frame["listInset"]) and g.LorePathDB["listHidden"] is True, "the list toggle hides the zone list")
 frame["listToggle"]["__scripts"]["OnClick"](frame["listToggle"])
 check(frame["listInset"].IsShown(frame["listInset"]), "and shows it again")
+
+# --- About this zone: lore from the Warcraft Wiki (issue #5) ---
+def canvas_texts():
+    out = []
+    for f in harness["all"].values():
+        if f["__kind"] != "FontString" or not f.IsShown(f) or f["__text"] is None:
+            continue
+        p = f["__parent"]
+        while p is not None and not same(p, frame["canvas"]):
+            p = p["__parent"]
+        if p is not None:
+            out.append(str(f["__text"]))
+    return out
+check(ns.ZoneLore[1429]["article"] == "Elwynn Forest" and "Stormwind" in ns.ZoneLore[1429]["text"],
+      "Data/Lore.lua has Elwynn Forest's lore, naming its wiki article")
+check(ns.ZoneLore[2521] is not None, "and WoW Forever's own Zephras Isle")
+zone_before_lore = frame["zoneTitle"]["__text"]
+lore_row = [r for r in zone_rows() if isinstance(r["zoneID"], int)][0]
+lore_zone = lore_row["zoneID"]
+saved_lore = ns.ZoneLore[lore_zone]
+ns.ZoneLore[lore_zone] = lua.table_from({"article": "Test Article", "text": "Long ago, a test."})
+g.LorePathDB["collapsed"] = lua.table()
+lore_row["__scripts"]["OnClick"](lore_row)
+lore_sec = section("lore:" + str(lore_zone))
+check(lore_sec is not None and lore_sec["title"]["__text"] == "About " + ns.GetMapName(lore_zone),
+      "a page with lore starts with an About section")
+check(lore_sec["count"]["__text"] == "", "with no progress count")
+texts = canvas_texts()
+check("Long ago, a test." in texts, "it shows the lore")
+check('From the Warcraft Wiki article "Test Article" (CC BY-SA 4.0)' in texts, "and credits the article and its licence")
+lore_sec["__scripts"]["OnClick"](lore_sec)
+check("Long ago, a test." not in canvas_texts() and g.LorePathDB["collapsed"]["lore:" + str(lore_zone)] is True,
+      "clicking its header collapses it, and that's remembered")
+lore_sec = section("lore:" + str(lore_zone))
+lore_sec["__scripts"]["OnClick"](lore_sec)
+check("Long ago, a test." in canvas_texts(), "and clicking again shows it")
+ns.ZoneLore[lore_zone] = saved_lore
+g.LorePathDB["collapsed"] = lua.table()
+other_row = [r for r in zone_rows() if isinstance(r["zoneID"], int) and ns.ZoneLore[r["zoneID"]] is None][0]
+other_row["__scripts"]["OnClick"](other_row)
+check(section("lore:" + str(other_row["zoneID"])) is None and not any("Warcraft Wiki" in t for t in canvas_texts()),
+      "a page with no lore has no About section")
+check(ns.GetZoneLore("class") is None, "special pages have no lore")
+back_row = [r for r in zone_rows() if r["zoneID"] is not None and ns.GetMapName(r["zoneID"]) == zone_before_lore][0]
+back_row["__scripts"]["OnClick"](back_row)
+
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import wiki_lore
+with open(os.path.join(ROOT, "tools", "lore", "zones.txt"), encoding="utf-8") as f:
+    lore_entries = wiki_lore.parse_zones(f.read())
+with open(os.path.join(ROOT, "Data", "Lore.lua"), encoding="utf-8") as f:
+    check(f.read() == wiki_lore.render_lua(lore_entries),
+          "Data/Lore.lua is up to date with tools/lore/zones.txt (run tools/wiki_lore.py build)")
+check(all(e["article"] and e["revision"] for e in lore_entries if e["text"]),
+      "every lore summary names its article and the revision it was written from")
+check("Data\\Lore.lua" in open(os.path.join(ROOT, "LorePath.toc")).read(), "the TOC loads Data/Lore.lua")
+check(os.path.exists(os.path.join(ROOT, "Data", "WarcraftWiki-LICENSE.txt")), "the wiki text's licence notice ships with it")
+parsed = wiki_lore.parse_zones("== 5 Somewhere\narticle: Some Page\nrevision: 42\n\nOne\nline.\n\nTwo.\n# note\n== 6 Later\narticle: Other\nrevision:\n")
+check(parsed[0]["text"] == "One line.\n\nTwo." and parsed[1]["text"] == "" and parsed[0]["revision"] == 42,
+      "zones.txt: lines join into paragraphs, comments are skipped, and an entry can wait for its text")
+check('[5]={article="Some Page",text="One line.\\n\\nTwo."}' in wiki_lore.render_lua(parsed)
+      and "[6]=" not in wiki_lore.render_lua(parsed), "and only entries with text are written")
 
 ns.SetSetting("showLevels", False)
 # Level-locked tiles always show the level (it's why they're locked), so pick an open one.

@@ -1,0 +1,18 @@
+Data/Lore.lua (and its source, tools/lore/zones.txt) holds zone lore
+summarised from articles on the Warcraft Wiki, https://warcraft.wiki.gg.
+Each entry names the article it was summarised from; the article's history
+page lists its authors.
+
+The Warcraft Wiki's text is licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International licence (CC BY-SA 4.0), and these
+summaries, as adaptations of it, are released under the same licence:
+https://creativecommons.org/licenses/by-sa/4.0/
+Full licence text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+The summaries were shortened and edited to fit WoW Forever's time; the
+changes are in this repository's history.
+
+Warcraft and World of Warcraft are trademarks of Blizzard Entertainment,
+which is not affiliated with the Warcraft Wiki or LorePath.
+
+The rest of LorePath is MIT-licensed (see LICENSE).

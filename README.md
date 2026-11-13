@@ -18,6 +18,7 @@ LorePath supports English game clients only.
 - **Attunements:** under **Attunements** in the zone list, a page for each chain that unlocks a dungeon or raid (Onyxia's Lair, Upper Blackrock Spire, Scholomance, Shadowforge City), with your faction's quests as one storyline across zones, and the key it ends in, ticked once you have it. They're listed by hand in `Data/Attunements.lua`, since AllTheThings doesn't model attunements.
 - **Zone list:** every zone with quests your character can do, grouped by continent, each with a progress count (for example *Elwynn Forest 12/75 +3*, where "+3" is repeatable quests). Dungeons, raids and battlegrounds get their own pages under **Dungeons**, **Raids** and **Battlegrounds** headings (Scarlet Monastery's Graveyard and Library wings have their own too), and inside an instance the window opens on its page. Dungeons are listed in level order, lowest first; the rest by name. Zones, dungeons, raids and battlegrounds show WoW Forever's suggested level range in a column before the count, read from the game's Looking for Group list; hover a row for its full name, range and progress. Names are coloured by progress: grey before you start, then a gradient from red through orange and yellow to green as you go, fully green once finished. Each zone, dungeon and raid has an icon, with a tick once you've finished it, and headings show their continent's icon. Headings collapse, and a heading whose quests are all done starts collapsed (unless it holds the page you're on). The whole list can be hidden to give the graph more room.
 - **Storylines:** each page's quest chains, drawn left to right from the first quest to the last, with lines joining each quest to the ones it unlocks. A storyline that starts from a quest in another zone, or goes on into one, shows those quests as faded, blue-bordered tiles at its ends, with that zone's icon (*< From Elwynn Forest*, *Continues in Westfall >*); click one to go there. Parts of one chain on a page that only meet in another zone, or that leave the page and come back, are one storyline, laid out in order. A storyline is named after its first quest, or the quest after it when that's an errand (*Speak with Ruga*) or a breadcrumb named after an NPC (*Ziz Fizziks*); one that carries on a chain from another zone keeps the chain's name. Hover its name to see which quest it starts with and, when the chain began in another zone, where. A storyline wider than the window wraps into bands, one under the other. Each storyline can be collapsed, and finished ones start collapsed. **Expand all** and **Collapse all** sit at the top.
+- **About this zone:** a few lines of lore at the top of a zone's page, from the Warcraft Wiki, so you know where you are before the quests begin. So far for the starting zones, Zephras Isle among them. Click its header to collapse it.
 - **Other quests:** standalone quests with no chain, under each page's storylines.
 - **Only your quests:** quests for another faction, race or class are left out. Profession quests show only if you have that profession (or, with **Show professions you don't have**, greyed out on the Professions page). Quests that come in one version per starting area, like the Shaman totem quests, show once: the version you did, else the one from your race's home. Breadcrumbs that only lead to quests you can't do are left out.
 - **Quest boxes:**
@@ -130,6 +131,7 @@ WoW Forever's own quests aren't in any quest database, so the only source for th
 | What you've completed, what's in your log, your level, race, class, faction, professions and reputation | The game client, live |
 | Quest, zone, item, NPC and faction names | The game client, in your language |
 | Level ranges of zones, dungeons, raids and battlegrounds | The game client's Looking for Group list, live |
+| Zone lore | Summarised by hand from the [Warcraft Wiki](https://warcraft.wiki.gg) (CC BY-SA 4.0), in `tools/lore/zones.txt`, built into `Data/Lore.lua` |
 | What drops or holds an item that starts a quest, with chances and locations | [pfQuest](https://github.com/shagu/pfQuest)'s item, creature and object data (MIT, originally from VMaNGOS), in `Data/QuestStarts.lua`: sources for 56 item-started quests |
 | Quest text: description, objectives, progress and completion text | In this order:<br>1. **What you've seen:** saved from the game as you play (when a quest giver shows a quest, when you accept it, when you hand items in, at the turn-in screen, and your quest log at login).<br>2. **Community text:** `Data/CommunityText.lua`, collected by players, including WoW Forever's own quests (288 quests so far).<br>3. **The game's own quest-link tooltip:** the quest's goal and requirements, even for quests completed long ago.<br>4. **Bundled vanilla text:** [pfQuest](https://github.com/shagu/pfQuest)'s English quest database (MIT, originally from VMaNGOS), in `Data/QuestText.lua`: 3,285 vanilla quests, not WoW Forever's own. |
 
@@ -165,6 +167,19 @@ The [Sync quest data from AllTheThings](.github/workflows/sync-att-data.yml) wor
 - **Repository setting:** opening the PR needs *Settings → Actions → General → Allow GitHub Actions to create and approve pull requests* turned on.
 
 `Data/QuestText.lua`, the bundled vanilla text, is a one-off import and isn't part of the weekly sync, because vanilla quest text doesn't change. `python3 tools/extract_pfquest.py` rebuilds it if ever needed, for example after new vanilla quests appear in `Data/Quests.lua`. Likewise `python3 tools/extract_quest_starts.py` rebuilds `Data/QuestStarts.lua`, where item-started quests' items come from, after the quest data gains new ones. And `python3 tools/extract_breadcrumb_npcs.py` rebuilds `Data/BreadcrumbNPCs.lua`, the names of the NPCs each breadcrumb is about, after the quest data gains breadcrumbs: a breadcrumb named after one of them (Ziz Fizziks) doesn't name its storyline. Until it's rerun, a new breadcrumb names its storyline as before.
+
+### Updating the zone lore
+
+```bash
+python3 tools/wiki_lore.py fetch
+python3 tools/wiki_lore.py build
+```
+
+Zone lore is written by hand in `tools/lore/zones.txt`: for each page, its map ID, the wiki article it's summarised from and that article's revision, then a few sentences. `fetch` downloads each article's opening section into `tools/lore/raw/` (not committed) to write from, and lists summaries whose article has changed since. `build` writes `Data/Lore.lua`. To add a zone, add an entry with its article and an empty `revision:`, fetch it, then write the summary and fill in the revision.
+
+- **Keep it to WoW Forever's time:** the wiki covers every expansion, so leave out later events (the Cataclysm, the burning of Teldrassil).
+- **Credit:** each summary names its article, which LorePath shows under it. The text is CC BY-SA 4.0, like the wiki's.
+- **Requests:** `fetch` names LorePath in its User-Agent, asks for 20 articles at a time and waits between requests, as the wiki asks of scripts.
 
 ### Adding players' quest text
 
@@ -247,5 +262,6 @@ LorePath is MIT-licensed. Its bundled data:
 - **`Data/Quests.lua`** and **`Data/QuestNotes.lua`** are derived from AllTheThings, also MIT-licensed. Its licence is in `Data/AllTheThings-LICENSE.txt`.
 - **`Data/QuestText.lua`** and **`Data/QuestStarts.lua`** come from pfQuest (MIT, licence in `Data/pfQuest-LICENSE.txt`), which took the data from the VMaNGOS project.
 - **`Data/CommunityText.lua`** was collected in game by LorePath's players.
+- **`Data/Lore.lua`** (and its source, `tools/lore/zones.txt`) is summarised from the [Warcraft Wiki](https://warcraft.wiki.gg) and, like the wiki's text, is licensed CC BY-SA 4.0, not MIT. Each entry names its article; the notice is in `Data/WarcraftWiki-LICENSE.txt`.
 
 The quest text itself is Blizzard's.
