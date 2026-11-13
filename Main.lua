@@ -58,10 +58,13 @@ local function OnEvent(event, arg1, arg2)
         end
         -- The quest log may load on demand (Blizzard_WorldMap and friends).
         ns.AttachQuestLogButton()
+        ns.AttachQuestDialogButton()
         ns.AttachMapPins()
     elseif event == "PLAYER_LOGIN" then
         ns.CreateMinimapButton()
         ns.AttachQuestLogButton()
+        ns.AttachQuestDialogButton()
+        ns.AttachQuestDialogButton()
         ns.AttachMapPins()
         -- Remember this account's characters (name, class and race), so text
         -- saved on any of them can be shared with $N, $C and $R put back (Share.lua,
