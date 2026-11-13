@@ -131,6 +131,21 @@ def main():
     map_icons = {}  # mapID -> ATT's icon (a texture file ID), for the zone list
     notes = {}  # questID -> ATT's note about it ("For this to drop, you need to be on ...")
     skipped = {"removed": 0, "unavailable": 0}
+    unavailable_pre = {}  # questID ATT marks unavailable -> its own prerequisites
+    vendor_items = collections.defaultdict(set)  # itemID -> factions of the vendors selling it
+
+    def vendor_stock(node, faction):
+        """Items an NPC with a faction (r=1 Horde, 2 Alliance) sells or holds."""
+        kids = node["g"]
+        if kids is None or lua_type(kids) != "table":
+            return
+        for _, child in kids.items():
+            if lua_type(child) != "table":
+                continue
+            if child["__kind"] == "Item":
+                vendor_items[int(child["__id"])].add(faction)
+            if child["__kind"] != "Quest":
+                vendor_stock(child, faction)
 
     # Some places aren't zones: Timbermaw Hold, the furbolg cave between Felwood
     # and Winterspring, is a header right under Kalimdor, with the maps it
@@ -149,7 +164,9 @@ def main():
                 continent = map_id
             elif zone is None:
                 zone = map_id
-        elif kind != "Quest" and zone is None and continent is not None and area_maps is None:
+        elif kind == "NPC" and number(node["r"]) in (1, 2):
+            vendor_stock(node, number(node["r"]))
+        if kind not in ("Map", "Quest") and zone is None and continent is not None and area_maps is None:
             maps = [m for m in (lua_list(node["maps"]) or []) if m != continent]
             if maps:
                 area_maps = maps
@@ -169,6 +186,7 @@ def main():
         qid = int(node["__id"])
         if node["u"] is not None:
             skipped["unavailable"] += 1
+            unavailable_pre.setdefault(qid, lua_list(node["sourceQuests"]) or [])
             return
         rwp, awp = number(node["rwp"]), number(node["awp"])
         if (rwp and rwp <= FOREVER_BUILD) or (awp and awp > FOREVER_BUILD):
@@ -286,6 +304,8 @@ def main():
         if icon:
             map_icons.setdefault(page, icon)
 
+    fixed = settle_chains(quests, unavailable_pre, vendor_items)
+
     try:
         # "<short hash> (<commit date>)", so a release can be traced to its data.
         att_commit = subprocess.check_output(
@@ -311,6 +331,8 @@ def main():
     print(f"Notes: {len(notes)} quests")
     print(f"Repeatable: {sum(1 for q in quests.values() if q.get('rp'))}")
     print(f"Skipped: {skipped}")
+    print(f"Chains: {fixed['pre']} quests given the prerequisites behind an unavailable one; "
+          f"faction from a vendor's start item: {fixed['vendor']}, from prerequisites: {fixed['chain']}")
     print(f"Battlegrounds: {sum(1 for k in instance_zones.values() if k == 'battleground')} pages, "
           f"{sum(1 for q in quests.values() if instance_zones.get(q['z']) == 'battleground')} quests")
     print(f"Instances: {len(instance_zones)} pages "
@@ -319,6 +341,79 @@ def main():
     print(f"Zone icons: {len(zone_icons)} of {len(wanted)} zones and continents; "
           f"instance icons: {sum(1 for e in instance_info.values() if 'ic' in e)} of {len(instance_info)}")
     print(f"Size: {os.path.getsize(out_path) / 1024:.0f} KB (ATT commit {att_commit})")
+
+
+# The faction each race belongs to (1 Horde, 2 Alliance), including WoW
+# Forever's own two races, both starting on Zephras Isle.
+RACE_FACTION = {1: 2, 3: 2, 4: 2, 7: 2, 11: 2, 95: 2, 2: 1, 5: 1, 6: 1, 8: 1, 10: 1, 96: 1}
+
+
+def settle_chains(quests, unavailable_pre, vendor_items):
+    """Fill in what ATT leaves implicit in a chain, in place. Returns counts.
+
+    - A prerequisite ATT marks unavailable (u=1) isn't in the data, so the chain
+      breaks there and the quest after it waits on a quest nobody can see. Its
+      own prerequisites are added beside it: A Quick Craft (95818) needs 95817,
+      unavailable, which needs 95816, so 95818 needs 95816, then 95817. The game
+      can still mark the hidden quest done, so it stays a prerequisite. Not for
+      quests that need only some of their prerequisites (prn).
+    - A quest started by an item that only one faction's vendors sell is that
+      faction's: 95816's item is sold by an Alliance (r=2) vendor in Redridge.
+    - A quest with no faction whose known prerequisites are all one faction's
+      is that faction's too, since nobody else can get to it: 95818 in
+      Ironforge. Not when its races include the other faction's: finishing one
+      version of a quest marks every version done in WoW Forever, so a Horde
+      Skyborne druid can take 94638 after the Alliance 92840.
+    """
+    fixed = {"pre": 0, "vendor": 0, "chain": 0}
+
+    def behind(pre, seen):
+        """Quests in the data that lead to an unavailable quest."""
+        out = []
+        for p in unavailable_pre.get(pre, []):
+            if p in seen:
+                continue
+            seen.add(p)
+            out.extend([p] if p in quests else behind(p, seen))
+        return out
+
+    for q in quests.values():
+        for rec in [q] + list(q.get("fv", {}).values()):
+            if not rec.get("pre") or "prn" in rec:
+                continue
+            new = []  # what's behind an unavailable quest goes before it, so it's named first
+            for pre in rec["pre"]:
+                if pre not in quests:
+                    new.extend(p for p in behind(pre, {pre}) if p not in new and p not in rec["pre"])
+                new.append(pre)
+            if new != rec["pre"]:
+                rec["pre"] = new
+                fixed["pre"] += 1
+
+    def can_take(q, faction):
+        if "f" in q or "fv" in q:
+            return False
+        return all(RACE_FACTION.get(r, faction) == faction for r in q.get("rc", []))
+
+    for q in quests.values():
+        factions = vendor_items.get(q.get("si"), set())
+        if len(factions) == 1 and can_take(q, next(iter(factions))):
+            q["f"] = next(iter(factions))
+            fixed["vendor"] += 1
+
+    changed = True
+    while changed:
+        changed = False
+        for q in quests.values():
+            factions = {quests[p].get("f") for p in q.get("pre", []) if p in quests}
+            if len(factions) != 1 or None in factions:
+                continue
+            faction = factions.pop()
+            if can_take(q, faction):
+                q["f"] = faction
+                fixed["chain"] += 1
+                changed = True
+    return fixed
 
 
 # ============================================================================

@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **A Quick Craft is Alliance only:** the Ironforge quest no longer shows for the Horde, and for the Alliance it now comes after the Redridge quest that leads to it instead of waiting on a quest you couldn't see. 66 other quests whose chain is only one faction's are now marked as that faction's, which matters most when the chain crosses zones.
+
 ## 1.3.0-beta6
 
 - **Dungeon item quests show the portal icon:** a quest started by an item that only drops inside a dungeon or raid, like An Unholy Alliance from Charlga Razorflank in Razorfen Kraul, now has the portal icon and says it's picked up inside.

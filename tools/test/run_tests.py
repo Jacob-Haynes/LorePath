@@ -49,6 +49,10 @@ ns.RefreshCompleted()
 check(ns.IsEligible(783), "Alliance quest 783 (A Threat Within) is eligible for a Human")
 horde = [qid for qid, q in ns.Quests.items() if q["f"] == 1]
 check(horde and not ns.IsEligible(horde[0]), "a Horde-only quest is not eligible for an Alliance character")
+# A Quick Craft (95818, Ironforge) comes after 95817, which ATT marks unavailable,
+# after 95816 (Redridge), started by an item an Alliance vendor sells.
+check(ns.IsEligible(95818) and ns.MissingPrereq(95818) == 95816,
+      "A Quick Craft is open to the Alliance and waits on 95816, a quest you can see, first")
 
 # --- Status ---
 S = ns.STATUS
@@ -403,6 +407,10 @@ title = frame["zoneTitle"]["__text"]
 check(title is not None and title.startswith("The Barrens"), f"Horde character opens on The Barrens: {title!r}")
 check(not ns.IsEligible(783), "Alliance quest 783 is no longer eligible for an orc")
 check(ns.IsEligible(92706), "Forever quest 92706 (neutral) is eligible for an orc")
+check(not ns.IsEligible(95818) and 95818 not in list(ns.GetZoneQuests(1455).values()),
+      "A Quick Craft (Ironforge) isn't on Ironforge's page for an orc")
+check(not ns.IsEligible(95816) and ns.IsEligible(95819),
+      "the Horde gets the Barrens version of its starting quest (95819), not the Redridge one (95816)")
 storylines, others = ns.BuildStorylines(1413)
 barrens_others = len(list(others.values()))
 print(f"Barrens for an Orc Warrior: {len(list(storylines.values()))} storylines + {barrens_others} other")
@@ -2900,6 +2908,25 @@ if ns.OpenShare():
 g.LorePathDB["questCache"][783] = None
 harness["inCombat"] = False
 ns.Toggle(False)
+
+# --- tools/extract_att.py: chains through quests ATT marks unavailable ---
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+from extract_att import settle_chains
+qs = {
+    1: {"z": 1, "si": 500},                 # started by an item only an Alliance vendor sells
+    3: {"z": 2, "pre": [2]},                # 2 is unavailable, after 1
+    4: {"z": 2, "pre": [2], "rc": [1, 2]},  # open to a Horde race too
+    5: {"z": 2, "pre": [2, 9], "prn": 1},   # needs only one of them
+    6: {"z": 2, "pre": [8]},                # 8 is unavailable, with nothing before it
+}
+fixed = settle_chains(qs, {2: [1], 8: []}, {500: {2}})
+check(qs[1].get("f") == 2, "extract_att: a quest started by an Alliance vendor's item is Alliance")
+check(qs[3]["pre"] == [1, 2] and qs[3].get("f") == 2,
+      "extract_att: a quest after an unavailable one also needs the quest before it, and takes its faction")
+check(qs[4]["pre"] == [1, 2] and "f" not in qs[4], "extract_att: but not a faction its races contradict")
+check(qs[5]["pre"] == [2, 9] and "f" not in qs[5], "extract_att: a quest that needs only some of its prerequisites is left alone")
+check(qs[6]["pre"] == [8] and "f" not in qs[6], "extract_att: an unavailable quest with nothing before it adds nothing")
+check(fixed == {"pre": 2, "vendor": 1, "chain": 1}, f"extract_att: counts what it filled in: {fixed}")
 
 unexpected = list(harness["errors"].values())
 check(len(unexpected) == 0, "no errors were caught anywhere else in the run: " + " | ".join(unexpected)[:300])

@@ -148,6 +148,7 @@ python3 tools/extract_att.py att
 - **Kept:** repeatable quests, flagged `rp`.
 - **Skipped:** quests AllTheThings marks unavailable, and quests added after or removed by Forever's build.
 - **Faction versions:** a quest with separate Alliance and Horde versions keeps both, in `fv`.
+- **Chains filled in:** a prerequisite AllTheThings marks unavailable keeps its place, with the quests before it added in front, so the chain doesn't break where nobody can see it. A quest with no faction of its own takes one when its start item is sold only by one faction's vendors, or when all its prerequisites are one faction's, unless its races include the other faction's.
 - **Recorded:** the headers of `Data/Quests.lua` and `Data/QuestNotes.lua` name the AllTheThings commit the data came from.
 
 To see what changed, compare against the committed file:
