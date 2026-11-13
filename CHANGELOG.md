@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- **Lore shared across your characters:** a chapter any of your characters has unlocked now shows on all of them, with *Unlocked by <name>* under it. Your Forsaken's Bandarion Keep story can be read on your Skyborne, for instance. Each character needs to log in once with this version to count. The book markers on tiles and Story so far still follow each character's own quests.
 - **Tidier storyline headers:** an open storyline no longer repeats **Next:** (or **In progress:**) for a quest whose tile is right there on the page. Collapsed storylines, and steps in another zone (**First finish:**), still name it.
 - **Sources on hover:** the wiki credit under a zone's lore, and under a chapter in Story so far, is now a **Sources** link: hover it to see the articles.
 - **Other characters' chapters:** chapters only other races' or classes' quests unlock (Tirisfal's Bandarion Keep story, for anyone but the Forsaken) no longer vanish without a word. A line says there's more of the zone's story in other characters' quests, with a **Reveal** button to read it.

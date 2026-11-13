@@ -652,6 +652,46 @@ ns.revealedLore[tirisfal] = True
 texts, _, more, others = ns.GetLoreView(tirisfal)
 check(len(list(texts.values())) == 5 and others == 0, "and Reveal shows them all")
 ns.revealedLore[tirisfal] = None
+
+# Lore is shared across your characters: a Forsaken alt's chapters show on the
+# Skyborne, marked with who unlocked them; quest progress stays each one's own.
+saved_unit_name = g.UnitName
+g.LorePathDB["loreUnlocks"] = None
+char["race"], char["class"] = 5, 2
+ns.RefreshPlayer()
+g.UnitName = lua.eval("function() return 'Morwenna' end")
+char["completed"][96898] = True
+char["completed"][96899] = True
+ns.RefreshCompleted()
+ns.RecordLoreUnlocks()
+check(g.LorePathDB["loreUnlocks"][96898] == "Morwenna" and g.LorePathDB["loreUnlocks"][96899] == "Morwenna"
+      and g.LorePathDB["loreUnlocks"][96896] is None,
+      "a character's finished chapter quests are recorded for the account, with its name")
+texts, _, _, _ = ns.GetLoreView(tirisfal)
+check(not any("Unlocked by" in t for t in texts.values()), "its own chapters say nothing about who unlocked them")
+char["completed"][96898] = None
+char["completed"][96899] = None
+char["race"], char["class"] = 96, 1
+ns.RefreshPlayer()
+ns.RefreshCompleted()
+g.UnitName = lua.eval("function() return 'Aeris' end")
+ns.RecordLoreUnlocks()
+check(g.LorePathDB["loreUnlocks"][96898] == "Morwenna", "another character logging in doesn't take the credit")
+texts, _, more, others = ns.GetLoreView(tirisfal)
+texts = list(texts.values())
+check(len(texts) == 3 and "Naxxramas" in texts[1] and texts[1].endswith("Unlocked by Morwenna|r")
+      and texts[2].endswith("Unlocked by Morwenna|r") and others == 2 and not more,
+      "a Skyborne sees the chapters its Forsaken alt unlocked, marked Unlocked by Morwenna, and two left to Reveal")
+check(ns.RevealedChapter(96898) is None, "but the tile's book marker stays with the Skyborne's own quests")
+char["completed"][96898] = True
+ns.RefreshCompleted()
+texts = list(ns.GetLoreView(tirisfal)[0].values())
+check(not texts[1].endswith("Unlocked by Morwenna|r") and texts[2].endswith("Unlocked by Morwenna|r"),
+      "once the Skyborne finishes the quest too, that chapter is its own and loses the label")
+char["completed"][96898] = None
+ns.RefreshCompleted()
+g.LorePathDB["loreUnlocks"] = None
+g.UnitName = saved_unit_name
 char["completed"][96898] = None
 char["race"], char["class"], char["faction"], char["level"], char["map"] = saved_char
 ns.RefreshPlayer()

@@ -899,7 +899,8 @@ end
 
 -- What a page's About section shows of its lore: the premise (setting only, so
 -- it spoils nothing), then each chapter whose quest you've finished, in order;
--- with Show spoilers, every chapter. Returns the paragraphs, the articles to
+-- with Show spoilers, every chapter. A chapter another of your characters has
+-- unlocked shows too, saying who. Returns the paragraphs, the articles to
 -- credit (the premise's and the shown chapters', each once), whether a chapter
 -- you could still unlock is hidden, and how many hidden chapters follow quests
 -- this character can never do (another race's or class's). Those show once
@@ -917,11 +918,21 @@ function ns.GetLoreView(lore)
     credit(lore.articles)
     local spoilers = ns.GetSetting and ns.GetSetting("showSpoilers")
     local revealed = ns.revealedLore[lore]
+    local me = UnitName and UnitName("player")
     local more, others = false, 0
     for _, chapter in ipairs(lore.chapters or {}) do
         local eligible = ns.IsEligible(chapter.after)
-        if spoilers or ns.IsDone(chapter.after) or (revealed and not eligible) then
-            texts[#texts + 1] = chapter.text
+        local own = ns.IsDone(chapter.after)
+        local by = not own and ns.LoreUnlockedBy(chapter.after)
+        if by == me then
+            by = nil
+        end
+        if spoilers or own or by or (revealed and not eligible) then
+            local text = chapter.text
+            if by then
+                text = text .. "\n|cff8c8c8cUnlocked by " .. by .. "|r"
+            end
+            texts[#texts + 1] = text
             credit(chapter.articles)
         elseif eligible then
             more = true
@@ -930,6 +941,33 @@ function ns.GetLoreView(lore)
         end
     end
     return texts, articles, more, others
+end
+
+-- Lore is shared across your characters: a chapter any of them has unlocked
+-- shows for all of them, marked with who unlocked it. (Quest progress, the
+-- tiles' book markers and Story so far, stays each character's own.) Recorded
+-- per account in LorePathDB.loreUnlocks as quest ID -> the first character's
+-- name, at login and after turn-ins. WoW Forever has no realms, so a name is
+-- enough.
+function ns.RecordLoreUnlocks()
+    local name = UnitName and UnitName("player")
+    if not LorePathDB or type(name) ~= "string" or name == "" then
+        return
+    end
+    LorePathDB.loreUnlocks = LorePathDB.loreUnlocks or {}
+    local unlocks = LorePathDB.loreUnlocks
+    for _, lore in pairs(ns.ZoneLore or {}) do
+        for _, chapter in ipairs(lore.chapters or {}) do
+            if not unlocks[chapter.after] and ns.IsDone(chapter.after) then
+                unlocks[chapter.after] = name
+            end
+        end
+    end
+end
+
+function ns.LoreUnlockedBy(questID)
+    local unlocks = LorePathDB and LorePathDB.loreUnlocks
+    return unlocks and unlocks[questID] or nil
 end
 
 -- Lore whose other characters' chapters you've chosen to read (Reveal in the

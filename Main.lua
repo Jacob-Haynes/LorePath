@@ -76,8 +76,11 @@ local function OnEvent(event, arg1, arg2)
         end
         -- Save the text of everything already in your log once it has loaded.
         Later(5, "saving your quest log", ns.CaptureQuestLog)
+        -- Lore this character has unlocked, for your other characters to read.
+        Later(5, "recording lore", ns.RecordLoreUnlocks)
     elseif event == "QUEST_TURNED_IN" then
         ns.ClearChainTitles()
+        Later(1, "recording lore", ns.RecordLoreUnlocks)
         -- The completed-quest list updates a moment after the turn-in.
         ns.QueueRefresh(0.6)
         ns.QueueMapPinsRefresh(0.6)
