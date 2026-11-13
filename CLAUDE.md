@@ -11,6 +11,7 @@ All checked in game. The client is mainline-based, but don't assume retail behav
 - **Professions:** `GetProfessions` / `GetProfessionInfo` return the skill line (7th value) and rank.
 - **Map pins:** `WorldMapFrame:AddDataProvider` and `MapCanvasDataProviderMixin` exist (issue #11).
 - **Quest versions:** finishing one version of a quest (for example Call of Earth in Zephras Isle) marks **every** version completed, and sometimes the first step of another version's chain too. So "completed" can't pick which version a character did; `OneVersionEach` in `Core.lua` falls back to the race's home area.
+- **Encounter Journal:** turned off by a server game rule (`GameRulesUtil.EJIsDisabled()` is true), so there's no Adventure Guide, and `EJ_GetInstanceInfo` returns nothing (tried with 63, the Deadmines' retail ID). Its dungeon and boss lore isn't available to addons.
 - **Level ranges:** the Looking for Group activities (`C_LFGList.GetActivityInfoTable`: `minLevelSuggestion`, `maxLevelSuggestion`) have real ranges for zones, dungeons and battlegrounds. The Dungeon Finder (`GetLFGDungeonInfo`) gives each dungeon a single level, so don't use it for ranges. Scarlet Monastery's wings are separate activities ("Scarlet Monastery - Graveyard").
 - **WoW Forever's own races:** race 95 (Alliance) and 96 (Horde), both starting on Zephras Isle (map 2521).
 
