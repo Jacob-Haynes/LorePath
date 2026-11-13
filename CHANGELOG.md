@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.4.0-beta3
 
 - **Lore shared across your characters:** a chapter any of your characters has unlocked now shows on all of them, with *Unlocked by <name>* under it. Your Forsaken's Bandarion Keep story can be read on your Skyborne, for instance. Each character needs to log in once with this version to count. The book markers on tiles and Story so far still follow each character's own quests.
 - **Tidier storyline headers:** an open storyline no longer repeats **Next:** (or **In progress:**) for a quest whose tile is right there on the page. Collapsed storylines, and steps in another zone (**First finish:**), still name it.
