@@ -8,7 +8,7 @@ It's not a quest helper. Its world map pins only show where quests start, and th
 
 LorePath supports English game clients only.
 
-> **Version 1.3.0.** Lore beyond quest text (zones, characters, a codex) is planned.
+> **Version 1.3.1.** Lore beyond quest text (zones, characters, a codex) is planned.
 
 ---
 
@@ -50,7 +50,7 @@ LorePath supports English game clients only.
 - **Jumping around:** in a storyline's header, click **Next**, **In progress** or **First finish** to jump to that quest, even in another zone or dungeon. **Back** returns you.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map** (in its details, or in a storyline's header for the next quest), to set the game's own waypoint where it starts and open the map there.
 - **World map pins:** a "!" where each quest starts on the zone map you're viewing: gold for quests at your level, grey for low-level ones, red for quests you're not high enough level for yet (a blue "!" for repeatable quests at your level). Each of the three has its own entry under **LorePath quests** in the world map's filter menu, and in the settings. Only quests at your level are on by default. Quests that start at the same spot share a pin, with a count. Hover a pin for the quest's tooltip, click it to set a waypoint there, or Shift+click it to open the quest in LorePath.
-- **Quest log, both ways:** for a quest you're on, **Open in quest log** in its details, or Shift+click it, opens the game's quest log at that quest. The other way, the LorePath book button on the game's quest log opens the selected quest in LorePath with its details.
+- **Quest log, both ways:** for a quest you're on, **Open in quest log** in its details, or Shift+click it, opens the game's quest log at that quest. The other way, the LorePath book button on the game's quest log opens the selected quest in LorePath with its details, and the same button on a quest giver's quest dialog opens the quest it's showing.
 
 ### Controls
 
@@ -63,7 +63,7 @@ LorePath supports English game clients only.
 | Waypoint | Ctrl+click a quest, or **Show on map** |
 | Open in your quest log | Shift+click a quest you're on, or **Open in quest log** in its details |
 | Choose which quests show on the world map | **LorePath quests** in the world map's filter menu, or the settings page; click a pin for a waypoint, Shift+click it to open the quest in LorePath |
-| Open a quest log quest in LorePath | The LorePath book button on the game's quest log |
+| Open a quest log quest in LorePath | The LorePath book button on the game's quest log, or on a quest giver's quest dialog |
 | Collapse | Click a storyline's or heading's +/−, or **Expand all** / **Collapse all** |
 | Hide the zone list | The arrow button left of the zone name |
 | Show or hide repeatable quests | The **Repeatable** tick box, or the settings page |

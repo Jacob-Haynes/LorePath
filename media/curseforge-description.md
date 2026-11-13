@@ -37,7 +37,7 @@ Built for **WoW Forever**, on English game clients. It's lightweight: its map pi
   - the game's own quest summaries;
   - bundled text for every vanilla quest.
 - **Share your quest text:** press **Share quest text** in the settings (or type `/lp share`), then paste the code into the [share page](https://lorepath-share.jacobhaynes49.workers.dev). No account is needed. It sends the text you've collected, and where quests started, so everyone gets the story of WoW Forever's own quests and where to find them. Your name, class and race are replaced with placeholders.
-- **Quest log, both ways:** open a quest you're on in the game's quest log, or open the quest log's selected quest in LorePath.
+- **Quest log, both ways:** open a quest you're on in the game's quest log, or open the quest log's selected quest, or the one a quest giver is showing you, in LorePath.
 - **Jump around:** click "Next" or "First finish" in a storyline to jump to that quest, even in another zone or dungeon. **Back** takes you back.
 - **Waypoints:** Ctrl+click a quest, or use **Show on map**, to set the game's own waypoint where it starts.
 - **Minimap button:** left-click to open, right-click for settings, drag to move.
