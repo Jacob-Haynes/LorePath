@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.4.0-beta1
 
 - **About this zone:** a zone's page now opens with a few lines of its lore as it is in WoW Forever, summarised from the Warcraft Wiki, for the starting zones to begin with, Zephras Isle among them. Tirisfal Glades' tells of Bandarion Keep and the Forsaken paladins. Click its header to collapse it.
 
