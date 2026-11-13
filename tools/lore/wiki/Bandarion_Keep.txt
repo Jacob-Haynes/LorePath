@@ -1,0 +1,67 @@
+title: Bandarion Keep
+revision: 6967624
+part: whole
+url: https://warcraft.wiki.gg/wiki/Bandarion_Keep
+
+Bandarion Keep, formerly Dawn's Watch, is a Forsaken keep found near the Whispering Forest in western Tirisfal Glades.
+
+
+== History ==
+
+
+=== Forsaken Kingdom ===
+ This section concerns content related to Forsaken Kingdom.
+The keep was previously a hilltop outpost occupied by Lordaeron's military. It was founded on a place called Northface Rock. In the early days of the Forsaken's foundation, the keep was garrisoned by the Argent Dawn under Lord Maxwell Tyrosus. During this time, they came under heavy attack by the Crushridge clan of ogres. The ogres laid siege to the keep, seeking to ransack it and eat its denizens. This siege was ultimately lifted by Garek Bandarion, Dark Ranger Anya, Leonid Barthalomew, and rescued soldiers of the Argent Dawn. Though wary of the Forsaken, Tyrosus ultimately agreed to work with them against the Scarlet Crusade and the Scourge.
+
+
+=== Forever ===
+ This section concerns content related to Forever.
+According to Leonid, the Argent Dawn eventually withdrew from the keep to the Eastern Plaguelands. His fears that the region would fall into disrepair were ultimately validated, though the various paladins gathered under Danitha Morr took restoring the region under their care. By the time it came into the hands of the Forsaken, it had been renamed Bandarion Keep in honor of the first Forsaken paladin: Garek Bandarion.
+By Year 25 ADP, Jorin Croge made sure Bandarion Keep was kept provisioned, and that the scant resources were distributed properly. At the time, the keep faced dangers of Vile Fin murloc attacks, occasional Scarlet Crusade skirmishes, but also some paladins that couldn't adjust to life as undead and turned their blades upon the Forsaken, or a Scourge mindless thrall wandering too close. Leonid made a trip to the keep on behalf of the Argent Dawn, offering a place in the organization for the keep's paladins. Danitha refused this offer, stating that the Forsaken were still the people that the paladins swore to protect, despite their mistrust of them.
+
+
+== NPCs ==
+Named
+  Danitha Morr
+  Evin Schmidtt <Keeper of Bandarion Keep>
+  Breton Samuels
+  Jorin Croge
+  Deathguard Billmuth
+  Angus Hammerhand <Blacksmith>
+  Ephram Barbaro <Stable Master>
+  Hilda the Breaker <Paladin Trainer>
+  Relreo Emberlight
+  Max
+  Ander Solliden <Lookout>
+Unnamed
+  Bandarion Keep Paladins
+  Paladin Trainees
+  Risen Chargers
+  Risen Warhorses
+
+
+== Notes ==
+"Tyr's Watch" was a deprecated name for Bandarion Keep used in certain quests during the Forever beta. A single use in    [11] A Second Home remained in the live game but was quickly hotfixed.
+In Warcraft III, the keep houses a unique vendor that carries very powerful, albeit expensive, items. This character, unlike most other vendors, is unique to the Dawn's Watch map and will not appear again in the end of the Act or in Act III.
+The character appears as a mountain king and his name is always randomized.
+While the keep is canonical to the mainline timeline, as Forsaken Kingdom is canon to both timelines, it has so far only been added to Forever.
+
+
+== Gallery ==
+
+		
+		
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== References ==
+
+
+== External links ==
+
+WoWDB
+
+Wago

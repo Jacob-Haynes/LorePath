@@ -1,0 +1,37 @@
+# WoW Forever's own articles on the Warcraft Wiki, by category. Written by
+# tools/wiki_lore.py fetch; a new line here is a new Forever article.
+Forever zones: Mount Hyjal (Forever)
+Forever zones: Riverglades
+Forever zones: Shen'dralas
+Forever zones: Zephras Isle
+Forever instances: Alcaz Prison
+Forever instances: Barrow Deeps (instance)
+Forever instances: City of Dalaran
+Forever instances: Darkspear Islands (battleground)
+Forever instances: Drowned City
+Forever instances: Excavation Site: Wetlands
+Forever instances: Hall of Thanes (instance)
+Forever instances: Hyjal Summit (instance)
+Forever instances: Krol'dok Stronghold
+Forever instances: Ruins of Lordaeron (instance)
+Forever subzones: Ashwood's Fall
+Forever subzones: Bandarion Keep
+Forever subzones: Bolder'ok
+Forever subzones: Calmbreeze Inn
+Forever subzones: Farholde Keep
+Forever subzones: Hall of Arms (Zephras Isle)
+Forever subzones: Meadowsbrook
+Forever subzones: Powderfuse Port
+Forever subzones: Shen'dar Village
+Forever subzones: Sunnyglade
+Forever subzones: Terral's Watch
+Forever subzones: Thendal Village
+Forever subzones: Valanaar Port Authority
+Forever subzones: Wheeler's Grange
+Forever subzones: Windstead
+Forever lore articles: Forever animated shorts
+Forever lore articles: New Horizons (cinematic)
+Forever lore articles: Siege of Farholde
+Forever lore articles: Skyborne
+Forever lore articles: Unbowed
+Forever lore articles: WARPATH

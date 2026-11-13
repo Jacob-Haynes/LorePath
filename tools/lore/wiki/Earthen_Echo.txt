@@ -1,0 +1,59 @@
+title: Earthen Echo
+revision: 6911818
+part: whole
+url: https://warcraft.wiki.gg/wiki/Earthen_Echo
+
+== Objectives ==
+Bring the Titan Relic to Muln Earthfury at the Skywatcher Plateau in northwest Mulgore.
+
+ [Titan Relic] (Provided)
+
+
+== Description ==
+Truly, this is a fascinating object.
+It shows indications of being much more than a mere carving or sculpture.
+While our elders may be interested in observing this artifact, the Earthen Ring are who would carry the most wisdom for our buried ruins and forgotten lands. Seek out Muln Earthfury, a direct approach is fitting for the gravity of what you carry.
+You can find him and other elders of the Earthen Ring council at the Skywatcher Plateau in northwest Mulgore.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Heavehammer]
+ [Healer's Staff]
+ [Furs of the Earthen Ring]
+You will also receive:
+
+60
+6,950 XP
+
+
+== Progress ==
+Come. Seek and receive.
+
+
+== Completion ==
+Ah... this shard hums with the voice of the world itself. The light within is a memory from the past, glimmering with flashes of history. This titan machine must have been waiting to be understood for lifetimes.
+You've done wisely to bring it to us. The Earthen Ring will safeguard it, study it, and share the truths it keeps when we are able to receive its messages.
+You honor the elements today, traveler.
+
+
+== Progression ==
+ [21] Daily Delivery →  [22] Young Crocolisk Skins →  [28D] Highland Hides and  [26] Apprentice's Duties
+ [31D] Horrors in the Highland
+ [31D] Seeking Caitlin →  [31D] Lost in the Thicket Things →  [31D] Heartwoven
+ [31D] Lost Relic Carry →  [31D] Prehistoric Prism
+ [31D] Songblade Search →  [31D] Fallen in the Fen
+ [31D] Changing Tastes
+ [31D] Elder Knowledge →  [31D] Earthen Echo
+ [31D] Dragonmaw Rumors →  [31D] Open the Maw
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

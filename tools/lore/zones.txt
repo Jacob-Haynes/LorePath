@@ -1,62 +1,68 @@
 # Zone lore, summarised by hand from the Warcraft Wiki (CC BY-SA 4.0).
-# tools/wiki_lore.py fetch puts each article's opening section in tools/lore/raw/
-# to write from; tools/wiki_lore.py build turns this file into Data/Lore.lua.
+# tools/wiki_lore.py fetch keeps a snapshot of each source's text in
+# tools/lore/wiki/ to write from; tools/wiki_lore.py build turns this file into
+# Data/Lore.lua. See the script's help for the format.
 #
-# Keep each summary to a few sentences, and to what's true in WoW Forever: the
-# wiki covers every expansion, so leave out later events (the Cataclysm, for
-# one). Set "revision:" to the revision you wrote from.
+# Write for WoW Forever. Its own articles come first: the Forever zone,
+# instance and subzone articles, and its quests' articles, which hold most of
+# what Forever changed (the wiki's articles on the original zones don't cover
+# Forever). Use the original zone's article for what Forever kept, and leave
+# out what came after vanilla (the Cataclysm, the burning of Teldrassil).
+#
+# Keep each summary to a few sentences. Each "source:" is an article you wrote
+# from, "@" the revision you wrote from (the snapshot's), and is credited in
+# game.
 
 == 1429 Elwynn Forest
-article: Elwynn Forest
-revision: 6880069
+source: Elwynn Forest @ 6880069
 
 Elwynn Forest is a vast woodland of stately hardwoods, the heartland of the human kingdom of Stormwind and where every human adventurer begins. Stormwind City lies to the northwest, the Redridge Mountains to the east, and Duskwood to the south, across the river.
 
 Much of the forest burned during the First War, but its trees and glades have grown back. Marshal McBride keeps the peace in Northshire Valley, and Marshal Dughan in Goldshire.
 
 == 1426 Dun Morogh
-article: Dun Morogh
-revision: 6731913
+source: Dun Morogh @ 6731913
 
 Dun Morogh is a range of snowy, forested mountains in western Khaz Modan, the homeland of the dwarves and gnomes. Ironforge is carved into Ironforge Mountain, and Gnomeregan lies in the foothills of Chill Breeze Valley.
 
 Its peaks are the highest in the Eastern Kingdoms: their glaciers feed the rivers of Khaz Modan, and their rock gives the dwarves all the ore they could want. Mountains wall it in on every side, and dwarven troops watch the few passes in.
 
 == 1438 Teldrassil
-article: Teldrassil
-revision: 6553392
+source: Teldrassil @ 6553392
 
 Teldrassil, "Crown of the Earth", is the World Tree the night elves grew on an island off Kalimdor's northwestern coast after the Third War. Its crown holds their capital, Darnassus, and its boughs hold Rut'theran Village, Dolanaar and Shadowglen, amid twilit forests with a world of their own.
 
 Unlike Nordrassil before it, Teldrassil was never blessed by the Dragon Aspects, which leaves it open to corruption. It is the Alliance's greatest stronghold in Kalimdor, and young night elves set out into the world from its shelter.
 
 == 1411 Durotar
-article: Durotar
-revision: 6896451
+source: Durotar @ 6896451
 
 Durotar, named after Thrall's father Durotan, lies on the eastern coast of Kalimdor, between the Barrens and Azshara. Its land is rocky, red and cracked, hot and dry, much like the orcs' lost homeland of Draenor, and dangerous creatures shelter in its crags and canyons.
 
 Young orcs prove themselves in the Valley of Trials before facing the world beyond. Since the orcs founded Orgrimmar, Durotar has become a home for all the Horde's races, above all the Darkspear trolls of the Echo Isles.
 
 == 1412 Mulgore
-article: Mulgore
-revision: 6884059
+source: Mulgore @ 6884059
+source: Earthen Echo @ 6911818
 
-The green plains of Mulgore, home of the tauren, lie in the foothills of the Stonetalon Mountains, walled in by mountains on every side. Thunder Bluff towers over the northern plains, Bloodhoof Village stands at their heart, and young tauren train at Camp Narache on Red Cloud Mesa.
+The green plains of Mulgore, home of the tauren, lie in the foothills of the Stonetalon Mountains, walled in by mountains on every side. Thunder Bluff towers over the northern plains, Bloodhoof Village stands at their heart, and young tauren train at Camp Narache on Red Cloud Mesa. On the Skywatcher Plateau in the northwest, Muln Earthfury and the elders of the Earthen Ring council study the relics brought to them from Kalimdor's buried ruins.
 
 For all its peace, Mulgore has troubles: quilboar overrun Brambleblade Ravine and the sacred Red Rocks, the Venture Company mines the eastern mountains, the Grimtotem poison the wells, Windfury harpies claim the far north, and Palemane gnolls camp in the south.
 
 == 1420 Tirisfal Glades
-article: Tirisfal Glades
-revision: 6834298
+source: Tirisfal Glades @ 6834298
+source: Bandarion Keep @ 6967624
+source: Remnants of War @ 6969572
+source: A Righteous Cause @ 6969987
 
 Tirisfal Glades, "Tyr's Fall", is an eerie, wooded region on the northern coast of Lordaeron, named for the Titan Keeper Tyr. It is the land of the Forsaken, soaked through with the Lich King's plague: its sky is a gloomy, blighted green, and its trees cling to their last shreds of life.
 
-It still has a haunting beauty, along the stony North Coast, in the town of Brill and at the ruined Agamand Mills. The Forsaken share it with their enemies: the Scarlet Crusade, whose Scarlet Monastery stands here, and the Scourge, who haunt its derelict farms and mills.
+Not long ago, the necropolis Naxxramas bore down on the Undercity. The Forsaken and the Argent Dawn drove it off at great cost, and the Cult of the Damned now hunts the shards of its shattered crystal across the glades. In the west, Forsaken paladins under Danitha Morr hold Bandarion Keep, named for Garek Bandarion, the first Forsaken to wield the Light, who fell defending the city. Many of their own people still mistrust them.
+
+The Forsaken have older enemies here too: the Scarlet Crusade, whose Scarlet Monastery stands in the glades, and the Scourge, who haunt its derelict farms and mills.
 
 == 2521 Zephras Isle
-article: Zephras Isle
-revision: 6972596
+source: Zephras Isle @ 6972596
 
 Zephras Isle is a flying island in Skywall, the Elemental Plane of Air, and the home of the Skyborne. The air elementals who once lived there beside them vanished years ago, and since then the magic holding the island up has been fading.
 

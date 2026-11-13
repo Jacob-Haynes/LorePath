@@ -892,9 +892,22 @@ end
 
 -- The attunement (Data/Attunements.lua) an "att:<id>" page shows, or nil.
 -- A page's lore summary from the Warcraft Wiki (issue #5, Data/Lore.lua):
--- { article = wiki page title, text = summary }, or nil.
+-- { articles = { wiki page titles it was summarised from }, text = summary }, or nil.
 function ns.GetZoneLore(page)
     return type(page) == "number" and ns.ZoneLore and ns.ZoneLore[page] or nil
+end
+
+-- The credit under a lore summary, naming its articles as the wiki's licence asks.
+function ns.LoreCredit(lore)
+    local quoted = {}
+    for i, title in ipairs(lore.articles) do
+        quoted[i] = '"' .. title .. '"'
+    end
+    local list = quoted[#quoted]
+    if #quoted > 1 then
+        list = table.concat(quoted, ", ", 1, #quoted - 1) .. " and " .. list
+    end
+    return string.format("From the Warcraft Wiki %s %s (CC BY-SA 4.0)", #quoted > 1 and "articles" or "article", list)
 end
 
 function ns.GetAttunement(page)

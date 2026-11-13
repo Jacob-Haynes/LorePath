@@ -1,0 +1,7 @@
+title: Elwynn Forest
+revision: 6880069
+part: intro
+url: https://warcraft.wiki.gg/wiki/Elwynn_Forest
+
+Elwynn Forest, the Forest of Elwynn or simply Elwynn, is a vast woodland of stately hardwoods nestled in the continent of Azeroth, just below the foothills of the Burning Steppes to the north. The Redridge Mountains lie to the east, and Duskwood lies to the south across the Nazferiti river. It is the heartland of the human Kingdom of kingdom of Stormwind and consequently is the starting point of all human adventurers.
+Marshal Dughan serves as the municipal law enforcer for Goldshire and Marshal McBride serves as the municipal law enforcer for Northshire Valley. Though much of the forest was burned down during the First War, trees and lush glades have grown anew. Stormwind City lies northwest of the forest and is heavily patrolled by the Stormwind guards.

@@ -131,7 +131,7 @@ WoW Forever's own quests aren't in any quest database, so the only source for th
 | What you've completed, what's in your log, your level, race, class, faction, professions and reputation | The game client, live |
 | Quest, zone, item, NPC and faction names | The game client, in your language |
 | Level ranges of zones, dungeons, raids and battlegrounds | The game client's Looking for Group list, live |
-| Zone lore | Summarised by hand from the [Warcraft Wiki](https://warcraft.wiki.gg) (CC BY-SA 4.0), in `tools/lore/zones.txt`, built into `Data/Lore.lua` |
+| Zone lore | Summarised by hand from the [Warcraft Wiki](https://warcraft.wiki.gg) (CC BY-SA 4.0), WoW Forever's own articles first, in `tools/lore/zones.txt`, built into `Data/Lore.lua`; checked for wiki changes weekly |
 | What drops or holds an item that starts a quest, with chances and locations | [pfQuest](https://github.com/shagu/pfQuest)'s item, creature and object data (MIT, originally from VMaNGOS), in `Data/QuestStarts.lua`: sources for 56 item-started quests |
 | Quest text: description, objectives, progress and completion text | In this order:<br>1. **What you've seen:** saved from the game as you play (when a quest giver shows a quest, when you accept it, when you hand items in, at the turn-in screen, and your quest log at login).<br>2. **Community text:** `Data/CommunityText.lua`, collected by players, including WoW Forever's own quests (288 quests so far).<br>3. **The game's own quest-link tooltip:** the quest's goal and requirements, even for quests completed long ago.<br>4. **Bundled vanilla text:** [pfQuest](https://github.com/shagu/pfQuest)'s English quest database (MIT, originally from VMaNGOS), in `Data/QuestText.lua`: 3,285 vanilla quests, not WoW Forever's own. |
 
@@ -172,13 +172,15 @@ The [Sync quest data from AllTheThings](.github/workflows/sync-att-data.yml) wor
 
 ```bash
 python3 tools/wiki_lore.py fetch
+python3 tools/wiki_lore.py status
 python3 tools/wiki_lore.py build
 ```
 
-Zone lore is written by hand in `tools/lore/zones.txt`: for each page, its map ID, the wiki article it's summarised from and that article's revision, then a few sentences. `fetch` downloads each article's opening section into `tools/lore/raw/` (not committed) to write from, and lists summaries whose article has changed since. `build` writes `Data/Lore.lua`. To add a zone, add an entry with its article and an empty `revision:`, fetch it, then write the summary and fill in the revision.
+Zone lore is written by hand in `tools/lore/zones.txt`: for each page, its map ID, the wiki articles it's summarised from (`source: <title> @ <revision>`, each credited in game) and a few sentences. `fetch` refreshes `tools/lore/wiki/`, a snapshot of each source's text plus the list of WoW Forever's own articles, and reports what needs a look; `status` gives the same report without fetching; `build` writes `Data/Lore.lua`. A snapshot only changes when its article's text does.
 
-- **Keep it to WoW Forever's time:** the wiki covers every expansion, so leave out later events (the Cataclysm, the burning of Teldrassil).
-- **Credit:** each summary names its article, which LorePath shows under it. The text is CC BY-SA 4.0, like the wiki's.
+- **Weekly:** `.github/workflows/sync-wiki-lore.yml` runs `fetch` every Monday and, if the wiki changed, opens or updates a PR from `data/wiki-lore` with the new snapshots and the report: summaries whose articles changed (with a link to the wiki's diff), new Forever articles, and Forever articles no summary uses yet. Update the summaries on that branch or after merging. The workflow leaves the branch alone once someone else has pushed to it.
+- **Adding a zone:** add an entry with its sources and empty revisions (`source: Riverglades @`), run `fetch`, write the summary from the snapshots, and fill in each revision from its snapshot.
+- **Write for WoW Forever:** its own articles come first (Forever zone, instance and subzone articles, and its quests' articles, which hold most of what Forever changed; the wiki's articles on the original zones don't cover Forever). Use the original zone's article for what Forever kept, and leave out what came after vanilla (the Cataclysm, the burning of Teldrassil).
 - **Requests:** `fetch` names LorePath in its User-Agent, asks for 20 articles at a time and waits between requests, as the wiki asks of scripts.
 
 ### Adding players' quest text
@@ -262,6 +264,6 @@ LorePath is MIT-licensed. Its bundled data:
 - **`Data/Quests.lua`** and **`Data/QuestNotes.lua`** are derived from AllTheThings, also MIT-licensed. Its licence is in `Data/AllTheThings-LICENSE.txt`.
 - **`Data/QuestText.lua`** and **`Data/QuestStarts.lua`** come from pfQuest (MIT, licence in `Data/pfQuest-LICENSE.txt`), which took the data from the VMaNGOS project.
 - **`Data/CommunityText.lua`** was collected in game by LorePath's players.
-- **`Data/Lore.lua`** (and its source, `tools/lore/zones.txt`) is summarised from the [Warcraft Wiki](https://warcraft.wiki.gg) and, like the wiki's text, is licensed CC BY-SA 4.0, not MIT. Each entry names its article; the notice is in `Data/WarcraftWiki-LICENSE.txt`.
+- **`Data/Lore.lua`** (and its source, `tools/lore/zones.txt`) is summarised from the [Warcraft Wiki](https://warcraft.wiki.gg) and, like the wiki's text, is licensed CC BY-SA 4.0, not MIT, as are the article snapshots in `tools/lore/wiki/`. Each entry names its articles; the notice is in `Data/WarcraftWiki-LICENSE.txt`.
 
 The quest text itself is Blizzard's.

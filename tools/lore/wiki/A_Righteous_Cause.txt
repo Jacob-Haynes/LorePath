@@ -1,0 +1,61 @@
+title: A Righteous Cause
+revision: 6969987
+part: whole
+url: https://warcraft.wiki.gg/wiki/A_Righteous_Cause
+
+== Objectives ==
+Observe the conversation between Danitha Morr and Leonid Barthalomew the Revered.
+
+
+== Description ==
+Danitha and I fought against the Scourge in the defense of the Undercity when Naxxramas attacked. We lost many good friends that day, including the hero after which this keep was named--Garek Bandarion.
+He might just have been the first Forsaken to rediscover how to wield the Light as a paladin. I am encouraged to see his legacy and potential live on here with Danitha and her cohort.
+If only the rest of the Forsaken felt the same way...
+
+
+== Rewards ==
+You will receive:
+
+90 XP
++150 reputation with Argent Dawn
+
+
+== Completion ==
+I plan to stay here for a time and speak with more of my friends, but I will return to Light's Hope Chapel in Eastern Plaguelands soon enough. Should you ever find yourself out that way, please do say hello. We could always use more help from able-bodied adventurers.
+
+
+== Notes ==
+Upon accept
+Leonid Barthalomew the Revered says: It's good to see you again, Danitha. It's only been a few years, but it feels like an ocean of time has passed.
+Danitha Morr says: Indeed it does, Leonid. I've enjoyed our correspondence, but it pleases me that you finally made the trip out to Bandarion Keep in person.
+Leonid Barthalomew the Revered says: I am glad I came to see what you've built here. Garek would be proud. This was no social call, though, Danitha. Surely you know that...
+Danitha Morr says: Ah, so we are cutting straight to the point, then?
+Leonid Barthalomew the Revered says: Yes. Have you considered Lord Tyrosus's offer? The Argent Dawn is prepared to welcome you and your people with open arms.
+Danitha Morr says: I'm sorry, Leonid, but I must decline. Much has changed but the Forsaken are still the people we swore to protect.
+Leonid Barthalomew the Revered says: But they fear and hate you, Danitha. Surely you know that? Among the Argent Dawn your connection to the light would be an asset. You would be highly valued!
+Danitha Morr says: No, Leonid. Our place is here. Our fledgling order must find our identity amongst our kind. I know how you feel about the Forsaken... that our 'condition' is something to be cured.
+Danitha Morr says: I reject that notion. This is who we are now, and we will make the Forsaken see that we are not what they think we are. We can be of service to Lordaeron again.
+Leonid Barthalomew the Revered says: Very well, Danitha. Just take care of yourselves. Many Forsaken cannot let go of the pain they suffered at the hands of the living wielders of the light. Their mistrust of paladins runs deep.
+Danitha Morr says: That is why it is so important that we stay.
+Danitha Morr says: Enough of this talk. I want to speak of the good times. Garek would have wanted that for us.
+The conversation can be replayed by choosing the gossip option with Leonid:
+
+ <Listen to Leonid and Danitha's conversation.>
+
+
+== Progression ==
+ [13] The Argent Emissary
+ [12] The Cult of the Damned &  [12] Remnants of War
+ [13] Bandarion Keep
+  [13] A Righteous Cause
+  [13] Leonid's Letter
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
