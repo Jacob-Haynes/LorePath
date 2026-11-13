@@ -1029,6 +1029,9 @@ function ns.StorySoFar(storyline)
 end
 
 local STORY_TEXT = { 0.9, 0.86, 0.75 }
+local LORE_HEADING = { 0.55, 0.77, 1 }
+local LORE_TEXT = { 0.78, 0.85, 0.95 }
+local LORE_INDENT = 12
 
 local function RenderStory(storyline)
     Reset()
@@ -1077,6 +1080,14 @@ local function RenderStory(storyline)
         if e.c then
             AddText("On turning it in:", "GameFontDisableSmall", nil, 8)
             AddText(ns.FillQuestText(e.c), "GameFontHighlightSmall", STORY_TEXT, 2)
+        end
+        -- The lore chapter this quest unlocks: a note set apart from the quest's
+        -- own words, indented, with the wiki articles it came from.
+        local chapter = ns.GetChapter(e.id)
+        if chapter then
+            AddText("Lore", "GameFontNormalSmall", LORE_HEADING, 10, LORE_INDENT)
+            AddText(chapter.text, "GameFontHighlightSmall", LORE_TEXT, 2, LORE_INDENT)
+            AddText(ns.LoreCredit(chapter), "GameFontDisableSmall", nil, 2, LORE_INDENT)
         end
         usedBundled = usedBundled or e.bundled
     end

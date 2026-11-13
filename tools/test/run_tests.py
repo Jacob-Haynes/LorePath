@@ -3130,6 +3130,90 @@ check(not header["story"].IsShown(header["story"]), "a storyline with nothing fi
 cache[first_q], cache[ahead] = None, None
 ns.Toggle(False)
 
+# --- Lore chapters in storylines: a marker on the tile, the chapter in its tooltip and the story ---
+char["race"], char["class"], char["faction"], char["level"], char["map"] = 5, 2, "Horde", 13, 1420
+char["completed"], char["log"] = lua.table(), lua.table()
+ns.RefreshPlayer(); ns.RefreshCompleted(); ns.ClearChapterIndex()
+remnants = ns.GetChapter(96898)
+check(remnants is not None and remnants["zone"] == 1420 and "Naxxramas" in remnants["text"]
+      and list(remnants["articles"].values()) == ["Remnants of War"] and ns.GetChapter(96895) is None,
+      "the chapter lookup maps a quest to the chapter it unlocks, and its page")
+def lore_tile(q):
+    tiles = [f for f in harness["all"].values() if f["questID"] == q and f.IsShown(f) and f["link"] is None and f["lore"] is not None]
+    return tiles[0] if tiles else None
+def hover_lines(tile):
+    g.GameTooltip.lines = lua.table()
+    tile["__scripts"]["OnEnter"](tile)
+    return [str(l) for l in g.GameTooltip.lines.values()]
+ns.Toggle(True)
+ns.FocusQuest(96898)
+tile = lore_tile(96898)
+check(tile is not None and not tile["lore"].IsShown(tile["lore"]), "a chapter's quest you haven't done has no lore marker")
+check("Lore" not in hover_lines(tile) and not any("Naxxramas" in l for l in hover_lines(tile)),
+      "and its tooltip doesn't give the chapter away")
+check(not lore_tile(96897)["lore"].IsShown(lore_tile(96897)["lore"]), "a quest with no chapter has no marker")
+char["completed"][96898] = True
+ns.RefreshCompleted(); ns.Refresh()
+tile = lore_tile(96898)
+check(tile["lore"].IsShown(tile["lore"]) and "Book" in str(tile["lore"]["__texture"]),
+      "once it's done, its tile shows the small book marker")
+lines = hover_lines(tile)
+check("Lore" in lines and lines[lines.index("Lore") + 1] == remnants["text"], "and its tooltip has the chapter, under Lore")
+ns.SetSetting("showSpoilers", True)
+tile = lore_tile(96899)
+check(tile["lore"].IsShown(tile["lore"]) and "Lore" in hover_lines(tile),
+      "with Show spoilers, a chapter's quest shows the marker and chapter before it's done")
+ns.SetSetting("showSpoilers", False)
+tile = lore_tile(96899)
+check(not tile["lore"].IsShown(tile["lore"]), "and turning spoilers off hides it again")
+
+# Story so far: the chapter follows the quest that unlocks it, set apart, with its credit.
+# (Remnants of War stands alone in ATT's data; Bandarion Keep leads to A Righteous Cause.)
+char["completed"][96899] = True
+ns.RefreshCompleted()
+keep = ns.GetChapter(96899)
+st = next(s for s in ns.BuildStorylines(1420)[0].values() if any(n["id"] == 96899 for n in s["nodes"].values()))
+ns.detailStory = None
+ns.ToggleStory(st)
+texts = detail_texts()
+quest_name = ns.GetQuestNameOrID(96899)
+check(keep["text"] in texts and texts.count("Lore") == 1
+      and 'From the Warcraft Wiki articles "Bandarion Keep (quest)" and "Bandarion Keep" (CC BY-SA 4.0)' in texts,
+      "Story so far shows the chapter after its finished quest, under Lore, with its credit")
+def detail_order(wanted):
+    out = []
+    for f in harness["all"].values():
+        if f["__kind"] != "FontString" or not f.IsShown(f) or f["__text"] not in wanted:
+            continue
+        p = f["__parent"]
+        while p is not None and not same(p, g.LorePathDetailFrame):
+            p = p["__parent"]
+        if p is not None:
+            out.append(str(f["__text"]))
+    return out
+order = detail_order((quest_name, "Lore", keep["text"]))
+check(order.index(quest_name) < order.index("Lore") < order.index(keep["text"]),
+      "placed after the quest's own text: " + " / ".join(o[:20] for o in order))
+check(not any("Garek" in t for t in texts), "a chapter whose quest isn't done stays out of the story")
+ns.HideDetail()
+
+# A chapter in another page's lore still shows on its quest's tile, wherever that is.
+ns.ZoneLore[99999] = lua.table_from({"articles": lua.table_from(["Far Away"]), "text": "Elsewhere.",
+    "chapters": lua.table_from([lua.table_from({"after": 96897, "articles": lua.table_from(["Cult Article"]),
+                                                 "text": "The cult's tale, told elsewhere."})])})
+ns.ClearChapterIndex()
+char["completed"][96897] = True
+ns.RefreshCompleted(); ns.Refresh()
+tile = lore_tile(96897)
+check(ns.GetChapter(96897)["zone"] == 99999 and tile["lore"].IsShown(tile["lore"])
+      and "The cult's tale, told elsewhere." in hover_lines(tile),
+      "a chapter from another page's lore shows on its quest's tile in this page's storyline")
+ns.ZoneLore[99999] = None
+ns.ClearChapterIndex()
+char["completed"] = lua.table()
+ns.RefreshCompleted()
+ns.Toggle(False)
+
 # Story so far follows a chain across pages: Thunder Bluff's Forsaken Aid starts in Stonetalon and goes through Hillsbrad.
 char["race"], char["class"], char["faction"], char["level"], char["map"] = 6, 1, "Horde", 60, 1456
 char["completed"], char["log"] = lua.table_from({q: True for q in (1061, 1062, 1063, 1064, 1065, 1066, 1067, 1086, 1060)}), lua.table()

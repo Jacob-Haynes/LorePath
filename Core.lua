@@ -928,6 +928,40 @@ function ns.GetLoreView(lore)
     return texts, articles, more
 end
 
+-- Quest ID -> the lore chapter its completion unlocks, from every page's lore,
+-- so a quest shows its chapter in any storyline, on any page. Each chapter is
+-- { after, articles, text, zone = the page whose lore it's in }. Built the first
+-- time it's needed; ns.ClearChapterIndex rebuilds it (the tests swap the lore).
+local chapterIndex
+
+function ns.ClearChapterIndex()
+    chapterIndex = nil
+end
+
+function ns.GetChapter(questID)
+    if not chapterIndex then
+        chapterIndex = {}
+        for zone, lore in pairs(ns.ZoneLore or {}) do
+            for _, chapter in ipairs(lore.chapters or {}) do
+                chapterIndex[chapter.after] = {
+                    after = chapter.after, articles = chapter.articles, text = chapter.text, zone = zone,
+                }
+            end
+        end
+    end
+    return chapterIndex[questID]
+end
+
+-- The chapter a quest has revealed: once it's done, or any time with Show
+-- spoilers. nil if it unlocks none, or not yet.
+function ns.RevealedChapter(questID)
+    local chapter = ns.GetChapter(questID)
+    if chapter and (ns.IsDone(questID) or (ns.GetSetting and ns.GetSetting("showSpoilers"))) then
+        return chapter
+    end
+    return nil
+end
+
 -- "Tirisfal Glades'" and "Elwynn Forest's": a name's English possessive.
 function ns.Possessive(name)
     if string.sub(name, -1) == "s" then

@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- **Lore chapters:** a zone's About section now grows as you play. Under its opening lines, each chapter of the zone's story appears once you've finished the quest that reveals it, and a line tells you when there's more of the zone's story to uncover, without naming a quest. Tirisfal Glades has the first: Naxxramas' attack on the Undercity and the story of Bandarion Keep and its Forsaken paladins. **Show spoilers** shows every chapter.
+- **Lore chapters:** a zone's About section now grows as you play. Under its opening lines, each chapter of the zone's story appears once you've finished the quest that reveals it, and a line tells you when there's more of the zone's story to uncover, without naming a quest. Tirisfal Glades has the first: Naxxramas' attack on the Undercity and the story of Bandarion Keep and its Forsaken paladins. A quest that has revealed a chapter gets a small book on its tile: hover it to read the chapter, and **Story so far** tells it after the quest. **Show spoilers** shows every chapter.
 
 ## 1.4.0-beta1
 

@@ -538,6 +538,13 @@ local function ShowQuestTooltip(owner, id, storyline, hints)
             GameTooltip:AddLine("  " .. ItemText(itemID), 1, 1, 1)
         end
     end
+    -- The lore chapter it has revealed (the tile's book marker).
+    local chapter = ns.RevealedChapter(id)
+    if chapter then
+        GameTooltip:AddLine(" ")
+        GameTooltip:AddLine("Lore", 0.55, 0.77, 1)
+        GameTooltip:AddLine(chapter.text, 0.78, 0.85, 0.95, true)
+    end
     -- AllTheThings' note (also in the details), e.g. where its item drops.
     local note = ns.QuestNotes and ns.QuestNotes[id]
     if note then
@@ -580,6 +587,9 @@ local function ShowNodeTooltip(node)
     ShowQuestTooltip(node, node.questID, node.storyline)
 end
 
+local LORE_MARK = "Interface\\Icons\\INV_Misc_Book_09"
+local LORE_MARK_SIZE = 12
+
 local function AcquireNode(parent)
     used.nodes = used.nodes + 1
     local node = pools.nodes[used.nodes]
@@ -596,6 +606,14 @@ local function AcquireNode(parent)
         node.mark = node:CreateTexture(nil, "OVERLAY")
         node.mark:SetSize(20, 20)
         node.mark:SetPoint("BOTTOMRIGHT", node.icon, "BOTTOMRIGHT", 6, -4)
+        -- A small book in the top right corner: this quest has revealed a lore chapter.
+        node.lore = node:CreateTexture(nil, "OVERLAY")
+        node.lore:SetSize(LORE_MARK_SIZE, LORE_MARK_SIZE)
+        node.lore:SetPoint("TOPRIGHT", -3, -3)
+        node.lore:SetTexture(LORE_MARK)
+        node.lore:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+        node.lore:SetAlpha(0.85)
+        node.lore:Hide()
         node.text = node:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
         node.text:SetPoint("TOPLEFT", node.icon, "TOPRIGHT", 6, -1)
         node.text:SetPoint("RIGHT", -5, 0)
@@ -789,6 +807,11 @@ local function StyleNode(node, id, storyline)
         border = { 1, 0.82, 0 } -- the quest shown in the detail panel
     end
     node:SetBorderColor(border[1], border[2], border[3], 1)
+    -- The lore marker, once the quest has revealed its chapter; the name stops
+    -- short of it.
+    local revealed = ns.RevealedChapter(id) ~= nil
+    node.lore:SetShown(revealed)
+    node.text:SetPoint("RIGHT", revealed and -(LORE_MARK_SIZE + 6) or -5, 0)
     SetQuestIcon(node.icon, q)
     node.icon:SetDesaturated(status == S.BLOCKED or status == S.MISSED)
     local mark = STATUS_MARK[status]
