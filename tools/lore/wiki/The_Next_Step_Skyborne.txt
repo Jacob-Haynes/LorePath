@@ -1,0 +1,70 @@
+title: The Next Step (Skyborne)
+revision: 6889335
+part: whole
+quest: 92472
+url: https://warcraft.wiki.gg/wiki/The_Next_Step_%28Skyborne%29
+
+The Next Step concludes the Thendal Village portion of the Zephras Isle storyline, sending players down to Shen'dar Village, the next major quest hub. Constable Aonda continues the campaign with Welcome to Shen'dar Village. Don't forget to do  [6] The Adventurer and follow-ups on the way in to town!
+
+
+== Objectives ==
+Report to Constable Aonda in Shen'dar Village.
+
+
+== Description ==
+One of the most pervasive threats on Zephras Isle is the Al'Aketh Cult. They are religious zealots devoted to the worship of the supposed elemental ruler of Skywall, Al'Akir the Windlord. They are brutal, single minded, and their power and ambitions are growing more deadly by the day.
+Your path will soon take you to Shen'dar Village to the south. Present yourself to Constable Aonda when you arrive. The cult threatens Shen'dar and they are in need of aid. Tell Aonda that I sent you.
+
+
+== Rewards ==
+You will receive:
+
+230 XP
+
+
+== Completion ==
+Aetheen sent you, then? I'll confess, you don't look like much to me, but Shen'dar Village won't turn down willing aid, much less aid sent from Elder Aetheen herself.
+
+
+== Notes ==
+On accept:
+
+Aetheen of the Gales says: Aonda is a good woman, and true servant of Zephras Isle. It is my hope that you can quickly earn her trust and help her to keep Shen'dar Village save. May the winds guide you, <name>.
+Pick up  [6] The Adventurer before heading out. On the road south, if players haven't already picked up  [5] Al'Aketh Thugs from Hanaa Nightwind between the Thendal Cave and the ruins, pick it up for some easy experience.
+Watch out for the Al'Aketh Ambushers while traveling the Shen'dar Highlands.
+
+
+== Progression ==
+ [1] Coming of Age
+ [1] Harmony in Balance → class quests
+ [2] Infestation Investigation →  [3] The Cirrusfly Queen
+ [2] Falling With Style
+ [2] The Anchors of Zephras
+ [4] Harvesting Windstones
+ [4] Reading the Leylines -or-  [4] The Gift of Skysight
+ [3] Elemental Unrest
+ [3] Agitators
+ [4] Return to Rorian
+ [4] Aetheen of the Gales
+ [5] Foul Matriarch
+ [4] Aggressive Encroachment
+ [5] The Next Step
+ [5] Al'Aketh Thugs,  [6] The Adventurer →
+Class quests:
+
+  [2] A Student of Nature
+  [2] The Way of the Hunter
+  [2] A Student of the Arcane
+  [2] At Home in the Shadows
+  [2] Embracing the Elements → Call of Earth (Zephras Isle) → Call of Earth (Zephras Isle 2)
+  [2] The Warrior's Path
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

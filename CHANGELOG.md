@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- **Lore shared across your characters:** a chapter any of your characters has unlocked now shows on all of them, with *Unlocked by <name>* under it. Your Forsaken's Bandarion Keep story can be read on your Skyborne, for instance. Each character needs to log in once with this version to count. The book markers on tiles and Story so far still follow each character's own quests.
+- **Tidier storyline headers:** an open storyline no longer repeats **Next:** (or **In progress:**) for a quest whose tile is right there on the page. Collapsed storylines, and steps in another zone (**First finish:**), still name it.
+- **Sources on hover:** the wiki credit under a zone's lore, and under a chapter in Story so far, is now a **Sources** link: hover it to see the articles.
+- **Other characters' chapters:** chapters only other races' or classes' quests unlock (Tirisfal's Bandarion Keep story, for anyone but the Forsaken) no longer vanish without a word. A line says there's more of the zone's story in other characters' quests, with a **Reveal** button to read it.
+- **More lore for the Horde:** the Barrens and Stonetalon Mountains now have lore, with chapters for the Kolkar's new leaders, the hermit tanner above the Dry Hills, trouble on the Dustwallow border, the Venture Company's logging and Sun Rock Retreat's work to heal the land. Zephras Isle's lore now tells who the Skyborne are, and gains chapters for the Al'Aketh cult and the Windshapers' road to the Horde.
+
 ## 1.4.0-beta2
 
 - **Lore chapters:** a zone's About section now grows as you play. Under its opening lines, each chapter of the zone's story appears once you've finished the quest that reveals it, and a line tells you when there's more of the zone's story to uncover, without naming a quest. Tirisfal Glades has the first: Naxxramas' attack on the Undercity and the story of Bandarion Keep and its Forsaken paladins. A quest that has revealed a chapter gets a small book on its tile: hover it to read the chapter, and **Story so far** tells it after the quest. **Show spoilers** shows every chapter.

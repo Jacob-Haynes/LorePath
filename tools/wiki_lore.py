@@ -327,10 +327,11 @@ def fetch_category(category):
         params.update(data["continue"])
 
 
-def fetch_pages(titles, forever):
+def fetch_pages(titles, whole):
     """{asked title: {title, revision, part, text}} for the titles that exist. An
-    article that's WoW Forever's own is kept whole (they're short, and a quest's
-    story is past its first heading); for the rest, the opening section."""
+    article in `whole` (WoW Forever's own, which are short, and quest articles,
+    whose story is past their first heading) is kept whole, and so is one with no
+    opening section; for the rest, the opening section."""
     pages = {}
     for start in range(0, len(titles), BATCH):
         batch = titles[start:start + BATCH]
@@ -350,7 +351,7 @@ def fetch_pages(titles, forever):
                 pages[asked] = {"title": title, "revision": page["revisions"][0]["revid"],
                                 "part": "intro", "text": page.get("extract", "")}
     for asked, page in pages.items():
-        if page["title"] in forever or asked in forever:
+        if page["title"] in whole or asked in whole or not page["text"].strip():
             # TextExtracts gives a whole article only one at a time.
             data = api_get({"action": "query", "prop": "extracts", "explaintext": 1, "titles": page["title"]})
             page["text"] = data["query"]["pages"][0].get("extract", "")
@@ -358,7 +359,9 @@ def fetch_pages(titles, forever):
     return pages
 
 
-QUESTBOX_ID = re.compile(r"\{\{\s*Questbox\b[^}]*?\|\s*id\s*=\s*(\d+)", re.S | re.I)
+# The id field anywhere in the Questbox, which may hold nested templates
+# ({{level|...}}, {{cost|...}}) before it; the box ends at a line starting "}}".
+QUESTBOX_ID = re.compile(r"\{\{\s*Questbox\b(?:(?!\n\s*\}\}).)*?\|\s*id\s*=\s*(\d+)", re.S | re.I)
 
 
 def fetch_quest_ids(titles):
@@ -499,10 +502,11 @@ def fetch(report_file):
     # Forever quest articles a summary uses aren't in the watched categories.
     forever |= {t for t in titles if "(Forever)" in t}
     forever |= set(fetch_forever_members(titles))
-    pages = fetch_pages(titles, forever)
-    # Chapters' sources: which are quest articles, and for which quest.
+    # Chapters' sources: which are quest articles, and for which quest. A quest
+    # article is kept whole: its story is under its Objectives and Description.
     chapter_titles = sorted({title for title, _, _, c in all_sources(entries) if c})
     quest_of = fetch_quest_ids(chapter_titles)
+    pages = fetch_pages(titles, forever | set(quest_of))
     changed = 0
     for title in titles:
         page = pages.get(title)

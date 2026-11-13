@@ -86,7 +86,72 @@ Not every risen paladin has made peace with undeath. The Tarnished carried their
 
 == 2521 Zephras Isle
 source: Zephras Isle @ 6972596
+source: Skyborne @ 6974881
 
 Zephras Isle is a flying island in Skywall, the Elemental Plane of Air, and the home of the Skyborne. The air elementals who once lived there beside them vanished years ago, and since then the magic holding the island up has been fading.
 
 The Skyborne's other islands, Anvilas and Siroccas, have fallen silent and are collapsing, and their refugees are fleeing to Zephras. But Zephras is starting to fall apart too.
+
+The Skyborne, who call themselves the shen'dorei, descend from Highborne who left Eldre'Thalas some ten thousand years ago, and lived beside the wind spirits ever since. An elected Council of Elders governs them, led on Zephras by High Elder Talaanis Shadowsong. Two orders guide their people: the Windshapers, shaman who honour the elements, and the High Order, heirs of the Highborne magisters, who seek the arcane lore of their forebears.
+
+after 92465 Agitators
+source: Agitators @ 6889220
+source: Return to Rorian @ 6889234
+
+Not every shen'dorei is willing to wait for the spirits to return. The Al'Aketh cult has been stirring the simple wind sprites by Thendal's standing stones into violence, and shen'dorei blood has now been shed in the grove. Rorian the Dayseeker had long watched the cult from afar; this, he says, is a clear escalation.
+
+after 92472 The Next Step (Skyborne)
+source: The Next Step (Skyborne) @ 6889335
+source: Skyborne @ 6974881
+
+The Al'Aketh are zealots devoted to Al'Akir the Windlord, the elemental ruler of Skywall, a name the wind spirits rarely spoke. Their leaders are what remains of an older order of his priests, grown strong on the fear the spirits' disappearance left behind, and some of the refugees from the failing islands have joined them just to survive. Brutal and single-minded, they now threaten Shen'dar Village to the south.
+
+after 93746 A Firm Response
+source: A Firm Response @ 6882907
+
+The crisis has strained the bond between the Skyborne's two orders. The High Order has been warned to keep out of the Windshapers' affairs, and when Belathaan Brightwish ignored the warning, the Windshapers met him on the road to the Shrine of Akir to send him home with a few bruises and a healthy respect for their boundaries.
+
+after 93090 What Comes Next (Horde)
+source: What Comes Next (Horde) @ 6957220
+
+With the Al'Aketh defeated, the Windshapers have found new friends in the Earthen Ring and, through them, joined the Horde. With High Elder Shadowsong's blessing, their shaman are leaving Zephras to seek a lasting answer to the island's failing magic. Muln Earthfury has helped open a skycutter route to Mulgore, where the Earthen Ring make their home, and some of the Windshapers are already waiting on the other side.
+
+== 1413 The Barrens
+source: The Barrens @ 6402371
+
+The Barrens is a vast, dry savanna in the heart of Kalimdor, held mostly by the Horde, with low mountains for its borders. Around the Crossroads in the north lie a handful of oases, fed by the waters of the Wailing Caverns, which carry a life energy that invigorates every plant and beast that drinks them.
+
+Long ago the Barrens was forest, tended by the night elves. The Burning Legion, war and the Great Sundering turned it into the barren expanse it is now, though there is more to it than dry soil and sand.
+
+after 850 Kolkar Leaders
+source: Kolkar Leaders (Classic) @ 6301357
+
+The Kolkar centaurs have plagued the tauren for years, but they were never more than disorganised raiders here, until new leaders rose to rally them. Barak Kodobane, who camped west of the Forgotten Pools, was only one strand of a tangled thread: other Kolkar leaders still gather their warbands across the Barrens.
+
+after 95508 Unwelcome Guests
+source: Trouble in the Valley @ 6921074
+source: Unwelcome Guests (Barrens) @ 6971470
+
+The hermit tanner on the ridge above the Dry Hills is Walton, once a sailor of the Kul Tiras navy. When Lord Admiral Proudmoore took Theramore and began his campaign in Durotar, Walton objected to its methods, above all the execution of civilians, and deserted. Kul Tiran marines have come to the Barrens hunting for him, and with a little help, he lived through their visit; but his past has caught up with him at last.
+
+after 97250 Wrongly Blamed, Justly Corrected
+source: Wrongly Blamed, Justly Corrected @ 6957168
+
+Tension is rising along the eastern coast. Alliance soldiers have crossed into the Barrens at the border with Dustwallow Marsh, toppling the landmarks the tauren pathfinders left behind and blaming the Horde for a tavern burned to the ground. Camp Taurajo drove them back, though even its grunts doubt the Horde had a hand in the fire: too many of its own people rely on that road.
+
+== 1442 Stonetalon Mountains
+source: Stonetalon Mountains @ 6974763
+
+The Stonetalon Mountains rise west of the Barrens, between Ashenvale and Desolace. They were the harpies' ancestral home, though turmoil has thinned their numbers, and Stonetalon Peak, the tallest of them, has long been sacred to both the night elves and the tauren.
+
+The tauren hold Sun Rock Retreat at the heart of the range, and the Darkspear trolls a village at Malaka'jin in the south. Windshear Crag has been ravaged by years of logging, its air thick with soot and its water fouled with oil, and beyond it the Charred Vale runs down to the sea, home to black dragons and elementals.
+
+after 1062 Goblin Invaders
+source: Goblin Invaders @ 6469211
+
+The goblin-run Venture Company has moved into Stonetalon, felling its trees and burning great stretches of forest, and the spirits of the mountains are nearly blind with pain and rage. The Horde has struck back at the loggers in Windshear Crag, but it may take the wisdom of the tauren elders to calm the spirits.
+
+after 6301 Cycle of Rebirth
+source: Cycle of Rebirth @ 6853446
+
+At Sun Rock Retreat, Tammra Windfield is working to heal what industrial greed and endless war have done to Stonetalon. She gathers Gaea seeds from the shores of Mirkfallon Lake and imbues them with the Earthmother's blessing, so that new life can take root even in the Charred Vale.

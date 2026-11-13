@@ -1,0 +1,7 @@
+title: The Barrens
+revision: 6402371
+part: intro
+url: https://warcraft.wiki.gg/wiki/The_Barrens
+
+The Barrens is a large zone in central Kalimdor controlled mostly by the Horde. It is a massive savanna, with low mountains serving as natural borders and with a few oases in the north-central region around the Crossroads. These oases, sourcing from the Wailing Caverns, are known for the life energy flowing from their waters, invigorating the plants and beasts that drink it.
+Long ago, the Barrens was mostly forests, tended to by the night elves. The combination of the Burning Legion, war, and the Great Sundering turned the woodland into a barren expanse. Now, the divided Barrens are a shade of their glory, one that is in short supply in this dry place. Despite this, it is more than an infertile soil and sand.

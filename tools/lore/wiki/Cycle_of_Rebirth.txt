@@ -1,0 +1,68 @@
+title: Cycle of Rebirth
+revision: 6853446
+part: whole
+quest: 6301
+url: https://warcraft.wiki.gg/wiki/Cycle_of_Rebirth
+
+In Cycle of Rebirth, you must gather  [Gaea Seeds] for Tammra Windfield, which will later be used to help restore the Charred Vale in the quest  [25] New Life.
+
+
+== Objectives ==
+Tammra Windfield at Sun Rock Retreat wants you to gather 10 Gaea Seeds.
+
+ [Gaea Seed] (10)
+
+
+== Description ==
+Industrial greed and continuous war have wrecked the lands of Stonetalon. Only the blessings of the Earthmother can cure such injury.
+<Name>, I will require you to seek a special seed, the Gaea seed. They are only found here in Stonetalon Mountain, north of Sun Rock Retreat at Mirkfallon Lake, near the water's edge.
+Once you bring me the seeds I will imbue them with shamanistic power to speed their growth.
+
+
+== Rewards ==
+You will receive:
+
+12
+140-1400 XP
++150 reputation with Thunder Bluff
+
+
+== Progress ==
+The continuous destruction caused by war and those that seek a profit from lumber pains me deeply. To aid the cycle of rebirth and replenish the lands, I need Gaea seeds. Do you have them, <class>?
+
+
+== Completion ==
+Ah, <name>, you have the Gaea seeds. Watch and see how the blessing of the Earthmother can cause even these small kernels of life to bloom and flourish.
+<Tammra begins to chant.>
+
+
+== Notes ==
+Pick this quest up from Tammra Windfield at Sun Rock Retreat in the Stonetalon Mountains. She is off to the north-eastern side by a little lump of dirt, kneeling down.
+Leave Sun Rock Retreat and head up the path to the north until you come to Mirkfallon Lake. The  [Gaea Seeds] can be found all around the lake, they look a little like coconuts. They are pretty easy to spot if you just circle the lake, however here are some coordinates for those who want them:
+50,45 (south side of the lake)
+49,44 (south side of the lake; closer to lake)
+48,44 (just west of the previous coordination)
+46,43 (southwest side of the lake)
+46,41 (west side of the lake)
+46,40 (just north of the previous coordination)
+46,40 (just north of the previous coordination, very close to water)
+47,38 (northwest side of the lake)
+48,36 (north of the lake)
+51,37 (northeast)
+51,47 (east)
+52,43 (a little further to the east; southeast) 
+
+
+== Progression ==
+ [23] Cycle of Rebirth
+ [25] New Life
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

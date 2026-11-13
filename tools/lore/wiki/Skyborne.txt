@@ -1,0 +1,250 @@
+title: Skyborne
+revision: 6974881
+part: whole
+url: https://warcraft.wiki.gg/wiki/Skyborne
+
+The Skyborne, also known as the shen'dorei or hidden people, are a race of high elves descended from the people of Eldre'Thalas. Their ancestors included both Highborne magisters and other night elf citizens of the city. After fleeing Prince Tortheldrin's persecution, these exiles struck a pact with the wind spirits of Skywall, who raised Zephras Isle to the Elemental Plane of Air for millennia.
+Over time, the descendants of these exiles developed into distinct orders: the High Order descend from the Highborne magisters and seek to preserve and reclaim their ancient arcane traditions, while the Windshapers descend from the kaldorei citizens and maintain a closer relationship with the elemental traditions of their ancestors.
+After their elemental benefactors vanished, however, the pylons that held their island home together began to fail, leading the Windshapers, High Order, and Al'Aketh to vie for control of Zephras Isle.
+
+
+== Background ==
+
+
+=== The Shal'nan's rebellion ===
+
+The Skyborne originated among the people of Eldre'Thalas, the ancient city of the Shen'dralar Highborne, now known as Dire Maul. Valennia Stormfist places the Shal'nan's rebellion there nearly ten thousand years before the Skyborne's return to Azeroth. After the Great Sundering, the loss of the Well of Eternity left its inhabitants suffering magic addiction withdrawals. The ruling House Tortheldrin eventually sought another source of power: Prince Tortheldrin proposed a network of crystalline foci through which power could be drawn from a demon world within the Twisting Nether.
+When Tortheldrin began this project, a faction of Highborne opposed it on the basis that it could once again give the Burning Legion a foothold into the world. Many of the detractors were members of influential noble families who attempted to turn public sentiment against Tortheldrin. Tortheldrin grew increasingly frustrated and worried that the days of debate would simply make Eldre'Thalas fall further into ruin. In response, he carried out a swift and brutal purge over a single bloody night, seeing the destruction of dozens of noble families. All who publicly opposed him were silenced, and entire lineages destroyed overnight.
+Tortheldrin's brutal methods worked for a time, but his harsh methods also sparked further resistance. Some Shen'dralar scholars did not wish to see Tortheldrin repeat Queen Azshara's mistakes and met in secret to plant the seeds of rebellion. The leader of the rebels was someone whose name was unknown, called the Shal'nan, or "the Veiled One", who wore a featureless golden mask to conceal his identity. The Shal'nan became a symbol among the citizens of rising against oppression, and his name became a battle cry synonymous with rebellion. Through sabotage, coercion, and according to some rumors, even assassination, the Shal'nan's rebels disrupted Tortheldrin's plans to construct his crystal pylons. The Prince faced daily embarrassment from the rebels, and news of resistance spread through Eldre'Thalas.
+At the same time, awareness of druidism, practiced by the non-Highborne night elves to the north, had begun to spread in Eldre'Thalas due to heavy influence from the Cenarion Circle. Rumors spread that the Shal'nan and his rebels were even supported by covert agents sent by Malfurion Stormrage. Tortheldrin denounced calls to embrace druidism as propaganda from usurpers seeking Queen Azshara's vacant throne. He and his supporters dismissed nature magic as base and barbaric, but its practice spread on the fringes of Eldre'Thalas as the rebellion grew.
+On the eve of the planned summoning ritual, the Shal'nan's forces led a raid on the inner sanctum, seeing it as their last chance to stop Tortheldrin. The summoning spell was poorly constructed and threatened to destroy the entire city center, and during the battle wild magic spiraled out of control, and portals to the Twisting Nether summoning arcane creatures tore open to prey upon the citizens. Ultimately, the rebels were able to avert the worst of the destruction, but many lives were lost on both sides, and the rebels suffered the greatest casualties. The only survivor of the final confrontation in Tortheldrin's sanctum was the Shal'nan, and those closest to him claimed that the injuries he suffered left him forever changed. In the millennia since, he has never spoken of what happened, and becomes withdrawn and wistful when asked.
+In the immediate aftermath, Tortheldrin's forces were scattered and disorganized and focused on securing the city. The distraction allowed the remaining rebels to flee and regroup. With nowhere else to go, the Shal'nan led his people out of Eldre'Thalas to the west. At the port city of Eldre'narr on Feralas' western coast, the magisters in control of the city had heard what transpired in Eldre'Thalas and had orders to kill the rebels on sight. But they made no move to hinder the Shal'nan's progress as he and his rebels commandeered ships and sailed west into the unknown.
+
+
+=== Entering Skywall ===
+
+After sailing west, the rebels reached a land ruled by ancient primordial elemental spirits, and with Tortheldrin's fleet close on their heels, they were forced to strike a bargain with a group of wind spirits, who lifted an enormous landmass of this island into the sky in order to escape Azeroth entirely. Using powerful elemental magic, the wind spirits anchored the floating Zephras Isle in Skywall. Safe and hidden from the vengeance of their pursuers, the skyborne spent thousands of years building a small but vibrant civilization hidden in a corner of the Elemental Plane of Air.
+The Shal'nan later announced his abdication during the groundbreaking ceremony for the Shrine of the Four Winds. As his people embarked on a new era of peace and prosperity, the Shal'nan had watched with pride as they grew into a hardy, self-sufficient society, and he knew that he no longer needed to be their singular ruler. He instead entrusted the government of the Skyborne Isles to a carefully chosen council of provincial elders, with the people to choose their own leaders after a transition period. He continued to serve the community and devoted much of his time to strengthening its relationship with the wind spirits. In his speech, he praised the Skyborne's ability to govern themselves and expressed his hope that they would remain free of tyranny.
+Over millennia, life in Skywall altered the Skyborne's bodies, making them more slender and giving them characteristics distinct from those of their night elven ancestors, resembling more closely the high elves that would emerge in Quel'Thalas. These changes accelerated in recent generations, including the appearance of children born with vivid blue skin, a phenomenon called the "Sky-Touched Blessing".
+Skywall has also altered the islands' flora and fauna. Some formerly earthbound animals developed beaks, talons, or feathers, while a smaller number acquired the ability to fly. Changes in the winds' magic can also affect native creatures: normally docile vuldren may become dangerous when that magic falls out of balance, while lesser wind sprites, which are not fully self-aware like the sentient wind spirits, react to the emotions and intentions of nearby beings. The disappearance of the wind spirits also adversely affected the islands' wildlife, with some creatures beginning to lose themselves without the sustaining magic of the winds.
+During their time in Skywall, the Skyborne's elemental benefactors never presented Al'Akir as a being worthy of reverence. Although they acknowledged his existence, they became evasive, agitated, or fearful when questioned about him, sometimes avoiding even speaking his name. They dismissed rumors concerning the Windlord and assured the Skyborne that they had nothing to fear while sheltered on their islands. Consequently, the Skyborne learned little about Al'Akir, with some questioning his existence and others suspecting that their patrons were concealing something from them.
+The elementals' reluctance to discuss Al'Akir became a source of disagreement between the High Order and the Windshapers. The High Order argued that the Skyborne needed to understand the powers and dangers of their adopted realm, including their benefactors' motives. The Windshapers trusted the spirits and maintained that they would disclose whatever knowledge was necessary for the Skyborne's survival. These differences were recorded while the spirits still lived among them.
+
+
+=== Modern times ===
+After thousands of years living alongside their elemental benefactors, the Skyborne lost both the wind spirits and the Shal'nan. According to Dalia the Collector, the wind spirits disappeared a number of years before the Skyborne's return to Azeroth. Valennia Stormfist, who had served as captain of the Shal'nan's Empyrean Blades, remained unaware of why he or the spirits had departed.
+Without the spirits, the magic sustaining the Skyborne Isles began to fail. According to Ealaane Nimbuswalker, the islands began to destabilize and drift apart a few years before the Skyborne's return to Azeroth, while large portions of Zephras Isle had since begun breaking away. Ancient pylons deteriorated, settlements became unsafe, and Zephras lost contact with the other islands. Xy'aaria Streamrunner reports that skycutters and ferries had not operated between the islands for years, leaving their inhabitants uncertain whether any of the other settlements still survived. Illaya Amberwind also recalls when the spires of Shen'dramar were visible from the western watchtower of Zephras Isle, illustrating how far the islands have since drifted apart.. The inhabitants of Ban'aethal evacuated during the night as their settlement began to fall into the sky, leaving many possessions behind. Resaan subsequently died after returning for supplies, and his lover Ealaane Nimbuswalker sought the recovery of his heirloom.
+Refugees from ruined settlements arrived on Zephras, where some turned to banditry or joined the Al'Aketh to survive. One captured bandit reported that his family had escaped Shen'dramar aboard one of the last skycutters before its island broke apart. His family later died, and he faced execution for killing a peacekeeper and stealing windstones.
+The crisis deepened the division between the High Order and the Windshapers. The High Order sought to recover the arcane traditions of their Highborne ancestors, while the Windshapers sought to restore their relationship with the missing elemental patrons.
+The High Order discovered how to use magic to create a "keyhole" through which they could observe Azeroth across the planes. Members of the Kirin Tor perceived them in return, establishing contact between the two orders. The High Order learned from these exchanges, and the Kirin Tor agreed to receive them as guests. Elaadrin Evengale called for explorers and adventurers to travel to Azeroth, recover lost knowledge, and bring it home to help preserve their settlements.
+The Windshapers contacted the Earthen Ring. Ayessa Dawnsinger described its shamans as orders of magnitude more powerful than herself and regarded their knowledge of the elemental planes as essential to the Skyborne's survival. She proposed returning to Kalimdor to seek their assistance in mastering skysight and calling the missing patrons home.
+In the Shen'dar Highlands, tensions between the two orders escalated into violence over their respective sacred sites and magical practices. High Order apprentices repeatedly ignored warnings to stay away from the Windshapers' sacred standing stones, prompting Illaya Amberwind to direct an adventurer to drive them away, reluctantly condoning bloodshed if necessary. Conversely, Rathiril Sunlance ordered the killing of several Windshaper novices who sought to heal newly exposed ley lines, which the High Order regarded as valuable sources of arcane energy and the Windshapers considered scars upon the land.
+Relations deteriorated further after Belathaan Brightwish, a High Order magister, removed components from a construct maintained by the Windshapers. Ayessa Dawnsinger sent an adventurer to confront and intimidate him. Belathaan was found meeting High Priestess Lorthuna on Elaadrin Evengale's behalf to discuss peace. Lorthuna ordered both Belathaan and the adventurer killed, and the magister's death became another grievance between the two orders.
+The Al'Aketh also attacked the Nightclaw Druids of Shadowgale Forest. Commander Haalien, formerly a member of their circle and a cousin of Elegael Thornpaw, had joined the cult. A recovered missive suggested that someone in Valanaar was supplying information to the attackers. Lotheluum Starbreeze undertook to bring this evidence before the High Elder.
+Following the discovery of several slain Windshaper novices in the Highlands, Ayessa Dawnsinger ordered attacks against Al'Aketh cultists, despite acknowledging that their responsibility for the deaths had not been established.
+The disappearance of the wind spirits also threatened the natural world of Zephras Isle. Xyton Silverwind, a druid trainer in Thendal Village, warned that the island's birds, beasts, and even plants were suffering, calling upon fellow druids to help preserve its natural balance.
+In the year 25 ADP, a damaged recall crystal revealed that High Priestess Lorthuna had ordered her forces to march. Hearing fragments of her orders, Valennia Stormfist explained that the anchor pylons both suspended Zephras in Skywall and shielded it from outside notice. Talaanis Shadowsong concluded that Lorthuna meant to bring down the wards and let the Windlord in. The High Order, Windshapers, and local militia called the Peacekeepers all came together at the Shrine of Akir to stop the cult and defeat their leader High Priestess Lorthuna. Elaadrin Evengale and Ayessa Dawnsinger, the leaders of the High Order and Windshapers respectively, were both still furious about the blood spilled in the conflict between the two groups, and both stated that the ceasefire was only temporary.
+During the fighting at the Shrine of Akir, many elves on both sides died. Elaadrin and Ayessa confronted Lorthuna at the Rohashi Spires in the sky above the shrine, but Lorthuna revealed that the wards had been down for days and she was now lighting a beacon for Al'Akir's followers. The one who answered was Rohash of Al'Akir's Conclave of Wind. Recognizing that rumors of the hidden settlement were true, he credited his "wayward brothers" with concealing it from Al'Akir. Rohash informed the elves that the Windlord's judgement was inevitable, and though the Skyborne could not know when, it would come. Lorthuna demanded to be brought before the Windlord so that he could know who it was that showed him the way to Zephras, for which Rohash knocked her aside and sent her flying away into the endless sky of Skywall.
+Rohash summoned the elemental armies of the Windlord to battle the Skyborne, but help arrived from requests that Elaadrin and Ayessa had made before leaving to battle: the forces of the Kirin Tor and Earthen Ring, led by Ansirem Runeweaver and Muln Earthfury. Ansirem explained that he had persuaded Rhonin to help him open the transplanar portal. This was the first time that the High Order and Windshapers had met their new Azerothian allies in person. Muln was able to convince Rohash to retreat, and while Rohash allowed them a respite for now, he told them that he was going to tell Al'Akir all about the Skyborne and their islands. Rohash's parting words were that they would be seeing him again very soon. Talaanis Shadowsong nevertheless observed that, on the timescale of elemental demigods, it might be years or even decades before Al'Akir turned his attention to the exposed settlement.
+With their refuge exposed and Rohash threatening to report its existence to Al'Akir, the Skyborne needed a means of protecting their people and their remaining settlements. The High Order and Windshapers decided to set off from the island and leave Skywall for Azeroth, uniting with the Alliance and Horde in a search for a way to save the Skyborne and Zephras Isle.
+The High Order subsequently established a presence in the city of Dalaran, occupying an area known as the Sky Enclave within the Violet Citadel. A nearby skycutter landing platform provides transportation between Dalaran and Valanaar on Zephras Isle, while a magical portal within the citadel connects Dalaran to Stormwind City. Meanwhile, the Windshapers grouped with the Earthen Ring on the northern mountains of Mulgore, north of the tauren city of Thunder Bluff. They established Camp Gev'rek atop Skywatcher Plateau, with a skycutter traveling to and from Valanaar on Zephras Isle.
+
+
+=== The Wind Hollows ===
+Wind Hollows began appearing in Shadowgale Forest after the wind spirits disappeared. Endaria Mistgaze describes their remains as radiating a disturbing sense of malevolence and regret. The Strange Hermit reports hearing their sorrowful singing and suspects that a terrible event left spirits trapped among the ruins. Their origin and their relationship to the missing wind spirits remain unknown.
+
+
+== Culture ==
+
+
+=== Society and government ===
+Skyborne society is governed by the democratically elected Council of Elders, a system established following the Shal'nan's abdication. Talaanis Shadowsong serves as High Elder of Zephras Isle, while Aetheen of the Gales is also a member of its council. Whether the other Skyborne islands maintain separate councils is unknown. Other islands the Skyborne live on include Anvilas and Siroccas, with the towns of Shen'dramar and New Eldre'naar. Since the air elementals disappeared, the islands have lost contact with each other.
+Some Skyborne make a point of enjoying small pleasures even during the crisis. Taleen Shimmerthread speaks of the happiness her adornments bring to others, while Myriaal Mistwake encourages young adventurers to amuse themselves by using their gift to slow their falls and startle the village leader. Rorian the Dayseeker takes a dimmer view of the game, warning that they may exhaust their gift and find themselves in need of it later.
+
+
+=== Religion and magic ===
+Although descended from the kaldorei, the Skyborne encountered on Zephras Isle primarily exhibit elemental religious traditions rather than the worship of Elune associated with their ancestors. Their principal religious practices are represented by shamanism, while the priests encountered among the Al'Aketh belong to a hostile cult devoted to Al'Akir.
+Temple ruins also exist in Thendal Grove, southwest of Hanaa Nightwind's post. During the Al'Aketh uprising, cultists led by Malduko Cloudcrush occupied the area around the ruins. The temple's original religious dedication is unknown.
+
+
+==== Shamanism ====
+The shaman of the Windshapers are the spiritual leaders of the Skyborne, whose traditions center on reverence for and communion with the elemental spirits. The standing stones in the Shen'dar Highlands are a sacred site of elemental magic under their protection.
+The Windshapers regard their relationship with the absent wind spirits as a debt, and have sworn to restore it. Their shamanistic training nevertheless concerns all four primary elements rather than wind alone: Windshaper Boro teaches that understanding them may help the Skyborne commune with the wind spirits once more. Initiates undergo elemental trials, including consuming enchanted sapta at sacred sites to attune their spirits to a particular element; such rites involve places such as the Rise of Spirits and the tending of an Eternal Flame.
+Some Skyborne possess a gift called skysight, through which they perceive and commune with elemental spirits. The ability can be strengthened through practice and is taught to adventurers whether or not they are shamans. Illaya Amberwind states that fewer Skyborne possess skysight than previously. She describes her own diminished power and identifies her apprentice Ayessa Dawnsinger, who still faintly hears the spirits' song, as a hope for their people's future. Ventaari Brightwish says that the spirits' disappearance deprived the Skyborne of much of the magic on which they had depended and left the Windshapers without their former guidance.
+
+
+==== Arcane magic ====
+The mages of the High Order seek to recover the arcane knowledge of their Highborne ancestors, much of which has been forgotten over the millennia. Dorii Brightwhisper presents arcane study as a means of achieving self-reliance after the wind spirits' departure and uncovering the secrets of the elemental realm.  Elaadrin Evengale acknowledges that the High Order's powers have weakened during their time in Skywall, but maintains that Highborne magic can reproduce the feats through which the elementals sustained their settlements. He advocates recovering their lost knowledge on Azeroth and using it to preserve their home without depending on intervention from external powers.
+An old High Order tradition calls for young mages who have attained a measure of magical proficiency to make their own spell focus. Belann Windwood, who has crafted wands and staves for the High Order for more than a century, teaches pupils to use fallen branches from ancient trees that retain traces of elemental wind magic. He observes that a suitable branch sometimes appears to choose its mage rather than the reverse.
+Skyborne magi draw much of their arcane strength from ley lines beneath the ground in the Elemental Plane. These ley lines have recently begun breaking through the surface, providing more direct and powerful access to their energies. Meanwhile, Belann Windwood observes that the number of Skyborne possessing a talent for magic is declining with each passing year.
+
+
+==== Druidism ====
+Druidism also survives among the shen'dorei, although its practitioners are described as rare. Some Skyborne are said to still "dream in emerald". Skyborne druids have preserved their own traditions of assuming animal forms through the guidance of powerful nature spirits native to their homeland. Urs'endris, the Great Windborne Bear Spirit, has instructed generations of Skyborne druids in assuming  [Bear Form]. He teaches that true strength is not merely physical, but also lies in the ability to confront adversity both within oneself and in the world. Xyton Silverwind describes the druidic path as that of "the fang, the claw, the feather, and the branch".
+Following their return to Azeroth, Skyborne druids began encountering the teachings of the Cenarion Circle. In Stormwind City, Sheldras Moontree welcomed a Skyborne druid and directed them toward the Circle's stronghold in Moonglade, where they could learn from its members.
+The Circle also accommodated the distinct druidic traditions of the shen'dorei. Dendrite Starblaze was contacted by Saeyleenan, the Great Windborne Cat Spirit of the Skyborne's homeland, whose avatar had appeared in Moonglade to guide a Skyborne druid. Dendrite acknowledged that the Skyborne's feline form differed somewhat from those traditionally assumed by Azerothian druids. Although the initiate was required to undertake the trial of the Great Cat Spirit of Azeroth, Saeyleenan personally oversaw their progress, testing their cunning, stealth, and ferocity before granting its blessing. The initiate subsequently learned to assume  [Cat Form] in the likeness of the Windborne Cat Spirit rather than that of an Azerothian feline spirit.
+
+
+=== Economy and technology ===
+Windstones contain concentrated elemental energy and serve as both a power source and currency on Zephras Isle. Their importance increased after the wind spirits disappeared and the magic sustaining the island began to fade. Small white recall crystals preserve spoken recordings, which can be heard when the crystals are touched.
+Mining continues on the floating islands despite thousands of years of habitation. One miner suggests that an unseen force periodically creates new mineral deposits, although this explanation is presented as conjecture.
+The magesmiths of Ban'aethal were widely regarded as the finest artisans in the Skyborne Isles. Following the settlement's ruin, the Nightclaw Druids recovered crafting plans from the site, which Vayn Moongaze offered to trusted allies. Their craft preserved ancient traditions: Falfaan Halfwind was trained by Antarion of Ban'aethal using secrets handed down from the ancient master magesmiths of Kalimdor.
+Among the Skyborne's most renowned ancient craftsmen was Luminarian, a legendary magesmith who accompanied their ancestors during their flight from Kalimdor and continued his work in the Skyborne Isles for centuries. According to Ealaane Nimbuswalker, many of the weapons and pieces of armor still used on Zephras Isle are fashioned in the style of his creations. Luminarian was responsible for the twin swords  [Eluvi'ana] and Eluvi'tor, whose remnants survived long after his death. His works bear distinctive arcane markers, one of which Ealaane also recognizes on an  [Ancient Heirloom] ring.
+The wind spirits provided the Skyborne with magical constructs and other devices maintained by the Windshapers. Constructs also served practical purposes, including trawling Windsong Lake for fish. Many constructs have ceased functioning, and repairs require recovering and reusing components. Some fell into Windsong Lake when the pylons failed. Windshaper custodians restrict the High Order's access to this machinery and object to its magisters experimenting with it.
+Aamelia Windfield and her husband Alvarion Windfield maintain Windfield Orchard. Aamelia Windfield describes a Malfunctioning Cyclone Construct that has wandered the fields for decades, possibly since the wind elementals departed. Alvarion Windfield suspected that it once transported harvests or tended livestock before the land became their orchard; Aamelia suggests that this earlier use could date back a thousand years. The construct also demonstrates defensive capabilities, intervening against the bandits threatening Windfield Orchard before returning to its resting state. Despite this intervention, Aamelia subsequently asks that a Windshaper inspect it to ensure that it is safe for her family.
+Engineering as practiced by outsiders is unfamiliar to at least some Skyborne: a Valanaar peacekeeper does not recognize the profession when asked for directions to a trainer.
+The Skyborne travel aboard airships called skycutters. Travel between the Skyborne Isles was formerly possible through routes known as skystreams, which have since become inaccessible, leaving settlements such as Shen'dramar and New Eldre'naar isolated from Zephras Isle. Skycutters can also traverse the boundaries between Skywall and Azeroth, although navigating the Elemental Plane safely requires calculations based on the flow of elemental energy. The High Order sought to gather such data from the Overlook Standing Stones using a device called the Index Esoteria, hoping to establish safe routes between the two planes.
+
+
+=== Customs and daily life ===
+Skyborne are given an ancient heirloom for their coming of age. The heirlooms were owned by Skyborne who came before, and once someone dies, the heirloom is retrieved to be passed on to a new youth. Upon death, a Skyborne's ashes are scattered to the winds.
+Recovered heirlooms are returned to a communal collection overseen by the High Elder, from which they can be entrusted to another generation. After the Al'Aketh attacked the Nightclaw Druids, Elegael Thornpaw ordered the recovery of the cultists' heirlooms but denied their dead the customary scattering of ashes, declaring that their bodies should be left to the forest's beasts.
+Skyborne clothcraft imitates the flowing movement of the winds. Its practitioners describe their work as a source of comfort following the spirits' departure. Many Skyborne also decorate their hair with hippogryph feathers. The creation of such adornments is valued as a means of bringing beauty and happiness to others during the crisis. The soft, slightly oily juvenile feathers of shrieklings are used for insulation against the cool and damp conditions of Shadowgale Forest.
+Flutterfly dust has some domestic uses. Alvarion Windfield recalls his mother using it as powder for babies to prevent diaper rash, although he knows of no other use for it.
+Skyborne cuisine preserves older kaldorei recipes in adapted forms, substituting ingredients no longer available in Skywall. Crab meat is a common meal on Zephras Isle, but is something of a delicacy on the islands of Anvilas and Siroccas. Other foods include eggs fried in ursera tallow. Stormapples, including the Red Delicious Stormapple variety, are cultivated at Windfield Orchard in the lowlands of Zephras Isle; berries are also grown on the island.
+Some Skyborne use hookahs for recreational purposes.[citation needed] Zerril Softbreeze also describes smoking dried  [Peacebloom] in a pipe.
+
+
+=== Language ===
+Skyborne speech frequently employs greetings, farewells, and blessings invoking the winds. Attested expressions include "Gale's greetings", "Winds be with you", and "May the winds guide you", as well as the variation "May the winds guide your path". 
+Lotheluum Starbreeze uses the untranslated expression Aeesha'el banu zepharaalis in a letter thanking an adventurer for assisting Ur'seris and helping to protect Shadowgale Forest. Its precise meaning is unknown.
+The Avatar of Saeyleenan invokes shadows, claws, and guiding winds in a blessing bestowed upon a Skyborne druid following their initiation into  [Cat Form].
+
+
+=== Names ===
+Several Skyborne given names contain doubled letters, particularly aa, as in Talaanis Shadowsong, Elaadrin Evengale, Belathaan Brightwish, Haalien, Falfaan Halfwind, and Ealaane Nimbuswalker. Other examples include the doubled i in Dorii Brightwhisper and the doubled n in Valennia Stormfist.
+Some Skyborne also bear surnames associated with the sun, dawn, and daylight, resembling the naming conventions of the high elves and blood elves of Quel'Thalas. Examples include Uualia Suncrest, Rathiril Sunlance, and Ayessa Dawnsinger. The surnames Sunlance and Dawnsinger are also borne by Thalassian elves, such as Kethiel Sunlance, Adelene Sunlance, Ambassador Dawnsinger, and Eressea Dawnsinger. Whether these similarities reflect shared ancient naming traditions or are coincidental is unknown.
+
+
+=== Organizations ===
+ The Windshapers — The Windshapers are shamanistic spiritual leaders of the Skyborne people on Zephras Isle. They honor the elements and seek to gain a better understanding of the nature of the elemental plane to protect the shen'dorei way of life within Skywall. They have joined the Horde after making contact with the Earthen Ring.
+ The High Order — The High Order are the Skyborne descendants of the Highborne magisters of Eldre'Thalas. Having spent the past 10,000 years in the realm of Skywall, members of the High Order seek to reclaim the ancient arcane knowledge of their forebears. They have joined the Alliance after making contact with the Kirin Tor.
+The Al'Aketh— They are a cult dedicated to the worship of Al'Akir the Windlord. Illaya Amberwind describes the cult's leaders as remnants of an older order of priests of Al'Akir, who exploited the fear surrounding the wind spirits' disappearance. The cult also recruited through missionaries who presented themselves as representatives of a conventional religious order, such as Sania Silverstream, whose presence in Shen'dar Village was tolerated to avoid open conflict. Among its members was Skypriest Faladiel, formerly a Windshaper and caller of the flame. The wind spirits rarely spoke of Al'Akir in their time with the skyborne, making the elemental lord a taboo and mystery. Some among the skyborne, however, were able to use their shamanistic sight to peer across the elemental plane and gain a glimpse of the terrifying might of this master of Skywall. Tempted by power, these shen'dorei broke with the rest of society and dedicated themselves to the service of Al'Akir. Emboldened by the departure of the benevolent windspirits, the Al'Aketh rose to prominence, using the crisis to sow fear and seize control of a large portion of Zephras Isle. Members of the Al'Aketh shave their heads and wear grey robes, an appearance that other Skyborne recognize as a sign of affiliation with the cult. Citizens explicitly warn others to be wary of those displaying these features.
+The Nightclaw Druids — The secretive druids of Shadowgale Forest, who operate independently, apart from any other faction on Zephras Isle. They maintain a conclave in a cave in northeastern Shadowgale Forest. Following the ruin of Ban'aethal and the outbreak of unrest on Zephras Isle, communication between the conclave and Lotheluum Starbreeze in Valanaar was disrupted.
+The Peacekeepers — The militia of Zephras Isle. The closest thing the Skyborne have to an army.
+The Empyrean Blades — The former personal guard of the Shal'nan before he went missing. They have now become the elites of the Peacekeepers.
+The Rangers of Thendal Grove — A group of rangers operating in and around Thendal Village on Zephras Isle.
+
+
+== Appearance ==
+
+Upon living for millennia within the elemental plane of air, the shen'dorei developed physical characteristics distinct from those of their kaldorei ancestors, becoming lighter and more agile, resembling more closely the high elves of Quel'Thalas. Their bodies gradually became more lithe and slender, while more dramatic changes emerged in recent generations.
+The first recorded instance of the "Sky-Touched Blessing", in which children are born with vivid cerulean skin, occurred fewer than five generations ago. Within one generation of its appearance, one child in twenty was born with the coloration; two generations later, the proportion had doubled. By the time of the Skyborne's return to Azeroth, three in ten children born on the Skyborne Isles had blue skin. Skyborne scholars believe that the remaining outward traces of their kaldorei ancestry may disappear within another two or three generations, although the transformation's cause is not fully understood.
+Among the NPCs encountered on Zephras Isle, blue skin is common among the Windshapers, while many members of the High Order have warmer skin tones.
+Elemental affinity can produce a perceptible physical sensation: one Skyborne describes feeling a slight static sensation on their skin near someone touched by the spirits, recognizing this as a characteristic of the Windshapers.
+Those of Highborne ancestry are said to have a slight magical twinkle in their eyes, regarded as a recognizable feature of the "High Order" appearance.
+Skyborne armor and weapons are made in the style of the legendary smith Luminarian.
+
+
+=== Lifespan ===
+The natural lifespan of the Skyborne has not been established. Valennia Stormfist served as captain of the Shal'nan's Empyrean Blades for nearly nine centuries, until his disappearance. The Shal'nan himself led the rebellion in Eldre'Thalas nearly ten thousand years before the Skyborne's return to Azeroth and remained among his people until his disappearance. Illaya Amberwind also describes having communed with the wind spirits for centuries.
+
+
+== Notable ==
+
+
+== Notes and trivia ==
+Valennia refers to Constable Aonda of Shen'dar Village as a "highlander", seemingly in reference to the Shen'dar Highlands.
+In the first World of Warcraft: Forever podcast, Josh "Aggrend" Greenfield explained the absence of playable Skyborne priests in terms of their aversion to religion and the association of their priesthood with the hostile Al'Aketh cult. Their religious practices are instead represented by shamanism.
+The developers have linked future Skyborne stories to the elemental rulers and the existing stories of Al'Akir, Ragnaros, Thunderaan, and Thunderfury.
+In the World of Warcraft: Forever beta, Brother Zendraas, a tailor from Falaath Village, explained that he had adopted the Al'Aketh's grey robes and religious professions to survive their occupation and had designed much of the cult's clothing.
+In the World of Warcraft: Forever beta,  [4] Harvesting Windstones stated that the wind elementals had vanished several centuries before the Skyborne's return to Azeroth. The current quest text instead describes their disappearance as having occurred "a number of years ago".
+Valennia Stormfist states in Bugged that she has been a professional warrior for over three hundred years, while separately describing nearly nine centuries of service as captain of the Shal'nan's Empyrean Blades. The two statements are not necessarily contradictory, since the first establishes no upper limit.
+Several Skyborne NPCs share surnames with other elven characters, including Talaanis Shadowsong and Dondallion Whisperwind among the night elves, and Ayessa Dawnsinger and Rathiril Sunlance among the names found in Quel'Thalas. Whether these shared surnames indicate actual familial relationships is unknown.
+Talaanis Shadowsong's uncertainty over whether Al'Akir may take years or decades to respond to the revelation of Zephras Isle resembles his portrayal as unpredictable and aloof in the Warcraft RPG.
+Skyborne are the first playable elven race that can be shaman, and the second able to be druids.
+Male Skyborne NPCs are voiced by Aleks Le. The voice actor for the Skyborne female is not yet known.
+"Zephras Blue" is a shade of housing dye in Midnight, serving as a tease for Zephras Isle, the Skyborne, and Forever before it was even announced.
+Skyborne may appear in Retail, but as of BlizzCon 2026, there are no plans to have them appear outside Forever.
+Before deciding on Skyborne, the Forever team considered having playable Thalassian high elves who started in Northshire Abbey alongside humans, but the idea didn't feel right. Chris Metzen encouraged the team to think bigger.
+
+
+=== Inspirations ===
+Belann Windwood's observation that a magical branch may choose its mage instead of the reverse in Boughs in the Wind recalls the wand-choosing-the-wizard motif in Harry Potter.
+The shaved heads of Al'Aketh cultists, together with their association with air and wind, recall the Air Nomads of Avatar: The Last Airbender.
+One of the Skyborne facial-marking customization options resembles the ancient Egyptian Eye of Horus.
+Skyborne may be inspired by Air genasi from Dungeons & Dragons, which are blue-skinned humans with air elemental ancestry.
+The translation of shen'dorei as "hidden people" recalls the huldufólk, the hidden people associated with elves in Icelandic folklore.
+The Skyborne Isles' floating settlements, magical minerals, and surviving ancient constructs recall elements of Hayao Miyazaki's Castle in the Sky.
+Skyborne may also draw inspiration from J. R. R. Tolkien's Calaquendi, the Elves of the Light, who dwelt in Aman under the protection and instruction of the Ainur.
+Their close relationship with the wind spirits, particularly among the Windshapers, recalls the Vanyar's closeness to the Valar, especially Manwë, the ruler of the winds and skies.
+The magesmiths of Ban'aethal, renowned throughout the Skyborne Isles and preserving the secrets of ancient craftsmanship originally from Kalimdor, recall the Noldor, renowned for their craftsmanship and learning under Aulë.
+The legendary magesmith Luminarian and the renowned artisans of Ban'aethal may also recall Celebrimbor and the Gwaith-i-Mírdain, the brotherhood of Elven smiths of Eregion in Tolkien's legendarium. Celebrimbor was their foremost craftsman, and their creations included the Rings of Power.
+Their sailing traditions recall the Teleri of Aman, who learned shipbuilding from the sea-spirit Ossë. The skycutter vessels also bear a visual resemblance to the Teleri's swan-shaped ships.
+Travel by skycutter between Azeroth and Skywall resembles the Elven voyages along the Straight Road. Following the Downfall of Númenor near the end of the Second Age, Elven ships could leave the curvature of the world and reach Aman, which had been removed from its ordinary geography.
+The removal of Zephras Isle to Skywall by the wind spirits recalls Tol Eressëa, an island used by the Vala Ulmo to transport Elves to Aman, where it became the home of the Teleri before they settled on the mainland.
+The High Order's departure from their elemental patrons' realm to reclaim their ancestral knowledge and achieve greater independence loosely recalls the Noldor's departure from Aman and return to Middle-earth.
+The name Valanaar resembles Valinor, while sharing the -naar ending found in Darnassian place names such as Dolanaar and Astranaar.
+The epithet "The Night Dancer" borne by  [Eluvi'ana] may allude to Lúthien, whose dancing in the forest of Neldoreth first attracted the attention of Beren in Tolkien's legendarium.
+The name Eluvi'tor bears a phonetic resemblance to Eru Ilúvatar, the supreme creator in Tolkien's legendarium.
+Several Skyborne names recall other settlements or evoke winds and weather:
+Zephras may derive from Zephyrus, the personification of the west wind in Greek mythology, whose name also gives the English word zephyr, meaning a gentle breeze.
+Siroccas and Sirocca "Swimmers" Starfeather resemble the Sirocco, a warm southerly Mediterranean wind that also gives the  [Scimitar of the Sirocco] its name.
+New Eldre'naar appears to commemorate Eldre'narr, the port from which the Skyborne's ancestors departed Kalimdor after fleeing Eldre'Thalas.
+Anvilas and Duke Anvillaxx, an air elemental summoned by Rohash, may refer to the anvil-shaped upper portion of a cumulonimbus incus cloud; the Latin word incus means "anvil".
+Shen'dramar resembles Shen'dralar and Shen'dralas, while its ending also recalls Suramar.
+
+
+== Rumors and speculation ==
+
+
+=== The missing wind spirits ===
+The Skyborne's elemental patrons may have been associated with Thunderaan. Rohash calls them his "wayward brothers" and credits them with concealing the Skyborne Isles from Al'Akir. This possibility is further supported by the developers' announced plans to connect future Skyborne stories with Thunderfury and Thunderaan.
+The Wind Hollows seem to be connected to the missing patrons and to the circumstances of their disappearance. They began appearing after the wind spirits departed, and their essences convey a sense of malevolence and regret. The Strange Hermit describes their sorrowful singing and suspects that a terrible event left spirits trapped in the ruins.
+
+
+=== Changes in magical aptitude and physiology ===
+The declining number of Skyborne gifted with magic, the diminishing prevalence of skysight, and the continuing physical transformation of their people may all be connected, though in different ways. Elaadrin Evengale describes the High Order's powers as having weakened in Skywall, while the Windshapers associate their diminished power with the departure of the spirits.
+
+
+=== Longevity ===
+The Shal'nan's presence from the rebellion nearly ten thousand years earlier until his disappearance suggests that he survived for many millennia. It is unclear whether this reflects the ordinary longevity of the Skyborne or circumstances particular to him.
+
+
+=== Population and family ties ===
+The family connections among several characters encountered on Zephras Isle may suggest a relatively small, closely connected society. Belathaan Brightwish is Valennia Stormfist's cousin, and his mother was a Windshaper; Commander Haalien is Elegael Thornpaw's cousin; and Talaanis Shadowsong learns of his nephew's death during the starting quests; High Priestess Lorthuna calls Ayessa Dawnsinger her "former sister", though that may indicate either a family relationship or an earlier spiritual affiliation.
+
+
+=== Luminarian and Ban'aethal ===
+The legendary magesmith Luminarian may have settled in Ban'aethal after accompanying the original Skyborne exiles into Skywall. The settlement was renowned for producing the finest magesmiths of the Skyborne Isles, while the  [Ancient Hilt] of one of Luminarian's legendary swords was discovered among its ruins. Furthermore, Altairus, who is encountered near the hilt, addresses his opponents as "disciples of the magesmith" when engaged in combat, possibly referring to Luminarian and suggesting a connection between his legacy and the settlement's artisans.
+
+
+=== The four winds ===
+Shadowgale Forest and the Ruins of Ban'aethal may be associated with the North Wind. The forest occupies the northern portion of Zephras Isle and is characterized by a cool, damp climate. Lotheluum Starbreeze alludes to the north wind's protection of the forest's hidden secrets. Furthermore, Altairus, known as the "Caller of the North Wind" and associated with the  [Reins of the Drake of the North Wind], can be encountered at Ban'aethal.
+Another possible association exists with the East Wind. During Confront Lorthuna, High Priestess Lorthuna summons Rohash, the Lord of the East Wind and a member of Al'Akir's Conclave of Wind, at the Rohashi Spires, located off the cliffs above the Shrine of Akir in the eastern portion of Zephras Isle.  The spires also bear his name.
+Together, these associations may suggest that the geography of Zephras Isle was deliberately designed to reflect the four cardinal winds. This interpretation is further supported by the fact that the Shrine of Akir was originally known as the Shrine of the Four Winds, suggesting that the four winds once held particular significance to the Skyborne before the shrine's association with Al'Akir. Windshaper Boro also speaks of seeking an audience with the "spirits of the four winds", while a Minor Manifestation of Earth addresses a Skyborne initiate as a "child of the four winds".
+
+
+=== The islands' original location ===
+The unnamed land reached by the Skyborne's ancestors after sailing west from Kalimdor may have formed part of, or lain near, the landmass beyond the Storming Sea where the Arathi Empire is located.
+
+
+== Gallery ==
+World of Warcraft
+
+		
+		
+		
+		
+		
+		
+		
+		
+
+Objects and technology
+
+		
+		
+		
+		
+		
+		
+
+Art and cinematics
+
+		
+		
+		
+
+
+== References ==

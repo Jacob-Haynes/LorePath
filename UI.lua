@@ -1107,7 +1107,12 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
     local stepTarget = (kind == "blocked") and detail or nextID
     s.stepButton.targetQuest = stepTarget
     s.stepButton:SetWidth(s.step:GetStringWidth() + 6)
-    s.stepButton:SetShown(true)
+    -- An open storyline's next quest on this page is already its brightest tile,
+    -- so the header only names it when it's somewhere you can't see: collapsed,
+    -- in another zone, or waiting on an earlier quest elsewhere.
+    local onPage = (kind == "available" or kind == "active") and not collapsed
+        and ns.Quests[nextID] ~= nil and ns.Quests[nextID].z == selectedZone
+    s.stepButton:SetShown(not onPage)
     s.stepButton:EnableMouse(stepTarget ~= nil and ns.Quests[stepTarget] ~= nil)
 
     if collapsed then
@@ -1208,6 +1213,8 @@ RenderZone = function()
     local top, maxWidth, hidden = PAD, viewWidth, 0
     local hideCompleted = ns.GetSetting("hideCompleted")
 
+    frame.loreSources:Hide()
+    frame.loreReveal:Hide()
     -- About this zone (issue #5): a short summary from the Warcraft Wiki, with
     -- the articles it came from (its licence asks for that). Collapsible, and
     -- remembered per page like a storyline.
@@ -1220,25 +1227,40 @@ RenderZone = function()
         s.count:SetText("")
         if not collapsed then
             -- The premise, then the chapters your finished quests have revealed.
-            local texts, articles, more = ns.GetLoreView(lore)
+            local texts, articles, more, others = ns.GetLoreView(lore)
             local body = AcquireText(canvas, "GameFontHighlight")
             body:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
             body:SetWidth(width - 16)
             body:SetText(table.concat(texts, "\n\n"))
             top = top + (body:GetStringHeight() or 0) + 8
+            local zoneName = ns.Possessive(ns.GetMapName(selectedZone))
             if more then
                 -- Names no quest, so it gives nothing away.
                 local hint = AcquireText(canvas, "GameFontNormalSmall")
                 hint:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
                 hint:SetWidth(width - 16)
-                hint:SetText("More of " .. ns.Possessive(ns.GetMapName(selectedZone)) .. " story to uncover")
+                hint:SetText("More of " .. zoneName .. " story to uncover")
                 top = top + (hint:GetStringHeight() or 0) + 6
             end
-            local credit = AcquireText(canvas, "GameFontDisableSmall")
-            credit:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
-            credit:SetWidth(width - 16)
-            credit:SetText(ns.LoreCredit({ articles = articles }))
-            top = top + (credit:GetStringHeight() or 0) + 2
+            if others > 0 then
+                -- Chapters only other races or classes unlock: playing won't
+                -- reveal them, so offer to.
+                local hint = AcquireText(canvas, "GameFontNormalSmall")
+                hint:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top - 3)
+                hint:SetText("More of " .. zoneName .. " story is told in other characters' quests")
+                local reveal = frame.loreReveal
+                reveal.lore = lore
+                reveal:ClearAllPoints()
+                reveal:SetPoint("LEFT", hint, "RIGHT", 8, 0)
+                reveal:Show()
+                top = top + 24
+            end
+            local sources = frame.loreSources
+            sources.articles = articles
+            sources:ClearAllPoints()
+            sources:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
+            sources:Show()
+            top = top + 16
         end
         top = top + SECTION_GAP
     end
@@ -2003,6 +2025,41 @@ local function CreateMainFrame()
     MakeScrollable(graphScroll, true)
     f.graphScroll = graphScroll
     f.canvas = canvas
+
+    -- The About section's "Sources": hover it for the wiki articles its lore came
+    -- from (they're credited there, as the wiki's licence asks).
+    local sources = CreateFrame("Button", nil, canvas)
+    sources.text = sources:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    sources.text:SetPoint("LEFT")
+    sources.text:SetText("Sources")
+    sources:SetSize(sources.text:GetStringWidth() + 4, 14)
+    sources:SetScript("OnEnter", function(self)
+        self.text:SetFontObject("GameFontHighlightSmall")
+        ns.ShowLoreSources(self, self.articles)
+    end)
+    sources:SetScript("OnLeave", function(self)
+        self.text:SetFontObject("GameFontDisableSmall")
+        GameTooltip:Hide()
+    end)
+    sources:Hide()
+    f.loreSources = sources
+    -- Reveal: show chapters that only other races' or classes' quests unlock.
+    local reveal = CreateFrame("Button", nil, canvas, "UIPanelButtonTemplate")
+    reveal:SetSize(70, 20)
+    reveal:SetText("Reveal")
+    reveal:SetScript("OnClick", function(self)
+        ns.revealedLore[self.lore] = true
+        RenderZone()
+    end)
+    reveal:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+        GameTooltip:AddLine("Reveal", 1, 0.82, 0)
+        GameTooltip:AddLine("Read the chapters of this zone's story that follow quests for other races or classes. Your own quests' chapters still wait until you finish them.", 1, 1, 1, true)
+        GameTooltip:Show()
+    end)
+    reveal:SetScript("OnLeave", GameTooltip_Hide)
+    reveal:Hide()
+    f.loreReveal = reveal
 
     -- Header row: list toggle, zone name and progress, expand/collapse buttons
     local listToggle = CreateFrame("Button", nil, f)
