@@ -126,7 +126,7 @@ WoW Forever's own quests aren't in any quest database, so the only source for th
 
 | Data | Source |
 | :--- | :--- |
-| Which quests exist, their chains, level, faction/race/class, profession and reputation requirements, repeatables, start location, quest giver, item rewards, and dungeon and raid pages | [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings)' WoW Forever database (MIT), extracted into `Data/Quests.lua`: 4,334 quests on 49 zone pages and 32 instance pages (27 dungeon pages, counting Scarlet Monastery's two wings, 1 raid and 4 battlegrounds). Also each quest's starting item, where it's picked up inside an instance, and AllTheThings' notes on 89 quests, in `Data/QuestNotes.lua` |
+| Which quests exist, their chains, level, faction/race/class, profession and reputation requirements, repeatables, start location, quest giver, item rewards, and dungeon and raid pages | [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings)' WoW Forever database (MIT), extracted into `Data/Quests.lua`: 4,434 quests on 49 zone pages and 32 instance pages (27 dungeon pages, counting Scarlet Monastery's two wings, 1 raid and 4 battlegrounds). Also each quest's starting item, where it's picked up inside an instance, and AllTheThings' notes on 92 quests, in `Data/QuestNotes.lua` |
 | What you've completed, what's in your log, your level, race, class, faction, professions and reputation | The game client, live |
 | Quest, zone, item, NPC and faction names | The game client, in your language |
 | Level ranges of zones, dungeons, raids and battlegrounds | The game client's Looking for Group list, live |
