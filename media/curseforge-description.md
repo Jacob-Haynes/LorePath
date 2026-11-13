@@ -63,4 +63,4 @@ Lore for zones, places and characters, and a searchable codex, are planned.
 - **Vanilla quest text:** [pfQuest](https://github.com/shagu/pfQuest) (MIT), originally from VMaNGOS.
 - **Community quest text:** collected in game by LorePath's players.
 
-Bugs and ideas: [GitHub](https://github.com/Jacob-Haynes/LorePath)
+Bugs and ideas: [GitHub](https://github.com/Jacob-Haynes/LorePath) Or via [Curse](https://legacy.curseforge.com/wow/addons/lorepath/settings/issues)
