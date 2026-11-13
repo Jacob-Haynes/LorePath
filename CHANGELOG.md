@@ -1,6 +1,17 @@
 # Changelog
 
-## Unreleased
+## 1.3.0
+
+Everything from the 1.3.0 betas (details below), plus two more changes. The highlights:
+
+- **Story so far:** a **Story so far** button in a storyline's header opens its story in the side panel: the text of each quest you've finished in it, in order. It follows the chain across zones, back to where it began and on past this page, and says where it goes next. Only quests you've finished, so nothing ahead is spoiled.
+- **Storylines follow their chains:** parts of one chain that only meet in another zone, or that leave a page and come back, now show as one storyline, and a chain keeps its name across zones. Hover a storyline's name to see where its chain began.
+- **Better storyline names:** a storyline that opens with an errand or a breadcrumb named after an NPC is named after the quest it leads to.
+- **Your own version of a quest:** class quests on zone pages, and WoW Forever's starting-area chains like The Adventurer, show the version for your class and starting area, not every one.
+- **Latest AllTheThings data:** 100 more quests, among them the racial mount quests, and start points for 111 quests that had none.
+- **Fixes:** A Quick Craft no longer shows for the Horde, and dungeon item quests show the portal icon.
+
+Since 1.3.0-beta6:
 
 - **Latest AllTheThings data:** 19 more quests, 12 of them in one of WoW Forever's own dungeons, five quests now marked as breadcrumbs, and two new notes, among them how to use the disguise in Jaina's tower. Desolace's later Gelkis Clan quests are open to both factions, not just the Horde.
 - **A Quick Craft is Alliance only:** the Ironforge quest no longer shows for the Horde, and for the Alliance it now comes after the Redridge quest that leads to it instead of waiting on a quest you couldn't see. Other quests that only follow one faction's quests are now marked as that faction's, which matters most when the chain crosses zones.
