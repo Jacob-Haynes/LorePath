@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Show in LorePath from a quest giver:** the quest dialog a quest giver opens now has the same LorePath book button as the quest log, opening the quest it's showing in its storyline, with its details.
+
 ## 1.3.0
 
 Everything from the 1.3.0 betas (details below), plus two more changes. The highlights:

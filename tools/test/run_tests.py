@@ -663,6 +663,39 @@ check(ns.detailQuest == tid, f"ShowInLorePath({tid}) opens that quest")
 g.C_QuestLog.GetSelectedQuest = lua.eval("function() return 0 end")
 g.QuestMapFrame = None
 ns.HideDetail()
+
+# --- From a quest giver's dialog to LorePath ---
+check(ns.questDialogButton is None, "with no quest dialog frame, no dialog button is made")
+g.QuestFrame = harness.MockObject("Frame")
+harness.Fire("ADDON_LOADED", "SomethingElse")
+qdb = ns.questDialogButton
+check(qdb is not None and same(qdb["__parent"], g.QuestFrame), "the quest giver's dialog gets a LorePath button")
+check(not same(qdb, qlb), "separate from the quest log's")
+harness.Fire("PLAYER_LOGIN")
+check(same(ns.questDialogButton, qdb), "and only one")
+saved_get_quest_id = g.GetQuestID
+g.GetQuestID = lua.eval(f"function() return {tid} end")
+check(ns.DialogQuest() == tid, "the dialog's quest is read with GetQuestID")
+frame.Hide(frame)
+qdb["__scripts"]["OnClick"](qdb)
+check(frame.IsShown(frame) and ns.focusedQuest == tid and ns.detailQuest == tid
+      and g.LorePathDetailFrame.IsShown(g.LorePathDetailFrame),
+      "the dialog button opens LorePath on the quest giver's quest, with its details")
+g.GameTooltip.lines = lua.table()
+qdb["__scripts"]["OnEnter"](qdb)
+check(any("Show in LorePath" in str(l) for l in g.GameTooltip.lines.values()), "the dialog button has a tooltip")
+ns.HideDetail()
+g.GetQuestID = lua.eval("function() return 999999 end")
+g.GameTooltip.lines = lua.table()
+qdb["__scripts"]["OnEnter"](qdb)
+check(any("doesn't have this quest" in str(l) for l in g.GameTooltip.lines.values()),
+      "for a quest LorePath doesn't have, the tooltip says so")
+qdb["__scripts"]["OnClick"](qdb)
+check(ns.detailQuest is None, "and clicking it opens nothing")
+g.GetQuestID = lua.eval("function() return 0 end")
+check(ns.DialogQuest() is None, "with no quest showing, there's no dialog quest")
+g.GetQuestID = saved_get_quest_id
+ns.HideDetail()
 harness.RunTimers()
 
 g.LorePathDB["collapsed"] = lua.table_from({"s7": True})

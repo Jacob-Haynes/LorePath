@@ -1,6 +1,7 @@
--- From the game's quest log to LorePath: a LorePath button on the quest log
--- that opens the selected quest in LorePath's window and details panel. (The
--- other way, LorePath to the quest log, is ns.OpenInQuestLog in Core.lua.)
+-- From the game's quest log to LorePath: a LorePath button on the quest log,
+-- and on the dialog a quest giver opens, that opens the quest in LorePath's
+-- window and details panel. (The other way, LorePath to the quest log, is
+-- ns.OpenInQuestLog in Core.lua.)
 
 local addonName, ns = ...
 
@@ -35,6 +36,18 @@ function ns.SelectedLogQuest()
     return nil
 end
 
+-- The quest a quest giver's dialog is showing (offering, asking for items, or
+-- rewarding), or nil.
+function ns.DialogQuest()
+    if type(GetQuestID) == "function" then
+        local ok, id = pcall(GetQuestID)
+        if ok and type(id) == "number" and id > 0 then
+            return id
+        end
+    end
+    return nil
+end
+
 -- Opens LorePath on a quest: its zone, its storyline, and its details panel.
 function ns.ShowInLorePath(id)
     if not id then
@@ -53,11 +66,9 @@ function ns.ShowInLorePath(id)
     return true
 end
 
--- A small book button on the quest log. Forever's client may have the modern
--- quest log (beside the world map, QuestMapFrame) or the classic window
--- (QuestLogFrame); the button goes on whichever exists, once.
-local function MakeButton(parent, anchor, x, y)
-    local b = CreateFrame("Button", "LorePathQuestLogButton", parent)
+-- A small book button that opens questFn()'s quest in LorePath.
+local function MakeButton(name, questFn, parent, anchor, x, y)
+    local b = CreateFrame("Button", name, parent)
     b:SetSize(24, 24)
     b:SetPoint("TOPRIGHT", anchor, "TOPRIGHT", x, y)
     b:SetFrameLevel((parent:GetFrameLevel() or 0) + 10)
@@ -65,12 +76,12 @@ local function MakeButton(parent, anchor, x, y)
     b:SetPushedTexture(ICON)
     b:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square", "ADD")
     b:SetScript("OnClick", function()
-        ns.ShowInLorePath(ns.SelectedLogQuest())
+        ns.ShowInLorePath(questFn())
     end)
     b:SetScript("OnEnter", function(self)
         GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
         GameTooltip:AddLine("Show in LorePath", 1, 0.82, 0)
-        local id = ns.SelectedLogQuest()
+        local id = questFn()
         if id and ns.Quests[id] then
             GameTooltip:AddLine("Opens " .. ns.GetQuestNameOrID(id) .. " in its storyline, with its details.", 1, 1, 1, true)
         elseif id then
@@ -84,15 +95,30 @@ local function MakeButton(parent, anchor, x, y)
     return b
 end
 
+-- Forever's client may have the modern quest log (beside the world map,
+-- QuestMapFrame) or the classic window (QuestLogFrame); the button goes on
+-- whichever exists, once.
 function ns.AttachQuestLogButton()
     if ns.questLogButton then
         return ns.questLogButton
     end
     local details = QuestMapFrame and QuestMapFrame.DetailsFrame
     if type(details) == "table" and details.GetObjectType then
-        ns.questLogButton = MakeButton(details, details, -6, -6)
+        ns.questLogButton = MakeButton("LorePathQuestLogButton", ns.SelectedLogQuest, details, details, -6, -6)
     elseif type(QuestLogFrame) == "table" and QuestLogFrame.GetObjectType then
-        ns.questLogButton = MakeButton(QuestLogFrame, QuestLogFrame, -40, -40)
+        ns.questLogButton = MakeButton("LorePathQuestLogButton", ns.SelectedLogQuest, QuestLogFrame, QuestLogFrame, -40, -40)
     end
     return ns.questLogButton
+end
+
+-- The same button on the dialog a quest giver opens (QuestFrame), for the
+-- quest it's showing: offered, being handed in, or being rewarded. Once.
+function ns.AttachQuestDialogButton()
+    if ns.questDialogButton then
+        return ns.questDialogButton
+    end
+    if type(QuestFrame) == "table" and QuestFrame.GetObjectType then
+        ns.questDialogButton = MakeButton("LorePathQuestDialogButton", ns.DialogQuest, QuestFrame, QuestFrame, -8, -28)
+    end
+    return ns.questDialogButton
 end
