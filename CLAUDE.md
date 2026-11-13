@@ -21,6 +21,7 @@ All checked in game. The client is mainline-based, but don't assume retail behav
   - `qss` is the item that starts a quest (`si`); `crs` lists creatures, but ATT rarely says where creatures are.
   - A quest with no recorded giver isn't necessarily picked up inside an instance; only mark `di` when ATT names a giver.
   - Instance wings are headers with their own `lvl`; their names are in `LocalizationDB.lua`.
+  - `u=1` (never implemented) also marks hidden steps of real chains: A Quick Craft (95818) needs 95817, `u=1`, after 95816. ATT often gives such a chain no faction (`r`); only the vendor (`n(..., {r=2})`) selling its start item says whose it is. `settle_chains` in the extractor fills both in.
   - ATT files some quests under an instance they aren't given in (Quel'Serrar is under Onyxia's Lair, given in Dire Maul).
   - Places that aren't zones are headers straight under a continent, with the maps they span: Timbermaw Hold is `h(-388, {maps = {1448, 1452}})` under Kalimdor. Their quests go in the zone they start in, if it's one of those maps, else the first; without that they'd land on the continent's page.
 - **pfQuest** (`tools/extract_pfquest.py`, `tools/extract_quest_starts.py`): creatures and objects are placed by the game's zone **area** IDs, not map IDs; `AREA_TO_MAP` converts them. A creature can spawn both outdoors and in an instance (Blackfathom Tide Priestess), so a dungeon quest's item source is placed in the dungeon.
