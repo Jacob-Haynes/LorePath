@@ -1208,7 +1208,7 @@ RenderZone = function()
                 local hint = AcquireText(canvas, "GameFontNormalSmall")
                 hint:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
                 hint:SetWidth(width - 16)
-                hint:SetText("More to uncover in " .. ns.GetMapName(selectedZone) .. "'s storylines")
+                hint:SetText("More of " .. ns.Possessive(ns.GetMapName(selectedZone)) .. " story to uncover")
                 top = top + (hint:GetStringHeight() or 0) + 6
             end
             local credit = AcquireText(canvas, "GameFontDisableSmall")

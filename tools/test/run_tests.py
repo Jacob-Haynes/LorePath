@@ -555,7 +555,10 @@ ns.ZoneLore[lore_zone] = lua.table_from({
         lua.table_from({"after": closed_quest, "articles": lua.table_from(["Chapter B Article"]), "text": "Elsewhere, B."}),
         lua.table_from({"after": qc, "articles": lua.table_from(["Chapter C Article"]), "text": "At last, C."}),
     ])})
-hint_text = "More to uncover in " + ns.GetMapName(lore_zone) + "'s storylines"
+check(ns.Possessive("Tirisfal Glades") == "Tirisfal Glades'" and ns.Possessive("Elwynn Forest") == "Elwynn Forest's",
+      "a name ending in s takes just an apostrophe, others 's")
+lore_name = ns.GetMapName(lore_zone)
+hint_text = "More of " + lore_name + ("'" if lore_name.endswith("s") else "'s") + " story to uncover"
 def lore_body():
     return [t for t in canvas_texts() if t.startswith("Long ago, a test.")][0]
 lore_row["__scripts"]["OnClick"](lore_row)

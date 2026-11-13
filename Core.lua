@@ -928,6 +928,14 @@ function ns.GetLoreView(lore)
     return texts, articles, more
 end
 
+-- "Tirisfal Glades'" and "Elwynn Forest's": a name's English possessive.
+function ns.Possessive(name)
+    if string.sub(name, -1) == "s" then
+        return name .. "'"
+    end
+    return name .. "'s"
+end
+
 -- The credit under a lore summary, naming its articles as the wiki's licence asks.
 function ns.LoreCredit(lore)
     local quoted = {}
