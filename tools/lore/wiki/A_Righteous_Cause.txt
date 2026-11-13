@@ -1,6 +1,7 @@
 title: A Righteous Cause
 revision: 6969987
 part: whole
+quest: 96896
 url: https://warcraft.wiki.gg/wiki/A_Righteous_Cause
 
 == Objectives ==

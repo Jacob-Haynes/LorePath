@@ -30,6 +30,14 @@ people), then one "source: <article title> @ <revision>" line for each article
 the summary was written from (the revision it was written from; leave it empty
 until there's text), then a blank line and the summary. Paragraphs are
 separated by blank lines. Lines starting with "#" are comments.
+
+Chapters: after the premise (which is setting only, so it spoils nothing), an
+entry can have chapters, each shown in game only once the character has
+finished its quest. A chapter starts with "after <quest ID> <quest name>" (the
+name is for people), then its own "source:" lines and its text, as for an
+entry. Every chapter's quest must be in Data/Quests.lua; when one of its
+sources is the quest's own wiki article, fetch and status check that the
+article's quest ID is the chapter's.
 """
 
 import json
@@ -64,41 +72,63 @@ FOREVER_CATEGORIES = ["Forever zones", "Forever instances", "Forever subzones", 
 # zones.txt
 # ---------------------------------------------------------------------------
 
+AFTER = re.compile(r"^after (\d+)(?: (.*))?$")
+
+
+def _paragraphs(body):
+    paragraphs, current = [], []
+    for line in body:
+        if line.strip():
+            current.append(line.strip())
+        elif current:
+            paragraphs.append(" ".join(current))
+            current = []
+    if current:
+        paragraphs.append(" ".join(current))
+    return "\n\n".join(paragraphs)
+
+
+def _check_sources(part, label):
+    if not part["sources"]:
+        raise SystemExit(f"zones.txt: {label} has no source")
+    if part["text"] and any(rev is None for _, rev in part["sources"]):
+        raise SystemExit(f"zones.txt: {label} has text but a source with no revision")
+
+
 def parse_zones(text):
-    """Entries in file order: {id, name, sources: [(title, revision or None)], text}."""
-    entries, entry, body = [], None, []
+    """Entries in file order: {id, name, sources: [(title, revision or None)], text,
+    chapters: [{after, name, sources, text}]}."""
+    entries, entry, part, body = [], None, None, []
     in_header = False
 
-    def finish():
-        if entry is not None:
-            paragraphs, current = [], []
-            for line in body:
-                if line.strip():
-                    current.append(line.strip())
-                elif current:
-                    paragraphs.append(" ".join(current))
-                    current = []
-            if current:
-                paragraphs.append(" ".join(current))
-            entry["text"] = "\n\n".join(paragraphs)
-            entries.append(entry)
+    def finish_part():
+        if part is not None:
+            part["text"] = _paragraphs(body)
 
     for number, line in enumerate(text.splitlines(), 1):
         if line.startswith("#"):
             continue
         if line.startswith("== "):
-            finish()
+            finish_part()
             parts = line[3:].split(None, 1)
             try:
                 map_id = int(parts[0])
             except (IndexError, ValueError):
                 raise SystemExit(f"zones.txt line {number}: expected '== <map ID> <name>'")
-            entry, body = {"id": map_id, "name": parts[1] if len(parts) > 1 else "", "sources": []}, []
-            in_header = True
+            entry = {"id": map_id, "name": parts[1] if len(parts) > 1 else "", "sources": [], "chapters": []}
+            entries.append(entry)
+            part, body, in_header = entry, [], True
             continue
         if entry is None:
             if line.strip():
                 raise SystemExit(f"zones.txt line {number}: text before the first entry")
+            continue
+        after = AFTER.match(line)
+        if after:
+            finish_part()
+            part = {"after": int(after.group(1)), "name": (after.group(2) or "").strip(), "sources": []}
+            entry["chapters"].append(part)
+            body, in_header = [], True
             continue
         if in_header and line.startswith("source:"):
             value = line.split(":", 1)[1]
@@ -108,22 +138,52 @@ def parse_zones(text):
                 raise SystemExit(f"zones.txt line {number}: a source needs an article title")
             if revision and not revision.isdigit():
                 raise SystemExit(f"zones.txt line {number}: '{revision}' isn't a revision number")
-            entry["sources"].append((title, int(revision) if revision else None))
+            part["sources"].append((title, int(revision) if revision else None))
         else:
             in_header = False
             body.append(line)
-    finish()
+    finish_part()
 
     seen = set()
     for e in entries:
         if e["id"] in seen:
             raise SystemExit(f"zones.txt: map {e['id']} has two entries")
         seen.add(e["id"])
-        if not e["sources"]:
-            raise SystemExit(f"zones.txt: map {e['id']} ({e['name']}) has no source")
-        if e["text"] and any(rev is None for _, rev in e["sources"]):
-            raise SystemExit(f"zones.txt: map {e['id']} ({e['name']}) has text but a source with no revision")
+        _check_sources(e, f"map {e['id']} ({e['name']})")
+        quests = set()
+        for c in e["chapters"]:
+            label = f"map {e['id']} ({e['name']}), the chapter after quest {c['after']}"
+            _check_sources(c, label)
+            if c["after"] in quests:
+                raise SystemExit(f"zones.txt: map {e['id']} ({e['name']}) has two chapters after quest {c['after']}")
+            quests.add(c["after"])
+            if c["text"] and not e["text"]:
+                raise SystemExit(f"zones.txt: {label} has text but the zone has no summary to go under")
     return entries
+
+
+def all_sources(entries):
+    """Every (title, revision, entry, chapter or None) a summary or chapter names."""
+    for e in entries:
+        for title, revision in e["sources"]:
+            yield title, revision, e, None
+        for c in e["chapters"]:
+            for title, revision in c["sources"]:
+                yield title, revision, e, c
+
+
+def quest_ids():
+    """The quest IDs in LorePath's data (Data/Quests.lua's ns.Quests)."""
+    with open(QUESTS, encoding="utf-8") as f:
+        text = f.read()
+    start = text.index("ns.Quests = {")
+    end = text.index("\n}", start)
+    return {int(q) for q in re.findall(r"^\[(\d+)\]=\{", text[start:end], re.M)}
+
+
+def unknown_chapters(entries, quests):
+    """(entry, chapter) for each chapter whose quest isn't in LorePath's data."""
+    return [(e, c) for e in entries for c in e["chapters"] if c["after"] not in quests]
 
 
 def read_zones():
@@ -140,23 +200,36 @@ def render_lua(entries):
         "-- Generated by tools/wiki_lore.py from tools/lore/zones.txt. Do not edit by hand.",
         "-- Zone lore summarised from the Warcraft Wiki (https://warcraft.wiki.gg), whose text is",
         "-- CC BY-SA 4.0; these summaries are under the same licence (see Data/WarcraftWiki-LICENSE.txt).",
-        "-- Each entry names the articles it was summarised from.",
+        "-- Each entry names the articles it was summarised from; a chapter is shown once its quest",
+    "-- (after) is done.",
         "local _, ns = ...",
         "ns.ZoneLore = {",
     ]
+    def articles(part):
+        return "{" + ",".join(lua_string(title) for title, _ in part["sources"]) + "}"
+
     for e in sorted((e for e in entries if e["text"]), key=lambda e: e["id"]):
-        articles = ",".join(lua_string(title) for title, _ in e["sources"])
-        lines.append(f"[{e['id']}]={{articles={{{articles}}},text={lua_string(e['text'])}}},")
+        chapters = [c for c in e["chapters"] if c["text"]]
+        line = f"[{e['id']}]={{articles={articles(e)},text={lua_string(e['text'])}"
+        if chapters:
+            line += ",chapters={" + ",".join(
+                f"{{after={c['after']},articles={articles(c)},text={lua_string(c['text'])}}}" for c in chapters) + "}"
+        lines.append(line + "},")
     lines.append("}")
     return "\n".join(lines) + "\n"
 
 
 def build():
     entries = read_zones()
+    unknown = unknown_chapters(entries, quest_ids())
+    if unknown:
+        raise SystemExit("zones.txt: these chapters' quests aren't in Data/Quests.lua: " + ", ".join(
+            f"{c['after']} {c['name']} ({e['name']})" for e, c in unknown))
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(render_lua(entries))
     written = sum(1 for e in entries if e["text"])
-    print(f"Wrote {OUT}: {written} of {len(entries)} zones have lore.")
+    chapters = sum(1 for e in entries if e["text"] for c in e["chapters"] if c["text"])
+    print(f"Wrote {OUT}: {written} of {len(entries)} zones have lore, with {chapters} chapters.")
 
 
 # ---------------------------------------------------------------------------
@@ -171,13 +244,15 @@ def article_url(title):
     return f"{WIKI}/wiki/{urllib.parse.quote(title.replace(' ', '_'))}"
 
 
-def render_snapshot(title, revision, part, text):
-    return (f"title: {title}\nrevision: {revision}\npart: {part}\nurl: {article_url(title)}\n\n"
+def render_snapshot(title, revision, part, text, quest=None):
+    quest_line = f"quest: {quest}\n" if quest else ""
+    return (f"title: {title}\nrevision: {revision}\npart: {part}\n{quest_line}url: {article_url(title)}\n\n"
             f"{text.strip()}\n")
 
 
 def read_snapshot(title):
-    """{title, revision, part, text}, or None if there's no snapshot."""
+    """{title, revision, part, quest, text}, or None if there's no snapshot. quest is
+    the quest ID in a quest article's Questbox (None for other articles)."""
     try:
         with open(snapshot_path(title), encoding="utf-8") as f:
             content = f.read()
@@ -186,7 +261,8 @@ def read_snapshot(title):
     head, _, text = content.partition("\n\n")
     fields = dict(line.split(": ", 1) for line in head.splitlines() if ": " in line)
     return {"title": fields.get("title", title), "revision": int(fields.get("revision", 0)),
-            "part": fields.get("part", ""), "text": text.strip()}
+            "part": fields.get("part", ""), "quest": int(fields["quest"]) if fields.get("quest") else None,
+            "text": text.strip()}
 
 
 def read_forever_list():
@@ -282,6 +358,35 @@ def fetch_pages(titles, forever):
     return pages
 
 
+QUESTBOX_ID = re.compile(r"\{\{\s*Questbox\b[^}]*?\|\s*id\s*=\s*(\d+)", re.S | re.I)
+
+
+def fetch_quest_ids(titles):
+    """{asked title: quest ID} for the titles that are quest articles (a Questbox
+    with an id). TextExtracts drops the infobox, so this reads the wikitext."""
+    ids = {}
+    for start in range(0, len(titles), BATCH):
+        batch = titles[start:start + BATCH]
+        data = api_get({"action": "query", "prop": "revisions", "rvprop": "content", "rvslots": "main",
+                        "redirects": 1, "titles": "|".join(batch)})
+        query = data.get("query", {})
+        renamed = {}
+        for step in query.get("normalized", []) + query.get("redirects", []):
+            renamed[step["from"]] = step["to"]
+        found = {p["title"]: p for p in query.get("pages", []) if not p.get("missing")}
+        for asked in batch:
+            title = asked
+            while title in renamed:
+                title = renamed[title]
+            page = found.get(title)
+            if not page or not page.get("revisions"):
+                continue
+            match = QUESTBOX_ID.search(page["revisions"][0]["slots"]["main"].get("content", ""))
+            if match:
+                ids[asked] = int(match.group(1))
+    return ids
+
+
 # ---------------------------------------------------------------------------
 # The report
 # ---------------------------------------------------------------------------
@@ -292,17 +397,36 @@ def lore_pages():
         return {int(z) for z in re.findall(r"\bz=(-?\d+)", f.read())}
 
 
-def report(entries, forever_lists, new_forever=None, missing=()):
+def chapter_problems(entries, quests):
+    """(entry, chapter, what's wrong) for chapters whose quest isn't in LorePath's
+    data, or whose quest-article sources are all about another quest."""
+    problems = []
+    for e, c in unknown_chapters(entries, quests):
+        problems.append((e, c, "isn't in LorePath's quest data"))
+    for e in entries:
+        for c in e["chapters"]:
+            ids = {}
+            for title, _ in c["sources"]:
+                snap = read_snapshot(title)
+                if snap and snap["quest"]:
+                    ids[title] = snap["quest"]
+            if ids and c["after"] not in ids.values():
+                articles = ", ".join(f"[{t}]({article_url(t)}) is quest {q}" for t, q in ids.items())
+                problems.append((e, c, f"doesn't match its quest article: {articles}"))
+    return problems
+
+
+def report(entries, forever_lists, new_forever=None, missing=(), quests=None):
     """Markdown: what needs a look, from the committed (or just fetched) snapshots."""
     out = []
-    stale = []
-    for e in entries:
-        if not e["text"]:
+    stale, seen = [], set()
+    for title, revision, e, c in all_sources(entries):
+        if not (c or e)["text"] or not e["text"]:
             continue
-        for title, revision in e["sources"]:
-            snap = read_snapshot(title)
-            if snap and snap["revision"] != revision:
-                stale.append((e, title, revision, snap["revision"]))
+        snap = read_snapshot(title)
+        if snap and snap["revision"] != revision and (e["id"], title, revision) not in seen:
+            seen.add((e["id"], title, revision))
+            stale.append((e, title, revision, snap["revision"]))
     out.append("### Summaries to update")
     if stale:
         out.append("Their articles' text has changed since they were written. Update the summary in "
@@ -316,6 +440,16 @@ def report(entries, forever_lists, new_forever=None, missing=()):
         out.append("None: every summary was written from its articles' current text.")
     out.append("")
 
+    problems = chapter_problems(entries, quest_ids() if quests is None else quests)
+    if problems:
+        out.append("### Chapters to check")
+        out.append("A chapter is shown once its `after` quest is done, so that quest must be the one its story "
+                   "comes from, and one LorePath knows. Fix the quest ID in `tools/lore/zones.txt` (or the source).")
+        out.append("")
+        for e, c, why in problems:
+            out.append(f"- **{e['name']}** ({e['id']}): the chapter after {c['after']} {c['name']} {why}")
+        out.append("")
+
     if missing:
         out.append("### Sources that weren't found")
         out.append("Renamed or deleted on the wiki? Fix the title in `tools/lore/zones.txt`.")
@@ -323,7 +457,7 @@ def report(entries, forever_lists, new_forever=None, missing=()):
         out += [f"- {title}" for title in missing]
         out.append("")
 
-    used = {title for e in entries for title, _ in e["sources"]}
+    used = {title for title, _, _, _ in all_sources(entries)}
     if new_forever:
         out.append("### New Forever articles")
         out.append("New on the wiki since the last check. Worth a summary, or a line in one?")
@@ -361,11 +495,14 @@ def fetch(report_file):
         (c, t) for c in FOREVER_CATEGORIES for t in sorted(lists[c]) if t not in old_titles]
     forever = {t for titles in lists.values() for t in titles}
 
-    titles = sorted({title for e in entries for title, _ in e["sources"]})
+    titles = sorted({title for title, _, _, _ in all_sources(entries)})
     # Forever quest articles a summary uses aren't in the watched categories.
     forever |= {t for t in titles if "(Forever)" in t}
     forever |= set(fetch_forever_members(titles))
     pages = fetch_pages(titles, forever)
+    # Chapters' sources: which are quest articles, and for which quest.
+    chapter_titles = sorted({title for title, _, _, c in all_sources(entries) if c})
+    quest_of = fetch_quest_ids(chapter_titles)
     changed = 0
     for title in titles:
         page = pages.get(title)
@@ -374,10 +511,14 @@ def fetch(report_file):
         old = read_snapshot(title)
         # Keep the snapshot (and its revision) unless the text itself changed,
         # so edits elsewhere in a long article don't show up as changes.
+        quest = quest_of.get(title)
         if old and old["text"] == page["text"].strip() and old["part"] == page["part"]:
+            if old["quest"] != quest:
+                with open(snapshot_path(title), "w", encoding="utf-8") as f:
+                    f.write(render_snapshot(title, old["revision"], old["part"], old["text"], quest))
             continue
         with open(snapshot_path(title), "w", encoding="utf-8") as f:
-            f.write(render_snapshot(title, page["revision"], page["part"], page["text"]))
+            f.write(render_snapshot(title, page["revision"], page["part"], page["text"], quest))
         changed += 1
     missing = [t for t in titles if t not in pages]
 

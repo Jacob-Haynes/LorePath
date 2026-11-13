@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Lore chapters:** a zone's About section now grows as you play. Under its opening lines, each chapter of the zone's story appears once you've finished the quest that reveals it, and a line tells you when there's more to uncover in the zone's storylines, without naming a quest. Tirisfal Glades has the first: Naxxramas' attack on the Undercity and the story of Bandarion Keep and its Forsaken paladins. **Show spoilers** shows every chapter.
+
 ## 1.4.0-beta1
 
 - **About this zone:** a zone's page now opens with a few lines of its lore as it is in WoW Forever, summarised from the Warcraft Wiki, for the starting zones to begin with, Zephras Isle among them. Tirisfal Glades' tells of Bandarion Keep and the Forsaken paladins. Click its header to collapse it.

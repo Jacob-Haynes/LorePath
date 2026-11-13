@@ -1,0 +1,44 @@
+title: Bandarion Keep (quest)
+revision: 6969984
+part: whole
+quest: 96899
+url: https://warcraft.wiki.gg/wiki/Bandarion_Keep_%28quest%29
+
+== Objectives ==
+Meet Leonid Barthalomew at Bandarion Keep in Tirisfal Glades.
+
+
+== Description ==
+You've done a great thing for the cause of the Argent Dawn here today, and I thank you. I don't know how familiar you are with the fortress of Bandarion Keep, but my commander and I were headed that way to meet with the paladins that reside there. That was before we learned of the presence of the Cult of the Damned.
+If you'd like to learn more about the Argent Dawn and our mission, seek out my commander at Bandarion Keep, to the northwest of here. I'll remain here to mop up the rest of this mess.
+
+
+== Rewards ==
+You will receive:
+
+460 XP
++150 reputation with Argent Dawn
+
+
+== Completion ==
+This place is full of memories for me. This place was once held by the Argent Dawn. It was from here that we prepared for many battles and skirmishes against the Scourge during their most recent push into Tirisfal Glades.
+When we withdrew to the Plaguelands I feared it would fall into disrepair. My fear was well-founded, but I am glad that Danitha and her paladins have taken over stewardship of it now.
+She even named the keep after... a mutual friend.
+
+
+== Progression ==
+ [13] The Argent Emissary
+ [12] The Cult of the Damned &  [12] Remnants of War
+ [13] Bandarion Keep
+  [13] A Righteous Cause
+  [13] Leonid's Letter
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -262,7 +262,7 @@ function ns.CreateSettingsPanel()
     AddCheckbox("showLevels", "Show quest levels on tiles",
         "Show each quest's minimum level at the left of its tile.")
     AddCheckbox("showSpoilers", "Show spoilers",
-        "Show the full story of every quest in its details: quests you haven't started, and how quests in your log end. Off: those stay hidden until you press Reveal.")
+        "Show the full story of every quest in its details: quests you haven't started, and how quests in your log end, and every chapter of a zone's About section. Off: those stay hidden until you press Reveal, or finish the quest a chapter follows.")
 
     AddHeading("World map")
     AddCheckbox("openMapOnWaypoint", "Open the map when setting a waypoint",

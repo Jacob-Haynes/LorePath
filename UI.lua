@@ -1196,15 +1196,25 @@ RenderZone = function()
             0, 0, false, width, top)
         s.count:SetText("")
         if not collapsed then
+            -- The premise, then the chapters your finished quests have revealed.
+            local texts, articles, more = ns.GetLoreView(lore)
             local body = AcquireText(canvas, "GameFontHighlight")
             body:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
             body:SetWidth(width - 16)
-            body:SetText(lore.text)
+            body:SetText(table.concat(texts, "\n\n"))
             top = top + (body:GetStringHeight() or 0) + 8
+            if more then
+                -- Names no quest, so it gives nothing away.
+                local hint = AcquireText(canvas, "GameFontNormalSmall")
+                hint:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
+                hint:SetWidth(width - 16)
+                hint:SetText("More to uncover in " .. ns.GetMapName(selectedZone) .. "'s storylines")
+                top = top + (hint:GetStringHeight() or 0) + 6
+            end
             local credit = AcquireText(canvas, "GameFontDisableSmall")
             credit:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
             credit:SetWidth(width - 16)
-            credit:SetText(ns.LoreCredit(lore))
+            credit:SetText(ns.LoreCredit({ articles = articles }))
             top = top + (credit:GetStringHeight() or 0) + 2
         end
         top = top + SECTION_GAP
