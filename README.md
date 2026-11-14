@@ -43,7 +43,7 @@ LorePath supports English game clients only.
   - its objectives and description, plus progress and completion text;
   - its item rewards (Shift+click one to link it in chat, Ctrl+click to try it on);
   - the quests before and after it, as links;
-  - its address on WarcraftDB, to copy, at the bottom.
+  - its address on Wowhead, to copy, at the bottom.
 
   **No spoilers by default:** a quest you haven't started shows "Find what awaits you." with a **Reveal** button, instead of its objectives and story. A quest in your log shows its objectives and description, but not how it ends. A completed quest shows everything. Reveal lasts until you look at another quest. **Show spoilers** in the settings shows everything always.
 - **Story so far:** once you've finished a quest in a storyline, its header has a **Story so far** button. It opens the storyline's story in the side panel: each finished quest's description and completion text, in order, so you can read the chain as one story. It follows the chain across zones: finished quests on other pages that led to this storyline, or came after it, are included in order, marked with their zone. When the chain goes on to a page where you haven't done the next quest, it says where. Quests you haven't finished are left out. When the chain began on another page and you haven't done that part, it says where. A quest that revealed a lore chapter is followed by the chapter, indented under **Lore**, with the wiki articles it's from.

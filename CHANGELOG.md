@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Wowhead link:** a quest's details now end with its Wowhead address to copy, in place of WarcraftDB's.
+
 ## 1.4.0-beta3
 
 - **Lore shared across your characters:** a chapter any of your characters has unlocked now shows on all of them, with *Unlocked by <name>* under it. Your Forsaken's Bandarion Keep story can be read on your Skyborne, for instance. Each character needs to log in once with this version to count. The book markers on tiles and Story so far still follow each character's own quests.

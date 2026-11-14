@@ -909,12 +909,12 @@ if blocked:
     check(vs > 0 and far["top"] >= vs and far["top"] + 20 <= vs + ls.GetHeight(ls),
           f"jumping to a zone low in the list scrolls it into view (row at {far['top']}, scrolled to {vs})")
 
-# --- 1.0.0: WarcraftDB link, Reset to defaults, error safety ---
+# --- 1.0.0: quest link (now Wowhead), Reset to defaults, error safety ---
 ns.ShowDetail(783)
 box = g.LorePathDetailFrame["linkBox"]
-check(box is not None and box["__text"] == "https://forever.warcraftdb.com/data/quest/783", "the panel shows the quest's WarcraftDB address to copy")
+check(box is not None and box["__text"] == "https://www.wowhead.com/forever/quest=783", "the panel shows the quest's Wowhead address to copy")
 box["__scripts"]["OnTextChanged"](box, True)
-check(box["__text"] == "https://forever.warcraftdb.com/data/quest/783", "typing in it can't change the address")
+check(box["__text"] == "https://www.wowhead.com/forever/quest=783", "typing in it can't change the address")
 
 # --- Open in quest log (issue #19) ---
 log_button = g.LorePathDetailFrame["logButton"]

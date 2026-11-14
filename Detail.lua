@@ -1012,10 +1012,10 @@ local function Render(id)
         end
     end
 
-    -- The quest's WarcraftDB page, to copy into a browser (addons can't open one).
-    AddText("WarcraftDB (click, then Ctrl+C to copy):", "GameFontDisableSmall", nil, 14)
+    -- The quest's Wowhead page, to copy into a browser (addons can't open one).
+    AddText("Wowhead (click, then Ctrl+C to copy):", "GameFontDisableSmall", nil, 14)
     local link = panel.linkBox
-    link.url = ns.WarcraftDBLink(id)
+    link.url = ns.WowheadLink(id)
     link:SetText(link.url)
     link:SetCursorPosition(0)
     link:ClearAllPoints()
@@ -1136,9 +1136,9 @@ local function RenderStory(storyline)
     content:SetHeight(cursor + 12)
 end
 
--- The quest's page on WarcraftDB's WoW Forever database.
-function ns.WarcraftDBLink(id)
-    return "https://forever.warcraftdb.com/data/quest/" .. id
+-- The quest's page in Wowhead's WoW Forever database.
+function ns.WowheadLink(id)
+    return "https://www.wowhead.com/forever/quest=" .. id
 end
 
 -- Creates the panel and its buttons, the first time it's needed.
@@ -1171,7 +1171,7 @@ local function EnsurePanel()
         log:SetScript("OnLeave", GameTooltip_Hide)
         panel.logButton = log
 
-        -- Read-only text box holding the WarcraftDB address: click selects it all.
+        -- Read-only text box holding the Wowhead address: click selects it all.
         local box = CreateFrame("EditBox", nil, content, "InputBoxTemplate")
         box:SetSize(TEXT_W - 12, 20)
         box:SetAutoFocus(false)
