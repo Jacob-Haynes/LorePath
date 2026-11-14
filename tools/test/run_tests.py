@@ -522,14 +522,25 @@ def tooltip_of(button):
     g.GameTooltip.lines = lua.table()
     button["__scripts"]["OnEnter"](button)
     return [str(l) for l in g.GameTooltip.lines.values()]
-def about_sources():
-    b = frame["loreSources"]
-    return tooltip_of(b) if b.IsShown(b) else []
+def canvas_sources():
+    out = []
+    for f in harness["all"].values():
+        if f["articles"] is None or f["text"] is None or not f.IsShown(f):
+            continue
+        p = f["__parent"]
+        while p is not None and not same(p, frame["canvas"]):
+            p = p["__parent"]
+        if p is not None:
+            out.append(tooltip_of(f))
+    return out
+def credited(text):
+    return any(any(text in line for line in tip) for tip in canvas_sources())
 zone_before_lore = frame["zoneTitle"]["__text"]
 lore_row = [r for r in zone_rows() if isinstance(r["zoneID"], int)][0]
 lore_zone = lore_row["zoneID"]
 saved_lore = ns.ZoneLore[lore_zone]
 ns.ZoneLore[lore_zone] = lua.table_from({"articles": lua.table_from(["Test Article"]), "text": "Long ago, a test."})
+ns.ClearChapterIndex()
 g.LorePathDB["collapsed"] = lua.table()
 lore_row["__scripts"]["OnClick"](lore_row)
 lore_sec = section("lore:" + str(lore_zone))
@@ -538,9 +549,9 @@ check(lore_sec is not None and lore_sec["title"]["__text"] == "About " + ns.GetM
 check(lore_sec["count"]["__text"] == "", "with no progress count")
 texts = canvas_texts()
 check("Long ago, a test." in texts, "it shows the lore")
-check(not any("Warcraft Wiki" in t for t in texts) and frame["loreSources"]["text"]["__text"] == "Sources",
+check(not any("Warcraft Wiki" in t for t in texts) and len(canvas_sources()) == 1,
       "under it, a Sources link instead of a credit line")
-check(about_sources() == ["Sources", 'From the Warcraft Wiki article "Test Article" (CC BY-SA 4.0)'],
+check(['Sources', 'From the Warcraft Wiki article "Test Article" (CC BY-SA 4.0)'] in canvas_sources(),
       "whose tooltip credits the article and its licence")
 lore_sec["__scripts"]["OnClick"](lore_sec)
 check("Long ago, a test." not in canvas_texts() and g.LorePathDB["collapsed"]["lore:" + str(lore_zone)] is True,
@@ -549,7 +560,10 @@ lore_sec = section("lore:" + str(lore_zone))
 lore_sec["__scripts"]["OnClick"](lore_sec)
 check("Long ago, a test." in canvas_texts(), "and clicking again shows it")
 
-# Chapters: each shown once its quest is done, or with Show spoilers.
+# Chapters: each shown once you, or one of your characters, has finished its
+# quest (or with Show spoilers), under the storyline that holds the quest; the
+# About section keeps only the premise, the hint, and chapters with no
+# storyline on the page.
 # Every chapter's quest can be done by a race that quests in its zone, so
 # playing there can reveal it.
 HOME_RACES = {1429: ("Alliance", (1,)), 1426: ("Alliance", (3, 7)), 1438: ("Alliance", (4,)),
@@ -591,114 +605,103 @@ check(keep_order == [96898, 96899, 96896, 91317], "and the Bandarion Keep chapte
 # change as more of Tirisfal's story is written.
 tirisfal = lua.table_from({"text": real_tirisfal["text"], "articles": real_tirisfal["articles"],
                            "chapters": lua.table_from([by_quest[q] for q in (96898, 96899, 96896, 91317)])})
-open_quests = sorted(q for q in ns.Quests.keys() if ns.IsEligible(q) and not ns.IsDone(q)
-                     and not char["completed"][q])[:2]
-closed_quest = [q for q in sorted(ns.Quests.keys()) if not ns.IsEligible(q)][0]
-qa, qc = open_quests
+page_lines = [st for st in ns.BuildStorylines(lore_zone)[0].values()]
+qa = list(page_lines[0]["nodes"].values())[0]["id"]
+qb = list(page_lines[1]["nodes"].values())[0]["id"]
+page_ids = {n["id"] for st in page_lines for n in st["nodes"].values()}
+qc = next(q for q in sorted(ns.Quests.keys()) if q not in page_ids and ns.Quests[q]["z"] != lore_zone)
+for q in (qa, qb, qc):
+    char["completed"][q] = None
+ns.RefreshCompleted()
 ns.ZoneLore[lore_zone] = lua.table_from({
     "articles": lua.table_from(["Test Article"]), "text": "Long ago, a test.",
     "chapters": lua.table_from([
-        lua.table_from({"after": qa, "articles": lua.table_from(["Chapter A Article", "Test Article"]), "text": "Then came A."}),
-        lua.table_from({"after": closed_quest, "articles": lua.table_from(["Chapter B Article"]), "text": "Elsewhere, B."}),
-        lua.table_from({"after": qc, "articles": lua.table_from(["Chapter C Article"]), "text": "At last, C."}),
+        lua.table_from({"after": qa, "articles": lua.table_from(["Chapter A Article"]), "text": "Then came A."}),
+        lua.table_from({"after": qb, "articles": lua.table_from(["Chapter B Article"]), "text": "Meanwhile, B."}),
+        lua.table_from({"after": qc, "articles": lua.table_from(["Chapter C Article"]), "text": "Far away, C."}),
     ])})
+ns.ClearChapterIndex()
 check(ns.Possessive("Tirisfal Glades") == "Tirisfal Glades'" and ns.Possessive("Elwynn Forest") == "Elwynn Forest's",
       "a name ending in s takes just an apostrophe, others 's")
 lore_name = ns.GetMapName(lore_zone)
 hint_text = "More of " + lore_name + ("'" if lore_name.endswith("s") else "'s") + " story to uncover"
 def lore_body():
     return [t for t in canvas_texts() if t.startswith("Long ago, a test.")][0]
-lore_row["__scripts"]["OnClick"](lore_row)
-check(lore_body() == "Long ago, a test.", "with no chapter's quest done, only the premise shows")
-check(hint_text in canvas_texts(), "with a line saying there's more to uncover, naming no quest")
-check('From the Warcraft Wiki article "Test Article" (CC BY-SA 4.0)' in about_sources(),
-      "and only the premise's article is credited")
+def shown(text):
+    return any(text in t for t in canvas_texts())
+ns.Refresh()
+check(lore_body() == "Long ago, a test." and not shown("Then came A.") and not shown("Meanwhile, B."),
+      "with no chapter's quest done, no chapter shows anywhere")
+check(hint_text in canvas_texts(), "and the About section says there's more to uncover, naming no quest")
 char["completed"][qa] = True
-lore_row["__scripts"]["OnClick"](lore_row)
-check(lore_body() == "Long ago, a test.\n\nThen came A.", "finishing a chapter's quest shows that chapter after the premise")
-check(hint_text in canvas_texts(), "and the hint stays while another chapter is locked")
-check('From the Warcraft Wiki articles "Test Article" and "Chapter A Article" (CC BY-SA 4.0)' in about_sources(),
-      "the shown chapter's articles are credited, each article once")
+ns.RefreshCompleted()
+ns.Refresh()
+check(shown("Then came A.") and lore_body() == "Long ago, a test.",
+      "finishing a chapter's quest shows the chapter under its storyline, not in the About section")
+check(credited('"Chapter A Article"'), "with its own Sources")
+check(hint_text in canvas_texts(), "the hint stays while another chapter is locked")
+key_a = "s" + str(page_lines[0]["first"])
+g.LorePathDB["collapsed"][key_a] = True
+ns.Refresh()
+check(shown("Then came A."), "a collapsed storyline still shows its chapter")
+g.LorePathDB["collapsed"][key_a] = None
 char["completed"][qc] = True
-lore_row["__scripts"]["OnClick"](lore_row)
-check(lore_body() == "Long ago, a test.\n\nThen came A.\n\nAt last, C.", "chapters show in order")
-check(hint_text not in canvas_texts() and not any("Elsewhere, B." in t for t in canvas_texts()),
-      "a chapter whose quest this character can't do stays hidden, and doesn't count as more to uncover")
-others_text = "More of " + lore_name + ("'" if lore_name.endswith("s") else "'s") + " story is told in other characters' quests"
-check(others_text in canvas_texts() and frame["loreReveal"].IsShown(frame["loreReveal"]),
-      "instead a line says other characters' quests tell more of the story, with a Reveal button")
-frame["loreReveal"]["__scripts"]["OnClick"](frame["loreReveal"])
-check(lore_body() == "Long ago, a test.\n\nThen came A.\n\nElsewhere, B.\n\nAt last, C."
-      and others_text not in canvas_texts() and not frame["loreReveal"].IsShown(frame["loreReveal"]),
-      "Reveal shows that chapter, in its place")
-check("Chapter B Article" in about_sources()[1], "and credits it")
-ns.Refresh()
-check(any("Elsewhere, B." in t for t in canvas_texts()), "a refresh on the same page keeps it revealed")
-away_row = [r for r in zone_rows() if isinstance(r["zoneID"], int) and r["zoneID"] != lore_zone][0]
-away_row["__scripts"]["OnClick"](away_row)
-lore_row["__scripts"]["OnClick"](lore_row)
-check(not any("Elsewhere, B." in t for t in canvas_texts()) and frame["loreReveal"].IsShown(frame["loreReveal"]),
-      "going to another page and back hides it again, with Reveal offered once more")
-frame["loreReveal"]["__scripts"]["OnClick"](frame["loreReveal"])
-check(any("Elsewhere, B." in t for t in canvas_texts()), "Reveal works again")
-frame.Hide(frame)
-frame.Show(frame)
-ns.Refresh()
-check(not any("Elsewhere, B." in t for t in canvas_texts()), "and closing the window hides it again too")
-char["completed"][qa] = None
 ns.RefreshCompleted()
-lore_row["__scripts"]["OnClick"](lore_row)
-check(lore_body() == "Long ago, a test.\n\nAt last, C." and hint_text in canvas_texts(),
-      "a later chapter can show before an earlier one whose quest isn't done")
+ns.Refresh()
+check(lore_body() == "Long ago, a test.\n\nFar away, C." and credited('"Chapter C Article"'),
+      "a chapter whose quest has no storyline on the page shows in the About section, credited there")
+char["completed"][qb] = True
+ns.RefreshCompleted()
+ns.Refresh()
+check(shown("Meanwhile, B.") and hint_text not in canvas_texts(), "with every chapter shown, the hint goes")
+for q in (qa, qb, qc):
+    char["completed"][q] = None
+ns.RefreshCompleted()
 ns.SetSetting("showSpoilers", True)
-lore_row["__scripts"]["OnClick"](lore_row)
-check(lore_body() == "Long ago, a test.\n\nThen came A.\n\nElsewhere, B.\n\nAt last, C." and hint_text not in canvas_texts(),
+ns.Refresh()
+check(shown("Then came A.") and shown("Meanwhile, B.") and shown("Far away, C.") and hint_text not in canvas_texts(),
       "Show spoilers shows every chapter, with no hint")
-check('From the Warcraft Wiki articles "Test Article", "Chapter A Article", "Chapter B Article" and "Chapter C Article" (CC BY-SA 4.0)'
-      in about_sources(), "and credits every chapter's articles")
-check(others_text not in canvas_texts(), "and no Reveal line")
 ns.SetSetting("showSpoilers", False)
-char["completed"][qc] = None
+ns.SetSetting("hideCompleted", True)
+char["completed"][qa] = True
+for n in page_lines[0]["nodes"].values():
+    char["completed"][n["id"]] = True
 ns.RefreshCompleted()
+ns.Refresh()
+check(lore_body() == "Long ago, a test.\n\nThen came A.",
+      "a chapter whose storyline is hidden (Hide finished storylines) moves to the About section")
+ns.SetSetting("hideCompleted", False)
+for n in page_lines[0]["nodes"].values():
+    char["completed"][n["id"]] = None
+ns.RefreshCompleted()
+ns.Refresh()
 
-# Tirisfal's real chapters, for a Forsaken paladin and a troll.
+# Tirisfal's real chapters: shown once you or your characters finish their quests.
 saved_char = (char["race"], char["class"], char["faction"], char["level"], char["map"])
 char["race"], char["class"], char["faction"], char["level"], char["map"] = 5, 2, "Horde", 13, 1420
 ns.RefreshPlayer()
-texts, articles, more, others = ns.GetLoreView(tirisfal)
+texts, articles, more = ns.GetLoreView(tirisfal)
 check(len(list(texts.values())) == 1 and more, "a new Forsaken paladin sees only Tirisfal's premise, with more to uncover")
 char["completed"][96898] = True
 char["completed"][96899] = True
-texts, articles, more, others = ns.GetLoreView(tirisfal)
+ns.RefreshCompleted()
+texts, articles, more = ns.GetLoreView(tirisfal)
 texts, articles = list(texts.values()), list(articles.values())
 check(len(texts) == 3 and "Naxxramas" in texts[1] and "Dawn's Watch" in texts[2] and more,
       "after Remnants of War and Bandarion Keep, their two chapters show, with more still to uncover")
 check(articles == ["Tirisfal Glades", "Bandarion Keep", "Remnants of War", "Bandarion Keep (quest)"],
       "crediting the premise's articles, then the chapters', each once")
-char["completed"][96896] = True
-char["completed"][91317] = True
-texts, _, more, others = ns.GetLoreView(tirisfal)
-check(len(list(texts.values())) == 5 and not more, "with the whole Bandarion Keep story done, every chapter shows and nothing is hinted")
-char["race"], char["class"] = 8, 1
-ns.RefreshPlayer()
-for q in (96898, 96899, 96896, 91317):
+placed = lua.table_from({96899: True})
+texts = list(ns.GetLoreView(tirisfal, placed)[0].values())
+check(len(texts) == 2 and "Naxxramas" in texts[1], "a chapter placed in a storyline on the page is left out of the About section")
+for q in (96898, 96899):
     char["completed"][q] = None
-char["completed"][96898] = True
-ns.RefreshCompleted()
-texts, _, more, others = ns.GetLoreView(tirisfal)
-check(len(list(texts.values())) == 2 and not more and others == 3,
-      "a troll warrior who finished Remnants of War sees its chapter; the three only Forsaken unlock wait for Reveal")
-char["completed"][96898] = None
-char["race"] = 96
+char["race"], char["class"] = 96, 7
 ns.RefreshPlayer()
 ns.RefreshCompleted()
-texts, _, more, others = ns.GetLoreView(tirisfal)
-check(len(list(texts.values())) == 1 and not more and others == 4,
-      "a Horde Skyborne can't unlock any of Tirisfal's chapters, so all four are offered to Reveal")
-ns.revealedLore[tirisfal] = True
-texts, _, more, others = ns.GetLoreView(tirisfal)
-check(len(list(texts.values())) == 5 and others == 0, "and Reveal shows them all")
-ns.revealedLore[tirisfal] = None
+texts, _, more = ns.GetLoreView(tirisfal)
+check(len(list(texts.values())) == 1 and more,
+      "a Horde Skyborne, who can't do Tirisfal's Forsaken quests, still sees there's more to uncover")
 
 # Lore is shared across your characters: a Forsaken alt's chapters show on the
 # Skyborne, marked with who unlocked them; quest progress stays each one's own.
@@ -714,7 +717,7 @@ ns.RecordLoreUnlocks()
 check(g.LorePathDB["loreUnlocks"][96898] == "Morwenna" and g.LorePathDB["loreUnlocks"][96899] == "Morwenna"
       and g.LorePathDB["loreUnlocks"][96896] is None,
       "a character's finished chapter quests are recorded for the account, with its name")
-texts, _, _, _ = ns.GetLoreView(tirisfal)
+texts = ns.GetLoreView(tirisfal)[0]
 check(not any("Unlocked by" in t for t in texts.values()), "its own chapters say nothing about who unlocked them")
 char["completed"][96898] = None
 char["completed"][96899] = None
@@ -724,11 +727,11 @@ ns.RefreshCompleted()
 g.UnitName = lua.eval("function() return 'Aeris' end")
 ns.RecordLoreUnlocks()
 check(g.LorePathDB["loreUnlocks"][96898] == "Morwenna", "another character logging in doesn't take the credit")
-texts, _, more, others = ns.GetLoreView(tirisfal)
+texts, _, more = ns.GetLoreView(tirisfal)
 texts = list(texts.values())
 check(len(texts) == 3 and "Naxxramas" in texts[1] and texts[1].endswith("Unlocked by Morwenna|r")
-      and texts[2].endswith("Unlocked by Morwenna|r") and others == 2 and not more,
-      "a Skyborne sees the chapters its Forsaken alt unlocked, marked Unlocked by Morwenna, and two left to Reveal")
+      and texts[2].endswith("Unlocked by Morwenna|r") and more,
+      "a Skyborne sees the chapters its Forsaken alt unlocked, marked Unlocked by Morwenna, with more still to uncover")
 check(ns.RevealedChapter(96898) is None, "but the tile's book marker stays with the Skyborne's own quests")
 char["completed"][96898] = True
 ns.RefreshCompleted()
@@ -739,16 +742,16 @@ char["completed"][96898] = None
 ns.RefreshCompleted()
 g.LorePathDB["loreUnlocks"] = None
 g.UnitName = saved_unit_name
-char["completed"][96898] = None
 char["race"], char["class"], char["faction"], char["level"], char["map"] = saved_char
 ns.RefreshPlayer()
 ns.RefreshCompleted()
 
 ns.ZoneLore[lore_zone] = saved_lore
+ns.ClearChapterIndex()
 g.LorePathDB["collapsed"] = lua.table()
 other_row = [r for r in zone_rows() if isinstance(r["zoneID"], int) and ns.ZoneLore[r["zoneID"]] is None][0]
 other_row["__scripts"]["OnClick"](other_row)
-check(section("lore:" + str(other_row["zoneID"])) is None and not frame["loreSources"].IsShown(frame["loreSources"]),
+check(section("lore:" + str(other_row["zoneID"])) is None and canvas_sources() == [],
       "a page with no lore has no About section")
 check(ns.GetZoneLore("class") is None, "special pages have no lore")
 back_row = [r for r in zone_rows() if r["zoneID"] is not None and ns.GetMapName(r["zoneID"]) == zone_before_lore][0]
@@ -3323,8 +3326,13 @@ ns.detailStory = None
 ns.ToggleStory(st)
 texts = detail_texts()
 quest_name = ns.GetQuestNameOrID(96899)
+def in_detail(f):
+    p = f["__parent"]
+    while p is not None and not same(p, g.LorePathDetailFrame):
+        p = p["__parent"]
+    return p is not None
 story_sources = [b for b in harness["all"].values() if b["articles"] is not None and b["text"] is not None
-                 and b.IsShown(b) and not same(b, frame["loreSources"])]
+                 and b.IsShown(b) and in_detail(b)]
 check(keep["text"] in texts and texts.count("Lore") == 1 and len(story_sources) == 1
       and 'From the Warcraft Wiki articles "Bandarion Keep (quest)" and "Bandarion Keep" (CC BY-SA 4.0)' in tooltip_of(story_sources[0]),
       "Story so far shows the chapter after its finished quest, under Lore, with Sources to hover for its credit")

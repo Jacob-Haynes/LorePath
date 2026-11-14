@@ -897,15 +897,54 @@ function ns.GetZoneLore(page)
     return type(page) == "number" and ns.ZoneLore and ns.ZoneLore[page] or nil
 end
 
--- What a page's About section shows of its lore: the premise (setting only, so
--- it spoils nothing), then each chapter whose quest you've finished, in order;
--- with Show spoilers, every chapter. A chapter another of your characters has
--- unlocked shows too, saying who. Returns the paragraphs, the articles to
--- credit (the premise's and the shown chapters', each once), whether a chapter
--- you could still unlock is hidden, and how many hidden chapters follow quests
--- this character can never do (another race's or class's). Those show once
--- you Reveal them (ns.revealedLore), since playing will never unlock them.
-function ns.GetLoreView(lore)
+-- Whether a lore chapter is shown, and the name of the other character who
+-- unlocked it if it wasn't this one. Shown once this character, or any of your
+-- characters, has finished its quest; with Show spoilers, always.
+function ns.ChapterShown(chapter)
+    if ns.GetSetting and ns.GetSetting("showSpoilers") then
+        return true, nil
+    end
+    if ns.IsDone(chapter.after) then
+        return true, nil
+    end
+    local by = ns.LoreUnlockedBy(chapter.after)
+    if by then
+        local me = UnitName and UnitName("player")
+        return true, by ~= me and by or nil
+    end
+    return false, nil
+end
+
+-- A chapter's text, marked with who unlocked it when that was another character.
+function ns.ChapterText(chapter, by)
+    if by then
+        return chapter.text .. "\n|cff8c8c8cUnlocked by " .. by .. "|r"
+    end
+    return chapter.text
+end
+
+-- The shown chapters for these quests, in their order: { chapter, by } each.
+-- A storyline shows its quests' chapters under its header (UI.lua).
+function ns.ChaptersFor(ids)
+    local list = {}
+    for _, id in ipairs(ids) do
+        local chapter = ns.GetChapter(id)
+        if chapter then
+            local shown, by = ns.ChapterShown(chapter)
+            if shown then
+                list[#list + 1] = { chapter = chapter, by = by }
+            end
+        end
+    end
+    return list
+end
+
+-- What a page's About section shows: the premise (setting only, so it spoils
+-- nothing), then any shown chapter with nowhere else on the page to go (its
+-- quest isn't in a storyline drawn here: placed[questID] is true for those that
+-- are). Returns the paragraphs, the articles to credit (each once), and whether
+-- any of the zone's chapters is still locked.
+function ns.GetLoreView(lore, placed)
     local texts, articles, seen = { lore.text }, {}, {}
     local function credit(list)
         for _, title in ipairs(list or {}) do
@@ -916,31 +955,17 @@ function ns.GetLoreView(lore)
         end
     end
     credit(lore.articles)
-    local spoilers = ns.GetSetting and ns.GetSetting("showSpoilers")
-    local revealed = ns.revealedLore[lore]
-    local me = UnitName and UnitName("player")
-    local more, others = false, 0
+    local more = false
     for _, chapter in ipairs(lore.chapters or {}) do
-        local eligible = ns.IsEligible(chapter.after)
-        local own = ns.IsDone(chapter.after)
-        local by = not own and ns.LoreUnlockedBy(chapter.after)
-        if by == me then
-            by = nil
-        end
-        if spoilers or own or by or (revealed and not eligible) then
-            local text = chapter.text
-            if by then
-                text = text .. "\n|cff8c8c8cUnlocked by " .. by .. "|r"
-            end
-            texts[#texts + 1] = text
-            credit(chapter.articles)
-        elseif eligible then
+        local shown, by = ns.ChapterShown(chapter)
+        if not shown then
             more = true
-        else
-            others = others + 1
+        elseif not (placed and placed[chapter.after]) then
+            texts[#texts + 1] = ns.ChapterText(chapter, by)
+            credit(chapter.articles)
         end
     end
-    return texts, articles, more, others
+    return texts, articles, more
 end
 
 -- Lore is shared across your characters: a chapter any of them has unlocked
@@ -969,11 +994,6 @@ function ns.LoreUnlockedBy(questID)
     local unlocks = LorePathDB and LorePathDB.loreUnlocks
     return unlocks and unlocks[questID] or nil
 end
-
--- Lore whose other characters' chapters you've chosen to read (Reveal in the
--- About section). Like a quest's Reveal, it lasts while you stay on the page:
--- going to another page, or closing the window, hides them again (UI.lua).
-ns.revealedLore = setmetatable({}, { __mode = "k" })
 
 -- The tooltip on a lore summary's "Sources": the wiki articles it came from,
 -- as the wiki's licence asks.

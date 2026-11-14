@@ -101,8 +101,8 @@ local selectedZone
 local zoneRows = {}
 local searchText = "" -- while not empty, the zone list shows quest search results
 local renderedKeys = {}
-local pools = { nodes = {}, lines = {}, sections = {}, texts = {} }
-local used = { nodes = 0, lines = 0, sections = 0, texts = 0 }
+local pools = { nodes = {}, lines = {}, sections = {}, texts = {}, sources = {} }
+local used = { nodes = 0, lines = 0, sections = 0, texts = 0, sources = 0 }
 
 -- ============================================================================
 -- Small helpers
@@ -686,6 +686,52 @@ local function AcquireText(parent, font)
     return text
 end
 
+-- "Sources" under lore: hover it for the wiki articles the text came from
+-- (credited there, as the wiki's licence asks).
+local function AcquireLoreSources(parent)
+    used.sources = used.sources + 1
+    local b = pools.sources[used.sources]
+    if not b then
+        b = CreateFrame("Button", nil, parent)
+        b.text = b:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+        b.text:SetPoint("LEFT")
+        b.text:SetText("Sources")
+        b:SetSize(b.text:GetStringWidth() + 4, 14)
+        b:SetScript("OnEnter", function(self)
+            self.text:SetFontObject("GameFontHighlightSmall")
+            ns.ShowLoreSources(self, self.articles)
+        end)
+        b:SetScript("OnLeave", function(self)
+            self.text:SetFontObject("GameFontDisableSmall")
+            GameTooltip:Hide()
+        end)
+        pools.sources[used.sources] = b
+    end
+    b:SetParent(parent)
+    b:ClearAllPoints()
+    b:Show()
+    return b
+end
+
+-- The shown lore chapters for these quests, each a paragraph with its Sources,
+-- from `top` down. Returns the height used (0 if none).
+local LORE_INDENT = 22
+local function RenderChapters(canvas, ids, top, width)
+    local h = 0
+    for _, item in ipairs(ns.ChaptersFor(ids)) do
+        local text = AcquireText(canvas, "GameFontHighlightSmall")
+        text:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + LORE_INDENT, -(top + h))
+        text:SetWidth(width - LORE_INDENT - 8)
+        text:SetText(ns.ChapterText(item.chapter, item.by))
+        h = h + (text:GetStringHeight() or 0) + 2
+        local sources = AcquireLoreSources(canvas)
+        sources.articles = item.chapter.articles
+        sources:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + LORE_INDENT, -(top + h))
+        h = h + 18
+    end
+    return h
+end
+
 -- A collapsible section header: [+/-] Title  3 / 7   [Show on map]  Next: ...
 local function AcquireSection(parent)
     used.sections = used.sections + 1
@@ -1115,8 +1161,14 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
     s.stepButton:SetShown(not onPage)
     s.stepButton:EnableMouse(stepTarget ~= nil and ns.Quests[stepTarget] ~= nil)
 
+    -- The lore its finished quests have revealed, under the header: shown even
+    -- when the storyline is collapsed, so a finished one reads as what it meant.
+    local loreH = RenderChapters(canvas, ids, graphTop - 4, viewWidth - PAD * 2)
+    local shift = loreH > 0 and loreH + 4 or 0
+    graphTop = graphTop + shift
+
     if collapsed then
-        return viewWidth, HEADER_H
+        return viewWidth, HEADER_H + (loreH > 0 and loreH + 2 or 0)
     end
 
     -- A storyline longer than the window is wide wraps, like text: its columns
@@ -1173,7 +1225,7 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
         end
     end
 
-    return PAD * 2 + width, layout.height
+    return PAD * 2 + width, layout.height + shift
 end
 
 local function RenderOthers(canvas, others, top, viewWidth)
@@ -1182,8 +1234,11 @@ local function RenderOthers(canvas, others, top, viewWidth)
     local complete = done == total and (total > 0 or repeatables == 0)
     local _, collapsed, gridTop = RenderSection(canvas, "o" .. selectedZone, "Other quests",
         done, total, complete, viewWidth - PAD * 2, top, repeatables)
+    local loreH = RenderChapters(canvas, others, gridTop - 4, viewWidth - PAD * 2)
+    local shift = loreH > 0 and loreH + 4 or 0
+    gridTop = gridTop + shift
     if collapsed then
-        return HEADER_H
+        return HEADER_H + (loreH > 0 and loreH + 2 or 0)
     end
 
     local perRow = math.max(1, math.floor((viewWidth - PAD * 2 + COL_GAP) / (NODE_W + COL_GAP)))
@@ -1197,7 +1252,7 @@ local function RenderOthers(canvas, others, top, viewWidth)
         StyleNode(node, id, nil)
     end
     local rows = math.ceil(#others / perRow)
-    return HEADER_H + 8 + rows * (NODE_H + ROW_GAP)
+    return HEADER_H + 8 + shift + rows * (NODE_H + ROW_GAP)
 end
 
 RenderZone = function()
@@ -1213,58 +1268,47 @@ RenderZone = function()
     local top, maxWidth, hidden = PAD, viewWidth, 0
     local hideCompleted = ns.GetSetting("hideCompleted")
 
-    frame.loreSources:Hide()
-    frame.loreReveal:Hide()
-    -- Revealed chapters last while you stay on this page.
-    if frame.lorePage ~= selectedZone then
-        wipe(ns.revealedLore)
-        frame.lorePage = selectedZone
-    end
-    -- About this zone (issue #5): a short summary from the Warcraft Wiki, with
-    -- the articles it came from (its licence asks for that). Collapsible, and
-    -- remembered per page like a storyline.
+    -- About this zone (issue #5): its premise from the Warcraft Wiki, with the
+    -- articles it came from (the licence asks for that). Collapsible, and
+    -- remembered per page like a storyline. Chapters go under the storylines
+    -- they belong to; only those with no storyline drawn here stay in it.
     local lore = ns.GetZoneLore(selectedZone)
     if lore then
+        local placed = {}
+        for _, storyline in ipairs(storylines) do
+            if not (hideCompleted and ns.GetNextStep(storyline) == "complete") then
+                for _, n in ipairs(storyline.nodes) do
+                    placed[n.id] = true
+                end
+            end
+        end
+        if ns.GetSetting("showOthers") then
+            for _, id in ipairs(others) do
+                placed[id] = true
+            end
+        end
         local width = viewWidth - PAD * 2
         local s, collapsed
         s, collapsed, top = RenderSection(canvas, "lore:" .. selectedZone, "About " .. ns.GetMapName(selectedZone),
             0, 0, false, width, top)
         s.count:SetText("")
         if not collapsed then
-            -- The premise, then the chapters your finished quests have revealed.
-            local texts, articles, more, others = ns.GetLoreView(lore)
+            local texts, articles, more = ns.GetLoreView(lore, placed)
             local body = AcquireText(canvas, "GameFontHighlight")
             body:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
             body:SetWidth(width - 16)
             body:SetText(table.concat(texts, "\n\n"))
             top = top + (body:GetStringHeight() or 0) + 8
-            local zoneName = ns.Possessive(ns.GetMapName(selectedZone))
             if more then
                 -- Names no quest, so it gives nothing away.
                 local hint = AcquireText(canvas, "GameFontNormalSmall")
                 hint:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
-                hint:SetWidth(width - 16)
-                hint:SetText("More of " .. zoneName .. " story to uncover")
-                top = top + (hint:GetStringHeight() or 0) + 6
+                hint:SetText("More of " .. ns.Possessive(ns.GetMapName(selectedZone)) .. " story to uncover")
+                top = top + 18
             end
-            if others > 0 then
-                -- Chapters only other races or classes unlock: playing won't
-                -- reveal them, so offer to.
-                local hint = AcquireText(canvas, "GameFontNormalSmall")
-                hint:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top - 3)
-                hint:SetText("More of " .. zoneName .. " story is told in other characters' quests")
-                local reveal = frame.loreReveal
-                reveal.lore = lore
-                reveal:ClearAllPoints()
-                reveal:SetPoint("LEFT", hint, "RIGHT", 8, 0)
-                reveal:Show()
-                top = top + 24
-            end
-            local sources = frame.loreSources
+            local sources = AcquireLoreSources(canvas)
             sources.articles = articles
-            sources:ClearAllPoints()
             sources:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
-            sources:Show()
             top = top + 16
         end
         top = top + SECTION_GAP
@@ -2031,44 +2075,6 @@ local function CreateMainFrame()
     f.graphScroll = graphScroll
     f.canvas = canvas
 
-    -- The About section's "Sources": hover it for the wiki articles its lore came
-    -- from (they're credited there, as the wiki's licence asks).
-    local sources = CreateFrame("Button", nil, canvas)
-    sources.text = sources:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    sources.text:SetPoint("LEFT")
-    sources.text:SetText("Sources")
-    sources:SetSize(sources.text:GetStringWidth() + 4, 14)
-    sources:SetScript("OnEnter", function(self)
-        self.text:SetFontObject("GameFontHighlightSmall")
-        ns.ShowLoreSources(self, self.articles)
-    end)
-    sources:SetScript("OnLeave", function(self)
-        self.text:SetFontObject("GameFontDisableSmall")
-        GameTooltip:Hide()
-    end)
-    sources:Hide()
-    f.loreSources = sources
-    -- Closing the window hides revealed chapters again, like leaving the page.
-    f:HookScript("OnHide", function()
-        wipe(ns.revealedLore)
-    end)
-    -- Reveal: show chapters that only other races' or classes' quests unlock.
-    local reveal = CreateFrame("Button", nil, canvas, "UIPanelButtonTemplate")
-    reveal:SetSize(70, 20)
-    reveal:SetText("Reveal")
-    reveal:SetScript("OnClick", function(self)
-        ns.revealedLore[self.lore] = true
-        RenderZone()
-    end)
-    reveal:SetScript("OnEnter", function(self)
-        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-        GameTooltip:AddLine("Reveal", 1, 0.82, 0)
-        GameTooltip:AddLine("Read the chapters of this zone's story that follow quests for other races or classes, while you're on this page. Your own quests' chapters still wait until you finish them.", 1, 1, 1, true)
-        GameTooltip:Show()
-    end)
-    reveal:SetScript("OnLeave", GameTooltip_Hide)
-    reveal:Hide()
-    f.loreReveal = reveal
 
     -- Header row: list toggle, zone name and progress, expand/collapse buttons
     local listToggle = CreateFrame("Button", nil, f)
