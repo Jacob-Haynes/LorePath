@@ -1,0 +1,38 @@
+title: Note to William
+revision: 6210674
+part: whole
+url: https://warcraft.wiki.gg/wiki/Note_to_William
+
+== Objectives ==
+Take Gramma Stonefield's Note to William Pestle.
+
+ [Gramma Stonefield's Note] (provided)
+
+
+== Description ==
+I bet William Pestle has a potion to unite our two young lovers!
+Here, take this note to William. He's staying at the Lion's Pride Inn in Goldshire.
+
+
+== Progress ==
+You have a note from "Gramma" Stonefield, eh?  I haven't seen Mildred in years!  I wonder what she has to say...
+
+
+== Completion ==
+My heart goes out to those two poor souls, Maybell and Tommy Joe.  I remember being young and in love, once.
+There must be something I can do to help them!  Let me think...
+
+
+== Progression ==
+ [1-30] A Visit With Maybell
+ [1-30] Young Lovers
+ [1-30] Speak with Gramma
+ [1-30] Note to William
+ [1-30] Collecting Kelp
+ [1-30] The Escape
+
+
+== External links ==
+
+Wowhead
+WoWDB

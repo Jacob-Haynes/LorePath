@@ -1,0 +1,63 @@
+title: The Sleeping Druid
+revision: 6391203
+part: whole
+quest: 2541
+url: https://warcraft.wiki.gg/wiki/The_Sleeping_Druid
+
+The Sleeping Druid is the 1st quest in the The Sleeping Druid quest chain.
+
+
+== Objectives ==
+Bring a Shaman Voodoo Charm to Oben Rageclaw in the Ban'ethil Barrow Den.
+
+ [Shaman Voodoo Charm]
+
+
+== Description ==
+The Gnarlpine shaman that inhabit this place have discovered a way of separating a sleeping druid's spirit from the physical body. The furbolg have animated my physical form and are using it to attack anyone that attempts to explore the Ban'ethil Barrow Den. I am now trapped in the Emerald Dream, powerless to stop this.
+You must help me. The Gnarlpine shaman carry a strange charm which is used to perform this ritual, and I'd like to examine it. Please, <name>, bring one to me.
+
+
+== Rewards ==
+You will receive:
+
+700 XP
++250 reputation with Darnassus
+
+
+== Progress ==
+If I can examine the charm, I may be able to figure out how to break the enchantment. Have you found one?
+
+
+== Completion ==
+Thank you, <name>.
+What an odd trinket this is... I can sense the vile aura emanating from it; this is a very powerful enchantment.
+
+
+== Progression ==
+ [1-30] A Troubling Breeze
+ [1-30] Gnarlpine Corruption
+ [1-30] The Relics of Wakening
+Side quest:  [1-30] Resident Danger
+Side chain found in the Barrow Den:
+ [1-30] The Sleeping Druid
+ [1-30] Druid of the Claw
+ [1-30] Ursal the Mauler
+Side quest found along the way:  [1-30] The Road to Darnassus
+ [1-30] Denalan's Earth
+ [1-30] Timberling Seeds &  [1-30] Timberling Sprouts
+Completing these two also unlocks the following quests, as well as the final quest chain:
+ [1-30] The Glowing Fruit
+ [1-30] The Shimmering Frond
+ [1-30] The Sprouted Fronds
+ [1-30] The Moss-twined Heart
+ [1-30] Planting the Heart
+ [1-30] Rellian Greenspyre
+ [1-30] Mossy Tumors
+ [1-30] Oakenscowl
+
+
+== External links ==
+
+Wowhead
+WoWDB

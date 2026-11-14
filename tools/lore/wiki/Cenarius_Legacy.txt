@@ -1,0 +1,53 @@
+title: Cenarius' Legacy
+revision: 6175760
+part: whole
+quest: 1087
+url: https://warcraft.wiki.gg/wiki/Cenarius%27_Legacy
+
+== Objectives ==
+Kill 4 Sons of Cenarius, 4 Daughters of Cenarius and 4 Cenarion Botanists for Braelyn Firehand near Sun Rock Retreat.
+
+Son of Cenarius slain (4)
+Daughter of Cenarius slain (4)
+Cenarion Botanist slain (4)
+
+
+== Description ==
+You cannot imagine the hatred I possess for this wretched land. The ilk of Cenarius and the kaldorei druids at the peak employ their pathetic powers to stifle the flow of magic, even so far south of their pathetic holdings... their beloved forests.
+Would that I could return to Jaedenar and exult in the flow of magic, but my master will not allow me to return until my work is done.
+I have no doubt you love the night elves and their allies as little as I. Aid me, and both our ends might be satisfied.
+
+
+== Rewards ==
+You will receive:
+
+1,500 XP
+
+
+== Progress ==
+Here, channeling magic is like drawing water from a well with a bucket full of holes.
+
+
+== Completion ==
+Already I can feel it... yes... power so sweet... the rushing flood. The kaldorei are foolish to spurn the gifts of this world, to reject the coursing of magic as it flows singing through your veins. 
+What a pale mockery life is without its burning embrace!
+
+
+== Notes ==
+The mobs you must kill for this quest are found on Stonetalon Peak. Sons and Daughters of Cenarius congregate around the temple and Botanists patrol around the edge of the Temple.
+
+
+== Progression ==
+ [25] Cenarius' Legacy
+ [29] Ordanus
+ [29] The Den
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

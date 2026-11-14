@@ -1,0 +1,47 @@
+title: Rime's Wrath (2)
+revision: 6970793
+part: whole
+quest: 99161
+url: https://warcraft.wiki.gg/wiki/Rime%27s_Wrath_%282%29
+
+== Objectives ==
+Kill Avala and retrieve its core.
+
+ [Avala's Core] 
+
+
+== Description ==
+I noticed that the first elemental that appeared after the rockslide was larger than its peers. And from what I can tell, it has been the source of occasional weather changes and other minor slides.
+I've been calling it 'Avala', if you could kill it and retrieve the core as proof, I will reward you.
+
+
+== Rewards ==
+You will receive:
+
+700 XP
+ [Avala's Binding]
+
+
+== Progress ==
+'Ware the winter, friend.
+
+
+== Completion ==
+Light bless you, <class>. Your efforts make this area much safer and hopefully will prevent unnecessary deaths.
+
+
+== Progression ==
+ [8] Dawn in the Mountains (optional)
+ [8] Finding Warmth
+ [8] Rime's Wrath
+ [8] Rime's Wrath &  [8] Treacherous Cold
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

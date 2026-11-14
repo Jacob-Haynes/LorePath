@@ -1,0 +1,36 @@
+title: The Admiral's Orders
+revision: 6907347
+part: whole
+quest: 830
+url: https://warcraft.wiki.gg/wiki/The_Admiral%27s_Orders
+
+== Objective ==
+Take  [Admiral Proudmoore's Orders] to Gar'Thok in Razor Hill.
+
+
+== Description ==
+You open the aged and weathered envelope and discover an official looking document. You recognize the seal of Admiral Proudmoore.
+This looks important. Perhaps Gar'Thok, the commander of Razor Hill, would be interested in having this information.
+
+
+== Progress ==
+There is a look of concern on your face, <class>. What have you there?
+
+
+== Completion ==
+This does not bode well at all. You were wise to bring this information to my attention.
+
+
+== Miscellaneous ==
+To find the  [Aged Envelope], which begins this quest, you must first kill Lieutenant Benedict in Tiragarde Keep on the second floor and retrieve  [Benedict's Key] from his corpse. This key in turn will open a chest on the third floor of Tiragarde keep, which contains the item.
+When you use the Aged Envelope and accept the quest, you will lose the Aged Envelope and receive  [Admiral Proudmoore's Orders] in its place, which is required to complete this quest.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

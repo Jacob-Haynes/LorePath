@@ -1,0 +1,49 @@
+title: Teldrassil (quest)
+revision: 6957848
+part: whole
+quest: 940
+url: https://warcraft.wiki.gg/wiki/Teldrassil_%28quest%29
+
+== Objectives ==
+Deliver the Oracle Tree's report to Arch Druid Fandral Staghelm in Darnassus.
+
+ [Inscribed Bark] (provided)
+
+
+== Description ==
+The forest whispers of your feats of valor, <name>. As I felt the harpies forced from their nests, a greater calm spread across the forest, its creatures once again feeling safe. I have feared sending another messenger to the Arch Druid, but I know that you will see my message safely to him.
+Deliver this to him and know that the forest will see you safely along its paths to the forest of stone.
+
+
+== Rewards ==
+You will receive:
+
+440 XP
++75 reputation with Darnassus
+ [Forest Oracle's Cloak] 
+
+
+== Progress ==
+Hmm... You come with the spirit of the forest strongly within you, <class>. What business do you have with the Arch Druid of the Kaldorei?
+
+
+== Completion ==
+I wondered why the Oracle Tree had not communicated with me for so long... It seems that some problems are lessened while others grow to greater concerns.
+I fear my work on Teldrassil shall never be completed, and our immortality never restored.
+Nonetheless, you have done the Oracle Tree's task well, and should be rewarded for your diligence.
+
+
+== Progression ==
+ [11] The Enchanted Glade
+ [11] Teldrassil
+ [11] Grove of the Ancients
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

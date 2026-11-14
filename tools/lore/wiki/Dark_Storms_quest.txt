@@ -1,0 +1,65 @@
+title: Dark Storms (quest)
+revision: 6903103
+part: whole
+quest: 806
+url: https://warcraft.wiki.gg/wiki/Dark_Storms_%28quest%29
+
+== Objectives ==
+Bring Fizzle's Claw to Orgnil Soulscar in Razor Hill.
+
+ [Fizzle's Claw]
+
+
+== Description ==
+We cannot allow the Burning Blade a foothold in Durotar! We must destroy them before their evil festers!
+I have undergone my own investigations and found that a Burning Blade warlock, the goblin Fizzle Darkstorm, has camped within Thunder Ridge to the northwest. There he and his cultist minions spread chaos.
+Find and defeat Fizzle, and bring me his dead claw!
+
+
+== Rewards ==
+You will receive:
+
+910 XP
++100 or +250 reputation with Orgrimmar
++100 or +250 reputation with Darkspear Trolls
+910 XP
+1,260 XP (Season of Mastery)
+ [Tiger Hide Boots]
+
+
+== Progress ==
+Did you find Fizzle, <name>?  He, and rest of the Burning Blade, must be scoured from our lands!
+
+
+== Completion ==
+Aha!  You got him!
+You do your clan proud, <name>.  And because of you, Durotar is free of one more agent of evil.
+
+
+== Notes ==
+Upon completion
+Orgnil Soulscar says: We will suffer no demon's servant in our lands!
+Smashes the dead, twisted claw.
+
+
+== Progression ==
+ [4] Vile Familiars /   [4] Vile Familiars &   [4] Vile Familiars
+ [5] Burning Blade Medallion
+ [5] Report to Sen'jin Village
+ [7] Report to Orgnil
+ [12] Dark Storms
+ [12] Margoz
+ [12] Skull Rock
+ [12] Neeru Fireblade
+ [13] Ak'Zeloth
+ [14] The Demon Seed
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,72 @@
+title: Burning Blade Medallion (Classic)
+revision: 6853750
+part: whole
+quest: 794
+url: https://warcraft.wiki.gg/wiki/Burning_Blade_Medallion_%28Classic%29
+
+== Objectives ==
+Bring the Burning Blade Medallion to Zureetha Fargaze, outside The Den.
+
+ [Burning Blade Medallion]
+
+
+== Description ==
+Through my divinations, I see that an item of power hides deep within the Burning Blade Coven, guarded by beasts and black magic.
+It is called the Burning Blade Medallion, and your next task is to find it and remove it from the coven.
+But be wary, for the medallion may be possessed by an agent of the Burning Blade, and if so then the agent's power would be greater than the familiars you have already encountered.
+Go, <name>.  You will find the coven in a cave, to the north and west.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Dust-covered Leggings]
+ [Jagged Chain Vest]
+ [Ripped Pants]
+You will also receive:
+
+675 XP
++500 reputation with Orgrimmar
++500 reputation with Darkspear Trolls
+ [Minor Healing Potion]
+
+
+== Progress ==
+Is your task complete, <name>?  Do you have the Burning Blade Medallion?
+
+
+== Completion ==
+You retrieved it!  Well done!
+Your efforts within the Burning Blade Coven are key in rooting out this cult in the Valley of Trials.  But I fear they have further aims in our land.
+We have not seen the end of them.
+
+
+== Notes ==
+
+You need to go to the cave in the area where you killed the Vile Familiars for the previous quest - north and east of The Den.  The cave entrance is at .  It is full of level 3-4 Vile Familiars (humanoids) and Felstalkers (demons).
+The  [Burning Blade Medallion] drops off the only orc in the Burning Blade Coven - Yarrog Baneshadow .  To find him, keep to your right after you enter the cave, and follow it around.  Cross over the water when you reach it, and continue straight ahead.  You will see him at the end.
+If you go to the other parts of the cave and find yourself beneath him, you will have to either to go to the beginning and enter his branch OR do some agile jumping by first jumping to the crossing of the two rocks, climb top of the rock formation after you are able to jump to the same level where Yarrog Baneshadow is. Alternatively you can lure him to run to you by aggroing him with a ranged attack.
+You may wish to do this quest alongside  [1-10] Thazz'ril's Pick, as both involve entering the Burning Blade Coven.
+
+
+== Progression ==
+ [4] Vile Familiars /   [4] Vile Familiars &   [4] Vile Familiars
+ [5] Burning Blade Medallion
+ [5] Report to Sen'jin Village
+ [7] Report to Orgnil
+ [12] Dark Storms
+ [12] Margoz
+ [12] Skull Rock
+ [12] Neeru Fireblade
+ [13] Ak'Zeloth
+ [14] The Demon Seed
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

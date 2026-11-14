@@ -1,0 +1,72 @@
+title: Marla's Last Wish
+revision: 6896068
+part: whole
+quest: 6395
+url: https://warcraft.wiki.gg/wiki/Marla%27s_Last_Wish
+
+== Objectives ==
+Bring Samuel Fipps' Remains to Marla's Grave, then return to Novice Elreth.
+
+ [Samuel's Remains] Buried
+
+
+== Description ==
+My friend Marla Fipps lived with her husband Samuel before the plague, but when the plague came Samuel succumbed and joined the Scourge's ranks.
+Marla was spared an undeath only to die at the hands of her now mindless husband.  So strong was her love, however, that her last dying wish was to be buried with her beloved Samuel.
+Samuel Fipps roams at a ruined camp along the road northeast of Deathknell.  Defeat him and grant Marla's wish: bury him at her grave, in the first row of our graveyard.
+
+
+== Rewards ==
+You will receive:
+
+450 XP
++100 or +250 reputation with Undercity
+ This section concerns content related to Forever.
+You will be able to choose one of these rewards:
+
+Mining for Dummies
+Wild Harvest
+Pelt Collecting for Beginners
+
+
+== Progress ==
+We must respect our dead, <name>. It is one of the ways in which we differ from the Scourge…
+
+
+== Completion ==
+You have done a good deed today, <name>. Although our struggle against the Scourge continues, let us hope that Marla and Samuel will find peace together in their final resting place.
+
+
+== Notes ==
+
+Find Samuel Fipps at  south of the road leading northeast out of Deathknell, at a ruined camp alongside Karrel Grayves, Daniel Ulfman, and Stephen Bhartec. Defeat him to loot  [Samuel's Remains], then return to the graveyard at Deathknell, just north of the church. Find Marla's Grave at  in the front row.
+
+
+== Progression ==
+  [1] Rude Awakening
+ [2] The Mindless Ones &  [2] The Damned
+ [3] Rattling the Rattlecages, Class quests
+ [5] Marla's Last Wish,  [3] Scavenging Deathknell,  [4] Night Web's Hollow
+ [4] A Light in the Darkness ( only)
+ [4] The Scarlet Crusade
+ [5] The Red Messenger
+ [5] Vital Intelligence
+ [5] A Rogue's Deal,  [7] Fields of Grief,  [5] Gordo's Task →  [6] Doom Weed
+ [6] The Adventurer ( only)
+Class quests:
+
+   [2] Spell Research
+   [1] A Difficult Path →    [2] Rediscovering the Light →    [4] Coming to Terms &    [4] Continue Your Training ( only)
+   [2] Meditation on Undeath
+   [2] The Scarlet Rune
+   [2] The Lost Rune
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

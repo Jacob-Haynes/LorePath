@@ -1,0 +1,40 @@
+title: Deliver Thomas' Report
+revision: 6175833
+part: whole
+quest: 39
+url: https://warcraft.wiki.gg/wiki/Deliver_Thomas%27_Report
+
+This quest was formally the second to last part of the quest chain A Fishy Peril.
+
+
+== Objectives ==
+Report to Marshal Dughan in Goldshire.
+
+
+== Description ==
+Tell Marshal Dughan of Malakai and Rolf's deaths, and report to him that the Murlocs in eastern Elwynn cannot be contained by our current troop presence.
+I know we don't have many troops to spare, but hopefully Dughan can find someone.
+
+
+== Completion ==
+Hmm, this news is troubling.  Already our defenses are stretched thin, and losing Rolf and Malakai to those murlocs put us in an even worse position.
+If things don't improve, there will be fighting in Goldshire by the week's end!
+
+
+== Progression ==
+ [1-30] A Fishy Peril
+ [1-30] Further Concerns
+ [1-30] Find the Lost Guards
+ [1-30] Discover Rolf's Fate
+ [1-30] Report to Thomas
+ [1-30] Cloth and Leather Armor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

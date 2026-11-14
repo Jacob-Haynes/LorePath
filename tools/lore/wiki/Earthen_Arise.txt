@@ -1,0 +1,54 @@
+title: Earthen Arise
+revision: 6971240
+part: whole
+quest: 6481
+url: https://warcraft.wiki.gg/wiki/Earthen_Arise
+
+== Objectives ==
+Open the Resonite cask with the Enchanted Resonite Crystal, and then slay Goggeroc. Return to Mor'rogal with the news and Enchanted Resonite Crystal.
+
+Goggeroc slain
+ [Enchanted Resonite Crystal] (provided)
+
+
+== Description ==
+You have uncovered a dark threat to the land, <class>. The Resonite cask you have found in that cave houses a slumbering Earthen by the name of Goggeroc.
+I have changed the mixture of the Resonite crystals that you gathered with my shamanistic powers. Take the enchanted Resonite crystal and smash open the Resonite cask, which houses the Earthen.
+When awakened, Goggeroc will be weakened... Slay him, <name>!
+
+
+== Reward ==
+You will be able to choose one of these rewards:
+
+ [Owlbeard Bracers]
+ [Wolfmane Wristguards]
+ [Raptorcrest Bracers] 
+You will also receive:
+
+1550 XP (or 9 60 at max level)
++250 reputation with Thunder Bluff
+
+
+== Progress ==
+I fear if we do not dispose of this threat immediately, all of Stonetalon will be lost. The might of an Earthen can not be matched by any means. When awakened, Goggeroc will be weak from his long slumber, this will be the opportunity that you must take advantage of... go now <name>!
+
+
+== Completion ==
+You bear good news, <class>! I fear the possibilities of what an Earthen would mean to Kalimdor.
+Slaying Goggeroc was a task for no one less than a hero. You have done well; all of Stonetalon and Kalimdor are indebted to you, noble <class>.
+Accept this as your reward most honored one.
+
+
+== Notes ==
+Use the  [Enchanted Resonite Crystal] to summon him. Note that he WILL interrupt spells with a casting time, such as  [Healing Touch], and will continue to do so to every such spell you try to cast. Goggeroc also periodically throws his target up into the air with a forceful uppercut. Clear out the three kobolds guarding the earthen first, as he will aggro immediately on release. Rogues and druids in cat form should be able to release him and  [Stealth] quickly enough to avoid this, however, and thus start the fight on their own terms (so to speak).
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.4.0 (2005-04-19): Fixed the Resonite Cask not spawning for the quest.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

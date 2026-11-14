@@ -10,6 +10,10 @@ local function MockObject(kind)
         IsShown = function(self) return self.__shown end,
         SetShown = function(self, v) self.__shown = v and true or false end,
         SetScript = function(self, name, fn) self.__scripts[name] = fn end,
+        HookScript = function(self, name, fn)
+            local old = self.__scripts[name]
+            self.__scripts[name] = old and function(...) old(...); fn(...) end or fn
+        end,
         GetScript = function(self, name) return self.__scripts[name] end,
         SetText = function(self, t) self.__text = t end,
         SetTexture = function(self, t) self.__texture, self.__atlas = t, nil end,

@@ -1,0 +1,46 @@
+title: Rime's Wrath
+revision: 6970789
+part: whole
+quest: 99160
+url: https://warcraft.wiki.gg/wiki/Rime%27s_Wrath
+
+== Objectives ==
+Destroy 10 minor ice elementals.
+
+Minor Ice Elemental slain (10)
+
+
+== Description ==
+You may have noticed the elementals nearby. A shelf of rock and ice fell from the mountain peaks a few days ago and riled them up.
+These frozen mountains are already treacherous for the average dwarf or human without the elements taking form. I am not one for fighting anymore--so any of the spirits you can kill would help make the road safer.
+
+
+== Rewards ==
+You will receive:
+
+530 XP
+
+
+== Progress ==
+What do you need?
+
+
+== Completion ==
+I wish we could have simply placated them. Unfortunately it was beyond my knowledge and they were too dangerous to leave unchecked.
+
+
+== Progression ==
+ [8] Dawn in the Mountains (optional)
+ [8] Finding Warmth
+ [8] Rime's Wrath
+ [8] Rime's Wrath &  [8] Treacherous Cold
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

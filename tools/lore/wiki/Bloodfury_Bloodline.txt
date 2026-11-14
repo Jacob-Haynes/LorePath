@@ -1,0 +1,63 @@
+title: Bloodfury Bloodline
+revision: 6957165
+part: whole
+quest: 6283
+url: https://warcraft.wiki.gg/wiki/Bloodfury_Bloodline
+
+In Bloodfury Bloodline, you must return to the Charred Vale and kill Bloodfury Ripper, the leader of the Bloodfury harpies.  [26] Harpies Threaten must be complete before you can get this quest.
+
+
+== Objectives ==
+Maggran at Sun Rock Retreat wishes you to slay Bloodfury Ripper and bring her remains as proof of your deed.
+
+ [Bloodfury Ripper's Remains]
+
+
+== Description ==
+Limiting the number of Bloodfury Harpies will not be enough. The only true cure for their disease would be to slay their leader, Bloodfury Ripper!
+She is all but a queen to those filthy creatures. Slay her and their numbers will surely diminish.
+Go back into the Charred Vale and you will find her along the western hills. She will not be easy to vanquish, but the reward will be great.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Spritekin Cloak]
+ [Screecher Belt]
+ [Harpy Bangles] 
+You will also receive:
+
+2,100 XP
++100 or +250 reputation with Thunder Bluff
+
+
+== Progress ==
+Bloodfury Ripper is a nasty creature! You will have success finding her along the western hill line in the Charred Vale.
+The bloodfuries will be helpless with out... surely we can vanquish them forever!
+
+
+== Completion ==
+Already I feel the anger leave me. What will I do with my time? Knowing evil moves near my land kept my thoughts moving, though now they are silent. Perhaps this is a good thing... maybe now I can focus on the good, as all tauren should.
+Please accept this as a reward for your troubles.
+
+
+== Notes ==
+You can pick up this quest in Sun Rock Retreat from Maggran Earthbinder, near the pool of water. For those who don't know, there is a back way out of Sun Rock Retreat that goes over the mountains and straight into the Charred Vale - very useful for this quest.
+Bloodfury Ripper can be found in the north-western part of the Charred Vale - she moves around a little bit, but her approximate coordinates are 30,62. She stands out because she is blue-colored, while the other harpies are red and white.
+Beware that there are many other harpies and other creatures wandering through the vale and it is VERY easy to get unwanted adds. That said, this quest can be easily completed solo. (Prior to Patch 2.3.0, this was not the case, as Bloodfury Ripper was elite.)
+
+
+== Progression ==
+ [26] Harpies Threaten
+ [26] Bloodfury Bloodline
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.2.0 (2004-12-18): Bloodfury quest in Stonetalon Mountains is now marked elite.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

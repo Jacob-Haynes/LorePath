@@ -1,0 +1,51 @@
+title: The Collector (Classic)
+revision: 6177009
+part: whole
+quest: 123
+url: https://warcraft.wiki.gg/wiki/The_Collector_%28Classic%29
+
+The Collector starts with the  [Gold Pickup Schedule], which has a chance to drop from gnolls in Elwynn Forest.
+
+
+== Objectives ==
+Go to Marshal Dughan in Goldshire and give him The Collector's Schedule
+
+ [The Collector's Schedule] (provided)
+
+
+== Description ==
+This note is a schedule with a list of days and times when a person -- described only as "The Collector" -- will receive a shipment of gold from the mines in Elwynn Forest.
+From the schedule, it looks as if the Collector resides near the Brackwell Pumpkin Patch in eastern Elwynn.
+This sounds important. You should report it to Marshal Dughan in Goldshire.
+
+
+== Rewards ==
+You will receive:
+
+85
+210 XP
++25 reputation with Stormwind
+
+
+== Progress ==
+What?!?  We haven't had our people working the Elwynn mines for months!
+Let me see that note you have...
+
+
+== Completion ==
+Hm... I have heard of this "Collector" but I don't know whom he's working for.  Thank you for the schedule.  It will help us solve this mystery.
+
+
+== Progression ==
+ [10] The Collector
+ [10] Manhunt
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated for Cataclysm; see  [1-30] The Collector.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,53 @@
+title: Super Reaper 6000 (quest)
+revision: 5586626
+part: whole
+quest: 1093
+url: https://warcraft.wiki.gg/wiki/Super_Reaper_6000_%28quest%29
+
+== Objectives ==
+Get the  [Super Reaper 6000 Blueprints] for Ziz Fizziks in the Stonetalon Mountains.
+
+ [Super Reaper 6000 Blueprints]
+
+
+== Description ==
+Terrible what the Venture Company has done here, eh? What were they thinking? Goblin company hiring a gnome!
+Lucky for me, Sputtervalve knows a genius when he sees one. Hired me just after I'd been kicked out!
+Tells me they built some enormous woodcutting machine, and Sput' wants me to steal the plans for him. Unfortunately, Gerenzo--bloody gnome—wants me dead on sight... maybe you could steal the plans for me? You should be able to find them on one of their operators. 
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+1650 XP (or a 10 20 compensation at level 80)
+125 reputation with Booty Bay
+125 reputation with Everlook
+125 reputation with Gadgetzan
+250 reputation with Ratchet
+
+
+== Progress ==
+Did you find those plans? I'm eager to impress the new boss. Hopefully, once he's convinced of my loyalty—well, as much as he can be convinced... goblin's honor, you know?--he'll feel comfortable making use of my rather impressive genius.
+
+
+== Completion ==
+Hey, is that what I think it is? Great!
+Now, let's see. Ugh... how am I supposed to understand this stuff... can't figure out the way gnomes think. Lemme tell you, I'm surprised they could build the wheel, let alone those flying machines they like so much.
+
+
+== Progression ==
+ [21] Ziz Fizziks
+ [21] Super Reaper 6000
+ [21] Further Instructions
+ [27] Further Instructions
+ [27] Gerenzo Wrenchwhistle
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

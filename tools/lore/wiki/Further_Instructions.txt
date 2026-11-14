@@ -1,0 +1,49 @@
+title: Further Instructions
+revision: 6230024
+part: whole
+quest: 1094
+url: https://warcraft.wiki.gg/wiki/Further_Instructions
+
+== Objectives ==
+Deliver the Sealed Envelope to Sputtervalve in the Barrens.
+
+ [Sealed Envelope] (provided)
+
+
+== Description ==
+This envelope has all the information I was able to snatch as they booted me out the door... Venture Company internal documents, some manuals, technical things... Oh, and of course the Super Reaper 6000 blueprints.
+Sputtervalve has taken up residence at Ratchet in the Barrens. Shouldn't have much trouble finding him, he's a little green fellow. 
+
+
+== Rewards ==
+You will receive:
+
+825 XP (or 5 10 at max level)
++50 or +75 reputation with Ratchet
+
+
+== Progress ==
+Hello there! How can I help you?
+
+
+== Completion ==
+Fizziks, eh? Can't say I trust him, but this information seems good enough. What I wouldn't give to have the Venture Company out of my hair.
+They do come up with some good machines though... I can't deny that we've benefited from using some of the improvements they've devised.
+
+
+== Progression ==
+ [21] Ziz Fizziks
+ [21] Super Reaper 6000
+ [21] Further Instructions
+ [27] Further Instructions
+ [27] Gerenzo Wrenchwhistle
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

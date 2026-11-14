@@ -1,0 +1,53 @@
+title: At War With The Scarlet Crusade (4)
+revision: 6897422
+part: whole
+quest: 372
+url: https://warcraft.wiki.gg/wiki/At_War_With_The_Scarlet_Crusade_%284%29
+
+== Objectives ==
+Executor Zygand in the town of Brill wants you to assassinate Captain Melrache and his two bodyguards.
+
+Captain Melrache slain
+Scarlet Bodyguard slain (2)
+
+
+== Description ==
+Scarlet Crusaders have been raiding from the ruined tower in northern Tirisfal, past Faol's Rest. According to the information we have, a ruthless commander named Captain Melrache is in charge of this evil crew.
+I am entrusting you now with a special and dangerous mission. Slay Melrache and his two bodyguards, in the name of The Dark Lady.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Ceremonial Knife]
+ [Striking Hatchet]
+You will also receive:
+
+51
+2,150 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+You have not yet performed your duty, <class>.  We cannot expect to carry out The Dark Lady's plan with the Scarlet Crusade pestering our soldiers.  Bring about their deaths and perform your duty to Sylvanas!
+
+
+== Completion ==
+You have done extremely well, <class>.  With ruthless fighters like you conquering in the name of The Forsaken our race is one step closer to defeating Arthas once and for all.  I have a good feeling about you, comrade.
+
+
+== Progression ==
+ [8] At War With The Scarlet Crusade
+ [9] At War With The Scarlet Crusade
+ [10] At War With The Scarlet Crusade
+ [12] At War With The Scarlet Crusade
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

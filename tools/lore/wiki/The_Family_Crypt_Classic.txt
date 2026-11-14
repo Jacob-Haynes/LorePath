@@ -1,0 +1,55 @@
+title: The Family Crypt (Classic)
+revision: 6905164
+part: whole
+quest: 408
+url: https://warcraft.wiki.gg/wiki/The_Family_Crypt_%28Classic%29
+
+== Objectives ==
+Kill 8 Wailing Ancestors and 8 Rotting Ancestors.
+Kill Captain Dargol, and bring his skull to Magistrate Sevren in Brill. 
+
+Rotting Ancestor slain (8)
+Wailing Ancestor slain (8)
+ [Dargol's Skull]
+
+
+== Description ==
+The Agamand Mills area has become a foothold for the Scourge. Their strongest point is the Agamand Family Crypt where their local military leader, a skeleton named Captain Dargol, has headquartered. With Necromancy he has raised the ancestors of the Agamands and plans to use them against us.
+This cannot pass, and you must stop it. Travel to the Agamand Family Crypt and defeat the raised Agamand ancestors.
+And, bring me the skull of Captain Dargol.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Bonecracker]
+ [Darkwood Staff]
+You will also receive:
+
+900 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Time is not a luxury we have, <name>.  With each passing hour, the Scourge's hold on Tirisfal Glades grows more firm.
+
+
+== Completion ==
+Your actions struck a telling blow against the Scourge.  And your victory will not go unnoticed - not by the Forsaken, nor by our enemies.
+Continue the struggle as we all do, <name>, and one day we will drive the Lich King himself from Azeroth! 
+
+
+== Progression ==
+ [10] The Haunted Mills
+ [10] Speak with Sevren
+ [13] The Family Crypt
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced by  [1-30] The Family Crypt.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

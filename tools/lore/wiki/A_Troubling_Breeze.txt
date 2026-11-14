@@ -1,0 +1,57 @@
+title: A Troubling Breeze
+revision: 6690954
+part: whole
+quest: 475
+url: https://warcraft.wiki.gg/wiki/A_Troubling_Breeze
+
+A Troubling Breeze is an Alliance only quest in Teldrassil, the night elf starting zone. In this quest, players are sent by Athridas Bearmantle to Starbreeze Village for a report from Gaerolas Talvethren
+
+
+== Objectives ==
+Seek out Gaerolas Talvethren in Starbreeze Village.
+
+
+== Description ==
+A troubling breeze blows through the forest.
+Gaerolas Talvethren serves as Great Warden to the hibernating Druids of the Talon in the Ban'ethil Barrow Den. His duty as the chosen protector of the Sleeping is to ensure their safety so that their pact with Ysera remains fulfilled.
+But word from Gaerolas is now delayed and I grow nervous. Travel east to Starbreeze Village and bring back a report from Gaerolas so that I can put my worries to rest, knowing my dreaming brethren slumber safely.
+
+
+== Rewards ==
+You will receive:
+
+100 XP
++75 reputation with Darnassus
+
+
+== Completion ==
+Thank the forest spirits you are here! I knew Athridas would sense trouble and send help.
+
+
+== Progression ==
+ [1-30] A Troubling Breeze
+ [1-30] Gnarlpine Corruption
+ [1-30] The Relics of Wakening
+Side quest:  [1-30] Resident Danger
+Side chain found in the Barrow Den:
+ [1-30] The Sleeping Druid
+ [1-30] Druid of the Claw
+ [1-30] Ursal the Mauler
+Side quest found along the way:  [1-30] The Road to Darnassus
+ [1-30] Denalan's Earth
+ [1-30] Timberling Seeds &  [1-30] Timberling Sprouts
+Completing these two also unlocks the following quests, as well as the final quest chain:
+ [1-30] The Glowing Fruit
+ [1-30] The Shimmering Frond
+ [1-30] The Sprouted Fronds
+ [1-30] The Moss-twined Heart
+ [1-30] Planting the Heart
+ [1-30] Rellian Greenspyre
+ [1-30] Mossy Tumors
+ [1-30] Oakenscowl
+
+
+== External links ==
+
+Wowhead
+WoWDB

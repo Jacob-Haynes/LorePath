@@ -1,0 +1,57 @@
+title: The One That Got Away (Forever)
+revision: 6969993
+part: whole
+quest: 99153
+url: https://warcraft.wiki.gg/wiki/The_One_That_Got_Away_%28Forever%29
+
+== Objectives ==
+Find the Hidden Crystal Fragment beneath Shadowvale for Ephram Barbaro.
+
+Glowing Crystal Fragment
+
+
+== Description ==
+Oi, you! Word travels quickly among our ranks. I heard about the work you did with the cultists around the remnants of the battle with Naxxramas.
+Problem is, one of them cultists got away with a piece of the focusing crystal. Seems to still have some juice in it. Best guess we have is it's somewhere beneath Shadowvale. It's either raising 'em or making 'em stronger, and you don't want either one.
+Find that crystal before this gets out of hand.
+
+
+== Rewards ==
+You will receive:
+
+840 XP
++100 reputation with Undercity
+
+
+== Progress ==
+Did you find the damned thing?
+
+
+== Completion ==
+Well done--and quick, too! Now onto my favorite part...
+
+
+== Notes ==
+Find the crystal at the end of the Shadowvale cellar.
+
+Upon completion
+Ephram Barbaro says: Now that the crystal is here...
+Ephram Barbaro says: We SMASH IT WITH A HAMMER!
+
+
+== Progression ==
+   [11] A Second Home (optional)
+   [11] Murlocs at the Gates
+   [11] Touring the Grounds
+   [12] The Tarnished,    [11] Making Repairs
+   [12] A Token of Good Faith
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

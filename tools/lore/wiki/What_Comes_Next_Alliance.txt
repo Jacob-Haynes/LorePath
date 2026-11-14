@@ -1,0 +1,40 @@
+title: What Comes Next (Alliance)
+revision: 6957218
+part: whole
+quest: 93089
+url: https://warcraft.wiki.gg/wiki/What_Comes_Next_%28Alliance%29
+
+== Objectives ==
+Speak with Elaadrin Evengale when you are prepared to leave Zephras Isle.
+
+
+== Description ==
+Please extend my thanks to Elaadrin for all that the High Order and your new friends from this "Kirin Tor" have done for Zephras Isle. I'm aware of the High Order's plans to leave the island, and your order has my blessing and well-wishes in this expedition.
+I can only hope that whatever arcane solution the High Order finds can truly provide us with the stability we've lacked these past years. If you plan to go with them... well, this mission will be all the stronger for it.
+Winds be with you, <name>.
+
+
+== Rewards ==
+You will receive:
+
+90 XP
++25 reputation with High Order
+
+
+== Completion ==
+It gladdens me to hear that we have High Elder Shadowsong's blessing for our expedition. Now that the cult has been defeated and preparations have been made, I think it's finally time.
+Ansirem has worked diligently to help us get stable skycutter transport going between the city of Dalaran and Zephras Isle. We've done as much testing as we can, and the time has come for our vanguard to depart.
+
+
+== Progression ==
+...
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

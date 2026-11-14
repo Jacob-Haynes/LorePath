@@ -1,0 +1,54 @@
+title: At War With The Scarlet Crusade (2)
+revision: 6897332
+part: whole
+quest: 370
+url: https://warcraft.wiki.gg/wiki/At_War_With_The_Scarlet_Crusade_%282%29
+
+== Objectives ==
+Executor Zygand in Brill wants you to kill Captain Perrine, 3 Scarlet Zealots and 3 Scarlet Missionaries.
+
+Captain Perrine slain
+Scarlet Zealot slain (3)
+Scarlet Missionary slain (3)
+
+
+== Description ==
+The strategic documents from Executor Arren contain all the details we need to wipe the human infestation from the lands. According to the information, The Scarlet Crusade has assigned Captain Perrine and a brigade to the ruined tower southwest of Brill.
+Kill Perrine along with 3 Zealots and 3 Missionaries and report back to me.
+
+
+== Rewards ==
+You will receive:
+
+3
+1,300 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Young <class>, you shouldn't be wasting your time here in Brill when your people need you fighting for their cause. Now, take up arms and travel to the southwest, to the ruined tower, and slay Captain Perrine along with 3 Scarlet Zealots and 3 Scarlet Missionaries. We shall herd the Scarlet Crusade like cattle to their demise.
+
+
+== Completion ==
+Captain Perrine's death will undoubtedly please The Dark Lady.  You have performed your duty well, <class>.
+
+
+== Notes ==
+You may want to complete this quest alongside  [7] Proof of Demise.
+
+
+== Progression ==
+ [8] At War With The Scarlet Crusade
+ [9] At War With The Scarlet Crusade
+ [10] At War With The Scarlet Crusade
+ [12] At War With The Scarlet Crusade
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

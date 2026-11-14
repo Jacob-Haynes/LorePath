@@ -1,0 +1,47 @@
+title: Avenge My Village
+revision: 5995213
+part: whole
+quest: 6548
+url: https://warcraft.wiki.gg/wiki/Avenge_My_Village
+
+== Objectives ==
+Kill 8 Grimtotem Ruffians and 6 Grimtotem Mercenaries, and then return to Makaba Flathoof near the southeastern edge of Stonetalon.
+
+Grimtotem Ruffian slain (8)
+Grimtotem Mercenary slain (6)
+
+
+== Description ==
+The Grimtotem Clan raided my village and killed most everyone. I killed all I could, but barely escaped with my life.
+<Name>, all I wish now is that more of them are dead. You will find them just to the west of here.
+
+
+== Rewards ==
+You will receive:
+
+10
+3,690 XP
++250 reputation with Thunder Bluff
+
+
+== Progress ==
+Have you killed them yet?
+
+
+== Completion ==
+<Name>, I thank you... but I will never forget what the Grimtotem have done to my village.
+
+
+== Progression ==
+ [18] Avenge My Village
+ [18] Kill Grundig Darkcloud
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

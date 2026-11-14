@@ -1,0 +1,64 @@
+title: Farsen's Watch
+revision: 6964366
+part: whole
+quest: 96392
+url: https://warcraft.wiki.gg/wiki/Farsen%27s_Watch
+
+Farsen's Watch begins the attunement quest chain to Hall of Thanes in Forever. Find Earthseer Farsen overlooking Gol'Bolar Quarry to begin.
+
+
+== Objectives ==
+Speak with Earthseer Farsen and ask him to lend you his farsight to observe the Dark Iron threat.
+
+Use Farsen's Farsight
+
+
+== Description ==
+Greetings to ye, friend. My name is Earthseer Farsen and I'm visiting Dun Morogh from Aerie Peak. As I was travelin', I couldn't help but notice that we have, well... a bit o' a Dark Iron Dwarf problem.
+If ye have a moment, I can show ye what I mean. I've got a bit o' magic that should do the trick.
+
+
+== Rewards ==
+You will receive:
+
+680 XP
++75 reputation with Ironforge
++75 reputation with Gnomeregan Exiles
+
+
+== Progress ==
+Farsight can show ye a great many things, even things ye'd rather not see.
+
+
+== Completion ==
+So ye see now, <class>? Thick as cockroaches they are, and that's just the ones we can see from the sky.
+Ye look like a sturdy enough sort. Hows about a bit o' violence?
+
+
+== Notes ==
+Speak with Farsen again:
+
+Farsen puts players in a vehicle, buffing them with Farsen's Far Sight, showing a bunch of Dark Iron Spies and Rockjaw Boneshapers. Click off the buff to exit.
+
+
+== Progression ==
+ [13] A Visitor to Dun Morogh (optional breadcrumb)
+ [13] Farsen's Watch
+ [13] Nip 'Em in the Bud
+ [15] Underground Map
+ [16D] Old Ironforge Incursion
+Dungeon quests
+ [15D] Important Heirlooms
+ [15D] The Restless Dead
+ [15D] An Ancient Grudge
+ [16] The Treaty of Understanding
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

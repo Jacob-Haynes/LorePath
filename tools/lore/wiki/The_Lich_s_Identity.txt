@@ -1,0 +1,56 @@
+title: The Lich's Identity
+revision: 6708259
+part: whole
+quest: 357
+url: https://warcraft.wiki.gg/wiki/The_Lich%27s_Identity
+
+== Objectives ==
+Bring the Lich's Spellbook to Bethor Iceshard in the Undercity.
+
+ [The Lich's Spellbook]
+
+
+== Description ==
+There is a lich who dwells on the island in Brightwater Lake to the north. Although he is a free-willed Forsaken, he believes all other Undead are Scourge slaves and has his minions attack anyone who approaches him.
+But because he is Forsaken, the Queen will want him. And if he is skilled in Necromancy, then his knowledge would be...quite useful to us.
+To discover his identity and his talents, I must see his spellbook. Steal into his camp and acquire it, then return to me.
+
+
+== Rewards ==
+You will receive:
+
+1 75
+525 XP (or 3 30 at level 70)
++75 or +150 reputation with Undercity
+
+
+== Progress ==
+<Name>, have you acquired the book?
+
+
+== Completion ==
+Very good, <name>.  I will study this book and determine the identity of that lich.  You have served your Queen well.
+<Bethor opens the book and stares intently at its glowing pages...>
+Astonishing!  The book you retrieved belongs to no one other than Gunther Arcanus!
+Gunther was a skilled Necromancer in life; he and I were friends and comrades-in-arms, before the Plague.  And judging from his book he has grown even more powerful in death.
+His skills would be a great boon to us.
+
+
+== Progression ==
+ [8] The Prodigal Lich
+ [8] The Lich's Identity
+ [8] Return the Book
+ [12] Proving Allegiance
+ [10] Candles of Beckoning
+ [10] The Dormant Shade
+ [12] The Prodigal Lich Returns
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

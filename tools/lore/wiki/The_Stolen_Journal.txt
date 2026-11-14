@@ -1,0 +1,50 @@
+title: The Stolen Journal
+revision: 5587006
+part: whole
+quest: 218
+url: https://warcraft.wiki.gg/wiki/The_Stolen_Journal
+
+== Objectives ==
+Grelin Whitebeard wants you to kill Grik'nir the Cold, and retrieve his journal. 
+
+ [Grelin Whitebeard's Journal]
+
+
+== Description ==
+My journal! They took it away to the cave. The one that had it... It was a big brute with some odd markings on his skin and face. I didn't get a much better look than that.
+You've had some luck with the trolls, maybe you could go get it back for me?
+
+
+== Rewards ==
+
+You will also receive:
+
+550 XP (or 3 30 at level 80)
+500 reputation with Gnomeregan Exiles
+250 reputation with Ironforge
+
+
+== Progress ==
+<Name>! Any luck? 
+
+
+== Completion ==
+Wonderful, <name>! Many thanks for retrieving my notebook. Well, it would seem that the troll situation here in Coldridge Valley is under control and not much cause for worry.
+After I put the finishing touches on my report, I'll need someone to courier it to my brother Senir. 
+
+
+== Progression ==
+ [4] The Troll Cave
+ [5] The Stolen Journal
+ [5] Senir's Observations
+ [5] Senir's Observations
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

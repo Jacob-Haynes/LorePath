@@ -1,0 +1,44 @@
+title: Nature's Call (Forever)
+revision: 6971319
+part: whole
+quest: 97977
+url: https://warcraft.wiki.gg/wiki/Nature%27s_Call_%28Forever%29
+
+== Objectives ==
+Collect 4 Gnarlpine Totems and bring them to Tarindrella.
+
+Gnarlpine Totem (4)
+
+
+== Description ==
+The Gnarlpine furbolg would not turn on their ancient allies so readily. We must learn more of their plight.
+Search their abandoned homes for totems. If any survived the chaos of their departure, their engravings may tell us more of what happened here.
+You'll find their camps along the western edge of the glen, though the grell and grellkin may have scattered them beyond.
+
+
+== Rewards ==
+You will receive:
+
+50
+250 XP
++100 reputation with Darnassus
+
+
+== Progress ==
+Don't worry about any larger totems you might find. I wouldn't know what to do with them if you found a way to get them!
+
+
+== Completion ==
+Oh, it's even worse than I thought.
+These engravings tell us that the Gnarlpine began having nightmares of being wiped out by some great shadow. Before long, that fear turned to rage--and the shadow to their former elven friends. To be aware of your own mind slipping away from you...
+Our only hope is that this may help us better understand what is happening on Teldrassil. Thank you for your aid, <name>.
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

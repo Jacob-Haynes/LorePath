@@ -1,0 +1,54 @@
+title: As Above, So Below
+revision: 6969992
+part: whole
+quest: 99152
+url: https://warcraft.wiki.gg/wiki/As_Above%2C_So_Below
+
+== Objectives ==
+Collect 6 Faintly Glowing Bones for Hilda the Breaker.
+
+Faintly Glowing Bone (6)
+
+
+== Description ==
+While the Tarnished in Shadowvale to the southwest are definitely a problem, we cannot allow the cellars below the town to fester into a full-blown Scourge uprising on Bandarion Keep.
+I need to get these trainees up to snuff in case that happens. You, however, are going to receive what I like to call a crash course.
+Travel beneath Shadowvale and retrieve some of their wretched bones so we can study them further. I need ones that still retain some of the initial reanimation magic--that's glowing ones.
+
+
+== Rewards ==
+You will receive:
+
+840 XP
++100 reputation with Undercity
+
+
+== Progress ==
+You'd best not be returning empty-handed. I either need the bones I asked for, or your body on a stretcher to confirm you at least gave it your all trying to get them.
+
+
+== Completion ==
+Well done, recruit. We might just make something out of you yet.
+With these bones we may be able to better understand how such a threat was able to go unnoticed for so long.
+
+
+== Notes ==
+The Faintly Glowing Bones drop from Shadowvale Lurchers and Shadowvale Mystics in the Shadowvale cellar.
+
+
+== Progression ==
+   [11] A Second Home (optional)
+   [11] Murlocs at the Gates
+   [11] Touring the Grounds
+   [12] The Tarnished,    [11] Making Repairs
+   [12] A Token of Good Faith
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,48 @@
+title: Dwarven Digging
+revision: 6912516
+part: whole
+quest: 746
+url: https://warcraft.wiki.gg/wiki/Dwarven_Digging
+
+== Objectives ==
+Collect 5 Prospector's Picks.
+At a forge, smash the Prospector's Picks to create Broken Tools.
+Bring 5 Broken Tools to Baine Bloodhoof in Bloodhoof Village.
+
+ [Broken Tools] (5)
+
+
+== Description ==
+There are dwarves preparing a dig site to the northwest.  They think secrets lie in the earth, and that is true, but hollowing and defiling the land is no way to earn its teachings.
+Collect the dwarven tools of digging, smash them, and return to me with the dwarves' broken tools.
+You can smash the tools at a forge.  You will find one in Thunder Bluff, but any forge—even a forge at the dwarven camp—will suffice.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Fortified Bindings]
+ [Rough-Hewn Kodo Leggings]
+You will also receive:
+
+700 XP (or 4 20 at max level)
++250 reputation with Thunder Bluff
+
+
+== Progress ==
+Hello, <name>.  Do you have the Broken Tools?  The dwarves' digging will enrage the kodos of Mulgore.  This defilement must be stopped!
+
+
+== Completion ==
+Thank you, <name>.  This will calm the beasts of Mulgore.  And, spirits willing, it will teach the dwarves that hollowing the land is not the path to knowledge.
+
+
+== Trivia ==
+Patch 3.3.0 added another identical ID starting and ending with Ahmo Thunderhorn.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==

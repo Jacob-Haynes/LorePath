@@ -1,0 +1,44 @@
+title: Protect Kaya
+revision: 6339686
+part: whole
+quest: 6523
+url: https://warcraft.wiki.gg/wiki/Protect_Kaya
+
+== Objectives ==
+Escort Kaya Flathoof to Camp Aparaje, and then return to Makaba Flathoof near the southeastern edge of Stonetalon.
+
+Kaya Escorted to Camp Aparaje
+
+
+== Description ==
+Thank you for rescuing me! We must leave quickly before they discover that I am free. Please escort me to Camp Aparaje. From there, I know my way.
+My father, Makaba Flathoof, will be desperate to know that I am safe.
+
+
+== Rewards ==
+You will receive:
+
+10
+1350 XP (or 8 40 at max level)
+
+
+== Completion ==
+Kaya is alive! <name>, I have you to thank for rescuing her.
+
+
+== Locations ==
+
+
+== Progression ==
+ [18] Protect Kaya
+ [18] Kaya's Alive
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

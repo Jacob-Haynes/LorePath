@@ -1,0 +1,45 @@
+title: The Venture Co. (Classic)
+revision: 5587063
+part: whole
+quest: 764
+url: https://warcraft.wiki.gg/wiki/The_Venture_Co._%28Classic%29
+
+== Objectives ==
+Kill 6 Venture Co. Supervisors and 14 Venture Co Workers in the mine that lies to the northeast of the Ravaged Caravan site.
+
+Venture Co. Worker slain (14)
+Venture Co. Supervisor slain (6)
+
+
+== Description ==
+This explains the buildup of Venture Co. employees and equipment we've seen in Mulgore. Those goblins... their company is expanding too quickly for their own good. It's how they say, show a goblin something, and you can hear the scales in the background.
+Greedy little things, they are. Unfortunately for their business enterprise, we tauren cannot allow them to conduct their operations in our lands. Go to their mine northeast of the ravaged caravan and send them a message.
+
+
+== Rewards ==
+You will receive:
+
+2 50
+
+
+== Progress ==
+The Venture Co. was refused mining rights here in Mulgore, but it would seem that they do not take no for an answer. We tauren are not ones to mince words, however, and we have other ways of getting our message across.
+
+
+== Completion ==
+I don't think there could be too much misinterpreting or ignoring of that signal, hm? The Venture Co. will know not to take the <race> lightly, or to be so arrogant as to believe we would allow them to steal the natural resources around us without protest.
+
+
+== Notes ==
+There are two locations in Mulgore that have the Venture Co. Supervisors and Venture Co Workers that you need to kill to complete this quest. The one mentioned in the description is The Venture Co. Mine, more due east than northeast of The Ravaged Caravan. This is the preferred location as there are plenty of both types of NPCs to kill, and you can combine this with the  [12] Supervisor Fizsprocket quest in the same mine to save time.
+The second location is a small Venture Co. camp north-northeast of the north (2nd tier) elevators in Thunder Bluff. This location has the disadvantages that there are fewer NPCs, only two supervisors, and you will still have to enter the mine to do the  [12] Supervisor Fizsprocket quest.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

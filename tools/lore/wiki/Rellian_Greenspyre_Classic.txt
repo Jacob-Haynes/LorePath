@@ -1,0 +1,57 @@
+title: Rellian Greenspyre (Classic)
+revision: 6825820
+part: whole
+quest: 922
+url: https://warcraft.wiki.gg/wiki/Rellian_Greenspyre_%28Classic%29
+
+== Objectives ==
+Bring a Timberling Seed to Rellian Greenspyre in Darnassus.
+
+ [Timberling Seed] (provided)
+
+
+== Description ==
+<Name>, can you take one of the seeds you brought me to my friend, Rellian Greenspyre? He is a druid in Darnassus, and when last we spoke he revealed his interest in my work with the Timberlings. He had some ideas himself, and he will appreciate a specimen seed to work with.
+Thank you, <name>. You have been a great help to me. I hope that, some day, you will see the fruit of my labors.
+You will usually find Rellian walking the pathways of the Cenarian Enclave[sic] in Darnassus.
+
+
+== Rewards ==
+You will receive:
+
+320 XP
++50 or +75 reputation with Darnassus
+
+
+== Progress ==
+Hello...
+And how may I help you?
+
+
+== Completion ==
+Ah, a timberling seed?  I wanted to try growing one of these to help Denalan with his studies.
+But I'm afraid I've discovered that a corruption has grown in many of the timberlings, and seeds from such creatures carry their parent's taint.  They are beyond my talents to repair.
+Denalan is very skilled with things that grow.  He may find a cure for future timberlings.  He may be their only hope.
+
+
+== Progression ==
+ [1-30] Denalan's Earth (optional)
+ [9] Timberling Seeds &  [1-30] Timberling Sprouts
+Unlocks:
+ [1-30] The Shimmering Frond →  [1-30] The Sprouted Fronds
+ [1-30] The Glowing Fruit
+ [7] Rellian Greenspyre
+ [9] Tumors
+ [9] Return to Denalan
+ [9E] Oakenscowl
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated to reflect Rellian's change of location.   
+ Patch 3.0.2 (2008-10-14): "Cenarian Enclave" corrected to "Cenarion Enclave".   
+
+
+== External links ==
+
+Wowhead
+WoWDB

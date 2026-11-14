@@ -550,12 +550,47 @@ lore_sec["__scripts"]["OnClick"](lore_sec)
 check("Long ago, a test." in canvas_texts(), "and clicking again shows it")
 
 # Chapters: each shown once its quest is done, or with Show spoilers.
-tirisfal = ns.ZoneLore[1420]
-check(tirisfal["chapters"] is not None and tirisfal["chapters"][1]["after"] == 96898
-      and "Naxxramas" in tirisfal["chapters"][1]["text"] and "Naxxramas" not in tirisfal["text"],
+# Every chapter's quest can be done by a race that quests in its zone, so
+# playing there can reveal it.
+HOME_RACES = {1429: ("Alliance", (1,)), 1426: ("Alliance", (3, 7)), 1438: ("Alliance", (4,)),
+              1411: ("Horde", (2, 8)), 1412: ("Horde", (6,)), 1420: ("Horde", (5,)),
+              1413: ("Horde", (2, 5, 6, 8, 96)), 1442: ("Horde", (2, 5, 6, 8, 96))}
+saved_who = (char["race"], char["class"], char["faction"])
+unreachable = []
+for zone, lore in ns.ZoneLore.items():
+    for c in (lore["chapters"].values() if lore["chapters"] else []):
+        if zone == 2521:
+            people = [("Horde", 96), ("Alliance", 95)]
+        else:
+            faction, races = HOME_RACES.get(zone, (None, ()))
+            people = [(faction, r) for r in races]
+        ok = False
+        for faction, race in people:
+            for cls in range(1, 12):
+                char["faction"], char["race"], char["class"] = faction, race, cls
+                ns.RefreshPlayer()
+                if ns.IsEligible(c["after"]):
+                    ok = True
+                    break
+            if ok:
+                break
+        if people and not ok:
+            unreachable.append((zone, c["after"]))
+char["race"], char["class"], char["faction"] = saved_who
+ns.RefreshPlayer()
+check(not unreachable, f"every chapter's quest can be done by a race that quests in its zone: {unreachable}")
+
+real_tirisfal = ns.ZoneLore[1420]
+real_chapters = list(real_tirisfal["chapters"].values())
+by_quest = {c["after"]: c for c in real_chapters}
+check(96898 in by_quest and "Naxxramas" in by_quest[96898]["text"] and "Naxxramas" not in real_tirisfal["text"],
       "Tirisfal's Naxxramas lore is a chapter after Remnants of War, not in its premise")
-check([c["after"] for c in tirisfal["chapters"].values()] == [96898, 96899, 96896, 91317],
-      "and its chapters follow the Bandarion Keep story in order")
+keep_order = [c["after"] for c in real_chapters if c["after"] in (96898, 96899, 96896, 91317)]
+check(keep_order == [96898, 96899, 96896, 91317], "and the Bandarion Keep chapters follow its story in order")
+# The rest of these checks use just the Bandarion Keep chapters, so they don't
+# change as more of Tirisfal's story is written.
+tirisfal = lua.table_from({"text": real_tirisfal["text"], "articles": real_tirisfal["articles"],
+                           "chapters": lua.table_from([by_quest[q] for q in (96898, 96899, 96896, 91317)])})
 open_quests = sorted(q for q in ns.Quests.keys() if ns.IsEligible(q) and not ns.IsDone(q)
                      and not char["completed"][q])[:2]
 closed_quest = [q for q in sorted(ns.Quests.keys()) if not ns.IsEligible(q)][0]
@@ -597,7 +632,19 @@ check(lore_body() == "Long ago, a test.\n\nThen came A.\n\nElsewhere, B.\n\nAt l
       and others_text not in canvas_texts() and not frame["loreReveal"].IsShown(frame["loreReveal"]),
       "Reveal shows that chapter, in its place")
 check("Chapter B Article" in about_sources()[1], "and credits it")
-ns.revealedLore[ns.ZoneLore[lore_zone]] = None
+ns.Refresh()
+check(any("Elsewhere, B." in t for t in canvas_texts()), "a refresh on the same page keeps it revealed")
+away_row = [r for r in zone_rows() if isinstance(r["zoneID"], int) and r["zoneID"] != lore_zone][0]
+away_row["__scripts"]["OnClick"](away_row)
+lore_row["__scripts"]["OnClick"](lore_row)
+check(not any("Elsewhere, B." in t for t in canvas_texts()) and frame["loreReveal"].IsShown(frame["loreReveal"]),
+      "going to another page and back hides it again, with Reveal offered once more")
+frame["loreReveal"]["__scripts"]["OnClick"](frame["loreReveal"])
+check(any("Elsewhere, B." in t for t in canvas_texts()), "Reveal works again")
+frame.Hide(frame)
+frame.Show(frame)
+ns.Refresh()
+check(not any("Elsewhere, B." in t for t in canvas_texts()), "and closing the window hides it again too")
 char["completed"][qa] = None
 ns.RefreshCompleted()
 lore_row["__scripts"]["OnClick"](lore_row)
@@ -799,10 +846,12 @@ with tempfile.TemporaryDirectory() as tmp:
         check(wiki_lore.quest_ids() == {100}, "quest IDs come from ns.Quests only, not Data/Quests.lua's other tables")
     finally:
         wiki_lore.QUESTS = saved_quests_path
-check(wiki_lore.QUESTBOX_ID.search("{{Forever only|quest}}\n{{Questbox\n | id = 96898\n | name = Remnants of War\n}}").group(1) == "96898"
-      and wiki_lore.QUESTBOX_ID.search("{{Questbox\n | level = {{level|19|13}}\n | money = {{cost||10}}\n | id = 1062\n}}").group(1) == "1062"
-      and wiki_lore.QUESTBOX_ID.search("{{Questbox\n | name = X\n}}\n{{Npcbox\n| id = 5\n}}") is None
-      and wiki_lore.QUESTBOX_ID.search("{{Npcbox\n| id = 5\n}}") is None,
+check(wiki_lore.questbox_id("{{Forever only|quest}}\n{{Questbox\n | id = 96898\n | name = Remnants of War\n}}") == 96898
+      and wiki_lore.questbox_id("{{Questbox\n | level = {{level|19|13}}\n | money = {{cost||10}}\n | id = 1062\n}}") == 1062
+      and wiki_lore.questbox_id("{{Questbox\n | rewards = One of: {{plainlist|\n*[[Flax Gloves]]\n}}\n | id = 364\n}}") == 364
+      and wiki_lore.questbox_id("{{Questbox\n | start = {{NPC|x|id = 9}}\n}}") is None
+      and wiki_lore.questbox_id("{{Questbox\n | name = X\n}}\n{{Npcbox\n| id = 5\n}}") is None
+      and wiki_lore.questbox_id("{{Npcbox\n| id = 5\n}}") is None,
       "fetch reads a quest article's ID from its Questbox, and nothing else's")
 
 # The report checks chapters: their quest must be LorePath's and their quest article's.

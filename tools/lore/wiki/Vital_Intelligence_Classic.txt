@@ -1,0 +1,70 @@
+title: Vital Intelligence (Classic)
+revision: 6896137
+part: whole
+quest: 383
+url: https://warcraft.wiki.gg/wiki/Vital_Intelligence_%28Classic%29
+
+Vital Intelligence concludes the Deathknell portion of the Forsaken starting experience, sending players onward to Brill. Tirisfal Glades quests continue with the plethora of quests in Brill, including Zygand's  [8] At War With The Scarlet Crusade and  [6] Patience; and  [6] Discipline in Forever.
+
+
+== Objectives ==
+Deliver the Scarlet Crusade Documents to Executor Zygand in Brill.
+
+ [Scarlet Crusade Documents] (provided)
+
+
+== Description ==
+These will need to be taken to my superior, Executor Zygand, in Brill. With this information, we'll be able to deal a decisive blow to the Scarlet Crusade. Your services have been useful here in Deathknell, but I need someone to deliver this to Zygand, and I believe he'll be able to find you more appropriate work.
+Take the road north out of Deathknell. Soon after entering Tirisfal proper, you'll hit a crossroads. Take the eastern fork, and keep going east. You'll pass Cold Hearth Manor along the way.
+
+
+== Rewards ==
+You will receive:
+
+75
+340 XP
++75 or +150 reputation with Undercity
+
+
+== Progress ==
+Yes, what do you want?
+
+
+== Completion ==
+Yes, this is very good.  You've done well in obtaining this information, <name>.  Hmm... names of the officers in the Tirisfal Glades... 
+Imagine the blow we could deal to the morale of those bloody zealots if we were to kill their leaders in one swift strike.
+
+
+== Notes ==
+On the way out, pick up  [5] A Rogue's Deal from Calvin Montague at the palisade separating Deathknell from the rest of Tirisfal Glades,  [7] Fields of Grief from Deathguard Simmer at the first fork on the road outside, and  [5] Gordo's Task from Gordo, an abomination patrolling the road on the way to Brill.
+Executor Zygand is located at  in Brill, just outside the Brill Town Hall.
+
+
+== Progression ==
+  [1] Rude Awakening
+ [2] The Mindless Ones &  [2] The Damned
+ [3] Rattling the Rattlecages, Class quests
+ [5] Marla's Last Wish,  [3] Scavenging Deathknell,  [4] Night Web's Hollow
+ [4] A Light in the Darkness ( only)
+ [4] The Scarlet Crusade
+ [5] The Red Messenger
+ [5] Vital Intelligence
+ [5] A Rogue's Deal,  [7] Fields of Grief,  [5] Gordo's Task →  [6] Doom Weed
+ [6] The Adventurer ( only)
+Class quests:
+
+   [2] Spell Research
+   [1] A Difficult Path →    [2] Rediscovering the Light →    [4] Coming to Terms &    [4] Continue Your Training ( only)
+   [2] Meditation on Undeath
+   [2] The Scarlet Rune
+   [2] The Lost Rune
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

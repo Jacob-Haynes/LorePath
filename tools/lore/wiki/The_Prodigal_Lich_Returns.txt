@@ -1,0 +1,61 @@
+title: The Prodigal Lich Returns
+revision: 6899904
+part: whole
+quest: 411
+url: https://warcraft.wiki.gg/wiki/The_Prodigal_Lich_Returns
+
+== Objectives ==
+Bring the Nether Gem to Bethor Iceshard in the Undercity.
+
+ [Nether Gem] (provided)
+
+
+== Description ==
+Take this Nether Gem to my old comrade Bethor. It will let us communicate ... and I have much to tell him.
+
+
+== Rewards ==
+You will receive:
+
+5
+900 XP (or 5 40 at max level)
++100 or +250 reputation with Undercity
+ [Bone Buckler]
+
+
+== Progress ==
+Have you returned Gunther's book?  Has he responded?
+
+
+== Completion ==
+You convinced him to join us!  You have done a great deed for the Forsaken, <name>.  The Dark Lady will be informed.
+
+
+== Notes ==
+On completion
+Bethor Iceshard casts the Nether Gem spell. Gunther's Visage appears and walks towards Bethor.
+Gunther's Visage says: It has been a long time, Bethor, my friend.
+Gunther's Visage says: When time permits, we must speak at length.  For we have much to discuss.
+Gunther's Visage says: And thank you, <name>.  Without your aid I may never have found my way to the Forsaken.
+Bethor Iceshard says: Farewell, my friend.
+The Visage disappears.
+
+
+== Progression ==
+ [8] The Prodigal Lich
+ [8] The Lich's Identity
+ [8] Return the Book
+ [12] Proving Allegiance
+ [10] Candles of Beckoning
+ [10] The Dormant Shade
+ [12] The Prodigal Lich Returns
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

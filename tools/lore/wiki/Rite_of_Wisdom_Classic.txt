@@ -1,0 +1,55 @@
+title: Rite of Wisdom (Classic)
+revision: 6030207
+part: whole
+quest: 773
+url: https://warcraft.wiki.gg/wiki/Rite_of_Wisdom_%28Classic%29
+
+== Objectives ==
+Travel to Red Rocks east of Thunder Bluff and speak with the Ancestral Spirit.
+
+
+== Description ==
+To gain acceptance amongst the elders of Thunder Bluff you must next complete the Rite of Wisdom.
+Now that you have passed the Rite of Vision, the ancestral spirits of Red Rocks will give you the blessing of our ancestors. Only those who have drunk from the Water of Seers can gain the blessing.
+Travel east of Thunder Bluff, to Red Rocks and seek out the Ancestral Spirit, <name>.
+
+
+== Rewards ==
+You will receive:
+
+840 XP
++100 reputation with Thunder Bluff
+
+
+== Completion ==
+You have shown great diligence in your yearning to pass the Rites of the Earthmother, <name>.
+We, the Ancestral Spirits, represent the mighty <race> who gave their lives bravely to found and protect our great city of Thunder Bluff. I hereby pass the duty of that protection over to you.
+You have passed the Rite of Wisdom, young <class>. Enter Thunder Bluff with pride.
+
+
+== Notes ==
+Red Rocks is in the mountains directly east from Thunder Bluff. The Ancestral Spirit is in an old Tauren graveyard. The graveyard is guarded by gnolls.
+
+
+== Progression ==
+ [2] A Humble Task
+ [3] A Humble Task
+ [3] Rites of the Earthmother
+ [4] Rite of Strength
+ [5] Rites of the Earthmother
+ [6] Rite of Vision
+ [7] Rite of Vision
+ [7] Rite of Vision
+ [10] Rite of Wisdom
+ [10] Journey into Thunder Bluff
+ [14] Rites of the Earthmother
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

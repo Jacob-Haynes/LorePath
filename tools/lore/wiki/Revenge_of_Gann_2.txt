@@ -1,0 +1,59 @@
+title: Revenge of Gann (2)
+revision: 6230154
+part: whole
+quest: 849
+url: https://warcraft.wiki.gg/wiki/Revenge_of_Gann_%282%29
+
+Revenge of Gann is the 3rd quest in the Gann's Reclamation quest chain.
+
+
+== Objectives ==
+Destroy the flying machine at Bael Modan and return to Gann Stonespire.
+
+Bael Modan Flying Machine destroyed
+ [Explosive Stick of Gann] (provided)
+
+
+== Description ==
+Following Khazgorm's plans it should be no problem to fashion an explosive charge[sic]
+Ah, there we go.
+Now, <name>, I am going to entrust you with a special task. Take this explosive stick and use it to blow up the flying machine at Bael Modan.
+Not only is the flying machine a key part of the site's infrastructure it also serves as a weapon of war. More importantly it is an icon of power and an insult to the memory of my tribe.
+Make me proud by completing this heroic task and you shall be rewarded.
+
+
+== Rewards ==
+You will receive:
+
+20
+2100 XP (or 12 60 at max level)
++100 or +250 reputation with Thunder Bluff
+ [Totemic Clan Ring]
+
+
+== Progress ==
+Once the dwarven flying machine has been destroyed I will feel the sweet satisfaction of revenge.
+
+
+== Completion ==
+You have done well, <name>! May you be revered in Thunder Bluff as a defender of sacred tauren lands and a champion of the lost tribe.
+
+
+== Notes ==
+The flying machine is nowhere near the keep, it is on a tower halfway down to the excavation site.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== Progression ==
+ [23] Gann's Reclamation
+ [26] Revenge of Gann
+ [26] Revenge of Gann
+
+
+== External links ==
+
+Wowhead
+WoWDB

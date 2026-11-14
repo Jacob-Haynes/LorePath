@@ -1,0 +1,49 @@
+title: The Demon Scarred Cloak
+revision: 6611254
+part: whole
+quest: 770
+url: https://warcraft.wiki.gg/wiki/The_Demon_Scarred_Cloak
+
+== Objectives ==
+Find someone who knows of Ghost Howl. 
+
+ [Demon Scarred Cloak]
+
+
+== Description ==
+The ragged hide of Ghost Howl still bears a terrible wound, gained from the wolf's battles against the Burning Legion.
+Perhaps someone in Camp Sungraze should know of Ghost Howl's demise.... 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Skorn's Hammer]
+ [Skorn's Rifle]
+
+
+== Completion ==
+I can barely believe my old eyes!  You defeated the great wolf Ghost Howl?  I look upon you with new respect, young <class>.  You are a hunter of extreme skills!
+Let me offer you something.  My days of hunting are over, but I would be honored if you used one of my weapons in your hunts.
+May it strike true, and bring you renown.
+And let us hope that Ghost Howl's spirit has finally found peace. 
+
+
+== Progression ==
+ [1-30] Preparation for Ceremony
+ [1-30] A Sacred Burial
+ [1-30] The Demon Scarred Cloak
+  [1-30] Rite of Wisdom (after completing   [1-30] Rite of Vision)
+Grimtotem questline (Tauren only):
+  [1-30] Rite of Vision (from Bloodhoof Village)
+  [1-30] Wildmane Totem
+  [1-30] Wildmane Cleansing
+  [1-30] Journey into Thunder Bluff
+  [1-30] War Dance
+  [1-30] Walk With The Earth Mother (to Orgrimmar)
+
+
+== External links ==
+
+Wowhead
+WoWDB

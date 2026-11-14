@@ -1,0 +1,43 @@
+title: The Admiral's Orders (2)
+revision: 6907348
+part: whole
+quest: 831
+url: https://warcraft.wiki.gg/wiki/The_Admiral%27s_Orders_%282%29
+
+== Objectives ==
+Deliver Admiral Proudmoore's Orders to Vol'jin in Thrall's chamber in Orgrimmar.
+
+ [Admiral Proudmoore's Orders] (provided)
+
+
+== Description ==
+Humans cannot be trusted. We fought alongside them with a weary heart, knowing they would betray us one day.
+Admiral Proudmoore's death was not enough to stop his legacy of deceit. The human scum had his plans well laid out before he ever met his demise.
+His reign won't even die with Benedict it seems. Who knows how long it will be before the next waves of Proudmoore's men land upon our shores.
+We need to get these orders to Vol'jin in Orgrimmar immediately! He can be found in Thrall's chamber.
+
+
+== Progress ==
+Can you not see that I am busy? This had better be pressing....
+
+
+== Completion ==
+Countless times I urged the Warchief not to trust the humans, but personal pride is not what is at stake here.
+You have served the Horde honorably, young <class>.
+Now excuse me, I must counsel Thrall on these matters at once....
+
+
+== Notes ==
+You will find Vol'jin in Grommash Hold, which is in the Valley of Wisdom of Orgrimmar.
+Before The Burning Crusade, the quest was ended by Nazgrel, in fact, Vol'jin's progress and completion text are exactly what Nazgrel used.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.0.3 (2007-01-09): Quest ender changed from Nazgrel to Vol'jin.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

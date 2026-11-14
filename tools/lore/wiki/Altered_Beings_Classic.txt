@@ -1,0 +1,65 @@
+title: Altered Beings (Classic)
+revision: 6471660
+part: whole
+quest: 880
+url: https://warcraft.wiki.gg/wiki/Altered_Beings_%28Classic%29
+
+== Objectives ==
+Bring 8 Altered Snapjaw Shells to Tonga Runetotem at the Crossroads.
+
+ [Altered Snapjaw Shell] (8)
+
+
+== Description ==
+Your findings are incredible, <name>. These oases hold properties that must come from an outside source. Or perhaps an inside one.
+I want to know how these fissures are affecting the beasts who drink from the oases' water.
+Hunt oasis snapjaws at the Lushwater and Stagnant Oases. Bring me their shells so I may examine them.
+
+
+== Rewards ==
+You will receive:
+
+6
+1,150 XP
++100 or +250 reputation with Thunder Bluff
+
+
+== Progress ==
+How goes your collection? Did you get the shells?
+
+
+== Completion ==
+Thank you, <name>. Studying the beasts of an area can tell much about the area itself. We shall see what tale these shells tell.
+Please accept my gratitude for your aid ... and perhaps you can use these coins. I find that I do not need them.
+
+
+== Notes ==
+Upon completion
+Tonga Runetotem inspects the snapjaw shells...
+Tonga Runetotem says: Hm...
+Tonga Runetotem says: Strange. Very strange...
+Tonga Runetotem says: <Name>. These shells tell me much, but I fear many more questions are now raised...
+
+
+== Progression ==
+ [10] The Barrens Oases
+ [13] The Forgotten Pools
+ [16] The Stagnant Oasis
+ [16] Altered Beings
+ [16] Hamuul Runetotem
+ [16] Nara Wildmane
+ [22D] Leaders of the Fang
+
+
+== Trivia ==
+During the original beta, this quest required 8 Mud Thresh Hides from the Mud Threshes that inhabited these oases.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced with a new version.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

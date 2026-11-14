@@ -1,0 +1,73 @@
+title: Ursal the Mauler (quest)
+revision: 5612903
+part: whole
+quest: 486
+url: https://warcraft.wiki.gg/wiki/Ursal_the_Mauler_%28quest%29
+
+== Objectives ==
+
+Kill Ursal the Mauler.
+
+Ursal the Mauler slain
+
+
+== Description ==
+Now the time has come to save the Druids of the Talon. If we fail now, <name>, they will be forever lost in sleep.
+I shall prepare the Relics of Wakening and perform the ritual. For my work to take effect, the cursed beast responsible for this horrible situation must be slain.
+It was Ursal the Mauler who meddled with our brethren's calling and it is Ursal the Mauler who must now pay so they can be freed. Travel northwest on the road and find the path north into The Cleft. Ursal's den will be there.
+
+
+== Rewards ==
+
+You will also receive:
+
+1 10
+250 XP
++350 reputation with Darnassus
+
+
+== Progress ==
+Our brethren cannot be awakened until Ursal the Mauler has been slain, <name>.
+
+
+== Completion ==
+<Name> you have proven yourself a most worthy and able <class>.  A <race> who follows the path of honor as sure as you do is certain to find great glory in this world.
+Ursal's death brings safety to our once slumbering druids, but the source of his corruption yet remains within our forests. With time, I trust that you will find this evil and cleanse it for the sake of all of our people. You are destined for great things, young <class>.
+
+
+== Notes ==
+While on the way to the Cleft, pick up  [1-30] The Road to Darnassus from Moon Priestess Amara.
+
+
+== Progression ==
+ [1-30] A Troubling Breeze
+ [1-30] Gnarlpine Corruption
+ [1-30] The Relics of Wakening
+Side quest:  [1-30] Resident Danger
+Side chain found in the Barrow Den:
+ [1-30] The Sleeping Druid
+ [1-30] Druid of the Claw
+ [1-30] Ursal the Mauler
+Side quest found along the way:  [1-30] The Road to Darnassus
+ [1-30] Denalan's Earth
+ [1-30] Timberling Seeds &  [1-30] Timberling Sprouts
+Completing these two also unlocks the following quests, as well as the final quest chain:
+ [1-30] The Glowing Fruit
+ [1-30] The Shimmering Frond
+ [1-30] The Sprouted Fronds
+ [1-30] The Moss-twined Heart
+ [1-30] Planting the Heart
+ [1-30] Rellian Greenspyre
+ [1-30] Mossy Tumors
+ [1-30] Oakenscowl
+
+
+== Patch changes ==
+ Patch 7.0.3 (2016-07-19):  [Thornroot Hauberk] added as a reward.   
+ Patch 4.0.3a (2010-11-23): Level dropped from 12 to 9. Ursal's location changed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

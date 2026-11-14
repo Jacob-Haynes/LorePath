@@ -1,0 +1,37 @@
+title: A Fishy Peril
+revision: 6625930
+part: whole
+quest: 40
+url: https://warcraft.wiki.gg/wiki/A_Fishy_Peril
+
+This quest is part of a quest chain of the same name.
+
+
+== Objectives ==
+Remy "Two Times" wants you to speak with Marshal Dughan in Goldshire.
+
+
+== Description ==
+<Name>, there's a new threat in Elwynn Forest!  Murlocs are swimming up the streams of eastern Elwynn, scaring away fish and attacking gentle folk!
+I warned Marshal Dughan, but he's more worried about the gnolls and the bandits.  He's not convinced that the murlocs are a danger.
+Please, <name>, speak to Dughan and persuade him to send more troops to the east!
+
+
+== Completion ==
+Yes, I spoke with Remy. I respect him as a merchant, though all reports of Murlocs to the east have been sketchy at best.
+Your concerns are noted, but unless I receive a military report of a murloc threat, we can't afford to send more troops east.
+
+
+== Progression ==
+ [1-30] A Fishy Peril
+ [1-30] Further Concerns
+ [1-30] Find the Lost Guards
+ [1-30] Discover Rolf's Fate
+ [1-30] Report to Thomas
+ [1-30] Cloth and Leather Armor
+
+
+== External links ==
+
+Wowhead
+WoWDB

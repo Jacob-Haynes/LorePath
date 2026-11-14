@@ -1,0 +1,78 @@
+title: Zalazane (quest)
+revision: 6733700
+part: whole
+quest: 826
+url: https://warcraft.wiki.gg/wiki/Zalazane_%28quest%29
+
+Zalazane is the leader of the Voodoo Trolls on the Echo Islands. He is an enemy of Vol'jin and the Darkspear Trolls. He was originally a powerful sorcerer of the tribe, but, while lusting for power and through the use of mind-enslaving magic to gather an army, he staged a coup d'etat and forced the Darkspear to flee and establish the village of Sen'jin on the shores of southern Durotar. 
+
+
+== Objectives ==
+Defeat Zalazane.
+Kill 8 Voodoo Trolls and 8 Hexed Trolls.
+Bring Zalazane's Head to Gadrin.
+
+Hexed Troll slain (8)
+Voodoo Troll slain (8)
+ [Zalazane's Head]
+
+
+== Description ==
+The witchdoctor Zalazane dwells on the Echo Isles to the east. They are the isles we once called home.
+From there he sends his trolls to the mainland, to hex our people and drag more of them under his sway.
+He must be stopped.
+Defeat Zalazane and his minions—former Darkspear trolls, now lost to us. Bring me his head and I will know his reign of evil is over.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Lightweight Boots]
+ [Veiled Grips]
+You will also receive:
+
+850 XP
++250 reputation with Orgrimmar
++250 reputation with Darkspear Trolls
+
+
+== Progress ==
+Is Zalazane defeated, <name>?
+
+
+== Completion ==
+With Zalazane gone, our tribe can again sleep in peace. Thank you, <name>. The Darkspear tribe owes you much. If you suffer from an ailment, visit my assistant Bom'bay, behind me. His voodoo is strong...
+
+
+== Notes ==
+Zalazane is a level 10 shaman located on the largest island of the Echo Isles.  He patrols from the top of a hill down into the huts directly in front of the hill.  You will either need to clear all the trolls in the huts directly in front of the hill, or you can sneak up the back side of the hill and wait for him to come back up.  The top of the hill is where you find the skull needed for the quest Minshina's Skull, so have this quest with you.
+He heals himself a lot during the fight, so he can take quite a bit of damage.  He also has a shrink curse that reduces your Strength and Stamina by 2.
+If you think you will need help soloing Zalazane and are into swimming, complete the quest Minshina's Skull first to get the  [Faintly Glowing Skull].  Then come back and take on Zalazane.  When he's down to about half health, but not so low that he starts healing himself, use the skull.  With luck, it will do enough damage and he should die instantly.
+The following quests should all be done together, as they all require you to go to the Echo Isles.  Doing them all at once saves a lot of swimming:
+
+ [8] Practical Prey - Sen'jin Village
+ [8] Break a Few Eggs - Razor Hill
+ [9] Minshina's Skull - Sen'jin Village
+ [10] Zalazane - Sen'jin Village
+Additionally, once you finish this quest, you can talk to Gadrin's assistant, Bom'bay, who will have some fun with you.
+
+
+== Progression ==
+ [1-10] Vile Familiars
+ [1-10] Burning Blade Medallion
+ [1-10] Report to Sen'jin Village
+ [10] Zalazane
+
+
+== Patch changes ==
+ Patch 4.0.1 (2010-10-12): Removed. Replaced with  [10] Cleanup on Isle E.   
+
+
+== See also ==
+Zalazane, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

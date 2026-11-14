@@ -1,0 +1,59 @@
+title: Rite of Strength (Classic)
+revision: 5586458
+part: whole
+quest: 757
+url: https://warcraft.wiki.gg/wiki/Rite_of_Strength_%28Classic%29
+
+== Objectives ==
+Kill Bristlebacks in Brambleblade Ravine and bring 12 Bristleback Belts to Chief Hawkwind in Camp Narache.
+
+ [Bristleback Belt] (12)
+
+
+== Description ==
+The Rites of the Earthmother are the steps a young tauren needs to take to gain respect in Thunder Bluff.
+First you must pass the Rite of Strength. In this test you must prove your bravery by slaying enemies of the tribe.
+Bristlebacks of Brambleblade Ravine to the east are encroaching on our tribal lands. They ambush our hunting parties and steal from the village by dark.
+Show your valor by slaying these villains and return to the Chief in Camp Narache with their belts as proof of your deeds.
+
+
+== Rewards ==
+
+You will also receive:
+
+450 XP (or 2 70 at max level)
++350 reputation with Thunder Bluff
+
+
+== Progress ==
+Have you completed the Rite of Strength, <name>? I require proof of your valor against the enemy of our tribe, the Bristlebacks.
+
+
+== Completion ==
+You have passed the first test of the Rites of the Earthmother. The tribe will be proud.
+
+
+== Progression ==
+ [2] A Humble Task
+ [3] A Humble Task
+ [3] Rites of the Earthmother
+ [4] Rite of Strength
+ [5] Rites of the Earthmother
+ [6] Rite of Vision
+ [7] Rite of Vision
+ [7] Rite of Vision
+ [10] Rite of Wisdom
+ [10] Journey into Thunder Bluff
+ [14] Rites of the Earthmother
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.7.0 (2005-09-13): The level 5 quests had the ranged weapon removed from their reward options. This was done to make sure hunters upgrade their melee damage in the levels before obtaining a pet.
+In this quest's case, the  [Light Hunting Rifle] was removed.
+
+
+== External links ==
+
+Wowhead
+WoWDB

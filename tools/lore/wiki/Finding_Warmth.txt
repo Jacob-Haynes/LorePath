@@ -1,0 +1,47 @@
+title: Finding Warmth
+revision: 6970792
+part: whole
+quest: 99159
+url: https://warcraft.wiki.gg/wiki/Finding_Warmth
+
+== Objectives ==
+Collect 14 pieces of firewood.
+
+ [Mostly Dry Firewood] (14)
+
+
+== Description ==
+My hearth is open to warm any soul, but I'd like to ask you to help me if you could.
+I simply need more firewood. It is something I would normally do myself, but I have been preoccupied by other tasks.
+
+
+== Rewards ==
+You will receive:
+
+350 XP
+
+
+== Progress ==
+Light guide you on your tasks.
+
+
+== Completion ==
+Ah, perfect. These will do--any that are too wet to use right now I will leave to dry.
+Now, if you're willing, I have more tasks I could use help with.
+
+
+== Progression ==
+ [8] Dawn in the Mountains (optional)
+ [8] Finding Warmth
+ [8] Rime's Wrath
+ [8] Rime's Wrath &  [8] Treacherous Cold
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

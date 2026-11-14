@@ -1,0 +1,41 @@
+title: Speak with Sevren (Classic)
+revision: 6897176
+part: whole
+quest: 355
+url: https://warcraft.wiki.gg/wiki/Speak_with_Sevren_%28Classic%29
+
+== Objectives ==
+Speak with Magistrate Sevren in Brill. 
+
+
+== Description ==
+You have given me the remains of the Agamands, and satisfied my desire for revenge. But the Agamand Mills hold a threat to all the Forsaken, not just to me.
+I have spoken to Magistrate Sevren of your exploits against the Agamands, and he wishes to speak with you. 
+
+
+== Rewards ==
+You will receive:
+
+85 XP
++10 reputation with Undercity
+
+
+== Completion ==
+Coleman speaks well of you, <name>, telling of your successful forays into the Agamand Mills.
+The Forsaken have need of your talents once again... 
+
+
+== Progression ==
+ [10] The Haunted Mills
+ [10] Speak with Sevren
+ [13] The Family Crypt
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced by  [1-30] Speak with Sevren.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

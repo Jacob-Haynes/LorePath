@@ -1,0 +1,44 @@
+title: Oakenscowl (Classic)
+revision: 6346471
+part: whole
+quest: 2499
+url: https://warcraft.wiki.gg/wiki/Oakenscowl_%28Classic%29
+
+== Objectives ==
+Collect the Gargantuan Tumor from Oakenscowl.
+
+ [Gargantuan Tumor]
+
+
+== Description ==
+In a cave along the southern bank of the lake, a timberling named Oakenscowl is spreading corruption to all the creatures that make Lake Al'Ameth their home.
+I dared not get too close, but even from a distance, it is obvious: Oakenscowl is being poisoned by the largest tumor I have ever seen... I would call it gargantuan, even.
+<Name>, you have already done much to aid my efforts, but I ask of you one more task. Hunt down Oakenscowl and collect the tumor; remove this source of corruption from my home.
+
+
+== Rewards ==
+
+You will also receive:
+
+6
+980 XP
+
+
+== Progress ==
+Have you located Oakenscowl yet, <race>?
+
+
+== Completion ==
+I knew you were more than capable of ridding the lake of that horrible beast.
+It is a distressing situation; Oakenscowl was once a grand leader amongst his kind... but corruption does not discriminate between the lowly and the noble.
+The size of this tumor is quite disturbing, but I must study it to learn more about the disease that upsets the timberling population.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated for Cataclysm.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

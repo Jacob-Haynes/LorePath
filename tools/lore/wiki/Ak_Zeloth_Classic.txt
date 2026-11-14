@@ -1,0 +1,52 @@
+title: Ak'Zeloth (Classic)
+revision: 6225742
+part: whole
+quest: 809
+url: https://warcraft.wiki.gg/wiki/Ak%27Zeloth_%28Classic%29
+
+== Objectives ==
+Speak with Ak'Zeloth in the Barrens.
+
+Destroy the Demon Seed
+
+
+== Description ==
+Since the last great war when the Burning Legion was defeated, I have searched for sources of demonic corruption in orc society. The collar you brought me confirms my fears.
+It belongs to the Burning Blade, a cult that rallies around an item of demonic power. It is called the Demon Seed, and it resides in the Barrens atop Dreadmist Peak. It must be destroyed!
+Go to Far Watch Post, on the border of the Barrens to the west, and speak with my assistant, Ak'Zeloth. He will direct you further.
+
+
+== Rewards ==
+You will receive:
+
+460 XP
++50 or +75 reputation with Orgrimmar
++50 or +75 reputation with Darkspear Trolls
+
+
+== Completion ==
+Neeru wants the Demon Seed destroyed, does he?  Strange...
+Very well.  If he wishes the seed gone, then I will tell you how to remove it.
+
+
+== Progression ==
+ [4] Vile Familiars /   [4] Vile Familiars &   [4] Vile Familiars
+ [5] Burning Blade Medallion
+ [5] Report to Sen'jin Village
+ [7] Report to Orgnil
+ [12] Dark Storms
+ [12] Margoz
+ [12] Skull Rock
+ [12] Neeru Fireblade
+ [13] Ak'Zeloth
+ [14] The Demon Seed
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced by a new version.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -359,9 +359,35 @@ def fetch_pages(titles, whole):
     return pages
 
 
-# The id field anywhere in the Questbox, which may hold nested templates
-# ({{level|...}}, {{cost|...}}) before it; the box ends at a line starting "}}".
-QUESTBOX_ID = re.compile(r"\{\{\s*Questbox\b(?:(?!\n\s*\}\}).)*?\|\s*id\s*=\s*(\d+)", re.S | re.I)
+def questbox_id(wikitext):
+    """The quest ID in an article's Questbox (its "| id =" field), or None. The
+    box may hold nested templates and multi-line lists ({{level|...}},
+    {{plainlist|...}}), so it's found by matching braces, not by a pattern."""
+    start = re.search(r"\{\{\s*Questbox\b", wikitext, re.I)
+    if not start:
+        return None
+    depth, i = 0, start.start()
+    while i < len(wikitext) - 1:
+        pair = wikitext[i:i + 2]
+        if pair == "{{":
+            depth += 1
+            i += 2
+        elif pair == "}}":
+            depth -= 1
+            i += 2
+            if depth == 0:
+                break
+        else:
+            i += 1
+    box = wikitext[start.start():i]
+    # Only the box's own fields: drop nested templates first.
+    while True:
+        flat = re.sub(r"\{\{(?:(?!\{\{)[\s\S])*?\}\}", "", box[2:-2])
+        if flat == box[2:-2]:
+            break
+        box = "{{" + flat + "}}"
+    match = re.search(r"\|\s*id\s*=\s*(\d+)", box)
+    return int(match.group(1)) if match else None
 
 
 def fetch_quest_ids(titles):
@@ -384,9 +410,9 @@ def fetch_quest_ids(titles):
             page = found.get(title)
             if not page or not page.get("revisions"):
                 continue
-            match = QUESTBOX_ID.search(page["revisions"][0]["slots"]["main"].get("content", ""))
-            if match:
-                ids[asked] = int(match.group(1))
+            quest = questbox_id(page["revisions"][0]["slots"]["main"].get("content", ""))
+            if quest:
+                ids[asked] = quest
     return ids
 
 

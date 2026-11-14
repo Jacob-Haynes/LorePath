@@ -1,0 +1,44 @@
+title: Collecting Kelp
+revision: 6210672
+part: whole
+quest: 112
+url: https://warcraft.wiki.gg/wiki/Collecting_Kelp
+
+== Objectives ==
+Bring 4 Crystal Kelp Fronds to William Pestle in Goldshire.
+
+ [Crystal Kelp Frond] (4)
+
+
+== Description ==
+I can make an invisibility liquor for Maybell, so she can slip away from the Maclure Vineyards and go to Tommy Joe.  But to make the liquor, I need some crystal kelp.
+Although the kelp usually grows in the ocean... sometimes murlocs collect it.  See if the murlocs near Crystal Lake have any.  Crystal Lake is just east of Goldshire.
+
+
+== Progress ==
+Do you have that crystal kelp?  I'm sure Maybell is anxious to see her beau...
+
+
+== Completion ==
+You got them.  Good show!  Now, just one moment while I concoct the potion...
+
+
+== Notes ==
+Upon completion
+William Pestle says: This shouldn't take long...
+William Pestle says: The invisibility liquor is ready for you, <name>.
+
+
+== Progression ==
+ [1-30] A Visit With Maybell
+ [1-30] Young Lovers
+ [1-30] Speak with Gramma
+ [1-30] Note to William
+ [1-30] Collecting Kelp
+ [1-30] The Escape
+
+
+== External links ==
+
+Wowhead
+WoWDB

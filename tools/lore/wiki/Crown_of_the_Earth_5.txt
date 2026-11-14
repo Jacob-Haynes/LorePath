@@ -1,0 +1,66 @@
+title: Crown of the Earth (5)
+revision: 6728188
+part: whole
+quest: 934
+url: https://warcraft.wiki.gg/wiki/Crown_of_the_Earth_%285%29
+
+Crown of the Earth is an Alliance only quest in Teldrassil, the night elf starting area. In this quest, players are sent by Corithras Moonrage to fill a vial with moonwell water from the moonwell in the Oracle Glade.
+
+
+== Objectives ==
+Fill the Amethyst Phial and bring it back to Corithras Moonrage in Dolanaar.
+
+ [Filled Amethyst Phial]
+ [Amethyst Phial] (provided)
+
+
+== Description ==
+All was not well with Teldrassil, however. Staghelm's carefully made plans for the new World Tree had borne out as he had hoped, but there was one small problem, a problem to which many of the troubles on Teldrassil may be attributed.
+However, I will not get into that yet. You must visit the last moonwell, to the northwest in the Oracle Glade. Under the boughs of the Oracle Tree lies the first and most powerful of our wells. Retrieve a phial of its water and return to me.
+
+
+== Rewards ==
+You will receive:
+
+650 XP
++250 reputation with Darnassus
+
+
+== Progress ==
+Along with the druids, the Oracle Tree and the Arch Druid have been carefully monitoring the growth of Teldrassil. But though we have a new home, our immortal lives have not been restored.
+
+
+== Completion ==
+To be in the presence of the Oracle Tree... it is almost to feel wisdom take form. Let me continue the telling...
+With Teldrassil grown, the Arch Druid approached the dragons for their blessings, as the dragons had placed upon Nordrassil in ancient times. But Nozdormu, Lord of Time, refused to give his blessing, chiding the druid for his arrogance. In agreement with Nozdormu, Alexstrasza also refused Staghelm, and without her blessing, Teldrassil's growth has been flawed and unpredictable...
+
+
+== Walkthrough ==
+
+This moonwell can be found north of the entrance to Darnassus (follow the road west to get to the city entrance), right next to the huge Oracle Tree. The exact coordinates are (38,34). Right click the vial in your inventory to fill it while standing in the water, then return to Corithras in Dolanaar to complete the quest.
+
+
+== Progression ==
+ [4] Webwood Venom
+ [5] Webwood Egg
+ [5] Tenaron's Summons
+ [5] Crown of the Earth
+ [5] Crown of the Earth
+ [5] Crown of the Earth
+ [9] Crown of the Earth
+ [11] Crown of the Earth
+ [11] Crown of the Earth
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+Teldrassil quests
+
+
+== External links ==
+
+Wowhead
+WoWDB

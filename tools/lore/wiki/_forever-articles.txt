@@ -6,6 +6,7 @@ Forever zones: Shen'dralas
 Forever zones: Zephras Isle
 Forever instances: Alcaz Prison
 Forever instances: Barrow Deeps (instance)
+Forever instances: Blackmaw Hold (instance)
 Forever instances: City of Dalaran
 Forever instances: Darkspear Islands (battleground)
 Forever instances: Drowned City
@@ -29,7 +30,8 @@ Forever subzones: Thendal Village
 Forever subzones: Valanaar Port Authority
 Forever subzones: Wheeler's Grange
 Forever subzones: Windstead
-Forever lore articles: Forever animated shorts
+Forever lore articles: Cost of Honor
+Forever lore articles: Forever short stories
 Forever lore articles: New Horizons (cinematic)
 Forever lore articles: Siege of Farholde
 Forever lore articles: Skyborne

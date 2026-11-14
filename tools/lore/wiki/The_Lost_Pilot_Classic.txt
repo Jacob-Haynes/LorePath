@@ -1,0 +1,44 @@
+title: The Lost Pilot (Classic)
+revision: 6314522
+part: whole
+quest: 419
+url: https://warcraft.wiki.gg/wiki/The_Lost_Pilot_%28Classic%29
+
+== Objectives ==
+Find Pilot Hildelve.
+
+
+== Description ==
+My friend and fellow Siege Engine pilot, Mori Hildelve, is lost in the hills. We were looking for a rare ore that's needed for a high-grade blastpowder, and during our search he drove his engine up a steep hill and busted it!
+Still convinced that ore was in these mountains, Hildelve charged me to guard our engines while he continued on foot, searching.
+It's been days, and I've heard some beastly growls in the hills at night. Mori's tough as nails, but I'm worried.
+Please, <name>. Find him.
+
+
+== Rewards ==
+You will receive:
+
+420 XP (or 2 40 at max level)
++75 reputation with Gnomeregan Exiles
++75 reputation with Ironforge
+ [Siege Brigade Vest]
+
+
+== Completion ==
+Here is the corpse of a dwarf—mauled, frozen, and picked clean by mountain scavengers.  Clutched in its hand is a book containing the roughly scribbled notes of Mori Hildelve.  And around its frame, still in superior condition, is a Brigadier's Vest.
+This grisly scene must have been where the Siege Engine pilot met his end.
+
+
+== Progression ==
+ [10] The Lost Pilot
+ [11] A Pilot's Revenge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced with a new version,  [5-30] The Lost Pilot.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

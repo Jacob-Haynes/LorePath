@@ -1,0 +1,63 @@
+title: Kobold Camp Cleanup
+revision: 6225852
+part: whole
+quest: 7
+url: https://warcraft.wiki.gg/wiki/Kobold_Camp_Cleanup
+
+== Objectives ==
+Kill 8 Kobold Vermin, then return to Marshal McBride.
+
+Kobold Vermin slain (8)
+
+
+== Description ==
+Your first task is one of cleansing, <name>. A clan of kobolds have infested the woods to the north. Go there and fight the kobold vermin you find. Reduce their numbers so that we may one day drive them from Northshire.
+
+
+== Rewards ==
+You will receive:
+
+25
+170 XP
+250 reputation with Stormwind
+
+
+== Progress ==
+How goes the hunting, <name>? Have you found and defeated those vermin?
+
+
+== Completion ==
+Well done, citizen.  Those kobolds are thieves and cowards, but in large numbers they pose a threat to us.  And the humans of Stormwind do not need another threat.
+For defeating them, you have my gratitude.
+
+
+== Progression ==
+ [1] A Threat Within
+ [2] Kobold Camp Cleanup
+Unlocks a class quest:   [3] Glyphic Letter,   [3] Hallowed Letter,    [3] Consecrated Letter,   [3] Encrypted Letter,   [3] Tainted Letter, or   [3] Simple Letter
+ [3] Investigate Echo Ridge
+ [5] Skirmish at Echo Ridge
+ [1-10] Report to Goldshire
+
+
+== Beta version ==
+Objectives
+Kill 7 Kobold Vermin, then return to Marshal McBride.
+
+Description
+Kobolds have infested the woods to the north. If you kill 7 of the grimy Vermin for me, then you'll have my thanks, citizen.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== References ==
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+es:Misión:La limpieza del campamento kóbold

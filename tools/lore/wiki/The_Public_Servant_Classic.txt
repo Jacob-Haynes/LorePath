@@ -1,0 +1,44 @@
+title: The Public Servant (Classic)
+revision: 5578813
+part: whole
+quest: 433
+url: https://warcraft.wiki.gg/wiki/The_Public_Servant_%28Classic%29
+
+== Objectives ==
+Kill 10 Rockjaw Bonesnappers for Senator Mehr Stonehallow at the Gol'Bolar quarry.
+
+Rockjaw Bonesnapper slain (10)
+
+
+== Description ==
+As a member of the Senate and the Explorers' League, I've taken it upon myself to take care of this part of the trogg infestation that has gripped our lands.
+They've certainly made a mess of Gol'Bolar quarry, and for no reason. As we dug deep into the earth, they poured out, destroying our equipment and driving the miners out. There's not much for us to do but to exterminate the lot of them, rebuild, then get back to work.
+If you help me with the troggs, I'll gladly recompense you for your time.
+
+
+== Rewards ==
+You will receive:
+
+3
+650 XP (or 3 90 at level 70)
++150 reputation with Gnomeregan
++150 reputation with Ironforge
+
+
+== Progress ==
+If we can remove the troggs from Gol'Bolar quarry, it will be the first step of many that we will have to undertake to rid ourselves of this menace.
+
+
+== Completion ==
+It is a start. Hopefully we can take advantage of it, and move some Mountaineers in to secure the area. Then we can begin to restore our infrastructure and get the miners back to work.
+Thank you for your assistance, <name>.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

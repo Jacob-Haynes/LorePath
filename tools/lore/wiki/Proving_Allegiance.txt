@@ -1,0 +1,60 @@
+title: Proving Allegiance
+revision: 5636135
+part: whole
+quest: 409
+url: https://warcraft.wiki.gg/wiki/Proving_Allegiance
+
+== Objectives ==
+Obtain a Candle of Beckoning.
+Summon Lillith Nefara and kill her.
+Return to Gunther on his island.
+
+Lillith Nefara slain
+
+
+== Description ==
+You say you are not bound by the will of the Lich King, and the enchantment Bethor placed upon my book corroborates this. But before I believe you I must have proof that you are enemy to the Scourge.
+There is an old, bloody altar just off the southern coast of this island. it is used by a powerful Scourge agent, Lillith Nefara.
+Take a Candle of Beckoning from this crate here. Light it on the altar and Lillith will awake. Destroy Lillith, and I will believe you are the Lich King's foe.
+
+
+== Rewards ==
+You will gain:
+
+675 XP (or 4 20 at level 70)
++75 or +150 reputation with Undercity
+
+
+== Progress ==
+I await proof of your allegiance, <Class>.
+
+
+== Completion ==
+You have defeated Lillith Nefara, proving you are an enemy of the Scourge.  Incredible.
+I had believed I was the only Undead with free will, but you have shown me there are others who have broken the Lich King's domination.
+
+
+== Notes ==
+On accept
+Gunther Arcanus says: Take a Candle of Beckoning from this crate, <name>.
+Click on the Crate of Candles to finish  [10] Candles of Beckoning which awards  [Candle of Beckoning].
+
+
+== Progression ==
+ [8] The Prodigal Lich
+ [8] The Lich's Identity
+ [8] Return the Book
+ [12] Proving Allegiance
+ [10] Candles of Beckoning
+ [10] The Dormant Shade
+ [12] The Prodigal Lich Returns
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,60 @@
+title: Gann's Reclamation
+revision: 6229615
+part: whole
+quest: 843
+url: https://warcraft.wiki.gg/wiki/Gann%27s_Reclamation
+
+== Objectives ==
+Gann Stonespire wants you to kill 15 Bael'dun Excavators and 5 Bael'dun Foremen.
+Bring Khazgorm's Journal to Gann Stonespire.    
+
+Bael'dun Excavator slain (15)
+Bael'dun Foreman slain (5)
+ [Khazgorm's Journal]
+
+
+== Description ==
+In solitude I wander these roads.
+The dwarves of Bael Modan show no respect for my land. Horrendous blasts drive holes deep into the ground as noisy machines rip apart the hills. Lands which once served as home and provider to my tribe are now riddled with destructive dwarves.
+Attempts at reaching a diplomatic resolution have failed. Now is the time for decisive action.
+Drive the dwarves from the Bael Modan excavation by force and bring to me the journal of their leader, Prospector Khazgorm.
+
+
+== Rewards ==
+You will receive:
+
+15
+1,850 XP
++100 or +250 reputation with Thunder Bluff
+
+
+== Progress ==
+Many innocent tauren lost their lives or were forced off their ancestral birthplace when the dwarves of Bael Modan arrived. My land must be reclaimed! 
+
+
+== Completion ==
+Khazgorm met the fate he earned. I feel no remorse for the fool. He was an infidel on these lands.
+May his death serve as a warning to all those who threaten to disrupt our way of life.
+Now let me take a moment to study the dwarf's journal....
+
+
+== Notes ==
+Gann Stonespire can be found wandering on the road west of Bael Modan.
+Bael Modan is located in the very southeast region of Barrens, right north of Razorfen Downs. The excavation area is south of the keep.
+To get the journal, you must kill Prospector Khazgorm, a level 24 dwarf, found hiding behind a pillar at (48.3,86.1) or possibly by some tents at (47.4,85.7). You need to get quite close to spot him so don't assume he's not in a corner just because you can't see him. Go right in and look.
+
+
+== Progression ==
+ [23] Gann's Reclamation
+ [26] Revenge of Gann
+ [26] Revenge of Gann
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

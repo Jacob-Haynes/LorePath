@@ -1,0 +1,47 @@
+title: Wildmane Cleansing (Classic)
+revision: 6177121
+part: whole
+quest: 760
+url: https://warcraft.wiki.gg/wiki/Wildmane_Cleansing_%28Classic%29
+
+== Objectives ==
+Use the Wildmane Cleansing Totem at the Wildmane Water Well, then return to Mull Thunderhorn.
+
+Cleanse the Wildmane Well
+ [Wildmane Cleansing Totem]
+
+
+== Description ==
+Your cleansing of the Winterhoof and Thunderhorn wells is spoken among the spirits, young <name>. The Wildmane Totem is made, and your last task lies ahead.
+The Wildmane Water Well lies north of Thunder Bluff. Perform the ritual! Heal the land of the goblins' poisons! Let clean water flow once again!
+
+
+== Rewards ==
+
+
+== Progress ==
+The last water well remains fetid and poisonous, <name>.  You must not delay! 
+
+
+== Completion ==
+You've done it.  You have cleaned the wells, and healed our land.  Bloodhoof village is grateful, <name>.
+May the wind whisper your deeds for a hundred seasons, and may the waters of Mulgore remain clean forever.
+
+
+== Progression ==
+  [5] Poison Water
+  [6] Winterhoof Cleansing
+  [7] Thunderhorn Totem
+  [8] Thunderhorn Cleansing
+  [10] Wildmane Totem
+  [10] Wildmane Cleansing
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced by   [1-30] Wildmane Cleansing.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

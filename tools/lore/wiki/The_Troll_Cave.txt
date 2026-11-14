@@ -1,0 +1,57 @@
+title: The Troll Cave
+revision: 5897922
+part: whole
+quest: 182
+url: https://warcraft.wiki.gg/wiki/The_Troll_Cave
+
+== Objectives ==
+Grelin Whitebeard would like you to kill 14 Frostmane Troll Whelps.
+
+Frostmane Troll Whelp slain (14)
+
+
+== Description ==
+My brother Senir and I were sent to different parts of Dun Morogh to investigate the threat posed by the trolls. The Senate has its hands full with the troggs, so they've no need for further annoyances.
+From what I've seen, the trolls aren't well situated here in Coldridge Valley--mostly the southern cave. I'd say that the army will not be necessary. A few strong arms should be more than enough.
+Perhaps you'd like to assist in this endeavor? I have the authority to offer compensation for your help.
+
+
+== Rewards ==
+
+360 XP
++250 reputation with Gnomeregan Exiles
++250 reputation with Ironforge
+
+
+== Progress ==
+From what I've learned, these trolls hail from the Frostmane clan. I'm afraid I don't know much else about them that would be of any use to you, <name>.
+
+
+== Completion ==
+Argh! Those Light-blasted trolls!
+<He takes a few breaths and seems to settle down... a bit.>
+A group of them came in the night and stole my journal! I knew better than to trust that good-for-nothing appr...
+
+
+== Notes ==
+You may wish to complete this quest in conjunction with  [3] A Refugee's Quandary, since you will likely pass through or near the locations of Felix Whindlebolt's missing items.
+The Frostmane Troll Whelps are located in camps along the southern mountains of Coldridge Valley. There is also a cave south of Grelin Whitebeard's campsite.
+
+
+== Progression ==
+ [4] The Troll Cave
+ [5] The Stolen Journal
+ [5] Senir's Observations
+ [5] Senir's Observations
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced with a new version:  [1-30] The Troll Menace.   
+ Patch 1.7.0 (2005-09-13): The level 5 quests had the ranged weapon removed from their reward options. This was done to make sure hunters upgrade their melee damage in the levels before obtaining a pet.
+In this quest's case, the  [Anvilmar Musket] was removed.
+
+
+== External links ==
+
+Wowhead
+WoWDB

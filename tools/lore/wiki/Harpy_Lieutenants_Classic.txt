@@ -1,0 +1,49 @@
+title: Harpy Lieutenants (Classic)
+revision: 5585411
+part: whole
+quest: 875
+url: https://warcraft.wiki.gg/wiki/Harpy_Lieutenants_%28Classic%29
+
+== Objectives ==
+Collect 6 Harpy Lieutenant Rings from Witchwing Slayers and return them to Darsok Swiftdagger at the Crossroads.
+
+ [Harpy Lieutenant Ring] (6)
+
+
+== Description ==
+Hahaha, <name>. Back for more? Good, I like to hear that.
+This time I want you to assassinate some of the harpy lieutenants in the Dry Hills. Only Witchwing Slayers can be lieutenants, and you can tell them apart by the rings they carry. They are a nasty bunch, but they lead some of the underlings in that area. Taking out 6 of them will be a decisive strike against their matriarchy.
+Make sure they die painfully, <name>. We want those harpy wenches to know the idiocy of picking fights with the Horde.
+
+
+== Rewards ==
+You will receive:
+
+8
+1,150 XP
++100 or +250 reputation with Orgrimmar
+
+
+== Progress ==
+Do you have 6 Harpy Lieutenant Rings yet? Justice must be dealt to them for their vicious attacks on the Horde.
+
+
+== Completion ==
+Excellent work my friend. I think you'll go far within the Horde.
+
+
+== Progression ==
+ [15] Harpy Raiders
+ [16] Harpy Lieutenants
+ [20] Serena Bloodfeather
+ [20] Letter to Jin'Zil
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

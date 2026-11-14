@@ -1,0 +1,114 @@
+title: The Relics of Wakening
+revision: 6953085
+part: whole
+quest: 483
+url: https://warcraft.wiki.gg/wiki/The_Relics_of_Wakening
+
+== Objectives ==
+Retrieve the Relics of Wakening and bring them to Athridas Bearmantle in Dolanaar.
+
+ [Raven Claw Talisman]
+ [Black Feather Quill]
+ [Sapphire of Sky]
+ [Rune of Nesting]
+
+
+== Description ==
+
+Gnarlpine invaders were seen ravaging the Ban'ethil Barrow Den, tucked in the hill to the west.
+The slumbering druids will be trapped in the Emerald Dream for eternity, unaware of their fate, unless we help. The delicate hibernation ritual cannot be broken without the Relics of Wakening.
+Journey to the Den and retrieve the Raven Claw Talisman, Black Feather Quill, Sapphire of Sky, and Rune of Nesting. The druids store them in sacred chests. Return them to me and I will prepare the awakening ritual.
+
+
+== Rewards ==
+
+You will also receive:
+
+ [Dream Carrier]
+55
+200 XP
++250 reputation with Darnassus
+
+
+== Progress ==
+<Name>, the kidnapped Druids of the Talon will be forever trapped in the Emerald Dream if we cannot retrieve the Relics of Wakening from the Ban'ethil Barrow Den to the west.
+For every minute we delay their fate comes one step closer to eternal doom.
+
+
+== Completion ==
+You have succeeded, young <class>!  Well done.  And just in time I might add. 
+
+
+== Notes ==
+You don't actually have to memorize the coordinates. Once you enter the Barrow Den, a Sentinel Huntress will join you as a companion. If you ask her for directions to any of the relics, she will summon a green mist highlighting your way through the tunnels. Make sure to also pick up  [1-30] Resident Danger in Dolanaar, and  [1-30] The Sleeping Druid inside the Barrow Den itself.
+
+Chest of the Raven Claw: 
+Chest of the Black Feather: 
+Chest of the Sky: 
+Chest of Nesting: 
+A Sentinel Huntress comes to the player's help
+Glad to see that you've arrived. Shall we get to it then?
+Good to see you. They're all throughout the tunnels, we'll have to stay on our guard.
+Kyra said that you might need some help.
+Need some help finding your way? I know this place like the back of my hand.
+There you are! I thought the furbolgs might have caught you before you could even get here.
+You're finally here. Take the scenic route?
+Sometimes the mist cannot find its way if we are too far. Let's venture further and try again. (when too far from the destination)
+Gossip lines and answers when asking for information
+Need some help finding your way? I know this place like the back of my hand.
+It saddens me to see the furbolg all corrupted so readily. These used to be our friends.
+This place is infested... we'll need to make our way out of here with the relics as quickly as possible.
+I haven't seen any of the sleeping druids. They must have been taken from here already.
+We should have seen this coming. The corruption has been spreading for quite some time.
+If the furbolg could be this far gone, what does that say for the rest of Teldrassil?
+There has to be a way to stop this corruption before it consumes us all.
+Damn you, Fandral! What have you gotten us into with this cursed "World Tree?"
+ Where is the Rune of Nesting?
+The rune of Nesting is located across the bridge in the upper section of the southern chamber. The mist will lead the way.
+ Where is the Sapphire of Sky?
+The Sapphire of Sky is located at the separate room in the lower section of the northern chamber. The mist will lead the way.
+ Where is the Black Feather Quill?
+The Black Feather Quill is located down the ramp in the lower section of the southern chamber. The mist will lead the way.
+ Where is the Raven Claw Talisman?
+The Raven Claw Talisman is located on the ledge in the upper section of the northern chamber. The mist will lead the way.
+ Can you lead me to the exit?
+The exit is to the northwest... the mist will lead the way.
+The mist will lead the way.
+
+
+== Progression ==
+ [1-30] A Troubling Breeze
+ [1-30] Gnarlpine Corruption
+ [1-30] The Relics of Wakening
+Side quest:  [1-30] Resident Danger
+Side chain found in the Barrow Den:
+ [1-30] The Sleeping Druid
+ [1-30] Druid of the Claw
+ [1-30] Ursal the Mauler
+Side quest found along the way:  [1-30] The Road to Darnassus
+ [1-30] Denalan's Earth
+ [1-30] Timberling Seeds &  [1-30] Timberling Sprouts
+Completing these two also unlocks the following quests, as well as the final quest chain:
+ [1-30] The Glowing Fruit
+ [1-30] The Shimmering Frond
+ [1-30] The Sprouted Fronds
+ [1-30] The Moss-twined Heart
+ [1-30] Planting the Heart
+ [1-30] Rellian Greenspyre
+ [1-30] Mossy Tumors
+ [1-30] Oakenscowl
+
+
+== Patch changes ==
+ Patch 7.0.3 (2016-07-19):  [Gritroot Cinch] added as a reward.   
+ Patch 4.0.3a (2010-11-23): Level dropped from 9 to 8. Sentinel Huntress companion added.   
+
+
+== See also ==
+The Relics of Wakening, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

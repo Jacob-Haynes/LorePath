@@ -1,0 +1,59 @@
+title: Underground Map
+revision: 6911907
+part: whole
+quest: 96391
+url: https://warcraft.wiki.gg/wiki/Underground_Map
+
+Underground Map starts from the  [Dark Iron Map] in Forever, which drops from Dark Iron Spies at Ironband's Compound in Dun Morogh while on  [13] Nip 'Em in the Bud. This is the required start of the attunement quest chain for the Hall of Thanes dungeon underneath Ironforge.
+
+
+== Objectives ==
+Deliver the Dark Iron Map to Earthseer Farsen in Dun Morogh.
+
+ [Dark Iron Map] (provided)
+
+
+== Description ==
+<The map you are holding seems to show a complex series of underground tunnels and highways that all seem to converge on a point underneath Ironforge itself.
+You can't be sure what the runes say as they are written in the ugly jagged rune language of the Dark Iron dwarves, but you can guess at the purpose of these tunnels. As you are reading the map, a gust of wind washes over you and you can faintly hear a dwarven voice carried on it. Earthseer Farsen needs to see this.>
+
+
+== Rewards ==
+You will receive:
+
+7
+1,050 XP
++100 reputation with Ironforge
++100 reputation with Gnomeregan Exiles
+
+
+== Progress ==
+Oh what's this, then?
+
+
+== Completion ==
+Judging by this map, it certainly looks like these Dark Irons are planning some sort of incursion into the vaults beneath Ironforge. The band ye busted up to the east must be a scouting force.
+Thank ye for bringing me this. If we hurry, we might be able to beat them to whatever their goal is down there.
+
+
+== Progression ==
+ [13] A Visitor to Dun Morogh (optional breadcrumb)
+ [13] Farsen's Watch
+ [13] Nip 'Em in the Bud
+ [15] Underground Map
+ [16D] Old Ironforge Incursion
+Dungeon quests
+ [15D] Important Heirlooms
+ [15D] The Restless Dead
+ [15D] An Ancient Grudge
+ [16] The Treaty of Understanding
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
