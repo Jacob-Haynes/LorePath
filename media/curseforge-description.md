@@ -28,7 +28,7 @@ Built for **WoW Forever**, on English game clients. It's lightweight: its map pi
   - its objectives and description, plus progress and completion text;
   - its item rewards (Shift+click to link one in chat);
   - the quests before and after it;
-  - a WarcraftDB link to copy.
+  - a Wowhead link to copy.
 
   No spoilers: quests you haven't started show "Find what awaits you" until you press Reveal, and how a quest ends stays hidden until you turn it in. Turn on **Show spoilers** to see everything.
 - **Story so far:** read a storyline as one story: the text of each quest you've finished in it, in order, from its header's **Story so far** button. It follows the chain across zones, from where it began to where it goes next, and only includes quests you've finished, so nothing ahead is spoiled.
