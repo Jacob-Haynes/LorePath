@@ -632,7 +632,19 @@ check(lore_body() == "Long ago, a test.\n\nThen came A.\n\nElsewhere, B.\n\nAt l
       and others_text not in canvas_texts() and not frame["loreReveal"].IsShown(frame["loreReveal"]),
       "Reveal shows that chapter, in its place")
 check("Chapter B Article" in about_sources()[1], "and credits it")
-ns.revealedLore[ns.ZoneLore[lore_zone]] = None
+ns.Refresh()
+check(any("Elsewhere, B." in t for t in canvas_texts()), "a refresh on the same page keeps it revealed")
+away_row = [r for r in zone_rows() if isinstance(r["zoneID"], int) and r["zoneID"] != lore_zone][0]
+away_row["__scripts"]["OnClick"](away_row)
+lore_row["__scripts"]["OnClick"](lore_row)
+check(not any("Elsewhere, B." in t for t in canvas_texts()) and frame["loreReveal"].IsShown(frame["loreReveal"]),
+      "going to another page and back hides it again, with Reveal offered once more")
+frame["loreReveal"]["__scripts"]["OnClick"](frame["loreReveal"])
+check(any("Elsewhere, B." in t for t in canvas_texts()), "Reveal works again")
+frame.Hide(frame)
+frame.Show(frame)
+ns.Refresh()
+check(not any("Elsewhere, B." in t for t in canvas_texts()), "and closing the window hides it again too")
 char["completed"][qa] = None
 ns.RefreshCompleted()
 lore_row["__scripts"]["OnClick"](lore_row)

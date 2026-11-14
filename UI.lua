@@ -1215,6 +1215,11 @@ RenderZone = function()
 
     frame.loreSources:Hide()
     frame.loreReveal:Hide()
+    -- Revealed chapters last while you stay on this page.
+    if frame.lorePage ~= selectedZone then
+        wipe(ns.revealedLore)
+        frame.lorePage = selectedZone
+    end
     -- About this zone (issue #5): a short summary from the Warcraft Wiki, with
     -- the articles it came from (its licence asks for that). Collapsible, and
     -- remembered per page like a storyline.
@@ -2043,6 +2048,10 @@ local function CreateMainFrame()
     end)
     sources:Hide()
     f.loreSources = sources
+    -- Closing the window hides revealed chapters again, like leaving the page.
+    f:HookScript("OnHide", function()
+        wipe(ns.revealedLore)
+    end)
     -- Reveal: show chapters that only other races' or classes' quests unlock.
     local reveal = CreateFrame("Button", nil, canvas, "UIPanelButtonTemplate")
     reveal:SetSize(70, 20)
@@ -2054,7 +2063,7 @@ local function CreateMainFrame()
     reveal:SetScript("OnEnter", function(self)
         GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
         GameTooltip:AddLine("Reveal", 1, 0.82, 0)
-        GameTooltip:AddLine("Read the chapters of this zone's story that follow quests for other races or classes. Your own quests' chapters still wait until you finish them.", 1, 1, 1, true)
+        GameTooltip:AddLine("Read the chapters of this zone's story that follow quests for other races or classes, while you're on this page. Your own quests' chapters still wait until you finish them.", 1, 1, 1, true)
         GameTooltip:Show()
     end)
     reveal:SetScript("OnLeave", GameTooltip_Hide)

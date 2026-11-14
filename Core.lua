@@ -971,7 +971,8 @@ function ns.LoreUnlockedBy(questID)
 end
 
 -- Lore whose other characters' chapters you've chosen to read (Reveal in the
--- About section), for this session, like a quest's Reveal.
+-- About section). Like a quest's Reveal, it lasts while you stay on the page:
+-- going to another page, or closing the window, hides them again (UI.lua).
 ns.revealedLore = setmetatable({}, { __mode = "k" })
 
 -- The tooltip on a lore summary's "Sources": the wiki articles it came from,
