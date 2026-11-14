@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.4.0-beta4
 
 - **Wowhead link:** a quest's details now end with its Wowhead address to copy, in place of WarcraftDB's.
 
