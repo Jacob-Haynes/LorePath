@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.4.0-beta6
 
 - **Lore in the storylines:** a zone's chapters now appear under the storylines they belong to, so the About section stays short: its opening lines, and a line while there's more to uncover. A finished storyline stays collapsed but keeps its chapter showing. A chapter with no storyline on the page shows in the About section instead. Each chapter has its own **Sources**.
 - **Simpler unlocking:** a chapter shows once you or any of your characters has finished its quest, or with **Show spoilers**. The Reveal button for other characters' chapters is gone, and the "more to uncover" line now shows whenever any of the zone's chapters is still locked.
