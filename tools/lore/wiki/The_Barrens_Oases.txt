@@ -1,0 +1,51 @@
+title: The Barrens Oases
+revision: 5586756
+part: whole
+quest: 886
+url: https://warcraft.wiki.gg/wiki/The_Barrens_Oases
+
+== Objectives ==
+Speak with Tonga Runetotem at the Crossroads.
+
+
+== Description ==
+The druids of Thunder Bluff sense a strange power leaking into the Barrens, east of Mulgore.
+Tonga Runetotem was sent to discover the source of this power, but we fear he will need aid.
+Travel to the Barrens and speak with Tonga. He will be at the Crossroads. To reach there, take the road east out of Bloodhoof village. Enter the Barrens, then turn north when the road forks. Continue north and you will find the Crossroads.
+And do not leave the road, <name>, for the Barrens is a harsh land.
+
+
+== Rewards ==
+You will receive:
+
+155 XP
++10 reputation with Thunder Bluff
+
+
+== Completion ==
+My brethren in Thunder Bluff were wise to send you, young <class>. For the mystery of the Barrens is one that I alone cannot unravel.
+With your aid, let us hope we can find answers to our questions.
+
+
+== Notes ==
+If you're a tauren emerging from Mulgore, Arch Druid Hamuul Runetotem will give you this quest. Otherwise, Tonga Runetotem in the Crossroads will send you to  [13] The Forgotten Pools anyway.
+
+
+== Progression ==
+ [10] The Barrens Oases
+ [13] The Forgotten Pools
+ [16] The Stagnant Oasis
+ [16] Altered Beings
+ [16] Hamuul Runetotem
+ [16] Nara Wildmane
+ [22D] Leaders of the Fang
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

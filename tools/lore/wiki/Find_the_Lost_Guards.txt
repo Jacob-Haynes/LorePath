@@ -1,0 +1,44 @@
+title: Find the Lost Guards
+revision: 6214327
+part: whole
+quest: 37
+url: https://warcraft.wiki.gg/wiki/Find_the_Lost_Guards
+
+This quest is part of the quest chain A Fishy Peril.
+
+
+== Objectives ==
+Guard Thomas wants you to travel north up the river and search for the two lost guards, Rolf and Malakai.
+
+
+== Description ==
+A few days ago we sent two Guards, Rolf and Malakai, to investigate along the river, and they have not yet returned. To complete my report, I must know what happened to those men.
+Travel north along the river and find the guards... or their remains.
+
+
+== Rewards ==
+You will receive:
+
+210 XP (or 1 20 at level 70)
++25 reputation with Stormwind
+
+
+== Completion ==
+Although much has been stripped from the corpse, strewn nearby is a medallion with the words: "Footman Malakai Stone" etched upon it.
+
+
+== Progression ==
+ [1-30] A Fishy Peril
+ [1-30] Further Concerns
+ [1-30] Find the Lost Guards
+ [1-30] Discover Rolf's Fate
+ [1-30] Report to Thomas
+ [1-30] Cloth and Leather Armor
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+es:Misión:Encuentra a los guardias perdidos

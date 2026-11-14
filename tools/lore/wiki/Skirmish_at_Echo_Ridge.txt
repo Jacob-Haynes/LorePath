@@ -1,0 +1,57 @@
+title: Skirmish at Echo Ridge
+revision: 6977218
+part: whole
+quest: 21
+url: https://warcraft.wiki.gg/wiki/Skirmish_at_Echo_Ridge
+
+Skirmish at Echo Ridge is the 2nd quest in the Investigate Echo Ridge quest chain.
+
+
+== Objectives ==
+Kill 8 Kobold Laborers, then return to Marshal McBride at Northshire Abbey.
+
+Kobold Laborers slain (8)
+
+
+== Description ==
+Your previous investigations are proof that the Echo Ridge Mine needs purging.  Return to the mine and help clear it of kobolds.
+Waste no time, <name>.  The longer the kobolds are left unmolested in the mine, the deeper a foothold they gain in Northshire.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Outfitter Belt]
+ [Outfitter Boots]
+ [Outfitter Gloves]
+You will also receive:
+
+450 XP (or 2 70 at max level)
++250 reputation with Stormwind
+
+
+== Progress ==
+I know it's bloody work, <name>, but it's vital to the safety of Northshire. Are you ready to report?
+
+
+== Completion ==
+Once again, you have earned my respect, and the gratitude of the Stormwind Army.  There may yet be kobolds in the mine, but I will marshal others against them.  We have further tasks for you.
+
+
+== Progression ==
+ [1] A Threat Within
+ [2] Kobold Camp Cleanup
+Unlocks a class quest:   [3] Glyphic Letter,   [3] Hallowed Letter,    [3] Consecrated Letter,   [3] Encrypted Letter,   [3] Tainted Letter, or   [3] Simple Letter
+ [3] Investigate Echo Ridge
+ [5] Skirmish at Echo Ridge
+ [1-10] Report to Goldshire
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,41 @@
+title: Discover Rolf's Fate
+revision: 1712139
+part: whole
+quest: 45
+url: https://warcraft.wiki.gg/wiki/Discover_Rolf%27s_Fate
+
+This quest is part of the quest chain A Fishy Peril.
+
+
+== Objectives ==
+Search the murloc village for Rolf, or signs of his death.
+
+
+== Description ==
+Upon further searching the area, you find webbed footprints leading east along the shore of Stone Cairn Lake. In the distance to the east, you can just barely see a Murloc village.
+Perhaps Rolf's fate ended there...
+
+
+== Completion ==
+You find around the neck of the corpse a metal medallion inscribed with the words "Footman Rolf Hartford."
+
+
+== Notes ==
+Coordinates for Rolf's corpse: 79, 55
+
+
+== Progression ==
+ [1-30] A Fishy Peril
+ [1-30] Further Concerns
+ [1-30] Find the Lost Guards
+ [1-30] Discover Rolf's Fate
+ [1-30] Report to Thomas
+ [1-30] Cloth and Leather Armor
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+es:Misión:Descubre el destino de Rolf

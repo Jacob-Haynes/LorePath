@@ -1,0 +1,52 @@
+title: Manhunt (Classic)
+revision: 6729459
+part: whole
+quest: 147
+url: https://warcraft.wiki.gg/wiki/Manhunt_%28Classic%29
+
+== Objectives ==
+Find and kill "the Collector" then return to Marshal Dughan with The Collector's Ring.
+
+ [The Collector's Ring]
+
+
+== Description ==
+If the "Collector" is taking gold from our mines then he's stealing from the kingdom! Bring the Collector to justice, and bring me the ring mentioned in the pickup schedule you gave me. It may tell us whom the Collector is working for...
+That Pickup Schedule says the Collector is hiding out at the Brackwell Pumpkin Patch. You should search for him there.
+
+
+== Rewards ==
+
+You will also receive:
+
+840 XP
++100 or +250 reputation with Stormwind
+
+
+== Progress ==
+Did you find the Collector?  Did you discover whom he's working for?
+
+
+== Completion ==
+You found him?  Well done, <name>.  He won't be "collecting" from the Elwynn Mines again!
+And this ring you found is interesting... it's a membership ring for the old Stonemason's Guild in Stormwind.  Why would a lowly thief have an artisan guild ring, and why are the Defias Thieves collecting money from our mines?
+Difficult questions.  I hope one day we'll have answers.
+
+
+== Progression ==
+ [10] The Collector
+ [10] Manhunt
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated for Cataclysm; see  [1-30] Manhunt.   
+
+
+== See also ==
+Manhunt, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

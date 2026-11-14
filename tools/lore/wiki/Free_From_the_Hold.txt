@@ -1,0 +1,66 @@
+title: Free From the Hold
+revision: 6957091
+part: whole
+quest: 898
+url: https://warcraft.wiki.gg/wiki/Free_From_the_Hold
+
+== Objectives ==
+Safely escort Gilthares Firebough back to Captain Brightsun in Ratchet.
+
+Escort Gilthares Firebough back to Ratchet
+
+
+== Description ==
+Finally! Someone to rescue me!
+I can't believe you got past the guards. These zealots from Theramore are out of their minds. They sank our ship and imprisoned me, the only survivor. I was called an enemy and threat to the Alliance.
+Me! A threat to their great sham of an Alliance? I was a deckhand on a moonshine transport between Ratchet and Booty Bay.
+Enough talk. Help me get back to Ratchet will you? Let me know when you're ready and we'll make our break.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Buckled Boots]
+ [Riveted Gauntlets]
+ [Embroidered Leggings] 
+You will also receive:
+
+25
+1950 XP (or 12 at max level)
++150 or +350 reputation with Ratchet
+
+
+== Progress ==
+Yes?
+
+
+== Completion ==
+And to think, we thought Firebough was long dead!
+Your heroics have earned you a place of honor with the Thalo'dan Privateers, <name>.
+
+
+== Notes ==
+Escaping the hold
+Gilthares Firebough says: Stay close, <name>. I'll need all the help I can get to break out of here. Let's go!
+Gilthares Firebough says: At last! Free from Northwatch Hold! I need a moment to catch my breath....
+Gilthares Firebough says: Now I feel better. Let's get back to Ratchet. Come on, <name>.
+Gilthares Firebough says: Looks like the Southsea Freebooters are heavily entrenched on the coast. This could get rough.
+At the coast
+Gilthares Firebough says: Help! <Name> attacking!
+Gilthares Firebough says: <Name> heading this way fast! Time for revenge!
+Gilthares Firebough says: <Name> coming right at us!
+Gilthares Firebough says: Get this <name> off of me!
+In Ratchet
+Gilthares Firebough says: Almost back to Ratchet! Let's keep up the pace...
+Gilthares Firebough says: Ah, the sweet salt air of Ratchet.
+Gilthares Firebough says: Captain Brightsun, <name> here has freed me! <name>, I am certain the Captain will reward your bravery.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

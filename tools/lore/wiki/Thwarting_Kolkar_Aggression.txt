@@ -1,0 +1,55 @@
+title: Thwarting Kolkar Aggression
+revision: 6953088
+part: whole
+quest: 786
+url: https://warcraft.wiki.gg/wiki/Thwarting_Kolkar_Aggression
+
+== Objective ==
+Lar Prowltusk outside of Sen'jin Village wants you to destroy the 3 sets of Attack Plans held within Kolkar Crag.
+
+Attack Plan: Valley of Trials destroyed
+Attack Plan: Sen'jin Village destroyed
+Attack Plan: Orgrimmar destroyed
+
+
+== Description ==
+Lower your voice, <class>. The Kolkar centaurs lie just over the ridge to the west in Kolkar Crag.
+Last night while they were raiding, I snuck into their village and discovered that the dirty beasts have a three-tiered attack planned on the trolls and orcs of Durotar.
+We mustn't let their invasion come to fruition. Perhaps you can muster the might needed to infiltrate Kolkar Crag and destroy their attack plans.
+Last I saw, they had divided them up amongst three of their leaders.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Seasoned Fighter's Cloak]
+ [Heavy Cord Bracers]
+You will also receive:
+
+700 XP
+250 reputation with Darkspear Trolls
+250 reputation with Orgrimmar
+
+
+== Progress ==
+The centaurs have proven to be a consistent nuisance to the Horde. Their intentions to lay siege to our homeland cannot be tolerated.
+
+
+== Completion ==
+The Horde would surely prevail if the Kolkar centaurs were to attack. But by preventing such an attack, we have spared our mighty warriors unnecessary bloodshed.
+And as sure as there is sand in the Tanaris desert, we know that there will be blood spilled before these trying times are through.
+You have served your people well, <class>.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+Thwarting Kolkar Aggression, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

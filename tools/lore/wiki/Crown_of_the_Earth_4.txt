@@ -1,0 +1,66 @@
+title: Crown of the Earth (4)
+revision: 6728183
+part: whole
+quest: 933
+url: https://warcraft.wiki.gg/wiki/Crown_of_the_Earth_%284%29
+
+Crown of the Earth is an Alliance only quest in Teldrassil, the night elf starting area. In this quest, players are sent by Corithras Moonrage to fill a vial with moonwell water from the moonwell near the Pools of Arlithrien.
+
+
+== Objectives ==
+Fill the Tourmaline Phial and bring it back to Corithras Moonrage in Dolanaar.
+
+ [Filled Tourmaline Phial]
+ [Tourmaline Phial] (provided)
+
+
+== Description ==
+There is another moonwell southeast of the entrance to Darnassus, on the shores of the Pools of Arlithrien. The Sentinels are having problems patrolling the area because of attacks and the growing ill-temperedness of the Gnarlpine furbolgs.
+Be wary as you seek out the well, and keep your weapons close at hand.
+
+
+== Rewards ==
+You will receive:
+
+775 XP
++250 reputation with Darnassus
+
+
+== Progress ==
+At first the reports of crazed furbolg attacks were dismissed. Who could have thought that the peace-loving bear-men would turn to mindless rage? Yet another of the problems that plagues us here in our new home.
+
+
+== Completion ==
+Shan'do Stormrage never returned, and the druids were in disarray, and to this day we still do not know what became of him. With Malfurion missing, Arch Druid Fandral Staghelm took over the leadership of the druids, convincing the Circle of Ancients in Darkshore that it was time for our people to rebuild, and that it was time for our people to regain their immortality.
+With the approval of the Circle, Staghelm and the most powerful druids grew Teldrassil, the new World Tree.
+
+
+== Walkthrough ==
+
+This moonwell can be found south of the entrance to Darnassus (follow the road west to get to the city entrance), just southeast of the lake in the subzone the Pools of Arlithrien. The exact coordinates are (42,67). Right click the vial in your inventory to fill it while standing in the water, then return to Corithras in Dolanaar to complete the quest.
+
+
+== Progression ==
+ [4] Webwood Venom
+ [5] Webwood Egg
+ [5] Tenaron's Summons
+ [5] Crown of the Earth
+ [5] Crown of the Earth
+ [5] Crown of the Earth
+ [9] Crown of the Earth
+ [11] Crown of the Earth
+ [11] Crown of the Earth
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+Teldrassil quests
+
+
+== External links ==
+
+Wowhead
+WoWDB

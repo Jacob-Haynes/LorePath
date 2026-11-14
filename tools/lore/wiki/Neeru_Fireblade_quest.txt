@@ -1,0 +1,64 @@
+title: Neeru Fireblade (quest)
+revision: 6659430
+part: whole
+quest: 829
+url: https://warcraft.wiki.gg/wiki/Neeru_Fireblade_%28quest%29
+
+== Objectives ==
+Bring an Example Collar to Neeru Fireblade in Orgrimmar.
+
+ [Example Collar] (provided)
+
+
+== Description ==
+The Searing Collars you brought me are powerful, demonic implements.  Divining their origin is, I'm afraid, beyond my skills as a shaman.  We will need a warlock to study them.
+Take a searing collar to Neeru Fireblade.  Although he is a skilled warlock, he professes to use his powers to thwart demons, and claims his research in the occult is benign.  Be that true or false, we may need his aid against the demonic cult in Durotar.
+You may find Neeru in Orgrimmar in the Cleft of Shadow.
+
+
+== Rewards ==
+You will receive:
+
+460 XP
++50 reputation with Orgrimmar
++50 reputation with Darkspear Trolls
+
+
+== Progress ==
+My most humble greetings, <class>.  How might I help my <race> brother today?
+
+
+== Completion ==
+Ah, and where did you get this?  Good Margoz in Razor Hill sent you to me, did he?
+Well, let me take a closer look...
+
+
+== Notes ==
+After you complete the quest, Neeru Fireblade examines the collar.
+
+Neeru Fireblade inspects the Searing Collar...
+Neeru Fireblade says: Interesting, very interesting. You found this in Durotar, <name>?
+
+
+== Progression ==
+  [4] Vile Familiars
+  [4] Vile Familiars
+ [1-10] Burning Blade Medallion
+ [1-10] Report to Sen'jin Village
+ [7] Report to Orgnil
+ [12] Dark Storms
+ [12] Margoz
+ [12] Skull Rock
+ [12] Neeru Fireblade
+ [13] Ak'Zeloth
+ [14] The Demon Seed
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,44 @@
+title: Report to Thomas
+revision: 6209274
+part: whole
+quest: 71
+url: https://warcraft.wiki.gg/wiki/Report_to_Thomas
+
+This quest is part of the quest chain A Fishy Peril.
+
+
+== Objectives ==
+Deliver Rolf and Malakai's Medallions to Guard Thomas at the eastern Elwynn bridge.
+
+ [Rolf and Malakai's Medallions] (provided)
+
+
+== Description ==
+Now that you have both medallions, deliver them to Guard Thomas at the bridge so that he might know the fate of his murdered guards.
+
+
+== Progress ==
+Hello, <name>.  Have you discovered the fates of Rolf and Malakai?
+
+
+== Completion ==
+You have confirmed my fears, <name>.  The murlocs are a threat we cannot ignore.
+
+
+== Notes ==
+After having discovered Rolf's corpse in the murloc village, run down to the bridge between Goldshire and the Eastvale Logging Camp and speak with Guard Thomas.  This will finish the quest and lead to the next step,  [10] Deliver Thomas' Report.
+
+
+== Progression ==
+ [1-30] A Fishy Peril
+ [1-30] Further Concerns
+ [1-30] Find the Lost Guards
+ [1-30] Discover Rolf's Fate
+ [1-30] Report to Thomas
+ [1-30] Cloth and Leather Armor
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,64 @@
+title: Goldtooth (quest)
+revision: 6952392
+part: whole
+quest: 87
+url: https://warcraft.wiki.gg/wiki/Goldtooth_%28quest%29
+
+This quest concludes the Stonefield Necklace quest chain.
+
+
+== Objectives ==
+Bring Bernice's Necklace to "Auntie" Bernice Stonefield at the Stonefield Farm.
+
+ [Bernice's Necklace]
+
+
+== Description ==
+I was playing near the Fargodeep Mine, and I think I dropped, er...I mean I saw, the old lady's necklace.  Don't ask me how it got there...it wasn't me!
+Well anyway, I saw this big, gold-toothed kobold pick up the necklace and run back to his den above the mine.  Go find that kobold and you'll find the necklace, I swear!
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Lion-Stamped Gloves]
+ [Uncle Stonefield's Pants]
+ [Auntie's Oven Mitts]
+You will also receive:
+
+200 XP
++250 reputation with Stormwind
+
+
+== Progress ==
+Hello, <name>.  Have you found my necklace?
+
+
+== Completion ==
+Oh, you found it!  Thank you, thank you dear!
+Here, take this.  It was my husband's and he always said it was lucky.  If only he didn't forget it on his last campaign! *sniff*
+
+
+== Notes ==
+Goldtooth can be found on a hill northeast of the mine.
+
+ The subject of this section has been removed from World of Warcraft but is present in Classic.
+In Classic, he is located within the mine on the lower level.
+
+
+== Progression ==
+ [1-30] Lost Necklace
+ [1-30] Pie for Billy
+ [1-30] Back to Billy
+ [1-30] Goldtooth
+
+
+== Patch changes ==
+ Patch 7.0.3 (2016-07-19):  [Auntie's Oven Mitts] added as a reward.   
+ Patch 4.0.3a (2010-11-23): Text updated to reflect Goldtooth's new location.  [Uncle Stonefield's Pants] added as a reward.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

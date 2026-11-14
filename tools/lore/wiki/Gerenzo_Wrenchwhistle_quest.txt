@@ -1,0 +1,59 @@
+title: Gerenzo Wrenchwhistle (quest)
+revision: 6850669
+part: whole
+quest: 1096
+url: https://warcraft.wiki.gg/wiki/Gerenzo_Wrenchwhistle_%28quest%29
+
+== Objectives ==
+Bring Gerenzo Wrenchwhistle's Mechanical Arm to Ziz Fizziks in the Stonetalon Mountains.
+
+ [Gerenzo's Mechanical Arm]
+
+
+== Description ==
+I met Gerenzo once, but let me tell you, he's not easy on the eyes. His flesh looks like it's rotting away, and he's grafted metal and gears onto his body, replaced some of his limbs with mechanical ones.
+Northeast of here, far above Cragpool Lake, up near the water wheel is where Gerenzo watches over the entire site. There's no way I could fight my way up there, not to mention take on Gerenzo... But you look like you might be able to make it.
+If you kill him for me, I'll make it worth your while!
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Engineer's Cloak]
+ [Draftsman Boots]
+You will also receive:
+
+22
+2200 XP (or a 13 20 compensation at level 80)
+125 reputation with Booty Bay
+125 reputation with Everlook
+125 reputation with Gadgetzan
+250 reputation with Ratchet
+
+
+== Progress ==
+Sputtervalve will want some sort of proof that Gerenzo's dead. I think his mechanical arm will probably do.
+
+
+== Completion ==
+Look at that thing... it'd take a gnome to come up with something like that. I can't understand why you'd cut off an arm, and replace it with that, when you could just keep both arms and add a third!
+Gnomes, I tell you...
+At least Gerenzo's out of commission. Hopefully that'll be enough proof, and Sputtervalve will assign me to one of the Tinkers' Union workshops in Gadgetzan or maybe even Undermine.
+
+
+== Progression ==
+ [21] Ziz Fizziks
+ [21] Super Reaper 6000
+ [21] Further Instructions
+ [27] Further Instructions
+ [27] Gerenzo Wrenchwhistle
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

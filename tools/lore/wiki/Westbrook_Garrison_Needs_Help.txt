@@ -1,0 +1,39 @@
+title: Westbrook Garrison Needs Help!
+revision: 5616485
+part: whole
+quest: 239
+url: https://warcraft.wiki.gg/wiki/Westbrook_Garrison_Needs_Help%21
+
+== Objectives ==
+Go to the Westbrook Garrison and speak with Deputy Rainer.
+
+
+== Description ==
+The Garrison on our western border sends word of increasing gnoll and thief activity. They're requesting we send more Stormwind soldiers... but we just don't have any to spare!
+If you can help, we could use it. Go and speak with Deputy Rainer at the Westbrook Garrison and see what he needs done.
+The Garrison is down the road to the west. After you cross the bridge over the small brook it will be to the right.
+
+
+== Rewards ==
+You will receive:
+
+210 XP (or 1 20 at level 70)
++25 reputation with Stormwind
+
+
+== Completion ==
+Marshall Dughan sent you, eh? Well you're not from the army, but if Dughan sent you then that's good enough for me!
+Our situation is, to say the least, a stressed one. I hope you can give us a hand.
+
+
+== Progression ==
+ [1-30] Westbrook Garrison Needs Help!
+ [1-30] Riverpaw Gnoll Bounty
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+es:Misión:El Cuartel de Arroyoeste necesita ayuda

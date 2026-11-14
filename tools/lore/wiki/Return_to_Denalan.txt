@@ -1,0 +1,42 @@
+title: Return to Denalan
+revision: 6346470
+part: whole
+quest: 2498
+url: https://warcraft.wiki.gg/wiki/Return_to_Denalan
+
+Return to Denalan is the 1st quest in the Return to Denalan quest chain.
+
+
+== Objectives ==
+Rellian Greenspyre wants you to speak with Denalan at Lake Al'Ameth.
+
+
+== Description ==
+I have just received word that  Denalan at Lake Al'Ameth has discovered what may be the cause of the tumors that plague the timberlings. Please speak with him, and tell him I sent you.
+Make haste, <name>; he needs our help.
+
+
+== Rewards ==
+You will receive:
+
+80 XP (or 60 at max level)
++10 reputation with Darnassus
+
+
+== Completion ==
+Ah, so Rellian sent you to aid me. I am glad you arrived here so soon.
+I have discovered something quite disturbing!
+
+
+== Trivia ==
+This quest was removed when Denalan moved next to Rellian Greenspyre in Wellspring Hovel, making this quest redundant, and came between the quests Tumors (now Mossy Tumors) and Oakenscowl.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

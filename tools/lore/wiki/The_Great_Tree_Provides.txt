@@ -1,0 +1,53 @@
+title: The Great Tree Provides
+revision: 6977231
+part: whole
+quest: 99050
+url: https://warcraft.wiki.gg/wiki/The_Great_Tree_Provides
+
+== Objectives ==
+Collect 6 Dewy Lasher Fronds, an Empty Vial, and a Refreshing Spring Water for Byancie in Dolanaar.
+
+Dewy Lasher Frond (6)
+ [Empty Vial]
+ [Refreshing Spring Water]
+
+
+== Description ==
+I will need your help acquiring the ingredients I need to stop the affliction long enough for Eralya to make it back here for further treatment.
+Thankfully, our living home is still bountiful and will provide in our time of need.
+The core ingredient is dewy lasher fronds. You'll find them around Lake Al'Ameth directly south of here, or Wellspring Lake and its river to the northwest.
+In addition, I'll need an empty vial and some spring water. Both can be bought here in town, or traded for.
+
+
+== Rewards ==
+You will receive:
+
+85
+840 XP
++100 reputation with Darnassus
+
+
+== Progress ==
+Do you have the ingredients? I fear Eralya may not have long.
+
+
+== Completion ==
+Thank you for your help. Please, accept this to help with the costs of the vial and water.
+Now, to make the salve. It should only take a moment.
+
+
+== Progression ==
+ [9] The Lost Runner
+ [9] Not Dead Yet
+ [10] The Great Tree Provides
+ [10] Easing Suffering
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

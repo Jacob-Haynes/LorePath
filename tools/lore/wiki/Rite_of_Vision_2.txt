@@ -1,0 +1,62 @@
+title: Rite of Vision (2)
+revision: 6456470
+part: whole
+quest: 771
+url: https://warcraft.wiki.gg/wiki/Rite_of_Vision_%282%29
+
+== Objectives ==
+Collect 2 Well Stones and 2 Ambercorn and bring them back to Zarlman Two-Moons in Bloodhoof Village.
+
+ [Well Stone] (2)
+ [Ambercorn] (2)
+
+
+== Description ==
+In order to pass through the Rite of Vision, you must gather the reagents needed to make the  [Water of the Seers].
+I will need well stones, which can be found around the water wells in Mulgore. With those I will combine Ambercorn, which fall beneath the mighty trees in our land.
+These reagents contain magical elements, and when brewed and consumed before the tribal fire, will cause you to encounter a vision. Follow it, and it will lead you to the next step of this holy quest.
+
+
+== Rewards ==
+You will receive:
+
+625 XP
++250 reputation with Thunder Bluff
+
+
+== Progress ==
+Once you have gathered enough well stones from around the water wells and Ambercorn from beneath the trees, I will prepare the Water of the Seers for you.
+
+
+== Completion ==
+I see you have learned to gather from our sacred land, <name>. It will take but a moment for me to brew the Water of the Seers.
+
+
+== Notes and trivia ==
+Southeast of Bloodhoof Village is water well. You should be able to find the Well Stones on the ground around the well. The well is guarded by employees of the Venture Company.
+Ambercorns can be found under the trees in Mulgore. They look like large acorns.
+During the original alpha, this quest required 4 Windblossoms and 4 Earthbloom. They were found in the same locations as the later Well Stones and Ambercorn respectively.
+
+
+== Progression ==
+ [2] A Humble Task
+ [3] A Humble Task
+ [3] Rites of the Earthmother
+ [4] Rite of Strength
+ [5] Rites of the Earthmother
+ [6] Rite of Vision
+ [7] Rite of Vision
+ [7] Rite of Vision
+ [10] Rite of Wisdom
+ [10] Journey into Thunder Bluff
+ [14] Rites of the Earthmother
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

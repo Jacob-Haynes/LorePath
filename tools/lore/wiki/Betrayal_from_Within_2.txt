@@ -1,0 +1,53 @@
+title: Betrayal from Within (2)
+revision: 6230049
+part: whole
+quest: 906
+url: https://warcraft.wiki.gg/wiki/Betrayal_from_Within_%282%29
+
+== Objectives ==
+Bring Lok's Skull to Thork at the Crossroads in the Barrens.
+
+ [Lok's Skull] (provided)
+
+
+== Description ==
+Take Lok's head to Thork in the Crossroads, <race>. <snort> He should know what has happened to my tribe without any words—ha, not that he would believe Mangletooth helped in <snort> such things. But I am sure he'll reward you for carrying out such a great deed. <snort>
+I will continue to bless you with Agamaggan's power for as long as I remain in this cage, <race>. Until then, farewell.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Barkshell Tunic]
+ [Dry Moss Tunic]
+You will also receive:
+
+3050 XP (or 18 60 at max level)
++200 or +500 reputation with Orgrimmar
+
+
+== Progress ==
+Yes, what is it?
+
+
+== Completion ==
+You found the Razormane leader and killed him yourself, <name>? Amazing.
+I am without words, but that does not mean I am without thanks. The people of the Crossroads would do well to respect your strength.
+I must admit, I thought the leader of these raids on our supply lines was another quilboar. Thank you again, <name>.
+
+
+== Progression ==
+ [21] Tribes at War
+ [21] Blood Shards of Agamaggan
+ [25] Betrayal from Within
+ [25] Betrayal from Within
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

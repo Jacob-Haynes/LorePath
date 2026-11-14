@@ -1,0 +1,78 @@
+title: The Mindless Ones
+revision: 6896232
+part: whole
+quest: 364
+url: https://warcraft.wiki.gg/wiki/The_Mindless_Ones
+
+== Objectives ==
+Shadow Priest Sarvis wants you to kill 8/5 Mindless Zombies and 8/5 Wretched Zombies.
+
+Mindless Zombie slain (8)  / (5) 
+Wretched Zombie slain (8)  / (5) 
+
+
+== Description ==
+We Forsaken are at war with the Lich King's army of the Scourge:  necromantically raised armies of the undead, foul beasts of the north, and tormented spectres.
+The northern part of the village has become overrun with the Mindless Ones, and they must be destroyed.  Destroy them, show them no mercy, our former brothers and sisters as they might be.  The Fallen are nothing but The Lich King's slaves.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Flax Gloves]
+ [Battered Cloak]
+You will also receive:
+
+17
+220 XP
++100 or +350 reputation with Undercity
+
+
+== Progress ==
+You will not go far in this new life if you are unable to kill even the weakest of zombies, <name>.  Do not return until you have success to report.
+
+
+== Completion ==
+It is unfortunate that the Scourge cannot be brought into the fold, their large numbers would be useful in the battles ahead.
+But they will not join us, so we have no choice but to destroy them.
+
+
+== Notes ==
+
+		
+		
+
+
+== Progression ==
+  [1] Rude Awakening
+ [2] The Mindless Ones &  [2] The Damned
+ [3] Rattling the Rattlecages, Class quests
+ [5] Marla's Last Wish,  [3] Scavenging Deathknell,  [4] Night Web's Hollow
+ [4] A Light in the Darkness ( only)
+ [4] The Scarlet Crusade
+ [5] The Red Messenger
+ [5] Vital Intelligence
+ [5] A Rogue's Deal,  [7] Fields of Grief,  [5] Gordo's Task →  [6] Doom Weed
+ [6] The Adventurer ( only)
+Class quests:
+
+   [2] Spell Research
+   [1] A Difficult Path →    [2] Rediscovering the Light →    [4] Coming to Terms &    [4] Continue Your Training ( only)
+   [2] Meditation on Undeath
+   [2] The Scarlet Rune
+   [2] The Lost Rune
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 3.3.0 (2009-12-08): An objective changed from Wretched Zombie to Wretched Ghoul.   
+
+
+== See also ==
+ [2] The Mindless Ones, Cataclysm beta version
+
+
+== External links ==
+
+Wowhead
+WoWDB

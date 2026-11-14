@@ -1,0 +1,48 @@
+title: Back to Billy
+revision: 6163781
+part: whole
+quest: 84
+url: https://warcraft.wiki.gg/wiki/Back_to_Billy
+
+This quest is part of the Stonefield Necklace quest chain.
+
+
+== Objectives ==
+Bring the Pork Belly Pie to Billy Maclure at the Maclure Vineyards.
+
+ [Pork Belly Pie] (provided)
+
+
+== Description ==
+Here you go.  And when you give this pie to that Billy, you tell him I hope he chokes on it! 
+
+
+== Rewards ==
+You will receive:
+
+135 XP
++25 reputation with Stormwind
+
+
+== Progress ==
+Ugh... I'm starving!  Do you have that pie for me, <name>? 
+
+
+== Completion ==
+Mm, yum!  This pie is the best!
+I think my memory is coming back to me... 
+
+
+== Progression ==
+ [1-30] Lost Necklace
+ [1-30] Pie for Billy
+ [1-30] Back to Billy
+ [1-30] Goldtooth
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+es:Misión:Vuelve con Billy

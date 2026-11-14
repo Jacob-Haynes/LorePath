@@ -1,0 +1,55 @@
+title: Nip 'Em in the Bud
+revision: 6911909
+part: whole
+quest: 96390
+url: https://warcraft.wiki.gg/wiki/Nip_%27Em_in_the_Bud
+
+== Objectives ==
+Slay 10 Dark Iron Spies in Dun Morogh.
+
+Dark Iron Spy slain (10)
+
+
+== Description ==
+Dark Iron spies have infiltrated Dun Morogh. To what end I canna' not sure, but this is a problem we need to nip in the bud before it is allowed to grow.
+Head eastward to Ironband's Compound and kill the Dark Iron spies that you find there.
+
+
+== Rewards ==
+You will receive:
+
+910 XP
++100 reputation with Ironforge
++100 reputation with Gnomeregan Exiles
+
+
+== Completion ==
+These Dark Irons may be our cousins but they ain't family, that's for sure. I shed no tears for any misfortune that befalls them that stray too far from that accursed mountain o' theirs.
+Hopefully this is enough to put 'em off of further incursions into these lands.
+
+
+== Notes ==
+While killing spies, one of them will drop the  [Dark Iron Map], which continues the Hall of Thanes attunement quest chain with  [15] Underground Map.
+
+
+== Progression ==
+ [13] A Visitor to Dun Morogh (optional breadcrumb)
+ [13] Farsen's Watch
+ [13] Nip 'Em in the Bud
+ [15] Underground Map
+ [16D] Old Ironforge Incursion
+Dungeon quests
+ [15D] Important Heirlooms
+ [15D] The Restless Dead
+ [15D] An Ancient Grudge
+ [16] The Treaty of Understanding
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

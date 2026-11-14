@@ -1,0 +1,49 @@
+title: At War With The Scarlet Crusade (3)
+revision: 6897347
+part: whole
+quest: 371
+url: https://warcraft.wiki.gg/wiki/At_War_With_The_Scarlet_Crusade_%283%29
+
+== Objectives ==
+Executor Zygand in Brill has commissioned you to slay Captain Vachon and 5 Scarlet Friars.
+
+Captain Vachon slain 
+Scarlet Friar slain (5)
+
+
+== Description ==
+We are still at war and the Scarlet Crusade grows in strength. The report Executor Arren sent me indicates Scarlet Crusaders have been raiding from the ruined tower in southeastern Tirisfal near the Balnir Farmstead under the command of Captain Vachon.
+Kill Vachon along with 5 Scarlet Friars. It should prove to be a devastating blow to the Crusade!
+
+
+== Rewards ==
+You will receive:
+
+3 50
+1,560 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+I see you have returned but your task is not complete.  Perhaps you are at ease with the mere humans interfering with The Dark Lady's plan?  Or perhaps you can heed the call of duty and slay Captain Vachon and his band of Scarlet Friars!
+
+
+== Completion ==
+Captain Vachon's death will slow down the Scarlet Crusade's advancement in Tirisfal quite a bit.  But other threats loom.
+
+
+== Progression ==
+ [8] At War With The Scarlet Crusade
+ [9] At War With The Scarlet Crusade
+ [10] At War With The Scarlet Crusade
+ [12] At War With The Scarlet Crusade
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

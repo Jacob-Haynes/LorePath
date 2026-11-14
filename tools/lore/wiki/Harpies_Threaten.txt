@@ -1,0 +1,63 @@
+title: Harpies Threaten
+revision: 6971238
+part: whole
+quest: 6282
+url: https://warcraft.wiki.gg/wiki/Harpies_Threaten
+
+In Harpies Threaten, you must journey to the Charred Vale and kill many Bloodfury harpies, as part of the effort to restore the Charred Vale. Completing this quest allows you to do the quest  [26] Bloodfury Bloodline.
+
+
+== Objectives ==
+Maggran Earthbinder in Sun Rock Retreat wants you to slay 7 Bloodfury Harpies, 7 Bloodfury Ambushers, 7 Bloodfury Slayers and 7 Bloodfury Roguefeathers.
+
+Bloodfury Harpy slain (7)
+Bloodfury Ambusher slain (7)
+Bloodfury Slayer slain (7)
+Bloodfury Roguefeather slain (7)
+
+
+== Description ==
+Tauren take pride as the protector of these lands. Undoubtedly you can guess why I am alarmed with the number of harpies that dwell here in Stonetalon.
+The Bloodfuries are the source of the increasing number of harpies in Kalimdor; they encroach upon all likes of life preventing the innocent from leaving their boundaries.
+I need you to cull the harpies, <name>!
+
+
+== Rewards ==
+You will receive:
+
+20
+210 - 2100 XP
+
+
+== Progress ==
+Do not be weary of Charred Vale; many evil creatures reside in those hills. Stay strong <name>, and you shall prevail over this threat to our people. Go now and strike hard - our children shall never know of the evil of what was.
+
+
+== Completion ==
+This is most excellent news! Tell me again how you cast fear into the cold hearts of those vile harpies. The Bloodfuries have been dealt a serious blow!
+
+
+== Notes ==
+You can pick up this quest in Sun Rock Retreat from Maggran Earthbinder, he's near the pool of water. For those who don't know, there is a back way out of Sun Rock Retreat that goes over the mountains and straight into the Charred Vale - very useful for this quest.
+The harpies are found in the Charred Vale. There are several quests in the Charred Vale. You'll have to kill or navigate around monsters in this area and will be able to work on those quests in the process.
+The Bloodfury Harpies and Ambushers can be found throughout, but especially in the northwest corner of the Charred Vale, to the right coming down from the north. The Rougefeather and the Slayers are found in the center and west of the Charred Vale. Both of them have red coloring. The Slayers are melee and there isn't a large population of them. 
+
+
+=== Tips ===
+Try to pull only one harpy at a time. It is usually easy since they tend to fly far apart. However, be careful not to pull harpies or other beasts behind trees.
+Ideally, have the  [23] Cycle of Rebirth quest from Tammra Windfield at Sun Rock Retreat finished, have the  [25] Elemental War from the Water Elemental on the ridge above Sun Rock Retreat.
+
+
+== Progression ==
+ [26] Harpies Threaten
+ [26] Bloodfury Bloodline
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

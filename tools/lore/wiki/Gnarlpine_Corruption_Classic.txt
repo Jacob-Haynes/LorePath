@@ -1,0 +1,39 @@
+title: Gnarlpine Corruption (Classic)
+revision: 6404787
+part: whole
+quest: 476
+url: https://warcraft.wiki.gg/wiki/Gnarlpine_Corruption_%28Classic%29
+
+Gnarlpine Corruption is an Alliance only quest in Teldrassil, the night elf starting zone. In this quest, players are sent by Gaerolas Talvethren to Athridas Bearmantle with a desperate report regarding the furbolgs of Starbreeze Village.
+
+
+== Objectives ==
+Return to Athridas Bearmantle in Dolanaar.
+
+
+== Description ==
+The Gnarlpine tribe has been corrupted!
+The once peaceful furbolgs have turned against the protectors of the forest. They ambushed me as I left for the Ban'ethil Barrow Den and proceeded to pillage Starbreeze Village. Ursal the Mauler, their chieftain, is using the evil powers of the Fel Moss to drive them mad.
+I am too wounded to return to Athridas to bring him this grave news. The task is left to you, young <class>. We can only hope that the deranged Gnarlpines have not made it to Ban'ethil yet!
+
+
+== Rewards ==
+You will receive:
+
+1 25
+540 XP
++100 reputation with Darnassus
+
+
+== Completion ==
+By the stars!  This is quite disturbing indeed!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated for Cataclysm.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

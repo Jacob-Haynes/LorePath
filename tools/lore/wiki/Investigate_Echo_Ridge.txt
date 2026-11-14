@@ -1,0 +1,50 @@
+title: Investigate Echo Ridge
+revision: 6826053
+part: whole
+quest: 15
+url: https://warcraft.wiki.gg/wiki/Investigate_Echo_Ridge
+
+== Objectives ==
+Slay 10 Kobold Workers. Return to Marshal McBride.
+
+Kobold Worker slain (10)
+
+
+== Description ==
+<Name>, my scouts tell me that the kobold infestation is larger than we had thought. A group of kobold workers has camped near the Echo Ridge Mine to the north.
+Go to the mine and remove them. We know there are at least 10. Kill them, see if there are more, then report back to me.
+
+
+== Rewards ==
+You will receive:
+
+40
+250 XP
++250 reputation with Stormwind
+
+
+== Progress ==
+Have you been to the mines? Are you ready to report?
+
+
+== Completion ==
+I don't like hearing of all these kobolds in our mine. No good can come of this. Here, take this as payment, and when you're ready, speak to me again. I would like you to go back to the mines one more time...
+
+
+== Progession ==
+ [1] A Threat Within
+ [2] Kobold Camp Cleanup
+Unlocks a class quest:   [3] Glyphic Letter,   [3] Hallowed Letter,    [3] Consecrated Letter,   [3] Encrypted Letter,   [3] Tainted Letter, or   [3] Simple Letter
+ [3] Investigate Echo Ridge
+ [5] Skirmish at Echo Ridge
+ [1-10] Report to Goldshire
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

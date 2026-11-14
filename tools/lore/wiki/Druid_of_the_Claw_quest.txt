@@ -1,0 +1,75 @@
+title: Druid of the Claw (quest)
+revision: 6912472
+part: whole
+quest: 2561
+url: https://warcraft.wiki.gg/wiki/Druid_of_the_Claw_%28quest%29
+
+Druid of the Claw is the 2nd quest in The Sleeping Druid quest chain.
+
+
+== Objectives ==
+Kill the soulless body of Oben Rageclaw, and then use the Voodoo Charm.
+
+Release Oben Rageclaw's spirit
+ [Voodoo Charm] (provided)
+
+
+== Description ==
+After examining this charm, <name>, I see now what must be done. Please take it, and do as I ask.
+You are to approach the door to the nearby chamber. Inside, you will find my soulless body... Although I regret what I am about to tell you, I see no other way to free myself from the control of the Gnarlpine.
+In order for me to escape them, you must kill my physical form. Once that is done, use the voodoo charm on my fallen body. After you have completed this task, please return to me.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Sleeping Robes]
+ [Brushwood Blade]
+You will also receive:
+
+3 50
+1050 XP
++350 reputation with Darnassus
+
+
+== Progress ==
+<Name>, be wary when approaching my physical form; the enchantment it is under is quite powerful.
+
+
+== Completion ==
+I am finally free of the control of the Gnarlpine. Thank you, <name>.
+My spirit may now rest peacefully forever in the Emerald Dream.
+Perhaps one day we may meet again, young <class>. But, for now, please accept this reward as a symbol of my gratitude.
+
+
+== Progression ==
+ [1-30] A Troubling Breeze
+ [1-30] Gnarlpine Corruption
+ [1-30] The Relics of Wakening
+Side quest:  [1-30] Resident Danger
+Side chain found in the Barrow Den:
+ [1-30] The Sleeping Druid
+ [1-30] Druid of the Claw
+ [1-30] Ursal the Mauler
+Side quest found along the way:  [1-30] The Road to Darnassus
+ [1-30] Denalan's Earth
+ [1-30] Timberling Seeds &  [1-30] Timberling Sprouts
+Completing these two also unlocks the following quests, as well as the final quest chain:
+ [1-30] The Glowing Fruit
+ [1-30] The Shimmering Frond
+ [1-30] The Sprouted Fronds
+ [1-30] The Moss-twined Heart
+ [1-30] Planting the Heart
+ [1-30] Rellian Greenspyre
+ [1-30] Mossy Tumors
+ [1-30] Oakenscowl
+
+
+== Patch changes ==
+ Patch 1.5.0 (2005-06-07): The Druid of the Claw quest in Teldrassil will now provide a weapon choice more appropriate for low level Night Elves.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

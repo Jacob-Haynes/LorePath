@@ -1,0 +1,33 @@
+title: Speak with Gramma
+revision: 6825762
+part: whole
+quest: 111
+url: https://warcraft.wiki.gg/wiki/Speak_with_Gramma
+
+== Objectives ==
+Speak with Gramma Stonefield.
+
+
+== Description ==
+Please, <name>, talk with my Gramma. If anyone can find a way to bring me together with Maybell, she can.
+She's inside our house east of here.
+
+
+== Completion ==
+While our families are feuding, Tommy Joe and Maybell don't have much of a future, but... maybe we can get them together for just a little while.
+Hm, what can we do... 
+
+
+== Progression ==
+ [1-30] A Visit With Maybell
+ [1-30] Young Lovers
+ [1-30] Speak with Gramma
+ [1-30] Note to William
+ [1-30] Collecting Kelp
+ [1-30] The Escape
+
+
+== External links ==
+
+Wowhead
+WoWDB

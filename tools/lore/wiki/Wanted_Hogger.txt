@@ -1,0 +1,57 @@
+title: Wanted: "Hogger"
+revision: 6957954
+part: whole
+quest: 176
+url: https://warcraft.wiki.gg/wiki/Wanted%3A_%22Hogger%22
+
+== Objectives ==
+Slay the huge gnoll Hogger and bring his Huge Gnoll Claw to Marshal Dughan.
+
+ [Huge Gnoll Claw]
+
+
+== Description ==
+Wanted: Hogger
+A huge gnoll, Hogger, is prowling the woods in southwestern Elwynn. He has overpowered all attempts at his capture.
+The Stormwind Army has placed a generous bounty on the Gnoll. To earn the reward, bounty hunters should bring proof of Hogger's demise to Marshal Dughan in Goldshire.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Footman Tunic]
+ [Stormwind Guard Leggings]
+ [Balanced Fighting Stick]
+ [Apprentice Wizard's Gown] 
+You will also receive:
+
+875 XP
++100 reputation with Stormwind
+
+
+== Progress ==
+Yes, Hogger has been a real pain for me and my men.  You have something to report about the beast? 
+
+
+== Completion ==
+Hah!  Well done!  I was starting to think no one would take down that monster!
+Here you are, <name>.  And thanks - that Gnoll was giving me a headache the size of Blackrock Spire! 
+
+
+== Notes ==
+Hogger can be found wandering among the gnoll camps near the southern end of Forest's Edge. As he is a level 11 elite, you may need to group up with another player or two to kill him.
+In Forever, the quest name has been changed to WANTED: "Hogger".
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated. See  [1-30G] WANTED: "Hogger".   
+
+
+== See also ==
+Wanted: “Hogger”, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

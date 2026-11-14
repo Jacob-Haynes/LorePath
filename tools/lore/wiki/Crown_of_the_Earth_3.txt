@@ -1,0 +1,55 @@
+title: Crown of the Earth (3)
+revision: 6728180
+part: whole
+quest: 929
+url: https://warcraft.wiki.gg/wiki/Crown_of_the_Earth_%283%29
+
+Crown of the Earth is an Alliance only quest in Teldrassil, the night elf starting zone. In this quest, players are sent by Corithras Moonrage to fill a vessel with water from the moonwell in nearby Starbreeze Village.
+
+
+== Objectives ==
+Fill the Jade Phial and bring it back to Corithras Moonrage in Dolanaar.
+
+ [Filled Jade Phial]
+ [Jade Phial] (provided)
+
+
+== Description ==
+First, let me tell you more of the task you must complete. The druids in Darnassus use the water of the moonwells of Teldrassil, and their moonwell must be replenished from time to time. Using these specially crafted phials, you can collect the water of the moonwells.
+Take this vessel to the moonwell outside of Starbreeze Village to the east, and fill it with some of its waters, then return to me. When you have completed your task, I shall continue the story where Tenaron left off...
+
+
+== Rewards ==
+340 XP
++100 or +250 reputation with Darnassus
+
+
+== Progress ==
+Hello again, <name>. Have you completed your task?
+
+
+== Completion ==
+After the Battle of Mount Hyjal, we were without direction. Nordrassil smoked from the fire it unleashed, and our immortality--the very essence of our beings!--was lost.
+It was in this trying time that the Betrayer was freed from his prison, and Shan'do Stormrage disappeared. A dark time for all.
+
+
+== Progression ==
+ [4] Webwood Venom
+ [5] Webwood Egg
+ [5] Tenaron's Summons
+ [5] Crown of the Earth
+ [5] Crown of the Earth
+ [5] Crown of the Earth
+ [9] Crown of the Earth
+ [11] Crown of the Earth
+ [11] Crown of the Earth
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

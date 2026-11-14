@@ -1,0 +1,56 @@
+title: The Enchanted Glade (Classic)
+revision: 6608606
+part: whole
+quest: 937
+url: https://warcraft.wiki.gg/wiki/The_Enchanted_Glade_%28Classic%29
+
+== Objectives ==
+Acquire 6 Bloodfeather Belts and bring them to Sentinel Arynia Cloudsbreak in the Oracle Glade.
+
+ [Bloodfeather Belt] (6)
+
+
+== Description ==
+I was dispatched with a small group of Sentinels here to protect the Oracle Tree from the harpies that have made nests all around the glade. Little by little we are trying to push them back.
+When the Oracle Tree attempted to send a runner to Darnassus with a report, the messenger was attacked and killed by a group of the harpies.
+If you feel up to the task, go to their nests, slay them, and return their belts to me as proof of your deeds.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Shackled Girdle]
+ [Rain-spotted Cape]
+You will also receive:
+
+440 XP
++50 or +75 reputation with Darnassus
+
+
+== Progress ==
+Their slashing talons and piercing beaks may prove a difficult match for your own abilities, <name>, but I have faith that you will not fail in this task.
+
+
+== Completion ==
+I am impressed by what you have accomplished here in so short a time, <name>. Would that I could ask you to remain here to assist me with my duties... but I know in my heart that greater tasks lie ahead for you.
+I have noticed the Oracle Tree has just shed a piece of its bark. No doubt it has a task that it wishes completed. You should speak with it.
+
+
+== Notes ==
+The completion text suggests that the next quest is offered by the Oracle Tree itself, not Sentinel Arynia Cloudsbreak. This may be a leftover from early development.
+
+
+== Progression ==
+ [11] The Enchanted Glade
+ [11] Teldrassil
+ [11] Grove of the Ancients
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated to a new version.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

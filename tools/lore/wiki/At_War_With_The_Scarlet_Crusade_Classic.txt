@@ -1,0 +1,53 @@
+title: At War With The Scarlet Crusade (Classic)
+revision: 6896520
+part: whole
+quest: 427
+url: https://warcraft.wiki.gg/wiki/At_War_With_The_Scarlet_Crusade_%28Classic%29
+
+== Objectives ==
+Executor Zygand of Brill wants you to kill 10 Scarlet Warriors.
+
+Scarlet Warrior slain (10)
+
+
+== Description ==
+The documents Executor Arren provided are just the break we needed in our battle with the wretched Scarlet Crusade. We now know their exact locations throughout Tirisfal Glades.
+But the Deathguard has larger concerns. The Lich King's army grows in number each night. We need someone with "initiative" like yourself to drive the Scarlet Crusade to the grave.
+Prove to me you are capable of serving The Dark Lady by travelling[sic] west to the tower past the Solliden Farmstead and slay 10 Scarlet Warriors.
+
+
+== Rewards ==
+You will receive:
+
+2 25
+1,060 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+If you wish to prove your worth to The Dark Lady, slay 10 Scarlet Warriors, <class>.
+
+
+== Completion ==
+Most excellent, <class>.  Your skill in the art of combat is undeniable.
+
+
+== Notes ==
+On Forever realms only: While in the area, Bareth Dawnstone, atop the Crusader's Outpost, starts  [7] Seeking Refuge, an escort quest.
+
+
+== Progression ==
+ [8] At War With The Scarlet Crusade
+ [9] At War With The Scarlet Crusade
+ [10] At War With The Scarlet Crusade
+ [12] At War With The Scarlet Crusade
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced by  [1-30] At War With The Scarlet Crusade.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

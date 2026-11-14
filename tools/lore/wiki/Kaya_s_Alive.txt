@@ -1,0 +1,39 @@
+title: Kaya's Alive
+revision: 6339684
+part: whole
+quest: 6401
+url: https://warcraft.wiki.gg/wiki/Kaya%27s_Alive
+
+== Objectives ==
+Tell Tammra Windfield in Sun Rock Retreat the good news.
+
+
+== Description ==
+Tell Tammra Windfield, Kaya's aunt who's at Sun Rock Retreat, about the good news! Kaya is alive! We had thought she was lost after the brutal attack on our village. Follow the path to the west to get to Sun Rock Retreat.
+
+
+== Rewards ==
+You will receive:
+
+7
+1000 XP (or 6 at max level)
++150 reputation with Thunder Bluff
+
+
+== Completion ==
+My goodness, my niece Kaya is alive! That is good news indeed. Thank you, <name>.
+
+
+== Progression ==
+ [18] Protect Kaya
+ [18] Kaya's Alive
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

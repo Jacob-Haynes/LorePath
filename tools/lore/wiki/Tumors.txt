@@ -1,0 +1,55 @@
+title: Tumors
+revision: 6608577
+part: whole
+quest: 923
+url: https://warcraft.wiki.gg/wiki/Tumors
+
+== Objectives ==
+Bring 5 Mossy Tumors to Rellian Greenspyre in Darnassus.
+
+ [Mossy Tumor] (5)
+
+
+== Description ==
+There is a malevolence growing in the timberlings. We are trying to find the source, but until we do...in order to keep Teldrassil safe we must cut down the timberlings who are beyond help. Those that wander Wellspring Lake in northern Teldrassil are the most tainted. They must be removed!
+Destroy the Timberlings you find there, and gather the mossy tumors growing upon them. Bring the tumors to me so that they may be burned.
+
+
+== Reward ==
+You will receive:
+
+ [Pruning Knife]
+6
+975 XP
++150 or +350 reputation with Darnassus
+
+
+== Progress ==
+Have you been to Wellspring Lake, <name>?  Have you been hunting the timberlings there?
+
+
+== Completion ==
+Well done!  These tumors are the symptom of the timberling's disease.  They are filled with a poison that we must cleanse from our new land.
+I will dispose of these tumors.  Thank you, <name>.
+
+
+== Progression ==
+ [1-30] Denalan's Earth (optional)
+ [9] Timberling Seeds &  [1-30] Timberling Sprouts
+Unlocks:
+ [1-30] The Shimmering Frond →  [1-30] The Sprouted Fronds
+ [1-30] The Glowing Fruit
+ [7] Rellian Greenspyre
+ [9] Tumors
+ [9] Return to Denalan
+ [9E] Oakenscowl
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated and renamed to  [1-30] Mossy Tumors.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

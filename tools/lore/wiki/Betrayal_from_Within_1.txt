@@ -1,0 +1,52 @@
+title: Betrayal from Within (1)
+revision: 6295528
+part: whole
+quest: 879
+url: https://warcraft.wiki.gg/wiki/Betrayal_from_Within_%281%29
+
+== Objectives ==
+Kill Nak, Kuz, and Lok Orcbane and bring their skulls to Mangletooth at Camp Taurajo in the Barrens.
+
+ [Lok's Skull]
+ [Nak's Skull]
+ [Kuz's Skull]
+
+
+== Description ==
+Three of my tribe came out of the Kraul to lead the raids against the Horde, <race>. <snort> They are ruthless and cunning, and if you defeat them, then your Crossroads and even most of the Barrens will learn peace... <snort> at least from the Razormane tribe. <snort>
+Nak, Kuz, and Lok Orcbane are the ones you seek. They are far to the south of the Barrens. One is a spell caster, another a tracker, and their leader, the one called Orcbane, <snort> a warrior. Kill them, <race>, like they have killed me.
+
+
+== Rewards ==
+You will receive:
+
+1500 XP (or 9 at max level)
++75 or +150 reputation with Orgrimmar
+
+
+== Progress ==
+How goes your hunt, <race>? <snort>
+Thork thinks he knows the truth about who leads the raids against his people, <snort> but he shall learn how wrong he is if you are successful.
+My death is inescapable, but you have caused great pain to my enemies, so Mangletooth regrets nothing. <snort>
+
+
+== Completion ==
+It is done then. Better it ends this way, says Mangletooth. <snort> They should have <snort> made sure I was dead when they turned their backs on me instead of leaving <snort> me here in this forsaken cage.
+There is but one task left for you to finish, <race>.
+
+
+== Progression ==
+ [21] Tribes at War
+ [21] Blood Shards of Agamaggan
+ [25] Betrayal from Within
+ [25] Betrayal from Within
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

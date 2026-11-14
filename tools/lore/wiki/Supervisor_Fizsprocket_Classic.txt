@@ -1,0 +1,45 @@
+title: Supervisor Fizsprocket (Classic)
+revision: 5586627
+part: whole
+quest: 765
+url: https://warcraft.wiki.gg/wiki/Supervisor_Fizsprocket_%28Classic%29
+
+== Objectives ==
+Go to the mine and kill Supervisor Fizsprocket and return his clipboard to Morin Cloudstalker as proof.
+
+
+== Description ==
+According to the documents you salvaged from the caravan, the Venture Co created many plans to attempt to drive us from our lands here so that they could have free reign to plunder our lands.
+The depths that they would sink to accomplish their goals disgusts and appalls me.
+
+
+== Progress ==
+I seethe with anger at the thought of the atrocities the Venture Co. is willing to perpetrate against us in the name of profit.
+
+
+== Rewards ==
+
+You will also receive:
+
+910 XP
++100 reputation with Thunder Bluff
+
+
+== Completion ==
+My anger is somewhat lessened at the news that the villain Fizsprocket is dead. I will go through his personal effects and see if there is any additional information about what the Venture Co. has planned for the future. Thank you for your efforts, <name>.
+
+
+== Notes ==
+As you enter the mine directly to the east of the Ravaged Caravan the mine will split into three tunnels. You will choose the tunnel all the way on the right and continue heading to the right. In a small room with about 6 Venture Co Workers and 4 Venture Co Supervisors, Supervisor Fizsprocket will be standing along the wall.
+
+If you work along the wall, you end up being able to sneak by and slowly take out only one side of the mine's enemies instead of walking down the center.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

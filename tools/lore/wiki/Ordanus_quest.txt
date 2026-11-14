@@ -1,0 +1,52 @@
+title: Ordanus (quest)
+revision: 5757524
+part: whole
+quest: 1088
+url: https://warcraft.wiki.gg/wiki/Ordanus_%28quest%29
+
+== Objectives ==
+Bring Ordanus' Head to Braelyn Firehand in Sunrock Retreat.
+
+ [Ordanus' Head]
+
+
+== Description ==
+They thought that they could halt the flow of magic. They were mistaken. They thought that they could hide Ordanus, but I will have his head!
+Magic grants me true sight. Yes... there he is. A crossroads... At the top of a great tree in Ashenvale Forest. A name... Raynewood. One of the eldest sons of the forest god. They spirited him away from the peak before I could find him, but his time runs short.
+Bring it to me and I will share with you a mighty gift.
+
+
+== Rewards ==
+You will receive:
+
+240-2350 XP
+
+
+== Progress ==
+When my master bade me to the peak of Stonetalon, I expected that all I would need was to lay waste to the night elves that crawled the sacred ruins of our ancient temple of Azshara, their touch despoiling its sanctity... but Ordanus had slipped my grasp.
+
+
+== Completion ==
+I knew Ordanus once, long ago. He had the arrogance of his kind, holding himself above even the Highborne.
+His head does not rise so high now, does it, <name>?
+I promised you a reward, and you shall have it. Attend to me.
+
+
+== Notes ==
+Keeper Ordanus resides in Raynewood Retreat in central Ashenvale and is guarded by two Cenarion Vindicators who can summon treants.
+
+
+== Progression ==
+ [25] Cenarius' Legacy
+ [29] Ordanus
+ [29] The Den
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

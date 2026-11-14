@@ -1,0 +1,40 @@
+title: A Missing Hand
+revision: 6907336
+part: whole
+quest: 99048
+url: https://warcraft.wiki.gg/wiki/A_Missing_Hand
+
+== Objectives ==
+Find Heglan Shadeeye north of Tiragarde Keep.
+
+
+== Description ==
+A member of the Shattered Hand, a group of more... subtle fighters, was watching Tiragarde Keep from a distance. Her reports suddenly stopped coming in.
+I doubt the humans would have caught her, so I'm concerned something more dangerous is at play. See if you can find her. Hopefully the messages are just delayed.
+
+
+== Rewards ==
+You will receive:
+
+90 XP
++25 reputation with Orgrimmar
++25 reputation with Darkspear Trolls
+
+
+== Completion ==
+Heglan's body lies cold within the wreckage of the hut.
+Whatever killed her doesn't seem to be human. There may be signs of what happened nearby.
+
+
+== Progression ==
+...
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,68 @@
+title: Crown of the Earth (6)
+revision: 6900078
+part: whole
+quest: 935
+url: https://warcraft.wiki.gg/wiki/Crown_of_the_Earth_%286%29
+
+Crown of the Earth is an Alliance only quest in Teldrassil, the night elf starting area. In this quest, players are sent by Corithras Moonrage to deliver a vial of moonwell water to Arch Druid Fandral Staghelm in Darnassus.
+It was replaced by  [1-30] The Waters of Teldrassil in Cataclysm.
+
+
+== Objectives ==
+Bring the Filled Vessel to Arch Druid Fandral Staghelm in Darnassus.
+
+ [Filled Vessel] (provided)
+
+
+== Description ==
+Without the blessings of Alexstrasza the Life-Binder and Nozdormu the Timeless, Teldrassil's growth has not been without flaw. Strange beasts have been reported arising from the very ground of the tree, and crazed furbolgs attack passing travelers.
+I can only hope that the solution the Arch Druid is looking for will be found quickly. I will pour all the phials you brought into this vessel, for you to deliver to Darnassus.
+Bring it to Fandral Staghelm, you will find him in the druid grove.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Ashwood Bow]
+ [Thicket Hammer]
+You will also receive:
+
+1100 XP
++350 reputation with Darnassus
+
+
+== Progress ==
+I know that I did not summon you, so I cannot help but wonder why it is you have come to speak with me.
+Whatever it is, please make it quick.
+
+
+== Completion ==
+Ah yes, the water I had requested. Tenaron and Corithras certainly took their time in having it delivered... perhaps not choosing the most reliable of messengers... hmm.
+Nonetheless, I can finally get back to my work then. The weight of Teldrassil's problems fall upon my shoulders. A yoke I would wish to soon be rid of.
+Take this, you may find some use for it.
+
+
+== Walkthrough ==
+Fandral Staghelm, the Arch Druid, can be found in the Cenarion Enclave of the city Darnassus, at the top of the main enclave building. Speak with him to complete this quest, and finish the quest chain.
+
+
+== Progression ==
+ [4] Webwood Venom
+ [5] Webwood Egg
+ [5] Tenaron's Summons
+ [5] Crown of the Earth
+ [5] Crown of the Earth
+ [5] Crown of the Earth
+ [9] Crown of the Earth
+ [11] Crown of the Earth
+ [11] Crown of the Earth
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

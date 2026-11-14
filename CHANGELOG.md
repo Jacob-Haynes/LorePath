@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **The whole zone story:** every zone with lore now tells its main storylines in chapters as you finish them, not just one or two. Elwynn Forest, Dun Morogh, Teldrassil, Durotar, Mulgore and Tirisfal Glades gain 7 to 9 new chapters each. Zephras Isle covers both the Horde and Alliance Skyborne's paths, and the Barrens and Stonetalon Mountains cover most of their storylines. Mulgore's opening lines no longer blame the Grimtotem for the poisoned wells (in this era it was the Venture Company), and Teldrassil's no longer give away what the Crown of the Earth chain reveals.
+
 ## 1.4.0-beta4
 
 - **Wowhead link:** a quest's details now end with its Wowhead address to copy, in place of WarcraftDB's.

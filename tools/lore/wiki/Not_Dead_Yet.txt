@@ -1,0 +1,44 @@
+title: Not Dead Yet
+revision: 6976901
+part: whole
+quest: 99047
+url: https://warcraft.wiki.gg/wiki/Not_Dead_Yet
+
+== Objectives ==
+Seek aid from Byancie in Dolanaar for Sentinel Eralya Leafshadow.
+
+
+== Description ==
+My sisters and I... were dispatched... Oracle Tree...
+Tree... message. I... harpies... everywhere...
+<Eralya coughs up blood, grimacing through the pain.>
+I may not have long... no one coming. Please... Byancie... in Dolanaar...
+
+
+== Rewards ==
+You will receive:
+
+80 XP
++10 reputation with Darnassus
+
+
+== Completion ==
+The harpies have become afflicted by the same foulness showing up throughout the forest. I'm sure that is what ails Sentinel Eralya as well.
+We must hurry. It won't be long before she succumbs to her injuries.
+
+
+== Progression ==
+ [9] The Lost Runner
+ [9] Not Dead Yet
+ [10] The Great Tree Provides
+ [10] Easing Suffering
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,40 @@
+title: The Woodland Protector (Classic)
+revision: 6177072
+part: whole
+quest: 458
+url: https://warcraft.wiki.gg/wiki/The_Woodland_Protector_%28Classic%29
+
+== Objectives ==
+Seek out the dryad known as Tarindrella.
+
+
+== Description ==
+Thank goodness you are here, <class>. Strange news has traveled to me through the whisperings of the forest spirits.
+The mysterious woodland protector, Tarindrella, has returned to Shadowglen. The dryad's presence has not been felt in the forests of Kalimdor in years. Something is surely amiss if she has journeyed back to this land.
+Seek out Tarindrella and see what business she tends to in our grove. One of the Sentinels reported seeing her to the southwest of Aldrassil.
+
+
+== Rewards ==
+You will receive:
+
+40 XP
++50 or +75 reputation with Darnassus
+
+
+== Completion ==
+I see you found me, young <race>.  Melithar is a wise druid to have sent you.
+
+
+== Progression ==
+ [1] The Woodland Protector
+ [3] The Woodland Protector
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

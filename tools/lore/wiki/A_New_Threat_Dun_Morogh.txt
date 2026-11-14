@@ -1,0 +1,49 @@
+title: A New Threat (Dun Morogh)
+revision: 6849070
+part: whole
+quest: 170
+url: https://warcraft.wiki.gg/wiki/A_New_Threat_%28Dun_Morogh%29
+
+== Objectives ==
+Balir Frosthammer wants you to kill 6 Rockjaw Troggs and 6 Burly Rockjaw Troggs.
+
+Rockjaw Trogg slain (6)
+Burly Rockjaw Trogg slain (6)
+
+
+== Description ==
+I hope you're here to lend us a hand, <class>. After the last trogg attack, we could use all the help we can get.
+I hear the buggers have been popping up all across the lands, and it seems Coldridge Valley is no exception. They've been spotted all over the hills to the southeast and near the frozen lake.
+And that's not all, just a few nights ago, they attacked and overran our camp to the west!
+We're a bit shorthanded here, <lad/lass>, and we need strong arms to help drive the troggs back.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Bear Shawl]
+ [Rustic Belt]
+ [Snow Boots]
+You will also receive:
+
+170 experience (or 90 at max level)
++250 reputation with Gnomeregan Exiles
++250 reputation with Ironforge
+
+
+== Progress ==
+Tenacious little buggers, aren't they?
+
+
+== Completion ==
+If the problems we've had here are indicative of what is happening elsewhere in our lands, by Magni's beard, we have some troubles ahead of us! I can only hope that the king and Senate are taking steps to deal with the threat the troggs pose.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

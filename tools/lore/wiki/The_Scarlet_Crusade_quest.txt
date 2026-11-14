@@ -1,0 +1,76 @@
+title: The Scarlet Crusade (quest)
+revision: 6896094
+part: whole
+quest: 381
+url: https://warcraft.wiki.gg/wiki/The_Scarlet_Crusade_%28quest%29
+
+The Scarlet Crusade is a quest that first introduces the same-named organization.
+
+
+== Objectives ==
+Bring Executor Arren 12 Scarlet Armbands from Scarlet Converts and Scarlet Initiates.
+
+ [Scarlet Armband] (12)
+
+
+== Description ==
+You'll be happy to know we appear to be making progress in the mine, thanks in no small part to your efforts.  We can now turn our eyes to other concerns.
+My scouts have reported that a detachment of the Scarlet Crusade is setting up a camp southeast of here.  The Scarlet Crusade is a despicable organization that hunts us, and they will not rest until every undead--Lich King's Scourge or no—is destroyed.  We must strike first!
+Be careful, their unholy zeal makes them dangerous adversaries.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Forsaken Dagger]
+ [Forsaken Maul]
+ [Forsaken Shortsword]
+ [Forsaken Bastard Sword]
+You will also receive:
+
+360 XP
+5  [Refreshing Spring Water]
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Those fools... They happily send themselves to their own graves.
+
+
+== Completion ==
+If only they listened to reason, eh, <name>?  Perhaps we could sit them down for reasonable discourse... ha!
+Light-blinded fools.
+
+
+== Notes ==
+Scarlet Converts and Scarlet Initiates can be found in the Scarlet Crusade camp, located southeast of Deathknell at . Watch out, as they're all hostile and spellcasters! Save Meven Korgal for the next quest.
+
+
+== Progression ==
+  [1] Rude Awakening
+ [2] The Mindless Ones &  [2] The Damned
+ [3] Rattling the Rattlecages, Class quests
+ [5] Marla's Last Wish,  [3] Scavenging Deathknell,  [4] Night Web's Hollow
+ [4] A Light in the Darkness ( only)
+ [4] The Scarlet Crusade
+ [5] The Red Messenger
+ [5] Vital Intelligence
+ [5] A Rogue's Deal,  [7] Fields of Grief,  [5] Gordo's Task →  [6] Doom Weed
+ [6] The Adventurer ( only)
+Class quests:
+
+   [2] Spell Research
+   [1] A Difficult Path →    [2] Rediscovering the Light →    [4] Coming to Terms &    [4] Continue Your Training ( only)
+   [2] Meditation on Undeath
+   [2] The Scarlet Rune
+   [2] The Lost Rune
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

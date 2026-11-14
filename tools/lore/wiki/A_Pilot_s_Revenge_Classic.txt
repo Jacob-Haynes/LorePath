@@ -1,0 +1,55 @@
+title: A Pilot's Revenge (Classic)
+revision: 6863972
+part: whole
+quest: 417
+url: https://warcraft.wiki.gg/wiki/A_Pilot%27s_Revenge_%28Classic%29
+
+== Objectives ==
+Kill Mangeclaw.
+Bring his Mangy Claw and Hildelve's Journal to Pilot Hammerfoot.
+
+ [Mangy Claw]
+ [Hildelve's Journal] (provided)
+
+
+== Description ==
+Hildelve wrote in his journal that he was attacked by Mangeclaw, a "huge Ice Claw Bear." He drove off the beast, but not before it mauled him savagely.
+Judging from the state of Hildelve's body, Mangeclaw must have later returned and killed him.
+However, Hildelve wrote in his journal his one, final wish:
+Revenge against Mangeclaw.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Compact Hammer]
+ [Craftsman's Dagger]
+You will also receive:
+
+650 XP (or 3 90 at max level)
++150 reputation with Gnomeregan Exiles
++150 reputation with Ironforge
+
+
+== Progress ==
+Hello, <name>.  Do you have word of my friend Hildelve?
+
+
+== Completion ==
+This is grim news, for Hildelve was a good friend.  And I wish I could have been there with you when you found the beast, Mangeclaw!
+Thank you, <name>.  Your deed will be remembered by the pilots of the Ironforge Siege Brigade.
+
+
+== Progression ==
+ [10] The Lost Pilot
+ [11] A Pilot's Revenge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced with a new version,  [5-30] A Pilot's Revenge.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

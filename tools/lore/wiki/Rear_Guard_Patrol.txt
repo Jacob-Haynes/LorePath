@@ -1,0 +1,68 @@
+title: Rear Guard Patrol
+revision: 6965739
+part: whole
+quest: 356
+url: https://warcraft.wiki.gg/wiki/Rear_Guard_Patrol
+
+== Objectives ==
+Kill 8 Bleeding Horrors and 8 Wandering Spirits.
+
+Bleeding Horror slain (8)
+Wandering Spirit slain (8)
+
+
+== Description ==
+The defenders on The Bulwark protecting Tirisfal from the Plaguelands are on constant alert. But sometimes Scourge will slip past them.
+Our success at the Bulwark depends on a one-front battle - we cannot allow an attack from the rear, nor can we allow our defenders' supply line to be cut.
+Assist the Bulwark. Patrol east and slay any Scourge you find. Spend particular effort at the Balnir Farmstead to the east. It has become a haven for interloping Scourge.
+
+
+== Rewards ==
+You will receive:
+
+4
+1,840 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Do you have a report of your patrol?
+
+
+== Completion ==
+Very good.  Your efforts do much to keep the Scourge at bay.  A commendation will be sent to my superior, Executor Zygand.
+
+
+== Notes ==
+These mobs are located at the Balnir Farmstead. If you're much under level 10 (and you shouldn't be, for this quest), keep an eye out for Fellicent's Shade, a level 12 rare mob that patrols the field.
+
+
+== Progression ==
+ [21D] Abominable Creatures
+ [22D] A Frightened Request
+ [22D] Bloodied Insignia
+ [22D] Crest of Lordaeron
+ [22D] Light's Justice
+ [22D] Remember That I Love You →  [22] Remember That I Love You
+ [12] A Recipe For Death →  [15] A Recipe For Death →  [18] A Recipe For Death →  [22D] The New Plague
+ [11] Rear Guard Patrol →  [13E] Rear Guard Patrol →  [22D] The Wrath of Rath'mael
+ [21D] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment
+
+
+== Beta version ==
+Cataclysm internally updated the quest before deprecating it.
+
+Description
+Here at the Bulwark, we must be on constant alert to protect Tirisfal from Scourge incursions. Even so, sometimes the Scourge will slip past us.
+Our success at the Bulwark depends on a one-front battle - we cannot allow an attack from the rear, nor can we allow our supply line to be cut.
+Patrol west and slay any Scourge you find. Spend particular effort at the Balnir Farmstead. It has become a haven for interloping Scourge.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

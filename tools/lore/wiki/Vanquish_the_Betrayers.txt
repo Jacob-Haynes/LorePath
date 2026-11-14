@@ -1,0 +1,58 @@
+title: Vanquish the Betrayers
+revision: 5985175
+part: whole
+quest: 784
+url: https://warcraft.wiki.gg/wiki/Vanquish_the_Betrayers
+
+== Objectives ==
+Kill 10 Kul Tiras Sailors, 8 Kul Tiras Marines and Lieutenant Benedict and return to Gar'Thok in Razor Hill.
+
+Kul Tiras Sailor slain (10)
+Kul Tiras Marine slain (8)
+Lieutenant Benedict slain
+
+
+== Description ==
+Led by Admiral Proudmoore, the humans of Kul Tiras encroached on Durotar, violating the Warchief's pact made with Jaina Proudmoore in order to defeat Archimonde years ago.
+The human aggression was repelled and Tiragarde Keep fell. But recently, the Admiral's reserves, led by Lieutenant Benedict, have retaken the keep and once again pose a threat to our homeland. These humans show no respect for diplomacy.
+Prove your honor and travel south to Tiragarde Keep to eliminate the human invaders.
+
+
+== Rewards ==
+You will receive:
+
+1 75
+625 XP
+250 reputation with Orgrimmar
+250 reputation with Darkspear Trolls
+
+
+== Progress ==
+You have your orders, <name>. The safety of Durotar is in question. Complete the task before you or hang your head in shame.
+Show your honor and defeat the humans of Tiragarde Keep.
+
+
+== Completion ==
+Word of your bravery travels fast, <class>. Tales of your victory at Tiragarde Keep will be heralded in Orgrimmar.
+
+
+== Notes ==
+The Kul Tiras Sailors and Kul Tiras Marines are outside and inside Tiragarde Keep southwest of Razor Hill and northeast of Sen'jin Village.
+Lieutenant Benedict is inside the keep on the second floor. He usually has 3 Kul Tiras Marines inside the room with him, so you may need a small group to defeat him.
+Completion of this quest will allow one to receive the quest.
+It is a good idea to have one inventory spot open to retrieve  [Benedict's Key] off Lieutenant Benedict's corpse. This key in turn will open a chest on the third floor of Tiragarde keep, which contains an  [Aged Envelope], which allows one to begin  [7] The Admiral's Orders quest.
+
+
+== Progression ==
+ [7] Vanquish the Betrayers
+ [8] From The Wreckage....
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

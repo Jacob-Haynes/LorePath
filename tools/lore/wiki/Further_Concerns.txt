@@ -1,0 +1,37 @@
+title: Further Concerns
+revision: 3445729
+part: whole
+quest: 35
+url: https://warcraft.wiki.gg/wiki/Further_Concerns
+
+This quest is part of the quest chain A Fishy Peril.
+
+
+== Objectives ==
+Marshal Dughan wants you to speak with Guard Thomas.
+
+
+== Description ==
+If you are concerned that the rumors of murlocs are true, then do this -- travel to the eastern Elwynn bridge and speak with Guard Thomas. He has been stationed at the bridge for the past week and will know the state of the area.
+I have here a Stormwind charger that will take you to Guard Thomas. Let me know if you wish to make use of the horse.
+
+
+== Completion ==
+Yes, murlocs have settled in and around the streams of eastern Elwynn.  We don't know why they are here, but they are aggressive and at least semi-intelligent.
+
+
+== Progression ==
+ [1-30] A Fishy Peril
+ [1-30] Further Concerns
+ [1-30] Find the Lost Guards
+ [1-30] Discover Rolf's Fate
+ [1-30] Report to Thomas
+ [1-30] Cloth and Leather Armor
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+es:Misión:Más preocupaciones

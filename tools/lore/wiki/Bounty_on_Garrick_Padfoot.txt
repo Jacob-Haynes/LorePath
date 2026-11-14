@@ -1,0 +1,57 @@
+title: Bounty on Garrick Padfoot
+revision: 6879195
+part: whole
+quest: 6
+url: https://warcraft.wiki.gg/wiki/Bounty_on_Garrick_Padfoot
+
+== Objectives ==
+Kill Garrick Padfoot and bring his head to Deputy Willem at Northshire Abbey.
+
+ [Garrick's Head]
+
+
+== Description ==
+Garrick Padfoot - a cutthroat who's plagued our farmers and merchants for weeks - was seen at a shack near the vineyards, which lies east of the Abbey and across the bridge. Bring me the villain's head, and earn his bounty!
+But be wary, <name>. Garrick has gathered a gang of thugs around him. He will not be an easy man to reach.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Tapered Pants]
+ [Layered Tunic]
+ [Ensign Cloak]
+You will also receive:
+
+340 XP
++150 reputation with Stormwind
+
+
+== Progress ==
+Did you find Garrick's shack? Are we finally free of that villain?
+
+
+== Completion ==
+Hah - you caught him! You've done Elwynn a great service, and earned a nice bounty!
+
+
+== Progression ==
+ [1] A Threat Within
+ [4] Brotherhood of Thieves
+Two branches become available:
+Milly Osworth:
+ [4] Milly Osworth
+ [4] Milly's Harvest
+ [4] Grape Manifest
+Garrick Padfoot:
+ [5] Bounty on Garrick Padfoot
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

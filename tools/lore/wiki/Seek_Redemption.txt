@@ -1,0 +1,61 @@
+title: Seek Redemption!
+revision: 6394851
+part: whole
+quest: 489
+url: https://warcraft.wiki.gg/wiki/Seek_Redemption%21
+
+Seek Redemption! is an Alliance only quest in Teldrassil, the night elf starting area. In this quest, players are sent by a member of the Council of the Forest to redeem themselves for doing the bidding of the evil satyr, Zenn Foulhoof.
+
+
+== Objectives ==
+Collect 3 Fel Cones and give them to Zenn Foulhoof outside of Dolanaar.
+
+ [Fel Cone] (3)
+
+
+== Description ==
+The Council of the Forest has news that you aided Zenn Foulhoof. The satyr is an enemy of the forest. As a <race>, you should know better than to defile the forest by killing Nature's creatures.
+You must redeem yourself in the eyes of the Council if you wish to remain a friend of Teldrassil.
+Teach Foulhoof a lesson and you shall be redeemed. Fel Cones are corrupted seeds that fall from the trees. They billow with green smoke.
+Give some to Foulhoof. He'll think you have brought him a harmless snack.
+
+
+== Rewards ==
+You will receive:
+
+1 75
+625 XP
++500 reputation with Darnassus
+
+
+== Progress ==
+What do you have for me, <name>? A lovely snack I presume?
+
+
+== Completion ==
+Ah, what a sweet <race>! I knew you would come in handy!
+
+
+== Notes ==
+Declining or abandoning this quest does not spoil your reputation.
+
+Syral Bladeleaf  can be found just outside the northern building of Dolanaar.
+Sentinel Shayla Nightbreeze can be found patrolling the road west of Dolanaar.
+Sentinel Kyra Starsong can be found inside the Dolanaar inn.
+Speak with any of them to receive this quest.
+Fel Cones are found beneath the trees of Teldrassil. You can search for them as you do other quests, or simply wait for the ones near Zenn to respawn, as they are on a very short respawn timer.
+Once you feed him the cones, he will turn into a frog.
+
+Zenn Foulhoof says: Ribbit!  No!!  This cannot...ribbit...be!  You have duped me with...ribbit...your foul trickery!  Ribbit!
+
+
+== Progression ==
+ [1-30] Zenn's Bidding
+ [1-30] Seek Redemption!
+ [1-30] Nature's Reprisal &  [1-30] Twisted Hatred
+
+
+== External links ==
+
+Wowhead
+WoWDB

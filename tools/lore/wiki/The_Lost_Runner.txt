@@ -1,0 +1,42 @@
+title: The Lost Runner
+revision: 6976890
+part: whole
+quest: 99046
+url: https://warcraft.wiki.gg/wiki/The_Lost_Runner
+
+== Objectives ==
+Search for Sentinel Eralya Leafshadow on the road leading to the Oracle Glade.
+
+
+== Description ==
+The Council of the Forest sent a small group of sentinels to the Oracle Tree some time ago. The tree sends messages to our elders, and it falls to us to deliver them to Darnassus safely.
+I received word that our most recent runner has not yet arrived. The Oracle's messages vary in frequency, but it has been abnormally long.
+Please head towards the Oracle Glade along the road to the west and check on her. It would have been Eralya Leafshadow's turn, and she is still in training. Elune guide you.
+
+
+== Rewards ==
+You will receive:
+
+80 XP
++10 reputation with Darnassus
+
+
+== Completion ==
+Elune's grace... I shall not die... alone...
+
+
+== Progression ==
+ [9] The Lost Runner
+ [9] Not Dead Yet
+ [10] The Great Tree Provides
+ [10] Easing Suffering
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

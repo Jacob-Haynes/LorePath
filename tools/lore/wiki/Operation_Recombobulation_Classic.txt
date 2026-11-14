@@ -1,0 +1,49 @@
+title: Operation Recombobulation (Classic)
+revision: 6309905
+part: whole
+quest: 412
+url: https://warcraft.wiki.gg/wiki/Operation_Recombobulation_%28Classic%29
+
+== Objectives ==
+
+Bring Razzle Sprysprocket in Kharanos 8 Restabilization Cogs and 8 Gyromechanic Gears.
+
+ [Restabilization Cog] (8)
+ [Gyromechanic Gear] (8)
+
+
+== Description ==
+Upon further analysis of the Gnomeregan situation, it would appear as though we not only failed to eradicate the troggs but we also happened to turn most of the gnomish race into horrific, mindless, evil-doing leper gnomes.
+Ozzie and I plan to reverse the horrible leper effect with our latest invention: The Recombobulator. The machine is almost complete but we are in dire need of some Restabilization Cogs and Gyromechanic Gears. Retrieve some from the leper gnomes out front of Gnomeregan for us.
+
+
+== Rewards ==
+
+You will also receive:
+
+850 XP (or 5 10 at max level)
++250 reputation with Gnomeregan Exiles
++250 reputation with Ironforge
+
+
+== Progress ==
+The Recombobulator will be up and running as soon as we have sufficient Restabilization Cogs and Gyromechanic Gears.
+
+
+== Completion ==
+These Gyromechanic Gears and Restabilization Cogs are in perfect accordance with Ozzie's schematics for the Recombobulation Device. 
+Once I add some hydrolubricant to the inner combustion pistons, adjust the crank-o-ratchet and increase of the viscosity of the electrogum gel, the gnomish race will be as good as new.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Text and rewards updated.   
+
+
+== See also ==
+Operation Recombobulation, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

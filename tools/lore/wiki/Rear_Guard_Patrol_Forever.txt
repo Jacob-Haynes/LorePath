@@ -1,0 +1,63 @@
+title: Rear Guard Patrol (Forever)
+revision: 6966328
+part: whole
+quest: 99156
+url: https://warcraft.wiki.gg/wiki/Rear_Guard_Patrol_%28Forever%29
+
+== Objectives ==
+Bring Riptear's Heart to Deathguard Linnea.
+
+Riptear's Heart
+
+
+== Description ==
+Damn it all! A new report came in while you were on patrol. There has been a sighting of a rogue abomination wandering Eastern Tirisfal Glades, near Venomweb Vale.
+Something is wrong. Abominations don't just slip through the Bulwark unnoticed.
+Keep this matter on a strictly need-to-know basis. That said, such a creature will not fall easily; you will need allies if you wish to be more than its next meal.
+See this through, and you will be duly rewarded. Bring me its heart as proof of the deed.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Riptear's Cleaver]
+ [Riptear's Spare Arm]
+ [Thrice-Stitched Flesh]
+You will also receive:
+
+910 XP
+
+
+== Progress ==
+Have you dealt with our little problem?
+
+
+== Completion ==
+You are a testament to the cunning and coordination that all Forsaken possess--something the mindless Scourge will never have.
+Please accept this as thanks for your efforts, as promised.
+
+
+== Notes ==
+Riptear wanders around .
+
+
+== Progression ==
+ [21D] Abominable Creatures
+ [22D] A Frightened Request
+ [22D] Bloodied Insignia
+ [22D] Crest of Lordaeron
+ [22D] Light's Justice
+ [22D] Remember That I Love You →  [22] Remember That I Love You
+ [12] A Recipe For Death →  [15] A Recipe For Death →  [18] A Recipe For Death →  [22D] The New Plague
+ [11] Rear Guard Patrol →  [13E] Rear Guard Patrol →  [22D] The Wrath of Rath'mael
+ [21D] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,57 @@
+title: A New Plague (4)
+revision: 6897443
+part: whole
+quest: 492
+url: https://warcraft.wiki.gg/wiki/A_New_Plague_%284%29
+
+== Objectives ==
+Bring Johaan's Special Drink to the Captured Mountaineer.
+
+ [Holland's Special Drink] (provided)
+
+
+== Description ==
+According to the Deathguard, another one of those foolish Dwarven Mountaineers has just been captured. The Deathguard likes to use the cellar of the Gallows End Tavern as a holding cell until prisoners can be "properly" dealt with.
+Why don't you go see how the Captured Mountaineer enjoys this special drink I made for him? It contains a subtle hint of what The Dark Lady has planned for the rest of Azeroth.
+
+
+== Rewards ==
+You will receive:
+
+1,840 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Why if I had my trusted rifle you'd be as good as dead, <Class>.  Just wait until the Steam Tank Brigade arrives to rescue me!
+
+
+== Completion ==
+Ah, a drink at last.  I'm sure it's no Rhapsody Malt but I'll take anything to whet the old whistle at this point.
+
+
+== Notes ==
+Upon completion
+Captured Mountaineer says: I raise my brew and hope to be rid of the likes of you! Cheers, you no good scoundrel, <name>!
+The mountaineer drops dead.
+
+
+== Progression ==
+ [6] A New Plague
+ [9] A New Plague
+ [11] A New Plague
+ [11] A New Plague
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+A New Plague, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

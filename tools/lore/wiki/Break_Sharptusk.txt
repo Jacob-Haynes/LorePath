@@ -1,0 +1,47 @@
+title: Break Sharptusk!
+revision: 6879238
+part: whole
+quest: 3376
+url: https://warcraft.wiki.gg/wiki/Break_Sharptusk%21
+
+== Objectives ==
+Bring the head of Chief Sharptusk Thornmantle to Brave Windfeather in Red Cloud Mesa.
+
+ [Chief Sharptusk Thornmantle's Head]
+
+
+== Description ==
+<Name> - I have heard of you, newcomer. Perhaps it is you that will help us, where others have failed.
+We tauren have carved a home out of this land, but not without a cost. The Bristleback quilboars of Brambleblade Ravine, led by Chief Sharptusk Thornmantle, have made our lives difficult with their continued war against us. I charge you to bring me the chief's head!
+He will be found in the ravine to the east in their makeshift village.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Painted Chain Leggings]
+ [Nomadic Gloves]
+You will also receive:
+
+675 XP (or 3 90 at max level)
++500 reputation with Thunder Bluff
+
+
+== Progress ==
+Sharptusk will trouble us no more once you have brought me proof of his death.  It is his head that I seek, <name>.
+We <race> live for the hunt, and there is no greater hunt than against one that is cunning enough to perhaps hunt us back.  If you are successful in this task, young one, you will start to learn what I mean.
+
+
+== Completion ==
+Justice has been served on this day by your swift actions, <name>.  Let this deed serve as a warning to all who would threaten our home.
+You have earned this reward to help you on your sojourn, young <class>.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

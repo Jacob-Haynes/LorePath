@@ -1,0 +1,53 @@
+title: A New Plague
+revision: 6896630
+part: whole
+quest: 367
+url: https://warcraft.wiki.gg/wiki/A_New_Plague
+
+== Objectives ==
+Apothecary Johaan in the town of Brill wants you to collect 5 Vials of Darkhound Blood. 
+
+ [Darkhound Blood] (5)
+
+
+== Description ==
+Lady Sylvanas has called upon the Royal Apothecary Society. The Dark Lady believes our knowledge coupled with the newfound magic will provide the key to Arthas's demise. She has challenged us to concoct a new plague, a plague deadlier than any ailment on Azeroth. This new disease will bring Arthas's Scourge Army to ruin.
+My studies show that the blood of beasts might prove to be the key. Bring to me 5 vials of darkhound blood so I can test my theory. 
+
+
+== Rewards ==
+You will receive:
+
+1 25
+630 XP
++100 or +250 reputation with Undercity
+3 Weak Troll's Blood Potion () / 3 Minor Troll's Blood Elixir ()
+
+
+== Progress ==
+Have you collected 5 vials of darkhound blood yet, <name> Time is fleeting! 
+
+
+== Completion ==
+You have done well, <name> and I thank you for your efforts. 
+
+
+== Progression ==
+ [6] A New Plague
+ [9] A New Plague
+ [11] A New Plague
+ [11] A New Plague
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+A New Plague, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

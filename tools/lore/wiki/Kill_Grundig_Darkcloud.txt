@@ -1,0 +1,46 @@
+title: Kill Grundig Darkcloud
+revision: 6281200
+part: whole
+quest: 6629
+url: https://warcraft.wiki.gg/wiki/Kill_Grundig_Darkcloud
+
+== Objectives ==
+Kill Grundig Darkcloud and 6 Grimtotem Brutes, and return to Makaba Flathoof near the southeastern edge of Stonetalon.
+
+Grundig Darkcloud slain
+Grimtotem Brute slain (6)
+
+
+== Description ==
+<name>, you've done a fine job killing Grimtotem. If you dare, Grundig Darkcloud and his personal band of brutes is by far the worst of the lot. He was the one who led the brutal attack on my village.
+You will find him in Grimtotem Post a bit further up the path to the west. Kill him, and I will be forever grateful.
+
+
+== Rewards ==
+You will receive:
+
+10
+3,690 XP
+
+
+== Progress ==
+Have you killed Grundig Darkcloud and his personal band of Brutes?
+
+
+== Completion ==
+Grundig Darkcloud is dead! <name>, I will always be grateful for what you've done here today.
+
+
+== Progression ==
+ [18] Avenge My Village
+ [18] Kill Grundig Darkcloud
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,53 @@
+title: Serena Bloodfeather (Classic)
+revision: 6230179
+part: whole
+quest: 876
+url: https://warcraft.wiki.gg/wiki/Serena_Bloodfeather_%28Classic%29
+
+== Objectives ==
+Slay Serena Bloodfeather and return her head to Darsok Swiftdagger at the Crossroads.
+
+ [Serena's Head]
+
+
+== Description ==
+You did so well with the lieutenants and underlings that I'd like you to do one last thing for me.
+Serena Bloodfeather is the sister of a harpy named Bloodfeather who was slain by Rexxar quite a while ago. Apparently, these attacks on the Horde caravans are revenge for her sister's death.
+I need you to slit her throat and bring me back her head. I want to place it on the next caravan we send out... Give those harpies something to think about.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Elegant Shortsword]
+ [Harpy Skinner]
+ [Zhovur Axe]
+You will also receive:
+
+1,950 XP
++150 or +350 reputation with Orgrimmar
+
+
+== Progress ==
+You're not getting anything until I see Serena's head.
+
+
+== Completion ==
+HA! Well done, <name>! Very well done... I wasn't sure you were up to the task, but you've proved yourself quite the cut-throat. Thank you again for helping us suppress the Harpy epidemic. Here is your reward, use it well.
+
+
+== Progression ==
+ [15] Harpy Raiders
+ [16] Harpy Lieutenants
+ [20] Serena Bloodfeather
+ [20] Letter to Jin'Zil
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

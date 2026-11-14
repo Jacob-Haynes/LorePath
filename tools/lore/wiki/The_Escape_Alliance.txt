@@ -1,0 +1,55 @@
+title: The Escape (Alliance)
+revision: 6825761
+part: whole
+quest: 114
+url: https://warcraft.wiki.gg/wiki/The_Escape_%28Alliance%29
+
+== Objectives ==
+Take the Invisibility Liquor to Maybell Maclure.
+
+ [Invisibility Liquor] (provided)
+
+
+== Description ==
+Take this invisibility liquor to young Maybell.  It should last long enough for her to visit Tommy Joe.
+
+
+== Rewards ==
+You will receive:
+
+630 XP (or 3 90 at lvl 90)
++250 reputation with Stormwind
+5x  [Minor Healing Potion]
+
+
+== Progress ==
+Did you deliver my letter to Tommy Joe?   What did he say??
+
+
+== Completion ==
+Oh...my!  I feel guilty deceiving my family, but my feelings for Tommy Joe are too strong to ignore.
+Thank you, <name>.  I'll drink this liquor as soon as I have the chance and sneak away to my love.
+And for you... please take this.
+
+
+== Notes ==
+The story drops here, and for many years in the game that was that.  However in World of Warcraft: Warlords of Draenor, the player builds a Garrison, and if they choose to build the Barn, they'll find Tommy Joe Stonefield and Maybell Maclure-Stonefield (and family) working in it.
+
+On completion
+Maybell Maclure says: Here goes nothing...
+Maybell drinks the liquor and vanishes.
+
+
+== Progression ==
+ [1-30] A Visit With Maybell
+ [1-30] Young Lovers
+ [1-30] Speak with Gramma
+ [1-30] Note to William
+ [1-30] Collecting Kelp
+ [1-30] The Escape
+
+
+== External links ==
+
+Wowhead
+WoWDB

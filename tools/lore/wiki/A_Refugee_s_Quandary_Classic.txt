@@ -1,0 +1,45 @@
+title: A Refugee's Quandary (Classic)
+revision: 6958653
+part: whole
+quest: 3361
+url: https://warcraft.wiki.gg/wiki/A_Refugee%27s_Quandary_%28Classic%29
+
+== Objectives ==
+Bring Felix's Box, Felix's Chest and Felix's Bucket of Bolts to Felix Whindlebolt in Anvilmar.
+
+ [Felix's Box]
+ [Felix's Chest]
+ [Felix's Bucket of Bolts]
+
+
+== Description ==
+We drove the troggs out of Gnomeregan, but then it all went so horribly wrong! Now our home is completely irradiated, and we gnomes have been scattered all over Dun Morogh.
+In my haste to get away from the radiation, I lost all my personal belongings and tools. It was the trolls that got them. They stole my chest, my box, and my bucket of bolts! They took them back to their camps southwest of Anvilmar.
+I'm no adventurer - could you find my things and bring them here to me, please?
+
+
+== Rewards ==
+You will receive 50
+
+
+== Progress ==
+Oh goodness <name>, this town is not well suited for the likes of me.  There are as many nasty creatures here as there were in Gnomeregan before the accident!
+Do you have my belongings?  If you don't, then who knows what the trolls have done with them now...
+
+
+== Completion ==
+Huzzah, you've found them!  You're an absolute savior, my friend.  Here, it's not much, but it's something for the trouble I've put you through!  Thank you!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+A Refugee’s Quandary, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,51 @@
+title: Deaths in the Family (Classic)
+revision: 6905165
+part: whole
+quest: 354
+url: https://warcraft.wiki.gg/wiki/Deaths_in_the_Family_%28Classic%29
+
+== Objectives ==
+Bring Gregor's Remains, Nissa's Remains and Thurman's Remains to Coleman Farthing in Brill.
+
+ [Gregor's Remains] 
+ [Nissa's Remains] 
+ [Thurman's Remains] 
+
+
+== Description ==
+The Agamand family was the most prosperous family in Tirisfal Glades. I used to work their mills...before the Plague.
+When the Scourge first came, the Agamands fortified their home and convinced those in their employ to remain and help them defend. We were fools, but at least we were loyal fools.
+The Agamands, in their pride, doomed us to undeath. And now they are minions of the Scourge!
+Serve the Forsaken by defeating the Agamands who fell to the Plague. Serve me by bringing me their remains. 
+
+
+== Rewards ==
+You will receive:
+
+4
+875 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Do you have the remains of the Agamands?  Are those cursed beasts finally destroyed?
+
+
+== Completion ==
+Revenge has a sweet taste, don't you think?  When you destroyed the Agamands, did you catch any hint of free will within them?  I hope so.  I hope they knew fear before they were smashed into oblivion.
+It is a foolish hope, I know.  But it is a hope I foster nonetheless.
+
+
+== Notes ==
+Nissa Agamand is located inside the farmhouse on the east side of town. Gregor Agamand patrols, starting from the north windmill. Thurman Agamand is located at the far western windmill.
+While killing Darkeye Bonecasters, Cracked Skull Soldiers, and Rattlecage Soldiers for  [8] The Mills Overrun, one of them will drop  [A Letter to Yvette], which starts  [7] A Letter Undelivered.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced by  [1-30] Deaths in the Family.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

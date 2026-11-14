@@ -1,0 +1,70 @@
+title: The Demon Seed (quest)
+revision: 6903192
+part: whole
+quest: 924
+url: https://warcraft.wiki.gg/wiki/The_Demon_Seed_%28quest%29
+
+The Demon Seed is the 3rd quest in the Neeru Fireblade quest chain.
+
+
+== Objectives ==
+Grab a Flawed Power Stone. Bring it to the Altar of Fire before the stone expires, then return to Ak'Zeloth.
+
+Destroy The Demon Seed
+
+
+== Description ==
+The Demon Seed is a powerful tool for the Burning Legion. It rests in a cave on Dreadmist Peak, above a demonic altar of fire.
+I have prepared power stones that when placed near the Seed will disrupt its connection to the Legion.
+Take a stone from the table and bring it to the altar of fire atop Dreadmist Peak. Travel west, then north when the road forks. The Peak will be to your left. The safest climb to the top is on its northern face.
+And hurry—the stone's power will consume itself in time.
+
+
+== Rewards ==
+You will receive:
+
+1250 XP (or 7 80 at max level)
++150 or +350 reputation with Orgrimmar
+ [Banshee Armor]
+
+
+== Progress ==
+The Demon Seed still exists. I can sense its power...
+
+
+== Completion ==
+Your task is complete. You have destroyed the Demon Seed as Neeru bid. But this is not the end...
+The destruction of the Demon Seed sent waves of power through the ether, waves of staggering force. I felt them, and I am sure other beings did as well. Others who will wonder why their toy was broken...
+But regardless of future troubles, I have something for you. Neeru sent it as payment. And he bid me thank you.
+So, thank you.
+
+
+== Notes ==
+On accept
+Ak'Zeloth says: Take a stone from the table, <name>. You will need it for your quest.
+You will need one inventory spot free to retrieve a  [Flawed Power Stone] during  [14] Flawed Power Stone, which will be required to complete this quest, from the Flawed Power Stones on the table next to Ak'Zeloth.
+The Flawed Power Stones only last for 30 minutes, but if you are not able to complete the quest in this time you may always come back and pick up another stone.
+Although Ak'Zeloth tells you that it's easiest to scale Dreadmist Peak from the northern slopes, it is often found to be faster and easier to scale the south-eastern slopes.
+
+
+== Progression ==
+ [4] Vile Familiars /   [4] Vile Familiars &   [4] Vile Familiars
+ [5] Burning Blade Medallion
+ [5] Report to Sen'jin Village
+ [7] Report to Orgnil
+ [12] Dark Storms
+ [12] Margoz
+ [12] Skull Rock
+ [12] Neeru Fireblade
+ [13] Ak'Zeloth
+ [14] The Demon Seed
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,56 @@
+title: Poison Water (Classic)
+revision: 6732204
+part: whole
+quest: 748
+url: https://warcraft.wiki.gg/wiki/Poison_Water_%28Classic%29
+
+== Objectives ==
+Bring 6 Prairie Wolf Paws and 4 Plainstrider Talons to Mull Thunderhorn in Bloodhoof.
+
+ [Prairie Wolf Paw] (6)
+ [Plainstrider Talon] (4)
+
+
+== Description ==
+Goblins and their servants have tainted our sacred water wells! We cannot allow this.
+To cleanse each well, I must create a cleansing totem, then you must bring the totem to the well and perform a cleansing ritual.
+First we will create a cleansing totem for the Winterhoof Water Well. To do this, the land must offer its aid. Hunt prairie wolves for their paws and adult plainstriders for their talons. They are to the southwest.
+Return to me with the paws and talons, <name>.
+
+
+== Rewards ==
+You will receive:
+
+450 XP
++250 reputation with Thunder Bluff
+
+
+== Progress ==
+Do you have the paws and talons, <name>?
+
+
+== Completion ==
+You have done well, <name>.  I will take these and bind their power into a totem of cleansing.
+
+
+== Progression ==
+  [5] Poison Water
+  [6] Winterhoof Cleansing
+  [7] Thunderhorn Totem
+  [8] Thunderhorn Cleansing
+  [10] Wildmane Totem
+  [10] Wildmane Cleansing
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced by   [1-30] Poison Water.   
+
+
+== See also ==
+Poison Water, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

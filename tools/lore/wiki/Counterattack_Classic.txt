@@ -1,0 +1,64 @@
+title: Counterattack! (Classic)
+revision: 6470294
+part: whole
+quest: 4021
+url: https://warcraft.wiki.gg/wiki/Counterattack%21_%28Classic%29
+
+== Objectives ==
+Bring a Piece of Krom'zar's Banner to Regthar Deathgate, west of the Crossroads.
+
+ [Piece of Krom'zar's Banner]
+
+
+== Description ==
+The Horde commends your successes against the Kolkar, but the Kolkar themselves are maddened. I have reports that a contingent of Kolkar has traveled to the Barrens from their home in Desolace, to seek vengeance. My latest report was that, even now, they move against these bunkers, from the west!
+Face the Kolkar invaders, and end their threat in the Barrens. Kill them until their leader, Warlord Krom'zar, appears. Defeat him and bring me a piece of his banner as proof.
+We're counting on you, <name>.
+
+
+== Rewards ==
+You will receive:
+
+25
+1,950 XP
++150 or +350 reputation with Orgrimmar
+
+
+== Progress ==
+Do you have the banner?
+
+
+== Completion ==
+You have done it!  You have defeated the Kolkar!
+I will be sure Thrall receives word of your actions here, <name>.
+Stand tall.  You do yourself, and the Horde, proud.
+
+
+== Notes ==
+Upon accept
+Regthar Deathgate says: Beware, <name>! Look to the west!
+Once you turn in the third leader's head, Regthar Deathgate will warn of an impending counter-attack by an army of Kolkar, which will immediately begin as soon as you accept the quest to end the life of the fourth and final Kolkar leader.
+So long as you have the quest unfinished, a never-ending battle between Horde military and Kolkar warriors will ensue. By killing enough Kolkar attackers, the warlord will emerge. However, if you leave the invasion going for a certain amount of time, it will stop, and you must re-activate it by speaking to Regthar Deathgate and selecting the option asking where Warlord Krom'zar is.
+Be warned, he is a level 20 Elite mob. Furthermore, he is guarded by his own group of Kolkar Invaders who will aggro alongside him no matter what. You shouldn't do this alone, despite the presence of Horde soldiers. Bring friends (or a willing high level helper).
+
+Regthar Deathgate yells: The Kolkar invaders are retreating!
+
+
+== Progression ==
+ [16] Kolkar Leaders
+ [18] Verog the Dervish
+ [19] Hezrul Bloodmark
+ [20] Counterattack!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced by a new version.   
+ Patch 1.2.0 (2004-12-18):
+Number of centaur required to kill to unleash Warlord Krom'zar in the Barrens Counterattack! quest has been reduced to 20.
+Time limit for the Counterattack! quest has been increased to 20 minutes.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

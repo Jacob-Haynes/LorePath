@@ -1,0 +1,59 @@
+title: Brotherhood of Thieves
+revision: 6880228
+part: whole
+quest: 18
+url: https://warcraft.wiki.gg/wiki/Brotherhood_of_Thieves
+
+== Objectives ==
+Bring 8 Red Burlap Bandanas to Deputy Willem outside the Northshire Abbey.
+
+ [Red Burlap Bandana] (8)
+
+
+== Description ==
+Recently, a new group of thieves has been hanging around Northshire. They call themselves the Defias Brotherhood, and have been seen across the river to the east.
+I don't know what they're up to, but I'm sure it's not good! Bring me the bandanas they wear, and I'll reward you with a weapon.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Militia Dagger]
+ [Militia Hammer]
+ [Militia Shortsword]
+ [Militia Warhammer]
+ [Militia Quarterstaff]
+You will also receive:
+
+360 XP (or 2 10 at max level)
++250 reputation with Stormwind
+
+
+== Progress ==
+Have you gathered those bandanas for me yet?
+
+
+== Completion ==
+Back with some bandanas, I see.  The Stormwind Army appreciates your help.
+
+
+== Progression ==
+ [1] A Threat Within
+ [4] Brotherhood of Thieves
+Two branches become available:
+Milly Osworth:
+ [4] Milly Osworth
+ [4] Milly's Harvest
+ [4] Grape Manifest
+Garrick Padfoot:
+ [5] Bounty on Garrick Padfoot
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

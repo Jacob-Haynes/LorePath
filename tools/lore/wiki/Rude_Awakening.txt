@@ -1,0 +1,66 @@
+title: Rude Awakening
+revision: 6895436
+part: whole
+quest: 363
+url: https://warcraft.wiki.gg/wiki/Rude_Awakening
+
+Rude Awakening is the first quest that an undead character will complete. This quest is exclusive to undead characters.
+
+
+== Objectives ==
+Speak with Shadow Priest Sarvis.
+
+
+== Description ==
+About time you woke up. We were ready to toss you into the fire with the others, but it looks like you made it.
+I am Mordo, the caretaker of the crypt of Deathknell. And you are the Lich King's slave no more.
+Speak with Shadow Priest Sarvis in the chapel at the base of the hill, he will tell you more of what you must know.
+ To get out of this crypt, take the steps up to the surface. Follow the road down to the chapel to find Sarvis.
+
+
+== Rewards ==
+You will receive:
+
+40 XP
++50 or +75 reputation with Undercity
+
+
+== Completion ==
+Another of the walking dead, hm? Must have been quite a shock, waking up in the crypt with only the cold and Mordo to greet you...
+I see the confusion on your face. Let me try to explain our... situation... to you.
+We have been freed from the control of the Lich King by our new leader, Lady Sylvanas. The Dark Lady guides us in our war against the hated Scourge and the holdouts of humanity who dog our every step.
+
+
+== Notes ==
+Follow the road north into town, then turn left and enter the chapel. Sarvis is inside, surrounded by class trainers.
+
+
+== Progression ==
+  [1] Rude Awakening
+ [2] The Mindless Ones &  [2] The Damned
+ [3] Rattling the Rattlecages, Class quests
+ [5] Marla's Last Wish,  [3] Scavenging Deathknell,  [4] Night Web's Hollow
+ [4] A Light in the Darkness ( only)
+ [4] The Scarlet Crusade
+ [5] The Red Messenger
+ [5] Vital Intelligence
+ [5] A Rogue's Deal,  [7] Fields of Grief,  [5] Gordo's Task →  [6] Doom Weed
+ [6] The Adventurer ( only)
+Class quests:
+
+   [2] Spell Research
+   [1] A Difficult Path →    [2] Rediscovering the Light →    [4] Coming to Terms &    [4] Continue Your Training ( only)
+   [2] Meditation on Undeath
+   [2] The Scarlet Rune
+   [2] The Lost Rune
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 3.3.0 (2009-12-08): The description now includes directions for exiting the crypt.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
