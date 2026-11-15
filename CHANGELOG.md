@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Zone story:** a zone's page is tidy again. The About section shows just its summary, its Sources and, while there's more to uncover, a line saying so. The chapters you and your characters have unlocked are read in the side panel instead: **Zone story** in the About header opens the whole story so far, in order, each chapter with its Sources. Chapters no longer appear under the storylines. A storyline's **Story so far** still tells its chapters after their quests, and the small book on a tile still marks a quest that unlocked one.
+
 ## 1.4.0-beta6
 
 - **Lore in the storylines:** a zone's chapters now appear under the storylines they belong to, so the About section stays short: its opening lines, and a line while there's more to uncover. A finished storyline stays collapsed but keeps its chapter showing. A chapter with no storyline on the page shows in the About section instead. Each chapter has its own **Sources**.

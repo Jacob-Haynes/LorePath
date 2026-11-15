@@ -629,51 +629,66 @@ def lore_body():
     return [t for t in canvas_texts() if t.startswith("Long ago, a test.")][0]
 def shown(text):
     return any(text in t for t in canvas_texts())
+def in_detail(f):
+    p = f["__parent"]
+    while p is not None and not same(p, g.LorePathDetailFrame):
+        p = p["__parent"]
+    return p is not None
+def zone_story_button():
+    return frame["zoneStoryButton"]
+def panel_texts():
+    return detail_texts() if g.LorePathDetailFrame and g.LorePathDetailFrame.IsShown(g.LorePathDetailFrame) else []
+def panel_has(text):
+    return any(text in t for t in panel_texts())
+def open_zone_story():
+    b = zone_story_button()
+    if not g.LorePathDetailFrame or not g.LorePathDetailFrame.IsShown(g.LorePathDetailFrame) or ns.detailZone != lore_zone:
+        b["__scripts"]["OnClick"](b)
+ns.HideDetail()
 ns.Refresh()
 check(lore_body() == "Long ago, a test." and not shown("Then came A.") and not shown("Meanwhile, B."),
-      "with no chapter's quest done, no chapter shows anywhere")
-check(hint_text in canvas_texts(), "and the About section says there's more to uncover, naming no quest")
+      "with no chapter's quest done, the About section shows only the summary")
+check(hint_text in canvas_texts(), "and says there's more to uncover, naming no quest")
+check(not zone_story_button().IsShown(zone_story_button()), "with no chapter unlocked, there's no Zone story button")
 char["completed"][qa] = True
 ns.RefreshCompleted()
 ns.Refresh()
-check(shown("Then came A.") and lore_body() == "Long ago, a test.",
-      "finishing a chapter's quest shows the chapter under its storyline, not in the About section")
-check(credited('"Chapter A Article"'), "with its own Sources")
-check(hint_text in canvas_texts(), "the hint stays while another chapter is locked")
-key_a = "s" + str(page_lines[0]["first"])
-g.LorePathDB["collapsed"][key_a] = True
-ns.Refresh()
-check(shown("Then came A."), "a collapsed storyline still shows its chapter")
-g.LorePathDB["collapsed"][key_a] = None
+check(not shown("Then came A.") and lore_body() == "Long ago, a test.",
+      "finishing a chapter's quest doesn't put the chapter on the page")
+check(zone_story_button().IsShown(zone_story_button()), "but the About section gets a Zone story button")
+open_zone_story()
+check(ns.detailZone == lore_zone and panel_has("Long ago, a test.") and panel_has("Then came A.")
+      and not panel_has("Meanwhile, B."), "which opens the side panel with the summary and the unlocked chapter")
+story_srcs = [tooltip_of(b) for b in harness["all"].values() if b["articles"] is not None and b["text"] is not None
+              and b.IsShown(b) and in_detail(b)]
+check(any('"Chapter A Article"' in t[1] for t in story_srcs) and any('"Test Article"' in t[1] for t in story_srcs),
+      "each with its own Sources")
+check(panel_has(hint_text + "."), "and says there's more to uncover")
 char["completed"][qc] = True
 ns.RefreshCompleted()
 ns.Refresh()
-check(lore_body() == "Long ago, a test.\n\nFar away, C." and credited('"Chapter C Article"'),
-      "a chapter whose quest has no storyline on the page shows in the About section, credited there")
+check(panel_has("Far away, C."), "a chapter whose quest is on another page is in the zone story too")
 char["completed"][qb] = True
 ns.RefreshCompleted()
 ns.Refresh()
-check(shown("Meanwhile, B.") and hint_text not in canvas_texts(), "with every chapter shown, the hint goes")
+texts_now = panel_texts()
+check(texts_now.index([t for t in texts_now if "Then came A." in t][0]) < texts_now.index([t for t in texts_now if "Meanwhile, B." in t][0])
+      < texts_now.index([t for t in texts_now if "Far away, C." in t][0]),
+      "chapters are in story order")
+check(not panel_has(hint_text) and hint_text not in canvas_texts(), "with every chapter unlocked, the hint goes")
+b = zone_story_button()
+b["__scripts"]["OnClick"](b)
+check(not g.LorePathDetailFrame.IsShown(g.LorePathDetailFrame), "clicking Zone story again closes the panel")
 for q in (qa, qb, qc):
     char["completed"][q] = None
 ns.RefreshCompleted()
 ns.SetSetting("showSpoilers", True)
 ns.Refresh()
-check(shown("Then came A.") and shown("Meanwhile, B.") and shown("Far away, C.") and hint_text not in canvas_texts(),
-      "Show spoilers shows every chapter, with no hint")
+open_zone_story()
+check(panel_has("Then came A.") and panel_has("Meanwhile, B.") and panel_has("Far away, C.") and not panel_has(hint_text),
+      "with Show spoilers, the zone story has every chapter")
 ns.SetSetting("showSpoilers", False)
-ns.SetSetting("hideCompleted", True)
-char["completed"][qa] = True
-for n in page_lines[0]["nodes"].values():
-    char["completed"][n["id"]] = True
-ns.RefreshCompleted()
-ns.Refresh()
-check(lore_body() == "Long ago, a test.\n\nThen came A.",
-      "a chapter whose storyline is hidden (Hide finished storylines) moves to the About section")
-ns.SetSetting("hideCompleted", False)
-for n in page_lines[0]["nodes"].values():
-    char["completed"][n["id"]] = None
-ns.RefreshCompleted()
+ns.HideDetail()
 ns.Refresh()
 
 # Tirisfal's real chapters: shown once you or your characters finish their quests.
@@ -691,9 +706,6 @@ check(len(texts) == 3 and "Naxxramas" in texts[1] and "Dawn's Watch" in texts[2]
       "after Remnants of War and Bandarion Keep, their two chapters show, with more still to uncover")
 check(articles == ["Tirisfal Glades", "Bandarion Keep", "Remnants of War", "Bandarion Keep (quest)"],
       "crediting the premise's articles, then the chapters', each once")
-placed = lua.table_from({96899: True})
-texts = list(ns.GetLoreView(tirisfal, placed)[0].values())
-check(len(texts) == 2 and "Naxxramas" in texts[1], "a chapter placed in a storyline on the page is left out of the About section")
 for q in (96898, 96899):
     char["completed"][q] = None
 char["race"], char["class"] = 96, 7
