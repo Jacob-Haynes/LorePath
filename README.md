@@ -8,7 +8,7 @@ It's not a quest helper. Its world map pins only show where quests start, and th
 
 LorePath supports English game clients only.
 
-> **Version 1.3.1.** Lore beyond quest text (zones, characters, a codex) is planned.
+> **Version 1.4.0.** Every zone, dungeon, raid and battleground now has its lore. Lore for characters, and a codex, are planned.
 
 ---
 

@@ -2,12 +2,14 @@
 
 **See your story, zone by zone.**
 
-LorePath draws every zone's, dungeon's, raid's and battleground's questlines as storyline maps, in the style of attunement path views. At a glance you can see which quests you've done, which you've missed and where the next part of each story starts. Click any quest to read its story.
+LorePath draws every zone's, dungeon's, raid's and battleground's questlines as storyline maps, in the style of attunement path views. At a glance you can see which quests you've done, which you've missed and where the next part of each story starts. Click any quest to read its story, and unlock each zone's lore as you play.
 
 Built for **WoW Forever**, on English game clients. It's lightweight: its map pins only show where quests start, and there's no objective tracking, so it works alongside the default quest UI.
 
 ## Features
 
+- **Lore for every page:** every zone, city, dungeon, raid and battleground opens with a short summary of its lore as it is in WoW Forever, from the Warcraft Wiki. Hover **Sources** for the articles it came from.
+- **Zone story:** as you finish quests, chapters of each page's story unlock, from the Defias in Westfall to the Al'Aketh on Zephras Isle. **Zone story** opens them in the side panel, in order, and a line tells you when there's more to uncover, without naming a quest. Lore is shared across your characters, so a chapter one of them unlocked shows on all of them, marked with who did it.
 - **Storyline maps:** each page's quest chains, drawn from the first quest to the last, with lines showing what unlocks what. Long storylines wrap to fit the window. Storylines collapse, and finished ones start collapsed. Drag anywhere on the graph to pan, even from a quest.
 - **Storylines named for their story:** a storyline that opens with an errand (*Speak with Ruga*) or a breadcrumb named after an NPC is named after the quest it leads to, so Stonetalon's *Ziz Fizziks* reads *Super Reaper 6000*.
 - **Storylines that cross zones:** where a story comes from or goes on to another zone, a faded tile with that zone's icon says so (*< From Elwynn Forest*, *Continues in Westfall >*). Click it to follow the story there. Parts of one chain that only meet in another zone, or that leave and come back, are one storyline, and a chain keeps its name across zones. Hover a storyline's name to see where its chain began.
@@ -31,7 +33,7 @@ Built for **WoW Forever**, on English game clients. It's lightweight: its map pi
   - a Wowhead link to copy.
 
   No spoilers: quests you haven't started show "Find what awaits you" until you press Reveal, and how a quest ends stays hidden until you turn it in. Turn on **Show spoilers** to see everything.
-- **Story so far:** read a storyline as one story: the text of each quest you've finished in it, in order, from its header's **Story so far** button. It follows the chain across zones, from where it began to where it goes next, and only includes quests you've finished, so nothing ahead is spoiled.
+- **Story so far:** read a storyline as one story: the text of each quest you've finished in it, in order, with the lore chapters they unlocked, from its header's **Story so far** button. It follows the chain across zones, from where it began to where it goes next, and only includes quests you've finished, so nothing ahead is spoiled. A small book on a quest's tile marks one that unlocked a chapter; hover it to read it.
 - **Your story, saved:** LorePath saves the quest text you see as you play, so you can go back and reread it. For quests you did before installing it, it fills in from:
   - community text, including many of WoW Forever's own quests;
   - the game's own quest summaries;
@@ -55,12 +57,13 @@ You can also bind a key under *Options → Key Bindings → AddOns → LorePath*
 
 ## Coming later
 
-Lore for zones, places and characters, and a searchable codex, are planned.
+Lore for characters, and a searchable codex, are planned.
 
 ## Credits
 
 - **Quest data and notes:** [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings)' WoW Forever database (MIT). If a quest is missing or its chain is wrong, please report it to AllTheThings too, so everyone benefits.
 - **Vanilla quest text:** [pfQuest](https://github.com/shagu/pfQuest) (MIT), originally from VMaNGOS.
 - **Community quest text:** collected in game by LorePath's players.
+- **Lore:** summarised from the [Warcraft Wiki](https://warcraft.wiki.gg) (CC BY-SA 4.0).
 
 Bugs and ideas: [GitHub](https://github.com/Jacob-Haynes/LorePath) Or via [Curse](https://legacy.curseforge.com/wow/addons/lorepath/settings/issues)

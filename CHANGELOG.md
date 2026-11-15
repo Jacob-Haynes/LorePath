@@ -1,6 +1,16 @@
 # Changelog
 
-## Unreleased
+## 1.4.0
+
+Everything from the 1.4.0 betas (details below), plus lore for every page. The highlights:
+
+- **Lore for every page:** every zone, city, dungeon, raid and battleground opens with a short summary of its lore as it is in WoW Forever, from the Warcraft Wiki, with **Sources** to hover for the articles it came from.
+- **Zone story:** as you finish quests, chapters of each page's story unlock, 458 in all. **Zone story** in the About section opens them in the side panel, in order, and a line says when there's more to uncover. A storyline's **Story so far** tells its chapters after their quests, and a small book marks a quest that unlocked one. **Show spoilers** shows every chapter.
+- **Lore shared across your characters:** a chapter any of your characters has unlocked shows on all of them, marked *Unlocked by <name>*.
+- **Wowhead link:** each quest's details end with its Wowhead address to copy, in place of WarcraftDB's.
+- **Tidier storyline headers:** an open storyline no longer repeats **Next:** for a quest whose tile is right there.
+
+Since 1.4.0-beta7:
 
 - **Lore for every page:** every zone, city, dungeon, raid and battleground now has its own summary and, where its quests tell a story, chapters to unlock: 458 in all, across the Eastern Kingdoms, Kalimdor, the classic dungeons, Onyxia's Lair and WoW Forever's own Riverglades, Shen'dralas and new dungeons. Some of Forever's newest quests aren't covered yet, because there's nothing written about them to draw on; sharing your quest text with `/lp share` helps.
 
