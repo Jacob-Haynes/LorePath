@@ -2,68 +2,27 @@
 
 **See your story, zone by zone.**
 
-LorePath draws every zone's, dungeon's, raid's and battleground's questlines as storyline maps, in the style of attunement path views. At a glance you can see which quests you've done, which you've missed and where the next part of each story starts. Click any quest to read its story, and unlock each zone's lore as you play.
+LorePath turns every zone's, dungeon's and raid's quests into storyline maps: what you've done, what you've missed, and where each story goes next. Then it tells you the story, from the quest text you've read to each zone's lore, unlocked as you play.
 
-Built for **WoW Forever**, on English game clients. It's lightweight: its map pins only show where quests start, and there's no objective tracking, so it works alongside the default quest UI.
+Built for **WoW Forever** on English clients. It's lightweight and doesn't track objectives, so it sits happily beside your quest log.
 
-## Features
+## What you get
 
-- **Lore for every page:** every zone, city, dungeon, raid and battleground opens with a short summary of its lore as it is in WoW Forever, from the Warcraft Wiki. Hover **Sources** for the articles it came from.
-- **Zone story:** as you finish quests, chapters of each page's story unlock, from the Defias in Westfall to the Al'Aketh on Zephras Isle. **Zone story** opens them in the side panel, in order, and a line tells you when there's more to uncover, without naming a quest. Lore is shared across your characters, so a chapter one of them unlocked shows on all of them, marked with who did it.
-- **Storyline maps:** each page's quest chains, drawn from the first quest to the last, with lines showing what unlocks what. Long storylines wrap to fit the window. Storylines collapse, and finished ones start collapsed. Drag anywhere on the graph to pan, even from a quest.
-- **Storylines named for their story:** a storyline that opens with an errand (*Speak with Ruga*) or a breadcrumb named after an NPC is named after the quest it leads to, so Stonetalon's *Ziz Fizziks* reads *Super Reaper 6000*.
-- **Storylines that cross zones:** where a story comes from or goes on to another zone, a faded tile with that zone's icon says so (*< From Elwynn Forest*, *Continues in Westfall >*). Click it to follow the story there. Parts of one chain that only meet in another zone, or that leave and come back, are one storyline, and a chain keeps its name across zones. Hover a storyline's name to see where its chain began.
-- **A zone list that tells you where to go:**
-  - every zone, dungeon, raid and battleground with quests for you, each with an icon and WoW Forever's level range, with dungeons in level order;
-  - names coloured by progress, from grey (not started), then red through orange and yellow to green (finished);
-  - finished sections start collapsed, and LorePath opens on the zone or instance you're in.
-- **Class and Professions pages:** every quest for your class, and for each of your professions, in one place, with chains that cross zones shown whole, the Tier 0.5 upgrade chain among them.
-- **Attunements:** a page for each key chain (Onyxia's Lair, Upper Blackrock Spire, Scholomance and Shadowforge City), with your faction's quests as one storyline and a tick once you have the key.
-- **Quests on the world map:** a "!" where each quest starts: gold for your level, grey for low-level, red for too high, each with its own filter in the world map's menu. Hover for details, click for a waypoint, Shift+click to open the quest in LorePath.
-- **Search:** find any quest by name or ID from the box above the zone list.
-- **Only your quests:** quests for another faction, race or class are left out. Quests that come in one version per class city or starting area, like the Shaman totem quests and WoW Forever's *The Adventurer* chain, show once: your own version, on its zone's page too.
-- **Clear status at a glance:** completed, in your log, available (coloured by difficulty, like your quest log), repeatable (blue), too high level, needs an earlier quest, and skipped.
-- **Telling icons:** a portal for quests picked up inside a dungeon or raid, your class or profession icon, or the icon of the item that starts the quest.
-- **Quest details:** click a quest to open a panel showing:
-  - requirements, where it starts and who gives it, or what drops or holds the item that starts it;
-  - **Good to know:** tips such as where a quest's item drops, or what finishing it locks you out of (also in the tooltip);
-  - its objectives and description, plus progress and completion text;
-  - its item rewards (Shift+click to link one in chat);
-  - the quests before and after it;
-  - a Wowhead link to copy.
+- **Storyline maps** for every zone, dungeon, raid and battleground, following chains across zones, with level ranges and progress at a glance.
+- **Zone lore:** a short summary on every page, and over 450 story chapters that unlock as you finish quests. Lore is shared across your characters.
+- **Story so far:** reread any storyline's quests in order, with nothing ahead spoiled.
+- **Only your quests:** filtered for your faction, race, class and professions, coloured by status and difficulty.
+- **Quest details:** where it starts, what drops the item that starts it, handy tips, rewards and a Wowhead link. Spoilers stay hidden unless you want them.
+- **Quest pins on the world map** and one-click waypoints.
+- **Class, Professions and Attunements pages** that gather chains from across the world.
+- **Share your quest text** to help fill in WoW Forever's new quests for everyone.
 
-  No spoilers: quests you haven't started show "Find what awaits you" until you press Reveal, and how a quest ends stays hidden until you turn it in. Turn on **Show spoilers** to see everything.
-- **Story so far:** read a storyline as one story: the text of each quest you've finished in it, in order, with the lore chapters they unlocked, from its header's **Story so far** button. It follows the chain across zones, from where it began to where it goes next, and only includes quests you've finished, so nothing ahead is spoiled. A small book on a quest's tile marks one that unlocked a chapter; hover it to read it.
-- **Your story, saved:** LorePath saves the quest text you see as you play, so you can go back and reread it. For quests you did before installing it, it fills in from:
-  - community text, including many of WoW Forever's own quests;
-  - the game's own quest summaries;
-  - bundled text for every vanilla quest.
-- **Share your quest text:** press **Share quest text** in the settings (or type `/lp share`), then paste the code into the [share page](https://lorepath-share.jacobhaynes49.workers.dev). No account is needed. It sends the text you've collected, and where quests started, so everyone gets the story of WoW Forever's own quests and where to find them. Your name, class and race are replaced with placeholders.
-- **Quest log, both ways:** open a quest you're on in the game's quest log, or open the quest log's selected quest, or the one a quest giver is showing you, in LorePath.
-- **Jump around:** click "Next" or "First finish" in a storyline to jump to that quest, even in another zone or dungeon. **Back** takes you back.
-- **Waypoints:** Ctrl+click a quest, or use **Show on map**, to set the game's own waypoint where it starts.
-- **Minimap button:** left-click to open, right-click for settings, drag to move.
-- **Settings** under *Options → AddOns → LorePath*, grouped under Window, Quests and World map: hide finished storylines, show or hide standalone and repeatable quests, show professions you don't have, spoilers, window size, map pins, and more.
+## Getting started
 
-## Commands
-
-| Command | What it does |
-| --- | --- |
-| `/lp` | Open or close LorePath |
-| `/lp config` | Open settings |
-| `/lp share` | Share the quest text you've collected |
-
-You can also bind a key under *Options → Key Bindings → AddOns → LorePath*.
-
-## Coming later
-
-Lore for characters, and a searchable codex, are planned.
+Click the minimap button or type `/lp`. Settings are under *Options → AddOns → LorePath* (or `/lp config`).
 
 ## Credits
 
-- **Quest data and notes:** [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings)' WoW Forever database (MIT). If a quest is missing or its chain is wrong, please report it to AllTheThings too, so everyone benefits.
-- **Vanilla quest text:** [pfQuest](https://github.com/shagu/pfQuest) (MIT), originally from VMaNGOS.
-- **Community quest text:** collected in game by LorePath's players.
-- **Lore:** summarised from the [Warcraft Wiki](https://warcraft.wiki.gg) (CC BY-SA 4.0).
+Quest data from [AllTheThings](https://github.com/ATTWoWAddon/AllTheThings) (MIT); vanilla quest text from [pfQuest](https://github.com/shagu/pfQuest) (MIT); lore summarised from the [Warcraft Wiki](https://warcraft.wiki.gg) (CC BY-SA 4.0); community quest text from LorePath's players.
 
-Bugs and ideas: [GitHub](https://github.com/Jacob-Haynes/LorePath) Or via [Curse](https://legacy.curseforge.com/wow/addons/lorepath/settings/issues)
+Bugs and ideas: [GitHub](https://github.com/Jacob-Haynes/LorePath) or [CurseForge](https://legacy.curseforge.com/wow/addons/lorepath/settings/issues).
