@@ -1,0 +1,72 @@
+title: The Missing Diplomat (5)
+revision: 6389801
+part: whole
+quest: 1244
+url: https://warcraft.wiki.gg/wiki/The_Missing_Diplomat_%285%29
+
+This quest is part of the quest chain The Missing Diplomat.
+
+
+== Objectives ==
+Find the Defias Docket and return it to Watcher Backus in Duskwood.
+
+ [Defias Docket]
+
+
+== Description ==
+Defias activity? Well, there's always some activity; even if they keep to themselves we consider them a threat.
+But now that I think about it, there was a recent sighting that seemed odd. It must have been a couple weeks ago, but some of their agents had gathered around Addle's Stead. From the report, I'd guessed something big went down.
+Why don't you check there first and bring me back anything you find?
+The farmstead is south of the road from Westfall just as you enter Duskwood.
+
+
+== Rewards ==
+You will receive:
+
+2450 XP (or 15 at max level)
+
+
+== Progress ==
+Be careful out there, <name>. I know Trias was the one to send you here, but that doesn't mean there isn't anything lurking out in the woods that couldn't cause you some trouble... especially with you investigating the Defias.
+
+
+== Completion ==
+You're back safe and sound. Couldn't ask for much more than that, could you?
+Now, let's see what we have here. This looks pretty official as far as any Defias documents I've seen. But it could be a dupe just to throw you off track of whatever it is you're looking for.
+
+
+== Notes ==
+Addle's Stead  is in the west side of the zone, along the road to Westfall.  There you will find a farm house with various Defias members around it.
+Within the house, you will find a Footbox  that contains the  [Defias Docket] that you are looking for.
+
+
+== Progression ==
+This is the quest chain The Missing Diplomat.
+
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [30] The Missing Diplomat
+ [30] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [35] The Missing Diplomat
+ [36] The Missing Diplomat
+ [38] The Missing Diplomat
+ [38] The Missing Diplomat
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

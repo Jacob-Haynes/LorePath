@@ -1,0 +1,41 @@
+title: Assassination Plot
+revision: 6704414
+part: whole
+quest: 4881
+url: https://warcraft.wiki.gg/wiki/Assassination_Plot
+
+Assassination Plot is a Horde quest (though Alliance can find the note, they can't turn in this quest because the NPC is a Horde tauren) in Thousand Needles in which the player character finds evidence of a centaur plot to assassinate Kanati Greycloud at Whitereach Post.
+
+
+== Objectives ==
+Warn Kanati Greycloud at Whitereach Post of the plot to kill him.
+
+
+== Description ==
+The Tauren, Kanati Greycloud is bold to set up a hunting camp in Thousand Needles. We must kill him to rid this hunting camp and all who may follow him. We will converge at the small post Southwest of the Great Lift.
+
+
+== Rewards ==
+You will receive:
+
+2,300 XP
++100 or +250 reputation with Thunder Bluff
+
+
+== Completion ==
+They come to kill me? I will show them how a Tauren fights!
+
+
+== Progression ==
+ [28] Assassination Plot
+ [28] Protect Kanati Greycloud
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

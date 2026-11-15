@@ -1,0 +1,61 @@
+title: Bathran's Hair (Classic)
+revision: 6703681
+part: whole
+quest: 1010
+url: https://warcraft.wiki.gg/wiki/Bathran%27s_Hair_%28Classic%29
+
+Bathran's Hair is a plant with restorative properties.
+
+
+== Objectives ==
+Bring 5 Bathran's Hair to Orendil Broadleaf in Ashenvale.
+
+ [Bathran's Hair] (5)
+
+
+== Description ==
+There is a plant that once grew in the old ruins of Bathran's Haunt to the north. The plant was called Bathran's Hair and was known to cure ailments of the spirit.
+There is a sick child in the village, and I believe it is more than just a physical illness. Will you go to Bathran's Haunt and search it for Bathran's Hair? I may need it to properly treat the child.
+Bathran's Haunt lies north of Maestra's Post and just south of the border to Darkshore.   
+
+
+== Progress ==
+Have you gathered the Bathran's Hair, <name>?  The child's health grows weaker by the hour...  
+
+
+== Completion ==
+Ah, you have the hair!  Now I will mix a cure for the child, and pray my concoction works.
+And... Forsaken are at Bathran's Haunt?  Very troubling to hear, that is.  Very troubling indeed...
+
+
+== Notes ==
+
+Follow the road north towards Darkshore. Near the border on the east side of the road is Bathran's Haunt. You'll find the Hair in Plant Bundles (which look like grayish brown sacks or vases, very hard to see) on the ground at the following coordinates (possibly others as well):
+
+30.7 , 22.8
+31.6 , 21.2
+32.3 , 22.7
+31.4 , 21.7
+If you are a herbalist, the Plant Bundles will show up on your minimap, otherwise they won't even glow like normal quest objects (glowing dust can be seen inside the bags, but is not visible through them). After taking a Plant Bundle, it can take several minutes to respawn.
+
+Upon completion
+Orendil Broadleaf mixes the Bathran's Hair...
+Orendil Broadleaf says: The mixture is finished, <name>. Now we must save the child.
+
+
+== Progression ==
+ [20] Bathran's Hair
+ [22] Orendil's Cure
+ [22] Elune's Tear
+ [23] The Ruins of Stardust
+ [30] Fallen Sky Lake
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

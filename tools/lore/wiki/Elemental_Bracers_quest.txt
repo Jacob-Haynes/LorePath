@@ -1,0 +1,46 @@
+title: Elemental Bracers (quest)
+revision: 6342069
+part: whole
+quest: 1016
+url: https://warcraft.wiki.gg/wiki/Elemental_Bracers_%28quest%29
+
+== Objectives ==
+Collect 5 Intact Elemental Bracers and use the Divining Scroll on them. Afterwards, bring the Divined Scroll to Sentinel Velene Starstrike at the Silverwind Refuge. 
+
+ [Divined Scroll]
+ [Divining Scroll] (provided)
+
+
+== Description ==
+Take this divining scroll—it can determine the creator of these elementals. But you will need something from them to use as a reagent to focus scroll's magic—their bracers should do nicely.
+A few intact bracers from the creatures should be enough. The other bracers will be useless for our purposes, but they may be worth something to a merchant if you wish to sell them. Once you have the intact bracers attempt to use the scroll. Return to me with the results and we shall proceed from there. 
+
+
+== Rewards ==
+You will receive:
+
+1950 XP (or 12 at max level)
++250 reputation with Darnassus
+
+
+== Progress ==
+Since you must destroy the bracers to kill the elementals, it will probably be difficult to find the specific ones that contain the information the divining scroll needs. You can trade bracers with others in order to obtain the ones you need, or perhaps you have the divined paper already?
+
+
+== Completion ==
+Well done, <name>, this should give us the information we need to have the culprit discovered. How would you feel about taking out the mage who fills our pools with corrupt elementals? The corruption of Ashenvale and beyond makes my stomach turn on its own—to have a wizard actively attempting to destroy it further sickens me to no end. We shall make him pay.
+
+
+== Progression ==
+ [24] Elemental Bracers
+ [25] Mage Summoner
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

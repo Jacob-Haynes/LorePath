@@ -1,0 +1,42 @@
+title: Fetch 'n' Fletch
+revision: 6971524
+part: whole
+quest: 95951
+url: https://warcraft.wiki.gg/wiki/Fetch_%27n%27_Fletch
+
+== Objectives ==
+Collect Wood Bundles from Peasant Woodpiles in Turner's Logging Camp then fletch them into 20 Makeshift Stickin' Spears.
+
+Makeshift Stickin' Spear (20)
+
+
+== Description ==
+'Ey boss-<mon/lady>, ya need help from ol' Tan'jani? Don't worry about it, I fix you up good.
+Orcs be good at hittin' humans with axes, but when you wanna stick 'em before dey see ya comin', that's when you call on the headhunters. You wanna learn to stick 'em too? I see it in your eyes, heheh.
+First we get you your own spears. Dis one's mine. Go to the human camp to de west and take their wood. Take knife with ya. You can sharpen their lumber into good spears for stickin'. Den bring 'em back.
+
+
+== Rewards ==
+You will receive:
+
+2850 XP
+20
+
+
+== Progress ==
+Whatchu find?
+
+
+== Completion ==
+Nice and sharp. Dey gonna stick good.
+
+
+== Patch changes ==
+ Hotfix (2026-11-05): Resolved an issue preventing completion. 
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

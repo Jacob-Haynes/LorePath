@@ -1,0 +1,56 @@
+title: Collection of the Corrupt Water
+revision: 6175777
+part: whole
+quest: 5157
+url: https://warcraft.wiki.gg/wiki/Collection_of_the_Corrupt_Water
+
+== Objectives ==
+Take the  [Empty Canteen] to the Moon Well in the center of Jaedenar and fill it before returning to Greta Mosshoof in Felwood.
+
+ [Corrupt Moonwell Water]
+ [Empty Canteen] (provided)
+
+
+== Description ==
+Deep within Jaedenar lies Shadow Hold--the main fortress of their corruption and evil.
+The Shadow Council has protective spells surrounding their lair in the form of braziers. If I am to find out any more information about our enemy through scrying, then those braziers must be extinguished. By doing so, I should be able to spy on the Council and find out who leads them.
+If you can, take this canteen and fill it at the Moon Well in the center of Jaedenar. Return to me afterwards.
+
+
+== Rewards ==
+5500 XP
+
+
+== Progress ==
+Once we have the waters from the Moon Well, we will purify it and use it to extinguish the braziers of protection within Shadow Hold. That should allow me ample time to see into the chambers even deeper and discern who actually leads this... cult.
+I pray the Earthmother is with us.
+
+
+== Completion ==
+This will do nicely, <name>.
+Now all we have to do besides apply the waters to the braziers is to have it purified. That should not be difficult—it should only require a little travel.
+Hopefully we can do this quickly.
+
+
+== Notes ==
+The corrupt Moon Well is in Jaedenar, located North-West from the Emerald Sanctuary. There is a path headed West off of the main road that leads directly there.
+The Well itself can be found at the co-ordinates (35,60), which is on the higher level of Jaedenar in the center of the upper clearing.
+
+
+== Progression ==
+ [51] Forces of Jaedenar
+ [52] Collection of the Corrupt Water
+ [52] Seeking Spiritual Aid
+ [54] Cleansed Water Returns to Felwood
+ [55] Dousing the Flames of Protection
+ [58] A Final Blow
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

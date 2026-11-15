@@ -1,0 +1,95 @@
+title: A Tale of Sorrow
+revision: 5620181
+part: whole
+quest: 2801
+url: https://warcraft.wiki.gg/wiki/A_Tale_of_Sorrow
+
+This is part of the main Blasted Lands quest chain.
+
+
+== Objectives ==
+Listen to the Fallen Hero of the Horde tell his story.
+
+
+== Description ==
+Before we may continue, you must hear my story.
+
+
+== Completion ==
+The time to act is now, <name>.
+
+
+== The Fallen Hero's Tale ==
+Would you believe that in my darkest hour, at the apex of my being, I failed.
+As I fled from the wanton destruction of the forces that overwhelmed us, the only sounds I could hear were the screams of my soldiers and the rapid beat of my own heart.
+A short while later, I returned to the Blasted Lands in hopes of rescuing my men and restoring my honor. Instead I was captured and beaten until dead.
+What I found out during my inquisition and subsequent torture was horrifying.
+ Please continue, Hero...
+
+My captors were cruel beyond measure, <name>. They would alternate between Lieutenant Kirith and I, torturing one while the other watched. During a lull in the activity of an especially cruel day, Kirith told me what had happened to my men and a plan he had been formulating to free them from their masters.
+They suffered a fate far worse than death, or even the pain Kirith and I endured.
+ What could be worse than death?
+
+Neither you nor I could possibly imagine the pain an individual suffers when their soul is ripped from their body. They are not dead and by no means are they alive. Instead, they walk the land, servants of those that bind them to this world.
+Lord Razelikh, demonic overlord of these lands, enslaved them all. Nine he took for his own, placing stones of binding near the Dark Portal. The remaining nine were divided up between his subordinates.
+ Subordinates?
+
+The archmage Allistarj of the Shadowsworn was granted three. Lady Sevine, warlock of the Shadowsworn was also granted three. The remaining three were given to Grol the Destroyer, lord of the Dreadmaul ogres of these blasted lands.
+You see, <name>, without a soul, the body cannot be killed. The remnants of my men are now indestructible fighting units. Thankfully, they are bound in how far they can travel by the stones of binding.
+ What are the stones of binding?
+
+They are exactly what you need to destroy in order to free the regiment! As I had told you earlier, Kirith had a plan.
+Each of the servants has a weakness. Punish their physical form in proximity of their stones until they are near the state of disintegration. It is at that point, and at that point alone, that the stones of binding are vulnerable to attack. You must hurry to destroy the stones, however, as once the enslaved regain their composure, they will be invulnerable to harm once more.
+ You can count on me, Hero.
+
+I wish it were true, <name>, but it will take more than you alone to overcome the forces of Razelikh and his subordinates.
+Gather a suitable group of adventurers and would-be heroes and free my men of their eternal torture! Eighteen stones you must shatter.
+Fight hard and die with honor, <name>.
+ I shall.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

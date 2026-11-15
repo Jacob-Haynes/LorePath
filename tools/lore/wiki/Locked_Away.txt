@@ -1,0 +1,43 @@
+title: Locked Away
+revision: 6926795
+part: whole
+quest: 5059
+url: https://warcraft.wiki.gg/wiki/Locked_Away
+
+See Locked Away quest chain for more details.
+
+
+== Progress ==
+The door to the outhouse has begun to splinter at the edges of the frame as though it has been repeatedly and incessantly tried to be forced open. It is currently locked up tight from the outside of the outhouse.
+As you rattle the door, you hear a guttural moaning come from inside! Whatever is inside there, it certainly does not sound friendly.
+
+ [Dalson Outhouse Key]
+
+
+== Completion ==
+Using the key found on the skeleton of the former Mrs. Dalson, you unlock the door to the outhouse. A bloodthirsty ghoul leaps from the outhouse, having been trapped inside for who knows how long.
+It is clear by the bloodcurdling scream of the ghoul at your presence that the former Farmer Dalson is now beyond saving.
+
+
+== Notes ==
+The Dalson Outhouse Key drops from a Wandering Skeleton after reading Mrs. Dalson's Diary.
+
+
+== Progression ==
+ [55] Mrs. Dalson's Diary
+ [55] Locked Away
+ [55] Locked Away
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+Locked Away, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

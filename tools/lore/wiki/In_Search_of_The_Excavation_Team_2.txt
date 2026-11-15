@@ -1,0 +1,40 @@
+title: In Search of The Excavation Team (2)
+revision: 6310546
+part: whole
+quest: 306
+url: https://warcraft.wiki.gg/wiki/In_Search_of_The_Excavation_Team_%282%29
+
+== Objectives ==
+Return to Tarrel Rockweaver with Merrin's note.
+
+ [Merrin's Letter] (provided)
+
+
+== Description ==
+It was horrible! We were uncovering some rare artifacts and we began to discover these large bones.
+Before we knew what was happening, these Mottled Raptors overwhelmed the dig site. Many lives were lost.
+Ormer here—so brave—saved the Prospector and me. He defended us as we ran for shelter. Now we are trapped. And our hard work lies in ruin.
+Here, take this note back to my sweet Tarrel. It will explain the situation to him.
+
+
+== Progress ==
+Were you able to find Merrin? Did she send word?
+
+
+== Completion ==
+Such horrible news! At least 3 of them survived. But when will the killing end? I long for the day when King Magni's subjects can live without fear.
+
+
+== Progression ==
+ [24] In Search of The Excavation Team
+ [24] In Search of The Excavation Team
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

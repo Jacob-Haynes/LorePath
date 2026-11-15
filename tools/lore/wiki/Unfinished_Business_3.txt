@@ -1,0 +1,54 @@
+title: Unfinished Business (3)
+revision: 6659359
+part: whole
+quest: 6025
+url: https://warcraft.wiki.gg/wiki/Unfinished_Business_%283%29
+
+== Objectives ==
+Enter Hearthglen and find a high vantage point from which you can see the town and gauge the Scarlet Crusade's forces, then return to Kirsta Deepshadow in Western Plaguelands.
+
+Overlook Hearthglen from a high vantage point
+
+
+== Description ==
+What? Really? You want to know more? But you've already done so much for me, <name>. I couldn't possibly ask you to enter Hearthglen itself on my behalf.
+Are you sure, <name>? Hearthglen is much more dangerous than the Pass—I cannot provide you any protection or even information about what you might face.
+Well, if you really are willing to help, then enter the town and find a high place to gain a good view of the town. From there you can gauge their numbers and report them back to me. But be careful....
+
+
+== Rewards ==
+You will receive:
+
+1 75
+9000 XP
+
+
+== Progress ==
+It's a dangerous task, <name>. I envy your courage.
+
+
+== Completion ==
+You've done it, <name>! Thank you!
+I'll return to Elling... I mean Stormwind as soon as I can. Here, take this coin, it's the least I can do for you. You're a credit to your people, <name>. Thank you and good luck.
+
+
+== Notes ==
+The "high vantage point" is the top of the scout tower just inside Hearthglen at , guarded by level 55-56 Scarlet Paladins, along with the rest of the mobs between the front gate and the tower.
+With her uncareful words in this quest's completion dialogue, Kirsta reveals herself to be working for Elling Trias.
+
+
+== Progression ==
+ [56] Unfinished Business
+ [57] Unfinished Business
+ [58] Unfinished Business
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.3.0 (2007-11-13): "Group quest" designation removed due to Hearthglen's enemies changed to non-elite mobs.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

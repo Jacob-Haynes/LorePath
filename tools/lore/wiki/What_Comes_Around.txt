@@ -1,0 +1,52 @@
+title: What Comes Around...
+revision: 6956981
+part: whole
+quest: 386
+url: https://warcraft.wiki.gg/wiki/What_Comes_Around...
+
+This quest is given by Guard Berton who is in Lakeshire, Redridge Mountains.
+
+
+== Objectives ==
+Bring the Head of Targorr to Guard Berton in Lakeshire.
+
+ [Head of Targorr]
+
+
+== Description ==
+Targorr the Dread served under Gath'Ilzogg as supreme Executioner. His methods were ruthless, even by filthy orc standards. Men who fought bravely to defend the Kingdom were tortured on his whim. Now he is being held in the Stormwind Stockade, sentenced to die. Yet something is amiss. One of the bureaucratic nobles put a hold on his execution. I am sure foul play is in the works.
+Put an end to Targorr the Dread, <Name>. Travel to The Stockade and behead him before trickery is upon us.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Lucine Longsword]
+ [Hardened Root Staff]
+ [Ursine Hammer] 
+You will also receive:
+
+2000 XP (or 12 at max level)
++100 reputation with Stormwind
+
+
+== Progress ==
+Have you been to Stormwind yet, to The Stockade?  I fear whatever trickery that has kept Targorr the Dread alive for this long will eventually bring about his freedom.  He was sentenced to die, <name>, not act as some political pawn on a noble's whim.
+
+
+== Completion ==
+Targorr the Dread has finally met his fate.  I for one am glad to hear the beast now knows what it is like to be on the receiving end of Death's ruthless grip.  You have done well, <name>.  Sometimes the truest justice can only be found outside the courtroom and beyond the clouded vision of politics.
+
+
+== Notes ==
+Targorr the Dread is found in the first cell on the right or second cell on the left in the central wing of The Stockade. Rarely, he spawns in the cell furthest north, between the left and right wings.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

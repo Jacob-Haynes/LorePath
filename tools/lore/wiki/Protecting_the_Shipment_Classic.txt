@@ -1,0 +1,67 @@
+title: Protecting the Shipment (Classic)
+revision: 6476657
+part: whole
+quest: 309
+url: https://warcraft.wiki.gg/wiki/Protecting_the_Shipment_%28Classic%29
+
+== Objectives ==
+Ensure Miran and the shipment arrive at the excavation site, then inform Prospector Ironband.
+
+Escort Miran to the excavation site
+
+
+== Description ==
+Ready to go, <name>?
+First, we need to get this powder to Ironband. It'll be a lot for me to carry, and these parts can get dangerous—and who knows what else the Dark Irons might have in store for me.
+I'll feel a lot better with you coming along.
+
+
+== Rewards ==
+
+You will also receive:
+
+1050 XP (or 6 60 at level 70)
++250 reputation with Ironforge
+
+
+== Progress ==
+Where is my powder, <name>? My need grows more desperate every day.
+
+
+== Completion ==
+Oh, thank the Light the powder is here. But it is troubling news that you bring as well. To think that the Dark Irons have sympathizers able to procure this sort of material for their dastardly plans.
+That's a matter for someone else to consider, some other time. I must put this powder to good use.
+
+
+== Notes ==
+If Miran isn't at the wagon when you arrive, it is likely that someone else is completing this quest. Wait a few minutes, and he should appear.
+Just short of Ironband's Excavation Site you will be ambushed by a set of Dark Iron dwarves.
+There is a patrol of 3 level 21 elites that you may run into during this quest.  If you encounter them, You may want to simply leave Miran to his fate at their hands, and scamper to safety.  The quest will fail, but you can go back to the wagon and accept it again.
+Some of the dialog involved in this quest:
+At the ambush:
+
+Miran says: Help! I've only one hand to defend myself with.
+Dark Iron Raider says: Feel the power of the Dark Iron Dwarves!
+Miran says: Send them on!  I'm not afraid of some scrawny beasts!
+On delivery:
+
+Miran says: Ah, here at last!  It's going to feel so good to get rid of these barrels.
+
+
+== Progression ==
+ [15] Excavation Progress Report
+ [15] Report to Ironforge
+ [15] Powder to Ironband
+ [15] Resupplying the Excavation
+ [15] After the Ambush
+ [15] Protecting the Shipment
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

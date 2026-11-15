@@ -1,0 +1,62 @@
+title: Safety First (2)
+revision: 6853523
+part: whole
+quest: 1189
+url: https://warcraft.wiki.gg/wiki/Safety_First_%282%29
+
+Safety First (Part 2) is a neutral quest in the Goblin Sponsorship quest chain. In this quest, players must deliver Razzeric's seaforium booster back to him after getting it modified by Shreev in Gadgetzan.
+NOTE: The glove reward from this quest is considered by many leather wearers to be one of the best leather gloves for LVL 29 twinks. Not only are they very good for a level 29, but they also count as a level 41 item level, meaning they can have advanced enchantments.
+
+
+== Objectives ==
+Return the Modified Seaforium Booster to Razzeric on the Shimmering Flats.
+
+ [Modified Seaforium Booster] (provided)
+
+
+== Description ==
+There, I did what Razzeric wanted. Just tell him to be careful when he sets this off. If he makes the slightest mistake, he won't be moving forward, he'll just be a burnt spot on the track.
+Would be a shame, too, if that happened. Who knows if our nineteenth driver would be any good?
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Razzeric's Customized Seatbelt]
+ [Razzeric's Racing Grips]
+You will also receive:
+
+820 XP
++25 reputation with Ratchet
+
+
+== Progress ==
+Can you believe Pozzik put a bucket of sand on the racer? How am I supposed to hit my maximum speed with a bucket of sand under the seat?
+
+
+== Completion ==
+Now that's more like it! I wish I could see the look on the gnomes' eyes when they see me set this baby off.
+Too bad I'll be too busy pulling off a new course record!
+
+
+== Progression ==
+ [30] Load Lightening
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] The Eighteenth Pilot
+ [41] Razzeric's Tweaking
+ [41] Safety First
+ [41] Safety First
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

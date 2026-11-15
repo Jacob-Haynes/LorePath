@@ -1,0 +1,55 @@
+title: The Weaver (quest)
+revision: 6135895
+part: whole
+quest: 480
+url: https://warcraft.wiki.gg/wiki/The_Weaver_%28quest%29
+
+== Objectives ==
+Kill the Dalaran archmage, then retrieve his staff for Shadow Priest Allister at the Sepulcher.
+
+ [Ataeric's Staff]
+
+
+== Description ==
+An archmage of great power is overseeing the reactivation of the ley energy node. With the progress they have made, our only hope of stopping them is by killing him. It will be difficult, he is no doubt protected by many other mages and warders.
+You must go, and you must dispatch him quickly. When he is dead, retrieve his staff for me. Go now.
+
+
+== Rewards ==
+
+You will receive:
+
+1750 XP (or 10 80 at level 70)
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Quickly, time runs short, <name>!
+
+
+== Completion ==
+The magic of the wizards dissipates, and the ley energies fade into dormancy. Your efforts have been fruitful, <name>, and we have dealt a major blow to our enemies, and to the overbearing wizards of Dalaran.
+We must be vigilant, however, knowing that source of energy lies so close at hand... Plans must be made for the future. 
+
+
+== Notes ==
+The archmage can be found at .
+
+
+== Progression ==
+ [14] Border Crossings
+ [14] Maps and Runes
+ [14] Dalar's Analysis
+ [14] Dalaran's Intentions
+ [16] Ambermill Investigations
+ [22] The Weaver
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

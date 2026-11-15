@@ -1,0 +1,49 @@
+title: Cleansing of the Infected
+revision: 6577286
+part: whole
+quest: 2138
+url: https://warcraft.wiki.gg/wiki/Cleansing_of_the_Infected
+
+== Objectives ==
+Cleanse the forest of 20 Rabid Thistle Bears and return to Tharnariun Treetender in Darkshore. 
+
+Rabid Thistle Bear slain (20)
+
+
+== Description ==
+As I had feared, the cure does not work.
+It saddens me greatly to order the death of any of nature's beasts, but the sick and tainted thistle bears must be put down.
+Return to the forest and destroy 20 rabid thistle bears, <name>. It will most certainly not put a stop to the plague but it will slow down the damage the animals are doing to our forest and its inhabitants for a short time.
+
+
+== Rewards ==
+You will receive:
+
+1150 XP (or 7 20 at max level)
++100 or +250 reputation with Darnassus
+
+
+== Progress ==
+Is your task complete?
+
+
+== Completion ==
+You have done Auberdine a great service, <name>, but your task is not yet complete.
+Return to me once you have rested.
+...and <name>, prepare your mind and soul for more bloodshed.
+
+
+== Progression ==
+ [14] Plagued Lands
+ [16] Cleansing of the Infected
+ [18] Tharnariun's Hope
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

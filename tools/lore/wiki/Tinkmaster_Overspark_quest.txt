@@ -1,0 +1,43 @@
+title: Tinkmaster Overspark (quest)
+revision: 6282187
+part: whole
+quest: 2923
+url: https://warcraft.wiki.gg/wiki/Tinkmaster_Overspark_%28quest%29
+
+This quest starts the Tinkmaster Overspark quest chain.
+
+
+== Objectives ==
+Speak with Tinkmaster Overspark in Ironforge.
+
+
+== Description ==
+Tinkmaster Overspark is very upset with the fate of his mechanical creation, Techbot. I remember Techbot as a kind and helpful tool for the gnomes, but Overspark tells me it's malfunctioned.
+Very sad. But with luck perhaps he can be fixed!
+Speak with Tinkmaster Overspark, in Tinker Town in Ironforge. He would welcome your help.
+
+
+== Rewards ==
+You will receive:
+
+210 XP (or 1 20 at max level)
++25 reputation with Gnomeregan Exiles
+
+
+== Completion ==
+Yes it's true.  Techbot has gone rogue!  Please, can you help me?
+
+
+== Progression ==
+ [26D] Tinkmaster Overspark
+ [26D] Save Techbot's Brain!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

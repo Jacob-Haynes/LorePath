@@ -1,0 +1,43 @@
+title: Mai'Zoth (quest)
+revision: 6309567
+part: whole
+quest: 206
+url: https://warcraft.wiki.gg/wiki/Mai%27Zoth_%28quest%29
+
+== Objectives ==
+Bring the Mind's Eye to Brother Nimetz at the Rebel Camp.
+
+ [Mind's Eye]
+
+
+== Description ==
+Kurzen may be dead, but...that which drove him to evil still lives! Through my studies I have discovered this: An Ogre Mage - Mai'Zoth - dwells in an Ogre Mound within the eastern mountains of Stranglethorn. He is rumored to employ mind-controlling magic, and I am positive that he corrupted Kurzen.
+If Mai'Zoth is allowed to live, then his evil may influence others, and may even cause another Kurzen to surface.
+Kill him, and bring me his Mind's Eye, the artifact he uses to corrupt others.
+
+
+== Rewards ==
+You will receive:
+
+5050 XP (or 30 at max level)
++350 reputation with Stormwind
+ [Tranquil Orb]
+
+
+== Progress ==
+I give you my blessing.  Mai'Zoth's strength is matched only by his evil.
+
+
+== Completion ==
+Aha! You've done it! You are a great force for good, <name>, and may your strength never fade!
+I will study this Mind's Eye and determine if it may be used for good. If not...then it must be destroyed.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

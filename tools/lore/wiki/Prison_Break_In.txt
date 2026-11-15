@@ -1,0 +1,73 @@
+title: Prison Break In
+revision: 6911555
+part: whole
+quest: 544
+url: https://warcraft.wiki.gg/wiki/Prison_Break_In
+
+== Objectives ==
+Find the traitors and recover their artifacts, then return to Magus Voidglare in Tarren Mill.
+
+ [Bloodstone Wedge]
+ [Bloodstone Marble]
+ [Bloodstone Shard]
+ [Bloodstone Oval]
+
+
+== Description ==
+I came to Tarren Mill to research, but now must resolve a crisis. You see, four Forsaken fled the Undercity a few months ago. They turned their backs on their brethren, but what's worse...they stole from the Dark Lady.
+These thieves broke into a secure vault and stole four artifacts, items our apothecaries required in certain studies. Sylvanas would have these artifacts returned.
+The thieves fled the Undercity to Dalaran, and those wizards quarantined them in the Lordamere Internment Camp.
+
+
+== Rewards ==
+You will receive:
+
+70
+7,340 XP
++150 or +350 reputation with Undercity
+
+
+== Progress ==
+Did you find the thieves?  And more importantly, did you find what they stole?
+
+
+== Completion ==
+You have done a great service for the Forsaken, <name>.  These artifacts have been sorely missed.
+And it is good to hear that Kegan and the other betrayers have found justice.
+
+
+== Notes ==
+The  [Bloodstone Wedge] is held by Dermot.
+The  [Bloodstone Marble] is held by Ricter.
+The  [Bloodstone Shard] is held by Alina.
+The  [Bloodstone Oval] is held by Kegan Darkmar.
+Dermot, Ricter, and Alina are all relatively simple to get to and kill, but Kegan is surrounded by guards, including the level 36 Dalaran mage Warden Belamoore, who drops a journal of interest to the lore of this quest.
+
+
+== Progression ==
+Horde attunement:
+
+ [34] Prison Break In &  [33] Key to the City
+ [35] Dalaran Patrols
+ [34] Blood in the Streets
+ [33D] Heart of Disruption
+ [33] Shrewd Negotiations
+Other dungeon quests:
+
+ [33D] A Green Sample
+ [33] An Alarming Request →  [33D] Heart of Disruption →  [33] Friend of the Kirin Tor
+ [33D] Power Overwhelming
+ [33D] Starving Arcane
+ [33D] Opportunistic Education
+ [33D] Source of Power
+ [33D] The Grave Knight
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

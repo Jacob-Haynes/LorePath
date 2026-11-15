@@ -1,0 +1,59 @@
+title: The Final Message to the Wildhammer
+revision: 6939944
+part: whole
+quest: 7843
+url: https://warcraft.wiki.gg/wiki/The_Final_Message_to_the_Wildhammer
+
+== Objectives ==
+Otho Moji'ko at Revantusk Village in the Hinterlands wants you to travel to Aerie Peak in the western region of the Hinterlands and place the Final Message to the Wildhammer by the well in the center of town. Return to him once this task is complete.
+Beware of angry Wildhammer dwarves and unruly members of the Alliance.
+
+Message to the Wildhammer Delivered
+ [Final Message to the Wildhammer] (provided)
+
+
+== Description ==
+<Otho hands you a long, blood drenched spear, wrapped in several gryphon feathers.>
+You take this, mon. You take this to Aerie Peak, dead center of town by the well. You plant it! Drive it right into the ground! Show those dwarves that troll mean business! Come back when you do this. Hopefully you come back alive.
+
+
+== Rewards ==
+You will receive:
+
+2 20
+8500 XP
+ [Owlbeast Hide Gloves]
+
+
+== Progress ==
+What's the hold up, mon?
+
+
+== Completion ==
+I wish I coulda been there to see the look on their faces, mon. Are they packing up their bags? Leavin' town?
+You done good, <name>. Real good. Otho reward you with the big mojo.
+
+
+== Notes ==
+When placing Final Message to the Wildhammer you are marked for PvP and Falstad Wildhammer yells: Invaders! Invaders! We're under attack, boys! Get 'em!.
+
+
+== Progression ==
+ [48P] Message to the Wildhammer
+ [48P] Another Message to the Wildhammer
+ [50P] The Final Message to the Wildhammer
+
+
+== Trivia ==
+The Final Message to the Wildhammer is a Common Quest card in the World of Warcraft: Trading Card Game's Drums of War set.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.5.0 (2005-06-07): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,59 @@
+title: Plagued Lands
+revision: 6577285
+part: whole
+quest: 2118
+url: https://warcraft.wiki.gg/wiki/Plagued_Lands
+
+== Objectives ==
+Capture a living Rabid Thistle Bear and bring it back to Tharnariun.
+Should you fail to capture a Rabid Thistle Bear and lose your trap, return to Tharnariun Treetender and request another trap. 
+
+Rabid Thistle Bear Captured
+ [Tharnariun's Hope] (provided)
+
+
+== Description ==
+A sickness spreads across the Darkshore, gripping the minds and bodies of all it touches.
+The Thistle Bears have been hit the hardest by this plague. The once noble beasts are now an instrument of destruction - rabid and frenzied. I may have a cure for this ailment.
+Take this trap to the forest and lay it on the ground. Any Rabid Thistle Bear that crosses the light shall become docile for a short time. Once the bear is docile, it shall follow you. Lead it back here, <name>.
+
+
+== Rewards ==
+You will receive:
+
+6
+975 XP (or 6 at max level)
++100 or +250 reputation with Darnassus
+
+
+== Progress ==
+Have you brought me the sick animal, <name>?
+Should you fail to spring the trap, do not fret - Tharnariun's Hope is eternal. If you require another trap, abandon your task and report back to me.
+
+
+== Completion ==
+Our work has only just begun, <name>. Are you prepared for your next task?
+
+
+== Notes ==
+Speaking to Tharnariun
+
+On completion
+Tharnariun Treetender says: Be cleansed!
+A healing visual effect swirls around the bear. After a few seconds, it drops dead.
+
+
+== Progression ==
+ [14] Plagued Lands
+ [16] Cleansing of the Infected
+ [18] Tharnariun's Hope
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,66 @@
+title: Marshal Windsor (quest)
+revision: 6176832
+part: whole
+quest: 4241
+url: https://warcraft.wiki.gg/wiki/Marshal_Windsor_%28quest%29
+
+Marshal Windsor is a quest in the Great Masquerade quest chain.
+
+
+== Objectives ==
+Travel to Blackrock Mountain in the northwest and enter
+Blackrock Depths. Find out what became of Marshal Windsor.
+You recall Ragged John talking about Windsor being dragged off to a prison.
+
+
+== Description ==
+So that good for nothing coward says that Windsor is alive, eh?
+Suit up, deputy, you are going in to find him. If Windsor is alive, you are
+to bring him back. If he's dead, I want proof.
+<Maxwell laughs.>
+I bet you are getting tired of hearing that, aren't you? 
+
+
+== Completion ==
+Where is he! I'll murder him! 
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+5450 XP (or 33 at level 70)
+250  reputation with Stormwind
+
+
+== Notes ==
+
+You will need either to pick the lock on the cell door, or get the  [Prison Cell Key], to talk to Marshal Windsor.  You do not free him at this time.
+
+
+== Progression ==
+ [54] Dragonkin Menace
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54D] Marshal Windsor
+ [54D] Abandoned Hope
+ [58D] A Crumpled Up Note
+ [58D] A Shred of Hope
+ [58D] Jail Break!
+ [60R] Stormwind Rendezvous
+ [60R] The Great Masquerade
+ [60R] The Dragon's Eye
+ [60R] Drakefire Amulet
+
+
+== Patch changes ==
+ Patch 3.0.2 (2008-10-14): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

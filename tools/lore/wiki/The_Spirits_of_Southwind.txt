@@ -1,0 +1,60 @@
+title: The Spirits of Southwind
+revision: 5611532
+part: whole
+quest: 1125
+url: https://warcraft.wiki.gg/wiki/The_Spirits_of_Southwind
+
+== Objectives ==
+Free the spirits of 8 Tortured Druids and 8 Tortured Sentinels in Southwind Village, and then return to Layo Starstrike at the Valor's Rest graveyard of Silithus.
+
+Tortured Druid slain (8)
+Tortured Sentinel slain (8)
+
+
+== Description ==
+To our southwest lies a tragic site - the ruins of Southwind Village. This is where our work should begin, <name>.
+From what we've learned, this village was once a night elf base of operations for Silithus. It's long since overrun by the silithid hives that infest the wastes. I can only imagine the horror of the village's initial sundering...
+The tortured spirits of fallen druids and sentinels wander the ruins aimlessly. Explore this locale, freeing the souls of these wretched beings as needed.
+
+
+== Rewards ==
+You will receive:
+
+5650 XP (or 49 50 at level 70)
++250 reputation with Cenarion Circle
+
+
+== Progress ==
+Alliance or Horde, it doesn't matter - no being deserves to be trapped on this world as a tortured spirit.  The freeing of these souls will make things right, <name>.
+
+
+== Completion ==
+I had thought that maybe the huge swirling hive near the ruins of the village had played a part in its demise.  It would seem that your work has proven this to be correct; the proximity of the hive poses a threat to any future work we may do here.
+I thank you for your benevolence in freeing the souls of the fallen; such work is never easy, I know.  When you're ready, however, I'd like to ask for your assistance once more...
+
+
+== Notes ==
+Originally, the spirits you are asked to kill in this quest would spawn three Hive'Ashi Drones when killed, making it ridiculously difficult for its level.  This has been changed, and now only one wasp spawns (most of the time but not 100%).  This makes it a more challenging fight, but not impossible.  The druids also heal themselves at least once, so use any spell interruption capability you have to prevent this.
+The mobs are classified as undead.
+
+
+== Progression ==
+ [55] The New Frontier
+ [55] The New Frontier /  [55] The New Frontier
+ [55] Rabine Saturna /  [55] Rabine Saturna
+ [55] Wasteland
+ [55] The Spirits of Southwind
+ [57] Hive in the Tower
+ [57] Umber, Archivist
+ [57] Uncovering Past Secrets
+ [57] Under the Chitin Was...
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

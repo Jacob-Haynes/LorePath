@@ -1,0 +1,50 @@
+title: Counting Out Time (1)
+revision: 6849065
+part: whole
+quest: 4972
+url: https://warcraft.wiki.gg/wiki/Counting_Out_Time_%281%29
+
+== Objectives ==
+Locate 5 Andorhal Watches, found in lockboxes amongst the rubble of the city. Return with them to Chromie in the Andorhal Inn, Western Plaguelands. 
+
+ [Andorhal Watch] (5)
+
+
+== Description ==
+I need you to reach into the world beyond this room, <name>. Allow me to explain.
+You see the difference in this room compared to the rest of Andorhal. My dragonflight works in many different ways and in many different timelines. To mend Andorhal's damage, I now act from a different timeline as not to overly contaminate it. To continue this though I need time trinkets, ones trapped from when the plague hit. Find them in lockboxes found in the ruined buildings that make up this once proud city.
+
+
+== Rewards ==
+You will receive:
+
+5800 XP (or 34 50 at max level)
+ [Attuned Dampener]
+
+
+== Progress ==
+The time trinkets I seek are simple devices.  They are watches mainly, and their hands are trapped forever when the plague first ravaged Andorhal.
+Time is never ending, and the watches you bring to me will invariably find themselves counted out back to their homes... that is, so long as the disturbances continue here.
+
+
+== Completion ==
+These are exactly what I need, <name>.  Thank you.
+Allow me to suitably reward you with this.  You may not understand what you would need with such a device.  You might not even know quite what it really is.  Alas, I cannot tell you when you will find it most useful; just know that at some point in the future, you may find this item to have extreme utility and function when consumed.  Whether or not you choose to hold on to it until then... this, my friend, is up to you.
+
+
+== Progression ==
+ [56] A Matter of Time
+ [56] Counting Out Time
+ [56] Counting Out Time (repeatable)
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.4.0 (2005-04-19): Doubled the number of small lockboxes present for the "Counting Out Time" quest.   
+ Patch 1.3.0 (2005-03-07): There are now more lockboxes available in the Ruins of Andorhal for the Counting Out Time quest.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

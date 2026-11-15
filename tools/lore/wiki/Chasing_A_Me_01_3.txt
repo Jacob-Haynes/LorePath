@@ -1,0 +1,52 @@
+title: Chasing A-Me 01 (3)
+revision: 5619969
+part: whole
+quest: 4245
+url: https://warcraft.wiki.gg/wiki/Chasing_A-Me_01_%283%29
+
+== Objectives ==
+Escort A-Me 01 back to Karna Remtravel in Un'Goro Crater.
+
+Protect A-Me 01 until you reach Karna Remtravel
+
+
+== Description ==
+Checking to see if you're prepared to lead A-Me 01 back to Karna Remtravel, you flip the switch to the "Off" position. Glancing around once again to make sure none of the gorillas are coming, you prepare to see what happens when you flip the switch back to the "On" position.
+This is your last chance... are you sure this is what you want to do?
+
+
+== Rewards ==
+You will receive:
+
+1 60
+6,550 XP
+
+
+== Progress ==
+Have you been able to help A-Me? That mithril casing you mentioned being destroyed was a good guess at what was wrong. I'm sure if you replace that, she'll reactivate and be able to come home.
+
+
+== Completion ==
+Oh, you've done it! Wonderful! Thank you, <name>.
+Oh, my poor, A-Me. Look at all those dents. We'll get her up and running perfectly with just a little work.
+Thank you again, <name>. I really appreciate it.
+
+
+== Notes ==
+Karna Remtravel is at the bottom of Marshal's Refuge. A-Me 01 does fight nearby gorillas but you need to help. It might be easier to clear the path to the mouth of the cave first if there are respawns.
+
+
+== Progression ==
+ [53] Chasing A-Me 01
+ [53] Chasing A-Me 01
+Chasing A-Me 01 (3)
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

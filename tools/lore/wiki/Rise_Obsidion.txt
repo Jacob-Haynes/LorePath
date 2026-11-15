@@ -1,0 +1,65 @@
+title: Rise, Obsidion!
+revision: 5853014
+part: whole
+quest: 3566
+url: https://warcraft.wiki.gg/wiki/Rise%2C_Obsidion%21
+
+== Objectives ==
+Slay Lathoric the Black and Obsidion, and return to Thorius in Ironforge with the Head of Lathoric the Black and the Heart of Obsidion. 
+
+ [Heart of Obsidion]
+ [Head of Lathoric the Black]
+
+
+== Description ==
+It... It... It was all a trap.
+Forgive... me.
+Kill the traitor... Kill him for us... for Thorius.
+
+
+== Rewards ==
+
+You will also receive:
+
+1 30
+8650 XP
+125 reputation with Darnassus
+125 reputation with Exodar
+125 reputation with Gnomeregan
+125 reputation with Ironforge
+125 reputation with Stormwind
+
+
+== Progress ==
+I don't believe you! Show me proof!
+
+
+== Completion ==
+<Thorius' face turns white.>
+This... this cannot be. My own brother? He set this all up?
+<Thorius' face contorts in anger.>
+He betrayed me, he betrayed Ironforge! It seems as if the influence of the Old Gods is still strong in these lands. I fear that if my brother - a once noble and honorable man - was so easily turned to the will of Ragnaros, no one is safe.
+
+
+== Notes ==
+It is not necessary to abandon/retake this quest to restart it. Simply click on the altar.
+
+Upon accept
+
+
+== Progression ==
+ [46] Suntara Stones
+ [48] Suntara Stones
+ [46] Dwarven Justice
+ [46] Release Them
+ [46] Rise, Obsidion!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

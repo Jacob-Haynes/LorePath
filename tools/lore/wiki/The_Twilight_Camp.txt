@@ -1,0 +1,49 @@
+title: The Twilight Camp
+revision: 5587060
+part: whole
+quest: 949
+url: https://warcraft.wiki.gg/wiki/The_Twilight_Camp
+
+== Objectives ==
+Find a clue in the Twilight's Hammer camp at the Master's Glaive.
+
+
+== Description ==
+The Twilight's Hammer's purpose at the Master's Glaive is not known. But it must be dark.
+Search through their camp at the Glaive... Search for some thing that may teach us their intentions.
+For we must learn their intentions before a plan is made.
+
+
+== Rewards ==
+You will receive:
+
+9
+1250 XP (or 7 80 at level 70)
+250 reputation with Darnassus
+
+
+== Completion ==
+This book is hand printed in an ancient language, and illustrated by a master artist.
+
+
+== Notes ==
+You need to go to the northern tome to finish the quest, the southern one won't do it, and has a chance of knocking you down.
+
+
+== Progression ==
+ [17] Cave Mushrooms
+ [17] Onu
+ [17] The Master's Glaive
+ [17] The Twilight Camp
+ [17] Return to Onu
+ [20] Mathystra Relics
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

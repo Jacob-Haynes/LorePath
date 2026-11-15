@@ -1,5 +1,5 @@
 title: Zephras Isle
-revision: 6972596
+revision: 6979867
 part: whole
 url: https://warcraft.wiki.gg/wiki/Zephras_Isle
 
@@ -9,7 +9,7 @@ The air elementals who used to live on the island with the Skyborne vanished a n
 
 == Getting there ==
 Playable Skyborne start on Zephras Isle in Thendal Village in the northwest. Once they finish the campaign, they will leave from the Valanaar Skydocks at the southern tip of the island. Alliance players will get dropped off at Dalaran in Alterac Mountains, while Horde players land at the Skywatcher Plateau in northwestern Mulgore.
-All players, whether or not they've purchased the Skyborne Heroic Pack or other packs, can travel to Zephras from the airship landings in Dalaran or Mulgore.
+All players, whether or not they've purchased the Skyborne Heroic Pack or other packs, can travel to Zephras from the airship landings in Dalaran or Mulgore. Purchasing at minimum the Heroic pack is required to complete the zone campaign, however.
 
   on the eastern Valanaar skydock ↔  at the northern end of Dalaran in Alterac Mountains
   on the western Valanaar skydock ↔  by Skywatcher Plateau in Mulgore

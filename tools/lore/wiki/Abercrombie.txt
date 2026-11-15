@@ -1,0 +1,6 @@
+title: Abercrombie
+revision: 6659654
+part: intro
+url: https://warcraft.wiki.gg/wiki/Abercrombie
+
+Abercrombie is a human quest giver located at Beggar's Haunt, northwest up the road from Darkshire in Duskwood. Originally, he was just northeast of Raven Hill Cemetery. He is a hermit who is also known as the Embalmer.

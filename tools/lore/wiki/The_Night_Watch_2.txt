@@ -1,0 +1,47 @@
+title: The Night Watch (2)
+revision: 5586942
+part: whole
+quest: 57
+url: https://warcraft.wiki.gg/wiki/The_Night_Watch_%282%29
+
+== Objectives ==
+Commander Althea Ebonlocke of Darkshire wants you to kill 15 Skeletal Fiends and 15 Skeletal Horrors.
+
+Skeletal Fiend slain (15)
+Skeletal Horror slain (15)
+
+
+== Description ==
+<Name>, I'm getting reports of an undead infestation in the forest! If you're up to the job, journey to the Raven Hill graveyard and slay 15 of those vile Skeletal Fiends and 15 Skeletal Horrors. There are also reports of skeletons just south of Darkshire, in and around Tranquil Gardens Cemetery. The undead must be driven from Duskwood! 
+
+
+== Rewards ==
+You will receive:
+
+20
+2,100 XP (or 12 60 at max level)
++100 reputation with Stormwind
+
+
+== Progress ==
+Return to me once you have killed 15 Skeletal Fiends and 15 Skeletal Horrors, <name>.
+
+
+== Completion ==
+The people of Darkshire thank you, <name>.  You have proven yourself to be a great ally of The Night Watch.
+
+
+== Progression ==
+ [24] The Night Watch
+ [26] The Night Watch
+ [30] The Night Watch
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,51 @@
+title: Warsong Supplies (quest)
+revision: 6230330
+part: whole
+quest: 6571
+url: https://warcraft.wiki.gg/wiki/Warsong_Supplies_%28quest%29
+
+== Objectives ==
+Collect the Warsong Supplies: Warsong Saw Blades, Logging Rope, Warsong Oil, and the Warsong Axe Shipment for Locke Okarr in Splintertree Post.
+
+ [Warsong Saw Blades]
+ [Warsong Axe Shipment]
+ [Warsong Oil]
+ [Logging Rope]
+
+
+== Description ==
+We are in short supply of a few items at the Warsong lumber camp!
+Pixel at Splintertree Post has our shipment of saw blades. It'll take a trip to Booty Bay to pick up a crate of axes from Wharfmaster Lozgil.
+Our shipment of oil and rope will be more difficult. The rope was pilfered by the Thistlefur and Foulweald furbolgs, and the satyrs intercepted the delivery of the oil and are now using it for detestable rituals in Night Run, Satyrnaar, and Xavian!
+Can you help me?
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Warsong Sash]
+ [Warsong Boots]
+ [Warsong Gauntlets]
+You will also receive:
+
+2750 XP (or 16 80 at max level)
++150 or +350 reputation with Orgrimmar
+
+
+== Progress ==
+I hope you can come through with the supplies! I'm in big trouble if I don't deliver them soon!
+
+
+== Completion ==
+Excellent, <name>. You've saved me a lot of work!
+But don't think that I'm not grateful!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

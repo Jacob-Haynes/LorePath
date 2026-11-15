@@ -1,0 +1,78 @@
+title: Claws from the Deep
+revision: 6898577
+part: whole
+url: https://warcraft.wiki.gg/wiki/Claws_from_the_Deep
+
+== Objectives ==
+Collect Gobbler's Head from Gobbler and slay 12 Bluegill Murlocs of any kind.
+
+Bluegill Murloc slain (12)
+ [Gobbler's Head]
+
+
+== Description ==
+
+Murlocs are crawling out from the deep waters and building their villages on the coastline.  They are harassing our fishers and merchants and must be stopped.
+One of these murlocs, Gobbler, skulks with the other bluegill murlocs and harries merchants along the road, always then retreating to the safety of the nearby murloc hovels.  Our merchants are in jeopardy, and we will pay to secure them.
+Gobbler prowls the river inlet north of here.  Find him, slay his kin, and bring me his head.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Merchant Marine Pauldrons]
+ [Merchant Marine Boots]
+ [Merchant Marine Waders]
+ [Merchant Marine Sandals]
+ [Merchant Marine Greaves]
+ [Merchant Marine Stompers]
+You will also receive:
+
+20
+1,400 XP
++250 reputation with Stormwind
+
+
+== Progress ==
+Our merchants will not be safe until we are rid of Gobbler and those Murlocs.
+
+
+== Completion ==
+Ah, well done <name>.
+Accept this payment for fullfillment of your contract with the Merchant Marines.
+
+
+== Notes ==
+Pick up  [10-30] Reclaiming Goods before leaving. The murlocs can be killed while hunting down the statuette.
+
+
+== Progression ==
+ [10-30] Onwards to Menethil (optional breadcrumb from Slabchisel's Survey)
+Complete all of:
+ [10-30] Assault on Menethil Keep
+From Karl Boran and Derina Rumdnul:
+ [10-30] When Life Gives You Crabs
+Side quest:  [10-30] A Mother's Worries
+ [10-30] Reclaiming Goods
+Side quest:  [10-30] Claws from the Deep
+ [10-30] The Search Continues
+ [10-30] Search More Hovels
+ [10-30] Return the Statuette
+From First Mate Fitzsimmons:
+ [10-30] The Third Fleet
+ [10-30] Cursed to Roam
+ [10-30] The Cursed Crew
+ [10-30] Lifting the Curse
+ [10-30] The Eye of Paleth
+ [10-30] Swiftgear Station (optional breadcrumb to Swiftgear Station)
+
+
+== Patch changes ==
+ Patch 7.0.3 (2016-07-19):  [Merchant Marine Greaves] and  [Merchant Marine Stompers] added as rewards.   
+ Patch 4.0.3a (2010-11-23): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

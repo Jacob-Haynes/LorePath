@@ -1,0 +1,6 @@
+title: Searing Gorge
+revision: 6404721
+part: intro
+url: https://warcraft.wiki.gg/wiki/Searing_Gorge
+
+The Searing Gorge is a contested region in southern Khaz Modan. It is home to a group of exceptionally stout Dark Iron dwarves called the Thorium Brotherhood, who have split from the Dark Iron clan.

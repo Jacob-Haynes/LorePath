@@ -1,0 +1,58 @@
+title: Food for Baby
+revision: 6307244
+part: whole
+quest: 4297
+url: https://warcraft.wiki.gg/wiki/Food_for_Baby
+
+Food for Baby is part of the Freedom for All Creatures quest chain, which will eventually award the player with a baby sprite dragon pet, very cute and highly desired. The chain starts with  [47] Freedom for All Creatures in Feralas.
+
+
+== Objectives ==
+Bring 5 Silvermane Stalker Flanks to Agnar Beastamer in Hinterlands.
+
+ [Silvermane Stalker Flank] (5)
+
+
+== Description ==
+Sprite darters are omnivores—that means they eat both meat and vegetation. If your egg here's gonna hatch, we best be prepared. Some good eats for these little guys are flanks of meat, raw and juicy, believe it or not. I was never able to find out why, but it has somethin' to do with Elune's plan for the elves... maybe they were to be protectors or somethin', I don't know.
+I'll take care of the egg for now, why don't you get me some good Silvermane stalker flanks for 'em to eat when he's hatched.
+
+
+== Rewards ==
+You will receive:
+
+4200 XP (or 25 at max level)
++100 or +250 reputation with Darnassus
++100 reputation with Wildhammer Clan
+
+
+== Progress ==
+Find that meat yet, <name>? Your little egg here's just about ready to hatch. If he don't have a good enough first meal, then he might not make it past his first week, and I'd hate for that to happen.
+Can't much lie to ya, <name>. I'm jealous of you gettin' this egg to begin with. Don't make me regret helpin' ya out like this.
+
+
+== Completion ==
+These'll do nicely, and if I'm not mistaken, your little egg's just about ready to hatch. How does it feel? You know, you about to be a <mother/father>? Haha, didn't think ya'd have to deal with such responsibility, now did ya?
+
+
+== Progression ==
+
+ [47] Freedom for All Creatures
+ [47] Doling Justice
+ [47] Doling Justice
+ [47] An Orphan Looking For a Home
+ [47] A Short Incubation
+ [47] The Newest Member of the Family
+ [47] Food for Baby
+ [48] Becoming a Parent
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.0.3 (2007-01-09): No longer awards the Wildhammer Clan reputation.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,93 @@
+title: A Portable Power Source
+revision: 5611988
+part: whole
+quest: 8925
+url: https://warcraft.wiki.gg/wiki/A_Portable_Power_Source
+
+== Objectives ==
+Find Magma Lord Bokk in the Burning Steppes, obtain his Magma Core and bring it to Mux Manascrambler in Gadgetzan.
+
+ [Magma Core]
+
+
+== Description ==
+Next we shall need to find a stable and portable source of energy to keep the ectoplasm active. I've heard rumors of a mighty elemental called Magma Lord Bokk, whose heart is a powerful Magma Core - an endless supply of heat!
+It's said he can be found in the Burning Steppes, south of Blackrock Mountain. Bring the Magma Core to me and we shall have enough juice to power the extra-dimensional ghost revealer!
+
+
+== Rewards ==
+You will receive:
+
+90
+9550 XP (or a 90 compensation at level 80)
+
+
+== Progress ==
+Have you found the Magma Lord, <name>?
+
+
+== Completion ==
+You've done it!  This will certainly provide enough energy to power up the extra-dimensional ghost revealer!
+
+
+== Notes ==
+Magma Lord Bokk can be found west of the Pillar of Ash and south of Blackrock Mountain. He is a non-elite level 60.
+
+
+== Progression ==
+ [60D] An Earnest Proposition
+ [60] A Supernatural Device
+ [60] The Ectoplasmic Distiller
+ [60] Hunting for Ectoplasm
+ [60] A Portable Power Source
+ [60] A Shifty Merchant
+ [60] Return to Deliana /  [60] Return to Mokvar
+ [60D] Just Compensation
+ [60] In Search of Anthion
+ [60D] Dead Man's Plea
+ [60] Proof of Life
+ [60] Anthion's Strange Request
+ [60D] Anthion's Old Friend
+ [60D] Falrin's Vendetta
+ [60D] The Instigator's Enchantment
+ [60D] The Challenge
+ [60D] Anthion's Parting Words
+ [60] Bodley's Unfortunate Fate
+ [60R] Three Kings of Flame
+
+ [60] Components of Importance
+ [60] Components of Importance
+ [60G] Components of Importance
+ [60G] Components of Importance
+
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60G] I See Alcaz Island In Your Future...
+
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60R] Final Preparations
+ [60R] Mea Culpa, Lord Valthalak
+ [60] Return to Bodley
+ [60] Back to the Beginning
+ [60D] Saving the Best for Last
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.10.0 (2006-03-28): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

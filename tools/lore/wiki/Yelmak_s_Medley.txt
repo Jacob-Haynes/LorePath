@@ -1,0 +1,46 @@
+title: Yelmak's Medley
+revision: 6911482
+part: whole
+quest: 97242
+url: https://warcraft.wiki.gg/wiki/Yelmak%27s_Medley
+
+== Objectives ==
+Take some cuttings from the Cattails and Speargrass growing around the water flows in the Valley of Honor and return to Kor'geld in Yelmak's Alchemy and Potions.
+
+Handful of Cattails (2)
+Speargrass Cuttings (4)
+
+
+== Description ==
+Yelmak doesn't want his apprentice breaking anything. Well, anything more than he already has.
+He told me the young mixer in training has too much pride to ask for help when he really needs it. Yelmak wants to give him a taste of a particular home-brewed recipe.
+Gather a mix of cattail and speargrass cuttings taken from the plants growing around the water in the Valley of Honor. I'd get them myself, but if I left the shop, Whuut would surely know we're catering to his mood.
+
+
+== Rewards ==
+You will receive:
+
+800 XP
+
+
+== Progress ==
+We discover formulations and recipes by showing old ingredients to new generations, who experiment with it in their own way.
+
+
+== Completion ==
+This type of cattail and speargrass is unique to Orgrimmar. Drinking from Azshara mountain spring water, and nourished by the sweat and blood soaked mineral dust of our rocky land, these herbs contain potent powers locked within.
+I'll give these to Yelmak, who may be able to win back Whuut's ear with a hands-on lesson.
+
+
+== Progression ==
+...
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

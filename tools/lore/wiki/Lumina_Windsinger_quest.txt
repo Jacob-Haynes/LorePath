@@ -1,0 +1,52 @@
+title: Lumina Windsinger (quest)
+revision: 6963530
+part: whole
+quest: 91862
+url: https://warcraft.wiki.gg/wiki/Lumina_Windsinger_%28quest%29
+
+== Objectives ==
+Retrieve the Fenris Isle Key from the Rot Hide Gnolls and use it to free Lumina Windsinger.
+
+ [Fenris Isle Key]
+
+
+== Description ==
+Quel'dorei? No, I am no "quel'dorei". I am Lumina Windsinger and I am shen'dorei. One of the Windshaper Skyborne.
+I came to these lands as a guest of the Earthen Ring. My companion Banon and I were passing through Silverpine to reach the Arathi Highlands so that we could study the elemental convergences there. Clearly, we didn't make it.
+We have no time for this now though. Kill the gnolls nearby. Retrieve the key to this cage and free me. I will tell you the rest once we are safely away.
+
+
+== Rewards ==
+You will receive:
+
+14
+1,750 XP
++50 reputation with Undercity
++100 reputation with Earthen Ring
+
+
+== Progress ==
+Gnolls are the second worst creatures I've encountered yet on Azeroth.
+
+
+== Completion ==
+Thank you, paladin. Unfortunately we aren't out of danger yet.
+
+
+== Progression ==
+   [22] Diplomatic Incident
+   [22] A Curious Pair
+   [22] A Grim Fate
+   [22] Into Fenris Keep
+   [22] Lumina Windsinger
+   [22] The Windshaper's Wrath
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

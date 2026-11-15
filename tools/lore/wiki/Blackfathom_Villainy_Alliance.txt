@@ -1,0 +1,62 @@
+title: Blackfathom Villainy (Alliance)
+revision: 6956897
+part: whole
+quest: 1200
+url: https://warcraft.wiki.gg/wiki/Blackfathom_Villainy_%28Alliance%29
+
+== Objectives ==
+Bring the head of Twilight Lord Kelris to Dawnwatcher Selgorm in Darnassus.
+
+ [Head of Kelris]
+
+
+== Description ==
+Strength has left me. Your help is needed!
+Long ago this site was a great temple of Elune. But misfortune led to ruin when the corruption of an Old God seeped up from beneath the earth and tainted the sacred Moon Well.
+Aku'Mai, servant of the Old God, rose from the waters.
+The Twilight's Hammer cultists have allied with the naga to occupy these grounds. The cultists, led by Kelris, sacrifice innocents to Aku'Mai for power.
+Slay Kelris and bring his head to Selgorm in Darnassus, <name>, please. 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Gravestone Scepter]
+ [Arctic Buckler]
+ [Dark Ritual Leggings] 
+ [Cultist's Armguards] 
+You will also receive:
+
+65
+3300 XP (or 19 80 at max level)
++1000 reputation with Argent Dawn
++500 reputation with Darnassus
+
+
+== Progress ==
+Time is a precious commodity, <class>.
+My role here in Darnassus is to ensure that the Argent Dawn thrives and that the evil forces encroaching upon Kalimdor are thwarted.
+State your business quickly or be on your way.
+
+
+== Completion ==
+Kelris has eluded us for quite some time.
+It seems as though whenever evil made its presence known in these parts, Kelris had played a role. For some time we considered him dead or missing.
+But this makes perfect sense. By ending his reign you have spared the lives of many innocent people.
+By the light! To sacrifice someone to a servant of an Old God for one's personal gain is beyond reproachful!
+You have done a great deed, <name>. I salute you on behalf of the Argent Dawn.
+
+
+== Progression ==
+ [24D] In Search of Thaelrid
+ [27D] Blackfathom Villainy
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

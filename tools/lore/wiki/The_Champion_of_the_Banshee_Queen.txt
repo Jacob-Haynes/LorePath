@@ -1,0 +1,53 @@
+title: The Champion of the Banshee Queen
+revision: 5620505
+part: whole
+quest: 5961
+url: https://warcraft.wiki.gg/wiki/The_Champion_of_the_Banshee_Queen
+
+== Objectives ==
+Speak with Nathanos Blightcaller in the Eastern Plaguelands. He is said to have taken up residence at the Marris Stead.
+
+
+== Description ==
+It pleases me greatly to see the battle hardened join our cause. Our numbers grow in size and strength as each day passes. Perhaps you are prepared to test your mettle, <class>?
+Among the first of my champions was Nathanos, now known as the Blightcaller. Few exist with more dedication or vigor amidst our ranks.
+Seek him out in the Eastern Plaguelands. He resides at the Marris Stead; occasionally roaming the decimated wastes, slaying all Scourge and Alliance filth that cross his path.
+
+
+== Rewards ==
+You will receive:
+
+1450 XP (or 9 at level 70)
++25 reputation with Undercity
+
+
+== Completion ==
+Surely the Dark Lady does not believe you worthy to meet her champion. You are here to feed my hounds, yes? There could be no other reason for this interruption.
+
+
+== Progression ==
+ [56] The Champion of the Banshee Queen
+Complete all of:
+ [58] To Kill With Purpose
+ [58] Un-Life's Little Annoyances
+ [60] The Ranger Lord's Behest
+
+ [60] Duskwing, Oh How I Hate Thee...
+ [60] The Corpulent One
+
+ [60] The Call to Command
+ [60D] Ramstein
+ [60G] The Crimson Courier
+ [60G] Nathanos' Ruse
+ [60G] Return to Nathanos
+ [60G] The Scarlet Oracle, Demetria
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

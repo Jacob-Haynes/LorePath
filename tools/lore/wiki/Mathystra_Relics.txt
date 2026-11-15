@@ -1,0 +1,56 @@
+title: Mathystra Relics
+revision: 6434534
+part: whole
+quest: 951
+url: https://warcraft.wiki.gg/wiki/Mathystra_Relics
+
+== Objectives ==
+Bring 6 Mathystra Relics to Onu at the Grove of the Ancients.
+
+ [Mathystra Relic] (6)
+
+
+== Description ==
+The parchment you found at the Master's Glaive is a page from an ancient text...written by elves! It is heavily cursed and tainted by the corruption of the Twilight's Hammer, but it seems the cult is using ancient elven magic to bring their old masters back to our world.
+Travel to the ruins of Mathystra to the northeast, and search for ancient relics among the grass and broken stones. Through their study, we may divine how the Twilight's Hammer intends to exploit the magic of the elves.
+
+
+== Rewards ==
+
+You will gain:
+
+1950 XP (or 12 at level 70)
+350 reputation with Darnassus
+
+
+== Progress ==
+<Name>.  Has your rooting through the Ruins of Mathystra been fruitful?
+
+
+== Completion ==
+Thank you.  These relics are from a time when Mathystra shone.  That once great bastion of the elves has faded, but shards of its magic remain.  Let us hope we can unlock the secrets of that place before our enemies...
+Be vigilant, <name>.
+
+
+== Trivia ==
+ The subject of this section did not make it out of the beta stages.
+The quest was named Blackfathom Relics.
+
+Objectives
+Bring 2 Blackfathom Relics, 2 Mathystra Relics and 2 Elven Cup Relics to Onu at the Grove of the Ancients.
+ [Blackfathom Relic] (2)
+ [Mathystra Relic] (2)
+ [Elven Cup Relic] (2)
+The ending of Completion text also included:
+
+And prepare yourself to return to the deeps within the Ruins of Mathystra. Fate will, one day, take you there.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

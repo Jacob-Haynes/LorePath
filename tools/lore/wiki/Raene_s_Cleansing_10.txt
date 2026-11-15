@@ -1,0 +1,69 @@
+title: Raene's Cleansing (10)
+revision: 5616749
+part: whole
+quest: 1045
+url: https://warcraft.wiki.gg/wiki/Raene%27s_Cleansing_%2810%29
+
+This quest is part of the Raene's Cleansing quest chain.
+
+
+== Objectives ==
+Kill Ran Bloodtooth and 4 Bloodtooth Guards and return to Krolg near Lake Mystral.
+
+Ran Bloodtooth slain
+Bloodtooth Guard slain (4)
+ [Dartol's Rod of Transformation] (provided)
+
+
+== Description ==
+The night elves are as old as time, but their arrogance destroys their very world. And now it destroys our lives too. But that can no longer be controlled...
+I blame the elves for much, but we are still responsible for our actions. Even beyond the corruption, we are capable of great evil.
+Ran Bloodtooth is one such evil. Power hungry, lusting... the corruption has only made him stronger. My hatred for the elves burns, but I do not wish ill upon their children, so we must police our own.
+
+
+== Rewards ==
+You will receive:
+
+2450 XP
++250 reputation with Darnassus
+
+
+== Progress ==
+Have you slain Ran yet, my friend?
+Even the Night elves do not truly deserve his wrath. His hatred burns even brighter than my own, but his mind is no longer his own. He is a threat to all the natural creatures of this forest.
+
+
+== Completion ==
+You have done well, my friend.
+The forest is still tainted, but at least we know we have done a small part to return it to its former glory. If you wish to return to me again, I would enjoy the company of my own kind.
+Be well. Perhaps our tribes will meet again under less violent times.
+
+
+== Notes ==
+Leave Krolg and follow the mountains to the east. You'll find Ran's camp along the way at coordinates . He is linked to one of his bodyguards. The guards also have a ridiculously fast respawn rate (frequently one will respawn before you've killed the next one, let alone reached Ran), so either bring company or make sure you are able to fight two (or more) at a time.
+
+
+== Progression ==
+This is the Raene's Cleansing quest chain.
+
+ [19] Raene's Cleansing
+ [21] Raene's Cleansing
+ [21] Raene's Cleansing
+ [27] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [30] Raene's Cleansing
+ [30] Raene's Cleansing
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,6 @@
+title: Yenniku
+revision: 6733696
+part: intro
+url: https://warcraft.wiki.gg/wiki/Yenniku
+
+Yenniku is a Darkspear troll. He is Vol'jin's youngest son.

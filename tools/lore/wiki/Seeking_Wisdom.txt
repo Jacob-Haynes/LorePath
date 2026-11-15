@@ -1,0 +1,65 @@
+title: Seeking Wisdom
+revision: 6304450
+part: whole
+quest: 269
+url: https://warcraft.wiki.gg/wiki/Seeking_Wisdom
+
+This is part of the Morbent Fel quest chain.
+
+
+== Objectives ==
+Give Jitters' Completed Journal to Bishop Farthing in Stormwind.
+
+ [Jitters' Completed Journal] (provided)
+
+
+== Description ==
+Go to the city of Stormwind and speak with Bishop Farthing in the Cathedral of Light. Give him Jitters' journal and tell him you mean to face Morbent Fel.
+Although Stormwind has forsaken Darkshire, Farthing is a kind soul and very wise. He may help you on your quest to save us.
+Your mission is perilous, but hurry, <Name>. With each passing hour, the shadows of Duskwood grow ever darker.
+
+
+== Rewards ==
+You will receive:
+
+60 XP
++25 reputation with Stormwind
+
+
+== Progress ==
+Rest, <brother/sister>. I can tell you have traveled far, and you bear a heavy burden. Can you tell me what casts that dark shadow over you?
+
+
+== Completion ==
+<After reading the journal and hearing your intent...>
+An evil taint has gained a foothold within the already beleaguered Duskwood. I thank the Light we have a hero such as you to face it.
+But you must first prepare yourself for the coming trial...for the Necromancer Morbent Fel is immensely powerful, and has cast dark enchantments about himself to protect him from physical assaults. If you are to defeat him, you will need a weapon that is proof against these protections.
+
+
+== Progression ==
+ [23] Deliveries to Sven (optional)
+ [25] Sven's Revenge
+ [25] Sven's Camp
+ [25] The Shadowy Figure
+ [25] The Shadowy Search Continues
+ [25] Inquire at the Inn
+ [25] Finding the Shadowy Figure
+ [25] Return to Sven
+ [28] Proving Your Worth
+ [29] Seeking Wisdom
+ [29] The Doomed Fleet
+ [29] Lightforge Iron
+ [29] The Lost Ingots
+ [29] Blessed Arm
+ [29] Armed and Ready
+ [32G] Morbent Fel
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

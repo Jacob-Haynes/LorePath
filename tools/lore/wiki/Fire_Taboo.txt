@@ -1,0 +1,48 @@
+title: Fire Taboo
+revision: 6176581
+part: whole
+quest: 277
+url: https://warcraft.wiki.gg/wiki/Fire_Taboo
+
+== Objectives ==
+Bring Rethiel the Greenwarden 9 Crude Flints.
+
+ [Crude Flint]: (9)
+
+
+== Description ==
+The Mosshides are cutting the trees of the Wetlands, using the trees' flesh to warm themselves with fire. I will suffer this pain no longer!
+Rid the Mosshides of their crude flints, the tools they use to make fire. The flints are borne by all Mosshides except the smaller Mosshide gnolls and Mosshide mongrels.
+
+
+== Rewards ==
+You will receive:
+
+1850 XP
+10  [Spongy Morel]
+
+
+== Progress ==
+Do you have the Gnolls' tools for fire?
+
+
+== Completion ==
+... thank you.  I will smash these flints and cast them into the sea, so that they may never again be used to burn living wood.
+
+
+== Progression ==
+ [21] The Greenwarden
+ [21] Tramping Paws
+ [23] Fire Taboo
+ [26] Blisters on The Land
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.4.0 (2005-04-19): Removed Stormwind Faction reward from the Greenwarden quest line in the Wetlands.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

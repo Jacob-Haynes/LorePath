@@ -1,0 +1,54 @@
+title: Flute of Xavaric (quest)
+revision: 6979912
+part: whole
+quest: 939
+url: https://warcraft.wiki.gg/wiki/Flute_of_Xavaric_%28quest%29
+
+== Objectives ==
+Bring the Flute of Xavaric and 5 Jadefire Felbind samples to Eridan Bluewind in southern Felwood.
+
+ [Flute of Xavaric]
+ [Jadefire Felbind] (5)
+
+
+== Description ==
+You study the simple wooden flute you picked up after defeating Xavaric.
+The knotted wood feels solid, but it seems as if the spirals and patterns in the surface begin to spin and move as you turn it over in your hands. Suddenly, you feel a sense of dread...
+You shake your head, sure that your mind is playing tricks on you.
+It's possible that other satyrs carry clues as to what you have found. Bring your findings to the druid, Eridan Bluewind, that lives in southern Felwood.
+
+
+== Rewards ==
+You will receive:
+
+7,890 XP
+
+
+== Progress ==
+What is it, <class>? You look concerned.
+
+
+== Completion ==
+I sense the suffering of ancient ones, <name>...
+Holding these items is almost unbearable...
+
+
+== Notes ==
+The flute drops off of Xavaric, who is in Northern Felwood. You can obtain the Jadefire Felbinds by killing the various Jadefire Satyrs, Jadefire Betrayers, and Jadefire Tricksters. Once you collect enough of the felbinds, head to Eridan Bluewind, who is in the south of Felwoods, with some other Cenarion Circle members.
+
+
+== Progression ==
+ [54] Flute of Xavaric
+ [54] Felbound Ancients
+ [54] Purified!
+ [56] Ancient Spirit
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

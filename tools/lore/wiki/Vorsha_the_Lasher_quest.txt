@@ -1,0 +1,66 @@
+title: Vorsha the Lasher (quest)
+revision: 6971341
+part: whole
+quest: 6641
+url: https://warcraft.wiki.gg/wiki/Vorsha_the_Lasher_%28quest%29
+
+This is an escort quest in which the player must protect Muglash as he draws out and defeats Vorsha the Lasher, a hydra.
+
+
+== Objectives ==
+Defeat Vorsha the Lasher.
+
+Defeat Vorsha the Lasher
+Suggested players: 2
+Speak to the Warsong Runner in Zoram'gar Outpost.
+
+
+== Description ==
+Vorsha the Lasher... the fiendish hydra that roams the seas...
+She has attacked our outpost, each time unprovoked, laying waste to anything that falls in her path.
+But I am ready, <name>. I have prepared to best the hydra and end these attacks on Zoram'gar.
+The naga honor the wicked nature of this beast with a brazier that remains lit on an island just off the coast. I believe that if we put it out, Vorsha will appear in anger.
+We will need help, so be sure to bring some strong allies.
+
+
+== Rewards ==
+You will receive:
+
+2300 XP
+ [Horn Ring]
+
+
+== Completion ==
+I have witnessed many naga attacks since I arrived here. It puts my mind at ease that Vorsha will no longer roam freely.
+We are in your debt, <name>.
+
+
+== Notes ==
+Muglash will set off as soon as the quest is accepted, so be prepared to escort him.
+Muglash will help you out in this fight. Two or three waves of naga, and finally Vorsha itself, will spawn and must be killed. If Muglash dies, the quest will fail.
+
+Muglash says: Are you sure that you are ready? If we do not have a group of your allies to aid us, we will surely fail.
+Muglash says: This will be a tough fight, <name>. Follow me closely!
+(Muglash walks out of Zoram'gar and towards the sea. If there are any naga, he will help fight. He will end up at the brazier.)
+Muglash says: This is the brazier, <name>. Put it out. Vorsha is a beast, worthy of praise from no one!
+(Player clicks on brazier to put it out.)
+Muglash says: Now we must wait. It won't be long before the naga realize what we have done.
+Muglash says: Be on your guard, <name>!
+(A wave of three naga attack.)
+Muglash says: Perhaps we will get a moment to rest. But I will not give up until we have faced off against Vorsha!
+(Another wave of three naga.)
+Muglash says: Be on your guard, <name>!
+(Another wave of three naga.)
+Muglash says: I sense that the great beast draws near...
+Muglash says: Look, just at the water's surface!
+(Muglash and player face off against Vorsha.)
+Muglash says: We have done it!
+Muglash says: You have my deepest gratitude. I thank you.
+Muglash says: I am going to patrol the area for a while longer and ensure that things are truly safe.
+Muglash says: Please return to Zoram'gar and report our success to the Warsong Runner.
+
+
+== External links ==
+
+Wowhead
+WoWDB

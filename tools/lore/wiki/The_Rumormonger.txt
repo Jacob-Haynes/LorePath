@@ -1,0 +1,54 @@
+title: The Rumormonger
+revision: 5586979
+part: whole
+quest: 1115
+url: https://warcraft.wiki.gg/wiki/The_Rumormonger
+
+The Rumormonger is a neutral quest from the Mirage Raceway in the Shimmering Flats of Thousand Needles. In this quest, players travel to Booty Bay and meet with one of Kravel Koalbeard's many associates to dig up some dirt on the goblin racer pilot. Players must have completed  [36] Delivery to the Gnomes to get this quest.
+
+
+== Objectives ==
+Talk to Krazek in Booty Bay.
+
+
+== Description ==
+Now that we've done a service for the gnomes, it's time to do the goblins a favor!
+I hear that the goblin racer pilot, Nazz Steamboil, didn't always use that name. I wonder why he changed it. I wonder if it's a secret, and... I wonder if he values that secret.
+If anyone knows the truth, then it's Krazek of Booty Bay, on the southern tip of Stranglethorn. Speak with Krazek and ask him about our goblin pilot.
+If you can get useful information from him, then we might just turn a profit from it.
+
+
+== Completion ==
+You want to know about Nazz Steamboil? He's a racer pilot out in the Shimmering Flats, isn't he?
+Yeah, I might be able to find something out about him... but it won't be easy. Or fast.
+Or cheap.
+
+
+== Notes ==
+Krazek can be found in the Salty Sailor Tavern in Booty Bay, Stranglethorn Vale. Talk to him to complete this quest and receive the next in the chain.
+
+
+== Progression ==
+This quest is part of a chain which involves running various errands for Kravel Koalbeard, a dwarf from the Mirage Raceway in Thousand Needles
+
+ [31] Rocket Car Parts
+ [36] Wharfmaster Dizzywig
+ [36] Parts for Kravel
+ [36] Delivery to the Gnomes
+ [36] The Rumormonger
+ [36] Dream Dust in the Swamp
+ [36] Rumors for Kravel
+ [43] Back to Booty Bay
+ [44] Zanzil's Secret (optional; does not require prior chain)
+ [44] Zanzil's Mixture and a Fool's Stout
+One of the following:
+ [44] Get the Gnomes Drunk
+ [44] Get the Goblins Drunk
+ [44] Report Back to Fizzlebub
+ [44] Fool's Stout
+
+
+== External links ==
+
+Wowhead
+WoWDB

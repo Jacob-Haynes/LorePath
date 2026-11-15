@@ -1,0 +1,54 @@
+title: Protect Kanati Greycloud
+revision: 6704417
+part: whole
+quest: 4881
+url: https://warcraft.wiki.gg/wiki/Protect_Kanati_Greycloud
+
+Protect Kanati Greycloud is a Horde quest in Thousand Needles in which the player character must defend Kanati Greycloud at Whitereach Post from a centaur assassination.
+
+
+== Objectives ==
+Protect Kanati Greycloud from the centaur attack.
+
+
+== Description ==
+But, there may be more centaur than I thought, I ask you, <name>, to fight with me against these vile assassins.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Lightheel Boots]
+ [Loamflake Bracers]
+ [Palestrider Gloves]
+You will also receive:
+
+2,300 XP
++100 or +250 reputation with Thunder Bluff
+
+
+== Completion ==
+Thank you for your help, <name>. I couldn't have held them off without you.
+
+
+== Notes ==
+You may want another person to help on this one, though soloing it is possible, especially since Kanati Greycloud helps in the fight. Just be aware that you will be fighting three lvl 28 Galak Assassins at once, and prepare accordingly before accepting the quest. Once you have defeated the centaur, talk to Kanati to turn it in.
+
+Upon accept
+Kanati Greycloud says: Here they come! Defend yourselves!
+
+
+== Progression ==
+ [28] Assassination Plot
+ [28] Protect Kanati Greycloud
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.3.0 (2005-03-07): Fixed pathing on the assassins of the Protect Kanati Greycloud quest, to prevent them from getting stuck.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

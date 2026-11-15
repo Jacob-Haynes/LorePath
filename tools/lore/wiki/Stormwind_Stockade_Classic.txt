@@ -1,0 +1,7 @@
+title: Stormwind Stockade (Classic)
+revision: 6912305
+part: intro
+url: https://warcraft.wiki.gg/wiki/Stormwind_Stockade_%28Classic%29
+
+Stormwind Stockade, aka The Stockade, is a heavily guarded prison in the middle of Stormwind City. A large number of dangerous criminals, including some criminal masterminds and Defias mercenaries, are currently being held in the stockade. However, not so long ago, there was a revolt inside the dungeon, and the prisoners now keep the Stockade under their control.
+Recommended group composition is a competent and reasonably balanced group of players around level 27, with a decent level 27, at least, tank or very competent players for the final mini-boss.

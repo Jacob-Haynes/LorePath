@@ -1,0 +1,52 @@
+title: War Banners
+revision: 6306794
+part: whole
+quest: 464
+url: https://warcraft.wiki.gg/wiki/War_Banners
+
+== Objectives ==
+Bring 8 Dragonmaw War Banners to Captain Stoutfist.
+
+ [Dragonmaw War Banner] (8)
+
+
+== Description ==
+The Dragonmaw orc clan was all but destroyed by the end of the Second War, after they lost control of their red dragon pets. The dragons were not very happy with their old masters, and fiercely hunted the Dragonmaws. What few remained fled from Grim Batol and into the Mountains east of Whelgar's Excavation.
+Now they've gained strength, and have an encampment northeast of Menethil.
+We want you to attack that encampment. Gather and bring me their war banners as proof.
+
+
+== Rewards ==
+You will receive:
+
+25
+2300 XP
++100 reputation with Ironforge
+
+
+== Progress ==
+Have you attacked the Dragonmaw encampment?
+
+
+== Completion ==
+Well fought, <name>. The Dragonmaws are not the same threat they were when they had dragons, but they're still fierce opponents.
+The Dragonmaws are led by Nek'rosh, son of Nekros, who was the former head of the Dragonmaws years ago. Nekros used powerful magic to tame the Red Dragons, but when that magic failed him...the dragons were not happy.
+Nekros was killed, and his son has vowed revenge against the dragons who slew his father.
+
+
+== Progression ==
+ [26] Report to Captain Stoutfist
+ [26] War Banners
+ [26] Nek'rosh's Gambit
+ [26] Defeat Nek'rosh
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.3.0 (2007-11-13): Level reduced from 28 to 26.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,44 @@
+title: Hostile Takeover
+revision: 6299739
+part: whole
+quest: 213
+url: https://warcraft.wiki.gg/wiki/Hostile_Takeover
+
+== Objectives ==
+Retrieve 8 Tumbled Crystals and return them to Kebok in Booty Bay.
+
+ [Tumbled Crystal] (8)
+
+
+== Description ==
+He's done it this time! Bad enough that Gelriz's muscling out the moguls who were appointed by the trade princes, now he tries to cut in on the most notorious pirate!
+Revilgaz won't have it, and he's told me to take care of the problem in my own way.
+My way? Theft. The Venture Co. geologists near Lake Nazferiti are deeply interested in those strange blue crystals they have been finding in the mines. Bring me samples of the stone from their geologists, I don't care what you have to do to get them.
+
+
+== Rewards ==
+You will receive:
+
+3500 XP (or 21 at level 70)
+-250 reputation with Bloodsail Buccaneers
++250 reputation with Booty Bay
+ [Gemmed Gloves]
+
+
+== Progress ==
+I need those stones, <name>. By whatever means necessary! Just do it, don't give me the details!
+It's about results, <name>, nothing more, nothing less.
+
+
+== Completion ==
+Fascinating. That the crystals have been tumbled using this process can only indicate that they are planning to use them as some sort of fuel or other catalyst. I don't know much more than that. Samples will have to be dispatched to Head Chemist Gigglefont.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

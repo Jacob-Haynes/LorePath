@@ -1,0 +1,46 @@
+title: Serpent Wild
+revision: 6704525
+part: whole
+quest: 4865
+url: https://warcraft.wiki.gg/wiki/Serpent_Wild
+
+== Objectives ==
+Report your findings to Motega Firemane.
+
+
+== Description ==
+If I did not see that with my own eyes I would never have believed it to be true. Vengeance has come to Thousand Needles!
+<Hagar wipes his brow.>
+<Name>, you must act quickly! Go now and seek out Motega Firemane; he is located at Whitereach Post just northwest of Freewind Post along the road. He will know what to do!
+
+
+== Rewards ==
+You will receive:
+
+1,050 XP
++50 or +75 reputation with Thunder Bluff
+
+
+== Completion ==
+Vengeance! So, the legend of Arikara is true. Indeed, this is a problem that must be resolved immediately.
+
+
+== Notes ==
+Head northwest along the road, past the fork that leads to the Great Lift, until you come to Whitereach Post. It is a very small outpost on the left side of the road. There, speak to Motega Firemane to complete the quest.
+
+
+== Progression ==
+ [26] Alien Egg
+ [26] Serpent Wild
+ [27] Sacred Fire
+ [28] Arikara
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,56 @@
+title: Unending Torment
+revision: 6966971
+part: whole
+quest: 97288
+url: https://warcraft.wiki.gg/wiki/Unending_Torment
+
+Unending Torment starts in the Ruins of Lordaeron dungeon of Forever after defeating The Baron and looting the  [Abominable Head].
+
+
+== Objectives ==
+Deliver the Abominable Head to Master Apothecary Faranell within the Undercity.
+
+ [Abominable Head] (provided)
+
+
+== Description ==
+<As the creature falls, its head comes toppling off. It seems as if it has been reattached several times, and the connection gets weaker with each reconnection.
+Someone in the Undercity would know more about this unique abomination.>
+
+
+== Rewards ==
+You will receive:
+
+3,450 XP
+
+
+== Progress ==
+What have we here?
+
+
+== Completion ==
+Oho! I believe I know this head. A cruel joke by our Dark Lady. A delicious one at that.
+I think I have a use for this.
+
+
+== Progression ==
+ [21D] Abominable Creatures
+ [22D] A Frightened Request
+ [22D] Bloodied Insignia
+ [22D] Crest of Lordaeron
+ [22D] Light's Justice
+ [22D] Remember That I Love You →  [22] Remember That I Love You
+ [12] A Recipe For Death →  [15] A Recipe For Death →  [18] A Recipe For Death →  [22D] The New Plague
+ [11] Rear Guard Patrol →  [13E] Rear Guard Patrol →  [22D] The Wrath of Rath'mael
+ [21D] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment
+
+
+== Patch changes ==
+ Hotfix (2026-11-06): Now properly requires level 15 (was level 16). 
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

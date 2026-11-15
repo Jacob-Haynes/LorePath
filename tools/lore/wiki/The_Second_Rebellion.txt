@@ -1,0 +1,48 @@
+title: The Second Rebellion
+revision: 5586988
+part: whole
+quest: 203
+url: https://warcraft.wiki.gg/wiki/The_Second_Rebellion
+
+== Objectives ==
+Kill 15 Kurzen Jungle Fighters.
+Return to Sergeant Yohwa at the Rebel Camp. 
+
+Kurzen Jungle Fighter  slain (15)
+
+
+== Description ==
+We're fighting a losing battle with Colonel Kurzen. Not only is he a brilliant tactician, he outnumbers us at least 10 to 1! To survive, we need to use his own, covert tactics against him.
+Enter his camp to the east and kill his men. Lots of them. And get out before reinforcements can close on you. 
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+1950 XP (or 12 at level 70)
+150 reputation with Stormwind
+
+
+== Progress ==
+I hope you've been successful in your hunting, <name>. We won't last long against him without your help.
+
+
+== Completion ==
+Well done.  The loss of those Jungle Fighters will relieve some of the pressure on our camp.
+But now that you've had a taste of the forces we're up against, do you still want to throw your lot in with us?? 
+
+
+== Progression ==
+ [33] The Second Rebellion
+ [38] Special Forces
+ [40] Colonel Kurzen
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

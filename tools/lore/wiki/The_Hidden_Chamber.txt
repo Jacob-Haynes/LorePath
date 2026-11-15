@@ -1,0 +1,55 @@
+title: The Hidden Chamber
+revision: 6702791
+part: whole
+quest: 2240
+url: https://warcraft.wiki.gg/wiki/The_Hidden_Chamber
+
+== Objectives ==
+Read Baelog's Journal, explore the hidden chamber, then report to Prospector Stormpike.
+
+Explore the Hidden Chamber
+
+
+== Description ==
+Now for the task at hand.
+There is a secret chamber, the Chamber of Khaz'mul, that must be explored. The problem is that the chamber's behind a huge, locked door! It's a lucky thing I know how to open it.
+I've described everything in my journal, here on the table. My band and I are stuck here for now... so you, <name>, must find the chamber of Khaz'mul for us!
+Read my journal, explore the chamber, then report to Prospector Stormpike at the Explorers' League in Ironforge.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Dwarven Charge]
+ [Explorers' League Lodestar]
+You will also receive:
+
+6,550 XP
++150 or +500 reputation with Ironforge
+
+
+== Completion ==
+You have seen the Chamber of Khaz'mul?  Amazing!  Baelog was sure it existed, but I must admit that I had my doubts.
+Thank you, <name>.  With luck your finding will incite our leaders to renew their efforts to retake Uldaman.  And if it is ever again under Ironforge control, then the secrets of the Chamber of Khaz'mul will be ours!
+
+
+== Notes ==
+Next to Baelog, the dwarf who dispenses this quest, is a chest containing the  [Gni'kiv Medallion].
+Revelosh the trogg drops  [The Shaft of Tsol].
+Join the two pieces to make the  [Staff of Prehistoria].
+In the Map Room, fit the Staff of Prehistoria into it's place to summon Ironaya. Kill her and enter the room she left to discover the Hidden Chamber, the Chamber of Khaz'mul.
+
+
+== Progression ==
+ [40D] The Lost Dwarves
+ [40D] The Hidden Chamber
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

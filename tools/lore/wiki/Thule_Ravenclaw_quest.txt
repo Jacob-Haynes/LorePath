@@ -1,0 +1,60 @@
+title: Thule Ravenclaw (quest)
+revision: 5632578
+part: whole
+quest: 446
+url: https://warcraft.wiki.gg/wiki/Thule_Ravenclaw_%28quest%29
+
+Thule Ravenclaw is part of The Master of Fenris Isle quest chain.
+
+
+== Objectives ==
+Bring Bethor's Scroll to Apothecary Renferrel at the Silverpine Sepulcher.
+
+ [Bethor's Scroll] (provided)
+
+
+== Description ==
+This Ichor was crafted by an old colleague of mine: Thule Ravenclaw. He was a young, promising mage before the great war, but when the Lich King rose to power, he betrayed his brethren and allied with the Scourge.
+I did not realize he still lives, nor that he leads the Rot Hides in their forays against us!
+I know many of his spells, and can help concoct a potion to counter them. Take this scroll back to Apothecary Renferrel. It has the incantations needed for the potion.
+
+
+== Rewards ==
+You will gain:
+
+290 XP
++25 reputation with Undercity
+ [Bethor's Potion]
+
+
+== Progress ==
+Greetings, <name>.  What did Bethor have to say?
+
+
+== Completion ==
+This scroll is laced with powerful magic. I've never used such forces in a potion ... it will be a powerful mixture, and should serve you well should you attack Thule in his stronghold on Fenris Isle.
+
+
+== Notes ==
+Bethor's potion is only useful to counter the hex Thule Ravenclaw puts on you. You will find it useful during the  [20] Assault on Fenris Isle.
+
+
+== Progression ==
+ [14] The Dead Fields
+ [16] The Decrepit Ferry
+ [16] Rot Hide Clues
+ [17] Rot Hide Ichor
+ [17] Rot Hide Origins
+ [16] Thule Ravenclaw
+ [16] Report to Hadrec
+ [20] Assault on Fenris Isle
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

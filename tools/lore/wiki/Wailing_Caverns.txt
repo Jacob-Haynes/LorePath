@@ -1,0 +1,6 @@
+title: Wailing Caverns
+revision: 6518581
+part: intro
+url: https://warcraft.wiki.gg/wiki/Wailing_Caverns
+
+The Wailing Caverns is in the Northern Barrens, to the south of Crossroads, on the north side of the Lushwater Oasis.

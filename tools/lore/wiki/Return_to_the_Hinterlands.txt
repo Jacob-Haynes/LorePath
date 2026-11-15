@@ -1,0 +1,45 @@
+title: Return to the Hinterlands
+revision: 5632988
+part: whole
+quest: 2993
+url: https://warcraft.wiki.gg/wiki/Return_to_the_Hinterlands
+
+== Objectives ==
+Speak with Gryphon Master Talonaxe. 
+
+
+== Description ==
+Sharpbeak is held in a cage, high on a cliff at the top of Jintha'Alor in the Hinterlands. The key to this cage is possessed by the high priestess of the Vilebranch trolls, Vile Priestess Hexx.
+There. I have done my part. I bid you fortune on your quest, <name>.
+
+
+== Rewards ==
+You will receive:
+
+2100 XP (or 12 60 at level 70)
+ +50 reputation with Wildhammer Clan
+
+
+== Completion ==
+You've spoken with Grimshade? What did he say?
+...What? The Vilebranch trolls have Sharpbeak? That's unbearable! We must organize a force to get him back!
+
+
+== Progression ==
+ [45] Witherbark Cages
+ [48] The Altar of Zul
+ [47] Thadius Grimshade
+ [47D] Nekrum's Medallion
+ [47] The Divination
+ [47] Return to the Hinterlands
+ [51] Saving Sharpbeak
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

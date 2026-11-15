@@ -1,0 +1,44 @@
+title: Coyote Huntin'
+revision: 6979169
+part: whole
+quest: 94617
+url: https://warcraft.wiki.gg/wiki/Coyote_Huntin%27
+
+== Objectives ==
+Kill the coyote known as Sootfur, and bring its pelt back to Benjy Wheeler.
+
+ [Sootfur's Pelt]
+
+
+== Description ==
+There's a pack of coyotes livin' in a den west of here. We can see 'em sometimes from across the river. They used to hunt fish on the shore, but I guess the murlocs pushed 'em out of their usual feeding ground, and so they've taken to eating horses.
+The leader of the coyote pack's a bigger one with dark fur. We'd nicknamed him "Sootfur". I reckon if you kill him, the rest'll scatter.
+
+
+== Rewards ==
+You will receive:
+
+2850 XP
++100 reputation with Brotherhood of the Horse
+
+
+== Progress ==
+I'm gonna make a hat out of that varmint, I'll tell you what!
+
+
+== Completion ==
+<Benjy looks into the face of Sootfur's pelt.>
+Well well well, that'll teach ya not to go rootin' around in my stables!
+<Benjy looks back to you.>
+You did good, <name>. When we're up and running again, it'll be nice to know our horses'll be safe.
+
+
+== Patch changes ==
+ Hotfix (2026-11-10): Sootfur's pelt should now be shared for all members of your party. 
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

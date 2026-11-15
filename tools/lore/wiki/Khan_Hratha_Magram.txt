@@ -1,0 +1,73 @@
+title: Khan Hratha (Magram)
+revision: 6974681
+part: whole
+quest: 1381
+url: https://warcraft.wiki.gg/wiki/Khan_Hratha_%28Magram%29
+
+== Objectives ==
+Maintain your Magram reputation, and bring the Maraudine Key Fragment to Warug in the Magram Village in Desolace. 
+
+ [Maraudine Key Fragment]
+Magram Clan Centaur (Friendly)
+ [War Horn Mouthpiece]
+
+
+== Description ==
+The Gelkis Khan is dead, and now the Maraudine will fall! Kill the Maraudine Khan, Hratha!
+To face him, blow the horn on the high bluff in the Valley of Spears. But to blow the horn, you need a mouthpiece. To get a mouthpiece, kill Maraudine centaur. Keep killing until you find a mouthpiece. Then blow the horn.
+Do this and Maraudine centaur will come to the tower. Kill them until Khan Hratha appears. Hratha holds the piece of a key. Give this piece to me... 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Magram Hunter's Belt]
+ [Ceremonial Centaur Blanket]
+You will also receive:
+
+4300 XP
+
+
+== Progress ==
+Do what I ask.  Prove to me that you are an ally of the Magram! 
+
+
+== Completion ==
+Khan Hratha is dead!  Now the Magram are the strongest of the centaur!  We will crush the others, and rule Desolace!
+We will remember, you, <name>, and you will be spared our hooves when all others are trampled.
+
+
+== Notes ==
+The player first needs to loot a  [War Horn Mouthpiece], which can drop from any of the Maraudine in the Valley of Spears, and then use the Maraudine War Horn overlooking the north end of the valley. Blowing the horn spawns waves of centaur. The first consists of two Maraudine Khan Guards.
+
+Maraudine Khan Guard yells: Intruders at the Horn! Don't let them escape!!
+The second wave consists of another two Khan Guards.
+
+Maraudine Khan Guard yells: Kill the intruders!
+The final wave consists of Khan Hratha himself, another Khan Guard, and a Maraudine Khan Advisor.
+
+Khan Hratha yells: I am here! Come face me, if you dare!
+
+		
+		
+		
+		
+
+
+== Progression ==
+ [35] Brutal Politics /  [33] Magram Alliance
+ [32] Assault on the Kolkar
+ [33] Broken Tears
+ [35] Gizmo for Warug
+ [37] Khan Shaka
+ [42] Khan Hratha
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

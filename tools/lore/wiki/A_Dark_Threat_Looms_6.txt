@@ -1,0 +1,53 @@
+title: A Dark Threat Looms (6)
+revision: 6307984
+part: whole
+quest: 280
+url: https://warcraft.wiki.gg/wiki/A_Dark_Threat_Looms_%286%29
+
+This quest is part of the quest chain A Dark Threat Looms.
+
+
+== Objectives ==
+Chief Engineer Hinderweir wants you to swim down to the base of the dam, locate the powder keg and stir in the Disarming Mixture to prevent an explosion.
+
+ [Disarming Mixture] (provided)
+
+
+== Description ==
+Earlier today I spotted some Dark Iron Insurgents swimming toward the Dam with a large keg. No Mountaineers were on hand to stop them! I'm afraid they've planted the Seaforium at the base of the Dam and it could blow at any minute! Let me combine all these ingredients into the Disarming Mixture. There we go.
+Now I need you to take this mixture and stir it into the keg before it's too late! Hurry!
+
+
+== Rewards ==
+You will receive:
+
+675 XP (or 4 20 at max level)
++75 reputation with Ironforge
+
+
+== Progress ==
+The top of the keg slowly twists off.
+
+
+== Completion ==
+The keg fizzles slightly as the Disarming Mixture settles in.
+
+
+== Progression ==
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [20] A Dark Threat Looms
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

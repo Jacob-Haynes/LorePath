@@ -1,0 +1,62 @@
+title: City of Dalaran
+revision: 6973452
+part: whole
+url: https://warcraft.wiki.gg/wiki/City_of_Dalaran
+
+City of Dalaran is a Forever-exclusive dungeon, intended for level 28-34 players located in the Alterac Mountains. Quests are available starting at level 24, but the final boss is at level 31, so don't go in early.
+
+
+== Getting there, attunement, and quests ==
+
+The instance line and summoning stone are located at  on the western side of Dalaran, on the western edge of Alterac Mountains, at the sewer grate on the western wall. The instance requires at least one member of the party to have a  [Dalaran Sewer Key] in order to get past the wards blocking the entrance.
+Alliance quests start in Stormwind City and Southshore, directing players to the Image of Archmage Modera at  on the southern shore of Lordamere Lake in Silverpine Forest. She immediately hands over the sewer key.
+Horde quests start in Undercity and Tarren Mill. The Tarren Mill quests lead players to the Image of Modera, where she'll also hand over the key.
+Horde attunement:
+
+ [34] Prison Break In &  [33] Key to the City
+ [35] Dalaran Patrols
+ [34] Blood in the Streets
+ [33D] Heart of Disruption
+ [33] Shrewd Negotiations
+Other dungeon quests:
+
+ [33D] A Green Sample
+ [33] An Alarming Request →  [33D] Heart of Disruption →  [33] Friend of the Kirin Tor
+ [33D] Power Overwhelming
+ [33D] Starving Arcane
+ [33D] Opportunistic Education
+ [33D] Source of Power
+ [33D] The Grave Knight
+
+
+== Encounters ==
+
+Atrexis the Grave Knight
+Arcane Anomaly
+Arcanic Enigma
+Unstable Sentinel
+Mana Devourer
+Fel Ancient
+Lyn the Ignored
+Shade of the Archmage
+
+
+== Loot ==
+
+
+=== Boss drops ===
+
+
+=== Quest rewards ===
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+Wago

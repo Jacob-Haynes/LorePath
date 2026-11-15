@@ -1,0 +1,41 @@
+title: The Greenwarden
+revision: 5586848
+part: whole
+quest: 463
+url: https://warcraft.wiki.gg/wiki/The_Greenwarden
+
+== Objectives ==
+Find the Greenwarden.
+
+
+== Description ==
+You've heard of the Greenwarden? You're not looking for him, are you? Well I say you're crazy if you are, but who am I to keep a fool from his death?
+If you are seeking that beast, then I hear he is in the marsh, east of the road where it forks to Dun Modr. He's lurking there among the crocs...and worse!
+And leave your money here. You won't need it where you're going...and you don't want to chip ol' Greenie's tooth on your gold when he bites you in half, do you?
+
+
+== Completion ==
+The roots and ferns speak well of you, small one. Although I have many names, I answer to only a few. But you may call me Rethiel.
+And you must hearken... for these lands weep from festered wounds, and I would charge you to heal them.
+
+
+== Notes ==
+Rethiel the Greenwarden is at .
+
+
+== Progression ==
+ [21] The Greenwarden
+ [21] Tramping Paws
+ [23] Fire Taboo
+ [26] Blisters on The Land
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.4.0 (2005-04-19): Removed Stormwind Faction reward from the Greenwarden quest line in the Wetlands.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

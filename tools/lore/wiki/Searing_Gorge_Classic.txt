@@ -1,0 +1,7 @@
+title: Searing Gorge (Classic)
+revision: 5782336
+part: intro
+url: https://warcraft.wiki.gg/wiki/Searing_Gorge_%28Classic%29
+
+The Searing Gorge is a contested zone in the Eastern Kingdoms for players in the 43-52 range.  It is home to a group of exceptionally stout dwarves called the Thorium Brotherhood, who have split from the Dark Iron clan.
+For the Alliance, the entrance to the Searing Gorge in Loch Modan is locked until the  [Key to Searing Gorge] is obtained via a quest line that culminates in At Last! (level 48 quest).  However, any Rogue with lockpicking of at least 225 can pick the doors.  An alternate path can be found in the Badlands just south of Kargath. This is the primary Horde entrance, as they have no way of obtaining the key.

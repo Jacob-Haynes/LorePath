@@ -1,0 +1,67 @@
+title: Scarlet Subterfuge
+revision: 6709002
+part: whole
+quest: 5862
+url: https://warcraft.wiki.gg/wiki/Scarlet_Subterfuge
+
+== Objectives ==
+Speak to Myranda to gain the Scarlet Illusion. Travel to Hearthglen while under the Scarlet Illusion and deliver  [Tirion's Gift] to Highlord Taelan Fordring.
+Hearthglen is to the north, Taelan should be inside of Mardenholde Keep. 
+
+ [Tirion's Gift] (Provided)
+
+
+== Description ==
+I am what you would call, an illusionist. Though I may be able to create an illusion to allow you entry into Hearthglen, be warned; my powers have their limitations.
+Should you travel too far from these lands, the effects of the illusion will cease. The spell itself takes a great amount of concentration and power from me, and thus, I can only sustain the effect for a short time.
+Speak to me again when you are ready. 
+
+
+== Rewards ==
+You will receive:
+
+2 97
+4,950 XP
+
+
+== Progress ==
+Are you the reinforcements from Tyr's Hand? 
+
+
+== Completion ==
+What is this, soldier?
+<Taelan opens the box and begins to examine its contents.>
+This... this cannot be true. But all that you have shown me...
+<Taelan falls to one knee, his heartbeat quickens. The fury of ages is about to be loosed upon this town.>
+
+
+== Notes ==
+On completion:
+
+Scarlet Cavalier says: Highlord Fordring, are you alright?
+Scarlet Cavalier says: Sir?
+Scarlet Cavalier says: What the...
+Scarlet Cavalier says: Hey, what's going on over there? Sir, are you alright? Sir??
+Scarlet Cavalier says: Something is wrong with the Highlord. Do something!
+Highlord Taelan Fordring yells: NOOOOOOOOOOOO!
+
+
+== Progression ==
+ [56] Redemption
+ [57] Of Forgotten Memories
+ [58] Of Lost Honor
+ [58] Of Love and Family
+ [60D] Of Love and Family
+ [60] Find Myranda
+ [60] Scarlet Subterfuge
+ [60G] In Dreams
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

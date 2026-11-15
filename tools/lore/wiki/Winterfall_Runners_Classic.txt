@@ -1,0 +1,53 @@
+title: Winterfall Runners (Classic)
+revision: 5636252
+part: whole
+quest: 5087
+url: https://warcraft.wiki.gg/wiki/Winterfall_Runners_%28Classic%29
+
+== Objectives ==
+Find the Winterfall Runners and stop them from delivering their shipment to Winterfall Village. 
+
+ [Winterfall Crate]
+
+
+== Description ==
+Very interesting, <name>...
+When this toxic substance is mixed with the water from the hot springs, it loses its toxicity, only retaining the ability to temporarily affect those that ingest it. This must be why the Winterfall protect the hot springs so fervently—they need them to purify their firewater.
+We need to stop this—cut off contact between the Winterfall and the Deadwood. A group of runners walks the distance between their village and Felwood. Find and defeat them, and steal their shipment. 
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+6000 XP (or 36 at level 70)
++250 reputation with Everlook
+
+
+== Progress ==
+We'll see what happens when the Winterfall don't get their firewater!
+
+
+== Completion ==
+<Donova examines the contents of the crate.>
+I wonder if consuming this substance makes the furbolg more aggressive. They do seem much larger...
+
+
+== Progression ==
+ [56] Winterfall Firewater
+ [56] Falling to Corruption
+ [56] Mystery Goo
+ [56] Toxic Horrors
+ [57] Winterfall Runners
+ [59] High Chief Winterfall
+ [59] The Final Piece
+ [59] Words of the High Chief
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

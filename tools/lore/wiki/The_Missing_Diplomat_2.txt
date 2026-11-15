@@ -1,0 +1,74 @@
+title: The Missing Diplomat (2)
+revision: 6389821
+part: whole
+quest: 1241
+url: https://warcraft.wiki.gg/wiki/The_Missing_Diplomat_%282%29
+
+This quest is part of the quest chain The Missing Diplomat.
+
+
+== Objectives ==
+Find Jorgen in Stormwind City.
+
+ [Letter to Jorgen] (provided)
+
+
+== Description ==
+Recently a diplomat was sent to Theramore to meet with Jaina Proudmoore. That diplomat never arrived.
+I believe the Defias are involved in this plot, but I'm not sure how. The diplomat's disappearance still eludes public attention, but it can't remain that way for long.
+Agents of the king are already scouring the city for clues, but I have my own contacts I would like involved.
+In the Valley of Heroes is an old friend of mine named Jorgen. Find him, give him this note, and follow his instructions.
+
+
+== Rewards ==
+You will receive:
+
+230 XP (or 1 50 at max level)
++25 reputation with Stormwind
+
+
+== Progress ==
+Hmph, you better have good reason to interrupt a man and his fishin'. I don't take kindly to peddlers, let alone beggars.
+
+
+== Completion ==
+Hmm... <Jorgen looks up at you through squinted eyes.>
+All right. I'll help ya, but not because I want to, but because I'm obligated.
+And let's get one thing straight: you're knowin' far more than you should to begin with. Let's keep this our little secret, and don't go blabbin' at any taverns about anything you find out. Understand?
+
+
+== Notes ==
+Jorgen is found in that seldom-explored area of Stormwind just inside the front gates.
+This quest introduces you to more of the Stormwind intrigue you may have seen in the Defias Brotherhood and the Lescovar Incident.
+
+
+== Progression ==
+This is the quest chain The Missing Diplomat.
+
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [30] The Missing Diplomat
+ [30] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [35] The Missing Diplomat
+ [36] The Missing Diplomat
+ [38] The Missing Diplomat
+ [38] The Missing Diplomat
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

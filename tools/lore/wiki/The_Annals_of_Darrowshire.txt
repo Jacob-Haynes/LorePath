@@ -1,0 +1,79 @@
+title: The Annals of Darrowshire
+revision: 6291681
+part: whole
+quest: 5154
+url: https://warcraft.wiki.gg/wiki/The_Annals_of_Darrowshire
+
+This quest is part of the Rewriting the Battle of Darrowshire quest chain (Classic).
+
+
+== Objectives ==
+Bring the Annals of Darrowshire to Chromie in Andorhal. 
+
+ [Annals of Darrowshire]
+
+
+== Description ==
+To save Joseph Redpath, we must first discover his past. We can learn this in the Annals of Darrowshire, a book held in the city hall of Andorhal.
+Bring me that book. We can then learn Joseph's fate, and with luck... change it!
+
+
+== Rewards ==
+You will receive:
+
+5800 XP (or 34 50 at level 70)
+
+
+== Progress ==
+Did you find the book, <name>?
+
+
+== Completion ==
+Well done, you found it!
+Did you read it? Is Joseph Redpath mentioned? If he is, then perhaps we can save him!
+Ah. The Annals of Darrowshire tell a very unsettling tale. It says that during the battle, Joseph Redpath was corrupted and joined the ranks of the Scourge! He then betrayed the defenders of Darrowshire.
+That is an ill fate. If we can, we should try to change that fate, don't you think?
+
+
+== Notes ==
+The book you are looking for is a random spawn among the book in the building.  You can distinguish the real book from the trapped fakes by:
+
+viewed from the side, the real book has pages all of one color
+the pages of the fake books have two separate colors
+the real book has a very faint X on the spine.
+Your video settings may need to be turned up in order to spot these differences.
+The real book may not be initially present. The spawns are random, and it is possible that none of the tomes in the building are the "real one". In this case, you will need to take the trapped Musty Tomes until the real book appears at one of the spawn points.
+
+Upon completing
+
+Chromie says: Let's find out the whole story. That's going to take some magic....
+Chromie says: There, it is done. The book has been enhanced...
+
+
+== Progression ==
+ [55] Little Pamela or  [55] Sister Pamela
+ [55] Pamela's Doll
+Complete both:
+ [56] Auntie Marlene
+ [56] A Strange Historian
+ [56] The Annals of Darrowshire
+ [56] Uncle Carlin
+ [55] Defenders of Darrowshire
+ [56] Brother Carlin
+All of the following, in any order:
+ [57] Villains of Darrowshire
+ [56] Heroes of Darrowshire
+ [60] Marauders of Darrowshire
+ [60] Return to Chromie
+ [60] The Battle of Darrowshire
+ [60] Hidden Treasures
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

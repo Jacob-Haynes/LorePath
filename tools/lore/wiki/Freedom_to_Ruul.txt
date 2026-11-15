@@ -1,0 +1,47 @@
+title: Freedom to Ruul
+revision: 6291707
+part: whole
+quest: 6482
+url: https://warcraft.wiki.gg/wiki/Freedom_to_Ruul
+
+== Objectives ==
+Escort Ruul, then speak with Yama Snowhoof in Splintertree Post.
+
+Escort Ruul from the Thistlefurs.
+
+
+== Description ==
+Eh? Who are you?
+<Name>? You're no furbolg. They are cursed! They thought I was a bear and captured me, and now they starve me! My strength is failing...
+Help me escape, then speak with my sister Yama at the Splintertree Post to the east.
+<Name>! I must escape!
+
+
+== Rewards ==
+You will receive:
+
+17
+2400 XP (or 14 40 at max level)
++350 reputation with Thunder Bluff
+
+
+== Progress ==
+Have you seen my brother Ruul? He walked into the forest days ago and has not returned... 
+
+
+== Completion ==
+You found my brother! He was captured by the Thistlefurs? That is terrible news to hear, for although many furbolgs are noble creatures, the Thistlefurs are corrupt.
+Thank you for rescuing my brother, <name>. I do not want to think of how they treated poor Ruul. He will likely sleep long after this ordeal...
+
+
+== Notes ==
+Upon accept, Ruul exits his cage and begins walking out of the hold. If the player manages to protect him from the furbolgs, he eventually reaches the outskirts of the post, where he briefly transforms into tauren form to extend his thanks:
+
+Ruul Snowhoof says: Thank you for freeing me. Speak with my sister in Splintertree. I... I must find a place to rest...
+He then returns to bear form before running off and disappearing.
+
+
+== External links ==
+
+Wowhead
+WoWDB

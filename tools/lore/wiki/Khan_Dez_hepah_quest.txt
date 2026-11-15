@@ -1,0 +1,43 @@
+title: Khan Dez'hepah (quest)
+revision: 5637311
+part: whole
+quest: 1365
+url: https://warcraft.wiki.gg/wiki/Khan_Dez%27hepah_%28quest%29
+
+== Objectives ==
+Bring Khan Dez'hepah's Head to Felgur Twocuts in Desolace.
+
+ [Khan Dez'hepah's Head]
+
+
+== Description ==
+The Kolkar are not the only centaur of Desolace. Many clans wander these dry plains, fighting and dying against each other. And it is good that they fight among themselves, for they are strong and brutal. If the centaur united against us, they would be a fierce foe.
+We must deal with them before they unite.
+Your first task is to disrupt the Kolkar clan. Do this by killing its leader, Khan Dez'hepah.
+The Kolkar Village is northeast of here. Go, and may fortune go with you.
+
+
+== Rewards ==
+You will receive:
+
+3450 XP (or 21 at level 70)
++350 reputation with Orgrimmar
+
+
+== Progress ==
+<Name>, have you defeated Khan Dez'hepah?
+
+
+== Completion ==
+Well done.  This swift act against the Kolkar is an effective show of strength, and strength is what the centaur understand best.
+The death of the Kolkar leader will not only disrupt that clan, but give pause to the others.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

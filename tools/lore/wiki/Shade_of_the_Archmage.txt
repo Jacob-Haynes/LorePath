@@ -1,0 +1,36 @@
+title: Shade of the Archmage
+revision: 6952384
+part: whole
+url: https://warcraft.wiki.gg/wiki/Shade_of_the_Archmage
+
+The Shade of the Archmage is the last boss in the City of Dalaran instance, found at the Purple Parlor atop the Violet Citadel.
+
+
+== Abilities ==
+ Arcane Bolt — Inflicts 15 to 19 Arcane damage to an enemy.
+ Arcane Explosion — Sends out a blast wave of magic, inflicting 9 to 11 Arcane damage to nearby enemies.
+ Bounding Mana — Launches a mana infused orb toward a random player that travels out and returns to its origin. Players hit are inflicted with 285 to 315 Arcane damage.
+ Evocation — While channeling this spell, your mana regenerates at an accelerated rate.
+ Mass Polymorph — Transforms nearby enemies into an animal, forcing it to wander around for up to 8 sec. While wandering, they cannot attack or cast spells.
+ Slow — Increases the time between nearby enemies' attacks by 30% and slows their movement and casting speed by 70% for 3 sec.
+
+
+== Drops ==
+
+
+== Objective of ==
+Drops Arcane Mote for  [33D] Heart of Disruption.
+
+
+== Criteria of ==
+ [Experienced Spelunker]
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

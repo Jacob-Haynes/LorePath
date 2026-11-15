@@ -1,0 +1,69 @@
+title: Betrayed (4)
+revision: 6858199
+part: whole
+quest: 3507
+url: https://warcraft.wiki.gg/wiki/Betrayed_%284%29
+
+In the final step of Betrayed, you need simply deliver the  [Head of Magus Rimtori] to Belgrom Rockmaul in Orgrimmar. This is the last quest of the chain.
+
+
+== Objectives ==
+Speak to Belgrom Rockmaul in Orgrimmar.
+
+ [Head of Magus Rimtori] (provided)
+
+
+== Description ==
+Return to Belgrom in Orgrimmar. He will want to see her head for himself! We'll return there shortly.
+Ah, this is indeed a good day. Thank you for your help, <name>.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Pyrestone Orb]
+ [Belgrom's Hammer]
+You will also receive:
+
+7,300 XP / 10,215 XP (Season of Mastery)
++150 reputation with Orgrimmar
+
+
+== Progress ==
+I remember you, <class>. I asked you to go to Azshara to destroy that elf that betrayed me! That seems like many moons ago. Don't tell me that Ag'tor and the others are dead also!
+
+
+== Completion ==
+Thank you, <name>. Thank you from the bottom of my heart! This is indeed a great day!
+I would give you a kingdom if it were in my power! But perhaps you will settle for this.
+<Belgrom looks down into the sack.>
+You should never have betrayed Belgrom!
+
+
+== Notes ==
+In 2022, the quest was updated in Classic servers:
+
+"to destroy that wench" changed to "to destroy that elf"
+Original completion paragraph:
+HAHA! Look at you now, pathetic woman! I spit on your remains!
+Thank you, <name>. Thank you from the bottom of my heart! This is indeed a great day!
+I would give you a kingdom if it were in my power! But perhaps you will settle for this.
+<Belgrom looks down at the head of the mage who had betrayed him.>
+Haha! Stupid blood elf, look at you now... in a burlap sack and missing your body! You should never have betrayed Belgrom!
+
+
+== Progression ==
+ [53] Betrayed
+ [53] Betrayed
+ [56] Betrayed
+ [56] Betrayed
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

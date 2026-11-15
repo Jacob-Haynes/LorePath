@@ -1,0 +1,62 @@
+title: The Swarm Grows (3)
+revision: 6230341
+part: whole
+quest: 1147
+url: https://warcraft.wiki.gg/wiki/The_Swarm_Grows_%283%29
+
+The Swarm Grows (3) is Horde quest in which players must kill silithid in Thousand Needles. It is the third quest in a short chain involving the silithid in Thousand Needles, which starts with  [33] The Swarm Grows with Korran at the Crossroads in the Barrens.
+
+
+== Objectives ==
+Kill 5 Silithid Searchers, 5 Silithid Hive Drones, and 5 Silithid Invaders and return to Moktar Krin in Thousand Needles.
+
+Silithid Searchers slain (5)
+Silithid Hive Drones slain (5)
+Silithid Invaders slain (5)
+
+
+== Description ==
+Hmm. Seems Belgrom thinks those monsters are a threat. He wants them pushed back into whatever depths they crawled up out of.
+I guess killing the dwarves sent by the Explorers' League wasn't enough—now I have to send a half-dead war party into another battle. We won't be able to do it ourselves; not while we're in this condition. The dig site's to the south of here. There shouldn't be anymore dwarves to deal with. Feel up to wielding a blade or staff and doing your part to aid us?
+
+
+== Rewards ==
+You will receive:
+
+35
+2,750 XP
++100 or +250 reputation with Orgrimmar
+
+
+== Progress ==
+With the amount of travelers heading out to the Flats for those races, I'm sure we can convince enough adventure seekers to help push back those insects. My party and I won't be able to leave until we do.
+
+
+== Completion ==
+Ha! That ichor you're covered in actually makes you prettier, <name>! It certainly does make you reek at the same time though. Don't stand too close to the kodo; you'll either start a stampede or cause them to go into heat.
+I think my companions would agree that your smell alone is proof you've done your part to help us against those insect creatures. Thank you, <name>.
+
+
+== Notes ==
+This quest can be quite difficult, as the silithid have some special aggro rules that can wipe you out quick if you aren't aware of them. First of all, the area with the silithid is in the south-western part of the Shimmering Flats at the Rustmaul Dig Site, around coordinates (70,83). Here is some info about the different beasties, and hints for defeating them:
+Silithid Searcher: These ones seem to be the easiest, as they don't seem to cause other mobs to aggro you like some of the other types. They are also found outside the cave, unlike the Silithid Invaders.
+Silithid Invader: If close to other mobs and low on health, these have been known to cause other mobs to aggro. The other problem with them is that they are only found inside the cave, where drones are plentiful and dangerous. Sometimes there will only be a few of them in there, kill some drones and more invaders will appear.
+Silithid Hive Drone: These are the most dangerous. Though normally non-hostile, if attacked these mobs aggro everything around them in a surprisingly wide radius. It's best to pull these as far away from other mobs as possible before engaging. They also seem to send out another aggro call when low on health.
+You will pick up a  [Cracked Silithid Carapace] from the first silithid you kill, which begins the quest  [35] Parts of the Swarm - you can complete that quest along with this one.
+Once you have killed all the necessary monsters and have the parts you need for  [35] Parts of the Swarm, head back to Moktar Krin at the Ironstone Camp (coordinates (67,63)).
+
+
+== Progression ==
+ [33] The Swarm Grows
+ [33] The Swarm Grows
+ [35] The Swarm Grows
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

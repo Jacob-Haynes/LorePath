@@ -1,0 +1,45 @@
+title: Kidnapped Elder Torntusk!
+revision: 6030090
+part: whole
+quest: 7845
+url: https://warcraft.wiki.gg/wiki/Kidnapped_Elder_Torntusk%21
+
+== Objectives ==
+Primal Torntusk at Revantusk Village in the Hinterlands wants you to rescue her mate, Elder Torntusk, from Jintha'alor.
+You have been told that he is being held prisoner atop Jintha'alor, the Vilebranch capital city located in the southern region of the Hinterlands.
+
+
+== Description ==
+My mate was taken by Vilebranch savages in a bold midnight raid on our village. Our spies have told me that he is still alive and being held prisoner atop Jintha'alor. The Vile Priestess Hexx is said to be preparing him for a sacrifice to the faceless blood God, Hakkar.
+You must save him, <name>! Our village could not stand a loss this great.
+
+
+== Rewards ==
+You will receive:
+
+7050 XP
+
+
+== Completion ==
+You must act quickly, <name>. Surely the guards have been alerted to your presence.
+
+
+== Notes ==
+Blizzard when making this quest misspelled the name of the village in the objectives calling it Raventusk, rather than Revantusk. Which they fixed later on.
+
+
+== Progression ==
+ [51] Kidnapped Elder Torntusk!
+ [51] Recover the Key!
+ [51] Return to Primal Torntusk
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.5.0 (2005-06-07): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

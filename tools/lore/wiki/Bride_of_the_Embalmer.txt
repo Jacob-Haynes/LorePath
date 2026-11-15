@@ -1,0 +1,70 @@
+title: Bride of the Embalmer
+revision: 6959765
+part: whole
+quest: 253
+url: https://warcraft.wiki.gg/wiki/Bride_of_the_Embalmer
+
+== Objectives ==
+Find Eliza's grave. Retrieve the Embalmer's Heart from her, then return to Ello Ebonlocke.
+
+ [The Embalmer's Heart]
+
+
+== Description ==
+The Embalmer is a name told in one of our children's stories. He was a kindly alchemist, driven mad by the death of his wife, Eliza. To restore her, he used dark magic to place his own heart within the bosom of his dead spouse.
+This revived Eliza...but it cursed her with a hunger for human flesh, forcing the Embalmer to keep her buried.
+His heart is his power. Find his wife's grave, retrieve his heart, and bring it to me while it still beats. Do this and his power will be broken. 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Mantle of Honor]
+ [Darkshire Shoulderguards] 
+You will receive:
+
+3650 XP (or 22 20 at max level)
+ [Crest of Darkshire]
+500 reputation with Darnassus
+500 reputation with Exodar
+500 reputation with Gnomeregan Exiles
+500 reputation with Ironforge
+500 reputation with Stormwind
+
+
+== Progress ==
+Have you yet found Eliza's grave?  Do you have the Embalmer's heart?
+
+
+== Completion ==
+You've done it!  The magic within his heart will be proof against the Embalmer's evil, and a powerful aegis over the town of Darkshire.
+You have done a great thing for our people, <name>.  Your name will remain in our annals forever.
+
+
+== Progression ==
+(Optional breadcrumb)  [25] The Hermit
+ [24] Supplies from Darkshire
+ [24] Ghost Hair Thread
+ [24] Return the Comb
+ [24] Deliver the Thread
+ [24] Zombie Juice
+ [24] Gather Rot Blossoms
+ [24] Juice Delivery
+ [27] Ghoulish Effigy
+ [30] Ogre Thieves
+ [30] Note to the Mayor
+ [30] Translate Abercrombie's Note
+ [30] Wait for Sirra to Finish
+ [30] Translation to Ello
+ [30] Bride of the Embalmer
+ [30] Digging Through the Dirt
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

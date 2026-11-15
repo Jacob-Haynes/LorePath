@@ -1,0 +1,66 @@
+title: The Missing Diplomat (12)
+revision: 6389831
+part: whole
+quest: 1250
+url: https://warcraft.wiki.gg/wiki/The_Missing_Diplomat_%2812%29
+
+This quest is part of the quest chain The Missing Diplomat.
+
+
+== Objectives ==
+Speak to Mikhail in the Wetlands.
+
+
+== Description ==
+The Defias didn't pay me well enough to die for their cause. They took the king. Yeah, the king of Stormwind, not some lowly diplomat. He was on his way to Theramore to meet with Lady Jaina Proudmoore--it was a big deal apparently, and a big secret. But it's not just the Defias that are involved. They're working with someone. I think they knew this was bigger than them.
+My part was just to get their man on board the king's ship while it was in the harbor. The guy's name was Hendel. That's all I know. I swear!
+
+
+== Rewards ==
+You will receive:
+
+270 XP (or 1 50 at max level)
++75 reputation with Stormwind
+
+
+== Completion ==
+THE KING?! I mean... the king? The real king? Are you joking? You didn't mention you were looking for the king's kidnappers. I didn't even hear he was missing—that would explain his son being crowned some.
+I'll send word to Elling right away. He'll want to know you're on the trail.
+I would never have guessed Jahn would sell out Stormwind for some lousy coin. Even a rogue's got to have honor when it comes to some things.
+The key now is to find this Hendel. And I think I can help with that.
+
+
+== Notes ==
+Up to patch 1.9, Varian Wrynn, the king of Stormwind, had been discovered on Alcaz Island in Dustwallow Marsh. No quest involved him, and he was replaced during patch 1.10. See this page for more details.
+
+
+== Progression ==
+This is the quest chain The Missing Diplomat.
+
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [30] The Missing Diplomat
+ [30] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [35] The Missing Diplomat
+ [36] The Missing Diplomat
+ [38] The Missing Diplomat
+ [38] The Missing Diplomat
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

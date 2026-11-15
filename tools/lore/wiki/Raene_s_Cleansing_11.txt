@@ -1,0 +1,71 @@
+title: Raene's Cleansing (11)
+revision: 6957248
+part: whole
+quest: 1046
+url: https://warcraft.wiki.gg/wiki/Raene%27s_Cleansing_%2811%29
+
+This is the final quest in the Raene's Cleansing quest chain.
+It used to be that this part of the chain was often declined by alliance players wishing to keep their furbolg form, as the quest required you to give up  [Dartol's Rod of Transformation], which is often considered the main reason for doing the chain.  However, in the most recent patches, players keep the rod after the quest is over.
+
+
+== Objectives ==
+Bring Ran Bloodtooth's Skull to Raene Wolfrunner in Astranaar.
+
+ [Ran Bloodtooth's Skull] (provided)
+
+
+== Description ==
+Return to your own tribe and let them know of your victory here.
+Show them your trophy, and bask in the glory...
+
+
+== Rewards ==
+You will be able to choose one of these rewards: 
+
+ [Glacial Stone]
+ [Gutterblade]
+You will also receive:
+
+3050 XP
++350 reputation with Darnassus
+ [Ring of Pure Silver]
+ [Replica Dartol's Rod of Transformation] 
+
+
+== Progress ==
+The Sentinels do what they can here in Ashenvale, but it's thanks to <race>s like you that we have gained the ground we have.
+
+
+== Completion ==
+So, this is the skull of the fiercest furbolg threat in Ashenvale?
+I am more than pleased with your abilities, <name>. The Sentinels cannot thank you enough. I hope we can rely on you again in the future to help our people.
+I shall put this skull and Dartol's Rod in a place of reverence for others to see.
+Teronis would be proud. Thank you again.
+
+
+== Progression ==
+This is the Raene's Cleansing quest chain.
+
+ [19] Raene's Cleansing
+ [21] Raene's Cleansing
+ [21] Raene's Cleansing
+ [27] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [30] Raene's Cleansing
+ [30] Raene's Cleansing
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 3.1.0 (2009-04-14):  [Dartol's Rod of Transformation] removed as an objective.
+Completing this quest will no longer take the rod from your inventory.
+
+
+== External links ==
+
+Wowhead
+WoWDB

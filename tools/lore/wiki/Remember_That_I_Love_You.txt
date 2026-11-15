@@ -1,0 +1,52 @@
+title: Remember That I Love You
+revision: 6932910
+part: whole
+quest: 92415
+url: https://warcraft.wiki.gg/wiki/Remember_That_I_Love_You
+
+== Objectives ==
+Bring the Blood-Stained Letter to Orphan Matron Nightingale in Stormwind City.
+
+Blood-Stained Letter (provided)
+
+
+== Description ==
+<A torn and stained bundle of parchment has barely survived the undead trodden grounds of the graveyard. It mentions a missing child of the Heartweaver family. Perhaps the orphan matron in Stormwind City will know more.>
+
+
+== Rewards ==
+You will receive:
+
+6,200 XP
+
+
+== Progress ==
+What is it, <name>? What are you looking for?
+
+
+== Completion ==
+Heartweaver? Heartweaver...
+Oh! Little Jeremy Heartweaver. He was brought in years ago after the attack on Lordaeron. Lost both of his parents in the attack, poor thing.
+He was actually adopted not too long ago by a sweet woman out in Duskwood.
+
+
+== Progression ==
+ [21D] Abominable Creatures
+ [22D] A Frightened Request
+ [22D] Bloodied Insignia
+ [22D] Crest of Lordaeron
+ [22D] Light's Justice
+ [22D] Remember That I Love You →  [22] Remember That I Love You
+ [22D] The New Plague
+ [22D] The Wrath of Rath'mael
+ [21D] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment
+
+
+== Patch changes ==
+ Patch 1.60.1 (Beta): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

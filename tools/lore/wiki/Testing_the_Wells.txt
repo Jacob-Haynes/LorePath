@@ -1,0 +1,61 @@
+title: Testing the Wells
+revision: 6881830
+part: whole
+quest: 92742
+url: https://warcraft.wiki.gg/wiki/Testing_the_Wells
+
+== Objectives ==
+Use the Well Water Sample Kit to collect samples from the wells at the Jansen Stead and the Molsen Farm.
+
+Jansen Stead Water Sample
+Molsen Farm Water Sample
+Well Water Sample Kit (provided)
+
+
+== Description ==
+We must determine the source and nature of the poison corrupting this land. Let us begin with the groundwater under the farms in the area.
+Go to the Jansen Stead and the Molsen Farm, and collect samples from the wells there.
+
+
+== Rewards ==
+You will receive:
+
+2 50
+460 XP
++50 reputation with Stormwind
+
+
+== Progress ==
+...
+
+
+== Completion ==
+...
+
+
+== Notes ==
+...
+
+
+== Progression ==
+ [12] Testing the Wells
+ [12] Murloc Gills
+ [14] The State of the Mines
+ [16] Moonbrook Espionage
+ [16] Explosive Consultation
+ [16] A Dynamite Plan
+ [16] Detonation at a Distance
+ [16] Detonation at a Distance
+ [16] Explosive Consultation
+ [18D] Destruction in Deadmines
+ [18] Destruction in Deadmines
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,6 @@
+title: Feathermoon Stronghold
+revision: 6549803
+part: intro
+url: https://warcraft.wiki.gg/wiki/Feathermoon_Stronghold
+
+Feathermoon Stronghold, also known as New Feathermoon, is a kaldorei port located on the Forgotten Coast in Feralas. It was built after the Shattering as a replacement for the original, now destroyed stronghold located on Sardor Isle, which has been renamed the Ruins of Feathermoon. The fortress has a moonwell within and is under the command of General Shandris Feathermoon.

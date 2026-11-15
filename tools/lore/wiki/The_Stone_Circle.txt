@@ -1,0 +1,49 @@
+title: The Stone Circle
+revision: 6177052
+part: whole
+quest: 3444
+url: https://warcraft.wiki.gg/wiki/The_Stone_Circle
+
+The Stone Circle is the 2nd quest in the The Sunken Temple quest chain.
+
+
+== Objectives ==
+Retrieve the Stone Circle from Marvon Rivetseeker's workshop in Ratchet.
+
+ [Stone Circle]
+
+
+== Description ==
+I once entered the foreboding chambers of the Sunken Temple. The evil in that place penetrates all that enter; I barely managed to find my way out, wading through the ooze that now covers the floors. All I can remember is stumbling through a large circular room, filled with serpent statues...
+Recently, I discovered a round stone that appeared to have the same serpent symbol imprinted on it. I had it packed up and shipped to my workshop in Ratchet. Retrieve it, and I might be able to tell you more.
+
+
+== Rewards ==
+You will receive:
+
+7050 XP (or 42 at max level)
+
+
+== Progress ==
+Ratchet is not far from here, <name>. The journey shouldn't take long.
+
+
+== Completion ==
+Yes... This is the stone.
+It's all coming back to me now, <name>...
+
+
+== Progression ==
+ [51D] The Sunken Temple
+ [51] The Stone Circle
+ [51D] Into the Depths &  [51D] Secret of the Circle
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

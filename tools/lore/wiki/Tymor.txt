@@ -1,0 +1,6 @@
+title: Tymor
+revision: 6577170
+part: intro
+url: https://warcraft.wiki.gg/wiki/Tymor
+
+Tymor is a dwarf quest giver located in the Mystic Ward in Ironforge. He is a student of the arcane magic and arts, and took interest in the history of the Azshara region. Xiggs Fuselighter owns him a favor or two.

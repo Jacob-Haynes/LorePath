@@ -1,0 +1,48 @@
+title: Stop the Spread (Forever)
+revision: 6977179
+part: whole
+quest: 98299
+url: https://warcraft.wiki.gg/wiki/Stop_the_Spread_%28Forever%29
+
+== Objectives ==
+Slay 5 Sickly Refugees and 5 Haggard Refugees for Dalar Dawnweaver in The Sepulcher.
+
+Haggard Refugee slain (5)
+Sickly Refugee slain (5)
+
+
+== Description ==
+If there is one thing we do know, it is that Arugal is responsible for worgen within Silverpine--be it his own machinations or otherwise. What we don't know is how it spreads.
+While I research a way to stop the curse, our first priority is to contain it. It appears this affliction cannot infect forsaken, but a large group of humans have gathered by the Greymane Wall.
+Go to the wall and put down these refugees before they have a chance to become servants for Arugal. And try not to get bit, <race>.
+
+
+== Rewards ==
+You will receive:
+
+12
+1,550 XP
++100 reputation with Undercity
+
+
+== Progress ==
+An army of sickly refugees is hardly a concern. A fresh crop of worgen beasts is a different matter. Go reduce their numbers before we are overrun.
+
+
+== Completion ==
+It seems the Gilneans are not too keen on allowing anyone past their wall. That is fortunate, I suppose. It means there is likely no chance for the worgen curse to spread to their city.
+Can you imagine the depravity if an entire kingdom were infected?
+
+
+== Progression ==
+...
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,60 @@
+title: The Green Hills of Stranglethorn (Classic)
+revision: 6958671
+part: whole
+quest: 338
+url: https://warcraft.wiki.gg/wiki/The_Green_Hills_of_Stranglethorn_%28Classic%29
+
+== Objectives ==
+Collect the missing pages from The Green Hills of Stranglethorn manuscript. Once all four chapters are complete, return them to Barnil.
+
+ [Green Hills of Stranglethorn - Chapter I]
+ [Green Hills of Stranglethorn - Chapter II]
+ [Green Hills of Stranglethorn - Chapter III]
+ [Green Hills of Stranglethorn - Chapter IV]
+
+
+== Description ==
+Master Nesingwary will be so upset if he finds out!
+He trusted me to proofread the manuscript of his novel, The Green Hills of Stranglethorn. Everything was going well, but a large gust of wind blew through the camp and scattered the pages everywhere!
+I was able to gather most of the pages but many are still strewn about the jungle. Collect the pages to complete each of the four chapters.
+I will help you organize them. Return the chapters to me once you have all four.
+
+
+== Rewards ==
+
+You will also receive:
+
+4,700 XP
+
+
+== Progress ==
+Have you assembled the chapters yet, <name>?
+
+
+== Completion ==
+You've certainly saved me a heap of trouble, <name>! I can't thank you enough. It shouldn't be long now until we see Master Nesingwary's book in libraries throughout the world!
+
+
+== Trivia ==
+The Green Hills of Stranglethorn is a common quest card in the TCG.
+
+
+== Progression ==
+ [30] Welcome to the Jungle
+ [40] The Green Hills of Stranglethorn
+ [40] Chapter I — pages 1, 4, 6, 8
+ [40] Chapter II — pages 10, 11, 14, 16
+ [40] Chapter III — pages 18, 20, 21, 24
+ [40] Chapter IV — pages 25, 26, 27
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed; replaced by  [10-30] The Green Hills of Stranglethorn.   
+ Patch 1.3.0 (2005-03-07): Fixed an issue with the Green Hills of Stranglethorn quest. If players destroy one of the chapters, Barnil will now help them relocate it.   
+ Patch 1.2.0 (2004-12-18): Now rewards different items; previous reward was  [Olmann Sewar].   
+
+
+== External links ==
+
+Wowhead
+WoWDB

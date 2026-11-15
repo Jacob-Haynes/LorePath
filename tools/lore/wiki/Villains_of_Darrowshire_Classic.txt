@@ -1,0 +1,64 @@
+title: Villains of Darrowshire (Classic)
+revision: 5723699
+part: whole
+quest: 5181
+url: https://warcraft.wiki.gg/wiki/Villains_of_Darrowshire_%28Classic%29
+
+Villains of Darrowshire is part of the Rewriting the Battle of Darrowshire quest chain (Classic).
+
+
+== Objectives ==
+Bring the Skull of Horgus and the Shattered Sword of Marduk to Carlin Redpath at Light's Hope Chapel.
+
+ [Skull of Horgus]
+ [Shattered Sword of Marduk]
+
+
+== Description ==
+The Annals of Darrowshire tells of the villains of that battle. It tells how the ghoul lord Horgus the Ravager was destroyed by Alliance forces during the battle. His body was cast into a lake, northwest of Corin's Crossing, and his skull remains there.
+Marduk the Black was never defeated, but his fabled sword was shattered and lost. It lies at the bottom of the gorge west of Corin's Crossing.
+Retrieve these items, <name>. I know not why, but I am certain their fate lies with you.
+
+
+== Rewards ==
+You will receive:
+
+8,730 XP
+
+
+== Progress ==
+Did you find the skull and the sword, <name>?
+
+
+== Completion ==
+You found them!  Well done, <name>!  These relics hold a power I do not fully understand, a power you will one day harness.
+They also bring dark memories to my mind, memories of death and treachery, and of the last night of Darrowshire...
+
+
+== Progression ==
+ [55] Little Pamela or  [55] Sister Pamela
+ [55] Pamela's Doll
+Complete both:
+ [56] Auntie Marlene
+ [56] A Strange Historian
+ [56] The Annals of Darrowshire
+ [56] Uncle Carlin
+ [55] Defenders of Darrowshire
+ [56] Brother Carlin
+All of the following, in any order:
+ [57] Villains of Darrowshire
+ [56] Heroes of Darrowshire
+ [60] Marauders of Darrowshire
+ [60] Return to Chromie
+ [60] The Battle of Darrowshire
+ [60] Hidden Treasures
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed, replaced with a new version.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

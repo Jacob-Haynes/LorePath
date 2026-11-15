@@ -1,0 +1,41 @@
+title: Alliance Relations (3)
+revision: 5995174
+part: whole
+quest: 1433
+url: https://warcraft.wiki.gg/wiki/Alliance_Relations_%283%29
+
+== Objectives ==
+Speak to Maurin Bonesplitter in Desolace. 
+
+
+== Description ==
+The Burning Blade have many agendas, but know that they are evil to their core, their spirits corrupted, and their destruction is the only way to thwart their objectives.
+Keldran sent Maurin with me because of his knowledge of the Blade and their warlock ways.
+He has control of our plots against the Blade while I deal with the other demonic threats here in Desolace.
+Speak to him, and he will guide you in his designs. 
+
+
+== Completion ==
+Ah, yes. Aid from those loyal to the Warchief is always appreciated.
+My name is Maurin. I am here at the behest of Keldran and the Warchief cub Thrall. It is my desire to aid the youngling leader against the evils that threaten his rule.
+Come, come closer, <class>. I shall explain to you my plan for removing the festering boil that is the Burning Blade.
+
+
+== Progression ==
+ [30] Alliance Relations
+ [30] Alliance Relations
+ [33] Alliance Relations
+Complete both to continue:
+ [33] The Burning of Spirits
+ [33] Befouled by Satyr
+ [33] Alliance Relations
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

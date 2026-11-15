@@ -1,0 +1,54 @@
+title: A Husband's Revenge
+revision: 6347387
+part: whole
+quest: 530
+url: https://warcraft.wiki.gg/wiki/A_Husband%27s_Revenge
+
+== Objectives ==
+Kill Valdred Moray.
+Bring his hands to Raleigh Andrean in the Undercity.
+
+ [Valdred's Hands]
+
+
+== Description ==
+Valdred, once my good friend, was my wife's murderer. Although I am incapable of grieving, I do yearn for revenge. If you kill Valdred and bring me his cursed hands, then I will reward you.
+I last heard he was at the Greymane Wall in southern Silverpine, trying to flee into the kingdom of Gilneas.
+
+
+== Reward ==
+You will receive:
+
+12
+1550 XP (or 9 60 at max level)
++100 or +250 reputation with Undercity
+ [Ring of Scorn]
+
+
+== Progress ==
+Do you have those hands, <name>?
+
+
+== Completion ==
+Ah, good.  These hands killed my wife, Deliah.  Revenge for her murder was my only care, and you were the instrument of that revenge.
+Here, take the ring you returned earlier.  Deliah has been dead to me for so long, her ring is a bauble I no longer care to keep.  Instead, I will keep these hands as a remembrance of my friend's betrayal.
+
+
+== Notes ==
+Valdred can be found at .
+
+
+== Progression ==
+ [16] The Engraved Ring
+ [16] Raleigh and the Undercity
+ [20] A Husband's Revenge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

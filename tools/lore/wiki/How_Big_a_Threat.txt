@@ -1,0 +1,64 @@
+title: How Big a Threat?
+revision: 6595147
+part: whole
+quest: 984
+url: https://warcraft.wiki.gg/wiki/How_Big_a_Threat%3F
+
+== Objectives ==
+Find a corrupt furbolg camp in Darkshore and return to Terenthis in Auberdine.
+
+Find a corrupt furbolg camp
+
+
+== Description ==
+Some of my brethren were rescued from a corrupt furbolg in Teldrassil, and I've vowed to stop any more atrocities before more of our kind are injured... or worse.
+I have seen a couple hints of corruption in Darkshore already, but I have yet to find any widespread signs. I think it would be logical if the investigation continued with the furbolgs. Would you find one of their camps, and return to me if you see any signs of corruption?
+
+
+== Rewards ==
+You will receive:
+
+750 XP (or 4 50 at max level)
++150 reputation with Darnassus
+
+
+== Progress ==
+How goes your search, <name>?
+
+
+== Completion ==
+This is terrible news indeed, <name>.
+With the furbolgs this close to Auberdine, we will have to prepare ourselves for the inevitable.
+Thank you, <name>.
+
+
+== Notes ==
+Looking at one's map, the camp is slightly north of the 'm' in 'Ameth 'Aran'
+
+
+== Progression ==
+
+ [14] How Big a Threat?
+The questline branches in two:
+
+Terenthis:
+ [14] How Big a Threat?
+ [20] A Lost Master
+ [20] A Lost Master
+ [20] Escape Through Stealth or [22] Escape Through Force
+ [19] Trek to Ashenvale
+
+Thundris Windweaver:
+ [15] Thundris Windweaver
+ [15] The Cliffspring River
+ [18] The Blackwood Corrupted
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

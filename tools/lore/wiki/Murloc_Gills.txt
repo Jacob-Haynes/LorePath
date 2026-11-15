@@ -1,0 +1,59 @@
+title: Murloc Gills
+revision: 6881829
+part: whole
+quest: 92744
+url: https://warcraft.wiki.gg/wiki/Murloc_Gills
+
+== Objectives ==
+Alba Fairmoon wants you to collect 7 Longshore Murloc Gills along the shoreline of Westfall.
+
+Longshore Murloc Gill (7)
+
+
+== Description ==
+The corruption affecting Westfall's crops may have seeped into the ocean as well. If the local fish are affected too, it could doom Stormwind to famine.
+Collect gills from the murlocs along the shoreline and bring them to me. Murlocs are quite hardy, but their physiology is extremely sensitive to contaminants. Any toxins in the seawater will be readily apparent in the gills you find.
+
+
+== Rewards ==
+You will receive:
+
+2 50
+460 XP
++50 reputation with Stormwind
+
+
+== Progress ==
+...
+
+
+== Completion ==
+...
+
+
+== Notes ==
+...
+
+
+== Progression ==
+ [12] Testing the Wells
+ [12] Murloc Gills
+ [14] The State of the Mines
+ [16] Moonbrook Espionage
+ [16] Explosive Consultation
+ [16] A Dynamite Plan
+ [16] Detonation at a Distance
+ [16] Detonation at a Distance
+ [16] Explosive Consultation
+ [18D] Destruction in Deadmines
+ [18] Destruction in Deadmines
+
+
+== Patch changes ==
+ Patch 1.60.1 (Beta): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

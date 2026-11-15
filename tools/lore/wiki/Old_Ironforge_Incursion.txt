@@ -1,0 +1,66 @@
+title: Old Ironforge Incursion
+revision: 6912205
+part: whole
+quest: 96393
+url: https://warcraft.wiki.gg/wiki/Old_Ironforge_Incursion
+
+Old Ironforge Incursion concludes the attunement quests to the Hall of Thanes in Ironforge during Forever. To begin the quest chain, find Beldin Steelgrill outside Kharanos to start  [13] A Visitor to Dun Morogh.
+
+
+== Objectives ==
+Enter the Hall of Thanes beneath Old Ironforge and claim the Head of Durgen Dirgehammer.
+
+Durgen Dirgehammer's Head
+
+
+== Description ==
+Gather some allies and head down into the caverns beneath Old Ironforge. Enter the Hall of Thanes there and push to the lower vaults. 
+My Dark Iron is a bit rusty, but I can make out a name--one Durgen Dirgehammer. It's likely that he's the commander. Take his head and deliver it to King Magni Bronzebeard. 
+Oh, and when you do, tell him his old friend Farsen sends his regards!
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Calibrated Blunderbuss]
+ [Ironforge Greathammer]
+ [Deepblaze]
+You will also receive:
+
+8
+3,200 XP
++100 reputation with Ironforge
++100 reputation with Gnomeregan Exiles
+
+
+== Progress ==
+What do ye need, citizen?
+
+
+== Completion ==
+A Dark Iron incursion--right beneath our feet? Well, I'm relieved to hear that the Dark Iron commander has been dispatched.
+The guards will head in and clean up the rest of the rabble. We'll see to it that the breaches are sealed and the lower levels reinforced to ensure that no further incursions are possible.
+Thank ye for yer service to Ironforge,<class>. Take this as a small token of my gratitude. Oh, and if ye see that old Wildhammer rockhugger Farsen again, tell 'em to pay me a proper visit.
+
+
+== Progression ==
+ [13] A Visitor to Dun Morogh (optional breadcrumb)
+ [13] Farsen's Watch
+ [13] Nip 'Em in the Bud
+ [15] Underground Map
+ [16D] Old Ironforge Incursion
+Dungeon quests
+ [15D] Important Heirlooms
+ [15D] The Restless Dead
+ [15D] An Ancient Grudge
+ [16] The Treaty of Understanding
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

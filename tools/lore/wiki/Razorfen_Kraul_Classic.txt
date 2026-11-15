@@ -1,0 +1,6 @@
+title: Razorfen Kraul (Classic)
+revision: 6834204
+part: intro
+url: https://warcraft.wiki.gg/wiki/Razorfen_Kraul_%28Classic%29
+
+Razorfen Kraul is the ancestral home of the quilboar, heavily entrenched within the thorns that supposedly sprang from the corpse of the demigod Agamaggan. It is found in the Southern Barrens, at the far southern edge, west side.

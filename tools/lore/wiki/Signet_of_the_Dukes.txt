@@ -1,0 +1,50 @@
+title: Signet of the Dukes
+revision: 5612117
+part: whole
+quest: 8348
+url: https://warcraft.wiki.gg/wiki/Signet_of_the_Dukes
+
+== Objectives ==
+Bring the Abyssal Signet to Bor Wildmane in Cenarion Hold.
+
+ [Abyssal Signet]
+
+
+== Description ==
+Huum tells me you've figured out how to summon the Abyssal Dukes! That's quite an accomplishment.
+You know what else would be quite the accomplishment? Smashing up one of those things really good. That'll cause an impression on their underlings, if you know what I mean. Bring back its signet as proof of the deed.
+
+
+== Rewards ==
+You will receive:
+
+ [Sack of Spoils]
+1 80
+8300 XP
++700 reputation with Cenarion Circle
+
+
+== Progress ==
+How did it go with the Abyssal Duke?  Did it hit hard?
+
+
+== Completion ==
+I knew you were a tough <class> the minute I saw you walk into Cenarion Hold.  Keep it up!
+
+
+== Progression ==
+ [60] Aurel Goldleaf
+ [60] Dukes of the Council
+ [60] Bor Wildmane
+ [60G] Signet of the Dukes
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.8.0 (2005-10-10): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

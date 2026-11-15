@@ -1,0 +1,108 @@
+title: The Ectoplasmic Distiller
+revision: 6544148
+part: whole
+quest: 8921
+url: https://warcraft.wiki.gg/wiki/The_Ectoplasmic_Distiller
+
+== Objectives ==
+Return to Mux Manascrambler in Gadgetzan with 1 Delicate Arcanite Converter, 4 Greater Eternal Essence, 10 Stonescale Oil, 25 Volcanic Ash and 40 gold.
+
+ [Delicate Arcanite Converter]
+ [Greater Eternal Essence] (4)
+ [Stonescale Oil] (10)
+ [Volcanic Ash] (25)
+Required money: 40
+
+
+== Description ==
+Ah, you're in need of my latest project... the extra-dimensional ghost revealer! Unfortunately I've run out of funds and manpower.
+You're willing to help? Excellent! Our first task is to build a device to harvest the very fabric of death! Building an ectoplasmic distiller won't be an easy task, <name>.
+I'll need you to bring me an arcanite converter, some Greater Eternal Essences and Stonescale Oil. I'll also need some Volcanic Ash from the lava pools in the Burning Steppes to build a filter.
+
+
+== Rewards ==
+You will receive:
+
+9550 XP
+ [Mux's Quality Goods]
+
+
+== Progress ==
+I understand the materials are a bit pricey... but I promise you every last one of them shall be necessary!
+
+
+== Completion ==
+These are precisely the materials I needed.  Quite timely too, <name>!
+In mere moments I will have your distiller ready to go!  In the meantime, take this as a reward for aiding me in my project.
+
+
+== Notes ==
+This is the second step in the quest chain to upgrade your Dungeon Set 1 Belt and Gloves into Dungeon Set 2.
+Delicate Arcanite Converters are created by Engineers.
+Greater Eternal Essences are created by Enchanters by disenchanting level 50-60 uncommon/green weapons.
+ [Stonescale Oil] is created by Alchemists.
+ [Volcanic Ash] can be found in the Burning Steppes, mostly between Blackrock Mountain and Flame Crest. It looks like a pile of dirt and is generally near lava or dried lava channels.
+When you complete the quest, you will be given  [Mux's Quality Goods], containing:
+1  [Ectoplasmic Distiller]
+8  [Goblin Rocket Fuel]
+6  [Ez-Thro Dynamite II]
+1  [Discombobulator Ray]
+
+
+== Progression ==
+ [60D] An Earnest Proposition
+ [60] A Supernatural Device
+ [60] The Ectoplasmic Distiller
+ [60] Hunting for Ectoplasm
+ [60] A Portable Power Source
+ [60] A Shifty Merchant
+ [60] Return to Deliana /  [60] Return to Mokvar
+ [60D] Just Compensation
+ [60] In Search of Anthion
+ [60D] Dead Man's Plea
+ [60] Proof of Life
+ [60] Anthion's Strange Request
+ [60D] Anthion's Old Friend
+ [60D] Falrin's Vendetta
+ [60D] The Instigator's Enchantment
+ [60D] The Challenge
+ [60D] Anthion's Parting Words
+ [60] Bodley's Unfortunate Fate
+ [60R] Three Kings of Flame
+
+ [60] Components of Importance
+ [60] Components of Importance
+ [60G] Components of Importance
+ [60G] Components of Importance
+
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60G] I See Alcaz Island In Your Future...
+
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60R] Final Preparations
+ [60R] Mea Culpa, Lord Valthalak
+ [60] Return to Bodley
+ [60] Back to the Beginning
+ [60D] Saving the Best for Last
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.10.0 (2006-03-28): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

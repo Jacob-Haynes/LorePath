@@ -1,0 +1,76 @@
+title: How Big a Threat? (2)
+revision: 6595146
+part: whole
+quest: 985
+url: https://warcraft.wiki.gg/wiki/How_Big_a_Threat%3F_%282%29
+
+== Objectives ==
+Kill 8 Blackwood Pathfinders and 5 Windtalkers and return to Terenthis in Auberdine. 
+
+Blackwood Pathfinder slain (8)
+Blackwood Windtalker slain (5)
+
+
+== Description ==
+You've already proven adept at scouting our enemy, <name>. Do you have what it takes to fight them as well?
+Not all adventurers prefer straightforward combat to the art of stealth and evasion.
+If you think you're up for the task, then the furbolg camp south of Auberdine is currently the biggest threat to our people. You'll find some of the Blackwood tribe there. Kill 8 pathfinders and 5 windtalkers, and return to me here.
+
+
+== Rewards ==
+You will receive:
+
+975 XP (or 6 at max level)
++100 or +250 reputation with Darnassus
+
+
+== Progress ==
+Do not stay your hand from what must be done, child. I know how repulsive the idea of killing the creatures of the forest must be, but in this case it is necessary. No cure has been discovered for the corruption let loose upon the forest, and we must do what we can to halt its progress until one is found.
+
+
+== Completion ==
+Wash the blood from your garments, <name>, and do not mourn what you had to do. Instead, give thanks. You have lessened the threat to our people here in Auberdine, even if Darkshore is still in jeopardy from the effects of fel moss.
+
+
+== Notes ==
+Upon completion
+Terenthis says: What was that noise?  It sounded like a roar.
+Grimclaw the white bear enters and runs up to Therenthis.
+Grimclaw roars at Terenthis to get his attention.
+Terenthis says: Grimclaw?!  Easy there, my friend... where is your master Volcor?
+Grimclaw begins to moan and roar at Terenthis while stomping his paws on the ground.
+Terenthis says: Whoa, whoa there, my friend.  One moment...
+Terenthis begins to cast a spell on Grimclaw.
+Terenthis says: There... that should help.  Now, tell me what's happened, Grimclaw.
+Grimclaw roars at Tarenthis more, but this time the druid seems to understand the bear.
+Terenthis says: I understand, my friend.  I shall find someone to help your master.  Go back to him now, or at least stay close.
+Grimclaw roars in acknowledgement at Terenthis.
+Terenthis says: If you have the time, Grimclaw and his master Volcor could use your help.  If you're interested, speak with me further...
+
+
+== Progression ==
+
+ [14] How Big a Threat?
+The questline branches in two:
+
+Terenthis:
+ [14] How Big a Threat?
+ [20] A Lost Master
+ [20] A Lost Master
+ [20] Escape Through Stealth or [22] Escape Through Force
+ [19] Trek to Ashenvale
+
+Thundris Windweaver:
+ [15] Thundris Windweaver
+ [15] The Cliffspring River
+ [18] The Blackwood Corrupted
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

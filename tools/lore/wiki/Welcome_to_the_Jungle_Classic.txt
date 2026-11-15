@@ -1,0 +1,49 @@
+title: Welcome to the Jungle (Classic)
+revision: 5590816
+part: whole
+quest: 583
+url: https://warcraft.wiki.gg/wiki/Welcome_to_the_Jungle_%28Classic%29
+
+== Objectives ==
+Speak with Hemet Nesingwary.
+
+
+== Description ==
+Welcome to Stranglethorn!
+Perhaps you're not aware of this, but that dwarf over there is the one and only Hemet Nesingwary, renowned war hero of the Alliance and master big game hunter. He's not one for welcoming strangers into his camp, but you look like you've seen quite a bit of action in your day, <class>.
+Being a veteran of many battles himself, Master Nesingwary has a soft spot for fellow heroes.
+Go and speak with him. Perhaps he can give you some hunting pointers.
+
+
+== Rewards ==
+You will receive:
+
+250 XP
+
+
+== Completion ==
+Jolly nice to make your acquaintance, <name>. Haven't seen a <class> around these parts for some time.
+I situated myself with this expedition for one purpose: to hunt a great and elusive beast. Seeing that you're a hero of sorts I am willing to let you take part in the hunt, but you must first prove yourself.
+I shall teach the ways of raptor killing to you. Ajeck will train you with tiger hunting. And Sir Erlgadin is a master of panther tracking.
+Prove your skill and I'll let you in on the big hunt.
+
+
+== Trivia ==
+The quest's name is likely a reference to the Guns N' Roses song "Welcome to the Jungle."
+
+
+== Progression ==
+ [30] Welcome to the Jungle
+Unlocks the following:
+ [40] The Green Hills of Stranglethorn
+ [31] Panther Mastery,  [34] Raptor Mastery, &  [31] Tiger Mastery
+
+
+== Patch changes ==
+ Patch 2.0.1 (2006-12-05): Now given by Hemet Nesingwary Jr.. Text updated.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

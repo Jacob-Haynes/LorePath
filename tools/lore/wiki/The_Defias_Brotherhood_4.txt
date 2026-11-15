@@ -1,0 +1,54 @@
+title: The Defias Brotherhood (4)
+revision: 5586803
+part: whole
+quest: 141
+url: https://warcraft.wiki.gg/wiki/The_Defias_Brotherhood_%284%29
+
+This quest is part of the Defias Brotherhood quest chain.
+
+
+== Objectives ==
+Take Shaw's report to Gryan Stoutmantle in Westfall.
+
+ [Shaw's Report] (provided)
+
+
+== Description ==
+The Stonemasons' Guild was run by a man named Edwin VanCleef. VanCleef was responsible for rebuilding Stormwind after the orcs razed it in the First War. Apparently, VanCleef and his men were unhappy with their treatment by the King after the reconstruction was complete. That just might explain a thing or two.
+I have written a more detailed account for your Master in Westfall. Take
+this to him at once!
+
+
+== Rewards ==
+You will receive:
+
+340 XP (or 2 10 at max level)
++25 reputation with Stormwind
+
+
+== Progress ==
+Did Master Shaw shed any light on things?
+
+
+== Completion ==
+Edwin VanCleef. . .I know the name well.  To think that a man so industrious and talented could turn into such a scoundrel unnerves me.  I'll need further proof before I believe this.
+
+
+== Progression ==
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18G2] The Defias Brotherhood
+ [22D] The Defias Brotherhood
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

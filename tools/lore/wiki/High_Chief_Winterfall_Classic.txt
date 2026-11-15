@@ -1,0 +1,57 @@
+title: High Chief Winterfall (Classic)
+revision: 6964410
+part: whole
+quest: 5121
+url: https://warcraft.wiki.gg/wiki/High_Chief_Winterfall_%28Classic%29
+
+== Objectives ==
+Donova Snowden in Winterspring wants you to defeat High Chief Winterfall. 
+
+High Chief Winterfall  slain
+
+
+== Description ==
+While we still know very little about why the furbolg have been ingesting this strange substance, I do think it's best that we put a stop to it before it gets out of hand.
+The Winterfall furbolg are not a normally aggressive tribe, and this change in their behavior leads me to think that they must be under orders from their chief. We most likely can't undo the damage that has already been done, but I think that if their leader is slain, they will not get any worse.
+Head east to Winterfall Village. 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Crystal Breeze Mantle]
+ [Fernpulse Jerkin]
+ [Willow Band Hauberk]
+You will also receive:
+
+6400 XP
++100 or +350 reputation with Everlook
+
+
+== Progress ==
+Maybe you will find out more in Winterfall Village, <name>.
+
+
+== Completion ==
+Thank you so much, <name>. I hope to get back to my studies without worry that I will be ambushed. Please accept this as a reward. 
+
+
+== Progression ==
+ [56] Winterfall Firewater
+ [56] Falling to Corruption
+ [56] Mystery Goo
+ [56] Toxic Horrors
+ [57] Winterfall Runners
+ [59] High Chief Winterfall
+ [59] The Final Piece
+ [59] Words of the High Chief
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

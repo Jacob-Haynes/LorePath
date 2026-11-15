@@ -1,0 +1,6 @@
+title: Maraudon
+revision: 6695287
+part: intro
+url: https://warcraft.wiki.gg/wiki/Maraudon
+
+Maraudon (/ˈmɔːrədɒn/ MAWR-ə-don) is a 5-player dungeon, consisting of three wings (the Wicked Grotto, Foulspore Cavern, and Earth Song Falls), located in the Valley of Spears in Desolace. It is a combination of ancient centaur burial grounds, as well as a primal temple dedicated to the elemental earth. Added in patch 1.2, Maraudon was the first dungeon to be added after the release of World of Warcraft.

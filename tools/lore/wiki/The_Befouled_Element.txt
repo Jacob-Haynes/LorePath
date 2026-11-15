@@ -1,0 +1,52 @@
+title: The Befouled Element
+revision: 6537199
+part: whole
+quest: 1918
+url: https://warcraft.wiki.gg/wiki/The_Befouled_Element
+
+The Befouled Element is the 1st quest in The Befouled Element quest chain.
+
+
+== Objectives ==
+Bring the Befouled Water Globe to Mastok Wrilehiss at Splintertree Post, Ashenvale.
+
+ [Befouled Water Globe] (provided)
+
+
+== Description ==
+The slain elemental has produced an intensely glowing globe of water.  The contents of the globe are, at best, disgusting.  It would be safe to assume that whatever has befouled the water of Mystral Lake is most likely present in the water of the globe.
+It's not exactly common knowledge who might be interested in such a find; perhaps Mastok Wrilehiss at Splintertree Post, might have an idea.
+
+
+== Rewards ==
+You will receive:
+
+550 XP (or 3 30 at max level)
++25 reputation with Orgrimmar
+
+
+== Progress ==
+Yeah, what do you need?
+
+
+== Completion ==
+You find a nasty ball of water and decide to bring it to me?  Who am I, the Earthen Ring or something?
+Actually, that does give me an idea... perhaps you do need the Earthen Ring for this.  I mean, if it helps clear up the situation at the lake for good, then I'm all for it.
+You know who the Earthen Ring are, <name>?
+
+
+== Progression ==
+ [7-30] Simmer Down Now or  [25] Stonetalon Standstill
+ [7-30] The Befouled Element
+ [10-30D] Je'neu of the Earthen Ring
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Description slightly shortened.
+It's not exactly common knowledge who might be interested in such a find; perhaps Mastok Wrilehiss at Splintertree Post, might have an idea.
+
+
+== External links ==
+
+Wowhead
+WoWDB

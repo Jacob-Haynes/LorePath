@@ -1,0 +1,51 @@
+title: Forbidden Knowledge (Classic)
+revision: 6534475
+part: whole
+quest: 737
+url: https://warcraft.wiki.gg/wiki/Forbidden_Knowledge_%28Classic%29
+
+== Objectives ==
+Bring Yagyin's Digest to Theldurin.
+
+ [Yagyin's Digest] (Provided)
+
+
+== Description ==
+I have the digest for you, <name>. I need not tell you to take great care with it. And to keep it far from unfriendly hands.
+This book holds many truths...
+...And the truth can burn.
+
+
+== Rewards ==
+You will receive:
+
+ [Skull of Impending Doom]
+240–2,350 XP (or 14 40 at max level)
+
+
+== Progress ==
+Ho!  You were gone a long time.  Did you get the digest?
+
+
+== Completion ==
+You got it!  Oh, hope glimmers!
+Your efforts may yet save us, <name>.  A monument they should make of you!  A shrine they should build!  May your name be praised until your grandchildren have grandchildren!
+Unless...THEY are freed and rise to the surface.   If that happens then you can forget about children.
+If THEY are freed, then we're all worm food.
+
+
+== Progression ==
+ [40D] Solution to Doom
+ [40] To Ironforge for Yagyin's Digest /  [40] To the Undercity for Yagyin's Digest
+ [44E] The Star, the Hand and the Heart
+ [40] Forbidden Knowledge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

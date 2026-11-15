@@ -1,0 +1,58 @@
+title: Delivery to the Gnomes
+revision: 6175838
+part: whole
+quest: 1114
+url: https://warcraft.wiki.gg/wiki/Delivery_to_the_Gnomes
+
+Delivery to the Gnomes is a neutral quest in the contested zone Thousand Needles. It is the final quest in a delivery quest chain in which players are sent to Ratchet to pick up some parts for the gnomes of Mirage Raceway.
+
+
+== Objectives ==
+Bring the  [Delicate Car Parts] to Fizzle Brassbolts in Shimmering Flats.
+
+ [Delicate Car Parts] (provided)
+
+
+== Description ==
+Now that I have what I need, give these parts to Fizzle Brassbolts. He's been waiting a long time for them -- I'm sure he won't miss the little piece I removed from his order...
+And I wouldn't bother mentioning it to him. It was small and worthless.
+Trust me.
+
+
+== Reward ==
+You will receive:
+10
+
+
+== Completion ==
+There they are! My hydro ratchets and repeater bolts! These will do just fine. Thank you!
+
+
+== Progression ==
+This quest is part of a chain which involves running various errands for Kravel Koalbeard, a dwarf from the Mirage Raceway in Thousand Needles
+
+ [31] Rocket Car Parts
+ [36] Wharfmaster Dizzywig
+ [36] Parts for Kravel
+ [36] Delivery to the Gnomes
+ [36] The Rumormonger
+ [36] Dream Dust in the Swamp
+ [36] Rumors for Kravel
+ [43] Back to Booty Bay
+ [44] Zanzil's Secret (optional; does not require prior chain)
+ [44] Zanzil's Mixture and a Fool's Stout
+One of the following:
+ [44] Get the Gnomes Drunk
+ [44] Get the Goblins Drunk
+ [44] Report Back to Fizzlebub
+ [44] Fool's Stout
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

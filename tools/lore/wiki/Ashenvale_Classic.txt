@@ -1,0 +1,7 @@
+title: Ashenvale (Classic)
+revision: 6466529
+part: intro
+url: https://warcraft.wiki.gg/wiki/Ashenvale_%28Classic%29
+
+Ashenvale, also known as Ashenvale Forest, is a wilderness region south of Darkshore and Felwood, west of Azshara, and north of the Stonetalon Mountains and the Barrens. Ashenvale is also the term used for the larger forested region which includes most of western Hyjal including Azshara. It is the ancestral homeland of the night elves, who remain in control of several holdings through the zone, including Astranaar, Maestra's Post, Silverwind Refuge, Silverwing Grove, and the Shrine of Aessina. The Horde has more recently established a settlement in the eastern part of the woods — Splintertree Post — as well as a smaller camp on the western beach — Zoram'gar Outpost - along with several Warsong camps situated from Kargathia Keep all through the southeast to the Mor'shan Rampart in the far south. The zone is heavily populated with furbolgs, satyr, and wild creatures such as spiders, wolves, and bears. The region is quite large, and running from the Zoram Strand to the Warsong Lumber Camp is quite an undertaking.
+Since the zone is contested there is often a lot of skirmishing going on throughout the woods, and attacks on the faction-based settlements are not uncommon. The zone is also a major travel hub for both Horde and Alliance, even at higher levels.

@@ -1,0 +1,78 @@
+title: The True Masters (3)
+revision: 5748906
+part: whole
+quest: 4185
+url: https://warcraft.wiki.gg/wiki/The_True_Masters_%283%29
+
+The True Masters is the third so-named quest of the Great Masquerade quest chain.
+
+
+== Objectives ==
+Speak with Highlord Bolvar Fordragon after speaking with Lady Katrana Prestor. 
+
+Advice from Lady Prestor
+
+
+== Description ==
+Solomon paints a dreary picture. Still, we cannot afford to send our thinly
+spread troops to the aid of Lakeshire on speculation. I will need proof
+of these claims before I can act.
+Speak with Lady Prestor, <name>. She is a learned woman and knows much of
+dragons and dragonkin. She may be able to shed some light on this situation. 
+
+
+== Dialog: talking with Lady Prestor ==
+<Lady Prestor glares at you.>
+Pardon the intrusion, Lady Prestor, but Highlord Bolvar suggested that I seek your advice.
+
+I was standing right next to you, imbecile. I know what you seek.
+ My apologies, Lady Prestor.
+
+You seek to lower our global defenses in order to appease a paranoid magistrate and an encampment of riff-raff that are probably suffering from heat stroke.
+ Begging your pardon, Lady Prestor. That was not my intent.
+
+Of course not, dear boy. You 'adventurer' types are often victims of circumstance; subject to the political drama which tends to unfold between citizenry and royalty.
+My advice to you, then, is to seek out something else, more specifically: A new career.
+This world has enough heroes.
+ Thank you for your time, Lady Prestor.
+
+
+== Completion ==
+<Bolvar cups his chin as if in deep thought.>
+While I respect Lady Prestor's stance, I believe that there is a solution to
+this dilemma that may put all of our concerns to rest. 
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+550 XP (or 3 30 at level 70)
+
+
+== Progression ==
+ [54] Dragonkin Menace
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54D] Marshal Windsor
+ [54D] Abandoned Hope
+ [58D] A Crumpled Up Note
+ [58D] A Shred of Hope
+ [58D] Jail Break!
+ [60R] Stormwind Rendezvous
+ [60R] The Great Masquerade
+ [60R] The Dragon's Eye
+ [60R] Drakefire Amulet
+
+
+== Patch changes ==
+ Patch 3.0.2 (2008-10-14): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

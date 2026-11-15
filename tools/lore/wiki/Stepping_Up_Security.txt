@@ -1,0 +1,47 @@
+title: Stepping Up Security
+revision: 6263653
+part: whole
+quest: 8281
+url: https://warcraft.wiki.gg/wiki/Stepping_Up_Security
+
+== Objectives ==
+Windcaller Proudhorn at Cenarion Hold in Silithus wants you to slay 20 Dredge Crushers.
+
+Dredge Crusher (20)
+
+
+== Description ==
+Your performance has been truly exemplary so far, <name>. Our supply lines are not completely safe yet, however. In the absence of dredge strikers, their larger southern cousins will surely move in to take their place in the north.
+You'll have to kill quite a few dredge crushers to keep them at bay, but we cannot leave the safety of our supply lines to chance.
+
+
+== Rewards ==
+You will receive:
+
+1 70
+8750 XP
++500 reputation with Cenarion Circle
+
+
+== Progress ==
+The dredge crushers are a serious threat and must be dealt with at once!
+
+
+== Completion ==
+Excellent!  You've proven to be a valuable ally in preparing for the war against the silithid.
+
+
+== Progression ==
+ [15-30] Hero's Call: Silithus!/ [15-30] Warchief's Command: Silithus! or  [15-30] The Dunes of Silithus/ [15-30] The Sands of Silithus (breadcrumb quests)
+ [15-30] Securing the Supply Lines
+ [15-30] Stepping Up Security
+
+
+== Patch changes ==
+ Patch 1.8.0 (2005-10-10): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

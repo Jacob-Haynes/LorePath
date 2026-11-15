@@ -1,0 +1,60 @@
+title: Helcular's Revenge (2)
+revision: 6963815
+part: whole
+quest: 553
+url: https://warcraft.wiki.gg/wiki/Helcular%27s_Revenge_%282%29
+
+Helcular's Revenge is a Horde quest in which players must charge the staff of Helcular  and plant it on his grave. In doing so, Helcular, a 44 elite mob, will be resurrected and wander around the Southshore graveyard attacking nearby people until he is killed or until he expires (about 10 minutes).
+This quest used to be incredibly disappointing, as Helcular is a 44 elite and the Southshore guards used to be L55 non-elites—easily capable of dispatching him solo.  However, post-2.0, the SS guards have been dropped to L45, and now Helcular can wreak havoc quite effectively.  At least until a level 60+ player shows up and kills him (and probably you as well, since Hillsbrad Foothills is contested).
+Helcular wanders a bit, and will likely aggro any guards near the graveyard.  As of patch 2.4.1, Helcular will not patrol outside of the graveyard, but just in a small circle close to his grave.  If you want to use Helcular while he exists, pull a guard or citizen of Southshore and stand next to him.  After a short time he and his minions will attack the enemy and take the aggro off you - however the guards may get a few hits in before they turn their attention to their attackers.  In some cases the guards will not lose aggro and you may be killed.  When Helcular's event period expires, he will exist for several seconds but will not react to any enemies - in which case you may need to flee or be killed.
+He can't take out the wind rider master (an elite), but he can easily kill two or three guards at once, and will easily dispatch any player below L48 or so.  He will summon three L42 (non-elite) skeletons every 10 seconds or so while in combat; they despawn after a minute or so.  If he gets in combat with multiple guards, he'll build quite a dangerous army.  If you watch him, Helcular will disappear from battle periodically and re-appear - sometimes with full health.
+
+
+== Objectives ==
+Charge the Rod of Helcular with the powers of the Flame of Azel, Flame of Veraz and the Flame of Uzel.
+Drive the charged rod into Helcular's grave in Southshore.
+
+ [Rod of Helcular] (provided)
+
+
+== Description ==
+Here, take the Rod of Helcular. You will need it.
+Helcular fashioned 3 ceremonial pyres as part of his most powerful spell. The Flame of Azel and the Flame of Veraz lie within the Foothill Caverns. The Flame of Uzel lies in a cave above the caverns, further north in the mountains.
+The Rod of Helcular must be charged from each of the three flames. Once the ritual is complete, drive the rod into Helcular's grave in Southshore, the heavily guarded human town to the south. Vengeance shall be ours!
+
+
+== Rewards ==
+You will receive:
+
+3,300 XP
+*+150 or +350 reputation with Undercity
+
+
+== Progress ==
+Helcular's grave teems with a mystical energy.
+
+
+== Completion ==
+A great rumbling emanates from the ground.
+
+
+== Notes ==
+The flames of Azel and Veraz are located in the yeti cave in Darrow Hill in Hillsbrad Foothills. The flame of Uzel is in a small cave near the Growless Cave in Alterac Mountains.
+With the guards dropped to L45, it's now much easier to get to the grave at the level you would normally complete this quest (30-32). It is at the very southeastern corner of the graveyard in Southshore (the GY itself is in the NE corner of town, near the river); if you mouseover it the tooltip will identify it as "Helcular's Grave". If you are having trouble, you can run in, let the guards kill you, and then resurrect yourself right at the grave—the guards don't patrol through the GY itself.
+An easier option is to simply hug the river as the guards won't see you.
+Upon completion, Helcular's Remains spawns.
+
+
+== Progression ==
+ [33] Helcular's Revenge
+ [33] Helcular's Revenge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

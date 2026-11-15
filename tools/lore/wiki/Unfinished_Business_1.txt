@@ -1,0 +1,53 @@
+title: Unfinished Business (1)
+revision: 6659361
+part: whole
+quest: 6004
+url: https://warcraft.wiki.gg/wiki/Unfinished_Business_%281%29
+
+== Objectives ==
+Kill 2 Scarlet Medics, 2 Scarlet Hunters, 2 Scarlet Magi and 2 Scarlet Knights before returning to Kirsta Deepshadow in Western Plaguelands.
+
+Scarlet Medic slain (2)
+Scarlet Hunter slain (2)
+Scarlet Mage slain (2)
+Scarlet Knight slain (2)
+
+
+== Description ==
+I was sent as a scout to do some damage and gauge the strength of Hearthglen's defenses. Some people in the Alliance feel the little town has more than historical importance. It's not my job to question what that importance is, but regardless, I'm in no shape to continue until I rest up.
+If you're willing, I'd pay handsomely for some help. Start south of here at their camp near the small bulwark they've set up. If you prove strong enough, maybe I could get your help with my main goal.
+
+
+== Rewards ==
+You will receive:
+
+65
+8450 XP
+
+
+== Progress ==
+How is it going, <name>? Are they stronger than you thought? I hope not. If I'm going to follow through here, then it's going to require a heck of a lot more strength than what I've already asked you to do.
+
+
+== Completion ==
+Well done, <name>. I'm amazed you dealt with them so quickly. Thank you.
+I have yet to meet anyone that approves of the Scarlet Crusade and their methods. I believe in the Light as much as anyone else in Stormwind, but they've demonstrated that they only want to kill anyone not loyal to their movement... even innocents.
+
+
+== Notes ==
+
+
+== Progression ==
+ [56] Unfinished Business
+ [57] Unfinished Business
+ [58] Unfinished Business
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

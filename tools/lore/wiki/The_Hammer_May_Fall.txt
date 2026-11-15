@@ -1,0 +1,56 @@
+title: The Hammer May Fall
+revision: 6896937
+part: whole
+quest: 676
+url: https://warcraft.wiki.gg/wiki/The_Hammer_May_Fall
+
+The Hammer May Fall is the first step in the Hammer May Fall quest chain that starts with Tallow in Tarren Mill. Though it starts in Hillsbrad Foothills, the whole quest chain takes place in Arathi Highlands, killing trolls and ogres.
+
+
+== Objectives ==
+Kill 8 Boulderfist Ogres and 10 Boulderfist Enforcers, then find Drum Fel in the Hammerfall outpost in Arathi Highlands. 
+
+Boulderfist Ogre slain (8)
+Boulderfist Enforcer slain (10)
+
+
+== Description ==
+Weaklings... all of them. You, <class>, what are you looking at? Think you're something special, huh? Why not prove it?
+The Hammerfall outpost in Arathi's under attack. Unless we send them help soon, their demise is imminent.
+But before you go rushing off, you may want to test your skills first. Northeast of Stromgarde in Arathi is an ogre mound inhabited by the Boulderfist tribe. When you can handle the ogres and enforcers there, then report to Drum Fel in Hammerfall.
+
+
+== Rewards ==
+You will receive:
+
+50
+2,550 XP
++100 or +250 reputation with Darkspear Trolls
+
+
+== Progress ==
+I have not the time to sharpen my axe, let alone leave the outpost to slay those beasts that would try and slay my kin.
+You do not seem to have the experience of a grunt let alone a full-fledged <class>, what do you want, <name>?
+
+
+== Completion ==
+So, you think you're strong enough to help Hammerfall? So be it.
+Tallow either sent you to that ogre mound in the hopes that you would kill yourself or he thinks you're strong enough to aid us. Either way, you're here now and I am in need of more soldiers in our fight against the constant attacks.
+If you plan on staying in Hammerfall then get some rest, and come speak to me again when you're ready. There's no shortage of fighting to be had. 
+
+
+== Progression ==
+ [32] The Hammer May Fall
+ [32] Call to Arms
+ [38] Call to Arms
+ [40] Call to Arms &  [40] The Real Threat
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed, renamed to  [10-30] Clearing the Highlands.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

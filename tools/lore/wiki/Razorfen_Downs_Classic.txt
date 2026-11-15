@@ -1,0 +1,6 @@
+title: Razorfen Downs (Classic)
+revision: 6537465
+part: intro
+url: https://warcraft.wiki.gg/wiki/Razorfen_Downs_%28Classic%29
+
+Razorfen Downs are the ancestral burial grounds of the quilboar, nestled amid huge brambles in the Barrens, on the east side of the far southern edge. The Scourge have taken over much of the downs, and infest the burial grounds with the reawakened dead. It is also known as RFD, not to be confused with RFK or BFD.

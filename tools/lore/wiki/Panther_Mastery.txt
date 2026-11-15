@@ -1,0 +1,68 @@
+title: Panther Mastery
+revision: 5590516
+part: whole
+quest: 193
+url: https://warcraft.wiki.gg/wiki/Panther_Mastery
+
+== Objectives ==
+Obtain the Fang of Bhag'thera.
+
+ [Fang of Bhag'thera]
+
+
+== Description ==
+You've almost proven yourself to be a master hunter of panthers. Yet there is one panther which has eluded your grasp.
+Songs are sung about a mighty panther by the name of Bhag'thera. You will see if you can use your skills to kill the great beast.
+Bringing the Fang of Bhag'thera to Erlgadin should be proof enough that you are a master panther hunter.
+
+
+== Rewards ==
+
+You will also receive:
+
+70
+2850 XP
+
+
+== Progress ==
+You're still alive!  Excellent!  How fares the hunt?
+
+
+== Completion ==
+So the great Bhag'thera is dead!  Cheers to you, <name>.  You are a mighty <class> indeed! 
+
+
+== Progression ==
+
+ [10-30] Welcome to the Jungle
+Complete all of the following:
+
+Panthers:
+ [10-30] Panther Hunting
+ [10-30] Panther Stalking
+ [10-30] Panther Prowess
+ [10-30] Panther Mastery
+
+Raptors:
+ [10-30] Raptor Hunting
+ [10-30] Raptor Stalking
+ [10-30] Raptor Prowess
+ [10-30] Raptor Mastery
+
+Tigers:
+ [10-30] Tiger Hunting
+ [10-30] Tiger Stalking
+ [10-30] Tiger Prowess
+ [10-30] Tiger Mastery
+
+ [10-30] Big Game Hunter
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Added, replacing  [40] Panther Mastery.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,71 @@
+title: Nathanos' Ruse
+revision: 5619756
+part: whole
+quest: 6146
+url: https://warcraft.wiki.gg/wiki/Nathanos%27_Ruse
+
+Part of a lengthy quest chain from Nathanos Blightcaller, this quest provides a  [Rotten Apple] that disguises you as a member of the Scarlet Crusade so that you can go speak with Crusader Lord Valdelmar. Your purpose is to trick him into having the Scarlet Oracle Demetria take to the road so that you can slay her.
+
+
+== Objectives ==
+Travel to Tyr's Hand, southeast of the Marris Stead. Once there, take a bite of the  [Rotten Apple]. While under the guise of the Scarlet Crusade, deliver  [The Grand Crusader's Command] to Crusader Lord Valdelmar.
+
+ [The Grand Crusader's Command]
+ [Nathanos' Chest] (provided)
+
+
+== Description ==
+I have made some adjustments to this command. Should our little ruse work, they will expose the Scarlet Oracle and we shall strike!
+Now pay attention, <class>. You are to deliver this command to the Crusader Lord, Valdelmar.
+How? You are going to hand it to him, imbecile.
+Take the command and this Rotten Apple to Tyr's Hand. When you cross into the city, eat the apple. You will transform into something more... palatable to the humans. Take the command and hand it to the Crusader Lord, Valdelmar. 
+
+
+== Rewards ==
+You will receive:
+
+3 96
+6850 XP
+
+
+== Progress ==
+This is unacceptable, soldier!
+
+
+== Completion ==
+Where have you been? We had thought the Scourge had captured you.
+
+
+== Notes ==
+There are several bugs related to this quest.
+
+If you loot the Grand Crusader's Command first, whether manually or by autoloot, Nathanos' Chest will despawn from your inventory with the Rotten Apple inside it, leaving you unable to complete this quest.  Disable autoloot and loot the apple first.  Alternatively, you can return to Nathanos to get another apple at the cost of him insulting you.  You can also abandon the quest and get the chest again from Nathanos.
+Characters who use special stances or form-altering spells while using the Rotten Apple will often find themselves being disguised as a member of the opposite sex.  Known examples include rogues who eat the apple while in  [Stealth], warriors who change stances while the disguise is on, and shamans who shift into  [Ghost Wolf] form and then leave that form.
+
+
+== Progression ==
+ [56] The Champion of the Banshee Queen
+Complete all of:
+ [58] To Kill With Purpose
+ [58] Un-Life's Little Annoyances
+ [60] The Ranger Lord's Behest
+
+ [60] Duskwing, Oh How I Hate Thee...
+ [60] The Corpulent One
+
+ [60] The Call to Command
+ [60D] Ramstein
+ [60G] The Crimson Courier
+ [60G] Nathanos' Ruse
+ [60G] Return to Nathanos
+ [60G] The Scarlet Oracle, Demetria
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,60 @@
+title: Mor'Ladim (quest)
+revision: 6523012
+part: whole
+quest: 26795
+url: https://warcraft.wiki.gg/wiki/Mor%27Ladim_%28quest%29
+
+This quest is part of quest chain The Story of Morgan Ladimore.
+
+
+== Objectives ==
+Kill Mor'Ladim, then return his skull to Commander Althea Ebonlocke in Darkshire.
+
+ [Mor'Ladim's Skull]
+Suggested Players [3]
+
+
+== Description ==
+From what my scouts tell me, Mor'Ladim wanders throughout Duskwood, following a strange and meandering path through the cemetery. We buried him out past the house on the hill, you know where that is?
+There isn't anything I can do to help you, but I wish you good luck.
+
+
+== Rewards ==
+You will receive:
+
+18
+1500 XP (165 XP at grey level)
++150 reputation with Stormwind
+
+
+== Progress ==
+I don't blame you if you're having trouble with him, <name>. Some of our strongest Watchers have been lost to Mor'Ladim.
+
+
+== Completion ==
+You killed him? That's no small accomplishment, <name>! On behalf of the people of Darkshire and the Night Watch, I thank you.
+Ah... there is one small matter, however...
+
+
+== Notes ==
+Return to north of Forlorn Rowe (take the flight path back to Raven Hill!), where at  is A Weathered Grave.
+Mor'Ladim wanders around the cemetery, but does eventually stop at the grave marker. A level 25 elite skeletal warrior, Mor'Ladim has 4,194 health and the following abilities:
+
+Holy Shock 30 yd range — Blasts the target with Holy energy, causing Holy damage to an enemy Instant.
+Enraging Memories — Drives the caster into a maddened frenzy for 8 sec. Increases the caster's attack speed by 50%, but slows its movement speed by 25% and reduces the Physical damage it deals by 10. (25 sec cooldown)
+The game suggests a group, which is strongly advised. Take him out, then fly back to Darkshire.
+
+
+== Progression ==
+ [10-30] The Weathered Grave
+ [10-30] Morgan Ladimore
+ [10-30G3] Mor'ladim
+ [10-30] The Daughter Who Lived
+ [10-30] A Daughter's Love
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Quest ID changed.   
+
+
+== External links ==

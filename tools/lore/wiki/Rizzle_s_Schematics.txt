@@ -1,0 +1,37 @@
+title: Rizzle's Schematics
+revision: 5635795
+part: whole
+quest: 1194
+url: https://warcraft.wiki.gg/wiki/Rizzle%27s_Schematics
+
+== Objectives ==
+Bring the Sample of Indurium Ore to Pozzik on the Shimmering Flats.
+
+ [Sample of Indurium Ore] (provided)
+
+
+== Description ==
+Rizzle's schematics describe the process of the refinement of indurium ore. From his scrawls, it is apparent that indurium ore is being obtained from the dwarven excavation site of Uldaman in the Badlands.
+Much of the other notes relate to the heat resistant properties.
+Used as a paperweight for the plans is a hunk of what appears to be unrefined indurium ore.
+
+
+== Completion ==
+Indurium? Interesting... If it is capable of resisting heat to the degree that you say, it would explain the performance increase the gnomes have displayed of late.
+This sample you've brought to me will be invaluable, also. I will be able to perform some tests on this, but I'll need more for this to actually be of any use to us.
+
+
+== Progression ==
+ [41] Keeping Pace
+ [41] Rizzle's Schematics
+ [42] Indurium Ore
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

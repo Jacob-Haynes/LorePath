@@ -1,0 +1,82 @@
+title: Questioning Reethe
+revision: 6324868
+part: whole
+quest: 27261
+url: https://warcraft.wiki.gg/wiki/Questioning_Reethe
+
+Questioning Reethe sends the adventurer to assist an ogre who is going to question a human deserter.
+
+
+== Objectives ==
+Go with Ogron to speak with Reethe.
+
+
+== Description ==
+It took a long time, but I found Reethe. He hide good for a human.
+Ogron worried that he might be crazy after so much time in swamp. You come with me for we go get answers from him. 
+
+
+== Rewards ==
+
+You will receive:
+
+2850 XP
+
+
+== Completion ==
+Hmph. It is good that Reethe will no longer be lurking around the swamp, but it is a shame that humans are built so frail that he could not recover from a little arrow wound.
+It seems that this thread of the mystery has led nowhere, and we must look elsewhere.
+
+
+== Notes ==
+When you and Ogron reach Reethe, several Theramore soldiers show up to assassinate Reethe. It seems they want to shut him up rather than bring him to justice. 
+
+Dialogue
+Ogron says: I noticed some fire on that island over there. A human, too. Let's go check it out, <name>.
+<Ogron then starts walking forward until he comes to the tree to the right of Reethe's camp.>
+
+Ogron says: That's Reethe alright. Let's go see what he has to say, yeah?
+<Ogron approaches Reethe's camp and Reethe changes to an attack stance.>
+
+Paval Reethe says: W-what do you want? Just leave me alone...
+Paval Reethe says: I swear, I didn't steal anything from you! Here, take some of my supplies, just go away!
+Ogron says: Just tell us what you know about the Shady Rest Inn, and I won't bash your skull in.
+Paval Reethe says: I... Well, I may of taken a little thing or two from the inn... but what would an ogre care about that?
+Ogron says: Look here, if you don't tell me about the fire--
+Paval Reethe says: Not one step closer, ogre!
+Paval Reethe says: And I don't know anything about this fire of yours...
+<As he speaks, a small group of Theramore soldiers spawn to the right. The group consists of Lieutenant Caldwell, Private Hallan, and two Theramore Skirmishers.>
+
+Paval Reethe says: What was that? Did you hear something?
+Lieutenant Caldwell says: Paval Reethe! Found you at last. And consorting with ogres now? No fear, even deserters and traitors are afforded some mercy.
+Lieutenant Caldwell says: Private, show Lieutenant Reethe some mercy.
+Private Hallan says: Gladly, sir.
+<She switches to a bow, shoots him once, and switches back to her sword.>
+<Paval Reethe staggers backwards as the arrow lodges itself deeply in his chest.>
+
+Paval Reethe says: Ugh... Hallan, didn't think you had it in you...
+Lieutenant Caldwell says: Now, let's clean up the rest of the trash, men!
+Ogron says: Damn it! You'd better not die on me, human!
+<The group of Alliance soldiers aggro. If/when you kill them all, the scene continues, though Reethe is no longer in an attacking stance towards Ogron.>
+
+Ogron says: Still with us, Reethe?
+Paval Reethe says: Must be your lucky day. Alright, I'll talk. Just leave me alone. Look, you're not going to believe me, but it wa... oh, Light, looks like the girl could shoot...
+<Paval Reethe falls over dead at this point.>
+
+Ogron says: Looks dead to me. Not much use to us like this. You'd better go back and tell Krog what happened.
+Ogron says: By the way, thanks for watching my back.
+
+
+== Progression ==
+This is part of The Shady Rest Inn quest chain
+
+ [15-30] Lieutenant Paval Reethe
+ [15-30] Questioning Reethe
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated.   
+ Patch 2.3.0 (2007-11-13): Added.   
+
+
+== External links ==

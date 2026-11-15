@@ -1,0 +1,55 @@
+title: Taretha's Gift
+revision: 6853239
+part: whole
+quest: 508
+url: https://warcraft.wiki.gg/wiki/Taretha%27s_Gift
+
+Taretha's Gift is the final quest in a Horde quest chain in Hillsbrad Foothills and Alterac Mountains. It involves returning a memento of Taretha Foxton, Thrall's childhood friend, to the possession of the orcs. You must have completed Lord Aliden Perenolde in order to get this quest.
+
+
+== Objectives ==
+Return Taretha's pendant to Krusk in Tarren Mill.
+
+ [Taretha's Necklace] (provided)
+
+
+== Description ==
+The pendant?  Of course you can have it...  Take it!  I want no memory of him... just please, please leave in peace...
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Mantis Boots]
+ [Brigand's Pauldrons]
+You will also receive:
+
+3,900 XP
++150 or +350 reputation with Orgrimmar
+
+
+== Progress ==
+You've returned, <name>.  Success to report?
+
+
+== Completion ==
+It is strange that the Warchief would expend so much over such a small thing.  I do not claim to understand him, but I will follow him, whatever his commands.  You did well, <name>, no doubt the Warchief will be glad to hear of your success.
+
+
+== Progression ==
+ [22] The Rescue
+ [34] Infiltration
+ [36] Gol'dir
+ [36] Blackmoore's Legacy
+ [42] Lord Aliden Perenolde
+ [40] Taretha's Gift
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,38 @@
+title: Honor the Dead (quest)
+revision: 5747876
+part: whole
+quest: 6183
+url: https://warcraft.wiki.gg/wiki/Honor_the_Dead_%28quest%29
+
+== Objectives ==
+Speak with Mathias Shaw again if you wish to accept his task. 
+
+
+== Description ==
+Five of my best field agents were assigned the Marris case. One returned, only to end up dead in his sleep three days later.
+What little information we did manage to get out of him was incoherent gibberish. We made out two words: "Nathanos" and "Blightcaller."
+I do not have the available manpower to continue this investigation and Ravenholdt will not assist us. We must get to the bottom of this; if only to provide closure to the families of the deceased. Will you help?
+
+
+== Completion ==
+<Mathias nods.>
+I had faith that Wrynn would send me men and women of honor - the most dedicated soldiers of the Alliance. 
+
+
+== Progression ==
+ [60G] The First and the Last
+ [60G] Honor the Dead
+ [60G] Flint Shadowmore
+ [60G] The Eastern Plagues
+ [60G] The Blightcaller Cometh
+ [60R] Order Must Be Restored
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

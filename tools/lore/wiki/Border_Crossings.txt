@@ -1,0 +1,45 @@
+title: Border Crossings
+revision: 5637083
+part: whole
+quest: 477
+url: https://warcraft.wiki.gg/wiki/Border_Crossings
+
+== Objectives ==
+Retrieve the contents of one of the Dalaran wizards' crates. You will find Pyrewood Village to the south.
+
+
+== Description ==
+As you may know, the town of Ambermill remains a source of human opposition, mainly through the support they receive from the wizards of Dalaran.
+I don't know what their plan is, but for them to show interest in a backwater village like Ambermill indicates that it must have some greater importance.
+They've been shipping crates by the wagon from Hillsbrad. Many of those supplies end up at a small camp north of Pyrewood Village. Retrieve the contents of a crate and return them to me.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+975 XP (or 6 at level 70)
++100 or +250 reputation with Undercity
+
+
+== Completion ==
+<Prying open the lid of the crate, you find an assortment of carefully-packed objects. On the top of the crate lies a bundle of maps, yellowing with age, that appear to depict Silverpine Forest and other parts of western Lordaeron.
+Underneath the maps is a mysterious-looking magical pendant.>
+
+
+== Progression ==
+ [14] Border Crossings
+ [14] Maps and Runes
+ [14] Dalar's Analysis
+ [14] Dalaran's Intentions
+ [16] Ambermill Investigations
+ [22] The Weaver
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,49 @@
+title: Moontouched Wildkin
+revision: 5612049
+part: whole
+quest: 978
+url: https://warcraft.wiki.gg/wiki/Moontouched_Wildkin
+
+== Objectives ==
+Collect 10 Moontouched Feathers from Winterspring, then return to Erelas Ambersky in Rut'theran Village.
+
+ [Moontouched Feather] (10)
+
+
+== Description ==
+Wildkin feathers from the Hinterlands appear to contain traces of magical qualities. These powers... they don't seem to be wielded by the creatures, it's more like they are simply inherent to the species -- part of their very essence.
+During my studies, I heard that a large population of wildkin inhabit the snowy lands of Winterspring. Could these creatures have the same powers? Please help me find an answer, <name>. Go to Winterspring and gather feathers that have dropped to the ground, then return to me.
+
+
+== Rewards ==
+You will receive:
+
+85
+5,650 XP
++250 reputation with Darnassus
+
+
+== Progress ==
+Where could these powers have originated from? I think we are on the right track to find the answer, <name>.
+
+
+== Completion ==
+Now I can compare the feathers... Let's see...
+
+
+== Progression ==
+ [47] Favored of Elune?
+ [55] Moontouched Wildkin
+ [57] Find Ranshalla
+ [59] Guardians of the Altar
+ [57] Wildkin of Elune
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

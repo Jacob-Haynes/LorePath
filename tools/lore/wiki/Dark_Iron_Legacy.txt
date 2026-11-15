@@ -1,0 +1,56 @@
+title: Dark Iron Legacy
+revision: 6218238
+part: whole
+quest: 3801
+url: https://warcraft.wiki.gg/wiki/Dark_Iron_Legacy
+
+Franclorn Forgewright is a ghost.  To be able to interact with him, you must be dead.  (Note that this might not be a problem for some groups adventuring in Blackrock Depths...)
+
+
+== Objectives ==
+Speak with Franclorn Forgewright if you are interested in obtaining a key to the city major.
+
+
+== Description ==
+Greetings, <name>. I am Franclorn Forgewright. Yes, the Franclorn Forgewright responsible for the stonewrought method of architecture. You have undoubtedly passed through or stood upon one of my creations in your adventures across our war torn world.
+You are probably wondering why I am here and what it is that I want from you - both valid questions.
+I need your assistance, of course. In exchange for your assistance, I shall grant you the key to the depths of my accursed city.
+
+
+== Completion ==
+Whether it is greed which brought you here or an act of selfless devotion, what you are about to undertake is for the good of us all.
+
+
+== Notes ==
+You can only grab this quest if you are in ghost form (dead) or someone that already has it shares it with you. You can find Franclorn Forgewright outside the instance. He is actually in the center of the big lava pit as you start running down the chains to head to BRD. He will be standing on top of his own tomb.
+If you plan on dying inside BRD itself or just outside it in order to talk to Franclorn Forgewright, avoid expensive repair bills by unequipping items first. Re-equip once you've died and spoken to him.
+
+Conversation with Franclorn Forgewright
+Greetings, <race>.  I am Franclorn Forgewright.  Are you here to learn of the Spire and of Dark Iron?
+ Amazing!  I've never spoken to a ghost.  I wish to learn!
+
+I had no choice, or so I thought.  I would endure the destruction of Thaurissan and stand by the side of my king and his people.
+Under the control of Ragnaros, King Dagran Thaurissan tore out the heart of this mountain and erected Blackrock Spire.  We worked tirelessly to build a dwarven city mightier than any city or fortress that came before... or would come after.
+ Continue, please.
+
+I stood by and watched the corruption of Ragnaros seep through the hearts and minds of the Dark Iron nation.  This once honorable race, driven to madness... to evil.
+When the construction of the Spire was complete, my will to live amongst my people gave way.  I passed as a hero of the new nation of Dark Iron.  This tomb was placed here - at the entrance to the city I planned and built - in honor of my efforts.
+Fascinating.  Please, tell me more.
+
+My great hammer,  [Ironfel], was handed down to the new chief architect, Fineous Darkvire: A man of despicable motive and little talent.
+This is where you come in, <name>.  I want him stopped.  He is too inept to harness the true power of Ironfel, but should one come after him with the aptitude to use Ironfel to its full potential, the destruction they could cause with their creations would be disastrous to this world.
+
+
+== Progression ==
+ [52D] Dark Iron Legacy
+ [52D] Dark Iron Legacy
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

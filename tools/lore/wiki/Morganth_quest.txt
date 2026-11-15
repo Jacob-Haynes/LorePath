@@ -1,0 +1,58 @@
+title: Morganth (quest)
+revision: 6960096
+part: whole
+quest: 249
+url: https://warcraft.wiki.gg/wiki/Morganth_%28quest%29
+
+== Objectives ==
+Defeat Morganth.
+Bring his  [Pendant of Shadow] to Theocritus at the Tower of Azora in Elwynn Forest.
+
+ [Pendant of Shadow]
+
+
+== Description ==
+After much observation, I have discovered Morganth's plans.
+He searches for the Scythe of Elune...and he may have found it! If he has, then the Redridge Mountains, and the kingdom of Stormwind, will soon feel his dark might.
+I am not prepared to pit myself against Morganth, but I fear he must be dealt with now. So you must enter the Tower of Ilgalar and face Morganth.
+Defeat him, and bring me his Pendant of Shadow. Do this, and the kingdom will owe you much.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Rose Mantle]
+ [Demonhide Bracers] 
+ [Shadow Gauntlets] 
+You will also receive:
+
+2,750 XP
++150 or +250 reputation with Stormwind
+
+
+== Progress ==
+Hurry, <name>, before my fears of Morganth spreading his power are made real!
+
+
+== Completion ==
+You have done well, <name>.  In defeating the warlock Morganth, Stormwind is saved from a grave peril.
+I offer you this reward most humbly.  And I would bid you peace, if these were peaceful times.
+But instead, I will bid you luck with your trials, and victory in the conflicts ahead.
+
+
+== Progression ==
+ [23] Theocritus' Retrieval
+ [21] A Watchful Eye
+ [22] Looking Further
+ [26] Morganth
+
+
+== Patch changes ==
+ Hotfix (2010-12-07): No longer being offered to players by the Old Lion Statue in Redridge Mountains. 
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

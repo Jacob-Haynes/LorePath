@@ -1,0 +1,47 @@
+title: The Grand Betrayal
+revision: 6853383
+part: whole
+quest: 2929
+url: https://warcraft.wiki.gg/wiki/The_Grand_Betrayal
+
+== Objectives ==
+Venture to Gnomeregan and kill Mekgineer Thermaplugg.
+Return to High Tinker Mekkatorque when the task is complete.
+
+Mekgineer Thermaplugg slain
+
+
+== Description ==
+I trusted Thermaplugg, <race>. Never did I expect that he would betray me and the entire gnomish people. And for what? Power? Wealth? All things that he would have had in time. Now we have been displaced from our home and that madman is in charge. The king of nothing....
+We will retake Gnomeregan, <name>. We will not stop until the city is back in our control. If you wish to join in our fight, a simple task I ask of you: Kill the betrayer. Destroy Mekgineer Thermaplugg.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Civinad Robes]
+ [Triprunner Dungarees]
+ [Dual Reinforced Leggings]
+You will also receive:
+
+35
+4950 XP
++500 reputation with Gnomeregan Exiles
+
+
+== Progress ==
+Is the task complete? Did he beg for lenience? For mercy??
+
+
+== Completion ==
+I like to think that the last thing that went through his head as he collapsed to the ground was your foot, <race>. With Thermaplugg dead, our plans to retake Gnomeregan are one step closer to becoming a reality.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

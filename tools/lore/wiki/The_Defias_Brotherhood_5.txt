@@ -1,0 +1,58 @@
+title: The Defias Brotherhood (5)
+revision: 6594923
+part: whole
+quest: 142
+url: https://warcraft.wiki.gg/wiki/The_Defias_Brotherhood_%285%29
+
+This quest is part of the Defias Brotherhood quest chain.
+
+
+== Objectives ==
+Track down the Defias Messenger in Westfall and bring his message to Stoutmantle.
+
+ [A Mysterious Message]
+
+
+== Description ==
+We need to discover the location of the Defias hideout. <name>, my scout reports that a Defias Messenger has been seen on the roads between Moonbrook, the Gold Coast Quarry and the Jangolode Mine.  I want you to capture him. If he resists, kill him and bring me whatever he is carrying.
+
+
+== Rewards ==
+You will receive:
+
+1,350 XP (or 8 40 at max level)
++100 reputation with Stormwind
+
+
+== Progress ==
+<Name>, were you able to gather any information?  Did you locate the messenger?
+
+
+== Completion ==
+This is indeed firm proof that VanCleef is in charge.  Now all we need to know is where the Defias gang is hiding out.
+We've had a stroke of luck while you were gone.  We captured a thief trying to steal Saldean's wagon.  He has promised to lead us to the hideout in exchange for his life.  I want you to defend the traitor so he can reveal the hideout.  Return to me once you have uncovered the location.
+
+
+== Notes ==
+The Defias Messenger's route begins in Moonbrook, where he spawns in front of the blacksmith's building at . He then travels the road north, visits the Gold Coast Quarry and Jangolode Mine, and returns to Moonbrook the same way. He takes the time to go inside both mines.
+The mysterious message can be looted by every person in a group.
+
+
+== Progression ==
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18G2] The Defias Brotherhood
+ [22D] The Defias Brotherhood
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

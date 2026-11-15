@@ -1,0 +1,46 @@
+title: Vahlarriel's Search
+revision: 5615495
+part: whole
+quest: 1437
+url: https://warcraft.wiki.gg/wiki/Vahlarriel%27s_Search
+
+== Objectives ==
+Find and search Tyranis and Dalinda Malem's wagon in Desolace.
+
+
+== Description ==
+I am Vahlarriel, <name>.  I've come here to discover the whereabouts of two missing nobles of a Darnassian merchant family--House Malem.  The father of the house fears the worst, and I am to do everything I can to find his missing children.  I have yet to start my search for Tyranis or Dalinda, but I am hopeful I shall not be here long.
+Last word tells of them passing through the Stonetalon Mountains a few weeks ago.
+If you find their wagon, please, come find me immediately.
+
+
+== Rewards ==
++150 Darnassus reputation
+1950 XP
+
+
+== Completion ==
+As you rummage around the remains of the wagon, it becomes obvious that it was attacked by both spells and weapons. The battle seemed one-sided and quick; there's no blood to be found, and no remains of any bodies.
+Whoever attacked the wagon was efficient and swift.
+
+
+== Notes ==
+The charred remains of the wagon are at . The chest is in among the remains.
+
+
+== Progression ==
+ [33] Vahlarriel's Search
+ [33] Vahlarriel's Search
+ [33] Vahlarriel's Search
+ [33] Search for Tyranis
+ [33] Return to Vahlarriel
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

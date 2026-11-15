@@ -1,0 +1,53 @@
+title: The Human, Ras Frostwhisper
+revision: 6873343
+part: whole
+quest: 5461
+url: https://warcraft.wiki.gg/wiki/The_Human%2C_Ras_Frostwhisper
+
+The Human, Ras Frostwhisper is the first quest in the Ras Frostwhisper quest chain.
+
+
+== Objectives ==
+Travel to the Arathi Highlands, to the ruins of Stromgarde. Search Stromgarde for a Keepsake of Remembrance. If you find such an item, return with it to Magistrate Marduke.
+
+ [Keepsake of Remembrance]
+
+
+== Description ==
+The undead fear life just as the living fear death. It is not unusual for a sentient undead being to completely destroy all remnants of his or her previous life after having turned.
+Unfortunately, in order to create an artifact capable of reverting Ras Frostwhisper to a mortal, we must have a keepsake from his years among the living.
+You must venture to the ruined city of Stromgarde, Frostwhisper's home, and search for such an item. May luck be with you, <name>.
+
+
+== Rewards ==
+You will receive:
+
+6600 XP (or 57 at max level)
+
+
+== Progress ==
+A keepsake of remembrance is a rare find, <name>.
+
+
+== Completion ==
+I had doubted the possibility of such an item existing. This certainly opens up an incredible opportunity - one we must not squander.
+Prepare yourself, <name>, for what I am about to ask of you will take you into the depths of hell.
+
+
+== Progression ==
+ [60G] The Human, Ras Frostwhisper
+ [60G] The Dying, Ras Frostwhisper
+ [60D] Menethil's Gift
+ [60G] Menethil's Gift
+ [60G] Soulbound Keepsake
+ [60D] The Lich, Ras Frostwhisper
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

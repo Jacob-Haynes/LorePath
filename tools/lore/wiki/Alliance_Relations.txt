@@ -1,0 +1,41 @@
+title: Alliance Relations
+revision: 5995149
+part: whole
+quest: 1431
+url: https://warcraft.wiki.gg/wiki/Alliance_Relations
+
+== Objectives ==
+Speak to Keldran in Orgrimmar.
+
+
+== Description ==
+Be still, <class>, and allow me to share with you something important to our people, but far from obvious.
+We are a proud race, and the war with the humans tried even Thrall's great patience. You see, our Warchief is wise and prudent, and he continues to put his people first. Ultimately, he is a diplomat, and in his time with the humans he learned much of their ways.
+If the tale I've started piques your interest, then find Keldran near the western exit of the city. His hovel is there.
+
+
+== Completion ==
+Putanni, noble <class>. I am Keldran, student of magic... and other mystical arts.
+The business Craven sent you here to speak to me about requires a touch more subtlety than you've previously needed, but that does not mean you can not still aid our cause.
+Please, make yourself comfortable, and I shall tell you why the Warchief has need of my aid... and yours.
+It starts with appearances, <name>. How the Horde sees itself. How our allies see us. And most importantly, how our enemies see us.
+
+
+== Progression ==
+ [30] Alliance Relations
+ [30] Alliance Relations
+ [33] Alliance Relations
+Complete both to continue:
+ [33] The Burning of Spirits
+ [33] Befouled by Satyr
+ [33] Alliance Relations
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

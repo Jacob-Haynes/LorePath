@@ -1,0 +1,44 @@
+title: The Temple of the Moon (Classic)
+revision: 6611586
+part: whole
+quest: 2519
+url: https://warcraft.wiki.gg/wiki/The_Temple_of_the_Moon_%28Classic%29
+
+The Temple of the Moon is an optional breadcrumb quest that starts at the Temple Gardens in Darnassus.
+
+
+== Objectives ==
+Sister Aquinne wants you to speak with Priestess A'moora in the Temple of the Moon.
+
+
+== Description ==
+A once great creature of the forest is in need of help, <race>.
+There is a difficult task that must be done.
+Please seek out Priestess A'moora; she will explain things to you. Find her to the southeast of here, inside the Temple of the Moon.
+
+
+== Rewards ==
+You will receive:
+
+85 XP
++10 reputation with Darnassus
+
+
+== Completion ==
+So, Sister Aquinne sent you?
+
+
+== Progression ==
+ [10] The Temple of the Moon (optional)
+ [12] Tears of the Moon
+ [12] Sathrah's Sacrifice
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,61 @@
+title: The Restless Souls (2)
+revision: 6177041
+part: whole
+quest: 5282
+url: https://warcraft.wiki.gg/wiki/The_Restless_Souls_%282%29
+
+== Objectives ==
+Use Egan's Blaster on the ghostly and spectral citizens of Stratholme. When the restless souls break free from their ghostly shells, use the blaster again - freedom will be theirs!
+Free 15 Restless Souls and return to Egan.
+
+Souls Freed (15)
+ [Egan's Blaster] (provided)
+
+
+== Description ==
+I draw my power - my will to continue living and breathing - from the unmitigated hatred I have for the Scourge and all that they have done. I am, however, no zealot. There are those, like the Scarlet Crusade, who would sooner destroy the innocent undead than lend them even an ounce of compassion.
+Which brings me to this: My blaster. It will unchain the tortured souls from Stratholme.
+Use it on the ghosts that haunt the ransacked streets. Free their souls.
+
+
+== Rewards ==
+
+You will also receive:
+
+1 80
+8300 XP (or 87 at max level)
+
+
+== Progress ==
+Compassion is what separates us from the animals, <name>. Remember that...
+
+
+== Completion ==
+<Egan wipes a tear from his eye.>
+Did you see my mother, <name>? Did you free her?
+You are a shining example of decency. For your troubles...
+
+
+== Notes ==
+The restless undead are found almost entirely in the area before "live" strat. There they patrol the streets and will not attack unless they are attacked, likely when the packs of skeletons are hit with AOE.
+ [Egan's Blaster] must be equipped in the ranged weapon slot to be used. It fills the wand, bow/gun, and relic slot. Until relics were introduced, it was the only range item paladins, shaman and druids could use.
+After the initial use on a spectral citizen they will aggro you, and you must channel the blaster again. At the end of the second channel, they will split into 1-3 wisps, that you must again target and use the blaster on. These give credit to the quest.
+When freed, souls sometimes utter quotes from Ghostbusters.
+Killing spectral citizens by conventional means is not recommended as they curse you, causing undead to spawn at intervals.
+Spectral citizens respawn fairly quickly and wander the area. Thus you can stand in a cleared spot and get all the "kills" you need.
+Dance with spectral citizens to stop them from fighting for a short while. No, really.
+
+
+== Progression ==
+ [60D] The Restless Souls
+ [60D] The Restless Souls
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

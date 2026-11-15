@@ -1,0 +1,54 @@
+title: Rocks to Rests
+revision: 6909055
+part: whole
+quest: 97326
+url: https://warcraft.wiki.gg/wiki/Rocks_to_Rests
+
+== Objectives ==
+Return 8 Smooth Boulders to Thra behind Grommash Hold.
+
+Smooth Boulder (8)
+
+
+== Description ==
+Hey! You've got time to help us out! I know you do, I can tell by the way you smiled watching the game we're playing.
+This spot behind Grommash Hold is nice because it's clear enough for us to set up our figures. But what stinks is we don't have enough rocks for chairs or tables.
+You're big and strong... d'ya think you could carry back some medium-sized rocks, smooth enough to sit on if we need a rest?
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Mogra's Friendship Bracelet]
+ [Thra's Friendship Bracelet]
+ [Puk's Friendship Bracelet]
+ [Brog's Friendship Bracelet]
+ [Migi's Friendship Bracelet]
+You will also receive:
+
+800 XP
++50 reputation with Orgrimmar
+
+
+== Progress ==
+It's nice to not have to always sit in the dirt!
+
+
+== Completion ==
+How can you even hold all of those boulders!
+Those are great. Most even have a nice flat side, too. Now that you carried them all the way over here we can scoot them around in the dirt, right where we want 'em.
+Thanks, <name>!
+
+
+== Progression ==
+Template:Meal Appeal
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

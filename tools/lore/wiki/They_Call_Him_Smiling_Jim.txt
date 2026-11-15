@@ -1,0 +1,61 @@
+title: They Call Him Smiling Jim
+revision: 6554679
+part: whole
+quest: 27251
+url: https://warcraft.wiki.gg/wiki/They_Call_Him_Smiling_Jim
+
+== Objectives ==
+Speak with Captain Garran Vimes in Theramore.
+
+
+== Description ==
+I can't help it if I feel sorry for ol' Jim there. He wasn't always like that. Ran an inn out in the marsh for a while, wonderful place.
+Look, I don't really want to talk about it. Bring it up with Captain Vimes if you really have to.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+280 XP (or 1 50 at level 70)
+
+
+== Completion ==
+James Hyal's his real name. He opened an inn at the edge of the Barrens. Wanted to make a nice place for travelers to stop over...
+Might be he was thinking too big, but the inn did do well for a while. Then we lost control of the roads in the marsh, and the ogres took over.
+James was too stubborn to give up his dream for safety within our walls, and the Shady Rest Inn was burnt to the ground. We're investigating, but haven't had much luck. If you want to help out, see what you can find in the rubble.
+
+
+== Progression ==
+This is part of The Shady Rest Inn quest chain.
+
+ [15-30] They Call Him Smiling Jim (optional)
+ [15-30] Inspecting the Ruins
+Complete all of:
+ [15-30] Suspicious Hoofprints
+The Black Shield quest chain
+ [15-30] The Black Shield
+ [15-30] The Black Shield
+ [15-30] The Black Shield
+Lieutenant Paval Reethe quest chain
+ [15-30] Lieutenant Paval Reethe
+ [15-30] Lieutenant Paval Reethe
+ [15-30] Daelin's Men
+ [15-30] The Deserters
+ [15-30] The Deserters
+ [15-30] A Grim Connection
+ [15-30] Confirming the Suspicion &  [15-30] Arms of the Grimtotems
+Side chain:
+ [15-30] Raptor Captor
+Side quest:  [15-30] Stinky's Escape
+ [15-30] Unleash the Raptors &  [15-30] Prisoners of the Grimtotems
+ [15-30] Tabetha's Assistance
+ [15-30] Raze Direhorn Post!
+ [15-30] Justice for the Hyals
+ [15-30] Peace at Last
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated.   
+
+
+== External links ==

@@ -1,0 +1,67 @@
+title: Rin'ji is Trapped!
+revision: 5638342
+part: whole
+quest: 2742
+url: https://warcraft.wiki.gg/wiki/Rin%27ji_is_Trapped%21
+
+== Objectives ==
+Escort Rin'ji out of the Quel'Danil Lodge, then find his hidden secret at the Overlook Cliffs to the east.
+
+Escort Rin'ji to safety
+
+
+== Description ==
+Hey <race>!
+Rin'ji lost axe and was captured! Please, help Rin'ji escape. Me know that <race> like you don't like Rin'ji's kind, but Rin'ji begs! Must get out of here!
+Got something for nice <race> if <he/she> helps Rin'ji out of here...
+Rin'ji is hiding something secret at the Overlook Cliffs.
+
+
+== Rewards ==
+You will receive:
+
+6050 XP
++100 or +250 reputation with Darkspear Trolls
+
+
+== Progress ==
+Rin'ji is scared!
+
+
+== Completion ==
+This troll tablet must be the "secret" that Rin'ji was talking about.
+Covered with strange markings, you can not decipher what the tablet says.
+
+
+== Notes ==
+The "secret" is not located on the Cliffs, but on a small island to the east (86,59).
+Also, during the escape, you will get ambushed twice by three Highvale Outrunners, so be sure to bring some health potions and keep your AoE abilities handy if you have any. First ambush is down the entrance of the lodge (so be sure to clear the immediate area as they tend to flee), the second near the road.
+
+Upon accept
+Rin'ji walks out of the cage.
+Rin'ji says: Rin'ji is free!
+Attacked
+Rin'ji says: Rin'ji is being attacked!
+Rin'ji says: Rin'ji needs help!
+Outside the lodge
+Highvale Outrunner says: Attack, my sisters! The troll must not escape! (x2)
+Escorted
+Rin'ji says: Rin'ji can see the road now, <name>. Rin'ji knows the way home.
+Rin'ji says: Rin'ji will tell you secret now... <Name> should go to the Overlook Cliffs. Rin'ji hid something on island there.
+Rin'ji says: You find it, you keep it! Don't tell no one that Rin'ji talked to you!
+
+
+== Progression ==
+ [47] Rin'ji is Trapped!
+ [47] Rin'ji's Secret
+ [47] Oran's Gratitude
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

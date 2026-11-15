@@ -1,0 +1,42 @@
+title: Crystal in the Mountains
+revision: 5644525
+part: whole
+quest: 635
+url: https://warcraft.wiki.gg/wiki/Crystal_in_the_Mountains
+
+== Objectives ==
+Find the crystal from your vision.
+
+ [Pendant of Myzrael] (provided)
+
+
+== Description ==
+The shard pulses as you hold it...
+You feel a sense of pleading coming from the shard, as if someone is trying to communicate, some who desperately needs your help.
+A vision appears in your mind - of the northern mountains of Arathi, and of a brilliant crystal jutting from the earth there.
+You feel drawn to that place.
+
+
+== Completion ==
+The crystal pulses, as if a living force is trapped within it.
+
+
+== Rewards ==
+You will receive:
+
+330 XP
+
+
+== Notes ==
+The crystal is located at 62, 33 in the Arathi Highlands.
+You DO get to wear the Amulet, before and after the quest. It just won't equip when you right-click it, you have to drag it to the Necklace Slot in the Character Tab. It's a pretty decent necklace for a level 35-40 player.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

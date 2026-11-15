@@ -1,0 +1,56 @@
+title: Look to an Old Friend
+revision: 6176802
+part: whole
+quest: 350
+url: https://warcraft.wiki.gg/wiki/Look_to_an_Old_Friend
+
+This quest is part of the Lescovar Incident quest chain.
+
+
+== Objectives ==
+Speak to Elling Trias in Stormwind. 
+
+
+== Description ==
+That Marzon would be contacting a member of the Defias and have ties to Lescovar...
+Having killed VanCleef and Thredd, it would be hard to see Lescovar brought to proper justice, as your evidence is nothing without their testimonies. That is not even considering the fact that Lescovar is a noble and well connected. It effectively makes him above the law.
+You'll need other help. I loathe to do so, but there is someone I know that will aid us. You'll find Trias in the Trade District of the city. 
+
+
+== Rewards ==
+250 XP (or 1 50 at level 70)
+
+
+== Completion ==
+You're kidding? Shaw wants my help again? Of all the nerve...
+The Defias Brotherhood, you say? Well, you're certainly the bearer of wonderful news, aren't you? Next you're going to tell me that Deathwing is still alive and attacking the city.
+All right, tell me everything from the beginning. And don't leave out something you think might not be important. I need to know it all.
+
+
+== Notes ==
+Elling Trias can be found in his cheese shop, near the entrance to the city.
+
+
+== Progression ==
+ [22] The Unsent Letter
+ [22] Bazil Thredd
+ [29D] The Stockade Riots
+ [29] The Curious Visitor
+ [29] Shadow of the Past
+ [31] Look to an Old Friend
+ [31] Infiltrating the Castle
+ [31] Items of Some Consequence
+ [31] The Attack!
+ [31] The Head of the Beast
+ [31] Brotherhood's End
+ [31] An Audience with the King
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

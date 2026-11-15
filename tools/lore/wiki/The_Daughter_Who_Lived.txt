@@ -1,0 +1,45 @@
+title: The Daughter Who Lived
+revision: 6523013
+part: whole
+quest: 26796
+url: https://warcraft.wiki.gg/wiki/The_Daughter_Who_Lived
+
+This quest is part of the quest chain The Story of Morgan Ladimore.
+
+
+== Objectives ==
+Speak with Watcher Sarah Ladimore in Darkshire.
+
+
+== Description ==
+I should have told you this earlier...
+How do I put this...
+Morgan may have believed that his family was all dead, but, in fact, his daughter Sarah Ladimore is now a Watcher. She's always been troubled by the... circumstances... surrounding her father's death. Perhaps you could go to bring the news to her.
+
+
+== Rewards ==
+You will receive:
+
+465 XP
++25 reputation with Stormwind
+
+
+== Completion ==
+Yes? My father...
+<Her eyes become downcast.>
+I wish... there was something I could have done for him... If only I had talked to him before he...
+
+
+== Progression ==
+ [10-30] The Weathered Grave
+ [10-30] Morgan Ladimore
+ [10-30G3] Mor'ladim
+ [10-30] The Daughter Who Lived
+ [10-30] A Daughter's Love
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Quest ID changed.   
+
+
+== External links ==

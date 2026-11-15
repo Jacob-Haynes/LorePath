@@ -1,0 +1,53 @@
+title: Slaying the Beast (quest)
+revision: 5606170
+part: whole
+quest: 5761
+url: https://warcraft.wiki.gg/wiki/Slaying_the_Beast_%28quest%29
+
+Neeru Fireblade sends the player into Ragefire Chasm to slay Taragaman the Hungerer to deceive Thrall about the true leadership of the Searing Blade. The story is connected to the Hidden Enemies quest chain.
+
+
+== Objectives ==
+Enter Ragefire Chasm and slay Taragaman the Hungerer, then bring his heart back to Neeru Fireblade in Orgrimmar.
+
+ [Taragaman the Hungerer's Heart]
+
+
+== Description ==
+The primary task set upon me by our great Warchief is to root out the creatures responsible for infesting our lord's great city with demonic influence. The Burning Blade is one threat, but there are others; the Searing Blade for instance, who make their home in Ragefire Chasm, secretly attempting to subvert innocent members of the Horde.
+If they are to be stopped, then their leader must be slain—a Felguard named Taragaman the Hungerer.
+Kill him, and his heart will appease Thrall, of this I'm sure.
+
+
+== Rewards ==
+You will receive:
+
+8
+1750 XP
+
+
+== Progress ==
+Have you killed the beast? He surely must be the leader of the Searing Blade in Ragefire Chasm.
+
+
+== Completion ==
+Ha! You've done it! Thrall will be so pleased.
+I will ensure this heart is taken care of properly.
+For now though, you must celebrate your victory. I will inform Thrall of your success.
+Thank you for your aid, <class>.
+
+
+== Notes ==
+Taragaman is easy to find - he is almost in the middle of the instance, after fighting your way through troggs, earthborers, elementals, and some Searing Blade cultists.  If you've made it this far, your party should have no trouble killing him. Taragaman is not too difficult, as he is just an oversized Felguard with a few skills.
+Be sure to kill all of the surrounding Searing Blade cultists before you pick your fight with him as they are all elites and any one of them could easily take on 2 level 15 or lower players.
+However, be sure to lure him off the rock bridge to the center of the little "island" before you fight him as he CAN throw you into the lava surrounding it, which spells instant death. It could also cause a wipe due to adds.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

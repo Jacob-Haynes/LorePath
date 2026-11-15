@@ -1,0 +1,30 @@
+title: Mrs. Dalson's Diary (quest)
+revision: 5648454
+part: whole
+quest: 5058
+url: https://warcraft.wiki.gg/wiki/Mrs._Dalson%27s_Diary_%28quest%29
+
+Mrs. Dalson's Diary is in the middle of the barn in Dalson's Tears, in Western Plaguelands.  This starts the Locked Away quest chain.
+
+
+== Description ==
+A diary with yellowing pages lies open to the last entry:
+"I don't know what's going to happen now that Harold's turned. It took everything out of me to drag him into the only place I could find that'd lock him up tight and hold him. I hid the key on me, and I pray it works...
+I hope I can get out of here, but I need money to do that. Our stuff's all in the cabinet I think... and now that I think about it, doesn't Harold keep the key on him?
+I'll rest on it, I'm dead tired now."
+
+
+== Progression ==
+ [55] Mrs. Dalson's Diary
+ [55] Locked Away
+ [55] Locked Away
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

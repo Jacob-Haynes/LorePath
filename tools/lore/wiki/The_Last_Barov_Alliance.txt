@@ -1,0 +1,59 @@
+title: The Last Barov (Alliance)
+revision: 6939938
+part: whole
+quest: 5344
+url: https://warcraft.wiki.gg/wiki/The_Last_Barov_%28Alliance%29
+
+== Objectives ==
+Travel to the Bulwark - Horde territory - and assassinate Alexi Barov. Take his head and return to Weldon Barov.
+Be warned, Alexi will probably be well protected by Horde filth.
+
+ [Head of Alexi Barov]
+Suggested Players [3]
+
+
+== Description ==
+With the deeds recovered, there is but one thing left to do. Alexi must be killed. With him dead, I need not ever worry about an unscrupulous gang of mercenaries seeking my head.
+It's a simple task. Alexi hides under the protection of the Horde - at the Bulwark.
+No, I do not expect you to just walk up and kill him, I want his head! How you get it... well, that part is up to you. That type of behavior is below one of my noble upbringing.
+
+
+== Rewards ==
+You will receive:
+
+1 80
+ [Barov Peasant Caller]
+8300 XP
+
+
+== Progress ==
+You do want payment, do you not?
+
+
+== Completion ==
+A glorious day it is! Finally, the pockmark of house Barov eliminated and my fortune secure!
+Take this and leave my sight, peasant.
+
+
+== Trivia ==
+The Last Barov is a Common Quest card in the World of Warcraft: Trading Card Game's Drums of War set.
+
+
+== Notes ==
+On accept
+Weldon Barov yells: The fortune is mine, Alexi! Your end comes soon!
+
+
+== Progression ==
+ [60D] Barov Family Fortune
+ [60P] The Last Barov
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

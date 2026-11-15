@@ -1,0 +1,60 @@
+title: Kim'jael Indeed!
+revision: 6855948
+part: whole
+quest: 3601
+url: https://warcraft.wiki.gg/wiki/Kim%27jael_Indeed%21
+
+== Objectives ==
+Search the Thalassian Base Camp for Kim'jael's Compass, Scope, Stuffed Chicken and Wizzlegoober, then return them to him in Azshara.
+
+ [Kim'Jael's Scope]
+ [Kim'Jael's Compass]
+ [Kim'Jael's Wizzlegoober]
+ [Kim'Jael's Stuffed Chicken]
+
+
+== Description ==
+Kim'jael indeed!! Do you know what Kim'jael means to the Blood elves, <name>? Little rat... or something like that. The big bullies!
+They hired me to help them scout the area looking for some sort of lost treasures. Of course I jumped aboard the moment they said "treasure" and the amount they were willing to pay, but of course, they turned on me and tried to kill me... ME!
+Goes to show you, you can't trust a Blood elf.
+The problem is, they still have my equipment and I can't get it back. Help me out?
+
+
+== Rewards ==
+You will receive:
+
+8
+9500 XP
++350 reputation with Booty Bay
+-350 reputation with Bloodsail Buccaneers
+ [M73 Frag Grenade] (3)
+
+
+== Progress ==
+Those stinkin' Blood elves. I tell ya, if I was as strong as you are, I'd go down there and teach them a thing or two myself! But I'll have to settle with payin' you to take care of 'em for me.
+
+
+== Completion ==
+Haha! You got them good, didn't you?!
+This is great! That'll teach those Blood elves to betray their partners... especially someone as loyal as a goblin merchant! Bah, Blood elves...!
+Well, the least I can do for you is pay you for your time... just like I said I would.
+Here you go... those should be useful.
+
+
+== Progression ==
+ [53] Kim'jael Indeed!
+ [53] Kim'jael's "Missing" Equipment
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+Kim'jael Indeed!, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

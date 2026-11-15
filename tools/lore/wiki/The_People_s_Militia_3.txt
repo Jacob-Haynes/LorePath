@@ -1,0 +1,53 @@
+title: The People's Militia (3)
+revision: 6959458
+part: whole
+quest: 14
+url: https://warcraft.wiki.gg/wiki/The_People%27s_Militia_%283%29
+
+== Objectives ==
+Gryan Stoutmantle wants you to kill 15 Defias Highwaymen, 5 Defias Pathstalkers and 5 Defias Knuckledusters then return to him on Sentinel Hill.
+
+Defias Highwayman (15)
+Defias Pathstalker (5)
+Defias Knuckleduster (5)
+
+
+== Description ==
+Some Defias have eluded us. My most trusted scout reports that these Defias have been looting and pillaging the countryside, all the way into Southern Westfall. We believe they are hiding out in the Dagger Hills, plotting their next move. Slay the wretches in the name of The People's Militia.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Edge of the People's Militia]
+ [Fist of the People's Militia]
+ [Spark of the People's Militia]
+ [Boots of the People's Militia] 
+You will also receive:
+
+1600 XP (or 9 60 at level 60)
++150 reputation with Stormwind
+
+
+== Progress ==
+<Name>, now is no time for idle chatter. If you still wish to prove yourself to The People's Militia you need to slay the Defias I notified you about earlier. Return to me when you have completed your duty.
+
+
+== Completion ==
+When I left the tainted lands of Lordaeron I returned to a grim state of affairs here in my homeland. But there is hope for Westfall yet. As proven by your valor in battle, it is obvious to me that you serve our cause with honor. It is with great pride that I induct thee into The People's Militia. May the Light shine upon you.
+
+
+== Progression ==
+ [12] The People's Militia
+ [14] The People's Militia
+ [17] The People's Militia
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

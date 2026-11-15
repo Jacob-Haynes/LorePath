@@ -1,0 +1,50 @@
+title: Wild Guardians
+revision: 6279148
+part: whole
+quest: 4521
+url: https://warcraft.wiki.gg/wiki/Wild_Guardians
+
+== Objectives ==
+Trull Failbane in Felwood wants you to kill 15 Raging Owlbeasts and 15 Ragged Owlbeasts.
+
+Ragged Owlbeast slain (15)
+Raging Owlbeast slain (15)
+
+
+== Description ==
+Winterspring lies just beyond Timbermaw, northeast of Felwood. Have you been there?
+I have heard that the area is laden with creatures called wildkin. These beasts have been known to guard secrets; secrets of the Night elves.
+We must figure out what may be hidden in Winterspring.
+I have heard the ragged owlbeasts can be found just south of the road, and that there are others called raging owlbeasts that may be found in the center of Winterspring. Clear them out, and gain access to the land.
+
+
+== Rewards ==
+You will receive:
+
+85
+5800 XP (or 34 50 at max level)
++250 reputation with Orgrimmar
+
+
+== Progress ==
+Report back to me after you have completed the task I gave you.
+
+
+== Completion ==
+This is excellent news, <name>. With these beasts out of the way, we can begin to adventure further into Winterspring. Are you ready for more?
+
+
+== Progression ==
+ [56] Wild Guardians
+ [58] Wild Guardians
+ [59] Wild Guardians
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,94 @@
+title: Anthion's Old Friend
+revision: 6425631
+part: whole
+quest: 8948
+url: https://warcraft.wiki.gg/wiki/Anthion%27s_Old_Friend
+
+== Objectives ==
+Take the Incomplete Banner of Provocation to Falrin Treeshaper at the library in Dire Maul.
+
+ [Incomplete Banner of Provocation] (provided)
+
+
+== Description ==
+Theldren is not one to willingly participate in a fair fight. I've shaped this banner to display his family colors.
+With some additional sorcery, this banner shall provoke him in a way he won't be able to resist.
+An old acquaintance of mine named Falrin knows the exact procedure required. He has a particular way of... aggravating people. You shall find him at the library in Dire Maul.
+
+
+== Rewards ==
+You will receive:
+
+9550 XP (or 57 at max level)
+
+
+== Progress ==
+Speak up stranger, can't you see I'm busy?
+
+
+== Completion ==
+Anthion sent you, you say?  I thought he was dead.  I guess I've heard stranger things in my life.
+Very well, then.  What is it you want me to do with this banner?
+
+
+== Notes ==
+The library is in Dire Maul West.
+
+
+== Progression ==
+ [60D] An Earnest Proposition
+ [60] A Supernatural Device
+ [60] The Ectoplasmic Distiller
+ [60] Hunting for Ectoplasm
+ [60] A Portable Power Source
+ [60] A Shifty Merchant
+ [60] Return to Deliana /  [60] Return to Mokvar
+ [60D] Just Compensation
+ [60] In Search of Anthion
+ [60D] Dead Man's Plea
+ [60] Proof of Life
+ [60] Anthion's Strange Request
+ [60D] Anthion's Old Friend
+ [60D] Falrin's Vendetta
+ [60D] The Instigator's Enchantment
+ [60D] The Challenge
+ [60D] Anthion's Parting Words
+ [60] Bodley's Unfortunate Fate
+ [60R] Three Kings of Flame
+
+ [60] Components of Importance
+ [60] Components of Importance
+ [60G] Components of Importance
+ [60G] Components of Importance
+
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60G] I See Alcaz Island In Your Future...
+
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60R] Final Preparations
+ [60R] Mea Culpa, Lord Valthalak
+ [60] Return to Bodley
+ [60] Back to the Beginning
+ [60D] Saving the Best for Last
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.10.0 (2006-03-28): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

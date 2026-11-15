@@ -1,0 +1,68 @@
+title: Scarlet Diversions
+revision: 5611505
+part: whole
+quest: 5096
+url: https://warcraft.wiki.gg/wiki/Scarlet_Diversions
+
+This quest officially starts the Horde side of The Key to Scholomance quest chain.
+
+
+== Objectives ==
+Proceed to the Scarlet Crusade's base camp between Felstone Field and Dalson's Tears and destroy their command tent.
+Place the Scourge banner at the camp, and then return to High Executor Derrington at the Bulwark, Western Plaguelands.
+
+Destroy the command tent and plant the Scourge banner in the camp
+ [Scourge Banner] (provided)
+
+
+== Description ==
+Before Andorhal, we must tackle the advancing Scarlet Crusade menace from Hearthglen. They've made camp between Felstone Field and Dalson's Tears, making us risk conflict against both the Scourge and the Crusade at once.
+My plan is to play them off of each other by sending you to destroy the command tent they've set up; use some Flame in a Bottle from this box of incendiaries. Once razed, plant this Scourge banner by the tent. With some luck, they'll ignore us and focus on the Scourge for vengeance.
+
+
+== Rewards ==
+You will receive:
+
+80
+3150 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+A surprise raid on the Scarlet Crusade's tenuous forward position will give us a buffer of time to be able to march on Andorhal. I trust you are here to report success!
+Once this is successfully executed, we will need to work diligently and quickly. We do not have the materiel and manpower to fight both the Scourge and the Scarlet Crusade at the same time if they do not buy our little ruse.
+
+
+== Completion ==
+Finely executed, <name>. Your attack on the Scarlet Crusade will buy us time. I have sent one of my best scouts out to watch over the camp and make sure that the Crusade forces that come to reinforce the position will take the bait.
+With the pressure on us lessened, we should now finally be able to risk a mission into Andorhal itself, and an important one at that. I'd very much like it if you'd perform this one as well, based on your success to date.
+
+
+== Notes ==
+You will be given the  [Scourge Banner]. However, you will need to pick up the  [Flame in a Bottle] from a box at Derrington's feet. You will need both to complete this quest.
+The first thing you will need to do is to burn down the tent by right-clicking on it when you have the  [Flame in a Bottle] in your inventory. You will have to clear out about half of the Crusade enemies to get close enough to the tent.
+Once the tent has burned down, you can plant the  [Scourge Banner] in the middle of the camp. You can only plant the banner when the tent has burned down. If you burn down the tent and don't plant the banner in time before the tent respawns, you will have to go get another  [Flame in a Bottle] from the box near High Executor Derrington.
+The Scarlet Invokers have a powerful  [Arcane Missiles] attack. Pulling more than one will likely lead to your death.
+
+
+== Progression ==
+ [50] A Call to Arms: The Plaguelands! (optional)
+ [52] Clear the Way /  [53] Scarlet Diversions
+ [56] All Along the Watchtowers
+ [55] Scholomance
+ [57] Skeletal Fragments
+ [57] Mold Rhymes With...
+ [57] Fire Plume Forged
+ [60G] Araj's Scarab
+ [60] The Key to Scholomance
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.3.0 (2005-03-07): The quest, Scarlet Diversions, should now be easier to complete.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

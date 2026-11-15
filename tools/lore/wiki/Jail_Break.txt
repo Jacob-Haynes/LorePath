@@ -1,0 +1,119 @@
+title: Jail Break!
+revision: 6972895
+part: whole
+quest: 4322
+url: https://warcraft.wiki.gg/wiki/Jail_Break%21
+
+Jail Break! is a quest in the Great Masquerade quest chain.
+
+
+== Objectives ==
+Help Marshal Windsor get his gear back and free his friends. Return to Marshal Maxwell if you succeed.
+
+Jail Break!
+
+
+== Description ==
+We need to get out of here, <name>. Help me get my gear back from the supply area and free my friends. If we make it out of here, you are to proceed to Morgan's Vigil and speak with Marshal Maxwell. He will give you further instruction.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Blade of Reckoning]
+ [Skilled Fighting Blade]
+ [Ward of the Elements]
+You will receive:
+
+13500 XP (or 46 50 at max level)
+1 75
++150 or +500 reputation with Stormwind
+
+
+== Progress ==
+You look exhausted, <name>. Perhaps you should have a seat by the fire and relax.
+
+
+== Completion ==
+Amazing, <name>. Simply amazing. Windsor stormed through here not five minutes ago. He makes some grand claims but purports that they are supported by his evidence. He is on his way to Stormwind now to confront Bolvar and ... Lady Prestor.
+
+
+== Notes ==
+Jail Break! is an escort quest. Make sure that everyone who wants credit for the jail break has turned in  [58D] A Shred of Hope before starting this quest. Also, be sure to have an empty quest log slot before starting this, or it will fail immediately.
+Preparation: You will want to clean out the supply closet, clockwise from Windsor's cell, and also the open area between the prison wing and the Ring of Law wing. Optionally, you may want to clear out everything in the Ring of Law tunnel loop. Do NOT open the prison cells in the Ring of Law tunnel before Windsor gets to them, or face the inhabitants of all of them coming out to play.
+You will proceed clockwise from Winsor's cell to the supply closet. There are several mobs inside the closet, as well as further mobs that ambush you outside the closet. When these mobs are dispatched, Winsor will armor up (at which point, he becomes effective in combat).
+Marshal Windsor will provide a +700 armor  [Devotion Aura] to the party after retrieving his armor. This could well be a benefit when tackling the mobs around the Ring of Law.
+You will then proceed across the open area to the other loop (which goes around the Ring of Law arena). There are several doors along the loop that Marshal Windor will direct you to open (with the prison cell key), lock picking works. Inside each cell is a malefactor of one sort or another, most of whom you must defeat.
+After making the loop, Windsor will run back to the entrance area, and the quest will complete.
+At all times, people on this quest should stay relatively close (visual range) to Marshal Windsor or fail the escort portion of the mission. And, obvious as it is, Marshal Windsor must not die during the escort. If you die during the escort, and can get resurrected, do not release. (Releasing puts you out of visual range, and reportedly unlinks you from the quest without causing the quest to actually fail.)
+If you fail this quest, abandon the quest, exit and reset the instance, then return to try again.
+
+
+=== NPC script ===
+Marshal Windsor says: Let's get a move on. My gear should be in the storage area up this way...
+
+Marshal Windsor says: Check that cell, <name>. If someone is alive in there, we need to get them out.
+Marshal Windsor says: Get him out of there!
+
+Marshal Windsor says: Check that cell, <name>. If someone is alive in there, we need to get them out.
+Marshal Windsor says: I bet you're sorry now, aren't you Anvilrage Captain!?!
+Dughal Stormwing says: Thank you, <name>! I'm free!!!
+Marshal Windsor says: Good work! We're almost there, <name>. This way.
+
+Marshal Windsor says: This is it, <name>. My stuff should be in that room. Cover me, I'm going in!
+Marshal Windsor says: You locked up the wrong Marshal, Doomforge Dragoon. Prepare to be destroyed!
+
+Marshal Windsor says: Ah, there it is!
+Marshal Windsor says: Can you feel the power, <name>??? It's time to ROCK!
+Marshal Windsor says: Now we just have to free Tobias and we can get out of here. This way!
+
+Marshal Windsor says: Open it.
+Marshal Windsor says: This is gonna leave a mark!
+Marshal Windsor says: I never did like those two. Let's get moving.
+
+Marshal Windsor says: Open it and be careful this time!
+Shill Dinger says: Perhaps Ograbisi will use your head as a tiny little hat when I'm through with you.
+Marshal Windsor says: Administering fists of fury on Shill Dinger!
+Marshal Windsor says: That intolerant dirtbag finally got what was coming to him. Good riddance!
+Marshal Windsor says: Alright, let's go.
+
+Marshal Windsor says: Open it. We need to hurry up. I can smell those Dark Irons coming a mile away and I can tell you one thing, they're COMING!
+Crest Killer says: Where I come from, you get shanked for opening another inmate's cell door!
+Marshal Windsor says: Administering fists of fury on Crest Killer!
+Marshal Windsor says: He has to be in the last cell. Unless... they killed him.
+
+Marshal Windsor says: Get him out of there!
+Tobias Seecher says: Finally!! I can leave this dump.
+Marshal Windsor says: Excellent work, <name>. Let's find the exit. I think I know the way. Follow me!
+
+Marshal Windsor says: We made it!
+Marshal Windsor says: Meet me at Maxwell's encampment. We'll go over the next stages of the plan there and figure out a way to decode my tablets without the decryption ring.
+
+
+== Progression ==
+ [54] Dragonkin Menace
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54D] Marshal Windsor
+ [54D] Abandoned Hope
+ [58D] A Crumpled Up Note
+ [58D] A Shred of Hope
+ [58D] Jail Break!
+ [60R] Stormwind Rendezvous
+ [60R] The Great Masquerade
+ [60R] The Dragon's Eye
+ [60R] Drakefire Amulet
+
+
+== Patch changes ==
+ Patch 3.0.2 (2008-10-14): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

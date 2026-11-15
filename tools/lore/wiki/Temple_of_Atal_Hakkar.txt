@@ -1,0 +1,6 @@
+title: Temple of Atal'Hakkar
+revision: 6973691
+part: intro
+url: https://warcraft.wiki.gg/wiki/Temple_of_Atal%27Hakkar
+
+The Temple of Atal'Hakkar (also known as the Sunken Temple) is a shrine to the nefarious Blood God Hakkar the Soulflayer that was erected by the Atal'ai trolls led by their master Jammal'an the Prophet. Believing that this was the intended site for Hakkar's reentry into Azeroth, the great Dragon Aspect Ysera and her green dragonflight sunk the temple into the depths of the Swamp of Sorrows. However, this actually helped the Atal'ai by ensuring their efforts to summon Hakkar went on undisturbed.

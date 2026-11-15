@@ -1,0 +1,54 @@
+title: Trol'kalar (Classic)
+revision: 5587141
+part: whole
+quest: 645
+url: https://warcraft.wiki.gg/wiki/Trol%27kalar_%28Classic%29
+
+Trol'kalar is the seventh step in the long Trol'kalar quest chain.  After receiving the  [Sigil of Ignaeus] in Hammerfall, return to the Sacred Chapel where you killed Prince Galen Trollbane.  A fenced path to the right of the entrance to the Chapel leads to the underground Crypt where Trollbane's tomb is located, guarded by three level 41 mobs.  
+
+
+== Objectives ==
+Retrieve Trol'kalar from Trollbane's tomb in Stromgarde.  
+
+ [Sigil of Ignaeus] (provided)
+
+
+== Description ==
+What's this? With the four sigils brought together, they have formed together to create one sigil. There can be no doubt that this will be able to break the wardings placed upon Trollbane's tomb.
+Trollbane's remains are entombed in the Sanctum behind the chapel in Stromgarde. Retrieve Trol'kalar.
+
+
+== Rewards ==
+You will receive:
+
+950 XP
++25 reputation with Darkspear Trolls
+
+
+== Progress ==
+Etchings in the stone upon the face of the tomb of Trollbane match the glowing lines of the Sigil of Ignaeus...
+
+
+== Completion ==
+Matching the lines on the face of Trollbane's tomb with the glowing lines of the Sigil of Ignaeus, a flash of light consumes the Sigil, and the legendary sword Trol'kalar is released from the stone hands' grip.
+
+
+== Progression ==
+ [37] Trollbane
+ [37] Sigil of Strom
+ [40] The Broken Sigil
+ [40] Sigil of Thoradin
+ [41] Sigil of Arathor
+ [42] Sigil of Trollbane
+ [42] Trol'kalar
+ [42] Trol'kalar
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

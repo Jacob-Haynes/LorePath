@@ -1,0 +1,53 @@
+title: Twilight Geolords
+revision: 6694256
+part: whole
+quest: 8320
+url: https://warcraft.wiki.gg/wiki/Twilight_Geolords
+
+Twilight Geolords is the first quest in the Twilight Geolords quest chain.
+
+
+== Objectives ==
+Kill 10 Twilight Geolords, then return to Huum Wildmane in Cenarion Hold.
+
+Twilight Geolords slain (10)
+
+
+== Description ==
+The Twilight's Hammer, an insane cult bent on destruction, set up camps in Silithus and perform rituals day and night.  We do not yet know their plans, but we do think they are somehow linked to the pulsing red crystals spread across the desert.
+Although their mystery may one day be solved, we must first deal with their immediate threat.  Go to their camps to the west and seek out Twilight geolords.  They are the heads of these serpents; that is where we must strike!
+
+
+== Rewards ==
+You will receive:
+
+90
+9550 XP (or 57 at max level)
++500 reputation with Cenarion Circle
+
+
+== Progress ==
+Enter the desert and find the Twilight geolords, <name>.  Return to me after they are slain.
+
+
+== Completion ==
+That was a task well performed, <name>. Your slaying of the Twilight geolords must have dealt a grievous blow to the cult. Let us hope their plans are slowed...
+
+
+== Progression ==
+ [15-30] Twilight Geolords
+ [15-30] Vyral the Vile
+ [15-30] Dearest Natalia
+ [15-30] Into The Maw of Madness
+ [15-30] Glyph Chasing
+ [15-30] Breaking the Code
+
+
+== Patch changes ==
+ Patch 1.8.0 (2005-10-10): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,40 @@
+title: Shadow Magic
+revision: 5586524
+part: whole
+quest: 115
+url: https://warcraft.wiki.gg/wiki/Shadow_Magic
+
+== Objectives ==
+Bring 3  [Midnight Orb] to Marshal Marris in Lakeshire.
+
+Midnight Orb (3)
+
+
+== Description ==
+The Blackrock orcs enlisted shadowcasters to aid their attacks in Redridge, and they have brought with them devices of dark power--midnight orbs. These orbs have struck telling blows against Redridge's defenders, and it's imperative we remove the demon-tainted items from the conflict.
+Find and deliver to me midnight orbs from slain Blackrock shadowcasters. I will then have them disposed of, for this world would be a better place without them!
+
+
+== Rewards ==
+1,850 experience
+250 reputation with Stormwind
+15
+
+
+== Progress ==
+How goes your conflict with the shadowcasters?  Did you find the midnight orbs?
+
+
+== Completion ==
+Thank you, <name>.  I'll send these to be destroyed immediately.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.3.0 (2007-11-13): No longer elite.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

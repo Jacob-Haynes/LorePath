@@ -1,0 +1,51 @@
+title: Kim'jael's "Missing" Equipment
+revision: 5889024
+part: whole
+quest: 5534
+url: https://warcraft.wiki.gg/wiki/Kim%27jael%27s_%22Missing%22_Equipment
+
+== Objectives ==
+Find Some Rune that the naga have in their possession in the Ruins of Eldarath and return it to Kim'jael in Azshara.
+
+ [Some Rune]
+
+
+== Description ==
+What?! What?!
+That wasn't good enough for you? You know how expensive those explosives are? They sell for... oh, nevermind. Fine, you want to make some real money? Cause that's how business is done: you prove you're a valuable employee and then you're rewarded adequately after you stick it out some.
+If you're a "valuable" employee, then hit the Ruins of Eldarath and find me some rune that them Blood elves were lookin' for. The naga apparently have it in their possession.
+
+
+== Rewards ==
+You will receive:
+
+1 60
+6550 XP (or 39 at level 70)
+-350 reputation with Bloodsail Buccaneers
++350 reputation with Booty Bay
+
+
+== Progress ==
+Well, <name>? Where is the rune? You are a good employee, right? You're here to help?
+Don't make me think twice about paying you what we agreed upon. What? Oh, we didn't agree on anything? Oh, great... then take your time—just know that it'll be a lot less if you take a long time.
+
+
+== Completion ==
+Haha! Wonderful!
+I'll be sure to find out what this is for and why Magus Rimtori--she's the cow that hired me—wanted it. Hah! I got you now, stinkin' Blood elves! Kim'jael! Ha! I'll teach them who the rats are!
+Ya did good, <name>. Thanks a bundle. Here, take this coin and be off with ya—I've got some things to figure out.
+
+
+== Progression ==
+ [53] Kim'jael Indeed!
+ [53] Kim'jael's "Missing" Equipment
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

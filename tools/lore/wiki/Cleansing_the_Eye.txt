@@ -1,0 +1,54 @@
+title: Cleansing the Eye
+revision: 6175772
+part: whole
+quest: 293
+url: https://warcraft.wiki.gg/wiki/Cleansing_the_Eye
+
+== Objectives ==
+Bring Archbishop Benedictus the Cursed Eye of Paleth. Benedictus is in the Cathedral of Light, in the city of Stormwind.
+
+ [Cursed Eye of Paleth] (provided)
+
+
+== Description ==
+I can't lift the curse from the Eye of Paleth. The Eyes were crafted by Human Priests, so you'll have to go to Stormwind to find someone who can help you. Speak with Archbishop Benedictus. He is head of the Cathedral of Light in Stormwind. He can help.
+I hope, for your sake.
+
+
+== Rewards ==
+You will receive:
+
+ [Eye of Paleth]
+2,450 XP
++100 reputation with Stormwind
+
+
+== Progress ==
+What is that orb you have? It looks...soiled.
+
+
+== Completion ==
+An Eye of Paleth. But this one has seen much sorrow...it must have been witness to a terrible, terrible tragedy.
+Let me cleanse it, for the Eyes were created to shine bright, and their powers can be quite dangerous if tainted like this one.
+
+
+== Trivia ==
+The name of the quest item and the model used in-game might be a reference to a palantír - a magical artifact from J. R. R. Tolkien's fantasy legendarium (seen for example in The Lord of the Rings); a spherical stone that functions somewhat like a crystal ball.
+
+
+== Progression ==
+ [27] The Third Fleet
+ [30] The Cursed Crew
+ [30] Lifting the Curse
+ [30] The Eye of Paleth
+ [30] Cleansing the Eye
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

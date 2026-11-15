@@ -1,0 +1,52 @@
+title: Venture Company Mining (Classic)
+revision: 5637309
+part: whole
+quest: 600
+url: https://warcraft.wiki.gg/wiki/Venture_Company_Mining_%28Classic%29
+
+== Objectives ==
+Bring 10 Singing Blue Crystals to Crank Fizzlebub in Booty Bay. 
+
+ [Singing Blue Crystal] (10)
+
+
+== Description ==
+The Venture Company has a string of operations through Stranglethorn which keeps hard-working goblins, like me, from making honest gold! Please, you must help me!
+The Venture Company is mining near the Crystalvein Mine to the north. They can't get into the mine because of all the basilisks, but they're still able to dig up Singing Crystals from the surrounding hills.
+Take their crystals from them, and show them they don't have the run of the jungle.
+And... um... bring me those crystals as proof!
+
+
+== Rewards ==
+
+You will gain:
+
+3300 XP (or 19 80 at level 70)
+-250 reputation with Bloodsail Buccaneers
++250 reputation with Booty Bay
+
+
+== Progress ==
+Do you have those crystals??  I need them!!
+I mean...I need to know the evil Venture Company is losing ground in Stranglethorn.  Because, you know, we honest folk have to make a living!
+
+
+== Completion ==
+Great!  Wonderful!  I can get a bundle for these!!
+That Venture Company sure picked the wrong jungle to mine in, didn't they?  We'd all be in better shape if they moved out of here.
+Thank you, <name>.  You've done a good deed this day.
+
+
+== Progression ==
+ [35] Singing Blue Shards
+ [41] Venture Company Mining
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

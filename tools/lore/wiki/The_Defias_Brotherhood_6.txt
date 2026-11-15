@@ -1,0 +1,71 @@
+title: The Defias Brotherhood (6)
+revision: 5586805
+part: whole
+quest: 155
+url: https://warcraft.wiki.gg/wiki/The_Defias_Brotherhood_%286%29
+
+This quest is part of the Defias Brotherhood quest chain.
+
+
+== Objectives ==
+Escort the Defias Traitor to the secret hideout of the Defias Brotherhood. Once the Defias Traitor shows you where VanCleef and his men are hiding out, return to Gryan Stoutmantle with the information.
+
+Escort The Defias Traitor to discover where VanCleef is hiding
+Suggested Players [2]
+
+
+== Description ==
+So Stoutmantle sends a scrawny <race> like you to protect me? Guess you'll have to do. Better bring some friends too. 
+You know the deal, right?  You watch my back and I'll take you to the Defias hideout.  But you better be close by my side.  The Defias gang wants my head now.  If they see me with you, they'll try to kill me.
+Let me know when you and any friends you can round up are ready to go.
+
+
+== Rewards ==
+You will receive:
+
+1,700 XP (or 10 20 at max level)
++150 reputation with Stormwind
+
+
+== Progress ==
+Yes?
+
+
+== Completion ==
+Most excellent, <name>!  VanCleef is as good as ours now that we know where he is hiding.
+
+
+== Notes ==
+If someone else is doing this quest (or has recently), the Defias Traitor may not be at his usual location near the Sentinel Hill watchtower.
+This is a group quest not because there are any elite mobs to defeat, but because you have to keep the Defias Traitor alive while escorting him through the center of Moonbrook. If no other players are in the area, there will be more mobs than one person of the suggested level can handle.
+The traitor will take off from the starting point at a fairly quick pace, going past the flight point to the road, and south then west along the road to Moonbrook. When he gets close to Moonbrook, he slows down considerably. He will proceed down the center of town, past the fountain, and to the entrance of the mines. Every Defias not in a building (and a select few in the buildings near the fountain) will aggro to him, or to you.
+Dialogue
+On accept:
+
+The Defias Traitor says: Follow me, <name>. I'll take you to the Defias hideout. But you better protect me or I am as good as dead.
+At the outskirts of Moonbrook:
+
+The Defias Traitor says: The entrance is hidden here in Moonbrook.  Keep your eyes peeled for thieves.  They want me dead.
+At the Defias Hideout:
+
+The Defias Traitor says: You can go tell Stoutmantle this is where the Defias Gang is holed up, <name>.
+
+
+== Progression ==
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18G2] The Defias Brotherhood
+ [22D] The Defias Brotherhood
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

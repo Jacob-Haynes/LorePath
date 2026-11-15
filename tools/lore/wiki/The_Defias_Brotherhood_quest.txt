@@ -1,0 +1,52 @@
+title: The Defias Brotherhood (quest)
+revision: 5586807
+part: whole
+quest: 65
+url: https://warcraft.wiki.gg/wiki/The_Defias_Brotherhood_%28quest%29
+
+This is the first quest in the Defias Brotherhood quest chain.
+
+
+== Objectives ==
+Gryan Stoutmantle wants you to talk to Wiley in Lakeshire.
+
+
+== Description ==
+The band of wretches responsible for driving the good people of Westfall from the land call themselves The Defias Brotherhood. I need you to infiltrate this clan of thugs. We need to know who heads up the cartel and where they are hiding out. In Lakeshire, in the inn, there is a rogue by the name of Wiley who owes me a favor.
+Travel to Lakeshire in the Redridge Mountains, east of Elwynn, and find out what you can.
+
+
+== Rewards ==
+You will receive:
+
+1,350 XP (or 8 40 at max level)
++100 reputation with Stormwind
+
+
+== Completion ==
+So, Stoutmantle sent you?  Well, I owe him.
+
+
+== Notes ==
+Wiley can be found on the second floor of the Lakeshire Inn.
+
+
+== Progression ==
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18G2] The Defias Brotherhood
+ [22D] The Defias Brotherhood
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.0.1 (2006-12-05): Reputation reward increased from +100 to +250.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

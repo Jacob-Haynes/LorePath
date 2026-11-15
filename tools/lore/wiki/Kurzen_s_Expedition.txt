@@ -1,0 +1,6 @@
+title: Kurzen's Expedition
+revision: 6690695
+part: intro
+url: https://warcraft.wiki.gg/wiki/Kurzen%27s_Expedition
+
+Kurzen's Expedition was an expedition of the Stormwind Army led by Colonel Conrad Kurzen in Northern Stranglethorn.

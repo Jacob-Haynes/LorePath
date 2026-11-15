@@ -1,0 +1,45 @@
+title: Aurel Goldleaf (quest)
+revision: 6853417
+part: whole
+quest: 8331
+url: https://warcraft.wiki.gg/wiki/Aurel_Goldleaf_%28quest%29
+
+Aurel Goldleaf requires having at least Friendly reputation with the Cenarion Circle.
+
+
+== Objectives ==
+Speak with Aurel Goldleaf in Cenarion Hold.
+
+
+== Description ==
+<Name>, although we had hoped the Twilight's Hammer's operations in Silithus were slowing... we were, regrettably, mistaken. Through continued forays against the cult, we have learned that an even darker power, the Abyssal Council, controls the Hammer through the arcane wind stones dotted amongst the cult's camps. Your next action, <name>, will be against the Abyssal Council.
+Speak with the craftsman Aurel Goldleaf, in the eastern section of Cenarion Hold. Her skill will be needed for this next gambit.
+
+
+== Rewards ==
+You will receive:
+
+650 XP
++50 reputation with Cenarion Circle
+
+
+== Completion ==
+<Name>, good day.  I was told you will pit yourself against the Abyssal Council?  If that is so, then listen closely to my next words...
+
+
+== Progression ==
+ [60] Aurel Goldleaf
+ [60] Dukes of the Council
+ [60] Bor Wildmane
+ [60G] Signet of the Dukes
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.8.0 (2005-10-10): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

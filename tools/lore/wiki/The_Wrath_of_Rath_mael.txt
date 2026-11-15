@@ -1,0 +1,57 @@
+title: The Wrath of Rath'mael
+revision: 6965741
+part: whole
+quest: 92422
+url: https://warcraft.wiki.gg/wiki/The_Wrath_of_Rath%27mael
+
+== Objectives ==
+Kill Rath'mael in the Ruins of Lordaeron for Deathguard Kristof in Brill.
+
+Rath'mael slain
+
+
+== Description ==
+Reports have come in from the Lordamere Overlook deep within the Ruins of Lordaeron. An unholy fog has taken over the streets and graveyard, affording the scourge up there some measure of stealth.
+Our scouts indicate they're being conjured by a new power within their ranks, a necromancer known as Rath'mael. We do not have the luxury of waiting this one out, <name>.
+If you have allies, summon them and their aid to the Forsaken. Drive this creature out of our lands.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Forsaken Greataxe]
+ [Gnarled Necromancer's Staff]
+You will also receive:
+
++150 reputation with Undercity
+
+
+== Progress ==
+Has the skeletal lieutenant been slain?
+
+
+== Completion ==
+While I have no doubt something of his kind will be replaced, we can only hope their ranks thin in the meantime.
+Thank you <name>.
+
+
+== Progression ==
+ [21D] Abominable Creatures
+ [22D] A Frightened Request
+ [22D] Bloodied Insignia
+ [22D] Crest of Lordaeron
+ [22D] Light's Justice
+ [22D] Remember That I Love You →  [22] Remember That I Love You
+ [12] A Recipe For Death →  [15] A Recipe For Death →  [18] A Recipe For Death →  [22D] The New Plague
+ [11] Rear Guard Patrol →  [13E] Rear Guard Patrol →  [22D] The Wrath of Rath'mael
+ [21D] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

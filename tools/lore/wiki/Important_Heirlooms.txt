@@ -1,0 +1,59 @@
+title: Important Heirlooms
+revision: 6974479
+part: whole
+url: https://warcraft.wiki.gg/wiki/Important_Heirlooms
+
+== Objectives ==
+Collect 8 Dwarven Heirlooms from the Hall of Thanes.
+
+Dwarven Heirloom (8)
+
+
+== Description ==
+You there, adventurer... I could really use your aid.
+I was sneaking--uh... 'patrolling' in the vaults when a force of Dark Iron dwarves emerged from the depths in mole machines! I don't know what they are here for, but there is priceless loot--uh or, rather... I mean, 'important cultural heirlooms' down there! Please, recover any such relics you see and return them here.
+I assure you that anything you recover will be catalogued and returned to its proper place of honor.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Dwarven Tome]
+ [Tomb Robber's Gloves]
+You will also receive:
+
+7
+2,950 XP
++100 reputation with Gadgetzan
+
+
+== Progress ==
+<Thom appears to absentmindedly rub his hands together as he looks at you.>
+
+
+== Completion ==
+Look at you, as brave as you are enterprising! I'm a gnome of my word, and your reward is well earned! 
+Now, let me take a look at the haul--uh, I mean... the recovered heirlooms. I need to get started appraising--excuse me, 'cataloging' them so that they can be put back in their proper places as quickly as possible.
+
+
+== Progression ==
+ [13] A Visitor to Dun Morogh (optional breadcrumb)
+ [13] Farsen's Watch
+ [13] Nip 'Em in the Bud
+ [15] Underground Map
+ [16D] Old Ironforge Incursion
+Dungeon quests
+ [15D] Important Heirlooms
+ [15D] The Restless Dead
+ [15D] An Ancient Grudge
+ [16] The Treaty of Understanding
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

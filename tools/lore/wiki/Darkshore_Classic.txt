@@ -1,0 +1,8 @@
+title: Darkshore (Classic)
+revision: 5606341
+part: intro
+url: https://warcraft.wiki.gg/wiki/Darkshore_%28Classic%29
+
+Darkshore is a long strip of coast on the northwestern part of Kalimdor. It is known for its characteristically shadowed woods and rocky beaches, littered with ancient ruins and mountainside caves. The night elves of Teldrassil claim the shore as part of their new kingdom, and sentinels patrol the road from the port of Auberdine towards Ashenvale to the south. 
+This rocky area stretches along Kalimdor's north coast. Rains, winds and rocky beaches make the place inhospitable. Old night elf ruins stand crumbling on the cliffs, and murlocs and naga lurk within. The night elf village of Auberdine serves as a friendly trading post.
+The region is not without dangers, however. Aggressive wildlife roams the grassy hills and stalks among the dark trees. The ruined cities of the night elves are infested with naga, satyrs, grells and haunting ghosts, and cultists of the Dark Strand and Twilight's Hammer ambush unwary travelers from their hideouts beyond the road. Even the seas are unsafe, as bloodthirsty frenzies, gigantic threshadons, and hostile murlocs lurk beneath the waves.

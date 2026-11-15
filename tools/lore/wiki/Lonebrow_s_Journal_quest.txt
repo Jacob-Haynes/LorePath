@@ -1,0 +1,53 @@
+title: Lonebrow's Journal (quest)
+revision: 6176800
+part: whole
+quest: 1100
+url: https://warcraft.wiki.gg/wiki/Lonebrow%27s_Journal_%28quest%29
+
+Lonebrow's Journal is an Alliance-only quest in which you find a dwarf's journal and take it to a druid on the edge of Feralas, as was his last wish.  It leads to  [27D] The Crone of the Kraul, a quest for the dungeon Razorfen Kraul.
+
+
+== Objectives ==
+Read Henrig Lonebrow's Journal.
+
+ [Lonebrow's Journal] (Provided)
+
+
+== Description ==
+You slowly open the weathered journal of Henrig Lonebrow.... 
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+1100 XP (or a 6 60 compensation at level 80)
+
+
+== Progress ==
+From your look of concern, I can tell that something is amiss....
+
+
+== Completion ==
+You say you found this journal on a deceased dwarf? Give me but a moment to peruse the pages...
+
+
+== Notes ==
+Head west along the main road in Thousand Needles. Thalanaar is on the border of Thousand Needles and Feralas. Talk to Falfindel Waywarder to turn in the quest.
+ [Henrig Lonebrow's Journal] can be found near the Great Lift in Thousand Needles.  From the western elevator, go down the ramp and continue about 25 feet.  Henrig Lonebrow's body is straight ahead on a low ledge, with the book clutched in his left hand.  If the book isn't there, wait a while for it to respawn.  Right click it to receive Henrig Lonebrow's Journal, and right click that to get the quest.  
+Note that when you do this,  [Henrig Lonebrow's Journal] is replaced in your inventory by  [Lonebrow's Journal].  If you wait for  [Henrig Lonebrow's Journal] to respawn on his body, you can then pick it up again, and since it is not soulbound, you can mail or give it to another character who can then accept the quest.  However, since it must be turned in at Thalanaar, this is of decidedly limited value.  The only benefit is that the second character could fly directly to Thalanaar, bypassing the long run there to pick up the book, assuming he already has the Thalanaar FP.  Also note that Thalanaar has no mailbox.
+
+
+== Progression ==
+ [27] Lonebrow's Journal
+ [27D] The Crone of the Kraul
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.4.0 (2008-03-25): Level reduced from 34 to 27.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

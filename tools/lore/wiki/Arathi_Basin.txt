@@ -1,0 +1,7 @@
+title: Arathi Basin
+revision: 6962910
+part: intro
+url: https://warcraft.wiki.gg/wiki/Arathi_Basin
+
+Arathi Basin (/əˈræθi/ ə-RATH-ee or /əˈrɑːθi/  ə-RAHTH-ee) (AB for short) is a fast and exciting battleground, located in the Arathi Highlands. The Basin itself is known for its rich mines, fertile land and skilled craftsmen and is coveted by both the Horde and the Alliance. The Forsaken Defilers and the League of Arathor have arrived at Arathi Basin to wage war over these natural resources and claim them on behalf of their respective sides. A resource race battleground, players must dominate the Basin's bases in order to claim its resources, similar to "King of the Hill" or "Conquest" modes in other games.
+There also exists a Arathi Blizzard version, a PvP Brawl.

@@ -1,0 +1,67 @@
+title: The Scrimshank Redemption
+revision: 6077591
+part: whole
+quest: 10
+url: https://warcraft.wiki.gg/wiki/The_Scrimshank_Redemption
+
+This quest is part of the Rise of the Silithid quest chain.
+
+
+== Objectives ==
+Discover the fate of Junior Surveyor Scrimshank, and bring either him or his surveying equipment to Senior Surveyor Fizzledowser in Gadgetzan.
+
+ [Scrimshank's Surveying Gear]
+
+
+== Description ==
+Oh, this is just terrible! I sent out my top assistant, Junior Surveyor Scrimshank, into the desert southeast of here. That's an area we call the Gaping Chasm. Well, he's gone missing, and his last report had more of those weird bugs where he was. Could it be that they've infested two major regions of the desert now?
+I need you to head into the Gaping Chasm and look for Scrimshank, please! That... or at least find his surveying equipment. I fear that may be all that is left of the poor sod.
+
+
+== Rewards ==
+You will receive:
+
+6300 XP
++250 reputation with Gadgetzan
+
+
+== Progress ==
+Well, what news do you have?  You look like you've been in quite the fight... is Scrimshank alive?
+
+
+== Completion ==
+He was a good goblin, young Scrimshank. Let's hope that his demise was not in vain by what he was able to record with his surveying equipment.
+It seems as though we have quite the situation on our hands here with these bugs. They're way too cunning for their own good, and the research we've done so far is shaping up to indicate that they might even be under the controlling influence of a third party! If this is the case, then it bodes ill for not only Gadgetzan, but the whole desert!
+
+
+== Notes ==
+The equipment can be found in the cave-like hive in the center of Gaping Chasm. If entering from the North entrance, keep to the right. What you are looking for is the northwest lobe of a room that resembles a purple butterfly (coordinates: 55.9, 71.2).  The equipment is a machine that resembles one of the
+buzzboxes in Darkshore.
+
+
+== Trivia ==
+The Scrimshank Redemption is a reference to The Shawshank Redemption.
+
+
+== Progression ==
+ [46] Gadgetzan Water Survey
+ [47] Noxious Lair Investigation
+ [48] The Scrimshank Redemption
+ [48] Insect Part Analysis
+ [48] Insect Part Analysis
+ [48] Rise of the Silithid
+ [53] March of the Silithid
+ [53] Bungle in the Jungle
+ [54G] Pawn Captures Queen
+ [54] Calm Before the Storm
+ [54] Calm Before the Storm
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

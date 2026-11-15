@@ -1,0 +1,47 @@
+title: The Engraved Ring
+revision: 5636526
+part: whole
+quest: 440
+url: https://warcraft.wiki.gg/wiki/The_Engraved_Ring
+
+== Objectives ==
+Bring Deliah's Ring to Magistrate Sevren in Brill.
+
+ [Deliah's Ring] (provided)
+
+
+== Description ==
+If you want to find the husband or beloved who gave Deliah her ring... then speak with Magistrate Sevren in Brill. He should have records of recent deaths and, with luck, can discover who Deliah is.
+But I wouldn't hope. Whoever gave her the ring is probably dead. Or if he's undead he probably no longer cares about Deliah.
+
+
+== Rewards ==
+You will receive:
+
+575 XP (or 3 60 at level 70)
++50 or +75 reputation with Undercity
+
+
+== Progress ==
+Hello, <name>.  What brings you back to Brill?
+
+
+== Completion ==
+A Deliah did live in Brill not long ago.  She was buried in the mass grave but if what you say is true, then the Rot Hide Gnolls must have stolen her body and taken it to Silverpine.
+The Rot Hides, like all the Scourge, must be destroyed.  I trust you are taking steps to make that happen.
+
+
+== Progression ==
+ [16] The Engraved Ring
+ [16] Raleigh and the Undercity
+ [20] A Husband's Revenge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

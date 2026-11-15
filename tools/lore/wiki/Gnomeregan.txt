@@ -1,0 +1,9 @@
+title: Gnomeregan
+revision: 6832053
+part: intro
+url: https://warcraft.wiki.gg/wiki/Gnomeregan
+
+Gnomeregan (/noʊmɹəˈɡɑːn/ NOHM-rə-gahn) is the subterranean capital city of the eponymous kingdom of Gnomeregan and the wrought-iron evidence of gnomish brilliance, ambition, and ingenuity.
+During the Third War, a trogg invasion led to its tragic downfall, pulled from their sleep by the upheaval of titan sites. In a desperate attempt to kill the invaders, the gnomish ruler, High Tinker Gelbin Mekkatorque, on the advice of his advisor Sicco Thermaplugg, ordered his people to open the pressure valves of their giant, grinding machines and released toxic radiation throughout the city. Though the radiation killed some of the troggs, it empowered others, while nearly eighty percent of gnomekind died within days. The survivors fled to the protection of Ironforge, while others were transformed into horrific, mindless, evil-doing leper gnomes, who still live there. Driven completely mad by the radiation, Thermaplugg declared himself "King of Gnomeregan" and took control of the city, leading an army of troggs and leper gnomes.
+After the Northrend campaign, Mekkatorque launched Operation: Gnomeregan with the support of the Alliance, allowing the gnomes to reclaim both the surface and the upper floors of Gnomeregan. Since then, the S.A.F.E. forces have been responsible for cleaning up the radiation, as well as saving the survivors inside the capital, using New Tinkertown as their base of operations on the surface.
+The city is currently a mid-level dungeon.

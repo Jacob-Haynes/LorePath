@@ -1,0 +1,51 @@
+title: Bashal'Aran (2)
+revision: 5995230
+part: whole
+quest: 955
+url: https://warcraft.wiki.gg/wiki/Bashal%27Aran_%282%29
+
+This quest is part of the Bashal'Aran quest chain.
+
+
+== Objectives ==
+Acquire 8 Grell Earrings for Asterion in Bashal'Aran.
+
+ [Grell Earring] (8)
+
+
+== Description ==
+If I were to relate the story of my life, I have no doubt it would surpass the limits of your patience. Let us say that mine has been a long and painful life, and this spectral form is perhaps the worst torment of all.
+I am held here by the means of magic. Though my words may seem disingenuous, I assure you I would be grateful beyond words if you would help me find the means of my imprisonment. A seal binds me, and by examining the earpieces of the sprites and grells, I may find a trace of it. 
+
+
+== Progress ==
+Once I have the earrings, I will cast the spell to search for the whereabouts of the seal that binds me. For centuries I have thought on the freedom destroying the seal would bring to me... Perhaps those centuries have taken a toll upon my mind that I might never recover... 
+
+
+== Completion ==
+Indeed... The grells of Bashal'Aran do not possess that which I am searching... however they have come into contact with it
+recently. Recently... I would reckon that by your time, not mine. Recent for me stretches into the veil of the past, almost another Age... 
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+900 XP (or 5 40 at level 80)
+250 reputation with Darnassus
+
+
+== Progression ==
+ [12] Bashal'Aran
+ [12] Bashal'Aran
+ [13] Bashal'Aran
+ [13] Bashal'Aran
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

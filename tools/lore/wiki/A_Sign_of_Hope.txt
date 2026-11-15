@@ -1,0 +1,51 @@
+title: A Sign of Hope
+revision: 6234303
+part: whole
+quest: 720
+url: https://warcraft.wiki.gg/wiki/A_Sign_of_Hope
+
+This quest starts the A Sign of Hope quest chain.
+
+
+== Objectives ==
+Find Prospector Ryedol and let him know Hammertoe Grez is alive.
+
+
+== Description ==
+<There is text roughly scribbled in chalk on the map.>
+"Ryedol,
+They're taking me to Uldaman. Send help.
+-Hammertoe"
+
+
+== Rewards ==
+You will receive:
+
+1350 XP (or 8 40 at level 70)
++75 reputation with Ironforge
+
+
+== Completion ==
+Hammertoe's alive?! This is amazin', <name>!
+
+
+== Progression ==
+ [35] A Sign of Hope
+ [35D] A Sign of Hope
+ [40D] Amulet of Secrets
+ [40] Prospect of Faith
+ [40] Prospect of Faith
+ [40] Passing Word of a Threat
+ [40] Passing Word of a Threat
+ [44G] An Ambassador of Evil
+ [45D] The Lost Tablets of Will
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

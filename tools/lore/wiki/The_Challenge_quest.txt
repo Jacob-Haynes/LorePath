@@ -1,0 +1,103 @@
+title: The Challenge (quest)
+revision: 6197156
+part: whole
+quest: 9015
+url: https://warcraft.wiki.gg/wiki/The_Challenge_%28quest%29
+
+== Objectives ==
+Travel to the Ring of the Law in Blackrock Depths and place the Banner of Provocation in its center as you are sentenced by High Justice Grimstone. Slay Theldren and his gladiators and return to Anthion Harmon in the Eastern Plaguelands with the first piece of Lord Valthalak's amulet.
+
+Theldren's Team Defeated
+ [Top Piece of Lord Valthalak's Amulet]
+ [Banner of Provocation] (provided)
+
+
+== Description ==
+Heed me well, <name>. For the banner to work in the desired way, you will need to step into the Ring of the Law in Blackrock Depths. Allow yourself to be sentenced by High Justice Grimstone and place the banner firmly on the ground in a sign of defiance.
+Your victim will not be able to restrain himself and shall enter the fray filled with a desire to fight you. Once you obtain that which you seek, go back to Anthion.
+
+
+== Rewards ==
+You will receive:
+
+9550 XP (or a 57 compensation at level 80)
+
+
+== Progress ==
+You're back, <name>!
+
+
+== Completion ==
+You've recovered part of the medallion, <name>?
+
+
+== Notes ==
+You'll need to go to the Ring of Law which is an arena like area. When you are being sentenced, use the Banner. This will bring Theldren into the fight.
+The group you will face will fight like a PvP group. They will try to go after cloth wearing characters first. They are immune to taunt and tanks will have a hard time maintaining aggro. The best strategy is to use a lot of crowd control such as polymorph, fear, and freeze traps. You want to leave only 1-2 active so you can concentrate firepower on those.
+When you complete the fight, a box of loot will appear. Make sure you loot the  [Top Piece of Lord Valthalak's Amulet] off Theldren. You get to keep the banner in case you want to run this fight again.
+Upon accept
+Spectral Stalker says: Your meddling ends here, Impossible! Lord Valthalak shall have his revenge!
+Falrin Treeshaper says: Friends of yours?
+
+
+== Progression ==
+ [60D] An Earnest Proposition
+ [60] A Supernatural Device
+ [60] The Ectoplasmic Distiller
+ [60] Hunting for Ectoplasm
+ [60] A Portable Power Source
+ [60] A Shifty Merchant
+ [60] Return to Deliana /  [60] Return to Mokvar
+ [60D] Just Compensation
+ [60] In Search of Anthion
+ [60D] Dead Man's Plea
+ [60] Proof of Life
+ [60] Anthion's Strange Request
+ [60D] Anthion's Old Friend
+ [60D] Falrin's Vendetta
+ [60D] The Instigator's Enchantment
+ [60D] The Challenge
+ [60D] Anthion's Parting Words
+ [60] Bodley's Unfortunate Fate
+ [60R] Three Kings of Flame
+
+ [60] Components of Importance
+ [60] Components of Importance
+ [60G] Components of Importance
+ [60G] Components of Importance
+
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60G] I See Alcaz Island In Your Future...
+
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60R] Final Preparations
+ [60R] Mea Culpa, Lord Valthalak
+ [60] Return to Bodley
+ [60] Back to the Beginning
+ [60D] Saving the Best for Last
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.10.0 (2006-03-28): Added.   
+
+
+== See also ==
+The Challenge, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

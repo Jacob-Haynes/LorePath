@@ -1,0 +1,60 @@
+title: The Pariah's Instructions (quest)
+revision: 6759554
+part: whole
+quest: 7067
+url: https://warcraft.wiki.gg/wiki/The_Pariah%27s_Instructions_%28quest%29
+
+In The Pariah's Instructions, the Centaur Pariah asks you to enter Maraudon and defeat the Nameless Prophet and the five first centaur Khans, in order to complete the  [Amulet of Union]. The Centaur Pariah hopes to use this amulet to unite the centaur tribes.
+
+
+== Objectives ==
+Read the Pariah's Instructions. Afterwards, obtain the Amulet of Union from Maraudon and return it to the Centaur Pariah in southern Desolace.
+
+ [Amulet of Union]
+ [Amulet of Spirits]
+ [The Pariah's Instructions] (provided)
+
+
+== Description ==
+Though exiled as a heretic, my beliefs still ring true—that alone drives me onward. But for my destiny to be complete, I need the aid of an outsider... one not of any centaur tribe.
+The task requires someone to enter the holy halls of Maraudon—a tomb my people protect, and only the most devout are ever allowed to enter.
+If you agree to aid me, then you need only nod. I will pass you a parchment with my instructions on it. Read it over and consider my words.
+
+
+== Rewards ==
+You will receive:
+
+1 40
+550 - 5,450 XP
+ [Mark of the Chosen]
+
+
+== Progress ==
+What did you decide, <name>? Can you help me? Will you set foot on holy ground to help me forge one great centaur tribe!?
+
+
+== Completion ==
+This is it, <race>! This is it! Now I can begin the great task of uniting the tribes. Thank you.
+Take this for your efforts, please. I hope when next we meet, it will be on much different terms.
+
+
+== Notes ==
+The Centaur Pariah can be found in southern Desolace - he patrols between coordinates 43,85, 48,87 and 50,86.
+The Khans are found in these areas:
+Middle area = 1st 
+Purple area = 2nd 
+Orange area = 3rd 
+Purple instance = 4th 
+Orange instance = 5th  
+For more information on tactics and groups for this instance, see the main Maraudon article.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.2.0 (2004-12-18): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

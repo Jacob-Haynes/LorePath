@@ -1,0 +1,48 @@
+title: Dark Iron Legacy (2)
+revision: 6556551
+part: whole
+quest: 3802
+url: https://warcraft.wiki.gg/wiki/Dark_Iron_Legacy_%282%29
+
+== Objectives ==
+Slay Fineous Darkvire and recover the great hammer, Ironfel. Take Ironfel to the Shrine of Thaurissan and place it on the statue of Franclorn Forgewright.
+
+
+== Description ==
+You will find Fineous Darkvire beyond the Ring of Law, in the Hall of Crafting. Kill the miserable cur and recover Ironfel.
+Take Ironfel to the Shrine of Thaurissan and place the hammer in its rightful place: In the hands of the statue erected in my honor.
+When this is done, the compartment in which I stored the master key will open. More importantly, Ironfel will remain forever in my grasp. Should they make an attempt to remove the hammer; both the statue and hammer will shatter, lost forever.
+
+
+== Rewards ==
+You will receive:
+
+2 30
+ [Shadowforge Key]
+
+
+== Progress ==
+The statue looms ominously above you.
+
+
+== Completion ==
+The hammer slides firmly into place, within the grasp of the massive Dark Iron monument. A tiny compartment opens at the base of the statue. Inside you find...
+
+
+== Notes ==
+While the standard quest completion background is parchment, the background for quest completion with the monument is a granite pattern.
+
+
+== Progression ==
+ [52D] Dark Iron Legacy
+ [52D] Dark Iron Legacy
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

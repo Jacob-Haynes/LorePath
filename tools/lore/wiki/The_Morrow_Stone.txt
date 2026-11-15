@@ -1,0 +1,58 @@
+title: The Morrow Stone
+revision: 6839582
+part: whole
+quest: 2942
+url: https://warcraft.wiki.gg/wiki/The_Morrow_Stone
+
+This quest concludes the quest chain In Search of Knowledge.
+
+
+== Objectives ==
+Return the Sparkling Stone and the Stave of Equinex to Troyas Moonbreeze in Feathermoon Stronghold. 
+
+ [A Sparkling Stone]
+ [Stave of Equinex] (provided)
+
+
+== Description ==
+The moment the artifact is removed from the Monolith, you feel the energy in the Stave of Equinex begin to fade.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Cairnstone Sliver]
+ [Seedtime Hoop]
+You will also receive:
+
+4700 XP (or 28 20 at max level)
++250 reputation with Darnassus
+
+
+== Progress ==
+I am glad you have returned, <name>. I am eager to hear of your findings.
+
+
+== Completion ==
+I have been reading since you left, <name>. This stone you have found is called the Morrow Stone. While I am not entirely sure what its purpose is yet, you can be sure that it is something of great significance to be hidden away inside the Equinex Monolith the way it was.
+I will continue my studies, and I hope I will be able to count on you in the future, <name>. Thank you for all your help.
+
+
+== Progression ==
+ [47] In Search of Knowledge
+ [47] Feralas: A History
+ [48] The Borrower
+ [48] The Super Snapper FX
+ [48] Return to Troyas
+ [50] The Stave of Equinex
+ [50] The Morrow Stone
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

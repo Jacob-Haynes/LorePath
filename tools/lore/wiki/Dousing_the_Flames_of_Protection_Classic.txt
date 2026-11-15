@@ -1,0 +1,55 @@
+title: Dousing the Flames of Protection (Classic)
+revision: 6947716
+part: whole
+quest: 5165
+url: https://warcraft.wiki.gg/wiki/Dousing_the_Flames_of_Protection_%28Classic%29
+
+== Objectives ==
+Using the Purified Moon Well Water, douse the flames of the four braziers of protection within Shadow Hold in Felwood, then return to Greta Mosshoof in the Emerald Sanctuary.
+
+Extinguish the Brazier of Pain
+Extinguish the Brazier of Malice
+Extinguish the Brazier of Suffering
+Extinguish the Brazier of Hatred
+ [Purified Moonwell Water] (provided)
+
+
+== Description ==
+Now, you must return to Jaedenar. The braziers are more than likely spread throughout Shadow Hold. Douse each of their flames and the protections the Council has set up will fall for at least a short period of time. I will be waiting for that to happen. When it does, I will look deep within the Hold and try to find out who the head of this beast is. Then, and only then, will we see about attacking them directly.
+
+
+== Rewards ==
+8150 XP
+
+
+== Progress ==
+The braziers must be extinguished if we are to have any hope of being prepared for a much greater battle. Going in to the dragon's lair without any knowledge is a fool's errand. And this is much worse than a dragon. The Shadow Council are solely responsible for a great number of crimes and atrocities. We'll have to work quickly if we're to stop them.
+
+
+== Completion ==
+I was able to see you with my spells as soon as the last brazier's flames died. Well done, <name>.
+I learned a few things before the Shadow Council's warlocks were able to recast their spells. Hopefully it will be enough.
+For now, rest. I will tell you what I've learned in a moment. 
+
+
+== Progression ==
+ [51] Forces of Jaedenar
+ [52] Collection of the Corrupt Water
+ [52] Seeking Spiritual Aid
+ [54] Cleansed Water Returns to Felwood
+ [55] Dousing the Flames of Protection
+ [58] A Final Blow
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+Dousing the Flames of Protection, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

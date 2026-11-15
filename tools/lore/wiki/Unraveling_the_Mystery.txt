@@ -1,0 +1,57 @@
+title: Unraveling the Mystery
+revision: 6188758
+part: whole
+quest: 8314
+url: https://warcraft.wiki.gg/wiki/Unraveling_the_Mystery
+
+== Objectives ==
+Deliver the Glyphed Crystal Prism to Geologist Larksbane at the Cenarion Hold in Silithus.
+
+ [Glyphed Crystal Prism] (provided)
+
+
+== Description ==
+We're on the verge of a breakthrough, <name>! The rubbings you recovered have allowed us to recreate the glyphs on this crystalline prism. They are apparently a means for the Qiraji and other unknown entities to communicate various messages to the silithid.
+Unfortunately, that is all we could get out of the glyphs. We need to find a way to unlock the messages hidden within the crystals.
+Take the glyphed crystal prism to Geologist Larksbane at Cenarion Hold.  She might be able to help.
+
+
+== Rewards ==
+You will receive:
+
+4950 XP
++300 reputation with Cenarion Circle
+
+
+== Progress ==
+Oh my! What do you have there, <name>?
+
+
+== Completion ==
+The reason the dwarves could not decipher the glyphs is because there is nothing to decipher. The shifting outer layer of the prism must properly align with the inner crystal's markings in order for the message to be transmitted. Clever...
+While we should be able to translate this data, we must first unlock the code. There is only one clue on the surface of the prism - assuming the rubbings were transferred correctly - and it looks grim.
+
+
+== Notes ==
+Upon completing this quest, a player would receive the error message "You do not meet the requirements for this quest" in their chat logs. This is because the game is trying to access the follow up quest,  [60G] The Calling, which was removed from the game in patch 4.1.0 (due to it leading to a major event in Ahn'Qiraj), thus trying to find a quest that no longer exists. Therefore, it is normal for the quest line to abruptly end following completion of this quest, and the error the player gets afterwards is a bug and cannot be fixed by any rep gains or leveling. The game's failure to find the quest in its code is what triggers this message.
+
+
+== Progression ==
+ [15-30] Twilight Geolords
+ [15-30] Vyral the Vile
+ [15-30] Dearest Natalia
+ [15-30] Into The Maw of Madness
+ [15-30] Breaking the Code
+ [15-30] Glyph Chasing
+ [15-30] Unraveling the Mystery
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Objective text changed from "Rutgar Glyphshaper at Bronzebeard's Encampment wants you to deliver the Glyphed Crystal Prism to Geologist Larksbane at the Cenarion Hold in Silithus.".   
+ Patch 1.8.0 (2005-10-10): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

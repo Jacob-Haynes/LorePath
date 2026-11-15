@@ -1,0 +1,52 @@
+title: What Is Going On?
+revision: 5587226
+part: whole
+quest: 3982
+url: https://warcraft.wiki.gg/wiki/What_Is_Going_On%3F
+
+== Objectives ==
+Defend Gor'shak. 
+
+Survive the Onslaught
+
+
+== Description ==
+I was sent here under the auspices of Thrall. Do you actually think these buffoons could capture me? I allowed myself to be captured so that I could gather intelligence.
+<Gor'shak whispers.>
+The Princess of Ironforge has been kidnapped by Emperor Thaurissan. Princess Bronzebeard is in this very city! I bet old Magni's heart almost stopped when he heard that news.
+<Gor'shak laughs.>
+Shhh! Do you hear that? Guards coming! DEFEND YOURSELF!
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+5450 XP (or 33 at level 70)
++250 reputation with Orgrimmar
+
+
+== Progress ==
+Defend yourself, fool!
+
+
+== Completion ==
+That was a close call. They have been alerted to your presence... more will surely come.
+
+
+== Progression ==
+ [52D] Commander Gor'shak
+ [54D] What Is Going On?
+ [54D] What Is Going On?
+ [54D] The Eastern Kingdoms
+ [59D] The Royal Rescue
+ [60D] The Princess Saved?
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

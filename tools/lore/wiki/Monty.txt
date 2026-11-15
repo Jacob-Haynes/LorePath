@@ -1,0 +1,6 @@
+title: Monty
+revision: 6795602
+part: intro
+url: https://warcraft.wiki.gg/wiki/Monty
+
+Monty is a gnome and "Rat Extermination Specialist" located on the Ironforge side of the Deeprun Tram. Ever since the fall of Gnomeregan, he's been acting like a pirate despite never seeing the ocean.

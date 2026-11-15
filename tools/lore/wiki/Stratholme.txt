@@ -1,0 +1,7 @@
+title: Stratholme
+revision: 6908657
+part: intro
+url: https://warcraft.wiki.gg/wiki/Stratholme
+
+Stratholme (or Stratholme City)(/ˈstræθ.oʊlm/ STRATH-ohlm) was the northernmost and second-most populous city of the kingdom of Lordaeron. It was here that the Order of the Silver Hand was founded prior to the Second War. Years later, the port city was plagued by the Cult of the Damned, using infected grain from Andorhal, and its population was ultimately purged by Prince Arthas Menethil. In the aftermath, Stratholme became the Scourge's capital in Lordaeron after the undead moved in, and is still burning to this day.
+The city included many well-known buildings, from the glorious Bastion of the Silver Hand to Ezra Grimm's famous tobacco shop.

@@ -1,0 +1,64 @@
+title: The Shadowy Figure
+revision: 5586993
+part: whole
+quest: 262
+url: https://warcraft.wiki.gg/wiki/The_Shadowy_Figure
+
+This quest is part of the Morbent Fel series of quests.
+
+
+== Objectives ==
+Take the book you found at Sven's farm and show it to townsfolk in Darkshire.
+
+ [Book from Sven's Farm] (provided)
+
+
+== Description ==
+I must know who was that skulker in the shadows I saw the night my family was killed!
+Please, <name>, you have shown your resourcefulness. Please find that shadowy figure. I must learn what secrets he holds!
+I do not have clues that you do not already know, but here - take the book you found at my farm. Perhaps some of the townsfolk can link this book with its owner.
+
+
+== Rewards ==
+You will receive:
+
+500 XP
++25 reputation with Stormwind
+
+
+== Progress ==
+If you have something that belongs to the shadowy figure for whom you seek, then let me see it.  I may be able to divine something of its owner.
+
+
+== Completion ==
+Hmm... Someone handled this book recently, someone who is driven by revenge.  But the impressions left on it, at least the impressions from the original owner, are faint.
+I can tell, however, that the original owner of this book is not a native of Darkshire.
+
+
+== Progression ==
+ [23] Deliveries to Sven (optional)
+ [25] Sven's Revenge
+ [25] Sven's Camp
+ [25] The Shadowy Figure
+ [25] The Shadowy Search Continues
+ [25] Inquire at the Inn
+ [25] Finding the Shadowy Figure
+ [25] Return to Sven
+ [28] Proving Your Worth
+ [29] Seeking Wisdom
+ [29] The Doomed Fleet
+ [29] Lightforge Iron
+ [29] The Lost Ingots
+ [29] Blessed Arm
+ [29] Armed and Ready
+ [32G] Morbent Fel
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

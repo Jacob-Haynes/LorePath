@@ -1,0 +1,54 @@
+title: Defeat Nek'rosh
+revision: 6971762
+part: whole
+quest: 474
+url: https://warcraft.wiki.gg/wiki/Defeat_Nek%27rosh
+
+== Objectives ==
+Kill Chieftain Nek'rosh
+Bring Nek'rosh's Head to Captain Stoutfist. 
+
+ [Nek'rosh's Head]
+
+
+== Description ==
+Now that the catapults have been burned, find and kill Chieftain Nek'rosh. 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Ancient War Sword]
+ [Barreling Reaper]
+ [Dragonmaw Skinflayer] 
+You will also receive:
+
+2,550 XP
++100 reputation with Ironforge
+
+
+== Progress ==
+Have you killed Nek'rosh? 
+
+
+== Completion ==
+Stoutly done, <name>. You have dealt a telling blow to the Dragonmaw orc clan.  They may never recover. And the destruction of those catapults has made Menethil Harbor safe.
+You are a <race> of merit, and the kingdom of Ironforge rewards those who serve it well. 
+
+
+== Progression ==
+ [26] Report to Captain Stoutfist
+ [26] War Banners
+ [26] Nek'rosh's Gambit
+ [26] Defeat Nek'rosh
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.3.0 (2007-11-13): Level reduced from 32 to 26.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

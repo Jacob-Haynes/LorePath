@@ -1,0 +1,79 @@
+title: The Curse of the Tides
+revision: 5633994
+part: whole
+quest: 611
+url: https://warcraft.wiki.gg/wiki/The_Curse_of_the_Tides
+
+The Curse of the Tides is an Alliance-only quest in Stranglethorn Vale that concludes the Stone of the Tides quest chain. Though labeled as a group quest, this quest can be easily soloed by characters around level 40 (see "details" below for more info). In this quest, players are asked to use Catelyn's special knife (a troll artifact) to destroy an altar, causing a mage wielding the  [Stone of the Tides] to appear.
+
+
+== Objectives ==
+Destroy the Altar of the Tides with  [Catelyn's Blade], kill Gazban and bring the  [Stone of the Tides] and  [Catelyn's Blade] back to Baron Revilgaz.
+
+ [Stone of the Tides]
+ [Catelyn's Blade] (provided)
+
+
+== Description ==
+So you're looking for an altar of some sort? Well, I'm no expert on troll ruins like my father, but I have heard about a sunken troll city out near that island you're looking for. Maybe you should try there.
+You got my knife back for me, so I guess you can borrow it... but I want it back when you're done!
+
+
+== Rewards ==
+
+You will gain:
+
+4350 XP
+350 reputation with Booty Bay
+-350 reputation with Bloodsail Buccaneers
+
+
+== Progress ==
+Have you retrieved the Stone of the Tides for me, <name>? I've already cleared out a space and purchased a fine stand for it.
+
+
+== Completion ==
+Amazing! The Stone of Tides! It shall have a place of prominence in my collection of ancient troll artifacts. Did you see how it almost seems as though a tide is trapped within its surface? Magnificent!
+
+
+== Notes ==
+The altar which must be destroyed lies in the Vile Reef, off the coast north-west of the Horde town Grom'gol Base Camp. The altar is in a ruined city sunk beneath the ocean. It may be useful to bring some way to breathe underwater for this quest.
+Coordinates of the altar: (24,23)
+The altar is surrounded by a blue glow and should be easy to see from far away. Approach the altar and right click it to summon Gazban, the goblin mage who holds the  [Stone of the Tides]. He is a level 40 non-elite who will turn into a water elemental. Since he is not elite, it is perfectly feasible for a single player to complete this quest, provided they avoid the nearby murlocs (or deal with them one by one, as a level 40 should be able to handle these lower level elites).
+Once Gazban is defeated, loot the  [Stone of the Tides] and return to Booty Bay and Baron Revilgaz.
+NOTE: Many glitches have been reported for this quest. The glitches involve Gazban not showing up after clicking on the altar, or have him show up but simply evade all attacks. Some players report that this only happens when you are too far away from the altar, and getting closer seems to fix the problem. Others claim that the only way is to restart the quest and return. Still other players have reported that the mob simply needs time to respawn.
+
+
+=== Bug notice ===
+As of July 31, 2008, a GM acknowledged that the quest was badly bugged and cannot be consistently completed at this time.
+
+
+== Progression ==
+ [37] The Haunted Isle
+ [37] The Stone of the Tides
+ [1] Stormwind Library
+ [37] Water Elementals
+ [37] Magical Analysis
+ [37] Ansirem's Key
+ [39] "Pretty Boy" Duncan
+ [40] The Curse of the Tides
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.3.0 (2007-11-13):    This quest was changed from Group to Solo, and the final mob changed from elite to non-elite.
+
+
+== See also ==
+The Vile Reef, where this quest takes place, is the location of several quests. It is a good idea to do all of these quests at once. As of patch 2.3, area is no longer elite.
+
+ [35] Encrusted Tail Fins - from Wizzle Brassbolts at the Mirage Raceway in Thousand Needles
+ [37] Pearl Diving - from Rigglefuzz in the Valley of Fangs in the Badlands
+ [38] Kurzen's Mystery - from Brother Nimetz at the Rebel Camp in Stranglethorn Vale
+The Curse of the Tides - from Catelyn the Blade at the inn in Booty Bay, in Stranglethorn Vale
+
+
+== External links ==
+
+Wowhead
+WoWDB

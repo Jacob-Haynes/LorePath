@@ -1,0 +1,52 @@
+title: Precarious Predicament
+revision: 5586309
+part: whole
+quest: 4121
+url: https://warcraft.wiki.gg/wiki/Precarious_Predicament
+
+This quest is a prerequisite for  [58D] Operation: Death to Angerforge.
+Warning: This quest may seem bugged.  After using the  [Thorium Shackles], Grark often stands for several minutes before he gives his second emote and begins walking.  Be patient.
+
+
+== Objectives ==
+Escort your prisoner, Grark Lorkrub, through Burning Steppes and through Blackrock Mountain to the Searing Gorge.
+You recall Lexlort mentioning that he would have his men waiting on the other side to take Grark into custody.
+You will also be required to hand over your Thorium Shackles to Lexlort. 
+
+Prisoner Transport
+ [Thorium Shackles]
+
+
+== Description ==
+Do you truly believe that you will make it to your rendezvous point with me in custody? You actually expected to break into a heavily fortified Blackrock fortress to capture a prized asset of theirs without alerting anyone or anything to your presence?
+You will be destroyed!
+
+
+== Rewards ==
+You will receive:
+
+2 65
+7750 XP (or 46 50 at level 70)
+
+
+== Progress ==
+I will take this traitorous filth, <name>.
+
+
+== Completion ==
+Your heroics will not go unrecognized, <name>. You have earned this tribute. The Warlord will speak with you now in regards to the final mission.
+
+
+== Progression ==
+ [58D] Grark Lorkrub
+ [58] Precarious Predicament
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

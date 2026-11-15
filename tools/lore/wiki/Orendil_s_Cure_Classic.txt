@@ -1,0 +1,65 @@
+title: Orendil's Cure (Classic)
+revision: 6418418
+part: whole
+quest: 1020
+url: https://warcraft.wiki.gg/wiki/Orendil%27s_Cure_%28Classic%29
+
+Orendil's Cure will hopefully save a young child's life.
+
+
+== Objectives ==
+Bring Orendil's Cure to Pelturas Whitemoon in Astranaar.  
+
+ [Orendil's Cure] (provided)
+
+
+== Description ==
+<Name>, I have created a cure that I believe will help the afflicted child. Take it to Astranaar and give it to the child's parent, Pelturas Whitemoon.
+To reach Astranaar, follow the road south, then east.   
+
+
+== Rewards ==
+You will receive:
+
+25
+
+
+== Progression ==
+I must apologize, for I have no time to speak.  My child, Relara, is deathly ill.
+
+
+== Completion ==
+This is from Orendil?
+His skill with herbs and healing is great.  This cure gives me hope, when before I had little...
+
+
+== Notes ==
+Follow the main road south, then east to Astranaar.
+
+Upon completion
+Pelturas kneels by the bed.
+Pelturas Whitemoon says: Here you are, Relara. Take this...
+Relara Whitemoon drinks the cure brought by <name>.
+Pelturas drops to his knees and cries.
+Relara Whitemoon says: Uh... Father...? Are you there? I'm hungry... Can I have some stew?
+Pelturas Whitemoon says: What?
+Pelturas Whitemoon says: You are awake?? Your cure must have worked! Thank you, <name>.
+Pelturas bows toward the adventurer.
+
+
+== Progression ==
+ [20] Bathran's Hair
+ [22] Orendil's Cure
+ [22] Elune's Tear
+ [23] The Ruins of Stardust
+ [30] Fallen Sky Lake
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,51 @@
+title: Shrewd Negotiations
+revision: 6911953
+part: whole
+quest: 97287
+url: https://warcraft.wiki.gg/wiki/Shrewd_Negotiations
+
+== Objectives ==
+Speak with Archmage Celindra in the City of Dalaran.
+
+Arcane Mote (provided)
+
+
+== Description ==
+You have done well to infiltrate the city of mages, but I believe it is time for us to be more... negotiatory.
+As much as it pains me to admit, there is no other place on Azeroth with such a vast knowledge of the arcane. My brilliant work still pales in comparison to the ancient wisdom the Kirin Tor have amassed over the years. I think it's high time we are granted access to this exclusive order, don't you think?
+Take the mote you acquired. They will surely give anything to get it back. Anything.
+
+
+== Rewards ==
+You will receive:
+
+270 XP
+
+
+== Progression ==
+Horde attunement:
+
+ [34] Prison Break In &  [33] Key to the City
+ [35] Dalaran Patrols
+ [34] Blood in the Streets
+ [33D] Heart of Disruption
+ [33] Shrewd Negotiations
+Other dungeon quests:
+
+ [33D] A Green Sample
+ [33] An Alarming Request →  [33D] Heart of Disruption →  [33] Friend of the Kirin Tor
+ [33D] Power Overwhelming
+ [33D] Starving Arcane
+ [33D] Opportunistic Education
+ [33D] Source of Power
+ [33D] The Grave Knight
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

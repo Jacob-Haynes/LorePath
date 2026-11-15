@@ -1,0 +1,50 @@
+title: The Algaz Gauntlet
+revision: 5586697
+part: whole
+quest: 455
+url: https://warcraft.wiki.gg/wiki/The_Algaz_Gauntlet
+
+== Objectives ==
+Traverse Dun Algaz.
+Kill 8 Dragonmaw Scouts and 6 Dragonmaw Grunts.
+Report to Valstag Ironjaw in Menethil Harbor.
+
+Traverse Dun Algaz
+Dragonmaw Grunt  slain (6)
+Dragonmaw Scout  slain (8)
+
+
+== Description ==
+Orcs of the Dragonmaw clan have a haven in the Wetlands. And now they have expanded into Dun Algaz! We can't let them keep their foothold here or Loch Modan will be cut off from Menethil Harbor, our port and stronghold in the Wetlands.
+Break through Dun Algaz to the Wetlands beyond, and kill some orcs for good measure! Report to Valstag Ironjaw in Menethil Harbor.
+Menethil is through Dun Algaz, then north along the road, then west at the fork.
+We're counting on you, <name>. Do not fail.
+
+
+== Rewards ==
+You will receive:
+
+10
+1250 XP (or 7 80 at level 70)
++150 reputation with Ironforge
+
+
+== Completion ==
+Your report is full of bad news!
+I see the Dragonmaws are making a strong move into Algaz. Normally the Dragonmaws just hide up in the hills. What made them surge into Algaz is still a mystery...
+Thank you, <name>. And we'll probably want your help dealing with these orcs. 
+
+
+== Progression ==
+ [21] Report to Mountaineer Rockgar
+ [21] The Algaz Gauntlet
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

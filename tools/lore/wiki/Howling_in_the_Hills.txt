@@ -1,0 +1,54 @@
+title: Howling in the Hills
+revision: 6965692
+part: whole
+quest: 126
+url: https://warcraft.wiki.gg/wiki/Howling_in_the_Hills
+
+== Objectives ==
+Bring Yowler's Paw to Verner Osgood in Lakeshire.
+
+ [Yowler's Paw]
+
+
+== Description ==
+<Name>, the gnolls are still out there. I can hear their baying as they hunt in the hills above Lakeshire. And one cry is louder than the rest - Yowler, their leader.
+Kill Yowler and send his pack scattering! Bring me his paw as proof.
+And be careful, this gnoll is their leader for a reason. He is no Mongrel...
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Ring of Iron Will]
+ [Gold Militia Boots]
+You will also receive:
+
+2,000 XP
++100 or +250 reputation with Stormwind
+
+
+== Progress ==
+Yowler is a dangerous creature, <name>.  If you're not ready for him, I understand.
+
+
+== Completion ==
+Again, thank you for your help.  The Stormwind army is so busy dealing with the orcs, they don't have the troops to protect Redridge from local threats like the gnolls. 
+
+
+== Progression ==
+ [18] The Price of Shoes
+ [18] Return to Verner
+Two quests open:
+ [18] Underbelly Scales (optional)
+ [20] A Baying of Gnolls
+ [21] Howling in the Hills
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

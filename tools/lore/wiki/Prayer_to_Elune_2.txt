@@ -1,0 +1,48 @@
+title: Prayer to Elune (2)
+revision: 5601088
+part: whole
+quest: 3378
+url: https://warcraft.wiki.gg/wiki/Prayer_to_Elune_%282%29
+
+== Objectives ==
+Find the Prayer to Elune and take it to Astarii Starseeker in Darnassus. 
+
+ [Prayer to Elune]
+
+
+== Description ==
+Will you assist me, mortal? Will you find the prayer to Elune?
+As I stated, the prayer was etched onto a golden tablet. One of these idol worshipping scoundrels must have it on their person.
+If you do recover my prayer, take it to Astarii Starseeker in Darnassus. It matters little that my faith has been rekindled after the countless malevolent actions that I have taken against this world and its inhabitants, but my prayer must be heard. Absolution is the last thing I expect.
+
+
+== Reward ==
+
+You will also receive:
+
+1 45
+5,900 XP
++150 or +350 reputation with Darnassus
+
+
+== Progress ==
+What brings you to the Temple of the Moon, <name>?
+
+
+== Completion ==
+Elune smiles upon you this eve, <name>. You have returned a lost soul to her. Please accept this as a token of our gratitude.
+
+
+== Progression ==
+ [50] Prayer to Elune
+ [50] Prayer to Elune
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,47 @@
+title: Keeper of the Flame (Classic)
+revision: 6716741
+part: whole
+quest: 103
+url: https://warcraft.wiki.gg/wiki/Keeper_of_the_Flame_%28Classic%29
+
+== Objectives ==
+Bring 5 Flasks of Oil to Captain Grayson at the Westfall Lighthouse.
+
+ [Flask of Oil] (5)
+
+
+== Description ==
+The night the Lighthouse Keeper's family died was horrible.  I watched, helpless, as Old Murk-Eye led the attack.  But what's done is done and now my concern is for the lives of the sailors on The Great Sea whose ships come close to the perilous rocks of the coastline.  With no one to keep watch on the flame the responsibility has fallen upon me.
+Help me keep the torch lit by bringing me 5 flasks of oil from the Harvest Monsters.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Minor Healing Potion]
+ [Minor Mana Potion]
+You will also receive:
+
+6
+1150 XP (or 7 20 at max level)
+ [Scroll of Intellect]
+ [Scroll of Stamina]
+
+
+== Progress ==
+The flame will not burn for long without oil, <name>.
+
+
+== Completion ==
+Praise you, brave <class>.  The rocks of the Westfall Coast shall be lit thanks to your hard work.  Many lives will be spared so long as the torch is kept lit.
+I died needlessly on this very shore.  My afterlife plight is to see that no others follow my destiny.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,44 @@
+title: Bring the Light
+revision: 6230333
+part: whole
+quest: 3636
+url: https://warcraft.wiki.gg/wiki/Bring_the_Light
+
+== Objectives ==
+Archbishop Bendictus[sic] wants you to slay Amnennar the Coldbringer in Razorfen Downs.
+
+Amnennar the Coldbringer slain
+
+
+== Description ==
+The Scourge is a persistent threat to the Alliance, a fact I am sure you know quite well. Recently, we have come across some very peculiar findings, <name>.
+In the Barrens lies a horrid tangle of briars called Razorfen Downs. While once it was the home of simple quilboar, now it has become apparent that a pact was made with the Scourge, creating creatures far worse... They are now ruled by the lich, Amnennar the Coldbringer.
+Align yourself with the Light, <name>; put an end to this evil union.
+
+
+== Rewards ==
+You will receive:
+
+4,300 or 5,550 XP
++150 or +500 reputation with Stormwind
+ [Vanquisher's Sword]
+ [Amberglow Talisman]
+
+
+== Progress ==
+Amnennar must be eradicated. Go, swiftly.
+
+
+== Completion ==
+Thank you, <name>. The Scourge will now think twice before attempting to bolster its ranks again.
+May you be blessed by the Light.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

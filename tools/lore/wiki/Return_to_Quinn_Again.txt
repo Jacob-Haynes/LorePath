@@ -1,0 +1,46 @@
+title: Return to Quinn (Again)
+revision: 6900578
+part: whole
+quest: 91921
+url: https://warcraft.wiki.gg/wiki/Return_to_Quinn_%28Again%29
+
+== Objectives ==
+Bring Quinn's potion to Quinn Yorick at the Ivar Patch, north of the Sepulcher.
+
+ [Quinn's Potion] (provided)
+
+
+== Description ==
+Here is the new potion to aid in Quinn's recovery, made with love extracted from six whole hearts.
+Now, please excuse me before your presence necessitates more paperwork.
+
+
+== Rewards ==
+You will receive:
+
+660 XP
++75 reputation with Undercity
+
+
+== Progress ==
+You return! I was beginning to come to terms with devolving into a ghoul.
+
+
+== Completion ==
+<Quinn takes the potion and drinks it.>
+Yes, I can feel it working.  I will soon be able to travel.
+You have done me a great favor, <name>.
+
+
+== Progression ==
+...
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

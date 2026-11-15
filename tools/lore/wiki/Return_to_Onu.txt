@@ -1,0 +1,58 @@
+title: Return to Onu
+revision: 6595157
+part: whole
+quest: 950
+url: https://warcraft.wiki.gg/wiki/Return_to_Onu
+
+== Objectives ==
+Bring Onu the recovered Insane Scribbles.
+
+ [Insane Scribbles] (provided)
+
+
+== Description ==
+Peering into the Twilight Tome is maddening. Text begins to swim and dance after only a moment's glance, and once beautiful scrollwork twists into grotesque shapes.
+Tearing away one page of insane scribbles is all that is possible before a swoon overtakes you.
+
+
+== Rewards ==
+You will receive:
+
+7
+950 XP (or 5 70 at max level)
++150 reputation with Darnassus
+
+
+== Progress ==
+<Name>.  You return.
+
+
+== Completion ==
+A chaotic, primal magic surrounds this parchment of scribbles.  I sense the work of the old ones in it.
+Let us hope it reveals the purpose of the Twilight's Hammer in Darkshore...
+
+
+== Notes ==
+On completion
+Onu studies the parchment from the Twilight Tome...
+Onu is struck by unleashed magic!
+Onu says: Hmm...
+
+
+== Progression ==
+ [17] Cave Mushrooms
+ [17] Onu
+ [17] The Master's Glaive
+ [17] The Twilight Camp
+ [17] Return to Onu
+ [20] Mathystra Relics
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

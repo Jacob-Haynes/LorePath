@@ -1,0 +1,67 @@
+title: Stormwind Rendezvous
+revision: 6643665
+part: whole
+quest: 6402
+url: https://warcraft.wiki.gg/wiki/Stormwind_Rendezvous
+
+Stormwind Rendezvous is part of the Great Masquerade quest chain.
+
+
+== Objectives ==
+Travel to Stormwind City and venture to the city gates. Speak with Squire Rowe so that he may let Marshal Windsor know that you have arrived.
+
+
+== Description ==
+You are to meet with Windsor at the gates of Stormwind.
+What Windsor is about to unveil will shake the very foundation of the kingdom!
+Do not attempt to venture there alone, <name>. You must amass an army! Gather your compatriots. To arms! 
+
+
+== Rewards ==
+You will receive:
+
+650 XP (or 3 90 at max level)
+
+
+== Completion ==
+Before we begin, I ask that you first gather an army. We face a dragon, after all! 
+
+
+== Notes ==
+You do have to speak to Squire Rowe to have Reginald Windsor show up at the gates, if he does not appear on his own.
+
+Squire Rowe runs outside the gates of Stormwind and fires off a flare, then returns to his spot.
+Squire Rowe says: The signal has been sent. He should be arriving shortly.
+Reginald Windsor rides through the gates of Stormwind atop his steed, Mercutio. He then sends the horse running.
+Reginald Windsor says: Yawww!
+Reginald Windsor says: I knew you would come, <name>. It is good to see you again, friend.
+If Marshal Windsor has already been summoned
+
+
+== Progression ==
+ [54] Dragonkin Menace
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54D] Marshal Windsor
+ [54D] Abandoned Hope
+ [58D] A Crumpled Up Note
+ [58D] A Shred of Hope
+ [58D] Jail Break!
+ [60R] Stormwind Rendezvous
+ [60R] The Great Masquerade
+ [60R] The Dragon's Eye
+ [60R] Drakefire Amulet
+
+
+== Patch changes ==
+ Patch 3.0.2 (2008-10-14): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

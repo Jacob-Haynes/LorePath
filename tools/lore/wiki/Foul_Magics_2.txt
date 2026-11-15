@@ -1,0 +1,53 @@
+title: Foul Magics (2)
+revision: 6941291
+part: whole
+quest: 673
+url: https://warcraft.wiki.gg/wiki/Foul_Magics_%282%29
+
+This is the second and final quest of the  [33] Foul Magics quest chain. You will find Marez Cowl, the holder of the  [Befouled Bloodstone Orb], in Stromgarde Keep in either of two locations - both within the walls of Stromgarde, but outside of the actual Keep and to the west.
+To find Marez, take a left below or at the top of the ramp (the one located straight from the entrance), and you'll find her hiding behind a building in either location. You will be able to hear her channeling some sort of spell.
+
+
+== Objectives ==
+Retrieve Marez Cowl's Bloodstone Orb and bring it to Tor'gan in Hammerfall.
+
+ [Befouled Bloodstone Orb]
+
+
+== Description ==
+There is no doubt in my mind that a powerful warlock resides within the walls of Stromgarde. From time to time, using an arcane magical relic, this warlock has summoned forth terrible demons in large numbers. We must remove the source of his energy.
+Find the warlock and kill him. Bring me whatever magical object you find on his person, and I will take steps to destroy it and see that its power is not used to taint this land any longer.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [White Drakeskin Cap]
+ [Radiant Silver Bracers]
+You will receive:
+
+4350 XP
++100 or +250 reputation with Darkspear Trolls
+
+
+== Progress ==
+The burning in my blood... it grows by the day. The warlock must be stopped.
+
+
+== Completion ==
+My restless nights will turn to peaceful slumber when I have destroyed this orb. Thank you, <name>. It is a chilling reminder of the terrible power the demons held over the orcs before Hellscream released them from their curse.
+
+
+== Progression ==
+ [33] Foul Magics
+ [40] Foul Magics
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

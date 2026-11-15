@@ -1,0 +1,75 @@
+title: The Howling Vale (quest)
+revision: 5586858
+part: whole
+quest: 1022
+url: https://warcraft.wiki.gg/wiki/The_Howling_Vale_%28quest%29
+
+This quest is the start of the quest chain The Scythe of Elune.
+
+
+== Objectives ==
+Go to the Howling Vale and study the Tome of Mel'Thandris, then return
+to Sentinel Melyria Frostshadow at Forest Song.
+
+View the Tome of Mel'Thandris
+
+
+== Description ==
+Though we have put many resources and much effort into driving the remaining demons from the Felwood to the north, our successes have been few. We have been able to keep much of the demonic presence from Ashenvale.
+To the north, near the Felwood border, the ruined  shrine of Mel'Thandris has been overtaken by mysterious wolf-men. Their chilling calls have led the area to be known as the Howling Vale. The Tome of Mel'Thandris kept at the shrine may shed some light on why these wolf-men have come.
+
+
+== Rewards ==
++250 Darnassus Reputation
+25
+2450 XP
+
+
+== Progress ==
+The tome of the shrine is a mysterious object. It is not a book in the traditional sense. The leaves of the tome were blessed by Mel'Thandris herself, and records events of import in its pages.
+It is hard for me to explain. If you go to the shrine, you will understand.
+
+
+== Completion ==
+The Tome of Mel'Thandris works in strange ways. The events it records, the events it shows... No one truly understands why it does what it does.
+Nonetheless, it is clear that what Priestess Starsong received—this Scythe of Elune -- bears further investigation.
+
+
+== Notes ==
+The Tome of Mel'Thandris is on the left side of the tomb on a small wooden table.
+There are a lot of Terrowulf worgen in the area that you may need to slay in order to have the peace and quiet to read the book.
+When the book is viewed, the specter of Velinde Starsong appears, narrating relatively recent events:
+
+Velinde Starsong says: The numbers of my companions dwindles, goddess, and my own power shall soon be insufficient to hold back the demons of Felwood.
+Velinde Starsong says: Goddess, grant me the power to overcome my enemies!  Hear me, please, my need is desperate and my cause is just!
+Velinde Starsong says: What... what is this?  Could this be the answer to my prayers?  Elune has granted me a weapon -- this scythe -- to defeat the demons.
+
+
+=== Directions to the Howling Vale ===
+Follow the road North towards Felwood.  On the West side of the road is a path that leads up to a cave entrance.  (Note the cave marked on your map.) Go through the cave passage, and you find the shrine.
+
+
+== Progression ==
+ [30] The Howling Vale
+ [30] Velinde Starsong
+ [30] Velinde's Effects
+ [30] The Barrens Port
+ [30] Passage to Booty Bay
+ [30] The Caravan Road
+ [30] The Carevin Family
+ [30] The Scythe of Elune
+ [30] Answered Questions
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+ [Velinde's Journal]
+
+
+== External links ==
+
+Wowhead
+WoWDB

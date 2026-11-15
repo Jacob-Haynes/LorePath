@@ -1,0 +1,47 @@
+title: Lieutenant Paval Reethe (Horde)
+revision: 6883578
+part: whole
+quest: 27260
+url: https://warcraft.wiki.gg/wiki/Lieutenant_Paval_Reethe_%28Horde%29
+
+Lieutenant Paval Reethe seems to be involved in the destruction of the Shady Rest Inn.
+
+
+== Objectives ==
+Bring Reethe's Badge to Krog in Brackenwall Village. 
+
+ [Reethe's Badge] (provided)
+
+
+== Description ==
+A glint of light on the ground catches your eye from underneath the rubble. Brushing debris and ash caked onto the object reveals the insignia of a gold anchor on white, enameled on the surface: the sign of Theramore.
+Underneath the anchor is embossed the name "Lieutenant Paval Reethe".  
+
+
+== Progress ==
+Have you found any leads on what happened at the Shady Rest Inn? 
+
+
+== Completion ==
+Hmm... now this is interesting. 
+
+
+== Original version ==
+ The subject of this section has been removed from World of Warcraft.
+Completion
+I know this human, Paval Reethe. Pathetic, even for his kind. He deserted his fellow soldiers and is now hiding out in the woods.
+I sent Ogron out to track him down. Some of the others suspect he's been stealing from our supplies. I think I saw Ogron heading off to the southeast.
+
+
+== Progression ==
+This is part of The Shady Rest Inn quest chain:
+
+ [15-30] Lieutenant Paval Reethe
+ [15-30] Questioning Reethe
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Given new ID, numbers adjusted to new leveling path.   
+
+
+== External links ==

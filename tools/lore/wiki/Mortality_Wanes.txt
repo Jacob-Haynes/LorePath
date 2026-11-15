@@ -1,0 +1,53 @@
+title: Mortality Wanes
+revision: 6957011
+part: whole
+quest: 1142
+url: https://warcraft.wiki.gg/wiki/Mortality_Wanes
+
+== Objectives ==
+Find and return Treshala's Pendant to Treshala Fallowbrook in Darnassus. 
+
+ [Treshala's Pendant]
+
+
+== Description ==
+I have not long to live... so... so... weak.
+...the b-b-brave dwarf, Lonebrow, has been sent to w-w-warn Falfindel...
+But before I... d-d-die...
+...my wife, Treshala... her pendant of bonding to me... stolen... by one of the f-f-foul aggressors...
+Find it p-p-please... and return it to Treshala in Darnassus...
+...along with w-w-word of my lonely... death.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Mourning Shawl]
+ [Lancer Boots]
+ [Sentinel's Boots] 
+You will also receive:
+
+3,050 XP (or 18 60 at level 70)
++150 or +500 reputation with Darnassus
+
+
+== Progress ==
+What brings you to my home, <race>?
+
+
+== Completion ==
+No!
+'Tis not fair. Oh, cruel and intolerable world!
+I must now carry this burden of grief and not let Heralath's work die with him.
+You were brave to journey from such a dangerous place, <name>. But please leave me now.
+In solitude I shall mourn.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

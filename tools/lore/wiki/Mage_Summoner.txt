@@ -1,0 +1,51 @@
+title: Mage Summoner
+revision: 6176817
+part: whole
+quest: 1017
+url: https://warcraft.wiki.gg/wiki/Mage_Summoner
+
+== Objectives ==
+Slay Sarilus Foulborne and bring his head to Sentinel Velene Starstrike in Silverwind Refuge. 
+
+ [Sarilus Foulborne's Head]
+
+
+== Description ==
+There's only one undead mage in the Barrens capable of defiling this many water elementals. He's also the only one foolish enough to try. Sarilus Foulborne is probably sitting at the top of Dreadmist Peak, laughing at me.
+<Name>, you must go into enemy territory and destroy this miscreant. I have had enough of his idiocy and we must show him what happens to those who annoy the Sentinels.
+Destroy him and bring me his head. Be wary though, the Horde may be watching for you. 
+
+
+== Reward ==
+
+Upon will also gain:
+
+2550 XP (or 15 60 at level 70)
+350 reputation with Darnassus
+
+
+== Progress ==
+Is it done? Is Sarilus Foulborne dead? 
+
+
+== Completion ==
+Now I can see that repugnant smile wiped from his face forever. You have done very well, <name>. Take this, the Light of Elune, drink of it when all seems lost and death is near. It may save you, Goddess willing. 
+
+
+== Notes ==
+Sarilus can summon up to 15 level 25 Water Elementals to join him in the fight. Be prepared to fight all of them (at once) to complete the quest. 
+
+
+== Progression ==
+ [24] Elemental Bracers
+ [25] Mage Summoner
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,6 @@
+title: Azshara
+revision: 6886115
+part: intro
+url: https://warcraft.wiki.gg/wiki/Azshara
+
+Azshara is a beautiful coastal area cloaked in eternal autumn. It is located in northeastern Kalimdor, east of Ashenvale, south of Winterspring, and north of Durotar. The trees and other flora are tinged in brilliant oranges and reds, and nearer the coast, great cliffs and sandy beaches line the ocean. The region's hostile inhabitants include enraged ghosts, vicious satyr, stalking naga, and ferocious wildlife. Azshara is also home to Bilgewater Harbor since the Cataclysm, which is considered the capital city of the Bilgewater Cartel goblins. Following the Siege of Orgrimmar, Tyrande Whisperwind claimed the night elves would allow the goblins to keep Azshara as part of the tentative peace between the Horde and Alliance, however, the conflicts have since resumed following the Burning of Teldrassil in the Fourth War.

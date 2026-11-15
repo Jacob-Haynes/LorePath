@@ -1,0 +1,65 @@
+title: The Missing Diplomat (14)
+revision: 6389843
+part: whole
+quest: 1265
+url: https://warcraft.wiki.gg/wiki/The_Missing_Diplomat_%2814%29
+
+This quest is part of the quest chain The Missing Diplomat.
+
+
+== Objectives ==
+Search Sentry Point for any sign of Private Hendel.
+
+Sentry Point explored
+
+
+== Description ==
+Hendel? Yes, I know the man. But why would you need one of my soldiers?
+Elling sent you to find him? Hmm, I don't like the sound of that. Elling wouldn't have you come to me first if your business wasn't troubling. I understand if you can't tell me what this is about, but know this: I have a duty to protect these lands. If you're going to cause a disturbance, then I suggest you inform me of whatever you can.
+I believe Hendel was stationed at the first tower outside of Theramore. Be cautious.
+
+
+== Rewards ==
+You will receive:
+
+280 XP (or 1 50 at max level)
+
+
+== Progress ==
+Yes, <name>?
+
+
+== Completion ==
+The man you seek, the one known as Hendel, is not here. Other sources have brought to the Lady Proudmoore information I believe you already know. She has asked me to find you, and give you aid in your venture. If you would allow it, I will tell you where to find Private Hendel so we can bring him to justice.
+
+
+== Progression ==
+This is the quest chain The Missing Diplomat.
+
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [30] The Missing Diplomat
+ [30] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [35] The Missing Diplomat
+ [36] The Missing Diplomat
+ [38] The Missing Diplomat
+ [38] The Missing Diplomat
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

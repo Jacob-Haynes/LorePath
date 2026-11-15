@@ -1,0 +1,54 @@
+title: The Tower of Althalaxx (8)
+revision: 5587056
+part: whole
+quest: 1143
+url: https://warcraft.wiki.gg/wiki/The_Tower_of_Althalaxx_%288%29
+
+This quest is part of quest chain The Tower of Althalaxx.
+
+
+== Objectives ==
+Kill Athrikus Narassin and bring his head to Balthule Shadowstrike near the Tower of Althalaxx.
+
+ [Athrikus Narassin's Head]
+
+
+== Description ==
+I see. Well, if what you say is true, then now is the time to strike. I believe Athrikus resides at the top of the tower. Be careful though, he is surrounded by many powerful warlocks, much more deadly than the ones you faced before.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+2500 XP (or 15 0 at level 70)
++250 reputation with Darnassus
+
+
+== Progress ==
+Athrikus Narassin is an ancient and powerful warlock. Perhaps we should wait for Delgren's assistance, but he obviously had much faith in you to send you alone.
+
+
+== Completion ==
+With the death of Athrikus, I hope that the demonic forces in this area will be driven back. I have no doubt that they will regroup and return, but then we shall be even more prepared to meet their threat.
+
+
+== Progression ==
+ [18] The Tower of Althalaxx
+ [18] The Tower of Althalaxx
+ [18] The Tower of Althalaxx
+ [21] The Tower of Althalaxx
+ [24] The Tower of Althalaxx
+ [28] The Tower of Althalaxx
+ [28] The Tower of Althalaxx
+ [31] The Tower of Althalaxx
+ [31] The Tower of Althalaxx
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

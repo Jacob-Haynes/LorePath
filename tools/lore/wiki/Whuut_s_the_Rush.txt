@@ -1,0 +1,51 @@
+title: Whuut's the Rush
+revision: 6911484
+part: whole
+quest: 97275
+url: https://warcraft.wiki.gg/wiki/Whuut%27s_the_Rush
+
+== Objectives ==
+Give Yelmak's Potion to Whuut.
+
+Yelmak's Potion (provided)
+
+
+== Description ==
+Whuut is a prodigy. That much is true. But he doesn't yet have the experience, wisdom, and time on the stirring rod to know how to respect alchemical processes.
+He is exhausting all of the rarest and most exotic reagents we have available without pausing to practice and refine his basic skills.
+Give him this potion I've brewed with a quick tonic method. He'll reconsider everything he's doing when he learns how local remedies and careful touch are the first true mastery.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Lesser Mana Potion] (2)
+ [Healing Potion] (2)
+You will also receive:
+
+800 XP
+
+
+== Progress ==
+Alright, what's next... Black Lotus, Mountain Silversage...
+
+
+== Completion ==
+Grorru--whaa?
+You say Yelmak made this potion from speargrass and cattail with no other reagents? I didn't know chemists had any real need for these common plants we see every day.
+Maybe he's right. There could be a lot I'm missing out on by skipping to the most rare and least-studied flora first.
+<Name>, take your pick from one of these potions I brewed earlier. I appreciate you taking the time to visit our shop.
+
+
+== Progression ==
+...
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

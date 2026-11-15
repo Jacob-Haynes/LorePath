@@ -1,0 +1,6 @@
+title: Swamp of Sorrows (Classic)
+revision: 6698486
+part: intro
+url: https://warcraft.wiki.gg/wiki/Swamp_of_Sorrows_%28Classic%29
+
+The Swamp of Sorrows (also once known as the Swamps of Sorrow) is a contested territory in the southern part of the Eastern Kingdoms. Among its murk-ridden marshes the green dragonspawn patrol at the behest of their dreaming mistress, Ysera. The great Dragon Aspect has warned of a lurking terror within the Temple of Atal'Hakkar, and her loyal servants are determined to protect the land from the emerging doom.

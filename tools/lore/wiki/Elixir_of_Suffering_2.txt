@@ -1,0 +1,55 @@
+title: Elixir of Suffering (2)
+revision: 5884435
+part: whole
+quest: 499
+url: https://warcraft.wiki.gg/wiki/Elixir_of_Suffering_%282%29
+
+== Objectives ==
+Apothecary Lydon of Tarren Mill wants you to give Umpi the Elixir of Suffering.
+
+ [Elixir of Suffering] (provided)
+
+
+== Description ==
+It will take but a moment for me to mix these components into what I have deemed an Elixir of Suffering.
+There we go! Ah, nothing brightens a gloomy day in these miserable foothills like bringing a little suffering into the world.
+Let us see if our little potion has achieved its desired effect.
+Give my assistant Umpi a taste of what the Dark Lady has planned for both humans and Scourge alike.
+
+
+== Rewards ==
+You will gain:
+
+1,750 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Ribbit!
+
+
+== Completion ==
+Croak!
+
+
+== Notes ==
+Umpi is the toad right next to Lydon.
+
+Upon completion
+Umpi says: Croak!
+Umpi dies.
+
+
+== Progression ==
+ [22] Elixir of Suffering
+ [22] Elixir of Suffering
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

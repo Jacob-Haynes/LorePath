@@ -1,0 +1,46 @@
+title: Sceptre of Light (quest)
+revision: 6674301
+part: whole
+quest: 5741
+url: https://warcraft.wiki.gg/wiki/Sceptre_of_Light_%28quest%29
+
+== Objectives ==
+Get the Sceptre of Light and then return it to Azore Aldamort at the tower in Ethel Rethor. 
+
+ [Sceptre of Light]
+
+
+== Description ==
+The Burning Blade in Thunder Axe Fortress to the east is rumored to have acquired the Sceptre of Light from the Naga. Legend tells that the sceptre is able to sink entire cities under the great seas. The Burning Blade must not be allowed to possess such power.
+To that end, you must retrieve the sceptre yourself! It is held by a Burning Blade seer, who studies the sceptre from atop one of the Thunder Axe watchtowers.
+
+
+== Rewards ==
+You will receive:
+
+35
+2900 XP
++500 reputation with Argent Dawn
+
+
+== Progress ==
+Do you have the Sceptre of Light?
+
+
+== Completion ==
+The elusive Sceptre of Light! Your acquisition of it has removed a grave threat to the world. Well done, <class>, well done.
+
+
+== Progression ==
+ [33] Sceptre of Light
+ [38] Book of the Ancients
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

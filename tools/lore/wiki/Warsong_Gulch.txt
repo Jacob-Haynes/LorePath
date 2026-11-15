@@ -1,0 +1,8 @@
+title: Warsong Gulch
+revision: 6873828
+part: intro
+url: https://warcraft.wiki.gg/wiki/Warsong_Gulch
+
+Warsong Gulch (WSG for short) is a battleground nestled in between the southern part of Ashenvale forest and the northern area of the Barrens. It is located near the area where Grom Hellscream and his orcs chopped away huge swaths of forest during the events of the Third War. Despite disagreements from Thrall and the shamans, some orcs have remained in the vicinity, continuing their deforestation to fuel the Horde's expansion. They call themselves the Warsong Outriders.
+The night elves, who have begun a massive push to retake the forests of Ashenvale, are now focusing their attention on ridding their land of the Outriders once and for all. And so, the Silverwing Sentinels have answered the call and sworn that they will not rest until every last Orc is defeated and cast out of Warsong Gulch.
+Warsong Gulch is a 10v10 capture the flag battleground. Each side tries to take the opponent flag and "cap" (score) it at their own base. You can only "cap" the flag if the enemy isn't carrying yours. The winner is the first team to achieve 3 caps, or the team with the most caps when the allotted time expires.

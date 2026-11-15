@@ -1,0 +1,68 @@
+title: An Audience with the King
+revision: 6851264
+part: whole
+quest: 396
+url: https://warcraft.wiki.gg/wiki/An_Audience_with_the_King
+
+This quest concludes the Lescovar Incident quest chain.
+
+
+== Objectives ==
+Deliver Baros Alexston's report on the Defias Brotherhood to King Varian Wrynn in Stormwind Keep. 
+
+ [Report on the Defias Brotherhood] (Provided)
+
+
+== Description ==
+I have prepared a report for the King. I believe you should be the one to deliver it to him, along with an account of your findings. Do not worry, there is no doubt that he will commend you for doing your duty to the people of Stormwind.
+Your audience is scheduled soon, so you'd best hurry, it's a bit of a ways to Stormwind Keep. 
+
+
+== Rewards ==
+3750 XP (or 22 80 at max level)
++500 reputation with Stormwind
+ [Seal of Wrynn]
+
+
+== Progress ==
+<Name>, yes? I was informed by Baros Alexston that you would be coming. I must say, I am most interested in what you have to say. 
+
+
+== Completion ==
+You are to be commended for the service you have done for Stormwind, <name>. If VanCleef had been successful in his machinations, he would no doubt have done considerable harm to the kingdom—something we must obviously avoid.
+Take this, <class>, as a token of the King's appreciation. I am only sorry he cannot present it to you himself, but he is away on a diplomatic mission and shall not return for some time.
+
+
+== Notes ==
+Due to his return to Stormwind Keep in Wrath of the Lich King the quest was changed to end with King Varian Wrynn instead of Lady Prestor. The final line of the completion text was also changed to read, "Take this, <class>, as a token of my appreciation."
+In Season of Discovery, this quest uses the completion text it had in Wrath of the Lich King rather than its original completion text.
+
+
+== Progression ==
+ [22] The Unsent Letter
+ [22] Bazil Thredd
+ [29D] The Stockade Riots
+ [29] The Curious Visitor
+ [29] Shadow of the Past
+ [31] Look to an Old Friend
+ [31] Infiltrating the Castle
+ [31] Items of Some Consequence
+ [31] The Attack!
+ [31] The Head of the Beast
+ [31] Brotherhood's End
+ [31] An Audience with the King
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 3.0.2 (2008-10-14): Due to the dilligent efforts of many adventurers, king Varian Wrynn has returned to his throne, and Lady Katrana Prestor, who used to accept the report and give you the final reward, has been deposed.   
+
+
+== See also ==
+The Great Masquerade (quest chain)
+
+
+== External links ==
+
+Wowhead
+WoWDB

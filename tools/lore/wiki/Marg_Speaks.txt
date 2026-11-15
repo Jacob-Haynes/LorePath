@@ -1,0 +1,57 @@
+title: Marg Speaks
+revision: 6839809
+part: whole
+quest: 1261
+url: https://warcraft.wiki.gg/wiki/Marg_Speaks
+
+== Objectives ==
+Bring the Jeweled Pendant to Nazeer in Brackenwall Village.
+
+ [Jeweled Pendant] (provided)
+
+
+== Description ==
+Cursed muckshell! You can't kill Marg! Ah, but I am dead. So it must have slain me...
+But my mission! My mission! You, <name>, must complete it.
+While near Theramore, I spied a group of Alliance soldiers camped on the beach. And one soldier wore a pendant... a pendant laden with more gems than any soldier could afford!
+That night I snuck into their camp and stole the pendant, but on my return to base a muckshell crab-man killed me!
+<Name>, you must find that muckshell and recover the pendant!
+
+
+== Rewards ==
+You will receive:
+
+4,370 XP
++250 reputation with Orgrimmar
+
+
+== Progress ==
+<Name>, did you discover Marg's fate?
+
+
+== Completion ==
+This pendant was worn by a soldier of Stormwind??
+Thank you, <name>.  You have revealed the secret of Marg's death.  But this pendant is a new mystery to solve, one that may have dire effects on the Alliance, and the Horde.
+
+
+== Notes ==
+Some mudrock turtles and murk threshers in the area are also placeholders for muckshells.
+
+
+== Progression ==
+ [15-30] The Lost Report
+ [35] The Severed Head
+ [35] The Troll Witchdoctor
+ [40] Marg Speaks
+ [40] Report to Zor
+ [40] Service to the Horde
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

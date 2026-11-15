@@ -1,0 +1,51 @@
+title: The Debt
+revision: 6963534
+part: whole
+quest: 95034
+url: https://warcraft.wiki.gg/wiki/The_Debt
+
+== Objectives ==
+Speak with Lumina Windsinger in the Sepulcher.
+
+
+== Description ==
+I think you should know that it wasn't actually the Gnolls who attacked us on the road.
+We were actually attacked by a giant, wolf-like creature that I now know as a "worgen". It dispatched our guards and came for me, but Banon threw himself in its path. I managed to get a spell off which startled the creature, causing it to flee, but Banon was already badly bitten. He insisted I leave him there but I refused.
+We were limping back here when the gnolls found us. What came next was terrifying...
+
+
+== Rewards ==
+You will receive:
+
+200 XP
+
+
+== Progress ==
+I've never seen anything like what happened to Banon. Azeroth is a wonderful place, but the sheer breadth of what is possible here is truly terrifying.
+
+
+== Completion ==
+So now you understand. At the very end of his strength after being pierced by a dozen gnoll blades, he reared up to strike me. In that final moment we locked eyes, and I could tell he still knew who he was and that he recognized me. He knew what was happening but he had no control over himself. That was the worst part.
+If such a thing is possible, I will see the creature that doomed him dead so that it can never visit this horror on another living thing. I swear it upon the sky above.
+
+
+== Notes ==
+Speak with Lumina Windsinger:
+
+
+== Progression ==
+   [24] The Debt
+   [25D] A Moon-Kissed Blade
+   [25] An Underrated Talent
+   [25] Ott's Masterwork
+   [25] The Moonsilver Blade
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,57 @@
+title: Steelsnap (quest)
+revision: 6230364
+part: whole
+quest: 1131
+url: https://warcraft.wiki.gg/wiki/Steelsnap_%28quest%29
+
+Steelsnap is one of many monster-hunting quests given by Melor Stonehoof in Thunder Bluff. In this quest, players are sent to Thousand Needles to kill the ferocious hyena, Steelsnap.
+
+
+== Objectives ==
+Bring Steelsnap's Rib to Melor Stonehoof in Thunder Bluff.
+
+ [Steelsnap's Rib]
+
+
+== Description ==
+At times we hunt for food. At times we hunt for honor. And at times we hunt to earn the Earthmother's teachings.
+But the hunt I now set upon you is none of these things. It is to slay a creature outside the Earthmother's blessing.
+The hyena Steelsnap roams the Thousand Needles, south of the Barrens. He is a tyrant, attracting other hyenas to him and spreading fear and bloodshed among more peaceful beasts.
+Find Steelsnap, <name>. Find him, and defeat him. 
+
+
+== Rewards ==
+You will receive:
+
+2,450 XP
++100 or +250 reputation with Thunder Bluff
+
+
+== Progress ==
+Have you defeated the foul Steelsnap, <name>?
+
+
+== Completion ==
+In defeating the creature Steelsnap, you have cleansed the Thousand Needles of a horrible taint.
+And that, <name>, is your lesson this day.
+
+
+== Notes ==
+How to get this quest: Melor Stonehoof can be found on Hunter Rise in Thunder Bluff, coordinates (61,80). Speak with him to receive this quest. Completion of  [30] Melor Sends Word is NOT necessary to receive this quest.
+Steelsnap wanders south of Camp E'thok in Thousand Needles (the north-western area), along with two level 29 hyenas. Because of these two additional mobs, this can be a difficult fight. Bringing a friend may be helpful.
+After defeating Steelsnap and looting his rib, return to Melor Stonehoof in Thunder Bluff to turn in the quest.
+
+
+== Progression ==
+ [30] Melor Sends Word
+ [30] Steelsnap
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

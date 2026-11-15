@@ -1,0 +1,43 @@
+title: Verifying the Corruption
+revision: 6971264
+part: whole
+quest: 5156
+url: https://warcraft.wiki.gg/wiki/Verifying_the_Corruption
+
+== Objectives ==
+Seek out and destroy 2 Entropic Beasts and 2 Entropic Horrors while exploring Shatter Scar Vale. After checking to see if the craters there are still filled with corrupt fel water, return to Taronn Redfeather in Felwood.
+
+Explore the craters in Shatter Scar Vale
+Entropic Beast slain (2)
+Entropic Horror slain (2)
+
+
+== Description ==
+To the north, along the east of the road in what's called Shatter Scar Vale, is an area where infernals were called down during the last great war—the craters still scar the land, as do the infernals themselves.
+I am curious about two things. First, are there still entropic elementals roaming the area? And second, are the craters still filled with the corrupt, fetid water that gathered there years ago? Will you help me and check, <name>? Be careful though, the infernals destroy anything in their path.
+
+
+== Rewards ==
+You will receive:
+
+1 65
+6800 XP (or 40 50 at level 70)
+
+
+== Progress ==
+I hope your search goes well, <name>. I haven't started heading that far north, but I will admit, the thought of crossing the path of an infernal at any point scares me just a little. The creatures are brainless, but still quite intimidating.
+
+
+== Completion ==
+Good that you're alive, <name>. Bad that the water still exists. I was hoping to find at least one pure source of water here in Felwood. It looks like my search has failed. The process of healing the land could have been made much easier with its existence.
+I will have to concern myself with saving what forest creatures I can while destroying those that have become so corrupt that they endanger themselves as much as travelers through this once-mighty forest.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

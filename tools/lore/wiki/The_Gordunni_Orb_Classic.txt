@@ -1,0 +1,47 @@
+title: The Gordunni Orb (Classic)
+revision: 6314332
+part: whole
+quest: 3002
+url: https://warcraft.wiki.gg/wiki/The_Gordunni_Orb_%28Classic%29
+
+== Objectives ==
+Bring the Gordunni Orb to Uthel'nay in the Darkbriar Lodge in Orgrimmar.
+
+ [Gordunni Orb] (provided)
+
+
+== Description ==
+Although I know my enemy well, I am a warrior, <name>. I cannot begin to tell you what this orb is capable of.
+I know of a mage in Orgrimmar that will be able to tell us more about the orb. Take it to him.
+
+
+== Rewards ==
+You will receive:
+
+2100 XP (or 12 60 at max level)
++75 reputation with Darkspear Trolls
+
+
+== Progress ==
+What have you brought me, <race>?
+
+
+== Completion ==
+Fascinating, <name>...
+This orb is very powerful, but also very dangerous.
+
+
+== Progression ==
+ [43] The Gordunni Scroll
+ [46] Dark Ceremony
+ [47] The Gordunni Orb
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

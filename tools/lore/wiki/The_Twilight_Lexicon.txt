@@ -1,0 +1,59 @@
+title: The Twilight Lexicon
+revision: 6199957
+part: whole
+quest: 8279
+url: https://warcraft.wiki.gg/wiki/The_Twilight_Lexicon
+
+== Objectives ==
+Bring the three chapters of the Twilight Lexicon to Hermit Ortell in Silithus.
+
+ [Twilight Lexicon - Chapter 1]
+ [Twilight Lexicon - Chapter 2]
+ [Twilight Lexicon - Chapter 3]
+
+
+== Description ==
+The Twilight's Hammer are not kind to those that leave their ranks. They hunt me to this day like I'm some sort of beast! Needless to say, an enemy of theirs is a friend of mine!
+To decipher this Tablet I'll need the book used by their scribes to encode secret messages: the Twilight Lexicon. It's such an important tool that they keep its three chapters in different locations! The officers entrusted with the Lexicon are known as Twilight Keepers, look for them at the Twilight's Hammer camps.
+
+
+== Rewards ==
+You will receive:
+
+90
+8300 XP
++500 reputation with Cenarion Circle
+
+
+== Progress ==
+Who goes there?  Oh, it's you!  Did you find all the Lexicon chapters yet? 
+
+
+== Completion ==
+Yes! These are the parts to the book!  Let's get started then, <name>.
+Swap every third word with words from the second chapter... then swap every other word with words from the first chapter...  Wait, did I get that backwards? 
+
+
+== Notes ==
+Chapter 1 is carried by Twilight Keeper Mayna at Twilight Post
+Chapter 2 is carried by Twilight Keeper Exeter at Twilight Outpost
+Chapter 3 is carried by Twilight Keeper Havunth at Twilight Base Camp
+
+
+== Progression ==
+ [15-30] The Twilight Mystery
+ [15-30] The Deserter
+ [15-30] The Twilight Lexicon
+ [15-30] A Terrible Purpose
+ [15-30] True Believers
+ [15-30] Still Believing (Repeatable)
+
+
+== Patch changes ==
+ Patch 1.8.0 (2005-10-10): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,54 @@
+title: The Warsong Reports
+revision: 6233744
+part: whole
+quest: 6543
+url: https://warcraft.wiki.gg/wiki/The_Warsong_Reports
+
+Starts and ends in northern Barrens from Kadrak in the tower at the Barrens and Ashenvale border.
+
+
+== Objectives ==
+Take the Bundle of Reports to the Warsong Scout, Warsong Runner, and Warsong Outrider. Bring back the updates they give you to Kadrak at the northern watch tower in the barrens.
+
+ [Warsong Outrider Update]
+ [Warsong Runner Update]
+ [Warsong Scout Update]
+
+
+== Description ==
+I recently deployed a few scouts into Ashenvale and I need a runner to take them their orders, and bring me back a report of what they have observed.
+Your first stop should be the Zoram'gar Outpost, along the coast to the west, at the Zoram Strand, to locate the first runner. You also need to stop at Splintertree Post, to the north, and along the road to the east, near Azshara. You will find a scout and an outrider there.
+Give them each a report, and from them, get an update on their findings.
+
+
+== Rewards ==
+You will receive:
+
+20
+1,800 XP
++150 or +350 reputation with Orgrimmar
+
+
+== Progress ==
+Hurry, <name>. They must receive their reports; it is urgent.
+
+
+== Completion ==
+I can see that you are one that can be counted on. These updates are crucial to our plans to further our presence in Ashenvale. We can now plan our next move.
+
+
+== Notes ==
+The Warsong Scout is located in Splintertree Post.
+The Warsong Outrider is on the road between Splintertree Post and Azshara.
+The Warsong Runner is located in the Zoram'gar Outpost on the western coast.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.5.0 (2005-06-07): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

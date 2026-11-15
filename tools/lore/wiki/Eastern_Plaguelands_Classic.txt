@@ -1,0 +1,9 @@
+title: Eastern Plaguelands (Classic)
+revision: 6893788
+part: intro
+url: https://warcraft.wiki.gg/wiki/Eastern_Plaguelands_%28Classic%29
+
+The Eastern Plaguelands is the more heavily devastated half of the Plaguelands, the remnants of the Kingdom of Lordaeron. They are located east of the Western Plaguelands and north of the Hinterlands.
+The Scourge’s rule here is supreme. Their southern capital of Stratholme is here, under the command of the lich, Kel’Thuzad. The ground is brown, ugly, and sick, the trees corrupted into giant mushrooms and the air polluted with orange mist. Undead, necromancers, and Damned cultists prowl the land. The Scarlet Crusade boasts a large army and battles fervently and vainly against the Scourge; outsiders are also unwelcome. Amani forest trolls strike from the north, attempting to reclaim their ancestral empire.
+The area is roamed by mutant creatures and soldiers of the Scourge, while members of the Scarlet Crusade fight a constant battle to drive the Scourge out of Stratholme from their Chapel and key base at Tyr's Hand. Only a small camp maintained by the Argent Dawn remains friendly to all, welcoming adventurers that would lend a strong arm or spell. Located at Light's Hope Chapel, this staging area serves as a last bastion of Light in a land blanketed in darkness.
+With Patch 1.12, objective-based world PvP was added to the zone. Members of the Horde and the Alliance battle in A Game of Towers for four strategic ruined outposts spread throughout the land. Controlling these towers gives area-wide benefits and certain towers provide other, unique advantages.

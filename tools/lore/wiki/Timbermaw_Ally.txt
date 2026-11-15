@@ -1,0 +1,54 @@
+title: Timbermaw Ally
+revision: 6947642
+part: whole
+quest: 8460
+url: https://warcraft.wiki.gg/wiki/Timbermaw_Ally
+
+== Objectives ==
+Grazle wants you to prove yourself by killing 6 Deadwood Warriors, 6 Deadwood Pathfinders, and 6 Deadwood Gardeners. Return to him in southern Felwood near the Emerald Sanctuary when you are done.
+
+Deadwood Warrior slain (6)
+Deadwood Pathfinder slain (6)
+Deadwood Gardener slain (6)
+
+
+== Description ==
+The Timbermaw are the only furbolg tribe to escape the corruption. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.
+Are you interested in proving yourself? Drive back the corrupted Deadwood tribe of Felwood and we may one day consider you an ally. You'll find the first Deadwood tribe - warriors, pathfinders and gardeners - to my west.
+
+
+== Rewards ==
+
+You will also gain:
+
+4,400 XP
++1,400 reputation with Timbermaw Hold
+
+
+== Progress ==
+Keep at it, <name>. If you are to earn our trust, you will need to prove yourself to us.
+
+
+== Completion ==
+We suffer much from the events of the past. Thank you for what you have done to help protect the Timbermaw. As a sign of our growing friendship, please accept this humble offering.
+
+
+== Notes ==
+You also gain 20 reputation points for every Deadwood tribe member killed. This requires you to kill 18 tribe members which adds at least 360 reputation points with the Timbermaw.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 3.0.2 (2008-10-14): Reputation award was doubled (to 1400)   
+ Patch 2.2.0 (2007-09-25): Reputation award was doubled (to 700)
+It was only 350.
+
+
+== See also ==
+Timbermaw Ally, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

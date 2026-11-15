@@ -1,0 +1,49 @@
+title: Alas, Andorhal (Horde Classic)
+revision: 6958656
+part: whole
+quest: 105
+url: https://warcraft.wiki.gg/wiki/Alas%2C_Andorhal_%28Horde_Classic%29
+
+== Objectives ==
+Bring Araj's Phylactery Shard to High Executor Derrington at the Bulwark, Western Plaguelands.
+
+ [Araj's Phylactery Shard]
+
+
+== Description ==
+Alas, the time to attack Andorhal and drive out the lich that controls it is upon us!
+Inside the ruins of the city is where the lich - Araj the Summoner - holds dominion. He is guarded by numerous Scourge surrounding the remains of city's center, and his personal retinue of guardians attached to him directly is formidable. You will need numerous allies to even stand a chance of facing him successfully.
+Destroy Araj, <name>, and bring me a shard from his phylactery as proof!
+
+
+== Rewards ==
+You will receive:
+
+11,900 XP
++150 or +350 reputation with Horde
++150 or +700 reputation with Argent Dawn
+ [Mark of Resolution]
+
+
+== Progress ==
+Your task has been given to you, <name>.  Do you have a shard from the lich's phylactery as proof of the task being accomplished?
+
+
+== Completion ==
+You've done it!  Araj... the lich is finally defeated!
+You've done a tremendous service to the Horde on this day, <name>.  Your bravery and perseverance are a testament to what it means to be a true hero.  Please - accept this as a token for all to see and know that you have delivered the Horde a victory for the ages!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.7.0 (2005-09-13): The text for the Horde and Alliance versions of "Alas, Andorhal" now reflect the changes done to the Araj encounter.   
+
+
+== See also ==
+Alas, Andorhal, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

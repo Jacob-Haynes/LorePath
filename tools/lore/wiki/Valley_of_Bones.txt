@@ -1,0 +1,7 @@
+title: Valley of Bones
+revision: 6884964
+part: intro
+url: https://warcraft.wiki.gg/wiki/Valley_of_Bones
+
+The Valley of Bones is a crag on the southern edge of Desolace, infested by skeletons and centaur necromancers and haunted by ghosts of the Magram clan. Collapsed against the cliff walls are a pair of massive skeletons of unknown origin called the Dead Goliaths.
+In Forever this area is considered part of Shen'dralas instead of Desolace.

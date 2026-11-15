@@ -1,0 +1,48 @@
+title: The Remains of Trey Lightforge
+revision: 5616535
+part: whole
+quest: 5385
+url: https://warcraft.wiki.gg/wiki/The_Remains_of_Trey_Lightforge
+
+== Objectives ==
+Return the Remains of Trey Lightforge to Jessir Moonbow in Felwood. 
+
+ [Remains of Trey Lightforge] (provided)
+
+
+== Description ==
+You pick up the sack carefully and prepare to make your way back to Jessir Moonbow on the border of Felwood and Ashenvale. Hopefully the paladin will be given the proper respects once you've passed his remains on to his friends.
+
+
+== Rewards ==
+
+You will also receive:
+
+22
+10900 XP
+
+
+== Progress ==
+How did things go in Jaedenar, <name>?
+
+
+== Completion ==
+You've done it! Praise be to Elune and whichever powers you worship, <name>. You have done an honorable and noble thing this day. I am certain Arko'narin will be pleased that you not only took the time to save her, but to also slay the creature who tortured one of her best friends.
+I wish I could do more for you, but please, take this.
+
+
+== Progression ==
+ [55] A Strange Red Key
+ [55] Rescue From Jaedenar
+ [57] Retribution of the Light
+ [57] The Remains of Trey Lightforge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

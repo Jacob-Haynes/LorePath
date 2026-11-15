@@ -1,0 +1,67 @@
+title: Drakefire Amulet (quest)
+revision: 6907316
+part: whole
+quest: 6502
+url: https://warcraft.wiki.gg/wiki/Drakefire_Amulet_%28quest%29
+
+This is the final part of the Great Masquerade quest chain.
+
+
+== Objectives ==
+You must retrieve the  [Blood of the Black Dragon Champion] from General Drakkisath. Drakkisath can be found in his throne room behind the Halls of Ascension in Blackrock Spire. 
+
+ [Blood of the Black Dragon Champion]
+
+
+== Description ==
+It is a piece of the dragon; a scale - enchanted and transformed. Whole, it could have granted access to the beast's lair. Shattered, it is useless.
+It is possible to repair the item, but to do so would require the blood of a black dragon champion. There is one... He is known as General Drakkisath, ruler of the dragonspawn armies of Nefarian. Perhaps you have heard of him?
+Return with his blood, <race>, and I shall enchant the fragment into something that will grant you access to Onyxia's lair. 
+
+
+== Progress ==
+The flow of time does not stop or slow, <race>. While my life is eternal, yours
+is not. Waste not the time that you have... 
+
+
+== Completion ==
+This amulet will grant you the access that you seek. The lair of Onyxia can be
+found in Dustwallow Marsh. As long as you hold the amulet, her wards cannot
+prevent you from entering.
+The Blue Flight wishes you luck, <name>. 
+
+
+== Rewards ==
+You will receive:
+
+8300 XP (or 49 50 at level 70)
+ [Drakefire Amulet]
+
+
+== Progression ==
+ [54] Dragonkin Menace
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54D] Marshal Windsor
+ [54D] Abandoned Hope
+ [58D] A Crumpled Up Note
+ [58D] A Shred of Hope
+ [58D] Jail Break!
+ [60R] Stormwind Rendezvous
+ [60R] The Great Masquerade
+ [60R] The Dragon's Eye
+ [60R] Drakefire Amulet
+
+
+== Patch changes ==
+ Patch 3.0.2 (2008-10-14): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

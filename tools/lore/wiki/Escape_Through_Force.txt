@@ -1,0 +1,66 @@
+title: Escape Through Force
+revision: 6595987
+part: whole
+quest: 994
+url: https://warcraft.wiki.gg/wiki/Escape_Through_Force
+
+== Objectives ==
+Protect Volcor until you reach the road, then speak to Terenthis in Auberdine.
+
+Help Volcor to the road
+
+
+== Description ==
+All right, <name>, force it is. Let's get out of here as soon as you're ready. We'll fight our way down to the road—Grimclaw should still be there. Once there, we can part ways.
+Terenthis will want to hear your version of the story immediately, so head to Auberdine after we make it out of here.
+
+
+== Rewards ==
+You will receive:
+
+14
+1750 XP (or 10 80 at max level)
++250 reputation with Darnassus
+ [Steadfast Cinch]
+
+
+== Completion ==
+<Name>! I'm pleased to see you've returned successfully. Your assistance to Volcor has given me faith that we can overcome the challenges facing us here in Darkshore and beyond.
+
+
+== Notes ==
+On completion
+Sentinel Selarin runs into the building.
+Sentinel Selarin says: Terenthis, Raene sent me to find you. The Sentinels are in need of help in Ashenvale.
+Terenthis says: Hello, Selarin. I'm afraid I cannot help you at the moment, but perhaps some of the adventurers here in Auberdine can...
+Sentinel Selarin says: Thank you, Terenthis. I shall remain here for as long as I can.
+Sentinel Selarin says: Hopefully I can send a worthy few to help Ashenvale and the Sentinels.
+At this point, Sentinel Selarin offers the next quest,  [19] Trek to Ashenvale.
+
+
+== Progression ==
+
+ [14] How Big a Threat?
+The questline branches in two:
+
+Terenthis:
+ [14] How Big a Threat?
+ [20] A Lost Master
+ [20] A Lost Master
+ [20] Escape Through Stealth or [22] Escape Through Force
+ [19] Trek to Ashenvale
+
+Thundris Windweaver:
+ [15] Thundris Windweaver
+ [15] The Cliffspring River
+ [18] The Blackwood Corrupted
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

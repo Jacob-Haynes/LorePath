@@ -1,0 +1,50 @@
+title: Save Techbot's Brain!
+revision: 6327238
+part: whole
+quest: 2922
+url: https://warcraft.wiki.gg/wiki/Save_Techbot%27s_Brain%21
+
+This quest is part of the Tinkmaster Overspark quest chain. This quest chain starts with  [26D] Tinkmaster Overspark.
+
+
+== Objectives ==
+Bring Techbot's Memory Core to Tinkmaster Overspark in Ironforge.
+
+ [Techbot's Memory Core]
+
+
+== Description ==
+When our beloved city Gnomeregan fell, a rogue spark must have jolted my poor creation, Techbot. It once aided me and my associates with its countless gizmos and limitless store of information, but its positronic brain has polarized. Now it's negatronic... and Techbot's behaviors are reversed. It roams Gnomeregan in a frenzy!
+But perhaps it can be salvaged. Perhaps, if you can retrieve Techbot's memory core and bring it to me, I can discover the cause of the polarization and fix my poor Techbot.
+
+
+== Rewards ==
+You will receive:
+
+2650 XP (or 16 20 at max level)
++350 reputation with Gnomeregan Exiles
+
+
+== Progress ==
+Did you find Techbot?  Did you retrieve its memory core??
+
+
+== Completion ==
+Oh, this is wonderful!  Thank you, <name>!  I'll get to work immediately!!
+Poor, poor Techbot... Don't feel bad.  We'll get you fixed.
+Now, where did I put that plug for my hydro-jack swivel spanner...
+
+
+== Progression ==
+ [26D] Tinkmaster Overspark
+ [26D] Save Techbot's Brain!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

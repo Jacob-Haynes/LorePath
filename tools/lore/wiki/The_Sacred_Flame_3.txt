@@ -1,0 +1,54 @@
+title: The Sacred Flame (3)
+revision: 6063127
+part: whole
+quest: 1197
+url: https://warcraft.wiki.gg/wiki/The_Sacred_Flame_%283%29
+
+In The Sacred Flame (part 3), you must infiltrate the Galak tribe's camp to the north and enter the cave there, known as Splithoof Hold. Deep in the cave, you must douse their sacred flame and steal the  [Cloven Hoof].
+
+
+== Objectives ==
+Retrieve the Cloven Hoof for Rau Cliffrunner at the Freewind Post.
+
+ [Cloven Hoof]
+ [Filled Etched Phial] (provided)
+
+
+== Description ==
+Using the water you brought, you will be able to temporarily douse the flame that holds the centaur relic. It will not work permanently, however, so you will have to be quick about it.
+You will find Splithoof Crag, the centaurs' stronghold, to the north of here. The flame is kept in Splithoof Hold, a heavily guarded part of the crag.
+Be careful, though, the Galak centaur have great numbers here, and will be rather reluctant to surrender something so dear to them.
+
+
+== Rewards ==
+
+
+== Progress ==
+I am eager to put my hands upon the Cloven Hoof. Have you taken it yet?
+
+
+== Completion ==
+I sense a strange energy emanating from the Hoof... I have no doubt that we will discover surprising new information about the centaur from its study.
+My thanks, <name>. Now I must begin to decipher the mysteries you have brought to me.
+
+
+== Notes ==
+Head north from Freewind Post and enter the centaur camp at Splithoof Crag. In the center of the camp against the northern cliffs there will be an entrance to the cave, that's Splithoof Hold. The centaur in here are stronger than those outside, so beware. At the very back of the cave you will find two lvl 30 centaur guarding a flame. You'll want to defeat them before attempting to douse it, and since it's impossible to pull just one, this can be tricky. It might be wise to get a small group for this one because of this.
+Once you have access to the flame, right click it to get the  [Cloven Hoof].
+Return with the  [Cloven Hoof] to Rau Cliffrunner at the Freewind Post to turn in the quest.
+
+
+== Progression ==
+ [25] The Sacred Flame
+ [29] The Sacred Flame
+ [29] The Sacred Flame
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

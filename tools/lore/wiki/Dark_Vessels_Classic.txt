@@ -1,0 +1,44 @@
+title: Dark Vessels (Classic)
+revision: 6903217
+part: whole
+quest: 7850
+url: https://warcraft.wiki.gg/wiki/Dark_Vessels_%28Classic%29
+
+== Objectives ==
+Primal Torntusk at Revantusk Village in the Hinterlands wants you to recover 5 Vessels of Tainted Blood from Jintha'alor. Return to Primal Torntusk when this task is complete.
+
+ [Vessel of Tainted Blood] (5)
+
+
+== Description ==
+The Vilebranch fight with supernatural ferocity. This is due to the foul magical weavings of the Vile Priestess Hexx.
+Throughout Jintha'alor you will find dark vessels of tainted blood. The vessels radiate the foul magic of the faceless blood God, empowering the Vilebranch and also driving them to madness.
+Steal those vessels and return them to me so that I may remove the taint and ultimately loosen the grip of the blood God.
+
+
+== Rewards ==
+You will receive:
+
+10,065 XP
++150 reputation with Revantusk Trolls
+ [Nature's Breath]
+
+
+== Progress ==
+Be cautious in battling the Vilebranch, <name>. Their minds are clouded - they fight to the death.
+
+
+== Completion ==
+The dark energy that compels the Vilebranch has been lifted - for now. We must remain ever vigilant in our battle against evil, as even if the Vile Priestess is destroyed, another soon takes her place.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced by  [10-30] Dark Vessels.   
+ Patch 3.2.0 (2009-08-04): Undocumented: Required amount lowered from 10 to 5.   
+ Patch 1.5.0 (2005-06-07): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

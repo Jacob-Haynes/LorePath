@@ -1,0 +1,47 @@
+title: The Thandol Span
+revision: 5608607
+part: whole
+quest: 631
+url: https://warcraft.wiki.gg/wiki/The_Thandol_Span
+
+The Thandol Span is the 1st quest in the The Thandol Span quest chain.
+
+
+== Objectives ==
+Rhag Garmason wants you to locate Ol' Rustlocke.
+
+
+== Description ==
+A tremendous explosion roared through the hills.  'Twas horrible, I tell you!
+Good soldiers died defending the Thandol Span.  Longbraid says we'll take revenge on the Dark Irons before all is said and done.
+We're in a world of hurt though and I don't see any reinforcements in sight.  Longbraid sent Ol' Rustlocke to scout the eastern bridge to see if we could secure it.
+That was days ago.  We haven't the manpower to search for him with Dun Modr under siege.
+Perhaps you can find him...
+
+
+== Rewards ==
+You will receive:
+
+2550 XP (or 15 at max level)
++250 reputation with Ironforge
+
+
+== Completion ==
+You search the tiny, dwarven corpse.  Engraved into the helmet you can clearly read: Ebenezer Rustlocke.
+
+
+== Progression ==
+ [31] The Thandol Span
+ [31] The Thandol Span
+ [31] The Thandol Span
+ [31] Plea To The Alliance
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

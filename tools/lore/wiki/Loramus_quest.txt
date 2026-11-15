@@ -1,0 +1,92 @@
+title: Loramus (quest)
+revision: 6176808
+part: whole
+quest: 3141
+url: https://warcraft.wiki.gg/wiki/Loramus_%28quest%29
+
+This is part of the main Blasted Lands quest chain, although it takes place in Azshara.
+
+
+== Objectives ==
+Listen to Loramus Thalipedes tell his story.
+
+
+== Description ==
+So you wish to battle demons? You would do well to listen to my tale.
+
+
+== Progress ==
+Do not interrupt me, <race>.
+
+
+== Completion ==
+So be it...
+
+
+== Loramus' story ==
+Can you see them, mortal? No... I did not think you could. Sighted but sightless - it is your gift and your curse.
+ I wish to hear your story.
+
+In the age of war, Razelikh the Defiler served as the most fearsome of Lord Kazzak's lieutenants. When the Legion was defeated and Kazzak forced back into the Tainted Scar, Razelikh was tasked by his master to secure the Blasted Lands.
+While the Alliance fought petty battles with the Horde over territory outside of the Blasted Lands, Razelikh was uniting the differing Shadow Council sects and the brutish Dreadmaul ogres of the land.
+ Please continue.
+
+Tragically, it was Thrall's wisdom that finally sealed the bond between the demon lord and his minions. It was Trebor's regiment that served as the catalyst to unite the demon lord, the shadowsworn sects and the ogres. The lure of nearly unlimited power and the granting of immortal shock troops to each respective leader sealed the deal in blood.
+ I do not understand.
+
+What Sevine, Allistarj, and Grol did not realize was that just as their servants were bound to the land, so would they be... You see, the price for their own immortality was also imprisonment and eternal servitude under the command of Razelikh. The cruel cunning of Razelikh had emerged the victor once again.
+ Indeed.
+
+Their minds are now tainted, <race>. Yes, even more so than before. They live only to serve and protect Razelikh. The amulet fragments they each hold are the key to summoning the demon lord. What you do not understand is that none of them can be harmed through any conventional means.
+ I will do this with or without your help, Loramus.
+
+Then let us pretend that you undergo the long and arduous task of creating the bane necessary to break through the demonic wards placed upon the triad. What would be your next course of action? To face the Defiler in his lair?
+Loramus Thalipedes laughs.
+ Yes.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

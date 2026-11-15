@@ -1,0 +1,51 @@
+title: Prompt Potion Runner
+revision: 6968893
+part: whole
+quest: 97891
+url: https://warcraft.wiki.gg/wiki/Prompt_Potion_Runner
+
+== Objectives ==
+Bring the Unstable Potion to Doctor Martin Felben in the Apothecarium within the time limit.
+
+Speak to Doctor Martin Felben
+Unstable Potion (provided)
+Time Remaining: 5 minutes
+
+
+== Description ==
+You! Quickly, I need you to bring this potion across the slime canal to Doctor Martin Felben in the Apothecarium!
+It has a very limited shelf life, and no I can't go myself, my knees rattle and pop out if I attempt to run.
+Just another lovely side effect of undeath, apparently.
+But we're wasting time! Here, take this and go!
+<Alessandro makes a shooing motion.>
+
+
+== Rewards ==
+You will receive:
+
+8
+1,150 XP
++150 reputation with Undercity
++37 reputation with Darkspear Trolls, Orgrimmar, Thunder Bluff, and Horde
+
+
+== Completion ==
+Ah, marvelous! I had been waiting for Alessandro's potion to arrive. The last six he sent destabilized along the way, but you've made it just in time!
+Here, take this for your effort. That is all for now, unless you have other business with me?
+If not, remove yourself so I may continue my experiments unhindered.
+
+
+== Notes ==
+The potion has destabilized and become inert!
+The quest item turns into an Inert Potion.
+If the timer runs out before completing the quest, both Alessandro and Felben have an additional gossip option:
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

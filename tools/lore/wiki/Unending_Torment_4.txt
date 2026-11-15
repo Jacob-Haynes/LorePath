@@ -1,0 +1,56 @@
+title: Unending Torment (4)
+revision: 6914805
+part: whole
+quest: 97291
+url: https://warcraft.wiki.gg/wiki/Unending_Torment_%284%29
+
+== Objectives ==
+Collect a Toxic Skullcap from Tawny Grisette in the Trade Quarter, Blisterweed near the Herbalism Trainer, and Essence of Agony from the poison vendor in the Rogues' Quarter for Master Apothecary Faranell in Undercity.
+
+Toxic Skullcap
+Blisterweed 
+ [Essence of Agony] 
+
+
+== Description ==
+With the head reattached, all we need now is to bind it to the Dark Lady's will. This should not be a problem. The beast barely has brains left as it is after all the beatings it's taken.
+We simply need to motivate it.
+Fetch me a Toxic Skullcap from Miss Grisette in the Trade Quarter. Oh, and some Blisterweed from our local herbalist trainers, the Alliestars. Feel free to just take some, they owe me. And lastly a bit of Essence of Agony. Any old poison vendor should do.
+We have a potion to make!
+
+
+== Rewards ==
+You will receive:
+
+13
+1,650 XP
+
+
+== Progress ==
+It will be ever so lovely to have our lost sheep returned to the fold, don't you think?
+
+
+== Completion ==
+These will do nicely. We will see how much bravado our honored guest retains after he is subjected to my masterpiece.
+
+
+== Progression ==
+ [21D] Abominable Creatures
+ [22D] A Frightened Request
+ [22D] Bloodied Insignia
+ [22D] Crest of Lordaeron
+ [22D] Light's Justice
+ [22D] Remember That I Love You →  [22] Remember That I Love You
+ [12] A Recipe For Death →  [15] A Recipe For Death →  [18] A Recipe For Death →  [22D] The New Plague
+ [11] Rear Guard Patrol →  [13E] Rear Guard Patrol →  [22D] The Wrath of Rath'mael
+ [21D] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

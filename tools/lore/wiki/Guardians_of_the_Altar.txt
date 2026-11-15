@@ -1,0 +1,77 @@
+title: Guardians of the Altar
+revision: 6151903
+part: whole
+quest: 4901
+url: https://warcraft.wiki.gg/wiki/Guardians_of_the_Altar
+
+== Objective ==
+Protect Ranshalla while she attempts to reactivate the Altar of Elune. Report your findings to Erelas Ambersky in Rut'theran Village.
+
+Discover the secret of the Altar of Elune
+
+
+== Description ==
+At the very top of the ridge lies what I believe to be an altar of the goddess Elune. From what I can tell, we need to light the five torches in each cave, and then we will be able to access the altar directly.
+I transcribed some incantations carved into the stone in the ancient ruins of Kel'Theril, which I believe are the secret to unlocking the altar. I'll need your help to light each torch, while I recite the spell.
+If we are successful, you'll be able to report our findings to Erelas!
+
+
+== Completion ==
+Did you meet up with Ranshalla?
+
+
+== Rewards ==
+4800 XP
+150 Reputation with Darnassus
+
+
+== Cutscene at the Altar of Elune ==
+Ranshalla says: The altar is glowing! We have done it!
+Ranshalla says: What is happening? Look!
+Priestess of Elune says: It has been many years...
+Priestess of Elune says: Who has disturbed the altar of the goddess?
+Ranshalla says: Please, priestesses, forgive us for our intrusion. We do not wish any harm here.
+Ranshalla says: We only wish to know why the wildkin guard this area...
+Priestess of Elune says: Enu thora'serador. This is a sacred place.
+Priestess of Elune says: We will show you...
+Priestess of Elune says: Look above you; thara dormil dorah...
+Priestess of Elune says: This gem once allowed direct communication with Elune, herself.
+Priestess of Elune says: Through the gem, Elune channeled her infinite wisdom...
+Priestess of Elune says: Realizing that the gem needed to be protected, we turned to the goddess herself.
+Priestess of Elune says: Soon after, we began to have visions of a creature... A creature with the feathers of an owl, but the will and might of a bear...
+Priestess of Elune says: It was on that day that the wildkin were given to us. Fierce guardians, the goddess assigned the wildkin to protect all of her sacred places.
+Voice of Elune says: Anu'dorini Talah, Ru shallora enudoril.
+Priestess of Elune says: But now, many years later, the wildkin have grown more feral, and without the guidance of the goddess, they are confused...
+Priestess of Elune says: Without a purpose, they wander... But many find their way back to the sacred areas that they once were sworn to protect.
+Priestess of Elune says: Wildkin are inherently magical; this power was bestowed upon them by the goddess.
+Priestess of Elune says: Know that wherever you might find them in the world, they are protecting something of importance, as they were entrusted to do so long ago.
+Priestess of Elune says: Please, remember what we have shown you...
+Priestess of Elune says: Farewell.
+Ranshalla says: Thank you for you help, <name>. I wish you well in your adventures.
+Ranshalla says: I want to stay here and reflect on what we have seen. Please see Erelas and tell him what we have learned.
+
+
+== Notes ==
+
+The key to success is to let Ranshalla precede you by a far enough distance to draw aggro first. If you pull the wildkin first, she will not come back to assist you, but keep walking. The wildkin range from level 56-59, so if you can handle them solo, you can certainly handle them with Ranshalla's help.
+Ranshalla will travel in a roughly circular pattern around the thicket, so keep that in mind. Also, when she pauses in the caves to channel the spell, it appears that she will wait indefinitely for you to light (use) the torch. Use this time wisely to eat/drink your health and mana to full.
+The quest will complete at the end of the script event and she will disappear. Return to Rut'theran Village.
+For quotes look here.
+
+
+== Progression ==
+ [47] Favored of Elune?
+ [55] Moontouched Wildkin
+ [57] Find Ranshalla
+ [59] Guardians of the Altar
+ [57] Wildkin of Elune
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

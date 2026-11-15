@@ -1,0 +1,63 @@
+title: Betrayed (3)
+revision: 5995254
+part: whole
+quest: 3506
+url: https://warcraft.wiki.gg/wiki/Betrayed_%283%29
+
+In the third Betrayed, you will finally bring Magus Rimtori to justice. This quest is harder than the previous two.
+
+
+== Objectives ==
+Destroy the arcane focusing crystal tied to Magus Rimtori and then slay her. Afterwards, take the Head of Magus Rimtori to Ag'tor Bloodfist in Azshara.
+
+ [Head of Magus Rimtori]
+
+
+== Description ==
+A few more moments of thought brings a few ideas to mind, one of which brings a smile to your face: perhaps destroying the crystals would upset the blood elf responsible for the slaughter of so many orcs and the betrayal of Belgrom?
+You continue to decipher more of the script and pictures and realize that one of the crystals is tied to the creator of the circle--the others are tied to something far more sinister.
+You close the book and begin to decide which crystal to destroy.
+
+
+== Rewards ==
+You will receive:
+
+4,350 XP / 6,090 XP (Season of Mastery)
++75 reputation with Orgrimmar
+
+
+== Progress ==
+How goes your slaughter of the blood elf traitors, <name>? Have you made any progress?
+I hope you are the one strong enough to bring that dog to her knees! She deserves nothing but a painful death for all that she has done!
+
+
+== Completion ==
+RAR!! Incredible!
+You've done it! Belgrom will be pleased! Finally the spirits of dozens of our warriors can be at peace. Thank you, <name>.
+
+
+== Notes ==
+Clicking an incorrect Arcane Focusing Crystal summons an Angered Infernal.
+
+Correct Arcane Focusing Crystal
+Blood Elf Defender says: Who dares?! I will destroy you!
+Blood Elf Defender says: Mistress!! They seek to destroy your work!!
+Blood Elf Defender says: Ha! Now your death is ensured!
+Magus Rimtori says: You dare! Now feel my wrath!
+
+
+== Progression ==
+ [53] Betrayed
+ [53] Betrayed
+ [56] Betrayed
+ [56] Betrayed
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

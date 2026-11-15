@@ -1,0 +1,49 @@
+title: The Crown of Will (4)
+revision: 5627639
+part: whole
+quest: 520
+url: https://warcraft.wiki.gg/wiki/The_Crown_of_Will_%284%29
+
+== Objectives ==
+Kill Mug'Thol, and return his head with the Crown of Will to Melisara in Tarren Mill.
+
+ [Mug'thol's Head]
+ [Crown of Will]
+
+
+== Description ==
+With Mug'Thol's lieutenants dead, all that remains is to kill Mug'Thol and retrieve the Crown of Will. I have no doubt he'll be reluctant to part with it. Most likely expecting you, too, given the... departure... of his fellows.
+Find Mug'Thol, and deliver his head and the Crown to me. The Crushridge resistance will be at an end.
+
+
+== Rewards ==
+You will receive:
+
+6300 XP
++150 or +350 reputation with Undercity
+
+
+== Progress ==
+Three heads I have, a fourth I need. It will be Mug'Thol's, or it will be yours, <name>. That I promise.
+
+
+== Completion ==
+You have done your duty well, <name>. Mug'Thol's head shall adorn the highest peak of the ruins of Alterac, and the Deathguard will sweep the remnants of the Crushridge into the ground.
+
+
+== Progression ==
+ [39] The Crown of Will
+ [39] The Crown of Will
+ [41] The Crown of Will
+ [43] The Crown of Will
+ [43] The Crown of Will
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

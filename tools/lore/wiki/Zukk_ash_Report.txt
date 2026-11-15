@@ -1,0 +1,59 @@
+title: Zukk'ash Report
+revision: 6308907
+part: whole
+quest: 7732
+url: https://warcraft.wiki.gg/wiki/Zukk%27ash_Report
+
+== Objectives ==
+Deliver the Camp Mojache Zukk'ash Report to Zilzibin Drumlore. He resides in the Drag of Orgrimmar.
+
+ [Camp Mojache Zukk'ash Report] (provided)
+
+
+== Description ==
+You've done doubly well in addressing the threat that the Zukk'ash insects pose to Camp Mojache. The threat these things pose is far from over, and I'd like to ask you for one last task on behalf of the Horde.
+This is a document that details all the information we have learned about these Zukk'ash insects. I want you to deliver it to Zilzibin Drumlore in the Drag of Orgrimmar. He's an expert on alien creatures like these; I hope he can do something with the lore we've obtained.
+
+
+== Rewards ==
+
+You will also gain:
+
+4400 XP (or 26 40 at max level)
++75 reputation with Darkspear Trolls
++75 reputation with Orgrimmar
++75 reputation with Silvermoon City
++75 reputation with Thunder Bluff
++75 reputation with Undercity
+
+
+== Progress ==
+Greetings friend... you look as though you are on urgent business. Is there something I can help you with?
+
+
+== Completion ==
+Ah, I've been expecting this. These creatures you faced... they are an ancient threat that the Horde continues to choose to ignore. Hadoken was wise to bring this - and you - to me.
+The Zukk'ash are nothing more than creatures called the silithid. Some would think that they are a mindless nuisance, but let me assure you - they are a far, far worse threat than anything the Alliance could muster.
+If you're willing and strong enough, I could use your aid in bringing this threat to light.
+
+
+== Progression ==
+ [15-30] War on the Woodpaw
+ [15-30] Alpha Strike
+ [15-30] Woodpaw Investigation
+ [15-30] The Battle Plans
+Both of the following:
+ [15-30] Zukk'ash Infestation
+ [15-30] Stinglasher
+ [48] Zukk'ash Report
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.5.0 (2005-06-07): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,47 @@
+title: Securing the Supply Lines
+revision: 6263652
+part: whole
+quest: 8280
+url: https://warcraft.wiki.gg/wiki/Securing_the_Supply_Lines
+
+== Objectives ==
+Windcaller Proudhorn at Cenarion Hold in Silithus wants you to kill 15 Dredge Strikers.
+
+Dredge Striker slain (15)
+
+
+== Description ==
+Cenarion Hold is a location of utmost strategic importance. I'm convinced that while we hold it our victory over the silithid is guaranteed. Provided our influx supplies can be maintained, that is.
+Desert worms have proven to be more of a threat to our supply caravans than even the silithid themselves. Just this morning, a large shipment of morrowgrain was ravaged by a group of dredge strikers. I need you to thin their numbers to ensure our supplies aren't jeopardized.
+
+
+== Rewards ==
+You will receive:
+
+85
+8,150 XP
++300 reputation with Cenarion Circle
+
+
+== Progress ==
+The dredge strikers are a serious threat and must be dealt with quickly!
+
+
+== Completion ==
+You have my sincere gratitude.  Your efforts in helping Cenarion Hold have shown true courage.
+
+
+== Progression ==
+ [15-30] Hero's Call: Silithus!/ [15-30] Warchief's Command: Silithus! or  [15-30] The Dunes of Silithus/ [15-30] The Sands of Silithus (breadcrumb quests)
+ [15-30] Securing the Supply Lines
+ [15-30] Stepping Up Security
+
+
+== Patch changes ==
+ Patch 1.8.0 (2005-10-10): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,77 @@
+title: The Blackwood Corrupted
+revision: 6616792
+part: whole
+quest: 4763
+url: https://warcraft.wiki.gg/wiki/The_Blackwood_Corrupted
+
+== Objectives ==
+Fill the Empty Cleansing Bowl at the Auberdine Moonwell.
+Gather a sample of fruit, nut, and grain from the northern Blackwood furbolg camps.
+Mix the bowl and place it near the bonfire closest to the Cliffspring River at the northern camp, thus summoning the satyr corruptor.
+Take the Talisman of Corruption and bring it to Thundris Windweaver in Auberdine.
+
+ [Empty Cleansing Bowl] (provided)
+ [Talisman of Corruption]
+
+
+== Description ==
+We've learned that a source of furbolg corruption is from the satyr. They hold sway via talismans that they channel magic through. If the furbolg have a chance at salvation, we must lure out the satyr corruptor and take that talisman!
+Fill this bowl at our moonwell and take samples of the furbolgs' food from their northern camp. Mix them and place it near the bonfire by the river; any furbolgs who eat will be cleansed just long enough to lure out the satyr corruptor... who then you must slay!
+
+
+== Rewards ==
+
+You will also receive:
+
+20
+1700 XP (or 10 20 at max level)
++350 reputation with Darnassus
+
+
+== Progress ==
+The  [Talisman of Corruption] is a sinister device that only serves to pervert the balance of nature.  When you obtain this item from whatever satyr is tormenting the furbolgs and bring it to me for disposal, we will have won a great victory this day!
+
+
+== Completion ==
+We have just begun this war to reclaim our forest from the forces of corruption, but a battle this day has been won!  <name>, the people of Auberdine owe you a debt of gratitude that will never be easily repaid.  Please accept this along with our thanks.  What we have learned here today may one day free our furbolg friends from the shackles of torment permanently.
+
+
+== Notes ==
+The locations of the three items are:
+
+Blackwood Fruit Sample 
+Blackwood Nut Sample 
+Blackwood Grain Sample 
+Bonfire near which you must use the  [Filled Cleansing Bowl]:  
+After using the bowl near the bonfire, all the furbolgs remaining in the camp will become friendly-aligned, and briefly gather around the bowl.  Shortly thereafter, Xabraxxis appears, saying "What the... nobody cleanses a furbolg in MY camp! Face the wrath of Xabraxxis!"
+Note that any furbolgs that respawn will be hostile (as normal).
+Also note that every time you obtain one of the samples, a furbolg warrior will spawn very close to you and attack you. If you do not kill this furbolg, he will attack you every time you enter combat with another furbolg, no matter how far he is. To clear its "psychic powers" walk away from the camp (until it's not visible), wait a couple of minutes, and then approach the camp again. This will replace that furbolg with a normal one, that will only attack you if you enter combat within its detection range.
+Finally, note that if you do not kill Xabraxxis (or if he kills you and vanishes before you manage to make your way back to the camp), the quest will essentially become stuck, since the bowl is gone and Thundris Windweaver will not give you another one. You can get new samples of fruit, grain and nut, but without the bowl you cannot summon Xabraxxis again. The only solution (at the time of this writing) is to abandon the quest and restart it. You will lose any quest items that you have, but Thundris Windweaver will then give you a new bowl. It's not known if this will be fixed by a future patch.
+
+
+== Progression ==
+
+ [14] How Big a Threat?
+The questline branches in two:
+
+Terenthis:
+ [14] How Big a Threat?
+ [20] A Lost Master
+ [20] A Lost Master
+ [20] Escape Through Stealth or [22] Escape Through Force
+ [19] Trek to Ashenvale
+
+Thundris Windweaver:
+ [15] Thundris Windweaver
+ [15] The Cliffspring River
+ [18] The Blackwood Corrupted
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

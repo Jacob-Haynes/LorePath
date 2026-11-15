@@ -1,0 +1,41 @@
+title: Returning to Port
+revision: 6979175
+part: whole
+quest: 97048
+url: https://warcraft.wiki.gg/wiki/Returning_to_Port
+
+== Objectives ==
+Speak to Captain Aransas in Booty Bay.
+
+
+== Description ==
+Listen, I can't repay you right now, but I'm a cook on Captain Aransas' ship. I'll be sure to put in a good word for you when I get back to Booty Bay. You should speak to the captain when you get the chance. I'm sure she'll be grateful to have me back.
+
+
+== Rewards ==
+You will be able to choose one of these rewards: 
+
+Kurzen Headmaster's Cinch
+Jailer's Discarded Chain
+Crusty Cuffs
+You will also receive:
+
+2850 XP
+45
+
+
+== Completion ==
+Ah, ye must be <name>. Mathers tells me ye busted out of Kurzen's compound together. Said the two of ye really let some heads roll. Some proper swashbucklers the pair of ye are!
+Ha har! I know it's all a fib, matey. Mathers is a good boy, but the only blade he's fit to wield is a kitchen knife.
+All the same, I appreciate ye saving a member of me crew. A good cook is priceless in this line o' work.
+
+
+== Patch changes ==
+ Hotfix (2026-11-10): Fixed a bug that caused a player picking up the quest to delete nearby players' quest items for  [38] The Cook in the Cage. 
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

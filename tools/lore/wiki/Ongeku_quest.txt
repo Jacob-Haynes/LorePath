@@ -1,0 +1,55 @@
+title: Ongeku (quest)
+revision: 5586246
+part: whole
+quest: 1373
+url: https://warcraft.wiki.gg/wiki/Ongeku_%28quest%29
+
+== Objectives ==
+Maintain your reputation with the Gelkis, and bring a Draenethyst Shard to Uthek the Wise in the Gelkis village in Desolace.
+
+ [Draenethyst Shard]
+Gelkis Clan Centaur (Friendly)
+
+
+== Description ==
+You have more to prove, and your next task will take you far, so for now the Gelkis will fight the Magram without you.
+The earth whispers many secrets to those who listen. One secret I hear of is a red crystal. It is called draenethyst, and it is new to our earth. It comes from a place where mountains fly, and where demons rule.
+Bring me a shard of draenethyst, and it will make my magic strong! The shard is in a place called the Swamp of Sorrows, held by the lost one Ongeku.
+
+
+== Rewards ==
+2950 XP or 22 20 at Level 80
+
+
+== Progress ==
+Show me you are a friend of the Gelkis, <name>.
+
+
+== Completion ==
+Yes, this is the shard of which the earth whispered.  I can feel strong magic in it!  I will use this magic against the enemies of the Gelkis.
+You have done one more task for us, <name>.  Maybe soon, we will call you friend.
+
+
+== Notes ==
+Starts in Desolace on Kalimdor, but you need to travel to central Swamp of Sorrows on the Eastern Kingdoms to find Ongeku.
+Closest Alliance towns are Darkshire in Duskwood to the west of the swamp (with Deadwind Pass between them) or Nethergarde Keep in the Blasted Lands to the south of the swamp.
+The Horde have a town nearby called Stonard in the south-central swamp.
+
+
+== Progression ==
+ [35] Strange Alliance /  [33] Gelkis Alliance
+ [32] Raid on the Kolkar
+ [35] Stealing Supplies
+ [37] Ongeku
+ [37] Khan Jehn
+ [42] Khan Hratha
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

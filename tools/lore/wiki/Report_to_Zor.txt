@@ -1,0 +1,52 @@
+title: Report to Zor
+revision: 5616801
+part: whole
+quest: 1262
+url: https://warcraft.wiki.gg/wiki/Report_to_Zor
+
+== Objectives ==
+Bring the Jeweled Pendant to Zor Lonetree in Orgrimmar.
+
+ [Jeweled Pendant] (provided)
+
+
+== Description ==
+It is strange that the pendant Marg stole was in the hands of common soldiers. Perhaps its owner was in disguise, or perhaps the soldiers themselves stole it!
+Regardless of which is true, this is a noble's pendant and we must discover its true owner if we are to unravel its mystery.
+Take the pendant to Zor Lonetree in Orgrimmar. He is well schooled in Alliance politics, and will know if this pendant has a history among the nobles of Stormwind.
+
+
+== Rewards ==
+You will receive:
+
+4,370  XP
++250 reputation with Orgrimmar
+
+
+== Progress ==
+You traveled from Brackenwall Village in Dustwallow?  How fares Nazeer, and how fare his efforts in the marsh?
+
+
+== Completion ==
+This pendant was crafted with great skill and precision, <name>.  No orc would covet such a jewel...
+But many humans would.
+I will have this pendant studied.  In time let us hope that its mysteries will be revealed to us.
+
+
+== Progression ==
+ [15-30] The Lost Report
+ [35] The Severed Head
+ [35] The Troll Witchdoctor
+ [40] Marg Speaks
+ [40] Report to Zor
+ [40] Service to the Horde
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

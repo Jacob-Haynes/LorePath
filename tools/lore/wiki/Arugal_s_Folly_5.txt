@@ -1,0 +1,58 @@
+title: Arugal's Folly (5)
+revision: 6954890
+part: whole
+quest: 98298
+url: https://warcraft.wiki.gg/wiki/Arugal%27s_Folly_%285%29
+
+== Objectives ==
+Bring 6 Worgen Bits to Dalar Dawnweaver in The Sepulcher.
+
+ [Worgen Bits]
+
+
+== Description ==
+Ah, it's all become so embarrassingly clear! Arugal hardly had any magic at all, let alone enough to create the worgen. 'Arugal's Curse.' Pah! Barely potent enough to last a few seconds.
+These shackles prove he can bind the beasts, not create them. The worgen clearly spread their curse a different way. I would know how.
+Go to the Greymane Wall to the south. The worgen seem to be spreading to the humans nearby. Tear the beasts apart and bring me whatever you find. This requires a more direct approach.
+
+
+== Rewards ==
+You will receive:
+
+8
+1,150 XP
++100 reputation with Undercity
+ [Foulfur Gloves]
+
+
+== Progress ==
+Fangs, claws, gizzards. It makes no difference to me. The easiest way to study something is to see the guts yourself.
+
+
+== Completion ==
+It appears I get the last laugh after all, haha! Arugal truly was a fool. And I, Dalar Dawnweaver, have exposed him as the fraud he is.
+These pieces are all the proof I need that the curse has nothing to do with that blithering dolt.
+Regrettably, that means his remedy is also worth nothing. It seems the search for a solution to the worgen curse continues.
+
+
+== Notes ==
+The Worgen Bits drop from Moonrage Bloodhowlers. These are found in southern Silverpine Forest, and inside the Deep Elem Mine.
+
+
+== Progression ==
+ [10] Prove Your Worth
+ [11] Arugal's Folly
+ [14] Arugal's Folly
+ [15] Arugal's Folly
+ [15] Arugal's Folly
+ [16] Arugal's Folly 
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

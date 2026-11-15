@@ -1,0 +1,46 @@
+title: For All To See
+revision: 6933813
+part: whole
+quest: 7491
+url: https://warcraft.wiki.gg/wiki/For_All_To_See
+
+== Objectives ==
+Seek out Overlord Runthak in the Valley of Strength.
+
+
+== Description ==
+Overlord Runthak awaits your arrival in the Valley of Strength.
+<Thrall salutes you.>
+Do not keep your public waiting, hero.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Dragonslayer's Signet]
+ [Onyxia Tooth Pendant]
+ [Onyxia Blood Talisman]
+You will also receive:
+
+9950 XP (or 60 at max level)
++200 reputation with Orgrimmar
+
+
+== Completion ==
+Choose your reward and let the celebration of your glorious victory begin.
+
+
+== Progression ==
+ [60] Victory for the Horde
+ [60] For All To See
+
+
+== Patch changes ==
+ Patch 3.2.2 (2009-09-22): Removed.   
+ Patch 1.3.0 (2005-03-07): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

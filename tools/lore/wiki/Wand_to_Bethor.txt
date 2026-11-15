@@ -1,0 +1,49 @@
+title: Wand to Bethor
+revision: 5638957
+part: whole
+quest: 491
+url: https://warcraft.wiki.gg/wiki/Wand_to_Bethor
+
+== Objectives ==
+Take the Woven Wand to Bethor Iceshard in the Magic Quarter of the Undercity.
+
+ [Woven Wand] (provided)
+
+
+== Description ==
+Thule once told me that, long ago, he and two colleagues created a magic wand, woven together from the apprentice wands each mage possessed. This wand was a symbol of their friendship, and although Thule came to despise it he could not part with it, nor could he let the others have it. So he stole the wand, and hid it in Fenris Keep.
+Here. Take the wand to Bethor Iceshard, one of Thule's friends from years past. I'm sure he will want it.
+
+
+== Rewards ==
+
+You will also receive:
+
+1700 XP (or 10 20 at level 70)
++150 or +350 reputation with Undercity
+
+
+== Progress ==
+<Name>. Have you defeated Thule Ravenclaw?
+
+
+== Completion ==
+...what is this? Thule had our Woven Wand? I thought it was lost when our friendship sundered and he sided with the Lich King!
+He must not have invoked its power, for if he had I would have sensed it. And it is good that he did not use it...
+This is a marvelous find. You have my gratitude, <name>, and will be rewarded. 
+
+
+== Progression ==
+ [17] Resting in Pieces
+ [18] The Hidden Niche
+ [18] Wand to Bethor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

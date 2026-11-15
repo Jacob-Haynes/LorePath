@@ -1,0 +1,6 @@
+title: Kirith the Damned
+revision: 5588097
+part: intro
+url: https://warcraft.wiki.gg/wiki/Kirith_the_Damned
+
+Kirith the Damned is a felhound found in the cave at the Serpent's Coil in the Blasted Lands. Defeating it will draw the Spirit of Kirith forth.

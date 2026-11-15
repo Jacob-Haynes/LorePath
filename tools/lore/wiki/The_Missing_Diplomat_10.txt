@@ -1,0 +1,61 @@
+title: The Missing Diplomat (10)
+revision: 6389822
+part: whole
+quest: 1248
+url: https://warcraft.wiki.gg/wiki/The_Missing_Diplomat_%2810%29
+
+This quest is part of the quest chain The Missing Diplomat.
+
+
+== Objectives ==
+Speak to Mikhail in the Wetlands.
+
+
+== Description ==
+A contact of mine retired in the Wetlands at the harbor city of Menethil. He should be willing to help on your word alone if you tell him you're working for me. His name is Mikhail. He mentioned becoming a bartender before leaving Stormwind a few years ago.
+Speak to him, find this Slim, and find out if there's anything else to know about this kidnapped diplomat. We need to find out where they've taken him, or at least who he is. The docket doesn't mention anything about their plans after he's captured.
+
+
+== Rewards ==
+You will receive:
+
+650 XP (or 3 90 at max level)
++25 reputation with Stormwind
+
+
+== Completion ==
+Welcome, welcome, welcome, <name>. Good of you to join us. Perhaps an ale today? Or some mutton?
+Name your pleasure and I'll see to it that you're taken care of. My name is Mikhail, and I look forward to serving you.
+Hmm? What's that? Trias? Keep your voice down, my friend. This isn't something for the whole tavern to hear about.
+
+
+== Progression ==
+This is the quest chain The Missing Diplomat.
+
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [30] The Missing Diplomat
+ [30] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [35] The Missing Diplomat
+ [36] The Missing Diplomat
+ [38] The Missing Diplomat
+ [38] The Missing Diplomat
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

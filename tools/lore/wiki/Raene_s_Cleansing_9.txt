@@ -1,0 +1,64 @@
+title: Raene's Cleansing (9)
+revision: 5616748
+part: whole
+quest: 1030
+url: https://warcraft.wiki.gg/wiki/Raene%27s_Cleansing_%289%29
+
+This quest is part of the Raene's Cleansing quest chain.
+
+
+== Objectives ==
+Find an uncorrupted furbolg, and using the power of Dartol's Rod of Transformation, speak to him.
+
+ [Dartol's Rod of Transformation] (provided)
+
+
+== Description ==
+Alas, I'm not completely certain what he had in mind next.
+If what he said was true about the rod's power, then it will allow you to take on another form altogether. Which form, I do not know.
+Perhaps he meant to use its powers to get closer to the tainted furbolgs, but even the uncorrupted creatures would slaughter him were he not careful. Transformed by the rod, Dartol would have to speak to a furbolg who was safe from the effects of Fel Moss.
+I would start your search southeast of Mystral Lake.
+
+
+== Rewards ==
+You will receive:
+
+1700 XP
++150 reputation with Darnassus
+
+
+== Completion ==
+Yes, yes... you are one of my kind, but still whole. Still clean.
+I am unsure how you have escaped the atrocities the night elves have visited upon our people, but I am glad to know that I am no longer alone.
+Corruption now runs through the veins of our kin, young one, corruption brought down upon us by the prideful night elves. They are the ones who did this to our people... They are the ones I blame for being cast out of my tribe.
+At night I can still see the campfires burning in the darkness.
+
+
+== Notes ==
+You'll find a path lined with torches on the southeast side of Mystral Lake. At the end of the path, just across the stream, is a furbolg named Krolg.  You'll need to use the Rod before you approach him, or he will attack.
+
+
+== Progression ==
+This is the Raene's Cleansing quest chain.
+
+ [19] Raene's Cleansing
+ [21] Raene's Cleansing
+ [21] Raene's Cleansing
+ [27] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [30] Raene's Cleansing
+ [30] Raene's Cleansing
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

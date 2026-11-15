@@ -1,0 +1,57 @@
+title: Disharmony of Fire
+revision: 6970244
+part: whole
+quest: 3907
+url: https://warcraft.wiki.gg/wiki/Disharmony_of_Fire
+
+== Objectives ==
+Enter Blackrock Depths and track down Lord Incendius. Slay him and return any source of information you may find to Thunderheart. 
+
+Lord Incendius slain
+ [Tablet of Kurniya]
+
+
+== Description ==
+I can taste the foulness in the air that surrounds you, <name>. There is another, hidden in the depths of Blackrock, who does control this foulness.
+The wind and earth cry his name: Lord Incendius... but someone... something... commands this being. He is merely an emissary.
+Find him and discover where his master hides. Return to me when you have collected this information.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Crypt Demon Bracers]
+ [Sunborne Cape]
+ [Nightfall Gloves]
+ [Stalwart Clutch]
+You will also receive:
+
+2 55
+7300 XP (or 43 50 at max level)
++150 or +500 reputation with Thunder Bluff
+
+
+== Progress ==
+The flames will soon overtake these lands. Make haste, <name>!
+
+
+== Completion ==
+<Thunderheart clutches the  [Tablet of Kurniya].>
+Ragnaros... here...
+The elders were right to fear the corruption emanating from Blackrock Mountain. A general of the Old Gods! IN OUR WORLD! We must reassess our position here in Kargath. We must decide on whether we stay and fight or run for fear of a new sundering.
+Be wary of any further exploration in Blackrock Mountain, <name>. A far greater evil than anything that exists in this world resides in those fiery depths.
+
+
+== Progression ==
+ [52D] Disharmony of Flame
+ [56D] Disharmony of Fire
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

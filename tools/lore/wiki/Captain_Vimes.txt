@@ -1,0 +1,49 @@
+title: Captain Vimes
+revision: 6281301
+part: whole
+quest: 1220
+url: https://warcraft.wiki.gg/wiki/Captain_Vimes
+
+== Objectives ==
+Bring the Spy's Report to Captain Garran Vimes.
+
+ [Spy's Report] (provided)
+
+
+== Description ==
+Captain Vimes should see the orc report you found, <name>. He knows the orcish language better than most. And he should know that there are Horde spies near Theramore!
+The captain is in the barracks, on the northeastern side of Theramore Isle.
+
+
+== Rewards ==
+You will receive:
+
+2750 XP (or 16 80 at max level)
++250 reputation with Stormwind
+
+
+== Progress ==
+You have something for me?
+
+
+== Completion ==
+A report from an orc spy!  How did you find this?  No matter—let's see what it says...
+
+
+=== Cut Scene ===
+Captain Garran Vimes places the scroll on the table, and reads...
+Captain Garran Vimes says: By the Light!  This cursed spy was a good one!  I'm glad he's dead.
+Captain Garran Vimes says: Thank you for this report, <name>.  It is now clear that we must tighten our patrols near Theramore.
+
+
+== Progression ==
+ [15-30] The Orc Report
+ [15-30] Captain Vimes
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Given new ID, numbers adjusted to new leveling path.   
+ Patch 2.3.0 (2007-11-13): Quest giver changed from Theramore Lieutenant.   
+
+
+== External links ==

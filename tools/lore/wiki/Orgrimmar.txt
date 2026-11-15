@@ -1,0 +1,6 @@
+title: Orgrimmar
+revision: 6937457
+part: intro
+url: https://warcraft.wiki.gg/wiki/Orgrimmar
+
+Orgrimmar [ˈɔɹgɹɪmɑɹ] is the capital city of the orcs and the Horde as a whole. Named in honor of the legendary Orgrim Doomhammer, and nestled into a system of valleys on the northern edge of Durotar, Orgrimmar stands as one of the mightiest warrior cities in the world. It is the seat of the Horde Council that governs the entire faction. It is the primary hub for player characters of the Horde and, as with all capital cities, has banks, class and profession trainers, and auction houses.

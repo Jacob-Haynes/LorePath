@@ -1,0 +1,54 @@
+title: An Unholy Alliance (Classic)
+revision: 5581318
+part: whole
+quest: 6522
+url: https://warcraft.wiki.gg/wiki/An_Unholy_Alliance_%28Classic%29
+
+== Objectives ==
+Take the Small Scroll to Varimathras in the Undercity.
+
+ [Small Scroll] (provided)
+
+
+== Description ==
+My Lady,
+You know very well what it is we are offering. The opportunity for you to take the Barrens and the lands beyond is a great one. We simply want your aid in return. By aid we mean nothing more than your giving us the freedom to take action in the area.
+Please, allow us to discuss this further. We have great power and are willing to share with those wise enough to join us. I will remain outside Razorfen Downs for the time being.
+Best Regards,
+Ambassador Malcin
+
+
+== Rewards ==
+You will receive:
+
+40
+5250 XP
+
+
+== Progress ==
+What business is it you wish to speak of, <name>? You must feel it is important if you continue to pester me.
+
+
+== Completion ==
+I recognize the insignia on this scroll, <name>. You found this on that crone who reigns over Razorfen Kraul? Interesting.
+The Scourge aren't content with one continent it seems. This Ambassador Malcin--the one who wrote the note--is one of the Scourge's plagued servants, a human diplomat to the kingdom of Lordaeron before things... changed.
+If the Scourge are trying to gain a foothold in Kalimdor, then it is up to us to act.
+
+
+== Notes ==
+The  [Small Scroll] drops off Charlga Razorflank, the last boss in Razorfen Kraul. Once you get the scroll take it to Varimathras in the Undercity.
+
+
+== Progression ==
+ [36] An Unholy Alliance
+ [36D] An Unholy Alliance
+
+
+== Patch changes ==
+ Patch 3.3.0 (2009-12-08): Quest replaced by a new version.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

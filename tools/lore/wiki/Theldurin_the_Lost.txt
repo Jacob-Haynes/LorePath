@@ -1,0 +1,6 @@
+title: Theldurin the Lost
+revision: 6382713
+part: intro
+url: https://warcraft.wiki.gg/wiki/Theldurin_the_Lost
+
+Theldurin the Lost is a dwarf quest giver located at the southwest end of the Scar of the Worldbreaker in the Badlands.

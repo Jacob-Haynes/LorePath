@@ -1,0 +1,40 @@
+title: The New Springs
+revision: 5637575
+part: whole
+quest: 980
+url: https://warcraft.wiki.gg/wiki/The_New_Springs
+
+== Objectives ==
+Travel to Winterspring and speak with Donova Snowden.
+
+
+== Description ==
+Now, I've heard about other hot springs in a place called Winterspring, far to the north of here. The strange thing is, there are no volcanoes anywhere near them. Interesting, I know.
+Well, if you want to find out more, you should head to Winterspring and speak to a friend of mine. Her name is Donova Snowden, and she is currently staying by the hot springs there.
+Thanks again for helping me with my thermometer! See you later!
+
+
+== Rewards ==
+You will receive:
+
+4050 XP
+
+
+== Completion ==
+Hi there, <name>. Yes, what Krakle told you is true...
+
+
+== Progression ==
+ [15-30] Finding the Source
+ [55] The New Springs
+ [56] Strange Sources
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

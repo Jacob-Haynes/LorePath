@@ -1,0 +1,57 @@
+title: Bashal'Aran (4)
+revision: 6853708
+part: whole
+quest: 957
+url: https://warcraft.wiki.gg/wiki/Bashal%27Aran_%284%29
+
+This quest concludes the Bashal'Aran quest chain, and foreshadows another quest chain:  The Tower of Althalaxx
+
+
+== Objectives ==
+Destroy the Ancient Moonstone Seal at the ancient flame in Ameth'Aran, then return to Asterion in Bashal'Aran.
+
+Destroy the seal at the ancient flame
+ [Ancient Moonstone Seal] (provided)
+
+
+== Description ==
+It was the craft of one of the most powerful of the Highborne that created the seal that formed my prison. In Ameth'Aran, the ruins to the south that are twin to these, persists even today an ancient flame, blue in color. In this flame this seal could be destroyed.
+Be wary in the ruins, <name>...
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Explorer's Vest]
+ [Vagabond Leggings]
+ [Elven Wand]
+You will also receive:
+
+675 XP (or 4 20 at max level)
++150 reputation with Darnassus
+
+
+== Completion ==
+I am freed, <name>! I can now see with my own eyes the changes that have come to our world... Only bits and pieces have I known. To think that when I last walked freely, the Well still stood and the Highborne held court with Azshara, our beloved queen.
+I sense that my jailor, my former master, Athrikus, still lives... Already my feelings of hopelessness will give way into thoughts of vengeance.
+
+
+== Notes ==
+Although Asterion tells you to look for a blue flame, the flame is in fact a greenish cyan. This is particularly misleading because there are several blue flames scattered around Ameth'Aran. The correct one is on a large cubical brazier at 42,61 within a stone gazebo. You can right-click on the brazier to incinerate the seal.
+
+
+== Progression ==
+ [12] Bashal'Aran
+ [12] Bashal'Aran
+ [13] Bashal'Aran
+ [13] Bashal'Aran
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,60 @@
+title: The State of the Mines
+revision: 6881828
+part: whole
+quest: 92745
+url: https://warcraft.wiki.gg/wiki/The_State_of_the_Mines
+
+== Objectives ==
+Slay 4 Kobold Diggers in the Jangolode Mine and 6 Riverpaw Miners in the Gold Coast Quarry.
+
+Kobold Digger slain (4)
+Riverpaw Miner slain (6)
+
+
+== Description ==
+The well samples you collected contain toxic metals! If we do not put an end to this corruption quickly, it will be decades before crops can grow in this soil again.
+The Defias have seized the mines of Westfall and use creatures as labor to strip their resources. Disrupt them by slaying their miners in the Jangolode Mine to the north, and the Gold Coast Quarry to the west.
+
+
+== Rewards ==
+You will receive:
+
+3
+490 XP
++50 reputation with Stormwind
+
+
+== Progress ==
+...
+
+
+== Completion ==
+...
+
+
+== Notes ==
+...
+
+
+== Progression ==
+ [12] Testing the Wells
+ [12] Murloc Gills
+ [14] The State of the Mines
+ [16] Moonbrook Espionage
+ [16] Explosive Consultation
+ [16] A Dynamite Plan
+ [16] Detonation at a Distance
+ [16] Detonation at a Distance
+ [16] Explosive Consultation
+ [18D] Destruction in Deadmines
+ [18] Destruction in Deadmines
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

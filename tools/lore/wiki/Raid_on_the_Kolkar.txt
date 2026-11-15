@@ -1,0 +1,51 @@
+title: Raid on the Kolkar
+revision: 5586349
+part: whole
+quest: 1384
+url: https://warcraft.wiki.gg/wiki/Raid_on_the_Kolkar
+
+This quest is part of the Strange Alliance quest chain. This quest chain starts with  [35] Strange Alliance
+
+
+== Objectives ==
+Maintain your reputation with the Gelkis, and bring 10 Crude Charms to Uthek the Wise in the Gelkis Village in Desolace.
+
+ [Crude Charm] (10)
+Gelkis Clan Centaur (Friendly)
+
+
+== Description ==
+The Kolkar centaurs think their magic is strong. They do not know magic! They would not know magic if it bit them!
+You will show them their magic is weak. Go to the Kolkar to the northeast and kill them. Take their charms. Bring me the charms and I will throw them in the fire and laugh!
+
+
+== Rewards ==
+2550 XP
+
+
+== Progress ==
+You have the charms?  You showed the Kolkar they are weak?
+
+
+== Completion ==
+You do a good thing for the Gelkis. The Kolkar are weak and will die. Their magic is pathetic and will not save them. You showed them this, and their fear will make them even more feeble!
+And in our lands, the feeble soon die.
+
+
+== Progression ==
+ [35] Strange Alliance /  [33] Gelkis Alliance
+ [32] Raid on the Kolkar
+ [35] Stealing Supplies
+ [37] Ongeku
+ [37] Khan Jehn
+ [42] Khan Hratha
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

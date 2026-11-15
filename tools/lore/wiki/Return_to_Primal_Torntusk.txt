@@ -1,0 +1,41 @@
+title: Return to Primal Torntusk
+revision: 5636440
+part: whole
+quest: 7847
+url: https://warcraft.wiki.gg/wiki/Return_to_Primal_Torntusk
+
+== Objectives ==
+Elder Torntusk at Jintha'alor wants you to return to Primal Torntusk at Revantusk Village with news of his rescue.
+
+
+== Description ==
+Return to my mate, Primal Torntusk at Revantusk Village. Tell her that I am coming home! She is sure to reward you.
+
+
+== Rewards ==
+
+You will also receive:
+
+2 25
+7050 XP
+
+
+== Completion ==
+You have done the Revantusk a great service, <name>! We owe you a great debt of gratitude.
+
+
+== Progression ==
+ [51] Kidnapped Elder Torntusk!
+ [51] Recover the Key!
+ [51] Return to Primal Torntusk
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.5.0 (2005-06-07): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

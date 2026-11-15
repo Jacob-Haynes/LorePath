@@ -1,0 +1,6 @@
+title: Crystal pylon
+revision: 6346680
+part: intro
+url: https://warcraft.wiki.gg/wiki/Crystal_pylon
+
+Crystal Pylons are ancient constructions in Un'Goro Crater which can be used to exchange Blue Power Crystals, Green Power Crystals, Red Power Crystals, and Yellow Power Crystals for useful consumables.

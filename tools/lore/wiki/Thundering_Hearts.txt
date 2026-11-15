@@ -1,0 +1,52 @@
+title: Thundering Hearts
+revision: 6898230
+part: whole
+quest: 97985
+url: https://warcraft.wiki.gg/wiki/Thundering_Hearts
+
+== Objectives ==
+Slay Stormheart in Thousand Needles and acquire its heart.
+
+Stormheart's Still-beating Heart
+
+
+== Description ==
+Fascinating, aren't they? This is the first time I have ever been privy to the secrets of abomination creation.
+I have been studying these notes, and it appears we need a heart. A massive one!
+I hear there is a thunder lizard there of impressive size called Stormheart, that patrols along the canyon edge in Thousand Needles. With a name like that it must have the perfect heart. I must have that heart!
+Oh, also I suggest you bring friends. Stormheart isn't known for being docile.
+
+
+== Rewards ==
+You will receive:
+
+65
+3,300 XP
++150 reputation with Undercity
+
+
+== Progress ==
+...
+
+
+== Completion ==
+...
+
+
+== Notes ==
+Upon completion
+Calder Gray yells: Yes... YES! IT LIVES!!
+Master Apothecary Faranell says: Calder! Again?!
+Master Apothecary Faranell says: This is not the first time I have had to reprimand you! The electrical pulses of this heart are much too strong. This new heart has seared almost all of the flesh and ligaments of this construct!
+Master Apothecary Faranell sighs exasperatedly.
+Master Apothecary Faranell says: We will have to start over, once more. At least we might be able to salvage that giant electrical heart for the next abomination.
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

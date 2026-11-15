@@ -1,0 +1,53 @@
+title: A Dark Threat Looms (4)
+revision: 6307981
+part: whole
+quest: 274
+url: https://warcraft.wiki.gg/wiki/A_Dark_Threat_Looms_%284%29
+
+This quest is part of the quest chain A Dark Threat Looms.
+
+
+== Objectives ==
+Ashlan Stonesmirk wants you to return to Chief Engineer Hinderweir and inform him of the new discovery.
+
+ [Disarming Colloid] (Provided)
+
+
+== Description ==
+This ain't no ordinary blast powder. Look at the tiny silver crystals. And the distinct smell! Why it's clear as daylight that this is Seaforium Powder. Seaforium is harmless enough. But once it's wet it could blow Ironforge out of the mountain.
+The chemical reaction can be defused by mixing four components: lurker venom, crushed Mo'Grosh crystal, a crocolisk tear and this disarming colloid. Now tell Hinderweir before it's too late!
+
+
+== Rewards ==
+You will receive:
+
+340 XP (or 2 10 at max level)
++25 reputation with Ironforge
+
+
+== Progress ==
+What is that you bring from Ashlan?
+
+
+== Completion ==
+A disarming colloid? For Seaforium? Oh heavens!
+
+
+== Progression ==
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [20] A Dark Threat Looms
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

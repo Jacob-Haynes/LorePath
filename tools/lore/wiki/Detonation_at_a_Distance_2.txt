@@ -1,0 +1,60 @@
+title: Detonation at a Distance (2)
+revision: 6881844
+part: whole
+quest: 92751
+url: https://warcraft.wiki.gg/wiki/Detonation_at_a_Distance_%282%29
+
+== Objectives ==
+Bring the Remote Detonator Kit to Sprite Jumpsprocket in the Dwarven District of Stormwind.
+
+Remote Detonator Kit (provided)
+
+
+== Description ==
+You need something destroyed? Would this have anything to do with your activities in Moonbrook? Don't look surprised. SI:7 stays apprised of all that goes on in Stormwind's lands.
+If you're planning to set off an explosion in the caves below Westfall, you'll want to be well outside beforehand. Take this remote detonator - it's a recent prototype from our own engineers.
+Oh - and it would be best if you didn't mention my involvement to your elf friend.
+
+
+== Rewards ==
+You will receive:
+
+4
+580 XP
++50 reputation with Stormwind
+
+
+== Progress ==
+...
+
+
+== Completion ==
+...
+
+
+== Notes ==
+...
+
+
+== Progression ==
+ [12] Testing the Wells
+ [12] Murloc Gills
+ [14] The State of the Mines
+ [16] Moonbrook Espionage
+ [16] Explosive Consultation
+ [16] A Dynamite Plan
+ [16] Detonation at a Distance
+ [16] Detonation at a Distance
+ [16] Explosive Consultation
+ [18D] Destruction in Deadmines
+ [18] Destruction in Deadmines
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,44 @@
+title: Lines of Communication (Horde)
+revision: 5612112
+part: whole
+quest: 2995
+url: https://warcraft.wiki.gg/wiki/Lines_of_Communication_%28Horde%29
+
+== Objectives ==
+Oran Snakewrithe in Undercity wants you to travel to the Hinterlands and burn the Highvale Records, Highvale Report, and Highvale Notes.
+
+Burn the Highvale Records
+Burn the Highvale Notes
+Burn the Highvale Report
+
+
+== Description ==
+The Quel'Danil Lodge is a center of communication for the high elves of the Hinterlands. Their ambassadors are working to establish relationships with other races, with whom they share their knowledge of the Witherbark trolls that inhabit the area in the southern Hinterlands. All of the documents regarding the communications are kept at the lodge.
+We don't need the Highvale building alliances with others, <name>.
+Destroy the Highvale documents. We need to burn their lines of communication... literally.
+
+
+== Rewards ==
+You will receive:
+
+70
+4500 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Keeping the Highvale elves isolated is the key. Have you found the lodge? 
+
+
+== Completion ==
+Perfect, <name>. While the Highvale work to recover their lost information, we will be able to seal off the lines even further...
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

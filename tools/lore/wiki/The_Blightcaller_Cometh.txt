@@ -1,0 +1,52 @@
+title: The Blightcaller Cometh
+revision: 6349910
+part: whole
+quest: 6186
+url: https://warcraft.wiki.gg/wiki/The_Blightcaller_Cometh
+
+== Objectives ==
+Return to Stormwind and inform King Varian Wrynn of the fate of Nathanos Marris. 
+
+
+== Description ==
+<The blood appears to have completely drained from Flint's face.>
+Na... Nathanos did this? Nathanos is the Blightcaller?
+Why? He was... was so noble - a ranger lord respected by all. The only human ever allowed to train under the high elves. Now a ruthless agent of the Forsaken?
+I... I am sorry to ask this of you, <name>, but King Wrynn must be informed of this turn of events at once. Please, return to Stormwind and deliver the news. 
+
+
+== Rewards ==
+You will gain:
+
+9550 XP (or 57 at level 80)
+
+
+== Completion ==
+ This section concerns content related to Wrath of the Lich King.
+An agent of the Forsaken? The champion of the Banshee Queen?
+<King Varian Wrynn grimaces.>
+Ridiculous...
+
+ The subject of this section was removed from World of Warcraft in patch 3.0.2 but is present in Classic.
+No. It... NO! How? An agent of the Forsaken? The CHAMPION of the Banshee Queen???
+<Highlord Bolvar Fordragon slumps in defeat.>
+
+
+== Progression ==
+ [60G] The First and the Last
+ [60G] Honor the Dead
+ [60G] Flint Shadowmore
+ [60G] The Eastern Plagues
+ [60G] The Blightcaller Cometh
+ [60R] Order Must Be Restored
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 3.0.2 (2008-10-14): Now delivered to King Varian Wrynn, instead of Highlord Bolvar Fordragon.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

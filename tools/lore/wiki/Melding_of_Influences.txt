@@ -1,0 +1,46 @@
+title: Melding of Influences
+revision: 6176841
+part: whole
+quest: 4642
+url: https://warcraft.wiki.gg/wiki/Melding_of_Influences
+
+== Objectives ==
+Bring a  [Merged Ooze Sample] to Chemist Fuely in Undercity. 
+
+ [Encased Corrupt Ooze](Provided)
+ [Merged Ooze Sample]
+
+
+== Description ==
+Here is some encased ooze created from the Felwood samples you recovered. Take the case to Un'Goro Crater and find a pure ooze... the primal variety will do nicely. When you get close enough, release the ooze in the case, and let us see what the two think of one another.
+After the experiment concludes, bring me a sample of whatever is left over. I will await you here in the Apothecarium. 
+
+
+== Rewards ==
+
+7050 XP (or 42 at level 70)
+350 reputation with Undercity
+
+
+== Progress ==
+How goes the experiment, <name>? I will continue to study the samples you've recovered for me—I am starting to see why Lady Sylvanas is so interested in these creatures. If they are truly part of the Old Gods, then who knows how it can be used to our benefit. 
+
+
+== Completion ==
+Oh, most excellent, <name>. This is most excellent.
+Such a tale. Who would have thought the two would interact with one another in such a way... I will have to spend more time looking at the environmental issues that cause changes in these creatures.
+I will continue my research for now. Perhaps we will speak again soon. Until then, I wish you well.
+
+
+== Notes ==
+Find a Primal Ooze and let it attack you. Then use the provided quest item that releases a Captured Felwood Ooze which merges with the Primal Ooze, creating a Gargantuan Ooze. Kill it for the final quest item.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

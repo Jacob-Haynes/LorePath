@@ -1,0 +1,58 @@
+title: A King's Tribute (2)
+revision: 5639055
+part: whole
+quest: 689
+url: https://warcraft.wiki.gg/wiki/A_King%27s_Tribute_%282%29
+
+This is part of the A King's Tribute quest chain.
+
+
+== Objectives ==
+Grand Mason Marblesten of Ironforge wants 5 pieces of Alterac Granite.
+
+ [Alterac Granite] (5)
+
+
+== Description ==
+So our good King would like a memorial built in honor of a soldier named Sully Balloo? And you say the poor chap died during the Thandol Span tragedy?
+Bah, will there ever be peace on Azeroth?
+Nonetheless, any commission from the King is of utmost importance. To build a truly epic and lasting piece I want to work with one of the finest stones available. Travel to Darrow Hill in Hillsbrad and gather for me some  [Alterac Granite].
+
+
+== Rewards ==
+You will receive:
+
+2500 XP (or 15 at level 70)
++250 reputation with Ironforge
+
+
+== Progress ==
+<Name>, <name>, <name>! Tell me you have enough  [Alterac Granite] for me to begin my masterpiece in honor of Sully Balloo.
+
+
+== Completion ==
+Perfect! Better than I could have imagined!
+And I have quite an imagination you know...
+
+
+== Notes ==
+On completion
+Grand Mason Marblesten says: I'll get to work right away, <name>!
+The mason goes downstairs and pounds at a statue for a while.
+Grand Mason Marblesten says: There you have it!  The King should be quite pleased, if I do say so myself.
+Grand Mason Marblesten says: The King's guards should be along shortly to pick up the Memorial.  In the mean time, come join me upstairs and let's finish our little chat, <name>.
+The mason returns upstairs to his accustomed place, then offers the next quest in the chain.
+
+
+== Progression ==
+ [30] Sully Balloo's Letter
+ [30] Sara Balloo's Plea
+ [30] A King's Tribute
+ [31] A King's Tribute
+ [31] A King's Tribute
+
+
+== External links ==
+
+Wowhead
+WoWDB

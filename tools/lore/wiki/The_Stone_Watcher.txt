@@ -1,0 +1,72 @@
+title: The Stone Watcher
+revision: 6554275
+part: whole
+quest: 2954
+url: https://warcraft.wiki.gg/wiki/The_Stone_Watcher
+
+== Objectives ==
+Learn the purpose of the Stone Watcher of Norgannon, and then interact with the Uldum Pedestal in the Tanaris desert. 
+
+Learn the purpose of the Stone Watcher of Norgannon
+
+
+== Description ==
+"Salutations - I am a guardian of entry. Unless you have the Plates of Uldum already integrated with your disc set, I will not allow for entry into the Uldum compound."
+The appearance of the Stone Watcher of Norgannon must be the reaction that was hoped for in sending you out to the Tanaris desert with the platinum discs. As instructed, you will need to find out what the story behind the Stone Watcher is before continuing on.
+
+
+== Progress ==
+The purpose of the stone watcher must be learned before continuing on...
+
+
+== Completion ==
+The stone watcher's voice resonates with power and authority:
+"Your discs will be returned to you once you access the pedestal. When you have obtained the Plates of Uldum and incorporated them into your existing disc set, you may then enter the complex."
+
+
+== Notes ==
+Stone Watcher of Norgannon says: Salutations!  I am a guardian of entry.  Please use the proper disks for access to Uldum.
+During the quest
+Salutations.  I am a guardian of entry.  Unless you have the Plates of Uldum already integrated with your disk set, I will not allow for entry into the Uldum compound.
+ What function do you serve?
+
+My purpose is to regulate access to the Uldum complex for the Creators.  I allow entry into the compound only when the solicitor exhibits for access the proper sequencing discs.
+Your disc set currently does not contain the Plates of Uldum, the primary prerequisite for entry.  Access is not granted unless the Plates of Uldum are present.
+ What are the Plates of Uldum?
+
+The Plates of Uldum are discs synthesized by the Creators that allow access into the Uldum compound.  These discs house and store specific data related to the Creators' activities here.
+Physically, they are nearly identical in circumference to the disc set you currently possess.  Their markings, however, are directly related to information on Uldum as opposed to the Uldaman complex.
+ Where are the Plates of Uldum?
+
+Several sets of the Plates of Uldum have been synthesized by the Creators for their expressed use.  The Creators control the distribution of said discs for all complexes on this world.  As such, Azeroth has been rescheduled for visitation, and therefore future discs may enter circulation at that time.
+Existing discs have been fully distributed to those parties with appropriate security clearance.
+ Excuse me?  We've been "rescheduled for visitation"?  What does that mean?!
+
+The Creators use visitation as a means to reestablish control over seeded worlds when forces, both external and internal, upset the matrix dynamics associated with it.  Such tactics are not to be taken lightly when executed by the Creators.
+For additional information on this world's scheduled visitation, please consult the appropriate data repository that fields all Creator-relatee scheduling considerations.
+ So... what's inside Uldum?
+
+Uldum is a research facility for the Creators in their continuing efforts to enhance the biosphere of Azeroth.  Specific information regarding their work as it relates to Uldum is restricted to those individuals who possess the Plates of Uldum in their disc sets.
+Data repositories inside the Uldum complex have been programmed to address specific experiments and data compliations: please refer to them for detailed information.
+ I will return when I have the Plates of Uldum.
+
+
+== Progression ==
+ [15-30D] The Platinum Discs
+ [47] The Platinum Discs /  [47D] The Platinum Discs
+ [47] The Platinum Discs /  [47] The Platinum Discs
+ [50] Portents of Uldum
+ [50G] Seeing What Happens
+ [50] The Stone Watcher
+ [50] Return to Ironforge /  [50] Return to Thunder Bluff
+ [50] A Future Task
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

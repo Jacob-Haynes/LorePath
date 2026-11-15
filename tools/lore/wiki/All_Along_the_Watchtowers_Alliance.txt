@@ -1,0 +1,67 @@
+title: All Along the Watchtowers (Alliance)
+revision: 5639415
+part: whole
+quest: 5097
+url: https://warcraft.wiki.gg/wiki/All_Along_the_Watchtowers_%28Alliance%29
+
+All Along the Watchtowers is part of The Key to Scholomance quest chain.
+
+
+== Objectives ==
+Using the Beacon Torch, mark each tower in Andorhal; you will need to stand in the doorway of the tower to successfully mark it.
+Once all four towers are marked, return the Beacon Torch to Commander Ashlam Valorfist in Chillwind Camp, Western Plaguelands.
+
+Tower One marked
+Tower Two marked
+Tower Three marked
+Tower Four marked
+ [Beacon Torch] (provided)
+
+
+== Description ==
+Through the use of a magical device known as a beacon torch, we can mark targets of our choosing for future actions by our troops. To that end, we think the Scourge are using Andorhal's watchtowers as a means to control their troop movements.
+Your mission: breach Andorhal's defenses to plant beacons at all four watchtowers. You'll need to be in the doorway of each tower to plant the beacon; it will then proceed to mark the tower. There are only five charges on the beacon torch, so use them wisely!
+
+
+== Rewards ==
+You will receive:
+
+85
+5800 XP (or 34 50 at level 70)
++100 or +250 reputation with Stormwind
+
+
+== Progress ==
+Once the towers are marked, they'll become top priority targets for our attack on Andorhal. I suspect that once we neutralize the towers, the main threat of Andorhal will emerge. From that point on, we'll have a straight-up fight for control of the city!
+You're back to report success, yes? Don't forget the beacon torch as well; we must maintain control of our materiel.
+
+
+== Completion ==
+My priests are reporting that our beacon trackers are picking up extremely strong signals on all four towers!  Dare I say it, but I believe you've executed another mission with complete and total success!  Well played once again, <name>!
+With the towers marked, our preparations for the attack are now in place.  The time has come to take the fight to the Scourge!
+
+
+== Progression ==
+ [50] A Call to Arms: The Plaguelands! (optional)
+ [52] Clear the Way /  [53] Scarlet Diversions
+ [56] All Along the Watchtowers
+ [55] Scholomance
+ [57] Skeletal Fragments
+ [57] Mold Rhymes With...
+ [57] Fire Plume Forged
+ [60G] Araj's Scarab
+ [60] The Key to Scholomance
+
+
+== Trivia ==
+This quest may be a reference to the song All Along the Watchtower, written by Bob Dylan and made famous by the Jimi Hendrix Experience.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

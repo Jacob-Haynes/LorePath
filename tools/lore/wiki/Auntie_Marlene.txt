@@ -1,0 +1,58 @@
+title: Auntie Marlene
+revision: 5616159
+part: whole
+quest: 5152
+url: https://warcraft.wiki.gg/wiki/Auntie_Marlene
+
+This quest is part of the Rewriting the Battle of Darrowshire quest chain (Classic).
+
+
+== Objectives ==
+Speak with Marlene, south of the Ruins of Andorhal.
+
+
+== Description ==
+Oh, I'm so lonely! Where is my family? Auntie Marlene told me to stay here, but then she left and never came back! And my dad... have you seen him?
+Maybe Auntie Marlene knows where he is. She lives near Andorhal, in a house to the south. I think it was on a hill... she said it was on a hill.
+Please, <Name>. You're my new friend! Will you talk to my Auntie for me?
+
+
+== Rewards ==
+You will receive:
+
+4200 XP
+
+
+== Completion ==
+You saw Pamela? How is she? Is she alive?? Oh, no! Poor Pamela! She was so young, and such a happy child...
+She doesn't know what happened to her father, does she? My brother, Joseph?
+No... she couldn't understand what happened to Joseph. And even if she could, I don't have the heart to tell her...
+
+
+== Progression ==
+ [55] Little Pamela or  [55] Sister Pamela
+ [55] Pamela's Doll
+Complete both:
+ [56] Auntie Marlene
+ [56] A Strange Historian
+ [56] The Annals of Darrowshire
+ [56] Uncle Carlin
+ [55] Defenders of Darrowshire
+ [56] Brother Carlin
+All of the following, in any order:
+ [57] Villains of Darrowshire
+ [56] Heroes of Darrowshire
+ [60] Marauders of Darrowshire
+ [60] Return to Chromie
+ [60] The Battle of Darrowshire
+ [60] Hidden Treasures
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

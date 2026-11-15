@@ -1,0 +1,55 @@
+title: Pacify the Centaur
+revision: 6824231
+part: whole
+quest: 4841
+url: https://warcraft.wiki.gg/wiki/Pacify_the_Centaur
+
+In Pacify the Centaur, you must kill the centaur camping north of Freewind Post.
+
+
+== Objectives ==
+Kill 12 Galak Scouts, 10 Galak Wranglers, and 6 Galak Windchasers, and then return to Cliffwatcher Longhorn in Freewind Post.
+
+12 Galak Scouts
+10 Galak Wranglers
+6 Galak Windchasers
+
+
+== Description ==
+<Name>, I entreat you to hunt these centaur down. They shall feel the wrath of our revenge. Attack the centaur camp to the north of Freewind Post! Let wrath guide your hand!
+
+
+== Rewards ==
+You will receive:
+
+18
+2,000 XP
++100 reputation with Thunder Bluff
+
+
+== Progress ==
+Come now <name>, I know you haven't killed your share yet. Hunt them down, and I shall give you a reward for my gratitude.
+
+
+== Completion ==
+For my gratitude, this is for you, <name>.
+
+
+== Notes ==
+The centaur are located directly north of Freewind Post up against the cliffs that mark the edge of Thousand Needles, an area known as Splithoof Crag. It is a large camp and the different types of centaur are scattered through it, though the Galak Scouts seem to be more scarce than the others.
+
+
+== Progression ==
+ [25] Message to Freewind Post
+ [25] Pacify The Centaur
+ [28] Grimtotem Spying
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

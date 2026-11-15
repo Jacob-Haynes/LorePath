@@ -1,0 +1,67 @@
+title: The Scythe of Elune (Classic)
+revision: 5586986
+part: whole
+quest: 1043
+url: https://warcraft.wiki.gg/wiki/The_Scythe_of_Elune_%28Classic%29
+
+This quest is part of the quest chain The Scythe of Elune.
+
+
+== Objectives ==
+Look for signs of the Scythe of Elune then return to Jonathan Carevin in Darkshire.
+
+Find evidence of the Scythe of Elune
+
+
+== Description ==
+Your story rings true... I do not entirely understand your motives, but if your business here in Duskwood involves ridding the forest of worgen in any number, then I can forgo understanding for results.
+There is a mine to the south that has been overrun with worgen... They appeared out of nowhere, but from what we know, that is where they first were found.
+Go about your business, but I would ask that if you find anything of import, you share it with me. We will accept any aid in our war against evil.
+
+
+== Completion ==
+It is an interesting story you tell, <name>. Though the Carevin family's influence is not large enough that we might find the root of these troubles and finish them once and for all, we will do what we can to contain the worgens' numbers in Duskwood.
+Already I have instructed Calor to make this his first priority.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+2450 XP (or 15 at level 70)
+250 reputation with Stormwind
+
+
+== Cut scene ==
+Upon examining the pile of dirt, the specter of Velinde Starsong appears:
+
+Velinde Starsong says: I have failed...  I have failed in my duty... failed my people... The worgen run rampant, and the Scythe of my goddess is lost.
+Velinde Starsong says: This evil I have unleashed... In whose hand does the power my goddess granted to me now lie... By whose hand is it directed?
+
+
+== Notes ==
+You are looking for a mine labeled "Roland's Doom".  Coordinates given are about 73, 75.  Around the mine are Nightbane Vile Fangs, about level 29-30. Inside the mine, you will find Nightbane Tainted Ones, about level 30-31.
+Also inside the mine is a level 32 named Gutspill.
+Go in the mine, follow the shaft to the right, and directly ahead of you should be a pile of earth.  You click on the pile of earth to find the evidence.
+There is occasionally a rare level 35 spawn inside the cave.
+
+
+== Progression ==
+ [30] The Howling Vale
+ [30] Velinde Starsong
+ [30] Velinde's Effects
+ [30] The Barrens Port
+ [30] Passage to Booty Bay
+ [30] The Caravan Road
+ [30] The Carevin Family
+ [30] The Scythe of Elune
+ [30] Answered Questions
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

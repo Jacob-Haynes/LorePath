@@ -1,0 +1,68 @@
+title: The Ranger Lord's Behest
+revision: 5636725
+part: whole
+quest: 6133
+url: https://warcraft.wiki.gg/wiki/The_Ranger_Lord%27s_Behest
+
+== Objectives ==
+Travel to the northern borders of the Eastern Plaguelands and recover the Quel'Thalas Registry. The item is somewhere in the Quel'Lithien lodge.
+You must also slay 8 Pathstriders, 8 Rangers, and 8 Woodsmen.
+
+Woodsman slain (8)
+Ranger slain (8)
+Pathstrider slain (8)
+ [Quel'Thalas Registry]
+
+
+== Description ==
+The high elves of the Quel'Lithien lodge possesses[sic] something that belongs to me, <class>: A document detailing my life as a mortal.
+Before you ask; no, you most certainly are not privy to such information. Just do as I tell you, worm: Recover the registry.
+And imbecile, be sure to leave as much strife and grief as possible in your wake. Leave them suffering...
+
+
+== Rewards ==
+You will receive:
+
+90
+6600 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Do not leave me waiting, <class>.
+
+
+== Completion ==
+I trust you did not read the registry. Not even you would do something that idiotic...
+
+
+== Notes ==
+Quel'Lithien Lodge is found near the road leading into Ghostlands.
+
+
+== Progression ==
+ [56] The Champion of the Banshee Queen
+Complete all of:
+ [58] To Kill With Purpose
+ [58] Un-Life's Little Annoyances
+ [60] The Ranger Lord's Behest
+
+ [60] Duskwing, Oh How I Hate Thee...
+ [60] The Corpulent One
+
+ [60] The Call to Command
+ [60D] Ramstein
+ [60G] The Crimson Courier
+ [60G] Nathanos' Ruse
+ [60G] Return to Nathanos
+ [60G] The Scarlet Oracle, Demetria
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

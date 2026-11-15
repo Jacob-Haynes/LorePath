@@ -1,0 +1,64 @@
+title: Rot Hide Origins
+revision: 6347385
+part: whole
+quest: 444
+url: https://warcraft.wiki.gg/wiki/Rot_Hide_Origins
+
+Rot Hide Origins is part of The Master of Fenris Isle quest chain.
+
+
+== Objectives ==
+Bring the Sample Ichor to Bethor Iceshard in the Undercity.
+
+ [Sample Ichor] (provided)
+
+
+== Description ==
+I have reduced the ichor you brought me and separated it into its base components. My findings are not conclusive, but I have determined that warlock and necromantic magics were used in the ichor's creation.
+While I continue to study the ichor, I want you to take a sample to Bethor Iceshard in the Undercity. Bethor is not an apothecary, but his knowledge of magic may help to unravel the mystery of the rot hides.
+Go. You will find Bethor in the Magic Quarter of the Undercity.
+
+
+== Rewards ==
+You will receive:
+
+320 XP
++25 reputation with Undercity
+
+
+== Progress ==
+My studies require great concentration.  So I hope your visit is not a frivolous one.
+
+
+== Completion ==
+This substance is laced with powerful spells, some of which I have not seen for a long, long time...
+One moment—I must invoke a spell of divination...
+
+
+== Notes ==
+Upon completion
+Bethor Iceshard chants words of power...
+Bethor casts a spell.
+Bethor Iceshard says: This is unforeseen. The being who enchanted this is known to me...
+Bethor Iceshard says: <Name>, I have the information you seek...
+
+
+== Progression ==
+ [14] The Dead Fields
+ [16] The Decrepit Ferry
+ [16] Rot Hide Clues
+ [17] Rot Hide Ichor
+ [17] Rot Hide Origins
+ [16] Thule Ravenclaw
+ [16] Report to Hadrec
+ [20] Assault on Fenris Isle
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,6 @@
+title: Loramus Thalipedes
+revision: 6945426
+part: intro
+url: https://warcraft.wiki.gg/wiki/Loramus_Thalipedes
+
+Loramus Thalipedes is a night elf demon hunter and a quest giver during the Blasted Lands storyline that revolves around putting an end to the dreadlord Razelikh the Defiler.

@@ -1,0 +1,78 @@
+title: Morbent Fel (quest)
+revision: 6859887
+part: whole
+quest: 55
+url: https://warcraft.wiki.gg/wiki/Morbent_Fel_%28quest%29
+
+This quest concludes the Morbent Fel quest chain.
+
+
+== Objectives ==
+Use Morbent's Bane on Morbent Fel, kill Morbent Fel, then return Morbent's Bane to Sven at his camp.
+
+ [Morbent's Bane] (provided)
+
+
+== Description ==
+Morbent Fel hides in his lair, the house perched atop the hill to the east overlooking the Raven Hill cemetery. His time in this land is drawing to an end...
+Use Morbent's Bane against him. It will render his protective magics powerless.
+Slay him. Slay him, and save us from his wickedness. Be the instrument of my revenge, and a hero of Duskwood!
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Night Watch Pantaloons]
+ [Watch Master's Cloak]
+ [Sparkmetal Coif]
+You will also receive:
+
+3850 XP
++500 reputation with Stormwind
+ [Torch of Holy Flame]
+
+
+== Progress ==
+Is Morbent Fel defeated?!
+
+
+== Completion ==
+Morbent Fel has been defeated. The dark riders are still at large, but a small piece of that which I had hoped beyond hope has come to pass.
+You have done the impossible, and your deeds will forever live in the legends of Duskwood.
+Go, <name>. And perhaps, one day, fate may bring you back to me...
+
+
+== Notes ==
+The rewards from this quest include a piece of head armor, one of the lowest level quests to provide such a reward.
+Morbent Fel is in the top floor of the house just east of Sven. He has three guards in the room with him. A group is highly recommended for this quest.
+While it is possible to cause damage to Morbent Fel without first using  [Morbent's Bane], it is extremely difficult. As Morbent's Bane is an offhanded item, attempting to use it will put it in your offhand slot first. Be prepared and have it equipped before you attempt to take him down. Also, if you manage to kill him without using it, you will not get credit for doing so.
+It has been reported that some rogues, level 30+ have been able to solo this by sapping Morbent Fel then taking out the guards and Vanishing.
+
+
+== Progression ==
+ [23] Deliveries to Sven (optional)
+ [25] Sven's Revenge
+ [25] Sven's Camp
+ [25] The Shadowy Figure
+ [25] The Shadowy Search Continues
+ [25] Inquire at the Inn
+ [25] Finding the Shadowy Figure
+ [25] Return to Sven
+ [28] Proving Your Worth
+ [29] Seeking Wisdom
+ [29] The Doomed Fleet
+ [29] Lightforge Iron
+ [29] The Lost Ingots
+ [29] Blessed Arm
+ [29] Armed and Ready
+ [32G] Morbent Fel
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

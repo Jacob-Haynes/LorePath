@@ -1,0 +1,47 @@
+title: Kum'isha's Endeavors (Classic)
+revision: 6709355
+part: whole
+quest: 2522
+url: https://warcraft.wiki.gg/wiki/Kum%27isha%27s_Endeavors_%28Classic%29
+
+== Objectives ==
+Find and return a Flawless Draenethyst Sphere to Kum'isha the Collector.
+
+ [Flawless Draenethyst Sphere]
+
+
+== Description ==
+Even though the portal conjuration was a failure, I remain hopeful that my next attempt will be successful.
+The hope of the Draenei is as fervent as your greed for trinkets, <race>. Go back out into these cursed lands and recover another flawless draenethyst sphere.
+Of course, the choice to take on this task is completely left to you *grin*.
+
+
+== Rewards ==
+You will receive:
+
+ [Emerald Encrusted Chest]
+
+
+== Progress ==
+Have you found another flawless draenethyst sphere?
+
+
+== Completion ==
+Simply amazing. I had doubted that you could find another sphere, yet here it is, pulsating in my hands.
+Well done, <name>!
+Should you find anymore--and I believe this to be an impossibility--return them to me and I shall reward you again.
+
+
+== Progression ==
+ [55] To Serve Kum'isha
+ [15-30] Kum'isha's Endeavors
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced with an updated version.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

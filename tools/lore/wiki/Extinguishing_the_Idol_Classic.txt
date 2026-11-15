@@ -1,0 +1,48 @@
+title: Extinguishing the Idol (Classic)
+revision: 6774622
+part: whole
+quest: 3525
+url: https://warcraft.wiki.gg/wiki/Extinguishing_the_Idol_%28Classic%29
+
+== Objectives ==
+Escort Belnistrasz to the Quilboar's idol in Razorfen Downs.
+Protect Belnistrasz while he performs the ritual to shut down the idol.
+
+Protect Belnistrasz while he performs the ritual to shut down the idol
+
+
+== Description ==
+Near the entrance is an idol that functions as a macabre oven for the Quilboar; the beasts... they literally consume their abductees from the Barrens. I can shut down the idol and bind them from using it again, but I need your aid in doing so. My plan: escort me to the idol. Once we arrive, I'll commence the ritual. I'll barely be able to communicate with you, let alone defend myself. Protect me while I shut down the idol. If they take me down, then it's all over for us.
+Are you with me?!
+
+
+== Rewards ==
+You will receive:
+
+5550 XP (or 33 at max level)
+ [Dragonclaw Ring]
+
+
+== Completion ==
+Belnistrasz's sudden departure has left behind a burning brazier.  As you stare in to the flame, the image of a great-winged red dragon fills your mind.  A more graveled version of Belnistrasz's voice speaks directly to you.
+"Indeed mortals, you are the heroes I had hoped you would be.  Thanks to you the butchery these beasts were perpetrating is a thing of the past.  My faith in mortals such as yourself has been once more renewed.  Take this as a reward befitting of a hero."
+
+
+== Notes ==
+Be sure to click on the brazier Belnistrasz leaves behind for the reward.
+
+
+== Progression ==
+ [37D] Scourge of the Downs
+ [37D] Extinguishing the Idol
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.3.0 (2005-03-07): The amount of waves players must fight in the Belnistrasz quest event has been reduced.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

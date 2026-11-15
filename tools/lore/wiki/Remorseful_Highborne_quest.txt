@@ -1,0 +1,64 @@
+title: Remorseful Highborne (quest)
+revision: 6308766
+part: whole
+quest: 5252
+url: https://warcraft.wiki.gg/wiki/Remorseful_Highborne_%28quest%29
+
+== Objectives ==
+Speak with Wynd Nightchaser in Starfall Village, and ask about the proper place for the Crystal of Zin-Malor.
+
+ [Crystal of Zin-Malor] (provided)
+
+
+== Description ==
+The... the crystal...
+The highborne here are clouded by their own misssery...
+I am sorrrrrowful, but I realize the errorrrr of what happened so long ago. Even though there is no waaaay to change the past, I am now at peacccce knowing that you have recovered the crystal of Zin-Malor...
+Youuu must return it...
+It muuuussst be returrrned.
+
+
+== Rewards ==
+You will gain:
+
+4650 XP (or 28 20 at max level)
++25 reputation with Darnassus
++25 reputation with Exodar
++25 reputation with Gnomeregan
++25 reputation with Ironforge
++25 reputation with Stormwind
+
+
+== Progress ==
+It has been some time since you left, <name>. How have you fared?
+
+
+== Completion ==
+Is that... what I think it is?
+
+
+== Notes ==
+On accept
+Remorseful Highborne yells: Cursed spirits! Let go of the past! The Crystal of Zin-Malor no longer binds you!
+A number of non-hostile Anguished Highborne come near.
+
+
+== Progression ==
+ [56] To Winterspring!
+ [56] The Ruins of Kel'Theril
+ [56] Troubled Spirits of Kel'Theril
+ [56] Fragments of the Past
+ [57] Fragments of the Past
+ [58] Tormented By the Past
+ [58] Remorseful Highborne
+ [58] The Crystal of Zin-Malor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

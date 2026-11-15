@@ -1,0 +1,89 @@
+title: The Dragon's Eye (quest)
+revision: 5965951
+part: whole
+quest: 6501
+url: https://warcraft.wiki.gg/wiki/The_Dragon%27s_Eye_%28quest%29
+
+This is part of the Great Masquerade quest chain.
+
+
+== Objectives ==
+You must search the world for a being capable of restoring the power to the  [Fragment of the Dragon's Eye]. The only information you possess about such a being is that they exist.
+
+ [Fragment of the Dragon's Eye] (provided)
+
+
+== Description ==
+A fragment of the shattered medallion is all that I can offer.
+You must find another of dragon blood willing to assist you in forging a new key. Once you secure this key, you must travel to the Wyrmbog in Dustwallow Marsh. It is there that you will find her lair, <name>.
+Where to find other flights willing to help? Sadly, I do not know... They are said to exist. Some may even work and live among us, disguised as one of the humanoid races. I wish you luck.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+9550 XP (or 39 at level 70)
+
+
+== Progress ==
+I sense an aura of evil radiating from you, <race>. What could you hold that emits such an aura?
+
+
+== Completion ==
+I should have known - a piece of the black dragon brood mother, Onyxia. How revolting...
+
+
+== Notes ==
+
+
+=== Who to talk to? ===
+The quest objectives state "you only know that such beings exist".  The real situation is only a little less dire.
+From this quest, you have the clues:
+
+someone of dragon blood
+another dragon flight, that may be friendly (or less hostile)
+may appear in humanoid form
+You may also have encountered the quest in upper Blackrock Spire,  [60D] The Matron Protectorate.
+This quest actually provides you the answer you need.  Which is, talk to
+Haleh, in Winterspring.
+
+
+=== How to find Haleh ===
+South and west of Everlook in Winterspring lies the caves of Mazthoril.  Enter the cave, and continue to the chamber at the bottom. Blue runes can be found on the floor of the chamber.  Activate the runes, and you will be teleported to a location on the mountains above the cave, where Haleh can be found.
+Mazthoril is inhabited by elite mobs of levels 58+, and has 2 dragons at the chamber at the bottom.
+
+
+=== Ways to get there ===
+Zerging.  Run as far, and as fast as you can, rez and continue.  Many reach the runes with only a few deaths along the way.
+Stealth in.  Whether your version of stealth is invisibility, the rogue and druid innate ability, or simply waiting until you get to (or near) level 70, avoiding getting aggro gets you there.
+Do-it-yourself raid kit.  You probably don't need a full 10 person raid, but having enough people to fight your way down helps.  And you might well need 10 or more people to take out the dragons at the bottom of Mazthoril.
+There's a path you can take up the mountain that completely bypasses the cave and therefore lets you skip the elite mobs all together. Videos with directions can be found on YouTube.
+
+
+== Progression ==
+ [54] Dragonkin Menace
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54D] Marshal Windsor
+ [54D] Abandoned Hope
+ [58D] A Crumpled Up Note
+ [58D] A Shred of Hope
+ [58D] Jail Break!
+ [60R] Stormwind Rendezvous
+ [60R] The Great Masquerade
+ [60R] The Dragon's Eye
+ [60R] Drakefire Amulet
+
+
+== Patch changes ==
+ Patch 3.0.2 (2008-10-14): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,6 +1,7 @@
 title: Earthen Echo
 revision: 6911818
 part: whole
+quest: 98823
 url: https://warcraft.wiki.gg/wiki/Earthen_Echo
 
 == Objectives ==

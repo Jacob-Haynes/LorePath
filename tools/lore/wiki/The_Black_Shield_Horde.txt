@@ -1,0 +1,41 @@
+title: The Black Shield (Horde)
+revision: 6394378
+part: whole
+quest: 27254
+url: https://warcraft.wiki.gg/wiki/The_Black_Shield_%28Horde%29
+
+== Objectives ==
+Bring the Blackened Iron Shield to Krog in Brackenwall Village.
+
+ [Blackened Iron Shield] (provided)
+
+
+== Description ==
+An iron shield, blackened by the fire that raged through the inn, is affixed to the crumbling chimney, one of the few remaining parts of the structure that once made up the Shady Rest Inn.
+The shield can be removed from the brick of the chimney.
+
+
+== Rewards ==
+You will receive: 4 20
+
+
+== Progress ==
+What's that you have there, <name>? Evidence from the remains of the Shady Rest Inn?
+
+
+== Completion ==
+I grant that humans have strange decorating tastes, but would they use a plain iron shield to adorn their fireplace? Perhaps this shield was placed there by the ones who burned the inn.
+A warning? A threat?
+
+
+== Progression ==
+This is part of The Shady Rest Inn quest chain:
+
+ [15-30] The Black Shield
+ [15-30] The Black Shield
+ [15-30] The Black Shield
+ [15-30] The Black Shield
+ [15-30] The Black Shield
+
+
+== External links ==

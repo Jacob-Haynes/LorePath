@@ -1,0 +1,46 @@
+title: Demon Dogs
+revision: 5612181
+part: whole
+quest: 5542
+url: https://warcraft.wiki.gg/wiki/Demon_Dogs
+
+== Objectives ==
+Slay 20 Plaguehound Runts, 5 Plaguehounds and 5 Frenzied Plaguehounds. Return to Tirion Fordring when the task is complete.
+
+Plaguehound Runt slain (20)
+Plaguehound slain (5)
+Frenzied Plaguehound slain (5)
+
+
+== Description ==
+If you are going to remain here, I ask only that you earn your keep. We have many nuisances that could use some 'discipline.'
+You can start with the Plaguehounds and their runts.
+I cannot offer much in return, but you are guaranteed a warm meal and some conversation should you succeed.
+
+
+== Rewards ==
+You will receive:
+
+8450 XP
+
+
+== Progress ==
+Do not pity the demon dogs, <race>. They are abominations!
+
+
+== Completion ==
+Well done, <name>. Come. Rest. Let us eat and talk of days long past!
+
+
+== Notes ==
+Completing this quest and Carrion Grubbage and Blood Tinged Skies will start the Redemption quest line.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

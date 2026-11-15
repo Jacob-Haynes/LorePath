@@ -1,0 +1,68 @@
+title: Fallen Sky Lake (quest)
+revision: 6418417
+part: whole
+quest: 1035
+url: https://warcraft.wiki.gg/wiki/Fallen_Sky_Lake_%28quest%29
+
+Fallen Sky Lake sends the player after a Moonstone to recover a child's strength.
+
+
+== Objectives ==
+Retrieve a Fallen Moonstone from the Shadethicket Oracle, then bring it to Pelturas in Astranaar.
+
+ [Fallen Moonstone]
+
+
+== Description ==
+Relara's fever has passed, but she is still very weak.  I do not believe time alone will give her back the strength she has lost.  I believe it will take the power of a moonstone.
+We used to gather moonstones at Fallen Sky Lake to the southeast... until the Shadethickets came.
+Their leader, a Shadethicket Oracle, gathered up all the fallen moonstones and hoards them.  Now, you must retrieve a moonstone from the Oracle.
+And to do that, I fear that you must slay him.
+
+
+== Rewards ==
+Your choice from among:
+
+ [Snapbrook Armor]
+ [Beastial Manacles]
+ [Luminescent Amice]
+
+
+== Progress ==
+Did you face the Shadethicket Oracle, <name>?  If so, then please hand me the fallen moonstone.  Relara has strength left for only a few more breaths! 
+
+
+== Completion ==
+Oh, <name>, you have saved my daughter!  I know the power of the moonstone will give back my daughter her strength!
+I can never repay you fully for the aid you have given me, but... please, take this.  Other than Relara, it is my most dear possession. 
+
+
+== Notes ==
+The Oracle can be found on an island in the middle of Fallen Sky Lake at coordinates . You will probably need to clear a few other creatures before you can get to the Oracle safely.
+
+Upon completiom
+Pelturas Whitemoon crushes the moonstone into a cup of tea.
+Pelturas Whitemoon says: Here you are, Relara.  Drink this...
+Relara Whitemoon says: Mmh... my eyes are not so heavy now, father.  Can we go out and play?
+Pelturas Whitemoon says: Relara... you're awake?
+Pelturas Whitemoon says: Rest now, my daughter.
+Pelturas Whitemoon looks at <name>, and then weeps with joy.
+Pelturas Whitemoon says: Relara is saved, <name>.  Thank you.
+
+
+== Progression ==
+ [20] Bathran's Hair
+ [22] Orendil's Cure
+ [22] Elune's Tear
+ [23] The Ruins of Stardust
+ [30] Fallen Sky Lake
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

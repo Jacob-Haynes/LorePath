@@ -1,0 +1,64 @@
+title: Brother Carlin
+revision: 5616152
+part: whole
+quest: 5210
+url: https://warcraft.wiki.gg/wiki/Brother_Carlin
+
+This quest is believed to be part of the Rewriting the Battle of Darrowshire quest chain (Classic).
+
+
+== Objectives ==
+Bring the Extended Annals of Darrowshire to Carlin Redpath in Eastern Plaguelands.
+
+ [Extended Annals of Darrowshire] (provided)
+
+
+== Description ==
+The Annals of Darrowshire, through my magic, has gained pages at its end, and now it extends its history beyond the battle. One of the extra passages tells of another Redpath, Carlin, who survived Joseph's betrayal. Carlin's now in the Plaguelands to the east, at the Light's Hope Chapel.
+Take the book and speak with him.
+
+
+== Rewards ==
+You will receive:
+
+2900 XP (or 17 40 at level 70)
++50 or +75 reputation with Argent Dawn
+
+
+== Progress ==
+You've come from the west? How fare the rest of Lordaeron? I know that Andorhal is lost, but has the Scourge yet reached fair Tirisfal?
+
+
+== Completion ==
+What is this book? The Annals of Darrowshire? That was my home before the war... my home before the battle that destroyed it! Why did you bring me this book?
+But look here! At the end there are pages that tell tales of the days beyond the battle! Here is a passage about me! And one about my brother Joseph! Is this book true?
+We must discover the truth!
+
+
+== Progression ==
+ [55] Little Pamela or  [55] Sister Pamela
+ [55] Pamela's Doll
+Complete both:
+ [56] Auntie Marlene
+ [56] A Strange Historian
+ [56] The Annals of Darrowshire
+ [56] Uncle Carlin
+ [55] Defenders of Darrowshire
+ [56] Brother Carlin
+All of the following, in any order:
+ [57] Villains of Darrowshire
+ [56] Heroes of Darrowshire
+ [60] Marauders of Darrowshire
+ [60] Return to Chromie
+ [60] The Battle of Darrowshire
+ [60] Hidden Treasures
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

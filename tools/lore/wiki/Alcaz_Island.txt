@@ -1,0 +1,8 @@
+title: Alcaz Island
+revision: 6674203
+part: intro
+url: https://warcraft.wiki.gg/wiki/Alcaz_Island
+
+Alcaz Island is a large island off the northeast coast of Dustwallow Marsh. Unlike the rest of the zone, it features tropical vegetation similar to the nearby Echo Isles. It is inhabited mostly by gnomes raised into undeath, and technological inventions led by Doctor Weavil. The island was once under the control of the Strashaz naga.
+After the Theramore's Fall scenario, Alcaz Island becomes deserted, and can be accessed again by speaking to Zidormi.
+It is a no-fly zone and nearing it on a flying mount automatically dismounts the character, alongside the message "You are hit with anti-aircraft gunfire!"

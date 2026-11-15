@@ -1,0 +1,61 @@
+title: Sven's Revenge
+revision: 5586634
+part: whole
+quest: 95
+url: https://warcraft.wiki.gg/wiki/Sven%27s_Revenge
+
+Sven's Revenge is the first non-optional quest in the Morbent Fel quest chain.
+
+
+== Objectives ==
+Go to Sven's Farm and find what was buried behind the old stump.
+
+
+== Description ==
+I used to work one of the farms to the southeast...until Dark Riders from Deadwind Pass descended upon my farm and slaughtered my family when I was away!
+When I returned I saw a shadowy figure skulking near my barn, burying something. He fled before I could catch him, and I couldn't linger for I was hot on the heels of the Dark Riders. So I never discovered what was hidden.
+If you can find what that shadowy figure buried, I would be grateful. The hiding spot is behind the old stump near my barn.
+
+
+== Rewards ==
+You will receive:
+
+1,000 XP
++50 reputation with Stormwind
+
+
+== Completion ==
+A mound of dirt is here, hastily piled up as if someone had need of hiding something...without much time to do it.
+
+
+== Notes ==
+The old stump that Sven described can be found between the house and the barn on the Yorgen Farmstead. Near the stump is a mound of loose dirt. Interact with the dirt mound to complete the quest.
+
+
+== Progression ==
+ [23] Deliveries to Sven (optional)
+ [25] Sven's Revenge
+ [25] Sven's Camp
+ [25] The Shadowy Figure
+ [25] The Shadowy Search Continues
+ [25] Inquire at the Inn
+ [25] Finding the Shadowy Figure
+ [25] Return to Sven
+ [28] Proving Your Worth
+ [29] Seeking Wisdom
+ [29] The Doomed Fleet
+ [29] Lightforge Iron
+ [29] The Lost Ingots
+ [29] Blessed Arm
+ [29] Armed and Ready
+ [32G] Morbent Fel
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

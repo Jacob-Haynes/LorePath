@@ -1,0 +1,89 @@
+title: Rescue From Jaedenar
+revision: 6660944
+part: whole
+quest: 5203
+url: https://warcraft.wiki.gg/wiki/Rescue_From_Jaedenar
+
+This quest started the Rescue From Jaedenar quest chain.
+
+
+== Objectives ==
+Escort Arko'narin to where Lightforge and her equipment are being held, and then protect her as you escape Shadow Hold. Afterwards, seek out Jessir Moonbow in Felwood to let her know what's happened to her friends.
+
+Protect Arko'narin out of Shadow Hold
+
+
+== Description ==
+But, as much as it pains me, there is one thing that must be done first: I have to find Trey's sword Lightforge and escape Shadow Hold to tell my superiors what's happening here. Can you help me, <name>?
+Our equipment isn't far from here, and you've already proven you can survive the path to the top.
+After we escape, I'll head to Darnassus if you can find my friend Jessir near the Ashenvale border. She was to meet us at the Emerald Circle's camp near there.
+What do you say, <name>? Can you help me again?
+
+
+== Rewards ==
+You will receive:
+
+8150 XP
+
+
+== Progress ==
+You look winded, <name>. Are you all right, or is something wrong? 
+
+
+== Completion ==
+You were the one who helped Arko escape? I'm so glad you found me. She passed by here not too long ago on her way to Darnassus. She had Lightforge in tow and wouldn't even take time to speak to the druids to be healed. She said it was far too urgent.
+But she did tell me about your encounter with Trey's spirit. What a terrible fate for a Knight of the Silver Hand. She didn't show it, but I know it's tearing her up inside, the thought of losing one of her closest friends.
+
+
+== Notes ==
+Upon accept
+Captured Arko'narin says: I'm ready, <name>. Let's find my equipment and get out of here. I think I know where it is.
+Escort Arko'narin down to the (first) room split with a slime-filled pool and continue to the pit circled with candles.
+
+Captured Arko'narin says: Oh my! Look at this... all these candles. I'm sure they're used for some terrible ritual or dark summoning. We best make haste!
+Attacking enemies
+Captured Arko'narin says: You will not stop me from escaping here, <mob name>!
+Captured Arko'narin says: You will pay for what you've done to Trey, <mob name>!
+Captured Arko'narin says: You kept me in that cell for too long, monster!
+Other than defending her against the demons and cultists along the way, nothing special happens on the way to the chest with her gear.
+
+Captured Arko'narin says: There! Over there!
+After retrieving her equipment, Arko'narin transforms by spinning in place. After she is dressed in full armor and has Trey's sword.
+
+Captured Arko'narin says: All I need now is a golden lasso.
+Captured Arko'narin says: Let's get out of here, <name>. I'm ready now!
+Before she leaves the chamber, a trio of demonic legionnaires ambush her.
+
+Captured Arko'narin says: DIE, DEMON DOGS!
+Later, in the next chamber (that had a legionnaire in it on the way down), another trio of legionnaires ambush her.
+At the surface, you meet the Spirit of Trey Lightforge, and he's not happy to see Arko'narin.
+
+Captured Arko'narin says: Ah! Fresh air at last! I never thought I'd see the day...
+Spirit of Trey Lightforge yells: BETRAYER!
+Captured Arko'narin says: What was that?! Trey? TREY!?
+Captured Arko'narin says: NO! What have they done to you!?
+Trey attacks Arko'narin.
+Defeat him.
+
+Spirit defeated
+Captured Arko'narin says: No! My friend... what's happened? This is all my fault...
+Captured Arko'narin says: I can travel faster on my own from here, <name>. Meet Jessir Moonbow near Ashenvale. She should be with the druids of the Emerald Circle. She'll tell you what to do next. Thank you so much for your help!
+Arko'narin runs away.
+At this point, the objective is completed. Head to the Emerald Circle to turn in the quest.
+
+
+== Progression ==
+ [55] A Strange Red Key
+ [55] Rescue From Jaedenar
+ [57] Retribution of the Light
+ [57] The Remains of Trey Lightforge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

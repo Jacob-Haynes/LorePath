@@ -1,0 +1,7 @@
+title: Wetlands
+revision: 6533833
+part: intro
+url: https://warcraft.wiki.gg/wiki/Wetlands
+
+The Wetlands is a large, wet region below Stonewrought Dam and north of Loch Modan, covered with small rivers, lakes, and ponds. Bordered on three sides by mountains, the Wetlands are open to the Great Sea to the west. Adventurers seeking a route to the Wetlands must either come through sieged Dun Algaz from Loch Modan or cross the damaged Thandol Span from the Arathi Highlands.
+The Wetlands is a vast, cold swamp. Mists cloak the ground, and the overcast sky makes the land a uniform gray. Many Ironforge strongholds once stood in this region, but war has reduced them to rubble. Wild creatures, murlocs and orcs of Dragonmaw clan now control the land. The main bastion of Alliance's power in the region, the Menethil Harbor, has partially sunk and flooded due to irregular tectonic activity caused by the Shattering. The night elves also maintain a small holdout in the eastern parts, the Greenwarden's Grove - home to the fabled Rethiel the Greenwarden.

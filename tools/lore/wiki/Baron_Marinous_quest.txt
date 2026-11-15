@@ -1,0 +1,52 @@
+title: Baron Marinous (quest)
+revision: 6966593
+part: whole
+quest: 98028
+url: https://warcraft.wiki.gg/wiki/Baron_Marinous_%28quest%29
+
+Baron Marinous starts from the  [Clouded Water Globe] dropped by Baron Marinous in Forever, summoned at the Fathom Stone at the bottom of the Ruins of Mathystra in Darkshore. This is the Alliance equivalent of  [30D] Baron Aquanis, and speaking to the quest-ender will hand over the  [Befouled Water Globe], which is the start of a secret.
+
+
+== Objectives ==
+Bring the Clouded Water Globe to Onu at the Grove of the Ancients in Darkshore.
+
+ [Clouded Water Globe] (provided)
+
+
+== Description ==
+All that remains of the powerful elemental is a globe of what seems to be pure water, clouded by some unknown substance. The edges of the sphere seem to be clear until you turn it--as if the cloud actively prevents you from peering within.
+Whatever happened to it--and to the ruins it was guarding--is still active in some way.
+Only Onu, the Ancient of Lore at the Grove of the Ancients to the far south, would have a chance at knowing more.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Mathystra Channeling Orb]
+ [Onu's Patience]
+You will also receive:
+
+1,650 XP
++150 reputation with Darnassus
+
+
+== Progress ==
+I can sense something far older than you in my presence, <race>... what have you brought me?
+
+
+== Completion ==
+<Onu appears surprised--or as surprised as an ancient can appear.>
+Stairs descending down in Mathystra? Could be it be?
+<Onu shakes his head.>
+I must confer with the others on this. For now, know that it is good you uncovered this before the naga... or their cult allies.
+Please accept this as thanks for your efforts. It is no small feat to defeat an elemental guardian.
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

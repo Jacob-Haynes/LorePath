@@ -1,0 +1,61 @@
+title: A Recipe For Death
+revision: 6965748
+part: whole
+quest: 447
+url: https://warcraft.wiki.gg/wiki/A_Recipe_For_Death
+
+== Objectives ==
+Collect 6 Grizzled Bear Hearts and 6 samples of Skittering Blood and deliver them to Master Apothecary Faranell in the Undercity.
+
+ [Grizzled Bear Heart] (6)
+ [Skittering Blood] (6)
+
+
+== Description ==
+Arthas's numbers are overwhelming. But with a New Plague we could eradicate both the Scourge Army and the Human infestation once and for all.
+My studies have proven that spider blood combined with a toxin derived from a grizzled bear heart results in a deadly elixir. Collect samples from the spiders in the Skittering Dark to the northwest and from the bears wandering throughout Silverpine Forest. Deliver the reagents to Master Apothecary Faranell of the Royal Apothecary Society in the Undercity.
+
+
+== Rewards ==
+You will receive:
+
+ [Senggin Root] x20
+5
+2,150 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Hail, <class>.  What business do you have with the Royal Apothecary Society?
+
+
+== Completion ==
+How good of Apothecary Renferrel to send you to me, <name>.  These samples will indeed prove useful to the cause.  I will begin studying their toxic and contaminable properties at once.
+
+
+== Notes ==
+The Grizzled Bear Hearts drop off of any of the bears in Silverpine.
+The Skittering Blood drops off of the spiders in and around the Skittering Dark.
+Neither of these items drop with 100% consistency, so it may take a while to collect all the items.
+
+
+== Progression ==
+ [21D] Abominable Creatures
+ [22D] A Frightened Request
+ [22D] Bloodied Insignia
+ [22D] Crest of Lordaeron
+ [22D] Light's Justice
+ [22D] Remember That I Love You →  [22] Remember That I Love You
+ [12] A Recipe For Death →  [15] A Recipe For Death →  [18] A Recipe For Death →  [22D] The New Plague
+ [11] Rear Guard Patrol →  [13E] Rear Guard Patrol →  [22D] The Wrath of Rath'mael
+ [21D] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

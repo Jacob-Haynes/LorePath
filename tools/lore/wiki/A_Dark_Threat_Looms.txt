@@ -1,0 +1,47 @@
+title: A Dark Threat Looms
+revision: 6307985
+part: whole
+quest: 250
+url: https://warcraft.wiki.gg/wiki/A_Dark_Threat_Looms
+
+This quest begins the A Dark Threat Looms quest chain.
+
+
+== Objectives ==
+Investigate the area near the eastern ramp of the Dam and bring Chief Engineer Hinderweir a clue that might reveal what the Dark Iron Dwarves are up to.
+
+
+== Description ==
+Thank the stars someone is concerned about the well-being of the Dam. First the destruction of the Thandol Span and then the pillaging of Dun Modr! I have no doubt that the Dam will be the target of the next Dark Iron threat. Most of the security detail here was reassigned to the Alliance Front, including my top inspector.
+That's why I need you, <name>. I spotted some Dark Iron Sappers milling about the eastern ramp of the Dam. Investigate the area and bring back a clue.
+
+
+== Rewards ==
+You will receive:
+
+675 XP (or 4 20 at max level)
++75 reputation with Ironforge
+
+
+== Completion ==
+The suspicious looking barrel contains a strange smelling powder.
+
+
+== Progression ==
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [20] A Dark Threat Looms
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,54 @@
+title: Resting in Pieces
+revision: 5638731
+part: whole
+quest: 460
+url: https://warcraft.wiki.gg/wiki/Resting_in_Pieces
+
+== Objectives ==
+Bring Alaric's Head to his grave.
+
+ [A Talking Head] (provided)
+
+
+== Description ==
+You don't look like a rot hide. Good. I had lost hope...
+My name is Alaric, and I was once Thule's head servant and bodyguard. He used his magic to "protect" me from the Plague of Undeath, but instead his spell gave me an unlife from which I cannot escape. And after creating the cursed rot hide gnolls, Thule beheaded me... and gave my head to the gnolls as a plaything!
+Please, take me to my body. I believe the gnolls buried it here in Fenris Keep, near the stable, in an unmarked grave.
+
+
+== Rewards ==
+You will receive:
+
+625 XP (or 3 90 at max level)
++50 or +75 reputation with Undercity
+
+
+== Progress ==
+This grave was hastily dug.
+
+
+== Completion ==
+Thank you, <name>. I had feared the Gnolls destroyed my body. It is good to know they did not.
+
+
+== Progression ==
+ [17] Resting in Pieces
+ [18] The Hidden Niche
+ [18] Wand to Bethor
+
+
+== Trivia ==
+This quest was used as an example on the "Quests" page of The World of Warcraft Townhall. The page described the player looting Alaric's head from a slain Rot Hide Graverobber at the Mass Grave in Tirisfal Glades, a good distance away from Fenris Isle. However, since a screenshot of the quest showed an identical description to the live version (including the phrase "here in Fenris Keep"), the website's version was probably embellished to better illustrate the general idea of quests.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== References ==
+
+
+== External links ==
+
+Wowhead
+WoWDB

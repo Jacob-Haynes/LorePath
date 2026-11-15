@@ -1,0 +1,62 @@
+title: Ascension...
+revision: 6291899
+part: whole
+quest: 6601
+url: https://warcraft.wiki.gg/wiki/Ascension...
+
+== Objectives ==
+It would appear as if the charade is over. You know that the Amulet of Draconic Subversion that Myranda the Hag created for you will not function inside Blackrock Spire. Perhaps you should find Rokaro and explain your predicament. Show him the Dull Drakefire Amulet. Hopefully he will know what to do next.
+
+ [Dull Drakefire Amulet] (provided)
+
+
+== Description ==
+From the skulls of our enemies is shaped a medallion. You know this medallion, yesss? You have no doubt seen it worn by your elders.
+Take it, whelp. Return to the Spire and present it to General Drakkisath. The General will place the final enchantment upon the medallion, attuning the trinket to your spirit.
+You will wear the finished medallion as a badge of honor, symbolizing your ascension to one of our most guarded ranks: Guardian to the brood mother.
+Go!
+
+
+== Progress ==
+What is it, <name>?
+
+Pre-Burning Crusade progress
+Do not panic, <name>!
+
+
+== Completion ==
+I have rusted coins that have more worth than dragon-talk, <name>. Don't put too much stock in their speech, this sort of bravado is common for their kind.
+
+Pre-Burning Crusade completion
+It is merely dragon-talk, <name> - more hot air than actual substantive information. Pompous, aggressive behavior is to be expected from their kind.
+
+
+== Progression ==
+This quest was a part of the Onyxia's Lair attunement chain.
+
+ [60D] Warlord's Command
+ [60] Eitrigg's Wisdom
+ [60R] For The Horde!
+ [60] What the Wind Carries
+ [60] The Champion of the Horde
+ [60] Mistress of Deception
+ [60R] Oculus Illusions
+ [60R] Emberstrife
+
+ [60] The Test of Skulls, Scryer
+ [60] The Test of Skulls, Somnus
+ [60] The Test of Skulls, Chronalis
+ [60] The Test of Skulls, Axtroz
+ [60] Ascension...
+ [60R] Blood of the Black Dragon Champion
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.0.1 (2006-12-05): Quest ender changed from Rexxar to Rokaro. Text updated.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

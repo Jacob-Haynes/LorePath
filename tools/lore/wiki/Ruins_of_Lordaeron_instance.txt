@@ -1,0 +1,62 @@
+title: Ruins of Lordaeron (instance)
+revision: 6973458
+part: whole
+url: https://warcraft.wiki.gg/wiki/Ruins_of_Lordaeron_%28instance%29
+
+Ruins of Lordaeron is a Forever-exclusive dungeon, intended for level 15-22 players located in the exterior Ruins of Lordaeron above the Undercity in Tirisfal Glades. There are quests for both factions, and most quests have a minimum requirement of 16 to start.
+
+
+== Getting there ==
+
+The instance line is in the uninstanced Ruins of Lordaeron above Undercity, near the entrance to the city from Brill. Horde characters not already at the Undercity should take the zeppelin from Orgrimmar to Brill.
+Alliance players have a bit of a trek. The easiest route for most would have players take the ship from Stormwind Harbor to Auberdine in Darkshore, then the ship from Auberdine to Menethil Harbor and Southshore. Run north out of Southshore, heading northwest past the Hillsbrad Fields and Dalaran into Silverpine Forest at the Lordamere Lake. Swim across the lake north to enter Tirisfal Glades, then follow the road clockwise to the north and east around the exterior of the Undercity.
+On any ruleset, Alliance characters crossing from Tirisfal Glades into Undercity will flag the character for PvP, and Horde defenders have a habit of picking off low-level characters. Consider removing gear before reaching the city itself to avoid the inevitable durability damage from deaths. Re-equip it inside the dungeon.
+
+
+== Quests ==
+Quests for Horde characters start in the Undercity, Silverpine Forest, Tirisfal Glades or within the dungeon itself. Quests that have a D in their level identifier take place in the dungeon. Any quests on the same line before the dungeon quests must be completed first.
+Quests for Alliance characters start within the dungeon.
+
+ [21D] Abominable Creatures
+ [22D] A Frightened Request
+ [22D] Bloodied Insignia
+ [22D] Crest of Lordaeron
+ [22D] Light's Justice
+ [22D] Remember That I Love You →  [22] Remember That I Love You
+ [12] A Recipe For Death →  [15] A Recipe For Death →  [18] A Recipe For Death →  [22D] The New Plague
+ [11] Rear Guard Patrol →  [13E] Rear Guard Patrol →  [22D] The Wrath of Rath'mael
+ [21D] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment
+
+
+== Encounters ==
+ Witherfang
+ The Baron
+ Viktor the Vile
+ The Abandoned
+ Bjork
+ Rath'mael
+Lordaeron Captain (rare)
+
+
+== Loot ==
+
+
+=== Boss drops ===
+
+
+=== Trash mob drops ===
+
+
+=== Quest rewards ===
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+Wago

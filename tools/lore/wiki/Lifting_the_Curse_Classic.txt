@@ -1,0 +1,57 @@
+title: Lifting the Curse (Classic)
+revision: 6176793
+part: whole
+quest: 290
+url: https://warcraft.wiki.gg/wiki/Lifting_the_Curse_%28Classic%29
+
+This quest is a part of The Third Fleet questline.
+
+
+== Objectives ==
+Get the Intrepid Strongbox Key from Captain Halyndor.
+Use the key to open the Intrepid's Locked Strongbox.
+
+ [Intrepid Strongbox Key]
+
+
+== Description ==
+To break the curse and free all of my brethren, the...thing...stowed on my ship must be retrieved and cleansed! I don't know what it was, but I do know that it was stored securely in the ship's strongbox, which Captain Halyndor lorded over.
+My old captain is still in my dreams. I know he walks my doomed ship, the Intrepid. Get the key from him, and use it to open the Intrepid's strongbox.
+Then, after you have the cursed thing, bring it to the priest Glorin Steelbrow in town.
+
+
+== Rewards ==
+You will receive:
+
+1,200 XP
++50 reputation with Stormwind
+
+
+== Progress ==
+This chest is securely locked.
+
+
+== Completion ==
+The key is rusted but it fits the lock neatly.
+
+
+== Notes ==
+This quest takes place in the two wrecked ships off the north-east coast of the Wetlands. The Captain of the Intrepid, who has the key you need, is on the deck of the more northern of the two boats. You can get on the deck without going through the rest of the boat. Once you kill and loot the Captain, if you jump off the west side of the boat and go straight down, you'll see a hole in the hull of the boat. The chest is just inside that hole. Clear the area of Cursed Sailors and Cursed Marines and pick up the loot.
+
+
+== Progression ==
+ [27] The Third Fleet
+ [30] The Cursed Crew
+ [30] Lifting the Curse
+ [30] The Eye of Paleth
+ [30] Cleansing the Eye
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

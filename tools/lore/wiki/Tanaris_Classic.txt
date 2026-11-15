@@ -1,0 +1,6 @@
+title: Tanaris (Classic)
+revision: 5782333
+part: intro
+url: https://warcraft.wiki.gg/wiki/Tanaris_%28Classic%29
+
+Tanaris is a desert located in southeastern Kalimdor, east of Un'Goro Crater and south of Thousand Needles. It is an arid land, covered in sand dunes and frequently exposed to dangerous sandstorms. The Steamwheedle Cartel has its main base of operations here - Steamwheedle Port and Gadgetzan have been founded by the goblins of Undermine since this desert is as close to home as they can get on the continents. The dock in Steamwheedle is presumably used for transport to the outer islands, but so far, the goblins have proved unwilling to share the ships with the other races.

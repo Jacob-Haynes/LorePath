@@ -1,0 +1,56 @@
+title: In Nightmares (Horde)
+revision: 6230226
+part: whole
+quest: 3369
+url: https://warcraft.wiki.gg/wiki/In_Nightmares_%28Horde%29
+
+== Objectives ==
+Bring the Nightmare Shard to Hamuul Runetotem on Elder Rise.
+
+ [Nightmare Shard] (provided)
+
+
+== Description ==
+This shard holds great secrets; it is the pure essence of the Emerald Dream. However, what I see in this shard is not a dream; one would call this sort of a vision a nightmare.
+I do not wish to alarm you, <name>, but I think it is best if you deliver this shard into the hands of a wise druid as soon as you can.
+Hamuul Runetotem on Elder Rise is who you need to find. Head to Thunder Bluff. I cannot say more.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Talbar Mantle]
+ [Quagmire Galoshes]
+You will also receive:
+
+2000 XP
++100 or +250 reputation with Thunder Bluff
+
+
+== Progress ==
+May I help you with something?
+
+
+== Completion ==
+Falla sent you to me? Well now, let's see that shard that you say she was so hesitant to talk about...
+<Hamuul peers into the shard>
+Oh... I didn't... Well.
+<Name>, thank you for delivering this to me. It isn't wise to speak of things such as this, though, I advise you. These are matters that you should not concern yourself with.
+Let's just say that things in the Emerald Dream are not as we thought...
+Perhaps in the future, our paths may cross again.
+
+
+== Progression ==
+ [26] The Glowing Shard
+ [25] In Nightmares
+ [25] In Nightmares
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

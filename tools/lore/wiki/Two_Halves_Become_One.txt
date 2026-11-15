@@ -1,0 +1,60 @@
+title: Two Halves Become One
+revision: 6739651
+part: whole
+quest: 5051
+url: https://warcraft.wiki.gg/wiki/Two_Halves_Become_One
+
+Two Halves Become One is the final part of the Better Late Than Never quest chain. This quest chain starts with  [52] Better Late Than Never.
+
+
+== Objectives ==
+Locate the other half of the Good Luck Charm somewhere on the Felstone Farm in Western Plaguelands and reassemble it.
+Give the Good Luck Charm to Janice Felstone on the Felstone Farm, Western Plaguelands.
+
+ [Good Luck Charm]
+ [Good Luck Other-Half-Charm]
+ [Good Luck Half-Charm] (provided)
+
+
+== Description ==
+The ramblings of the poor ghost continue:
+"I'm so cold, John. Bring me your charm, and we'll be together! Quickly John, before the plague comes to change us into hideous beasts! I can't see you John... but I know you're near. I feel you near me."
+Perhaps if the second half of the charm was found and reassembled, this would constitute what the spirit of Janice Felstone is seeking.
+
+
+== Rewards ==
+You will receive:
+
+7900 XP (or 33 at max level)
+ [Felstone Good Luck Charm]
+
+
+== Progress ==
+John, don't let the ghouls get you... don't let the ghouls get me... nasty ghouls... our charm will keep us safe.
+
+
+== Completion ==
+You hand the reassembled good luck charm to Janice Felstone's ghost.  As soon as she grasps it, you observe an almost immediate change in her.  Her ethereal form shimmers, and she looks upon you with clear yet sad eyes.
+"You've freed me... I no longer will need this charm.  Please, take it and perhaps it will give you the solace it has given me."
+
+
+== Notes ==
+The other half drops off her husband, who is now a Jabbering Ghoul that roams the farm.
+
+
+== Progression ==
+ [52] Better Late Than Never
+ [52] Better Late Than Never /  [52] Better Late Than Never
+ [52] Good Natured Emma /  [52] The Jeremiah Blues
+ [52] Good Luck Charm
+ [54] Two Halves Become One
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

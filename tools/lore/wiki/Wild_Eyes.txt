@@ -1,0 +1,51 @@
+title: Wild Eyes
+revision: 6944856
+part: whole
+quest: 91920
+url: https://warcraft.wiki.gg/wiki/Wild_Eyes
+
+== Objectives ==
+Gather 3 murloc eyes and bring them to Apothecary Renferrel at the Sepulcher.
+
+ [Murloc Eye] (3)
+
+
+== Description ==
+I wouldn't dare to question the effectiveness of Apothecary Renferrel's formulae, however I would be lying if I said that the potion made any noticeable difference.
+Along the shore of Lake Lordamere are a swarm of murlocs, and of note, murlocs have eyes. I suspect the apothecary's willingness to try new things is suppressed by his recent obsession with hearts. Bring him a few.
+If my choice is to inevitably die a second death or have Renferrel kill me for questioning his methods, I choose the latter.
+
+
+== Rewards ==
+You will receive:
+
+2
+440 XP
++50 reputation with Undercity
+ [Recipe: Minor Discolored Healing Potion]
+ [Minor Discolored Healing Potion]
+
+
+== Progress ==
+Oh. You're back?
+
+
+== Completion ==
+The potion didn't work? Of course it didn't work. You brought me insufficient hearts. The recipe clearly calls for six. You brought three.
+However, I confess I hadn't considered applications for murloc parts until now...
+<Renferrel takes the eyes.>
+I can afford to sacrifice a few of my own hearts to get your Deathstalker's strength back.
+
+
+== Progression ==
+...
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

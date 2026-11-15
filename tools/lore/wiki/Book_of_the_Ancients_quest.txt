@@ -1,0 +1,55 @@
+title: Book of the Ancients (quest)
+revision: 6878884
+part: whole
+quest: 6027
+url: https://warcraft.wiki.gg/wiki/Book_of_the_Ancients_%28quest%29
+
+== Objectives ==
+Get the Book of the Ancients and return it to Azore Aldamort at the tower in Ethel Rethor.
+
+ [Gem of the Serpent] (provided)
+ [Book of the Ancients]
+
+
+== Description ==
+<Name>, I entrust you with the  [Gem of the Serpent]. Place this gem on the Serpent Statue's hand on Ranazjar Isle, a small island northwest of here. Placing it will summon the one who protects the Book of the Ancients. This book contains the secrets of the naga, secrets that have been kept for centuries. Bring this book to me, and we will learn much about our scaled foes!
+
+
+== Progress ==
+Ah, <name>! It's good to see you again. Do you have the Book of the Ancients?
+
+
+== Completion ==
+The long lost Book of the Ancients! I will ensure this book is passed on to the high council. You've done well today, and for that you are to be thanked... as a hero should be thanked!
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Silkstream Cuffs]
+ [Arcmetal Shoulders]
+You will also receive:
+
+45
+4900 XP
++700 reputation with Argent Dawn
+
+
+== Notes ==
+
+Time for a swim to far-off Ranazjar Isle in the far northwest corner of Desolace. On the northwest side of the island is the Serpent Statue. Click on the statue to summon Lord Kragaru, a level 38 naga with ~1600 health. Kill him then swim back to Ethel Rethor.
+
+
+== Progression ==
+ [33] Sceptre of Light
+ [38] Book of the Ancients
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

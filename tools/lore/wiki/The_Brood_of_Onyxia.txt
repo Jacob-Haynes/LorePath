@@ -1,0 +1,40 @@
+title: The Brood of Onyxia
+revision: 6967647
+part: whole
+url: https://warcraft.wiki.gg/wiki/The_Brood_of_Onyxia
+
+== Objectives ==
+Speak with Overlord Mok'Morokk in Brackenwall Village.
+
+
+== Description ==
+Stonemaul Village was invaded by the brood of Onyxia. But why would the daughter of the black dragonlord, Deathwing, descend upon our lands?
+This is most troubling. Surely, Onyxia was driven here for a purpose beyond laying siege to a small band of ogres.
+Notify Mok'Morokk at once! Action must be taken.
+
+
+== Rewards ==
+You will receive:
+
+2,050  XP (or 2 70 at max level)
+
+
+== Completion ==
+Why you tell me 'bout dragons? Me no like dragons. Me like it here. No dragons here.
+
+
+== Progression ==
+ [15-30] Identifying the Brood
+ [15-30] The Brood of Onyxia
+ [15-30] The Brood of Onyxia
+ [15-30] The Brood of Onyxia
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

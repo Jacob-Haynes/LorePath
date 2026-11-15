@@ -1,0 +1,42 @@
+title: Bashal'Aran (quest)
+revision: 5995232
+part: whole
+quest: 954
+url: https://warcraft.wiki.gg/wiki/Bashal%27Aran_%28quest%29
+
+This quest starts the Bashal'Aran quest chain.
+
+
+== Objectives ==
+Find the source of the strange blue aura in the ruins of Bashal'Aran.
+
+
+== Description ==
+The ruins of Bashal'Aran to the east are overrun with demonic minions. The sprites and satyrs that have taken up residence in the area feed upon the magical energies of the area, their powers growing from continued exposure.
+Even with that, I have noticed that there is one shrine they will not approach. On the western side of the ruins, atop a small bluff, a strange blue aura permeates... There must be an explanation to the demons' reluctance.
+I would like you to investigate it. 
+
+
+== Completion ==
+Ahh... To what could I possibly owe the exceedingly special honor of a <race> such as yourself as company. Truly it says much of my current companions—with no offense to my hosts, the noble grells and satyrs—that your presence could be considered an improvement.
+But please, do not let my uncivil tongue drive you from the place. It has indeed been many years, decades even, since I had civil accompaniment. 
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+675 XP (or 4 20 at level 70)
+150 reputation with Darnassus
+
+
+== Progression ==
+ [12] Bashal'Aran
+ [12] Bashal'Aran
+ [13] Bashal'Aran
+ [13] Bashal'Aran
+
+
+== External links ==
+
+Wowhead
+WoWDB

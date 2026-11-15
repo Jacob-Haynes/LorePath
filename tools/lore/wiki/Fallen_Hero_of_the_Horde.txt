@@ -1,0 +1,6 @@
+title: Fallen Hero of the Horde
+revision: 6945417
+part: intro
+url: https://warcraft.wiki.gg/wiki/Fallen_Hero_of_the_Horde
+
+The Fallen Hero of the Horde is an orc ghost located on the border of the Blasted Lands in the Swamp of Sorrows. He stands beside the road leading out of the swamp to the south and warns travelers of the dangers of the Blasted Lands, which consumed him and his men.

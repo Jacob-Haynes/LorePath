@@ -1,0 +1,50 @@
+title: Khan Jehn (quest)
+revision: 6176770
+part: whole
+quest: 1374
+url: https://warcraft.wiki.gg/wiki/Khan_Jehn_%28quest%29
+
+This quest is part of the Strange Alliance quest chain. This quest chain starts with  [35] Strange Alliance
+
+
+== Objectives ==
+Bring the Khan Jehn's Head to Uthek the Wise in the Gelkis Village in Desolace.
+
+ [Khan Jehn's Head]
+Gelkis Clan Centaur (Friendly)
+
+
+== Description ==
+The earth speaks to me, and it says that the Magram grow weak. Now it is time to kill their Khan!
+Bring me the head of the Magram Khan, Jehn!
+
+
+== Rewards ==
+2850 XP or 22 20 at Level 80
+
+
+== Progress ==
+Show me you are a friend of the Gelkis, <name>.
+
+
+== Completion ==
+Khan Jehn was strong, but stupid. He thought his own strength was great. He did not see that earth magic is stronger. The Magram centaur will now fall without their leader, and the Gelkis will one day rule!
+
+
+== Progression ==
+ [35] Strange Alliance /  [33] Gelkis Alliance
+ [32] Raid on the Kolkar
+ [35] Stealing Supplies
+ [37] Ongeku
+ [37] Khan Jehn
+ [42] Khan Hratha
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

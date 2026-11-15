@@ -1,0 +1,51 @@
+title: Message in a Bottle (2)
+revision: 6176849
+part: whole
+quest: 630
+url: https://warcraft.wiki.gg/wiki/Message_in_a_Bottle_%282%29
+
+Message in a Bottle is a quest in Stranglethorn to kill  King Mukla.
+
+
+== Objectives ==
+Slay King Mukla and return to Princess Poobah with the Key to free her.
+
+ [Shackle Key]
+
+
+== Description ==
+<Name>, I put my faith in you and anyone you can muster to help free me. The great Skymane King Mukla is my captor. He commands the beasts of this island, and they keep me here against my will with the aid of this chain. If you can slay him and find the key to this shackle, I shall be indebted to you greatly.
+I often hear him to the southeast side of the island, but please be careful: he is not to be trifled with.
+
+
+== Progress ==
+I thank my ancestors someone has come to aid me. Do you have the key that will free me?
+
+
+== Completion ==
+<name>, you have saved me from a great dishonor. If it was within my power, I would offer you a place among my tribe. But for now, all I can only offer you is this token for the courage and nobility you have shown.
+
+
+== Rewards ==
+ [Poobah's Nose Ring]
+7350 XP
+
+
+== Progression ==
+ [45] Message in a Bottle
+ [51] Message in a Bottle
+
+
+== Notes ==
+Patch 2.3.0 reduced Jaguero Island to a 40 area. Prior to the patch, King Mukla was an elite level 51 Gorilla. The quest's level was adjusted accordingly.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.3.0 (2007-11-13): Level reduced from 51 to 42. Level requirement reduced from 45 to 42.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

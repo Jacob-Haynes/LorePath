@@ -1,0 +1,57 @@
+title: Gizmo for Warug
+revision: 6176632
+part: whole
+quest: 1371
+url: https://warcraft.wiki.gg/wiki/Gizmo_for_Warug
+
+== Objectives ==
+Maintain your reputation with the Magram, and bring an Advanced Target Dummy to Warug in the Magram Village in Desolace.
+
+ [Advanced Target Dummy]
+Magram Clan Centaur (Friendly)
+
+
+== Description ==
+Long ago, a little gnome came to Desolace. He had horses and a cart, and the cart held strange things. Funny things. Things that burned different colors. Things that moved and weren't alive. I killed the little gnome, but before that... he made me laugh.
+I kept my favorite thing from his cart. It was a human made of wood and it waved at me until I hit it and broke it.
+I want a new one. Get me a new one!
+
+
+== Rewards ==
+2050 XP
+
+
+== Progress ==
+If you are not our enemy, then you will do what I ask!
+
+
+== Completion ==
+Yes, this is what I had!  I will make it move again.  It makes me laugh!
+
+
+== Notes ==
+
+Upon completion, Warug creates Warug's Target Dummy on the ground. It persists for a few seconds before expiring.
+
+Warug says: Hah! Let us see the wooden human wave!
+Warug laughs.
+Warug says: Hahah! That was funny! Funny wooden human!
+
+
+== Progression ==
+ [35] Brutal Politics /  [33] Magram Alliance
+ [32] Assault on the Kolkar
+ [33] Broken Tears
+ [35] Gizmo for Warug
+ [37] Khan Shaka
+ [42] Khan Hratha
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

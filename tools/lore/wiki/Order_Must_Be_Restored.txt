@@ -1,0 +1,65 @@
+title: Order Must Be Restored
+revision: 6857640
+part: whole
+quest: 6187
+url: https://warcraft.wiki.gg/wiki/Order_Must_Be_Restored
+
+== Objectives ==
+Assemble an army and travel to the Eastern Plaguelands. Launch a full assault on Nathanos Blightcaller and any Horde filth that may attempt to protect him.
+Keep your wits about you, <name>. The Horde will defend the ranger lord with their very lives.
+
+Nathanos Blightcaller slain
+
+
+== Description ==
+
+Do you know how many ranger lords exist in this world? How many human ranger lords have ever existed?
+Nathanos' accomplishments were unprecedented. He was a tactical genius, responsible for Alliance victories spanning a decade of conflict.
+And now... the champion of the Forsaken.
+No. This cannot be. Order must be restored.
+Gather an army, <name>. Return to the Plagues with your army and destroy the Blightcaller.
+I wish you luck, <name>. Truly, you will need it for this battle.
+
+
+== Rewards ==
+
+You will also receive:
+
++500 reputation with Stormwind
+
+
+== Progress ==
+ This section concerns content related to Wrath of the Lich King.
+ Please add any available information to this section.
+ The subject of this section was removed from World of Warcraft in patch 3.0.2 but is present in Classic.
+<Highlord Bolvar Fordragon is lost in thought.>
+
+
+== Completion ==
+It is a tragedy. I think... I believe that our kind is cursed, <name>. We are cursed to lose our greatest warriors; our most noble heroes; our most gifted scholars.
+We are indebted to you and I assure you, <name>, wherever Nathanos Marris is now, he smiles down upon you.
+
+
+== Trivia ==
+Order Must Be Restored is a Common Quest card in the World of Warcraft: Trading Card Game's Drums of War set.
+
+
+== Progression ==
+ [60G] The First and the Last
+ [60G] Honor the Dead
+ [60G] Flint Shadowmore
+ [60G] The Eastern Plagues
+ [60G] The Blightcaller Cometh
+ [60R] Order Must Be Restored
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 3.0.2 (2008-10-14): This quest is now given by King Varian Wrynn.   
+ Patch 1.3.0 (2005-03-07): The Order Must Be Restored quest now gives a Stormwind reputation boost upon completion.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,56 @@
+title: Nekrum's Medallion (quest)
+revision: 5613130
+part: whole
+quest: 2991
+url: https://warcraft.wiki.gg/wiki/Nekrum%27s_Medallion_%28quest%29
+
+== Objectives ==
+Bring Nekrum's Medallion to Thadius Grimshade in the Blasted Lands.
+
+ [Nekrum's Medallion]
+
+
+== Description ==
+I'll find out where your gryphon is, but first you have to do something for me. There's a troll in Zul'Farrak, Nekrum Gutchewer, who possesses a medallion I would very much like to study. Bring me that Medallion and I'll use my powers to find Sharpbeak.
+Zul'Farrak is across the ocean to the west, in the desert of Tanaris.
+
+
+== Rewards ==
+You will receive:
+70
+5250 XP
++100 or +500 reputation with Ironforge
+ +150 reputation with Wildhammer Clan
+
+
+== Progress ==
+Do you have Nekrum's Medallion, <name>?  There are powers hidden within it that I am eager to discover.
+
+
+== Completion ==
+Ah, the medallion of Nekrum.  It is rumored to have given the troll an unnatural long life, but at a cost.  I hope to discover a way to reap the medallion's power while avoiding its... unpleasant side effects.
+You have done me a service, <name>.  I shall now uphold my end of our bargain.
+
+
+== Notes ==
+ [Nekrum's Medallion] drops from Nekrum Gutchewer in Zul'Farrak.
+
+
+== Progression ==
+ [45] Witherbark Cages
+ [48] The Altar of Zul
+ [47] Thadius Grimshade
+ [47D] Nekrum's Medallion
+ [47] The Divination
+ [47] Return to the Hinterlands
+ [51] Saving Sharpbeak
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

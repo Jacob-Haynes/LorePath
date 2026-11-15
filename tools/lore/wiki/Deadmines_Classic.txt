@@ -1,0 +1,8 @@
+title: Deadmines (Classic)
+revision: 6972795
+part: intro
+url: https://warcraft.wiki.gg/wiki/Deadmines_%28Classic%29
+
+The Deadmines are expansive, winding tunnels dug out under Westfall and part of northwestern Stranglethorn Vale. The Deadmines are the center of the Defias Brotherhood operation, led by the ambitious Edwin VanCleef, who is constructing a juggernaught at the bottom of the mines with the aid of the goblins. On retail servers, it is only available during the Classic Timewalking event.
+In Classic, it is the lowest-level Alliance instance. Its entrance can be accessed in the town of Moonbrook in southwestern Westfall, while its exit is located in the western part of the Dagger Hills near the ocean. Many quests occur in and around the Deadmines.
+Prior to the First War, the Deadmines were the greatest gold-production center in human lands. However, they were abandoned during the First War. During that time, Sir Anduin Lothar ventured into the perilous Deadmines on a quest to obtain the  [Tome of Divinity] but was captured by a band of ogres and held captive for 20 months. He was ultimately rescued and successful in his mission. Blackhand's daughter Griselda also fled to the dungeons below the Deadmines with the ogre Turok. The two were slain by an orcish raid. Many slimes inhabited the dungeons at that time, but they have not been encountered lately.

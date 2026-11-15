@@ -1,0 +1,47 @@
+title: Furlbrow's Deed (Classic)
+revision: 6942169
+part: whole
+quest: 184
+url: https://warcraft.wiki.gg/wiki/Furlbrow%27s_Deed_%28Classic%29
+
+Furlbrow's Deed is a breadcrumb quest that begins after obtaining  [Westfall Deed] from one of the Defias Brotherhood members in Elwynn Forest.
+
+
+== Objectives ==
+Bring Furlbrow's Deed to Farmer Furlbrow. 
+
+ [Furlbrow's Deed] (provided)
+
+
+== Description ==
+This is the deed to an expanse of farmlands within Westfall. It is signed by a Theodore Furlbrow and cosigned by his wife, Verna. And on the back of the deed are hastily scrawled words:
+"We leaned on Furlbrow and got his deed. Thought it might be handy if you wanted to forge one of these for your own place.
+The Furlbrows won't give us trouble. Last I saw them they were on their way out of Westfall, stuck with a broken wagon."
+You think the Furlbrows might want their deed back... 
+
+
+== Rewards ==
+600 XP
++75 reputation with Stormwind
+5  [Small Pumpkin]
+5  [Ripe Watermelon]
+
+
+== Progress ==
+You have the deed to my farm??  That's good news!  Some ruffians stole it days ago... I thought it was gone for good!
+Please, let me have it.  We're on our way out of Westfall and ain't coming back any time soon, but if we do then we'll need those papers... 
+
+
+== Completion ==
+Loads of thanks, <name>!  As I was saying, these parts aren't fit for honest folk anymore, but if things get better, then this deed will let us reclaim our land.
+I don't have much to offer you, but here -- take this. 
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated; see  [5-30] Furlbrow's Deed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

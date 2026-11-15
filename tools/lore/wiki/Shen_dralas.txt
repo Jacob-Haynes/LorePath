@@ -1,0 +1,33 @@
+title: Shen'dralas
+revision: 6974293
+part: whole
+url: https://warcraft.wiki.gg/wiki/Shen%27dralas
+
+Shen'dralas is a contested zone in World of Warcraft: Forever, south-east of Desolace and between Feralas and Mulgore.
+
+
+== Geography ==
+
+
+=== Maps and subregions ===
+
+
+=== Adjacent regions ===
+
+
+== Notes ==
+Shen'dralas is placed roughly where Lake Dumont is located in Retail.
+Highborne ruins can be found on Lake Dumont's northern shore, which may have been the inspiration for Shen'dralas.
+
+
+== Patch changes ==
+ Hotfix (2026-11-11): Fixed a bug that prevented the ability to mount in named areas of Shen'dralas. 
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+Wago

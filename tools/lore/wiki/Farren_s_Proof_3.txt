@@ -1,0 +1,45 @@
+title: Farren's Proof (3)
+revision: 6218189
+part: whole
+quest: 561
+url: https://warcraft.wiki.gg/wiki/Farren%27s_Proof_%283%29
+
+Farren's Proof is a quest in the Hillsbrad Foothills that involves running a message in Southshore.
+
+
+== Objectives ==
+Speak with Lieutenant Farren Orinelle.
+
+
+== Description ==
+Please inform Lieutenant Orinelle that I would like him to refocus his efforts on the naga infesting the Eastern Strand.
+When he has results, tell him to report to me in person.
+
+
+== Rewards ==
+You will receive: 1 50
+
+
+== Completion ==
+The naga, eh?
+Redpath must have just received the same information as me... Ha! He'll not receive a promotion from my toil.
+Let me explain.
+
+
+== Progression ==
+ [30] Down the Coast
+ [32] Farren's Proof
+ [32] Farren's Proof
+ [32] Farren's Proof
+ [32] Stormwind Ho!
+ [32] Reassignment
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

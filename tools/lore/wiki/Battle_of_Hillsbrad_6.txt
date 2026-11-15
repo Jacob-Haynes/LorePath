@@ -1,0 +1,61 @@
+title: Battle of Hillsbrad (6)
+revision: 5956919
+part: whole
+quest: 541
+url: https://warcraft.wiki.gg/wiki/Battle_of_Hillsbrad_%286%29
+
+== Objectives ==
+High Executor Darthalia wants you to travel to Dun Garok and kill 10 Mountaineers, 8 Riflemen, 4 Priests and Captain Ironhill and report back to her in Tarren Mill.
+
+Dun Garok Mountaineer slain (8)
+Dun Garok Rifleman slain (4)
+Dun Garok Priest slain (2)
+Captain Ironhill slain
+
+
+== Description ==
+Dwarves aiding the humans? Damn those filthy little beasts.
+We shall test the strength of the so-called Alliance. We'll see how anxious those little ankle-bashers are to help the humans once they feel our wrath. We know exactly where their stronghold is in this territory.
+They have established a barracks in southeastern Hillsbrad along Thoradin's Wall called Dun Garok. The final mission of this battle is to lay siege on Dun Garok, <class>. Captain Ironhill, their leader, must die.
+
+
+== Rewards ==
+You will receive:
+
+25
+2450 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Dun Garok proves to be too much of an obstacle for you, <class>?  And here I thought you had established yourself valiantly in Hillsbrad.
+If you're not up to handle the mission assigned to you, I will find another who can produce better results.  As for you, well, I am sure the Dark Lady could always use more grave diggers back in Tirisfal Glades.
+
+
+== Completion ==
+Your actions on the battlefield are worthy of the highest praise.
+
+
+== Notes ==
+Dun Garok is in southeast Hillsbrad. The dwarves there are come in groups, so you will probably need a group.
+Captain Ironhill spawns in several different locations in the fortress. Sometimes he's up on the top floor. Other times he's down in the basement. You'll need to search the place to find him.
+
+
+== Progression ==
+ [24] Battle of Hillsbrad
+ [25] Battle of Hillsbrad
+ [26] Battle of Hillsbrad
+ [26] Battle of Hillsbrad
+ [28] Battle of Hillsbrad
+ [30] Battle of Hillsbrad
+ [32] Battle of Hillsbrad (Classic) /  [32] Battle of Hillsbrad (WotLK Classic)
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

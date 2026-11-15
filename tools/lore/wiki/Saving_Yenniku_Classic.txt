@@ -1,0 +1,63 @@
+title: Saving Yenniku (Classic)
+revision: 6726060
+part: whole
+quest: 592
+url: https://warcraft.wiki.gg/wiki/Saving_Yenniku_%28Classic%29
+
+In Saving Yenniku, you must use the  [Soul Gem] to capture Yenniku's soul and return it to his people. This is the final quest in a long chain, available in Grom'gol, the first being  [10-30] Hunt for Yenniku which can be obtained from Nimboya at the north exit to the camp.
+
+
+== Objectives ==
+Bring the Filled Soul Gem to Nimboya.
+
+ [Filled Soul Gem]
+ [Soul Gem] (provided)
+
+
+== Description ==
+I have reshaped the Mind's Eye into a Soul Gem. Its purpose is twofold: you must use it to stun Yenniku, and once stunned place it upon his head to entrap his soul.
+Then, bring the gem to Nimboya.
+Yenniku dwells with Zanzil the Outcast, at the Ruins of Aboraz, along the Crystal Shore on the distant Cape of Stranglethorn.
+
+
+== Rewards ==
+
+You will also receive:
+
+5050 XP
++150 reputation with Darkspear Trolls
+
+
+== Progress ==
+<Name>. Kin'weelay told me you set out to capture Yenniku.
+Is it true? Do you have him?
+
+
+== Completion ==
+You've done it!  You freed Yenniku from the will of Zanzil, and completed the mission I had thought was so desperate.
+Our tribe will remember your name in songs, <name>, and we will etch your tale in stone so that it will live forever.
+
+
+== Notes ==
+Take the Soul Gem you get when you accept the quest and head to the Ruins of Aboraz. Yenniku is in the south-western corner of the ruins, almost completely alone. Simply use the Soul Gem while targeting him (you don't have to weaken him first or anything), and he will become friendly. Right click him, turn in the quest  [46] Filling the Soul Gem to capture his soul in the gem and create the  [Filled Soul Gem].
+
+
+== Progression ==
+ [34] Hunt for Yenniku
+ [37] Headhunting
+ [41] Bloodscalp Clan Heads
+ [40] Speaking with Nezzliok &  [46] Speaking with Gan'zulah
+ [45] The Fate of Yenniku
+ [45] The Singing Crystals
+ [46] The Mind's Eye
+ [46] Saving Yenniku
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated for Cataclysm.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

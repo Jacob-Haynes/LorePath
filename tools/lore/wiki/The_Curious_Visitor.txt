@@ -1,0 +1,59 @@
+title: The Curious Visitor
+revision: 6006519
+part: whole
+quest: 392
+url: https://warcraft.wiki.gg/wiki/The_Curious_Visitor
+
+This quest is part of the Lescovar Incident quest chain.
+
+
+== Objectives ==
+Bring the Sealed Description of Thredd's Visitor to Baros Alexston in Stormwind. 
+
+ [Sealed Description of Thredd's Visitor] (provided)
+
+
+== Description ==
+During the first years of Thredd's imprisonment, he never had any visitors. I figured that he was no longer of use to the Brotherhood, so they abandoned him.
+Anyway, a few months ago, that all changed; he started to get regular visits... once, maybe twice a week. It was a strange man—the quiet type. I had my suspicions, but all his papers checked out.
+His documents claimed his name was Maelik; here's his description. I don't think he'll be coming to visit Thredd anymore. 
+
+
+== Rewards ==
+You will receive:
+
+600 XP (or 3 60 at level 70)
++25 reputation with Stormwind
+
+
+== Progress ==
+Yes, <name>? What have you found?
+
+
+== Completion ==
+Hmm. Maelik? No, the name doesn't sound familiar and neither does this description. But it could be anybody! A former Stonemason, one of the Defias Brotherhood... Though if he is as well connected as Thelwater suggests, perhaps someone else might recognize him. Let me think.
+
+
+== Progression ==
+ [22] The Unsent Letter
+ [22] Bazil Thredd
+ [29D] The Stockade Riots
+ [29] The Curious Visitor
+ [29] Shadow of the Past
+ [31] Look to an Old Friend
+ [31] Infiltrating the Castle
+ [31] Items of Some Consequence
+ [31] The Attack!
+ [31] The Head of the Beast
+ [31] Brotherhood's End
+ [31] An Audience with the King
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,58 @@
+title: Forsaken Aid
+revision: 6469210
+part: whole
+quest: 1064
+url: https://warcraft.wiki.gg/wiki/Forsaken_Aid
+
+== Objectives ==
+Speak with Apothecary Zamah in the Pools of Vision in Thunder Bluff.
+
+
+== Description ==
+The tauren have a bond with the land, and it pains me to hear of Stonetalon's plight. But I fear that to heal the land, we must first remove the disease upon it.
+Is it not fortunate, then, that the Forsaken are allied with us? They know much of disease. I believe they can aid us, and by doing so they will strengthen the trust between our people.
+Speak with Apothecary Zamah. She is a scholar and an emissary of the Forsaken. You will find her in the Pools of Vision below the Spirit Rise.
+
+
+== Rewards ==
+You will receive:
+
+270 XP (or 2 10 at max level)
++25 reputation with Thunder Bluff
+
+
+== Completion ==
+Magatha sent word of your coming, <name>. Although my heart beats no longer, I still feel sorrow for the spirits of Stonetalon.
+The Forsaken are eager to offer what help we can.
+
+
+== Notes ==
+Upon accept
+Magatha Grimtotem summons a messenger...
+A Serpent Messenger appears.
+Magatha Grimtotem says: Go, my servant.  Send word of Stonetalon to Apothecary Zamah.
+The Serpent Messenger flies toward Apothecary Zamah.
+With Apothecary Zamah
+Serpent Messenger gives message to Apothecary Zamah.
+Apothecary Zamah smiles.
+
+
+== Progression ==
+ [17] The Spirits of Stonetalon
+ [19] Goblin Invaders
+ [23] Shredding Machines &  [18] The Elder Crone
+ [18] Forsaken Aid
+ [18] Journey to Tarren Mill
+ [23] Blood of Innocents
+ [23] Return to Thunder Bluff
+ [23] The Flying Machine Airport
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

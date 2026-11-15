@@ -1,0 +1,6 @@
+title: Stalvan Mistmantle
+revision: 6947759
+part: intro
+url: https://warcraft.wiki.gg/wiki/Stalvan_Mistmantle
+
+Stalvan Mistmantle is an undead human found at Manor Mistmantle in Duskwood.

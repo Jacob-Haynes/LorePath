@@ -1,0 +1,62 @@
+title: Drowned City
+revision: 6978965
+part: whole
+url: https://warcraft.wiki.gg/wiki/Drowned_City
+
+The Drowned City is a Forever-exclusive dungeon, intended for level 35-42 players located in Stranglethorn Vale. Quests are available starting at level 30, but the final boss is at level 40, so don't go in early.
+
+
+== Getting there ==
+
+The entrance to the dungeon is underwater, located at  south of the Haunted isle, due west from Grom'gol Base Camp.
+The nearest neutral flight path is Booty Bay, while Horde characters can fly in from Grom'gol, and Alliance characters should connect from Booty Bay, but Darkshire in Duskwood is the next-closest flight path.
+
+
+== Quests ==
+Alliance quests start in the Rebel Camp and Dalaran. Horde quests start in Grom'gol Base Camp and the Skywatcher Plateau in Mulgore. Neutral quests start in Booty Bay.
+
+Ancient Gurubashi Secrets
+Magics of the Drowned City
+ [33] The Second Rebellion &  [34] Bad Medicine →  [40] Troll Witchery → Take Two With Water
+Ancient Gurubashi Idol
+The Drowned City (quest) → Enemies in the Water → The Only Good Brinescale...
+Shady Saltseers
+The Saltseer Captain
+
+
+== Encounters ==
+
+Zul'Alai
+Var'Taka
+Primeval Elemental
+Captain Dreadrise
+Deathless Marrow
+Min'loth the Serpent
+Umbra (rare)
+Gill (rare)
+
+
+== Loot ==
+
+
+=== Boss drops ===
+
+
+=== Trash mob drops ===
+
+
+=== Quest rewards ===
+
+
+== Patch changes ==
+ Hotfix (2026-11-13): Non-boss enemies now respawn 2 hours after being killed (was 1 hour). 
+ Hotfix (2026-11-09): Fixed an issue that was causing creatures inside the Drowned City to do about 30% more damage than intended. 
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+Wago

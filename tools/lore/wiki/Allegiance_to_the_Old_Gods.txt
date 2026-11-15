@@ -1,0 +1,51 @@
+title: Allegiance to the Old Gods
+revision: 6319557
+part: whole
+quest: 6564
+url: https://warcraft.wiki.gg/wiki/Allegiance_to_the_Old_Gods
+
+Allegiance to the Old Gods brings notice of dark tidings in Blackfathom Deeps to Zoram'gar Outpost.
+
+
+== Objectives ==
+Bring the Damp Note to Je'neu Sancrea in Ashenvale.
+
+ [Damp Note] (provided)
+
+
+== Description ==
+Some poor handwriting is scrawled on the crumpled up note:
+"Yes, tell all the priestesses to bring the crystals to me. The water elemental spirits are strong within them and they will aid our aquamancers greatly in their own summonings.
+By controlling the power within the crystals, we will appease Aku'Mai. One day we will have enough power to bring Aku'Mai back to us and the world will return to its greatest era! An era of rule by the Old Gods!"
+
+
+== Rewards ==
+You will receive:
+
+11
++150 reputation with Darkspear Trolls
+1050 XP
+
+
+== Progress ==
+Yes, <name>? What is it you need? There is still much I must learn about the crystals the naga are gathering.
+
+
+== Completion ==
+This is interesting indeed. I am glad you have brought it to my attention.
+Now we have a name for our troubles... Lorgus Jett.
+
+
+== Progression ==
+ [22D] Allegiance to the Old Gods
+ [26D] Allegiance to the Old Gods
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

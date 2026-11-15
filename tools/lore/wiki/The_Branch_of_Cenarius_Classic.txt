@@ -1,0 +1,49 @@
+title: The Branch of Cenarius (Classic)
+revision: 6314505
+part: whole
+quest: 1031
+url: https://warcraft.wiki.gg/wiki/The_Branch_of_Cenarius_%28Classic%29
+
+== Objectives ==
+Kill Geltharis and return the Branch of Cenarius to Illiyana at Forest Song.
+
+ [Branch of Cenarius]
+
+
+== Description ==
+Anilia puts her hands on your shoulders and draws you close. Gasping, she points towards the arch to the north, before her eyes close and her last wheezing breath leaves her body. "He has taken it... Geltharis..." You know in your heart that Anilia's dying wish is to see the Branch of Cenarius back in dryad hands.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Faerie Mantle]
+ [Brightscale Girdle]
+You will also receive:
+
+2550 XP (or 15 60 at max level)
++250 reputation with Darnassus
+
+
+== Progress ==
+Have you found them? What did Anilia say? Where is she?
+
+
+== Completion ==
+Anilia died? No... that can't be! It was just yesterday that we were running and playing together in the woods.
+I guess those days are over...
+
+
+== Progression ==
+ [32] Vile Satyr! Dryads in Danger!
+ [32] The Branch of Cenarius
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

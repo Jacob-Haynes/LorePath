@@ -1,0 +1,75 @@
+title: Assault on Fenris Isle
+revision: 6979386
+part: whole
+quest: 442
+url: https://warcraft.wiki.gg/wiki/Assault_on_Fenris_Isle
+
+Assault on Fenris Isle is part of The Master of Fenris Isle quest chain.
+This quest has been noted as "doable with 2 level 24 people, or a full group of level 16s."  Some people report having soloed this at 24... with a death or two involved.
+
+
+== Objectives ==
+Bring Thule's Head to High Executor Hadrec at the Sepulcher.
+
+ [Thule's Head]
+
+
+== Description ==
+Now is the time to assault the Scourge's place of strength in Silverpine: Fenris Isle.
+You must again go to the Isle and destroy Thule Ravenclaw. I want his head!
+This mission is as dangerous as it is vital, <name>. You must not fail.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [High Robe of the Adjudicator]
+ [Talonstrike]
+ [Gnollhide Pants] 
+ [Gnoll Shackles] 
+You will also receive:
+
+1950 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+The Scourge cannot be allowed to remain in Silverpine, <name>. Come back to me when you have proof of Thule's death.
+
+
+== Completion ==
+The death of Thule Ravenclaw was no small event, <name>. Renferrel tells me that the energies released when you destroyed Thule were felt even as far as the Sepulcher.
+Your actions ring through the ranks of the Forsaken. Your value to us grows.
+
+
+== Notes ==
+One way of avoiding the large number of mobs between you and Thule Ravenclaw is by dying just inside the entrance, and resurrecting on top of the roof.
+Once on the roof face north and you want to go down the right hand side spire, there are usually a few mobs on the way, level 16-19, go down all the staircases, kill every mob and go down a smaller row of steps, not a staircase. Eventually, you will enter a big communal hall with 1 or 2 mobs and of course Thule Ravenclaw at level 20. 
+
+
+=== Fighting Thule ===
+Thule has a minion that he can resummon, so you will need to fight both him and his minion at the same time.
+Thule casts Hex of Ravenclaw, which reduces your DPS and increases his. You are given  [Bethor's Potion] in a previous quest, which can remove this hex. (There are likely other means of removing it as well.)
+Note that, as a humanoid, Thule Ravenclaw can be feared and polymorphed.
+
+
+== Progression ==
+ [14] The Dead Fields
+ [16] The Decrepit Ferry
+ [16] Rot Hide Clues
+ [17] Rot Hide Ichor
+ [17] Rot Hide Origins
+ [16] Thule Ravenclaw
+ [16] Report to Hadrec
+ [20] Assault on Fenris Isle
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.3.0 (2007-11-13):    No longer a group quest, and is also lower level.
+
+
+== External links ==
+
+Wowhead
+WoWDB

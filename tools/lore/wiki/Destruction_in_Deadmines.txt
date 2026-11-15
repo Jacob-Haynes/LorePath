@@ -1,0 +1,59 @@
+title: Destruction in Deadmines
+revision: 6881849
+part: whole
+quest: 92753
+url: https://warcraft.wiki.gg/wiki/Destruction_in_Deadmines
+
+== Objectives ==
+Find the forge hidden in the Deadmines, and plant the Extra-Destructive Explosives nearby. Then, meet up with Alba Fairmoon at the Deadmines exit.
+
+Explosives placed
+Extra-Destructive Explosives (provided)
+
+
+== Description ==
+The source of the poison is likely a large metallurgical forge of some kind. Find a way into the Deadmines and locate the forge, then place the explosives.
+I will wait for you in the hills behind Moonbrook. Once you return, we can detonate the explosives. Hopefully with the forge gone, the land can begin to heal.
+
+
+== Rewards ==
+You will receive:
+
+4,050 XP
++50 reputation with Stormwind
+
+
+== Progress ==
+...
+
+
+== Completion ==
+...
+
+
+== Notes ==
+...
+
+
+== Progression ==
+ [12] Testing the Wells
+ [12] Murloc Gills
+ [14] The State of the Mines
+ [16] Moonbrook Espionage
+ [16] Explosive Consultation
+ [16] A Dynamite Plan
+ [16] Detonation at a Distance
+ [16] Detonation at a Distance
+ [16] Explosive Consultation
+ [18D] Destruction in Deadmines
+ [18] Destruction in Deadmines
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

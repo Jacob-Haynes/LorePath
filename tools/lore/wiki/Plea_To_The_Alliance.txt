@@ -1,0 +1,42 @@
+title: Plea To The Alliance
+revision: 5586298
+part: whole
+quest: 634
+url: https://warcraft.wiki.gg/wiki/Plea_To_The_Alliance
+
+== Objectives ==
+Seek out Captain Nials at Refuge Pointe.
+
+
+== Description ==
+I ask of you one more small favor, <class>. We await the reserves of Ironforge. However, Roggo has knowledge of an Alliance camp to the north in Arathi Highlands at Refuge Pointe.
+Travel there and seek out Captain Nials. Ask the good Captain if the Alliance can spare some soldiers to help us reclaim Dun Modr and the Thandol Span.
+
+
+== Rewards ==
+You will receive:
+
+1250 XP (or 7 80 at level 70)
+
+
+== Completion ==
+My condolences go out to Longbraid and his brave soldiers.  The news of the Thandol Span tragedy and the fall of Dun Modr hangs heavy in my heart.
+But Stromgarde has fallen!  Hence our presence here at Refuge Pointe.  We are faced with retaking our own great city.
+Honor and duty require that we do not leave the Highlands until Stromgarde raises the mighty banner of the King once again. I will send word to Longbraid that he is on his own...
+
+
+== Progression ==
+ [31] The Thandol Span
+ [31] The Thandol Span
+ [31] The Thandol Span
+ [31] Plea To The Alliance
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

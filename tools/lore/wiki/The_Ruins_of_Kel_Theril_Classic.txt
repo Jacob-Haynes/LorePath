@@ -1,0 +1,46 @@
+title: The Ruins of Kel'Theril (Classic)
+revision: 6307976
+part: whole
+quest: 5244
+url: https://warcraft.wiki.gg/wiki/The_Ruins_of_Kel%27Theril_%28Classic%29
+
+== Objectives ==
+Speak with Jaron Stoneshaper in Starfall Village.
+
+
+== Description ==
+The story behind Kel'Theril is one of a cursed race, bound to the place where they attempted an unfortunate ritual...
+The highborne that you will find there once stole a sacred artifact, believing that they could siphon its power for themselves, becoming even more powerful. In their efforts, the relic shattered in a huge explosion, driving the pieces below the ice of the lake...
+Speak with Jaron Stoneshaper if you'd like to learn more; he has recently visited the area and can tell you more.
+
+
+== Rewards ==
+You will receive:
+
+575 XP (or 3 60 at max level)
++10 reputation with Ironforge
+
+
+== Completion ==
+Well, sure, I can tell you more about Kel'Theril. Mind you now, I'm no historian, but I can tell ya about what I saw there...
+
+
+== Progression ==
+ [56] To Winterspring!
+ [56] The Ruins of Kel'Theril
+ [56] Troubled Spirits of Kel'Theril
+ [56] Fragments of the Past
+ [57] Fragments of the Past
+ [58] Tormented By the Past
+ [58] Remorseful Highborne
+ [58] The Crystal of Zin-Malor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

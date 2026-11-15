@@ -1,0 +1,60 @@
+title: Linken's Adventure
+revision: 5632948
+part: whole
+quest: 3961
+url: https://warcraft.wiki.gg/wiki/Linken%27s_Adventure
+
+== Objectives ==
+Take the Silver Totem of Aquementas to Linken in Marshal's Refuge.
+
+ [Silver Totem of Aquementas] (provided)
+
+
+== Description ==
+To think all this time that the reason Linken came here was to rid us of Blazerunner... He seems like such an ordinary guy, but I did notice that he's not at all interested in any of my experiments or gadgets like most gnomes would be. He must be a true warrior at heart.
+Bring the totem to him. See if that helps him remember why he came here.
+
+
+== Rewards ==
+You will receive:
+
+3900 XP
+
+
+== Progress ==
+Hi, again, <name>!
+
+
+== Completion ==
+Did J.D. help you at all?
+
+
+== Progression ==
+ [52] It's a Secret to Everybody
+ [52] It's a Secret to Everybody
+ [52] It's a Secret to Everybody
+ [52] The Videre Elixir
+Mandatory quest:  [52] The Videre Elixir
+ [52] Meet at the Grave
+ [52] A Grave Situation
+ [52] Linken's Sword
+ [52] A Gnome's Assistance
+ [52] Linken's Memory
+ [54] Silver Heart
+ [54] Aquementas
+ [54] Linken's Adventure
+ [56G] It's Dangerous to Go Alone
+
+
+== Trivia ==
+This quest's name is a reference to the second game in the legend of Zelda series, the adventure of Link.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

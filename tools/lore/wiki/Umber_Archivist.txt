@@ -1,0 +1,51 @@
+title: Umber, Archivist
+revision: 5852980
+part: whole
+quest: 6844
+url: https://warcraft.wiki.gg/wiki/Umber%2C_Archivist
+
+== Objectives ==
+Take the Encrusted Silithid Object to Umber - the Cenarion Circle's archivist - in the village of Nighthaven, Moonglade.
+
+ [Encrusted Silithid Object] (provided)
+
+
+== Description ==
+There's plenty to do here still, but I think taking this back to the Circle for analysis is key. Trust me - the work will still be here once this is all said and done. If it's a journal inside this sticky chitin, then the Circle would finally have a window into the past!
+Take this to the Circle's archivist in Nighthaven. His name is Umber, and the man's brilliant. Touched, sure, but brilliant nonetheless! Umber's salvaged tomes in far worse shape than this. If it can be saved, he can do it.
+
+
+== Rewards ==
+You will receive:
+
+4350 XP
++75 reputation with Cenarion Circle
+
+
+== Progress ==
+Why, hello there!  Hrmm...
+Let me be a little honest with you, friend... you smell a bit ripe.  Whiffy, one might say.  Now I'm not making a personal assailment of your being.  I'm just saying... in the future, you may want to freshen up a little after coming in from the field.  It will make those first impressions a little more positively impressionable!
+Anyhoo... what can I do for you?
+
+
+== Completion ==
+Well great monkey toads!  What have you got here?  It's sort of book shaped, I guess... I'll try and crack this shell on it.
+Layo sent you to me from Silithus?  I've only heard very hushed rumblings - which I guess aren't all that hushed when you think about it - about the horrors that are going on out there.  Couple that with my lack of pleasure for anything bug-like, and you've got the recipe for me needing to stay here with the books!
+
+
+== Progression ==
+ [55] The New Frontier
+ [55] The New Frontier /  [55] The New Frontier
+ [55] Rabine Saturna /  [55] Rabine Saturna
+ [55] Wasteland
+ [55] The Spirits of Southwind
+ [57] Hive in the Tower
+ [57] Umber, Archivist
+ [57] Uncovering Past Secrets
+ [57] Under the Chitin Was...
+
+
+== External links ==
+
+Wowhead
+WoWDB

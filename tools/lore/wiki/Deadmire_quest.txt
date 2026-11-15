@@ -1,0 +1,47 @@
+title: Deadmire (quest)
+revision: 6400380
+part: whole
+quest: 1205
+url: https://warcraft.wiki.gg/wiki/Deadmire_%28quest%29
+
+Deadmire is another hunting quest given by Melor Stonehoof, in which you must travel to Dustwallow Marsh and kill an ancient crocodile named Deadmire.
+
+
+== Objectives ==
+Bring Deadmire's Tooth to Melor Stonehoof in Thunder Bluff.
+
+ [Deadmire's Tooth]
+
+
+== Description ==
+Deadmire is an ancient crocolisk in Dustwallow marsh. And it is his time to die.
+Old bones grind as he pulls his huge body through the swamp, and although he still moves with the strength and speed of youth, his aging body tortures the great spirit within it, a spirit whose flame will not waver.
+Yet now he lives in constant, maddening pain. You must end the life of this noble creature, <name>. You must lead Deadmire to peace.
+
+
+== Rewards ==
+You will receive:
+
+4,590 XP
++100 or +250 reputation with Thunder Bluff
+
+
+== Progress ==
+Do you have the tooth of Deadmire, <name>? Have you ended the creature's suffering?
+
+
+== Completion ==
+Very good, <name>.
+I am sure the hunt was not easy, but it is good to know the beast's pain has finally ended.
+
+
+== Notes ==
+The path of the hunter is one that renounces mindless killing and instead teaches spiritual union with the prey. It is said that hunters who defeat their victim honourably become one with it, acquiring some of its abilities and reaching a deeper understanding of the world of nature surrounding themselves. The path of the hunter is also, at times, the path of mercy.
+Deadmire, an old and massive crocolisk, wanders the shores of swamps in the Dustwallow Marsh. Although still immensely strong compared to its kind, age has not been kind to this ancient creature - it now moves its massive body slowly, suffering excruciating pain in its broken bones and weakened limbs. Those seeking to advance in the ways of the hunter are said to be searching for this noble crocolisk, charged with the grim and honourable task of ending its agony.
+Also, you may find Deadmire around an island that is just north of Stonemaul Ruins. Start at Stonemaul Ruins and travel north up the river until you find him, he is a big white crocolisk.
+
+
+== External links ==
+
+Wowhead
+WoWDB

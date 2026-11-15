@@ -1,0 +1,59 @@
+title: In Defense of the King's Lands (Classic)
+revision: 6969241
+part: whole
+quest: 224
+url: https://warcraft.wiki.gg/wiki/In_Defense_of_the_King%27s_Lands_%28Classic%29
+
+In Defense of the King's Lands is the first quest in the Alliance In Defense of the King's Lands quest chain, battling troggs in Loch Modan.
+
+
+== Objectives ==
+Mountaineer Cobbleflint of the southern guard tower in the Valley of Kings wants you to kill 10 Stonesplinter Troggs and 10 Stonesplinter Scouts.
+
+Stonesplinter Trogg slain (10)
+Stonesplinter Scout slain (10)
+
+
+== Description ==
+We need to protect the Loch, <name>! With so many of the King's soldiers fighting valiantly on remote battlefields, we've become overwhelmed on the home front. Troggs are tunneling up from every crevice! The Trogg infestation poses the largest threat to Ironforge. These disgusting mutants must be destroyed.
+We need you, brave adventurer, to venture forth and lay waste to the Trogg threat. Slay 10 Stonesplinter Troggs and 10 Stonesplinter Scouts and report back.
+
+
+== Rewards ==
+You will receive:
+
+5
+900 XP
++100 or +250 reputation with Ironforge
+5  [Dalaran Sharp]
+ [Cheese Knife] 
+
+
+== Progress ==
+Loch Modan is under siege, <name>! We need every able-bodied member of the Alliance to aid our cause. Have you killed 10 Stonesplinter Troggs and 10 Stonesplinter Scouts yet?
+
+
+== Completion ==
+Well done, <name>! You demonstrated uncanny courage on the battlefield. Our war against the Troggs will be won with efforts such as yours. You have served King Magni well.
+If you fancy yourself well-suited for this kind of adventuring, I suggest you speak with Mountaineer Gravelgaw. The Captain has him assigned to a rough patrol that I am sure he can use some help with. Check with Gravelgaw just inside the tower.
+
+
+== Notes ==
+Both Troggs and Scouts can be found in 3 camps in Stonesplinter Valley between  and . The entrance to the valley is near  on the road south of Thelsamar.
+
+
+== Progression ==
+ [12] In Defense of the King's Lands
+ [15] In Defense of the King's Lands
+ [15] In Defense of the King's Lands
+ [17] In Defense of the King's Lands
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

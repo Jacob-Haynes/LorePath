@@ -1,0 +1,42 @@
+title: The Lost Dwarves (quest)
+revision: 6703372
+part: whole
+quest: 2398
+url: https://warcraft.wiki.gg/wiki/The_Lost_Dwarves_%28quest%29
+
+== Objectives ==
+Find Baelog in Uldaman.
+
+
+== Description ==
+The dig site at Uldaman wasn't always overrun. We Ironforge dwarves used to control the area, but... that was before the troggs came. They came so fast and in such numbers that not even dwarven might could stop them!
+In fact, their attack was so sudden that I fear some of our people may be trapped behind enemy lines.
+My friend Baelog led a small band of dwarves deep within the site just before the troggs showed up. If he and his company live, then I want you to find them.
+
+
+== Rewards ==
+You will receive:
+
+5
+440 XP
+
+
+== Completion ==
+It's about time you showed up!  I was in danger of losing a bet with Olaf!
+He wagered that his beard would grow to his knees before he saw another living <race>.  Well here you are, and as you can see Olaf's beard has a few more inches to go.
+Thanks, <name>.  I'll split the winnings with you.
+
+
+== Progression ==
+ [40D] The Lost Dwarves
+ [40D] The Hidden Chamber
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,44 @@
+title: Reassignment
+revision: 6218191
+part: whole
+quest: 563
+url: https://warcraft.wiki.gg/wiki/Reassignment
+
+Reassignment is an Alliance quest that involves delivering a letter to Stormwind Keep.
+
+
+== Objectives ==
+Deliver Farren's Report to Major Samuelson in Stormwind Keep.
+
+ [Farren's Report] (provided)
+
+
+== Description ==
+It shouldn't be a problem getting my report seen. The new captain of the guard, Major Samuelson, was my mentor while I was stationed in Stormwind. It should give him more than enough excuse to have me transferred back to the city. I'll need you to carry my report to him, though... wouldn't want ol' Redpath to catch on.
+
+
+== Progress ==
+Greetings, citizen. May the Stormwind city guard be of assistance?
+
+
+== Completion ==
+What's this? Ah... so my attentive pupil has applied himself to the problem of the naga in Southshore. Thank you for bringing this to me, I will certainly take it into account when I review personnel assignments in the next month.
+
+
+== Progression ==
+ [30] Down the Coast
+ [32] Farren's Proof
+ [32] Farren's Proof
+ [32] Farren's Proof
+ [32] Stormwind Ho!
+ [32] Reassignment
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,45 @@
+title: Find Ranshalla
+revision: 5612048
+part: whole
+quest: 979
+url: https://warcraft.wiki.gg/wiki/Find_Ranshalla
+
+Find Ranshalla is the 2nd quest in the Moontouched Wildkin quest chain.
+
+
+== Objectives ==
+Find Ranshalla in eastern Winterspring.
+
+
+== Description ==
+Yes, yes, these feathers seem to hold the same magical enchantment that I noticed previously... While I am not certain what we might find, I urge you to continue searching for answers, <name>.
+A colleague of mine recently traveled into Winterspring to observe the wildkin there, in their own habitat. Why don't you catch up with her and see what she has found?
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+4350 XP (or 26 40 at level 70)
++75 reputation with Darnassus
+
+
+== Completion ==
+Hi! Erelas sent you? Great, I was just preparing to travel up to the caves now, and I wouldn't mind company.
+
+
+== Progression ==
+ [47] Favored of Elune?
+ [55] Moontouched Wildkin
+ [57] Find Ranshalla
+ [59] Guardians of the Altar
+ [57] Wildkin of Elune
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

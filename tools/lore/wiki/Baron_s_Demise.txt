@@ -1,0 +1,46 @@
+title: Baron's Demise
+revision: 5995228
+part: whole
+quest: 523
+url: https://warcraft.wiki.gg/wiki/Baron%27s_Demise
+
+== Objectives ==
+Bring the Head of Baron Vardus to Magistrate Maleb in Southshore. 
+
+ [Head of Baron Vardus]
+
+
+== Description ==
+The contract you recovered was signed by Baron Vardus, a noble of the former kingdom of Alterac, and one known for a cold heart and brutal practices. I'm not surprised someone like the Baron was behind this.
+Find this man. Find him, and bring him to justice. He must be among the Syndicate haunts - perhaps at the ruins of Strahnbrad, or perhaps within the valley north of them.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+3900 XP (or 23 40 at level 70)
+1
++250 reputation with Stormwind
+
+
+== Progress ==
+Baron Vardus cannot think Southshore will allow him to send his thugs against us with impunity.  I want his head!
+
+
+== Completion ==
+Thank you, <name>.  My head rests a little easier, knowing that villain lost his.
+
+
+== Progression ==
+ [38] Assassin's Contract
+ [40] Baron's Demise
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

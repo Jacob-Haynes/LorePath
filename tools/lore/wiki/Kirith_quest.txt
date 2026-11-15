@@ -1,0 +1,83 @@
+title: Kirith (quest)
+revision: 5619885
+part: whole
+quest: 2721
+url: https://warcraft.wiki.gg/wiki/Kirith_%28quest%29
+
+This quest is part of the main Blasted Lands quest chain.
+
+
+== Objectives ==
+Find out what became of Lieutenant Kirith.
+
+
+== Description ==
+As one chapter of your adventure closes, another one begins, <name>.
+One of my men is still unaccounted for, lost somewhere in the Blasted Lands. I am talking about Lieutenant Kirith, of course.
+As I had mentioned earlier, we were both imprisoned and tortured by Allistarj, but poor Kirith, his strength of will faltered.  I could hear the experiments from my cage; the tortured screams rang through the halls of the cave. That was the last I saw or heard of Kirith.
+
+
+== Completion ==
+Trebor? Trebor sent you?
+
+
+== Rewards ==
+6200 XP
+3 72 or 54 at Level 80
+One towards  Loremaster of Eastern Kingdoms
+One towards  3000 Quests Completed (or the earlier ones, if not completed)
+
+
+== Notes ==
+For this quest, you need to kill Kirith the Damned, a giant ghostly felhound in the Serpent's Coil in the eastern part of the Blasted Lands. He's at the very back of the cave.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+Kirith the Damned for combat strategies
+
+
+== External links ==
+
+Wowhead
+WoWDB

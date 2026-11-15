@@ -1,0 +1,48 @@
+title: Deathstalkers in Shadowfang
+revision: 6956883
+part: whole
+quest: 1098
+url: https://warcraft.wiki.gg/wiki/Deathstalkers_in_Shadowfang
+
+== Objectives ==
+Find the Deathstalker Adamant and Deathstalker Vincent.
+
+
+== Description ==
+In preparation for an assault on Shadowfang, two deathstalkers were sent to the keep to gather intelligence. It has been many days and they have not returned, but we must receive their report if we're to have any hope of a successful attack!
+So here is your task, <name>. Go to Shadowfang Keep to the south and find the Deathstalkers Adamant and Vincent. Find them, and if they require aid then give it.
+This mission is as dangerous as is it critical, <name>. Do not fail.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Ghostly Mantle]
+ [Tanned Shoulderpads] 
+ [Bronzed Shoulderguards] 
+You will also receive:
+
+18
+2,000 XP
++100 or +500 reputation with Undercity
+
+
+== Completion ==
+Vincent's body lies broken, and still.
+Although Deathstalker Adamant will send his report to Hadrec... whatever additional details Vincent gained must remain with him.
+But clutched in his hand is a small trinket...
+
+
+== Notes ==
+Deathstalker Vincent is lying dead on the other side of the gate, in the courtyard.
+The quest actually has nothing to do with Deathstalker Adamant, but you must talk to him in order for him to open the door so you can progress through the instance.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

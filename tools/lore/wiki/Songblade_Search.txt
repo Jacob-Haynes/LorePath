@@ -1,0 +1,46 @@
+title: Songblade Search
+revision: 6938349
+part: whole
+quest: 95772
+url: https://warcraft.wiki.gg/wiki/Songblade_Search
+
+== Objectives ==
+Look for Dorin Songblade's brother, Daewyn, in Whelgar's Excavation Site.
+
+
+== Description ==
+Me brother tried draggin' me off tae the Wetlands with some diggin' crew out o' Loch Modan. Said they were headin' into hills no dwarf's ever set boot in for some sort o' excavation.
+Aye, I'd 'ave gone, if I wasn't already behind on this pile o' girdles I've got to refit.
+Daewyn normally writes after he sends off, though. Haven't heard a thing, gives me a strange feelin' this time.
+If yer marchin' that way, mind checking in on me brother?
+
+
+== Rewards ==
+You will receive:
+
+6,150 XP
+
+
+== Completion ==
+This dwarf bears a striking resemblance to Dorin Songblade. The gun in his hands has the letters "DLS" carved into the stock.
+
+
+== Progression ==
+ [21] Daily Delivery →  [22] Young Crocolisk Skins →  [28D] Highland Hides and  [26] Apprentice's Duties
+ [31D] Horrors in the Highland
+ [31D] Seeking Caitlin →  [31D] Lost in the Thicket Things →  [31D] Heartwoven
+ [31D] Lost Relic Carry →  [31D] Prehistoric Prism
+ [31D] Songblade Search →  [31D] Fallen in the Fen
+ [31D] Changing Tastes
+ [31D] Elder Knowledge →  [31D] Earthen Echo
+ [31D] Dragonmaw Rumors →  [31D] Open the Maw
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

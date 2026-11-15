@@ -1,0 +1,45 @@
+title: In Eranikus' Own Words
+revision: 6839661
+part: whole
+quest: 3512
+url: https://warcraft.wiki.gg/wiki/In_Eranikus%27_Own_Words
+
+== Objectives ==
+Travel to the eastern part of Winterspring and speak with Umbranse the Spiritspeaker.
+
+
+== Description ==
+<Name>, our first step will be to devise a method to speak with Eranikus through the gem. He lies in a precarious state between sleep and death now, twisted within a weave of nightmares. Though the essence you have given me is badly tainted, there is a chance we can reach him.
+Travel far to the icy lands of eastern Winterspring and seek one of our mortal allies, Umbranse the Spiritspeaker. He is a human medium who speaks for the dead. Though Eranikus is not truly dead, he may be of aid to us still.
+
+
+== Rewards ==
+You will receive:
+
+6100 XP
+
+
+== Completion ==
+Itharius was wise to send you to me.  While he is not dead as you understand death, Eranikus will soon give us advice in his own words.  For now though, I cannot directly help you... at least not yet.
+I will lend my skill at death-speaking to you, but first I need the help of one who - unlike me - is not limited by the frailties of old age.  My most potent augury device has been taken from me against my will, and unless I have it back we will be at a loss to help Eranikus.
+
+
+== Notes and trivia ==
+Umbranse can be found in a small building northeast of Everlook at coordinates 67,27.
+This quest chain ends very abruptly here, which had frustrated some players, having turned in a powerful trinket in the previous step for little reward. Blizzard representatives, when asked, hinted that the quest chain was not complete and would be extended later. While that never happened, Eranikus' story continued with the  [Green Scepter Shard] questline for the Gates of Ahn'Qiraj.
+
+
+== Progression ==
+ [55] The Essence of Eranikus
+ [55] The Essence of Eranikus
+ [55] In Eranikus' Own Words
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

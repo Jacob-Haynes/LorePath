@@ -1,0 +1,54 @@
+title: Thadius Grimshade (quest)
+revision: 5632985
+part: whole
+quest: 2990
+url: https://warcraft.wiki.gg/wiki/Thadius_Grimshade_%28quest%29
+
+== Objectives ==
+Bring Sharpbeak's Feather to Thadius Grimshade in the Blasted Lands.
+
+ [Sharpbeak's Feather] (provided)
+
+
+== Description ==
+Take this feather to Thadius Grimshade, the diviner. He left Aerie Peak years ago to pursue darker knowledge, but in his heart he is still a Wildhammer!
+And perhaps his talents can help us find Sharpbeak.
+This feather was taken from the nest where the gryphon child sleeps. If you give it to Thadius then, with luck, he can use his divining magics to find Sharpbeak.
+Good luck, <name>. You will find Thadius in the Blasted Lands, in the mage tower of Nethergarde Keep.
+
+
+== Rewards ==
+You will receive:
+
+2100 XP (or 12 at level 70)
++75 reputation with Ironforge
+ +50 reputation with Wildhammer Clan
+
+
+== Progress ==
+<Name>, you come bearing a gift?
+
+
+== Completion ==
+Ah, yes.  This feather belongs to a fine gryphon.  One destined for great things... if he can survive into adulthood undamaged.
+You wish to find him?  Then listen close, brave <class>...
+
+
+== Progression ==
+ [45] Witherbark Cages
+ [48] The Altar of Zul
+ [47] Thadius Grimshade
+ [47D] Nekrum's Medallion
+ [47] The Divination
+ [47] Return to the Hinterlands
+ [51] Saving Sharpbeak
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

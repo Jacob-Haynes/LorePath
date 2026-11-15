@@ -1,0 +1,41 @@
+title: Wanted: Gath'Ilzogg (quest)
+revision: 5587187
+part: whole
+quest: 169
+url: https://warcraft.wiki.gg/wiki/Wanted%3A_Gath%27Ilzogg_%28quest%29
+
+== Objectives ==
+Kill Gath'Ilzogg and bring his head to Magistrate Solomon in Lakeshire for the reward. 
+
+ [Head of Gath'Ilzogg]
+
+
+== Description ==
+Wanted! Gath'Ilzogg, Leader of the Blackrock attacks on Stonewatch Keep and raids against the township of Lakeshire.
+Gath'Ilzogg is extremely dangerous. He is reportedly holed up in the recently conquered keep plotting the Blackrock clan's further crimes against humanity. The orc infestation must be quelled at all costs. A gracious reward will be given to whatever brave soul can deliver the head of Gath'Ilzogg to Magistrate Solomon. 
+
+
+== Rewards ==
+You will receive:
+
+40
+2650 XP (or 16 20 at level 70)
++350 reputation with Stormwind
+
+
+== Progress ==
+What do you have there, <race>? 
+
+
+== Completion ==
+Fantastic work, <name>!  Gath'Ilzogg led those brutes into battle, killing many innocent humans.  Vindication is ours.  This is the first step in reclaiming the keep for the kingdom of Stormwind! 
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

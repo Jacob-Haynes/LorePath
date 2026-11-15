@@ -1,0 +1,8 @@
+title: Uldaman
+revision: 6945804
+part: intro
+url: https://warcraft.wiki.gg/wiki/Uldaman
+
+Uldaman (/ˈul.dəmɑːn/ OOL-də-mahn) is a huge and ancient, massive vault created by the titan keepers, buried deep within mountains of Khaz Modan. It is located in the Badlands, west of what was once the entrance to Loch Modan. Prior to the Third War, it was partially excavated by the dwarves from Ironforge, but has since fallen into the hands of the troggs and Dark Irons, who find the place ideal to dig for earthly riches. It was previously a titan-forged facility.
+Uldaman contains many artifacts for those willing to seek them out, primarily archaeologists and adventurers, who are slowly digging up this ruin of a titan-forged city. There are members of the Explorers' League, but also of the Reliquary, equally eager to get their hands on ancient treasures.
+A level 60-70 wing of Uldaman, the Legacy of Tyr was added in Dragonflight.

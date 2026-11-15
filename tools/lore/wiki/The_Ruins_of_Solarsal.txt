@@ -1,0 +1,42 @@
+title: The Ruins of Solarsal
+revision: 6713279
+part: whole
+quest: 2866
+url: https://warcraft.wiki.gg/wiki/The_Ruins_of_Solarsal
+
+== Objectives ==
+Explore the Ruins of Solarsal and investigate the presence of the naga there.
+
+
+== Description ==
+To our south are the Ruins of Solarsal; this is an area that far pre-dates modern times. We explored the ruins initially and found nothing of note; as such, we left it in peace.
+Very recently, the Hatecrest naga have occupied these ruins in alarming numbers. At first, we considered it as the precursor for an attack. Though that threat is still possible, we believe there might be something else going on.
+Go there, explore the ruins, and look for anything that stands out to you. Good luck, <name>.
+
+
+== Rewards ==
+You will receive:
+
+2700 XP (or 16 20 at max level)
++150 reputation with Darnassus
+
+
+== Completion ==
+Examining the gazebo reveals some interesting and unusual things in contrast to the surrounding ruins.
+First, the gazebo is clearly a more recent construction than the other objects in the ruins. Second, the gazebo has a small series of glyphs engraved into the sides of it; the glyphs repeat in their pattern, but it otherwise is unknown in origin and meaning. Third, the stone of the gazebo itself is warm to the touch.
+This certainly quantifies as "standing out" in the search of the ruins!
+
+
+== Progression ==
+ [43] The Ruins of Solarsal
+ [43] Return to Feathermoon Stronghold
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

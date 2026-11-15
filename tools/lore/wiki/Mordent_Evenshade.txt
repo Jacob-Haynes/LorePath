@@ -1,0 +1,6 @@
+title: Mordent Evenshade
+revision: 6888033
+part: intro
+url: https://warcraft.wiki.gg/wiki/Mordent_Evenshade
+
+Archmage Mordent Evenshade is the leader of the Shen'dralar Highborne that have reintegrated into night elven society.

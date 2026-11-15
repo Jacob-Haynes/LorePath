@@ -1,0 +1,47 @@
+title: The Ogres of Feralas (2)
+revision: 5586947
+part: whole
+quest: 2980
+url: https://warcraft.wiki.gg/wiki/The_Ogres_of_Feralas_%282%29
+
+== Objectives ==
+Rok Orhan in Camp Mojache wants you to kill 10 Gordunni Shaman, 10 Gordunni Warlocks, and 5 Gordunni Maulers.
+
+Gordunni Shaman slain (10)
+Gordunni Warlock slain (10)
+Gordunni Mauler slain (5)
+
+
+== Description ==
+Now that you have proven that you are a true fighter, I trust that you possess the courage to continue with the task at hand.
+Travel to the High Wilderness, southwest of here. There lie some abandoned and destroyed structures, on land that once belonged to the night elves. Look for these ruins, and when you see the withered trees and desecrated terrain, you will find the Gordunni. Push them back.
+These ogres are much stronger than the ones you faced previously, <name>. Be aware.
+
+
+== Progress ==
+Have you found the ruins, <name>?
+
+
+== Completion ==
+You have proven yourself to be a trustworthy and dependable ally, <name>. 
+
+
+== Rewards ==
+You will receive: 1 25
+380-3750 XP
+
+
+== Progression ==
+ [43] A Threat in Feralas
+ [43] The Ogres of Feralas
+ [44] The Ogres of Feralas
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

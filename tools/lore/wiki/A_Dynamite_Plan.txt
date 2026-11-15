@@ -1,0 +1,59 @@
+title: A Dynamite Plan
+revision: 6881834
+part: whole
+quest: 92749
+url: https://warcraft.wiki.gg/wiki/A_Dynamite_Plan
+
+== Objectives ==
+Obtain 10 Coarse Dynamite from crafting, trading, or the auction house, then return to Sprite Jumpsprocket in the Dwarven District of Stormwind.
+
+ [Coarse Dynamite] (10)
+
+
+== Description ==
+Industrial sabotage? You've got my attention!
+We'll start with some dynamite...
+
+
+== Rewards ==
+You will receive:
+
+4
+580 XP
++50 reputation with Stormwind
+
+
+== Progress ==
+...
+
+
+== Completion ==
+...
+
+
+== Notes ==
+...
+
+
+== Progression ==
+ [12] Testing the Wells
+ [12] Murloc Gills
+ [14] The State of the Mines
+ [16] Moonbrook Espionage
+ [16] Explosive Consultation
+ [16] A Dynamite Plan
+ [16] Detonation at a Distance
+ [16] Detonation at a Distance
+ [16] Explosive Consultation
+ [18D] Destruction in Deadmines
+ [18] Destruction in Deadmines
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

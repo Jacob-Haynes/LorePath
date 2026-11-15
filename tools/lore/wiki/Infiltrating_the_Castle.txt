@@ -1,0 +1,56 @@
+title: Infiltrating the Castle
+revision: 6176731
+part: whole
+quest: 2745
+url: https://warcraft.wiki.gg/wiki/Infiltrating_the_Castle
+
+This quest is part the Lescovar Incident quest chain.
+
+
+== Objectives ==
+Speak to Tyrion in Stormwind Castle. 
+
+
+== Description ==
+Hmm, an interesting tale, and not one to be taken lightly. Yeah, I can help you, but what you need to do is divvy out a form of justice that's not... legal, if you're to see this through to the end.
+Lescovar and Marzon need to be dealt with, and swiftly. Do you think you're capable of such a thing?
+You decide. If so, then make haste to the castle and find an old friend of mine, a gnome named Tyrion. He's been watching Lescovar now for a couple weeks. He should be able to help you end this. 
+
+
+== Rewards ==
+250 XP (or 1 50 at level 70)
+
+
+== Completion ==
+What the...?! Don't sneak up on me like that! And keep your voice down! What in the name of the Shadow are you doing sneakin' up on me for? Can't you see I'm busy, you daft fool?
+What do you mean, what am I doing? I'm waiting for the next Dark Portal to open, what the heck do you think I'm doing? Speak your peace and be off with you... 'fore the guards notice the two of us hiding in the bushes together. I have a reputation to maintain.
+
+
+== Notes ==
+Tyrion is in the garden in Stormwind Keep, the first left after you enter the castle.
+If Tyrion is missing the gold question mark over his head, then he is currently helping someone else with this mission. (Talking with him, he will tell you that he is currently busy.)  Wait a bit, and he will become available.
+
+
+== Progression ==
+ [22] The Unsent Letter
+ [22] Bazil Thredd
+ [29D] The Stockade Riots
+ [29] The Curious Visitor
+ [29] Shadow of the Past
+ [31] Look to an Old Friend
+ [31] Infiltrating the Castle
+ [31] Items of Some Consequence
+ [31] The Attack!
+ [31] The Head of the Beast
+ [31] Brotherhood's End
+ [31] An Audience with the King
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

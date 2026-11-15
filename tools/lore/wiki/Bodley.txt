@@ -1,0 +1,6 @@
+title: Bodley
+revision: 6348332
+part: intro
+url: https://warcraft.wiki.gg/wiki/Bodley
+
+Bodley is a gnome ghost quest giver located at the Blackrock Spire balcony in Blackrock Mountain. He was once part of the same mercenary company as Anthion Harmon, Falrin Treeshaper, and Theldren. Unfortunately, he was killed at Blackrock Spire, and even more unfortunately, he is stuck there in ghost form and nobody can see him. Unless they have the  [Extra-Dimensional Ghost Revealer], that is.

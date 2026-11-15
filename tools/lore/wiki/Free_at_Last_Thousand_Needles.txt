@@ -1,0 +1,66 @@
+title: Free at Last (Thousand Needles)
+revision: 6941971
+part: whole
+quest: 4904
+url: https://warcraft.wiki.gg/wiki/Free_at_Last_%28Thousand_Needles%29
+
+In Free at Last, you must escort Lakota Windsong away from the Grimtotem tauren of Darkcloud Pinnacle. Though mildly difficult, this quest offers some very good rewards for its level.
+
+
+== Objectives ==
+Escort Lakota Windsong from the Darkcloud Pinnacle, and then talk to Thalia Amberhide at Freewind Post.
+
+Escort Lakota Windsong from the Darkcloud Pinnacle.
+
+
+== Description ==
+Arnak thinks we're going to be married... but after I declined his offer he came back that night and kidnapped me. My brother tried to stop him, but Arnak was too strong. He... he slew my brother and then brought me here. My poor brother...
+<Name>, could you escort me out of the Darkcloud Pinnacle? Please... I need to get back to Thalia! She must be worried sick about me.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Windsong Cinch]
+ [Windsong Drape]
+You will also receive:
+
+2350 XP
++100 or +250 reputation with Thunder Bluff
+
+
+== Completion ==
+Thank you, <name>. Deep in my bones I knew that she would find her way back to me. She told me of your bravery and how you helped her escape. These items belonged to her brother. I know she would want you to have them.
+
+
+== Notes ==
+Talk to Lakota Windsong on Darkcloud Pinnacle. To get to Darkcloud Pinnacle, head south down the road from The Great Lift to where it splits. Turn left and walk a few paces, looking to your left. You should see a path leading up. Follow the path up to reach Darkcloud Pinnacle. The coordinates for the beginning of the path are 31:36. Lakota Windsong and Arnak Grimtotem are both located on the cliffs north of Darkcloud Pinnacle (near Razorfen Downs), which can be reached by a bridge from the northern-most needle. Arnak is the objective of the quest  [29] Wanted - Arnak Grimtotem. Lakota's coordinates are (37,26).
+Try to clear the way in front of Lakota, but be careful not to get too far ahead as it will cause you to fail the quest. At several points along Lakota's path, a group of tauren spawn and attack her. It may be best to do this quest with a small group (2-3 people).
+Lakota will head in as direct a route as possible to get down off Darkcloud Pinnacle. Once she reaches the bottom, the quest is complete. Head to Freewind Post and turn this quest in to Thalia Amberhide.
+Other quests you may want to do along with this one, since they also take place in Darkcloud Pinnacle:
+
+ [28] Grimtotem Spying - Get this from Cliffwatcher Longhorn in Freewind Post
+ [29] Wanted - Arnak Grimtotem - Get from a wanted sign in Freewind Post
+ [28] Arikara - this is part of a chain that begins with  [26] Alien Egg in Freewind Post
+Upon accept
+Lakota Windsong says: Be on guard... Arnak has some strange power over the Grimtotem... they will not be happy to see me escape.
+During escort
+Lakota Windsong says: Look out, the Grimtotem are upon us!
+Two Grimtotem Bandits attack.
+Lakota Windsong says: Here they come.
+Two Grimtotem Bandits attack.
+Lakota Windsong says: More Grimtotems are coming this way!
+Two Grimtotem Bandits attack.
+Escorted
+Lakota Windsong says: Finally, free at last... I must be going now, thanks for helping me escape. I can get back to Freewind Post by myself.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.2.0 (2004-12-18): Free at Last quest in Thousand Needles can no longer be activated by anyone other than the player that is escorting the Non-player Character.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

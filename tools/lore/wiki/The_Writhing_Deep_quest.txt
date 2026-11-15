@@ -1,0 +1,41 @@
+title: The Writhing Deep (quest)
+revision: 5587074
+part: whole
+quest: 4135
+url: https://warcraft.wiki.gg/wiki/The_Writhing_Deep_%28quest%29
+
+== Objectives ==
+Now that Raschal's last known whereabouts have been discovered, continue your search for him or his remains in the Writhing Deep. According to the note, it is located to the south of the Woodpaw gnoll camps. 
+
+
+== Description ==
+Inside the backpacks are two items: the first is a parcel of goods that was bound for Thalanaar, and the second is a note hastily penned to an unknown reader.
+The note tells of discovering insidious bug-like creatures south of the gnoll camps in a place called the Writhing Deep. The author felt the need to investigate it personally, as though it was a serious threat to all of Feralas. The note is signed, "Raschal of Feathermoon".
+It would seem that you have located where Raschal ultimately went. 
+
+
+== Completion ==
+You have discovered a large pod of an alien nature. The texture of the pod appears mucous, though hardened protrusions stick out from random parts of it. The pod itself has the height and width to easily encompass a humanoid inside of it... and from the faint humanoid shape visible through the skin of the pod, you surmise that this is what it indeed encapsulates. 
+
+
+== Progression ==
+ [43] The Missing Courier
+ [43] The Missing Courier
+ [44] Boat Wreckage
+ [44] The Knife Revealed
+ [44] Psychometric Reading
+ [44] The Woodpaw Gnolls
+ [46] The Writhing Deep &  [44] Thalanaar Delivery
+ [46] Freed from the Hive
+ [46] A Hero's Welcome
+ [46] Rise of the Silithid
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

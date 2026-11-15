@@ -1,0 +1,6 @@
+title: A-Me 01
+revision: 6580261
+part: intro
+url: https://warcraft.wiki.gg/wiki/A-Me_01
+
+A-Me 01 is a mechanized animal quest giver located slightly south of the cave in Fungal Rock in the Un'Goro Crater, next to the waterfall.

@@ -1,0 +1,51 @@
+title: Friend of the Kirin Tor
+revision: 6911954
+part: whole
+quest: 92459
+url: https://warcraft.wiki.gg/wiki/Friend_of_the_Kirin_Tor
+
+== Objectives ==
+Speak to Archmage Celindra in the City of Dalaran.
+
+Arcane Mote (provided)
+
+
+== Description ==
+The council will not be happy to learn of our subterfuge, but they cannot deny results. The city is calming down, and we are free to lower our wards.
+I think it's only fair you deliver the good word. Take this mote to Archmage Celindra within the Violet Citadel.
+
+
+== Rewards ==
+You will receive:
+
+270 XP
++10 reputation with Kirin Tor
+
+
+== Progression ==
+Horde attunement:
+
+ [34] Prison Break In &  [33] Key to the City
+ [35] Dalaran Patrols
+ [34] Blood in the Streets
+ [33D] Heart of Disruption
+ [33] Shrewd Negotiations
+Other dungeon quests:
+
+ [33D] A Green Sample
+ [33] An Alarming Request →  [33D] Heart of Disruption →  [33] Friend of the Kirin Tor
+ [33D] Power Overwhelming
+ [33D] Starving Arcane
+ [33D] Opportunistic Education
+ [33D] Source of Power
+ [33D] The Grave Knight
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

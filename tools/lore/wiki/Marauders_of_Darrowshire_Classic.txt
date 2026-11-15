@@ -1,0 +1,64 @@
+title: Marauders of Darrowshire (Classic)
+revision: 5723701
+part: whole
+quest: 5206
+url: https://warcraft.wiki.gg/wiki/Marauders_of_Darrowshire_%28Classic%29
+
+Marauders of Darrowshire is part of the Rewriting the Battle of Darrowshire quest chain (Classic).
+
+
+== Objectives ==
+Bring 5 Resonating Skulls and the Mystic Crystal to Carlin Redpath in Eastern Plaguelands.
+
+ [Resonating Skull] (5)
+ [Mystic Crystal] (provided)
+
+
+== Description ==
+Chromie said the relics you gathered are reagents to a powerful spell, and one more is required: skulls from the scourge who took part in the battle of Darrowshire.
+Take this crystal and hunt scourge champions for their skulls. The crystal is enchanted; if a champion took part in the battle, then when you pass the crystal over its skull it will resonate. Bring me those resonating skulls.
+Go, <name>. You'll find scourge champions in the Noxious Glade to the north and the Fungal Vale to the west.
+
+
+== Rewards ==
+You will receive
+
+9,450 XP
+
+
+== Progress ==
+Do you have the skulls?  Chromie said they will be critical for her spell, and that spell will give us the chance to save Darrowshire.
+
+
+== Completion ==
+You found them!  Wonderful!
+Although I don't fully understand how they can help us, I feel their power and I know in my bones that they are linked to my home village of Darrowshire.
+
+
+== Progression ==
+ [55] Little Pamela or  [55] Sister Pamela
+ [55] Pamela's Doll
+Complete both:
+ [56] Auntie Marlene
+ [56] A Strange Historian
+ [56] The Annals of Darrowshire
+ [56] Uncle Carlin
+ [55] Defenders of Darrowshire
+ [56] Brother Carlin
+All of the following, in any order:
+ [57] Villains of Darrowshire
+ [56] Heroes of Darrowshire
+ [60] Marauders of Darrowshire
+ [60] Return to Chromie
+ [60] The Battle of Darrowshire
+ [60] Hidden Treasures
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

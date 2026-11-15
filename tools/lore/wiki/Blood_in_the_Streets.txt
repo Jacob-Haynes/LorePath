@@ -1,0 +1,60 @@
+title: Blood in the Streets
+revision: 6911952
+part: whole
+quest: 92434
+url: https://warcraft.wiki.gg/wiki/Blood_in_the_Streets
+
+== Objectives ==
+Find a way into Dalaran along the Lordamere Lake.
+
+Grimy Key (provided)
+
+
+== Description ==
+Whatever caused Dalaran's barrier to lower has left the city in turmoil. With you having dealt with their patrols, there is no better time than now to make our way inside and discover their secrets.
+Take the key you found at the internment camp and seek out their sewers along the northern border of the city. With luck, those mages had no reason to put a ward over such a... disagreeable point of entry.
+
+
+== Rewards ==
+You will receive:
+
+270 XP
+
+
+== Progress ==
+Stay your weapon, <race>.
+I think you will find that key won't be enough to get past my wards. You didn't truly think we would leave such a vulnerability open at a time like this, did you?
+
+
+== Completion ==
+It is surely no coincidence the horde has taken an interest in my city during such a precarious time.
+In fact, I was counting on it. I have a proposition for you.
+
+
+== Progression ==
+Horde attunement:
+
+ [34] Prison Break In &  [33] Key to the City
+ [35] Dalaran Patrols
+ [34] Blood in the Streets
+ [33D] Heart of Disruption
+ [33] Shrewd Negotiations
+Other dungeon quests:
+
+ [33D] A Green Sample
+ [33] An Alarming Request →  [33D] Heart of Disruption →  [33] Friend of the Kirin Tor
+ [33D] Power Overwhelming
+ [33D] Starving Arcane
+ [33D] Opportunistic Education
+ [33D] Source of Power
+ [33D] The Grave Knight
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

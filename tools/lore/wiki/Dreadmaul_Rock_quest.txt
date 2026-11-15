@@ -1,0 +1,41 @@
+title: Dreadmaul Rock (quest)
+revision: 5636409
+part: whole
+quest: 3821
+url: https://warcraft.wiki.gg/wiki/Dreadmaul_Rock_%28quest%29
+
+== Objectives ==
+Venture forth to the Burning Steppes and find out what became of Sha'ni Proudtusk. 
+
+
+== Description ==
+Sha'ni was sent to investigate reports of strange ritualistic activity coming from the Firegut ogres of the Burning Steppes over three weeks ago.
+Goretooth tells me that he hasn't heard from anyone in that platoon and that it's best that I move on and focus on the task at hand. Can you believe it? That's my wife!
+I can't leave my post, <name>, but I must know what became of Sha'ni. Travel to the Burning Steppes and search for her.
+
+
+== Rewards ==
+You will receive:
+
+7350 XP (or 43 50 at 70)
++250 reputation with Darkspear Trolls
+
+
+== Completion ==
+My poor Thal'trak.
+We were planning on moving in with my mother and father in the Hinterlands after our tours were over. Now those plans are ruined!
+
+
+== Progression ==
+ [52] Dreadmaul Rock
+ [53] Krom'Grul
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,59 @@
+title: Confront Yeh'kinya
+revision: 6973532
+part: whole
+quest: 8181
+url: https://warcraft.wiki.gg/wiki/Confront_Yeh%27kinya
+
+== Objectives ==
+Speak with Yeh'kinya.
+
+
+== Description ==
+My delvings into the Mosh'aru Tablets bear grim news, <name>. Hakkar's true form, the god himself, can be born again through the very egg into which you captured him. Yeh'kinya told you it was to contain his evil, but it is to recreate it! The troll has led you astray!
+Go to Yeh'kinya and demand the egg from him. Pray that it is not too late to stop Hakkar's return!
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Faded Hakkari Cloak]
+ [Tattered Hakkari Cape]
+You will also receive:
+
+6,200 XP
+
+
+== Completion ==
+So, you have been speaking with that old dwarf Ironboot and uncovered the lost Mosh'aru Tablets, have you?  That meddling prospector...
+No matter.  It is too late to save this world.  Hakkar has been reborn, and even now grows in power...  deep in the ancient troll kingdom of Zul'Gurub!  He has come!  And he will rule in blood and terror!
+Thank you, <name>.  Your help has sped the return of the Soulflayer!
+
+
+== Notes ==
+Yeh'kinya is located in Steamwheedle Port in eastern Tanaris.
+
+Upon completion
+Yeh'kinya says: It is true, <name>.  The wheels of doom now turn, inevitably, toward the true return of Hakkar!
+Yeh'kinya yells: Blood and souls for Hakkar! HAHAHAH!
+
+
+== Progression ==
+ [44] Screecher Spirits
+ [47D] The Prophecy of Mosh'aru
+ [50] The Ancient Egg
+ [53D] The God Hakkar
+ [58] The Lost Tablets of Mosh'aru
+ [58D] The Final Tablets
+ [58R] Confront Yeh'kinya
+ [58] The Hand of Rastakhan
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.7.0 (2005-09-13): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

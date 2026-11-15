@@ -1,0 +1,50 @@
+title: Legends of Maraudon
+revision: 6219314
+part: whole
+quest: 7044
+url: https://warcraft.wiki.gg/wiki/Legends_of_Maraudon
+
+In Legends of Maraudon, you are asked by Cavindra to find her brother Celebras and deliver the two broken parts of his scepter to him. In addition, Celebras is corrupted, so the only way to speak with him is to kill him.
+
+
+== Objectives ==
+Recover the two parts of the Scepter of Celebras: the Celebrian Rod and the Celebrian Diamond.
+
+ [Celebrian Diamond]
+ [Celebrian Rod]
+
+
+== Description ==
+A dark satyr called Lord Vyletongue spread his evil through these twisting caves, poisoning the minds of all inside. He still resides beyond the purple crystals.
+Vyletongue also created a living symbol of his corruption called Noxxion that dwells beyond the orange crystals. Together, they have stolen the two parts of my brother's scepter. Celebras, my brother...he wanders blindly inside, cursed by corruption.
+You must help him! Find the pieces, and speak to my brother...somehow.
+
+
+== Progress ==
+I have awoken from a nightmare that seemed it would never end...
+
+
+== Completion ==
+Now that you have recovered the two parts of my scepter, I have hope that Maraudon may one day be rid of the Vyle corruption.
+
+
+== Notes ==
+Cavindra is a dryad in the pre-instance area of Maraudon, in the orange section of the cave in a pool of water. 
+The  [Celebrian Rod] is dropped by Noxxion, who you can find by going through the orange part of the caves (though you can find him eventually by going through the purple area as well). The  [Celebrian Diamond] is dropped by Lord Vyletongue, located down the purple part of the caves. Once you have them both, you need to find Celebras the Cursed. He is located in the bridge between the orange and purple areas of Maraudon. You must kill Celebras the Cursed, after which his ghost will remain, renamed Celebras the Redeemed. Talk to Celebras the Redeemed to complete the quest and start the next,  [49D] The Scepter of Celebras.
+For more information on tactics and groups for this instance, see the main Maraudon article.
+
+
+== Progression ==
+ [49D] Legends of Maraudon
+ [49D] The Scepter of Celebras
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.2.0 (2004-12-18): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

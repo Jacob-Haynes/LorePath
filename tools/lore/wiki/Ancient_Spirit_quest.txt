@@ -1,0 +1,72 @@
+title: Ancient Spirit (quest)
+revision: 6875167
+part: whole
+quest: 4261
+url: https://warcraft.wiki.gg/wiki/Ancient_Spirit_%28quest%29
+
+== Objectives ==
+Escort Arei to safety, then speak with Kayneth Stillwind in Forest Song, in eastern Ashenvale.
+
+Help Arei get to Safety
+
+
+== Description ==
+Felwood was once a peaceful and serene land... Until the legion[sic] took hold. The infernals, destruction, chaos...
+The skull of Gul'dan ensured that none were spared here. All fell to the corruption.
+Even now, as a spirit, I still find myself trapped, bearing the suffering of this land. Help me find my way home. Please, <name>, tell me you will lead an ancient spirit away from here, where I may finally rest.
+Once I am free, seek out Kayneth Stillwind, a druid that resides in Forest Song, to the east. 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Ethereal Mist Cape]
+ [Clouddrift Mantle]
+You will also receive:
+
+10,550 XP (or 43 50 at max level)
++350 reputation with Darnassus
+
+
+== Completion ==
+Yes, <name>. Felwood has been through much hardship. Thank you for what you have done.
+One day, we may be able to reclaim Felwood from the corruption; every kind deed helps. 
+
+
+== Notes ==
+Use the  [Flute of the Ancients] to summon Arei in Irontree Woods near the elven statue in the ruins. See the flute's article for more information on obtaining it.
+On accept
+Arei says: Please, help me to get through this cursed forest, <race>.
+In combat
+Arei says: This creature suffers from the effects of the fel... We must end its misery.
+Arei says: I regret that I must fight this <target>.
+Arei says: That I must fight my own kind deeply saddens me.
+Arei says: Help me with this <target>!
+Arei says: I sense the taint of corruption upon this <target>. Help me destroy it!
+Arei says: This <target> has been driven mad from the corruption!
+Crossing the river
+Arei says: The corruption has not left any of the creatures of Felwood untouched, <name>. Please, be on your guard.
+Objective complete
+Arei says: I can sense it now, <name>. Ashenvale lies down this road.
+Arei says: I feel... something strange...
+Arei says: <Name>, my form has now changed! The true strength of my spirit is returning to me now... The cursed grasp of the forest is leaving me.
+Arei says: Thank you, <name>. Now my spirit will finally be at peace.
+Upon reaching the road, an ambush of three Irontree Wanderers will surround Arei. Kill them to complete the quest.
+
+
+== Progression ==
+ [54] Flute of Xavaric
+ [54] Felbound Ancients
+ [54] Purified!
+ [56] Ancient Spirit
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+This quest used to involve escorting Arei all the way down to Ashenvale. It was changed a long time ago and now takes much less time.
+
+
+== External links ==
+
+Wowhead
+WoWDB

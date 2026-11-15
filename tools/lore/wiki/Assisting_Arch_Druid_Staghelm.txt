@@ -1,0 +1,41 @@
+title: Assisting Arch Druid Staghelm
+revision: 5609755
+part: whole
+quest: 3763
+url: https://warcraft.wiki.gg/wiki/Assisting_Arch_Druid_Staghelm
+
+== Objectives ==
+Speak with Arch Druid Fandral Staghelm in Darnassus.
+
+
+== Description ==
+Excuse me <class>, but I'd like just a moment of your time if possible.
+The Cenarion Circle in Darnassus is looking for seasoned adventurers such as yourself to lend them aid in a vital research project. While I do not know the specifics, I can inform you that none other than Arch Druid Fandral Staghelm is spearheading this research.
+Please - if you are interested, speak with him directly in the Cenarion Enclave within Darnassus proper.
+
+
+== Rewards ==
+You will receive:
+
+470 XP
++10 reputation with Darnassus
+
+
+== Completion ==
+Well now, <class>... since you were informed that I was leading this research myself, you obviously came as quickly as you could.
+Now that you are here, be sure to pay attention the first time I tell you the details; I have no desire to repeat myself.
+
+
+== Progression ==
+ [50] Assisting Arch Druid Staghelm
+ [50] Un'Goro Soil
+ [50] Morrowgrain Research
+ [50] Morrowgrain Research
+ [55] Morrowgrain to Darnassus 
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==

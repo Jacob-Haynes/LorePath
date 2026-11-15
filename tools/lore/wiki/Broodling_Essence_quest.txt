@@ -1,0 +1,55 @@
+title: Broodling Essence (quest)
+revision: 5610224
+part: whole
+quest: 4726
+url: https://warcraft.wiki.gg/wiki/Broodling_Essence_%28quest%29
+
+Broodling Essence starts the Dawn's Gambit quest chain.
+
+
+== Objectives ==
+Bring 8 Broodling Essence and the Draco-Incarcinatrix 900 to Tinkee Steamboil at the Flame Crest in the Burning Steppes.
+
+ [Broodling Essence] (8)
+ [Draco-Incarcinatrix 900] (Provided)
+
+
+== Description ==
+I have been studying the dragonkin of the Burning Steppes for weeks, and I think I've finally had a breakthrough! I created a device—I call it the Draco Incarcinatrix 900. It can capture the essence of dragon whelp broodlings!
+Or, at least I think it can.
+Here, take the device and zap a broodling in the Burning Steppes with it. While it's under the device's effects, defeat the broodling and its essence should be released.
+If it is, then splendid! Bring me back samples so I can study them!
+
+
+== Progress ==
+Do you have the broodling essence, <name>?  I can't wait to study it.
+And besides that... my patron is not the type of person you want to disappoint.
+
+
+== Completion ==
+It worked!  You got the essence!  Well done, <name>!  Well done!
+This essence will be invaluable in my research.  I hope to one day learn how to capture living dragon whelps, or perhaps capture their eggs.  If I could find a way to do that, then I would be the envy of dragon scholars around the world!
+My employer would also be happy, and as I said before, he's someone you want to keep happy...
+
+
+== Progression ==
+ [52] Broodling Essence
+ [54] Felnok Steelspring
+ [54] Chillwind Horns
+ [54] Return to Tinkee
+ [60R] Tinkee Steamboil (optional?)
+ [60R] Egg Freezing
+ [60R] Egg Collection
+ [60D] Leonid Barthalomew
+ [60D] Betina Bigglezink
+ [60D] Dawn's Gambit
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

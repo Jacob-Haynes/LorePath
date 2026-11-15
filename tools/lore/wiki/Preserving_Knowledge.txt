@@ -1,0 +1,48 @@
+title: Preserving Knowledge
+revision: 6831754
+part: whole
+quest: 540
+url: https://warcraft.wiki.gg/wiki/Preserving_Knowledge
+
+== Objectives ==
+Bring 5 Recovered Tomes and the Worn Leather Book containing The Arm of Gri'lek to Loremaster Dibbs in Southshore.
+
+ [Recovered Tome] (5)
+ [Worn Leather Book]
+
+
+== Description ==
+Those beastly ogres now reside within Alterac's ruins, and I shudder to think what they're doing with the precious books still there. You must recover what you can!
+Enter the Ruins of Alterac and search for tomes looted by the ogres. Get whatever you can find and bring them to me, but also seek out one book in particular: The Arm of Gri'lek. It contains ancient troll lore that I must learn, and the Ruins of Alterac was the last known location of an intact copy of this book.
+
+
+== Rewards ==
+You will receive:
+
+3550 XP (or 21 60 at max level)
++350 reputation with Stormwind
+
+
+== Progress ==
+I wish I could search the ruins too, but I fear these bones wouldn't hold me during my climb up the mountains.  However, how does your hunt for knowledge progress, <name>?
+
+
+== Completion ==
+Oh, you got them!  Splendid!  I must begin studying the Arm of Gri'lek immediately!
+
+
+== Progression ==
+ [25] An Old History Book
+ [38] Southshore
+ [38] Preserving Knowledge
+ [38] Return to Milton
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

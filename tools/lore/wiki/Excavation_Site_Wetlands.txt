@@ -1,0 +1,54 @@
+title: Excavation Site: Wetlands
+revision: 6950105
+part: whole
+url: https://warcraft.wiki.gg/wiki/Excavation_Site%3A_Wetlands
+
+Excavation Site: Wetlands is a Forever-exclusive dungeon, intended for level 26-32 players located in the Wetlands. Quests are available starting at level 24, but the final boss is at level 31, so don't go in early.
+
+
+== Getting there ==
+
+As hinted at by the name, the Excavation Site is located in the Wetlands. The summoning stone and instance line is at , accessed via Whelgar's Excavation Site.
+Alliance players who are already questing in the zone can run from Menethil Harbor, which has a boat connection to Stormwind City via Auberdine in Forever, else they can run from Loch Modan via Dun Morogh. Horde players will need to trek through Hillsbrad Foothills and the Arathi Highlands, then cross the Thandol Span south into the Wetlands.
+
+
+== Quests ==
+Alliance quests start in Menethil Harbor and Greenwarden's Grove in the Wetlands and Lakeshire in Redridge Mountains.
+Horde quests start at Orgrimmar, and at Hammerfall in the Arathi Highlands.
+Both factions additionally have one quest-starting item drop from the final boss of the dungeon.
+
+ [21] Daily Delivery →  [22] Young Crocolisk Skins →  [28D] Highland Hides and  [26] Apprentice's Duties
+ [31D] Horrors in the Highland
+ [31D] Seeking Caitlin →  [31D] Lost in the Thicket Things →  [31D] Heartwoven
+ [31D] Lost Relic Carry →  [31D] Prehistoric Prism
+ [31D] Songblade Search →  [31D] Fallen in the Fen
+ [31D] Changing Tastes
+ [31D] Elder Knowledge →  [31D] Earthen Echo
+ [31D] Dragonmaw Rumors →  [31D] Open the Maw
+
+
+== Encounters ==
+Saltspine
+Shadetooth
+Relic Guardian
+
+
+== Loot ==
+
+
+=== Boss drops ===
+
+
+=== Quest rewards ===
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+Wago

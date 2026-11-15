@@ -1,0 +1,55 @@
+title: Eye of Mugg (Horde)
+revision: 6971579
+part: whole
+quest: 94968
+url: https://warcraft.wiki.gg/wiki/Eye_of_Mugg_%28Horde%29
+
+== Objectives ==
+Infiltrate Krol'dok Stronghold and return to Krom'rosh with proof of their leader's demise.
+
+ [Eye of Mugg]
+
+
+== Description ==
+Of the few that managed to infiltrate the cave, most have perished. It seems these Twilight have a foothold much larger than we thought. We will not stand by while these cultists continue to ravage these lands and make sacrifices of our allies. We end this now, <name>.
+Infiltrate this stronghold, slaughter their forces and bring me proof of their leader's demise.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Rock on Stick]
+ [Bigger Rock on Bigger Stick]
+ [Stick No Rock]
+You will also receive:
+
+1 30
+11,500 XP
+
+
+== Progress ==
+Has the leader been located?
+
+
+== Completion ==
+Let this serve as our message.
+Lok'tar!
+
+
+== Progression ==
+A Token of Vengeance
+ [45D] Eye of Mugg
+ [41] Krol'dok Moulding →  [41] Key Ingredients
+Tome of Twilight
+Twilight Mementos →  [42] Lingering Essence → Curios of Curiosity
+Vengeance of the Highborne
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

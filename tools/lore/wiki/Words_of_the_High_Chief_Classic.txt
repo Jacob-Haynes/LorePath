@@ -1,0 +1,61 @@
+title: Words of the High Chief (Classic)
+revision: 5637445
+part: whole
+quest: 5128
+url: https://warcraft.wiki.gg/wiki/Words_of_the_High_Chief_%28Classic%29
+
+== Objectives ==
+Take the Crudely-Written Log to Kelek Skykeeper in southern Felwood.
+
+ [Crudely-Written Log] (provided)
+
+
+== Description ==
+The Winterfall are no longer a threat to me, but if you still want to find out what was driving the furbolg to create and consume this strange firewater, I think you should seek out Kelek Skykeeper.
+He is part of a group known as the Emerald Circle, druids that are committed to their work in Felwood, healing the land from the corruption.
+Kelek has much experience with the furbolgs in Felwood, and may be able to tell you more about the log.
+Thank you, again, <name>.
+
+
+== Rewards ==
+
+You will receive:
+
+9300 XP
++250 reputation with Everlook
+
+
+== Progress ==
+The Emerald Circle is friendly to all, <race>. What can I do for you?
+
+
+== Completion ==
+Yes, if you let me examine this for a while, I might be able to translate it for you.
+<Kelek flips through the pages.>
+When I am able to look over this fully, I will send word to you.
+Thank you for sharing this with me, <name>. Very little is known about the Winterfall furbolg.
+
+
+== Notes ==
+After some time you'll receive  [Words of the High Chief] in the mail. Which will contain the translation.
+
+
+== Progression ==
+ [56] Winterfall Firewater
+ [56] Falling to Corruption
+ [56] Mystery Goo
+ [56] Toxic Horrors
+ [57] Winterfall Runners
+ [59] High Chief Winterfall
+ [59] The Final Piece
+ [59] Words of the High Chief
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

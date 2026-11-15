@@ -1,0 +1,52 @@
+title: Blisters on The Land
+revision: 6878484
+part: whole
+quest: 275
+url: https://warcraft.wiki.gg/wiki/Blisters_on_The_Land
+
+== Objectives ==
+Kill 8 Fen Creepers, then return to Rethiel the Greenwarden in the Wetlands. 
+
+Fen Creeper slain: (12)
+
+
+== Description ==
+I do not know why, but a festering grows within the Wetlands. Fen Creepers have risen. They are diseased, fevered blisters on the land, and for the fever to break they must be dispatched and allowed to settle back into the marshes.
+The Fen Creepers shamble amidst the waterways of the Wetlands. 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Forest Chain]
+ [Phytoblade]
+ [Fen Keeper Robe]
+You will also receive:
+
+2650 XP
+
+
+== Progress ==
+The Wetlands still weep, and the Feen Creepers still rage. Return to me when your task is done.
+
+
+== Completion ==
+This land is soothed by your efforts, and for this I will grant you a boon. 
+
+
+== Progression ==
+ [21] The Greenwarden
+ [21] Tramping Paws
+ [23] Fire Taboo
+ [26] Blisters on The Land
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.4.0 (2005-04-19): Removed Stormwind Faction reward from the Greenwarden quest line in the Wetlands.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

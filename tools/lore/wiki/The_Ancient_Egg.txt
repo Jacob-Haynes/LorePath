@@ -1,0 +1,53 @@
+title: The Ancient Egg
+revision: 6713188
+part: whole
+quest: 4787
+url: https://warcraft.wiki.gg/wiki/The_Ancient_Egg
+
+The Ancient Egg is the 3rd quest in the Screecher Spirits quest chain.
+
+
+== Objectives ==
+Bring the Ancient Egg to Yeh'kinya in Tanaris.
+
+ [Ancient Egg]
+
+
+== Description ==
+The Prophecy of Mosh'aru speaks of an ancient egg.  It is a relic of a time when trolls ruled vast empires, and it has the power to hold the essence of Hakkar.  It may be the only way to keep our world safe from his evil.
+Bring me the ancient egg, <name>.  It is said to lay hidden deep within Jintha'Alor in the Hinterlands, in a cave behind the amphitheater at the top of the city.
+
+
+== Rewards ==
+You will receive:
+
+8500 XP (or 51 at max level)
+
+
+== Progress ==
+Do you have the ancient egg? I sense great forces stirring, and I fear that time grows short.
+
+
+== Completion ==
+Ah, you have the egg! I bow to you, <name>. Your strength and bravery will be long remembered.
+
+
+== Progression ==
+ [44] Screecher Spirits
+ [47D] The Prophecy of Mosh'aru
+ [50] The Ancient Egg
+ [53D] The God Hakkar
+ [58] The Lost Tablets of Mosh'aru
+ [58D] The Final Tablets
+ [58R] Confront Yeh'kinya
+ [58] The Hand of Rastakhan
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

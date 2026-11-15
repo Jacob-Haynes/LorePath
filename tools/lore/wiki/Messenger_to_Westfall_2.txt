@@ -1,0 +1,57 @@
+title: Messenger to Westfall (2)
+revision: 6237776
+part: whole
+quest: 144
+url: https://warcraft.wiki.gg/wiki/Messenger_to_Westfall_%282%29
+
+Part of the Reinforcing Redridge correspondence quests.
+
+
+== Objectives ==
+Return to Magistrate Solomon with Gryan Stoutmantle's response.
+
+ [Stoutmantle's Response to Solomon] (provided)
+
+
+== Description ==
+Magistrate Solomon's note pains me to read. But it is obvious he knows not the war which is waged in Westfall or else he would know better than to expect aid from the Militia. If Stormwind had not deserted us as well, we would not have the need for the Militia.
+Take this response to your master in Redridge, <class>. And let him know that my heart is heavy with the loss of good men.
+
+
+== Rewards ==
+You will receive:
+
+1 50
+25-250 XP
+
+
+== Progress ==
+Shall we expect the People's Militia soon?  Does Lord Stoutmantle's news bode well?
+
+
+== Completion ==
+I do say, this is not good at all. I did not realize that Stoutmantle's situation was not unlike ours here in Lakeshire. What action is so important that it calls the Stormwind Army away from its people? Bah, I should not ponder aloud.
+Here, messenger. Accept these coins in exchange for your service to the Township. I might call upon you again.
+
+
+== Notes ==
+The reward money is just enough to fly you back to Westfall
+
+
+== Progression ==
+ [14] Messenger to Stormwind
+ [14] Messenger to Stormwind
+ [14] Messenger to Westfall
+ [14] Messenger to Westfall
+ [18] Messenger to Darkshire
+ [18] Messenger to Darkshire
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

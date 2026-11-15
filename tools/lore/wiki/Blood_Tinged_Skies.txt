@@ -1,0 +1,44 @@
+title: Blood Tinged Skies
+revision: 5612183
+part: whole
+quest: 5543
+url: https://warcraft.wiki.gg/wiki/Blood_Tinged_Skies
+
+== Objectives ==
+Slay 30 Plaguebats and return to Tirion Fordring.
+
+Plaguebat slain (30)
+
+
+== Description ==
+Woe to those that foolishly wander into the Plaguelands. All manner of foulness inhabit these woods - from the fanatical Scarlet Crusade, who will kill any that do not bear the mark of the Crusade, to the murderous Scourge, who only look to bolster their numbers by adding more undead to their ranks.
+Even the wildlife have been transformed into rapacious, man eating beasts. I ask that you destroy those that would strike from the skies: The Plaguebats.
+
+
+== Rewards ==
+You will gain:
+
+8450 XP
+
+
+== Progress ==
+Do not underestimate the winged vermin, <race>. The Plague has given them supernatural abilities.
+
+
+== Completion ==
+You are a shining example of decency, <race>! It has been long since I have felt the blood of heroes pump through my veins. Your acts of bravery are uplifting!
+
+
+== Notes ==
+Noxious Plaguebats and Monstrous Plaguebats also count.
+Completing this quest, along with Demon Dogs and Carrion Grubbage, will start the Redemption quest line.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

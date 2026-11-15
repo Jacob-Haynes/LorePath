@@ -1,0 +1,73 @@
+title: Pawn Captures Queen
+revision: 6710948
+part: whole
+quest: 4507
+url: https://warcraft.wiki.gg/wiki/Pawn_Captures_Queen
+
+Pawn Captures Queen is a quest that requires the player to travel from Tanaris to Un'Goro Crater to slay a silithid queen.
+This is part of the Rise of the Silithid quest chain.
+
+
+== Objectives ==
+Defeat the Gorishi Hive Queen once she is summoned.
+
+ [Gorishi Queen Brain]
+ [Gorishi Queen Lure] (provided)
+
+
+== Description ==
+Here's the lure. Inside the hive network should be a crystal of some sort. We think the silithid use the crystal as some sort of hive-wide attunement device. As for where this crystal might be, I'd say try the hatcheries inside the hive.
+Using the lure on the crystal should roust out the queen, but be warned - she will probably be protected by several guards. Take out the queen and remove her brain. As icky as that sounds, we desperately need to study it. Good luck, <name>!
+
+
+== Rewards ==
+You will receive:
+
+7900 XP
+
+
+== Progress ==
+Acquiring the queen's brain for our research is absolutely imperative. From what we have learned, we believe that these silithid are quite possibly being controlled by a malign intelligence. I shudder to think what could control something as insidious as the silithid, <name>.
+
+
+== Completion ==
+Fantastic, <name>!  We've won quite the victory here today.  It will take some time for us to fully understand what we have here; we'll put it to good use though, don't you worry about that.
+As for the silithid, I genuinely doubt that this was the full extent of their presence.  This is much too clean of a resolution, I'm sorry to say.
+
+
+== Notes ==
+The Gorishi Hive Queen appears in a large chamber 
+in the Gorishi Hive of
+southern Un'Goro Crater.  Turn to the right
+at each intersection to get to the chamber.
+There are 3 waves:
+
+2 level 54 Gorishi Hive Guards
+3 level 54 Gorishi Hive Guards
+2 level 54 Gorishi Hive Guards and the level 56 Gorishi Hive Queen
+It has been reported that the guards can be pulled separately from the queen. A tactic that has been reported successful is to pull the guards into the tunnel, to avoid the room mobs that are likely to spawn with unfortunate rapidity.
+Do bring friends for this.  While it has been reported that you can solo this, it is not easy, and failing means you have to go back to Gadgetzan to get the quest again.
+
+
+== Progression ==
+ [46] Gadgetzan Water Survey
+ [47] Noxious Lair Investigation
+ [48] The Scrimshank Redemption
+ [48] Insect Part Analysis
+ [48] Insect Part Analysis
+ [48] Rise of the Silithid
+ [53] March of the Silithid
+ [53] Bungle in the Jungle
+ [54G] Pawn Captures Queen
+ [54] Calm Before the Storm
+ [54] Calm Before the Storm
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

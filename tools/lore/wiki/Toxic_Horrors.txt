@@ -1,0 +1,57 @@
+title: Toxic Horrors
+revision: 6307913
+part: whole
+quest: 5086
+url: https://warcraft.wiki.gg/wiki/Toxic_Horrors
+
+== Objectives ==
+
+Collect 3 Toxic Horror Droplets for Donova Snowden in Winterspring.
+
+ [Toxic Horror Droplet] (3)
+
+
+== Description ==
+I've studied the sample you returned with, and while I can't say for sure, I believe it contains traces of toxic elements. However, the only way to know for sure is to gather some as a comparison.
+I believe that the Deadwood furbolg may be gathering these elements from other corrupted creatures in Felwood; in particular, the elementals living in the Irontree Woods, called toxic horrors.
+Collect a few samples for me to compare, but be careful—it's very dangerous there!
+
+
+== Rewards ==
+You will receive:
+
+5800 XP
++250 reputation with Everlook
+
+
+== Progress ==
+I think we are beginning to uncover what is happening here, <name>.
+
+
+== Completion ==
+I have to compare this to the substance you found in the cauldron, and then I'm sure we'll know more.
+
+
+== Progression ==
+ [56] Winterfall Firewater
+ [56] Falling to Corruption
+ [56] Mystery Goo
+ [56] Toxic Horrors
+ [57] Winterfall Runners
+ [59] High Chief Winterfall
+ [59] The Final Piece
+ [59] Words of the High Chief
+
+
+== Trivia ==
+Toxic Horrors is a common quest card in the Trading Card Game. Its flavor text reads: "'I believe that the Deadwood furbolg may be gathering these elements from the elementals living in the Irontree Woods...' —Donova Snowden"
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

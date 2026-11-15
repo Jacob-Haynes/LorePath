@@ -1,0 +1,71 @@
+title: Dawn's Gambit (quest)
+revision: 6296871
+part: whole
+quest: 4771
+url: https://warcraft.wiki.gg/wiki/Dawn%27s_Gambit_%28quest%29
+
+Dawn's Gambit concludes the Dawn's Gambit quest chain.
+
+
+== Objectives ==
+Place Dawn's Gambit in the Viewing Room of the Scholomance.  Defeat Vectus, then return to Betina Bigglezink.
+
+Vectus slain
+Place Dawn's Gambit
+ [Dawn's Gambit] (provided)
+
+
+== Description ==
+I've placed Dawn's Gambit in the container you brought to us, the one that held the dragon eggs.  Your job is to bring it deep within the Scholomance.
+The undead mage Vectus leads a team of scourge scholars... place Dawn's Gambit in their chamber, called the "viewing room."  It will then react with the undead found there and, with a little luck, destroy them!
+After that, defeating Vectus shouldn't be a problem.  Right?
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Windreaper]
+ [Dancing Sliver]
+You will also receive:
+
+2 70
+9950 XP (or 87 at max level)
++1,000 reputation with Argent Dawn
+
+
+== Progress ==
+Remember, <name> - we must be tolerant yet rigid in our beliefs!
+
+
+== Completion ==
+You did it! Vectus is defeated! And Dawn's Gambit... did it work?
+Hm... maybe my device wasn't the success I had hoped, but I'm glad you were able to handle things anyway. Well done, <name>!
+The Argent Dawn, and the good people of Azeroth, are in your debt.
+
+
+== Notes ==
+When you place the item in the viewing room, all the previously non-aggressive students in that room turn aggressive and most of them will aggro immediately, so be prepared to deal with 30 or so fairly weak level 59 non-elites, i.e. shield the clothies ahead of time, bunch up the mobs, and pour on the AoE.  The bosses - a 59 elite and a 60 elite - do not aggro, and can be pulled individually after the students are down.
+
+
+== Progression ==
+ [52] Broodling Essence
+ [54] Felnok Steelspring
+ [54] Chillwind Horns
+ [54] Return to Tinkee
+ [60R] Tinkee Steamboil (optional?)
+ [60R] Egg Freezing
+ [60R] Egg Collection
+ [60D] Leonid Barthalomew
+ [60D] Betina Bigglezink
+ [60D] Dawn's Gambit
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.10.0 (2006-03-28): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

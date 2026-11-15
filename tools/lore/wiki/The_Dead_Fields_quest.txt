@@ -1,0 +1,65 @@
+title: The Dead Fields (quest)
+revision: 6900543
+part: whole
+quest: 437
+url: https://warcraft.wiki.gg/wiki/The_Dead_Fields_%28quest%29
+
+== Objectives ==
+Kill rot hide gnolls at the Dead Fields.
+When Nightlash appears, kill her.
+Bring the Essence of Nightlash to High Executor Hadrec at the Sepulcher.
+
+ [Essence of Nightlash]
+Enter the Dead Fields
+
+
+== Description ==
+Our initial scouting reports of Silverpine show the rot hides have a base at an old farm to the north, the Dead Fields. We have sent small assaults against them, but each time they are reinforced by the banshee Nightlash, who uses her magic to rout our forces.
+We want Nightlash destroyed.
+Go to the Dead Fields and assault the rot hides. If you don't see Nightlash then kill the rot hides until she appears, then defeat her.
+Her essence will turn to dust. Bring me that dust as proof.
+
+
+== Rewards ==
+You will receive:
+
+ [Reconnaissance Boots]
+6
+975 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Have you defeated Nightlash, <name>? Our success against the rot hides depends on her destruction!
+
+
+== Completion ==
+I heard of your successful raid against the rot hides, <name>, and this essence is proof of Nightlash's death.
+The Scourge have lost ground this day. Your value to the Forsaken grows.
+
+
+== Notes ==
+Nightlash will not always be present when you arrive. To make her spawn, simply kill gnolls until she yells something and spawns in the middle of the field.
+
+Nightlash lets out a high pitched screech, calling for help.
+
+
+== Progression ==
+ [14] The Dead Fields
+ [16] The Decrepit Ferry
+ [16] Rot Hide Clues
+ [17] Rot Hide Ichor
+ [17] Rot Hide Origins
+ [16] Thule Ravenclaw
+ [16] Report to Hadrec
+ [20] Assault on Fenris Isle
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

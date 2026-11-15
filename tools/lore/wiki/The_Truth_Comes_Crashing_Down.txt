@@ -1,0 +1,43 @@
+title: The Truth Comes Crashing Down
+revision: 5609497
+part: whole
+quest: 5262
+url: https://warcraft.wiki.gg/wiki/The_Truth_Comes_Crashing_Down
+
+== Objectives ==
+Take the Head of Balnazzar to Duke Nicholas Zverenhoff in the Eastern Plaguelands.
+
+ [Head of Balnazzar] (provided)
+
+
+== Description ==
+You try and gather your thoughts as the dust settles across the chamber. You go over the events that just transpired and still cannot comprehend the gravity of the situation.
+The Grand Crusader of the Scarlet Crusade a demon? And not just any demon but brother to Varimathras, arch lord of the Undercity?
+You carefully stow the severed head of the dreadlord into your pack. Surely, none would believe the tale you would tell without proof.
+Duke Nicholas Zverenhoff must be told at once! 
+
+
+== Progress ==
+What have you got there, <name>?
+
+
+== Completion ==
+What will this mean to the Crusade? Could it be possible that they have been under the control of this demon? Unwittingly serving as the pawns to a greater evil?
+
+
+== Progression ==
+ [60D] The Archivist
+ [60D] The Truth Comes Crashing Down
+ [60D] Above and Beyond
+ [60] Lord Maxwell Tyrosus
+ [60] The Argent Hold
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,67 @@
+title: Abandoned Hope
+revision: 6227466
+part: whole
+quest: 4242
+url: https://warcraft.wiki.gg/wiki/Abandoned_Hope
+
+Abandoned Hope is a quest in the Great Masquerade quest chain.
+
+
+== Objectives ==
+Give Marshal Maxwell the bad news.
+
+
+== Description ==
+Bolvar is a fool. I was gathering his precious 'proof' so that I could shove it down his throat.
+He is a blind buffoon. Proof stands two feet away from him and he does not see.
+As for my data, it's lost. Gone. Unrecoverable.
+Should I ever find Ironfoe and make it out of this labyrinth, my first stop will be Stormwind, to place my hammer in between that reptile's eyes.
+Leave me, <name>. 
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+5450 XP (or 33 at level 70)
++250  reputation with Stormwind
+Your choice of:
+ [Conservator Helm]
+ [Shieldplate Sabatons]
+ [Windshear Leggings]
+
+
+== Completion ==
+He's gone mad, apparently.
+<Maxwell lowers his head in mourning.>
+It is unfortunate that a once proud and noble warrior would be turned into
+a blithering head case. I GUESS we've reached a dead end...
+I must reward you for your efforts thus far, <name>.
+
+
+== Progression ==
+ [54] Dragonkin Menace
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54D] Marshal Windsor
+ [54D] Abandoned Hope
+ [58D] A Crumpled Up Note
+ [58D] A Shred of Hope
+ [58D] Jail Break!
+ [60R] Stormwind Rendezvous
+ [60R] The Great Masquerade
+ [60R] The Dragon's Eye
+ [60R] Drakefire Amulet
+
+
+== Patch changes ==
+ Patch 3.0.2 (2008-10-14): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

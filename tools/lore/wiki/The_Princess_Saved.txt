@@ -1,0 +1,59 @@
+title: The Princess Saved?
+revision: 6449903
+part: whole
+quest: 4004
+url: https://warcraft.wiki.gg/wiki/The_Princess_Saved%3F
+
+== Objectives ==
+Return to Thrall!
+
+
+== Description ==
+You have slain my husband, <race>! My child will be born into this world without a father.
+<Princess Moira points directly at you.>
+I assure you, this child will be the next ruler of the kingdom of Ironforge. You and your kind shall be hunted down until the end of days for this wrongful act.
+<You think that Princess Moira may be suffering from the residual effect of Thaurissan's spell.>
+Leave me be, <race>. I am certain your warchief will be eager to hear the results of his meddling.
+
+
+== Reward ==
+You will receive:
+
+ [Eye of Orgrimmar]
+2 70
+9950 XP (or 60 at level 70)
++500 reputation with Darkspear Trolls
++500 reputation with Orgrimmar
++500 reputation with Silvermoon City
++500 reputation with Thunder Bluff
++500 reputation with Undercity
+
+
+== Completion ==
+<Thrall is taken aback by the information you have presented to him.>
+A new threat now looms on the horizon. As Magni's years dwindle down, the way shall be opened for this unborn Dark Iron to become ruler of Ironforge.
+You have accomplished what I asked of you and for that, you shall be rewarded.
+Now leave me, <name>! I must confer with Sylvanas and Cairne. 
+
+
+== Progression ==
+ [52D] Commander Gor'shak
+ [54D] What Is Going On?
+ [54D] What Is Going On?
+ [54D] The Eastern Kingdoms
+ [59D] The Royal Rescue
+ [60D] The Princess Saved?
+
+
+== Trivia ==
+During the original beta, this quest rewarded  [Star of Mystaria], plus a choice between  [Boulderskin Breastplate],  [Brindlethorn Tunic],  [Pridemail Leggings], and  [Whispersilk Leggings].
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

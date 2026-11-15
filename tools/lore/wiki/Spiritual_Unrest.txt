@@ -1,0 +1,44 @@
+title: Spiritual Unrest
+revision: 5611016
+part: whole
+quest: 5535
+url: https://warcraft.wiki.gg/wiki/Spiritual_Unrest
+
+== Objectives ==
+Destroy 6 Highborne Apparitions and 6 Highborne Lichlings before returning to Loh'atu in Azshara.
+
+Highborne Apparition slain (6)
+Highborne Lichling slain (6)
+
+
+== Description ==
+Long ago, the Highborne were some of the most powerful students of the arcane the night elves ever produced. The corruption that comes along with such studies caused much harm to night elf society and greatly affected all of Azeroth... as I'm sure you well know.
+I promised the Sentinels that I would release the spirits from their mortal bonds as I find them. If you would do the same, then I am sure I can reward you some.
+The spirits haunt the Shadowsong Shrine to the northeast of here.
+
+
+== Rewards ==
+You will receive:
+
+50
+4200 XP (or 25 20 at max level)
+
+
+== Progress ==
+How goes your search for the Highborne spirits, <class>?
+Many events have caused all the races of Azeroth great suffering, but for some reason, these spirits seem to be a plague for all people. Perhaps it is there continued desire for any arcane magic--such desire is a harbinger of the Burning Legion, and we know what that can lead to.
+
+
+== Completion ==
+Well done, <class>. Thank you for your help. The spirits are at peace, and the threats that their desire for the arcane draw have been lessened.
+I am sure that both sides of the conflict that ravishes Azeroth will see you are above such things.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,83 @@
+title: The Name of the Beast (2)
+revision: 6207164
+part: whole
+quest: 3510
+url: https://warcraft.wiki.gg/wiki/The_Name_of_the_Beast_%282%29
+
+This is part of the main Blasted Lands quest chain, although it takes place in Azshara.
+
+
+== Objectives ==
+Slay Hetaera and bring back Hetaera's Bloodied Head, Hetaera's Beaten Head, and Hetaera's Bruised Head to lord Arkkoroc.
+
+ [Hetaera's Beaten Head]
+ [Hetaera's Bloodied Head]
+ [Hetaera's Bruised Head]
+
+
+== Description ==
+She kills my children, mortal.  She that calls herself the ruler of these oceans.  A false god, nothing more. Crush her and bring back all of her heads.
+For that, you will be given the name that you seek and something else of equal importance. 
+She roams the clutch... Hetaera she is called.
+<Lord Arkkoroc points to the southwest.>
+Go!
+
+
+== Progress ==
+<Lord Arkkoroc bends down to inspect you.>
+Where are they?
+
+
+== Completion ==
+Finally, one worthey of the wisdom of Arkkoroc!
+
+
+== Notes ==
+Hetaera is a 55 hydra (previously Elite, but now a normal mob), you can find wandering around of the big stone building called Hetaera's Clutch and north of it.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

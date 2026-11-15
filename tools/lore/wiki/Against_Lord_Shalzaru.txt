@@ -1,0 +1,52 @@
+title: Against Lord Shalzaru
+revision: 5816576
+part: whole
+quest: 2870
+url: https://warcraft.wiki.gg/wiki/Against_Lord_Shalzaru
+
+== Objectives ==
+Eliminate Lord Shalzaru, and then bring the Mysterious Relic he uncovered to Latronicus Moonspear in Feathermoon Stronghold. 
+
+ [Mysterious Relic]
+
+
+== Description ==
+<Name>, new scouting reports have given us a good idea on the naga chain of command. Royalty is present amongst their rank and file, and they're the ones calling all the shots.
+Specifically, we've identified one of the crueler royals as Lord Shalzaru. Scouts report that he himself has uncovered an odd relic during a recent naga excavation in a cave south of the main ruins, across the water on the Isle of Dread.
+Put a stop to it by putting a stop to him, and bring me his relic so we can study it.
+
+
+== Rewards ==
+You will receive:
+
+50
+2900 XP (or 17 40 at level 70)
++150 reputation with Darnassus
+
+
+== Progress ==
+Bringing down Lord Shalzaru would certainly set their plans back weeks, if not months.  On top of that, the relic he uncovered is of definite interest to us.
+Have you performed the mission given to you, <name>?
+
+
+== Completion ==
+Well played, <name>! Lord Shalzaru's demise will throw the naga into disarray for some time, if not permanently.  The threat they pose is now under more of our control than it has ever been, and we have you to thank for it.
+Here is more bounty money from the stronghold treasury - you've earned every copper.  You and yours are welcome in Feathermoon Stronghold anytime, my friend.
+One more thing before you depart, <name>... if you could...
+
+
+== Progression ==
+ [43] Against the Hatecrest
+ [43] Against the Hatecrest
+ [45] Against Lord Shalzaru
+ [45] Delivering the Relic
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

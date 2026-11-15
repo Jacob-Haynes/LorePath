@@ -1,0 +1,53 @@
+title: Call to Arms (1)
+revision: 6896941
+part: whole
+quest: 677
+url: https://warcraft.wiki.gg/wiki/Call_to_Arms_%281%29
+
+Call to Arms is the second step in the Hammer May Fall quest chain that starts with  Tallow in Tarren Mill.
+
+
+== Objectives ==
+Slay 10 Witherbark Axe Throwers, 10 Headhunters and 8 Witch Doctors, and return to Drum Fel in the Hammerfall outpost.
+
+Witherbark Axe Thrower slain (10)
+Witherbark Headhunter slain (10)
+Witherbark Witch Doctor slain (8)
+
+
+== Description ==
+The Witherbark trolls and Boulderfist ogres of Arathi are working together to rid us from this land, but we shall not meet our fates at their, or anyone else's, hand. We will slay them and show them that we, too, have a home here.
+The trolls turned their backs to us; the ogres would use us for food and bedding if we allowed them to—these things shall not be.
+We start our attack on the Witherbark trolls to the south of here. Slay them in droves, and only return when their camps run thick with blood. 
+
+
+== Rewards ==
+You will receive:
+
+2,550 XP
++100 or +250 reputation with Orgrimmar
+
+
+== Progress ==
+If you have not yet completed my task, then perhaps you are a coward in heart as well as a tyro in war.
+
+
+== Completion ==
+The signs of war are upon your garments, and sweat drips from your brow. Good, very good indeed.
+
+
+== Progression ==
+ [32] The Hammer May Fall
+ [32] Call to Arms
+ [38] Call to Arms
+ [40] Call to Arms &  [40] The Real Threat
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

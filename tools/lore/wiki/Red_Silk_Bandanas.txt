@@ -1,0 +1,48 @@
+title: Red Silk Bandanas
+revision: 6956520
+part: whole
+quest: 214
+url: https://warcraft.wiki.gg/wiki/Red_Silk_Bandanas
+
+== Objectives ==
+Gather 10  [Red Silk Bandana] from Defias in The Deadmines.
+
+
+== Description ==
+It's no secret that the trademark of the Defias Gang is their Red Bandanas. But we've learned that the material from which these bandanas are made signifies the member's rank.
+That being said, I want you to eliminate as many high ranking Defias members as you can. The highest ranking members will undoubtedly be found in VanCleef's secret hideout. When you're done bring me 10 Red Silk Bandanas as proof of their deaths and I will reward you. Good luck, <name>.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Solid Shortblade]
+ [Scrimshaw Dagger]
+ [Piercing Axe]
+ [Monastic Hammer] 
+You will gain:
+
+1250 XP (or 7 80 at level 60)
+100 reputation with Stormwind
+
+
+== Progress ==
+Have you been reclaiming our land from the Defias gang?  If so show me 10 Red Silk Bandanas as proof.
+
+
+== Completion ==
+Well done, <name>!  On behalf of The People's Militia I salute you for your efforts.  Soon we will return this land to the people with help from brave souls like you.
+
+
+== Notes ==
+Any of the Defias (normal or elite) inside the Deadmines or surrounding area will drop the bandanas. This include those in the instance as well but note that you do not have to enter the instance in order to collect them.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

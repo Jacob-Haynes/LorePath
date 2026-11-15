@@ -1,0 +1,70 @@
+title: The Scepter of Celebras (quest)
+revision: 6850700
+part: whole
+quest: 7046
+url: https://warcraft.wiki.gg/wiki/The_Scepter_of_Celebras_%28quest%29
+
+In The Scepter of Celebras, you must help Celebras the Redeemed perform a ritual to create the  [Scepter of Celebras], which you will then receive as a quest reward. You must have completed  [49D] Legends of Maraudon to get this quest.
+
+
+== Objectives ==
+Assist Celebras the Redeemed while he creates the Scepter of Celebras.
+Speak with him when the ritual is complete.
+
+Create the  [Scepter of Celebras]
+
+
+== Description ==
+My scepter was once a source of hope for me. Its power allowed me the freedom to travel quickly through these caverns. I had hoped to bring peace to the spirit of my uncle... It is a task that I now pass to you.
+For the two parts to once again become one, I will need your assistance in performing the ritual. Please follow me, and listen to my instructions while I channel the energy required to reunite the rod with the diamond.
+Together, we shall create the Scepter of Celebras once again!
+
+
+== Rewards ==
+You will receive:
+
+ [Scepter of Celebras]
+
+
+== Progress ==
+If you wish to restart the ritual, please abandon our first attempt and then speak to me again.
+
+
+== Completion ==
+Please take this, and know that the power allotted to you now must be used for good. Continue your journey through the caverns, and with hope, you will find the remains of my uncle. Much danger awaits you, <name>.
+Speak with me again should the need arise.
+
+
+== Notes ==
+Celebras the Redeemed appears after you kill Celebras the Cursed, in the area between the purple and orange parts of outer Maraudon.
+Note: if for some reason you lose the  [Scepter of Celebras], you can talk to Celebras the Redeemed to get another.
+For more information on tactics and groups for this instance, see the main Maraudon article.
+
+On accept
+Celebras the Redeemed says: You wish to learn of the stone? Follow me.
+Celebras the Redeemed says: For so long I have drifted in my cursed form. You have freed me... Your hard work shall be repaid.
+Celebras walks from where he is found to the stone near the further end of the tunnel.
+Celebras the Redeemed says: Please do as I instruct you, <name>.
+A book appears on the platform in front of the stone.
+Celebras the Redeemed says: Read this tome I have placed before you, and speak the words aloud.
+Celebras the Redeemed begins to channel his energy, focusing on the stone.
+Celebras the Redeemed says: Together, the two parts shall become one, once again.
+The top of the stone turns.
+Celebras the Redeemed says: Shal myrinan ishnu daldorah...
+Celebras the Redeemed says: My scepter will once again become whole!
+
+
+== Progression ==
+ [49D] Legends of Maraudon
+ [49D] The Scepter of Celebras
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.2.0 (2004-12-18): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

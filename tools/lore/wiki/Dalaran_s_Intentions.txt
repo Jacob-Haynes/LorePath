@@ -1,0 +1,47 @@
+title: Dalaran's Intentions
+revision: 5637055
+part: whole
+quest: 482
+url: https://warcraft.wiki.gg/wiki/Dalaran%27s_Intentions
+
+== Objectives ==
+Speak with Shadow Priest Allister at the Sepulcher. 
+
+
+== Description ==
+Of course! How could I have forgotten?
+Ambermill was one of the sites earmarked by the Kirin Tor, noted because it houses a dormant ley energy node. The wizards must be planning to reactivate the node and use its energies for some greater purpose.
+We cannot allow this to happen...
+It will take a great amount of power to activate the area's ley energies, we can stall them by taking the pendants away from the wizards.
+Relay this information to Allister, he will decide a course of action.
+
+
+== Rewards ==
+You will receive:
+
+100 XP (or 60 at level 70)
++10 reputation with Undercity
+
+
+== Completion ==
+Ill news you bring, <name>. If Dalar is correct—and I've no reason to believe he isn't--we must move quickly.
+I must confer with him on our plan of attack. But in the meanwhile we will have to delay their progress.
+
+
+== Progression ==
+ [14] Border Crossings
+ [14] Maps and Runes
+ [14] Dalar's Analysis
+ [14] Dalaran's Intentions
+ [16] Ambermill Investigations
+ [22] The Weaver
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

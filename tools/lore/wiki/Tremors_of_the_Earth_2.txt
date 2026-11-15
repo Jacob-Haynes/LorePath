@@ -1,0 +1,55 @@
+title: Tremors of the Earth (2)
+revision: 6657511
+part: whole
+quest: 717
+url: https://warcraft.wiki.gg/wiki/Tremors_of_the_Earth_%282%29
+
+== Objectives ==
+Use the Sign of the Earth to activate the Pillars of Amethyst, Opal, and Diamond and obtain the Runestones.
+Place the runestones in the Seal of the Earth to free Blacklash and Hematus.
+Slay them and return Blacklash's Bindings, the Chains of Hematus, and the Sign of the Earth to Garek. 
+
+ [Blacklash's Bindings]
+ [Chains of Hematus]
+ [Sign of the Earth] (provided)
+
+
+== Description ==
+It has become obvious that we cannot ensure that Blacklash and Hematus will remain imprisoned in Lethlor. That black dragons have taken up residence there, and that the ogres managed to steal the Sign indicates that more drastic measures will have to be taken.
+The drakes' prison is maintained by three runestones that may only be retrieved using the Sign of the Earth. Those runestones can then be used to break the seal which imprisons them.
+<Name>... assure that their dreams are eternal. 
+
+
+== Rewards ==
+
+You will also receive:
+
+5900 XP
++350 reputation with Stormwind
+
+
+== Progress ==
+Strong magics and powers held the drakes' prison for so long, but we cannot allow any possibility that Blacklash and Hematus may be released. 
+
+
+== Completion ==
+No longer will the Kirin Tor need to worry over the prisoners of Lethlor. I will return to report success to my master. Krasus will no doubt be pleased. 
+
+
+== Trivia ==
+During the beta, this quest instead offered  [Burning Obsidian Band],  [Mage Dragon Robe] and  [Scorched Bands] as quest rewards.
+
+
+== Progression ==
+ [43] Tremors of the Earth
+ [50] Tremors of the Earth
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

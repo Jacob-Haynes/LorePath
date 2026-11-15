@@ -1,0 +1,61 @@
+title: An Ambassador of Evil
+revision: 6342296
+part: whole
+quest: 762
+url: https://warcraft.wiki.gg/wiki/An_Ambassador_of_Evil
+
+An Ambassador of Evil is the final step in a quest chain that begins with  [40] Passing Word of a Threat. It starts with Historian Karnik in Ironforge, and ends with Advisor Belgrum in the same city, taking players to the Badlands in-between.
+
+
+== Objectives ==
+Kill Ambassador Infernus in Angor Fortress and bring proof of his death to Advisor Belgrum in Ironforge.
+
+ [Ambassador Infernus' Bracer]
+
+
+== Description ==
+Ambassador Infernus was sent to Angor Fortress by Ragnaros himself to mind the Shadowforge seeking lost artifacts in Uldaman.
+It has already meant tremendous casualties for our people, but it has obviously grown worse. I hesitate to guess how many artifacts they would be able to find and use against Ironforge.
+Our goal is simple, <class>. Return to the Badlands and destroy Ambassador Infernus. Once the threat is eliminated, return to Advisor Belgrum with proof of your victory.
+It is in your hands now.
+
+
+== Rewards ==
+You will receive:
+
+1 25
+6600 XP
++350 reputation with Ironforge
+ [Dwarf Captain's Sword]
+
+
+== Progress ==
+Time is of the essence, <name>. Ragnaros will not wait for us to prepare.
+
+
+== Completion ==
+<Name>, your dedication to Ironforge and to the dwarven people cannot be refuted. I thank you for your help in this matter.
+I shall send word to Historian Karnik informing him that you have succeeded, and I shall also have aid sent to the Badlands as soon as possible to help recover the excavation site. Thank you again.
+Before you go, there is one more thing I would ask of you in the name of King Bronzebeard.
+
+
+== Progression ==
+ [35] A Sign of Hope
+ [35D] A Sign of Hope
+ [40D] Amulet of Secrets
+ [40] Prospect of Faith
+ [40] Prospect of Faith
+ [40] Passing Word of a Threat
+ [40] Passing Word of a Threat
+ [44G] An Ambassador of Evil
+ [45D] The Lost Tablets of Will
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

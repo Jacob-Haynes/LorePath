@@ -1,0 +1,56 @@
+title: Returning the Lost Satchel
+revision: 6956503
+part: whole
+quest: 5724
+url: https://warcraft.wiki.gg/wiki/Returning_the_Lost_Satchel
+
+The player finds the dead body of Maur Grimtotem in Ragefire Chasm and returns the Grimtotem Satchel to Rahauro on the Elder Rise in Thunder Bluff.
+
+
+== Objectives ==
+Take the Grimtotem Satchel to Rahauro in Thunder Bluff.
+
+ [Grimtotem Satchel] (provided)
+
+
+== Description ==
+You find a satchel under the body of the tauren. It is still gripped tightly in his arms as though he was trying to protect it while being attacked by the troggs.
+Removing the satchel from his vice-like grip, you stow it with your own equipment and prepare to make your way out of the tunnels and back to Rahauro in Thunder Bluff.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Featherbead Bracers]
+ [Savannah Bracers]
+ [Garrison Cuffs] 
+You will also receive:
+
+1750 XP
++500 reputation with Thunder Bluff
+
+
+== Progress ==
+Were you able to find anything, <name>? Any clues as to why one of her clansman had to die needlessly would be helpful.
+
+
+== Completion ==
+Excellent, <name>. Thank you.
+Magatha told me that if you were successful in finding her clansman that you be given this. Please, take it in thanks.
+
+
+== Progression ==
+
+ [15D] Testing an Enemy's Strength (optional; recommended)
+ [16D] Searching for the Lost Satchel
+ [16D] Returning the Lost Satchel
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

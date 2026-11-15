@@ -1,0 +1,53 @@
+title: Stormwind Ho!
+revision: 6307918
+part: whole
+quest: 562
+url: https://warcraft.wiki.gg/wiki/Stormwind_Ho%21
+
+Stormwind Ho! is an Alliance quest in Hillsbrad Foothills that involves killing Naga southeast of Southshore to find the Naga.
+
+
+== Objectives ==
+Kill 10 Daggerspine Shorehunter and 10 Daggerspine Siren for Lieutenant Farren Orinelle in Southshore.
+
+Daggerspine Shorehunter slain (10)
+Daggerspine Siren slain (10)
+
+
+== Description ==
+My former mentor in the Stormwind city guard sent a message to me that Alliance High Command is becoming concerned with the threat posed by the naga. From what he's heard, there's good chances for promotion—or at least reassignment—for anyone who proves valuable in this regard.
+There's just one small problem... I can't handle the naga, <name>. Oh sure, I could break up a drunken barroom brawl, or haul off a belligerent beggar, but the naga are too much for me. You've got to help me, <name>!
+
+
+== Rewards ==
+You will receive:
+
+200-1950 XP
+ [Fish Gutter]
+
+
+== Progress ==
+I've a letter ready to go to Major Samuelson in Stormwind. All I need are the results.
+
+
+== Completion ==
+With the naga put down in Southshore, I'll be a shoe-in to be reassigned. I'll get to see Stormwind again... get away from this Light-forsaken port.
+
+
+== Progression ==
+ [30] Down the Coast
+ [32] Farren's Proof
+ [32] Farren's Proof
+ [32] Farren's Proof
+ [32] Stormwind Ho!
+ [32] Reassignment
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,61 @@
+title: Leaders of the Fang
+revision: 6956859
+part: whole
+quest: 914
+url: https://warcraft.wiki.gg/wiki/Leaders_of_the_Fang
+
+== Objectives ==
+Bring the Gems of Cobrahn, Anacondra, Pythas and Serpentis to Nara Wildmane in Thunder Bluff.
+
+ [Gem of Cobrahn]
+ [Gem of Anacondra]
+ [Gem of Pythas]
+ [Gem of Serpentis]
+
+
+== Description ==
+The druids in the Wailing Caverns, the Druids of the Fang, are an aberration. They were part of an order of noble druids whose plan was to heal the Barrens, but now seek to remake that land to match their own, twisted dreams.
+The Druids of the Fang have four leaders, and each possesses a dream gem. Even now their faces haunt me! Defeat the leaders and bring me their gems, and the Barrens may again know peace.
+Go, <name>. You will find them lurking deep within the Wailing Caverns.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Crescent Staff]
+ [Wingblade]
+ [Hammerbone] 
+2,600 XP
+
+
+== Progress ==
+Memories of my nightmares haunt me, <name>.  Have you defeated the leaders of the fang and acquired their gems?
+
+
+== Completion ==
+You have done it, <name>.  You killed the leaders of the Druids of the Fang.  My dreams are now free of their wicked faces, and you have helped save the Barrens from a cursed future.
+I thank you, <name>.  I thank you for myself, for the druids of Thunder Bluff, and for the land.
+
+
+== Trivia ==
+During the original beta, this was a kill quest without the need to collect the gems.
+
+
+== Progression ==
+ [10] The Barrens Oases
+ [13] The Forgotten Pools
+ [16] The Stagnant Oasis
+ [16] Altered Beings
+ [16] Hamuul Runetotem
+ [16] Nara Wildmane
+ [22D] Leaders of the Fang
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

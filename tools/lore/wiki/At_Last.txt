@@ -1,0 +1,51 @@
+title: At Last!
+revision: 5636074
+part: whole
+quest: 3201
+url: https://warcraft.wiki.gg/wiki/At_Last%21
+
+This quest concludes the Key to Searing Gorge quest chain.
+
+
+== Objectives ==
+Take the Proof of Deed back to Mountaineer Pebblebitty.
+
+ [Proof of Deed] (provided)
+
+
+== Description ==
+I can't believe Pebblebitty doubted the authenticity of the horn. Between you and me, I think she's just jealous. I know she really wanted to kill that beast herself, what with the 'incident' and all.
+So you need a proof of deed? After the contribution you just made to the museum, it won't be a problem.
+<Curator Thorius begins to fill out a large document.>
+There we go! You can take that back to Pebblebitty.
+
+
+== Rewards ==
+ [Key to Searing Gorge]
+4400 XP (or 26 40 at level 70)
++250 reputation with Ironforge
+
+
+== Progress ==
+I don't believe it.
+
+
+== Completion ==
+I don't know how someone as weak as you overcame Margol, but a deal is a deal. Here is the key.
+If anything happens to you after this, it will be your own fault.
+
+
+== Progression ==
+ [43] The Horn of the Beast
+ [43] Proof of Deed
+ [43] At Last!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

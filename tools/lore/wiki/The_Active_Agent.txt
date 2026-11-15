@@ -1,0 +1,56 @@
+title: The Active Agent
+revision: 6030266
+part: whole
+quest: 5213
+url: https://warcraft.wiki.gg/wiki/The_Active_Agent
+
+The Active Agent is the 2nd quest in the The Flesh Does Not Lie quest chain.
+
+
+== Objectives ==
+Travel to Stratholme and search the ziggurats. Find and return new Scourge Data to Betina Bigglezink.
+
+ [Scourge Data]
+
+
+== Description ==
+You will have to delve deeper into Stratholme, <name>.
+Beyond the first gates you will find the ziggurats. We know that the Scourge draws great power from these structures. Search the Ziggurats and return with any information that you may discover.
+
+
+== Rewards ==
+
+You will gain:
+
+14,300 XP (or 87 at max level)
++1,000 reputation with Argent Dawn
+
+
+== Progress ==
+We are on the verge of discovering what this new active plague agent may be!
+
+
+== Completion ==
+Astonishing! This will take months to dissect and analyze. The Argent Dawn thanks you for your efforts, <name>.
+With our blessing, take your pick between either this Seal of the Dawn or this Rune of the Dawn.  You can use either of them instead of a standard Argent Dawn Commission to collect scourgestones on our behalf.  Should you lose yours, speak with me and I'll get you a replacement.
+
+
+== Notes ==
+The Scourge Data is found in a tiny box on the floor of one of the ziggurats.
+This is a great reward, because it allows you to replace your  [Argent Dawn Commission] with a trinket that gives combat bonuses against the undead and still acquire Scourgestones.
+
+
+== Progression ==
+ [60D] The Flesh Does Not Lie
+ [60D] The Active Agent
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.7.0 (2005-09-13): The Argent Dawn quest "The Active Agent" now offers a choice of rewards: Seal of the Dawn and Rune of the Dawn. Both may be used just like an Argent Dawn Commission.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

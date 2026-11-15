@@ -1,0 +1,40 @@
+title: Helping Hands
+revision: 6973309
+part: whole
+quest: 94861
+url: https://warcraft.wiki.gg/wiki/Helping_Hands
+
+== Objectives ==
+Go with Hurley to save Curly.
+
+
+== Description ==
+Well, I guess that explains why Curly didn't come back for lunch break. Looks like I have to bail him out again -- typical. The way he makes me worry, I swear, I'll be gray in a year.
+Come on, we'll have to save him ourselves, and it sounds like we don't have much time.
+
+
+== Rewards ==
+You will be able to choose one of these rewards: 
+
+Curly's Chopper
+Hurley's Felling Axe
+You will also receive:
+
+3000 XP
++100 reputation with Brotherhood of the Horse
+
+
+== Completion ==
+That damn kid...
+Even if he is a knucklehead, Curly's a good worker. Hopefully he heals up fine and learns some sense. Things could've gone a lot worse if you hadn't been there. Thanks for looking out for him.
+
+
+== Patch changes ==
+ Hotfix (2026-11-10): Fixed multiple issues with the quest. 
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,48 @@
+title: The Brokering of Peace (Horde)
+revision: 6346302
+part: whole
+quest: 8485
+url: https://warcraft.wiki.gg/wiki/The_Brokering_of_Peace_%28Horde%29
+
+== Objectives ==
+Bring the Timbermaw Offering of Peace to Shok Narnes in Orgrimmar.
+
+ [Timbermaw Offering of Peace] (provided)
+Timbermaw Hold (Exalted)
+
+
+== Description ==
+Your deeds go beyond the tale of a simple hero, <name>. If you are a representative of your people, then your people are ones we would work to make peace with.
+Please - take this offering to the orcish warchief that resides in the lands of Durotar; I believe you call this city Orgrimmar. In times past, he had tried to make contact with us on behalf of his Horde. It is now only fitting to acknowledge you as the key in your Horde's efforts in brokering peace.
+
+
+== Rewards ==
+You will receive:
+
+9950 XP
++500 reputation with the Horde
+
+
+== Progress ==
+The warchief's greetings are bestowed upon you, <class>.  Your deeds make the Horde grow stronger in these troubling times.  Now, what business do you have with me?
+
+
+== Completion ==
+Indeed, this is a most fortuitous turn of events.  Were a lasting peace to be made with these creatures, this would certainly give us an advantage in securing Kalimdor from external threats.  I will notify the other leaders of the Horde of this immediately, and further diplomats will be dispatched!
+As for you, <name>... you have shown courage in both diplomacy and in action.  I thank you, as does the entirety of the Horde.
+
+
+== Notes ==
+Upon completion
+Thrall yells: Let it be known that <name> - Horde <class> - has earned the undying respect of the Warchief. He has engaged in great diplomacy with Timbermaw Hold and performed valiant actions for them on our behalf. He has gone above and beyond the call of duty. Three cheers for <name> - a true hero of the Horde!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 4.0.1 (2010-10-12): Quest is now turned in to Shok Narnes rather than Thrall.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

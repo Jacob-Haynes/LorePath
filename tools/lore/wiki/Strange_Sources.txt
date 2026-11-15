@@ -1,0 +1,49 @@
+title: Strange Sources
+revision: 5637444
+part: whole
+quest: 4842
+url: https://warcraft.wiki.gg/wiki/Strange_Sources
+
+== Objectives ==
+Follow Donova Snowden's instructions, then report back. 
+
+Discover Darkwhisper Gorge
+
+
+== Description ==
+To tell you the truth, although there are no volcanoes here in Winterspring, I believe that there are far more threatening reasons for these hot springs...
+Well, I think you'll want to see it for yourself. You'll need to travel the length of Winterspring, and head to the very south. When the air becomes thick and muggy, and the sky turns dark, you'll have found what I believe to be the source of the hot springs.
+Have a look. I'm sure you'll have many questions when you return.
+
+
+== Rewards ==
+
+You will receive:
+
+8450 XP
++250 reputation with Everlook
+
+
+== Progress ==
+The water in the springs seems to have some very odd properties... I am still unsure of what it means...
+
+
+== Completion ==
+Yes, the demons there in Darkwhisper Gorge; I believe it is their presence that is affecting the land in this way. I am going to continue observing the hot springs here and see if I learn anything more.
+I'd wait until you are a bit stronger if you have plans of heading farther into Darkwhisper Gorge.
+
+
+== Progression ==
+ [15-30] Finding the Source
+ [55] The New Springs
+ [56] Strange Sources
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

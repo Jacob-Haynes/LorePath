@@ -1,0 +1,55 @@
+title: Bazil Thredd (quest)
+revision: 5995236
+part: whole
+quest: 389
+url: https://warcraft.wiki.gg/wiki/Bazil_Thredd_%28quest%29
+
+This quest is part of the Lescovar Incident quest chain.
+
+
+== Objectives ==
+Speak with Warden Thelwater in the Stockade. 
+
+
+== Description ==
+VanCleef and I were members of the Stonemasons Guild. Our main project was to rebuild Stormwind after the War.
+When we had finished our duties, we were cheated. The nobles refused to pay us for our work. Some of the more senior of the Stonemasons were offered governmental jobs, but VanCleef refused it out of loyalty to all the Stonemasons. He led a riot and left the city, swearing revenge.
+His lieutenant, Bazil Thredd, might know more about VanCleef's plans. He's being held prisoner in the Stockade. 
+
+
+== Completion ==
+What in the Light do you want?  Can't you see we have a crisis here?
+Bazil Thredd?! Why would you want to speak with that bastard? How am I supposed to know you're not one of his cronies, come down to help with his bloody riot? If all the blasted cells weren't open, I might throw you in one for a while! 
+
+
+== Rewards ==
+440 XP (or 2 70 at level 70)
+
+
+== Notes ==
+For many people, this is their first introduction to the Stormwind Stockade.  The Stockade can be found in the Canal District in the northeast corner of the Mage Quarter.  Warden Thelwater can be found inside the building, directing the guards (outside the instance).
+
+
+== Progression ==
+ [22] The Unsent Letter
+ [22] Bazil Thredd
+ [29D] The Stockade Riots
+ [29] The Curious Visitor
+ [29] Shadow of the Past
+ [31] Look to an Old Friend
+ [31] Infiltrating the Castle
+ [31] Items of Some Consequence
+ [31] The Attack!
+ [31] The Head of the Beast
+ [31] Brotherhood's End
+ [31] An Audience with the King
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,53 @@
+title: Dark Council
+revision: 6258308
+part: whole
+quest: 537
+url: https://warcraft.wiki.gg/wiki/Dark_Council
+
+== Objectives ==
+Kill 4 Argus Shadow Mages.
+Bring the Head of Nagaz to Magistrate Maleb in Southshore.
+
+Argus Shadow Mage slain (4)
+ [Head of Nagaz]
+
+
+== Description ==
+The letter you brought me was written by a being who calls himself Nagaz, a member of the Argus Wake. I don't know what this Argus Wake is, but if they're in alliance with the Syndicate then they must be a threat.
+I want you to find Nagaz and the Argus Shadow Mages mentioned in that letter. I want you to find them, and kill them.
+Search in the Uplands, where the Syndicate is strongest. It is north of Strahnbrad.
+With luck, you'll find these envoys of the Argus Wake there.
+
+
+== Rewards ==
+You will receive:
+
+50
+4350 XP
+
+
+== Progress ==
+Did you find the envoys of The Argus Wake?
+
+
+== Completion ==
+Well done, <name>.  The Argus Wake does not sound like a group we want running the Syndicate.
+And although you may have destroyed their leader here, Nagaz was merely the servant of another.  The Argus Wake might run deep through the continent of Azeroth.
+Or even the world.
+
+
+== Progression ==
+ [34] Encrypted Letter
+ [34] Letter to Stormpike
+ [34] Further Mysteries
+ [40] Dark Council
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

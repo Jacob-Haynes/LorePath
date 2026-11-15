@@ -1,0 +1,56 @@
+title: Horrors in the Highland
+revision: 6911836
+part: whole
+quest: 95646
+url: https://warcraft.wiki.gg/wiki/Horrors_in_the_Highland
+
+== Objectives ==
+Kill a Highland Horror within Excavation Sites and bring its root core to Rethiel the Greenwarden in the Wetlands.
+
+Horrible Rootcore
+
+
+== Description ==
+These brackish wetlands hold a greater well of unsalted southern waters. It pains me, yet within my roots I sense a corruption seeping through that mountain gully.
+The creatures, like those in our lowlands, react more bitterly to the taint. Lacking the sea's hardening salt since life's dawn, they have little strength against such evil.
+Go to those highlands, and bring me the Highland Horror's root core.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Ironwood Destroyer]
+ [Curl of Life]
+ [Hornbeam Heft]
+You will also receive:
+
+6,150 XP
+
+
+== Progress ==
+These waters harbor unique life in a brine that gives and takes equally.
+
+
+== Completion ==
+It is worse than I feared. An ancient energy stirs. It would be most wise for you to carry word to your eager excavators to stop digging, for their own safety.
+
+
+== Progression ==
+ [21] Daily Delivery →  [22] Young Crocolisk Skins →  [28D] Highland Hides and  [26] Apprentice's Duties
+ [31D] Horrors in the Highland
+ [31D] Seeking Caitlin →  [31D] Lost in the Thicket Things →  [31D] Heartwoven
+ [31D] Lost Relic Carry →  [31D] Prehistoric Prism
+ [31D] Songblade Search →  [31D] Fallen in the Fen
+ [31D] Changing Tastes
+ [31D] Elder Knowledge →  [31D] Earthen Echo
+ [31D] Dragonmaw Rumors →  [31D] Open the Maw
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

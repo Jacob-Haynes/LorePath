@@ -1,0 +1,6 @@
+title: Emerald Circle
+revision: 6519259
+part: intro
+url: https://warcraft.wiki.gg/wiki/Emerald_Circle
+
+The Emerald Circle are a largely autonomous branch of the Cenarion Circle working specifically to undo the corruption in Felwood. They are stationed at the Emerald Sanctuary in southern Felwood.

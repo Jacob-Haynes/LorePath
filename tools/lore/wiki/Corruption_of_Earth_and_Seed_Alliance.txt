@@ -1,0 +1,46 @@
+title: Corruption of Earth and Seed (Alliance)
+revision: 6853279
+part: whole
+quest: 7065
+url: https://warcraft.wiki.gg/wiki/Corruption_of_Earth_and_Seed_%28Alliance%29
+
+== Objectives ==
+Slay Princess Theradras and return to Keeper Marandis at Nijel's Point in Desolace. 
+
+Princess Theradras  slain
+
+
+== Description ==
+In the depths of Maraudon lives a creature of chaos and evil, <name>. Princess Theradras is an elemental force of earth related somehow to the Old Gods. Ages ago, she was sought out by Zaetar, first son of Cenarius. The offspring of their... relationship are the creatures known as centaur. Ever-thankful creatures, the centaur killed Zaetar, and now Theradras keeps his remains. My quest here is to find those powerful enough to slay Theradras so we may recover Zaetar's remains before returning to Stonetalon. 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Thrash Blade]
+ [Resurgence Rod]
+ [Verdant Keeper's Aim]
+You will receive:
+
+6100 XP (or 36 at max level)
++1000 reputation with Cenarion Circle
+
+
+== Completion ==
+This is most wonderful news, <name>! Thank you!Although it concerns me that you were not able to bring back Zaetar's remains, who am I to question the will of Cenarius' first born. Perhaps now the will of the centaur will break and their thirst for blood will lesson—we can only hope.
+If successful in our mission, I was given these items to reward any who aided us. You may choose one as a token of thanks. 
+
+
+== Trivia ==
+Corruption of Earth and Seed is a Common Quest card in the World of Warcraft: Trading Card Game's Drums of War set.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.2.0 (2004-12-18): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

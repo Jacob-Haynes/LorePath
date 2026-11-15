@@ -1,0 +1,43 @@
+title: Zaeldarr the Outcast (Classic)
+revision: 6430608
+part: whole
+quest: 6021
+url: https://warcraft.wiki.gg/wiki/Zaeldarr_the_Outcast_%28Classic%29
+
+== Objectives ==
+Bring Zaeldarr's Head to Caretaker Alen at Light's Hope Chapel.
+
+ [Zaeldarr's Head]
+
+
+== Description ==
+Can you believe that, after all the trouble we have in the plaguelands... we have to worry about thieves too? And not just normal thieves, troll thieves.
+And not just normal troll thieves. Dead troll thieves!
+They're led by this big, dead troll named Zaeldarr the Outcast, and they come here at night and steal bodies from the pit below, then take them back to their evil, dead troll hideout—the Undercroft to the west.
+Go there and take out Zaeldarr, <name>. I'm sick to death of his mischief!
+
+
+== Rewards ==
+You will receive:
+
+85
+4200 XP (or 25 20 at max level)
++75 or +150 reputation with Argent Dawn
+
+
+== Progress ==
+Did you find the hideout, <name>?  Did you take care of Zaeldarr?
+
+
+== Completion ==
+Great, you got him!  And I hope you taught his gang a lesson too!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

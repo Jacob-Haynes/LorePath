@@ -1,0 +1,48 @@
+title: More Wastewander Justice
+revision: 6176868
+part: whole
+quest: 1691
+url: https://warcraft.wiki.gg/wiki/More_Wastewander_Justice
+
+== Objectives ==
+Take down 10 Wastewander Shadow Mages, 8 Wastewander Rogues, and 6 Wastewander Assassins for Chief Engineer Bilgewhizzle in Gadgetzan.
+
+Wastewander Rogue slain (8)
+Wastewander Assassin slain (6)
+Wastewander Shadow Mage slain (10)
+
+
+== Description ==
+We need you to take on the stronger ranks of the Wastewander nomads now. You've done a good job thus far, but if we are to take back those water wells, then it only makes sense to do it against as few nomads as possible!
+This time around we need you to take down their rogues, assassins, and shadow mages. You'll find them east and southeast of here.
+I'm not going to lie to you - they're a nasty lot. Do this for us though, and we'll be on our way to taking back what is rightfully ours!
+
+
+== Rewards ==
+5,300 XP
+65
++250 reputation with Gadgetzan
+
+
+== Progress ==
+Well, were you able to take out those nomads like I asked? The Gadgetzan Water Company is developing plans based on your success here! Don't let us down, now...
+
+
+== Completion ==
+Top notch work, <name>... top notch!  You've thinned down the nomad population to a point where we can actually take the fight to them!
+If you haven't already, talk to Spigot Operator Luglunket here; he gives a bounty on any of the Wastewander water pouches you may have run across while bringing those nomads to justice!
+
+
+== Progression ==
+ [43] Wastewander Justice
+ [44] More Wastewander Justice
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

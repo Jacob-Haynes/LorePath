@@ -1,0 +1,47 @@
+title: A Host of Evil
+revision: 6230068
+part: whole
+quest: 6626
+url: https://warcraft.wiki.gg/wiki/A_Host_of_Evil
+
+A Host of Evil is a quest given by Myriam Moonsinger inside the area of Razorfen Downs, but outside the instance itself. Despite its designation as a dungeon quest, the mobs needed to complete the quest are all outside the instance in the villages around the quest giver. In Classic, they are elite. In Burning Crusade Classic, they are non-elites.
+
+
+== Objectives ==
+Kill 8 Razorfen Battleguard, 8 Razorfen Thornweavers, and 8 Death's Head Cultists and return to Myriam Moonsinger near the entrance to Razorfen Downs.
+
+Razorfen Battleguard slain (8)
+Razorfen Thornweaver slain (8)
+Death's Head Cultist slain (8)
+
+
+== Description ==
+The Forsaken do not pass on their... illness... from what I have seen. This diplomat seems to be granting undeath to would-be followers. I am beginning to think he is one of the Scourge.
+For now, my concern is not with him though, it's with the growing ranks around him. They creep from the shadows daily, almost begging him for more power.
+I'm not powerful enough to fight them on my own, <name>. What do you say? Are you up for some hunting? 
+
+
+== Rewards ==
+You will receive:
+
+75
+3,450 or +4,100 XP (or 24 60 at max level)
+
+
+== Progress ==
+How goes the hunt, <name>? Seeing just this small sample of this diplomat's power here removes any doubt I had that the Scourge are one of the greatest threats this world has ever seen.
+
+
+== Completion ==
+Thank you, <name>! The work you've done will be a great help, I'm sure.
+I will continue my study of this diplomat and the rest of the quilboar here. If you seek greater adventure, I'd find a few friends and head into the cave that looks like a great boar maw just over there. I'm sure once you're inside you'll find greater challenges to face.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

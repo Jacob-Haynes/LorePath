@@ -1,0 +1,47 @@
+title: The Princess's Surprise
+revision: 5586967
+part: whole
+quest: 4363
+url: https://warcraft.wiki.gg/wiki/The_Princess%27s_Surprise
+
+== Objectives ==
+Return to Ironforge and speak with King Magni Bronzebeard.
+
+
+== Description ==
+Thaurissan was a great and honorable dwarf. You ruined my life and the life of my unborn child!
+<You think that Princess Bronzebeard may still be suffering from the residual effect of the Emperor's spell.>
+Return to Ironforge and tell my father that the heir to the Kingdom of Ironforge will be a Dark Iron dwarf.
+Whether he approves or not, it shall be.
+
+
+== Rewards ==
+
+You will also receive:
+
+2 65
+9650 XP (or 58 50 at level 70)
+
+
+== Completion ==
+<King Magni Bronzebeard is visibly upset.>
+It seems that even in death, Thaurissan has won.
+You are dismissed, <name>. Before you leave, you may choose your reward from the royal vault.
+<King Bronzebeard slumps into his throne to mull over this bizarre change of events.>
+
+
+== Progression ==
+ [59D] Kharan's Tale
+ [59D] The Bearer of Bad News
+ [59D] The Fate of the Kingdom
+ [59D] The Princess's Surprise
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

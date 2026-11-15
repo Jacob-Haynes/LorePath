@@ -1,0 +1,50 @@
+title: Seal of Ascension (2)
+revision: 6508292
+part: whole
+quest: 4743
+url: https://warcraft.wiki.gg/wiki/Seal_of_Ascension_%282%29
+
+== Objectives ==
+Travel to the Wyrmbog in Dustwallow Marsh. Find the ancient drake, Emberstrife and beat him without mercy until his will is broken.
+It is at that moment which you must place the Unforged Seal of Ascension before the great beast. You must then be quick to use the Orb of Draconic Energy on his weakened form and claim dominion over his mental faculties. Control the beast and force the Flames of the Black Dragonflight upon the Unforged Seal of Ascension!
+
+ [Forged Seal of Ascension]
+ [Vaelan's Gift] (provided)
+
+
+== Description ==
+Few of the black dragonkin, outside of those in the upper citadel, have the ability to forge the seal with their own flaming breath. Wyrmthalak is one such dragonkin, but his will is unbreakable.
+You must travel to the Wyrmbog in Dustwallow Marsh. It is there that you will find an ancient drake known as Emberstrife. You must break his will, <name>. Break it and use this orb on his weakened form. You will have scant seconds to control his mind and fan the flames that will forge the seal.
+
+
+== Rewards ==
+You will receive:
+
+9950 XP (or 60 at max level)
+ [Seal of Ascension]
+
+
+== Progress ==
+Waste no time, mortal. Nefarian works feverishly to unleash his evil upon our world.
+
+
+== Completion ==
+Stand steady while I cast the final invocation of protection.
+<Vaelan's eyes turn to twin orbs of flame.>
+The Seal of Ascension is complete...
+Know this, I have imbued the artifact with some powerful protective wards. In your darkest hour, when all appears to be lost, the might of the red flight will be at your disposal.
+
+
+== Progression ==
+ [60D] Seal of Ascension
+ [60D] Seal of Ascension
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

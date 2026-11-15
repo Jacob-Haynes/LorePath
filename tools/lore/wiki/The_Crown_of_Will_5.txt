@@ -1,0 +1,50 @@
+title: The Crown of Will (5)
+revision: 5627640
+part: whole
+quest: 521
+url: https://warcraft.wiki.gg/wiki/The_Crown_of_Will_%285%29
+
+After all that work, you STILL hand the crown over...  Probably would have had to take it in a few sizes anyway, after having been on an ogre's head...
+
+
+== Objectives ==
+Deliver the Crown of Will to Sharlindra in the Undercity.
+
+ [Crown of Will] (provided)
+
+
+== Description ==
+All that remains is to deliver the Crown of Will to Sharlindra in the Undercity.  She will see that it is delivered to Lady Sylvanas. I would warn you against thinking to use it for your own purposes, <name>, Mug'Thol's fate should be illustration enough.
+
+
+== Rewards ==
+
+5050 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Yes? Do you have something to report?
+
+
+== Completion ==
+So this is the relic the ogre used to duck the will of the Dark Lady...
+Strange that something so simple could wield so great a power. And to fall into as clumsy hands as those. Well done, <name>, I will deliver the crown to Lady Sylvanas, and see that she hears of your accomplishment.
+
+
+== Progression ==
+ [39] The Crown of Will
+ [39] The Crown of Will
+ [41] The Crown of Will
+ [43] The Crown of Will
+ [43] The Crown of Will
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

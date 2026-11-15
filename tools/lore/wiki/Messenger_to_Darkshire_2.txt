@@ -1,0 +1,54 @@
+title: Messenger to Darkshire (2)
+revision: 6307915
+part: whole
+quest: 146
+url: https://warcraft.wiki.gg/wiki/Messenger_to_Darkshire_%282%29
+
+The unhappy conclusion of the Reinforcing Redridge correspondence quests.
+
+
+== Objectives ==
+Return to Magistrate Solomon with Lord Ebonlocke's letter of response.
+
+ [Ebonlocke's Response to Solomon] (provided)
+
+
+== Description ==
+If I did not know Magistrate Solomon personally, I would say the man has gone mad. Send the Night Watch to Lakeshire because Stormwind refuses aid? The Night Watch was formed because Stormwind left us when this foul magic seeped into the land. If I sent my Night Watch, this town would be overrun by evil before the guards even reached the forest's edge.
+Take this letter of response to your Master in Lakeshire.
+
+
+== Rewards ==
+You will receive:
+
+2 50
+340 XP (or 2 10 at max level)
++25 reputation with Stormwind
+
+
+== Progress ==
+Ah, good to see you back, messenger. Shall I inform the Marshal that the Night Watch is on its way from Darkshire?
+
+
+== Completion ==
+By the Light! The Stormwind Army retreated from Westfall. And the Guard no longer protects Darkshire? There is some treachery abound. How could this be so?
+Oh I forgot to reward your service, <class>. Here are some coins. Now excuse me. Something is amiss in Stormwind and I must get to the bottom of it.
+
+
+== Progression ==
+ [14] Messenger to Stormwind
+ [14] Messenger to Stormwind
+ [14] Messenger to Westfall
+ [14] Messenger to Westfall
+ [18] Messenger to Darkshire
+ [18] Messenger to Darkshire
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,72 @@
+title: The Absent Minded Prospector (2)
+revision: 6619092
+part: whole
+quest: 731
+url: https://warcraft.wiki.gg/wiki/The_Absent_Minded_Prospector_%282%29
+
+== Objectives ==
+Protect Prospector Remtravel as he searches for the mysterious fossil, then return to Archaeologist Hollee in Auberdine.
+
+Escort Prospector Remtravel
+Suggested Players [2]
+
+
+== Description ==
+So then, Hollee... oh that's right, you are not Hollee. Where's Hollee?
+Bah, that's beside the point. We must find that stone brush... I mean the mysterious fossil! We must find that fossil. The Explorers' League in Darnassus will want some indication as to what I've been doing.
+Let me know when you are ready and we will hunt down that brush.... I mean fossil! We shall find something in writing to satisfy the League.
+So are you ready yet?
+
+
+== Rewards ==
+You will receive:
+
+1950 XP (or 12 at max level)
++350 reputation with Ironforge
+
+
+== Completion ==
+Thank the stars Prospector Remtravel is safe! I told you he was absent minded. I can't believe he insisted on staying there with all of those horrible creatures lurking about.
+
+
+== Notes ==
+The professor will lead you through the entirety of the dig before he recalls just where the fossil is.
+
+Prospector Remtravel says: Ok, <name>, let's go find where I left that mysterious fossil.  Follow me!
+The prospector leads the way down into the dig.  At the scaffolding opposite the path east, he pauses again.
+Prospector Remtravel says: Now where did I put that mysterious fossil?  Ah, maybe up there...
+The prospector climbs up the scaffolding.  Meanwhile, a pair of troggs attack.
+Prospector Remtravel says: Hrm, nothing up here.
+The prospector climbs down, and goes over to the tent area.
+Prospector Remtravel says: No mysterious fossil here... Ah, but my copy of Green Hills of Stranglethorn.  What a good book!
+Prospector Remtravel says: I bet you I left it in the tent!
+The prospector goes to the tent.  Another pair of troggs attack.
+Prospector Remtravel says: Oh wait, that's Hollee's tent... and it's empty.
+The prospector heads east, deeper into the dig.  He heads around the corner to the deepest section of the dig.
+Prospector Remtravel says: Interesting... I hadn't noticed this earlier...
+Prospecor Remtravel inspects the ancient, mossy stone.
+Prospector Remtravel says: Oh wait!  I'm supposed to be looking for that mysterious fossil!
+The professor walks to the south side of the dig.  A final trio of troggs ambush the two of you.
+Prospector Remtravel says: Nope.  didn't leave the fossil back here!
+The professor leads you back to where you first found him.
+Prospector Remtravel says: Ah.  I remember now!  I gave the mysterious fossil to Hollee!  Check with her.
+Prospector Remtravel goes back to work, oblivious to everything around him.
+
+
+== Progression ==
+ [14] Trouble in Darkshore?
+ [20] The Absent Minded Prospector
+ [20G] The Absent Minded Prospector
+ [20] The Absent Minded Prospector
+ [20] The Absent Minded Prospector
+ [24] The Absent Minded Prospector
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

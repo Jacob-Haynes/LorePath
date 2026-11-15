@@ -1,0 +1,9 @@
+title: Morbent Fel
+revision: 6947851
+part: intro
+url: https://warcraft.wiki.gg/wiki/Morbent_Fel
+
+Morbent Fel was a human necromancer who ruled over the undead of Duskwood from his homely house atop the Forlorn Rowe in Raven Hill Cemetery. He was guarded by his undead minions as well as a magical barrier that dampened attacks on his person. He was an ally of the Dark Riders, and was the one responsible for raising the undead in Duskwood.
+In order to defeat him, one had to first remove his magical shield using  [Morbent's Bane]. He was very hard to hit with the shield active (unless one was of a significantly higher level than him) and the quest objective to kill him would not be completed.
+After the Cataclysm, Morbent Fel returned as a lich (likely in homage to the similarly-named random hero lich from Warcraft III) and was defeated once again by a group of adventurers who found the pieces of Morbent's Bane and repaired it. After his death Morbent's Bane, also known as the Torch of Holy Flame, was placed outside his home to keep the undead docile by Watcher Sarah Ladimore.
+Although he was a lich, a phylactery is never mentioned. However all liches have one, and since his was not destroyed, he could conceivably come back.

@@ -1,0 +1,42 @@
+title: Williden's Journal
+revision: 5612585
+part: whole
+quest: 3884
+url: https://warcraft.wiki.gg/wiki/Williden%27s_Journal
+
+== Objective ==
+Return the journal to Williden Marshal somewhere in Un'Goro Crater.
+
+ [A Mangled Journal] (provided)
+
+
+== Description ==
+You have uncovered a mangled journal. Parts of it remain legible, with a Williden Marshal claiming ownership over the contents therein. If the journal is accurate, then Williden may be found somewhere in the northern part of the Crater; according to the journal, he and his companions sought higher ground from the savage beasts of the Crater once their base camps were overrun.
+
+
+== Rewards ==
+You will receive:
+
+5100 XP
+
+
+== Progress ==
+Hello there!  I and my companions are happy to see some living beings here other than overgrown savage beasts!  What brings you into the Un'Goro Crater?
+
+
+== Completion ==
+Well look at this - my journal! I thought it was lost, much like almost everything else we brought into Un'Goro. I thank you kindly for returning this to me!
+
+
+== Notes ==
+Williden Marshal is at Marshal's Refuge.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

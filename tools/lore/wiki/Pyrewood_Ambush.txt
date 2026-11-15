@@ -1,0 +1,48 @@
+title: Pyrewood Ambush
+revision: 5619585
+part: whole
+quest: 452
+url: https://warcraft.wiki.gg/wiki/Pyrewood_Ambush
+
+== Objectives ==
+Help Deathstalker Faerleia kill the Pyrewood Council.
+
+Aid Faerleia in killing the Pyrewood Council
+
+
+== Description ==
+You got here just in the nick of time, <name>!
+The Pyrewood Council will be returning any moment. Arugal has other matters to tend to in the keep. He uses the Council as mere puppets to keep the mindless minions of Pyrewood under his control. But I believe that without the guidance of the Pyrewood Council, the sons of Arugal will turn against their master.
+I cannot handle them all by myself. I need you to help me. Together we can lay waste to the Council for Lady Sylvanas.
+
+
+== Rewards ==
+
+You will also receive:
+
+7
+1050 XP
++100 or +250 reputation with Undercity
+
+
+== Completion ==
+You fought like a true disciple of the Dark Lady, <name>.  With the council dead, perhaps we can gain control of this town once and for all and drive Arugal from Shadowfang Keep. I salute you!
+
+
+== Notes ==
+On accept:
+
+Deathstalker Faerleia says: Be ready, <name>. I hear the council returning. Prepare to ambush!
+You must keep Deathstalker Faerleia alive, but she'll usually be able to handle the council members on her own even without the player's aid. The councilmen appear in the building in 4 waves. The first consists of Councilman Smithers; the second of Thatcher and Hendricks; the third of Hartin, Wilhelm, and Higarth; and the fourth and final of Brunswick, Cooper, and Lord Mayor Morrison. After each wave, Faerleia will drink a potion that restores her health to full and run back to her starting position to await the next wave. Upon killing all of the members of the last wave:
+
+Deathstalker Faerleia says: Well done. A blow to Arugal no doubt!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

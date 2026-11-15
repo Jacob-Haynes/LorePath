@@ -1,0 +1,57 @@
+title: Down the Scarlet Path
+revision: 6428082
+part: whole
+quest: 261
+url: https://warcraft.wiki.gg/wiki/Down_the_Scarlet_Path
+
+== Objectives ==
+Destroy 30 Undead Ravagers, then return to Brother Anton at Nijel's Point.
+
+Undead Ravager slain (30)
+
+
+== Description ==
+I will be frank. We are at war with the Scourge. It is an evil that corrupts our people and infects our land. It must be stopped before it overwhelms us and drags our world into shadow. We of the Scarlet Crusade have sworn to fight the Scourge with body and soul.
+If you are with us, then gather your courage and prove your allegiance—destroy the undead ravagers of Desolace, in the Valley of Bones to the south.
+Do this, and the Crusade will embrace you.
+
+
+== Rewards ==
+You will receive:
+
+45
+4150 XP (or 24 60 at max level)
+
+
+== Progress ==
+The Scourge grows in power with the passing of each day.  If you truly wish to halt its advances, then show me.
+
+
+== Completion ==
+You have proven your resolve, and the Scarlet Crusade commends you.
+If you do not shy from righteous slaughter, then perhaps your path lies with us...
+
+
+== Notes ==
+Valley of Bones is found at .
+
+
+== Progression ==
+ [39] Brother Anton
+ [39] Down the Scarlet Path
+ [40] Down the Scarlet Path
+ [40D] In the Name of the Light
+
+
+== Trivia ==
+During the original beta, this quest required 12 Shriveled Eyes from the undead in Duskwood.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

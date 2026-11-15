@@ -1,0 +1,49 @@
+title: Alliance Relations (4)
+revision: 6874028
+part: whole
+quest: 1436
+url: https://warcraft.wiki.gg/wiki/Alliance_Relations_%284%29
+
+== Objectives ==
+Speak to Keldran in Orgrimmar.
+
+
+== Description ==
+The fight goes well, <name>. Perhaps the Warchief will allow us to return to our homes before the seasons change if we continue to make such great strides in our battle against the demons and their underlings.
+Return to Keldran and let him know what we have done. I am sure he will reward you for your efforts here. His cause is important to him, and he will take pride in knowing that the Warchief respects his concerns.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Gloves of Kapelan]
+ [Swiftrunner Cape]
+You will also receive:
+
+2,650 XP
++100 or +250 reputation with Orgrimmar
+
+
+== Completion ==
+You have returned from Desolace more than successful, <name>. Thank you.
+Thank you for your efforts, your time, and your understanding to my plea. Thrall understands and desires peace between the Horde and Alliance, and by taking measures to insure our appearance is acceptable, we will not provoke any further threats of unnecessary violence.
+
+
+== Progression ==
+ [30] Alliance Relations
+ [30] Alliance Relations
+ [33] Alliance Relations
+Complete both to continue:
+ [33] The Burning of Spirits
+ [33] Befouled by Satyr
+ [33] Alliance Relations
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

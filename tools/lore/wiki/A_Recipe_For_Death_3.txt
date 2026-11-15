@@ -1,0 +1,68 @@
+title: A Recipe For Death (3)
+revision: 6965746
+part: whole
+quest: 451
+url: https://warcraft.wiki.gg/wiki/A_Recipe_For_Death_%283%29
+
+== Objectives ==
+Bring 6 samples of Lake Creeper Moss, 6 samples of Lake Skulker Moss and a Hardened Tumor to Master Apothecary Faranell in the Undercity.
+
+ [Lake Skulker Moss] (6)
+ [Lake Creeper Moss] (6)
+ [Hardened Tumor]
+
+
+== Description ==
+According to Berard's Journal the moss from Lake Skulkers and Creepers might prove useful for our quest to brew a new plague. Those beasts dwell on the islands in Lake Lordamere to the east.
+He also mentions a very rare Hardened Tumor that he discovered on a Vile Fin murloc. Apparently the tumor is so rare Berard was only able to obtain one.
+Collect samples of the moss as well as the rare hardened tumor and take them to Master Apothecary Faranell in the Undercity.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Nightglow Concoction]
+ [Acidproof Cloak]
+ [Wise Gauntlets] 
+You will also receive:
+
+5,540 XP
++200 or +500 reputation with Undercity
+ [Elixir of Minor Fortitude]
+ [Swiftness Potion]
+
+
+== Progress ==
+What brings you back to the Undercity, <name>?
+
+
+== Completion ==
+Such a blow to the Royal Apothecary Society to lose Berard.  But through your hard work and Apothecary Renferrel's diligent research Berard's studies will still be useful to The Dark Lady's plight.
+We are on the cusp of something great here, <name>.  If you were not so skilled in the ways of combat I would try to recruit you for membership in the Society.
+
+
+== Notes ==
+The Lake Skulkers and Creepers are found on the Dawning Isles, the smaller islands in eastern Lake Lordamere. Skulkers are on the northern islands, creepers on the south.
+Vile Fin murlocs can be found on Lake Lordamere. Only the higher level murlocs in one of three villages will drop the tumor. Two of these villages are on the Dawning Isles, and the third is on the southwest shore of the lake, behind Ambermill. As it is rare, the tumor may take a while to drop.
+
+
+== Progression ==
+ [21D] Abominable Creatures
+ [22D] A Frightened Request
+ [22D] Bloodied Insignia
+ [22D] Crest of Lordaeron
+ [22D] Light's Justice
+ [22D] Remember That I Love You →  [22] Remember That I Love You
+ [12] A Recipe For Death →  [15] A Recipe For Death →  [18] A Recipe For Death →  [22D] The New Plague
+ [11] Rear Guard Patrol →  [13E] Rear Guard Patrol →  [22D] The Wrath of Rath'mael
+ [21D] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

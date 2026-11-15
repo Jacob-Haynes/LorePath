@@ -1,0 +1,62 @@
+title: The Crystal of Zin-Malor
+revision: 6307820
+part: whole
+quest: 5253
+url: https://warcraft.wiki.gg/wiki/The_Crystal_of_Zin-Malor
+
+== Objectives ==
+Deliver the Crystal of Zin-Malor to Arch Druid Fandral Staghelm in Darnassus.
+
+ [Crystal of Zin-Malor] (provided)
+
+
+== Description ==
+Quite impressive, <name>.
+The crystal of Zin-Malor can never be returned to the temple which, as you know, lies in ruin. But I believe that your effort to undo the evil of the past should not go unrewarded.
+Seek out Arch Druid Fandral Staghelm in Darnassus, and bring the crystal to him, <name>. It should be in the hands of those that will not abuse its power. From the looks of it, only a handful of the strongest magic users would be able to control such a power.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Turquoise Sash]
+ [Plow Wood Spaulders]
+ [Emerald Mist Gauntlets]
+You will receive:
+
+6200 XP (or 37 50 at max level)
++250 reputation with Darnassus
++250 reputation with Exodar
++250 reputation with Gnomeregan
++250 reputation with Ironforge
++250 reputation with Stormwind
+
+
+== Progress ==
+Yes, <race>?
+
+
+== Completion ==
+I have heard of the Crystal of Zin-Malor; the user of the crystal becomes capable of incredible arcane power, but only if truly worthy. I am impressed that you not only recovered the crystal, but you also realize your own limits, and did not attempt to use the crystal yourself.
+Thank you for bringing it to me, <name>. We will keep it safe, and may the cursed sprits[sic] that once guarded the shattered crystal finally be at peace.
+
+
+== Progression ==
+ [56] To Winterspring!
+ [56] The Ruins of Kel'Theril
+ [56] Troubled Spirits of Kel'Theril
+ [56] Fragments of the Past
+ [57] Fragments of the Past
+ [58] Tormented By the Past
+ [58] Remorseful Highborne
+ [58] The Crystal of Zin-Malor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

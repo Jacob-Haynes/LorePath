@@ -1,0 +1,55 @@
+title: Celebrating Good Times
+revision: 6897728
+part: whole
+quest: 7496
+url: https://warcraft.wiki.gg/wiki/Celebrating_Good_Times
+
+== Objectives ==
+Seek out Major Mattingly in the Valley of Heroes.
+
+
+== Description ==
+Seek out Major Mattingly in the Valley of Heroes, <name>. He will be expecting you...
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Dragonslayer's Signet]
+ [Onyxia Tooth Pendant]
+ [Onyxia Blood Talisman]
+You will also receive:
+
+9950 XP (or 87 at max level)
++125 reputation with Darnassus
++125 reputation with Exodar
++125 reputation with Gnomeregan
++125 reputation with Ironforge
++125 reputation with Stormwind
+
+
+== Completion ==
+Few are graced with such ceremony, <name>. Please, choose your reward so that we may begin the celebration.
+
+
+== Notes ==
+Upon completion
+Major Mattingly yells: Citizens and allies of Stormwind, on this day, history has been made. <Name> has laid waste to that which had attempted to usurp the rule of the kingdom. Gather round and join me in honoring our heroes.
+Major Mattingly yells: Behold the might of the Alliance!  The dread lady, Onyxia, hangs from the arches! Let the rallying cry of the dragon slayer lift your spirits!
+
+
+== Progression ==
+ [60] Victory for the Alliance
+ [60] Celebrating Good Times
+
+
+== Patch changes ==
+ Patch 3.2.2 (2009-09-22): Removed.   
+ Patch 3.0.2 (2008-10-14): Quest giver changed from Bolvar Fordragon to Varian Wrynn.   
+ Patch 1.3.0 (2005-03-07):    
+
+
+== External links ==
+
+Wowhead
+WoWDB

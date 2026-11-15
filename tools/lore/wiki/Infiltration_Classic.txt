@@ -1,0 +1,58 @@
+title: Infiltration (Classic)
+revision: 6394523
+part: whole
+quest: 533
+url: https://warcraft.wiki.gg/wiki/Infiltration_%28Classic%29
+
+Infiltration is a Horde quest in Hillsbrad Foothills in which players search for information regarding the whereabouts of an orc held captive by the Syndicate in Alterac Mountains. In order to get this quest, you must have completed  [22] The Rescue.
+
+
+== Objectives ==
+Retrieve information about Gol'dir's whereabouts for Krusk in Tarren Mill.
+
+ [Syndicate Missive]
+
+
+== Description ==
+At last begin to hear word and rumor, find evidence of Gol'dir's whereabouts. The humans are moving him around, but we are narrowing down our search and focusing on the large Syndicate camp just north of here.
+Go there and bring back whatever information you can get your hands on.
+
+
+== Rewards ==
+You will receive:
+
+35
+2,700 XP
++100 or +250 reputation with Orgrimmar
+
+
+== Progress ==
+Have you found anything? I fear Gol'dir's prospects grow worse by the day...
+
+
+== Completion ==
+Finally, we know where Gol'dir is being held. The camp in question is not too far from here, and hopefully they will not be as well prepared as they were when they captured us the first time.
+
+
+== Notes ==
+One way to get the Syndicate Missive is to complete the quest Valik, which you can obtain from Henchman Valik in the Syndicate camp on Sofera's Naze. Buying a  [Southshore Stout] from Innkeeper Shay will save you a trip, or simply find and kill the Drunken Footpad nearby for free booze.
+You can also get the missive by killing Syndicate Thieves and Syndicate Footpads.
+
+
+== Progression ==
+ [22] The Rescue
+ [34] Infiltration
+ [36] Gol'dir
+ [36] Blackmoore's Legacy
+ [42] Lord Aliden Perenolde
+ [40] Taretha's Gift
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

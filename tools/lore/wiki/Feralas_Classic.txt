@@ -1,0 +1,6 @@
+title: Feralas (Classic)
+revision: 6231914
+part: intro
+url: https://warcraft.wiki.gg/wiki/Feralas_%28Classic%29
+
+Unlike its barren neighbors to the north, south and east, Feralas is a lush jungle. Both the Horde and the Alliance lay claim to the area and both factions have to contend with powerful local forces, which include, most notoriously, the bloodthirsty Gordunni ogres which populate the region and control a number of ancient Elven ruins scattered in the area, including the vast dungeon of Dire Maul. Gordunni ogres have desecrated and defiled much of Feralas and have damaged the land with their taint. The Horde, in particular, is concerned with the unchecked expansion of the Gordunni clan and has put out a call for adventurers to aid the war effort against the Ogres. Feralas is also home to a number of scattered Grimtotem tauren tribes, members of which are hunted by Horde agents on the orders from Belgrom Rockmaul in Orgrimmar. In addition the far western islands are crawling with Naga and recently several Silithid hives have been spotted in the region.

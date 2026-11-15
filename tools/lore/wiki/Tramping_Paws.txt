@@ -1,0 +1,43 @@
+title: Tramping Paws
+revision: 5587125
+part: whole
+quest: 276
+url: https://warcraft.wiki.gg/wiki/Tramping_Paws
+
+== Objectives ==
+Kill 15 Mosshide Gnolls and 10 Mosshide Mongrels, then return to Rethiel the Greenwarden in the Wetlands.
+
+Mosshide Gnoll slain: (15)
+Mosshide Mongrel slain: (10)
+
+
+== Description ==
+The Mosshide Gnolls have lived in the Wetlands peacefully for many years, but now grow in numbers. Their feet stamp flat the fen's bushes and flowers, and their foul axes cut too much wood to fuel their fires.
+They are no longer in balance with the land. For the Wetlands to survive, the Gnolls must be reduced.
+Kill 15 Mosshide Gnolls and 10 Mosshide Mongrels. Hunt them to the south, near the Dwarven gate of Algaz. After you do this, return to me.
+
+
+== Progress ==
+Your task is still at hand, young <class>.
+
+
+== Completion ==
+By reducing the Gnolls' number, you have tended to the health of the Wetlands.  Although my faith in your people has been taxed in the past, <race>, it may yet be restored.
+
+
+== Progression ==
+ [21] The Greenwarden
+ [21] Tramping Paws
+ [23] Fire Taboo
+ [26] Blisters on The Land
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.4.0 (2005-04-19): Removed Stormwind Faction reward from the Greenwarden quest line in the Wetlands.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

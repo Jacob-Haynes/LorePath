@@ -1,0 +1,56 @@
+title: Kirtonos the Herald (Classic)
+revision: 6176778
+part: whole
+quest: 5384
+url: https://warcraft.wiki.gg/wiki/Kirtonos_the_Herald_%28Classic%29
+
+== Objectives ==
+Return to the Scholomance with the Blood of Innocents. Find the porch and place the Blood of Innocents in the brazier. Kirtonos will come to feast upon your soul.
+
+Kirtonos the Herald slain
+ [Blood of Innocents] (provided)
+
+
+== Description ==
+This is it, <name>.
+<Eva points to the vial inside the bag.>
+The blood of innocents. The purest blood, used to appease Krastinov's master.
+It is with this blood that Kirtonos may be summoned. It is with this blood, then, that Kirtonos must be destroyed.
+Take the blood to the porch. Place it upon the brazier. Kirtonos will come - he cannot resist. When he appears, unleash the fury and wrath of a thousand innocent deaths upon him.
+Should you succeed, you will earn more than just our gratitude.
+
+
+== Rewards ==
+You will be able to choose one of:
+
+ [Penelope's Rose]
+ [Mirah's Song]
+You will also receive:
+
+ [Spectral Essence]
+4 98
+14,200 XP
+
+
+== Progress ==
+Be wary, Kirtonos is a seasoned fighter.
+
+
+== Completion ==
+With the death of Kirtonos, a chapter in the horrible tale of Scholomance comes to a close. There is, however, more to be done. Others here are now aware of your brave acts. Take this, <name>. It is a piece of our own essence. It will allow you to communicate with the other lost souls of Caer Darrow.
+
+
+== Progression ==
+ [60D] Doctor Theolen Krastinov, the Butcher
+ [60D] Krastinov's Bag of Horrors
+ [60D] Kirtonos the Herald
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,54 @@
+title: The Deserter
+revision: 6210540
+part: whole
+quest: 8285
+url: https://warcraft.wiki.gg/wiki/The_Deserter
+
+== Objectives ==
+Take the restored tablet to Hermit Ortell in Silithus.
+
+ [Restored Twilight Tablet] (provided)
+
+
+== Description ==
+There are rumors of a Twilight's Hammer member called Ortell having deserted his sect. Word has it he hid in the mountains south of Southwind Village, where he lives as a hermit. Perhaps you can enlist his help in deciphering the tablet.
+Take the restored tablet with you and seek out Ortell.
+
+
+== Rewards ==
+You will receive:
+
+4800 XP
++150 reputation with Cenarion Circle
+
+
+== Progress ==
+You!  How did you find me?  Who are you?  You weren't followed, were you?  Speak!
+
+
+== Completion ==
+I see you're familiar with my old organization.  You must be with Cenarion Hold.  
+You seek information to use against them?  Come closer, perhaps we can be of mutual assistance.
+
+
+== Notes ==
+Hermit Ortell is in a cave south of Southwind Village at coordinates 67,69.
+
+
+== Progression ==
+ [15-30] The Twilight Mystery
+ [15-30] The Deserter
+ [15-30] The Twilight Lexicon
+ [15-30] A Terrible Purpose
+ [15-30] True Believers
+ [15-30] Still Believing (Repeatable)
+
+
+== Patch changes ==
+ Patch 1.8.0 (2005-10-10): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

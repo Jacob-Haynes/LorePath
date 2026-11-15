@@ -1,0 +1,56 @@
+title: Pool of Tears (Horde)
+revision: 6877023
+part: whole
+quest: 1424
+url: https://warcraft.wiki.gg/wiki/Pool_of_Tears_%28Horde%29
+
+== Objectives ==
+Fel'zerul in Stonard wants you to gather 5 Atal'ai Artifacts.
+
+ [Atal'ai Artifact] (5)
+
+
+== Description ==
+The Warchief sent us to investigate strange happenings at The Temple of Atal'Hakkar.
+The Atal'ai trolls are a tribe of dark casters, known for practicing forbidden magic. You can imagine how astonished we were when we arrived here to discover the temple had been sunk.
+The green dragons now guard the site, claiming to be protectors of Azeroth.
+We need to discover what happened. Explore around the Pool of Tears and gather Atal'ai artifacts. From those I can begin to piece together this puzzle.
+
+
+== Rewards ==
+You will also receive:
+
+1 20
+4,450 XP
++150 or +350 reputation with Orgrimmar
+
+
+== Progress ==
+No one knows what dark practices went on inside The Temple of Atal'Hakkar. But we do know that great and powerful forces of magic were used.
+We must learn as much as we can about such magic. Perhaps the spells of the Atal'ai will prove of use to the Horde.
+Once you have gathered enough Atal'ai artifacts from around the Pool of Tears, I can begin to understand what the trolls were hoping to accomplish and what went so horribly wrong.
+
+
+== Completion ==
+Your diligence in collecting the Atal'ai artifacts is worthy of praise, <class>.
+
+
+== Notes ==
+You can find the artifacts on the bottom of the Pool of Tears around the temple. This should be an easy quest to finish.
+
+
+== Progression ==
+ [43] Pool of Tears
+ [44] The Atal'ai Exile
+ [44] Return to Fel'Zerul
+ [50D] The Temple of Atal'Hakkar
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

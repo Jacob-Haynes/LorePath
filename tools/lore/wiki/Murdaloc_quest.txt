@@ -1,0 +1,51 @@
+title: Murdaloc (quest)
+revision: 6930305
+part: whole
+quest: 739
+url: https://warcraft.wiki.gg/wiki/Murdaloc_%28quest%29
+
+This quest is part of the Ironband Wants You! quest chain.  This quest chain starts with  [37] Ironband Wants You!
+
+
+== Objectives ==
+Slay Agmond's killer, Murdaloc.Slay 12 Stonevault Bonesnappers.
+Report to Prospector Ironband in Loch Modan.
+
+Murdaloc slain
+Stonevault Bonesnapper slain (12)
+
+
+== Description ==
+Agmond's tracks lead from the west. It is easy to tell from the bloody smears across rock and sand that the dwarf crawled some distance.
+And here he died.
+Upon close inspection, the word "Murdaloc" is roughly scrawled in a patch of Badlands sandstone.
+Scrawled next to Agmond's dead hand.
+
+
+== Rewards ==
+
+You will also receive:
+
+3450 XP (or 21 at level 70)
+250 reputation with Ironforge
+
+
+== Completion ==
+This is sobering news, <name>.  But Agmond had a strong arm and a fierce hammer-swing, and his skull was as thick as they come!  Although he was killed by those cursed troggs I'm sure he took a lot of them down with him.
+
+
+== Progression ==
+ [37] Ironband Wants You!
+ [38] Find Agmond
+ [42] Murdaloc
+ [38] Agmond's Fate
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

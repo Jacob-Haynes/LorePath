@@ -1,0 +1,47 @@
+title: Victory for the Alliance
+revision: 6897737
+part: whole
+quest: 7495
+url: https://warcraft.wiki.gg/wiki/Victory_for_the_Alliance
+
+== Objectives ==
+Take the Head of Onyxia to King Varian Wrynn in Stormwind.
+
+ [Head of Onyxia] (provided)
+
+
+== Description ==
+You have accomplished the impossible. The brood mother of the Black Dragonflight lies dead at your feet. Take her head and present it to the King.
+
+
+== Rewards ==
+You will receive:
+
+9950 XP (or 87 at max level)
++500 reputation with Stormwind
+
+
+== Progress ==
+By Uther's beard!
+
+
+== Completion ==
+For so many years I was held under her captivating gaze. Finally, to see justice meted and the honor of Stormwind restored! Today, we celebrate this glorious victory!
+
+
+== Progression ==
+ [60] Victory for the Alliance
+ [60] Celebrating Good Times or   [60] Celebrating Good Times
+
+
+== Patch changes ==
+ Patch 3.2.2 (2009-09-22): Removed.   
+ Patch 3.0.2 (2008-10-14): Now ends at King Varian Wrynn instead of Highlord Bolvar Fordragon. Completion text changed.
+Original version: Today, we celebrate this glorious victory!
+ Patch 1.3.0 (2005-03-07): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

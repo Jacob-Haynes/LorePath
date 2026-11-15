@@ -1,0 +1,47 @@
+title: The Lost Report
+revision: 6839807
+part: whole
+quest: 27244
+url: https://warcraft.wiki.gg/wiki/The_Lost_Report
+
+== Objectives ==
+Bring the Spy's Report to Nazeer Bloodpike in Brackenwall Village.
+
+ [Spy's Report] (provided)
+
+
+== Description ==
+Sifting through the Loose Dirt, the severed hand of an orc is found. And clutched in the hand is a bone-carved tube. And in the tube is a dirt-stained parchment.
+The parchment is a report made by an orc who spent weeks spying on the city of Theramore.
+After scanning the parchment, it is clear that it must be brought to the orc spymaster in Brackenwall Village.
+
+
+== Rewards ==
+You will receive:
+
+75
+4350 XP
++350 reputation with Orgrimmar
+
+
+== Progress ==
+You have something for me?
+
+
+== Completion ==
+Good work, <name>.  Our agent, Marg Nighteye, was stationed outside Theramore.  He was charged to spy on the city.  
+This is his latest report, and it may be his last—from your testimony, I fear that Marg met his end in the swamp...
+
+
+== Notes ==
+Before patch 4.0.3a this quest was part of a quest line that continued with  [35] The Severed Head.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated for Cataclysm.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

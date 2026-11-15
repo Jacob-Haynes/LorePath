@@ -1,0 +1,68 @@
+title: Fragments of the Past (2)
+revision: 6404973
+part: whole
+quest: 5247
+url: https://warcraft.wiki.gg/wiki/Fragments_of_the_Past_%282%29
+
+== Objectives ==
+Bring an Enchanted Thorium Bar, 5 Crystal Restore, and a Vial of Dire Water to Aurora Skycaller at Quel'Lithien Lodge, to the north-west of Northpass Tower in Eastern Plaguelands.
+
+ [Enchanted Thorium Bar]
+ [Crystal Restore] (5)
+ [Vial of Dire Water]
+ [Empty Water Vial] (provided)
+
+
+== Description ==
+I will be able to help you, if recreating the artifact is truly what you wish to do.
+To seal the pieces back together, I will need items with strong magical qualities. An enchanted thorium bar and five crystal restore... You'll also need to collect some water from what might seem an unlikely place... Find the dire pool along Eldreth Row at Dire Maul in Feralas, and fill this vial.
+While you are gone, I will attempt to glean from these pages the knowledge I need to repair the damage done to the relic.
+
+
+== Rewards ==
+You will receive:
+
+8750 XP (or a 52 50 at max level)
++250 reputation with the Alliance
+
+
+== Progress ==
+The relic must be placed in the hands of only the most trustworthy. It can not be stolen again...
+
+
+== Completion ==
+Using these elements, I can fuse the fragments together... to hopefully what they once were.
+
+
+== Notes ==
+The  [Thorium Bar] is available from the Auction House, as are the 3 Dream Dusts needed to smelt it. It needs an Miner with at least 250 skill level to do the smelting.
+To get the  [Crystal Restore] you need to have completed 6 of the level 46-61 Un'Goro quest chain that starts with  [15-30] Crystals of Power. This requires a total of 7 Power Crystals of each color (red, blue, yellow, and green) plus an additional 10 of  [Yellow Power Crystal] and  [Green Power Crystal]. You may want to collect additional crystals for the other rewards available as they give some useful buffs and usable Level 50+ items such as  [Crystal Charge] which inflicts 383 to 517 fire damage to targets in a 3 yard radius.
+To collect the  [Vial of Dire Water] you will need to go west, left, at the first junction in Eldreth Row, outside the Dire Maul instance in Feralas. This will also complete part of the quest chain to enable Alliance players to obtain the  [Crystal of Zin-Malor]. The pool is guarded by two Level 53 ogres, which were elite until patch 2.3. For some players pool may be invisible, but you can "bump" into it—it's in the dead end, and vial still can be filled from it.
+Prior to patch 2.3.0, the reward was to 6000 XP and 25 reputation points with Alliance.
+
+On completion
+Aurora Skycaller says: Please wait while I attempt to bind the shards together so that they will be whole once again.
+Aurora Skycaller says: Ishnu... Oshalan thara dormil... Anu'dorin...
+Aurora Skycaller walks over to a nearby table and casts a spell, then walks back
+Aurora Skycaller says: Yes, I was able to reseal the relic, <name>.
+
+
+== Progression ==
+ [56] To Winterspring!
+ [56] The Ruins of Kel'Theril
+ [56] Troubled Spirits of Kel'Theril
+ [56] Fragments of the Past
+ [57] Fragments of the Past
+ [58] Tormented By the Past
+ [58] Remorseful Highborne
+ [58] The Crystal of Zin-Malor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

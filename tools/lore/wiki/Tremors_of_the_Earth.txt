@@ -1,0 +1,46 @@
+title: Tremors of the Earth
+revision: 6168546
+part: whole
+quest: 732
+url: https://warcraft.wiki.gg/wiki/Tremors_of_the_Earth
+
+== Objectives ==
+Retrieve the Sign of the Earth for Garek.
+
+ [Sign of the Earth]
+
+
+== Description ==
+I heard from Sigrun that you have been a great help to him. Perhaps I might enlist your help. I was sent here by my master, Krasus of the Kirin Tor, to put an end to the trouble brewing in Lethlor Ravine.
+I cannot divulge the exact nature of my assignment here or the tasks that I must undertake, but be assured it is of vital importance.
+A band of wandering ogres, sometimes seen near Camp Boff, stole an object called the Sign of the Earth; I must have it. Bring it to me, and I will tell you more.
+
+
+== Rewards ==
+You will receive:
+
+5050 XP
++250 reputation with Stormwind
+
+
+== Progress ==
+The nomadic band of ogres travels between their camps across the Badlands; heat rising from the dry earth and the swirling winds will make it difficult to track their progress.  I have heard that sometimes they travel through Camp Boff.  If you are lost, you might try your search there. 
+
+
+== Completion ==
+Good tidings you bring bearing the Sign, <name>. The  [Sign of the Earth] was created by the Dark Iron dwarves of Angor Fortress to bind two of Deathwing's ruthless lieutenants, the twins Blacklash and Hematus. 
+
+
+== Progression ==
+ [43] Tremors of the Earth
+ [50] Tremors of the Earth
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

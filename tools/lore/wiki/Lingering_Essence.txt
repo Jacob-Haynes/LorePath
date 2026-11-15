@@ -1,0 +1,48 @@
+title: Lingering Essence
+revision: 6971620
+part: whole
+quest: 94997
+url: https://warcraft.wiki.gg/wiki/Lingering_Essence
+
+== Objectives ==
+Bring the Satchel of Cursed Mementos to Ashe Amberhall in Farholde Keep.
+
+Satchel of Cursed Mementos
+
+
+== Description ==
+We mustn't linger. Take these to the keep at once.
+Find Ashe Amberhall. She may be a pain, but she's well respected in her field of study. Perhaps she can shed some light on what energies are contained within these objects.
+
+
+== Rewards ==
+You will receive:
+
+55
+3,450 XP
++100 reputation with Brotherhood of the Horse
+
+
+== Completion ==
+Riftan sent you? That old dog has been battling those damn cultists so long I worry his fatigue has begun to wear on his mind.
+Ah, I've started babbling again. Forgive me. His concerns may be founded.
+Let's see what you've got.
+
+
+== Progression ==
+A Token of Vengeance
+ [45D] Eye of Mugg
+ [41] Krol'dok Moulding →  [41] Key Ingredients
+Tome of Twilight
+Twilight Mementos →  [42] Lingering Essence → Curios of Curiosity
+Vengeance of the Highborne
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

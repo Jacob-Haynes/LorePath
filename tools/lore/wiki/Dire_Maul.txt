@@ -1,0 +1,8 @@
+title: Dire Maul
+revision: 6886122
+part: intro
+url: https://warcraft.wiki.gg/wiki/Dire_Maul
+
+Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas (or Eldre'thalas), but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar. It is comprised of three instances: the Warpwood Quarter, the Capital Gardens, and the Gordok Commons.
+The sub-region of Dire Maul plays host to two night elf archaeology dig sites: the Broken Commons Digsite and the Dire Maul Digsite.
+The ruins stand strong because of an ancient crafting technique that bound arcane energy within the stone.

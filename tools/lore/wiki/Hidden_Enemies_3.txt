@@ -1,0 +1,63 @@
+title: Hidden Enemies (3)
+revision: 5606156
+part: whole
+quest: 5728
+url: https://warcraft.wiki.gg/wiki/Hidden_Enemies_%283%29
+
+Hidden Enemies is the culmination of a small Horde quest chain that involves infiltrating the Burning Blade at the request of Thrall. After you gained the trust of Neeru Fireblade in the previous part, Thrall asks you now to enter Ragefire Chasm to slay the leaders of the Searing Blade, Bazzalan and Jergosh the Invoker.
+
+
+== Objectives ==
+Kill Bazzalan and Jergosh the Invoker before returning to Thrall in Orgrimmar.
+
+Bazzalan slain
+Jergosh the Invoker slain
+
+
+== Description ==
+Hmm, leaders of the Searing Blade... this concerns me most. If they are the ones of value to Neeru, then those are who we must target first. This satyr... Bazzalan, and the other Neeru mentioned—what was he, a warlock?--must be slain.
+Return to the Cleft of Shadow and enter Ragefire Chasm, <name>. Find these two leaders of the Searing Blade, and kill them. But be careful not to let Neeru know it was you who did this. You must retain your identity as one of his <brothers/sisters> in arms.
+
+
+== Rewards ==
+You will receive:
+
+8
+1,750 XP
+500 reputation with Orgrimmar
+
+
+== Progress ==
+Have you found them yet, <name>? The leaders of the Searing Blade.
+I knew the Shadow Council sought to take Orgrimmar and all of the Horde from me, but I hadn't realized how quickly they were able to infiltrate the city. So many arms this beast has... we can cut them off until exhaustion sets in, but we will be no further than when we started. I will have to have my spies double their efforts.
+
+
+== Completion ==
+I am glad you've returned, <name>. Some of those loyal to me brought word immediately that the caverns below Orgrimmar were in disarray now that their leaders have been slain. I even heard reports that Neeru was more than agitated. It seems we've put a dent in his armor. I can't say I'm displeased... even with such a minor victory.
+
+
+== Notes ==
+This is one of six quests that lead into Ragefire Chasm. The first five quests are shareable and all can be done in one run.
+From Rahauro in Elder Rise, Thunder Bluff:  [15D] Testing an Enemy's Strength and  [16D] Searching for the Lost Satchel 
+From Neeru Fireblade in Cleft of Shadow, Orgrimmar:  [16D] Slaying the Beast 
+From Varimathras in the Royal Quarter, Undercity:  [16D] The Power to Destroy... (later Bragor Bloodfist's  [16D] The Power to Destroy...)  
+From Knight-Lord Bloodvalor in Silvermoon City:    [23D] The Path of the Adept
+
+
+== Progression ==
+
+ [12] Hidden Enemies
+ [12] Hidden Enemies
+ [16D] Hidden Enemies
+ [15] Hidden Enemies
+ [16] Hidden Enemies
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

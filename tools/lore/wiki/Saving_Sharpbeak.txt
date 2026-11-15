@@ -1,0 +1,62 @@
+title: Saving Sharpbeak
+revision: 5622407
+part: whole
+quest: 2994
+url: https://warcraft.wiki.gg/wiki/Saving_Sharpbeak
+
+Saving Sharpbeak is the final quest in a chain involving saving the gryphon Sharpbeak.
+
+
+== Objectives ==
+Fight to the top of Jintha'Alor, kill Vile Priestess Hexx for the key to Sharpbeak's cage, and save Sharpbeak.
+
+Open Sharpbeak's Cage
+
+
+== Description ==
+We must save Sharpbeak!
+Fight your way to the top of Jintha'Alor in the heart of Vilebranch territory, gain the key to Sharpbeak's cage from the vile Priestess Hexx, and then find and save Sharpbeak!
+
+
+== Rewards ==
+
+You will also receive:
+
+2 25
+7350 XP
+ +200 reputation with Wildhammer Clan
+
+
+== Progress ==
+Save Sharpbeak!
+
+
+== Completion ==
+
+Swiftwind and Keenclaw returned with their child moments ago, and are fussing over him like new parents. Seeing them together again is enough to give even this old dwarf mist in the eyes...
+We cannot repay you enough for what you have done, <name>. The gryphons of Aerie peak, and their riders, will sing your name for a long, long time.
+
+
+== Notes ==
+To complete this quest you must fight to the top of Jintha'Alor and kill Vile Priestess Hexx. She will drop  [Hexx's Key] which allows you to open Sharpbeak's cage. The cage is not in the cave behind Vile Priestess Hexx, it is through the north exit of the pit and is guarded by two mobs.
+It is noteworthy to mention that a lot of mob clearing on the way up Jintha'Alor can be skipped by using a mount to run to the top.
+
+
+== Progression ==
+ [45] Witherbark Cages
+ [48] The Altar of Zul
+ [47] Thadius Grimshade
+ [47D] Nekrum's Medallion
+ [47] The Divination
+ [47] Return to the Hinterlands
+ [51] Saving Sharpbeak
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

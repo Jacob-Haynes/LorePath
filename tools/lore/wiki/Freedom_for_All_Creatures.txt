@@ -1,0 +1,79 @@
+title: Freedom for All Creatures
+revision: 5632966
+part: whole
+quest: 2969
+url: https://warcraft.wiki.gg/wiki/Freedom_for_All_Creatures
+
+Freedom for All Creatures is the first quest of the Freedom for All Creatures quest chain, which will eventually award the player with a baby sprite darter pet, very cute and highly desired.
+
+
+== Objectives ==
+Using the Bamboo Cage Key, free the Sprite Darters from the pen in the Grimtotem camp. At least 6 Sprite Darters and Kindal Moonweaver must survive.
+You have 6 minutes before Kindal decides it is time to retreat and you fail the quest. 
+
+Save at least 6 Sprite Darters from capture
+
+
+== Description ==
+The filthy Grimtotem clan are capturing faerie dragons, <name>. Jer'kai and I have no idea what they plan on doing with them, but they're obviously up to no good.
+We're not powerful enough to fight our way into the camp and free the captured dragons, but perhaps with your help...
+If you're willing, and you have some strong friends, release the creatures from their cage with this key and make sure they escape with their lives. I'll be by your side the entire time. Jer'kai will remain here. 
+
+
+== Rewards ==
+You will gain:
+
+3150 XP (or 19 at level 70)
+150 reputation with Darnassus
+
+
+== Completion ==
+Thank Elune, <name>! You are a great blessing to us and to the darters you saved. Jer'kai and I would never have been able to help the dragons ourselves—your intervention in the Grimtotem's affairs will be remembered.
+Speak to Jer'kai now... I have to prepare for our retribution. Just because the faerie dragons are free, it doesn't mean they will remain so. Jer'kai and I will now go on the offensive.
+
+
+== Notes ==
+Kindal Moonweaver is at 65,45, on the ledge behind Grimtotem Compound above the water. To get up there, go left of the compound and follow the path behind the tree up the side of the cliff face.
+
+Kindal Moonweaver quotes
+Death to you, Grimtotem Naturalist. How dare you come within a bow's shot of me!
+Die, Grimtotem Naturalist. Elune will not have you harm her creatures any longer!
+I'm ready when you are, <name>. Lead the way!
+Quickly! Grimtotem Naturalist attacks!
+You dare touch me?!
+Oh, no! We've run out of time.
+We've done it! Meet me back by Jer'kai above the Grim Totem camp.
+A tactic noted for ability to solo this quest is:
+
+swiftly clear out the area around the cages before accepting the quest,
+dash back to accept the quest
+jump in the pool, swim back to land by the 2 shacks
+pull any respawns
+open the cage
+gather aggro on anything that comes in late, so the sprites can get away.
+Kindal will not run from the combat, so kill any remaining latecomers.
+It has been suggested that by not looting the bodies, the respawn time is increased (allowing you more time to complete the quest).  More information needs to be gathered to verify this.
+As is usual for quests of this nature, abandon the quest and accept it again (when ready) if you fail it the first time.
+Some people have reported difficulty in getting access to this quest, indicating that there may be an obscure prerequisite.
+
+
+== Progression ==
+
+ [47] Freedom for All Creatures
+ [47] Doling Justice
+ [47] Doling Justice
+ [47] An Orphan Looking For a Home
+ [47] A Short Incubation
+ [47] The Newest Member of the Family
+ [47] Food for Baby
+ [48] Becoming a Parent
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

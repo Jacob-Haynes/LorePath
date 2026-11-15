@@ -1,0 +1,51 @@
+title: Well of Corruption
+revision: 5618615
+part: whole
+quest: 4505
+url: https://warcraft.wiki.gg/wiki/Well_of_Corruption
+
+== Objectives ==
+Collect a sample of corrupted water from the Jadefire Satyrs' moonwell and bring it to Winna Hazzard at Bloodvenom Post. 
+
+ [Hardened Flasket] (provided)
+ [Filled Flasket]
+
+
+== Description ==
+Some may say that I am exceptionally cruel... But truly, it is only a strong desire to see the Horde gain an advantage against the Alliance, in any way possible.
+My newest interest is a moonwell at the Ruins of Constellas, south of here, tended by the Jadefire satyrs. The moonwell, once a symbol of renewal for the insufferable night elves, is now corrupted, and used to bring forth more satyrs.
+I have an idea, <name>, and I'd like a sample of the water... for my little feline friend here.
+
+
+== Rewards ==
+You will receive:
+
+5450 XP (or 33 at level 70)
+250 reputation with Undercity
+
+
+== Progress ==
+This is of utmost importance. Be on your way, now.
+
+
+== Completion ==
+Very well. We must find a way to use this corruption against our enemies...
+
+
+== Notes ==
+The quest objective is filled at 
+
+
+== Progression ==
+ [54] A Strange One
+ [54] Well of Corruption
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

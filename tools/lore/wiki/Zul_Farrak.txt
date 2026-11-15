@@ -1,0 +1,6 @@
+title: Zul'Farrak
+revision: 6972800
+part: intro
+url: https://warcraft.wiki.gg/wiki/Zul%27Farrak
+
+Zul'Farrak (/zuːl.fəˈɹɑːk/ ZOOL-fə-RAHK), or Zul'farrak, is a Sandfury troll city located in northwestern Tanaris.

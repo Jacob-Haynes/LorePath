@@ -1,0 +1,48 @@
+title: What the Flux?
+revision: 5611422
+part: whole
+quest: 7722
+url: https://warcraft.wiki.gg/wiki/What_the_Flux%3F
+
+== Objective ==
+Somewhere in the Slag Pit of the Cauldron you will find the Secret Plans: Fiery Flux that Overseer Maltorius stole. Find those plans and return them to Master Smith Burninate in the Searing Gorge.
+
+ [Secret Plans: Fiery Flux]
+
+
+== Description ==
+When that traitor, Maltorius, left our clan, he left with something more valuable than a pristine arcane crystal: Our recipe for fiery flux! I'd bet anything that the recipe was part of the deal in his new promotion amongst the Dark Irons.
+I want you to get our secret plans back, <name>. I'm sure they're somewhere near Maltorius, deep inside the Slag Pit.
+
+
+== Rewards ==
+You will receive:
+
+75
+6800 XP (or 40 50 at max level)
++250 reputation with Thorium Brotherhood
+
+
+== Progress ==
+Did you find the plans?
+
+
+== Completion ==
+I hope you kicked his teeth in too, <name>.  Ragnaros knows, he deserved it.
+Now we can get down to business.
+
+
+== Notes ==
+It's recommended that the player also picks up the quest WANTED: Overseer Maltorius before starting this quest.
+This quest is the prerequisite to Restoring Fiery Flux Supplies via Heavy Leather, via Iron, and via Kingsblood.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.5.0 (2005-06-07): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

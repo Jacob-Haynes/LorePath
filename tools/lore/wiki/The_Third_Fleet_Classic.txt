@@ -1,0 +1,55 @@
+title: The Third Fleet (Classic)
+revision: 6308707
+part: whole
+quest: 288
+url: https://warcraft.wiki.gg/wiki/The_Third_Fleet_%28Classic%29
+
+The Third Fleet is the first quest in the The Third Fleet quest chain.
+
+
+== Objectives ==
+Buy First Mate Fitzsimmons a Flagon of Mead.
+
+Flagon of Mead
+
+
+== Description ==
+I was once First Mate on the Wave Mistress, ship-of-the-line in the Kul Tiras Third Fleet. The Doomed Fleet. Doomed, for on its last voyage the fleet was attacked by Red Dragons. Dragons controlled by Orcs!
+We didn't stand a chance against that dragonfire...and our fleet was burned and sunk off this here coast. I'm the sole survivor of those poor vessels...
+...Oh, my head hammers and pounds! I'll need a fresh drink if I'm to get a handle on this hangover and continue my tale.
+
+
+== Rewards ==
+You will receive:
+
+220 XP
+
+
+== Progress ==
+Oh, I'm so very thirsty! Won't you buy a drink for this poor, pathetic fool?
+
+
+== Completion ==
+Ah! That hits the spot, and loosens the tongue. Thanks, mate!
+
+
+== Notes ==
+ [Flagon of Dwarven Mead] can be bought for 15 from the Innkeeper Helbrek in the Deepwater Tavern.
+
+
+== Progression ==
+ [27] The Third Fleet
+ [30] The Cursed Crew
+ [30] Lifting the Curse
+ [30] The Eye of Paleth
+ [30] Cleansing the Eye
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

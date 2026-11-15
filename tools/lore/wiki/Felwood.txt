@@ -1,0 +1,7 @@
+title: Felwood
+revision: 6883849
+part: intro
+url: https://warcraft.wiki.gg/wiki/Felwood
+
+Felwood is a corrupted forest filled with tainted creatures of the woods, demonic satyr and infernals, and rotting treants and ancients. It is located in Northern Kalimdor, north of Ashenvale, east of Darkshore, and west of Mount Hyjal and Winterspring.
+Once a serene forest and a part of northern Ashenvale, it was corrupted by the dreadlord Tichondrius and the Skull of Gul'dan during the Third War, and its healing has been very slow over the recent years. The Emerald Circle, a sub-section of the Cenarion Circle druids, have been working to heal the land and defeat the remaining demons that corrupt it, specifically the remaining Shadow Council forces led by Lord Banehollow. It is also home to one of the two tribes of pure furbolgs left in the world — the Timbermaw tribe. There are no dungeons or battlegrounds of any kind in this area.

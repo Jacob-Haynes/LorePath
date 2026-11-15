@@ -1,0 +1,9 @@
+title: Silithus (Classic)
+revision: 6222887
+part: intro
+url: https://warcraft.wiki.gg/wiki/Silithus_%28Classic%29
+
+Silithus forms the south-western corner of Kalimdor. It can only be reached by traveling to the north-western corner of the Un'Goro Crater, where a wide path extends out of the crater and into Silithus.
+Silithus is one of the insect-infested sections of southern Kalimdor. This area houses a section of the once great Aqiri empire, known as Ahn'Qiraj. It is currently uninhabited, but the central temple is sealed off by the night elves, who attempted to prevent an infestation from breaking out. Judging by the ruins in the area, as well as the massive Silithid colonies, they were unsuccessful in their attempt. The Cenarion Circle maintains a constant presence in Silithus, at Cenarion Hold. From here, they monitor the Silithids, whom some believe to be a force so powerful and threatening that the Alliance and Horde must ally to combat. In addition to the Cenarion Druids, a second, more ominous presence has recently made itself known in Silithus. The bronze dragonflight, Nozdormu's brood, has returned to the desert for the first time in ten thousand years.
+Silithus has been fleshed out as a major quest hub with episodic storylines that extend into its depths and past its borders. The redesign of this zone includes a high-end outdoor quest area for the solo players, 5-man groups and includes outdoor raid bosses. The repeatable quests can lead to epic items as a casual alternative to raid dungeons.
+In Patch 1.12, objective based world PvP was introduced into Silithus. A new crystalline substance, called " [Silithyst]", has been discovered, and both the Horde and the Alliance have taken an interest in it. Players collect the dust where they can, but must be careful they are not ambushed by opposing faction members before they can make their drop off.  See The Silithyst Must Flow for details.

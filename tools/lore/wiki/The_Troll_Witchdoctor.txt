@@ -1,0 +1,51 @@
+title: The Troll Witchdoctor
+revision: 6304824
+part: whole
+quest: 1240
+url: https://warcraft.wiki.gg/wiki/The_Troll_Witchdoctor
+
+== Objectives ==
+Take the Defiant Orc Head to Kin'weelay in the Grom'gol Base Camp in Stranglethorn Vale.
+
+ [Defiant Orc Head] (provided)
+
+
+== Description ==
+We must know the events surrounding Marg's death!  And the only way to do that, <name>, is through the witch-magic of trolls.
+Bring Marg's head to Kin'weelay in Stranglethorn Vale, at the Grom'gol Base Camp.
+Kin'weelay is the most powerful witchdoctor of the Darkspear trolls.  If anyone can speak to Marg Nighteye's spirit, it is he.
+
+
+== Rewards ==
+You will receive:
+
+3300 XP (or 19 80 at max level)
++250 reputation with Darkspear Trolls
+
+
+== Progress ==
+There is an angry spirit about you, brother. What brings you to Kin'weelay?
+
+
+== Completion ==
+Ah, I now see. The spirit of this orc is bound in our world, boiling with rage from a task yet undone.
+Well, let us have words with this angry orc...
+
+
+== Progression ==
+ [15-30] The Lost Report
+ [35] The Severed Head
+ [35] The Troll Witchdoctor
+ [40] Marg Speaks
+ [40] Report to Zor
+ [40] Service to the Horde
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

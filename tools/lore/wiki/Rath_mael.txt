@@ -1,0 +1,32 @@
+title: Rath'mael
+revision: 6952370
+part: whole
+url: https://warcraft.wiki.gg/wiki/Rath%27mael
+
+Rath'mael is the last boss in the Ruins of Lordaeron instance, found at the Lordaeron Graveyard.
+
+
+== Abilities ==
+ Fire Shield
+ Flamestrike — Calls down a pillar of flame, burning all enemies in a selected area and inflicting additional damage every 2 sec. for 8 sec.
+
+
+== Drops ==
+
+
+== Objective of ==
+ [22D] The Wrath of Rath'mael
+
+
+== Criteria of ==
+ [Novice Spelunker]
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

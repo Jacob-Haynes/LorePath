@@ -1,0 +1,39 @@
+title: Meal Appeal
+revision: 6909051
+part: whole
+quest: 97246
+url: https://warcraft.wiki.gg/wiki/Meal_Appeal
+
+== Objectives ==
+Visit Borstan's Firepit and tell him Thatog wants you to deliver Migi's lunch to him personally.
+
+
+== Description ==
+My son, Migi, always takes off to play with his friends all day. I tell him to pick up a lunch at Borstan's, but I know he almost never does, because he comes home starving. These kids think their games are more important than their own bodies!
+Please, stop at Borstan's Firepit and tell him you're there to deliver Migi's lunch. You can almost certainly find Migi behind Grommash Hold with the rest of his friends.
+Duties keep me here during the day and I can't watch over his every meal.
+
+
+== Rewards ==
+You will receive:
+
+800 XP
+
+
+== Completion ==
+Of course. Migi's parents and I have an arrangement to give Migi a bagged lunch every day, but I can only ensure the boy gets his food if he actually comes in to pick it up.
+Sometimes, he doesn't pick up his meal multiple times a week, and I wonder where he gets the energy to stay out and play.
+
+
+== Progression ==
+Template:Meal Appeal
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

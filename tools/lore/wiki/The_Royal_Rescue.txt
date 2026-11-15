@@ -1,0 +1,52 @@
+title: The Royal Rescue
+revision: 5586977
+part: whole
+quest: 4003
+url: https://warcraft.wiki.gg/wiki/The_Royal_Rescue
+
+The Royal Rescue is the 5th quest in the Commander Gor'shak quest chain.
+
+
+== Objectives ==
+Slay Emperor Dagran Thaurissan and free Princess Moira Bronzebeard from his evil spell.
+
+Emperor Dagran Thaurissan slain
+
+
+== Description ==
+This strike against the Dark Iron dwarves, if successful, will send a shockwave throughout their entire kingdom.
+Princess Bronzebeard is under the control of Emperor Thaurissan. To free her, you must kill the Emperor. Be warned, your task is doubly dangerous, as Bronzebeard will attack you without question while under the control of the Emperor.
+DO NOT HARM HER!
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+8050 XP (or 84 at level 70)
+
+
+== Progress ==
+<Princess Moira cowers in fear.>
+
+
+== Completion ==
+What have you done!
+
+
+== Progression ==
+ [52D] Commander Gor'shak
+ [54D] What Is Going On?
+ [54D] What Is Going On?
+ [54D] The Eastern Kingdoms
+ [59D] The Royal Rescue
+ [60D] The Princess Saved?
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

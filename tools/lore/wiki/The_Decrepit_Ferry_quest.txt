@@ -1,0 +1,55 @@
+title: The Decrepit Ferry (quest)
+revision: 5619536
+part: whole
+quest: 438
+url: https://warcraft.wiki.gg/wiki/The_Decrepit_Ferry_%28quest%29
+
+The Decrepit Ferry is part of The Master of Fenris Isle quest chain.
+
+
+== Objectives ==
+Go to the Decrepit Ferry.
+Search for the reason the Scourge are there.
+
+
+== Description ==
+<Name>, we've discovered a new hive for the Scourge: the Decrepit Ferry. The ferry lies east of the Sepulcher, and is heavily patrolled by rot hides and other undead.
+There must be a reason for the Scourge's occupation of the area. Go to the Decrepit Ferry and find out why the Scourge are there.
+
+
+== Rewards ==
+You will gain:
+
+875 XP
++75 or +150 reputation with Undercity
+
+
+== Completion ==
+Heaped within this boat is a pile of wrapped corpses. And looking east across Lordamere Lake, an opposing dock on Fenris Isle can be seen.
+The fate of the corpses must lie on Fenris Isle.
+
+
+== Notes ==
+To end this quest, right click on the boat pulled halfway out of the water on the north side of the dock.
+You can completely avoid all the scourge in the area by swimming down the creek that flows into the lake and staying in the water. After all, skeletons can't swim.
+
+
+== Progression ==
+ [14] The Dead Fields
+ [16] The Decrepit Ferry
+ [16] Rot Hide Clues
+ [17] Rot Hide Ichor
+ [17] Rot Hide Origins
+ [16] Thule Ravenclaw
+ [16] Report to Hadrec
+ [20] Assault on Fenris Isle
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,8 @@
+title: Stormwind City
+revision: 6838694
+part: intro
+url: https://warcraft.wiki.gg/wiki/Stormwind_City
+
+Stormwind City, also known as New Stormwind or simply Stormwind, is the capital city of the eponymous kingdom of Stormwind and the largest human city on Azeroth. Located north of Elwynn Forest on Azeroth region's northwest coast, it has become one of the last great human cities after the Third War, and embodies the heart of the Alliance. Stormwind's willingness to work with others to find diplomatic solutions stands out as one of its true strengths. Its citizens hold fast to the principles of honor and justice as they defend their settlements and the Alliance against any aggressors.
+No city better demonstrates human determination than Stormwind. Destroyed by the Orcish Horde during the First War, the capital was painstakingly reconstructed by the Stonemasons' Guild after the Second War. Parts of the city were eventually razed again when the Dragon Aspect Deathwing provoked the Cataclysm that shattered the world. From the magnificent Cathedral of Light, which serves as a major spiritual hub, to the awe-inspiring Valley of Heroes, which commemorates the sacrifices of Stormwind's loyal champions, the city truly represents the courageous heart of humanity, and serves as a bastion of the Holy Light.
+The Stormwind City Guard are the law enforcement and protectors of Stormwind City, keeping the peace within the city's walls.

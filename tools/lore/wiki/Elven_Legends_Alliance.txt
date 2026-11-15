@@ -1,0 +1,53 @@
+title: Elven Legends (Alliance)
+revision: 6176529
+part: whole
+quest: 7482
+url: https://warcraft.wiki.gg/wiki/Elven_Legends_%28Alliance%29
+
+== Objectives ==
+Search Dire Maul for Telmius Dreamseeker. Report back to Scholar Runethorn at Feathermoon with whatever information that you may find.
+
+Master Telmius Dreamseeker Found
+
+
+== Description ==
+Several years ago, a lone elven master named Telmius Dreamseeker fled the devastation of his homeland with several ancient elven artifacts in tow.
+Our search for this lost master lead us from the ruins of Quel'Thalas, through the Burning Steppes, across the great expanses of the sea, to Feralas.
+We suspect that the elf sought sanctuary in the halls of Eldre'Thalas (what is now known as Dire Maul).
+You must find him, adventurer. Whether alive or dead, the knowledge he carried must be recovered!
+
+
+== Rewards ==
+You will receive:
+
+1 80
+8300 XP
+
+
+== Progress ==
+My associate, the tauren sage, Korolusk, is recruiting his allies for this task.
+
+
+== Completion ==
+A shame... a tragedy. The items are lost you say? No trace of him, eh?
+
+
+== Notes ==
+The Skeletal Remains of Telmius Dreamseeker are right beside the lorekeeper.
+
+ Mourn the great loss.
+Lorekeeper Lydros says: I very much doubt that he will have anything to say, stranger...
+Lorekeeper Lydros says: I personally didn't mind him. It was the Prince who took exception to a high elf in his domain. Alas, I am not one to question the Prince. In his defense, he did not incinerate Master Winthalus immediately.
+Lorekeeper Lydros says: We most definitely do not need anymore attention drawn to us, stranger. Return to those that sent you in search of the lost master and tell them that nothing could be found. When this is done - and I will know when it is so - return and I shall reveal the secrets of the deceased.
+Completing this quest is required to be able to turn in librams to Lorekeeper Lydros in Dire Maul.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.3.0 (2005-03-07): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

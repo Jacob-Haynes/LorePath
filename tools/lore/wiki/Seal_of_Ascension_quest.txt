@@ -1,0 +1,50 @@
+title: Seal of Ascension (quest)
+revision: 6840715
+part: whole
+quest: 4742
+url: https://warcraft.wiki.gg/wiki/Seal_of_Ascension_%28quest%29
+
+== Objectives ==
+Find the three gemstones of command: The Gemstone of Smolderthorn, Gemstone of Spirestone, and Gemstone of Bloodaxe. Return them, along with the Unadorned Seal of Ascension, to Vaelan.
+The Generals, as told to you by Vaelan, are: War Master Voone of the Smolderthorn; Highlord Omokk of the Spirestone; and Overlord Wyrmthalak of the Bloodaxe.
+
+ [Unadorned Seal of Ascension]
+ [Gemstone of Smolderthorn]
+ [Gemstone of Spirestone]
+ [Gemstone of Bloodaxe]
+
+
+== Description ==
+As you can see, the unadorned seal has three empty sockets. Each of those sockets must be filled with a gemstone representing the leadership's command. Finally, Overlord Wyrmthalak, master of the lower citadel, must forge the seal in the flames of the Black Dragonflight.
+Understand this, mortal: the chance that one of the three generals of the lower citadel would carry a gemstone at any given time is rare. You must be vigilant in your quest. Remain determined!
+
+
+== Rewards ==
+You will receive:
+
+3300 XP (or 49 50 at max level)
+
+
+== Progress ==
+Courage and patience above all else, mortal!
+
+
+== Completion ==
+<Vaelan's image blurs for a moment.>
+<The pieces that you had collected have disappeared.>
+The Unforged Seal of Ascension is now ready. It is time for the final step.
+
+
+== Progression ==
+ [60D] Seal of Ascension
+ [60D] Seal of Ascension
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

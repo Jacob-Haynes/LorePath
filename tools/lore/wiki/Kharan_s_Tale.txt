@@ -1,0 +1,45 @@
+title: Kharan's Tale
+revision: 6346045
+part: whole
+quest: 4342
+url: https://warcraft.wiki.gg/wiki/Kharan%27s_Tale
+
+== Objectives ==
+Listen as Kharan Mighthammer tells his story.
+
+Kharan's Tale
+
+
+== Description ==
+Please, hear me out before passing judgement!
+
+
+== Rewards ==
+You will receive:
+
+1600 XP (or 9 60 at max level)
+
+
+== Completion ==
+As you can see, there was nothing I could have done. 
+
+
+== Notes ==
+Speak to Kharan
+
+
+== Progression ==
+ [59D] Kharan's Tale
+ [59D] The Bearer of Bad News
+ [59D] The Fate of the Kingdom
+ [59D] The Princess's Surprise
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

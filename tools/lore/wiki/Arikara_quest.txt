@@ -1,0 +1,68 @@
+title: Arikara (quest)
+revision: 6957210
+part: whole
+quest: 5088
+url: https://warcraft.wiki.gg/wiki/Arikara_%28quest%29
+
+Arikara is the final quest in the Arikara quest chain.
+
+
+== Objectives ==
+Slay Arikara. Bring her remains and the Incendia Powder to Motega Firemane in Whitereach Post as proof of your deed.
+
+ [Incendia Powder] (provided)
+ [Arikara Serpent Skin]
+
+
+== Description ==
+Take this refined and purified Incendia powder to Thousand Needles and toss it on the sacred fire of life. It is located in the Darkcloud Pinnacle on an isolated needle where they bury their dead.
+The enchantment that I have weaved into the Incendia powder will summon Arikara to you, <name>.
+I fear she may be stalking Cairne Bloodhoof; too much Tauren lore has changed, and I fear this has angered Arikara. Move quickly before all is lost, <class>!
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Brute Hammer]
+ [Stingshot Wand]
+ [Clink Shield]
+ [Smouldering Leggings] 
+You will also receive:
+
+25
+2,300 XP
++100 or +250 reputation with Thunder Bluff
+
+
+== Progress ==
+Have you slain the vicious serpent Arikara, <name>?
+
+
+== Completion ==
+This does not make sense. Why would Arikara be after Cairne Bloodhoof? Magatha could not be wrong, she is our most powerful shaman.
+<Motega shakes his head.>
+Regardless, your great deed to the Horde shall not go unnoticed - please, choose one of these as a reward for your aid.
+
+
+== Notes ==
+The place to summon Arikara is one of the "needles" of Darkcloud Pinnacle. To get there, head south down the road from the Great Lift to where it splits. Turn left and walk a few paces, looking to your left. You should see a path leading up. Follow the path up to reach Darkcloud Pinnacle. The coordinates for the beginning of the path are (31,36).
+Once you have reached the top, head to the needle with only one bridge attached to it that has a large fire pit in the center, surrounded by little tables with what might be mummies (this is where they bury their dead, after all). The fire will not be lit yet. Coordinates: (37,35)
+When you are ready, use the  [Incendia Powder] near the fire to summon Arikara. Defeat her and loot  [Arikara Serpent Skin] from her.
+Turn in the quest to Motega Firemane at Whitereach Post in Thousand Needles. Coordinates: (21,32)
+
+
+== Progression ==
+ [26] Alien Egg
+ [26] Serpent Wild
+ [27] Sacred Fire
+ [28] Arikara
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,53 @@
+title: Messenger to Stormwind
+revision: 6237771
+part: whole
+quest: 120
+url: https://warcraft.wiki.gg/wiki/Messenger_to_Stormwind
+
+First of the Reinforcing Redridge correspondence quests.
+
+
+== Objectives ==
+Magistrate Solomon has given you a report which must be delivered to General Marcus Jonathan in Stormwind. The judge wants you to return to him as soon as the delivery has been made.
+
+ [The State of Lakeshire] (provided)
+
+
+== Description ==
+These are trying times, <class>. The township is under constant siege. Without reinforcements, we will certainly face defeat. The message I now entrust to you is of utmost importance. Get this report to General Marcus Jonathan of Stormwind immediately. Once your delivery is made, return to me at once with any news, be it good or bad.
+Now make haste!
+
+
+== Rewards ==
+You will receive:
+
+490 XP (or 3 at max level)
++75 reputation with Stormwind
+
+
+== Progress ==
+What have you there?
+
+
+== Completion ==
+At ease, <class>.
+Magistrate Solomon is a noble leader. His words carry great weight with me. I shall seek the counsel of the King and make the situation clear to him. Assure the good judge that he has the Stormwind Army's support. Reinforcements will be sent as soon as word is given from His Majesty.
+
+
+== Progression ==
+ [14] Messenger to Stormwind
+ [14] Messenger to Stormwind
+ [14] Messenger to Westfall
+ [14] Messenger to Westfall
+ [18] Messenger to Darkshire
+ [18] Messenger to Darkshire
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

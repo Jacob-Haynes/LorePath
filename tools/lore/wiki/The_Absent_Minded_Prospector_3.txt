@@ -1,0 +1,50 @@
+title: The Absent Minded Prospector (3)
+revision: 6267721
+part: whole
+quest: 741
+url: https://warcraft.wiki.gg/wiki/The_Absent_Minded_Prospector_%283%29
+
+== Objectives ==
+Take the mysterious fossil to Chief Archaeologist Greywhisker in Darnassus.
+
+ [Mysterious Fossil] (provided)
+
+
+== Description ==
+So the prospector wants to send the mysterious fossil to the Explorers' League in Darnassus? I don't feel right leaving Darkshore without him.
+Here, <name>, deliver the mysterious fossil to Chief Archaeologist Greywhisker in Darnassus.
+
+
+== Rewards ==
+
+You will also receive:
+
+1150 XP (or 7 20 at max level)
++150 reputation with Ironforge
+
+
+== Progress ==
+What can I do for you, <race>?
+
+
+== Completion ==
+Oh my! Leave it to Prospector Remtravel to discover such a find!
+
+
+== Progression ==
+ [14] Trouble in Darkshore?
+ [20] The Absent Minded Prospector
+ [20G] The Absent Minded Prospector
+ [20] The Absent Minded Prospector
+ [20] The Absent Minded Prospector
+ [24] The Absent Minded Prospector
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,45 @@
+title: Foul Magics
+revision: 6941295
+part: whole
+quest: 671
+url: https://warcraft.wiki.gg/wiki/Foul_Magics
+
+== Objectives ==
+Get 10 Bloodstone Amulets for Tor'gan in Hammerfall.
+
+ [Bloodstone Amulet] (10)
+
+
+== Description ==
+I have felt a strangeness in the air... a feeling that simmers in my blood. I had my suspicions. I set off to find the source of my unease and discovered to the west, at Northfold Manor, the residual traces of demonic summoning. As I got close, my blood began to boil and the rage within me grew.
+On the ground I spied an amulet of bloodstone, used to assist in demonic summoning. The one I found was depleted, however. I'll need another to examine, but I dare not return to the manor. Can you bring me some?
+
+
+== Rewards ==
+You will receive:
+
+2900 XP
++100 or +250 reputation with Darkspear Trolls
+
+
+== Progress ==
+Once-cursed blood still runs through my veins, <name>. If someone... something is summoning demons, it must be stopped.
+
+
+== Completion ==
+It will take some time for me to ascertain the true intentions of the Syndicate, but their obvious association with dark, demonic magic troubles me. I will tell you when I know more.
+
+
+== Progression ==
+ [33] Foul Magics
+ [40] Foul Magics
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

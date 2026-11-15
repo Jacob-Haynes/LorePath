@@ -1,0 +1,23 @@
+title: A Wartorn Land and The Brotherhood
+revision: 6928568
+part: whole
+url: https://warcraft.wiki.gg/wiki/A_Wartorn_Land_and_The_Brotherhood
+
+A Wartorn Land and The Brotherhood is a sixteen-page book found on a bench in Farholde Keep in the Riverglades. It recounts the destruction of Sunnyglade, the establishment of Windstead, Meadowsbrook, and Farholde, and the Brotherhood of the Horse's battles against the Orcish Horde, culminating in the siege of Farholde.
+
+
+== Contents ==
+
+
+== Notes ==
+As of patch 1.60.1.70450 the book is missing.
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,59 @@
+title: Down the Scarlet Path (2)
+revision: 6324147
+part: whole
+quest: 1052
+url: https://warcraft.wiki.gg/wiki/Down_the_Scarlet_Path_%282%29
+
+== Objectives ==
+Take Brother Anton's Letter of Commendation to Raleigh the Devout in Southshore.
+
+ [Letter of Commendation] (provided)
+
+
+== Description ==
+We of the Scarlet Crusade lay claim to strongholds from Hearthglen to Tirisfal Glades. We are quite proud of our bastions of cleansing throughout Lordaeron.
+You have proven yourself against the undead in Desolace. But the true threat of the plague lies in Lordaeron.
+Travel to the town of Southshore, in the Eastern Kingdoms. Seek out a crusader named Raleigh the Devout. Give him this letter of commendation bearing my seal and he will escort you to a place of honor in our Scarlet Monastery.
+
+
+== Rewards ==
+You will receive:
+
+2150 XP (or 13 20 at max level)
++19 reputation with Darnassus
++19 reputation with Exodar
++19 reputation with Gnomeregan Exiles
++19 reputation with Ironforge
++19 reputation with Stormwind
+
+
+== Progress ==
+Who goes there? What do you want from me?
+
+
+== Completion ==
+Brother Anton still spreads the word of the Scarlet Crusade? Oh my....
+
+
+== Notes ==
+On completion
+Raleigh the Devout breaks the seal on Anton's letter and begins to read it.
+Raleigh the Devout says: By the Light!  This is not good.  There's something you don't understand, <name>.
+Raleigh the Devout throws Anton's letter down on the table.
+
+
+== Progression ==
+ [39] Brother Anton
+ [39] Down the Scarlet Path
+ [40] Down the Scarlet Path
+ [40D] In the Name of the Light
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

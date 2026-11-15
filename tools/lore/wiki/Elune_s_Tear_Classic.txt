@@ -1,0 +1,62 @@
+title: Elune's Tear (Classic)
+revision: 6592183
+part: whole
+quest: 1033
+url: https://warcraft.wiki.gg/wiki/Elune%27s_Tear_%28Classic%29
+
+Elune's Tear is a magical stone supposedly with curative properties.
+
+
+== Objectives ==
+Bring Elune's Tear to Pelturas in Astranaar. 
+
+ [Elune's Tear]
+
+
+== Description ==
+I had hoped Orendil's cure would save Relara, but I fear it only slowed the disease running through my child. We must find more powerful medicine! Thankfully, Orendil spoke to me of further remedies to try should his first one fail.
+Elune's Tear is a type of stone that rests in only one place: the isle on Iris Lake, east of Astranaar. Orendil said the stone will wash away corruption... please, <name>, bring me Elune's Tear and pray it will end my child's sickness!  
+
+
+== Rewards ==
+You will receive:
+
+14
+
+
+== Progression ==
+<Name>, did you find Iris Lake?  Do you have the Tear?   
+
+
+== Completion ==
+Oh, you found it!  I will place the tear in a stew, and pray that it will cure her.
+Thank you!  Thank you, <name>!
+
+
+== Notes ==
+Head south of Astranaar following the road. Continue following the road as it turns to the east. You'll eventually find the beginning of a stream on the north side of the road. Along the stream should be a dirt path. Follow this path to Iris Lake. The Tear is on the island in the middle of the lake at location . There are elementals guarding this area.
+
+Upon completion
+Pelturas Whitemoon crushes the tear into a bowl of stew.
+Pelturas Whitemoon says: Eat this, my daughter. It will help you feel better.
+Pelturas Whitemoon says: There you go...
+Relara Whitemoon stirs from her delirium.
+Relara Whitemoon says: Mmmmh...
+
+
+== Progression ==
+ [20] Bathran's Hair
+ [22] Orendil's Cure
+ [22] Elune's Tear
+ [23] The Ruins of Stardust
+ [30] Fallen Sky Lake
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

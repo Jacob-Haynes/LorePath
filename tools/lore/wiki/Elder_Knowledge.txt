@@ -1,0 +1,49 @@
+title: Elder Knowledge
+revision: 6911814
+part: whole
+quest: 95664
+url: https://warcraft.wiki.gg/wiki/Elder_Knowledge
+
+== Objectives ==
+Take the Titan Relic to the Elder Rise in Thunder Bluff and look for someone who can tell you more about it.
+
+ [Titan Relic] (provided)
+
+
+== Description ==
+This unusual composite shard scatters light like a living prism. Its nature is uncertain, but its power feels ancient. The most knowledgeable minds for artifacts of this bygone age must reside on the Elder rise in Thunder Bluff.
+
+
+== Rewards ==
+You will receive:
+
+1,400 XP
+
+
+== Progress ==
+Spirits honor you. Have you come to share with us?
+
+
+== Completion ==
+It is a favored sign to have a stranger approach in this manner. I feel a power amidst you... what is this you have brought?
+
+
+== Progression ==
+ [21] Daily Delivery →  [22] Young Crocolisk Skins →  [28D] Highland Hides and  [26] Apprentice's Duties
+ [31D] Horrors in the Highland
+ [31D] Seeking Caitlin →  [31D] Lost in the Thicket Things →  [31D] Heartwoven
+ [31D] Lost Relic Carry →  [31D] Prehistoric Prism
+ [31D] Songblade Search →  [31D] Fallen in the Fen
+ [31D] Changing Tastes
+ [31D] Elder Knowledge →  [31D] Earthen Echo
+ [31D] Dragonmaw Rumors →  [31D] Open the Maw
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

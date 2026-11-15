@@ -1,0 +1,29 @@
+title: Darkspear Islands (battleground)
+revision: 6903503
+part: whole
+url: https://warcraft.wiki.gg/wiki/Darkspear_Islands_%28battleground%29
+
+The Darkspear Islands is a 15-vs-15 battleground, introduced in Forever. Characters must be at least level 30 to queue for this battleground.
+Darkspear Raiders and Theramore Expeditionary Force vie for control of the area.
+
+
+== Geography ==
+
+
+=== Maps and subregions ===
+
+
+== Trivia ==
+The layout is similar to the Eye of the Storm.
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+Wago

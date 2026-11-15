@@ -1,0 +1,52 @@
+title: Bashal'Aran (3)
+revision: 5995231
+part: whole
+quest: 956
+url: https://warcraft.wiki.gg/wiki/Bashal%27Aran_%283%29
+
+This quest is part of the Bashal'Aran quest chain.
+
+
+== Objectives ==
+Obtain the Ancient Moonstone Seal and bring it to Asterion in Bashal'Aran.
+
+ [Ancient Moonstone Seal]
+
+
+== Description ==
+If the grells have come into close contact with the seal that binds my eternal prison, I suspect I know the cause. No doubt the seal has come into the possession of the satyr that lead them.
+I feel strongly that this must be true, <name>. One of the satyr must surely possess it. If you can obtain it, you would bring me so close to passing the bars of my prison that tears would come to my eyes. 
+
+
+== Progress ==
+The pillars of this shrine are as the bars of a prison to me, <name>. No strength I still possess might break them, and no magic I 
+wield might destroy them...
+For a thousand years and more I have stared at them, wondering if at long last I outlived even the stone, would I be free? Or would it be invisible bars that held me then... 
+
+
+== Completion ==
+It... it is hard for me to even believe that what I hold now is that which has held me for so long. Let us waste no time, <name>. When the seal is destroyed, I might walk the forests of the earth freely again. 
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+900 XP (or 5 40 at level 80)
+250 reputation with Darnassus
+
+
+== Notes ==
+The seal drops off a random, unnamed satyr.
+
+
+== Progression ==
+ [12] Bashal'Aran
+ [12] Bashal'Aran
+ [13] Bashal'Aran
+ [13] Bashal'Aran
+
+
+== External links ==
+
+Wowhead
+WoWDB

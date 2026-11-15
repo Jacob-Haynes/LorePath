@@ -1,0 +1,40 @@
+title: Service to the Horde
+revision: 6839812
+part: whole
+quest: 7541
+url: https://warcraft.wiki.gg/wiki/Service_to_the_Horde
+
+== Completion ==
+It will take time for our scholars to study the pendant you brought us. But for your service to the Horde I would like to offer you a small token.
+Thank you, <name>. Your acts bring honor to you, and to us.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Band of Allegiance]
+ [Lonetree's Circle]
+You will also receive:
+
+1 50
+2,150 XP
++350 reputation with Orgrimmar
+
+
+== Progression ==
+ [15-30] The Lost Report
+ [35] The Severed Head
+ [35] The Troll Witchdoctor
+ [40] Marg Speaks
+ [40] Report to Zor
+ [40] Service to the Horde
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
