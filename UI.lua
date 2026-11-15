@@ -713,25 +713,6 @@ local function AcquireLoreSources(parent)
     return b
 end
 
--- The shown lore chapters for these quests, each a paragraph with its Sources,
--- from `top` down. Returns the height used (0 if none).
-local LORE_INDENT = 22
-local function RenderChapters(canvas, ids, top, width)
-    local h = 0
-    for _, item in ipairs(ns.ChaptersFor(ids)) do
-        local text = AcquireText(canvas, "GameFontHighlightSmall")
-        text:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + LORE_INDENT, -(top + h))
-        text:SetWidth(width - LORE_INDENT - 8)
-        text:SetText(ns.ChapterText(item.chapter, item.by))
-        h = h + (text:GetStringHeight() or 0) + 2
-        local sources = AcquireLoreSources(canvas)
-        sources.articles = item.chapter.articles
-        sources:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + LORE_INDENT, -(top + h))
-        h = h + 18
-    end
-    return h
-end
-
 -- A collapsible section header: [+/-] Title  3 / 7   [Show on map]  Next: ...
 local function AcquireSection(parent)
     used.sections = used.sections + 1
@@ -1161,14 +1142,8 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
     s.stepButton:SetShown(not onPage)
     s.stepButton:EnableMouse(stepTarget ~= nil and ns.Quests[stepTarget] ~= nil)
 
-    -- The lore its finished quests have revealed, under the header: shown even
-    -- when the storyline is collapsed, so a finished one reads as what it meant.
-    local loreH = RenderChapters(canvas, ids, graphTop - 4, viewWidth - PAD * 2)
-    local shift = loreH > 0 and loreH + 4 or 0
-    graphTop = graphTop + shift
-
     if collapsed then
-        return viewWidth, HEADER_H + (loreH > 0 and loreH + 2 or 0)
+        return viewWidth, HEADER_H
     end
 
     -- A storyline longer than the window is wide wraps, like text: its columns
@@ -1225,7 +1200,7 @@ local function RenderStoryline(canvas, storyline, top, viewWidth)
         end
     end
 
-    return PAD * 2 + width, layout.height + shift
+    return PAD * 2 + width, layout.height
 end
 
 local function RenderOthers(canvas, others, top, viewWidth)
@@ -1234,11 +1209,8 @@ local function RenderOthers(canvas, others, top, viewWidth)
     local complete = done == total and (total > 0 or repeatables == 0)
     local _, collapsed, gridTop = RenderSection(canvas, "o" .. selectedZone, "Other quests",
         done, total, complete, viewWidth - PAD * 2, top, repeatables)
-    local loreH = RenderChapters(canvas, others, gridTop - 4, viewWidth - PAD * 2)
-    local shift = loreH > 0 and loreH + 4 or 0
-    gridTop = gridTop + shift
     if collapsed then
-        return HEADER_H + (loreH > 0 and loreH + 2 or 0)
+        return HEADER_H
     end
 
     local perRow = math.max(1, math.floor((viewWidth - PAD * 2 + COL_GAP) / (NODE_W + COL_GAP)))
@@ -1252,7 +1224,7 @@ local function RenderOthers(canvas, others, top, viewWidth)
         StyleNode(node, id, nil)
     end
     local rows = math.ceil(#others / perRow)
-    return HEADER_H + 8 + shift + rows * (NODE_H + ROW_GAP)
+    return HEADER_H + 8 + rows * (NODE_H + ROW_GAP)
 end
 
 RenderZone = function()
@@ -1268,36 +1240,31 @@ RenderZone = function()
     local top, maxWidth, hidden = PAD, viewWidth, 0
     local hideCompleted = ns.GetSetting("hideCompleted")
 
-    -- About this zone (issue #5): its premise from the Warcraft Wiki, with the
-    -- articles it came from (the licence asks for that). Collapsible, and
-    -- remembered per page like a storyline. Chapters go under the storylines
-    -- they belong to; only those with no storyline drawn here stay in it.
+    -- About this zone (issue #5): a short summary from the Warcraft Wiki, with
+    -- the articles it came from (the licence asks for that). Collapsible, and
+    -- remembered per page like a storyline. The chapters of the zone's story are
+    -- read in the side panel: the Zone story button in the header.
+    frame.zoneStoryButton:Hide()
     local lore = ns.GetZoneLore(selectedZone)
     if lore then
-        local placed = {}
-        for _, storyline in ipairs(storylines) do
-            if not (hideCompleted and ns.GetNextStep(storyline) == "complete") then
-                for _, n in ipairs(storyline.nodes) do
-                    placed[n.id] = true
-                end
-            end
-        end
-        if ns.GetSetting("showOthers") then
-            for _, id in ipairs(others) do
-                placed[id] = true
-            end
-        end
         local width = viewWidth - PAD * 2
         local s, collapsed
         s, collapsed, top = RenderSection(canvas, "lore:" .. selectedZone, "About " .. ns.GetMapName(selectedZone),
             0, 0, false, width, top)
         s.count:SetText("")
+        local _, _, more = ns.GetLoreView(lore)
+        if #ns.ZoneChapters(lore) > 0 then
+            local button = frame.zoneStoryButton
+            button.zone = selectedZone
+            button:ClearAllPoints()
+            button:SetPoint("RIGHT", s, "RIGHT", -4, 0)
+            button:Show()
+        end
         if not collapsed then
-            local texts, articles, more = ns.GetLoreView(lore, placed)
             local body = AcquireText(canvas, "GameFontHighlight")
             body:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
             body:SetWidth(width - 16)
-            body:SetText(table.concat(texts, "\n\n"))
+            body:SetText(lore.text)
             top = top + (body:GetStringHeight() or 0) + 8
             if more then
                 -- Names no quest, so it gives nothing away.
@@ -1307,7 +1274,7 @@ RenderZone = function()
                 top = top + 18
             end
             local sources = AcquireLoreSources(canvas)
-            sources.articles = articles
+            sources.articles = lore.articles
             sources:SetPoint("TOPLEFT", canvas, "TOPLEFT", PAD + 8, -top)
             top = top + 16
         end
@@ -2074,6 +2041,25 @@ local function CreateMainFrame()
     MakeScrollable(graphScroll, true)
     f.graphScroll = graphScroll
     f.canvas = canvas
+
+    -- Zone story: the About section's button, opening the zone's lore chapters
+    -- (those you and your characters have unlocked) in the side panel.
+    local zoneStory = CreateFrame("Button", nil, canvas, "UIPanelButtonTemplate")
+    zoneStory:SetSize(100, 20)
+    zoneStory:SetText("Zone story")
+    zoneStory:SetFrameLevel((canvas:GetFrameLevel() or 0) + 5)
+    zoneStory:SetScript("OnClick", function(self)
+        ns.ToggleZoneStory(self.zone)
+    end)
+    zoneStory:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+        GameTooltip:AddLine("Zone story", 1, 0.82, 0)
+        GameTooltip:AddLine("Read " .. ns.Possessive(ns.GetMapName(self.zone)) .. " story so far: the chapters you and your characters have unlocked.", 1, 1, 1, true)
+        GameTooltip:Show()
+    end)
+    zoneStory:SetScript("OnLeave", GameTooltip_Hide)
+    zoneStory:Hide()
+    f.zoneStoryButton = zoneStory
 
 
     -- Header row: list toggle, zone name and progress, expand/collapse buttons

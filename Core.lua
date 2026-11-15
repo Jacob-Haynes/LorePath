@@ -924,7 +924,6 @@ function ns.ChapterText(chapter, by)
 end
 
 -- The shown chapters for these quests, in their order: { chapter, by } each.
--- A storyline shows its quests' chapters under its header (UI.lua).
 function ns.ChaptersFor(ids)
     local list = {}
     for _, id in ipairs(ids) do
@@ -939,12 +938,23 @@ function ns.ChaptersFor(ids)
     return list
 end
 
--- What a page's About section shows: the premise (setting only, so it spoils
--- nothing), then any shown chapter with nowhere else on the page to go (its
--- quest isn't in a storyline drawn here: placed[questID] is true for those that
--- are). Returns the paragraphs, the articles to credit (each once), and whether
--- any of the zone's chapters is still locked.
-function ns.GetLoreView(lore, placed)
+-- A zone's shown chapters, in story order: { chapter, by } each. They're read in
+-- the side panel (Zone story).
+function ns.ZoneChapters(lore)
+    local list = {}
+    for _, chapter in ipairs(lore.chapters or {}) do
+        local shown, by = ns.ChapterShown(chapter)
+        if shown then
+            list[#list + 1] = { chapter = chapter, by = by }
+        end
+    end
+    return list
+end
+
+-- A zone's story so far as one text: the premise, then its shown chapters.
+-- Returns the paragraphs, the articles to credit (each once), and whether any
+-- of the zone's chapters is still locked.
+function ns.GetLoreView(lore)
     local texts, articles, seen = { lore.text }, {}, {}
     local function credit(list)
         for _, title in ipairs(list or {}) do
@@ -955,17 +965,12 @@ function ns.GetLoreView(lore, placed)
         end
     end
     credit(lore.articles)
-    local more = false
-    for _, chapter in ipairs(lore.chapters or {}) do
-        local shown, by = ns.ChapterShown(chapter)
-        if not shown then
-            more = true
-        elseif not (placed and placed[chapter.after]) then
-            texts[#texts + 1] = ns.ChapterText(chapter, by)
-            credit(chapter.articles)
-        end
+    local shown = ns.ZoneChapters(lore)
+    for _, item in ipairs(shown) do
+        texts[#texts + 1] = ns.ChapterText(item.chapter, item.by)
+        credit(item.chapter.articles)
     end
-    return texts, articles, more
+    return texts, articles, #shown < #(lore.chapters or {})
 end
 
 -- Lore is shared across your characters: a chapter any of them has unlocked

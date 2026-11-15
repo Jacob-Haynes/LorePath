@@ -775,6 +775,7 @@ local function CreatePanel()
     -- Closing the panel (its X, or the main window closing) drops the selection.
     p:SetScript("OnHide", function()
         ns.detailStory = nil
+        ns.detailZone = nil
         if ns.detailQuest then
             ns.detailQuest = nil
             if main:IsShown() then
@@ -1213,6 +1214,7 @@ function ns.ShowDetail(id)
     end
     EnsurePanel()
     ns.detailStory = nil -- a quest replaces a storyline's story
+    ns.detailZone = nil
     if C_QuestLog.RequestLoadQuestByID then
         C_QuestLog.RequestLoadQuestByID(id)
     end
@@ -1239,6 +1241,50 @@ end
 
 -- A storyline's "Story so far" button: shows its story in the panel, or closes
 -- the panel if that story is already showing.
+-- A zone's story so far in the panel (the About section's Zone story button):
+-- its summary, then every chapter you or your characters have unlocked (all of
+-- them with Show spoilers), in story order, each with its Sources.
+local function RenderZoneStory(zone)
+    Reset()
+    panel.titleText:SetText("Zone story")
+    for _, b in ipairs({ panel.mapButton, panel.logButton, panel.revealButton, panel.linkBox }) do
+        b:Hide()
+    end
+    local lore = ns.GetZoneLore(zone)
+    AddText(ns.GetMapName(zone), "GameFontNormalLarge", { 1, 0.82, 0 }, 4)
+    if lore then
+        AddText(lore.text, "GameFontHighlightSmall", STORY_TEXT, 10)
+        AddLoreSources(lore.articles)
+        for _, item in ipairs(ns.ZoneChapters(lore)) do
+            AddText(ns.ChapterText(item.chapter, item.by), "GameFontHighlightSmall", LORE_TEXT, 12)
+            AddLoreSources(item.chapter.articles)
+        end
+        local _, _, more = ns.GetLoreView(lore)
+        if more then
+            AddText("More of " .. ns.Possessive(ns.GetMapName(zone)) .. " story to uncover.", "GameFontDisableSmall", nil, 14)
+        end
+    end
+    content:SetHeight(cursor + 12)
+end
+
+function ns.ToggleZoneStory(zone)
+    if not ns.mainFrame or not zone then
+        return
+    end
+    EnsurePanel()
+    if panel:IsShown() and ns.detailZone == zone then
+        panel:Hide()
+        return
+    end
+    ns.detailZone = zone
+    ns.detailStory = nil
+    ns.detailQuest = nil
+    ns.revealedQuest = nil
+    panel:Show()
+    panel.scroll:SetVerticalScroll(0)
+    ns.Refresh()
+end
+
 function ns.ToggleStory(storyline)
     if not ns.mainFrame or not storyline then
         return
@@ -1249,6 +1295,7 @@ function ns.ToggleStory(storyline)
         return
     end
     ns.detailStory = storyline
+    ns.detailZone = nil
     ns.detailQuest = nil
     ns.revealedQuest = nil
     panel:Show()
@@ -1264,6 +1311,10 @@ end
 
 function ns.RefreshDetail()
     if not panel or not panel:IsShown() then
+        return
+    end
+    if ns.detailZone then
+        RenderZoneStory(ns.detailZone)
         return
     end
     if ns.detailStory then
