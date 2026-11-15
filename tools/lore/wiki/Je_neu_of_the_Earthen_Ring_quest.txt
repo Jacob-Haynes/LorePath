@@ -1,0 +1,59 @@
+title: Je'neu of the Earthen Ring (quest)
+revision: 6972223
+part: whole
+quest: 824
+url: https://warcraft.wiki.gg/wiki/Je%27neu_of_the_Earthen_Ring_%28quest%29
+
+== Objectives ==
+Bring the Befouled Water Globe to Je'neu Sancrea in Blackfathom Deeps.
+
+ [Befouled Water Globe] (provided)
+
+
+== Description ==
+The Earthen Ring is a shamanistic group dedicated to studying and preserving the elements. They have forgotten more about crazy old gods, ancient legends and lore than most scholars will ever know.
+Lucky for you, I know someone in the Earthen Ring here in Ashenvale. Head over to Zoram'gar Outpost on the coast of the Zoram Strand; show Je'neu Sancrea what you found. If anyone can figure out that globe's significance, it'd be him.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Deftkin Belt]
+ [Driftmire Shield]
+ [Soft Willow Cape]
+ [Nimblereed Chain]
+You will also receive:
+
+2,200 XP
++250 reputation with Darkspear Trolls
+
+
+== Progress ==
+Ah, hello there.  I spend a great deal of time studying the water - all the elements really - so much so that sometimes I don't even notice people around me.
+Is there something I can help you with?
+
+
+== Completion ==
+This globe... it is most disturbing. Many of the more powerful elementals receive their power and energy through such devices. To find one like this nearly intact is one thing - to find it so tainted is another.
+I will see that this globe is studied properly by the Earthen Ring. Perhaps we can bring an end to this corruption of the elements. Please - accept this as a fair exchange for bringing this globe to the attention of the Earthen Ring.
+
+
+== Notes ==
+Je'neu has moved from Zoram'gar Outpost to just inside the Blackfathom Deeps entrance. This is reflected in the quest Objective, but not in the Description.
+
+
+== Progression ==
+ [7-30] The Befouled Element (Drop-quest)
+ [10-30D] Je'neu of the Earthen Ring
+
+
+== Patch changes ==
+ Patch 7.0.3 (2016-07-19):  [Nimblereed Chain] added as a reward.   
+ Patch 4.0.3a (2010-11-23): Text (partially) updated to reflect Je'neu's new location within Blackfathom Deeps.   
+ Patch 1.3.0 (2005-03-07): The text for the Je'neu and the Earthen Ring quest has been clarified.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

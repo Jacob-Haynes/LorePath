@@ -1,0 +1,7 @@
+title: Blackrock Depths
+revision: 6972053
+part: intro
+url: https://warcraft.wiki.gg/wiki/Blackrock_Depths
+
+Blackrock Depths is the deepest part of Blackrock Mountain, ruled by the Dark Iron dwarves who were led by Emperor Dagran Thaurissan. Several minions of the Firelord Ragnaros also made their home in these lava-lined depths. The Blackrock Depths was introduced as a separate raid instance for WoW's 20th Anniversary.
+The depths have many sections, including a prison, Shadowforge City, a vast capital of the Dark Iron dwarves, and the Grim Guzzler tavern. Much of the depths was built by Franclorn Forgewright.

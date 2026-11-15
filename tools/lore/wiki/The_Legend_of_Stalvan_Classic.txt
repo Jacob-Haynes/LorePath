@@ -1,0 +1,55 @@
+title: The Legend of Stalvan (Classic)
+revision: 5586894
+part: whole
+quest: 66
+url: https://warcraft.wiki.gg/wiki/The_Legend_of_Stalvan_%28Classic%29
+
+Madame Eva cannot shake the feeling that an awful event is to befall her grandaughter, and on consulting the cards, her worst fears have been recognised - Death! She cannot find many clues as to what will befall her granddaughter, nor how to prevent it, save for one name: Stalvan.
+Thus starts The Legend of Stalvan.
+
+
+== Objectives ==
+Seek out the Clerk Daltry in the Darkshire Town Hall.
+
+
+== Description ==
+Last night a horrible disturbance rippled through my veins. I sensed that my granddaughter, Alyssa, was in great danger. I consulted the cards and Death stared up at me from the table.
+After taking a long journey through a dark trance I was able to uncover a clue to this terrifying mystery. A name came to me, the name of Stalvan.
+Seek out the Clerk in the Town Hall and see if you can find out more about this character. I fear for us all.
+
+
+== Rewards ==
+You will receive:
+
+230 XP
++25 reputation with Stormwind
+
+
+== Completion ==
+Ah so Madame Eva sent you. . . .
+
+
+== Progression ==
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [35] The Legend of Stalvan
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

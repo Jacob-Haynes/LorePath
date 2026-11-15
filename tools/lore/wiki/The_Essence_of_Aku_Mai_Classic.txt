@@ -1,0 +1,47 @@
+title: The Essence of Aku'Mai (Classic)
+revision: 6306024
+part: whole
+quest: 6563
+url: https://warcraft.wiki.gg/wiki/The_Essence_of_Aku%27Mai_%28Classic%29
+
+== Objectives ==
+Bring 20 Sapphires of Aku'Mai to Je'neu Sancrea in Ashenvale.
+
+ [Sapphire of Aku'Mai] (20)
+
+
+== Description ==
+Within the beginning tunnels of Blackfathom Deeps, large sapphire clusters can be found along the cave walls. Recently it was noted that the naga were harvesting the crystals. Until it can be discerned why, I sense we should stop the naga from succeeding. The crystals have great elemental power and if used inappropriately, could make for a powerful arcane component.
+Will you help me, <name>? Blackfathom Deeps can be found along Zoram Strand to the north of our outpost.
+
+
+== Rewards ==
+You will receive:
+
+14
+1,750 XP
++100 reputation with Darkspear Trolls
+
+
+== Progress ==
+How goes your search for the crystals, <name>? Have you witnessed the naga harvesting them? I pray to my ancestors we find the reason they are collecting such things.
+
+
+== Completion ==
+Well done, <name>. These are the crystals I spoke of. Intriguing...
+I can feel the power within them. The spirits of water cling to them. Whatever the naga were going to use these for... well, let us be glad they are no longer in their hands.
+
+
+== Progression ==
+ [22D] Trouble in the Deeps
+ [22D] The Essence of Aku'Mai
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

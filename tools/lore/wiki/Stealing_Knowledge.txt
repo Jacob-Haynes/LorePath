@@ -1,0 +1,67 @@
+title: Stealing Knowledge
+revision: 6237230
+part: whole
+quest: 3517
+url: https://warcraft.wiki.gg/wiki/Stealing_Knowledge
+
+This quest requires you to go down into the Ruins of Eldarath to find four tablets scattered randomly throughout the area. The quest can be completed at a low level if you are willing to die a few times. Upon completion of this quest, you will be given quests to deliver each tablet to a NPC in a major city and one in Azshara; these NPCs will send you back to the quest giver, granting you even more XP just for running around.
+
+
+== Objectives ==
+Find the Tablet of Beth'Amara, the Tablet of Jin'yael, the Tablet of Markri, and the Tablet of Sael'hai before returning to Jediga in Azshara.
+
+ [Tablet of Beth'Amara]
+ [Tablet of Jin'yael]
+ [Tablet of Markri]
+ [Tablet of Sael'hai]
+
+
+== Description ==
+I admit, <name>, I've made the most of my situation in Azshara. Belgrom's punishment has had its share of benefits.
+Before I left, I did some research and you would be surprised how many valuable items are lying around.
+I'll tell you more about my deals, and even give you a cut of the profits, if you help me gather some of them.
+There are tablets throughout the Ruins of Eldarath to the east that I need. All four are named after Highborne wizards. Get them for me and we'll talk some more.
+
+
+== Rewards ==
+You will receive:
+
+7350 XP
+
+
+== Progress ==
+The tablets I'm having you gather should bring in a pretty copper or two to the right parties. I'll tell you who we need to deliver them to after you've found them. But I'm no fool... you'll get your share after I have proof that they've been delivered.
+So get to it—we don't have all day. I might have to find someone else to help me.
+
+
+== Completion ==
+Perfect, <name>, and in good condition also. These should get us a good price from all the parties concerned.
+Let's not dawdle around here any longer than we have to. We have some money to make.
+
+
+== Notes ==
+Each tablet is identifiable by a distinct neon marking.
+
+ [Tablet of Beth'Amara] - pink
+ [Tablet of Jin'yael] - blue
+ [Tablet of Markri] - green
+ [Tablet of Sael'hai] - yellow
+
+
+== Progression ==
+ [52] Stealing Knowledge
+
+ [52] Delivery to Andron Gant →  [52] Andron's Payment to Jediga
+ [52] Delivery to Magatha →  [52] Magatha's Payment to Jediga
+ [52] Delivery to Jes'rimon →  [52] Jes'rimon's Payment to Jediga
+ [52] Delivery to Archmage Xylem →  [52] Xylem's Payment to Jediga
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

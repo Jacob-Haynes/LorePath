@@ -1,0 +1,55 @@
+title: An Ancient Grudge
+revision: 6973631
+part: whole
+quest: 96395
+url: https://warcraft.wiki.gg/wiki/An_Ancient_Grudge
+
+== Objectives ==
+Put the spirit of Faldrim Anvilmar to rest and then return to the Ghostly Attendant in the Hall of Thanes.
+
+Faldrim Anvilmar slain
+
+
+== Description ==
+The... Thane... my mighty... Thane... he... needs to... rest.
+Please... help him... help him... rest...
+Consumed... by... ancient... grudge... No... rest...
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Catacomb Cloak]
+ [Deepgrave Trousers]
+You will also receive:
+
+2,300 XP
+
+
+== Completion ==
+My... Thane... he... rests... yes... rest.
+Thank... you...
+I... rest...
+
+
+== Progression ==
+ [13] A Visitor to Dun Morogh (optional breadcrumb)
+ [13] Farsen's Watch
+ [13] Nip 'Em in the Bud
+ [15] Underground Map
+ [16D] Old Ironforge Incursion
+Dungeon quests
+ [15D] Important Heirlooms
+ [15D] The Restless Dead
+ [15D] An Ancient Grudge
+ [16] The Treaty of Understanding
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

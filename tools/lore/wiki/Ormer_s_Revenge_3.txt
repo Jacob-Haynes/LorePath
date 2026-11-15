@@ -1,0 +1,58 @@
+title: Ormer's Revenge (3)
+revision: 6960088
+part: whole
+quest: 296
+url: https://warcraft.wiki.gg/wiki/Ormer%27s_Revenge_%283%29
+
+== Objectives ==
+Ormer Ironbraid at the Whelgar Excavation Site wants you to kill Sarltooth and return to him with one of his talons once the task is fulfilled.
+
+ [Sarltooth's Talon]
+
+
+== Description ==
+While you were down there I happened to notice that one of those beasts stood out from the rest. He was bigger and more menacing. I bet he's the one who led the others here to cause the disruption to the dig site.
+I ask of you now one final task, <name>. See to it that Sarltooth is brought to justice. And considering the gravity of his crimes, justice in this case means death! Bring me one of his talons as proof of his death.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Raptor's End]
+ [Raptorbane Armor]
+ [Excavation Rod]
+ [Raptorclaw Shoulders] 
+You will also receive:
+
+2,950 XP
++150 or +350 reputation with Ironforge
+ [Recipe: Curiously Tasty Omelet]
+
+
+== Progress ==
+Is Sarltooth dead? Have you redeemed the memory of the fallen?
+
+
+== Completion ==
+Thank you, <name>. Your efforts here will not be forgotten. Many innocent Dwarves died at this site, simply doing their jobs. The vengeance you delivered to those evil creatures should make them think twice before attacking King Magni's subjects ever again.
+
+
+== Notes ==
+This quest, and the followup quest, go well with another quest:  [28] Uncovering the Past.
+In the northwest corner of the excavation site is a path leading up the west wall. Sarltooth, a level 29 raptor, is up there. He is not elite, and can be soloed by many level 26 characters.
+
+
+== Progression ==
+ [24] Ormer's Revenge
+ [27] Ormer's Revenge
+ [29] Ormer's Revenge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

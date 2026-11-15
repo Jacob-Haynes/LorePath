@@ -1,0 +1,50 @@
+title: The Fate of the Kingdom
+revision: 5610680
+part: whole
+quest: 4362
+url: https://warcraft.wiki.gg/wiki/The_Fate_of_the_Kingdom
+
+== Objectives ==
+Return to Blackrock Depths and rescue Princess Moira Bronzebeard from the evil clutches of Emperor Dagran Thaurissan.
+
+Emperor Dagran Thaurissan slain
+
+
+== Description ==
+It would seem as if my old adversary, Dagran Thaurissan, has me and the kingdom of Ironforge at his mercy.
+You may be my last hope, <name>. You must rescue my dear daughter, Moira!
+There is only one way to make sure that the spell Thaurissan has cast on Moira is broken: Kill him.
+And <name>, do not harm her! Remember, she is being controlled by Thaurissan! The things she may do or say are a result of Thaurissan's evil spell!
+
+
+== Rewards ==
+You will receive:
+
+8050 XP
++150 or +500 reputation with Ironforge
+
+
+== Completion ==
+<Princess Bronzebeard weeps over the loss of Emperor Dagran Thaurissan.>
+Why???
+
+
+== Notes ==
+Emperor Dagran Thaurissan is the final boss of Blackrock Depths. Kill him without killing Moira. If she dies, the quest cannot be turned in during that run.
+
+
+== Progression ==
+ [59D] Kharan's Tale
+ [59D] The Bearer of Bad News
+ [59D] The Fate of the Kingdom
+ [59D] The Princess's Surprise
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

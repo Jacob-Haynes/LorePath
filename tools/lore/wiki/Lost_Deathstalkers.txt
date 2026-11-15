@@ -1,0 +1,47 @@
+title: Lost Deathstalkers
+revision: 6971040
+part: whole
+quest: 428
+url: https://warcraft.wiki.gg/wiki/Lost_Deathstalkers
+
+== Objectives ==
+Find the Deathstalkers Quinn and Rane Yorick.
+
+
+== Description ==
+A couple weeks ago two of our Deathstalkers, Rane and Quinn Yorick, were sent on a reconnaissance mission through northern Silverpine. We have not heard from them.
+They may have become victim to the Scourge, though if that is true then I want it confirmed. Find these Deathstalkers.
+Their first objective was to scout the farms in northern Silverpine. You should begin your search there.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+230 XP (or a 1 20 compensation at level 80)
++6 reputation with Silvermoon City
++25 reputation with Undercity
+
+
+== Completion ==
+You found us!  And not a moment too soon...
+
+
+== Notes ==
+They are found at .
+
+
+== Progression ==
+ [12] Lost Deathstalkers
+ [11] Wild Hearts
+ [11] Return to Quinn
+ [12] Ivar the Foul
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

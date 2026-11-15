@@ -1,0 +1,55 @@
+title: The Tower of Althalaxx
+revision: 5587049
+part: whole
+quest: 965
+url: https://warcraft.wiki.gg/wiki/The_Tower_of_Althalaxx
+
+This quest starts the The Tower of Althalaxx quest chain.
+
+
+== Objectives ==
+Find Balthule Shadowstrike near the Tower of Althalaxx in Darkshore.
+
+
+== Description ==
+Hail, young <race>. I am Elissa Starbreeze, and it is my charge to protect Auberdine from harm.
+To this end, I sent Balthule Shadowstrike to observe the strange happenings around the Tower of Althalaxx to the northeast.
+It is past time that he should have returned. I worry that he has encountered some unforeseen danger in the forest. I would be most appreciative if you would find him and see that he is doing well.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+675 XP (or 4 20 at level 70)
+75 reputation with Darnassus
+
+
+== Completion ==
+Elissa sent you? Then it is good tidings you bring. I have troubling news to report to her, and had no means with which to deliver it.
+
+
+== Notes ==
+To reach the Tower:  Get out of Auberdine itself by heading east-ish. Then just follow the path north all the way - you'll go past Bashal'Aran and over Cliffspring River. Stay on the path the whole way, cause there are a lot of enemies around. A short while after the river, you'll come to the tower. It's big, you can't miss it. Plus it's an area in itself so you'll 'discover' it.
+Note that the mobs within the tower are significantly higher level than those outside the tower.
+
+
+== Progression ==
+ [18] The Tower of Althalaxx
+ [18] The Tower of Althalaxx
+ [18] The Tower of Althalaxx
+ [21] The Tower of Althalaxx
+ [24] The Tower of Althalaxx
+ [28] The Tower of Althalaxx
+ [28] The Tower of Althalaxx
+ [31] The Tower of Althalaxx
+ [31] The Tower of Althalaxx
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

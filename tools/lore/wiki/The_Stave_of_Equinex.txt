@@ -1,0 +1,63 @@
+title: The Stave of Equinex
+revision: 6839581
+part: whole
+quest: 2879
+url: https://warcraft.wiki.gg/wiki/The_Stave_of_Equinex
+
+This quest is part of the quest chain In Search of Knowledge.
+
+
+== Objectives ==
+Energize Troyas' Stave and find the Equinex Monolith. 
+
+ [Stave of Equinex]
+ [Troyas' Stave] (provided)
+
+
+== Description ==
+This stave might be the Stave of Equinex! The Stave of Equinex is actually a key, used to unlock the Equinex Monolith in the Ruins of Ravenwind, on the mainland west of the Dream Bough.
+Find the four flames that still burn in those ruins: Samha, Imbel, Byltan, and Lahassa. Retrieve their essence and then while standing by the Equinex Monolith, use the essences to energize the stave. If this is truly is the Stave of Equinex, you will be able to unlock the Monolith and gather a sacred artifact from it.
+
+
+== Rewards ==
+You will receive:
+
+4700 XP (or 28 20 at max level)
++250 reputation with Darnassus
+ [A Sparkling Stone]
+
+
+== Progress ==
+The Equinex Monolith stands silently among the ruins. What could it be holding?
+
+
+== Completion ==
+Holding the energized stave is almost impossible. Its power rumbles through your body.
+You reach out to the cold surface of the Equinex Monolith...
+A small door opens, allowing you to reach in and take the artifact inside.
+Beams of light fill the area around the Equinex Monolith.
+
+
+== Notes ==
+The sparkling stone you get from the monolith is a quest item, true, but it is one you get from this quest, and turn in for the following quest.  The following quest doesn't give it to you, so you should not 'accidentally' destroy it, as dropping and re-taking the follow-up quest is not likely to give it to you again.
+Note that though it's not made known in Quest Helper (as of Version 0.85), you must recover the four flames' essences. They are located in Feralas, Ruins of Ravenwind, at  (Lahassa),  (Samha - have to climb for this one),  (Imbel), and  (Byltan) - conveniently located immediately around the Equinex Monolith . Some creative jumping will be required to retrieve Samha.
+
+
+== Progression ==
+ [47] In Search of Knowledge
+ [47] Feralas: A History
+ [48] The Borrower
+ [48] The Super Snapper FX
+ [48] Return to Troyas
+ [50] The Stave of Equinex
+ [50] The Morrow Stone
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

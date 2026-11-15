@@ -1,0 +1,59 @@
+title: Hall of Thanes (instance)
+revision: 6979842
+part: whole
+url: https://warcraft.wiki.gg/wiki/Hall_of_Thanes_%28instance%29
+
+Hall of Thanes is a Forever-exclusive dungeon, intended for level 13-18 Alliance players located inside Ironforge.
+
+
+== Getting there ==
+
+The dungeon is located inside Ironforge, beneath the High Seat in the center of the city, southwest of the Great Forge. Take a left at  by Deliana and go downstairs to the instance line. Alliance characters not already in Ironforge can use the Deeprun Tram from Stormwind City, and the boat from Auberdine in Darkshore from Darnassus to make it to Stormwind.
+This dungeon is ill-advised for Horde characters, as this is a well-guarded location near the leader of the city.
+Horde characters who intend to try should travel from the Undercity through Tirisfal Glades, Silverpine Forest (get the Sepulcher flight path!), Hillsbrad Foothills (Tarren Mill flight path!), Arathi Highlands (Hammerfall flight path!), Wetlands, Loch Modan, and Dun Morogh. Approaching Ironforge, remove all gear to avoid the durability damage from the inevitable deaths from city guards. Run back, resurrect, and keep running. Rinse and repeat until getting to the instance line. Re-equip gear while inside.
+
+
+== Quests ==
+
+Almost all quests for the dungeon are Alliance-based. The main quest line starts from Kharanos in Dun Morogh, but there are also questgivers just outside the instance line.
+Additionally, there are two quests available inside the dungeon, one of which is offered by a neutral ghost.
+
+ [13] A Visitor to Dun Morogh (optional breadcrumb)
+ [13] Farsen's Watch
+ [13] Nip 'Em in the Bud
+ [15] Underground Map
+ [16D] Old Ironforge Incursion
+Dungeon quests
+ [15D] Important Heirlooms
+ [15D] The Restless Dead
+ [15D] An Ancient Grudge
+ [16] The Treaty of Understanding
+
+
+== Encounters ==
+
+Faldrim Anvilmar
+Magmatus
+Plunder
+Durgen Dirgehammer
+
+
+== Loot ==
+
+
+=== Boss drops ===
+
+
+=== Quest rewards ===
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+Wago

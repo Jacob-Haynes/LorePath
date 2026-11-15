@@ -1,0 +1,56 @@
+title: The Platinum Discs (Alliance)
+revision: 6528192
+part: whole
+quest: 2279
+url: https://warcraft.wiki.gg/wiki/The_Platinum_Discs_%28Alliance%29
+
+== Objectives ==
+Take the miniature version of the Discs of Norgannon to the Explorers' League in Ironforge.
+
+ [Miniature Platinum Discs] (provided)
+
+
+== Description ==
+Touching the Discs of Norgannon once again makes your hand tingle. This time, however, a strange grinding noise is heard from inside the discs.
+Your backpack suddenly becomes heavier than it was before. Inside, you discover a miniature version of the discs!
+No doubt, an item of this sort would be invaluable for someone interested in the ancient history of Azeroth. The Explorers' League in Ironforge is such a group, known throughout the Alliance; perhaps they can make good use of it.
+
+
+== Rewards ==
+You will receive:
+
+5250 XP (or 31 50 at level 70)
++350 reputation with Ironforge
+
+
+== Progress ==
+Yes, may I help you with something?  I assure you I am a very busy right now.  If it is grave importance to the Explorers' League, however, then I am all ears!
+
+
+== Completion ==
+What do you have there... oh my.  You found this where?
+No, really?
+You spoke to whom about what?
+NO, REALLY?!
+My fine <class>, you may have just made the archaeological find of the year!  By the Gods who am I kidding, the find of the century!  If these discs are what I think them to be, then this could be the very key we have been looking for!  This may well prove outright once and for all the legitimacy of the Dwarves' enchanted creation! 
+
+
+== Progression ==
+ [15-30D] The Platinum Discs
+ [47] The Platinum Discs
+ [47] The Platinum Discs
+ [50] Portents of Uldum
+ [50G] Seeing What Happens
+ [50] The Stone Watcher
+ [50] Return to Ironforge
+ [50] A Future Task
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

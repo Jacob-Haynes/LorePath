@@ -1,0 +1,6 @@
+title: Stitches
+revision: 6526775
+part: intro
+url: https://warcraft.wiki.gg/wiki/Stitches
+
+Stitches is an abomination created by the necromancer Abercrombie the Embalmer to attack Darkshire.

@@ -1,0 +1,55 @@
+title: Winterfall Firewater (Classic)
+revision: 6306056
+part: whole
+quest: 5083
+url: https://warcraft.wiki.gg/wiki/Winterfall_Firewater_%28Classic%29
+
+== Objectives ==
+Bring the Empty Firewater Flask to Donova Snowden in Winterspring.
+
+ [Empty Firewater Flask] (provided)
+
+
+== Description ==
+This vial that you picked up from the Winterfall furbolg is empty, but you can detect a few drops of a strange green liquid inside; it almost glows.
+Is it something important?
+Donova Snowden would probably be able to tell you more, since she has been camped by the hot springs in Winterspring for some time now.
+
+
+== Rewards ==
+You will receive:
+
+4200 XP (or 17 40 at max level)
++75 reputation with Everlook
++37 reputation with Gadgetzan
++38 reputation with Ratchet
++38 reputation with Booty Bay
+
+
+== Progress ==
+What is that you have found?
+
+
+== Completion ==
+You got this from the Winterfall?
+
+
+== Progression ==
+ [56] Winterfall Firewater
+ [56] Falling to Corruption
+ [56] Mystery Goo
+ [56] Toxic Horrors
+ [57] Winterfall Runners
+ [59] High Chief Winterfall
+ [59] The Final Piece
+ [59] Words of the High Chief
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

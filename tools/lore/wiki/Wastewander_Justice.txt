@@ -1,0 +1,49 @@
+title: Wastewander Justice
+revision: 6030306
+part: whole
+quest: 1690
+url: https://warcraft.wiki.gg/wiki/Wastewander_Justice
+
+== Objectives ==
+Take down 10 Wastewander Bandits and Thieves east of Gadgetzan, then report back to Chief Engineer Bilgewhizzle. 
+
+Wastewander Thief slain (10)
+Wastewander Bandit slain (10)
+
+
+== Description ==
+You there! It's time for you to be a big helper to the Gadgetzan Water Company.
+The Wastewander nomads out in the Tanaris desert have seized almost all the water wells! Without access to them, our water supply will dry up in no time. If you want to get in our good graces, then you'll help us bring justice to those nomads!
+Head east of here and bring down ten Wastewander Bandits and Thieves, then report back to me on the double. Justice waits for no man... goblin... bah, just get on it!
+
+
+== Rewards ==
+You will receive:
+
+60
+3600 XP (or 21 60 at level 70)
+250 reputation with Gadgetzan
+
+
+== Progress ==
+Back so soon? I hope you were able to bring some goblin-style justice to those Wastewander Bandits and Thieves like I asked you to!
+
+
+== Completion ==
+Now that's what I call efficiency!  You've helped thin out the nomad's numbers enough now that we can start to think about how we can win back those water wells.
+The Gadgetzan Water Company thanks you for your help, but we're far from done in dealing with those foul nomads.  Listen close - here's what we need next...
+
+
+== Progression ==
+ [43] Wastewander Justice
+ [44] More Wastewander Justice
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,63 @@
+title: Sathrah's Sacrifice (quest)
+revision: 6611599
+part: whole
+quest: 2520
+url: https://warcraft.wiki.gg/wiki/Sathrah%27s_Sacrifice_%28quest%29
+
+Sathrah's Sacrifice is the third quest in the The Temple of the Moon quest chain.
+
+
+== Objectives ==
+Priestess A'moora wants you to place Lady Sathrah's silvery spinnerets at the fountain inside the temple, and then return to her.
+
+Offer the sacrifice at the fountain
+ [Sathrah's Sacrifice] (provided)
+
+
+== Description ==
+Now you must finish the task to which you have been appointed. Take the spinnerets and offer Lady Sathrah's sacrifice to Elune; lay the great spider to rest.
+Inside this temple, find the central fountain. There is where you may leave the sacrifice. The holy waters will purify and cleanse the corruption that drove Sathrah mad.
+When you have completed this, return to me.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Lace Pants]
+ [Cushioned Boots]
+You will also receive:
+
+900 XP
++100 or +250 reputation with Darnassus
+
+
+== Progress ==
+Have you placed the sacrifice at the fountain, <name>?
+
+
+== Completion ==
+The loss of Lady Sathrah is distressing, but in this way only may she be reborn with a renewed spirit.
+May Elune willingly accept the sacrifice that you have offered her.
+
+
+== Notes ==
+Item used
+
+The Spirit of Sathrah appears in the fountain and walks around.
+Spirit of Sathrah is once again at peace.
+
+
+== Progression ==
+ [10] The Temple of the Moon (optional)
+ [12] Tears of the Moon
+ [12] Sathrah's Sacrifice
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

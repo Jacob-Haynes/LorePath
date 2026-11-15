@@ -1,0 +1,43 @@
+title: Rhapsody's Tale
+revision: 5586447
+part: whole
+quest: 1469
+url: https://warcraft.wiki.gg/wiki/Rhapsody%27s_Tale
+
+== Objectives ==
+Bring the Atal'ai Tablet Fragment to Brohann Caskbelly in Stormwind.
+
+ [Atal'ai Tablet Fragment] (Provided)
+
+
+== Description ==
+Before the flight, I drank me a whole keg of stout. Hiccup!
+And what a flight it was. Zipping around with Brohann following me. Didn't see no temple though. Hiccup!
+Well, didn't see no temple till I got a little too tipsy and fell off my mount. I plunged right into the water and was sucked down. Found myself surrounded by a bunch of creepy trolls. Sure swam out of there fast! Even made off with this troll souvenir. Here, take it to Brohann and let him know his temple is down there, indeed. Hiccup!
+
+
+== Progress ==
+At long last you have returned, <name>. It has been quite some time since we last spoke. I thought perhaps you had forgotten about my quest.
+Did you locate that wily gryphon rider? Did he have anything to report?
+
+
+== Completion ==
+Rhapsody Shindigger! That's right... how could I forget such a name?
+So he knew about the sinking of the temple all along? Well, that certainly would have saved you some leg work.
+But this Atal'ai artifact! Why, it's quite a find!
+
+
+== Progression ==
+ [43G] In Search of The Temple
+ [43] To The Hinterlands
+ [43] Gryphon Master Talonaxe
+ [43] Rhapsody Shindigger
+ [43] Rhapsody's Kalimdor Kocktail
+ [43] Rhapsody's Tale
+ [50D] Into The Temple of Atal'Hakkar
+
+
+== External links ==
+
+Wowhead
+WoWDB

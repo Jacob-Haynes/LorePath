@@ -1,0 +1,58 @@
+title: Arugal's Folly
+revision: 6954838
+part: whole
+quest: 422
+url: https://warcraft.wiki.gg/wiki/Arugal%27s_Folly
+
+== Objectives ==
+Retrieve the Remedy of Arugal for Dalar Dawnweaver at the Sepulcher.
+
+ [Remedy of Arugal]
+
+
+== Description ==
+How Arugal gained acceptance within the Kirin Tor is beyond me. His spell-casting knowledge seemed as transparent as a blown glass bauble.
+What's important now is learning exactly what magic Arugal used so that I can turn it against him and secure Silverpine Forest for the Dark Lady.
+Arugal first stayed at the wheat farm just north of the bridge. One of the Deathstalkers reported seeing some spellbooks but could not secure them. Retrieve for me the spell labeled Remedy of Arugal from those books.
+
+
+== Rewards ==
+The following spell will be cast on you:  [Arcane Intellect] (Rank 2: Increases Intellect by 7.)
+You will receive:
+
+875 XP (or 5 40 at max level)
++62 reputation with Thunder Bluff
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Before I know what we are dealing with here, <class>, I need to study the spell known as Remedy of Arugal.  Bring it to me now or I shall be forced to find myself a worthy servant.
+
+
+== Completion ==
+This is precisely the spell I was in search of, <class>.  If your dedication to The Dark Lady's cause remains infallible you will find you have quite a future amongst The Forsaken.
+
+
+== Notes ==
+Interact with Dusty Spellbooks on the second floor. A Moonrage Darkrunner attacks.
+
+Moonrage Darkrunner says: The Sons of Arugal will rise against all who challenge the power of the Moonrage!
+
+
+== Progression ==
+ [10] Prove Your Worth
+ [11] Arugal's Folly
+ [14] Arugal's Folly
+ [15] Arugal's Folly
+ [15] Arugal's Folly
+ [16] Arugal's Folly 
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

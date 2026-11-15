@@ -1,0 +1,54 @@
+title: Message to Freewind Post
+revision: 6824227
+part: whole
+quest: 4542
+url: https://warcraft.wiki.gg/wiki/Message_to_Freewind_Post
+
+In Message to Freewind Post, you must carry an urgent message from Brave Moonhorn to Cliffwatcher Longhorn, the leader of Freewind Post, regarding the recent activities of the centaurs.
+
+
+== Objectives ==
+Bring the Urgent Message to Cliffwatcher Longhorn at Freewind Post.
+
+ [Urgent Message] (provided)
+
+
+== Description ==
+Brave traveler, the centaurs have increased their attacks in this area. Freewind Post must know about this renewed harassment immediately! Seek Cliffwatcher Longhorn at Freewind Post to the southeast and give him this urgent message.
+Be warned, avoid the Grimtotem Clan nearby... they have been acting strange toward us lately.
+
+
+== Rewards ==
+You will receive:
+
+1 75
+510 XP
++25 reputation with Thunder Bluff
+
+
+== Progress ==
+What do you want, <class>? An urgent message - for me?
+
+
+== Completion ==
+More bad news! These centaurs have gone too far! They raided one of my supply caravans and slaughtered the whole party. This is an outrage, and it will not go unpunished!
+
+
+== Notes ==
+To get to Freewind Post, simply go down the lift and follow the road. It will fork shortly, you will want to head to the left (east). Keep going and you will come to another lift heading up to one of the needles. The town is on top, so take the lift up. Cliffwatcher Longhorn should be fairly easy to spot - his coordinates are (45,50). Don't forget to get the flight path while you are here.
+
+
+== Progression ==
+ [25] Message to Freewind Post
+ [25] Pacify The Centaur
+ [28] Grimtotem Spying
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,65 @@
+title: Bungle in the Jungle
+revision: 6710933
+part: whole
+quest: 4496
+url: https://warcraft.wiki.gg/wiki/Bungle_in_the_Jungle
+
+This quest is part of the Rise of the Silithid quest chain.
+
+
+== Quest objectives ==
+Bring a Gorishi Scent Gland and 5 Un'Goro Soil samples to Alchemist Pestlezugg in Gadgetzan.
+
+ [Gorishi Scent Gland]
+ [Un'Goro Soil] (5)
+
+
+== Description ==
+My research revealed to me that the silithid are like bees; destroy the queen of the hive, and the rest of should be thrown into disarray. I'll brew a lure that we'll use to bring out the queen; once summoned, you'll take her down.
+First though, we need some reagents; we don't want you bungling into the jungle unprepared. Go west to find the silithid hive in Un'Goro Crater and obtain a scent gland from one of the bugs. I'll also need some samples of the native Un'Goro soil.
+
+
+== Rewards ==
+You will receive:
+
+7600 XP
++250 reputation with Gadgetzan
+
+
+== Progress ==
+Finding a suitable scent gland might take a bit - the gland can't be damaged, but the process of getting one certainly doesn't lend itself to it. As for the soil, I'd assume it should be easy enough to find.
+Anyway, do you have the items I need to make the lure?
+
+
+== Completion ==
+The scent gland, ah yes. The membrane appears intact - excellent. The soil, yes, this should work out perfectly. With my special additions, I should be able to grind all this up into the perfect lure.
+Give me a moment to make the lure, <name>. Once it's ready, we'll be able to enact the next step that may hopefully stop the silithid before they overrun Gadgetzan... and the rest of Kalimdor.
+
+
+== Notes ==
+'Bungle in the Jungle' the title of a Jethro Tull song.
+'Bungle in the Jungle' were a sentence from a 2008 danish program called "Thank's for tonight". Where they used Bungle in the Jungle.
+
+
+== Progression ==
+ [46] Gadgetzan Water Survey
+ [47] Noxious Lair Investigation
+ [48] The Scrimshank Redemption
+ [48] Insect Part Analysis
+ [48] Insect Part Analysis
+ [48] Rise of the Silithid
+ [53] March of the Silithid
+ [53] Bungle in the Jungle
+ [54G] Pawn Captures Queen
+ [54] Calm Before the Storm
+ [54] Calm Before the Storm
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

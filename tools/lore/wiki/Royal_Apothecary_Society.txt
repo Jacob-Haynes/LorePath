@@ -1,0 +1,6 @@
+title: Royal Apothecary Society
+revision: 6933174
+part: intro
+url: https://warcraft.wiki.gg/wiki/Royal_Apothecary_Society
+
+The Royal Apothecary Society (or the Apothecary Society, and abbreviated R.A.S.) is an alchemical society created by Lady Sylvanas Windrunner in order to create a new undead plague to wipe out the Scourge. Once based in the Apothecarium in Undercity, its members are all Forsaken or other types of undead beings who are constantly brewing up new plagues and poisons to unleash upon their enemies. The other races of the Horde believe they are working on a remedy to cure their "illness". Members of the Apothecary society are called Apothecaries or Dark Apothecaries.

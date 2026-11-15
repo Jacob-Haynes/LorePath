@@ -1,0 +1,63 @@
+title: Arcane Runes
+revision: 6293709
+part: whole
+quest: 3449
+url: https://warcraft.wiki.gg/wiki/Arcane_Runes
+
+== Objectives ==
+Using the Drawing Kit, make rubbings of the Rune of Beth'Amara, the Rune of Jin'yael, the Rune of Markri, and the Rune of Sael'hai before heading to the small island off of the southern peninsula of Azshara and signaling Pilot Xiggs Fuselighter to pick them up. 
+
+ [Rubbing: Rune of Beth'Amara]
+ [Rubbing: Rune of Jin'yael]
+ [Rubbing: Rune of Markri]
+ [Rubbing: Rune of Sael'hai]
+ [Drawing Kit] (provided)
+
+
+== Description ==
+Magic was once as revered as Elune herself to some elves. Some of their most powerful mages created runes and tablets citing rules of the arcane and insights into their findings. They would leave these for all to ponder in public places.
+I would very much like rubbings of these runes from the Ruins of Eldarath. I have a kit for you to make the rubbings with, but it will be up to you to find them. Be careful though, the Explorer's League isn't the only one interested in Eldarath.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+2550 XP (or 15 60 at level 70)
++75 reputation with Ironforge
+
+
+== Progress ==
+Well, well, well, glad to see you made it out here, <name>. Did you get the rubbings for Tymor?
+As dangerous as this place is, there hasn't been too much action along the coast. That might be on account of the naga swimming underwater, but that's not my problem... I patrol the skies.
+
+
+== Completion ==
+Good to see you safe and sound, <name>. I hope things weren't too tough for you.
+I'll get these to Tymor right away. He'll be thrilled to take a look at these things.
+Go ahead and toss the flare gun... probably won't be any good to you anymore anyway, and I already got a new one.
+
+
+== Notes ==
+It can be a little tricky to find the right place to stand when you fire the  [Standard Issue Flare Gun]. You must be standing on the central circular portion of the Makeshift Helipad when you fire the gun, or else Xiggs will not arrive. Standing on the outer rim of the platform, or on the ramp leading up to it, will not work. As the flare gun only has two charges, if you miss this portion of the quest you will have to travel all the way back to Ironforge and then back to Azshara to complete it, wasting a lot of time.
+
+Upon summoning Xiggs
+Pilot Xiggs Fuselighter says: Been waitin' for ya, <name>. Glad to see you've come through. Do you have the shipment?
+
+Xiggs leaves
+Pilot Xiggs Fuselighter says: I've been here long enough, <name>. I'm sure we'll meet again. Good luck!
+
+
+== Progression ==
+ [52] Passing the Burden
+ [52] Arcane Runes
+ [52] Return to Tymor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

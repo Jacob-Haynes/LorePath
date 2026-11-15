@@ -1,0 +1,67 @@
+title: The Rescue
+revision: 6853387
+part: whole
+quest: 498
+url: https://warcraft.wiki.gg/wiki/The_Rescue
+
+The Rescue is a Horde quest in Hillsbrad Foothills that involves finding and rescuing two orc hostages from the Syndicate in Durnholde Keep. 
+
+
+== Objectives ==
+Krusk in Tarren Mill needs you to free Drull and Tog'thar from Durnholde Keep.
+
+Rescue Drull
+Rescue Tog'thar
+
+
+== Description ==
+Me and some other warriors were sent by the Warchief to retrieve an object from Durnholde and to investigate this so-called Syndicate.
+We went to Durnholde to take a look around, but we were taken by surprise by a large number of the humans. We fought bravely, but their sheer numbers were enough to defeat us. They took a few of us captive, but I was able to escape.
+Durnholde is just southeast of here, across the river. Drull and Tog'thar are being held there, you must go and rescue them.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Grunt Vest]
+ [Orcish War Chain]
+You will also receive:
+
+2,200 XP
+ [Recipe: Big Bear Steak]
++150 or +350 reputation with Orgrimmar
+
+
+== Progress ==
+You must make haste, <class>. I shudder to think what the humans might be doing to Drull and Tog'thar.
+
+
+== Completion ==
+So the humans thought to turn our warriors into slaves, did they? We'll show them!
+It would seem they have taken our leader, Gol'dir, to another location. We must find him and rescue him. But we currently have no clue where he is...
+When we have a lead, I will be sure to tell you, <name>.
+
+
+== Notes ==
+To free Drull, first locate him in the southern building in the western-most cluster of buildings in the trench. Near him should be Jailor Eston. Kill the jailor, and he will drop the  [Dull Iron Key]. (This battle can be quite frustrating for Hunters or Warlocks, as Eston can charm you, and have you kill your pet.) Click on the ball and chain next to Drull, and you will get a message stating that Drull has been freed. There is no need to escort him anywhere.
+To free Tog'thar, find him in the ruins of the barracks on the hill overlooking the keep. If you come to the tower, you've gone too far. Near him should be Jailor Marlgen. Killing him will allow you to loot the  [Burnished Gold Key], which you can use on the ball and chain next to Tog'thar, giving a message confirming he has been freed. There is no need to escort him anywhere.
+It is recommended that you complete this quest at the same time as  [22] WANTED: Syndicate Personnel, as they take place in the same location.
+
+
+== Progression ==
+ [22] The Rescue
+ [34] Infiltration
+ [36] Gol'dir
+ [36] Blackmoore's Legacy
+ [42] Lord Aliden Perenolde
+ [40] Taretha's Gift
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

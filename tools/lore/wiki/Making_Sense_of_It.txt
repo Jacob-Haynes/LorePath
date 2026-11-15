@@ -1,0 +1,49 @@
+title: Making Sense of It
+revision: 6552600
+part: whole
+quest: 4321
+url: https://warcraft.wiki.gg/wiki/Making_Sense_of_It
+
+== Objectives ==
+Speak with J.D. Collie in a moment.
+
+
+== Description ==
+The information you have given me about the pylons is very interesting...
+Give me a moment to do some calculations, <name>. Speak to me again in a moment and I should be able to give you the answer we have been looking for. 
+
+
+== Rewards ==
+You will receive:
+
+750 XP
+ [Crystal Pylon User's Manual]
+
+
+== Completion ==
+Alright, <name>. This is fascinating... I can only hope that my diagrams are correct! I compiled everything into this manual, which you can have.
+I believe I can answer any questions you have about the crystals now, <name>.
+
+
+== Notes ==
+Players who completed this quest prior to its removal in patch 4.0.3a still see "gossip text" when interacting with the crystal pylons indicating that they have full access to the pylons' functionality. However, they do not actually receive the options to turn in power crystals, unless they complete the new quest chains to do so, which end with  [15-30] Ever Watching From Above.
+After completing this quest, players can ask J.D. Collie for a new  [Crystal Pylon User's Manual] if they need one. This still works after the quest was removed.
+
+
+== Progression ==
+ [15-30] Crystals of Power
+All of:
+ [15-30] The Western Pylon
+ [15-30] The Northern Pylon
+ [15-30] The Eastern Pylon
+ [53] Making Sense of It
+Repeatable power crystal turn-in quests:
+Eastern Pylon:  [15-30] Crystal Force and  [15-30] Crystal Spire
+Northern Pylon:  [15-30] Crystal Charge and  [15-30] Crystal Restore
+Western Pylon:  [15-30] Crystal Ward and  [15-30] Crystal Yield
+
+
+== External links ==
+
+Wowhead
+WoWDB

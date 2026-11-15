@@ -1,0 +1,60 @@
+title: Clear the Way (Western Plaguelands)
+revision: 6291704
+part: whole
+quest: 5092
+url: https://warcraft.wiki.gg/wiki/Clear_the_Way_%28Western_Plaguelands%29
+
+This quest officially starts the Alliance side of The Key to Scholomance quest chain.
+
+
+== Objectives ==
+Kill 10 Skeletal Flayers and 10 Slavering Ghouls in Sorrow Hill.
+Return to Commander Ashlam Valorfist at Chillwind Camp, Western Plaguelands.
+
+Skeletal Flayers slain (10)
+Slavering Ghouls slain (10)
+
+
+== Description ==
+With Andorhal's western and northern roads into the city well fortified, I'm looking to strike at it from the less defended eastern road.  The Scourge relies on the buffer of undead that infests Sorrow Hill as a first line of defense.  If we are to advance on Andorhal, we will need to do it through Sorrow Hill.
+Your first assignment will be to clear the way through Sorrow Hill.  Thin out the skeletons and ghouls that haunt the area; report back to me when this is done!
+
+
+== Rewards ==
+You will receive:
+
+75
+7350 XP (or 43 50 at max level)
++100 or +250 reputation with Stotmwind
+
+
+== Progress ==
+I want you to prepare for the worst, <name> dig deep. The task in front of us will not be easy. As we rally our forces here to eventually strike out against the Scourge, you will be part of our advance effort that takes the fight to them! Your assigned mission in Sorrow Hill will begin our path to victory!
+
+
+== Completion ==
+Mission accomplished, <name>! Well played, well played.
+Allow me to reward your work thus far with some coin from the Stormwind coffers.  I'd recommend spending it on materiel that will aid you in your next mission... one that will take you into the ruins of Andorhal itself.
+Be ready!  Be vigilant!
+
+
+== Progression ==
+ [50] A Call to Arms: The Plaguelands! (optional)
+ [52] Clear the Way /  [53] Scarlet Diversions
+ [56] All Along the Watchtowers
+ [55] Scholomance
+ [57] Skeletal Fragments
+ [57] Mold Rhymes With...
+ [57] Fire Plume Forged
+ [60G] Araj's Scarab
+ [60] The Key to Scholomance
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

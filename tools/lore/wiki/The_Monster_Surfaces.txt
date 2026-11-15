@@ -1,0 +1,48 @@
+title: The Monster Surfaces
+revision: 6971519
+part: whole
+quest: 95267
+url: https://warcraft.wiki.gg/wiki/The_Monster_Surfaces
+
+== Objectives ==
+Use the Big Ball o' Bait to lure out the sea monster. Then, bring its head to Argo Brinewhistle.
+
+Sea Monster's Head
+Big Ball o' Bait (provided)
+
+
+== Description ==
+The last part's <hic> easy...just take that big ball 'a guts, aaand chuck it in the water! Er...not here though...that'd be a disaster.
+Go to those <hic> murloc islands, where ya found the drawing. Look for fresh wreckage in the water. That's where you gotta throw the bait.
+Soon as that thing sticks its head up, chop it off! We'll make a decoration of it...for the boat!
+
+
+== Rewards ==
+You will receive:
+
+Bottle of Powderfuse Port
+You will also receive:
+
+3450 XP
++150 reputation with Powderfuse
+
+
+== Progress ==
+Is it...is that monster dead yet...?
+
+
+== Completion ==
+What the...ya actually got it!? Ha ha ha!
+<Argo clumsily snatches the creature's head, and looks it in the eyes>
+Whoowee <hic>, what a beaut! Think I'll put 'er right on the <hic> stern! Drinks are on me tonight, pal!
+
+
+== Patch changes ==
+ Hotfix (2026-11-05): The quest item is now available to all players in a party. 
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

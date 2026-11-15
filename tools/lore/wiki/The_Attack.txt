@@ -1,0 +1,97 @@
+title: The Attack!
+revision: 5586752
+part: whole
+quest: 434
+url: https://warcraft.wiki.gg/wiki/The_Attack%21
+
+This quest is part of the Lescovar Incident quest chain.
+
+Warning! Participating in this quest will switch on your PvP flag for 5 minutes.
+
+
+== Objectives ==
+Remain in the garden until Lord Gregor Lescovar and Marzon the Silent Blade have had their conversation. Afterwards, kill them both before returning to Elling Trias in Stormwind.
+
+Lord Gregor Lescovar slain
+Marzon the Silent Blade slain
+Overhear Lescovar and Marzon's Conversation
+
+
+== Description ==
+After I put on Spybot's disguise, he'll head in to talk to Lescovar. The guards should let him pass no problem.
+While you were getting materials for me, I took care of informing Marzon that it was time for him and Lescovar to meet again. I even dropped some false information.
+Lescovar will dismiss his guards and wait for Marzon out here in the garden. After you catch wind of talk about the Defias, make your move. You need to kill them both before the guards return! When you're done, speak to Trias.
+
+
+== Rewards ==
+1900 XP (or 11 40 at level 70)
++150 reputation with Stormwind
+
+
+== Progress ==
+Yes, <name>? Are things going well with Tyrion? He apprised me of the situation and I've helped him trick Marzon into going to the castle.
+Marzon has been a thorn in the side of many people in Stormwind; many of which are close friends of mine. No one messes with my friends... not if they know what's healthy for them.
+It's just a shame I'm indirectly doing a favor for Shaw and SI:7 in the meantime. Oh well, not every plan is perfect. 
+
+
+== Completion ==
+So it is done? Good. Thank you greatly for your discretion, <name>.
+You've proven worthy on more than one count. I'll be sure to keep my eyes on you and your progress within the Alliance.
+Be sure to keep your nose clean.
+
+
+== Notes ==
+This cutscene starts upon accepting the quest.
+
+Spybot is disguised as Priestess Tyriona.
+Priestess Tyriona approaches the guards.
+Priestess Tyriona says: Good day to you both. I would speak to Lord Lescovar.
+Stormwind Royal Guard says: Of course. He awaits you in the library.
+Priestess Tyriona says: Thank you. The Light be with you both.
+Priestess Tyriona goes into the library
+Priestess Tyriona says: Milord, your guest has arrived. He awaits your presence.
+Lord Gregor Lescovar says: Ah, thank you kindly. I will leave you to the library while I tend to this small matter.
+Priestess Tyriona says: I shall use the time wisely, milord. Thank you.
+Lord Gregor Lescovar enters the atrium
+Lord Gregor Lescovar says: It's time for my meditation, leave me.
+Stormwind Royal Guard says: Yes, sir!
+Lord Gregor Lescovar waits for the guards to be out of sight.
+Marzon the Silent Blade enters opposite Lescovar
+Lord Gregor Lescovar says: There you are. What news from Westfall?
+Marzon the Silent Blade says: VanCleef sends word that the plans are underway. But he's heard rumors about someone snooping about.
+Lord Gregor Lescovar says: Hmm, it could be that meddler Shaw. I will see what I can discover. Be off with you. I'll contact you again soon.
+Marzon the Silent Blade says: Very well I will return then.
+Tyrion says: That's it! That's what you were waiting for! KILL THEM!
+Lord Gregor Lescovar says: What?! How dare you!
+Marzon the Silent Blade says: The Defias shall succeed! No meek adventurer will stop us!
+Tyrion is involved in the cutscene that happens before you attack Lescovar and Marzon.  If he does not provide you the option to start this quest, it may be that he is involved in that cut scene.  Wait a few minutes, and he should become available.
+As described above in the cut scene, Lescovar and Marzon come out and have their discussion.  When the conversation is over, Lescovar will turn neutral, and Marzon will also neutral as of patch 2.4. (prior to patch 2.4, he was hostile)
+If Lescovar is not attacked (in time), he will walk off, and return to being friendly - and thus untargettable.
+You need to get credit for killing both of these NPCs.  If someone else aggros one or the other, you may not get credit.  If this happens, drop the quest and take it again (waiting for Tyrion to reset, if necessary).  Credit for killing one or the other may be remembered and carry over (verified).
+As long as you kill Lescovar and tag (do damage to) Marzon - before the guards show back up - then they may (sometimes they do, sometimes they don't) help you kill Marzon.
+It is a common joke amongst the Alliance that as players do this quest the LocalDefense channel will say "Stormwind is under attack!".
+
+
+== Progression ==
+ [22] The Unsent Letter
+ [22] Bazil Thredd
+ [29D] The Stockade Riots
+ [29] The Curious Visitor
+ [29] Shadow of the Past
+ [31] Look to an Old Friend
+ [31] Infiltrating the Castle
+ [31] Items of Some Consequence
+ [31] The Attack!
+ [31] The Head of the Beast
+ [31] Brotherhood's End
+ [31] An Audience with the King
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

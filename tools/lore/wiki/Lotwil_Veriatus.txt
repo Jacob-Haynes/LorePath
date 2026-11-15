@@ -1,0 +1,8 @@
+title: Lotwil Veriatus
+revision: 6383557
+part: intro
+url: https://warcraft.wiki.gg/wiki/Lotwil_Veriatus
+
+Lotwil Veriatus is a gnome located in a small camp just east of Kargath in the Badlands.
+He is a scholar of some renown in the field of elemental sciences.
+Lotwil and the goblin Bro'kin are good friends.

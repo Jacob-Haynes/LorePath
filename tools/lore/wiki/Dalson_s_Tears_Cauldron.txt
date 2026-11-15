@@ -1,0 +1,33 @@
+title: Dalson's Tears Cauldron
+revision: 6311633
+part: whole
+quest: 5221
+url: https://warcraft.wiki.gg/wiki/Dalson%27s_Tears_Cauldron
+
+== Objectives ==
+The Scourge's plague cauldron stands before you, spewing vast amounts of toxins into the air.  A small, non-descript access panel lies in the base of the cauldron's vast platform.
+Having already defeated the cauldron lord and acquired its key, you are free to add the appropriate reagents to the cauldron to make a counter agent to the plague.
+
+ [Arcane Quickener]
+ [Somatic Intensifier] (5)
+ [Runecloth] (4)
+
+
+== Rewards ==
+You will receive:
+
++50 reputation with Argent Dawn
+
+
+== Completion ==
+Adding the reagents to the cauldron's mix begins to change the color and texture of the cloud it spews forth.  Scourge that are even remotely near the cauldron appear to recoil at the introduction of the new components into the environment.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

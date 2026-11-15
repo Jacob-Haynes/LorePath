@@ -1,0 +1,56 @@
+title: Morrowgrain Research (Alliance, 2)
+revision: 6291711
+part: whole
+quest: 3785
+url: https://warcraft.wiki.gg/wiki/Morrowgrain_Research_%28Alliance%2C_2%29
+
+== Objectives ==
+Use an Evergreen Pouch with a Packet of Tharlendris Seeds and two Un'Goro Soil samples to try and cultivate samples of Morrowgrain.
+Bring 10 Morrowgrain to Mathrengyl Bearwalker in Darnassus.
+
+ [Morrowgrain] (10)
+ [Evergreen Pouch] (provided)
+
+
+== Description ==
+Here's your Evergreen Pouch that you'll need to use the Tharlendis seeds with.  You also need to have Un'Goro soil samples on hand to use as fertilizer for the seeds.  Just use the pouch when you have everything; the pouch will take care of the rest.
+When you have enough morrowgrain, bring them here to me in the enclave.  Please don't bother the Arch Druid; he's a very busy man, and he doesn't need to be disturbed every time someone returns with another batch of morrowgrain!
+
+
+== Rewards ==
+You will receive:
+
+6800 XP (or 40 50 at max level)
++250 reputation with Darnassus
+ [Cenarion Circle Cache]
+
+
+== Progress ==
+Yes <name>, have you grown some morrowgrain for the Arch Druid's important research? The work he is doing for the Cenarion Circle is very important, and your assistance will not go unnoticed!
+
+
+== Completion ==
+Well done <name>, I will be sure to give these to the Arch Druid himself when he has need of them. Meanwhile, please accept this as a token of the Cenarion Circle's appreciation.
+Our need for morrowgrain is a continuous one; if you wish to continue aiding us, then please return to me when you have cultivated additional morrowgrain for us.
+
+
+== Progression ==
+ [50] Assisting Arch Druid Staghelm
+ [50] Un'Goro Soil
+ [50] Morrowgrain Research
+ [50] Morrowgrain Research
+ [55] Morrowgrain to Darnassus 
+
+
+== Notes ==
+For more on Morrowgrain research, see  [Morrowgrain].
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

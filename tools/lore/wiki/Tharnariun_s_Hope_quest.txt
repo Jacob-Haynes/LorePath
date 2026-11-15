@@ -1,0 +1,50 @@
+title: Tharnariun's Hope (quest)
+revision: 6577287
+part: whole
+quest: 2139
+url: https://warcraft.wiki.gg/wiki/Tharnariun%27s_Hope_%28quest%29
+
+== Objectives ==
+Find and kill the Den Mother.
+
+Den Mother slain
+
+
+== Description ==
+The survival of our people and lands comes at unfortunate costs, <name>.
+You have spilled the blood of nature's servants; many sick animals you have felled. The people of Auberdine are indebted to you, for the forest's pain is eased - even if only for a moment.
+I have one final task for you, but be warned, you will have to kill again. It is my hope that this will be the last time I call upon you, <name>.
+In a cave to the northeast, near Bashal'Aran, resides the Den Mother. Slay her.
+
+
+== Rewards ==
+
+You will also receive:
+
+1350 XP (or 8 40 at max level)
++100 or +250 reputation with Darnassus
+
+
+== Progress ==
+With the infected Den Mother slain, the population of Rabid Thistle Bears entering our land is lessened. Waste no time, <name>.
+
+
+== Completion ==
+You have fought for Auberdine with bravery and honor, <name>. In our war torn lands, death and despair are common. Many will not rise to meet the challenge of life in our new home, choosing instead to hide in their homes or escape to the more fortified lands of the Alliance.
+Thank you, <name>. Perhaps someday soon we shall fight along side as comrades versus another foe.
+
+
+== Progression ==
+ [14] Plagued Lands
+ [16] Cleansing of the Infected
+ [18] Tharnariun's Hope
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

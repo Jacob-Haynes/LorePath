@@ -1,0 +1,56 @@
+title: A Dark Threat Looms (7)
+revision: 6307982
+part: whole
+quest: 283
+url: https://warcraft.wiki.gg/wiki/A_Dark_Threat_Looms_%287%29
+
+This quest concludes the quest chain A Dark Threat Looms.
+
+
+== Objectives ==
+The Disarming Mixture seemed to take effect. Return to Chief Engineer Hinderweir to report the good news.
+
+
+== Description ==
+The keg fizzles slightly.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Dwarven Tree Chopper]
+ [Thornblade]
+You will also receive:
+
+1950 XP (or 12 at max level)
++350 reputation with Ironforge
+
+
+== Completion ==
+Thank you so much, <name>!! You have saved the Stonewrought Dam!  Without your help, the Dark Iron terrorists would have surely seen to this mighty landmark's demise.  You have made the Kingdom and the Alliance proud, brave <class>.
+The Dam is once again safe. . . for the time being at least. . . .
+
+
+== Notes ==
+Upon completion
+Chief Engineer Hinderweir VII yells: The Stonewrought Dam has been saved!  Three cheers for <name>!
+
+
+== Progression ==
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [18] A Dark Threat Looms
+ [20] A Dark Threat Looms
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

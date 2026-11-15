@@ -1,0 +1,76 @@
+title: Big Game Hunter (Classic)
+revision: 6858207
+part: whole
+quest: 208
+url: https://warcraft.wiki.gg/wiki/Big_Game_Hunter_%28Classic%29
+
+== Objectives ==
+Hemet Nesingwary wants you to bring him the head of King Bangalash, the great white tiger.
+
+ [Head of Bangalash]
+
+
+== Description ==
+<Name>, you are a hunter worthy of our company. From the battlefields of Lordaeron to the deepest jungle, I have rarely witnessed such prowess with weaponry as you have demonstrated.
+You have killed the ferocious Sin'Dall, the elusive Bhag'thera, and the treacherous Tethis. But the true prize is the head of King Bangalash. That white tiger is the reason I am here. I've had my sights on him for quite some time now. Kill King Bangalash and your hunting prowess is proven to be second to none.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Master Hunter's Bow]
+ [Master Hunter's Rifle]
+You will also receive:
+
+60
+5,350 XP
+
+
+== Progress ==
+I see you're back, <old bloke/lass>.  King Bangalash has caused me to come crawling back to camp many times.  Hang in there.
+
+
+== Completion ==
+Bloody well done!  Right-o!  Congratulations, <name>, for succeeding where others have failed.
+I am honored to count you as a comrade of our great hunting party here.  No one will ever doubt your expertise in hunting and tracking!
+Cheers to you, I say!  Cheers!
+
+
+== Notes and trivia ==
+Big Game Hunter is a common quest card in the Trading Card Game. Its flavor text reads: "Killing for survival is savage. Killing for sport is civilized."
+
+
+== Progression ==
+
+ [30] Welcome to the Jungle
+Complete all of the following:
+
+Panthers:
+ [31] Panther Mastery
+ [33] Panther Mastery
+ [38] Panther Mastery
+ [40] Panther Mastery
+
+Raptors:
+ [34] Raptor Mastery
+ [36] Raptor Mastery
+ [41] Raptor Mastery
+ [43] Raptor Mastery
+
+Tigers:
+ [31] Tiger Mastery
+ [33] Tiger Mastery
+ [35] Tiger Mastery
+ [37] Tiger Mastery
+
+ [43] Big Game Hunter
+
+
+== Patch changes ==
+ Patch 2.0.1 (2006-12-05): Now given by Hemet Nesingwary Jr.. Text updated.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

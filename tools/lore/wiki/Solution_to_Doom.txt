@@ -1,0 +1,58 @@
+title: Solution to Doom
+revision: 6534474
+part: whole
+quest: 709
+url: https://warcraft.wiki.gg/wiki/Solution_to_Doom
+
+== Objectives ==
+Bring the Tablet of Ryun'eh to Theldurin the Lost.
+
+ [Tablet of Ryun'eh]
+
+
+== Description ==
+Oh my! Oh my! There is a doom approaching. Mark me! A doom!
+No, I cannot speak of it...cannot utter their names or they may hear me! But if we learn, yes, if we learn more of them...then maybe we can learn how to foil them!
+Maybe.
+Go into Uldaman. No! I said it! You must find...find the tablet of...Ryun'eh. Yes, find it! And don't make me speak that name again!
+It is deep in that place, in an ancient chest. That's where it hides...in a chest crafted before the works of any dwarf.
+
+
+== Rewards ==
+You will receive:
+
+ [Doomsayer's Robe]
+3150 XP
+
+
+== Progress ==
+Did you find the tablet? It must hold secrets! Secrets to save us!
+
+
+== Completion ==
+Oh, fortune is with us! Thank you! We may yet be saved!
+
+
+== Notes and trivia ==
+Theldurin the Lost hangs out in the southern part of the Badlands. When you enter Uldaman, head to the left and find a room full of dwarves, and golems around a central pit. The pit has a large coffin-looking box, which you can open to obtain the Tablet. Uldaman, The Sealed Hall.
+Tablet of Ryun'eh could be a reference to H.P.Lovecrafts books "ancients".
+Upon completion
+Theldurin the Lost reads the ancient text <name> fetched him...
+Theldurin the Lost says: Aha! That's it!
+
+
+== Progression ==
+ [40D] Solution to Doom
+ [40] To Ironforge for Yagyin's Digest /  [40] To the Undercity for Yagyin's Digest
+ [44E] The Star, the Hand and the Heart
+ [40] Forbidden Knowledge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

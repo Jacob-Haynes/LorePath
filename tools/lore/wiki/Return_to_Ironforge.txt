@@ -1,0 +1,53 @@
+title: Return to Ironforge
+revision: 6528197
+part: whole
+quest: 2977
+url: https://warcraft.wiki.gg/wiki/Return_to_Ironforge
+
+== Objectives ==
+Speak with Historian Karnik in Ironforge.
+
+ [Miniature Platinum Discs] (provided)
+
+
+== Description ==
+You access the pedestal again; the platinum discs suddenly appear once more in your backpack.
+With the knowledge of the stone watcher learned and the discs returned to your possession, the time has come to return to Ironforge and inform the Explorers' League of your discovery.
+
+
+== Rewards ==
+You will receive:
+
+675 XP
++10 reputation with Ironforge
+
+
+== Progress ==
+Welcome back <name>.  Were you able to use the discs to your advantage, or did it end up being a wild goose chase?
+
+
+== Completion ==
+You were missing some discs?  Interestingly enough, it seems that the discs of Norgannon are only parts of the complete set - like keys on a key ring, if you will.
+If we can find the Plates of Uldum, then we could actually access the Uldum complex itself!  Imagine actually exploring the place where the Creators worked without having to bring a huge shovel!
+Not that there's anything wrong with shovels... or digging...
+
+
+== Progression ==
+ [15-30D] The Platinum Discs
+ [47] The Platinum Discs
+ [47] The Platinum Discs
+ [50] Portents of Uldum
+ [50G] Seeing What Happens
+ [50] The Stone Watcher
+ [50] Return to Ironforge
+ [50] A Future Task
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

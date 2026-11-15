@@ -1,0 +1,6 @@
+title: Winterspring (Classic)
+revision: 6912104
+part: intro
+url: https://warcraft.wiki.gg/wiki/Winterspring_%28Classic%29
+
+Winterspring (aka Winterspring Valley or Winterspring Grove) is a valley located in northeastern Kalimdor, east of Felwood and Hyjal, and north of Azshara. It is a cold land perpetually covered in snow and holds the goblin city of Everlook, old night elf holdings, and the traditional homeland of the blue dragonflight. Many wild creatures roam the beautiful landscape. However, the southern parts of the region have been completely taken over by demons.

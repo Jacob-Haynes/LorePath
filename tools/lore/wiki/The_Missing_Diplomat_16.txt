@@ -1,0 +1,94 @@
+title: The Missing Diplomat (16)
+revision: 6708855
+part: whole
+quest: 1324
+url: https://warcraft.wiki.gg/wiki/The_Missing_Diplomat_%2816%29
+
+This quest is part of the quest chain The Missing Diplomat.
+
+
+== Objectives ==
+Defeat Private Hendel in Dustwallow Marsh.
+
+Subdue Private Hendel
+
+
+== Description ==
+What?! You come here accusing me of allying with the Defias, and think I'll just stand here while you insult me?! Something tells me you've had this coming for a long time.
+
+
+== Rewards ==
+You will receive:
+
+2150 XP
++150 reputation with Stormwind
+
+
+== Progress ==
+Hello again, <name>. I hope you don't mind the assistance, but we couldn't have Hendel escaping, or worse, wind up dead.
+
+
+== Completion ==
+I assure you, we're all quite upset about current events, but allow us to take him back to Theramore for some questioning, and we'll see about finding the King.
+I'm sure my lady Proudmoore would like to thank you for your help. Speak to her when you have a moment.
+
+
+== Notes ==
+As in the earlier quests, you have to bring Private Hendel to about 20% health, whereupon he should become non-hostile. When he becomes non-hostile, your quest goal will be marked "complete".
+Again, as in earlier quests, the miscreant has help. A couple of the guards will join in on the fight.  All are about level 34-36.
+When you complete your 'beating down', Archmage Tervosh and Lady Proudmoore walk up.  If they are already present when you arrive the quest may be bugged.  You may have to wait for a server reset to clear this.  GMs may lack the tools to clear this issue.
+Other bugs have been noted on cases such as
+
+bring a mob to the guards, then accept the quest from Hendel
+vanish after accepting the quest.
+If you fail on this quest, drop it, and you will be able to take it again.
+If Archmage Tervosh disappears before you can complete the quest, he can be found in the tower in Theramore.
+
+When Hendel reaches 20% health, Lady Jaina Proudmoore, Archmage Tervosh and Pained teleport to North Point Tower. Hendel's associates, if still alive, make a break for it.
+Theramore Sentry says: It's Proudmoore! Get out of here!
+Theramore Sentry says: She'll have our heads if we're caught!
+Private Hendel, too injured, gives up the chase.
+Archmage Tervosh says: Why don't we deal with you now, Hendel?  Lady Proudmoore will speak for you back in the tower.
+Archmage Tervosh casts a spell on Private Hendel to restrain him.
+Private Hendel says: Please... please... Miss Proudmoore.  I didn't mean to...
+Hendel is teleported away.
+Archmage Tervosh says: I apologize for taking so long to get here.  I wanted Lady Proudmoore to be present also.
+Archmage Tervosh says: We can only stay a few moments before returning to the tower.  If you wish to speak to us more you may find us there.
+After a moment, the trio will leave.
+Archmage Tervosh says: Farewell. We shall speak again, I'm sure.
+Jaina casts a teleport spell, returning the three to Theramore.
+
+
+== Progression ==
+This is the quest chain The Missing Diplomat.
+
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [30] The Missing Diplomat
+ [30] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [35] The Missing Diplomat
+ [36] The Missing Diplomat
+ [38] The Missing Diplomat
+ [38] The Missing Diplomat
+
+
+== Patch changes ==
+Retail
+ Patch 4.0.3a (2010-11-23): Removed.   
+Classic
+ Patch 1.14.3 (2022-04-19): Made some improvements to the Subdue Private Hendel step of the quest "The Missing Diplomat" in Dustwallow Marsh that should reduce the likelihood that the event stalls and blocks quest progression.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

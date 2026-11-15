@@ -1,0 +1,45 @@
+title: Diplomatic Incident
+revision: 6963528
+part: whole
+quest: 91858
+url: https://warcraft.wiki.gg/wiki/Diplomatic_Incident
+
+== Objectives ==
+Travel to The Sepulcher in Silverpine Forest and speak with Trevan Rol about the missing Earthen Ring travelers.
+
+
+== Description ==
+A most unfortunate turn of events in Silverpine has presented a unique opportunity for us to prove our worth in the eyes of the horde.
+A pair of dignitaries from the Earthen Ring went missing in Silverpine Forest en route to Tarren Mill. We don't know much else but rumors say that this is becoming quite the diplomatic incident. If we can recover these missing persons, it could help gain us the legitimacy we so dearly need.
+We have a man at The Sepulcher, Trevan Rol. Travel there and speak with him.
+
+
+== Rewards ==
+You will receive:
+
+3 50
+440 XP
++50 reputation with Undercity
+
+
+== Completion ==
+Danitha sent you? Well in that case I already know why you are here. You just walked into a damned fine mess, paladin.
+
+
+== Progression ==
+   [22] Diplomatic Incident
+   [22] A Curious Pair
+   [22] A Grim Fate
+   [22] Into Fenris Keep
+   [22] Lumina Windsinger
+   [22] The Windshaper's Wrath
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,52 @@
+title: Brotherhood's End
+revision: 5995293
+part: whole
+quest: 395
+url: https://warcraft.wiki.gg/wiki/Brotherhood%27s_End
+
+This quest is part of the Lescovar Incident.
+
+
+== Objectives ==
+Speak with Baros Alexston in Stormwind. 
+
+
+== Description ==
+Ah, I almost forgot. Alexston came while you were away, he wished to speak with you. No doubt he wishes to report the goings-on of the Defias Brotherhood to the nobles.
+A bit of advice, <name>: if anyone should ask, I would provide all details but that it was your hand that slew Lescovar. Trust me. I am... acquainted... with the ways of such things.
+And as far as Trias goes, well, speak to no one of him... ever... if you can help it. 
+
+
+== Rewards ==
+625 XP (or 3 90 at level 70)
++25 reputation with Stormwind
+
+
+== Completion ==
+It's good to see you, <name>. I have heard that Lord Gregor Lescovar was found dead not long ago.
+It would seem that you were successful in your mission. You have my gratitude that you have saved me, and many others, from VanCleef's revenge.
+
+
+== Progression ==
+ [22] The Unsent Letter
+ [22] Bazil Thredd
+ [29D] The Stockade Riots
+ [29] The Curious Visitor
+ [29] Shadow of the Past
+ [31] Look to an Old Friend
+ [31] Infiltrating the Castle
+ [31] Items of Some Consequence
+ [31] The Attack!
+ [31] The Head of the Beast
+ [31] Brotherhood's End
+ [31] An Audience with the King
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

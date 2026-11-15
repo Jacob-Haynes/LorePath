@@ -1,0 +1,69 @@
+title: Mistress of Deception
+revision: 6893223
+part: whole
+quest: 6568
+url: https://warcraft.wiki.gg/wiki/Mistress_of_Deception
+
+This quest requires you to take a document from Rokaro at Shadowprey Village in Desolace to Myranda the Hag at Sorrow Hill in the Western Plaguelands.
+
+
+== Objectives ==
+Deliver  [Rokaro's Letter] to Myranda the Hag in the Western Plaguelands.
+
+ [Rokaro's Letter] (provided)
+
+
+== Description ==
+Illusion and disguise. That is how you will fool the Black Dragonflight, and gain what you seek.
+Though I could teach you something of the skills of deception, you need the help of a master.
+I know of one who could do this. In the Western Plaguelands, you will find Myranda the Hag, once a master illusionist of Lordaeron. She has helped us in the past, and if she believes the cause worthy, she may help you.
+Take this message to her.
+
+
+== Progress ==
+It is not often I see one of the Horde in these parts of Lordaeron. What is it that you have for Myranda?
+
+
+== Completion ==
+ This section concerns content related to the original World of Warcraft.
+<Myranda holds the note, pauses, then smiles.>
+How is he? Rexxar, I mean. Oh, come now, do not look so confused. The letter was left intentionally blank. It carried with it the intentions and thoughts of its creator. Judging from its contents, it is no wonder Rexxar left it as such. Imagine if you were captured or slain and this information discovered!
+Oh, nevermind! Myranda will help you, <race>. I owe the Warchief a favor or two.
+<Myranda smiles.>
+
+ This section concerns content related to The Burning Crusade.
+Hmph. That one.
+How is Rokaro? As suspicious as ever, sending me a note like this.
+You must be on an important mission if Rokaro has sent you to me.
+Well, I owe the Warchief a favor or two.
+
+
+== Progression ==
+This quest was a part of the Onyxia's Lair attunement chain.
+
+ [60D] Warlord's Command
+ [60] Eitrigg's Wisdom
+ [60R] For The Horde!
+ [60] What the Wind Carries
+ [60] The Champion of the Horde
+ [60] Mistress of Deception
+ [60R] Oculus Illusions
+ [60R] Emberstrife
+
+ [60] The Test of Skulls, Scryer
+ [60] The Test of Skulls, Somnus
+ [60] The Test of Skulls, Chronalis
+ [60] The Test of Skulls, Axtroz
+ [60] Ascension...
+ [60R] Blood of the Black Dragon Champion
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.0.1 (2006-12-05): Renamed and updated from The Testament of Rexxar.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

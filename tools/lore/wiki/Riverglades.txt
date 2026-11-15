@@ -1,0 +1,92 @@
+title: Riverglades
+revision: 6945869
+part: whole
+url: https://warcraft.wiki.gg/wiki/Riverglades
+
+The Riverglades is a level 35-45 contested zone in World of Warcraft: Forever, located east of the Badlands and Burning Steppes. It contains the level 40-45 Krol'dok Stronghold dungeon.
+
+
+== History ==
+
+
+=== First War ===
+ This section concerns content related to Warcraft: Orcs & Humans.
+The Riverglades have historically been territory of the Kingdom of Stormwind. During the First War, the Old Horde attacked the region's town of Sunnyglade, but left one of its mage towers intact to learn how human magic worked. Survivors of the attack were taken by the orcs to serve as slaves. A handful of families escaped northeast and founded Windstead beside a lake secluded by mountains. A detachment of knights rescued Sunnyglade's captives, but the Horde cut off their route home. The knights and rescued survivors established Meadowsbrook, then fortified a coastal island and founded Farholde.
+The Riverglades eventually fell to the Horde during the war. Stormwind felt the land was lost and the war effort better spent on the home front, so it moved on from it to other concerns. The people of Farholde Keep have been fighting to retake their homelands ever since.
+
+
+=== Second War ===
+Near the end of the Second War, as the Alliance was chasing the Horde to the Dark Portal, a contingent of Twilight's Hammer ogres and Stormreaver clan orcs arrived in the Riverglades, fleeing the horrors of the Tomb of Sargeras, and they were bolstered by the already-established ogre mound in the region. There were rumors that Cho'gall had also come to the region to lick his wounds after the death of Gul'dan, but they were only a whisper. The Brotherhood of the Horse was sent to battle the Horde forces in the Riverglades, but had to retreat and fled south, coming across Farholde and Meadowsbrook, increasing human forces and securing the towns' footholds. Things stayed in this uneasy status quo for several years, with some skirmishes in that time.
+
+
+=== Siege of Farholde ===
+As skirmishes between the Brotherhood of the Horse and Twilight's Hammer grew more frequent, Farholde grew on edge. Another skirmish close to Windstead made it clear that the Hammer was looking to expand their control over the region. Windstead's villagers reluctantly left their homes for Farholde in the south, some along the coast and some stubbornly taking the road. The ones on the road were attacked by Horde forces, and not a single soul survived. The Horde forces then continued into the ruins of Sunnyglade, which at the time were occupied by the Brotherhood of the Horse, forcing the human lines back.
+Emboldened by their victories, the Horde forces sent a force south to finish the humans off, beginning the Siege of Farholde. While the Brotherhood focused on defending their front gate, Horde forces snuck around and attacked from the water, sabotaging any seaworthy human ships before their attack was thwarted. Unable to escape or get word out for help via the sea, Farholde was pinned in siege with morale low and rations spread thin. The Brotherhood of the Horse engaged in one last assault on the orc forces outside their gate, and were unable to stop it as they had been lulled into a lethargy. Orders from Horde leadership never came, as their leaders had been assassinated in the night by Brotherhood forces. The Horde was eventually routed and fled back to Krol'dok Stronghold.
+
+
+=== Forever ===
+ This section concerns content related to Forever.
+ Please add any available information to this section.
+By year 25 ADP, Sunnyglade is in ruins and occupied by the Twilight's Hammer. Its mage tower still stands. The Brotherhood of the Horse is still fighting to reclaim their lands. Meanwhile, the Bolder'ok ogres have left the Twilight's Hammer in the area and allied with the Horde.
+
+
+== Geography ==
+
+
+=== Maps and subregions ===
+
+
+=== Instances ===
+
+
+=== Travel hubs ===
+
+
+==== Flight paths from Farholde Keep ====
+
+
+==== Flight paths from Rog'mar ====
+
+
+===== Boat destinations from Powderfuse Port =====
+Steamwheedle Port, Tanaris
+
+
+=== Adjacent regions ===
+
+
+== Wild creatures ==
+Boars
+Coyotes
+Crawdads
+Crocolisks
+Gnolls
+Harvest golems
+Murlocs
+Vultures
+
+
+== Trivia ==
+The Riverglades is the only area in World of Warcraft where oxbow lakes are depicted, with three over the course of the main river in the zone.
+Warcraft I originally depicted Sunnyglade being rebuilt after Stormwind's forces saved the human slaves from the orcs. Forever has the town still in ruins, instead saying that the humans never made it back and built new towns instead.
+The Riverglades are very similar to the Twilight Highlands. Both zones:
+Are on the east coast of the Eastern Kingdoms.
+Feature the Twilight's Hammer, remnants of the Old Horde, and an Alliance faction from the Second War.
+Have a Twilight's Hammer stronghold in the west, an ogre settlement in the north, and the main Alliance town on an island in the southeast.
+Have a large river through the center of the zone.
+Despite these similarities, the Riverglades are located much further south than the Twilight Highlands and also lack the Wildhammer clan presence, so the Riverglades cannot be a "pre-Twilight" version of the Highlands.
+
+
+== Patch changes ==
+ Patch 1.60.1 (Beta): Added.   
+
+
+== References ==
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+Wago

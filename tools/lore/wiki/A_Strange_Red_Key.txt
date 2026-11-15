@@ -1,0 +1,46 @@
+title: A Strange Red Key
+revision: 5639473
+part: whole
+quest: 5202
+url: https://warcraft.wiki.gg/wiki/A_Strange_Red_Key
+
+== Objectives ==
+Search through Jaedenar to discover what the Blood Red Key is used for.
+
+ [Blood Red Key] (provided)
+
+
+== Description ==
+The small red key seems to be made of some kind of bone material. It is heavy in your hand, but appears very fragile. Why would a member of the Shadow Council have such a thing? Perhaps there is something within Jaedenar that this strange key unlocks.
+
+
+== Rewards ==
+You will receive:
+
+8150 XP
+
+
+== Progress ==
+I begin to wonder if I'll ever escape this cage.
+It's only a matter of time before they sacrifice me to whatever demons they worship. The monsters!
+
+
+== Completion ==
+The key, you've found it! Please, give it to me and I can finally escape!
+
+
+== Progression ==
+ [55] A Strange Red Key
+ [55] Rescue From Jaedenar
+ [57] Retribution of the Light
+ [57] The Remains of Trey Lightforge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

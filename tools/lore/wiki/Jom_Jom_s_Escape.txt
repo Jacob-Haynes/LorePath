@@ -1,0 +1,41 @@
+title: Jom-Jom's Escape
+revision: 6971449
+part: whole
+quest: 94556
+url: https://warcraft.wiki.gg/wiki/Jom-Jom%27s_Escape
+
+== Objectives ==
+Escort Jom-jom to Clugfist at Bolder'ok.
+
+Help Jom-jom reach Bolder'ok
+
+
+== Description ==
+Jom-jom came looking for friend. Now Jom-jom want to go home.
+
+
+== Rewards ==
+You will be able to choose one of these rewards: 
+
+Jom-Jom's Gabbar
+Clobrok's Block Rock
+You will also receive:
+
+4300 XP
++500 reputation with Bolder'ok Clan
+
+
+== Completion ==
+Jom-jom saved by little one, hmm?
+Little one is friend.
+
+
+== Patch changes ==
+ Hotfix (2026-11-05): Fixed a bug preventing Jom-jom from continuing his escape. 
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

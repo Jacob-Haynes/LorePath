@@ -1,0 +1,53 @@
+title: Detonation at a Distance
+revision: 6881843
+part: whole
+quest: 92750
+url: https://warcraft.wiki.gg/wiki/Detonation_at_a_Distance
+
+== Objectives ==
+Talk to someone in Stormwind Intelligence about acquiring a remote detonator.
+
+
+== Description ==
+I assume you want a "controlled" explosion? Not as much fun, but a good choice if you want to keep all your limbs.
+I'm afraid I don't have a remote detonator - why don't you go check with the sneaky folks down at Stormwind Intelligence? They should be able to find us something.
+
+
+== Rewards ==
+You will receive:
+
+4
+580 XP
++50 reputation with Stormwind
+
+
+== Completion ==
+...
+
+
+== Notes ==
+...
+
+
+== Progression ==
+ [12] Testing the Wells
+ [12] Murloc Gills
+ [14] The State of the Mines
+ [16] Moonbrook Espionage
+ [16] Explosive Consultation
+ [16] A Dynamite Plan
+ [16] Detonation at a Distance
+ [16] Detonation at a Distance
+ [16] Explosive Consultation
+ [18D] Destruction in Deadmines
+ [18] Destruction in Deadmines
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

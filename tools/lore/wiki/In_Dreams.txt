@@ -1,0 +1,109 @@
+title: In Dreams
+revision: 6969274
+part: whole
+quest: 5944
+url: https://warcraft.wiki.gg/wiki/In_Dreams
+
+== Objectives ==
+Escort Taelan Fordring out of Hearthglen.
+
+Redemption?
+
+
+== Description ==
+For so long, I have been a puppet of the Grand Crusader. What reason was there to fight against what the Scarlet Crusade had become? It has been decades, yet the memories of my father; those precious memories, they are what have kept me alive.
+I have dreams, stranger. In these dreams my father is with me. He stands proudly at my side as I am inducted into the Order. We battle legion of Scourge, side by side. We bring honor to the Alliance, to Lordaeron.
+I want not to dream anymore.
+Take me to him.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Mark of Fordring]
+ [Ornate Adamantium Breastplate]
+ [Shimmering Platinum Warhammer]
+ [Shroud of the Exile]
+ [Fordring's Seal]
+You will also receive:
+
+9950 XP
+5 97
+
+
+== Progress ==
+<Tirion regains his composure.>
+
+
+== Completion ==
+The death of my son at the hands of these monsters will not pass without incident. Take solace in knowing that the Order is reborn.
+I now take my place as Highlord of the new Order of the Silver Hand.
+These possessions of my past - they are all that I have to offer for all that you have done. Please, take these as a symbol of my gratitude; all have served me well over the years.
+May we meet again, in better times, and reminisce of days long past... battles hard fought... dreams redeemed.
+
+
+== Notes ==
+Highlord Taelan Fordring says: I will lead us through Hearthglen to the forest's edge. From there, you will take me to my father.
+Highlord Taelan Fordring proceeds to kill every Scarlet Crusade soldier in his way as he makes his way out of Mardenholde Keep. As with most humanoid mobs, they all run in fear at low health.
+Highlord Taelan Fordring says: Remove your disguise, lest you feel the bite of my blade when the fury has taken control.
+After exiting the keep.
+Highlord Taelan Fordring says: Halt.
+Highlord Taelan Fordring calls for his mount.
+Taelan gets on his horse and continues on. He occasionally dismounts to kill more Scarlet Crusaders.
+After making it the the scout tower on the road out of Hearthglen.
+Highlord Taelan Fordring says: It's not much further. The main road is just up ahead.
+Isillien walks out of the tower.
+Grand Inquisitor Isillien says: You will not make it to the forest's edge, Fordring.
+Highlord Taelan Fordring yells: Isillien!
+Highlord Taelan Fordring says: This is not your fight, stranger. Protect yourself from the attacks of the Crimson Elite. I shall battle the Grand Inquisitor.
+Grand Inquisitor Isillien says: You disappoint me, Taelan. I had plans for you... grand plans. Alas, it was only a matter of time before your filthy bloodline would catch up with you.
+Grand Inquisitor Isillien says: It is as they say; Like father, like son. You are as weak of will as Tirion... perhaps more so.  I can only hope my assassins finally succeeded in ending his pitiful life.
+Grand Inquisitor Isillien says: The Grand Crusader has charged me with destroying you and your newfound friends, Taelan, but know this: I do this for pleasure, not of obligation or duty.
+Grand Inquisitor Isillien calls for his guardsman.
+The Crimson Elite attack. Taelan and Isillien battle.
+Grand Inquisitor Isillien says: The end is now, Fordring.
+The two sides fight for a while.
+Grand Inquisitor Isillien says: Enough!
+Isillien casts a mighty Holy Smite, killing Taelan.
+Grand Inquisitor Isillien laughs.
+Grand Inquisitor Isillien says: Did you really believe that you could defeat me? Your friends are soon to join you, Taelan.
+Grand Inquisitor Isillien turns his attention towards you.
+Lord Tirion Fordring appears.
+Lord Tirion Fordring says: What have you done, Isillien? You once fought with honor, for the good of our people... and now... you have murdered my boy...
+Grand Inquisitor Isillien says: Tragic. The elder Fordring lives on... You are too late, old man. Retreat back to your cave, hermit, unless you wish to join your son in the Twisting Nether.
+Lord Tirion Fordring says: May your soul burn in anguish, Isillien! Light give me strength to battle this fiend.
+Lord Tirion Fordring says: Face me, coward. Face the faith and strength that you once embodied.
+Grand Inquisitor Isillien says: Then come, hermit!
+The two battle briefly, but Tirion easily overmatches the Grand Inquisitor while the players presumably finish off the remaining Crimson Elites. Tirion then goes to his son's side.
+Lord Tirion Fordring says: A thousand more like him exist. Ten thousand. Should one fall, another will rise to take the seat of power.
+Lord Tirion Fordring falls to one knee.
+Lord Tirion Fordring says: Look what they did to my boy.
+Lord Tirion Fordring holds the limp body of Taelan Fordring and softly sobs.
+Lord Tirion Fordring says: Too long have I sat idle, gripped in this haze... this malaise, lamenting what could have been... what should have been.
+Lord Tirion Fordring says: Your death will not have been in vain, Taelan. A new Order is born on this day... an Order which will dedicate itself to extinguishing the evil that plagues this world. An evil that cannot hide behind politics and pleasantries.
+Lord Tirion Fordring says: This I promise... This I vow...
+
+
+== Progression ==
+ [56] Redemption
+ [57] Of Forgotten Memories
+ [58] Of Lost Honor
+ [58] Of Love and Family
+ [60D] Of Love and Family
+ [60] Find Myranda
+ [60] Scarlet Subterfuge
+ [60G] In Dreams
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+In Dreams, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

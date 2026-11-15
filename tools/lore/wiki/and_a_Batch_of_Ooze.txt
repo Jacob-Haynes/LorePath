@@ -1,0 +1,45 @@
+title: ... and a Batch of Ooze
+revision: 5637702
+part: whole
+quest: 4294
+url: https://warcraft.wiki.gg/wiki/..._and_a_Batch_of_Ooze
+
+== Objectives ==
+Gather Un'Goro Slime Samples from any of the slimes in Un'Goro Crater. Then, using the Testing Equipment next to Chemist Fuely in Undercity, see which of your samples are the most pure. Bring 5 of the Pure Un'Goro Samples you find to Chemist Fuely.
+
+ [Pure Un'Goro Sample] (5)
+
+
+== Description ==
+Have you heard of the Un'Goro Crater, <name>? It is near the Tanaris desert, and it is a magnificent place: lush, vibrant, full of creatures and plant life.
+It is there you must go. Word has reached me that the place seems completely untainted by outside hands. Explorers are just now discovering its secrets.
+I would like to test the slimes or oozes there. If it is true—that they are uncorrupt—then I would like to see how such creatures have evolved.
+
+
+== Rewards ==
+You will receive:
+
+65
+5800 XP (or 34 50 at level 70)
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Yes, <name>? How goes your search? 
+
+
+== Completion ==
+Truly amazing, <name>. This Un'Goro Crater is holding many more secrets than I expected. I wonder what else we will discover as we test further.
+Simply amazing... look at the purity of these samples. Hmm, I wonder what it could mean. They seem to be elemental in nature, but... something more. They remind me of... of the Old Gods. We've found traces of them throughout Azeroth, and now I wonder if these creatures aren't related to them somehow.
+We shall have to test further. 
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.2.0 (2004-12-18): Quest related drop items from ...and a Batch of Ooze quest have been reduced in value.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

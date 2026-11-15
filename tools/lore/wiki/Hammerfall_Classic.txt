@@ -1,0 +1,45 @@
+title: Hammerfall (Classic)
+revision: 5632411
+part: whole
+quest: 655
+url: https://warcraft.wiki.gg/wiki/Hammerfall_%28Classic%29
+
+== Objectives ==
+Speak with Tor'gan in Hammerfall.
+
+
+== Description ==
+It is still clear to me, like yesterday... So many years without hope, with wood and steel to bind me to this terrible place. Then finally, finally! There was the Warchief. Doomhammer in his midnight plate, his warhammer held high.
+It was... too terrible... That the blow of a coward would strike down our greatest hero. From behind he charged on his horse, and then his lance ran him through... I fell to my knees. What hope was there? What hope is there...
+
+
+== Rewards ==
+You will receive:
+
+310 XP
++25 reputation with Orgrimmar
+
+
+== Completion ==
+Ah, Gor'mul you speak of. Yes, from what he says, it seems he has never recovered from the death of Doomhammer.
+Gor'mul was a captive here when Thrall and Orgrim fought to free the camp, but as the earth shook and our brethren escaped, he was left behind. He wandered alone and lost for years without direction or hope, until we returned to establish ourselves here in Hammerfall.
+
+
+== Progression ==
+ [34] Hammerfall
+ [34] Raising Spirits
+ [34] Raising Spirits
+ [34] Raising Spirits
+ [37] Guile of the Raptor
+ [37] Guile of the Raptor
+ [37] Guile of the Raptor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,53 @@
+title: Deep Sea Salvage
+revision: 6915358
+part: whole
+quest: 662
+url: https://warcraft.wiki.gg/wiki/Deep_Sea_Salvage
+
+== Objectives ==
+First Mate Nilzlix wants you to retrieve the Charts and Logs from the Maiden's Folly and the Spirit of Silverpine. 
+
+ [Maiden's Folly Charts]
+ [Maiden's Folly Log]
+ [Spirit of Silverpine Charts]
+ [Spirit of Silverpine Log]
+
+
+== Description ==
+O'Breen led the ships into the cove. We were certain this is where the treasure could be found. The Harbinger docked safely but as the Maiden's Folly and Spirit of Silverpine approached the tides began to lower. Strangest thing I've ever seen!
+Those two ships ran aground into something... some sort of temple in the reef. They sank so quickly, was quite a tragedy.
+We need to retrieve their Logs as well as their Charts before we leave. We can't leave that information behind for prying eyes!
+
+
+== Rewards ==
+You will receive:
+
+4350 XP
++100 or +250 reputation with Booty Bay
++125 reputation with Gadgetzan, Ratchet, and Everlook
+-500 or -250 reputation with Bloodsail Buccaneers
+ [Black Water Hammer]
+
+
+== Progress ==
+How goes the search and recovery mission, <name>?  We really need to get those Logs and Charts back from the Maiden's Folly and Spirit of Silverpine.
+If the information from those sources were to fall into enemy hands, Fleet Master Seahorn would force us down the plank.
+That is if we ever get out of this mess...
+
+
+== Completion ==
+Knowing this information is secure will bring some ease to the command in Booty Bay.  Well done, <name>.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+Deep Sea Salvage, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

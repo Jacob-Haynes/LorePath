@@ -1,0 +1,53 @@
+title: The Spy Revealed!
+revision: 6241829
+part: whole
+quest: 329
+url: https://warcraft.wiki.gg/wiki/The_Spy_Revealed%21
+
+== Objectives ==
+Take the Muddy Note to Lieutenant Doren at the Rebel Camp.
+
+ [Muddy Note] (provided)
+
+
+== Description ==
+Among the valuables of the strongbox is a muddy, scribbled note. Although barely legible, it looks to be an itinerary for Private Thorsen. It details his patrol routes, who he speaks with and how he spends his time with the rebels. It's signed with only one letter: -M.
+But whoever wrote this note must have stayed very close to Thorsen. Whoever wrote this note is the traitor within the rebel camp. 
+
+
+== Rewards ==
+You will receive:
+
+1850 XP (or 11 40 at max level)
++18 reputation with Darnassus
++18 reputation with Exodar
++18 reputation with Gnomeregan
++18 reputation with Ironforge
++18 reputation with Stormwind
+
+
+== Progress ==
+Did you discover who knew Thorsen's secret?  Is there a traitor among us?
+
+
+== Completion ==
+Thank you, <name>.  This note is the clue we need to root out the traitor!
+
+
+== Progression ==
+ [33] Jungle Secrets
+ [35] Bookie Herod
+ [37] The Hidden Key
+ [37] The Spy Revealed!
+ [37] Patrol Schedules
+ [37] Report to Doren
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

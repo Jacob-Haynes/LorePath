@@ -1,0 +1,64 @@
+title: The True Masters
+revision: 6841628
+part: whole
+quest: 4183
+url: https://warcraft.wiki.gg/wiki/The_True_Masters
+
+This is part of the Great Masquerade quest chain.
+
+
+== Objectives ==
+Travel to Lakeshire and deliver Helendis Riverhorn's Letter to Magistrate Solomon. 
+
+ [Helendis Riverhorn's Letter] (provided)
+
+
+== Description ==
+We had always assumed that the Blackrock orcs were a product
+of their savage upbringing. What we have found here, in their homeland, tells
+us another story.
+Indeed, it is bloodlust and thirst for conflict that empowers them, but the
+black dragonflight are the beings whom control the orcs of Blackrock. We suspect that it is the black dragonflight that fuels them with rage and hostility.
+Take this letter to Magistrate Solomon. He will know what must be done.
+<Helendis hands you a sealed letter.>
+
+
+== Progress ==
+Greetings, <name>. Have we met before? You look vaguely familiar. 
+
+
+== Completion ==
+<Magistrate Solomon opens the sealed letter from Helendis and begins reading.>
+
+
+== Notes ==
+You may have encountered Magistrate Solomon before in the Defense of Lakeshire quest chain.
+
+
+== Progression ==
+ [54] Dragonkin Menace
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54D] Marshal Windsor
+ [54D] Abandoned Hope
+ [58D] A Crumpled Up Note
+ [58D] A Shred of Hope
+ [58D] Jail Break!
+ [60R] Stormwind Rendezvous
+ [60R] The Great Masquerade
+ [60R] The Dragon's Eye
+ [60R] Drakefire Amulet
+
+
+== Patch changes ==
+ Patch 3.0.2 (2008-10-14): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

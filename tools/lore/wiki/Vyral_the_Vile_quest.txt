@@ -1,0 +1,57 @@
+title: Vyral the Vile (quest)
+revision: 5612444
+part: whole
+quest: 8321
+url: https://warcraft.wiki.gg/wiki/Vyral_the_Vile_%28quest%29
+
+Vyral the Vile is the second quest in the Twilight Geolords quest chain.
+
+
+== Objectives ==
+
+Slay Vyral the Vile and obtain Vyral's Signet Ring.
+
+ [Vyral's Signet Ring]
+
+
+== Description ==
+We have discovered another base of operations for the Twilight's Hammer. It is called Twilight's Run; it is a cave tucked in the northeast corner of Silithus. The local leader of the cult, Vyral the Vile, haunts that cave - it is he who you must next defeat.  When you have done this, bring me his signet ring.
+Fortune to you, <name>. The horrors of Twilight's Run are formidable indeed.
+
+
+== Rewards ==
+
+You will also receive:
+
+90
+9550 XP (or 57 at level 70)
++700 with Cenarion Circle
+
+
+== Progress ==
+<Name>, have you yet defeated Vyral the Vile? Do you have his signet ring?
+
+
+== Completion ==
+You've done it! Vyral is killed! This can only mean doom for the Twilight Hammer's operations in Silithus. There may be more of them scurrying about, but the blow you dealt to the cult today is one from which they will not easily recover.
+
+
+== Progression ==
+ [15-30] Twilight Geolords
+ [15-30] Vyral the Vile
+ [15-30] Dearest Natalia
+ [15-30] Into The Maw of Madness
+ [15-30] Breaking the Code
+ [15-30] Glyph Chasing
+ [15-30] Unraveling the Mystery
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Objective text changed from, "Bring Vyral's Signet Ring to Huum Wildmane in Cenarion Hold."   
+ Patch 1.8.0 (2005-10-10): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

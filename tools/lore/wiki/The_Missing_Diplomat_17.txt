@@ -1,0 +1,68 @@
+title: The Missing Diplomat (17)
+revision: 6389856
+part: whole
+quest: 1267
+url: https://warcraft.wiki.gg/wiki/The_Missing_Diplomat_%2817%29
+
+This quest completes the quest chain The Missing Diplomat.
+
+
+== Completion ==
+Let me be first to thank you for all you've done, <name>.  You have been an incredible blessing to my people and the people of Stormwind.  I am sorry I couldn't make your acquaintance under better circumstances.
+Understand also that I cannot overtly thank you for your efforts, but I assure you again, it is appreciated.
+When you visit Theramore in the future, seek me out and I shall try to keep you appraised of the situation.
+Thank you again, <name>.
+
+
+== Rewards ==
+You will receive:
+
+1 30
+430 XP
++500 reputation with the Alliance (all factions)
+ [Jaina's Signet Ring]
+
+
+== Notes ==
+If Lady Proudmoore teleported away before you could talk to her (or if you were unable to accept her quest for some reason), she can be found in the tower in Theramore.
+
+
+=== After turning in the quest ===
+If you talk to Lady Proudmoore again, she says...
+
+Hendel is in our custody now, <name>, thanks to you.
+Although the questioning goes slowly, I assure you, he will tell us everything he knows.
+For now, please be patient.  I will contact you immediately if we have need of your assistance.
+Until then, please, enjoy Theramore and I invite you to stay for as long as you like within our city's walls as a friend of the Alliance.
+
+
+== Progression ==
+This is the quest chain The Missing Diplomat.
+
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [30] The Missing Diplomat
+ [30] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [35] The Missing Diplomat
+ [36] The Missing Diplomat
+ [38] The Missing Diplomat
+ [38] The Missing Diplomat
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

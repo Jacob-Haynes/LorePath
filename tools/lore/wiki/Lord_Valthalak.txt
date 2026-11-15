@@ -1,0 +1,7 @@
+title: Lord Valthalak
+revision: 6508373
+part: intro
+url: https://warcraft.wiki.gg/wiki/Lord_Valthalak
+
+Lord Valthalak was a drakonid boss summoned in Upper Blackrock Spire by a Brazier of Beckoning. He was the last boss in the Dungeon Set 2 quest line.
+He could still be summoned until patch 6.0.2 by players who still possessed a  [Brazier of Invocation]. His health was significantly buffed in Mists of Pandaria, which made for a very long fight.

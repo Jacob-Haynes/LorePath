@@ -1,0 +1,92 @@
+title: Anthion's Strange Request
+revision: 5611050
+part: whole
+quest: 8947
+url: https://warcraft.wiki.gg/wiki/Anthion%27s_Strange_Request
+
+== Objectives ==
+Bring 3  [Dark Iron Bar], 20  [Enchanted Leather], 3  [Mooncloth] and 4  [Cured Rugged Hide] to Anthion Harmon in the Eastern Plaguelands.
+
+ [Dark Iron Bar] (3)
+ [Enchanted Leather] (20)
+ [Mooncloth] (3)
+ [Cured Rugged Hide] (4)
+
+
+== Description ==
+We didn't realize the importance of Valthalak's medallion, so it was divided along with the rest of the spoils. The first piece was taken by a dwarf named Theldren. I tried to retrieve it from him and he beat me within an inch of my life. You shall have to take the fragment by force.
+Last I heard of him, he'd become a gladiator for the Dark Iron dwarves. Getting him to fight you is going to present a bit of a challenge, though.
+Gather the following materials for me. You're going to need them.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+9550 XP (or a 57 compensation at max level)
+
+
+== Progress ==
+Did you obtain the materials I asked for, <name>?
+
+
+== Completion ==
+Excellent.  I shall transmute these into something more suitable to our needs.
+
+
+== Progression ==
+ [60D] An Earnest Proposition
+ [60] A Supernatural Device
+ [60] The Ectoplasmic Distiller
+ [60] Hunting for Ectoplasm
+ [60] A Portable Power Source
+ [60] A Shifty Merchant
+ [60] Return to Deliana /  [60] Return to Mokvar
+ [60D] Just Compensation
+ [60] In Search of Anthion
+ [60D] Dead Man's Plea
+ [60] Proof of Life
+ [60] Anthion's Strange Request
+ [60D] Anthion's Old Friend
+ [60D] Falrin's Vendetta
+ [60D] The Instigator's Enchantment
+ [60D] The Challenge
+ [60D] Anthion's Parting Words
+ [60] Bodley's Unfortunate Fate
+ [60R] Three Kings of Flame
+
+ [60] Components of Importance
+ [60] Components of Importance
+ [60G] Components of Importance
+ [60G] Components of Importance
+
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60G] I See Alcaz Island In Your Future...
+
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60R] Final Preparations
+ [60R] Mea Culpa, Lord Valthalak
+ [60] Return to Bodley
+ [60] Back to the Beginning
+ [60D] Saving the Best for Last
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.10.0 (2006-03-28): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

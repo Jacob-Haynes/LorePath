@@ -1,0 +1,37 @@
+title: Flint Shadowmore (quest)
+revision: 5747875
+part: whole
+quest: 6184
+url: https://warcraft.wiki.gg/wiki/Flint_Shadowmore_%28quest%29
+
+== Objectives ==
+Travel to Chillwind Camp in the Western Plaguelands and meet up with your contact, Flint Shadowmore.
+
+
+== Description ==
+The only information we have thus far, then, is that Nathanos Marris may have been slain by this Blightcaller. We assume the Blightcaller is the same fiend that disposed of my agents.
+Flint Shadowmore, another SI:7 operative, is stationed at the Alliance encampment of Chillwind Point in the Western Plaguelands. Seek him out; he will debrief you on the current situation in the Plagues and give you an assignment.
+Good luck, <name>.
+
+
+== Completion ==
+The first mission will be straight up, <name>. You go in, you come out. Recon... 
+
+
+== Progression ==
+ [60G] The First and the Last
+ [60G] Honor the Dead
+ [60G] Flint Shadowmore
+ [60G] The Eastern Plagues
+ [60G] The Blightcaller Cometh
+ [60R] Order Must Be Restored
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

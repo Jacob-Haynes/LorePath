@@ -1,0 +1,46 @@
+title: Velinde Starsong (quest)
+revision: 5587166
+part: whole
+quest: 1037
+url: https://warcraft.wiki.gg/wiki/Velinde_Starsong_%28quest%29
+
+This quest is part of the quest chain The Scythe of Elune.
+
+
+== Objectives ==
+Speak with Thyn'tel Bladeweaver at the Warrior's Terrace in Darnassus.
+
+
+== Description ==
+Velinde Starsong was my predecessor here in Ashenvale Forest. At first it seemed she had the situation in Felwood under control, but little by little her efforts faltered. One day, she simply disappeared.
+I was sent here to continue her work. I'm afraid I know nothing of the priestess, however. Perhaps Thyn'tel Bladeweaver, one of the commanders of the Sentinels, knows further details of her disappearance that I was not a party to.
+Surely she will understand the import of such information.
+
+
+== Completion ==
+Velinde Starsong? That the priestess disappeared some time ago is almost certainly common knowledge. As to further details about the events that surrounded her departure... it would take good reason for me to divulge such information.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+600 XP (or 3 60 at max level)
+25 reputation with Darnassus
+
+
+== Progression ==
+ [30] The Howling Vale
+ [30] Velinde Starsong
+ [30] Velinde's Effects
+ [30] The Barrens Port
+ [30] Passage to Booty Bay
+ [30] The Caravan Road
+ [30] The Carevin Family
+ [30] The Scythe of Elune
+ [30] Answered Questions
+
+
+== External links ==
+
+Wowhead
+WoWDB

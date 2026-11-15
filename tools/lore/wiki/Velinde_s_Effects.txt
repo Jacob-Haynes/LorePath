@@ -1,0 +1,61 @@
+title: Velinde's Effects
+revision: 6785324
+part: whole
+quest: 1038
+url: https://warcraft.wiki.gg/wiki/Velinde%27s_Effects
+
+This quest is part of the quest chain The Scythe of Elune.
+
+
+== Objectives ==
+Search through Velinde's chest for her journal, then return it along with the key to Thyn'tel Bladeweaver in Darnassus.
+
+ [Velinde's Journal]
+ [Velinde's Key] (provided)
+
+
+== Description ==
+The Tome of Mel'Thandris showed you this? I suppose there would be little harm in allowing you to examine her belongings. This key will allow you to open the chest where we stored her things in the Sentinels' bunkhouse. She kept a journal of her duties, if there is anything to be learned, it will be from that.
+I should tell you, the Sentinels believe that she had her own reasons for leaving, and expect that she could return at any time. The priestess has done much in the past to earn our trust.
+
+
+== Progress ==
+What'd you find out?
+
+
+== Completion ==
+It seems that Velinde's disappearance is more troubling than it originally appeared. Even still, I cannot believe that she has come to a bad end. Perhaps it would be beneficial for us to make contact with her.
+<name>, since you have shown a vested interest in this matter, I would like to enlist your aid.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+600 XP (or 3 60 at max level)
+25 reputation with Darnassus
+
+
+== Notes ==
+The Sentinel's bunkhouse is the second building from the bottom in the Tradesman's district. Go to the mail armor vendor's building at 55.8, 79.4.  Go up to the second floor, and cross the bridge to the other building.
+
+
+== Progression ==
+ [30] The Howling Vale
+ [30] Velinde Starsong
+ [30] Velinde's Effects
+ [30] The Barrens Port
+ [30] Passage to Booty Bay
+ [30] The Caravan Road
+ [30] The Carevin Family
+ [30] The Scythe of Elune
+ [30] Answered Questions
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

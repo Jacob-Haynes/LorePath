@@ -1,0 +1,6 @@
+title: Everlook
+revision: 6798918
+part: intro
+url: https://warcraft.wiki.gg/wiki/Everlook
+
+Everlook is a trading post run by the goblins of the Steamwheedle Cartel. It lies at the crossroads of Winterspring's main trade routes and contains a goblin laboratory.

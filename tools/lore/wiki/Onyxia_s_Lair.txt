@@ -1,0 +1,7 @@
+title: Onyxia's Lair
+revision: 6772758
+part: intro
+url: https://warcraft.wiki.gg/wiki/Onyxia%27s_Lair
+
+Onyxia's Lair is a level 80 raid dungeon located in the Wyrmbog, Dustwallow Marsh. It is home to Onyxia, the brood mother of the black dragonflight.
+Onyxia's Lair was originally a level 60, 40-player raid dungeon, one of two that were available upon release of World of Warcraft (the other being Molten Core). It was re-tuned as a level 80 raid dungeon in patch 3.2.2 in honor of World of Warcraft's 5-year anniversary. Like all other Wrath of the Lich King raid dungeons, it has both 10-man and 25-man modes.

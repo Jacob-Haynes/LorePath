@@ -1,0 +1,6 @@
+title: Scholomance
+revision: 6519872
+part: intro
+url: https://warcraft.wiki.gg/wiki/Scholomance
+
+The Scholomance (/ˈskoʊ.loʊ.mæns/ SKOH-loh-mance), also known as the School of Necromancy, is a vile academy for prospective necromancers of the Scourge, is located in the ruins of the palatial House of Barov, on a rise overlooking the abandoned city of Caer Darrow. Scholomance received a heroic mode along with a content redesign in a manner similar to Deadmines or Shadowfang Keep in the expansion Mists of Pandaria. The layout of the dungeon changed to be less confusing, similar to how the Sunken Temple was done. Five bosses await adventurers there.

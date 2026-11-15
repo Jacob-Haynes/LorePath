@@ -1,0 +1,54 @@
+title: Frostmaw (quest)
+revision: 6219442
+part: whole
+quest: 1136
+url: https://warcraft.wiki.gg/wiki/Frostmaw_%28quest%29
+
+== Objectives ==
+Bring Frostmaw's Mane to Melor Stonehoof in Thunder Bluff.
+
+ [Frostmaw's Mane]
+ [Kodo Skin Scroll] (provided)
+
+
+== Description ==
+<Name>, it is now time for you to travel to far-off lands. You are ready.
+You now hunt Frostmaw, a yeti in the Alterac Mountains. He is elusive, his white coat blending into the snows of his mountain home. He rarely shows himself.
+But I will show you how to entice a creature such as he. Here, take this scroll. On it I have written how Frostmaw may be lured.
+Now go, <name>. Your journey is long and many challenges lay waiting. When you return with Frostmaw's mane, only then is your task complete.
+
+
+== Rewards ==
+You will receive:
+
+5550 XP
++500 reputation with Thunder Bluff
+ [Spirit Hunter Headdress]
+
+
+== Progress ==
+Have you been to the Alterac Mountains, <name>? Did you face the elusive Frostmaw?
+
+
+== Completion ==
+Both strength and cunning were needed to find and defeat Frostmaw, <name>. You have both.
+Your path has taken you to the valleys of Thousand Needles and to the high mountains of Alterac. It will one day lead you through all the Earthmother's lands, for such is the way of the hunter.
+
+
+== Notes ==
+Any mountain lion seems to drop a fresh carcass. Go to Growless Cave and use the carcass when you're near the Flame of Uzel. Shortly after, Frostmaw will come walking into the cave.
+
+
+=== Directions ===
+Most of the descriptions say to go north on the road next to Tarren Mill into the Alterac Mountains. This will pass through an area with several Crushridge ogres (which were elite prior to Patch 2.3).
+An alternative is to head west in Hillsbrad Fields, between the road and Darrow Hill (the cave with Yetis). Past the cave is a valley to the north.  Follow this valley to a gap in the mountains which leads into the Alterac Mountains and straight to Growless Cave.  Kill any Mountain Lion on your way in to get a carcass. Be aware that the Alliance entrance to Alterac Valley is nearby, guarded by several level 60 NPCs.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

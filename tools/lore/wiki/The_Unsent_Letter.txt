@@ -1,0 +1,67 @@
+title: The Unsent Letter
+revision: 5725841
+part: whole
+quest: 373
+url: https://warcraft.wiki.gg/wiki/The_Unsent_Letter
+
+The Unsent Letter is the first quest in the Lescovar Incident quest chain. It begins with  [An Unsent Letter], which drops from Edwin VanCleef.
+
+
+== Objectives ==
+Deliver the Letter to the City Architect to Baros Alexston in Stormwind.
+
+ [An Unsent Letter] (provided)
+
+
+== Description ==
+Searching Edwin VanCleef's person, you discover, among other things, an unsent letter. It is addressed to Baros Alexston, the City Architect of Stormwind, City Hall, Cathedral Square.
+It appears to be recently written and sealed.
+
+
+== Rewards ==
+You will receive:
+
+875 XP
+7
++50 reputation with Stormwind
+
+
+== Progress ==
+Yes? Is there something I can help you with?
+
+
+== Completion ==
+Edwin VanCleef, you say? I would as much expect a letter from my dead grandmother... So you've killed him then?  Pardon me in saying, but I'm somewhat surprised. He was a peerless fighter in his younger years. Let's see what he finds the need to write to me about after so many years.
+<Baros peruses the letter.>
+Edwin... I see the years haven't changed you a bit, an idealist as ever, and a romantic. He doesn't care who he hurts, <name>. Revenge has consumed him. But then, I'm not sure I can blame him.
+
+
+== Notes ==
+Baros Alexston is inside the City Hall, on the northeast side of the Cathedral Square in Stormwind.
+Though the Defias Brotherhood quest chain is the usual incentive for entering the Deadmines and killing Edwin VanCleef, it is not a prerequisite.
+Prior to this quest's removal in retail, completing it would reward the  [Deadmines] achievement (if for some reason actually killing Edwin VanCleef did not reward it).
+
+
+== Progression ==
+ [22] The Unsent Letter
+ [22] Bazil Thredd
+ [29D] The Stockade Riots
+ [29] The Curious Visitor
+ [29] Shadow of the Past
+ [31] Look to an Old Friend
+ [31] Infiltrating the Castle
+ [31] Items of Some Consequence
+ [31] The Attack!
+ [31] The Head of the Beast
+ [31] Brotherhood's End
+ [31] An Audience with the King
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,55 @@
+title: Cleansing Felwood (Alliance)
+revision: 6150852
+part: whole
+quest: 4101
+url: https://warcraft.wiki.gg/wiki/Cleansing_Felwood_%28Alliance%29
+
+== Objectives ==
+Bring 15 Blood Amber to Arathandris Silversky in Felwood.
+
+ [Blood Amber] (15)
+
+
+== Description ==
+Plants give life to Felwood, yet even they suffer the taint of corruption. I know ways to cleanse them, but I cannot give out such knowledge to those I don't know or trust. Prove to me that you will truly aid the cause of the Cenarion Circle!
+To the north lie the Irontree Caverns. The Warpwood elementals present there are now beyond hope of cleansing. I ask you to bring me their sap - blood amber it is called - so I may study it in the hopes of saving other forms of life here.
+
+
+== Rewards ==
+You will receive:
+
+5,650 XP
+
+
+== Progress ==
+I know Felwood suffers, <name> - I suffer along with it!  I must remain steadfast in my conviction; were the knowledge I possess to fall into the wrong hands, it would spell disaster for all of Felwood.
+Bring to me the blood amber drawn from the slain Warpwood elementals, and I will trust you enough to help me enact a means to fight the corruption.
+
+
+== Completion ==
+This blood amber will be used to find a means of defeating the corruption present in Felwood.  You've proven to me that you're willing to do whatever it takes for the Cenarion Circle.  I trust you now, friend.
+It might seem odd that killing the elementals proved yourself to me, but the end of saving countless sentient beings must justify the means we take.  You and I can now focus on the preservation of life through the salves I can make.
+<Name>, the time has come to cleanse Felwood.
+
+
+== Notes ==
+Completing this quest allows you to collect various quest items that can be turned in for  [Cenarion Plant Salve], which is used to cleanse the plants throughout Felwood.
+
+
+== Progression ==
+ [55] Cleansing Felwood
+  [55] Salve via Disenchanting
+  [55] Salve via Gathering
+ [55] Salve via Hunting
+  [55] Salve via Mining
+  [55] Salve via Skinning
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,54 @@
+title: The Madness Within (Classic)
+revision: 5586906
+part: whole
+quest: 7461
+url: https://warcraft.wiki.gg/wiki/The_Madness_Within_%28Classic%29
+
+== Objectives ==
+You must destroy the guardians surrounding the 5 Pylons that power the Prison of Immol'thar. Once the Pylons have powered down, the force field surrounding Immol'thar will have dissipated.
+Enter the Prison of Immol'thar and eradicate the foul demon that stands at its heart. Finally, confront Prince Tortheldrin in Athenaeum.
+Return to the Shen'dralar Ancient in the courtyard should you complete this quest. 
+
+Prince Tortheldrin  slain
+Immol'thar  slain
+
+
+== Description ==
+Have you heard enough? Are you a <man/woman> of action?
+This madness must come to an end. The age of the immortals has long since passed. Destroy the guardians surrounding the pylons to lower the force field. When this is done, destroy Immol'thar. With the Prince's power greatly reduced, attack and end him. Lay the spirits of this city to rest, adventurer.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+9950 XP
+
+
+== Progress ==
+Be wary, adventurer. The Prince is... persuasive.
+
+
+== Completion ==
+We thank you, hero.
+
+
+== Notes ==
+Prince Tortheldrin can be found in a corner of the Athenaeum.
+Upon completion of the quest, several (eight, to be correct) Highborne ghosts will spawn in a circle around the Shen'dralar Ancient. They will do cheer-, thank- and clap-emotes to thank the player for rescuing them from Immol'thar and Prince Tortheldrin.
+The quest tracker incorrectly displays that the quest must be turned in the Dalaran Crater in Alterac Mountains.
+
+
+== Progression ==
+ [60D] The Madness Within
+ [60D] The Treasure of the Shen'dralar
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated.   
+ Patch 1.3.0 (2005-03-07): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

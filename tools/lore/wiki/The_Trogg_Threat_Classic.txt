@@ -1,0 +1,41 @@
+title: The Trogg Threat (Classic)
+revision: 5579490
+part: whole
+quest: 267
+url: https://warcraft.wiki.gg/wiki/The_Trogg_Threat_%28Classic%29
+
+== Objectives ==
+Bring 8 Trogg Stone Teeth to Captain Rugelfuss in the southern guard tower. 
+
+ [Trogg Stone Tooth] (8)
+
+
+== Description ==
+<Class>, you may or may not be aware of the Trogg threat looming over Dwarven lands. With the Ironforge Reserve called up to the Alliance Front, we are left with a fraction of the defense forces needed to keep these lands safe. My regiment is assigned to watch over the Gate here and we cannot leave our post for fear of invasion.
+But we need some pressure put on those damned Troggs lurking in the hills. If you're up to the task, wage an assault on the Troggs. Bring me back 8 Trogg Stone Teeth as proof.
+
+
+== Rewards ==
+You will receive:
+
+5
+900 XP (or 5 40 at level 70)
++250 reputation with Ironforge
+
+
+== Progress ==
+Do you have 8 Trogg Stone Teeth to show me?  If not, there is still work to be done, <name>.
+
+
+== Completion ==
+I am quite impressed, <name>.  You have done the Dwarven race a great favor by defending our lands.  King Magni Bronzebeard himself would be proud!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

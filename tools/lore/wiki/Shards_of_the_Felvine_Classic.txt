@@ -1,0 +1,64 @@
+title: Shards of the Felvine (Classic)
+revision: 6859874
+part: whole
+quest: 5526
+url: https://warcraft.wiki.gg/wiki/Shards_of_the_Felvine_%28Classic%29
+
+== Objectives ==
+Find the Felvine in Dire Maul and acquire a shard from it. Chances are you'll only be able to procure one with the demise of Alzzin the Wildshaper. Use the Reliquary of Purity to securely seal the shard inside, and return it to Rabine Saturna in Nighthaven, Moonglade.
+
+ [Sealed Reliquary of Purity]
+ [Reliquary of Purity] (provided)
+
+
+== Description ==
+Your knowledge of Eldre'Thalas - Dire Maul - in Feralas will now come into play, <name>. In the eastern part of the ruined city is where Alzzin the Wildshaper has exerted his corrupt dominion. Go there with all due haste and brave whatever challenges await you.
+The Fruit of Fertility, now corrupted as the Felvine, should be close to Alzzin. When he falls, capture whatever essence of the Felvine you can. Seal it in the Reliquary, and bring it to me.
+Good luck, and Cenarion's speed.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Milli's Shield]
+ [Milli's Lexicon]
+You will also receive:
+
+4 98
+8,300 XP
++150 or +500 reputation with Cenarion Circle
+
+
+== Progress ==
+With the Sealed Reliquary of Purity in our possession, it will be possible not only to remove a corrupting threat from the world but also to study it under our judicious watch.  Perhaps we can even devise new means to combat the taint of corruption that ever threatens Azeroth.
+I know Milli would have had it no other way...
+
+
+== Completion ==
+It is done, brave <class>, and with that the Cenarion Circle is in your debt.  Though the war is far from over, a great battle has been won against those who would bring about our doom.
+Please - accept this as a token of our enduring gratitude.  Know that you are welcomed here as a hero of the Cenarion Circle for your great deed, <name>.  Thank you.
+
+
+== Notes ==
+The Felvine Shards are found near the exit tunnel that opens up after the death of Alzzin the Wildshaper. They can be picked up by players not currently on the quest.
+
+
+== Progression ==
+ [60] A Reliquary of Purity
+ [60] Shards of the Felvine
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.3.0 (2005-03-07): Added.   
+
+
+== See also ==
+Moonglade quests
+Dire Maul quests
+
+
+== External links ==
+
+Wowhead
+WoWDB

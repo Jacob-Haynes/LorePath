@@ -1,0 +1,48 @@
+title: Hints of a New Plague? (5)
+revision: 6964689
+part: whole
+quest: 661
+url: https://warcraft.wiki.gg/wiki/Hints_of_a_New_Plague%3F_%285%29
+
+== Objectives ==
+Find Phin Odelic in Southshore.
+
+
+== Description ==
+I've seen Kinelory look way worse after a night in the tavern than she does now. You obviously did a good job protecting her.
+These items she brought back from the farm should at least let Phin get an idea of what's going on out here in Arathi. Just to make sure there's no retaliation after your attack, we're going to stay here for a bit longer. Would you be willing to head back to Southshore and talk to Phin?
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Dustfall Robes]
+ [Lightstep Leggings]
+You will also receive:
+
+3550 XP (or 21 60 at max level)
++150 or +250 reputation with Stormwind
+
+
+== Completion ==
+So, the two troublemakers are all right after all? Haha, I'm glad to hear it. I thank you for bringing me news of their whereabouts and status—it pleases me greatly that they are still alive; the two of them are irreplaceable as friends and traveling companions.
+But... it's more important I thank you properly for your help. Here. Take this along with my group's thanks.
+With any luck, we'll figure out what the Forsaken are up to, and put an end to it.
+
+
+== Progression ==
+ [33] Hints of a New Plague?
+ [36] Hints of a New Plague?
+ [36] Hints of a New Plague?
+ [37] Hints of a New Plague?
+ [37] Hints of a New Plague?
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

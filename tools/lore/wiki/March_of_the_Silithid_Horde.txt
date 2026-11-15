@@ -1,0 +1,52 @@
+title: March of the Silithid (Horde)
+revision: 6234102
+part: whole
+quest: 4494
+url: https://warcraft.wiki.gg/wiki/March_of_the_Silithid_%28Horde%29
+
+This quest is part of the Rise of the Silithid quest chain.
+
+
+== Objectives ==
+Speak to Alchemist Pestlezugg in Gadgetzan.
+
+
+== Description ==
+It would seem that the silithid's intent, nay - reason for being, is to devour everything in their path that is not of their ecology. Their focus is singular, and it is for this reason they are a grave threat to all life on Azeroth.
+What we've seen to date is but the first stages. I suspect that their strength comes from deeper in Kalimdor: Un'Goro Crater. Go to Gadgetzan in the Tanaris desert and speak to Alchemist Pestlezugg. Tell him of my theory; he will surely aid us in fighting the silithid.
+
+
+== Rewards ==
+You will receive:
+
+750 XP (or 4 50 at max level)
++10 reputation with Orgrimmar
++3 reputation with Silvermoon City
+
+
+== Completion ==
+Yes, I gathered that Zilzibin sent you to me. Your experience in fighting these beasties is priceless; no one to my knowledge has ever dealt with their kind before. As for Zil's idea that Un'Goro Crater is their heart... perhaps it is. Un'Goro is a mysterious and dangerous jungle to the west of here. Perhaps it is also one step closer to figuring out what the silithid are all about.
+
+
+== Progression ==
+ [46] Gadgetzan Water Survey
+ [47] Noxious Lair Investigation
+ [48] The Scrimshank Redemption
+ [48] Insect Part Analysis
+ [48] Insect Part Analysis
+ [48] Rise of the Silithid
+ [53] March of the Silithid
+ [53] Bungle in the Jungle
+ [54G] Pawn Captures Queen
+ [54] Calm Before the Storm
+ [54] Calm Before the Storm
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,47 @@
+title: Operation: Death to Angerforge
+revision: 6325846
+part: whole
+quest: 4132
+url: https://warcraft.wiki.gg/wiki/Operation%3A_Death_to_Angerforge
+
+The prerequisite for this quest is the  [58D] Grark Lorkrub questline.
+
+
+== Objectives ==
+Travel to Blackrock Depths and slay General Angerforge! Return to Warlord Goretooth when the task is complete.
+
+General Angerforge slain
+
+
+== Description ==
+You have done an exemplary job, <name>. It is now time to send you on your last mission.
+General Angerforge, the Dark Iron responsible for coordinating the attacks on the 109th division of the K.E.F. and the mass slaughter of our forces must be brought to justice.
+This will undoubtedly be your most grueling mission, but should you succeed, you will be richly rewarded.
+
+
+== Rewards ==
+You will receive:
+
+2 65
+7750 XP (or 46 50 at max level)
++350 reputation with Orgrimmar
++87 reputation with Thunder Bluff
+ [Conqueror's Medallion]
+
+
+== Progress ==
+Has the Butcher of Blackrock been disposed of?
+
+
+== Completion ==
+Finally! The villain been[sic] brought to justice! You are a remarkable individual, <name>. Wear this medallion as a symbol of your stalwart dedication to the Horde and the K.E.F.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

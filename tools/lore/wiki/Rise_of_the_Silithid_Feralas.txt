@@ -1,0 +1,55 @@
+title: Rise of the Silithid (Feralas)
+revision: 6823097
+part: whole
+quest: 4267
+url: https://warcraft.wiki.gg/wiki/Rise_of_the_Silithid_%28Feralas%29
+
+== Objectives ==
+Bring Raschal's Report to Gracina Spiritmight in Darnassus.
+
+ [Raschal's Report] (provided)
+
+
+== Description ==
+I am entrusting you with a copy of the report Raschal made on the infestation of southeastern Feralas. While the main report is being filed in Darnassus, I want you to give this copy to an associate of the Protectorate. Her name is Gracina Spiritmight; she is a priestess who dwells in the Temple of the Moon in Darnassus. She has broad knowledge on these kinds of creatures, and her receiving this report would benefit us all.
+You're dismissed - good luck, <name>; may Elune watch over us all.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Gloves of the Dune]
+ [Marauder's Handwraps]
+
+
+== Progress ==
+Welcome to this blessed temple, friend. Your arrival here from Feathermoon Stronghold has been foretold to me. Do you have the report Shandris Feathermoon asked you to bring?
+
+
+== Completion ==
+We night elves know of the terror outlined in this report. Shandris was wise to send this, and you, to me.
+These creatures will consume Feralas rapidly; they are nothing short of one of the greatest menaces we all will ever face. The insects you and the courier encountered are known as the silithid. They are mere tools of one of the greatest threats that both the Horde and Alliance will ever face.
+I pray we will have the resolve to defeat them before they destroy us.
+
+
+== Progression ==
+ [43] The Missing Courier
+ [43] The Missing Courier
+ [44] Boat Wreckage
+ [44] The Knife Revealed
+ [44] Psychometric Reading
+ [44] The Woodpaw Gnolls
+ [46] The Writhing Deep &  [44] Thalanaar Delivery
+ [46] Freed from the Hive
+ [46] A Hero's Welcome
+ [46] Rise of the Silithid
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

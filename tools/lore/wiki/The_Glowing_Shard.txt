@@ -1,0 +1,51 @@
+title: The Glowing Shard
+revision: 6230225
+part: whole
+quest: 6981
+url: https://warcraft.wiki.gg/wiki/The_Glowing_Shard
+
+== Objectives ==
+Travel to Ratchet to find someone that can tell you more about the glowing shard.
+Then, deliver the shard as you are directed.
+
+Speak with someone in Ratchet about the Glowing Shard
+ [Glowing Shard] (provided)
+
+
+== Description ==
+The shard is a brilliant green, and although solid, what looks like smoke swirls just below the surface. You can't help staring into the depths of the crystal; at the same time, you know there is something very disturbing about it.
+Maybe you should see if anyone in Ratchet can tell you more about this strange shard.
+
+
+== Rewards ==
+You will receive:
+
+2,650 or 3,150 XP
+
+
+== Progress ==
+Hello, <race>. What can I do for you? 
+
+
+== Completion ==
+Oh... I have never seen anything like this... 
+
+
+== Notes ==
+Talk to Sputtervalve in Ratchet . (The goblin next to the flight master.) He does not have a question mark over his head but he will have a conversation topic about the glowing shard which directs you back to Falla Sagewind, who is camped at the top of mountain above the Wailing Caverns.
+
+
+== Progression ==
+ [26] The Glowing Shard
+ [25] In Nightmares
+ [25] In Nightmares
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

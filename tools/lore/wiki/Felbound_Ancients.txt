@@ -1,0 +1,54 @@
+title: Felbound Ancients
+revision: 6979911
+part: whole
+quest: 4441
+url: https://warcraft.wiki.gg/wiki/Felbound_Ancients
+
+== Objectives ==
+Travel to Darnassus and use Eridan's Vial to collect a Vial of Blessed Water from the Temple of the Moon. Return to Eridan with the filled vial.
+
+ [Vial of Blessed Water]
+ [Eridan's Vial] (provided)
+
+
+== Description ==
+The flute you found was carved from an ancient protector, the treant allies that have faithfully protected the night elves.
+The satyrs have been able to corrupt anything they come in contact with, which includes the ancients that made Felwood their home. By the use of the fel, the spirit of the ancient has been bound and tortured, never completely released. The felbind you found is no doubt related.
+We must try to purify the flute, <name>. Bring me blessed water from the Temple of the Moon in Darnassus.
+
+
+== Rewards ==
+You will receive:
+
+7900 XP (or 33 at max level)
+
+
+== Progress ==
+The water will hopefully release the spirit of the ancient, and allow it to be at peace. 
+
+
+== Completion ==
+Thank you, <name>. Now, we must pray that we can undo the damage that has been done... 
+
+
+== Notes ==
+Quest completion
+Eridan Bluewind says: May this evil be banished from this artifact!
+Eridan Bluewind says: I can feel the presence of evil leaving...
+
+
+== Progression ==
+ [54] Flute of Xavaric
+ [54] Felbound Ancients
+ [54] Purified!
+ [56] Ancient Spirit
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,48 @@
+title: The Night Watch (3)
+revision: 6177033
+part: whole
+quest: 58
+url: https://warcraft.wiki.gg/wiki/The_Night_Watch_%283%29
+
+== Objectives ==
+Commander Althea Ebonlocke of Darkshire wants you to kill 20 Plague Spreaders in the eastern Raven Hill mausoleum. 
+
+Plague Spreader slain (20)
+
+
+== Description ==
+The situation in Raven Hill is still grim. The safety of Darkshire is in your hands, <name>. I don't have enough Watchers to keep the town safe. We need you to dispatch for Raven Hill yet again and rid the eastern mausoleum of 20 Plague Spreaders! 
+
+
+== Rewards ==
+
+You will also receive:
+
+25
+2,450 XP (or 15 at max level)
++100 reputation with Stormwind
+
+
+== Progress ==
+I need your assistance, <name>.  Travel to the cemetery to the northwest and rid the eastern mausoleum of 20 Plague Spreaders.
+Return to me when your task is complete.
+
+
+== Completion ==
+On behalf of the people of Darkshire and as the Leader of the Night Watch, I thank you, <name>, for your bravery and dedication.  May the Light shine upon your ways. 
+
+
+== Progression ==
+ [24] The Night Watch
+ [26] The Night Watch
+ [30] The Night Watch
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

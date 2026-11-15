@@ -1,0 +1,51 @@
+title: Cracking Maury's Foot
+revision: 6898974
+part: whole
+quest: 613
+url: https://warcraft.wiki.gg/wiki/Cracking_Maury%27s_Foot
+
+== Objectives ==
+Bring Maury's Key to "Sea Wolf" MacKinley in Booty Bay.
+
+ [Maury's Key]
+
+
+== Description ==
+Curses! That swab Maury put a lock on his foot, and I can't open it! His loot's inside the foot, and that's what he owes me!
+We need to find the key to open the lock. Maury was known to gamble with the Mosh'Ogg ogres, at their mound to the northeast. And he told me, when he was still alive, that the last time he went to the mound he was chased off after winning too much. Maybe the Ogres there have his key.
+But if they do, you might have to kill a load of them to find the right one... 
+
+
+== Rewards ==
+You will receive:
+
+6600 XP (or a 39 compensation at level 80)
+ [Collection Plate]
+-350 reputation with Bloodsail Buccaneers
++350 reputation with Booty Bay
+
+
+== Progress ==
+Ahoy, <name>!  Have you yet found Maury's Key?
+
+
+== Completion ==
+You found it!  Thanks a million, <name>.  You've been a big help to me!
+Here you go - you earned this!
+
+
+== Progression ==
+ [10-30] Scaring Shaky
+ [10-30] Return to MacKinley
+ [44] Voodoo Dues
+ [44] Cracking Maury's Foot
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,76 @@
+title: Petty Squabbles
+revision: 5620187
+part: whole
+quest: 2783
+url: https://warcraft.wiki.gg/wiki/Petty_Squabbles
+
+This formerly started the main Blasted Lands quest chain for the Alliance.
+
+
+== Objectives ==
+Speak with the Fallen Hero of the Horde at the border of the Blasted Lands and the swamp.
+
+
+== Description ==
+We fight the wrong enemy, <name>.
+The true power in these lands continues to grow in strength and number while we squabble over scorched earth with orcs.
+Do we continue to fight a war in these lands against the Horde, only to be routed one day by the armies of the Burning Legion? It is futile.
+Put your differences aside, <name>, speak with the fallen hero of the Horde. He knows the truth behind the Blasted Lands.
+
+
+== Completion ==
+The Alliance wishes to assist?
+I thought to never see this day again. A day in which the Alliance fights side by side with the Horde against a common enemy.
+It shall be... we will unite.
+
+
+== Notes ==
+There have been some people who report being unable to get this quest.  If so, You should proceed to the Fallen Hero and try talking to him.
+The quest chain was once fairly popular, as one of the rewards for completing the chain is a 16 slot bag.  They were harder to come by, once upon a time.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,52 @@
+title: Krom'Grul (quest)
+revision: 6975241
+part: whole
+quest: 3822
+url: https://warcraft.wiki.gg/wiki/Krom%27Grul_%28quest%29
+
+== Objectives ==
+Recover Sha'ni's Nose-Ring from Krom'Grul and return it to Thal'trak in Kargath. Search the various caves and mines in Dreadmaul Rock. 
+
+ [Sha'ni's Nose-Ring]
+
+
+== Description ==
+My whole platoon was captured, <name>. All were slain - except me.
+Their leader, Krom'Grul, wanted to save me for some sort of ritual.
+I was chained to this altar and brutalized by the beast. My physical being ceased functioning after an hour of this torture. The beast then ripped my wedding nose-ring off of my face and stuck it on his finger. I had never seen such savagery!
+Find Krom'Grul and kill him! Take my ring back to Thal'trak.
+And <name>, tell him that we will meet again... in another life.
+
+
+== Rewards ==
+You will receive:
+
+5250 XP (or 31 50 at max level)
++100 or +250 reputation with Orgrimmar
+ [Sha'ni's Ring]
+
+
+== Progress ==
+Did you find Sha'ni? Is she ok?
+
+
+== Completion ==
+<Thal'trak collapses.>
+We were going to move to the Hinterlands. Did she tell you? This was going to be her last mission.
+<Thal'trak sobs.>
+I don't want it, <name>. Keep it, throw it away, I don't care! The ring means nothing to me now. Not without her...
+
+
+== Progression ==
+ [52] Dreadmaul Rock
+ [53] Krom'Grul
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

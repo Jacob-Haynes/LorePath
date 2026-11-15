@@ -1,0 +1,48 @@
+title: Broken Tears (quest)
+revision: 6029963
+part: whole
+quest: 1369
+url: https://warcraft.wiki.gg/wiki/Broken_Tears_%28quest%29
+
+== Objectives ==
+Maintain your reputation with the Magram, and bring 3  [Broken Tears] to Warug in the Magram Village. 
+
+ [Broken Tears] (3)
+Magram Clan Centaur (Friendly)
+
+
+== Description ==
+The Gelkis think our centaur mother, Theradras, protects us. They are stupid. No one protects the centaur. The Magram do not need protection! We are the strongest!
+Show the Gelkis they are stupid. Go to the cave in their village. They hoard crystals in that cave, the tears of Theradras. Destroy the tears and bring me the broken pieces! 
+
+
+== Rewards ==
+2650 XP
+
+
+== Progress ==
+If you are not our enemy, then you will do what I ask! 
+
+
+== Completion ==
+You got the tears!  Now the Gelkis will know that Theradras will not help them.  She will not cry when we crush them!  The Magram will rule!
+You are smart to help us, <name>.  We are the strongest. 
+
+
+== Progression ==
+ [35] Brutal Politics /  [33] Magram Alliance
+ [32] Assault on the Kolkar
+ [33] Broken Tears
+ [35] Gizmo for Warug
+ [37] Khan Shaka
+ [42] Khan Hratha
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

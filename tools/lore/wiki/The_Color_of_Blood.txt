@@ -1,0 +1,42 @@
+title: The Color of Blood
+revision: 5586788
+part: whole
+quest: 388
+url: https://warcraft.wiki.gg/wiki/The_Color_of_Blood
+
+== Objectives ==
+Nikova Raskol of Stormwind wants you to collect 10 Red Wool Bandanas. 
+
+ [Red Wool Bandana] (10)
+
+
+== Description ==
+Bitterness flows through my veins like a cold river. My grandson, Mac, was such a good boy. A mere 14 years old. When the army was sent off to the front, Mac took up arms to defend the city. He was a guard in The Stockade, where the Defias gang is locked up. Mac reprimanded some of the prisoners for tearing their wool blankets to make scarves, a symbol of their gang. For that Mac was stabbed in the back.
+I want revenge. Bring me 10 of their precious Wool Bandanas. They are the color of blood. 
+
+
+== Rewards ==
+You will gain:
+
+60
+2650 XP (or 16 20 at level 70)
++150 reputation with Stormwind
+
+
+== Progress ==
+I see you are back, <class>.  Have you collected 10 Red Wool Bandanas from those Defias Scum in The Stockade yet? 
+
+
+== Completion ==
+So these bandanas—filthy tokens of corruption—are what my Mac had to die for?  Such a waste.  Such a tragic sacrifice. 
+But alas, I cannot return to the past.  Just know, <name>, that you have brought my family justice through your deeds. 
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

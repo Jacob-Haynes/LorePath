@@ -1,0 +1,7 @@
+title: Kargath
+revision: 6071583
+part: intro
+url: https://warcraft.wiki.gg/wiki/Kargath
+
+Kargath was at its time the only Horde outpost in Khaz Modan, named after the Shattered Hand clan chieftain Kargath Bladefist.
+Kargath's flight path was very important because it linked the northern and the southern areas of Horde flight paths on the Eastern Kingdoms. It linked Hammerfall and the Undercity in the north to Grom'Gol, Booty Bay, and Stonard in the south.

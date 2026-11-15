@@ -1,0 +1,63 @@
+title: Deviate Eradication
+revision: 6775332
+part: whole
+quest: 1487
+url: https://warcraft.wiki.gg/wiki/Deviate_Eradication
+
+In Deviate Eradication, you must enter the Wailing Caverns and kill deviate creatures.  This is a highly desirable quest for leatherworkers to complete for the reward  [Pattern: Deviate Scale Belt], since a  [Deviate Scale Belt] sells for upwards of 15 on many servers.
+
+
+== Objectives ==
+Ebru in the Wailing Caverns wants you to kill 7 Deviate Ravagers, 7 Deviate Vipers, 7 Deviate Shamblers and 7 Deviate Dreadfangs.
+
+Deviate Ravager slain (7)
+Deviate Viper slain (7)
+Deviate Shambler slain (7)
+Deviate Dreadfang slain (7)
+
+
+== Description ==
+Naralex had a noble goal.
+Our great leader aspired to enter the Emerald Dream and help regrow these harsh lands back into the lush forest it once was.  But something went terribly wrong.
+Naralex's dream turned into a nightmare and corrupt creatures began to inhabit the caverns.
+While some Disciples of Naralex seek to awake our master, my concern is with ridding these caves of the evil beasts.
+Brave the caverns, <name>, and eradicate the deviate spawn.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Pattern: Deviate Scale Belt]
+ [Sizzle Stick]
+ [Dagmire Gauntlets]
+You will also receive:
+
+25
+2500 XP
+
+
+== Progress ==
+<Name>, we, the Disciples of Naralex, need your help.  Our numbers are dwindling with our master trapped in his twisted nightmare.  We have not the forces necessary to deal with the corrupt creatures which now haunt these caverns.
+I beg of you, enter the caves and wage war on the deviate creatures!
+
+
+== Completion ==
+As a Disciple of Naralex, I commend your bravery, <name>.
+Your aid in ridding the caverns is the first step in our long plight to see the Barrens restored.
+Thank you and may you prosper.
+
+
+== Notes ==
+Many people have trouble finding this NPC. She, and another quest giving NPC, are located in a Wailing Caverns right eye socket cave ABOVE the entrance to the Wailing Caverns. To get to them, you need to go around to the mountain behind the cave and climb up until you can get to the roof of the cave. Then walk along the edge towards the front (facing the oasis) and carefully drop onto the ledge below. If you succeed, you should see several NPCs, all disciples of Naralex. This may take several tries.
+The monsters you must kill for this quest are found throughout the Wailing Caverns, so it's best to do this quest along with other Wailing Caverns quests.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 0.9 (2004-08-17): 7 Deviate Thundersnouts replaced by same number of Deviate Shamblers.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

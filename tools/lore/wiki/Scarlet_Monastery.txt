@@ -1,0 +1,8 @@
+title: Scarlet Monastery
+revision: 6969821
+part: intro
+url: https://warcraft.wiki.gg/wiki/Scarlet_Monastery
+
+The Scarlet Monastery, once known as the Old Monastery, is a fortified monastery located in the northeast corner of the blighted Tirisfal Glades. Once a cathedral of the Church of the Holy Light, it fell under the control of the Scarlet Crusade after the Third War, becoming a major base of operations in their war against the Scourge and the Forsaken.
+In the wake of the Cataclysm, the monastery was one of the last lingering Scarlet strongholds in Lordaeron, until the remaining zealots and their leadership were slaughtered by the Knights of the Ebon Blade. Though long abandoned, the monastery has since been reoccupied by remnants of the Scarlet Crusade, who continue their unending struggle against the undead.
+The Scarlet Monastery is a complex of two instanced dungeons, Scarlet Halls and Scarlet Monastery. Heroic mode is available for both wings at level 35.

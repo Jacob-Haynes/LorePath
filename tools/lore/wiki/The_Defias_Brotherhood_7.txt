@@ -1,0 +1,60 @@
+title: The Defias Brotherhood (7)
+revision: 6958216
+part: whole
+quest: 166
+url: https://warcraft.wiki.gg/wiki/The_Defias_Brotherhood_%287%29
+
+This quest is the final part of the Defias Brotherhood quest chain. This is the first dungeon quest many Alliance characters get.
+
+
+== Objectives ==
+Kill Edwin VanCleef and bring his head to Gryan Stoutmantle.
+
+ [Head of VanCleef]
+
+
+== Description ==
+There is but one task left for you to complete. Edwin VanCleef must be assassinated. While it saddens me to condemn any man to a death sentence, it is for the greater good of the people of Westfall that VanCleef is laid to rest once and for all. Bring me the villain's head once the deed is done.
+
+
+== Rewards ==
+
+You will also receive:
+
+2,600 XP (or 15 60 at max level)
++200 reputation with Stormwind
+
+
+== Progress ==
+How goes the hunt for Edwin VanCleef?
+
+
+== Completion ==
+<Name>, your bravery is remarkable.  The People's Militia thanks you for your service to the people of Westfall.  With VanCleef dead, this marks the beginning of the end for the Defias Brotherhood.  Hopefully some day soon peace will once again grace the plains of this fair land.
+I salute you, Sir!
+
+
+== Notes ==
+VanCleef is the final boss of the Deadmines. He also carries  [An Unsent Letter] that begins another quest chain, The Lescovar Incident.
+Upon completion
+Gryan Stoutmantle yells: All hail, <name>! Defender of The People! or The People of Westfall salute <name>, a brave and valiant defender of freedom.
+
+
+== Progression ==
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18G2] The Defias Brotherhood
+ [22D] The Defias Brotherhood
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

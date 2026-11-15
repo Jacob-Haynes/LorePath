@@ -1,0 +1,89 @@
+title: The Formation of Felbane
+revision: 6915002
+part: whole
+quest: 3621
+url: https://warcraft.wiki.gg/wiki/The_Formation_of_Felbane
+
+This is part of the main Blasted Lands quest chain, although it takes place in Stranglethorn Vale.
+
+
+== Objectives ==
+Take the Shipment to Galvan the Ancient in Stranglethorn Vale.
+
+ [Shipment to Galvan]
+
+
+== Description ==
+The weapons are ready to be forged. You must take the tempered azsharite to one with the ability to harness fel energy.
+In Stranglethorn Vale such a blacksmith exists. Galvan the Ancient, leader of the Mithril Order, will craft the weapons to your specifications. You will find his encampment between Zul'Gurub and the Mosh'Ogg ogre mound.
+May your determination and faith carry you through this ordeal. Should you fail, know that your God smiles down upon you, mortal.
+
+
+== Rewards ==
+You will receive:
+
+4,650 XP
+
+
+== Progress ==
+Loramus, eh? It has been many years since I have heard that name.
+
+
+== Completion ==
+My goodness, I can only imagine what you went through to get these materials.  Few venture into Azshara and return alive, let alone those that face demi-gods and giants!
+
+
+== Notes and trivia ==
+Galvan is located just south of the main road into Zul'Gurub.
+The Formation of Felbane is an uncommon quest in the Trading Card Game.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+The Formation of Felbane, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

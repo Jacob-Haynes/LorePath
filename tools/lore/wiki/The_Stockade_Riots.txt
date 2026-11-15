@@ -1,0 +1,65 @@
+title: The Stockade Riots
+revision: 5587005
+part: whole
+quest: 391
+url: https://warcraft.wiki.gg/wiki/The_Stockade_Riots
+
+This quest is part of the Lescovar Incident quest chain.
+
+
+== Objectives ==
+Kill Bazil Thredd and bring his head back to Warden Thelwater
+at the Stockade. 
+
+ [Head of Bazil Thredd]
+
+
+== Description ==
+Let's get one thing straight, <name>: I don't trust you. But, with the situation as it is, you probably won't make a difference.
+So here's how it's going to be: go down there and have your talk with Thredd.  If you're really on our side, then kill him and bring me his head when the job's done. And if it turns out you're on his side, and don't come out... when we find you, you'll die along with the rest of the maggots. 
+
+
+== Progress ==
+Either you bring me Thredd's head, or I'll take yours, understand, <name>? 
+
+
+== Completion ==
+Without Thredd to lead them, hopefully the riots will be more controllable. We shall see.
+I must say, after a half hour, I hardly expected you to come out, but it seems I misjudged you.
+I'd guess, then, that you didn't get much useful information out of him?  But I know a thing or two that might be of interest to you about Thredd's activities. 
+
+
+== Rewards ==
+2350 XP (or 14 40 at level 70)
+250 reputation with Stormwind
+
+
+== Notes ==
+Bazil Thredd is located inside the Stockade instance.  Proceed north up the cell block to the T intersection, then down the eastern cell block.
+There will be a chamber with 3 cells off of it, guarded by an ogre named Hamhock.  Bazil can be found in the center cell.
+As Bazil can cause fear, it is advised to clear both of the other cells first.
+
+
+== Progression ==
+ [22] The Unsent Letter
+ [22] Bazil Thredd
+ [29D] The Stockade Riots
+ [29] The Curious Visitor
+ [29] Shadow of the Past
+ [31] Look to an Old Friend
+ [31] Infiltrating the Castle
+ [31] Items of Some Consequence
+ [31] The Attack!
+ [31] The Head of the Beast
+ [31] Brotherhood's End
+ [31] An Audience with the King
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,47 @@
+title: Hand of Iruxos (quest)
+revision: 6176667
+part: whole
+quest: 5381
+url: https://warcraft.wiki.gg/wiki/Hand_of_Iruxos_%28quest%29
+
+== Objectives ==
+Retrieve the Demon Box from Thunder Axe Fortress, and return it, along with the Demon Pick to Taiga Wisemane in Shadowprey Village. 
+
+ [Demon Box]
+ [Demon Pick] (provided)
+
+
+== Description ==
+The Burning Blade possesses the Demon Box. Within it lies the powerful Hand of Iruxos. The Burning Blade uses it to open demonic portals at Mannoroc Coven. We must stop the tide of demons entering our world, <name>!
+Use this demon pick on the red crystal in Thunder Axe Fortress to gain access to the Demon Box. 
+
+
+== Rewards ==
+You will receive:
+
+45
+3900 XP
+250 reputation with Thunder Bluff
+
+
+== Progress ==
+<Name>, do you have the Demon Box? 
+
+
+== Completion ==
+Ah, the Demon Box. Give it to me, <class>, and I shall open... and thus reveal to you the Hand of Iruxos. 
+
+
+== Progression ==
+ [38] Hand of Iruxos
+ [38] Portals of the Legion
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

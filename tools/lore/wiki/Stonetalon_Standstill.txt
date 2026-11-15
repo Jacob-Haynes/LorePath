@@ -1,0 +1,51 @@
+title: Stonetalon Standstill
+revision: 6394856
+part: whole
+quest: 25
+url: https://warcraft.wiki.gg/wiki/Stonetalon_Standstill
+
+This quest is a two part quest. First is the gazebo and the second is killing. To explore the gazebo you need to run into it and stand in the glowing light. After that, even prior, you need to kill the 12 mobs listed in the quest. The gazebo is located on the island in the middle of Mystral Lake.
+
+
+== Objectives ==
+Dispatch 12 Befouled Water Elementals at Mystral Lake, due east of the Talondeep Path and southwest of Splintertree Post.
+Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.
+Return to Mastok Wrilehiss at Splintertree Post, Ashenvale.
+
+Befouled Water Elemental slain (12)
+Tideress slain
+Explore Zone
+Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.
+
+
+== Description ==
+If you want to be useful, then why don't you do something about the situation near Talondeep Path?
+The transports between Ashenvale and Stonetalon are at a standstill because of the lake coming alive and attacking anything that gets close... which means anyone on the path. What'd be even more useful than just putting the hammer down on the water elementals there is someone scouting the gazebo on Mystral Lake - the one that has a solid view of the Alliance outpost there.
+You up for being useful?
+
+
+== Rewards ==
+You will receive:
+
+18
+2,000 XP
++250 reputation with Orgrimmar
+
+
+== Progress ==
+You back already? What's the situation out there - all cleared up now, thanks to you?
+
+
+== Completion ==
+Yeah, I heard that someone tore up the lake out there like a dust devil through the Barrens. From the sound of it too, we might be able to set up a possible observation area out there to keep an eye on our Alliance friends. Well, that is if we can keep it on the down low...
+Looks like you ended up being quite useful after all; the transports between here and Stonetalon should have an easier time of it. Take this - you've earned it.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Renamed from Stonetalon Standstill to Simmer Down Now. Quest giver changed from Mastok Wrilehiss to Captain Tarkan. Text quest changed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

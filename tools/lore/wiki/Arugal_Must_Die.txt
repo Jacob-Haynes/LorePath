@@ -1,0 +1,45 @@
+title: Arugal Must Die
+revision: 6851918
+part: whole
+quest: 1014
+url: https://warcraft.wiki.gg/wiki/Arugal_Must_Die
+
+== Objectives ==
+Kill Arugal and bring his head to Dalar Dawnweaver at the Sepulcher.
+
+ [Head of Arugal]
+
+
+== Description ==
+Arugal still resides in Shadowfang Keep. We cannot claim Silverpine as a strategic stronghold for the Dark Lady until Arugal is slain.
+I shall see to it that his magic is eradicated, <name>. But I leave it in your hands to see that Arugal meets the death he so deserves.
+Travel to Shadowfang Keep and put an end to Arugal's foul spells once and for all. Bring to me the vile wizard's head!
+
+
+== Rewards ==
+The following spell will be cast on you:
+
+ [Arcane Intellect] (Rank 2: Increases Intellect by 7.)
+You will receive:
+
+3300 XP
+ [Seal of Sylvanas]
++200 or +500 reputation with Undercity
+
+
+== Progress ==
+With Arugal's death we stand to increase the Dark Lady's stronghold on Lordaeron.
+
+
+== Completion ==
+Silverpine Forest is finally free from the vice of that wretch Arugal. You have done the Dark Lady a great service, <name>. Your tenacity shall be rewarded.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

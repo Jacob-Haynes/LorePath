@@ -1,0 +1,65 @@
+title: Return the Statuette
+revision: 6850664
+part: whole
+quest: 25805
+url: https://warcraft.wiki.gg/wiki/Return_the_Statuette
+
+== Objectives ==
+Bring Karl Boran the Menethil Statuette. 
+
+ [Menethil Statuette] (provided)
+
+
+== Description ==
+After pulling the barrel free from the muck and opening it, a silvery figurine is found packed in fine straw. It depicts a young, long-haired Paladin with hammer upraised.
+This must be the Menethil Statuette! You must now return it to Karl Boran in Menethil Harbor.
+
+
+== Rewards ==
+
+You will also receive:
+
+40
+1,400 XP
++350 reputation with Stormwind
+
+
+== Progress ==
+Do you have the statuette? 
+
+
+== Completion ==
+The captain of the Blind Princess will be relieved to hear this precious cargo has been recovered.  You have well earned this payment for services rendered.
+It is good to see dependable folk like you, especially in trying times such as these. 
+
+
+== Progression ==
+ [10-30] Onwards to Menethil (optional breadcrumb from Slabchisel's Survey)
+Complete all of:
+ [10-30] Assault on Menethil Keep
+From Karl Boran and Derina Rumdnul:
+ [10-30] When Life Gives You Crabs
+Side quest:  [10-30] A Mother's Worries
+ [10-30] Reclaiming Goods
+Side quest:  [10-30] Claws from the Deep
+ [10-30] The Search Continues
+ [10-30] Search More Hovels
+ [10-30] Return the Statuette
+From First Mate Fitzsimmons:
+ [10-30] The Third Fleet
+ [10-30] Cursed to Roam
+ [10-30] The Cursed Crew
+ [10-30] Lifting the Curse
+ [10-30] The Eye of Paleth
+ [10-30] Swiftgear Station (optional breadcrumb to Swiftgear Station)
+
+
+== Patch changes ==
+ Patch 7.0.3 (2016-07-19):  [Boran's Pauldrons] added as a reward.   
+ Patch 4.0.3a (2010-11-23): New version of quest for Cataclysm.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

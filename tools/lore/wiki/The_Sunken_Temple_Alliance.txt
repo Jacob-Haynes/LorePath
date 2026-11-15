@@ -1,0 +1,44 @@
+title: The Sunken Temple (Alliance)
+revision: 6177053
+part: whole
+quest: 3445
+url: https://warcraft.wiki.gg/wiki/The_Sunken_Temple_%28Alliance%29
+
+The Sunken Temple is the first quest in the The Sunken Temple quest chain.
+
+
+== Objectives ==
+Find Marvon Rivetseeker in Tanaris.
+
+
+== Description ==
+I have heard of a place that lies deep below the surface of the earth—banished there by powers greater than I have ever seen.
+If you wish to learn more of this place; the Sunken Temple, seek out a goblin named Marvon Rivetseeker. Much like Troyas and I, he has studied many ancient areas of the world. He was last known to have left his home in Ratchet to study the troll ruins in Tanaris.
+Good luck finding him; he hasn't been heard from in some time.
+
+
+== Rewards ==
+You will gain:
+
+5300 XP (or 31 50 at level 70)
+
+
+== Completion ==
+Yes, the Sunken Temple, I can say that I have seen it with my own eyes. Perhaps you'd like to hear more about it?
+You look like the adventurous type—I know things that may intrigue you...
+
+
+== Progression ==
+ [51D] The Sunken Temple
+ [51] The Stone Circle
+ [51D] Into the Depths &  [51D] Secret of the Circle
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

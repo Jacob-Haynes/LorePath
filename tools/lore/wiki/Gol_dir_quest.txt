@@ -1,0 +1,59 @@
+title: Gol'dir (quest)
+revision: 5619016
+part: whole
+quest: 503
+url: https://warcraft.wiki.gg/wiki/Gol%27dir_%28quest%29
+
+Gol'dir is a Horde quest in a quest chain that takes place in Hillsbrad Foothills and Alterac Mountains. It involves finding and freeing a captive orc from the Syndicate. 
+
+
+== Objectives ==
+Free Gol'dir then return to Krusk in Tarren Mill.
+
+ [Rusted Iron Key]
+Find where Gol'dir is being held
+
+
+== Description ==
+From what I can tell of the documents you procured, Gol'dir is being held in a large Syndicate base to the north, most likely in the Alterac Mountains. He has been held captive far too long and must be freed.
+
+
+== Rewards ==
+You will receive:
+
+2,800 XP
++100 or +250 reputation with Orgrimmar
+
+
+== Progress ==
+Give me the key, <class>, I will undo the lock myself.
+
+
+== Completion ==
+Thank you, <name>. I led the expedition from Durotar under the Warchief's orders, but as you can see, our plans went somewhat awry. They have held me captive here in this town, forcing me to work, hauling burdens, digging...
+What I have suffered is unimportant, however. There is important information you must deliver to whomever is leading our group now.
+
+
+== Notes ==
+Though the objective tells you to return to Krusk, you don't actually need to talk to him after getting the quest. You return to him in the next quest, which Gol'dir gives you.
+Gol'dir is being held in the top room in the inn in Strahnbrad. The building is packed with Syndicate, so it may be best to run through, finish the quest and accept the next one quickly, and run out again. Alternatively, you can die in the building and rez right next to him.
+Jailor Borhuin holds the key. He can be in any of the buildings in Strahnbrad.
+
+
+== Progression ==
+ [22] The Rescue
+ [34] Infiltration
+ [36] Gol'dir
+ [36] Blackmoore's Legacy
+ [42] Lord Aliden Perenolde
+ [40] Taretha's Gift
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

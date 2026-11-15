@@ -1,0 +1,48 @@
+title: Raleigh and the Undercity
+revision: 6347386
+part: whole
+quest: 441
+url: https://warcraft.wiki.gg/wiki/Raleigh_and_the_Undercity
+
+== Objectives ==
+Bring Deliah's Ring to Raleigh.
+
+ [Deliah's Ring] (provided)
+
+
+== Description ==
+Deliah had a husband, Raleigh, who now dwells in the Undercity. If the Deliah who lived in Brill is the one who owned this ring, then Raleigh will know.
+Raleigh is in the Trade Quarter of the Undercity.
+
+
+== Rewards ==
+You will receive:
+
+575 XP (or 3 60 at max level)
++50 or +75 reputation with Undercity
+
+
+== Progress ==
+Do I know you?
+
+
+== Completion ==
+Yes, this ring was my wife's.  Her fate was the fate of all who fail to endure these harsh times.  I feel nothing for her death, nor for the story you tell of her body's abduction.
+Such feelings have long since grown cold within me.  But desire does still burn in my dead heart, <name>.
+Desire for revenge.
+
+
+== Progression ==
+ [16] The Engraved Ring
+ [16] Raleigh and the Undercity
+ [20] A Husband's Revenge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

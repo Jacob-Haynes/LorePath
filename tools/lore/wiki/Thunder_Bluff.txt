@@ -1,0 +1,7 @@
+title: Thunder Bluff
+revision: 6975722
+part: intro
+url: https://warcraft.wiki.gg/wiki/Thunder_Bluff
+
+Thunder Bluff (sometimes spelled as Thunderbluff) is the tauren capital city located in the northern part of the region of Mulgore on the continent of Kalimdor. The entire city is built on bluffs several hundred feet above the surrounding landscape and is accessible by elevators on the southwestern and northeastern sides. Established by the wise chieftain Cairne Bloodhoof and his stalwart tribe, Thunder Bluff overlooks the verdant land of Mulgore from atop a series of windswept mesas. Prior to the construction of the capital, the tauren had lived as nomads for countless generations, often under attack by marauding bands of centaur. With Thunder Bluff’s founding, however, the proud and good-spirited race was finally granted a permanent home.
+The city of many tribes is a hub for tauren, welcoming tradesfolk and artisans of every kind.

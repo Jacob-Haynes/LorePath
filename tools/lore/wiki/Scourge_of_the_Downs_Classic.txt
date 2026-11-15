@@ -1,0 +1,51 @@
+title: Scourge of the Downs (Classic)
+revision: 6176957
+part: whole
+quest: 3523
+url: https://warcraft.wiki.gg/wiki/Scourge_of_the_Downs_%28Classic%29
+
+== Objectives ==
+If you agree to aid Belnistrasz, speak with him again and hand the Oathstone he gave you back to him.
+
+ [Belnistrasz's Oathstone] (provided)
+
+
+== Description ==
+Outstanding! My name is Belnistrasz, and I thank you for rescuing me. I had given myself up for dead... or worse, as a meal for these Scourge-infested vermin. Yes - I said Scourge all right; they've brokered some sort of deal with the Quilboar here, and this nightmare is a result.
+Listen... rather than just flee, I want to make a difference for all of our sakes. Would you be up to helping me out to that end? It's probably dangerous, but you seem to be the type not to worry about that too much.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+370 XP (or a 2 10 compensation at max level)
+
+
+== Progress ==
+I'm not one for politics; I care not if your affiliations are for either Horde or Alliance.  I am more interested in squelching direct and dire threats to all the races... and we have quite a large one in here.
+If you're willing to be a true hero for all people, then hand me the oathstone I have given you as a sign of commitment.  I'm... not from around these parts; an oathstone is important to people of my kind as a bond of agreement.
+
+
+== Completion ==
+Fantastic, I thought you looked to be the heroic type!  We've got our work cut out for us <name>, I'm not going to lie to you.  If we stay focused on the task at hand, we should be able to come out on top.
+Now, let me bring you up to speed on what's been going on...
+
+
+== Notes ==
+Belnistrasz is in a cage behind Mordresh Fire Eye, the skeleton boss in Razorfen Downs.  Talk to him again to start an escort quest. Make sure your whole party completes this quest before accepting the next quest which is the escort quest itself. Failure to do so results in not being able to complete the escort quest.
+This is an escort quest/endurance battle. The quest level (37 elite) may not accurately reflect its difficulty. Due to the spawn rate of the mobs, you might not ever exit the combat phase during this battle, excluding you the opportunity to drink for mana. Ration your mana wisely. A good tip is to read what the escort NPC says to see how far along into the battle you are. One important fact is that it doesn't actually matter how many of the spawns you kill, all that matters is surviving long enough. If you can cycle CCs and tanks properly, you can complete the quest having only killed 5 or 6 monsters.
+
+
+== Progression ==
+ [37D] Scourge of the Downs
+ [37D] Extinguishing the Idol
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

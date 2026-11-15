@@ -1,0 +1,51 @@
+title: Felnok Steelspring (quest)
+revision: 6913551
+part: whole
+quest: 4808
+url: https://warcraft.wiki.gg/wiki/Felnok_Steelspring_%28quest%29
+
+Felnok Steelspring is part of the Dawn's Gambit quest chain.
+
+
+== Objectives ==
+Give Tinkee's Letter to Felnok Steelspring.
+
+ [Tinkee's Letter] (provided)
+
+
+== Description ==
+I have another favor to ask of you.
+My initial study of the essence you collected shows that it might be possible to freeze dragon whelp eggs and preserve them! I want to test this theory, but first I need specially made engineering components. My colleague, Felnok Steelspring, can make them.
+Here, take this letter to Felnok. It tells him what I need. You'll find Felnok in Winterspring, in the town of Everlook.
+
+
+== Progress ==
+It's cold up here! I hope you brought me a blanket!
+
+
+== Completion ==
+That's no blanket! But what have we here? A letter from Tinkee? I wonder what she has to say...
+Ah, she's studying in the Burning Steppes. That makes sense—that's a good source for dragonkin. Oh, but look! It says here that she needs some parts for a device she wants to build. I guess that's where I come in, eh?
+
+
+== Progression ==
+ [52] Broodling Essence
+ [54] Felnok Steelspring
+ [54] Chillwind Horns
+ [54] Return to Tinkee
+ [60R] Tinkee Steamboil (optional?)
+ [60R] Egg Freezing
+ [60R] Egg Collection
+ [60D] Leonid Barthalomew
+ [60D] Betina Bigglezink
+ [60D] Dawn's Gambit
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

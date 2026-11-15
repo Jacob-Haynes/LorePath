@@ -1,0 +1,43 @@
+title: The Orc Report
+revision: 6281296
+part: whole
+quest: 27246
+url: https://warcraft.wiki.gg/wiki/The_Orc_Report
+
+== Objectives ==
+Bring the Spy's Report to Lieutenant Aden in Theramore.
+
+ [Spy's Report] (provided)
+
+
+== Description ==
+Sifting through the loose dirt, the severed hand of an orc is found. And clutched in the hand is a bone-carved tube. And in the tube is a dirt-stained parchment.
+The parchment is written in orcish... and it looks important.
+
+
+== Rewards ==
+You will receive:
+
+700 XP (or 4 20 at max level)
++25 reputation with Stormwind
+
+
+== Progress ==
+Do you have a report to make?
+
+
+== Completion ==
+Hm... I can't read orcish very well, but this looks like a report... written by an orc spy!
+
+
+== Progression ==
+ [15-30] The Orc Report
+ [15-30] Captain Vimes
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Given new ID, numbers adjusted to new leveling path.   
+ Patch 2.3.0 (2007-11-13): Quest ender changed from Theramore Lieutenant.   
+
+
+== External links ==

@@ -1,0 +1,53 @@
+title: The Bloodsail Buccaneers (5)
+revision: 6219457
+part: whole
+quest: 608
+url: https://warcraft.wiki.gg/wiki/The_Bloodsail_Buccaneers_%285%29
+
+== Objectives ==
+Fleet-Master Seahorn in Booty Bay wants you to kill Captain Stillwater, Captain Keelhaul and Fleet Master Firallon. 
+
+Fleet Master Firallon slain
+Captain Keelhaul slain
+Captain Stillwater slain
+
+
+== Description ==
+Blast the nerve of Firallon! He couldn't sail a skiff through Crystal Lake let alone lead an entire fleet against us.
+The Bloodsail Buccaneers will pay for their carelessness. Now that we know their plan of attack, we can counter before they know what hit them.
+But why send the entire fleet to do the work of one brave adventuring party? <name>, take some of your most skilled comrades out to Firallon's landing spot and assassinate the Bloodsail leadership. Their fleet will sink soon after....
+
+
+== Rewards ==
+You will receive:
+
+4850 XP (or 29 40 at level 70)
++350 reputation with Booty Bay
+-350 reputation with Bloodsail Buccaneers
+ [Blackwater Tunic]
+
+
+== Progress ==
+What's the problem, <name>?  We need to attack before the Bloodsail Buccaneers do!
+
+
+== Completion ==
+Ah, what a great day for the Blackwater Raiders! Three cheers to you, <name>! 
+
+
+== Progression ==
+ [41] The Bloodsail Buccaneers
+ [41] The Bloodsail Buccaneers
+ [41] The Bloodsail Buccaneers
+ [42] The Bloodsail Buccaneers
+ [42] The Bloodsail Buccaneers
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,43 @@
+title: The Archivist
+revision: 5896720
+part: whole
+quest: 5251
+url: https://warcraft.wiki.gg/wiki/The_Archivist
+
+== Objectives ==
+Travel to Stratholme and find Archivist Galford of the Scarlet Crusade. Destroy him and burn down the Scarlet Archive.
+
+Archivist Galford slain
+Archive Burned
+
+
+== Description ==
+Anything taken to an extreme is hazardous to our world, <name>. Take for example, the Scarlet Crusade. Do you believe that their blind zealotry serves a greater good? How many innocents have they destroyed in the name of the Light?
+Blasphemers, one and all!
+One in particular interests me, though; the Archivist Galford of Stratholme: A man that watches over the Crusade's most valued documents. Destroy him and burn down his archives! Should you succeed, return to me and be rewarded. 
+
+
+== Rewards ==
+You will receive: 1 80
+
+
+== Completion ==
+Outstanding, <name>! Years of intelligence, lost! The Scarlet Crusade will surely feel this blow in the coming weeks.
+
+
+== Notes ==
+Completing this quest allows you to loot the  [Head of Balnazzar] from Balnazzar, which starts  [60D] The Truth Comes Crashing Down.
+
+
+== Progression ==
+ [60D] The Archivist
+ [60D] The Truth Comes Crashing Down
+ [60D] Above and Beyond
+ [60] Lord Maxwell Tyrosus
+ [60] The Argent Hold
+
+
+== External links ==
+
+Wowhead
+WoWDB

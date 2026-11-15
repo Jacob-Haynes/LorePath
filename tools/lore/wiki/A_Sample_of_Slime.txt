@@ -1,0 +1,49 @@
+title: A Sample of Slime...
+revision: 6029929
+part: whole
+quest: 4293
+url: https://warcraft.wiki.gg/wiki/A_Sample_of_Slime...
+
+== Objectives ==
+Gather Felwood Slime Samples from any of the slimes in Felwood. Then, using the Testing Equipment next to Chemist Fuely in Undercity, see which of your samples are the most corrupt. Bring 5 of the Corrupted Felwood Samples you find to Chemist Fuely. 
+
+ [Corrupted Felwood Sample] (5)
+
+
+== Description ==
+Felwood is a forest far north of the Barrens, even farther than Ashenvale. There, slimes are found all around pools of water blessed by the touch of Fel. The Scourge decimated the area with attacks of Infernals and other demonic magics—the slimes supposedly crept up through the earth during these attacks.
+Gather samples of Felwood slimes and we will use the testing equipment next to me to create a control group for our tests against other samples you gather. 
+
+
+== Rewards ==
+You will receive:
+
+60
+5100 XP (or 30 at level 70)
++250 reputation with Undercity
+
+
+== Progress ==
+I will need at least five corrupted samples for our control group, <name>. Continue to gather Felwood slime samples until you're able to give me that which we'll need. The Lady Sylvanas decrees it... 
+
+
+== Completion ==
+Ah, excellent. These samples will do nicely. I thank you for your help.
+Once we've gathered all the samples of slimes, we'll be able to determine more. I am beginning to suspect that Lady Sylvanas' hunch was not only correct, but more insightful than even she could have predicted. These samples are very interesting. Just seeing how they've reacted with my compounds... hmm, yes, we'll definitely need to investigate further.
+
+
+== Notes ==
+Kill any of the various oozes in Felwood. Each one will drop a  [Felwood Slime Sample].
+Then, return to the Undercity, and use the Testing Equipment (via the repeatable quest  [52] Testing for Corruption - Felwood) on each sample. This turns each Felwood Slime Sample into a  [Corrupt Tested Sample]. Open all the tested samples, which will hopefully give at least 5 Corrupted Felwood Samples for this quest.
+It is recommended to get at least 20 Felwood Slime Samples, and to test them all before turning in this quest. Not every one will result in the required quest item (rate is about 30%), but each will at least contain some junk to sell, or useful consumables, and cannot be tested once this quest is complete.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.2.0 (2004-12-18): Quest related drop items from A Sample of Slime... quest have been reduced in value.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

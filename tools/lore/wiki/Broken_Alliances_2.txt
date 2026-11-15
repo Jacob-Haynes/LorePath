@@ -1,0 +1,62 @@
+title: Broken Alliances (2)
+revision: 6880357
+part: whole
+quest: 793
+url: https://warcraft.wiki.gg/wiki/Broken_Alliances_%282%29
+
+== Objectives ==
+Use the Sign of the Earth to activate the Pillars of Diamond, Opal, and Amethyst and obtain the Runestones.
+Place the runestones in the Seal of the Earth to free Blacklash and Hematus.
+Slay them and return Blacklash's Bindings, the Chains of Hematus, and the Sign of the Earth to Gorn. 
+
+ [Blacklash's Bindings]
+ [Chains of Hematus]
+ [Sign of the Earth] (provided)
+
+
+== Description ==
+The Seal of the Earth is held by three runestones, held in the Pillars of Diamond, Opal, and Amethyst in Lethlor Ravine. Using the Sign of the Earth, you will be able to remove the runestones and unlock the Seal of the Earth.
+Be wary though, <name>, the black drakes Blacklash and Hematus are not to be trifled with. See them dead and return their bindings to me.
+To reach the ravine, travel to the far eastern part of the Badlands. Be careful though, for the ravine is home to countless drakes. 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Blazewind Breastplate]
+ [Prismscale Hauberk]
+ [Warforged Chestplate]
+ [Mindburst Medallion]
+You will also receive:
+
+8500 XP (or 51 at max level)
++150 or +350 reputation with Orgrimmar
+
+
+== Progress ==
+There are few enemies more deadly than dragonkind, and there were few dragons that fought as ferociously as Blacklash and Hematus. 
+
+
+== Completion ==
+The black dragonflight continues to ally with the renegade Blackrock orcs, and both must be brought into line, or removed. With Blacklash and Hematus dead, we can turn our attentions westwards, towards Blackrock Spire. 
+
+
+== Notes ==
+Even though the quest is not considered elite or group, it's recommended to have a small party with you, as both dragons are level 50 (though no longer Elite), are both summoned at the same time, and are surrounded by several Level 44-45 Elite mobs.  
+The Pillar of Diamond is at the northern end of Lethlor Ravine at 83,33. The Pillar of Amethyst and Pillar of Opal are at the southern end at 81,64 and 72,66 respectively.
+The dragons spawn essentially on top of the Seal of the Earth. If they are killed within the Pillar's clickable radius, you may be unable to loot the bodies of Blacklash and Hematus after they are dead due to "interference" from the Pillar  Try to pull them slightly off the Pillar, preferably in a direction away from any of the elite mobs you may not have killed off.
+
+
+== Progression ==
+ [43] Broken Alliances
+ [50] Broken Alliances
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

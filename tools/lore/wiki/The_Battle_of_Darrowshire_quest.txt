@@ -1,0 +1,114 @@
+title: The Battle of Darrowshire (quest)
+revision: 6404678
+part: whole
+quest: 27390
+url: https://warcraft.wiki.gg/wiki/The_Battle_of_Darrowshire_%28quest%29
+
+== Objectives ==
+Place the Relic Bundle at the Darrowshire town square.
+Prevent Davil Lightfire's death until the death of Horgus.
+Prevent Captain Redpath's death until Redpath the Corrupted appears.
+Defeat Redpath the Corrupted.
+Speak with the spirit of Joseph Redpath when he appears at the town square.
+
+Accept Redpath's Forgiveness
+ [Relic Bundle] (provided)
+
+
+== Description ==
+Now, <name>, you will take part in battle of Darrowshire, and you will save Joseph Redpath.
+Place this relic bundle in the Darrowshire town square, and the spirits of Darrowshire will rise. Join their battle and assure that these two things come to pass: Davil must survive beyond the death of Horgus, and Redpath must survive to be corrupted, then defeated.
+After defeating the corrupted Redpath, his spirit will be saved. Speak with him, then return to his daughter Pamela.
+
+
+== Rewards ==
+
+ The subject of this section was removed from World of Warcraft in patch 4.0.3a but is present in Classic.
+
+You will also receive:
+
+4 98
+8,300 XP
+
+
+== Progress ==
+I think I heard ghosts outside. They whisper scary things to me...
+
+
+== Completion ==
+The fighting is over! I heard my daddy whisper to me. He scared away all the ghosts and he says he's coming home! I'm so happy!
+He also said I should welcome you if came to our house, so I made some tea!
+I hope you like lots of sugar!
+
+
+== Notes ==
+Help Joseph Carlin's troops defend Darrowshire!
+Darrowshire Defender yells: Darrowshire, to arms!  The Scourge approach!
+Davil Lightfire yells: Do not lose hope, Darrowshire!  We will not fall!
+Protect Davil Lightfire!
+Horgus the Ravager yells: The Light burns bright in you, Davil.  I will enjoy snuffing it out!
+Horgus the Ravager has appeared!  Kill him quickly!
+Darrowshire Defender yells: Horgus is slain!  Take heart, defenders of Darrowshire!
+Captain Redpath yells: Defenders of Darrowshire!  Rally!  We must prevail!
+Captain Redpath has appeared on the battlefield!  Protect him!
+Marduk the Black says: Redpath!  Your life ends, here and now!
+Captain Joseph Redpath has been corrupted!  Kill him quickly!
+Redpath the Corrupted yells: Darrowshire!  You are doomed!
+Speak with Joseph Redpath in the center of Darrowshire.
+Darrowshire Defender yells: The Scourge are defeated!  Darrowshire is saved!
+Davil and Joseph have gossip:
+
+Upon completing the quest:
+
+Joseph Redpath comes to Pamela.
+Joseph Redpath says: Pamela?  Are you there, honey?
+Pamela Redpath says: Daddy!
+Pamela Redpath says: Daddy!  You're back!
+Pamela Redpath says: Let's go play!  No, tell me a story, Daddy! No... let's go pick flowers!  And play tea time!  I found my dollie, did I tell you?
+Joseph Redpath says: Hahah!
+Pamela Redpath says: I missed you so much, Daddy!
+Joseph Redpath says: I missed you too, honey.  And I'm finally home...
+
+
+== Progression ==
+
+Retail
+ [15-30] Little Pamela
+Both of the following, in either order:
+ [15-30] Pamela's Doll
+ [15-30] I'm Not Supposed to Tell You This
+ [15-30] Uncle Carlin
+ [15-30] A Strange Historian
+All of the following, in any order:
+ [15-30] Villains of Darrowshire
+ [15-30] Heroes of Darrowshire
+ [15-30] Marauders of Darrowshire
+ [15-30] The Battle of Darrowshire
+ [15-30] Hidden Treasures
+
+Classic
+
+ [55] Little Pamela or  [55] Sister Pamela
+ [55] Pamela's Doll
+Complete both:
+ [56] Auntie Marlene
+ [56] A Strange Historian
+ [56] The Annals of Darrowshire
+ [56] Uncle Carlin
+ [55] Defenders of Darrowshire
+ [56] Brother Carlin
+All of the following, in any order:
+ [57] Villains of Darrowshire
+ [56] Heroes of Darrowshire
+ [60] Marauders of Darrowshire
+ [60] Return to Chromie
+ [60] The Battle of Darrowshire
+ [60] Hidden Treasures
+
+
+== Patch changes ==
+ Hotfix (2010-11-30): The event now properly resets after a failed attempt and the Relic Bundle will correctly trigger the event again after a failed attempt. 
+ Patch 4.0.3a (2010-11-23): Level and rewards updated. Last objective sentence shortened from: "Speak with the spirit of Joseph Redpath when he appears at the town square, then speak with Pamela at her home."   
+
+
+== External links ==

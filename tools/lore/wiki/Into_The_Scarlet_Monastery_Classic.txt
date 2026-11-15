@@ -1,0 +1,56 @@
+title: Into The Scarlet Monastery (Classic)
+revision: 6971443
+part: whole
+quest: 1048
+url: https://warcraft.wiki.gg/wiki/Into_The_Scarlet_Monastery_%28Classic%29
+
+== Objectives ==
+Kill High Inquisitor Whitemane, Scarlet Commander Mograine, Herod, the Scarlet Champion and Houndmaster Loksey and then report back to Varimathras in the Undercity.
+
+High Inquisitor Whitemane slain
+Scarlet Commander Mograine slain
+Herod slain
+Houndmaster Loksey slain
+
+
+== Description ==
+Whilst the Dark Lady tends to the pressing issue of the Lich King's advance to the north, I am seeing to it that matters closer to home are being taken care of accordingly.
+No doubt, the human pests who call themselves the Scarlet Crusade are proving to be the sharpest thorn in our side domestically. Tirisfal Glades is literally crawling with the little red ants.
+Travel to the Monastery, <class>, and lay waste to High Inquisitor Whitemane and her top lieutenants.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Sword of Omen]
+ [Prophetic Cane]
+ [Dragon's Blood Necklace]
+You will also receive:
+
+7,200 XP
++200 or +500 reputation with Undercity
+
+
+== Progress ==
+Perhaps I was not explicit in my orders, <class>. I want High Inquisitor Whitemane killed once and for all. And while you're at it, take out her top brass as well.
+Kill that zealot, Scarlet Commander Mograine. Lay waste to Herod, the Scarlet Champion. And slaughter Houndmaster Loksey and his filthy mutts too.
+Now begone!
+
+
+== Completion ==
+You have served the Dark Lady well, <class>. 'Twas no small task I asked of you.
+Your loyalty to the Forsaken has been noted. And your tenacity in combat will be remembered.
+
+
+== Notes ==
+This quest takes place in the library (Houndmaster Loksey), Armory (Herod), and Cathedral (Scarlet Commander Mograine and High Inquistitor Whitemane). You can complete this quest without even running the graveyard. You will likely complete this quest as you level, accomplishing it around level 36-37, so don't worry about completing it all at once, and don't expect to be able to run all four instances with a graveyard level group.
+
+
+== Patch changes ==
+ Patch 3.3.2 (2010-02-01): Removed, replaced by a new version.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

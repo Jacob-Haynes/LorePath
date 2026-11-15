@@ -1,0 +1,56 @@
+title: Unending Torment (5)
+revision: 6914806
+part: whole
+quest: 97292
+url: https://warcraft.wiki.gg/wiki/Unending_Torment_%285%29
+
+== Objectives ==
+Inject the Hissing Serum into the system above Othmar's body for Master Apothecary Faranell.
+
+Hissing Serum administered
+Hissing Serum (provided)
+
+
+== Description ==
+I have concocted a lovely serum that our new guest is sure to find quite... stimulating.
+Take this. Feed it into the workings dripping from above him. Let's see if we can't show him why it's in his best interest to serve loyally.
+And try not to drop it. I can't afford a new assistant.
+
+
+== Rewards ==
+You will receive:
+
+13
+1,650 XP
+
+
+== Progress ==
+For Othmar's crimes against the Dark Lady, placing him under that oozing specimen is the least he deserves.
+And it's funny...
+
+
+== Completion ==
+Excellent. We'll let his flesh simmer for awhile. Give him time to acclimate to his new home.
+I have no further use for the wretch for now, but we shall keep an eye on him. I have many plans for Othmar's future.
+
+
+== Progression ==
+ [21D] Abominable Creatures
+ [22D] A Frightened Request
+ [22D] Bloodied Insignia
+ [22D] Crest of Lordaeron
+ [22D] Light's Justice
+ [22D] Remember That I Love You →  [22] Remember That I Love You
+ [12] A Recipe For Death →  [15] A Recipe For Death →  [18] A Recipe For Death →  [22D] The New Plague
+ [11] Rear Guard Patrol →  [13E] Rear Guard Patrol →  [22D] The Wrath of Rath'mael
+ [21D] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

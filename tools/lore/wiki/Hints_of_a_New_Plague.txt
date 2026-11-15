@@ -1,0 +1,49 @@
+title: Hints of a New Plague?
+revision: 5605711
+part: whole
+quest: 659
+url: https://warcraft.wiki.gg/wiki/Hints_of_a_New_Plague%3F
+
+== Objectives ==
+Find Quae and Kinelory near the Go'Shek Farm in the Arathi Highlands.
+
+
+== Description ==
+Hail, and well met, <name>. I lead a group of adventurers investigating odd happenings in this area.
+My cousin in Hillsbrad recently put down his dog Stanley because the animal mystically grew to an immense size and savagely attacked anyone who came near him.
+I believe the undead are involved, and we're looking for signs to prove as much.
+Two of my companions, Quae and Kinelory, headed to the Go'Shek Farm in the Arathi Highlands, and haven't checked in for days. Find them for me? I grow concerned.
+
+
+== Rewards ==
+You will receive:
+
+1300 XP (or 7 80 at level 70)
++75 reputation with Stormwind
+
+
+== Completion ==
+Try and stay as quiet as possible, traveler.
+Orcs don't take too well to being spied on, and there is more to this farm than meets the eye.
+
+
+== Notes ==
+Stanley was actually poisoned by Apothecary Lydon at Tarren Mill and not Apothecary Jorell at Go'Shek Farm.
+
+
+== Progression ==
+ [33] Hints of a New Plague?
+ [36] Hints of a New Plague?
+ [36] Hints of a New Plague?
+ [37] Hints of a New Plague?
+ [37] Hints of a New Plague?
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

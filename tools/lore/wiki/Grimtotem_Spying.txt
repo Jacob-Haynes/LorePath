@@ -1,0 +1,71 @@
+title: Grimtotem Spying
+revision: 6824237
+part: whole
+quest: 5064
+url: https://warcraft.wiki.gg/wiki/Grimtotem_Spying
+
+In Grimtotem Spying, you are sent to locate three secret notes at the Grimtotem village, Darkcloud Pinnacle.
+
+
+== Objectives ==
+Locate and retrieve the three Secret Notes in Darkcloud Pinnacle.
+
+ [Secret Note #1]
+ [Secret Note #2]
+ [Secret Note #3]
+
+
+== Description ==
+<Name>, you have served us well in the past, so I now entrust to you an important mission. The Grimtotem Clan is up to something secretive. Three agents of unknown origin were seen visiting the Grimtotem over the recent weeks. We discovered that separate chests in Darkcloud Pinnacle hold these guarded messages.
+<Name>, if you succeed in this dangerous mission, I will reward you in kind.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Desert Shoulders]
+ [Tundra Boots]
+ [Grimtoll Wristguards]
+You will also receive:
+
+2,300 XP
++100 reputation with Thunder Bluff
+
+
+== Progress ==
+Have you discovered what the Grimtotem are up to?
+
+
+== Completion ==
+Great Spirit Totem! This is dire news indeed. I must begin to plan for whatever may come.
+<Name>, as promised, here is your reward for your brave service.
+
+
+== Notes ==
+
+The notes are located in chests found on Darkcloud Pinnacle in Thousand Needles. To get to Darkcloud Pinnacle, head south down the road from The Great Lift to where it splits. Turn left and walk a few paces, looking to your left. You should see a large blue totem and a path leading up. Follow the path up to reach Darkcloud Pinnacle. The coordinates for the beginning of the path are 31:36.
+Once you have reached the top, you must find the three chests. Two are on separate rocks which can only be reached by bridges from the main village rock. The other one is in the main village, in the biggest building. Coordinates are:
+ [Secret Note #1]: 
+ [Secret Note #2]: 
+ [Secret Note #3]: 
+Other quests you may want to do along with this one, since they also take place in Darkcloud Pinnacle:
+
+ [28] Arikara - this is part of a chain that begins with  [26] Alien Egg in Freewind Post
+ [29] Wanted - Arnak Grimtotem - Get from a wanted sign in Freewind Post
+ [29] Free At Last - Pick this up on Darkcloud Pinnacle after defeating Arnak Grimtotem from Lakota Windsong.
+
+
+== Progression ==
+ [25] Message to Freewind Post
+ [25] Pacify The Centaur
+ [28] Grimtotem Spying
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,58 @@
+title: Elixir of Pain (2)
+revision: 6459678
+part: whole
+quest: 502
+url: https://warcraft.wiki.gg/wiki/Elixir_of_Pain_%282%29
+
+== Objectives ==
+Feed the Elixir of Pain to Stanley.
+
+ [Elixir of Pain] (provided)
+
+
+== Description ==
+Ah, nothing like the smell of fresh blood in the foothills!
+Now we'll mix in a touch of this and a little of that and let the real fun begin! What I have created with this blood, I like to call an Elixir of Pain. If my calculations are correct this concoction could be the start of something very beautiful for Lady Sylvanas. But what we need is a test.
+Take this elixir out to the northern farm in Hillsbrad Fields to the southwest. Let's see how Farmer Ray's little dog Stanley likes this "treat."
+
+
+== Rewards ==
+You will receive:
+
+1450 XP
++75 or +150 reputation with Undercity
+
+
+== Progress ==
+Woof?
+
+
+== Completion ==
+You pour some of the elixir into your hand and hold it before Stanley's mouth.
+
+
+== Notes ==
+Stanley is outside the large house on the north side of the fields.
+Upon completion
+Stanley sniffs the elixir then eagerly digs in!
+Stanley transforms into a level 24 wolf.
+Make sure to kill him, as he's worth about 700 experience.
+
+
+== Trivia ==
+During the original beta, the elixir had to be placed in Stanley's Dish.
+
+
+== Progression ==
+ [24] Elixir of Pain
+ [24] Elixir of Pain
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

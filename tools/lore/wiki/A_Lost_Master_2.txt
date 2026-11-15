@@ -1,0 +1,64 @@
+title: A Lost Master (2)
+revision: 6595151
+part: whole
+quest: 993
+url: https://warcraft.wiki.gg/wiki/A_Lost_Master_%282%29
+
+== Objectives ==
+Find Volcor in Darkshore and give him the Enchanted Moonstalker Cloak.
+
+ [Enchanted Moonstalker Cloak] (provided)
+
+
+== Description ==
+The cloak is complete, <name>. The time has come to find Volcor. I can only hope we are in time.
+The cloak's magic, once invoked, will not last long; perhaps five minutes. It will be up to you to know when to use it: I would suggest waiting until you find Grimclaw.
+If what he has told me is true, you will find his master in a cave south of here. Grimclaw will be alongside the road waiting for you. Signal to him by waving when you see him, and he'll point the way towards his master.
+
+
+== Rewards ==
+You will receive:
+
+775 XP
++75 reputation with Darnassus
+
+
+== Completion ==
+Wonderful! Terenthis found someone to help me.
+And look, a moonstalker cloak...<cough> Oh... that hurts. Thank you, <name>.
+The furbolgs wounded me before I managed to evade them. Give me a moment, and I should be fine to talk some more.
+
+
+== Notes ==
+Upon accept
+Terenthis begins to cast a spell as you take the cloak from him.
+Terenthis says: Go now, <name>. Find Volcor... and remember, the magics protecting you will fail if you interact with anyone, save for talking.
+It really does mean /wave at Grimclaw, for him to point you to where Volcor is hiding.
+
+
+== Progression ==
+
+ [14] How Big a Threat?
+The questline branches in two:
+
+Terenthis:
+ [14] How Big a Threat?
+ [20] A Lost Master
+ [20] A Lost Master
+ [20] Escape Through Stealth or [22] Escape Through Force
+ [19] Trek to Ashenvale
+
+Thundris Windweaver:
+ [15] Thundris Windweaver
+ [15] The Cliffspring River
+ [18] The Blackwood Corrupted
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

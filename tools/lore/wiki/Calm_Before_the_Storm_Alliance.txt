@@ -1,0 +1,58 @@
+title: Calm Before the Storm (Alliance)
+revision: 6710953
+part: whole
+quest: 4508
+url: https://warcraft.wiki.gg/wiki/Calm_Before_the_Storm_%28Alliance%29
+
+This quest is part of the Rise of the Silithid quest chain.
+
+
+== Objectives ==
+Bring Pestlezugg's Un'Goro Report to Gracina Spiritmight in Darnassus.
+
+ [Pestlezugg's Un'Goro Report] (provided)
+
+
+== Description ==
+My recent findings and the knowledge we have gained here today needs to reach hands that can quite possibly do something with it. As resourceful as we are here in Gadgetzan, we can't do this alone.
+Take my latest report back to Gracina Spiritmight in Darnassus; she's still at the Temple of the Moon, is she not? She's got friends who are Alliance bigwigs; if we can get them involved in this <name>, then we just might make it out of this alive.
+
+
+== Rewards ==
+You will receive:
+
+550 XP (or 3 30 at max level)
+
+
+== Progress ==
+They are fools, <name>! They cannot even think to look around them for a greater threat; their irrational hatred of the Horde will be the end of us all. I do not know how much more proof I can give them of the silithid threat short of dropping them in one of the hives so they can see for themselves!
+I'm sorry, you bring news for my attention?
+
+
+== Completion ==
+While I genuinely appreciate this, I am not sure what good it will do us. The Alliance ignores threats from any source other than the Horde, and even our own leaders here in Darnassus cannot agree on what exactly this threat is. Fools like Fandral Staghelm theorize that the silithid are nothing like the threat from the ancient past I claim them to be. His ignorance is only surpassed by his arrogance.
+You have seen the threat yourself, <name>. We must remain committed to defeating the silithid!
+
+
+== Progression ==
+ [46] Gadgetzan Water Survey
+ [47] Noxious Lair Investigation
+ [48] The Scrimshank Redemption
+ [48] Insect Part Analysis
+ [48] Insect Part Analysis
+ [48] Rise of the Silithid
+ [53] March of the Silithid
+ [53] Bungle in the Jungle
+ [54G] Pawn Captures Queen
+ [54] Calm Before the Storm
+ [54] Calm Before the Storm
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

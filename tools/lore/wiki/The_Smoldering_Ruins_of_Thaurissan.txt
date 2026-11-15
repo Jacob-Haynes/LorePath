@@ -1,0 +1,63 @@
+title: The Smoldering Ruins of Thaurissan
+revision: 5749402
+part: whole
+quest: 3702
+url: https://warcraft.wiki.gg/wiki/The_Smoldering_Ruins_of_Thaurissan
+
+== Objectives ==
+Listen to Royal Historian Archesonus recant the history of Thaurissan.
+
+
+== Description ==
+Would you like to hear a brief history of the Dark Iron dwarves?
+
+
+== Progress ==
+Allow me to finish telling you the story of Thaurissan.
+
+
+== Completion ==
+Shall we proceed?
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+5450 XP (or 33 at level 70)
+10 reputation with Ironforge
+
+
+== The history of Thaurissan ==
+ I am ready, Historian Archesonus.
+
+Hundreds of years ago, the great city of Thaurissan stood proudly in a lush expanse of land that is now the dilapidated Burning Steppes.
+Thaurissan was home to the nation of Dark Iron dwarves and at the time, in the midst of a civil war among the dwarven nation at large.
+You see, that area of the world was at one point in time part of the Redridge Mountains - until the day that Thaurissan was consumed by a gigantic explosion.  The city lay in ruin, the surrounding areas reduced to an ashy wasteland.
+ That is tragic.  How did this happen?
+
+We do not know.
+The Dark Irons that did survive made their way into the mountain and began rebuilding their city.
+From the ashes of Thaurissan then rose Blackrock Spire and the new Dark Iron nation.  Additional fortifications were made within the Searing Gorge, in the area known as the Cauldron.
+Stories of an ancient evil that controlled the kingdom of Dark Irons began to circulate.
+ Interesting, continue please
+
+Recently, the Dark Irons have been seen on the surface world with greater regularity.  Fortresses have been built in the Badlands.  Massive exploratory forces have been sent into the depths of Uldaman in search of ancient lore.  They have even invaded our own homeland, striking at our dam near the loch.
+ Unbelievable!  How dare they??
+
+We need adventurers to assist us, <name>.  Will you help?
+ Of course I will help!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== Progression ==
+ [54] The Smoldering Ruins of Thaurissan
+ [54] The Smoldering Ruins of Thaurissan
+
+
+== External links ==
+
+Wowhead
+WoWDB

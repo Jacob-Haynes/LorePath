@@ -1,0 +1,58 @@
+title: Light's Justice (quest)
+revision: 6971660
+part: whole
+url: https://warcraft.wiki.gg/wiki/Light%27s_Justice_%28quest%29
+
+== Objectives ==
+Collect 25 Intact Limbs within The Ruins of Lordaeron for Morbin Lightbane in the Undercity.
+
+Intact Limbs (25)
+
+
+== Description ==
+As a paladin of the Forsaken, it is my duty to exact the will of our Dark Lady while tending to our people's needs. We are fortunate with an opportunity to accomplish both.
+Above the Undercity, the scourge still roam unchecked in great numbers. Our forces dwindle trying to reclaim our land, and decaying flesh cannot be reknit. Not without replacements.
+Would that our glorious captain Garek Bandarion still be with us, I know what he would wish. To finish what he started and heal our kin. For Lordaeron!
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [The Stitcher]
+ [Spare Part Bindings]
+You will also receive:
+
+45
+4,600 XP
++150 reputation with Undercity
+
+
+== Progress ==
+What remains of the invading scourge? Have you managed to find suitable replacement parts?
+
+
+== Completion ==
+Let those who fall from the Banshee Queen's grace meet our justice!
+With these parts, our brothers and sisters have hope to see another day. You do Captain Bandarion proud.
+
+
+== Progression ==
+ [21D] Abominable Creatures
+ [22D] A Frightened Request
+ [22D] Bloodied Insignia
+ [22D] Crest of Lordaeron
+ [22D] Light's Justice
+ [22D] Remember That I Love You →  [22] Remember That I Love You
+ [12] A Recipe For Death →  [15] A Recipe For Death →  [18] A Recipe For Death →  [22D] The New Plague
+ [11] Rear Guard Patrol →  [13E] Rear Guard Patrol →  [22D] The Wrath of Rath'mael
+ [21D] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,46 @@
+title: A Grim Task
+revision: 6959823
+part: whole
+quest: 304
+url: https://warcraft.wiki.gg/wiki/A_Grim_Task
+
+== Objectives ==
+Kill Balgaras the Foul and bring his ear to Longbraid the Grim outside of Dun Modr.
+
+ [Ear of Balgaras]
+
+
+== Description ==
+Many of my soldiers died in the battle of Dun Modr. My own brother perished when the West Bridge over the Thandol Span was destroyed. Aye, the Dark Iron dwarves are a devilish breed. From what Roggo was able to gather, the leader of this band of thugs in the Wetlands is a warlock named Balgaras the Foul. He is quite a coward however. He sends his soldiers to do his bidding but stays elusive, avoiding danger.
+If you can find the spineless scum, slay him and bring me his ear. I will reward you, <class>.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Gold Lion Shield]
+ [Tranquil Ring]
+ [Fury Ring] 
+You will also receive:
+
+3,350 XP (or 20 40 at max level)
++100 or +250 reputation with Ironforge
+
+
+== Progress ==
+Were you able to locate Balgaras the Foul yet, <class>?  He has been evading us for quite some time.
+
+
+== Completion ==
+Balgaras the Foul is finally dead.  While his death will not bring back the many innocent dwarves who died needlessly by his hand, it will help to restore peace of mind to those who survived.  With Balgaras dead, the remaining Dark Iron scum should be easy enough to manage.  Now, we must wipe them out before a new leader is sent to these parts.
+You have done well, <class>.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

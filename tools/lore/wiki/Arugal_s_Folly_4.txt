@@ -1,0 +1,61 @@
+title: Arugal's Folly (4)
+revision: 6977201
+part: whole
+quest: 99
+url: https://warcraft.wiki.gg/wiki/Arugal%27s_Folly_%284%29
+
+== Objectives ==
+Bring 6 Pyrewood Shackles to Dalar Dawnweaver at the Sepulcher.
+
+ [Pyrewood Shackle] (6)
+
+
+== Description ==
+As my understanding of Arugal's magic grows so does my disdain for the hapless fool. I am close to completing my research on his so called remedy.
+My knowledge will be complete when I learn what enchantment is causing the strange behavior going on in Pyrewood Village. By day, the peasants appear to be Human. But when the sun goes down the townsfolk turn into Moonrage Worgen.
+I need to draw energy from the enchanted shackles Arugal cast on them. Bring to me six enchanted Pyrewood Shackles, <name>.
+
+
+== Rewards ==
+The following spell will be cast on you:
+
+ [Arcane Intellect] (Rank 2: Increases Intellect by 7.)
+You will be able to choose one of these rewards:
+
+ [Logsplitter]
+ [Bonegrinding Pestle]
+ [Cinder Wand]
+You will also receive:
+
+1050 XP (or 6 60 at max level)
++100 or +250 reputation with Undercity
++88 reputation with Orgrimmar
++63 reputation with Silvermoon City
++62 reputation with Thunder Bluff
+
+
+== Progress ==
+Have you secured the Pyrewood Shackles yet, <name>?
+
+
+== Completion ==
+Your persistence is commendable.  With the knowledge you helped me gather, Arugal will fall and his reckless magic shall be undone.  Cheers to you, <name>.
+
+
+== Progression ==
+ [10] Prove Your Worth
+ [11] Arugal's Folly
+ [14] Arugal's Folly
+ [15] Arugal's Folly
+ [15] Arugal's Folly
+ [16] Arugal's Folly 
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

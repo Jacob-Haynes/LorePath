@@ -1,0 +1,55 @@
+title: Search for Tyranis
+revision: 5615546
+part: whole
+quest: 1439
+url: https://warcraft.wiki.gg/wiki/Search_for_Tyranis
+
+== Objectives ==
+Find Tyranis Malem in Desolace.
+
+ [Tyranis' Pendant]
+
+
+== Description ==
+We were brought here after the orcs slaughtered all our guards and servants. Oh, the terrible things they did to them!  I thought surely they would kill us right there and then, but it became obvious they had other plans.
+Tyranis attempted to speak to them.  I think he wanted to impress them with his knowledge of the arcane... I'm not sure why.
+Please, I can't leave here until I know what's happened to my brother.  Find him, then come back for me when his fate is known.
+
+
+== Rewards ==
++250 Darnassus reputation
+2650 XP
+
+
+== Progress ==
+I fear Tyranis will attempt to learn the Burning Blade's secrets and count himself among their kind if they allow it—he has always adored the power magic brings to those who are seduced by it.
+I'm not sure I could endure returning home to my family with news of Tyranis' spirit flirting with such dangers. It's a terrible enough crime
+among my kind to pursue such things, but to become that which we attempt to protect ourselves from, well, that's apprehensible.
+
+
+== Completion ==
+This is terrible! But I suppose it was necessary. If it wasn't by your hand, it would have surely been by that of my people's. I suppose I should thank you—please forgive me if it doesn't seem sincere. I mean no offense.
+With the knowledge of my brother's fate in hand, it seems the time for my escape has come. If you are still willing, I will accept your aid in escaping this horrible place.
+When you are ready, we can make our way to safety.
+
+
+== Notes ==
+Tyranis Malem is at the Thunder Axe Fortress section of Desolace, in the building to the left of the entrance.
+
+
+== Progression ==
+ [33] Vahlarriel's Search
+ [33] Vahlarriel's Search
+ [33] Vahlarriel's Search
+ [33] Search for Tyranis
+ [33] Return to Vahlarriel
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

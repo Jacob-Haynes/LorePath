@@ -1,0 +1,51 @@
+title: Lost Relic Carry
+revision: 6911823
+part: whole
+quest: 95810
+url: https://warcraft.wiki.gg/wiki/Lost_Relic_Carry
+
+== Objectives ==
+Bring the Titan Relic to Prospector Whelgar in the Wetlands excavation site.
+
+ [Titan Relic]
+
+
+== Description ==
+You pick up a fractured piece of the rock-mech automaton. It has a texture unlike anything you've touched before, a composite material of unknown makeup. This is certainly bound to be more 'device' than 'debris.'
+Prospector Whelgar himself at his excavation site might have something useful to share about the relic.
+
+
+== Rewards ==
+You will receive:
+
+1,250 XP
+
+
+== Progress ==
+Here for the dig?
+
+
+== Completion ==
+Ah, ye ventured all the way in and survived to tell the tale?! Let's have a look at what ye carry there. 
+Well, knowing what ye went through to bring it back to me, I think it warrants a certain reverence for your artifact.
+
+
+== Progression ==
+ [21] Daily Delivery →  [22] Young Crocolisk Skins →  [28D] Highland Hides and  [26] Apprentice's Duties
+ [31D] Horrors in the Highland
+ [31D] Seeking Caitlin →  [31D] Lost in the Thicket Things →  [31D] Heartwoven
+ [31D] Lost Relic Carry →  [31D] Prehistoric Prism
+ [31D] Songblade Search →  [31D] Fallen in the Fen
+ [31D] Changing Tastes
+ [31D] Elder Knowledge →  [31D] Earthen Echo
+ [31D] Dragonmaw Rumors →  [31D] Open the Maw
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

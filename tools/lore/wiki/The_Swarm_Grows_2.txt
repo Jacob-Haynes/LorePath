@@ -1,0 +1,51 @@
+title: The Swarm Grows (2)
+revision: 6230338
+part: whole
+quest: 1146
+url: https://warcraft.wiki.gg/wiki/The_Swarm_Grows_%282%29
+
+The Swarm Grows is Horde quest in which players are sent by Belgrom Rockmaul to investigate the growing Silithid threat in Thousand Needles. It is the second quest in a short chain involving the Silithid in Thousand Needles, which starts with  [33] The Swarm Grows with Korran at the Crossroads in The Barrens.
+
+
+== Objectives ==
+Deliver Belgrom's Sealed Note to Moktar Krin in Thousand Needles.
+
+ [Belgrom's Sealed Note] (provided)
+
+
+== Description ==
+So, Korran has come to a similar conclusion about these insects—they seem to be a larger threat than we assumed.
+A few days ago a hunter returned to me from Thousand Needles nearly dead. He was with a raiding party sent to drive a dwarven excavation team out of the Shimmering Flats. During the attack, more of these insects erupted from a cave in the dig site and nearly killed the party.
+They were led by Moktar Krin, and they've taken refuge on the border of the Shimmering Flats. Bring him this note.
+
+
+== Rewards ==
+You will receive:
+
+1,950 XP
++75 or +150 reputation with Orgrimmar
+
+
+== Completion ==
+Don't mind the thundering echoes off the mountains' walls. The goblins and gnomes are out among the Flats racing one another in atrocities created by what they call science. There are bigger threats here in Thousand Needles, one of which killed more than half my war party.
+But we remain here until we hear word from Belgrom in Orgrimmar. Until then, we hold our position here, and stay vigilant.
+
+
+== Notes ==
+Head to Thousand Needles and follow the road all the way to the east until you get to the Shimmering Flats. Just before entering the flats, head south and you will see a little orc camp on the edge of the flats - this is Ironstone Camp. Moktar Krin is at this camp (67,63).
+
+
+== Progression ==
+ [33] The Swarm Grows
+ [33] The Swarm Grows
+ [35] The Swarm Grows
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,52 @@
+title: Becoming a Parent
+revision: 6296061
+part: whole
+quest: 4298
+url: https://warcraft.wiki.gg/wiki/Becoming_a_Parent
+
+Becoming a Parent is the final quest of the Freedom for All Creatures quest chain. The chain starts with  [47] Freedom for All Creatures in Feralas.
+
+
+== Objectives ==
+Speak to Agnar Beastamer in the Hinterlands.
+
+
+== Description ==
+Whoa, it was a lot more ready than I thought...
+
+
+== Rewards ==
+You will receive:
+
+ [Sprite Darter Egg]
++625 XP
++25 reputation with Darnassus
++25 reputation with Wildhammer Clan
+
+
+== Completion ==
+Here, take the egg... better you have it so it bonds to you and looks to you to be its <dadda/momma>.
+Congrats, <name>. You're a parent... kinda.
+
+
+== Progression ==
+
+ [47] Freedom for All Creatures
+ [47] Doling Justice
+ [47] Doling Justice
+ [47] An Orphan Looking For a Home
+ [47] A Short Incubation
+ [47] The Newest Member of the Family
+ [47] Food for Baby
+ [48] Becoming a Parent
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.0.3 (2007-01-09): No longer awards the Wildhammer Clan reputation.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

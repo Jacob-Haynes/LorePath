@@ -1,0 +1,44 @@
+title: The Platinum Discs (neutral)
+revision: 6554281
+part: whole
+quest: 2278
+url: https://warcraft.wiki.gg/wiki/The_Platinum_Discs_%28neutral%29
+
+== Objectives ==
+Speak with stone watcher and learn what ancient lore it keeps. Once you have learned what lore it has to offer, activate the Discs of Norgannon. 
+
+Learn what lore that the stone watcher has to offer
+
+
+== Description ==
+The centerpieces of this treasure chamber are four huge platinum discs, each adorned with numerous sigils of an unknown origin. Touching them makes your hand tingle. Just after touching the discs, the visage of a large stone watcher springs forth.
+"Salutations. I am a keeper of knowledge. The Creators' synthesis of the Earthen has been chronicled and stored here for this world in the Discs of Norgannon."
+You have uncovered a wealth of previously undiscovered worldly lore!
+
+
+== Rewards ==
+You will receive:
+
+4200 XP (or 25 20 at max level)
+
+
+== Completion ==
+Following the instructions of the stone watcher, you once again access the Discs of Norgannon now that you have learned about the history of the Earthen, the troggs, and the dwarves. A faint, brief hum is heard from within the discs. The stone watcher then speaks:
+"The discs have now been synthesized. Access the Discs of Norgannon once more to receive your personal copy." 
+
+
+== Progression ==
+ [15-30D] The Platinum Discs
+ [47] The Platinum Discs /  [47D] The Platinum Discs
+ [47] The Platinum Discs /  [47] The Platinum Discs
+ [50] Portents of Uldum
+ [50G] Seeing What Happens
+ [50] The Stone Watcher
+ [50] Return to Ironforge /  [50] Return to Thunder Bluff
+ [50] A Future Task
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,48 @@
+title: Return to Tymor
+revision: 5622172
+part: whole
+quest: 3461
+url: https://warcraft.wiki.gg/wiki/Return_to_Tymor
+
+== Objectives ==
+Return Tymor's Drawing Kit to him in Ironforge. 
+
+ [Drawing Kit] (provided)
+
+
+== Description ==
+Tymor didn't give me anything to pay you with, so I suggest you take it up with him when you get back to Ironforge. I'm sure he'll still be in his place in the Mystic Ward. Just go knockin' and make sure he pays you good. This place ain't no picnic... that's for sure.
+Thanks again for helping him out though, and good luck.
+Oh, and I don't need the drawing kit. Why don't you just bring it back to Tymor when you go to see him?
+
+
+== Rewards ==
+
+7600 XP (or 45 at level 70)
++500 reputation with Ironforge
+
+
+== Progress ==
+You're back! Excellent. Do you have my drawing kit also?
+
+
+== Completion ==
+Wonderful! I'm so glad to hear it.
+I'm really excited to get to my tower and go over those rubbings. I'm so envious of you... going to a place like Azshara. That's any student of the arcane's dream, I would guess.
+Well, we never spoke about any kind of reward since you were just working for the Explorer's League, but you deserve something.
+
+
+== Progression ==
+ [52] Passing the Burden
+ [52] Arcane Runes
+ [52] Return to Tymor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

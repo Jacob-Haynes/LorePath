@@ -1,0 +1,53 @@
+title: Ruuzel (Classic)
+revision: 5578262
+part: whole
+quest: 1009
+url: https://warcraft.wiki.gg/wiki/Ruuzel_%28Classic%29
+
+== Objectives ==
+Bring the Ring of Zoram to Talen near the Zoram Strand.
+
+ [Ring of Zoram]
+
+
+== Description ==
+I fear the ancient statuette's secrets will remain forever hidden unless you find the key to its ancient lock.
+That key is a ring, the Ring of Zoram. It belonged to the rulers of this city before the waves of the Great Sundering drowned it.
+For years the ring was lost, but the naga have recently found it.
+Their leader, Ruuzel, dwells on an isle on the northern edge of Zoram.  Please, <name>, retrieve the ring for me!
+
+
+== Rewards ==
+You will receive:
+
+2550 XP (or 7 20 at level 70)
+350 reputation with Darnassus
+ [Robes of Antiquity]
+
+
+== Progress ==
+It is said that the Ring of Zoram is the key to any lock within the city. Do you have it, <name>?
+
+
+== Completion ==
+You found the ring! Thank you, <name>. Please take this as payment, and know that your deeds today will remain forever in my memory.
+
+
+== Notes ==
+Ruuzel can be found on the big island to the north, self-evident on your map.  Ruuzel is not elite, but does have two naga followers.
+Lady Vespia (a rare spawn) has also been reported to drop the ring.
+
+
+== Progression ==
+ [20] The Ancient Statuette
+ [25] Ruuzel
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

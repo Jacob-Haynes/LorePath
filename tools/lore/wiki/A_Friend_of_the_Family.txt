@@ -1,0 +1,42 @@
+title: A Friend of the Family
+revision: 6943560
+part: whole
+quest: 98190
+url: https://warcraft.wiki.gg/wiki/A_Friend_of_the_Family
+
+== Objectives ==
+Bring the Menethil Statuette to Highlord Bolvar Fordragon in Stormwind Keep.
+
+ [Menethil Statuette] (provided)
+
+
+== Description ==
+You'll want to take this to Stormwind right away. Proud as I am that this keep and harbor bears[sic] King Terenas Menethil II's name, we are a calm harbor in a very nasty storm of enemies. It's just not safe here.
+The Dragonmaw in particular would sacrifice much to loot something like this... and I shudder to think of what they'd do with it.
+Don't bother going up the chain of command on this one, <lad/lass>. Go straight to Highlord Fordragon with this. He'll know where it will be best kept.
+
+
+== Progress ==
+Let us speak, <class>. I can feel you carry something of the Light.
+
+
+== Completion ==
+You have my gratitude for recovering this. I am relieved it did not fall into the wrong hands.
+
+
+== Notes ==
+...
+
+
+== Progression ==
+...
+
+
+== Patch changes ==
+ Patch 1.60.1 (Beta): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

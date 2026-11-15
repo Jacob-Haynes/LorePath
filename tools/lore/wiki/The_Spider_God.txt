@@ -1,0 +1,51 @@
+title: The Spider God
+revision: 5608082
+part: whole
+quest: 2936
+url: https://warcraft.wiki.gg/wiki/The_Spider_God
+
+== Objectives ==
+Read from the Tablet of Theka to learn the name of the Witherbark spider god, then return to Master Gadrin.
+
+Find the Spider God's name
+
+
+== Description ==
+The Witherbarks worship a spider god, and from her they collect their most potent venom. So if you want the venom, then you must summon their god!
+To do that, you must know her true name, and that name is on a tablet buried in Tanaris, in the troll city of Zul'Farrak, in a tomb guarded by Theka the Martyr.
+Defeat Theka and find and read his tablet to discover the spider god's name. When you know it, return to me.
+
+
+== Rewards ==
+You will receive:
+
+485-4850 XP
++150 or +350 reputation with Darkspear Trolls
+
+
+== Progress ==
+Do you know the spider god's name?
+
+
+== Completion ==
+Ah, Elortha no Shadra... speak this name only in whispers, for its utterance carries much weight in the realms of the spirit.
+I will put it to parchment and create for you a spell of summoning...
+
+
+== Progression ==
+ [43] Venom Bottles
+ [45] Undamaged Venom Sac
+ [45G] Consult Master Gadrin
+ [45D] The Spider God
+ [55E] Summoning Shadra
+ [55] Venom to the Undercity
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

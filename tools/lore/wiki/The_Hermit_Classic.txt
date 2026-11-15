@@ -1,0 +1,53 @@
+title: The Hermit (Classic)
+revision: 5586856
+part: whole
+quest: 165
+url: https://warcraft.wiki.gg/wiki/The_Hermit_%28Classic%29
+
+== Objectives ==
+Check on the old man in the shack near Raven Hill cemetery.
+
+
+== Description ==
+There was an old man who used to come into town to buy supplies rather frequently, but I haven't seen him for quite some time now. He lives out in a shack overlooking Raven Hill cemetery, if I remember correctly. Perhaps you should go see if something is amiss.
+
+
+== Rewards ==
+You will gain:
+
+2,320 XP
+75 reputation with Stormwind
+
+
+== Completion ==
+Elaine Carevin? Hehe, oh yes... of course, the Carevins.
+No, nothing's wrong but it is hard for me to go into town now. The roads are dangerous and I'm not getting any younger. Maybe you can do an old man some favors?
+
+
+== Progression ==
+(Optional breadcrumb)  [25] The Hermit
+ [24] Supplies from Darkshire
+ [24] Ghost Hair Thread
+ [24] Return the Comb
+ [24] Deliver the Thread
+ [24] Zombie Juice
+ [24] Gather Rot Blossoms
+ [24] Juice Delivery
+ [27] Ghoulish Effigy
+ [30] Ogre Thieves
+ [30] Note to the Mayor
+ [30] Translate Abercrombie's Note
+ [30] Wait for Sirra to Finish
+ [30] Translation to Ello
+ [30] Bride of the Embalmer
+ [30] Digging Through the Dirt
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

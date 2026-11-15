@@ -1,0 +1,6 @@
+title: Theldren
+revision: 6960049
+part: intro
+url: https://warcraft.wiki.gg/wiki/Theldren
+
+Theldren is an elite dwarf who hangs out at the arena Ring of the Law in Blackrock Depths. He is part of several gladiators which he participates along with in the arena.

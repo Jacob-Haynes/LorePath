@@ -1,0 +1,6 @@
+title: Blackfathom Deeps (Classic)
+revision: 6496260
+part: intro
+url: https://warcraft.wiki.gg/wiki/Blackfathom_Deeps_%28Classic%29
+
+Blackfathom Deeps (also known as: BFD) is a partially underwater dungeon in northwestern Ashenvale. It is accessed by a stair-lined shaft that requires one to swim through an underwater entrance. The deeps are comprised of a series of watery caverns leading deep to a temple devoted to the Old Gods. The Twilight's Hammer cult runs this shrine, and it has joined forces with local naga and satyrs to defend the unholy creature, Aku'mai. Though once sacred to the night elves, it has been desecrated by the corruption of an Old God.

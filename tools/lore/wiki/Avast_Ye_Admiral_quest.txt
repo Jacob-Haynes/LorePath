@@ -1,0 +1,57 @@
+title: Avast Ye, Admiral! (quest)
+revision: 6002778
+part: whole
+quest: 4621
+url: https://warcraft.wiki.gg/wiki/Avast_Ye%2C_Admiral%21_%28quest%29
+
+== Objectives ==
+Slay Fleet Master Seahorn and Baron Revilgaz of Booty Bay, and then return to Fleet Master Firallon aboard the Crimson Veil off the coast of Stranglethorn Vale.
+
+Baron Revilgaz slain
+Fleet Master Seahorn slain
+Bloodsail Buccaneers (Friendly)
+Booty Bay (Hated)
+
+
+== Description ==
+Listen close, sea dawg... the powers of Booty Bay is what keeps us Bloodsail from sailing wheres we like and taking whats we want as rights o' plunder. Were ye to put a knife to Fleet Master Seahorn, we'd ne'er run afoul of a Booty Bay's vessel. Were ye to put a knife to Baron Revilgaz, we'd ne'er face the law on their terms.
+If ye are to be an honorary admiral amongst us - yes, ADMIRAL, you'll puts a knife to both of 'em as I've says. Go now <lad/lass> and return to me once ye does the deeds.
+
+
+== Progress ==
+Yer back already, ya blasted tar!  Haves ye done as I've ordered?  Fail us, and ye will be walkin' the plank.
+Arrrrr...
+
+
+== Completion ==
+Avast ye... Admiral <name>!  Yer a pirate of pirates, <lad/lass>!
+It warms the cackles of me heart to give ye this hat.  Ye will ne'er find one like it anywheres, and all that gazes upon ye will see that yer an Admiral of the Bloodsail Navy!
+
+
+== Rewards ==
+ [Bloodsail Admiral's Hat]
+The Title Bloodsail Admiral (Added Patch 3.0.2)
+14,180 XP
+500 Reputation with Bloodsail Buccaneers
+-250 Reputation with Booty Bay
+-250 Reputation with Everlook
+-250 Reputation with Ratchet
+As of Wrath of the Lich King Classic, it is recommended - if attempting this quest below level 80 - to have a friend or two handy to help deal with the guards leading to Revilgaz and Seahorn, as well as the ones aggroed (and spawned) upon attacking them.
+
+
+== Notes ==
+This quest helps complete the achievement  [Northern Stranglethorn Quests] instead of the  [Cape of Stranglethorn Quests].
+This is no longer the case since the rework of all the zone quest achievements from numerical numbers to questlines in  Patch 7.3.5.
+The levels of the Booty Bay Bruisers increased with each new expansion release up until Cataclysm (first to level 67, then to 77, and then to 85) to coincide with the increase in the players' level cap.
+This is a first notable example of proto-level scaling.
+
+
+== Progression ==
+ [10-30] Avast Ye, Scallywag
+ [10-30] Avast Ye, Admiral!
+
+
+== External links ==
+
+Wowhead
+WoWDB

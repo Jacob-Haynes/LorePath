@@ -1,0 +1,61 @@
+title: Raene's Cleansing
+revision: 6840712
+part: whole
+quest: 991
+url: https://warcraft.wiki.gg/wiki/Raene%27s_Cleansing
+
+This quest starts the Raene's Cleansing quest chain.
+
+
+== Objectives ==
+Find Teronis in Ashenvale.
+
+
+== Description ==
+<Name>, a longtime friend of mine is also aiding the Sentinels here in Ashenvale, but he has yet to return.
+He had leads on finding an item that he thought could slow the furbolg attacks on our people--a rod created by a now-dead, evil wizard.
+Before he left here, he mentioned seeking out a gem for the rod.
+He mentioned the gem possibly being hidden at the shrine in Lake Falathim at the base of the mountain to the west. The gem was being held there before it was overrun.
+Find my friend, <name>, please.
+
+
+== Rewards ==
+You will receive:
+
+1450 XP
++250 reputation with Darnassus
+
+
+== Completion ==
+Teronis' body lies broken atop the island. For some unknown reason, the murlocs have left it alone.
+The deep slashes across his corpse obviously came from the weapons and claws of the murlocs.
+
+
+== Notes ==
+At  in Ashenvale.
+
+
+== Progression ==
+This is the Raene's Cleansing quest chain.
+
+ [19] Raene's Cleansing
+ [21] Raene's Cleansing
+ [21] Raene's Cleansing
+ [27] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [30] Raene's Cleansing
+ [30] Raene's Cleansing
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

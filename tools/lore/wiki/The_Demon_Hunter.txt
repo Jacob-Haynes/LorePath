@@ -1,0 +1,72 @@
+title: The Demon Hunter
+revision: 5619901
+part: whole
+quest: 2744
+url: https://warcraft.wiki.gg/wiki/The_Demon_Hunter
+
+This is part of the main Blasted Lands quest chain, even though it involves going to Azshara.
+
+
+== Objectives ==
+Speak wth Loramus Thalipedes in Azshara.
+
+
+== Description ==
+The triad is protected by Razelikh.
+In exchange for their servitude, Razelikh granted each of them nearly unlimted power within the Blasted Lands.  The amulet pieces are each attuned to the lifeforce of their owner, granting them immortality. As long as they remain within the Blasted Lands, they cannot be slain, their life spands extended until the end of days.
+There is one who may be able to assist you further, <name>. Travel to Azshara and find the demon hunter, Loramus Thalipedes.  Search the islands.
+
+
+== Completion ==
+I will help you. Although I do not think you fully understand what you are up against.
+
+
+== Notes ==
+Loramus Thalipedes is located on an island in the Bay of Storms.  The coords are , and on the map it's the large island under the word "Storms"  You need to have a  onversation with him before you can hand in the quest.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

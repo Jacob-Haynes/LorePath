@@ -1,0 +1,54 @@
+title: Worgen in the Woods (Classic)
+revision: 5587248
+part: whole
+quest: 173
+url: https://warcraft.wiki.gg/wiki/Worgen_in_the_Woods_%28Classic%29
+
+This quest starts the Worgen in the Woods quest chain.
+
+
+== Objectives ==
+Kill 6 Nightbane Shadow Weaver worgen for Calor in Darkshire. 
+
+Nightbane Shadow Weaver slain (6)
+
+
+== Description ==
+Darkness seems drawn inexorably to Duskwood. Master Carevin's quest is the expulsion of evil and heresy. Through our efforts are the people of Darkshire kept safe.
+You believe yourself worthy to join us?
+I once thought as you. Disillusioned by the complacency of the Watch, I joined Master Carevin. If you wish to prove yourself, it will not be through words.
+Test your skills against the Nightbane Shadow Weaver worgen in Brightwood Grove--bright, hah!--and the Rotting Orchard.
+
+
+== Rewards ==
+You will receive:
+
+18
+1150 XP (or 7 20 at level 70)
++75 reputation with Stormwind
+
+
+== Progress ==
+<Name>, how fares the hunt?
+
+
+== Completion ==
+Impressive, <name>. It would seem that you are capable enough to handle yourself. Perhaps a more suitable challenge could be found for one of your abilities.
+It is curious though... The worgen seemed to just appear out of thin air. But then, with all the other strange creatures that have moved across our borders, I suppose it's only one of many concerns.
+
+
+== Progression ==
+ [28] Worgen in the Woods
+ [29] Worgen in the Woods
+ [31] Worgen in the Woods
+ [31] Worgen in the Woods
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

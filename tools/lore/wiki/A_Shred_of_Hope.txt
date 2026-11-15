@@ -1,0 +1,74 @@
+title: A Shred of Hope
+revision: 6831729
+part: whole
+quest: 4282
+url: https://warcraft.wiki.gg/wiki/A_Shred_of_Hope
+
+This is part of the Great Masquerade quest chain.
+
+
+== Objectives ==
+Return Marshal Windsor's Lost Information.
+Marshal Windsor believes that the information is being held by Golem Lord Argelmach and General Angerforge.
+
+ [Marshal Windsor's Lost Information] (from General Angerforge)
+ [Marshal Windsor's Lost Information] (from Golem Lord Argelmach)
+
+
+== Description ==
+<Marshal Windsor shakes the note excitedly.>
+Do you realize what this means, <name>?
+Perhaps all is not lost! From what I can ascertain, the information is being held by two Dark Iron dwarves: General Angerforge and the golem lord, Argelmach. I have a feeling that they won't just hand over the information
+if we ask nicely.
+I hope you are ready to battle.
+Venture forth and find these two villains! Destroy them and return my lost information. 
+
+
+== Rewards ==
+You will receive:
+
+90
+13500 XP (or 37 50 at max level)
++500 reputation with Stormwind
+
+
+== Progress ==
+Soon this grand subterfuge will be over.
+
+
+== Completion ==
+<Marshal Windsor snatches the two tablets from your hands.>
+We need to get out of here!
+
+
+== Notes ==
+There are two identically named items, one from General Angerforge, one from Golem Lord Argelmach.  You need them both.
+
+
+== Progression ==
+ [54] Dragonkin Menace
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54D] Marshal Windsor
+ [54D] Abandoned Hope
+ [58D] A Crumpled Up Note
+ [58D] A Shred of Hope
+ [58D] Jail Break!
+ [60R] Stormwind Rendezvous
+ [60R] The Great Masquerade
+ [60R] The Dragon's Eye
+ [60R] Drakefire Amulet
+
+
+== Patch changes ==
+ Patch 3.0.2 (2008-10-14): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

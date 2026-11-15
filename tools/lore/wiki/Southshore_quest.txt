@@ -1,0 +1,44 @@
+title: Southshore (quest)
+revision: 6831753
+part: whole
+quest: 538
+url: https://warcraft.wiki.gg/wiki/Southshore_%28quest%29
+
+== Objectives ==
+Speak with Loremaster Dibbs in Southshore.
+
+
+== Description ==
+<Name>. If you don't mind a long journey then I have a task for you, to again help Stormwind fill its library.
+The old kingdom of Alterac fell after the great war, and it had a large collection of books. It's a tragedy that the city is ruined, but even more tragic is all of their knowledge lost! We must recover what we can.
+Southshore is the closest town to the Ruins of Alterac. Go there and speak with Loremaster Dibbs. He can direct you to the ruins, and to what books may be found there.
+
+
+== Rewards ==
+You will receive:
+
+710 XP
++25 reputation with Stormwind
+
+
+== Completion ==
+Ah yes, I remember Milton. A bookworm, no doubt. Bless him.
+And he's right. The Ruins of Alterac still hold stores of knowledge in danger of being lost!
+Ogres now dwell in Alterac, and they don't care much for higher learning.
+
+
+== Progression ==
+ [25] An Old History Book
+ [38] Southshore
+ [38] Preserving Knowledge
+ [38] Return to Milton
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

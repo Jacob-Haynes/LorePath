@@ -1,0 +1,51 @@
+title: Gahz'rilla (quest)
+revision: 6240179
+part: whole
+quest: 2770
+url: https://warcraft.wiki.gg/wiki/Gahz%27rilla_%28quest%29
+
+Gahz'rilla is a neutral quest for the dungeon Zul'Farrak.  This was one of the more complex quests for Zul'Farrak because it used to require obtaining a mallet (see below for details) to summon him, but it was often considered worth it for the speed-increasing item.
+Note that  [46D] The Brassbolts Brothers is not required for this quest, but is a lead-in for Alliance players.
+
+
+== Objectives ==
+Bring Gahz'rilla's Electrified Scale to Wizzle Brassbolts in the Shimmering Flats.
+
+ [Gahz'rilla's Electrified Scale]
+
+
+== Description ==
+Deep in Zul'Farrak, the sand troll city in Tanaris, there is a sacred pool. From that pool the trolls summon a huge beast! Gahz'rilla! He's so fierce that even his scales crackle with energy. It's that energy I want to harness for my car!
+Bring me the electrified scale of Gahz'rilla!
+But the summoning of Gahz'rilla is a well-kept secret of the trolls. To face him, you must first wrest the secret from them.
+
+
+== Rewards ==
+You will receive 75 as well as:
+
+ [Carrot on a Stick]
+
+
+== Progress ==
+Do you have the scale? I can't wait to try different ways to harness its energy!
+
+
+== Completion ==
+Wow, you got the scale! Thanks, <name>. I can't wait to get to work on this thing!
+So you saw Gahz'rilla? Was he as big as they say??
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.9.3 (2006-02-07): No longer awards  [Speedy Racer Goggles].   
+
+
+== See also ==
+Thousand Needles quests
+Zul'Farrak quests
+
+
+== External links ==
+
+Wowhead
+WoWDB

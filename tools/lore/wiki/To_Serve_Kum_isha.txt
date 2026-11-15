@@ -1,0 +1,51 @@
+title: To Serve Kum'isha
+revision: 6947617
+part: whole
+quest: 2521
+url: https://warcraft.wiki.gg/wiki/To_Serve_Kum%27isha
+
+== Objectives ==
+In your journeys throughout the Blasted Lands, should you ever come across a Flawless Draenethyst Sphere, take the item back to Kum'isha the Collector.
+Be warned, this gem is one of the most rare crystals in all of Azeroth. Any creature in these lands could be holding a Flawless Draenethyst Sphere.
+You will be rewarded for each Flawless Draenethyst Sphere you have collected.
+
+ [Flawless Draenethyst Sphere]
+
+
+== Description ==
+<Race>, can your minuscule brain comprehend the rarity of a flawless sphere of draenethyst? Draenei have spent lifetimes in search of just one of these crystals, only to meet horrible fates, their purpose unfulfilled.
+So you stand before Kum'isha, knowing what Kum'isha has requested and still wish to assist? Very well, <race>... At any time during your travels across these lands, should you find a flawless sphere of draenethyst, return it to me and I shall reward you with riches beyond your wildest dreams.
+
+
+== Rewards ==
+You will receive:
+
+8450 XP (or 51 at level 70)
+ [Emerald Encrusted Chest]
+
+
+== Progress ==
+I have dedicated my life to the search of flawless draenethyst spheres. A lifetime, <race>!
+
+
+== Completion ==
+Do my eyes deceive me? Impossible! Where did you... How...
+Perhaps now a rift can be opened, returning us to our homeland.
+
+
+== Notes ==
+Upon completion of the quest, Kum'isha opened a portal to Outland that several Draenei Refugees spawned to go through.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+To Serve Kum'isha, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

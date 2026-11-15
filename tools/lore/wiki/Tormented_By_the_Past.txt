@@ -1,0 +1,56 @@
+title: Tormented By the Past
+revision: 6307990
+part: whole
+quest: 5248
+url: https://warcraft.wiki.gg/wiki/Tormented_By_the_Past
+
+== Objectives ==
+Take the Crystal of Zin-Malor to Lake Kel'Theril in Winterspring and find a highborne spirit that will speak to you.
+
+ [Crystal of Zin-Malor] (provided)
+
+
+== Description ==
+<Name>, I weep for what has happened in the past. Like this crystal, the elves, as a race, have been shattered. I do not know if the pieces will ever again be reunited into one, but my sorrow has been eased by being able to help you with this one small task.
+We must not forget the past, <name>...
+Please take the Crystal of Zin-Malor back to Lake Kel'Theril. You must find a highborne spirit that realizes the error of what was done so long ago. Show the spirit that we have made things right again.
+
+
+== Rewards ==
+You will receive:
+
+4650 XP (or 28 20 at max level)
++25 reputation with Darnassus
++25 reputation with Exodar
++25 reputation with Gnomeregan
++25 reputation with Ironforge
++25 reputation with Stormwind
+
+
+== Progress ==
+Currrrrsed... Forevvvverrrr...
+
+
+== Completion ==
+Pleeease, leeeave meeeeee..
+
+
+== Progression ==
+ [56] To Winterspring!
+ [56] The Ruins of Kel'Theril
+ [56] Troubled Spirits of Kel'Theril
+ [56] Fragments of the Past
+ [57] Fragments of the Past
+ [58] Tormented By the Past
+ [58] Remorseful Highborne
+ [58] The Crystal of Zin-Malor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

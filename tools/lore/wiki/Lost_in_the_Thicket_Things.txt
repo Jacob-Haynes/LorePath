@@ -1,0 +1,42 @@
+title: Lost in the Thicket Things
+revision: 6945808
+part: whole
+url: https://warcraft.wiki.gg/wiki/Lost_in_the_Thicket_Things
+
+== Objectives ==
+Find Ardin Grassman in the Excavation Sites.
+
+Learn what happened to Ardin Grassman
+
+
+== Description ==
+My husband, Ardin, has a rare gift for sensing nature. He'll scale any peak to gather the herbs and flowers I need for my alchemy, keeping our shelves and pantry stocked.
+But I fear he's wandered into trouble. An excavation crew passed through seeking supplies. They spoke, among other things, of towering grasses unlike anything they'd ever seen. Those were what he told me he had to go see for himself. He's been gone too long!
+If you learn anything of him, I'd be grateful.
+
+
+== Rewards ==
+You will receive:
+
+4,900 XP
+
+
+== Progression ==
+ [21] Daily Delivery →  [22] Young Crocolisk Skins →  [28D] Highland Hides and  [26] Apprentice's Duties
+ [31D] Horrors in the Highland
+ [31D] Seeking Caitlin →  [31D] Lost in the Thicket Things →  [31D] Heartwoven
+ [31D] Lost Relic Carry →  [31D] Prehistoric Prism
+ [31D] Songblade Search →  [31D] Fallen in the Fen
+ [31D] Changing Tastes
+ [31D] Elder Knowledge →  [31D] Earthen Echo
+ [31D] Dragonmaw Rumors →  [31D] Open the Maw
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

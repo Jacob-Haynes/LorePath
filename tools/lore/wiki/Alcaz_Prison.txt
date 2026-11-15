@@ -1,0 +1,50 @@
+title: Alcaz Prison
+revision: 6975601
+part: whole
+url: https://warcraft.wiki.gg/wiki/Alcaz_Prison
+
+Alcaz Prison is a Forever-exclusive dungeon, intended for level 48-53 players located on Alcaz Island in Dustwallow Marsh. Quests are available starting at level 48, but the final boss is at level 51, so don't go in early.
+
+
+== Getting there ==
+
+
+== Quests ==
+A Bit of Wet Work
+A Little Payback (Alcaz Prison)
+The Honor of the Kor'kron → Bad News for Fokar → Thrall Needs to Know
+Blood Red Bandanas
+Our Man in Theramore → Watch Yer Back (Alcaz Prison) → The Return of the King? → The Secret Prison
+Shaw Needs to Know
+The Dragon's Journal
+ [53D] The Man in the Iron Chains →  [53D] More Valuable Than Gold →  [53] State Secrets -or-  [53] State Secrets
+The Missing Kor'kron → The Elite of the Elite → Right Place, Wrong Time → No Orc Left Behind (Alcaz Prison)
+
+
+== Encounters ==
+The Questioner
+Tidemistress Ca'zass
+Overseer Wrex
+Katerina the Cleaner
+Blazeroar
+
+
+== Loot ==
+
+
+=== Boss drops ===
+
+
+=== Quest rewards ===
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
+
+Wago

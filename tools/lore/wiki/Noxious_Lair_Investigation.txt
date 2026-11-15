@@ -1,0 +1,63 @@
+title: Noxious Lair Investigation
+revision: 6710885
+part: whole
+quest: 82
+url: https://warcraft.wiki.gg/wiki/Noxious_Lair_Investigation
+
+This quest is part of the Rise of the Silithid quest chain.
+
+
+== Objectives ==
+Bring five Centipaar insect parts from the Noxious Lair to Alchemist Pestlezugg in Gadgetzan.
+
+ [Centipaar Insect Parts] (5)
+
+
+== Description ==
+All right now, these reports about the bugs... what we know is that they are draining the water pools that used to be where the Noxious Lair is. What we DON'T know is, well, everything else.
+Let's figure out who our enemy is first! I want you to head into the Noxious Lair and get some parts off of those critters. Get five from the Centipaar there and bring them to Alchemist Pestlezugg for him to dink with. With him on the case, we'll figure out what they are!
+
+
+== Rewards ==
+You will receive:
+
+50
+3150 XP (or 19 20 at max level)
++150 reputation with Gadgetzan
+
+
+== Progress ==
+You're Junior Surveyor <name>, yes? Quickly now, there is a dire situation at hand! Do you have the insect parts that Fizzledowser said you would?!
+
+
+== Completion ==
+Good work - I'll start my analysis on these now! I can tell you right from the start though... these are nothing like any insect form I have ever seen. It's almost as if these bugs are being controlled by an outside force or something.
+You need to go talk to Fizzledowser right away; apparently there is an emergency that he needs your help with on the double! I'm not sure, but I think it involves more of the bugs in the Tanaris desert!
+
+
+== Notes ==
+Simple as can be:  Critters whose name include 'Centipaar' drop the parts.  Drop rate is about 40%
+
+
+== Progression ==
+ [46] Gadgetzan Water Survey
+ [47] Noxious Lair Investigation
+ [48] The Scrimshank Redemption
+ [48] Insect Part Analysis
+ [48] Insect Part Analysis
+ [48] Rise of the Silithid
+ [53] March of the Silithid
+ [53] Bungle in the Jungle
+ [54G] Pawn Captures Queen
+ [54] Calm Before the Storm
+ [54] Calm Before the Storm
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

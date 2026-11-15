@@ -1,0 +1,44 @@
+title: Knowledge in the Deeps (Classic)
+revision: 6978398
+part: whole
+quest: 971
+url: https://warcraft.wiki.gg/wiki/Knowledge_in_the_Deeps_%28Classic%29
+
+== Objectives ==
+Bring the Lorgalis Manuscript to Gerrig Bonegrip in the Forlorn Cavern in Ironforge.
+
+ [Lorgalis Manuscript]
+
+
+== Description ==
+As you might know, I collect lore. Old lore. Powerful lore. Lore that opens doorways, and lore that can awaken Those Who Sleep.
+There are rumors of an old piece of lore, the Lorgalis Manuscript, at the bottom of Blackfathom Deeps in Ashenvale. That place is the old dwelling of long-dead elves. Elves who held great knowledge before their city fell to ruin.
+Search Blackfathom Deeps for the manuscript. Do this, and I will not forget it. Not even after ... the end days.
+
+
+== Rewards ==
+You will receive:
+
+60
+2,750 XP
++50 or +75 reputation with Ironforge
+ [Sustaining Ring]
+
+
+== Progress ==
+The journey to Ashenvale is long, and your task is not easy. But if you get me the manuscript, <name>...then your reward will be great.
+
+
+== Completion ==
+You found the manuscript! What a joyous day this is! Copies will be made and distributed, and the ancient knowledge of Lorgalis will finally be known to my brothers and sisters!
+Your service to us is more than you know, <name>. But I hope that this gift shows you the gratitude we extend to our allies.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Internally changed, removed, and replaced with a new ID.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

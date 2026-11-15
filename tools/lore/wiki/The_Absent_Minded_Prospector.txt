@@ -1,0 +1,50 @@
+title: The Absent Minded Prospector
+revision: 6267718
+part: whole
+quest: 729
+url: https://warcraft.wiki.gg/wiki/The_Absent_Minded_Prospector
+
+== Objectives ==
+Travel south and check on Prospector Remtravel.
+
+
+== Description ==
+What an honor it was when Master Greywhisker assigned me to work under the guidance of the great Prospector Remtravel. At the academy in Ironforge everyone knew of Remtravel's great discoveries.
+But the prospector is rather... um... oblivious... to his surroundings.
+We had uncovered evidence of a great society. Horrible golems sprang forth from the ground and overran the site. Remtravel never seemed to notice. I ran back to Auberdine for help.
+Please travel south and see if the prospector is okay!
+
+
+== Rewards ==
+You will receive:
+
+1150 XP (or 7 20 at max level)
++150 reputation with Ironforge
+
+
+== Completion ==
+Hollee, is that you? I need some help chiseling this stone. Hand me my stone brush, I think I see something.
+Hey, you're not Hollee! Don't suppose you've seen my stone brush?
+Never mind that now! I promised the League I'd send the mysterious fossil I found. Where did Hollee go?
+So much work to be done! Now where is that mysterious fossil... and my brush... and Hollee...
+And who are you... 'tis no matter, so long as you're here to help.
+Let me know when you're ready to start looking.
+
+
+== Progression ==
+ [14] Trouble in Darkshore?
+ [20] The Absent Minded Prospector
+ [20G] The Absent Minded Prospector
+ [20] The Absent Minded Prospector
+ [20] The Absent Minded Prospector
+ [24] The Absent Minded Prospector
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

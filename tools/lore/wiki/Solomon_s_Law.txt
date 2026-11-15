@@ -1,0 +1,43 @@
+title: Solomon's Law
+revision: 6394738
+part: whole
+quest: 91
+url: https://warcraft.wiki.gg/wiki/Solomon%27s_Law
+
+== Objectives ==
+Bring 10 Shadowhide Pendants to Bailiff Conacher in the Lakeshire Town Hall.
+
+ [Shadowhide Pendant] (10)
+
+
+== Description ==
+An enemy of Stormwind has taken up residence in the eastern foothills of Redridge. This wicked villain uses the Arcane to spread terror and misery upon our town and our people. Under the name, Morganth, he conducts his evil business.
+Morganth now controls the Shadowhide Gnoll Clan to perform his biddings. As stated by the Law of Lakeshire, aiding a criminal of the Kingdom is punishable by death.
+These vile gnolls must be killed!
+Turn in 10 Shadowhide Pendants to me, and you shall be rewarded.
+
+
+== Rewards ==
+You will receive:
+
+15
+1850 XP (or 11 40 at max level)
++250 reputation with Stormwind
+
+
+== Progress ==
+Turn in 10 Shadowhide Pendants to me, and you shall be rewarded.
+
+
+== Completion ==
+The Court of Lakeshire recognizes your commitment to justice, <name>.  By enforcing the laws of the Kingdom you have helped uphold the justice of the land.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

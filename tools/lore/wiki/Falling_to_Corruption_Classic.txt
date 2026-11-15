@@ -1,0 +1,49 @@
+title: Falling to Corruption (Classic)
+revision: 5636741
+part: whole
+quest: 5084
+url: https://warcraft.wiki.gg/wiki/Falling_to_Corruption_%28Classic%29
+
+== Objectives ==
+Search the Deadwood furbolg camp in northern Felwood for a clue. 
+
+
+== Description ==
+This greenish liquid... it reminds me a bit of the sludge I saw when traveling through Felwood. And I have seen some Winterfall Runners passing into Timbermaw... Perhaps these things have something to do with the flask you found, <name>.
+There is a large group of furbolg just past Timbermaw Hold, in Felwood. Called the Deadwood tribe, they have been corrupted and driven mad by the fel. Why don't you look around there and see if you can find any evidence of dealings between the Winterfall and the Deadwood? 
+
+
+== Rewards ==
+You will receive:
+
+4350 XP (or 26 40 at level 70)
++150 reputation with Everlook
+
+
+== Completion ==
+Inside the cauldron bubbles a rotting, repulsive-smelling substance... 
+
+
+== Progression ==
+ [56] Winterfall Firewater
+ [56] Falling to Corruption
+ [56] Mystery Goo
+ [56] Toxic Horrors
+ [57] Winterfall Runners
+ [59] High Chief Winterfall
+ [59] The Final Piece
+ [59] Words of the High Chief
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+Falling to Corruption, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

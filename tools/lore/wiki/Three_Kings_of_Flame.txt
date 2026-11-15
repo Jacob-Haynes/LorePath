@@ -1,0 +1,100 @@
+title: Three Kings of Flame
+revision: 5932344
+part: whole
+quest: 8961
+url: https://warcraft.wiki.gg/wiki/Three_Kings_of_Flame
+
+== Objectives ==
+Gather the Incendicite of Incendius, the Ember of Emberseer and the Cinder of Cynders, along with a Hallowed Brazier, and return them to Bodley inside Blackrock Mountain.
+
+ [Incendicite of Incendius]
+ [Ember of Emberseer]
+ [Cinder of Cynders]
+ [Hallowed Brazier]
+
+
+== Description ==
+In order to summon Lord Valthalak we're first going to need to gather the other two-thirds of the amulet. To do that we need to get a brazier and some special coals to burn in it.
+There are three nobles of fire, Lord Incendius in Blackrock Depths, Pyroguard Emberseer in Blackrock Spire and The Duke of Cynders in Silithus, with what we need. Collect from each a piece of their remains, and then return to me with a  [Hallowed Brazier], which can be purchased from the Argent Dawn if you are honored by them.
+
+
+== Rewards ==
+You will receive:
+
+9550 XP (or a 57 compensation at level 80)
+
+
+== Progress ==
+It was our folly... our doom that we took that last job. If only we hadn't inadvertently stolen Lord Valthalak's spirit, which was contained in the amulet; if only there weren't those in our mercenary group that had been so greedy and divided it up amongst themselves. I'd be alive today, maybe tossing back a beer, or tossing one of my kids into the air.
+<Name>, don't let the avarice of the ignoble in our old mercenary company be your doom as well.
+
+
+== Completion ==
+I'm impressed, <class>, but there's no time to lose. I will give you your next task, because you will still need to acquire a few more important components before we can proceed.
+Speak to me again when you feel that you are ready for the challenge that lies ahead.
+
+
+== Notes ==
+This is the second step in the quest chain to upgrade your Dungeon Set 1 Helm and Chestpiece into Dungeon Set 2.
+Lord Incendius and Pyroguard Emberseer spawn in Blackrock Depths and Upper Blackrock Spire respectively.
+The Duke of Cynders will be more difficult to find. You will need to be wearing a set of Twilight Trappings, have a  [Twilight Cultist Medallion of Station], and then touch a wind stone. You will have a 1 in 4 chance of getting the Duke of Cynders. The Duke is a level 62 elite.
+An alternative way of summoning the Duke is to combine a  [Scroll: Create Signet of Beckoning], 1  [Dark Rune], and 5  [Firebloom] to create a  [Signet of Beckoning: Fire]. Use this item at a wind stone to specifically summon the Duke of Cynders. In order to use the scroll, you will need to turn in Encrypted Twilight Texts to Hermit Ortell who will send you something in the mail. The item he sends could be the scroll.
+
+
+== Progression ==
+ [60D] An Earnest Proposition
+ [60] A Supernatural Device
+ [60] The Ectoplasmic Distiller
+ [60] Hunting for Ectoplasm
+ [60] A Portable Power Source
+ [60] A Shifty Merchant
+ [60] Return to Deliana /  [60] Return to Mokvar
+ [60D] Just Compensation
+ [60] In Search of Anthion
+ [60D] Dead Man's Plea
+ [60] Proof of Life
+ [60] Anthion's Strange Request
+ [60D] Anthion's Old Friend
+ [60D] Falrin's Vendetta
+ [60D] The Instigator's Enchantment
+ [60D] The Challenge
+ [60D] Anthion's Parting Words
+ [60] Bodley's Unfortunate Fate
+ [60R] Three Kings of Flame
+
+ [60] Components of Importance
+ [60] Components of Importance
+ [60G] Components of Importance
+ [60G] Components of Importance
+
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60G] I See Alcaz Island In Your Future...
+
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60R] Final Preparations
+ [60R] Mea Culpa, Lord Valthalak
+ [60] Return to Bodley
+ [60] Back to the Beginning
+ [60D] Saving the Best for Last
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.10.0 (2006-03-28): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

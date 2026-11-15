@@ -1,0 +1,61 @@
+title: The Missing Diplomat (9)
+revision: 6389809
+part: whole
+quest: 1247
+url: https://warcraft.wiki.gg/wiki/The_Missing_Diplomat_%289%29
+
+This quest is part of the quest chain The Missing Diplomat.
+
+
+== Objectives ==
+Speak to Elling Trias in Stormwind.
+
+
+== Description ==
+So yeah... um... I might know something 'bout that meeting at Addle's Stead. Happened a few weeks back I think. I really didn't have any part in it. Me part was done when plan A failed... damn adventurers.
+The guy we got on the inside for plan B came out of Menethil; guy called Slim. That's all I know regarding their backup plan.
+
+
+== Rewards ==
+You will receive:
+
+250 XP (or 1 50 at max level)
++75 reputation with Stormwind
+
+
+== Completion ==
+Good to see you're still alive, <name>. So, it went well with Dashel then, huh?
+I've been reading up more on this plan of theirs, and although it doesn't state the name of the diplomat they were after, it does talk about this plan B they enacted after failing on their first attempt to capture him.
+This Slim that Dashel mentioned doesn't have any other name written here, but if you say he's in Menethil, then that's a start.
+
+
+== Progression ==
+This is the quest chain The Missing Diplomat.
+
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [30] The Missing Diplomat
+ [30] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [35] The Missing Diplomat
+ [36] The Missing Diplomat
+ [38] The Missing Diplomat
+ [38] The Missing Diplomat
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

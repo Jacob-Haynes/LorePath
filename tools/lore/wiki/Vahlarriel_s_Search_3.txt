@@ -1,0 +1,46 @@
+title: Vahlarriel's Search (3)
+revision: 5615544
+part: whole
+quest: 1438
+url: https://warcraft.wiki.gg/wiki/Vahlarriel%27s_Search_%283%29
+
+== Objectives ==
+Find Dalinda Malem in Desolace.
+
+
+== Description ==
+Find both Dalinda and Tyranis if you can and come back to me with your findings.  Start your search at this fortress. I will contact my superiors in Darnassus immediately and let them know the situation.
+<Name>, there is something else I wish to impress upon you.  My superiors have shown some concern over Tyranis and his motives for coming here.  It is more important to them that Dalinda is found and brought back safely.  Tyranis is to be... gauged before he is taken home.
+
+
+== Rewards ==
+2650 XP
++250 Darnassus reputation
+
+
+== Completion ==
+Thank Elune someone has finally come to help. Please, <class>, I need your help. My brother Tyranis and I were captured and brought here by the Burning Blade. I think they mean to sacrifice me to their demon masters!
+I knew coming to Desolace was a mistake, but Tyranis has recently begun craving knowledge of all things arcane—even against the wishes of our people. He decided to make this trek even after hearing tales of this land's demon infestation.
+I fear the worst for him.
+
+
+== Notes ==
+Dalinda Malem is at the Thunder Axe Fortress section of Desolace, in the center of big building in front of the entrance.
+
+
+== Progression ==
+ [33] Vahlarriel's Search
+ [33] Vahlarriel's Search
+ [33] Vahlarriel's Search
+ [33] Search for Tyranis
+ [33] Return to Vahlarriel
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

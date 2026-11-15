@@ -1,0 +1,48 @@
+title: Ormer's Revenge
+revision: 5586261
+part: whole
+quest: 294
+url: https://warcraft.wiki.gg/wiki/Ormer%27s_Revenge
+
+This starts a series of quests that leads to  [Recipe: Curiously Tasty Omelet].
+
+
+== Objective ==
+Ormer Ironbraid at the Whelgar Excavation Site wants you to kill 10 Mottled Screechers and 10 Mottled Raptors.
+
+Mottled Raptor: (10)
+Mottled Screecher: (10)
+
+
+== Description ==
+The situation is severe, that much is for sure. When we uncovered these bones it attracted the Raptors. These filthy beasts killed my brethren and trapped me, Merrin and the poor Prospector up here.
+Help clear the Wetlands of these Raptors, <name>. Mottled Raptors and Mottled Screechers are just West of the bluff there. Kill 10 of each, if you can.
+That will be a good start to the vengeance I have planned for them.
+
+
+== Progress ==
+Kill 10 Mottled Raptors and 10 Mottled Screechers, <name>. My co-workers did not deserve the fate that was brought upon them. It's time to even the score.
+
+
+== Completion ==
+Killing is a dirty business, but you did your job well, <name>. If I weren't obligated to stay with the Prospector and Merrin, I'd be down there shedding blood right along side you.
+
+
+== Notes ==
+The Mottled Raptors and Screechers can be found by heading west from the entrance to the excavation site.  A couple of these creatures can be found on the path leading up to the cave within the excavation site.
+
+
+== Progression ==
+ [24] Ormer's Revenge
+ [27] Ormer's Revenge
+ [29] Ormer's Revenge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,47 @@
+title: Morgan Ladimore (quest)
+revision: 6523011
+part: whole
+quest: 26794
+url: https://warcraft.wiki.gg/wiki/Morgan_Ladimore_%28quest%29
+
+This quest is part of The Story of Morgan Ladimore.
+
+
+== Objectives ==
+Speak with Commander Althea Ebonlocke in Darkshire.
+
+
+== Description ==
+<He searches through the shelves and comes up with a leatherbound book.>
+If you would like to know more, you might ask Althea, she's been the one to handle the... trouble... with him of late.
+
+
+== Rewards ==
+You will receive:
+
+ [The Story of Morgan Ladimore]
+200 XP (22 XP at Grey Level)
++25 reputation with Stormwind
+
+
+== Completion ==
+Morgan Ladimore? Never heard of...
+Oh, you mean Mor'Ladim! I guess you haven't heard the story?
+Well, I'll give you the short version. A powerful undead calling itself Mor'Ladim has been wandering Duskwood. From what we've gathered, it appears to be the undead body of Morgan Ladimore, of whom you apparently know. He's been causing us all sorts of problems, attacking Watchmen on patrol and killing people.
+<She sizes you up.>
+You seem to be capable enough, maybe you could lay him to rest.
+
+
+== Progression ==
+ [10-30] The Weathered Grave
+ [10-30] Morgan Ladimore
+ [10-30G3] Mor'ladim
+ [10-30] The Daughter Who Lived
+ [10-30] A Daughter's Love
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Quest ID changed.   
+
+
+== External links ==

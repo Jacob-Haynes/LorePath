@@ -1,0 +1,50 @@
+title: The Corrupter (2)
+revision: 6308744
+part: whole
+quest: 1481
+url: https://warcraft.wiki.gg/wiki/The_Corrupter_%282%29
+
+== Objectives ==
+Bring a Shadowstalker Scalp to Maurin Bonesplitter in Desolace.
+
+ [Shadowstalker Scalp]
+
+
+== Description ==
+I believe I can find this demon lord given the proper reagents.
+If he is indeed as powerful as I suspect, I will need items gathered from deadly creatures. But you act in the Warchief's name, so I am sure you will accept my task.
+First, I will have to break any wards he has against scrying. For this, I will need the scalp from a satyr—but not any satyr. The scalp must come from a Hatefury shadowstalker.
+Search for them among the ancient ruins in the northeast of Desolace.
+
+
+== Progress ==
+Do not bring me an incorrect scalp, <class>. Using the incorrect reagents could cause our deaths. The demon lord may have contingency spells on his person to slay those who would scry upon him. 
+Fate has already dealt me enough pain.
+
+
+== Completion ==
+The shadowstalkers were unable to slay you, <class>. Impressive... most impressive.
+This scalp will do nicely for my spell. While you were away, I was able to gather some of the other reagents needed for the spell.
+I am almost ready. I only need a focus for the spell—something to project an image of the demon lord and his whereabouts.
+
+
+== Notes ==
+The Hatefury Shadowstalkers can be found near Sargeron in the northeast of Desolace.
+
+
+== Progression ==
+ [33] The Corrupter
+ [33] The Corrupter
+ [35] The Corrupter
+ [33] The Corrupter
+ [40G] The Corrupter
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

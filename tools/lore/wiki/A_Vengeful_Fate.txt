@@ -1,0 +1,52 @@
+title: A Vengeful Fate
+revision: 6957006
+part: whole
+quest: 1102
+url: https://warcraft.wiki.gg/wiki/A_Vengeful_Fate
+
+== Objectives ==
+Bring Razorflank's Heart to Auld Stonespire in Thunder Bluff.
+
+ [Razorflank's Heart]
+
+
+== Description ==
+Cairne is a noble leader for uniting our people here on Thunder Bluff.
+But I cannot forgive those who drove us from our ancestral lands as easily as some. My people inhabited the southern Barrens for decades. The land was holy to us. But we were driven off by numerous foes.
+A vengeful fate awaits the crone, Charlga Razorflank, who musters a foul army from within Razorfen Kraul.
+Bring me Razorflank's heart and I can die in peace, <name>.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Berylline Pads]
+ [Stonefist Girdle]
+ [Marbled Buckler]
+You will also receive:
+
+4,050 XP
++200 or +500 reputation with Thunder Bluff
+ [Quilboar Blaster] 
+
+
+== Progress ==
+Once I know the foul beasts of Razorfen Kraul have been driven from their foul lair, I will be able to rest in peace, knowing that revenge has been served.
+Have you driven the quilboar from the Kraul? Do you bring to me good news in the form of Razorflank's heart?
+
+
+== Completion ==
+I see the nasty tribe of Razorfen Kraul now knows the pain of my people. Serves the foul beasts right.
+To drive one from a holy land is a sin worthy of the most severe revenge.
+Thank you, <name>, for aiding me in my plight.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.4.0 (2008-03-25): Level reduced from 34 to 27.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,47 @@
+title: Report to Doren
+revision: 6241831
+part: whole
+quest: 331
+url: https://warcraft.wiki.gg/wiki/Report_to_Doren
+
+== Objectives ==
+Speak with Lieutenant Doren. 
+
+
+== Description ==
+Did Lieutenant Doren want you to report back to him with that patrol information? 
+
+
+== Rewards ==
+
+You will also receive:
+
+3700 XP (or 22 20 at max level)
++63 reputation with Darnassus
++63 reputation with Exodar
++63 reputation with Gnomeregan
++63 reputation with Ironforge
++63 reputation with Stormwind
+
+
+== Completion ==
+It pains me to find out it was Merle who betrayed us.  He has always been a brave soldier, and I had thought his heart was true.  But it is a great relief to have found him out - with a spy like him among us...we would not last long against Colonel Kurzen.
+
+
+== Progression ==
+ [33] Jungle Secrets
+ [35] Bookie Herod
+ [37] The Hidden Key
+ [37] The Spy Revealed!
+ [37] Patrol Schedules
+ [37] Report to Doren
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

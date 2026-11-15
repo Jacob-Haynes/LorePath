@@ -1,0 +1,45 @@
+title: Dragonmaw Rumors
+revision: 6911834
+part: whole
+quest: 95663
+url: https://warcraft.wiki.gg/wiki/Dragonmaw_Rumors
+
+== Objectives ==
+Travel to the Wetlands and meet the Deathstalker Agent in the hills above the Dragonmaw camp.
+
+
+== Description ==
+The Dragonmaw are a formidable clan.
+They're known for binding magic strong enough to make dragons serve, and rumor claims they're preparing some display of it in the Wetlands. Whether truth or bluster, the Deathstalkers can't act on half-formed whispers. Broken symbols carried only that much to me.
+A deathstalker agent needs a hand in the hills above the Dragonmaw encampment. Meet her there. She'll reveal the next steps.
+
+
+== Rewards ==
+You will receive:
+
+550 XP
+
+
+== Completion ==
+These are the courageous few? Mind your voices.
+
+
+== Progression ==
+ [21] Daily Delivery →  [22] Young Crocolisk Skins →  [28D] Highland Hides and  [26] Apprentice's Duties
+ [31D] Horrors in the Highland
+ [31D] Seeking Caitlin →  [31D] Lost in the Thicket Things →  [31D] Heartwoven
+ [31D] Lost Relic Carry →  [31D] Prehistoric Prism
+ [31D] Songblade Search →  [31D] Fallen in the Fen
+ [31D] Changing Tastes
+ [31D] Elder Knowledge →  [31D] Earthen Echo
+ [31D] Dragonmaw Rumors →  [31D] Open the Maw
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,6 @@
+title: Felwood (Classic)
+revision: 5787538
+part: intro
+url: https://warcraft.wiki.gg/wiki/Felwood_%28Classic%29
+
+Felwood, aka Felwood Forest,  is a contested zone located north of Ashenvale, east of Darkshore, and west of Hyjal and Winterspring. It is a corrupted forest filled with tainted creatures of the woods, demonic satyr and infernals, rotting treants and ancients, as well as the tauren and night elves who try to battle back the sickening of the land. It is also home to one of the two tribes of pure furbolgs left in the world — the Timbermaw.

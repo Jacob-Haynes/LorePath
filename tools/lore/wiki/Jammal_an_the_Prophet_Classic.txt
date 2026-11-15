@@ -1,0 +1,53 @@
+title: Jammal'an the Prophet (Classic)
+revision: 6973516
+part: whole
+quest: 1446
+url: https://warcraft.wiki.gg/wiki/Jammal%27an_the_Prophet_%28Classic%29
+
+== Objectives ==
+Obtain Jammal'an the Prophet's Head.
+
+ [Head of Jammal'an]
+
+
+== Description ==
+My Witherbark companions don't take kindly to strangers around their home.
+Me? I don't have a home anymore. I was exiled from my people, the great Atal'ai tribe of the Swamp of Sorrows.
+Our spiritual leader, Jammal'an, had what he called a prophecy. He believes the summoning of the god, Hakkar will bring the Atal'ai immortality.
+But I urged caution. What if the prophecy was nothing more than manipulation?
+I want revenge for my exile. Bring me Jammal'an's head. Maybe then my people will be free.
+
+
+== Rewards ==
+You will be able to choose one of these rewards: 
+
+ [Rainstrider Leggings]
+ [Helm of Exile]
+ [Leggings of Freedom and Sorrow] 
+You will also receive:
+
+6550 XP
+
+
+== Progress ==
+Once Jammal'an has been removed, I stand a chance of returning to my people.
+With Jammal'an as their spiritual leader, the Atal'ai face certain destruction.
+
+
+== Completion ==
+Jammal'an's reckless trust of false visions led my people to their eternal doom.
+I thank you, <class>, for avenging my exile. I mourn for my people. I have no home to return to.
+
+
+== Notes ==
+There were six troll mini-bosses (Gasher, Hukku, Loro, Mijan, Zolo, Zul'Lor) on balconies above the dragonkin floor. You needed to kill them to get access to the dragonkin floor and the main bosses.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Replaced with a new version.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

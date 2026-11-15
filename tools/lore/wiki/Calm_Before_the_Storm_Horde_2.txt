@@ -1,0 +1,66 @@
+title: Calm Before the Storm (Horde 2)
+revision: 5979124
+part: whole
+quest: 4511
+url: https://warcraft.wiki.gg/wiki/Calm_Before_the_Storm_%28Horde_2%29
+
+This quest concludes the Rise of the Silithid quest chain.
+
+
+== Objectives ==
+Bring the Bank Voucher to Karus in the bank of Orgrimmar. 
+
+ [Bank Voucher] (provided)
+
+
+== Description ==
+<Name>, we could not have gotten this far without you. The time will come soon, no doubt, when I'll ask for your help against the silithid once more. We must absorb what we have learned in Un'Goro; I fear that my assumptions that the silithid originated from Un'Goro are now wrong... that indeed there is a far stronger presence somewhere.
+Take this note to Karus at the bank. He'll give you something from my vault that should be viewed as a token of my gratitude. Thank you for your assistance, mighty <class>.
+
+
+== Rewards ==
+You will receive:
+
+8150 XP (or 49 50 at level 70)
+500 reputation with the Horde, meaning
++500 reputation with Orgrimmar
++500 reputation with Thunder Bluff
++500 reputation with Darkspear Trolls
++500 reputation with Undercity
++500 reputation with Silvermoon City
+Choice among:
+ [Oblivion Orb]
+ [Snarkshaw Spaulders]
+ [Eschewal Greaves]
+
+
+== Progress ==
+Zug zug! What may I help you with today, <class>?
+
+
+== Completion ==
+This bank voucher authorizes me to withdraw an item from Zilzibin Drumlore's account with us and present it to you. Congratulations would seem to be in order!
+
+
+== Progression ==
+ [46] Gadgetzan Water Survey
+ [47] Noxious Lair Investigation
+ [48] The Scrimshank Redemption
+ [48] Insect Part Analysis
+ [48] Insect Part Analysis
+ [48] Rise of the Silithid
+ [53] March of the Silithid
+ [53] Bungle in the Jungle
+ [54G] Pawn Captures Queen
+ [54] Calm Before the Storm
+ [54] Calm Before the Storm
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

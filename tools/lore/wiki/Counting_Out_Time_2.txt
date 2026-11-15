@@ -1,0 +1,53 @@
+title: Counting Out Time (2)
+revision: 6927379
+part: whole
+quest: 4973
+url: https://warcraft.wiki.gg/wiki/Counting_Out_Time_%282%29
+
+== Objectives ==
+Locate 5 Andorhal Watches amongst the rubble of the city, and return with them to Chromie in the Andorhal Inn, Western Plaguelands.
+
+ [Andorhal Watch] (5)
+
+
+== Description ==
+If you are willing to help once more, I can certainly use your assistance. I'll gladly take more watches you might uncover from the ruins of Andorhal. They certainly help me in maintaining a balance against whatever malign force is meddling with the timeline here.
+In exchange for those watches, I'll give you another item that, in the future, I suspect you'll find quite the use for.
+
+
+== Rewards ==
+You will receive:
+
+575 XP
+ [Attuned Dampener]
+
+
+== Progress ==
+The watches of Andorhal, much like the large clock on the ruins of the town hall, all are frozen in time at three o'clock.  This was when the full effects of the plague first spread out over the city, choking the life out of it.
+As much as we all may regret what happened that day, it has shaped the flow of time as you mortals perceive it.  The bronze dragonflight must persevere in protecting the timeline!
+
+
+== Completion ==
+Again, I thank you for your assistance.  Please accept this gift.  While you still may not know when to use such an item, perhaps in the future the path of time will reveal its true intentions to you.  You could say that I've seen as such happening to you, <name>.
+
+
+== Progression ==
+ [56] A Matter of Time
+ [56] Counting Out Time
+ [56] Counting Out Time (repeatable)
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.4.0 (2005-04-19): Doubled the number of small lockboxes present for the "Counting Out Time" quest.   
+ Patch 1.3.0 (2005-03-07): There are now more lockboxes available in the Ruins of Andorhal for the Counting Out Time quest.   
+
+
+== See also ==
+Counting Out Time, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

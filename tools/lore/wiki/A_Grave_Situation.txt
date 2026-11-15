@@ -1,0 +1,62 @@
+title: A Grave Situation
+revision: 5627731
+part: whole
+quest: 3913
+url: https://warcraft.wiki.gg/wiki/A_Grave_Situation
+
+== Objectives ==
+Resurrect, then look for the gravestone that Gaeriyan told you to find.
+
+ [Linken's Tempered Sword] (provided)
+
+
+== Description ==
+If you return to the graveyard, <name>, you will find a gravestone there... Not just any gravestone; this one will stand out from the others. Secrets lie within it.
+Push on the stone, and you will learn of these secrets...
+
+
+== Rewards ==
+You will receive:
+
+3650 XP
+
+
+== Progress ==
+This must be the gravestone that Gaeriyan mentioned...
+
+
+== Completion ==
+
+You push on the stone firmly, and it slides away, revealing a small depression underneath it.
+Placing Linken's Sword into the depression, you realize that it fits perfectly...
+
+
+== Notes ==
+On completion, a green pillar of light briefly appears above the gravestone.
+
+
+== Progression ==
+ [52] It's a Secret to Everybody
+ [52] It's a Secret to Everybody
+ [52] It's a Secret to Everybody
+ [52] The Videre Elixir
+Mandatory quest:  [52] The Videre Elixir
+ [52] Meet at the Grave
+ [52] A Grave Situation
+ [52] Linken's Sword
+ [52] A Gnome's Assistance
+ [52] Linken's Memory
+ [54] Silver Heart
+ [54] Aquementas
+ [54] Linken's Adventure
+ [56G] It's Dangerous to Go Alone
+
+
+== Patch Changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

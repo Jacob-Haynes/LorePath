@@ -1,0 +1,53 @@
+title: Fallen in the Fen
+revision: 6938351
+part: whole
+quest: 95795
+url: https://warcraft.wiki.gg/wiki/Fallen_in_the_Fen
+
+== Objectives ==
+Return to Dorin Songblade.
+
+
+== Description ==
+<You cover the dwarf's body with his cloak.>
+Travel to Lakeshire and personally inform Dorin Songblade what became of his brother within the Excavation Sites.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Daewyn's Girdle]
+ [Songblade Stabilizer]
+You will also receive:
+
+6,150 XP
+
+
+== Completion ==
+Ah no...
+<He buries his head in his hands and sobs.>
+I should 'ave gone with 'em. 
+Much of what I was smithin' was for 'im, was plannin' a surprise but it wasn't ready when he came by gettin' things for his journey.
+Now that these are finished, I don't have it in me to reforge or sell any of it.
+You can have this. It's the least I can do for you, bringing me this grim day.
+
+
+== Progression ==
+ [21] Daily Delivery →  [22] Young Crocolisk Skins →  [28D] Highland Hides and  [26] Apprentice's Duties
+ [31D] Horrors in the Highland
+ [31D] Seeking Caitlin →  [31D] Lost in the Thicket Things →  [31D] Heartwoven
+ [31D] Lost Relic Carry →  [31D] Prehistoric Prism
+ [31D] Songblade Search →  [31D] Fallen in the Fen
+ [31D] Changing Tastes
+ [31D] Elder Knowledge →  [31D] Earthen Echo
+ [31D] Dragonmaw Rumors →  [31D] Open the Maw
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

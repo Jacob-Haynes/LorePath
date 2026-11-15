@@ -1,0 +1,88 @@
+title: You Are Rakh'likh, Demon (Classic)
+revision: 6948396
+part: whole
+quest: 3628
+url: https://warcraft.wiki.gg/wiki/You_Are_Rakh%27likh%2C_Demon_%28Classic%29
+
+The final quest given to you by The Fallen Hero of the Horde. It involves killing Razelikh <The Defiler>. Most players never reach this quest due to this quest series' length and difficulty. And have partially acknowledged by a Blizzard CM the fact that its rare to see somebody have this quest. (A Community Spotlight telling all the rare/hidden quests in WoW, "You are Rakh'likh, Demon", being one of them.)
+
+
+== Objectives ==
+Destroy Razelikh the Defiler and return the Severed Horn of the Defiler to the Fallen Hero of the Horde. You will also need to return the Ward of the Defiler so that the Fallen Hero can destroy it, preventing it from ever falling into the wrong hands.
+
+ [Severed Horn of the Defiler]
+ [Ward of the Defiler] (provided)
+
+
+== Description ==
+Razelikh's lair is atop the highest mountain in the Blasted Lands. The only way to the lair is through the use of the teleport runes near the mountain. As long as you hold the amulet, you can freely transport up to the lair. Once you reach the lair, you must conjure the beast. The amulet is your key, <name>. Use it on the Altar of the Defiler.
+Should you defeat the Defiler, bring back his horn. It will become a symbol of hope for all that view it - proof that heroes do exist in this war torn world.
+
+
+== Rewards ==
+
+9950 XP
+
+
+== Progress ==
+There is nothing left to fear.
+
+
+== Completion ==
+Today is a day that will be remembered for all eternity. The demonic overlord of the Blasted Lands has finally fallen!
+
+
+== Notes ==
+Having the  [Ward of the Defiler] on your person allows you to talk to the Deathly Usher at . He will teleport your entire group to the top of the mountain. You can talk to him alive or dead. (Makes it so much easier to get your corpse...)
+Using the Ward of the Defiler at the altar on top of the mountain will summon Rakh'likh in the ring in the center of the plateau.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+You Are Rakh'likh, Demon, TCG
+
+
+== External links ==
+
+Wowhead
+WoWDB

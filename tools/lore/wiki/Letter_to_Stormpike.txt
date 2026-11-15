@@ -1,0 +1,46 @@
+title: Letter to Stormpike
+revision: 6258229
+part: whole
+quest: 514
+url: https://warcraft.wiki.gg/wiki/Letter_to_Stormpike
+
+== Objectives ==
+Take the Cleverly Encrypted Letter to Prospector Stormpike in Ironforge.
+
+ [Cleverly Encrypted Letter] (provided)
+
+
+== Description ==
+I have a colleague in Ironforge who may be able to help decrypt this letter. Go to the Library in the Hall of Explorers in Ironforge and speak with Prospector Stormpike. Tell him I sent you and show him the letter. If there's anyone north of Blackrock Spire who can read this, it is he.
+
+
+== Rewards ==
+You will receive:
+
+1350 XP (or 8 40 at max level)
++75 reputation with Ironforge
+
+
+== Progress ==
+Dibbs from Southshore sent you, did he?  How is the old bookworm doing?
+
+
+== Completion ==
+Ah, encryption!  A specialty of mine.  Let me see here...
+
+
+== Progression ==
+ [34] Encrypted Letter
+ [34] Letter to Stormpike
+ [34] Further Mysteries
+ [40] Dark Council
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

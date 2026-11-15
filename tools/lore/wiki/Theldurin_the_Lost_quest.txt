@@ -1,0 +1,46 @@
+title: Theldurin the Lost (quest)
+revision: 5636334
+part: whole
+quest: 687
+url: https://warcraft.wiki.gg/wiki/Theldurin_the_Lost_%28quest%29
+
+== Objectives ==
+Find Theldurin the Lost.
+
+
+== Description ==
+Theldurin the Lost was once a member of our order, the Twilight's Hammer. But he lost his mind and scorned our teachings. And before he fled from us, he stole the scroll of Myzrael! We could not catch him, but rumors say he hides in the Badlands, gibbering and mad.
+To bring the Lady back to us, you must find the scroll. And to do that, you must find Theldurin.
+
+
+== Rewards ==
+You will receive:
+
+2150 XP (or 13 20 at 70)
+
+
+== Completion ==
+Hello.  Hello, hello hello hello hello HELLO!
+I'm sorry - wait, no I'm not!  Don't be rude!
+Oh no...that was crazy talk.
+But...sometimes being crazy is my only solace.
+
+
+== Progression ==
+ [37] The Princess Trapped
+ [38] Stones of Binding
+ [42] Breaking the Keystone
+ [40] Myzrael's Allies
+ [40] Theldurin the Lost
+ [41] The Lost Fragments
+ [50G2] Summoning the Princess
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

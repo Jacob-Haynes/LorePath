@@ -1,0 +1,54 @@
+title: The People's Militia (quest)
+revision: 5586958
+part: whole
+quest: 12
+url: https://warcraft.wiki.gg/wiki/The_People%27s_Militia_%28quest%29
+
+== Objectives ==
+Gryan Stoutmantle wants you to kill 15 Defias Trappers and 15 Defias Smugglers then return to him on Sentinel Hill.
+
+Defias Trapper (15)
+Defias Smuggler (15)
+
+
+== Description ==
+The People's Militia has but one goal: To defend the lands of Westfall and return peace to our surroundings. Unfortunately, the price of peace is often blood.
+One of my scouts has brought word of a band of Defias Trappers wreaking havoc nearby. I have reports of Defias Trapper sightings near the Jangolode Mine to the Northwest as well as at the Molsen Farm and Furlbrow's Pumpkin Farm. If you seek to join our ranks, slay 15 Defias Trappers and 15 Defias Smugglers then return to me.
+
+
+== Rewards ==
+5
+910 XP
+100 reputation with Stormwind
+
+
+== Progress ==
+Perhaps I did not make myself clear, pledge. In order to prove your worth as a servant to The People's Militia and to the Light you need to slay 15 Defias Trappers and 15 Defias Smugglers then return to me when the deed is done.
+
+
+== Completion ==
+Well done, <name>. My scout witnessed your valiant acts. You are proving yourself quite well so far.
+
+
+== Notes ==
+The quest log tells you where to look for the Smugglers and trappers:
+
+Jangolode Mine
+Molsen Farm
+Furlbrow's Pumpkin Patch
+
+
+== Progression ==
+ [12] The People's Militia
+ [14] The People's Militia
+ [17] The People's Militia
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

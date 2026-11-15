@@ -1,0 +1,53 @@
+title: Crime and Punishment (Classic)
+revision: 6956951
+part: whole
+quest: 377
+url: https://warcraft.wiki.gg/wiki/Crime_and_Punishment_%28Classic%29
+
+Crime and Punishment takes the player into the Stormwind Stockade to deliver justice to a defiler of the dead.
+
+
+== Objectives ==
+Councilman Millstipe of Darkshire wants you to bring him the hand of Dextren Ward. 
+
+ [Hand of Dextren Ward]
+
+
+== Description ==
+As if the neglect for the residents of Duskwood was not bad enough, now the House of Nobles spits in the eye of the Darkshire Council with their decision to imprison Dextren Ward in Stormwind rather than behead the villain as per Lord Ebonlocke's sentence.
+Ward was caught selling bodies from the cemetery to Morbent Fel, a crime punishable by death. Yet Stormwind claims Ward as their prisoner.
+Assassinate Ward in The Stormwind Stockade - bring me his hand - and I shall reward you.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Ambassador's Boots]
+ [Darkshire Mail Leggings]
+ [Town Clerk's Mittens] 
+You will also receive:
+
+2100 XP (or 12 60 at max level)
++100 reputation with Stormwind
+
+
+== Progress ==
+So long as a molester of the dead like Dextren Ward is permitted to live, justice stands betrayed.  Return to me once Lord Ebonlocke's sentence of death is carried out on that defiler, Ward.  We shall give the families of the dead the closure they deserve and better yet, we will send a clear message to the House of Nobles in Stormwind. 
+
+
+== Completion ==
+So Dextren Ward finally paid for his crimes against humanity?  Good riddance to the scum I say.  And cheers to you, my friend!  Not only have you given the families of the dead the peace of mind they deserve, you sent a poignant message to those corrupt bureaucrats in the House of Nobles.  Stormwind must rise to the needs of the people of Duskwood or we will break free from their tyranny.
+
+
+== Notes ==
+Dextren is at the far end of The Stockade on the left side. He's an elite mage who can fear player into other creatures.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

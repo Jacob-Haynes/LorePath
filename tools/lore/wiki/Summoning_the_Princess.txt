@@ -1,0 +1,64 @@
+title: Summoning the Princess
+revision: 5636131
+part: whole
+quest: 656
+url: https://warcraft.wiki.gg/wiki/Summoning_the_Princess
+
+== Objectives ==
+Go to the Shards of Myzrael, summon her and defeat her.
+Gather her Eldritch Shackles and bind them to the Shards of Myzrael.
+
+ [Eldritch Shackles]
+Suggested Players [2]
+ [Scroll of Myzrael] (provided)
+
+
+== Description ==
+You must defeat Myzrael before she grows in strength. If you do not, then once she has gathered enough power she will challenge her captors! There are some who think they can control her, but if she can be controlled then why did the giants chain her in the first place??
+Crazy logic, eh?
+To defeat her, summon her at the Shards of Myzrael where you first spoke with her. Defeat her and gather her Eldritch Shackles, then bind them to the Shards of Myzrael.
+Do that, and she will again be trapped.
+
+
+== Rewards ==
+
+You will also receive:
+
+10200 XP
+
+
+== Progress ==
+The Shards of Myzrael are now strangely quiet.
+
+
+== Completion ==
+As the eldritch shackles are placed around the Shards, an unhuman wail is heard from far below.  The scream is followed by a roar.
+The Shards of Myzrael no longer invoke feelings of warmth and security as they once did.  Now they pulse with an open menace... as if the thing beneath them holds ill will toward the surface.
+
+
+== Notes ==
+Scroll used
+Myzrael says: What? <Name>, you served me well, but...
+Myzrael says: Why have you summoned me so soon? I haven't yet reached my full power!
+Myzrael says: No matter. You were a fool to help me, and now you will pay!
+During the fight, Myzrael summons Prismatic Exiles.
+
+
+== Progression ==
+ [37] The Princess Trapped
+ [38] Stones of Binding
+ [42] Breaking the Keystone
+ [40] Myzrael's Allies
+ [40] Theldurin the Lost
+ [41] The Lost Fragments
+ [50G2] Summoning the Princess
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,7 @@
+title: Camp Mojache
+revision: 6778266
+part: intro
+url: https://warcraft.wiki.gg/wiki/Camp_Mojache
+
+Camp Mojache is a tauren village in eastern Feralas overlooking the scenic Wildwind Lake. The camp straddles a swift-flowing stream that feeds the lake. Tauren refugees have started flooding into the village from Thousand Needles, mostly from Freewind Post, due to the destruction.
+The camp is known for its thick hides and courageous braves offering travelers protection against the dangers of Feralas.

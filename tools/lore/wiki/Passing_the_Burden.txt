@@ -1,0 +1,41 @@
+title: Passing the Burden
+revision: 5637223
+part: whole
+quest: 3448
+url: https://warcraft.wiki.gg/wiki/Passing_the_Burden
+
+== Objectives ==
+Speak to Tymor in Ironforge.
+
+
+== Description ==
+I've recently been handed the responsibility of investigating Azshara--a once beautiful area the elves called home. This would be back when they practiced magic. It's now a more dangerous place than it is beautiful, but that doesn't stop us from turning over every stone for answers to our past.
+A companion of mine named Tymor offered to help me investigate the area since he takes a particular interest in such things.
+He owns a small place to the right of the Hall of Mysteries here in the city.
+
+
+== Rewards ==
+You will receive:
+
+500 XP (or 3 at level 70)
+
+
+== Completion ==
+Ah, Karnik sent you, did he? I expected to hear from him soon. I've discovered such wonderful things about Azshara.. I know night elves have incredible life spans, but everyone forgets some of the more... unfortunate events in their lives sometimes. That's not meant as a criticism, just an observation.
+Long ago, there were cities created by the elves filled with knowledge about magic and other lost arts. Being a student of such things, I started my investigation. What I found was quite thrilling.
+
+
+== Progression ==
+ [52] Passing the Burden
+ [52] Arcane Runes
+ [52] Return to Tymor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

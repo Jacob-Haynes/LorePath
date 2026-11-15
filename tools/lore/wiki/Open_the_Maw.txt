@@ -1,0 +1,62 @@
+title: Open the Maw
+revision: 6911833
+part: whole
+quest: 95682
+url: https://warcraft.wiki.gg/wiki/Open_the_Maw
+
+== Objectives ==
+Slay the Dragonmaw forces within the Excavation Site and return to the Deathstalker Agent outside with anything you recover.
+
+Dragonmaw Saboteur slain (2)
+Dragonmaw Warder slain (4)
+Dragonmaw Dispatch
+
+
+== Description ==
+Dragonmaw. <She lets out a dry, amused scoff.>
+The remnants of the dragon-wrangling clan think they've found something that could lead to them rising to their former power. In the eyes of whom... their false warchief?
+Clear out their ragtag clan within the Excavation Sites so our Deathstalkers can move in undetected.
+If the Dragonmaw carry anything of note upon them, return it to me--this information must stay between us and our royal command.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Knife-Polishing Rag]
+ [Dirt-Heavy Bracers]
+You will also receive:
+
+6,950 XP
+ [Bloody Map]
+
+
+== Progress ==
+We're here to get the important job done. If you can help, prove it.
+
+
+== Completion ==
+Don't mind me snatching that right out of your hands.
+I recognized that orcish scrawl. So they're hoping to appease Rend? A fruitless and wasted effort. 
+No matter, this is highly valuable knowledge for the dark lady to consider.
+Here, I won't be taking any of this with me--and don't talk about the mission, grunt.
+
+
+== Progression ==
+ [21] Daily Delivery →  [22] Young Crocolisk Skins →  [28D] Highland Hides and  [26] Apprentice's Duties
+ [31D] Horrors in the Highland
+ [31D] Seeking Caitlin →  [31D] Lost in the Thicket Things →  [31D] Heartwoven
+ [31D] Lost Relic Carry →  [31D] Prehistoric Prism
+ [31D] Songblade Search →  [31D] Fallen in the Fen
+ [31D] Changing Tastes
+ [31D] Elder Knowledge →  [31D] Earthen Echo
+ [31D] Dragonmaw Rumors →  [31D] Open the Maw
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

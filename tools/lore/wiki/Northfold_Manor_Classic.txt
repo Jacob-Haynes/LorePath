@@ -1,0 +1,45 @@
+title: Northfold Manor (Classic)
+revision: 6012716
+part: whole
+quest: 681
+url: https://warcraft.wiki.gg/wiki/Northfold_Manor_%28Classic%29
+
+== Objectives ==
+Kill 10 Syndicate Highwaymen and 6 Syndicate Mercenaries.
+Return to Captain Nials at Refuge Pointe.
+
+Syndicate Highwayman slain (10)
+Syndicate Mercenary slain (6)
+
+
+== Description ==
+We are fighting a war for Stromgarde, and we are losing. The ogres, the Syndicate and we have divided our once great city, and each faction battles the other into a bloody stalemate.
+But our forces dwindle while our enemy grows.
+We need help from the town of Southshore, but supplies are difficult to receive while the Syndicate holds territory between us.
+Go to the Syndicate base in Northfold Manor and slay them. Then, perhaps, pressure on our supply trains will lessen and more will get through.
+
+
+== Rewards ==
+You will receive:
+
+2,550 XP
+250 reputation with Stormwind
+
+
+== Progress ==
+<Name>, with each passing hour our hold on Stromgarde grows more tenuous. You must make haste or our city will surely fall.
+
+
+== Completion ==
+Very good, <name>. With the deaths of those Syndicate members we should have an easier time receiving supplies from Southshore.
+Perhaps our cause yet has hope.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

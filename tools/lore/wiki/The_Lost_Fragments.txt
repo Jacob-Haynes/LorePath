@@ -1,0 +1,61 @@
+title: The Lost Fragments
+revision: 5637390
+part: whole
+quest: 692
+url: https://warcraft.wiki.gg/wiki/The_Lost_Fragments
+
+== Objectives ==
+Bring the Torn Scroll Fragment, the Crumpled Scroll Fragment and the Singed Scroll Fragment to Theldurin the Lost.
+
+ [Torn Scroll Fragment]
+ [Crumpled Scroll Fragment]
+ [Singed Scroll Fragment]
+
+
+== Description ==
+The Scroll of Myzrael...the Scroll of Myzrael?! You don't want that! Its magic can pull Myzrael to the surface world and if you do that, we are in trouble!
+Or...maybe it's too late. Maybe she already is free. Maybe she's just gathering strength before unleashing herself upon us. If so, then you'll NEED the scroll!
+...too bad it's destroyed. Enraged elementals stole it and tore it up and now fight over the fragments.
+But if you can gather those fragments, maybe we can fix it...
+
+
+== Rewards ==
+You will receive:
+
+4600 XP
+
+
+== Progress ==
+Did you find those fragments?!?!  You'll need the Scroll of Myzrael if you want to trap her again, before it's too late!
+
+
+== Completion ==
+Ah, you found them!  Good work, <name>! These might be the only chance we have against the evil of Myzrael!
+Just let me find my scrap-ratchet and see if I can re-attach these fragments...
+
+
+== Notes ==
+Upon accept
+Theldurin the Lost says: Those thieving elementals are up the path, this way. Good luck, <name>.
+Theldurin turns and points to a path.
+The elementals to kill for these fragments are the Enraged Rock Elementals directly in the hills behind Theldurin.  No other elementals will drop the scroll fragments. It is possible to have multiple fragments drop from one elemental.
+
+
+== Progression ==
+ [37] The Princess Trapped
+ [38] Stones of Binding
+ [42] Breaking the Keystone
+ [40] Myzrael's Allies
+ [40] Theldurin the Lost
+ [41] The Lost Fragments
+ [50G2] Summoning the Princess
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

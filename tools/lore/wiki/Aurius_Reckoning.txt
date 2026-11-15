@@ -1,0 +1,28 @@
+title: Aurius' Reckoning
+revision: 6875448
+part: whole
+quest: 5125
+url: https://warcraft.wiki.gg/wiki/Aurius%27_Reckoning
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Will of the Martyr]
+ [Blood of the Martyr]
+You will also receive:
+
+9950 XP (or 60 at max level)
+
+
+== Completion ==
+<Name>, I am dying... but my soul is saved.  For that, I owe you more than words can say.  Please, take this... and fight on, brave <class>!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

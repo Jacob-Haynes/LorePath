@@ -1,0 +1,47 @@
+title: The Corrupter
+revision: 6307832
+part: whole
+quest: 1480
+url: https://warcraft.wiki.gg/wiki/The_Corrupter
+
+== Objectives ==
+Take the Flayed Demon Skin to Maurin Bonesplitter at Ghost Walker Post in Desolace.
+
+ [Flayed Demon Skin] (provided)
+
+
+== Description ==
+The torn skin smells rotten, and is remarkably pliable for something that appears to be dry and fragile.
+As you unroll it, you can clearly see the red markings of some kind of language on one side. At the bottom of the skin is a very clear symbol that you guess is a signature of some kind.
+Perhaps it is something Maurin could tell you more about?
+
+
+== Progress ==
+The Burning Blade begin to realize how weak they truly are. Their magics are pathetic, their strength feeble.
+Their only power comes from those they serve, and not from any understanding of true power and knowledge.
+
+
+== Completion ==
+Hmm, these runes are indeed a language, <Name>, an old language. They seem remotely similar to the Eredun language, but the differences are drastic. If I am not mistaken, this is a contract of some kind.... Here, yes, this symbol is the demon's signature: Lord Azrethoc.
+
+
+== Notes ==
+ [Flayed Demon Skin] drops from random Burning Blade mobs in Desolace at Thunder Axe Fortress.
+
+
+== Progression ==
+ [33] The Corrupter
+ [33] The Corrupter
+ [35] The Corrupter
+ [33] The Corrupter
+ [40G] The Corrupter
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

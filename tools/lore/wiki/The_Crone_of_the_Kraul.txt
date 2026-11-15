@@ -1,0 +1,56 @@
+title: The Crone of the Kraul
+revision: 6957007
+part: whole
+quest: 1101
+url: https://warcraft.wiki.gg/wiki/The_Crone_of_the_Kraul
+
+== Objectives ==
+Bring Razorflank's Medallion to Falfindel Waywarder in Thalanaar.
+
+ [Razorflank's Medallion]
+
+
+== Description ==
+Poor Heralath! And this dwarf... Lonebrow. What a brave soul he was.
+We must not let their valiance go for naught. This crone... Charlga Razorflank ... must be stopped.
+Surely, infiltrating the Kraul will be perilous. There isn't time to send word to Darnassus. <Name>, assemble a party to slay the crone.
+Bring me Razorflank's Medallion as proof of demise. 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Berylline Pads]
+ [Stonefist Girdle]
+ [Marbled Buckler]
+You will also receive:
+
+3350 XP (or 19 80 at max level)
+ ["Mage-Eye" Blunderbuss],  [Falfindel's Blaster], or  [Quilboar Blaster]
+
+
+== Progress ==
+So long as Charlga Razorflank is mustering a force in Razorfen Kraul, these lands are in great danger.
+
+
+== Completion ==
+The crone has been laid to rest. This is fantastic news, <name>.
+In these times of peril, it is refreshing to see one as brave as yourself.
+With Razorflank's minions taken care of, our studies in the area can continue. Perhaps now we can gain further knowledge of exactly what happened to corrupt the resting place of Agamaggan.
+However, I fear the answer to that question lies in treachery as well...
+
+
+== Progression ==
+ [27] Lonebrow's Journal
+ [27D] The Crone of the Kraul
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.4.0 (2008-03-25): Level reduced from 34 to 27.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

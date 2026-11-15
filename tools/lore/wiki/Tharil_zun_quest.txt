@@ -1,0 +1,49 @@
+title: Tharil'zun (quest)
+revision: 6470848
+part: whole
+quest: 19
+url: https://warcraft.wiki.gg/wiki/Tharil%27zun_%28quest%29
+
+== Objectives ==
+Bring Tharil'zun's Head to Marshal Marris in Redridge.
+
+ [Tharil'zun's Head]
+
+
+== Description ==
+Blackrock Outrunners and Renegades are running ambushes between here and Stonewatch Keep. The leader of the Outrunners is an orc named Tharil'zun--we want this orc. Bring me the head of Tharil'zun!
+
+
+== Rewards ==
+
+You will also receive:
+
+2550 XP (or 15 60 at level 70)
++350 reputation with Stormwind
+
+
+== Progress ==
+Orc pressure from Blackrock is still tense.  But have you at least rid us of Tharil'zun?
+
+
+== Completion ==
+Tharil'zun was a vicious, crafty orc. Well done—I'm sure he didn't go down easy. Here is your reward, <name>.
+
+
+== Trivia ==
+During the original beta, this quest additionally required killing 12 Blackrock Outrunners.
+
+
+== Progression ==
+ [21] Blackrock Menace
+ [25] Tharil'zun
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

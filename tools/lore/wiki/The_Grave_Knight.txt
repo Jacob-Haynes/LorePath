@@ -1,0 +1,55 @@
+title: The Grave Knight
+revision: 6911610
+part: whole
+quest: 96986
+url: https://warcraft.wiki.gg/wiki/The_Grave_Knight
+
+== Objectives ==
+Defeat Atrexis the Grave Knight in the City of Dalaran for Melisara in Tarren Mill.
+
+Atrexis the Grave Knight slain
+
+
+== Description ==
+Within the underbelly of the mage city to the north is a traitor to our kind. A necromancer of disturbing talent. He raises an army of undeath right under the Kirin Tor's nose.
+I care not for the fate of the mage city, <name>, but this grave knight spits in the face of everything we Forsaken stand for. Put an end to him. Show him no one is beyond the reach of the Dark Lady.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Gravewalker Boots]
+ [Undead Knight's Bracers]
+You will also receive:
+
+1
+9,400 XP
+
+
+== Progression ==
+Horde attunement:
+
+ [34] Prison Break In &  [33] Key to the City
+ [35] Dalaran Patrols
+ [34] Blood in the Streets
+ [33D] Heart of Disruption
+ [33] Shrewd Negotiations
+Other dungeon quests:
+
+ [33D] A Green Sample
+ [33] An Alarming Request →  [33D] Heart of Disruption →  [33] Friend of the Kirin Tor
+ [33D] Power Overwhelming
+ [33D] Starving Arcane
+ [33D] Opportunistic Education
+ [33D] Source of Power
+ [33D] The Grave Knight
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

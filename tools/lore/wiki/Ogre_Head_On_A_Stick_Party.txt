@@ -1,0 +1,55 @@
+title: Ogre Head On A Stick = Party
+revision: 5637408
+part: whole
+quest: 3825
+url: https://warcraft.wiki.gg/wiki/Ogre_Head_On_A_Stick_%3D_Party
+
+== Objectives ==
+Take  [Gor'tesh's Lopped Off Head] and place it at the top of Dreadmaul Rock. Look for a soft dirt mound to plant the pike. 
+
+Gor'tesh Head Planted
+ [Gor'tesh's Lopped Off Head] (provided)
+
+
+== Description ==
+Just one last thing you must do, soldier.
+I've taken the liberty of putting Gor'tesh's head on a pike. Now all you have to do is take this head to the top of Dreadmaul Rock and stick it into the ground. Once you do that, watch as those cowardly ogres run for their lives! After you've had your fun, come back to me and I'll reward you for all of your hard work.
+<Oralius seems to be losing touch with reality.> 
+
+
+== Rewards ==
+
+You will also receive: 2 40
+
+7600 XP
+250 reputation with Ironforge
+
+
+== Progress ==
+So? Did you paint any pictures of the event?
+
+
+== Completion ==
+Outstanding work, soldier! Simply amazing! Oh I'll get the medal of bravery for this, er, I mean you'll be rewarded handsomely for this!
+
+
+== Notes ==
+When the head on a stick is planted in the dirt mound, nearby ogres will start running around, shouting things like:
+
+Firegut Brute yells: Run for the hills!  Wait!  We already in hills!
+
+
+== Progression ==
+ [52] Extinguish the Firegut
+ [53] Gor'tesh the Brute Lord
+ [53] Ogre Head On A Stick = Party
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

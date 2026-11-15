@@ -1,0 +1,49 @@
+title: Return to Milton
+revision: 6831755
+part: whole
+quest: 542
+url: https://warcraft.wiki.gg/wiki/Return_to_Milton
+
+== Objectives ==
+Bring the Tomes of Alterac to Milton Sheaf in Stormwind.
+
+ [Tomes of Alterac] (provided)
+
+
+== Description ==
+I need to spend some time studying the Arm of Gri'lek book you brought me, though I'm sure Milton is eager to get the other recovered books into Stormwind's collection.
+Here are the books you gathered from the Ruins of Alterac, packed and catalogued. Take them back to Milton Sheaf in Stormwind and I'm sure he'll be grateful.
+
+
+== Rewards ==
+You will receive:
+
+85
+3550 XP (or 21 60 at max level)
++350 reputation with Stormwind
+
+
+== Progress ==
+<Name>, you've returned!  How did your foray into Alterac go?  Did you bring anything back with you?
+
+
+== Completion ==
+My oh my!  Look at these!  I can't believe they survived the ruination of Alterac.  And all those ogres too!
+Thank you, <name>.  Thank you so much!  You have helped preserve human knowledge, and you add to the grandeur of the Royal Library of Stormwind.
+
+
+== Progression ==
+ [25] An Old History Book
+ [38] Southshore
+ [38] Preserving Knowledge
+ [38] Return to Milton
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

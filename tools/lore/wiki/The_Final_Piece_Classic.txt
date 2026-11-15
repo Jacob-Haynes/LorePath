@@ -1,0 +1,51 @@
+title: The Final Piece (Classic)
+revision: 5638709
+part: whole
+quest: 5123
+url: https://warcraft.wiki.gg/wiki/The_Final_Piece_%28Classic%29
+
+== Objectives ==
+Bring the Crudely-Written Log to Donova Snowden in Winterspring. 
+
+ [Crudely-Written Log] (provided)
+
+
+== Description ==
+The log you found on the high chief looks extensive, but after looking through a couple of the pages, you find that you cannot read the text. The markings are so crude and poorly-formed that you are not sure if anyone would be able to read them.
+But perhaps Donova will be able to tell you what it says...
+
+
+== Rewards ==
+You will receive:
+
+4650 XP
++75 reputation with Everlook
+
+
+== Progress ==
+Now, what's this, <name>? 
+
+
+== Completion ==
+I wonder what all of this means... I can't make anything out... 
+
+
+== Progression ==
+ [56] Winterfall Firewater
+ [56] Falling to Corruption
+ [56] Mystery Goo
+ [56] Toxic Horrors
+ [57] Winterfall Runners
+ [59] High Chief Winterfall
+ [59] The Final Piece
+ [59] Words of the High Chief
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

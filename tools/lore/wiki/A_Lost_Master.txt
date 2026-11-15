@@ -1,0 +1,66 @@
+title: A Lost Master
+revision: 6595145
+part: whole
+quest: 986
+url: https://warcraft.wiki.gg/wiki/A_Lost_Master
+
+== Objectives ==
+Find 5 Fine Moonstalker Pelts and return them to Terenthis in Auberdine.
+
+ [Fine Moonstalker Pelt] (5)
+
+
+== Description ==
+<Name>, your skills have already helped me in my endeavor. Could I impose on you again to help Grimclaw and his master Volcor? In addition, I can craft you a magical cloak that will allow you to walk unhindered by Darkshore's creatures while you look for him.
+To create the cloak, I'll need five fine moonstalker pelts from a moonstalker sire or matriarch to have enough material. The cats can be found near Wildbend River to the south, or even farther south near Ashenvale.
+
+
+== Rewards ==
+You will receive:
+
+1550 XP (or 9 60 at level 70)
++250 reputation with Darnassus
+
+
+== Progress ==
+I can't in good conscience permit you to seek Volcor until I've crafted that cloak for you.
+
+
+== Completion ==
+These will do nicely, <name>. I shall set to work on the cloak immediately.
+Give me a few moments, then return to me.
+Oh, one more thing: after you've used the enchantment on the cloak you'll be limited in your interactions with others. If you can help it, do no more than speak to others. Much more than that could dispel the illusion.
+
+
+== Notes ==
+Upon completion
+Terenthis says: I shall get started right away, <name>.
+Terenthis says: Now... where was my thread and needle. Ah! There it is...
+
+
+== Progression ==
+
+ [14] How Big a Threat?
+The questline branches in two:
+
+Terenthis:
+ [14] How Big a Threat?
+ [20] A Lost Master
+ [20] A Lost Master
+ [20] Escape Through Stealth or [22] Escape Through Force
+ [19] Trek to Ashenvale
+
+Thundris Windweaver:
+ [15] Thundris Windweaver
+ [15] The Cliffspring River
+ [18] The Blackwood Corrupted
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

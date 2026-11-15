@@ -1,0 +1,58 @@
+title: The Platinum Discs
+revision: 6556570
+part: whole
+quest: 2280
+url: https://warcraft.wiki.gg/wiki/The_Platinum_Discs
+
+== Objectives ==
+Take the miniature version of the Discs of Norgannon to someone very interested in them.
+
+ [Miniature Platinum Discs] (provided)
+
+
+== Description ==
+Touching the Discs of Norgannon once again makes your hand tingle. This time, however, a strange grinding noise is heard from inside the discs.
+Your backpack suddenly becomes heavier than it was before. Inside, you discover a miniature version of the discs!
+No doubt, an item of this sort would be invaluable for someone interested in the ancient history of Azeroth. Someone would sure be interested in this!
+
+
+== Rewards ==
+
+You will also receive:
+
+50
+6,690 XP
+
+
+== Progress ==
+What is that you have there? What did you learn from the discs?
+
+
+== Completion ==
+These discs will change everything. Their secrets are ours now.
+
+
+== Notes ==
+From four pre-Cata quests, the first Horde version was reworked into this one, with rest of them removed completely.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Added.   
+
+
+== See also ==
+ [15-30D] The Platinum Discs (neutral)
+
+
+=== Previous versions ===
+ The subject of this section has been removed from World of Warcraft.
+ [47] The Platinum Discs (Alliance, part 1)
+ [47D] The Platinum Discs (Horde, part 1)
+ [47] The Platinum Discs (Alliance, part 2)
+ [47] The Platinum Discs (Horde, part 2)
+
+
+== External links ==
+
+Wowhead
+WoWDB

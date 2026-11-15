@@ -1,0 +1,47 @@
+title: The Crown of Will
+revision: 5618953
+part: whole
+quest: 495
+url: https://warcraft.wiki.gg/wiki/The_Crown_of_Will
+
+This quest starts the Crown of Will quest chain.  Basically, one of Lady Sylvanas' errand boys has found a way to break away from her control and avoid doing the task he was given. Of course, that can't be tolerated...
+
+
+== Objectives ==
+Report to Melisara at Tarren Mill in the Hillsbrad Foothills.
+
+
+== Description ==
+Mug'Thol and his ogre warband was sent to Alterac to retrieve the Crown of Will for Lady Sylvanas. Unfortunately, instead of returning it, the idiot decided to try it on... I suppose ogres can't resist anything bright and shiny.
+His bumbling actions have become something of a problem, however. The Crown of Will enabled him to resist the possession placed upon him to serve Lady Sylvanas.
+The Dark Lady wants an example made, travel to Tarren Mill in Hillsbrad and report to Melisara, my lieutenant.
+
+
+== Rewards ==
+You will receive:
+
+410 XP
+
+
+== Completion ==
+You were sent by Sharlindra? Very well then, you'll find I don't waste much time with idle chatter.
+Mug'Thol is an irritant, and we will deal with him quickly, thoroughly, and without incident.
+
+
+== Progression ==
+ [39] The Crown of Will
+ [39] The Crown of Will
+ [41] The Crown of Will
+ [43] The Crown of Will
+ [43] The Crown of Will
+
+
+== Notes ==
+All quests in the Crown of Will quest chain were removed in patch 4.0.3a, except for this first one. After completing it and trying to get the next quest in the chain, a warning stating "You don't meet the requirements for that quest" appears, therefore preventing the player from moving into the next removed quests. It is not clear why this first quest in the chain was not removed as well.
+This was later corrected sometime during Mists of Pandaria.
+
+
+== External links ==
+
+Wowhead
+WoWDB

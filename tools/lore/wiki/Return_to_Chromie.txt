@@ -1,0 +1,64 @@
+title: Return to Chromie
+revision: 5616120
+part: whole
+quest: 5941
+url: https://warcraft.wiki.gg/wiki/Return_to_Chromie
+
+This quest is part of the Rewriting the Battle of Darrowshire quest chain (Classic).
+
+
+== Objectives ==
+Take the  [Bundle of Relics] to Chromie in Andorhal. 
+
+ [Bundle of Relics] (provided)
+
+
+== Description ==
+You have gathered many relics of the battle of Darrowshire. Each time you returned with more, my heart yearned for my village... yearned to protect it from its fate.
+I know that cannot be, but Chromie, that strange gnome in Andorhal, tells me it is possible. She says you can save Darrowshire!
+She asked me to gather together the relics, and to have you bring them to her. She said that she awaits you in the ruined inn of Andorhal.
+
+
+== Rewards ==
+You will receive:
+
+3300 XP (or 19 80 at level 70)
+
+
+== Progress ==
+I have been in contact with your friend Carlin. He feels great pain for the doom of his village, but he speaks very highly of you and knows that you can set things right.
+Oh, but I'm drifting from the subject at hand... <name>, do you have the relics I asked for?
+
+
+== Completion ==
+Ah yes, there they are. Together they weave a powerful spell, one that will raise the spirits of Darrowshire.
+With that spell, and with a little luck, we can save Joseph Redpath!
+
+
+== Progression ==
+ [55] Little Pamela or  [55] Sister Pamela
+ [55] Pamela's Doll
+Complete both:
+ [56] Auntie Marlene
+ [56] A Strange Historian
+ [56] The Annals of Darrowshire
+ [56] Uncle Carlin
+ [55] Defenders of Darrowshire
+ [56] Brother Carlin
+All of the following, in any order:
+ [57] Villains of Darrowshire
+ [56] Heroes of Darrowshire
+ [60] Marauders of Darrowshire
+ [60] Return to Chromie
+ [60] The Battle of Darrowshire
+ [60] Hidden Treasures
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

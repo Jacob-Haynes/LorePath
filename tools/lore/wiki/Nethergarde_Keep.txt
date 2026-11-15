@@ -1,0 +1,7 @@
+title: Nethergarde Keep
+revision: 6688199
+part: intro
+url: https://warcraft.wiki.gg/wiki/Nethergarde_Keep
+
+Nethergarde Keep, also known as the Citadel of Nethergarde, was a Dalaranian fortress built to keep watch over the Dark Portal after the Second War. It stood on a high bluff along the only road into the Blasted Lands, a road often traveled by both the Alliance and the Horde as they prepared to do battle with the demonic forces in the region.
+Nethergarde Keep was a heavily defended Alliance town, and although technically it was a castle-like Northwatch Hold in the Barrens, none of the guards were PvP-enabled except the Gryphon Master and a few quest givers. Before its destruction in World of Warcraft: Warlords of Draenor, it had two barracks, a mage tower and a blacksmith. Its defenses were no match for the armies of the Iron Horde.

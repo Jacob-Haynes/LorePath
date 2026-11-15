@@ -1,0 +1,7 @@
+title: Darnassus
+revision: 6888706
+part: intro
+url: https://warcraft.wiki.gg/wiki/Darnassus
+
+Darnassus (aka Darnassus City), now known as Remains of Darnassus, was the capital city of the night elves of the Alliance, found in western Teldrassil. The High Priestess, Tyrande Whisperwind, resided in the Temple of the Moon, surrounded by other sisters of Elune and her mate, the Archdruid Malfurion Stormrage.
+Darnassus was the greatest city of the night elves, housing the leaders of both the druids and the faithful of Elune. It was carefully guarded by Sentinels, ancient protectors, and ancients of war. It was destroyed during the Burning of Teldrassil.

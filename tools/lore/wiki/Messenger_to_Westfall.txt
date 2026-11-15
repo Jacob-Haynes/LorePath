@@ -1,0 +1,51 @@
+title: Messenger to Westfall
+revision: 6237774
+part: whole
+quest: 143
+url: https://warcraft.wiki.gg/wiki/Messenger_to_Westfall
+
+Part of the Reinforcing Redridge correspondence quests.
+
+
+== Objectives ==
+Magistrate Solomon wants you to take his written plea to Gryan Stoutmantle in Westfall.
+
+ [Solomon's Plea to Westfall] (provided)
+
+
+== Description ==
+Something odd is afoot with the Stormwind Army. They should have been here in force by now. Time is a luxury we don't have, however. I will not stand by and watch the people of Lakeshire give their lives without trying to enlist more help. I've heard word of a people's militia forming in Westfall.
+Take this plea to their leader, Gryan Stoutmantle. Perhaps Stoutmantle's men can lend some support here until the King sends reserves.
+
+
+== Rewards ==
+You will receive:
+
+50-490 XP
+
+
+== Progress ==
+Hail, <class>.  What business do you have with The People's Militia?
+
+
+== Completion ==
+Good Messenger, you have served your master well.
+
+
+== Progression ==
+ [14] Messenger to Stormwind
+ [14] Messenger to Stormwind
+ [14] Messenger to Westfall
+ [14] Messenger to Westfall
+ [18] Messenger to Darkshire
+ [18] Messenger to Darkshire
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

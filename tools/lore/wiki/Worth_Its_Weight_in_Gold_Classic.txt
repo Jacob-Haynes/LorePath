@@ -1,0 +1,63 @@
+title: Worth Its Weight in Gold (Classic)
+revision: 6306800
+part: whole
+quest: 691
+url: https://warcraft.wiki.gg/wiki/Worth_Its_Weight_in_Gold_%28Classic%29
+
+== Objectives ==
+Find 10 Witherbark Tusks, 4 Witherbark Medicine Pouches and a Shadow Hunter Knife for Apprentice Kryten at Refuge Pointe.
+
+ [Witherbark Tusk] (10)
+ [Witherbark Medicine Pouch] (4)
+ [Shadow Hunter Knife]
+
+
+== Description ==
+Archmage Malin sent Skuerto and I here to collect reagents for him. I was at a loss as to how I was going to collect the items, but now that you're here, I think my problem's solved.
+I need the following: Witherbark tusks, Witherbark medicine pouches and a shadow hunter knife.
+Could you find those for me? The Witherbark live to the southeast of Arathi.
+
+
+== Rewards ==
+You will receive:
+
+75
+3500 XP (or 21 at max level)
++350 reputation with Stormwind
+
+
+== Progress ==
+Have you had any luck so far, <name>?
+<Kryten makes some notes in his journal as he reads.>
+If my research is correct, the tusks should come from any Witherbark troll. The medicine pouches come from the Witherbark witch doctors, and the strongest of the Witherbark shadow hunters should carry the special knife given to them after they've completed their rites of passage. There's no way to tell which shadow hunters will have the knife until you do battle.
+
+
+== Completion ==
+Incredible! I can see why Malin asked you to come join us—very well done indeed!
+At this rate, Skuerto and I will be headed back to Stormwind in no time at all.
+I believe my dwarven companion is back from scouting Boulderfist Hall; go speak to him when you're ready.
+It looked as though he might have had a bit of a scuffle with the ogres. Don't mention that to him, though; he's very sensitive about criticisms to his skills at scouting.
+
+
+== Notes ==
+Finding the  [Shadow Hunter Knife] can be the most challenging item for new players. The  [Shadow Hunter Knife] is a drop from a Witherbark shadow hunter found inside a cave south of Witherbark Village. To find the cave, go through the Witherbark Village gate until you come up to an artifact shortly thereafter. Leave the path to the south into the mountains and you will find 2 large clay pots; the cave is shortly thereafter.
+
+
+== Progression ==
+ [32] Malin's Request
+ [36] Worth Its Weight in Gold
+ [39] Wand over Fist
+ [39E] Trelane's Defenses
+ [39] An Apprentice's Enchantment
+ [39E] Attack on the Tower
+ [39] Malin's Request
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

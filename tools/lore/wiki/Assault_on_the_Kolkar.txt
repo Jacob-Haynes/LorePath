@@ -1,0 +1,50 @@
+title: Assault on the Kolkar
+revision: 6029945
+part: whole
+quest: 1386
+url: https://warcraft.wiki.gg/wiki/Assault_on_the_Kolkar
+
+== Objectives ==
+Maintain your reputation with the Magram. Kill 12 Kolkar Centaurs, 12 Kolkar Scouts and 6 Kolkar Maulers, then return to Warug in the Magram Village in Desolace. 
+
+Kolkar Centaur slain (12)
+Kolkar Scout slain (12)
+Kolkar Mauler slain (6)
+Magram Clan Centaur (Friendly)
+
+
+== Description ==
+The Kolkar think they are strong, but we laugh at them! We laugh and we kill them! You kill them too. Show me you can kill Kolkar like we do. Head north and slay them all! 
+
+
+== Rewards ==
+You will receive:
+
+2550 XP
+
+
+== Progress ==
+Are you afraid of the Kolkar? Why do you not kill them? Maybe you forgot how to kill. Hurry and kill Kolkar before they are dead!
+
+
+== Completion ==
+The Kolkar fear you now!  I hope you laughed when you killed them.  It is better to laugh when you kill, so the enemy can see he is weak.
+
+
+== Progression ==
+ [35] Brutal Politics /  [33] Magram Alliance
+ [32] Assault on the Kolkar
+ [33] Broken Tears
+ [35] Gizmo for Warug
+ [37] Khan Shaka
+ [42] Khan Hratha
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

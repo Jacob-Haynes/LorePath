@@ -1,0 +1,58 @@
+title: Heart of Disruption (Alliance)
+revision: 6911670
+part: whole
+quest: 92458
+url: https://warcraft.wiki.gg/wiki/Heart_of_Disruption_%28Alliance%29
+
+== Objectives ==
+Collect the Arcane Mote for the Image of Archmage Modera near the City of Dalaran.
+
+Arcane Mote
+ [Dalaran Sewer Key] (provided)
+
+
+== Description ==
+Whatever disturbed the ley lines, it started at the top of the Violet Citadel. A thunderous crash rang out from the parlors above, and now we are overrun with rampant arcane power. It's taking all we have just to keep the wards in place.
+We cannot afford to stall any longer. We need help.
+The Kirin Tor are busy inside, but you will still need a less public approach to gain entry. Take this key and meet me in the citadel once you've made your way into the city. We must put an end to this disruption.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Spellguard Pauldrons]
+ [Renewing Footpads]
+ [Defender of Dalaran]
+You will also receive:
+
+9,400 XP
++100 reputation with Kirin Tor
+
+
+== Progression ==
+Horde attunement:
+
+ [34] Prison Break In &  [33] Key to the City
+ [35] Dalaran Patrols
+ [34] Blood in the Streets
+ [33D] Heart of Disruption
+ [33] Shrewd Negotiations
+Other dungeon quests:
+
+ [33D] A Green Sample
+ [33] An Alarming Request →  [33D] Heart of Disruption →  [33] Friend of the Kirin Tor
+ [33D] Power Overwhelming
+ [33D] Starving Arcane
+ [33D] Opportunistic Education
+ [33D] Source of Power
+ [33D] The Grave Knight
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,61 @@
+title: A Moon-Kissed Blade
+revision: 6963547
+part: whole
+quest: 95036
+url: https://warcraft.wiki.gg/wiki/A_Moon-Kissed_Blade
+
+== Objectives ==
+Speak with Trevan Rol in the Sepulcher and bring him the materials he requires.
+
+ [Trevan's Weapon Notes]
+ [Whitestone Oak Lumber]
+ [Enchanted Silver Ingot]
+ [Purified Kor Gem]
+
+
+== Description ==
+Trevan tells me that the worgen are a major threat to the citizens of Silverpine Forest. Despite their strength and resilience they can be killed, but there is one in particular that just doesn't ever seem to stay dead due to unknown magic.
+That's the one that attacked us. He is known as Old Fire-Eye and he is the biggest and meanest of their kind. To put him down, we'll need a special kind of weapon.
+Speak with Trevan and he will supply you with a list of what is needed to forge such a weapon.
+
+
+== Rewards ==
+You will receive:
+
+1,750 XP
++100 reputation with Undercity
++100 reputation with Earthen Ring
+
+
+== Progress ==
+Trust in the light to guide your blade. However, the light needs a good blade to guide.
+
+
+== Completion ==
+Now that we've got the materials we need, we just need a smith to craft the blade for us. I think I know just such a smith.
+
+
+== Notes ==
+Speak with Trevan Rol:
+
+The Whitestone Oak Lumber drops from Goblin Woodcarvers in the Deadmines instance.
+The Enchanted Silver Ingot is located on a table next to Archmage Arugal in the Shadowfang Keep instance.
+The Purified Kor Gem is a reward from Seeking the Kor Gem (Forever), which is picked up from Ulric Frostveil at the Zoram'gar Outpost in Ashenvale. This quest requires collecting a  [Corrupted Kor Gem], which drops from Blackfathom Oracles and Blackfathom Tide Priestesses in the pre-instance section of Blackfathom Deeps in Ashenvale.
+
+
+== Progression ==
+   [24] The Debt
+   [25D] A Moon-Kissed Blade
+   [25] An Underrated Talent
+   [25] Ott's Masterwork
+   [25] The Moonsilver Blade
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,58 @@
+title: Hidden Enemies (5)
+revision: 6854040
+part: whole
+quest: 5730
+url: https://warcraft.wiki.gg/wiki/Hidden_Enemies_%285%29
+
+Hidden Enemies is the aftermath of a small Horde quest chain that involves infiltrating the Burning Blade at the request of Thrall. The player returns to Thrall to relay the new information he or she got from Neeru Fireblade and collect the final reward.
+
+
+== Objectives ==
+Speak to Thrall in Orgrimmar and tell him what you've learned.
+
+
+== Description ==
+You are one of my lieutenants! Prepare yourself, <class>. I will call upon you soon.
+My time spent on the Searing Blade may be all but wasted now, but that does not mean that the Shadow Council's schemes elsewhere must suffer. I will do what I can to minimize the damage here in Ragefire Chasm. In the meantime, I will have my agents in The Barrens and Ashenvale begin work on our newest agenda. Return to me soon.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Kris of Orgrimmar]
+ [Hammer of Orgrimmar]
+ [Axe of Orgrimmar]
+ [Staff of Orgrimmar]
+You will also receive:
+
+1450 XP
++350 reputation with Orgrimmar
+
+
+== Completion ==
+Ashenvale? Hmm, I had not heard of any presence of the Council or the Burning Blade in Ashenvale. My spies will investigate, <name>. You have done well.
+For now, rest, and keep yourself occupied with other tasks. I will call upon you again soon.
+Lok-Tar Ogar!
+
+
+== Notes ==
+While Thrall's last statement suggests a follow-up, there is currently no quest that builds on this quest chain.
+
+
+== Progression ==
+
+ [12] Hidden Enemies
+ [12] Hidden Enemies
+ [16D] Hidden Enemies
+ [15] Hidden Enemies
+ [16] Hidden Enemies
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

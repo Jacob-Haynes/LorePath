@@ -1,0 +1,85 @@
+title: The Name of the Beast (3)
+revision: 6947722
+part: whole
+quest: 3511
+url: https://warcraft.wiki.gg/wiki/The_Name_of_the_Beast_%283%29
+
+This is part of the main Blasted Lands quest chain, although it takes place in Azshara.
+
+
+== Objectives ==
+Take the temper back to Loramus Thalipedes.
+
+ [Hetaera's Blood] (provided)
+
+
+== Description ==
+As promised, I will reveal the name of the demon lord, Razelikh the Defiler. First, however, I must prepare something of utmost importance for your journey.
+The weapon you seek to create requires a temper. Give me a moment to drain the blood from these heads.
+<Lord Arkkoroc squeezes the heads in between his gigantic fists, draining them of their blood.>
+Take the temper back to Loramus along with the name of the beast: Rakh'likh.
+
+
+== Rewards ==
+You will receive:
+
+4,575 XP
+
+
+== Progress ==
+You return! Astounding, <race>. Did you discover the true name?
+
+
+== Completion ==
+The temper will add the necessary vitriol we require for the forging of the weapons. There is but one more step in their creation.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+The Name of the Beast, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

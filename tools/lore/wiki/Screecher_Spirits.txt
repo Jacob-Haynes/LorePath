@@ -1,0 +1,48 @@
+title: Screecher Spirits
+revision: 5724334
+part: whole
+quest: 3520
+url: https://warcraft.wiki.gg/wiki/Screecher_Spirits
+
+== Objectives ==
+Capture the spirits of 3 screechers in Feralas, then return to Yeh'kinya in Steamwheedle Port.
+
+Screecher Spirits Collected (3)
+ [Yeh'kinya's Bramble] (Provided)
+
+
+== Description ==
+I seek the spirits of the vale screechers of Feralas. They are the cousins of an old, old god, and their spirits are linked to him.
+Take this bramble wand and go to Feralas. Find and defeat vale screechers in southern and central Feralas, then wave my bramble over their fallen bodies. This will coax their spirit to reveal itself. Touch the spirit and collect its essence.
+Return to me with my bramble and with the collected essence, and I will tell you more of the old god of which I spoke.
+
+
+== Progress ==
+Have you collected the essence of the screecher spirits, <name>?
+
+
+== Completion ==
+You have done well, <name>. Perhaps now it is time to reveal more...
+There is an ancient prophecy among the trolls, where the dead god Hakkar, the Soulflayer, will one day return to this earth. Some say the coming of Hakkar will bring joy and glory to trollkind, while others believe his resurrection marks the end of all things.
+I do not believe this myth, but I do know the essence of Hakkar holds great power, and this power should be kept from those who would abuse it...
+
+
+== Progression ==
+ [44] Screecher Spirits
+ [47D] The Prophecy of Mosh'aru
+ [50] The Ancient Egg
+ [53D] The God Hakkar
+ [58] The Lost Tablets of Mosh'aru
+ [58D] The Final Tablets
+ [58R] Confront Yeh'kinya
+ [58] The Hand of Rastakhan
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

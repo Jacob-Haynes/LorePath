@@ -1,0 +1,50 @@
+title: Deliver the Shipment
+revision: 6184010
+part: whole
+quest: 1425
+url: https://warcraft.wiki.gg/wiki/Deliver_the_Shipment
+
+== Objectives ==
+Bring the Shipment to Nethergarde to Quartermaster Lungertz in Nethergarde Keep.
+
+ [Shipment to Nethergarde] (provided)
+
+
+== Description ==
+While I fix this wagon, <name>, I have one last task for you.
+I have packed the most vital supplies saved from the ogre attacks. Take them to Nethergarde Keep. The keep is nestled in the northern hills of the Blasted Lands, keeping watch over the Dark Portal.
+To reach Nethergarde, follow the road east. When it branches head south into the Blasted Lands, then turn left at the next fork. Follow the road, <name>, and be wary.
+
+
+== Rewards ==
+You will receive
+
+2550 XP (or 15 60 at level 70)
++150 reputation with Stormwind
+
+
+== Progress ==
+You have business with me?
+
+
+== Completion ==
+What? A package from Biggs' caravan? We thought it, and he, were lost.
+Thank you, <name>. With luck, these supplies will carry the much needed reagent, Azoran Crystals. Our stock is running low...
+
+
+== Progression ==
+ [37] Help Watcher Biggs
+ [37] Encroaching Wildlife
+ [35] The Lost Caravan
+ [42] Driftwood
+ [42] Deliver the Shipment
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

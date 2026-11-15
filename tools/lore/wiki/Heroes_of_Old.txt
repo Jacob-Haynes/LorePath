@@ -1,0 +1,80 @@
+title: Heroes of Old
+revision: 5620184
+part: whole
+quest: 2702
+url: https://warcraft.wiki.gg/wiki/Heroes_of_Old
+
+This is part of the main Blasted Lands quest chain.
+
+
+== Objectives ==
+Speak to Corporal Thund Splithoof.
+
+
+== Description ==
+You have honored me with your nobility and heroism, <name>.
+You have also honored them...
+
+
+== Completion ==
+Indeed, you have honored us all. Our thanks alone are not sufficient.
+
+
+== Rewards ==
+3000 XP
+26 40
+One towards  Loremaster of Eastern Kingdoms
+One towards  3000 Quests Completed (or the earlier ones, if not completed)
+
+
+== Notes ==
+The corporal is directly across the road from the Fallen Hero.
+He will fade away again fairly swiftly.  If he does, talk to the Fallen Hero
+again and select the option  I must talk to Corporal Splithoof.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

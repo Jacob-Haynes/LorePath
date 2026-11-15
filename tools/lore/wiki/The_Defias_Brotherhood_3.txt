@@ -1,0 +1,56 @@
+title: The Defias Brotherhood (3)
+revision: 5586802
+part: whole
+quest: 135
+url: https://warcraft.wiki.gg/wiki/The_Defias_Brotherhood_%283%29
+
+This quest is part of the Defias Brotherhood quest chain.
+
+
+== Objectives ==
+Take Wiley's Note to Mathias Shaw in Stormwind.
+
+ [Wiley's Note] (provided)
+
+
+== Description ==
+I wonder what Wiley meant when he mentioned the Stonemasons. Perhaps that was a slip of tongue. Could the Defias gang be related to the Stonemasons? Only one man would know for sure: Mathias Shaw, head of SI:7. Show him Wiley's Note and see if he has anything to add to this growing mystery. If you have trouble finding Shaw, check the Barracks in Old Town.
+
+
+== Rewards ==
+You will receive:
+
+675 XP (or 4 20 at max level)
++75 reputation with Stormwind
+
+
+== Progress ==
+What business do you have with me?  I am a very busy man. . .
+
+
+== Completion ==
+This matter might be more complex than Stoutmantle realizes.
+
+
+== Notes ==
+Master Mathias Shaw can be found on the second floor of the SI:7 headquarters.
+
+
+== Progression ==
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18G2] The Defias Brotherhood
+ [22D] The Defias Brotherhood
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,67 @@
+title: The Fare of Lar'korwi
+revision: 6855967
+part: whole
+quest: 24731
+url: https://warcraft.wiki.gg/wiki/The_Fare_of_Lar%27korwi
+
+== Objectives ==
+Find the carcass of Lar'korwi's freshest kill and steal a Piece of Threshadon Carcass.
+
+ [Piece of Threshadon Carcass]
+
+
+== Description ==
+Once, a long time ago, a brother of mine took some meat from one of Lar'korwi's kills. He didn't know it at the time, but Lar'korwi saw him from the forest. Lar'korwi followed my brother for days, destroying everything he touched. My brother, scared, finally decided to run from the Crater and leave Lar'korwi behind.
+Lar'korwi killed him not far from this spot.
+If you want to provoke Lar'korwi, find a fresh kill of his and take some of the meat from it.
+Start your search to the west.
+
+
+== Rewards ==
+You will receive:
+
+75
+8,190 XP
+
+
+== Progress ==
+Do not take my words lightly, <name>. If you truly wish to face this creature, then you must be careful... and smart. It will take a great deal of strength and insight to draw out Lar'korwi and defeat him.
+
+
+== Completion ==
+This will do nicely, <name>. It seems Lar'korwi eats well these days. Although, I wonder where he found a threshadon in this area. Odd.
+Regardless, I will hold onto this until you are ready for your confrontation with the beast. Do not worry for my safety--I am sure you've angered Lar'korwi enough that he will not kill me until after he's tasted your flesh.
+
+
+== Notes ==
+The Fresh Threshadon Corpse can be found at 64, 74
+It is never explained how exactly the threshadon carcass got there. There are no bodies of water in the crater deep enough to support threshadons and indeed the only ones there are freshly killed or partially rotted ones.
+
+
+== Progression ==
+ [15-30] Finding Stormclaw (optional breadcrumb)
+ [15-30] Claws of White
+Side chain from Torwa Pathfinder:
+ [15-30] The Fare of Lar'korwi
+ [15-30] The Scent of Lar'korwi
+ [15-30] The Bait for Lar'korwi
+ [15-30] Carried on the Waves
+ [15-30] Flowing to the North
+ [15-30] Bouquets of Death
+ [15-30] Aberrant Flora
+ [15-30] The Eastern Pylon
+Next:  [15-30] The Shaper's Terrace (once its other requirements are completed)
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Added.   
+
+
+== See also ==
+The Fare of Lar'korwi, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

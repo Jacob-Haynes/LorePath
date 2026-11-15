@@ -1,0 +1,64 @@
+title: Report Back to Fizzlebub
+revision: 5586387
+part: whole
+quest: 1122
+url: https://warcraft.wiki.gg/wiki/Report_Back_to_Fizzlebub
+
+Report Back to Fizzlebub is a neutral quest from the Mirage Raceway in Thousand Needles. In this quest, players return to Booty Bay to let Crank Fizzlebub know how Kravel Koalbeard's scheme went.
+Go to the Mirage Raceway in the Shimmering Flats of Thousand Needles, and talk to Kravel Koalbeard. Players must have completed either  [44] Get the Gnomes Drunk or  [44] Get the Goblins Drunk to receive this quest.
+
+
+== Objectives ==
+Bring the Fool's Stout Report to Crank Fizzlebub in Booty Bay. 
+
+ [Fool's Stout Report] (provided)
+
+
+== Description ==
+That Fool's Stout worked great! I placed a bet on the next race, and... let's hope the crew you got drunk did a number on their car!
+There's only one more task for you -- take this note back to Crank Fizzlebub in Booty Bay. He'll want to know of the successful test.
+And hopefully we can get more of that Fool's Stout for future races!
+
+
+== Rewards ==
+1850 XP (or 11 40 at level 70)
+
+
+== Progress ==
+Hello <name>.  How'd that stout work out?  It's strong stuff, isn't it?
+
+
+== Completion ==
+It says here that the fool's stout was a success.  That's good news!
+If you ever want more of the stuff, then let me know and I'll have you gather more of Zanzil's Mixture.
+
+
+== Progression ==
+This quest is part of a chain which involves running various errands for Kravel Koalbeard, a dwarf from the Mirage Raceway in Thousand Needles
+Errands for Kravel:
+
+ [31] Rocket Car Parts
+ [36] Wharfmaster Dizzywig
+ [36] Parts for Kravel
+ [36] Delivery to the Gnomes
+ [36] The Rumormonger
+ [36] Dream Dust in the Swamp
+ [36] Rumors for Kravel
+ [43] Back to Booty Bay
+ [44] Zanzil's Secret (optional; does not require prior chain)
+ [44] Zanzil's Mixture and a Fool's Stout
+One of the following:
+ [44] Get the Gnomes Drunk
+ [44] Get the Goblins Drunk
+ [44] Report Back to Fizzlebub
+ [44] Fool's Stout
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

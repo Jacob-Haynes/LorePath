@@ -428,7 +428,8 @@ def lore_pages():
 
 def chapter_problems(entries, quests):
     """(entry, chapter, what's wrong) for chapters whose quest isn't in LorePath's
-    data, or whose quest-article sources are all about another quest."""
+    data, or whose quest-article sources are all about another quest (an article
+    named after the chapter's quest counts as its own, renumbered by the wiki)."""
     problems = []
     for e, c in unknown_chapters(entries, quests):
         problems.append((e, c, "isn't in LorePath's quest data"))
@@ -439,7 +440,10 @@ def chapter_problems(entries, quests):
                 snap = read_snapshot(title)
                 if snap and snap["quest"]:
                     ids[title] = snap["quest"]
-            if ids and c["after"] not in ids.values():
+            # The wiki often has only the Cataclysm page for an original quest,
+            # renumbered: an article with the quest's own name counts as its own.
+            named = {re.sub(r"\s*\([^)]*\)$", "", t).lower() for t in ids} & {c["name"].lower()}
+            if ids and c["after"] not in ids.values() and not named:
                 articles = ", ".join(f"[{t}]({article_url(t)}) is quest {q}" for t, q in ids.items())
                 problems.append((e, c, f"doesn't match its quest article: {articles}"))
     return problems

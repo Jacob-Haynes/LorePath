@@ -1,0 +1,48 @@
+title: Favorite Food
+revision: 6909048
+part: whole
+quest: 97249
+url: https://warcraft.wiki.gg/wiki/Favorite_Food
+
+== Objectives ==
+Bring Migi's Lunch to him behind Grommash Hold.
+
+Migi's Lunch (provided)
+
+
+== Description ==
+Now that I know his parents worry about how much he's actually filling that belly, I've got an idea.
+They made me promise not to pack the same meal every day, so Migi grows a taste for more than one thing. Still, whenever the smoker's full and we're making sweetglazed hog belly sandwiches, he always shows up for lunch. We've started crumbling the leftover crispy glazed bits as a topping--something we can add daily.
+Take this to him. Maybe he'll start showing up early and bringing friends!
+
+
+== Rewards ==
+You will receive:
+
+1,050 XP
+
+
+== Progress ==
+I think we can win this one...
+
+
+== Completion ==
+Borstan's Meats? Is that for one of us?
+Oh!
+Wow... this smells really good! Yummy.
+Thanks for bringing me my lunch. I can tell what Borstan is going to be serving daily when my friends and I walk the road to Grommash Hold, by the smells alone. This tastes like my favorite, the sweetglaze! But it's different. I like the strong flavored crumbs.
+If it's going to be this tasty every day, I think we need to stop our game to take our lunch together!
+
+
+== Progression ==
+Template:Meal Appeal
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

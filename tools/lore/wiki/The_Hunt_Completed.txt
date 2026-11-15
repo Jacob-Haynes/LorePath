@@ -1,0 +1,37 @@
+title: The Hunt Completed
+revision: 6974993
+part: whole
+quest: 247
+url: https://warcraft.wiki.gg/wiki/The_Hunt_Completed
+
+== Rewards ==
+You will receive:
+
+3,050 XP
+ [Wildhunter Cloak]
++350 reputation with Thunder Bluff
+
+
+== Completion ==
+<Name>, you have slain all three beasts that comprise the Ashenvale Hunt.  You have brought me adequate proof of their demise; there is no question of your strength and tenacity.  The blood of a hunter streaks through your veins, and you should be commended!
+Please, accept this bauble as a sign of congratulations on your mighty deeds done in Ashenvale for the Horde today.  May your ancestors watch over you!
+
+
+== Progression ==
+ [20] The Ashenvale Hunt /  [20] The Ashenvale Hunt /  [20] The Ashenvale Hunt
+ [20] The Ashenvale Hunt
+
+ [24] Ursangous's Paw
+ [27] Shadumbra's Head
+ [30] Sharptalon's Claw
+ [30] The Hunt Completed
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,61 @@
+title: In Defense of the King's Lands (Classic 4)
+revision: 6969244
+part: whole
+quest: 217
+url: https://warcraft.wiki.gg/wiki/In_Defense_of_the_King%27s_Lands_%28Classic_4%29
+
+In Defense of the King's Lands (4) is the fourth and final quest in the Alliance quest chain In Defense of the King's Lands, battling troggs in Loch Modan. 
+
+
+== Objectives ==
+Kill the Trogg leader, Grawmug, and his two guards, Gnasher and Brawler then report back to Captain Rugelfuss in the southern guard tower.
+
+Grawmug slain
+Gnasher slain
+Brawler slain
+
+
+== Description ==
+<Name>, our scouts have identified the leader of this recent Trogg incursion. It appears that these beasts in Loch Modan are following the lead of a chieftain named Grawmug. Grawmug is heavily guarded, however. Two of his most elite guards, Gnasher and Brawler, never leave his side.
+If you feel yourself worthy, <name>, I want you to lead the assassination mission on Grawmug and his two thugs. With the Trogg leadership dead, we just might stand a chance at pushing these beasts back into the ground.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Frontier Britches]
+ [Dwarven Defender]
+ [Lucky Trousers]
+You will also receive:
+
+1600 XP
++150 or +350 reputation with Ironforge
+
+
+== Progress ==
+Grawmug and his two guards, Gnasher and Brawler, are still alive. Your mission is not complete until all 3 have been brought to death. The Dwarven empire is counting on you, <name>.
+
+
+== Completion ==
+Most excellent, <name>! You have brought hope to Loch Modan. With Grawmug dead, we stand a better chance of seeing the Troggs eliminated from the land.
+
+
+== Notes ==
+They can be found in a cave on the south-east side of Stonesplinter Valley. The three also attack together, so working in a group is implied. The cave entrance is at  while Grawmug himself is at  inside.
+
+
+== Progression ==
+ [12] In Defense of the King's Lands
+ [15] In Defense of the King's Lands
+ [15] In Defense of the King's Lands
+ [17] In Defense of the King's Lands
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

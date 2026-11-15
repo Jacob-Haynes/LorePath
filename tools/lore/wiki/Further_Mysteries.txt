@@ -1,0 +1,48 @@
+title: Further Mysteries
+revision: 6258307
+part: whole
+quest: 525
+url: https://warcraft.wiki.gg/wiki/Further_Mysteries
+
+== Objectives ==
+Bring the Decrypted Letter to Magistrate Maleb in Southshore.
+
+ [Decrypted Letter] (provided)
+
+
+== Description ==
+I decrypted the letter, but I don't know what to make of it. You found this among thieves in the Alterac foothills? Very strange...
+You should take this to the magistrate of Southshore. Although this letter is cryptic, his is the closest town to Alterac; if a threat is brewing, then he should know.
+
+
+== Rewards ==
+You will receive:
+
+1350 XP
+
+
+== Progress ==
+<Name>.  Have you been traveling through the foothills and mountains again?  What news do you bring?
+
+
+== Completion ==
+<Maleb reads the letter.>
+This is translated from a letter you found in a Syndicate encampment?  This was not written by a thief, or even a noble of Alterac.
+It appears The Syndicate has ties to another power, and I shudder to think what that might be.
+
+
+== Progression ==
+ [34] Encrypted Letter
+ [34] Letter to Stormpike
+ [34] Further Mysteries
+ [40] Dark Council
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,53 @@
+title: Old Fire-Eye (quest)
+revision: 6963706
+part: whole
+quest: 95140
+url: https://warcraft.wiki.gg/wiki/Old_Fire-Eye_%28quest%29
+
+== Objectives ==
+Use the Moonsilver Blade to destroy Old Fire-Eye in Silverpine Forest.
+
+Old Fire-Eye slain
+ [Moonsilver Blade]
+
+
+== Description ==
+I see that you have your weapon now, paladin. I pray that it will not fail you.
+The locals tell me that Old Fire-Eye hunts in a large area south of here and you can generally find him near the gates to Gilneas. Find him, and use your new blade to end him. When it is done, return and you will have the gratitude of the Windshapers.
+
+
+== Rewards ==
+You will receive:
+
+40
+2,650 XP
++150 reputation with Undercity
++150 reputation with Earthen Ring
++75 reputation with Orgrimmar
+ [Wolfsbane]
+
+
+== Progress ==
+Is it done? Is the beast slain?
+
+
+== Completion ==
+Thank you, <name>. Banon may now rest in peace.
+If you would be willing to allow it, I believe that I can impart some magic upon your freshly blooded blade to infuse it with a small measure of the magic of my people.
+<Lumina Windsinger's eyes begin to glow a vibrant blue as she touches the bloodstained blade in your hand.>
+It is done. It's a small thing, and I could scarcely improve such a magnificent blade. Regardless, I will pray to the winds that it serves you well, paladin.
+
+
+== Notes ==
+This quest becomes available after completing    [25] The Moonsilver Blade.
+Old Fire-Eye is a level 25 elite found at around  near the Greymane Wall. He has a buff that reduces damage taken by 99 %, this has to be removed by attacking him with the Moonsilver Blade.
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

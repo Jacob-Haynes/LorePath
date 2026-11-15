@@ -1,0 +1,55 @@
+title: The Swarm Grows
+revision: 6230243
+part: whole
+quest: 1145
+url: https://warcraft.wiki.gg/wiki/The_Swarm_Grows
+
+The Swarm Grows is the first step to short series of quests involving silithid monsters in Thousand Needles.
+
+
+== Objectives ==
+Deliver Korran's Sealed Note to Belgrom Rockmaul in Orgrimmar.
+
+ [Korran's Sealed Note] (provided)
+
+
+== Description ==
+Many travelers who've come through the Crossroads helped me gather eggs from the Field of Giants, and many of them have tales of how deadly the creatures are. I've heard enough to consider them insects a much larger threat than my masters first thought.
+I need a courier to travel to Orgrimmar to meet Belgrom Rockmaul. It be no simple matter, and someone who would take the task seriously should go.
+Belgrom usually be found outside the warriors' guild house.
+
+
+== Rewards ==
+You will receive:
+
+1,300 XP
++50 or +75 reputation with Orgrimmar
+
+
+== Progress ==
+I envy you, <class>. You have the look of someone who's been outside the walls of Orgrimmar for a while.
+I myself would travel in the name of the Warchief if Thrall didn't have need of my skills here in the city. But he leads us well, and I trust his judgement—I remain here for as long as he needs me.
+
+
+== Completion ==
+Ah, a note from Korran. He has been a loyal servant for some time now. I was wondering how his duties were going in the Crossroads.
+
+
+== Notes ==
+Head to Orgrimmar to the Valley of Honor. Belgrom Rockmaul is outside the biggest building at coordinates (75,34).
+
+
+== Progression ==
+ [33] The Swarm Grows
+ [33] The Swarm Grows
+ [35] The Swarm Grows
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

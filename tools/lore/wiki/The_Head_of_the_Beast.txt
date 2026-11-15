@@ -1,0 +1,51 @@
+title: The Head of the Beast
+revision: 5586854
+part: whole
+quest: 394
+url: https://warcraft.wiki.gg/wiki/The_Head_of_the_Beast
+
+This quest is part of the Lescovar Incident quest chain.
+
+
+== Objectives ==
+Speak to Mathias Shaw in Stormwind. 
+
+
+== Description ==
+Find Shaw in Old Town. Let him know that the Lescovar threat has been dealt with and about your involvement in the Lord's plots against the city. I'm sure he'll be proud to have another hero among Stormwind's citizens.
+He'll more than likely send you off to meet with the Prince or some other noble. Don't let it get to your head, <name>. The nobles can think they rule the city all they want, but some things remain out of their hands. 
+
+
+== Rewards ==
+250 XP (or 1 50 at level 70)
+
+
+== Completion ==
+He is dead, then? Your justice was swift, <name>. I pray to the Light that I never become your quarry!
+<He laughs and claps you on the shoulder.>
+I mean no criticism, <name>. How could I, being the master of all assassins? But in truth, you have done the people of Stormwind a great service, and for that, I thank you.
+
+
+== Progression ==
+ [22] The Unsent Letter
+ [22] Bazil Thredd
+ [29D] The Stockade Riots
+ [29] The Curious Visitor
+ [29] Shadow of the Past
+ [31] Look to an Old Friend
+ [31] Infiltrating the Castle
+ [31] Items of Some Consequence
+ [31] The Attack!
+ [31] The Head of the Beast
+ [31] Brotherhood's End
+ [31] An Audience with the King
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

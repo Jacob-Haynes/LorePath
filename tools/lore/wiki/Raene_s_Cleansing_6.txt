@@ -1,0 +1,67 @@
+title: Raene's Cleansing (6)
+revision: 6840267
+part: whole
+quest: 1028
+url: https://warcraft.wiki.gg/wiki/Raene%27s_Cleansing_%286%29
+
+This quest is part of the Raene's Cleansing quest chain.
+
+
+== Objectives ==
+Find the hidden shrine and re-enchant Dartol's Rod.
+
+ [Reconstructed Rod] (provided)
+
+
+== Description ==
+Here is the completed rod, <name>. Reconstructing it was simple... it's finding the shrine that has the power to recharge it that will be the hard part.
+With some focus and effort it shouldn't be too hard for someone like you, who's already accomplished so much.
+Head southeast of here--there are very few paths, so be careful--and keep your eyes to the north. The shrine is hidden within the mountains that surround this glade.
+Once there, place the rod within the shrine... the rest is magic. Hehe.
+
+
+== Rewards ==
+You will receive:
+
+1700 XP
++150 reputation with Darnassus
+ [Dartol's Rod of Transformation]
+
+
+== Progress ==
+You can sense a subtle yet powerful force within the shrine and surrounding trees.
+You begin placing the rod within the shrine and a soft thrumming noise emits from around you as the shrine begins to glow...
+
+
+== Completion ==
+After the glow dies, you can see the re-enchanted rod within the shrine's basin.
+
+
+== Notes ==
+The path to the hidden shrine starts at . The actual shrine is at coordinates . When you leave the moonwell, follow the mountain's edge to the southeast. Continue to follow the mountain and you'll eventually find the path. It will spiral up to the shrine.
+
+
+== Progression ==
+This is the Raene's Cleansing quest chain.
+
+ [19] Raene's Cleansing
+ [21] Raene's Cleansing
+ [21] Raene's Cleansing
+ [27] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [28] Raene's Cleansing
+ [30] Raene's Cleansing
+ [30] Raene's Cleansing
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

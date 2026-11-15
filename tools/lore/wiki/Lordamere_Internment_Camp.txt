@@ -1,0 +1,6 @@
+title: Lordamere Internment Camp
+revision: 6727546
+part: intro
+url: https://warcraft.wiki.gg/wiki/Lordamere_Internment_Camp
+
+Lordamere Internment Camp was the only internment camp based in the Alterac Mountains. It was located on a hill overlooking the Dalaran Crater, and was defended by Dalaranian forces.

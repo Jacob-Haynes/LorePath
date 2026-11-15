@@ -1,0 +1,46 @@
+title: Seed of Life (quest)
+revision: 6218120
+part: whole
+quest: 7066
+url: https://warcraft.wiki.gg/wiki/Seed_of_Life_%28quest%29
+
+In Seed of Life, the spirit of the father of the centaur race, Zaetar, asks you to take a seed to his brother Remulos.
+
+
+== Objectives ==
+Seek out Remulos in Moonglade and give him the Seed of Life.
+
+ [Seed of Life] (provided)
+
+
+== Description ==
+The misbegotten centaur—my sons and daughters—have need of their father.
+Look around you—this place rings of hope and all that my father Cenarius preaches. It sprung from me! And I cannot take that away from them... not even for their crimes against me.
+But there is one thing I would ask of you to ease my brother's mind. Take this... it is the first seed that fell from the life my remains nourished. Tell him my spirit remains here, and that I live on. I am sure he will understand.
+
+
+== Progress ==
+You have the scent of corruption on you, <name>... much like many adventurers these days. But something about you is different. Is there something you've come to speak to me about? You have an aura about you that seems familiar, but I cannot place it.
+Please, I implore you, tell me why you've sought an audience with me.
+
+
+== Completion ==
+So my brother has finally found peace? I am proud to have lived to see this day. In all his arrogance and anger, I truly thought he was lost to us, but this... this symbol of his sacrifice only proves that he is not lost—he has only been reborn. He takes his place in nature as was his duty.
+Thank you, <name>. By bringing this to me, you have secured a small amount of hope that I thought I had once lost. This seed will be important to the people of this war-torn land some day... I can sense it.
+
+
+== Notes ==
+Zaetar's Spirit is in the room with Princess Theradras. This means your party will have to be able to kill the princess in order to get this quest.
+Once you have the quest, getting to Moonglade can be tricky, unless you happen to be a druid. For non-druids, you will have to go through Felwood. In northern Felwood there is a tunnel which connects to Winterspring, go through it and when you see a bridge make a left and this will take you to Moonglade. The furbolgs in the tunnel will be hostile, but you can complete a quest given by the furbolg at the entrance to make their status unfriendly, which is enough for them to not attack you. Otherwise you can try running through. Once you get to Moonglade, find Keeper Remulos at the Shrine of Remulos.
+For more information on tactics and groups for this instance, see the main Maraudon article.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.2.0 (2004-12-18): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

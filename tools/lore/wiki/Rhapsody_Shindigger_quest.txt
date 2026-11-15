@@ -1,0 +1,47 @@
+title: Rhapsody Shindigger (quest)
+revision: 6218012
+part: whole
+quest: 1451
+url: https://warcraft.wiki.gg/wiki/Rhapsody_Shindigger_%28quest%29
+
+== Objectives ==
+Seek out Rhapsody Shindigger in The Hinterlands.
+
+
+== Description ==
+Rhapsody took quite a liking to the booze. Now don't get me wrong—all of us dwarves up here at the aviary love a good ale when the time is right.
+But ol' Shindigger took to the liquor like a gryphon takes to the skies. And a damned shame it was, too. No one could fly like Rhapsody.
+First sign of trouble was when he came stumbling back from that mission with your buddy, Brohann. All went down hill quickly after that. Had to let him go.
+Last I heard, he's set up a brew camp to the east of here...
+
+
+== Completion ==
+Hiccup!
+I'm a-lookin' right at you but you keep bobbing up and down. Makin' me dizzy. Hoho!
+Hiccup!
+Whoa! Did ya feel that? Ground is a-shakin', my friend. I need a drink.
+Hiccup!
+
+
+== Notes ==
+If you head east from Aerie Peak, you'll find a small path that leads up into the hills. The grass is a little browner at the path's start and there's a feather on the ground. Follow the path to lead to Shindigger's camp ().
+
+
+== Progression ==
+ [43G] In Search of The Temple
+ [43] To The Hinterlands
+ [43] Gryphon Master Talonaxe
+ [43] Rhapsody Shindigger
+ [43] Rhapsody's Kalimdor Kocktail
+ [43] Rhapsody's Tale
+ [50D] Into The Temple of Atal'Hakkar
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

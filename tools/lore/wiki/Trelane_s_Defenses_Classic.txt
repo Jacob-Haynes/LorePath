@@ -1,0 +1,60 @@
+title: Trelane's Defenses (Classic)
+revision: 6293630
+part: whole
+quest: 694
+url: https://warcraft.wiki.gg/wiki/Trelane%27s_Defenses_%28Classic%29
+
+== Objectives ==
+Find an Azure Agate and bring it to Apprentice Kryten at Refuge Pointe.
+
+ [Azure Agate]
+
+
+== Description ==
+All rested?
+Here's our next step: there're ogres all around the Tower of Arathor in Stromgarde. We're gonna need to activate the tower's defenses if you're gonna stand a chance against 'em an' still make it to the items alive. To do that, we're gonna need some gems the Boulderfist shaman have taken a liking to. They took 'em from the tower, but they're not gonna stay in their possession for long.
+Get one of them gems an' bring 'em to Kryten--he knows the spell to enchant 'em so they'll work as a key.
+
+
+== Rewards ==
+You will receive:
+
+3,000 XP
++87 reputation with Darnassus
++87 reputation with Exodar
++87 reputation with Gnomeregan Exiles
++87 reputation with Ironforge
++87 reputation with Stormwind
+
+
+== Progress ==
+<Name>, hello again. Have you found an azure agate yet?
+
+
+== Completion ==
+You amaze me, <name>. Well done again.
+Give me a moment to cast the proper spell to enchant the gem, an' you'll be ready.
+
+
+== Notes ==
+Azure Agates drop from Boulderfist Shaman in the Arathi Highlands.
+
+
+== Progression ==
+ [32] Malin's Request
+ [36] Worth Its Weight in Gold
+ [39] Wand over Fist
+ [39E] Trelane's Defenses
+ [39] An Apprentice's Enchantment
+ [39E] Attack on the Tower
+ [39] Malin's Request
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

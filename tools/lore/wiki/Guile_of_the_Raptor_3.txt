@@ -1,0 +1,47 @@
+title: Guile of the Raptor (3)
+revision: 6960271
+part: whole
+quest: 847
+url: https://warcraft.wiki.gg/wiki/Guile_of_the_Raptor_%283%29
+
+Guile of the Raptor is the seventh and final step in the Hammerfall quest chain.
+
+
+== Objectives ==
+Speak with Tor'gan.
+
+
+== Description ==
+This... this power.... Is this the power of the shamans that Tor'gan tried to show me? I must say, it is interesting. Tell Tor'gan that he has convinced me... for the time being. I will listen to what he has to say.
+
+
+== Rewards ==
+You will receive:
+
+3700 XP
++100 or +250 reputation with Orgrimmar
+ [Call of the Raptor]
+
+
+== Completion ==
+When the enchantment wears off, I will speak with Gor'mul. My thanks to you for your help in returning Gor'mul to the land of the living. I have no doubt he thanks you greatly as well. 
+
+
+== Progression ==
+ [34] Hammerfall
+ [34] Raising Spirits
+ [34] Raising Spirits
+ [34] Raising Spirits
+ [37] Guile of the Raptor
+ [37] Guile of the Raptor
+ [37] Guile of the Raptor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

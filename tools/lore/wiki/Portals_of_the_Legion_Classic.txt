@@ -1,0 +1,48 @@
+title: Portals of the Legion (Classic)
+revision: 5842322
+part: whole
+quest: 5581
+url: https://warcraft.wiki.gg/wiki/Portals_of_the_Legion_%28Classic%29
+
+== Objectives ==
+Banish 6 Portals at Mannoroc Coven and return to Taiga Wisemane at Shadowprey Village.
+
+Portals Banished (6)
+ [Hand of Iruxos] (provided)
+
+
+== Description ==
+Behold - the Hand of Iruxos. A gruesome sight indeed.
+You must possess it if the demon portals at Mannoroc Coven are to be banished... which is what I now ask you to do. The Demon threat is increasing and we must close these portals to stem the tide of demons to this world. Good luck, <name>... and be wary of the portal guardians.
+
+
+== Rewards ==
+
+You will also receive:
+
+45
+3,550 XP
++150 or +350 reputation with Thunder Bluff
+
+
+== Progress ==
+Have you banished the demon portals at Mannoroc Coven?
+
+
+== Completion ==
+You are to be commended, <name>.  Your effort has helped greatly in fighting the demon threat, and all of Azeroth is safer because of it.
+
+
+== Progression ==
+ [38] Hand of Iruxos
+ [38] Portals of the Legion
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Updated to a new version.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

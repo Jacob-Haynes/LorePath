@@ -1,0 +1,52 @@
+title: Seeping Corruption (2)
+revision: 6735777
+part: whole
+quest: 3569
+url: https://warcraft.wiki.gg/wiki/Seeping_Corruption_%282%29
+
+== Objectives ==
+Give Cuely's Elixir to Thersa Windsong in Undercity.
+
+ [Cuely's Elixir] (provided)
+
+
+== Description ==
+Give this to Thersa. Perhaps it will cure her... perhaps not. We really won't know until after she drinks it.
+
+
+== Rewards ==
+You will receive:
+
+500 XP (or 3 at max level)
+
+
+== Progress ==
+I've come to Undercity because I heard their alchemists have been studying long and hard on how to find a cure for their own illness. It was suggested that perhaps they could help me too.
+Although this place makes me feel far from welcome, I had no choice—the sickness that found me is tearing me up inside and I needed their help immediately.
+
+
+== Completion ==
+Chemist Cuely has been very accommodating... disturbingly so. But if he says this will help me, then I have no other choice. I don't have time to find any other solution. I've already spoken to priests and shamans, none of which could help me.
+Let us hope that the Earthmother watches over my spirit.
+
+
+== Notes ==
+Upon completion
+Thersa Windsong says: Wha... what's happening?
+Thersa turns green and dies.
+
+
+== Progression ==
+ [52] Seeping Corruption
+ [52] Seeping Corruption
+ [52] Seeping Corruption
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

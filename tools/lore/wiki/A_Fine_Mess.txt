@@ -1,0 +1,47 @@
+title: A Fine Mess
+revision: 6956990
+part: whole
+quest: 2904
+url: https://warcraft.wiki.gg/wiki/A_Fine_Mess
+
+== Objectives ==
+Escort Kernobee to the Clockwerk Run exit and then report to Scooty in Booty Bay. 
+
+Kernobee Rescue
+
+
+== Description ==
+<Kernobee groans.>  Wha.. What happened?
+The last thing I remember is being captured by a group of dark iron dwarves, beaten to within an inch of my life and then thrown in here with these filthy troggs.
+Get me out of here, <name>!
+Here's the plan: Lead me to the exit; if we make it out alive, you go to Booty Bay and let Scooty know that I went to Ratchet to warn Tinkerwiz of the dark iron's involvement in the making of that super rig.
+Let's get going! 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Fire-welded Bracers]
+ [Fairywing Mantle]
+ [Technician's Bracers] 
+You will also receive:
+
+2450 XP (or 22 30 at max level)
+
+
+== Completion ==
+I suppose you should be rewarded for bringing Kernobee back to us in one piece, <name>.  If you go back to Gnomeregan, these might give you the edge you'll need in defeating that good-for-nothing backstabber, Mekgineer Thermaplugg.
+
+
+== Notes ==
+Unlike other escort quests, Kernobee does not follow a preset path; he will follow whoever accepts the quest first.  Take him straight back the way you came (through the Clean Zone for Alliance) to the main entrance, and the quest will complete.  If you detour and do the Blastmaster Emi Shortfuse event with him in tow, you may lose him, and the quest will fail.  If this happens, he will not have respawned when you return to the Dormitory.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

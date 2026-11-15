@@ -1,0 +1,53 @@
+title: Key to the City (Forever)
+revision: 6911656
+part: whole
+url: https://warcraft.wiki.gg/wiki/Key_to_the_City_%28Forever%29
+
+== Objectives ==
+Acquire the Dalaran Sewer Key for Magus Wordeen Voidglare in Tarren Mill.
+
+Grimy Key
+
+
+== Description ==
+The Alliance had an army of mages known as the Kirin Tor. While they were powerful, the demonic Burning Legion proved to be even more so. In one fell swoop, the arch demon Archimonde flattened their city like it was a child's plaything. Those who remained were reduced to merely dispossessed vagabonds.
+That is, until they rebuilt Dalaran. And on the Dark Lady's very doorstep, no less!
+While in their camps, search for something that can get us into the city unnoticed. I must know more.
+
+
+== Progress ==
+What have you found? An ancient tome? A secret relic?
+
+
+== Completion ==
+A sewer key? Well, thankfully I am not the one who will be using this.
+But we have work to do before it's safe to use this.
+
+
+== Progression ==
+Horde attunement:
+
+ [34] Prison Break In &  [33] Key to the City
+ [35] Dalaran Patrols
+ [34] Blood in the Streets
+ [33D] Heart of Disruption
+ [33] Shrewd Negotiations
+Other dungeon quests:
+
+ [33D] A Green Sample
+ [33] An Alarming Request →  [33D] Heart of Disruption →  [33] Friend of the Kirin Tor
+ [33D] Power Overwhelming
+ [33D] Starving Arcane
+ [33D] Opportunistic Education
+ [33D] Source of Power
+ [33D] The Grave Knight
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

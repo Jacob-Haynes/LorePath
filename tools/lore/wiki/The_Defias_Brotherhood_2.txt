@@ -1,0 +1,53 @@
+title: The Defias Brotherhood (2)
+revision: 5586801
+part: whole
+quest: 132
+url: https://warcraft.wiki.gg/wiki/The_Defias_Brotherhood_%282%29
+
+This quest is part of the Defias Brotherhood quest chain.
+
+
+== Objectives ==
+Take Wiley's Note to Gryan Stoutmantle in Westfall.
+
+ [Wiley's Note] (Provided)
+
+
+== Description ==
+What I am about to tell you could cost me my life. The Defias gang is up to something big. Last I heard they were working in conjunction with various gnolls, kobolds and even goblins.
+Take this note to Stoutmantle. It explains as much as I know on the subject.
+
+
+== Rewards ==
+You will receive:
+
+675 XP (or 4 20 at max level)
++50 reputation with Stormwind
+
+
+== Progress ==
+Good to see you back, <name>.  What did Wiley have to say for himself?
+
+
+== Completion ==
+Bah!  I should have let that scoundrel rot when I had the chance.  But this information is crucial.  Good work.
+
+
+== Progression ==
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18] The Defias Brotherhood
+ [18G2] The Defias Brotherhood
+ [22D] The Defias Brotherhood
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

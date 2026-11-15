@@ -1,0 +1,58 @@
+title: Insane Druids (Classic)
+revision: 6957229
+part: whole
+quest: 1012
+url: https://warcraft.wiki.gg/wiki/Insane_Druids_%28Classic%29
+
+== Objectives ==
+Kill the druids: Taneel Darkwood, Uthil Mooncall, Mavoris Cloudsbreak; then return to Kayneth Stillwind in Forest Song.
+
+Taneel Darkwood slain
+Uthil Mooncall slain
+Mavoris Cloudsbreak slain
+
+
+== Description ==
+When I struggled with the Forsaken's poisons, I had a vision. I had a vision of the druids in the Dor'Danil Barrow Den, poisoned... murdered by the undead! They are now errant ghosts, severed from their bodies and driven mad.
+So that the druids' spirits might some day find peace, you must enter the Dor'danil Barrow Den and destroy its once great leaders: Taneel Darkwood, Uthil Mooncall and Mavoris Cloudsbreak.
+Do this, then return to me.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Emil's Brand]
+ [Uthil's Cudgel] 
+ [Mavoris's Warstaff] 
+You will also receive:
+
+3350 XP (or 20 40 at level 80)
+87 reputation with Darnassus
+87 reputation with Exodar
+87 reputation with Gnomeregan
+87 reputation with Ironforge
+87 reputation with Stormwind
+
+
+== Progress ==
+The anguish of the Dor'danil druids still haunt my dreams, <name>.  You must destroy their leaders!
+
+
+== Completion ==
+I felt the anguish of the Dor'danil Barrows lessen, and knew you had completed your task.
+It was grim work you did, <name>, for the spirits you destroyed were merely victims of the Forsaken's evil.  But with their destruction, let us hope the other maddened spirits find peace.
+
+
+== Progression ==
+ [29] Forsaken Diseases
+ [32] Insane Druids
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

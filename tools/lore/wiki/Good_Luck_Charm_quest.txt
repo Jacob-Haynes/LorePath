@@ -1,0 +1,52 @@
+title: Good Luck Charm (quest)
+revision: 6739650
+part: whole
+quest: 5050
+url: https://warcraft.wiki.gg/wiki/Good_Luck_Charm_%28quest%29
+
+Good Luck Charm is part of the Better Late Than Never quest chain. This quest chain starts with  [52] Better Late Than Never.
+
+
+== Objectives ==
+Return to Janice Felstone in Western Plaguelands her Good Luck Half-Charm.
+
+ [Good Luck Half-Charm] (provided)
+
+
+== Description ==
+It would seem that I was wrong about you <name>, and for that I owe you an apology. My sister sent me a number of personal effects, including humorously enough the deed to the Felstone farm. I think I'll pass on reclaiming it right now.
+If my sister's spirit remains tethered to the farm and cannot rest, please... could you return this to her? It is half of a good luck charm she had, with her husband having the other half.
+Maybe her knowing I have these things will now put her soul to rest.
+
+
+== Rewards ==
+You will receive:
+
+2550 XP (or 15 60 at max level)
+
+
+== Progress ==
+John, sweetheart... is that you?  I'm so cold all the sudden...
+
+
+== Completion ==
+You give the half-charm back to the apparition.  She looks at it, then at you expectantly.
+"Honey, where did you put your half of the charm?  We can't be together unless we have both halves.  Honey... can you see me?"
+
+
+== Progression ==
+ [52] Better Late Than Never
+ [52] Better Late Than Never /  [52] Better Late Than Never
+ [52] Good Natured Emma /  [52] The Jeremiah Blues
+ [52] Good Luck Charm
+ [54] Two Halves Become One
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

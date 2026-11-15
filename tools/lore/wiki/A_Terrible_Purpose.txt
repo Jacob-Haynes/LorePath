@@ -1,0 +1,54 @@
+title: A Terrible Purpose
+revision: 6262466
+part: whole
+quest: 8287
+url: https://warcraft.wiki.gg/wiki/A_Terrible_Purpose
+
+== Objectives ==
+Take the Decoded Tablet Parchment to Commander Mar'alith.
+
+ [Decoded Tablet Transcription] (provided)
+
+
+== Description ==
+Ok, here we are... a pretty valuable chunk of information, I must say! I've seen the Cenarion Circle forces arrive at Silithus. They plan to drive the Twilight's Hammer out, don't they? This will help. 
+Take this parchment to their leader, Commander Mar'alith. Soon the Twilight's Hammer will be vanquished and I will be outside their grasp for good!
+
+
+== Rewards ==
+You will receive:
+
+1 80
+6600 XP
++500 reputation with Cenarion Circle
+
+
+== Progress ==
+What is this you bring to me, <name>?
+
+
+== Completion ==
+This is very interesting information indeed, <name>. This sheds some light on the presence of the Twilight's Hammer in Silithus and will undoubtedly help us in our struggle against them. Your efforts will be handsomely rewarded, <class>.
+
+
+== Notes ==
+Some time after the turning this quest in, the character will receive mail from Commander Mar'alith, and an item:  [Nature's Whisper]
+
+
+== Progression ==
+ [15-30] The Twilight Mystery
+ [15-30] The Deserter
+ [15-30] The Twilight Lexicon
+ [15-30] A Terrible Purpose
+ [15-30] True Believers
+ [15-30] Still Believing (Repeatable)
+
+
+== Patch changes ==
+ Patch 1.8.0 (2005-10-10): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

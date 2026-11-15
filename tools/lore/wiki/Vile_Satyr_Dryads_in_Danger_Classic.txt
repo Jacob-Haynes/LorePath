@@ -1,0 +1,39 @@
+title: Vile Satyr! Dryads in Danger! (Classic)
+revision: 6314506
+part: whole
+quest: 1021
+url: https://warcraft.wiki.gg/wiki/Vile_Satyr%21_Dryads_in_Danger%21_%28Classic%29
+
+== Objectives ==
+Find Anilia in Xavian.
+
+
+== Description ==
+Listen, I don't know who you are, but I need your help. My sisters went to take back the Branch of Cenarius from the satyr. They said they'd be back soon, but it's been two whole days!
+<Name>, you have to find them! They were looking for the ruins of a night elf temple in Xavian to the northwest. I don't know what to think. Look for Anilia, she was leading them on the search.
+
+
+== Rewards ==
+You will receive:
+
+2550 XP (or 15 60 at max level)
++250 reputation with Darnassus
+
+
+== Completion ==
+Judging by the gaping wound in her side, Anilia is on the verge of death.
+
+
+== Progression ==
+ [32] Vile Satyr! Dryads in Danger!
+ [32] The Branch of Cenarius
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

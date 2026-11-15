@@ -1,0 +1,55 @@
+title: Test of Lore (6)
+revision: 5586680
+part: whole
+quest: 6628
+url: https://warcraft.wiki.gg/wiki/Test_of_Lore_%286%29
+
+In Test of Lore (6), you must correctly answer a question Parqual Fintallas in Undercity regarding the contents of the book  [Beginnings of the Undead Threat]. This is the ninth quest in the Test of Faith quest chain, which is a chain of quest involving testing some part of the player character's being. The first quest is  [26] Test of Faith, which begins in The Weathered Nook in Thousand Needles, from Dorn Plainstalker.
+
+
+== Objectives ==
+Answer Parqual Fintallas' question successfully and then speak to him again. He will remain in the Undercity until you are ready.
+
+
+== Description ==
+So the time is once again upon us. As a student of lore, you have shown great tenacity by undertaking my task.
+And so now I offer you your question. If you are ready, speak to me again, and take all the time you need, <name>--there is no pressure to answer quickly.
+
+
+== Progress ==
+There is only one rule I feel you must know if you wish to survive in this world: the more you know, the more you'll see.
+If you study, if you observe, then you will begin to see things in the world that no other tauren will see.
+
+
+== Completion ==
+Well done, <name>. I had my doubts if you studied the text I asked you to get, but you've answered correctly.
+
+
+== Notes ==
+Parqual Fintallas asks you the original name of the Lich King. The answer is in the book, but for those who didn't read it, the answer is Ner'zhul. The full text of the book can be found on the book's item page:  [Beginnings of the Undead Threat]. 
+NOTE: If you answer incorrectly you will receive the  [Mark of Shame] debuff, preventing you from attempting again until the debuff is removed.
+Once you have answered the question correctly, talk to Parqual Fintallas again. He will still have the question text, but you don't need to answer again - just choose the yellow ? option to complete the quest.
+
+
+== Progression ==
+
+ [26] Test of Faith
+ [29G] Test of Endurance
+ [30] Test of Strength
+ [30] Test of Lore
+ [30] Test of Lore
+ [30] Test of Lore
+ [30] Test of Lore
+ [36D] Test of Lore
+ [30] Test of Lore
+ [36] Final Passage
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

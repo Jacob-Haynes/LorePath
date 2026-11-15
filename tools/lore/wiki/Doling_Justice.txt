@@ -1,0 +1,60 @@
+title: Doling Justice
+revision: 6307617
+part: whole
+quest: 2970
+url: https://warcraft.wiki.gg/wiki/Doling_Justice
+
+Doling Justice is part of the Freedom for All Creatures quest chain, which will eventually award the player with a baby sprite dragon pet, very cute and highly desired. The chain starts with  [47] Freedom for All Creatures in Feralas.
+
+
+== Objectives ==
+Kill 12 Grimtotem Naturalists, 10 Grimtotem Raiders, and 6 Grimtotem Shamans before returning to Jer'kai Moonweaver in Feralas.
+
+Grimtotem Raider slain (10)
+Grimtotem Naturalist (12)
+Grimtotem Shaman slain (6)
+
+
+== Description ==
+As she's already told you, Kindal and I will now take the fight to the Grimtotem. Together, we should still be able to pick off some of the tauren without much threat to ourselves, but we'd love some help if you're willing and able.
+You've seen the camp below us, but there are more to the east. Using your own tactics, deal as much damage to the tauren as you can. We can all meet back here after they've felt the sting of Kindal's arrows and your own weapons.
+
+
+== Rewards ==
+You will receive:
+
+3150 XP (or 19 20 at max level)
++150 reputation with Darnassus
+
+
+== Progress ==
+Kindal needs time to prepare, but our kills already number in the dozens. The Grimtotem clan is more than aware of our presence in the area, and they seek us out like vipers.
+They'll do everything in their power to take our heads from our bodies. You should be alert... they'll be coming for you too now that you've interfered.
+
+
+== Completion ==
+Kindal was right about you, <name>--you do have a knack for this. You are a more seasoned adventurer than the both of us, and for that we thank you.
+The Grimtotem clan is much more hostile than most tauren... I wonder if their own kind frowns upon their actions. I wouldn't be surprised. As you are probably aware, many races on Azeroth have ties to less kindly counterparts.
+But that is a discussion for another day.
+
+
+== Progression ==
+
+ [47] Freedom for All Creatures
+ [47] Doling Justice
+ [47] Doling Justice
+ [47] An Orphan Looking For a Home
+ [47] A Short Incubation
+ [47] The Newest Member of the Family
+ [47] Food for Baby
+ [48] Becoming a Parent
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

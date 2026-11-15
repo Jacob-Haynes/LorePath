@@ -1,0 +1,48 @@
+title: Morrowgrain Research (Alliance, 1)
+revision: 5917246
+part: whole
+quest: 3781
+url: https://warcraft.wiki.gg/wiki/Morrowgrain_Research_%28Alliance%2C_1%29
+
+== Objectives ==
+Take the Arch Druid's Seed Voucher to Mathrengyl Bearwalker in the Cenarion Enclave of Darnassus.
+
+ [Seed Voucher] (provided)
+
+
+== Description ==
+With what we call an Evergreen Pouch, we have cultivated Tharlendris seeds in the soil from Un'Goro Crater. These seeds blossom into an array of random, potent herbs. One result is morrowgrain, a mysterious herb we know little about; I intend to unravel this mystery. 
+Take this to Mathrengyl downstairs, and he will give you some seeds so you can get started. If you run out, you will need to purchase more from him.
+
+
+== Rewards ==
+You will receive:
+
+20x  [Packet of Tharlendris Seeds]
+
+
+== Progress ==
+Peace and serenity be yours, friend.  You are here on business from the Arch Druid himself, yes?
+
+
+== Completion ==
+Yes, this voucher is good for twenty packets of seeds. If you run out, we have more that can be provided. Unfortunately though, Tharlendris seeds are quite costly to produce in significant numbers. This is why the Cenarion Circle asks that those who are assisting us help out by offsetting some of the cost.
+Those who return with morrowgrain find that the reward the Arch Druid offers far makes up for the cost.
+
+
+== Progression ==
+ [50] Assisting Arch Druid Staghelm
+ [50] Un'Goro Soil
+ [50] Morrowgrain Research
+ [50] Morrowgrain Research
+ [55] Morrowgrain to Darnassus 
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,59 @@
+title: Insect Part Analysis (2)
+revision: 6710903
+part: whole
+quest: 113
+url: https://warcraft.wiki.gg/wiki/Insect_Part_Analysis_%282%29
+
+This quest is part of the Rise of the Silithid quest chain.
+
+
+== Objectives ==
+Deliver the report to Senior Surveyor Fizzledowser in Gadgetzan. Be sure he gives you a copy of the report, as Alchemist Pestlezugg has requested.
+
+ [Insect Analysis Report] (provided)
+
+
+== Description ==
+Senior Surveyor Fizzledowser needs to see this report immediately. Actually... everyone who can read needs to see this report. We are facing a grave and serious threat to not only Tanaris and Gadgetzan, but if left unchecked, the entirety of southern Kalimdor. Heck, even quite possible the whole of Azeroth; this thing has given no indication it will subside.
+Have Fizzledowser make a duplicate of the report for you to distribute freely to your allegiance. Everyone must know about this threat!
+
+
+== Rewards ==
+You will receive:
+
+70
+625 XP (or 2 70 at level 70)
++10 reputation with Gadgetzan
+
+
+== Progress ==
+Well Junior Surveyor <name>, has ol' Pestlezugg got that report ready yet?
+
+
+== Completion ==
+Thank you for delivering the report, Junior Surveyor <name>; here is your pay for your diligent service to the Gadgetzan Water Company.
+While I am usually not thrilled about handing out our valuable information carte blanche to those who would otherwise pay good coin for it, I've known Pestlezugg for a number of years now. If he recommends letting everyone know about it, then so be it. Give me a moment and I'll make you a copy.
+
+
+== Progression ==
+ [46] Gadgetzan Water Survey
+ [47] Noxious Lair Investigation
+ [48] The Scrimshank Redemption
+ [48] Insect Part Analysis
+ [48] Insect Part Analysis
+ [48] Rise of the Silithid
+ [53] March of the Silithid
+ [53] Bungle in the Jungle
+ [54G] Pawn Captures Queen
+ [54] Calm Before the Storm
+ [54] Calm Before the Storm
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

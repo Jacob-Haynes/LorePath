@@ -1,0 +1,83 @@
+title: Azsharite (quest)
+revision: 5620004
+part: whole
+quest: 3602
+url: https://warcraft.wiki.gg/wiki/Azsharite_%28quest%29
+
+This is part of the main Blasted Lands quest chain, although it takes place in Azshara.
+
+
+== Objectives ==
+Recover twenty Crystallized Azsharite from southern Azshara. You may use the Felhound to assist you in 'sniffing' out the location of cleverly hidden deposits.
+Return to Loramus when the task is complete.
+
+ [Crystallized Azsharite] (20)
+ [Felhound Tracker Kit] (provided)
+
+
+== Description ==
+The ancient cliff giants of the southern region of Azshara consume the rock and buildings of the land for sustenance. The excrement from their consumption is a highly malleable and extremely strong crystal known as Azsharite.
+The formations litter the southern arc, but few are ever recovered due to the extremely violent nature of the giants.
+You are to venture south and recover enough of the Azsharite for the creation of the weapon's body. My felhounds will aid in the recovery of the crystal.
+
+
+== Progress ==
+Evil does not sleep, fool.  You will have time for rest when you are finally dead. Now bring me those crystals.
+
+
+== Completion ==
+Your tasks in Azshara are complete, mortal.  I must now forge the necessary components for the next step in your adventure.
+
+
+== Notes ==
+You're going to be collecting the big blue crystals on the southern "claw" in Azshara.  When you accept the quest, you'll get a Felhound Tracker Kit, which contains a  [Fel Tracker Owner's Manual] and a  [Fel Orb].  Open the kit quickly, because it has a 10 minute limit.  There's a several-hour timer (and 5 uses) on the orb and no timer on the manual. I found the best place for this was a little stretch around 61,84. More here than most other places.
+Read the manual (it's quite amusing as well as informative)!
+Most of the Azsharite formations look like big blue crystals, but some of them have a humanoid shape. These are actually digested remains of previous travellers eaten by the cliff giants, and Crystallized Notes can be found inside them as well as azsharite.
+If you /roar at your Tracker and it growls back without going anywhere, then there's no Azsharite in its range.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

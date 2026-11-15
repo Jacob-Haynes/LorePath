@@ -1,0 +1,42 @@
+title: Dwarven Justice
+revision: 5636368
+part: whole
+quest: 3371
+url: https://warcraft.wiki.gg/wiki/Dwarven_Justice
+
+== Objectives ==
+Return to the Searing Gorge and find Dorius's archaeology unit.
+
+
+== Description ==
+There is an empty, vacuous hole, where my heart used to be, <name>. The loss of Dorius is not one that I will soon recover from. I must see his final wish through - the perpetrators of this cold blooded murder must be brought to justice.
+Return to the Searing Gorge and fulfill his last request: Free his men.
+
+
+== Rewards ==
+You will receive:
+
+5650 XP (or 34 50 at level 70)
++250 reputation with Ironforge
+
+
+== Completion ==
+Forget about me, help the others.
+
+
+== Progression ==
+ [46] Suntara Stones
+ [48] Suntara Stones
+ [46] Dwarven Justice
+ [46] Release Them
+ [46] Rise, Obsidion!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

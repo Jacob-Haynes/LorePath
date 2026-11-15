@@ -1,0 +1,54 @@
+title: A Baying of Gnolls
+revision: 5995059
+part: whole
+quest: 124
+url: https://warcraft.wiki.gg/wiki/A_Baying_of_Gnolls
+
+This quest is best done together with the  [20] The Everstill Bridge quest because the gnolls drop the items you need for this.
+
+
+== Objectives ==
+Kill 10 Redridge Brutes and 8 Redridge Mystics, then return to Verner Osgood.
+
+Redridge Brute slain (10)
+Redridge Mystic slain (8)
+
+
+== Description ==
+As if the attacking orcs weren't enough! Now I have gnoll brutes and mystics prowling along the ridge north of my stable, taking my horses when they stray...
+If you can get rid of those gnolls, my horses and I would be very grateful.
+
+
+== Rewards ==
+You will receive:
+
+1,150 XP
+9
++75 or +150 reputation with Stormwind
+
+
+== Progress ==
+My horses still seem skittish, and I still hear that cursed wolf cry at night.  Please, <name>, do something about those Gnolls!
+
+
+== Completion ==
+Thank you for all your help, <name>.
+
+
+== Progression ==
+ [18] The Price of Shoes
+ [18] Return to Verner
+Two quests open:
+ [18] Underbelly Scales (optional)
+ [20] A Baying of Gnolls
+ [21] Howling in the Hills
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

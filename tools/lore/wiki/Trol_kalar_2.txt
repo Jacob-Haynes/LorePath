@@ -1,0 +1,56 @@
+title: Trol'kalar (2)
+revision: 5633774
+part: whole
+quest: 646
+url: https://warcraft.wiki.gg/wiki/Trol%27kalar_%282%29
+
+Trol'kalar is the final step in the long Trol'kalar quest chain.
+
+
+== Objectives ==
+Deliver Trol'kalar to Zengu in Hammerfall. 
+
+ [Sheathed Trol'kalar] (provided)
+
+
+== Description ==
+The light slowly fades, the sword Trol'kalar, held within a stone sheath has been released.
+
+
+== Rewards ==
+
+You will receive:
+
+6000 XP
++150 or +350 reputation with Darkspear Trolls
+
+
+== Progress ==
+<Name>! Have you taken the sword?
+
+
+== Completion ==
+For generations, the forces of Strom and Arathor ravaged the trolls. Now their greatest weapon is in our hands. Our inching progress in the steamy forests of Zul'Gurub will be no more.
+Your assistance has been great, <name>, and the Darkspear trolls are indebted to you.
+I will be sure that the sword is delivered to Nimboya at Grom'gol.
+
+
+== Progression ==
+ [37] Trollbane
+ [37] Sigil of Strom
+ [40] The Broken Sigil
+ [40] Sigil of Thoradin
+ [41] Sigil of Arathor
+ [42] Sigil of Trollbane
+ [42] Trol'kalar
+ [42] Trol'kalar
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,31 @@
+title: Relic Guardian
+revision: 6952375
+part: whole
+url: https://warcraft.wiki.gg/wiki/Relic_Guardian
+
+The Relic Guardian is the third and last boss in the Excavation Site: Wetlands instance, found at the Site of the Guardian.
+
+
+== Abilities ==
+ Arcing Smash — Lashes out in a vicious arc, inflicting damage to enemies in a cone in front of the caster.
+ Knock Away — Inflicts normal damage plus 30 to an enemy and knocks it back.
+ Stasis
+ Thunderclap — Inflicts 24 to 26 Nature damage to nearby enemies, increasing the time between their attacks by 33% and slowing their movement by 40% for 10 sec.
+ War Stomp — Inflicts normal damage plus 23 to nearby enemies, knocking them back and stunning them for 5 sec.
+
+
+== Drops ==
+
+
+== Criteria of ==
+ [Novice Spelunker]
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

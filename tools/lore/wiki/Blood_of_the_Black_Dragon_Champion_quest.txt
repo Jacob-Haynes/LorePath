@@ -1,0 +1,57 @@
+title: Blood of the Black Dragon Champion (quest)
+revision: 6907315
+part: whole
+quest: 6602
+url: https://warcraft.wiki.gg/wiki/Blood_of_the_Black_Dragon_Champion_%28quest%29
+
+== Objectives ==
+Travel to Blackrock Spire and slay General Drakkisath. Gather his blood and return it to Rokaro.
+
+ [Blood of the Black Dragon Champion]
+
+
+== Description ==
+How would you feel about paying a visit to the General? No illusions, this time.
+Ceremony? A pretty word to describe the bloodletting that amuses the Black Dragonflight.
+All this amulet requires is the blood of General Drakkisath. Primitive security. There are other ways to receive the General's blood.
+Go to Blackrock Spire and kill Drakkisath. Return with his blood and I will activate the key to Onyxia's lair.
+
+
+== Progression ==
+I don't think I need to tell you that Drakkisath is not to be taken lightly.
+I let the thousands dead by his hand do the talking.
+
+
+== Completion ==
+A victory that will be remembered for many years, <name>. The  [Drakefire Amulet] will open Onyxia's lair. Gather your allies and bring victory to the Horde.
+
+
+== Progression ==
+This quest was a part of the Onyxia's Lair attunement chain.
+
+ [60D] Warlord's Command
+ [60] Eitrigg's Wisdom
+ [60R] For The Horde!
+ [60] What the Wind Carries
+ [60] The Champion of the Horde
+ [60] Mistress of Deception
+ [60R] Oculus Illusions
+ [60R] Emberstrife
+
+ [60] The Test of Skulls, Scryer
+ [60] The Test of Skulls, Somnus
+ [60] The Test of Skulls, Chronalis
+ [60] The Test of Skulls, Axtroz
+ [60] Ascension...
+ [60R] Blood of the Black Dragon Champion
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.0.1 (2006-12-05): Quest giver changed from Rexxar to Rokaro. Text updated.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

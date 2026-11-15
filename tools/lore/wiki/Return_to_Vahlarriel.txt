@@ -1,0 +1,47 @@
+title: Return to Vahlarriel
+revision: 5615548
+part: whole
+quest: 1440
+url: https://warcraft.wiki.gg/wiki/Return_to_Vahlarriel
+
+== Objectives ==
+Escort Dalinda Malem from Thunder Axe Fortress and then return to Vahlarriel Demonslayer in Desolace.
+
+Rescue Dalinda Malem
+
+
+== Description ==
+So, the time is now then? I appreciate your efforts, and if the situation does not lend itself, then allow me to thank you now for everything you've done for me and my family. If you're ready, then there is nothing else for me here—we can leave when you feel the time is right.
+
+
+== Rewards ==
++350 Darnassus Reputation
+3300 XP
+
+
+== Completion ==
+Thank you, <name>. Dalinda made it safely back here to Nijel's Point, and in much better condition than I could have asked for. The fact that she arrived here under her own power was a good sign. I hope you're well?
+It pains me to know that both Tyranis and Dalinda didn't return, but the embarrassment of Tyranis' decisions is hers to endure. It is something she will have to deal with when she returns to Darnassus.
+
+
+== Notes ==
+You are escorting Dalinda out of the fortress - out of the building you find her in, out the front gates, and a bit down the path. You may be able to clear a path ahead of her before starting this quest.
+Dalinda will only stop when she is attacked.  You should let her lead, to ensure she stops while you take care of whatever threat is in her way.
+
+
+== Progression ==
+ [33] Vahlarriel's Search
+ [33] Vahlarriel's Search
+ [33] Vahlarriel's Search
+ [33] Search for Tyranis
+ [33] Return to Vahlarriel
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,61 @@
+title: Blackfathom Villainy (Horde)
+revision: 6956899
+part: whole
+quest: 6561
+url: https://warcraft.wiki.gg/wiki/Blackfathom_Villainy_%28Horde%29
+
+== Objectives ==
+Bring the head of Twilight Lord Kelris to Bashana Runetotem in Thunder Bluff.
+
+ [Head of Kelris]
+
+
+== Description ==
+Strength has left me. Your help is needed!
+Long ago this site was a great temple of Elune. But misfortune led to ruin when the corruption of an Old God seeped up from beneath the earth and tainted the sacred Moon Well.
+Aku'Mai, servant of the Old God, rose from the waters.
+The Twilight's Hammer cultists have allied with the naga to occupy these grounds. The cultists, led by Kelris, sacrifice innocents to Aku'Mai for power.
+Slay Kelris and bring his head to Bashana in Thunder Bluff, <name>, please.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Gravestone Scepter]
+ [Arctic Buckler]
+ [Dark Ritual Leggings] 
+ [Cultist's Armguards] 
+You will also receive:
+
+65
+3300 XP (or 19 80 at max level)
++1000 reputation with Argent Dawn
++500 reputation with Thunder Bluff
+
+
+== Progress ==
+May the Earthmother be with you, <name>.
+Peace between the earth and all her people should be our goal. She has a grand plan for nature, and we all have a role to play in that plan.
+
+
+== Completion ==
+Kelris has eluded the Argent Dawn for some time.
+For some time they considered him dead or missing.
+By ending his reign you have spared the lives of many innocent people, <name>.
+Earthmother be praised! To sacrifice another to a servant of an Old God for personal gain is beyond disgusting!
+You have done a great thing this day. Kelris was a creature of evil and sought to bring the world back to a time of chaos by worshipping such creatures as the Old Gods. Thank you, <name>.
+
+
+== Notes ==
+Note that this quest is the first opportunity for Horde players to gain reputation with the Argent Dawn.
+Casters should seek out and complete this quest, as the wand rewarded is good all the way until level 40, and will significantly decrease mid leveling grinding time by saving your mana pool.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

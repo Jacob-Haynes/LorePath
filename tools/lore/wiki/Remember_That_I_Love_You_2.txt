@@ -1,0 +1,56 @@
+title: Remember That I Love You (2)
+revision: 6966448
+part: whole
+quest: 95161
+url: https://warcraft.wiki.gg/wiki/Remember_That_I_Love_You_%282%29
+
+== Objectives ==
+Deliver the Blood-Stained Letter to Avette Fellwood in Duskwood.
+
+Blood-Stained Letter (provided)
+
+
+== Description ==
+If you're looking for Jeremy Heartweaver, your best bet is to talk to his newly adopted mother, Avette Fellwood out in Duskwood. Sweet woman. Likely needs another pair of hands for her work, but it beats staying in the orphanage.
+If you see little Jeremy, do be sure to tell him we're all thinking of him, won't you?
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Tarnished Locket]
+You will also receive:
+
+180 XP
+
+
+== Progress ==
+Yes? What do you need?
+
+
+== Completion ==
+Oh no...
+It's nice of you to bring this, but I don't think Jeremy is ready to see it. Matron Nightingale said my little Jeremy hasn't spoken since the attack on Lordaeron, and I don't intend to force him now. Showing him this will only cause him more pain.
+Don't look at me like that. I won't hide his past from him, but he needs time to heal. I'll give this to him when he's older. Thank you for stopping by, but I think it's time you should go.
+
+
+== Progression ==
+ [21D] Abominable Creatures
+ [22D] A Frightened Request
+ [22D] Bloodied Insignia
+ [22D] Crest of Lordaeron
+ [22D] Light's Justice
+ [22D] Remember That I Love You →  [22] Remember That I Love You
+ [12] A Recipe For Death →  [15] A Recipe For Death →  [18] A Recipe For Death →  [22D] The New Plague
+ [11] Rear Guard Patrol →  [13E] Rear Guard Patrol →  [22D] The Wrath of Rath'mael
+ [21D] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

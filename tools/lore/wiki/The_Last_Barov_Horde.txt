@@ -1,0 +1,65 @@
+title: The Last Barov (Horde)
+revision: 6940582
+part: whole
+quest: 5342
+url: https://warcraft.wiki.gg/wiki/The_Last_Barov_%28Horde%29
+
+The Last Barov is the 2nd quest in the Barov Family Fortune quest chain.
+
+
+== Objectives ==
+Travel to Chillwind Camp - Alliance territory - and assassinate Weldon Barov. Take his head and return to Alexi Barov.
+Be warned, Weldon will probably be well protected by Alliance scum.
+
+ [Head of Weldon Barov]
+Suggested Players [3]
+
+
+== Description ==
+Naturally, with my brother still alive, there may be some contention as to the primary beneficiary of the family's fortune. This cannot be.
+A low down guttersnipe like you isn't above a little cold-blooded murder, I hope.
+It's a simple task and one that I expect you will complete; that is, if you wish to claim your reward.
+Weldon sits under Alliance protection at Chillwind Camp, to the east. Slay him, return his head.
+<Alexi yawns.>
+Hurry along now.
+
+
+== Rewards ==
+You will receive:
+
+1 80
+8300 XP
+ [Barov Peasant Caller]
+
+
+== Progress ==
+Secure my fortune and share in the spoils.
+
+
+== Completion ==
+Wonderful! Now only I hold the power and fortune of house Barov!
+<Alexi throws a large bag at you.>
+And keep the change, you filthy animal.
+
+
+== Trivia ==
+Part of the completion text, "And keep the change, you filthy animal." could be a reference to the movie, Home Alone.
+
+
+== Progression ==
+ [60D] Barov Family Fortune
+ [60P] The Last Barov
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+The Last Barov, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

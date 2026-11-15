@@ -1,0 +1,56 @@
+title: Wasteland
+revision: 5609772
+part: whole
+quest: 1124
+url: https://warcraft.wiki.gg/wiki/Wasteland
+
+This is a breadcrumb quest to Valor's Rest in Silithus. Valor's Rest is the small camp at the top of the trail out of Un'Goro Crater. This is a quest that predates Cenarion Hold, so it is not received or turned in there.
+
+
+== Objectives ==
+Speak with Layo Starstrike near the Valor's Rest graveyard of Silithus, showing him Rabine's Letter.
+
+ [Rabine's Letter] (provided)
+
+
+== Description ==
+West of Un'Goro Crater, via the northwestern ridge, is a harsh wasteland - Silithus. Few know that an ancient war was waged there between the night elves and a malign, alien power. The evil was sealed, but now we suspect that forces work to stir this... unspeakable horror.
+Seek out Layo Starstrike, one of our agents in Silithus; look for him at Valor's Rest, the final resting spot for the fallen of the wastes. Give him this letter, and he will give you his trust accordingly.
+
+
+== Rewards ==
+You will receive:
+
+4050 XP (24 60 at max level)
++75 reputation with Cenarion Circle
+
+
+== Progress ==
+This is a dangerous land to be so casual, <class>.  What brings you to the wastes of Silithus?
+
+
+== Completion ==
+Rabine sent you, did he?  Well, consider yourself welcomed here... as much as this desolate and forsaken land can welcome someone.
+I wasn't alive during the time of the great tribulations that took place here, but there are parts of this desert that might as well be eerie pictures of that forgotten past.  With your help, the Cenarion Circle might be able to bring finality to a threat that was supposed to have died generations ago.
+
+
+== Progression ==
+ [55] The New Frontier
+ [55] The New Frontier /  [55] The New Frontier
+ [55] Rabine Saturna /  [55] Rabine Saturna
+ [55] Wasteland
+ [55] The Spirits of Southwind
+ [57] Hive in the Tower
+ [57] Umber, Archivist
+ [57] Uncovering Past Secrets
+ [57] Under the Chitin Was...
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

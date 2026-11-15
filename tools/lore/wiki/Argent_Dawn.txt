@@ -1,0 +1,7 @@
+title: Argent Dawn
+revision: 6957761
+part: intro
+url: https://warcraft.wiki.gg/wiki/Argent_Dawn
+
+The Argent Dawn (referred to as the knightly order of the Argent Dawn, or simply the Dawn) was an organization focused on protecting Azeroth from agencies that seek to destroy it, such as the Burning Legion and the Scourge. As a worldwide organization maintaining a status of neutrality, the Argent Dawn was not a political body, nor did their members ever wish to become one. Their cause was to fight swiftly and mercilessly against any element of evil that surfaced in Azeroth. To that end, they called both the Alliance and the Horde allies in the cause of stamping out evil and therefore recruited from all races without distinction. Their base camps could be found across all the Plaguelands as well as in Tirisfal Glades, while their agents were also present in Stormwind City, Darnassus, and Everlook.
+Following the Second Battle for Light's Hope Chapel, Highlord Tirion Fordring assumed leadership over the Argent Dawn and merged them with the Knights of the Silver Hand in Lordaeron, founding the Argent Crusade. In the aftermath of the fall of the Lich King and the Cataclysm, the Crusade took over the now-defunct Argent Dawn's outposts in the Plaguelands.

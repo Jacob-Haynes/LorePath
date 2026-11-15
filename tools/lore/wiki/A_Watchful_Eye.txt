@@ -1,0 +1,50 @@
+title: A Watchful Eye
+revision: 5995136
+part: whole
+quest: 94
+url: https://warcraft.wiki.gg/wiki/A_Watchful_Eye
+
+== Objectives ==
+Take the  [Glyph of Azora] to the Lion Statue near the Tower of Ilgalar in Redridge. 
+
+ [Glyph of Azora] (provided)
+
+
+== Description ==
+My rival, Morganth, is a vicious mage of great power who lives in the Tower of Ilgalar in Redridge. I have developed a means of spying on him, the Eye of Azora, and can now view him from afar.
+But to study his thoughts ... I require further aid.
+If you are willing, then take my Glyph of Azora to the Tower of Ilgalar. Place it upon the Lion Statue near the Tower.
+When this is done, the power of Azora will grant visions of Morganth's future plans.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+1250 XP (or 7 80 at level 70)
+
+
+== Progress ==
+This Lion Statue has sat here for decades, and keeps a lonely watch over the infamous Tower of Ilgalar.
+There is a depression at the base of the statue, where a gem or glyph might be set...
+
+
+== Completion ==
+You place the Glyph of Azora on the stone.  It adheres itself ... and you hear from it Theocritus' disembodied voice:
+You have my gratitude, young <name>.  You may now speak with me through this Glyph, and I might have future tasks for you ... after I have probed the thoughts of my rival. 
+
+
+== Progression ==
+ [23] Theocritus' Retrieval
+ [21] A Watchful Eye
+ [22] Looking Further
+ [26] Morganth
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

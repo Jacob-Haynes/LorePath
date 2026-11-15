@@ -1,0 +1,46 @@
+title: Centaur Bounty (Horde)
+revision: 6897924
+part: whole
+quest: 1366
+url: https://warcraft.wiki.gg/wiki/Centaur_Bounty_%28Horde%29
+
+== Objectives ==
+Bring 15 Centaur Ears to Felgur Twocuts in Desolace.
+
+ [Centaur Ear] (15)
+
+
+== Description ==
+Now that you scared the centaur clans, it's time to bleed them. When traveling Desolace, hunt centaur. I don't care which clan you hunt. Just gather ears. A hoard of ears.
+By weakening their numbers you will weaken their resolve, and stamp out any thoughts of expansion.
+Good hunting, <name>.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Lilac Sash]
+ [Braced Handguards]
+You will also receive:
+
+3750 XP (or 22 80 at max level)
++350 reputation with Orgrimmar
+
+
+== Progress ==
+How is your collection of ears, <name>?  Large?
+
+
+== Completion ==
+By now, the centaur must know your name.  I'm sure they know it, and respect it, and fear it.  And just as they know you, they know the banner under which you ride.
+The banner of the Horde.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

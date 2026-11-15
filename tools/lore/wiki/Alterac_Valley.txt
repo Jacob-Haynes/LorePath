@@ -1,0 +1,6 @@
+title: Alterac Valley
+revision: 6855310
+part: intro
+url: https://warcraft.wiki.gg/wiki/Alterac_Valley
+
+Alterac Valley (AV) is a battleground in the continuing war between the Horde and the Alliance. The two opposing sides are the Frostwolf Clan (led by General Drek'Thar) and the Stormpike Guard (also known as the Stormpike Expedition, led by General Vanndar Stormpike), both of whom lay claim to this secluded territory.  Alongside the Generals are their two Captains, Captain Galvangar and Captain Balinda Stonehearth, respectively. Players can queue for Alterac Valley from level 45. It was originally launched with patch 1.5, but it has gone under many changes along World of Warcraft's history. Korrak's Revenge is a representation of this original version during WoW's Anniversary.

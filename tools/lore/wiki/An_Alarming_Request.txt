@@ -1,0 +1,58 @@
+title: An Alarming Request
+revision: 6911669
+part: whole
+quest: 92432
+url: https://warcraft.wiki.gg/wiki/An_Alarming_Request
+
+An Alarming Request begins the Alliance-side introduction to the Forever-exclusive City of Dalaran dungeon. Find Emissary Jacques in Southshore to begin.
+
+
+== Objectives ==
+Report to the Image of Archmage Modera near the City of Dalaran.
+
+
+== Description ==
+I bring ill tidings from Dalaran. Something has disrupted our ley lines, causing erratic and destructive behavior from our constructs in the city.
+We know not yet what is causing this mayhem. The high council has ordered us to keep this matter private so as to not bring shame to our order. But we cannot keep up this charade forever. The city is being overrun as we speak!
+Archmage Modera has dispatched me to solicit outside aid. Seek her image out near Dalaran beside Lordamere Lake.
+
+
+== Rewards ==
+You will receive:
+
+660 XP
++10 reputation with Kirin Tor
+
+
+== Completion ==
+I see Jacques was successful in garnering aid.
+While not strictly permitted, we cannot allow our pride to turn away allies in our desperate hour. Do not let the guards fool you. Things are anything but under control.
+
+
+== Progression ==
+Horde attunement:
+
+ [34] Prison Break In &  [33] Key to the City
+ [35] Dalaran Patrols
+ [34] Blood in the Streets
+ [33D] Heart of Disruption
+ [33] Shrewd Negotiations
+Other dungeon quests:
+
+ [33D] A Green Sample
+ [33] An Alarming Request →  [33D] Heart of Disruption →  [33] Friend of the Kirin Tor
+ [33D] Power Overwhelming
+ [33D] Starving Arcane
+ [33D] Opportunistic Education
+ [33D] Source of Power
+ [33D] The Grave Knight
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

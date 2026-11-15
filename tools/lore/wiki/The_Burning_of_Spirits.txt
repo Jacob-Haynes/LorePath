@@ -1,0 +1,58 @@
+title: The Burning of Spirits
+revision: 5586780
+part: whole
+quest: 1435
+url: https://warcraft.wiki.gg/wiki/The_Burning_of_Spirits
+
+== Objectives ==
+Return the Burning Gem and 15 Infused Burning Gems to Maurin Bonesplitter in Desolace.
+
+ [Infused Burning Gem] (15)
+ [Burning Gem] (provided)
+
+
+== Description ==
+Death is most desirable for those despicable creatures that turn their back on their liege for such selfish reasons. But death is not enough when dealing with those that have given themselves over to the darkness.
+Take this gem. When one of the Burning Blade's near death, activate its magic. The spell shall pull the corrupted spirit out of its victim, leaving an infused gem behind.
+Bring me these infused gems so I may dispose of them properly.
+Go now, and may you elude death.
+
+
+== Rewards ==
+You will receive:
+
+2,650 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+I have tried to make the magics as simple as possible. Drawing the spirit of your victim out of its injured form should be child's play. Do not rely on the gem's power to slay your foe completely. You must only activate the gem when they are close to death, or it will be useless.
+
+
+== Completion ==
+Ah, you've returned successful. That is good. Give me the gems and I shall put them someplace safe....
+My tasks for you are complete, <class>. Speak to Takata when you are rested. He may have other tasks for you, or perhaps needs you to return to Orgrimmar to inform Keldran of our progress here in Desolace.
+
+
+== Notes ==
+The Burning Blade mobs in Desolace count; the ones in Durotaur do not for some reason...
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== Progression ==
+ [30] Alliance Relations
+ [30] Alliance Relations
+ [33] Alliance Relations
+Complete both to continue:
+ [33] The Burning of Spirits
+ [33] Befouled by Satyr
+ [33] Alliance Relations
+
+
+== External links ==
+
+Wowhead
+WoWDB

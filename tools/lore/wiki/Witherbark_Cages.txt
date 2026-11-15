@@ -1,0 +1,52 @@
+title: Witherbark Cages
+revision: 5632356
+part: whole
+quest: 2988
+url: https://warcraft.wiki.gg/wiki/Witherbark_Cages
+
+== Objectives ==
+Check the cages at the two Witherbark villages, then return to Gryphon Master Talonaxe.
+
+Check First Cage
+Check Second Cage
+Check Third Cage
+
+
+== Description ==
+The son of our mightiest gryphon is gone! Swiftwing's heir, Sharpbeak, was lost while hunting with his parents a few days ago, and we believe it was the trolls who took him.
+You must aid us! Search the cages in the two Witherbark troll villages to see if Sharpbeak is there.
+
+
+== Rewards ==
+You will receive:
+
+3900 XP (or 23 40 at level 70)
+ +100 reputation with Wildhammer Clan
+
+
+== Progress ==
+Have you searched the cages, <name>?  We must find Sharpbeak!
+
+
+== Completion ==
+Sharpbeak wasn't at the villages?  Hm... this is grim news.  That gryphon is destined to lead the next generation of gryphons.  If he is lost then the strength and spirit of our fleet will suffer immensely.
+
+
+== Progression ==
+ [45] Witherbark Cages
+ [48] The Altar of Zul
+ [47] Thadius Grimshade
+ [47D] Nekrum's Medallion
+ [47] The Divination
+ [47] Return to the Hinterlands
+ [51] Saving Sharpbeak
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

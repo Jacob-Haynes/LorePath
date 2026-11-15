@@ -1,0 +1,53 @@
+title: Seeing What Happens (Horde)
+revision: 6528203
+part: whole
+quest: 2966
+url: https://warcraft.wiki.gg/wiki/Seeing_What_Happens_%28Horde%29
+
+== Objectives ==
+Bring the miniature platinum discs to the gates of Uldum in Tanaris and look for clues as to the connection between the two.
+
+ [Miniature Platinum Discs] (provided)
+
+
+== Description ==
+Sage Truthseeker and I would like you to take the miniature discs you found to the sealed gates of Uldum. We... we aren't sure what will happen when you do this.
+This sounds risky, sure, we acknowledge that. It might, however, do nothing. You might need to use the discs on something. Perhaps the doors unlock when you have the discs in your possession. Be open to try anything, and be ready for anything to happen.
+Learn what you can, then return to me. We will have much to discuss.
+
+
+== Rewards ==
+You will receive:
+
+6800 XP
++250 reputation with Thunder Bluff
+
+
+== Progress ==
+This familiar looking pedestal sticks out of the hot sand.  Perhaps there is something to its presence here...
+
+
+== Completion ==
+As you touch the pedestal, the miniature discs from Uldaman hum and glow in your backpack.  A familiar feeling tingle washes over your hands, as the image of another Stone Watcher springs to life in front of the gates of Uldum.
+"Salutations.  I am a guardian of entry.  The discs that have been used for access are missing the correct entry discs, the Plates of Uldum.  Please incorporate these plates with the disc structure and repeat your access sequencing.  Thank you."
+
+
+== Progression ==
+ [15-30D] The Platinum Discs
+ [47D] The Platinum Discs
+ [47] The Platinum Discs
+ [50] Portents of Uldum
+ [50G] Seeing What Happens
+ [50] The Stone Watcher
+ [50] Return to Thunder Bluff
+ [50] A Future Task
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

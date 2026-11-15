@@ -1,0 +1,40 @@
+title: Find Bingles
+revision: 6904354
+part: whole
+quest: 2039
+url: https://warcraft.wiki.gg/wiki/Find_Bingles
+
+== Objectives ==
+Find Bingles Blastenheimer in Loch Modan.
+
+
+== Description ==
+We've lost contact with Bingles! He was sent on a reconnaissance mission over Gnomeregan and hasn't reported back in over a week. I just know he's gone and blown himself up.
+He was last seen flying over the Loch. Perhaps you can investigate, <name>.
+
+
+== Rewards ==
+You will receive:
+
+270 XP
++25 reputation with Gnomeregan
+
+
+== Completion ==
+So Gnoarn doesn't trust my reconnaissance abilities? I wonder why...
+Nevermind that, I need your assistance! Nay! The movement needs your assistance!
+
+
+== Notes ==
+In Cataclysm, Bingles has wandered to the Farstrider Lodge.
+
+
+== Progression ==
+ [5-30] Find Bingles (optional breadcrumb)
+ [5-30] Wing Nut
+
+
+== External links ==
+
+Wowhead
+WoWDB

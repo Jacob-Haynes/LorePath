@@ -1,0 +1,51 @@
+title: A Future Task (Alliance)
+revision: 6863059
+part: whole
+quest: 2964
+url: https://warcraft.wiki.gg/wiki/A_Future_Task_%28Alliance%29
+
+== Objectives ==
+Speak with High Explorer Magellas in Ironforge.
+
+
+== Description ==
+Well <name>... we seem to be at a temporary dead end here. We know what we need - the Plates of Uldum - but we have no idea where they might be. We'll need to do quite a bit of research on this to come up with a solid plan of attack. I have a couple ideas where to start looking; I have high hopes that soon, we'll be asking you to head out and recover them.
+The High Explorer needs to be informed on this, <name>; no doubt, he also wants to thank you personally for once again aiding the League.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Scrying Wand]
+ [Thorium Flight Blade]
+You will also receive:
+
+2 20
+6800 XP
++250 reputation with Ironforge
+
+
+== Completion ==
+We're all in agreement then - the best plan of attack is putting this on hold until we can narrow down the areas where these plates might lie hidden.  You've brought us this far <name>, and I hope you will be the one to head back in to the field to unlock Uldum for us all!
+Allow me to give you this honorarium in the meantime; this should cover any expenses you've encountered in assisting us, and a little something extra.  Be sure to check back with us soon... Uldum beckons!
+
+
+== Progression ==
+ [15-30D] The Platinum Discs
+ [47] The Platinum Discs
+ [47] The Platinum Discs
+ [50] Portents of Uldum
+ [50G] Seeing What Happens
+ [50] The Stone Watcher
+ [50] Return to Ironforge
+ [50] A Future Task
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,83 @@
+title: It's Dangerous to Go Alone
+revision: 6972652
+part: whole
+quest: 3962
+url: https://warcraft.wiki.gg/wiki/It%27s_Dangerous_to_Go_Alone
+
+== Objectives ==
+Travel to Fire Plume Ridge, south of Marshal's Refuge.
+Find Blazerunner and use the totem to remove his protective aura. Once he has been defeated, acquire the Golden Flame from the cave.
+
+Blazerunner slain
+ [Golden Flame]
+ [Silver Totem of Aquementas] (Provided)
+
+
+== Description ==
+<Name>, I finally remember now... I did come here to fight Blazerunner. I was on a journey, and this was to be the last step.
+But I am no longer the hero... You are. All that you have done—you must finish this now, not me.
+Blazerunner guards an artifact called the Golden Flame. It provides power more vast than anything else I have ever known, and it is dangerous in the hands of one with an evil heart.
+You will want to bring others with you—it's dangerous to go alone. Take this as my advice.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Linken's Sword of Mastery]
+ [Spirit of Aquementas]
+You will also receive:
+
+10,550 XP
+ [Linken's Boomerang]
+
+
+== Progress ==
+Blazerunner is almost invincible behind the aura he has created by using the Golden Flame. Only you have the power to remove it with the Silver Totem of Aquementas.
+
+
+== Completion ==
+Thank you, <name>.
+The Golden Flame will now be returned back to my homeland, where it may be protected, never again to be used for evil.
+Without you, I'd still have no idea who I am! Since you did so much for me, I'd like you to have something special...
+Take any one you want!
+
+
+== Notes ==
+Blaze Runner will occasionally hit you with his Blast Wave spell. This is what the Silver Totem of Aquementas is for. The totem must be equipped in your off hand before you can use it. Once the fight begins, immediately use the totem on him. This will drop his aura long enough to get a few hits.  His aura will only be down for a few seconds, so you will have to keep using the totem throughout the fight, about every 3 hits.
+Be careful of the Blast Wave, it not only does damage, but it will knock you back. If you keep getting hit with it, eventually you may end up in the pool of lava right outside the cave, which can be tough to get out of, especially when you keep getting hit with Blast Wave. One thing you can do to minimize the effects of the knockback is to fight Blaze Runner in his cave, with your back to rear and facing the entrance. This will keep you from going all over the place.
+
+
+== Trivia ==
+The quest ends a chain that mimics Link's adventure in The Legend of Zelda. The quote "It's dangerous to go alone" is a phrase used when Link, the main protagonist, receives his Wooden Sword (referenced by the quest's loot) during the game.
+Completing the final quest, It's Dangerous to Go Alone rewards  [Linken's Sword of Mastery], based on Link's Master Sword,  [Spirit of Aquementas], which looks like the Magical Rod, and  [Linken's Boomerang] which flings a magical boomerang, often considered an overpowered item in Zelda.
+
+
+== Progression ==
+ [52] It's a Secret to Everybody
+ [52] It's a Secret to Everybody
+ [52] It's a Secret to Everybody
+ [52] The Videre Elixir
+Mandatory quest:  [52] The Videre Elixir
+ [52] Meet at the Grave
+ [52] A Grave Situation
+ [52] Linken's Sword
+ [52] A Gnome's Assistance
+ [52] Linken's Memory
+ [54] Silver Heart
+ [54] Aquementas
+ [54] Linken's Adventure
+ [56G] It's Dangerous to Go Alone
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.3.0 (2005-03-07): The It's Dangerous to Go Alone quest in Un'goro no longer requires a deprecated item to complete.   
+
+
+== References ==
+
+
+== External links ==
+
+Wowhead
+WoWDB

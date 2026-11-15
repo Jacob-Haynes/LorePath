@@ -1,0 +1,47 @@
+title: The Horn of the Beast
+revision: 5632355
+part: whole
+quest: 3181
+url: https://warcraft.wiki.gg/wiki/The_Horn_of_the_Beast
+
+This quest starts the Key to Searing Gorge quest chain, allowing access to Stonewrought Pass between Loch Modan and Searing Gorge. The quest is started by  [Margol's Gigantic Horn], a drop from Margol the Rager, a level 43 mob found in Searing Gorge.
+
+
+== Objectives ==
+Take  [Margol's Gigantic Horn] to Mountaineer Pebblebitty.
+
+ [Margol's Gigantic Horn] (provided)
+
+
+== Description ==
+The gigantic horn has numerous scratches and cracks. An unusual metal object is lodged into the rough surface.
+Upon further examination, you notice that the metal is actually a broken axe head. On the metal, the following words are etched:
+
+Property of Mountaineer Pebblebitty.
+When you try and dislodge the broken axe head, it shatters into a million pieces.
+Woops!
+
+
+== Progress ==
+No, I will not open the gate.
+
+
+== Completion ==
+What have you got there? A fake obviously!
+I've been face to face with Margol and I know for a fact that her horn is at least eight times larger than the one you've got in your hands, <name>. You probably got that off of a stormsnout in the Barrens. No sir, you can't fool Pebblebitty!
+
+
+== Progression ==
+ [43] The Horn of the Beast
+ [43] Proof of Deed
+ [43] At Last!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

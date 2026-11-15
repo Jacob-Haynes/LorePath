@@ -1,0 +1,6 @@
+title: Rebel Camp
+revision: 6690697
+part: intro
+url: https://warcraft.wiki.gg/wiki/Rebel_Camp
+
+The Rebel Camp is a Alliance situated in the northernmost part of Northern Stranglethorn Vale, just west of the road leading south from Duskwood and northwest of Kurzen's Compound. Its inhabitants are former followers of Colonel Kurzen, who managed to escape the madness that befell upon the Stormwidian expedition sent in the region.

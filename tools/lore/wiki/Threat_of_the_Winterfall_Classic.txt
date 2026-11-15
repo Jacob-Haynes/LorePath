@@ -1,0 +1,53 @@
+title: Threat of the Winterfall (Classic)
+revision: 5610234
+part: whole
+quest: 5082
+url: https://warcraft.wiki.gg/wiki/Threat_of_the_Winterfall_%28Classic%29
+
+Threat of the Winterfall is the 2nd quest in the Trouble in Winterspring! quest chain.
+
+
+== Objectives ==
+Donova Snowden in Winterspring wants you to kill 8 Winterfall Pathfinders, 8 Winterfall Den Watchers, and 8 Winterfall Totemics.
+
+Winterfall Pathfinders slain (8)
+Winterfall Den Watchers slain (8)
+Winterfall Totemics slain (8)
+
+
+== Description ==
+I came to Winterspring to investigate the Frostfire Hot Springs. I've noticed that the water seems to have ...strange qualities. I haven't yet been able to discover the source, and to tell you the truth, I've had some difficulty lately, due to the Winterfall furbolg.
+They seem to be drawn to the springs, just as I am. They have become extremely protective of the water, and won't let me come near the two larger springs to the north of here.
+I'd like to continue my studies, so won't you help me?
+
+
+== Rewards ==
+You will receive:
+
+85
+8450 XP (or 51 at max level)
++250 reputation with Everlook
+
+
+== Progress ==
+I appreciate your help!
+
+
+== Completion ==
+Thanks so much, <name>! Now I can get back to work here.
+Did you find anything of interest at the Winterfall camp?
+
+
+== Progression ==
+ [56] Trouble in Winterspring!
+ [56] Threat of the Winterfall
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,59 @@
+title: The Restless Dead (Forever)
+revision: 6974477
+part: whole
+quest: 96394
+url: https://warcraft.wiki.gg/wiki/The_Restless_Dead_%28Forever%29
+
+== Objectives ==
+Kill 15 Enraged Apparitions, 10 Tormented Souls and put the spirit of Anvilmar to rest.
+
+Enraged Apparition slain (15)
+Tormented Soul slain (10)
+
+
+== Description ==
+Something has disturbed the tombs down in the Hall of Thanes, and strange noises have been heard coming from deep within the vaults. The spirits of the dead are light sleepers, and whatever is going on down there seems to have startled them.
+Head down there and see what you can do about that for us. If any of the dead are awake--well, put them back down!
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Dusty Belt]
+ [Cryptwalker Bracers]
+You will also receive:
+
+7
+2,300 XP
++100 reputation with Ironforge
+
+
+== Progress ==
+I don't have time for ghouls and ghosts. I have a job to do down here.
+
+
+== Completion ==
+Ah good, its done then. I can't have the other keepers refusing to enter the hall to do their duties on account of "ghosts" and "angry dead", can I?
+
+
+== Progression ==
+ [13] A Visitor to Dun Morogh (optional breadcrumb)
+ [13] Farsen's Watch
+ [13] Nip 'Em in the Bud
+ [15] Underground Map
+ [16D] Old Ironforge Incursion
+Dungeon quests
+ [15D] Important Heirlooms
+ [15D] The Restless Dead
+ [15D] An Ancient Grudge
+ [16] The Treaty of Understanding
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

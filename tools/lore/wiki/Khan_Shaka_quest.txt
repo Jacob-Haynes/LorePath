@@ -1,0 +1,46 @@
+title: Khan Shaka (quest)
+revision: 6176771
+part: whole
+quest: 1375
+url: https://warcraft.wiki.gg/wiki/Khan_Shaka_%28quest%29
+
+== Objectives ==
+Maintain your reputation with the Magram, and bring the Head of Khan Shaka to Warug in the Magram Village in Desolace. 
+
+ [Khan Shaka's Head]
+Magram Clan Centaur (Friendly)
+
+
+== Description ==
+You help the Magram, and I like you. Now, kill the Khan of the Gelkis! He is Khan Shaka, and I want his head! I want to stare at his head and laugh at him! 
+
+
+== Rewards ==
+2850 XP
+
+
+== Progress ==
+Do tasks for the Magram, and I will help you. 
+
+
+== Completion ==
+Khan Shaka is dead! I will place his head on a pike, and keep it with me so Shaka can see the strength of the Magram!
+
+
+== Progression ==
+ [35] Brutal Politics /  [33] Magram Alliance
+ [32] Assault on the Kolkar
+ [33] Broken Tears
+ [35] Gizmo for Warug
+ [37] Khan Shaka
+ [42] Khan Hratha
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

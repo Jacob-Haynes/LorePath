@@ -1,0 +1,59 @@
+title: Down the Coast
+revision: 6218187
+part: whole
+quest: 536
+url: https://warcraft.wiki.gg/wiki/Down_the_Coast
+
+Down the Coast is an Alliance quest in Hillsbrad Foothills that involves killing Murlocs along the southern coast of the zone.
+
+
+== Objectives ==
+Kill 10 Torn Fin Tidehunters and 10 Torn Fin Oracles for Lieutenant Farren Orinelle in Southshore.
+
+Torn Fin Tidehunter slain (10)
+Torn Fin Oracle slain (10)
+
+
+== Description ==
+Transferred from the Stormwind city guard to Southshore, a town that should be abandoned by the looks of it... Smell of the harbor day and night.
+Not to mention ol' Redpath... Wants me to take care of the murlocs. Ha!
+I can barely rouse myself to go out to some of the pockets of the overgrown fish down the Western Strand. If you would go in my place and take care of them, I'd appreciate it.
+
+
+== Rewards ==
+You will receive: 21
+
+
+== Progress ==
+Another ale, please, the last one just seemed to have disappeared!
+Light, how much longer am I going to be stuck out here?
+Oh, it's you, <name>. Have you killed those murlocs yet?
+
+
+== Completion ==
+I hope this will be enough to convince Redpath that I've—ha!--been carrying out his orders and ridding Southshore of the terrible and horrible menace of the dreaded murlocs!
+For there could be no greater evil than the ravages of overgrown fish!
+
+
+== Notes ==
+The Torn Fin murlocs can be found on the Western Strand, west of Southshore.
+On the shore, the murlocs are closely packed together, and it can be difficult to pull one at a time. If you swim out, it is much easier to find lone patrolling mobs underwater.
+
+
+== Progression ==
+ [30] Down the Coast
+ [32] Farren's Proof
+ [32] Farren's Proof
+ [32] Farren's Proof
+ [32] Stormwind Ho!
+ [32] Reassignment
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

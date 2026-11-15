@@ -1,0 +1,58 @@
+title: Battle of Hillsbrad (7) (Classic)
+revision: 6859891
+part: whole
+quest: 550
+url: https://warcraft.wiki.gg/wiki/Battle_of_Hillsbrad_%287%29_%28Classic%29
+
+== Objectives ==
+Take Darthalia's Sealed Commendation to Varimathras in the Undercity.
+
+ [Darthalia's Sealed Commendation] (provided)
+
+
+== Description ==
+Because you fought with such valor and perseverance in the Battle of Hillsbrad, I have written this commendation, extolling your heroics in combat for the high command to recognize.
+Take this sealed commendation to Varimathras in the Undercity. Go with pride, <class>.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Sacred Burial Trousers]
+ [Deadskull Shield]
+ [Runic Darkblade]
+You will also receive:
+
+2700 XP
++100 or +250 reputation with Undercity
+ [Band of the Undercity]
+
+
+== Progress ==
+What brings a <class> all the way to the Undercity from the battlefield?
+
+
+== Completion ==
+So you are the infamous <class> who struck such a decisive blow against the Alliance forces in the Hillsbrad Foothills? Word of your glorious exploits traveled quickly to the Undercity.
+You have quite a future in the Dark Lady's ranks if you continue to show such leadership and expertise in battle.
+While our primary threat is the Lich King's Scourge army descending from the north, the human "problem" continues to impede our battle plans. You, however, have shown that the humans can and will fall.
+
+
+== Progression ==
+ [24] Battle of Hillsbrad
+ [25] Battle of Hillsbrad
+ [26] Battle of Hillsbrad
+ [26] Battle of Hillsbrad
+ [28] Battle of Hillsbrad
+ [30] Battle of Hillsbrad
+ [32] Battle of Hillsbrad (Classic) /  [32] Battle of Hillsbrad (WotLK Classic)
+
+
+== Patch changes ==
+ Patch 3.3.0 (2009-12-08): Quest replaced by a new version.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

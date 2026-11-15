@@ -1,0 +1,7 @@
+title: Booty Bay
+revision: 6760920
+part: intro
+url: https://warcraft.wiki.gg/wiki/Booty_Bay
+
+Booty Bay is a large pirate port city nestled into the cliffs surrounding a beautiful blue lagoon on the southern tip of Stranglethorn Vale. By foot, the city is entered by traversing through the bleached-white jaws of a giant shark. Life is cheaper here than in most places, and no one is to be trusted. It is considered a rogue's paradise, full of information and informants.
+Land of pirates, swindlers, and raiders, it is one of the most cutthroat places on Azeroth. There is a newspaper called the Booty Bay Journal.

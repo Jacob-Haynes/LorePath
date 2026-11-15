@@ -1,0 +1,45 @@
+title: Hamuul Runetotem (quest)
+revision: 6229992
+part: whole
+quest: 1489
+url: https://warcraft.wiki.gg/wiki/Hamuul_Runetotem_%28quest%29
+
+== Objectives ==
+Speak with Hamuul Runetotem.
+
+
+== Description ==
+The shells you brought me have a taint, one I have never before seen. I am certain the water of the Oases is the cause, and I can sense the confusion they cause this land. It is as if the land dreams and cannot awake.
+The Wailing Caverns must be the source of the taint. But before you go there, speak with Hamuul Runetotem, the elder druid. I sent word to him of the happenings in the Barrens. He is wise, and can offer you counsel.
+You will find him in Thunder Bluff, on the Elder Rise.
+
+
+== Rewards ==
+You will receive:
+
+855 XP
++25 reputation with Thunder Bluff
+
+
+== Completion ==
+I bid you greetings, <name>.  You are welcome here, and I suggest you gather all your strength.  For the task we now set before you ... is a dire one.
+
+
+== Progression ==
+ [10] The Barrens Oases
+ [13] The Forgotten Pools
+ [16] The Stagnant Oasis
+ [16] Altered Beings
+ [16] Hamuul Runetotem
+ [16] Nara Wildmane
+ [22D] Leaders of the Fang
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

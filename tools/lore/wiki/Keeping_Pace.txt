@@ -1,0 +1,47 @@
+title: Keeping Pace
+revision: 6304416
+part: whole
+quest: 1190
+url: https://warcraft.wiki.gg/wiki/Keeping_Pace
+
+== Objectives ==
+Have Zamek create a diversion, then steal Rizzle's plans for Pozzik on the Shimmering Flats.
+
+
+== Description ==
+The Brassbolts brothers have discovered a new building material, that's the only explanation that makes sense. Their cars have been operating faster than before, but their designs, and all the other data we've gathered from their runs is identical.
+What we do know, is that Rizzle Brassbolts has been focused on the plans for this new discovery almost constantly.
+Zamek can create a diversion for you, so that you can steal those plans from them.
+
+
+== Rewards ==
+You will receive:
+
+1,650 XP
++50 or +75 reputation with Ratchet
+
+
+== Completion ==
+Scribbled in a hasty, hurried hand, a scroll of notes and designs for the refinement of some raw material.
+
+
+== Notes ==
+Diversion created
+Zamek says: Hehehe! Things go boom!
+Rizzle Brassbolts says: Bloody... Must have been the goblins... Let's see how bad the damage is.
+
+
+== Progression ==
+ [41] Keeping Pace
+ [41] Rizzle's Schematics
+ [42] Indurium Ore
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

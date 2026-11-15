@@ -1,0 +1,52 @@
+title: The Night Watch (Classic)
+revision: 6428016
+part: whole
+quest: 56
+url: https://warcraft.wiki.gg/wiki/The_Night_Watch_%28Classic%29
+
+== Objectives ==
+Commander Althea Ebonlocke of Darkshire wants you to kill 8 Skeletal Warriors and 6 Skeletal Mages.
+
+Skeletal Warrior slain (8)
+Skeletal Mage slain (6)
+
+
+== Description ==
+As Commander of The Night Watch it is my sworn duty to protect the citizens of Darkshire. Stormwind has retracted their commissioned guards from their posts here, leaving us to our own devices.
+If you feel worthy of the task, we need your help! Assist The Night Watch by venturing forth into Tranquil Gardens, just south of Darkshire, and slaying 8 Skeletal Warriors and 6 Skeletal Mages. The undead threat must be thwarted!
+
+
+== Rewards ==
+You will receive:
+
+17
+1,450 XP
++75 reputation with Stormwind
+
+
+== Progress ==
+I see you are back, <name>.  If you wish to prove yourself to be of service to The Night Watch, return to me once you have slain 8 Skeletal Warriors and 6 Skeletal Mages.
+
+
+== Completion ==
+Splendid, <name>.  For your service to the people of Darkshire you shall be rewarded.
+
+
+== Progression ==
+ [24] The Night Watch
+ [26] The Night Watch
+ [30] The Night Watch
+
+
+== Trivia ==
+During the original beta, this quest required killing 6 each of Shambling Skeleton, Skeletal Mage, and Skeletal Warrior.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed and replaced by a new version,  [10-30] The Night Watch.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

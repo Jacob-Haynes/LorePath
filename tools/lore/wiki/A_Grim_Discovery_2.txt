@@ -1,0 +1,58 @@
+title: A Grim Discovery (2)
+revision: 6842972
+part: whole
+quest: 2976
+url: https://warcraft.wiki.gg/wiki/A_Grim_Discovery_%282%29
+
+A Grim Discovery sends the player back to Orgrimmar with news of the Grimtotem Clan in Feralas.
+
+
+== Objectives ==
+Bring the Crate of Grimtotem Horns to Belgrom Rockmaul in Orgrimmar. 
+
+ [Crate of Grimtotem Horns] (provided)
+
+
+== Description ==
+What?!
+Ah, so I did mention a bounty, didn't I? Well, that'll teach me to open my mouth, won't it?
+You did the work, so I suppose it is only right you reap the greatest reward from it. Take the horns, I'll have them put in a crate for you. Find Belgrom Rockmaul in the Valley of Honor, he'll want to know what you saw and he'll reward you for your hard work.
+Be well, <class>, and thank you again for everything you've done.
+
+
+== Rewards ==
+You will be able to choose one of these rewards: 
+
+ [Battlehard Cape]
+ [Jademoon Orb]
+You will also receive:
+
+65
+4850 XP
++350 reputation with Orgrimmar
+
+
+== Progress ==
+Be quick, <class>, I have much to complete today. 
+
+
+== Completion ==
+The Grimtotem!? This is interesting. You say you came across them while hunting in Feralas? Truly?
+My peers will want to hear your news, <class>. Tell me more and I'll count out your coin while you do so.
+And before you go, know that I give you thanks for the information you've passed on to me this day. 
+
+
+== Progression ==
+ [15-30] A New Cloak's Sheen
+ [45] A Grim Discovery
+ [45] A Grim Discovery
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

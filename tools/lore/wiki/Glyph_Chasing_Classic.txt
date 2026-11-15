@@ -1,0 +1,51 @@
+title: Glyph Chasing (Classic)
+revision: 5809777
+part: whole
+quest: 8309
+url: https://warcraft.wiki.gg/wiki/Glyph_Chasing_%28Classic%29
+
+== Objectives ==
+Rutgar Glyphshaper at Bronzebeard's Encampment in Silithus wants you to venture to Hive'Ashi, Hive'Zora, and Hive'Regal and recover Glyphed Rubbings from the Glyphed Crystals of each hive.
+Use the Geologist's Transcription Kit to make a reasonable facsimile of the ancient glyphs. Return to Rutgar Glyphshaper when you complete this task.
+
+ [Hive'Ashi Rubbing]
+ [Hive'Zora Rubbing]
+ [Hive'Regal Rubbing]
+ [Geologist's Transcription Kit] (provided)
+
+
+== Description ==
+After our initial foray into the hives and Mistress Mar'alith's subsequent madness the three hives have been spewing out bugs! The increased activity might be tied into the glyphs covering those strange crystals.
+We must get a rubbing from crystals in all three hives. If we can get those rubbings, we might be able to make sense of this madness.
+Take this transcription set and hit those hives, <name>. Don't come back until you've gotten copies from each hive.
+
+
+== Rewards ==
+You will receive:
+
+85
+8400 XP
++500 reputation with Cenarion Circle
+
+
+== Progress ==
+If you find some crazy night elf lass in one of the hives, be sure to give her a kick in the duff for us.
+
+
+== Completion ==
+I can't make heads or tails of these glyphs. I've never seen anything like it! I hope Frankal's research can shed some light on this mess.
+
+
+== Progression ==
+It is part of the Emissary Roman'khan quest chain.
+
+
+== Patch changes ==
+ Patch 4.1.0 (2011-04-26): Updated. No longer requires  [Hive'Ashi Rubbing] or  [Hive'Zora Rubbing]. Undocumented.   
+ Patch 1.8.0 (2005-10-10): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,42 @@
+title: The Cook in the Cage
+revision: 6979185
+part: whole
+quest: 97047
+url: https://warcraft.wiki.gg/wiki/The_Cook_in_the_Cage
+
+== Objectives ==
+Find a key to Wendel's cage, and a disguise for him to sneak out, within the Kurzen compound.
+
+ [Compound Cage Key]
+ [Kurzen Fighter's Uniform]
+
+
+== Description ==
+Hey! You! You have to help me! I was just out exploring the jungle when, all of a sudden, I was ambushed by these maniacs! I don't know what they plan to do with me, but I've heard talk of tigers and headshrinkers, and I don't want part in either!
+I don't know how, but you have to get me out of here! Please! A key to this cage, a disguise to sneak out, something! Anything!
+
+
+== Rewards ==
+You will receive:
+
+2850 XP
+
+
+== Progress ==
+<The young man in the cage is wracked with panic. He can hardly put words together.>
+
+
+== Completion ==
+<A wave of relief washes over Wendel's face.>
+Oh, thank you! Thank you so much, friend! You've really saved my hide.
+
+
+== Patch changes ==
+ Hotfix (2026-11-10): Fixed a bug that caused a player picking up the quest  [38] Returning to Port to delete nearby players' quest items for this quest. 
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,61 @@
+title: Test of Lore (5)
+revision: 6309911
+part: whole
+quest: 1160
+url: https://warcraft.wiki.gg/wiki/Test_of_Lore_%285%29
+
+In Test of Lore (5), you must enter the Scarlet Monastery library to locate a special book for Parqual Fintallas in Undercity. This is the eighth quest in the Test of Faith quest chain, which is a chain of quest involving testing some part of the player character's being. The first quest is  [26] Test of Faith, which begins in The Weathered Nook in Thousand Needles, from Dorn Plainstalker.
+
+
+== Objectives ==
+Find Beginnings of the Undead Threat, and return it to Parqual Fintallas in Undercity.
+
+ [Beginnings of the Undead Threat]
+
+
+== Description ==
+I will tell you what you must seek, and I will even ask you my question, but not because you wish to prove yourself. Knowledge is far more important than strength. Even as others seem to pass you by in ability, your knowledge of the world will be more valuable.
+Go to the Monastery in the north of Tirisfal Glades. In the library there, a book called Beginnings of the Undead Threat resides. It was used by the now-corrupt paladins there to train them to fight my kind.
+Bring it to me.
+
+
+== Progress ==
+I hope you made the Scarlet Crusade suffer some before stealing the book from them.
+My views of their kind are not unwarranted. The Crusade may have been followers of the Light at one time, but now, they seek to destroy any creatures that have not sided with their religion. They believe all undead, Forsaken or otherwise, must be cleansed, and those traveling in their lands must either be insane, or subject to the undead's powerful magics. Idiots. Idiots and fools; all of them.
+
+
+== Completion ==
+This is the book I sent you to search for.
+<Parqual slowly caresses his hand over the top of the book as he stares down at it.>
+So now you wish a question to prove your mind is as powerful as your body and spirit. If you have studied the book long enough, then I shall ask you your question and you can be done with these tests!
+
+
+== Notes ==
+The book you need is located in the instanced dungeon, Scarlet Monastery, in the library section. You will need a group lvl 30-35, though this book is in the earlier half of the instance so a full group may not be necessary.
+To get to Scarlet Monastery, head to the hills north-east of Undercity. Follow the road and signs to the monastery. In the first room when you enter, there are four doors which lead to the separate branches of the instance. Take the one farthest to the right.
+Once inside the library, you will find yourself in a hallway. Continue through the hallway into the courtyard area (a square outdoor area with ranger-type mobs and their pets). Head through the northern exit (on the opposite wall) and into the next hallway. At the end of this hallway is another hallway. There will be three little rooms on the western side of this second hallway. The first room (southern-most) is where the book is - it should be open on a table in this room. Right click it to loot  [Beginnings of the Undead Threat].
+Make sure to read the book before turning it in to Parqual Fintallas in Undercity, since you will have to answer a question about it afterwards. If you forget, you can read the text on the item page for  [Beginnings of the Undead Threat].
+
+
+== Progression ==
+
+ [26] Test of Faith
+ [29G] Test of Endurance
+ [30] Test of Strength
+ [30] Test of Lore
+ [30] Test of Lore
+ [30] Test of Lore
+ [30] Test of Lore
+ [36D] Test of Lore
+ [30] Test of Lore
+ [36] Final Passage
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

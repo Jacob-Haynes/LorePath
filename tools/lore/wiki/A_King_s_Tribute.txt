@@ -1,0 +1,48 @@
+title: A King's Tribute
+revision: 5615322
+part: whole
+quest: 686
+url: https://warcraft.wiki.gg/wiki/A_King%27s_Tribute
+
+This is part of the A King's Tribute quest chain.
+
+
+== Objectives ==
+King Magni Bronzebeard wants you to speak with Grand Mason Marblesten.
+
+
+== Description ==
+I do not expect good dwarves like Mrs. Balloo to understand why the travesties of war must be endured for the greater good of our people. The loss of her husband, and the loss of every dwarf that fights in the name of the Alliance, weighs heavy on my soul.
+While I cannot bring her husband back from the Twisting Nether, I can pay tribute to him.
+I am going to commission a memorial to Sully Balloo to be built by Grand Mason Marblesten.
+Send word to him now, <class>. You shall be custodian of my bidding.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+1200 XP (or 7 20 at level 70)
++75 reputation with Ironforge
+
+
+== Completion ==
+So King Magni Bronzebeard himself sent ye?
+My, my! This must be important!
+
+
+== Progression ==
+ [30] Sully Balloo's Letter
+ [30] Sara Balloo's Plea
+ [30] A King's Tribute
+ [31] A King's Tribute
+ [31] A King's Tribute
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

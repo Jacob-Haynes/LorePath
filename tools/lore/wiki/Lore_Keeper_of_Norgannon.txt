@@ -1,0 +1,7 @@
+title: Lore Keeper of Norgannon
+revision: 6580141
+part: intro
+url: https://warcraft.wiki.gg/wiki/Lore_Keeper_of_Norgannon
+
+The Lore Keeper of Norgannon is an artificial intelligence stone watcher construct left by the Titan Norgannon the Lore Keeper in the bowels of the Titan research facility known as Uldaman. The primary role of the lore keeper seems to be the recording and dissemination of information stored on the Disks of Norgannon, which are involved in the quest  [15-30D] The Platinum Discs. The watcher shares a great deal of information about the Earthen, the Troggs, and the dwarves; all of which appear to be the result of a single experiment in creating subterranean life on the part of the Titans. While the Dwarves were believed to be in some ways superior to their Earthen ancestors, the Troggs were considered an undesirable aberration.
+Note: The Lore Keeper of Norgannon is called a stone watcher during quest lore, but has the stonekeeper model.

@@ -1,0 +1,54 @@
+title: Missing In Action
+revision: 6859975
+part: whole
+quest: 219
+url: https://warcraft.wiki.gg/wiki/Missing_In_Action
+
+== Objectives ==
+Protect Corporal Keeshan on the journey back to Redridge.
+
+Escort Corporal Keeshan back to Redridge
+
+
+== Description ==
+At last, friends of the Alliance!
+Help... please...
+The last thing I remember these foul Orcs overpowered our regiment. Most the men were killed. I took a strong blow to the head and everything went black. Now I am held captive in this cave. Help me, I am hurt badly.
+I'll need help getting back to town... please... you're my last hope...
+
+
+== Rewards ==
+
+You will also gain:
+
+2550 XP (or a 15 60 compensation at level 80)
++87 reputation with Darnassus
++87 reputation with Exodar
++87 reputation with Gnomeregan Exiles
++87 reputation with Ironforge
++350 reputation with Stormwind
+
+
+== Progress ==
+Yes?
+
+
+== Completion ==
+You have served the Kingdom well, <class>.  Thank you for assisting Corporal Keeshan with his escape from those dreaded Blackrock Orcs.  You shall be rewarded for your brave acts this day.
+
+
+== Notes ==
+On complete:
+
+Corporal Keeshan says: Marshal Marris, sir. Corporal Keeshan of the 12th Sabre Regiment returned from battle and reporting for duty!
+Corporal Keeshan says: Brave <class>, thank you for rescuing me! I am sure Marshal Marris will reward your kind deed, <name>.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

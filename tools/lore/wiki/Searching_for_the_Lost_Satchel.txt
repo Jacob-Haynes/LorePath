@@ -1,0 +1,49 @@
+title: Searching for the Lost Satchel
+revision: 6693422
+part: whole
+quest: 5722
+url: https://warcraft.wiki.gg/wiki/Searching_for_the_Lost_Satchel
+
+Rahauro on the Elder Rise in Thunder Bluff asks the player to search for Magatha Grimtotem's servant Maur Grimtotem in Ragefire Chasm and return anything of interest found on the body.
+
+
+== Objectives ==
+Search Ragefire Chasm for Maur Grimtotem's corpse and search it for any items of interest.
+
+
+== Description ==
+The troggs are not the only thing that interested Magatha in Ragefire Chasm. She has heard word that one of her servants, a Maur Grimtotem, found something peculiar while in the Chasm, but he never made it out to show her what. She'd like Maur's body found—if it still exists—and any signs of what he found while attempting to speak to the troggs.
+Return to Magatha any items of interest, and I'm sure she would be very generous in her reward.
+Again, seek the Chasm in the darkest areas of Orgrimmar.
+
+
+== Rewards ==
+You will receive:
+
+875 XP
+
+
+== Completion ==
+The body looks seriously beaten by clubs or fists, but most of the corpse's clothing and equipment still looks present. It seems the troggs do not overly care much for material wealth.
+You begin to search the body for anything of interest that might help Magatha.
+
+
+== Notes ==
+Rahauro offers a second quest along the same story line that also leads to Ragefire Chasm:  [15D] Testing an Enemy's Strength.
+
+
+== Progression ==
+
+ [15D] Testing an Enemy's Strength (optional; recommended)
+ [16D] Searching for the Lost Satchel
+ [16D] Returning the Lost Satchel
+
+
+== Patch changes ==
+ Patch 5.0.4 (2012-08-28): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

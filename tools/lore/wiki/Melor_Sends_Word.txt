@@ -1,0 +1,33 @@
+title: Melor Sends Word
+revision: 6176842
+part: whole
+quest: 1130
+url: https://warcraft.wiki.gg/wiki/Melor_Sends_Word
+
+== Objectives ==
+Speak with Melor Stonehoof in Thunder Bluff. 
+
+
+== Description ==
+<Name>, Melor Stonehoof has heard of your deeds, and has set a path before you.
+If you wish to take it, then go to Thunder Bluff and speak with Melor. You will find him on Hunter's Rise. 
+
+
+== Completion ==
+So, <name>, you have come.  Now, are you prepared to journey through distant lands?
+If so, young <class>, then listen on... 
+
+
+== Progression ==
+ [30] Melor Sends Word
+ [30] Steelsnap
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

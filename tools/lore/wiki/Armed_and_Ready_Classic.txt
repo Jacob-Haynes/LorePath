@@ -1,0 +1,67 @@
+title: Armed and Ready (Classic)
+revision: 5582073
+part: whole
+quest: 325
+url: https://warcraft.wiki.gg/wiki/Armed_and_Ready_%28Classic%29
+
+This quest is part of the Morbent Fel quest chain.
+
+
+== Objectives ==
+Bring Morbent's Bane to Sven in Duskwood.
+
+ [Morbent's Bane] (provided)
+
+
+== Description ==
+Here is the weapon against the fiend of which you spoke. You're all ready, <name>. Best of luck to you, and I look forward to your tale of glory!
+
+
+== Rewards ==
+You will receive:
+
+600 XP
++25 reputation with Stormwind
+
+
+== Progress ==
+Hello, <name>.  You haven't been gone that long, but I see a fire in your eyes I did not see before.
+
+
+== Completion ==
+Ah, this will be proof against the fiend Morbent Fel!  Well done!
+You are ready.  Morbent Fel will fall.
+
+
+== Notes ==
+A usual, if you lose Morbent's Bane for some reason, you can drop this quest and accept it again, to get it back.
+You can get to Sven faster from Sentinel Hill in Westfall than from Darkshire in Duskwood.
+
+
+== Progression ==
+ [23] Deliveries to Sven (optional)
+ [25] Sven's Revenge
+ [25] Sven's Camp
+ [25] The Shadowy Figure
+ [25] The Shadowy Search Continues
+ [25] Inquire at the Inn
+ [25] Finding the Shadowy Figure
+ [25] Return to Sven
+ [28] Proving Your Worth
+ [29] Seeking Wisdom
+ [29] The Doomed Fleet
+ [29] Lightforge Iron
+ [29] The Lost Ingots
+ [29] Blessed Arm
+ [29] Armed and Ready
+ [32G] Morbent Fel
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

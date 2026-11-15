@@ -1,0 +1,53 @@
+title: Return to Thunder Bluff (2)
+revision: 6528204
+part: whole
+quest: 2967
+url: https://warcraft.wiki.gg/wiki/Return_to_Thunder_Bluff_%282%29
+
+== Objectives ==
+Speak with Nara Wildmane in Thunder Bluff. 
+
+ [Miniature Platinum Discs] (provided)
+
+
+== Description ==
+You access the pedestal again; the platinum discs suddenly appear once more in your backpack.
+With the knowledge of the stone watcher learned and the discs returned to your possession, the time has come to return to Thunder Bluff and inform the[sic] Nara Wildmane of your discovery.
+
+
+== Rewards ==
+You will receive:
+
+675 XP
++10 reputation with Thunder Bluff
+
+
+== Progress ==
+Welcome back <name>.  Were you able to use the discs to your advantage, or was it for naught?
+
+
+== Completion ==
+You were missing some discs?  Interestingly enough, it seems that the discs of Norgannon are only parts of the complete set - like keys on a key ring, if you will.
+If we can find the Plates of Uldum, then we could actually access the Uldum complex itself.  I don't know whether to be excited by that prospect, or be terrified.
+We may need to risk everything to ensure that those secrets the earth keeps which would destroy us all remain just that - secrets.
+
+
+== Progression ==
+ [15-30D] The Platinum Discs
+ [47D] The Platinum Discs
+ [47] The Platinum Discs
+ [50] Portents of Uldum
+ [50G] Seeing What Happens
+ [50] The Stone Watcher
+ [50] Return to Thunder Bluff
+ [50] A Future Task
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

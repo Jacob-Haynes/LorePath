@@ -1,0 +1,54 @@
+title: Ivar the Foul (quest)
+revision: 6900581
+part: whole
+quest: 425
+url: https://warcraft.wiki.gg/wiki/Ivar_the_Foul_%28quest%29
+
+== Objectives ==
+Kill Ivar the Foul, and bring Ivar's Head to Rane Yorick at the Ivar Patch. 
+
+ [Ivar's Head]
+
+
+== Description ==
+My brother Quinn and I were tasked to recon Silverpine Forest and report to High Executor Hadrec. But we didn't get far—when moving through this farm we were attacked by the ghoul Ivar the Foul.
+We escaped from Ivar, but he seriously mauled Quinn. He's healing from the potion you gave him, but Ivar may return before Quinn recovers.
+Kill Ivar so Quinn will have time to heal. Ivar is usually in the barn yonder, waiting for my guard to drop. 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Quilted Bracers]
+ [Weathered Belt]
+You will also receive:
+
+3 50
+675 XP (or 4 20 at max level)
++75 or +150 reputation with Undercity
+
+
+== Progress ==
+Have you killed Ivar the Foul?  If you won't do it for me and my brother, then do it for the Forsaken. 
+
+
+== Completion ==
+Ah, thank you.  You have my gratitude, <name>.
+And I will include you in the report I make to my superiors.
+
+
+== Progression ==
+ [12] Lost Deathstalkers
+ [11] Wild Hearts
+ [11] Return to Quinn
+ [12] Ivar the Foul
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

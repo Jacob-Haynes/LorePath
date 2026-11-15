@@ -1,0 +1,106 @@
+title: Uniting the Shattered Amulet
+revision: 5620075
+part: whole
+quest: 3627
+url: https://warcraft.wiki.gg/wiki/Uniting_the_Shattered_Amulet
+
+This is part of the main Blasted Lands quest chain.
+
+
+== Objectives ==
+Slay Grol the Destroyer, Lady Sevine, and Archmage Allistarj. From their corpses take the Amulet of Grol, the Amulet of Sevine, and the Amulet of Allistarj.
+Remember to USE your Enchanted Azsharite Fel Weaponry to weaken the triad. They cannot be killed otherwise - but use them wisely...
+
+ [Amulet of Allistarj]
+ [Amulet of Grol]
+ [Amulet of Sevine]
+
+
+== Description ==
+To reach the Defiler, you must first destroy the triad of power and recover the amulet pieces. When you recover all three pieces, return to me and I shall give you further instruction.
+Go <name>! To the Blasted Lands! Sevine, Allistarj, and Grol must fall! 
+
+
+== Progress ==
+The three shall form the one, the one shall light the way.
+
+
+== Completion ==
+The amulet of Razelikh the Defiler is once again complete but he senses the disruption in his chain of command.  He knows you come for him...
+
+
+== Notes ==
+
+In order to defeat Allistarj, Grol, and Sevine, you MUST use your Azsharite weapon, or (see below) the Fel Salve.
+Using the weapon (or salve) significantly reduces the abilities of the target, and enables you to actually defeat the mobs. Without it, you will be unable to reduce the mob past 1%. Equipping the weapon gives a 30 second cooldown to the on use ability, so equip it before combat. The three targets are no longer immune to magic, so go nuts.
+Note that the ability does wear off after ~15 seconds or so, and will need to be reapplied.
+
+
+=== If you lose your Azsharite weapon ===
+If you've thrown out (or forgotten) your Azsharite weapon, you can talk to the Fallen Hero of the Horde and he'll give you a  [Fel Salve] which has the same on-use ability as the weapon.
+
+
+=== Allistarj tactics ===
+Archmage Allistarj seems to no longer be able to cast spells. The Felcurse is working!
+Archmage Allistarj does not have a lot of health (he's a squishy, after all). However, despite being a caster, he can easily kill a player with melee damage.
+Archmage Allistarj is found in the left branch of the cave just south of Nethergarde Keep. The giant Felboar Kirith is in the right branch of the same cave (from an earlier quest in this chain).
+
+
+=== Sevine tactics ===
+Lady Sevine is substantially more susceptible to your attacks. The Felcurse is working!
+Arguably the toughest of the three minions, Lady Sevine does major damage with warlock spells, but more importantly will summon multiple Infernals, if given the opportunity.  However, it appears that the Felcurse effect will interrupt the summons.  Without the Infernals, she is much less formidable.
+Lady Sevine is found overlooking the Blasted Lands from the Altar of Storms.
+
+
+=== Grol tactics ===
+Grol the Destroyer is noticeably weakened. The Felcurse is working!
+Grol the Destroyer is a straight-up fury-type Ogre warrior.  Lots of health, lots of crits, no magic to speak of.  The Felcurse (from the weapon or salve) makes him noticeably smaller for the duration.  One presumes that it takes off some of his Attack Power along with hit points, et cetera.  It is recommended that you clear the area before fighting him, as he can send you
+flying into other mobs.
+Grol the Destroyer is found in Dreadmaul Hold, where the Servants of Grol were found in an earlier part of the quest.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,64 @@
+title: The Missing Diplomat
+revision: 6953544
+part: whole
+quest: 1274
+url: https://warcraft.wiki.gg/wiki/The_Missing_Diplomat
+
+This quest starts the quest chain The Missing Diplomat.
+
+
+== Objectives ==
+Find Bishop DeLavey in Stormwind Keep.
+
+
+== Description ==
+Excuse me, <sir/madam>. Bishop DeLavey asked me to approach adventurers that might be able to help him with a delicate matter.
+If you could quietly head to Stormwind Keep and speak to him at your earliest convenience, I'm sure he would appreciate your help. Again, please be discreet. It is a matter of some importance.
+
+
+== Rewards ==
+You will receive:
+
+230 XP (or 1 50 at max level)
+
+
+== Completion ==
+Hello, <name>. I am Bishop DeLavey.
+No doubt if you're asking me about my business here in the keep then young Thomas has succeeded in requisitioning you to help our kingdom. He has always been adept at following my requests.
+I'm afraid I don't have time to elaborate much, so allow me to be blunt... and please, try to keep this from becoming common knowledge.
+
+
+== Progression ==
+This is the quest chain The Missing Diplomat.
+
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [30] The Missing Diplomat
+ [30] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [35] The Missing Diplomat
+ [36] The Missing Diplomat
+ [38] The Missing Diplomat
+ [38] The Missing Diplomat
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+The Missing Diplomat, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

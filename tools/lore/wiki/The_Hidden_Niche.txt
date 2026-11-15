@@ -1,0 +1,50 @@
+title: The Hidden Niche
+revision: 6971265
+part: whole
+quest: 461
+url: https://warcraft.wiki.gg/wiki/The_Hidden_Niche
+
+== Objectives ==
+Take Alaric to the hidden alcove.
+
+ [Alaric's Remains] (provided)
+
+
+== Description ==
+I know of a hidden niche within the keep that holds an item dear to Thule, and his old colleagues. It also holds something you might find useful. Take me there!
+The alcove is in the southwestern tower of the keep, behind a dusty shelf.
+Take my body, but leave my boots. They never fit me anyway...
+
+
+== Rewards ==
+You will receive:
+
+5
+675 XP (or 4 20 at level 70)
++50 or +75 reputation with Undercity
+
+
+== Progress ==
+This is the spot! Bring me closer...
+
+
+== Completion ==
+There we are, it's open. Leave me here. I spent the best days of my life in this keep, and the thought of resting within its walls gives me comfort.
+Be sure to close the alcove tight - I don't want those Rot Hides to find me.
+Oh, and take this. You've earned it.
+
+
+== Progression ==
+ [17] Resting in Pieces
+ [18] The Hidden Niche
+ [18] Wand to Bethor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

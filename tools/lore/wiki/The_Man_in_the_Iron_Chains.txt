@@ -1,0 +1,49 @@
+title: The Man in the Iron Chains
+revision: 6973169
+part: whole
+quest: 96335
+url: https://warcraft.wiki.gg/wiki/The_Man_in_the_Iron_Chains
+
+The Man in the Iron Chains is a secret quest in Forever's Alcaz Prison dungeon, only available to players who skip the first boss, The Questioner, and find Mason Connery in the end of the dungeon. Pick up the quest, then return to kill the Questioner for its  [Ornate Shackle Key].
+This is part of the secret to obtain the  [Alcaz Operative Insignia]. Return the key and Mason will next start  [53D] More Valuable Than Gold.
+
+
+== Objectives ==
+Recover the Alcaz Shackle Key from The Questioner in Alcaz Prison.
+
+ [Ornate Shackle Key]
+
+
+== Description ==
+Wow! That was impressive. The way you took down that dragon was really something!
+While you are here... do you think you might be able to help me get out of this ball and chain?
+If he hasn't fled or been killed already, the torturer they call 'The Questioner' should have the keys to these shackles. Get the key from that sadist and bring it to me.
+I promise that I'll make it well worth your while if you do.
+
+
+== Rewards ==
+You will receive:
+
+2,850 XP
+
+
+== Progression ==
+A Bit of Wet Work
+A Little Payback (Alcaz Prison)
+The Honor of the Kor'kron → Bad News for Fokar → Thrall Needs to Know
+Blood Red Bandanas
+Our Man in Theramore → Watch Yer Back (Alcaz Prison) → The Return of the King? → The Secret Prison
+Shaw Needs to Know
+The Dragon's Journal
+ [53D] The Man in the Iron Chains →  [53D] More Valuable Than Gold →  [53] State Secrets -or-  [53] State Secrets
+The Missing Kor'kron → The Elite of the Elite → Right Place, Wrong Time → No Orc Left Behind (Alcaz Prison)
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

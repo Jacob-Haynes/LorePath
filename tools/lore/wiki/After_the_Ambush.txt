@@ -1,0 +1,48 @@
+title: After the Ambush
+revision: 5579320
+part: whole
+quest: 454
+url: https://warcraft.wiki.gg/wiki/After_the_Ambush
+
+This quest is part of the quest chain Ironband's Blastpowder.
+
+
+== Objectives ==
+Speak with Miran.
+
+
+== Description ==
+We'd been hauling the barrels of powder back and forth in trips before this... business. Now we have to split up the work, Miran's taking the barrels and I'm watching over the other ones.
+I don't feel safe letting Miran haul the rest of the shipment by himself. When he's ready to go, maybe you could escort him on his next trip? 
+
+
+== Rewards ==
+You will receive:
+
+110 XP (or 60 at level 70)
++10 reputation with Ironforge
+
+
+== Completion ==
+Hello, <class>.
+You'll be escorting me to the excavation site? That's good to hear... After Saean and his cronies, who knows what else the Dark Irons might have up their sleeves?
+Anyways, let me just make some final checks. Talk to me again when you're ready to go.
+
+
+== Progression ==
+ [15] Excavation Progress Report
+ [15] Report to Ironforge
+ [15] Powder to Ironband
+ [15] Resupplying the Excavation
+ [15] After the Ambush
+ [15] Protecting the Shipment
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

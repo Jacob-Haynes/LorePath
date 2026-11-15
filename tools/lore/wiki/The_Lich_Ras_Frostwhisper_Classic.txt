@@ -1,0 +1,65 @@
+title: The Lich, Ras Frostwhisper (Classic)
+revision: 6739599
+part: whole
+quest: 5466
+url: https://warcraft.wiki.gg/wiki/The_Lich%2C_Ras_Frostwhisper_%28Classic%29
+
+The Lich, Ras Frostwhisper is the final quest in the Ras Frostwhisper quest chain.
+
+
+== Objectives ==
+Find Ras Frostwhisper in the Scholomance. When you have found him, use the Soulbound Keepsake on his undead visage. Should you succeed in reverting him to a mortal, strike him down and recover the Human Head of Ras Frostwhisper. Take the head back to Magistrate Marduke.
+
+ [Human Head of Ras Frostwhisper]
+ [Soulbound Keepsake] (provided)
+
+
+== Description ==
+There is but one task remaining, <name>. Confront the lich, Ras Frostwhisper, in his lair.
+Use the power of the keepsake against the beast -  be unrelenting in your actions!  Weather the blows that the flailing beast will surely bring down upon you. Do not give in to the pain!
+When the ritual is complete, Ras will be mortal once more. It is at that point that he must be slain. Strike him down and take his human head.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Warblade of Caer Darrow]
+ [Crown of Caer Darrow]
+ [Darrowspike]
+You will also receive:
+
+7950 XP (or 87 at max level)
+ [Darrowshire Strongguard]
+
+
+== Progress ==
+You carry the burden of ten thousand restless souls, <name>.
+
+
+== Completion ==
+Ten thousand souls cry out in unison, <name>! You have struck a mortal blow to the Scourge and their masters.
+
+
+== Progression ==
+ [60G] The Human, Ras Frostwhisper
+ [60G] The Dying, Ras Frostwhisper
+ [60D] Menethil's Gift
+ [60G] Menethil's Gift
+ [60G] Soulbound Keepsake
+ [60D] The Lich, Ras Frostwhisper
+
+
+== Notes ==
+Using the Soulbound Keepsake
+Ras Frostwhisper yells: NO!
+Ras Frostwhisper yells: THIS CANNOT BE!!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

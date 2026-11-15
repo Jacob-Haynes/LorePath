@@ -1,0 +1,60 @@
+title: Seeping Corruption (1)
+revision: 6735767
+part: whole
+quest: 3568
+url: https://warcraft.wiki.gg/wiki/Seeping_Corruption_%281%29
+
+== Objectives ==
+Fill all 4 Empty Vials at the tide pools along the coast of the Ruins of Eldarath in Azshara before returning to Chemist Cuely. 
+
+ [Filled Vial Labeled #1]
+ [Filled Vial Labeled #2]
+ [Filled Vial Labeled #3]
+ [Filled Vial Labeled #4]
+ [Box of Empty Vials] (provided)
+
+
+== Description ==
+See that tauren behind me—the one who looks like she's going to be ill at any moment? She was in Azshara recently. She claims she was wounded by some naga while making her way through the Ruins of Eldarath.
+After fighting off a few of them, she took a break on the beach and drank from one of the tide pools. Now she's feeling nauseous... among other things.
+I'd like to find out what she drank. Take this box, in it are some empty vials I labeled. Fill each at different pools and come back.
+
+
+== Rewards ==
+You will receive:
+
+40
+2550 XP (or 15 60 at max level)
++50 or +75 reputation with Undercity
+
+
+== Progress ==
+You know where this is leading, don't you, <name>? There's no way she can survive... look at her. The best thing for her now is to aid us in finding a cure for the plague. This water she drank might have a clue that helps us figure out how. She's going to die anyway—she might as well die doing something noble for our people before she does. Don't you agree?
+
+
+== Completion ==
+Wonderful. You're back before she died. Good, good.
+Let's get started on this then, shall we?
+I've been studying her symptoms for some time now, and it's quite ugly. I'm surprised she's still standing. She's vomited three or four times all over the place... quite a pleasant odor.
+Give me just a moment to put something together to test on our... friend.
+
+
+== Notes ==
+Upon completion
+Chemist Cuely says: There! Job's done.
+
+
+== Progression ==
+ [52] Seeping Corruption
+ [52] Seeping Corruption
+ [52] Seeping Corruption
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

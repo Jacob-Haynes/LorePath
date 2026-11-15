@@ -1,0 +1,48 @@
+title: Trollbane (quest)
+revision: 5633764
+part: whole
+quest: 638
+url: https://warcraft.wiki.gg/wiki/Trollbane_%28quest%29
+
+Trollbane is the first step in the long Trol'kalar quest chain.
+
+
+== Objectives ==
+Travel to Hammerfall in the Arathi Highlands and speak with Zengu.
+
+
+== Description ==
+With Thoras Trollbane dead and Stromgarde in ruins, Vol'jin has instructed that we make every effort to spirit the legendary sword Trol'kalar from the humans' hands, so that we might use it in our coming battles against the trolls of Zul'Gurub.
+Zengu, one of our seasoned hunters, was dispatched to Hammerfall in northeastern Arathi Highlands to oversee its procurement.
+
+
+== Rewards ==
+You will receive:
+
+925 XP
++25 reputation with Darkspear Trolls
+
+
+== Completion ==
+How you doing, <class>? The task set before us by Vol'jin will be a difficult one, and any assistance you might provide will be appreciated and necessary.
+
+
+== Progression ==
+ [37] Trollbane
+ [37] Sigil of Strom
+ [40] The Broken Sigil
+ [40] Sigil of Thoradin
+ [41] Sigil of Arathor
+ [42] Sigil of Trollbane
+ [42] Trol'kalar
+ [42] Trol'kalar
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

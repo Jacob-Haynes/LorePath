@@ -1,0 +1,55 @@
+title: Delivering the Relic
+revision: 6905611
+part: whole
+quest: 2871
+url: https://warcraft.wiki.gg/wiki/Delivering_the_Relic
+
+== Objectives ==
+Deliver the Mysterious Relic to Vestia Moonspear in Feathermoon Stronghold. 
+
+ [Mysterious Relic] (provided)
+
+
+== Description ==
+If you would be so kind as to deliver the relic to my wife Vestia, I would appreciate it.  She's not only a fine priestess for our community, but she is one of the most well-versed scholars you'll find anywhere.  I couldn't make heads or tails of this device even if there was a wager involved.  My wife though, if anyone can figure out what this thing is, she could... and we need to know!
+She's just around the bend, no doubt studying.  Thanks, <name>.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Dawnrider's Chestpiece]
+ [Sentinel's Guard]
+You will also receive:
+
+3900 XP (or 23 40 at max level)
++250 reputation with Darnassus
+
+
+== Progress ==
+Yes, may I assist you?
+Hold on, you're the <class> that has been helping General Feathermoon and Latro out with the Naga threat, yes?  I'm Vestia, Latro's - erm, rather, Latronicus' wife.  It is a pleasure to meet you!
+I'm sorry, you're here on business, of course.  Do you have something for me - from him, perchance? 
+
+
+== Completion ==
+Interesting... this came from the Ruins of Solarsal, you say?  Well, Latro's right that I need to look at this.  At first glance, it seems non-indigenous to the ruins.  Then again, this isn't of Naga design... not something as alien as this.
+It is going to take some time to research this item.  Once my research on it is done, maybe I will make use of your talents, should you be around.
+Here, take one of these extra items we have; I hope you'll find some use for it! 
+
+
+== Progression ==
+ [43] Against the Hatecrest
+ [43] Against the Hatecrest
+ [45] Against Lord Shalzaru
+ [45] Delivering the Relic
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

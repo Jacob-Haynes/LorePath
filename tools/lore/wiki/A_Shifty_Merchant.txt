@@ -1,0 +1,95 @@
+title: A Shifty Merchant
+revision: 6544153
+part: whole
+quest: 8928
+url: https://warcraft.wiki.gg/wiki/A_Shifty_Merchant
+
+== Objectives ==
+Search for an imp inside a cave at the entrance of Darkwhisper Gorge in southern Winterspring, purchase a Fel Elemental Rod and return to Mux Manascrambler in Gadgetzan.
+
+ [Fel Elemental Rod]
+
+
+== Description ==
+The core will provide us with enough juice to power our device; now we just have to build a rod that can channel that energy without melting.
+I met an imp in Winterspring that sold all manner of exotic goods. He had an elemental rod that would do perfectly. I'm kicking myself in the head right now for not having bought it.
+He lives inside a cave in the entrance to Darkwhisper Gorge. Sneak in there and try to find him.
+Make sure he only charges you forty gold; that's the price he quoted me!
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+4750 XP (or a 28 80 compensation at level 80)
+
+
+== Progress ==
+Have you had any luck finding the imp in Darkwhisper Gorge? 
+
+
+== Completion ==
+You did it! This rod will do perfectly.  Now to put it all together...
+
+
+== Notes ==
+The imp you are looking for is named Vi'el and in cave at . Stay off the road and stay along the right side of the gorge and you should be able to sneak by most of the enemies.
+The  [Fel Elemental Rod] will cost 40.
+
+
+== Progression ==
+ [60D] An Earnest Proposition
+ [60] A Supernatural Device
+ [60] The Ectoplasmic Distiller
+ [60] Hunting for Ectoplasm
+ [60] A Portable Power Source
+ [60] A Shifty Merchant
+ [60] Return to Deliana /  [60] Return to Mokvar
+ [60D] Just Compensation
+ [60] In Search of Anthion
+ [60D] Dead Man's Plea
+ [60] Proof of Life
+ [60] Anthion's Strange Request
+ [60D] Anthion's Old Friend
+ [60D] Falrin's Vendetta
+ [60D] The Instigator's Enchantment
+ [60D] The Challenge
+ [60D] Anthion's Parting Words
+ [60] Bodley's Unfortunate Fate
+ [60R] Three Kings of Flame
+
+ [60] Components of Importance
+ [60] Components of Importance
+ [60G] Components of Importance
+ [60G] Components of Importance
+
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60G] I See Alcaz Island In Your Future...
+
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60R] Final Preparations
+ [60R] Mea Culpa, Lord Valthalak
+ [60] Return to Bodley
+ [60] Back to the Beginning
+ [60D] Saving the Best for Last
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.10.0 (2006-03-28): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

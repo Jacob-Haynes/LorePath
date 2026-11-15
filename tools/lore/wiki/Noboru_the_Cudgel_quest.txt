@@ -1,0 +1,36 @@
+title: Noboru the Cudgel (quest)
+revision: 6176895
+part: whole
+quest: 1392
+url: https://warcraft.wiki.gg/wiki/Noboru_the_Cudgel_%28quest%29
+
+== Pre-requisites ==
+Must kill Noboru the Cudgel and pick up  [Noboru's Cudgel]. This item begins the quest.
+
+
+== Objective ==
+Bring Noboru's Cudgel to the leader of The Harborage in the Swamp of Sorrows.
+
+
+== Description ==
+Noboru has plagued the Draenei of the Harborage for months, and his cudgel is a symbol of the brutality they have suffered at the hands of the lost ones.
+
+
+== Progress ==
+Greetings. And welcome to the Harborage.
+
+
+== Completion ==
+You have gained the weapon of the dreaded Noboru? Is he then dead?
+This is a joyous day for the Harborage. Noboru and his gang were a terror to us, wandering the swamps and killing any Draenei who crossed his path. He was a direct threat to our survival, and we did not have the strength to face him.
+We are fortunate to have a friend in you, <name>.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

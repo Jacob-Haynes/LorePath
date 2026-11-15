@@ -1,0 +1,49 @@
+title: Rabine Saturna (Alliance)
+revision: 5609753
+part: whole
+quest: 6762
+url: https://warcraft.wiki.gg/wiki/Rabine_Saturna_%28Alliance%29
+
+== Objectives ==
+Speak with Rabine Saturna in the village of Nighthaven, Moonglade. Moonglade lies between Felwood and Winterspring, accessible through a path out of Timbermaw Hold.
+
+
+== Description ==
+For this task, Keeper Remulos' majordomo in Moonglade - Rabine Saturna - seeks aid in exploring the vast wastelands far to the west of Tanaris... and even further west of Un'Goro. You should find him in Nighthaven, the main village of Moonglade.
+While your work will no doubt be of tremendous benefit to us all, I advise you to tread gingerly. There are tensions between Darnassus and Moonglade... ones that may grow over the course of time.
+
+
+== Rewards ==
+You will receive:
+
+2050 XP (12 at max level)
++25 reputation with Cenarion Circle
+
+
+== Completion ==
+I am Rabine Saturna, and on behalf of Keeper Remulos and all of the denizens of this sacred glade I bid you welcome.
+I appreciate your interest and eagerness to assist the Cenarion Circle.  I also know that Arch Druid of Darnassus expressed his displeasure to you in your lending us aid.  Rest assured that it is for the greater good, and that you will be safe from any ill-conceived repercussions you may be the target of.
+You are among friends here, <name>.
+
+
+== Progression ==
+ [55] The New Frontier
+ [55] The New Frontier /  [55] The New Frontier
+ [55] Rabine Saturna /  [55] Rabine Saturna
+ [55] Wasteland
+ [55] The Spirits of Southwind
+ [57] Hive in the Tower
+ [57] Umber, Archivist
+ [57] Uncovering Past Secrets
+ [57] Under the Chitin Was...
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.4.0 (2005-04-19): The description text for the "Rabine Saturna" quest have been clarified.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

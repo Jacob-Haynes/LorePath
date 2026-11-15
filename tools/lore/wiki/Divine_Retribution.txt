@@ -1,0 +1,60 @@
+title: Divine Retribution
+revision: 6214246
+part: whole
+quest: 3441
+url: https://warcraft.wiki.gg/wiki/Divine_Retribution
+
+== Objectives ==
+Listen as Velarok Windblade tells his story. 
+
+Velarok Story
+
+
+== Description ==
+Hear my tale, adventurer.
+
+
+== Rewards ==
+You will receive:
+
+440 XP (or 2 70 at level 70)
+
+
+== Progress ==
+Allow me to finish mo... <race>.
+
+
+== Completion ==
+Have you heard enough? Are you prepared to act?
+
+
+== Notes ==
+Speaking with Velarok
+ Tell me what drives this vengeance?
+My father was slain by the filth that inhabits the cauldron.  My pleas for assistance to the Stormwind magistrate fell on deaf ears.  Nay, they want not to admit that this part of the world even exists, let alone send their precious military in to administer justice.
+I seek vengeance, <race>, plain and simple.  Is there a more passionate cause in this world?
+ Continue please.
+As you can see, I am but one man with a lumbering oaf of a squire.  The might of the Dark Iron dwarves and the beasts held in the grip of Ragnaros would surely overwhelm me alone, but I have the utmost confidence that such a brave and ambitious adventurer such as you would have no problem handling the denizens of the cauldron.  Should you choose to assist me, I shall reward you with riches and wealth beyond your wildest dreams.
+ Let me confer with my colleagues.
+
+
+== Progression ==
+ [48] Divine Retribution
+ [48] The Flawless Flame
+ [48] Forging the Shaft
+ [50] The Flame's Casing
+ [50] The Torch of Retribution
+ [50] The Torch of Retribution
+ [50] Squire Maltrake
+ [52] Set Them Ablaze!
+ [50] Trinkets...
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

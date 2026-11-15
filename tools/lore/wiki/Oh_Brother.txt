@@ -1,0 +1,50 @@
+title: Oh Brother. . .
+revision: 6956511
+part: whole
+quest: 167
+url: https://warcraft.wiki.gg/wiki/Oh_Brother._._.
+
+== Objectives ==
+Bring Foreman Thistlenettle's Explorers' League Badge to Wilder Thistlenettle in Stormwind.
+
+ [Thistlenettle's Badge]
+
+
+== Description ==
+We were deep in a vast mine in Westfall, hidden beneath a barn in Moonbrook. No clue where these stinkin' thieving types came from. Anyway, the mine tunnel collapsed on us. I got out but the others... well... the others haven't been heard from.
+You look like you might have better luck in there. If you could look for my brother, I'd be thankful. He always carried his Explorers' League Badge. If you can't find him, that badge would at least give me some peace of mind.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Miner's Revenge]
+ [Miner's Workgloves] 
+ [Miner's Workboots] 
+You will also receive:
+
+1,550 XP
++100 reputation with Ironforge
+
+
+== Progress ==
+Did you find any sign of my brother?  Is there any hope after all this time?
+
+
+== Completion ==
+My suspicions were correct.  My poor brother.... Well, thank you for bringing some conclusion to this mystery, even if the conclusion was grim.
+
+
+== Notes ==
+The mob for this quest can be found in the "undead" section of the Deadmines, just outside the entrance to the instance proper. Because he is an elite (and is surrounded by even more elites), it may be a good idea to group up.
+In Forever, the quest name has been changed to Oh Brother....
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

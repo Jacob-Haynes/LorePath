@@ -1,0 +1,48 @@
+title: Goblin Sponsorship (5)
+revision: 6309800
+part: whole
+quest: 1183
+url: https://warcraft.wiki.gg/wiki/Goblin_Sponsorship_%285%29
+
+Goblin Sponsorship (Part 5) is a neutral quest in the Goblin Sponsorship quest chain. In this quest, players are sent by Baron Revilgaz to deliver blueprints for a fuel regulator to the goblin racers of Mirage Raceway.
+
+
+== Objectives ==
+Deliver the Fuel Regulator Blueprints to Pozzik on the Shimmering Flats.
+
+ [Fuel Regulator Blueprints] (provided)
+
+
+== Description ==
+You should be all set to go. Give Pozzik my regards and tell him that if he ever needs anything, not to hesitate to ask. I'll be waiting for the news that he breaks the track record soon!
+
+
+== Progress ==
+<name>! Did you manage to track down the fuel regulator?
+
+
+== Completion ==
+I was hoping that it would be already assembled, but this does present the unique opportunity to improve on the design from the ground up. Thanks, <name>. I'll be able to sketch up some improved schematics, build the thing, and have it installed real soon.
+
+
+== Progression ==
+ [30] Load Lightening
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] The Eighteenth Pilot
+ [41] Razzeric's Tweaking
+ [41] Safety First
+ [41] Safety First
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

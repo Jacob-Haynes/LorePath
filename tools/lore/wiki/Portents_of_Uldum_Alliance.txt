@@ -1,0 +1,50 @@
+title: Portents of Uldum (Alliance)
+revision: 6528195
+part: whole
+quest: 2963
+url: https://warcraft.wiki.gg/wiki/Portents_of_Uldum_%28Alliance%29
+
+== Objectives ==
+Speak with Historian Karnik in the Hall of Explorers within Ironforge.
+
+
+== Description ==
+Greetings once again, <name>! Your discovery inside Uldaman has set the Explorers' League abuzz with excitement. The League has been working to unlock the secrets of the miniature platinum discs you found. Your fortuitous arrival here in the Hall allows me to share with you that we are quite possibly on to something!
+Historian Karnik has uncovered some important clues as to the true origins of the Valley of the Watchers in the Tanaris desert. He would like to speak with you as soon as possible!
+
+
+== Rewards ==
+You will receive:
+
+675 XP
++10 reputation with Ironforge
+
+
+== Completion ==
+I am glad you're maintaining your interest in exploration, <name>!  With your natural talent and moxie, we could crack open secrets that we never thought were possible!
+The Discs of Norgannon in Uldaman were a repository of vast information; you were only permitted to access the top layers, as it were, of the information stored there.  The Creators were rumored to have more repositories located throughout Azeroth.  This now brings us to Uldum...
+
+
+== Notes ==
+Lead Archaeologist Malzie, at the bottom of the Steel Gate pit in Howling Fjord, Northrend, will also give this quest if the player has completed The Platinum Discs but not this quest. 
+
+
+== Progression ==
+ [15-30D] The Platinum Discs
+ [47] The Platinum Discs
+ [47] The Platinum Discs
+ [50] Portents of Uldum
+ [50G] Seeing What Happens
+ [50] The Stone Watcher
+ [50] Return to Ironforge
+ [50] A Future Task
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

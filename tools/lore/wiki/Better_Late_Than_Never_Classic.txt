@@ -1,0 +1,42 @@
+title: Better Late Than Never (Classic)
+revision: 6738619
+part: whole
+quest: 5021
+url: https://warcraft.wiki.gg/wiki/Better_Late_Than_Never_%28Classic%29
+
+== Objectives ==
+The ramblings of the ghostly woman indicated that she needed a package delivered. She claimed that it was where her horse was. As to where the horse is or where the package was to be delivered - the ghost remains incomprehensible.
+
+
+== Description ==
+"The package must be delivered... delivered before I'm trapped here!"
+The cries of a panicked woman feel almost like a whisper floating through the house. Cowered in the upstairs corner is the apparition of a woman. She does not seem to be fully cognizant of her surroundings, and she is only vaguely aware of you.
+"Are you here to deliver my package? Please, before it gets much worse! I was going to ride out of here. It should still be by my horse... or am I too late?"
+
+
+== Rewards ==
+You will receive:
+
+2550 XP (or 15 60 at max level)
+
+
+== Completion ==
+A package in the barn that you might have otherwise overlooked now stands out amongst the decay and ruin.  Perhaps this is the one that the ghost of Janice Felstone was clamoring about...
+
+
+== Progression ==
+ [52] Better Late Than Never
+ [52] Better Late Than Never /  [52] Better Late Than Never
+ [52] Good Natured Emma /  [52] The Jeremiah Blues
+ [52] Good Luck Charm
+ [54] Two Halves Become One
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,60 @@
+title: Stealing Supplies
+revision: 5586602
+part: whole
+quest: 1370
+url: https://warcraft.wiki.gg/wiki/Stealing_Supplies
+
+This quest is part of the Strange Alliance quest chain. This quest chain starts with  [35] Strange Alliance
+
+
+== Objectives ==
+Bring 6 bags of Crudely Dried Meat to Uthek the Wise in the Gelkis Village.
+
+ [Crudely Dried Meat] (6)
+Gelkis Clan Centaur (Friendly)
+
+
+== Description ==
+When we are not at war, we hunt for meat. Meat gives us strength, and full bellies fight harder than empty ones.
+It is the same with the Magram. They store extra meat so they may fight longer between hunts. If you raid their village to the east and take their stores of meat, then their strength will fail.
+
+
+== Rewards ==
+
+You will also receive:
+
+1650 XP
+
+
+== Progress ==
+Return after you further prove your worth to the Gelkis!
+
+
+== Completion ==
+Good.  I can hear the loud Magram bellies grumble from their village, far away!
+I will give this meat to the Gelkis. And we will fight for many days without rest.
+What you did is good for the Gelkis, <name>.
+
+
+== Notes ==
+As of 4.0.1 ammunition was removed from the game, including the previous choices of  [Feathered Arrow] and  [Exploding Shot]. You are now offered a "choice" of one item.
+The quest was broken due to the changes wrought by Cataclysm, but wasn't entirely removed until sometime later during that expansion.
+
+
+== Progression ==
+ [35] Strange Alliance /  [33] Gelkis Alliance
+ [32] Raid on the Kolkar
+ [35] Stealing Supplies
+ [37] Ongeku
+ [37] Khan Jehn
+ [42] Khan Hratha
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

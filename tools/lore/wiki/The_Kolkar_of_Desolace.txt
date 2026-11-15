@@ -1,0 +1,42 @@
+title: The Kolkar of Desolace
+revision: 6230229
+part: whole
+quest: 1362
+url: https://warcraft.wiki.gg/wiki/The_Kolkar_of_Desolace
+
+== Objectives ==
+Speak with Felgur Twocuts at Ghost Walker Post in Desolace. 
+
+
+== Description ==
+The Kolkar centaur live in Desolace, and their forces have spread into the Barrens. This is a known fact and we have Horde agents dealing with them here.
+But as long as the centaur are strong in Desolace, they will always pose a threat. It is time we rid ourselves of that threat.
+Speak with Felgur Twocuts at Ghost Walker Post in Desolace. He was sent to gather intelligence on the centaur. He will know how to best deal with the Kolkar of Desolace.
+
+
+== Rewards ==
+You will receive:
+
+675 XP
++25 reputation with Orgrimmar
+
+
+== Completion ==
+You are here on orders from Regthar? Then you are here to deal with the centaur. Good.
+I hope you're rested. I don't know how our campaign against the centaur will end, but I know the struggle will be long.
+Have a seat, and listen.
+
+
+== Progression ==
+ [32] Regthar Deathgate
+ [32] The Kolkar of Desolace
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

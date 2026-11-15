@@ -1,0 +1,61 @@
+title: The Flying Machine Airport
+revision: 6469199
+part: whole
+quest: 1086
+url: https://warcraft.wiki.gg/wiki/The_Flying_Machine_Airport
+
+== Objectives ==
+Bring the Toxic Fogger to the Venture Co. sky port, then return to Apothecary Zamah.
+
+Place the Toxic Fogger
+ [Toxic Fogger] (provided)
+
+
+== Description ==
+The toxin is ready.  All that remains is its delivery.  You, <name>, must make that delivery.
+The Venture Company must have a means of sending messages and light cargo between its headquarters and its operations in Stonetalon.  It is likely a small sky port—not big enough for a zeppelin, but perhaps for a flying machine.  You must search the areas in Stonetalon under control of the Venture Company and finds this sky port, if it exists.  If you find it, then place the toxin there.
+Place it, and run.
+
+
+== Rewards ==
+You will receive:
+
+30
+2300 XP
+350 reputation with Undercity
+
+
+== Progress ==
+You must find the Venture Company airport if it exists, <name>.
+
+
+== Completion ==
+You found the port?  Well done, <name>!  I am sure the goblins were quite surprised from your delivery!  Let us hope that toxin finds its way to their headquarters.
+You have served your people well, and I advise you to ignore any guilt you might harbor for poisoning the Venture Company.  They are deserving of far worse.
+And if there is one mote of wisdom the Forsaken might teach its allies, it is this:
+Do not shy from dark paths... if those paths lead to victory.
+
+
+== Notes ==
+A Venture Co. Copter Pad is found in the Cragpool Lake area. It is south of the waterwheel and just south of thickest part of the lake (on the map). It is guarded by level 20ish monsters, one at the base and one at the top. Use the  [Toxic Fogger] at the top of the pad and return to Thunder Bluff.
+
+
+== Progression ==
+ [17] The Spirits of Stonetalon
+ [19] Goblin Invaders
+ [23] Shredding Machines &  [18] The Elder Crone
+ [18] Forsaken Aid
+ [18] Journey to Tarren Mill
+ [23] Blood of Innocents
+ [23] Return to Thunder Bluff
+ [23] The Flying Machine Airport
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

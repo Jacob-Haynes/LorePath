@@ -1,0 +1,54 @@
+title: Unending Torment (2)
+revision: 6914804
+part: whole
+quest: 97289
+url: https://warcraft.wiki.gg/wiki/Unending_Torment_%282%29
+
+== Objectives ==
+Bring the Head of the Baron to the body of Othmar in the Undercity.
+
+ [Head of the Baron] (provided)
+
+
+== Description ==
+We craft abomination heads all the time, but this one is special. It belonged to a Grand Marshal of the Alliance once. A particularly unpleasant one. Othmar, I believe its name was. The Dark Lady had the pleasure of dispatching this one herself.
+Ooh the secrets it could tell if it could talk. And it can! If we reattach it to an appropriate host.
+Go ahead and place it next to the available body in the next room. But don't attach it. Not yet.
+
+
+== Rewards ==
+You will receive:
+
+13
+1,650 XP
+
+
+== Progress ==
+<The abomination remains lifeless without a head to control it.>
+
+
+== Completion ==
+<The body twitches to life, panicking as it relives its final moments.>
+You...
+
+
+== Progression ==
+ [21D] Abominable Creatures
+ [22D] A Frightened Request
+ [22D] Bloodied Insignia
+ [22D] Crest of Lordaeron
+ [22D] Light's Justice
+ [22D] Remember That I Love You →  [22] Remember That I Love You
+ [12] A Recipe For Death →  [15] A Recipe For Death →  [18] A Recipe For Death →  [22D] The New Plague
+ [11] Rear Guard Patrol →  [13E] Rear Guard Patrol →  [22D] The Wrath of Rath'mael
+ [21D] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment →  [21] Unending Torment
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

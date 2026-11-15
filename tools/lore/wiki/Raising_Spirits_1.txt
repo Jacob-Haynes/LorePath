@@ -1,0 +1,51 @@
+title: Raising Spirits (1)
+revision: 5632412
+part: whole
+quest: 672
+url: https://warcraft.wiki.gg/wiki/Raising_Spirits_%281%29
+
+== Objectives ==
+Acquire 10 Highland Raptor Eyes from Highland Striders and Highland Thrashers for Tor'gan in Hammerfall. 
+
+ [Highland Raptor Eye] (10)
+
+
+== Description ==
+We tried to settle him in, cheer him up, telling him stories of our mighty city at Orgrimmar in Kalimdor, but nothing would move him.
+Tales of our young Warchief, Thrall, who bears the armor and hammer of Orgrim... but, perhaps... Perhaps! A demonstration of our newly found shamanistic magic would give him new hope. It is worth a try!
+A small object we could make for him, yes... Bring me some raptor eyes, and I will see what I can do.
+
+
+== Rewards ==
+You will receive:
+
+3100 XP
++100 or +250 reputation with Orgrimmar
+
+
+== Progress ==
+I will create an amulet that will give Gor'mul some of the strength of the raptors. Perhaps that will awaken some flame within him...
+
+
+== Completion ==
+Excellent. The spirits of the raptors that gave these eyes will lend strength to the bearer of this amulet.
+
+
+== Progression ==
+ [34] Hammerfall
+ [34] Raising Spirits
+ [34] Raising Spirits
+ [34] Raising Spirits
+ [37] Guile of the Raptor
+ [37] Guile of the Raptor
+ [37] Guile of the Raptor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

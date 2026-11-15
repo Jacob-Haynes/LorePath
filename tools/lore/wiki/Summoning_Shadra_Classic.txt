@@ -1,0 +1,50 @@
+title: Summoning Shadra (Classic)
+revision: 6429434
+part: whole
+quest: 2937
+url: https://warcraft.wiki.gg/wiki/Summoning_Shadra_%28Classic%29
+
+== Objectives ==
+Defeat Shadra at the altar of Shadra'Alor, then bring her venom to Apothecary Lydon in Tarren Mill.
+
+ [Shadra's Venom]
+ [Gadrin's Parchment] (provided)
+
+
+== Description ==
+Take his parchment, and read it at the altar of Shadra'Alor, deep within the witherbark realm in the Hinterlands. This will summon Shadra the spider god.
+
+
+== Rewards ==
+You will receive:
+
+8,450 XP
++200 reputation with Undercity
+
+
+== Progress ==
+Did you get the venom?
+
+
+== Completion ==
+Sweet, you got it!
+
+
+== Progression ==
+ [43] Venom Bottles
+ [45] Undamaged Venom Sac
+ [45G] Consult Master Gadrin
+ [45D] The Spider God
+ [55E] Summoning Shadra
+ [55] Venom to the Undercity
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.2.0 (2004-12-18): The Summoning Shadra quest level has been increased from 50 to 55, to reflect the level of Shadra.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

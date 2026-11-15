@@ -1,0 +1,50 @@
+title: WANTED: Andre Firebeard
+revision: 6705185
+part: whole
+quest: 2875
+url: https://warcraft.wiki.gg/wiki/WANTED%3A_Andre_Firebeard
+
+This quest begins at a wanted poster at Steamwheedle Port in Tanaris. You have to travel south along the coast to the pirate enclave and kill Andre Firebeard and bring his head back to Steamwheedle Port.
+
+
+== Objectives ==
+Bring Andre's Head to Security Chief Bilgewhizzle in Steamwheedle Port.
+
+ [Firebeard's Head]
+
+
+== Description ==
+The vile pirate Andre Firebeard is wanted for crimes against Steamwheedle and Gadgetzan.
+By decree of governing counsel, any who read this are hereby authorized to use lethal force during the apprehension of Andre and his abettors.
+By further decree, should Andre be deceased, or otherwise indisposed, during the time of his hearing, his head may act as proxy, and deliverance of such head to Security Chief Bilgewhizzle constitutes a binding, and tenderable, contract.
+
+
+== Rewards ==
+You will receive:
+
+1 30
+390-3900 XP
+
+
+== Progress ==
+You look a little dazed. Have you been reading our legal documents?
+
+
+== Completion ==
+Ah, Andre's head. So I guess he'll make his trial after all!
+Much appreciated, <name>. Now if you'll just sign here, I can issue you payment for services rendered.
+Don't worry about the small print. It's harmless, and... I don't think there's a magnifying glass small enough to read it anyway.
+
+
+== Notes ==
+Andre Firebeard spawns at the campfire within the walls of the pirate enclave south of Steamwheedle Port, Tanaris. Coordinates: 73,47. There are several mobs standing with him that will be pulled along with him. This area is often fairly crowded with other players, so you can sometimes get lucky, and the mobs at the fire will spawn separately, making the pull easier. It is also possible to pull the three dockworkers which would normally aggro with him if Andre is pulled, to be pulled separately (as three) taking them out leaves only Andre.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

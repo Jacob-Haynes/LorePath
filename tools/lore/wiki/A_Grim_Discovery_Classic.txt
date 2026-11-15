@@ -1,0 +1,47 @@
+title: A Grim Discovery (Classic)
+revision: 5694811
+part: whole
+quest: 2974
+url: https://warcraft.wiki.gg/wiki/A_Grim_Discovery_%28Classic%29
+
+== Objectives ==
+Bring 20 Grimtotem Horns to Krueg Skullsplitter in Camp Mojache.
+
+ [Grimtotem Horn] (20)
+
+
+== Description ==
+What!? You came across tauren in the area? You're joking! What did they look like!?
+The Grimtotem clan! You found some of them? Belgrom, one of our masters, has an interest in their kind... he's even put a bounty on them.
+You have to go back, <class>. Go back and bring me their horns... piles of them if you can. The Grimtotem are not to be trifled with or underestimated. Go back and slay them; let the rivers in Feralas run red with their dark blood.
+
+
+== Rewards ==
+You will receive:
+
+7,370 XP
++250 reputation with Orgrimmar
+
+
+== Progress ==
+Take my words seriously, <class>, the Grimtotem clan is evil. If you've found their whereabouts, then it's up to you to return and strike the first blow against their clan... before they can come into our own lands and raze our own villages, or pilfer our lands.
+
+
+== Completion ==
+These are good horns, <class>. Well done. I'll take these from you and be sure to tell Belgrom as soon as we return to Orgrimmar. You've helped me twice now, and for that, you have my mark. Perhaps in the future I can help you! Good luck to you.
+
+
+== Progression ==
+ [15-30] A New Cloak's Sheen
+ [45] A Grim Discovery
+ [45] A Grim Discovery
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed, replaced by a new version.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

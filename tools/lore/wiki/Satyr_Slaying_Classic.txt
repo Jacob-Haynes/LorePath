@@ -1,0 +1,41 @@
+title: Satyr Slaying! (Classic)
+revision: 6188606
+part: whole
+quest: 1032
+url: https://warcraft.wiki.gg/wiki/Satyr_Slaying%21_%28Classic%29
+
+== Objectives ==
+Bring 16 Satyr Horns to Illiyana in Forest Song.
+
+ [Satyr Horns] (16)
+
+
+== Description ==
+I can't believe that Anilia is gone... We used to play together in the forests all the time. I almost feel... sad.
+I know something that might make me feel better. Please, slay the satyrs that took Anilia from me! Bring me their horns as proof of your actions and you will forever have my gratitude. 
+
+
+== Rewards ==
+You will receive:
+
+30
+2700 XP (or 16 20 at level 70)
++250 reputation with Darnassus
+
+
+== Progress ==
+Please, help me avenge Anilia's death. 
+
+
+== Completion ==
+Thank you, kind <race>. My sister's spirit is gladdened by your efforts. 
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

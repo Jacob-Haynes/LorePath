@@ -1,0 +1,56 @@
+title: The Real Threat (Classic)
+revision: 6955015
+part: whole
+quest: 680
+url: https://warcraft.wiki.gg/wiki/The_Real_Threat_%28Classic%29
+
+== Objectives ==
+Slay Or'Kalar and bring his Head to Korin Fel in the Hammerfall outpost. 
+
+ [Or'Kalar's Head]
+
+
+== Description ==
+You serve my husband well, <class>, but he does not know why Hammerfall is under attack.
+Or'Kalar, Mug'thol's pawn in Stromgarde, has an intense hatred for my husband, and wishes nothing more than my husband's death for defeating him years ago.
+My auguries tell me that Or'Kalar has laid a trap for my husband, so I have hidden signs of the ogre's presence from him.
+My husband will rush off foolishly if he learns of the ogre's whereabouts and I would ask for your help in slaying the creature.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Mistspray Kilt]
+ [Sword of Hammerfall]
+ [Witchdoctor's Dress] 
+You will also receive:
+
+3900 XP (or 23 40 at max level)
++150 or +350 reputation with Orgrimmar
+
+
+== Progress ==
+Near the Tower of Arathor—that is where you will find Or'Kalar. His death will stop the attacks on Hammerfall and protect my husband's life.
+I see in your eyes that you think me weak—even dishonorable—for my silence. Some day you will learn what it is to love as I do. Perhaps then you will understand a different kind of strength and honor.
+In the meantime, do as I ask, and slay Or'Kalar.
+
+
+== Completion ==
+You have done me a great service, <name>. Know that my husband's life and the safety of Hammerfall has been protected for another day because of your deeds. Please take this as a reward for your courage.
+
+
+== Progression ==
+ [32] The Hammer May Fall
+ [32] Call to Arms
+ [38] Call to Arms
+ [40] Call to Arms &  [40] The Real Threat
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

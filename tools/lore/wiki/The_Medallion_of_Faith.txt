@@ -1,0 +1,26 @@
+title: The Medallion of Faith
+revision: 6311703
+part: whole
+quest: 5122
+url: https://warcraft.wiki.gg/wiki/The_Medallion_of_Faith
+
+== Objectives ==
+The power of this chapel gives me the strength to resist the corruption in my heart.  If I leave it, I will become a death knight.  But there is a medallion, the medallion of faith, that will give me the strength I need to leave.
+Please, <name>, retrieve the medallion.  It is guarded by Malor the Zealous, a crazed member of the Scarlet Crusade who resides deep in the Scarlet Bastion in western Stratholme.
+
+ [Medallion of Faith]
+
+
+== Completion ==
+You retrieved the medallion!  Now I will be able to leave the chapel and perform my duty.
+That duty is to kill the beast who helped corrupt me and so many of my brothers and sisters, Baron Rivendare!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

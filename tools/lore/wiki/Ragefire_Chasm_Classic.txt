@@ -1,0 +1,7 @@
+title: Ragefire Chasm (Classic)
+revision: 6959836
+part: intro
+url: https://warcraft.wiki.gg/wiki/Ragefire_Chasm_%28Classic%29
+
+Ragefire Chasm is an instance dungeon located in Orgrimmar. The entry portal is in the Cleft of Shadow, next to Neeru Fireblade's tent. The lava-filled chasm is home to many hostile troggs, and followers of the Burning Blade have also recently begun poking around the area.
+This is one of the shortest instances in the game, and of the easiest difficulty. For many players, this will be their first instance.  See the Instance Grouping Guide for some helpful hints.

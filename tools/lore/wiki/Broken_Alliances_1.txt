@@ -1,0 +1,47 @@
+title: Broken Alliances (1)
+revision: 6434968
+part: whole
+quest: 782
+url: https://warcraft.wiki.gg/wiki/Broken_Alliances_%281%29
+
+== Objectives ==
+Kill Boss Tho'grun and bring the Sign of the Earth to Gorn in Kargath.
+
+ [Sign of the Earth]
+
+
+== Description ==
+From the Horde's alliance with the dragon Deathwing during the Second War, we know that two of his lieutenants, Blacklash and Hematus, were imprisoned within Lethlor Ravine far to the east. We must silence our depraved allies of old to restore honor to the Horde!
+We hired Tho'grun and his band of ogre mercenaries to help us obtain the Sign of the Earth, a key needed to unlock the drakes' prison. Tho'grun betrayed us though, overwhelming us and taking it for himself. Go to Camp Boff and take it back!
+
+
+== Rewards ==
+You will receive:
+
+5050 XP (or 30 at max level)
++250 reputation with Orgrimmar
+
+
+== Progress ==
+Tho'grun's betrayal... is there any wonder why the ogres are part of the Horde no longer? I will be glad to see him dead, and the Sign of the Earth returned.
+If you've not dispatched him yet, then waste no time going to Camp Boff.  It is to the southeast of Kargath.
+
+
+== Completion ==
+With Tho'grun dead, his corpse picked clean by the desert winds and scavenging buzzards, the ogres will be put into disarray. Though a small victory, this will lead to a much larger one
+The Sign of the Earth is now in our possession, and we can open the black drakes' prison in Lethlor.  We shall free them from endless imprisonment, albeit to their doom!
+
+
+== Progression ==
+ [43] Broken Alliances
+ [50] Broken Alliances
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

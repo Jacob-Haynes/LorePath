@@ -1,0 +1,56 @@
+title: The Treaty of Understanding
+revision: 6912562
+part: whole
+quest: 98423
+url: https://warcraft.wiki.gg/wiki/The_Treaty_of_Understanding
+
+== Objectives ==
+Deliver the Treaty of Understanding to Magni Bronzebeard in Ironforge.
+
+Treaty of Understanding (provided)
+
+
+== Description ==
+Inside of the vault you find a tablet detailing the terms of a peace treaty between the Bronzebeard and Wildhammer dwarf clans. It appears to date back to time period just after the War of the Three Hammers, and is very likely a notable piece of dwarven history. The king of Ironforge would no doubt be interested in this artifact.
+
+
+== Rewards ==
+You will receive:
+
+16
+2,550 XP
++100 reputation with Ironforge
++100 reputation with Gnomeregan Exiles
+
+
+== Progress ==
+What have you brought from the depths, <class>.
+
+
+== Completion ==
+Ah yes, my ancestor Madoran was the first Bronzebeard king of Ironforge following the great civil war between the Wildhammer, Bronzebeard, and Dark Iron clans. This treaty was drafted to codify the cessation of hostilities and terms of peace after the Bronzebeards won the mountain.
+As you can see, the Wildhammers and Bronzebeards signed it... and the Dark Irons did not.
+Thank you for recovering this and bringing it to me, <class>.
+
+
+== Progression ==
+ [13] A Visitor to Dun Morogh (optional breadcrumb)
+ [13] Farsen's Watch
+ [13] Nip 'Em in the Bud
+ [15] Underground Map
+ [16D] Old Ironforge Incursion
+Dungeon quests
+ [15D] Important Heirlooms
+ [15D] The Restless Dead
+ [15D] An Ancient Grudge
+ [16] The Treaty of Understanding
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

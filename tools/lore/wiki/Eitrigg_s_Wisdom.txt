@@ -1,0 +1,79 @@
+title: Eitrigg's Wisdom
+revision: 6176522
+part: whole
+quest: 4941
+url: https://warcraft.wiki.gg/wiki/Eitrigg%27s_Wisdom
+
+This quest follows up  [60D] Warlord's Command and leads to the next real challenge, slaying Rend Blackhand in Upper Blackrock Spire.
+
+
+== Objectives ==
+Speak with Eitrigg in Orgrimmar. When you have discussed matters with Eitrigg, seek council from Thrall.
+You recall having seen Eitrigg in Thrall's chamber.
+
+
+== Description ==
+Rend lives?
+Impossible!
+It had been thought that Rend was slain decades ago.
+Seek out the wisdom of Eitrigg, <name>. None know the workings of the Blackrock better than he and if what is written here bares truth, Eitrigg should be informed. No person should be denied the right of vengeance.
+You will find him in Orgrimmar.
+Once you have spoken with Eitrigg, confer with the Warchief to find out what he wishes to do about this problem.
+
+
+== Progress ==
+Can you not see that I must not be interrupted?
+
+
+== Completion ==
+<Thrall appears dismayed by the news you bring.>
+
+
+== Notes ==
+Speaking with Eitrigg
+Greetings, young <class>.
+ Hello, Eitrigg. I bring news from Blackrock Spire.
+Rend, son of Blackhand: impotent chieftain of the Blackrock clan. A more stubborn fool does not exist. At the end of the second War, Rend and his brother, Maim, fled to find sanctuary within the mountainous stronghold of Blackrock Spire. It was there that Rend declared himself Warchief of the weakened Blackrock clan.
+ There is only one Warchief, Eitrigg!
+Yes, young one, you need not convince me of such things, the Warchief and I have much history. Your dedication, however, is noted. As I was saying, Rend had found a new home for his people, and I was among those who would wearily follow. From one conflict arose others... countless others. It was in those battles for Blackrock Spire between the Blackrock clan and the Dark Iron dwarves that my sons were both slain. It was then that I realized my time among the Blackrock clan had come to an end.
+ What do you mean?
+I left. I would not remain with the Blackrock. No, the deaths of my children would not be in vain. I would not serve under an inept, power hungry maniac such as Rend. I took shelter in the woods of Lordaeron, living as a hermit near Hearthglen.
+ Hearthglen?? But...
+<Eitrigg laughs.> Young one, the world has not always been in such disarray. It was a time before the Scourge had sacked the land. Before those parts of Lordaeron were known as the Plaguelands. It was there that Thrall rescued me from death and it was then that I joined the new Horde... but I digress. This is a story for another time. Yes, another time... Perhaps...
+ I will take you up on that offer, Eitrigg.
+I'm certain you will. Perhaps one day you could deliver a message to an old friend of mine. I hear he still wanders those woods. <Eitrigg bows his head for a moment, as if in prayer.> So Rend, yes... Rend, and his brother Maim ruled the Spire, in constant conflict with the Dark Iron dwarves. They managed to displace the dwarves in the upper portions of the city, but only after the dragons came and only after the death of Maim.
+ Ah, so that is how they pushed the Dark Iron to the lower parts of the Spire.
+Indeed. Nefarian, brood of Deathwing, rules the Spire now. Rend is under the command of the dragon. If only you could somehow manage to pass through the Halls of Ascension. <Eitrigg sighs.> Alas, only those deemed worthy by the black flight earn privilege to ascend.
+ Perhaps there exists a way?
+Perhaps. Go now, young one. Seek council with the Warchief. He will surely wish to know of your discovery.
+ As you wish, Eitrigg.
+
+
+== Progression ==
+This quest was a part of the Onyxia's Lair attunement chain.
+
+ [60D] Warlord's Command
+ [60] Eitrigg's Wisdom
+ [60R] For The Horde!
+ [60] What the Wind Carries
+ [60] The Champion of the Horde
+ [60] Mistress of Deception
+ [60R] Oculus Illusions
+ [60R] Emberstrife
+
+ [60] The Test of Skulls, Scryer
+ [60] The Test of Skulls, Somnus
+ [60] The Test of Skulls, Chronalis
+ [60] The Test of Skulls, Axtroz
+ [60] Ascension...
+ [60R] Blood of the Black Dragon Champion
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

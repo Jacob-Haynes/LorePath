@@ -1,0 +1,66 @@
+title: The Smoldering Ruins of Thaurissan (2)
+revision: 6309601
+part: whole
+quest: 3701
+url: https://warcraft.wiki.gg/wiki/The_Smoldering_Ruins_of_Thaurissan_%282%29
+
+== Objectives ==
+Venture to the Ruins of Thaurissan in the Burning Steppes and recover information from the Thaurissan Relics. Return to Royal Historian Archesonus when you have recovered the information.
+
+Information Recovered (12)
+
+
+== Description ==
+Venture to the smoldering ruins of Thaurissan in the Burning Steppes and gather as much information as possible.
+It is said that mysterious relics litter the ruins. Perhaps you should start your search there, <name>. Beware the Thaurissan guardians: Assassins that guard the ruins, keeping whatever secrets may still be buried there protected.
+
+
+== Rewards ==
+
+You will also receive:
+
+1 65
+5450 XP (or 33 at max level)
++250 reputation with Ironforge
+
+
+== Progress ==
+Do you bring new information?
+
+
+== Completion ==
+Oh my! This information explains quite a lot about Thaurissan.
+There is much more to learn!
+
+
+== Notes ==
+Some of the information received from the relics:
+
+A tormented voice whispers: He cannot be defeated.
+The relic burns to nothing. The memories it held are now your own. This city was destroyed by a being not of this world.
+A tormented voice whispers: Your existence is acknowledged.
+The relic turns to dust. Your head throbs with newfound wisdom. Something evil lurks in the heart of the mountain.
+A tormented voice whispers: Help us, outsider.
+The relic cumbles to dust.  A vision of eight Dark Iron dwarves performing some sort of ritual fills your head.
+A tormented voice whispers: Leave this place.
+The relic emits a white hot arc of flame. A memory has been gained: A lone Dark Iron dwarf is surrounded by seven corpses, kneeling before a monolith of flame.
+A tormented voice whispers: Defiler... you will be punished for this incursion.
+A symbol of flame radiates from the relic before it crumbles to the earth.
+A tormented voice whispers: Do not taint these ruins, mortal.
+You are engulfed by a blinding flash of light. A creature composed entirely of flame is the only thing you can remember seeing.
+These clues refer to The Seven and the Sorcerer-thane Thaurissan, summoning Ragnaros during the War of the Three Hammers.
+
+
+== Progression ==
+ [54] The Smoldering Ruins of Thaurissan
+ [54] The Smoldering Ruins of Thaurissan
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

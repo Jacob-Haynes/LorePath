@@ -1,0 +1,59 @@
+title: A Final Blow
+revision: 6863275
+part: whole
+quest: 5242
+url: https://warcraft.wiki.gg/wiki/A_Final_Blow
+
+== Objectives ==
+Kill Moora and Salia, and bring Shadow Lord Fel'dan's Head to Greta Mosshoof in Felwood.
+
+Moora slain
+Salia slain
+ [Shadow Lord Fel'dan's Head]
+
+
+== Description ==
+Unfortunately, I see the only way to stop this threat to Felwood is a frontal attack. There are no other ways into Shadow Hold, and I have no means to teleport you inside. The straight path down to the bottom is the only way... and I also know who you should seek out. His name is Fel'dan... Shadow Lord Fel'dan. He is the mortal in power down below... he is the head of the serpent. Kill him and his two succubus servants and return to me. Fel'dan is the one making pacts with the Legion. He must be stopped.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Brantwood Sash]
+ [Blight Leather Gloves]
+ [Gearforge Girdle]
+You will also receive:
+
+13,500 XP
+
+
+== Progress ==
+Without Fel'dan, the Shadow Council will hopefully lose focus and start infighting. They will struggle with one another for control and hoard assets for future plans. That will be an opportune time to devastate them and their demon slaves.
+
+
+== Completion ==
+Earthmother be praised, <name>! Thank you! This is a great day, indeed!
+The Shadow Council will be hard pressed to scale to the same levels of power they once held with this blow to their hierarchy. You have done a great thing this day!
+
+
+== Progression ==
+ [51] Forces of Jaedenar
+ [52] Collection of the Corrupt Water
+ [52] Seeking Spiritual Aid
+ [54] Cleansed Water Returns to Felwood
+ [55] Dousing the Flames of Protection
+ [58] A Final Blow
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+A Final Blow, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

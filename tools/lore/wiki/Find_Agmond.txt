@@ -1,0 +1,48 @@
+title: Find Agmond
+revision: 6930301
+part: whole
+quest: 738
+url: https://warcraft.wiki.gg/wiki/Find_Agmond
+
+This quest is part of the Ironband Wants You! quest chain.  This quest chain starts with  [37] Ironband Wants You!
+
+
+== Objectives ==
+Find Agmond.
+
+
+== Description ==
+Prospector Agmond was in charge of our excavation sites in the Badlands, to the southwest. I say "was" because...well, I haven't heard from him in weeks. I need you to find Agmond so I can get his report.
+Last I heard Agmond was at the southernmost dig site in the Badlands--a tiny operation past the Angor Fortress. I'd start your search for him there.
+
+
+== Reward ==
+You will receive:
+
+4
+1450 XP (or 9 at max level)
++50 reputation with Ironforge
+ [Ripped Prospector Belt]
+ [Jade]
+2  [Gold Ore]
+
+
+== Completion ==
+This skeleton must be the unfortunate remains of Agmond.  His body is broken and battered, and his bones picked clean.
+
+
+== Progression ==
+ [37] Ironband Wants You!
+ [38] Find Agmond
+ [42] Murdaloc
+ [38] Agmond's Fate
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

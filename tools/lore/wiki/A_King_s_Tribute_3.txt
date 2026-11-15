@@ -1,0 +1,48 @@
+title: A King's Tribute (3)
+revision: 6842228
+part: whole
+quest: 700
+url: https://warcraft.wiki.gg/wiki/A_King%27s_Tribute_%283%29
+
+This quest ends the quest chain A King's Tribute.
+
+
+== Objectives ==
+Report to King Magni Bronzebeard.
+
+
+== Description ==
+Ah, such fine stone comes from Lordaeron. Such a shame the land is in such shambles.
+But the Memorial came out quite well! I should think the King will be most pleased with it.
+Now if you will, please send word to His Majesty that the Memorial is complete as requested.
+
+
+== Rewards ==
+You will receive:
+
+ [Ironforge Memorial Ring]
+2500 XP (or 15 at level 70)
++250 reputation with Ironforge
+
+
+== Completion ==
+The granite seems but a small token compared to a great dwarf's life. But no dwarf shall last on this planet for eternity.
+Let us just hope that the memorial stands as a reminder to those who will trod the great Azeroth of the future. Lest we not forget it is for them that brave soldiers such as Sully Balloo so valiantly gave their lives.
+
+
+== Progression ==
+ [30] Sully Balloo's Letter
+ [30] Sara Balloo's Plea
+ [30] A King's Tribute
+ [31] A King's Tribute
+ [31] A King's Tribute
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -575,9 +575,12 @@ for zone, lore in ns.ZoneLore.items():
     for c in (lore["chapters"].values() if lore["chapters"] else []):
         if zone == 2521:
             people = [("Horde", 96), ("Alliance", 95)]
-        else:
-            faction, races = HOME_RACES.get(zone, (None, ()))
+        elif zone in HOME_RACES:
+            faction, races = HOME_RACES[zone]
             people = [(faction, r) for r in races]
+        else:
+            # Anywhere else: any race of either faction.
+            people = [("Alliance", r) for r in (1, 3, 4, 7, 95)] + [("Horde", r) for r in (2, 5, 6, 8, 96)]
         ok = False
         for faction, race in people:
             for cls in range(1, 12):
@@ -745,6 +748,21 @@ check(len(texts) == 3 and "Naxxramas" in texts[1] and texts[1].endswith("Unlocke
       and texts[2].endswith("Unlocked by Morwenna|r") and more,
       "a Skyborne sees the chapters its Forsaken alt unlocked, marked Unlocked by Morwenna, with more still to uncover")
 check(ns.RevealedChapter(96898) is None, "but the tile's book marker stays with the Skyborne's own quests")
+real_lore = ns.ZoneLore[1420]
+ns.ZoneLore[1420] = tirisfal
+ns.ClearChapterIndex()
+row_t = [r for r in zone_rows() if r["zoneID"] == 1420]
+check(len(row_t) == 1, "Tirisfal is in the Skyborne's zone list")
+row_t[0]["__scripts"]["OnClick"](row_t[0])
+zs = frame["zoneStoryButton"]
+check(zs.IsShown(zs), "on Tirisfal, the Skyborne gets a Zone story button for its alt's chapters")
+zs["__scripts"]["OnClick"](zs)
+alt_panel = detail_texts()
+check(any("Naxxramas" in t and "Unlocked by Morwenna" in t for t in alt_panel),
+      "and the panel shows them, marked Unlocked by Morwenna")
+ns.HideDetail()
+ns.ZoneLore[1420] = real_lore
+ns.ClearChapterIndex()
 char["completed"][96898] = True
 ns.RefreshCompleted()
 texts = list(ns.GetLoreView(tirisfal)[0].values())
@@ -761,10 +779,13 @@ ns.RefreshCompleted()
 ns.ZoneLore[lore_zone] = saved_lore
 ns.ClearChapterIndex()
 g.LorePathDB["collapsed"] = lua.table()
-other_row = [r for r in zone_rows() if isinstance(r["zoneID"], int) and ns.ZoneLore[r["zoneID"]] is None][0]
+other_row = [r for r in zone_rows() if isinstance(r["zoneID"], int) and r["zoneID"] != lore_zone][0]
+saved_other_lore = ns.ZoneLore[other_row["zoneID"]]
+ns.ZoneLore[other_row["zoneID"]] = None
 other_row["__scripts"]["OnClick"](other_row)
 check(section("lore:" + str(other_row["zoneID"])) is None and canvas_sources() == [],
       "a page with no lore has no About section")
+ns.ZoneLore[other_row["zoneID"]] = saved_other_lore
 check(ns.GetZoneLore("class") is None, "special pages have no lore")
 back_row = [r for r in zone_rows() if r["zoneID"] is not None and ns.GetMapName(r["zoneID"]) == zone_before_lore][0]
 back_row["__scripts"]["OnClick"](back_row)
@@ -883,6 +904,9 @@ with tempfile.TemporaryDirectory() as tmp:
         check(sorted((c["after"], "quest data" in why, "is quest 999" in why) for _, c, why in problems)
               == [(100, False, True), (200, True, False)],
               "the report finds a chapter whose quest article is another quest's, and one whose quest LorePath doesn't know")
+        renamed = wiki_lore.parse_zones("== 7 Somewhere\nsource: Z @ 1\n\nPremise.\n\nafter 100 Quest Page\nsource: Quest Page @ 9\n\nText.\n")
+        check(wiki_lore.chapter_problems(renamed, {100}) == [],
+              "an article named after the chapter's quest counts as its own, though the wiki renumbered it")
         md, _ = wiki_lore.report(chaptered, {}, quests={100})
         check("### Chapters to check" in md and "the chapter after 100 First Quest doesn't match its quest article" in md
               and "200 Second Quest isn't in LorePath's quest data" in md, "and lists them")

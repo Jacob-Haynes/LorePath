@@ -1,0 +1,56 @@
+title: Eye of Mugg (Alliance)
+revision: 6971580
+part: whole
+quest: 94982
+url: https://warcraft.wiki.gg/wiki/Eye_of_Mugg_%28Alliance%29
+
+== Objectives ==
+Infiltrate Krol'dok Stronghold and return to Commander Brant with proof of their leader's demise.
+
+ [Eye of Mugg]
+
+
+== Description ==
+Our scouts mentioned a network of caves to the northwest along the mountains, hidden by natural surroundings. Most who sought information from deep within have yet to return. I fear they may be lost.
+Those watching from a distance mentioned a Twilight presence moving in and out of the caves, often in darkness.
+Locate this stronghold. If it is what I think it is we must deliver a deathly blow to their leader. Only then may we continue our efforts to remove them from these lands.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Rock on Stick]
+ [Bigger Rock on Bigger Stick]
+ [Stick No Rock]
+You will also receive:
+
+1 30
+11,500 XP
++150 reputation with Brotherhood of the Horse
+
+
+== Progress ==
+Has the threat been eliminated?
+
+
+== Completion ==
+This is quite gruesome, <name>. Our allies will be pleased by your actions.
+
+
+== Progression ==
+A Token of Vengeance
+ [45D] Eye of Mugg
+ [41] Krol'dok Moulding →  [41] Key Ingredients
+Tome of Twilight
+Twilight Mementos →  [42] Lingering Essence → Curios of Curiosity
+Vengeance of the Highborne
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

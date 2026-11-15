@@ -1,0 +1,54 @@
+title: Answered Questions
+revision: 6875394
+part: whole
+quest: 1044
+url: https://warcraft.wiki.gg/wiki/Answered_Questions
+
+This quest ends the quest chain The Scythe of Elune.
+
+
+== Objectives ==
+Return to Thyn'tel Bladeweaver in Darnassus.
+
+
+== Description ==
+We shall rein in the worgen problem, have no worry of that. This evil that your friend introduced to our woods will be contained, and I bear her no ill will for her actions. Strange events are afoot in these times, <name>, and the darkness knows no respite.
+I will keep you no longer. I suspect that there are others that should hear of what you have found in the mines of Duskwood.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Lunaris Bow]
+ [Moonbeam Wand]
+You will also receive:
+
+3050 XP (or 18 60 at max level)
++350 reputation with Darnassus
+
+
+== Completion ==
+So this is the fate of Velinde, is it? The high priestess will be disappointed to hear of this, they were good friends before her disappearance. Still, the Scythe of Elune was surely granted to her as a boon by our goddess, and it is unsettling to me that it has fallen out of her servants' hands.
+Another matter for another time, however. I owe you my thanks in no small amount for what you have accomplished.
+
+
+== Progression ==
+ [30] The Howling Vale
+ [30] Velinde Starsong
+ [30] Velinde's Effects
+ [30] The Barrens Port
+ [30] Passage to Booty Bay
+ [30] The Caravan Road
+ [30] The Carevin Family
+ [30] The Scythe of Elune
+ [30] Answered Questions
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

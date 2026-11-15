@@ -1,0 +1,69 @@
+title: Tiger Mastery
+revision: 5590531
+part: whole
+quest: 188
+url: https://warcraft.wiki.gg/wiki/Tiger_Mastery
+
+== Objectives ==
+Hunt Sin'Dall and return with her paw.
+
+ [Paw of Sin'Dall]
+
+
+== Description ==
+Legends speak of an elusive tigress... a feline so powerful that she dwarfs even the elder males. The hunters at Nesingwary's Expedition have hunted for her without success. Many of them have fallen prey to her raking claws, their bodies now decaying at the foot of her hill, north of Grom'gol.
+They call the beast Sin'Dall.
+You resolve to do what no <race> has done before: hunt, kill, and claim the paw of Sin'Dall.
+
+
+== Progress ==
+How goes the hunt?
+
+
+== Completion ==
+Most impressive, I do say!  I send you out to defeat the kittens, and you return with a paw the size of a gnome!  You are a true Master Tiger Hunter, <name>!
+
+
+== Rewards ==
+
+You will also receive:
+
+60
+1,750 XP
+
+
+== Progression ==
+
+ [10-30] Welcome to the Jungle
+Complete all of the following:
+
+Panthers:
+ [10-30] Panther Hunting
+ [10-30] Panther Stalking
+ [10-30] Panther Prowess
+ [10-30] Panther Mastery
+
+Raptors:
+ [10-30] Raptor Hunting
+ [10-30] Raptor Stalking
+ [10-30] Raptor Prowess
+ [10-30] Raptor Mastery
+
+Tigers:
+ [10-30] Tiger Hunting
+ [10-30] Tiger Stalking
+ [10-30] Tiger Prowess
+ [10-30] Tiger Mastery
+
+ [10-30] Big Game Hunter
+
+
+== Patch changes ==
+ Patch 7.0.3 (2016-07-19):  [Footpads of Sin'Dall] added as a reward.   
+ Patch 4.0.3a (2010-11-23): Added, replacing  [37] Tiger Mastery.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

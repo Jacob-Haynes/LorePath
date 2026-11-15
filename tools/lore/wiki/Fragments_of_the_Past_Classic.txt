@@ -1,0 +1,58 @@
+title: Fragments of the Past (Classic)
+revision: 6307843
+part: whole
+quest: 5246
+url: https://warcraft.wiki.gg/wiki/Fragments_of_the_Past_%28Classic%29
+
+== Objectives ==
+Find the Sacred Highborne Writings in the Temple of Zin-Malor in Azshara, and bring them to Aurora Skycaller near the Northpass Tower in Eastern Plaguelands.
+
+ [Sacred Highborne Writings]
+
+
+== Description ==
+I did not realize... Forgive my callous words, <class>.
+The mistakes of my ancestors are not what I wish to dwell on, but if your request is truly genuine, then I will help you.
+<Aurora examines the fragments.>
+I believe this is the Crystal of Zin-Malor, an artifact that can contain and control strong arcane forces. It could have been used for good, but the evil intentions of those that stole it caused it to shatter.
+Go to the Temple of Zin-Malor in Azshara - I can only hope the book is still there.
+
+
+== Rewards ==
+You will receive:
+
+5800 XP (or 34 50 at max level)
++25 reputation with Darnassus
++25 reputation with Exodar
++25 reputation with Gnomeregan
++25 reputation with Ironforge
++25 reputation with Stormwind
+
+
+== Progress ==
+It is only in the pages of the sacred writings that I will be able to discern whether or not I can help you...
+
+
+== Completion ==
+The pages have gone untouched for many many years...
+
+
+== Progression ==
+ [56] To Winterspring!
+ [56] The Ruins of Kel'Theril
+ [56] Troubled Spirits of Kel'Theril
+ [56] Fragments of the Past
+ [57] Fragments of the Past
+ [58] Tormented By the Past
+ [58] Remorseful Highborne
+ [58] The Crystal of Zin-Malor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

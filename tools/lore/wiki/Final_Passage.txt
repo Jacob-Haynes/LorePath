@@ -1,0 +1,60 @@
+title: Final Passage
+revision: 6859888
+part: whole
+quest: 1394
+url: https://warcraft.wiki.gg/wiki/Final_Passage
+
+In Final Passage, you must return to Dorn Plainstalker in Thousand Needles to at last complete your tests. This is the tenth and final quest in the Test of Faith quest chain, which is a chain of quest involving testing some part of the player character's being. The first quest is  [26] Test of Faith, which begins in The Weathered Nook in Thousand Needles, from Dorn Plainstalker.
+
+
+== Objectives ==
+Speak to Dorn Plainstalker in Thousand Needles.
+
+
+== Description ==
+You have done well, <name>. You have passed my test, and the tests before mine. Return to Dorn in Thousand Needles. He will sense the change within you, and see that your mind, body and spirit are strong enough that you should be rewarded for your efforts.
+Stay true to the balance you've shown throughout these trials, <name>. Dorn will test you again in the future if you do.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Windstorm Hammer]
+ [Dancing Flame]
+You will also receive:
+
+4,200 XP
++200 or +500 reputation with Horde
+
+
+== Completion ==
+Ah, <name>. It has been a long time since you have last stepped into my home. It seems like many moons have passed since you took your first leap that set you upon your path.
+And now you return to me stronger than you once were... more enlightened. This pleases me. And you should be justly rewarded for seeing my tests to the end.
+
+
+== Notes ==
+Simply return to Dorn Plainstalker in The Weathered Nook in Thousand Needles (if you've forgotten where he is, he is in a cave up a ramp north of Freewind Post.
+
+
+== Progression ==
+
+ [26] Test of Faith
+ [29G] Test of Endurance
+ [30] Test of Strength
+ [30] Test of Lore
+ [30] Test of Lore
+ [30] Test of Lore
+ [30] Test of Lore
+ [36D] Test of Lore
+ [30] Test of Lore
+ [36] Final Passage
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

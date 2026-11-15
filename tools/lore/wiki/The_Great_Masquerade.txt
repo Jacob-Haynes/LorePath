@@ -1,0 +1,149 @@
+title: The Great Masquerade
+revision: 6741025
+part: whole
+quest: 6403
+url: https://warcraft.wiki.gg/wiki/The_Great_Masquerade
+
+This is part of the Great Masquerade quest chain.
+This quest is flashy — the dialog occurring during the quest is Zone-wide. Innocent bystanders in Stormwind Keep may be incidentally slain, so warnings to the ignorant may be called for.
+
+
+== Objectives ==
+Follow Reginald Windsor through Stormwind. Protect him from harm! 
+
+Reginald's March
+
+
+== Description ==
+It has been quite the adventure, friend. I owe you a great debt of gratitude. Perhaps, when all is said and done...
+As you have no doubt ascertained by now, Lady Prestor is Onyxia: Brood of Deathwing, twin to the tyrant of the Spire, Nefarian.
+For too long she has held our kingdom in her captivating gaze. Even the Highlord is controlled by her trickery - a puppet. It all ends today... The spell will be broken.
+Worry not, for together, we shall be victorious!
+Are you ready?
+
+
+== Rewards ==
+You will receive:
+
+14300 XP (or 60 at max level)
++500 reputation with Stormwind
+
+
+== Progress ==
+I... I... I was powerless.
+
+
+== Completion ==
+<Bolvar holds the shattered medallion.>
+The magic held within must be reignited. The dragon's eye must be attuned.
+Windsor's sacrifice has freed our Kingdom, but the threat of Onyxia and her kin is ever looming.
+This medallion is what held my mind and body captive. It is also what gave me access to Onyxia's own mind - to her secrets. Albeit the visions are muddled now, some things I do remember.
+
+
+== Notes ==
+While this quest may be a lot more fun with a full raid group, and can be undertaken while in such a group, it need not be.
+Escort Windsor to the audience hall of Stormwind Keep, but if you stand back out of
+aggro range, most of the combat should pass you by, with Bolvar defeating the entire
+dragonkin force by himself.  ... Or nearly, anyway.
+If you fail this quest (Bolvar can die), go back to Squire Rowe and talk to him again.  ... or, exit the gates into Elwynn Forest and come back in.  Windsor should reappear.
+And no, Marshal Windsor is doomed.  Sorry.
+This quest is infamous for bugging out when Lady Prestor transforms, with nothing happening for several minutes until the residents of Stormwind Keep simply despawn. Although many steps had been taken to correct the matter, most significantly the addition of Squire Rowe as an easy place from which to reset the quest, it was never completely bug-free before its ultimate removal.
+
+
+== Notes ==
+
+Starting the quest as Windsor appears:
+
+Reginald Windsor says: On guard, friend. The lady dragon will not give in without a fight.
+Reginald Windsor yells: As was fated a lifetime ago in Karazhan, monster - I come - and with me I bring justice.
+Lady Katrana Prestor yells: Seize him! Seize the worthless criminal and his allies!
+General Marcus Jonathan says: Reginald, you know that I cannot let you pass.
+Reginald Windsor says: You must do what you think is right, Marcus. We served together under Turalyon. He made us both the men that we are today. Did he err with me? Do you truly believe my intent is to cause harm to our Alliance? Would I shame our heroes?
+Reginald Windsor says: Holding me here is not the right decision, Marcus.
+General Marcus Jonathan appears lost in contemplation.
+General Marcus Jonathan says: I am ashamed, old friend. I know not what I do anymore. It is not you that would dare bring shame to the heroes of legend - it is I. It is I and the rest of these corrupt politicians. They fill our lives with empty promises, unending lies.
+General Marcus Jonathan says: We shame our ancestors. We shame those lost to us... forgive me, Reginald.
+Reginald Windsor says: Dear friend, you honor them with your vigilant watch. You are steadfast in your allegiance. I do not doubt for a moment that you would not give as great a sacrifice for your people as any of the heroes you stand under.
+Reginald Windsor says: Now, it is time to bring her reign to and end, Marcus. Stand down, friend.
+Marcus turns to the left and right, speaking to the guards.
+General Marcus Jonathan says: Stand down! Can you not see that heroes walk among us?
+General Marcus Jonathan says: Move aside! Let them pass!
+General Marcus Jonathan yells: Reginald Windsor is not to be harmed! He shall pass through untouched!
+General Marcus Jonathan says: Go, Reginald. May the light guide your hand.
+Reginald Windsor says: Thank you, old friend. You have done the right thing.
+Reginald Windsor says: Follow me, friends. To Stormwind Keep!
+The party then proceeds from the gates to the base of the keep. Along the way, city guards can say any of the following as Windsor passes by:
+Stormwind City Patroller says: Light be with you, sir.
+Stormwind City Patroller says: We are but dirt beneath your feet, sir.
+Stormwind City Patroller says: ...nerves of thorium.
+Stormwind City Patroller says: Make way!
+Stormwind City Patroller says: A living legend...
+Stormwind City Patroller says: There walks a hero.
+Stormwind City Patroller says: A moment I shall remember for always.
+Before entering the keep, Windsor stops.
+Reginald Windsor says: Be brave, friends. The reptile will thrash wildly. It is an act of desperation. When you are ready, give me the word.
+The dragon hides behind a royal facade.  The tablets will reveal her for what she is...  If what I have seen holds true, I will not survive this battle, friend.  It is you that must finish what I have started.  Are you forces ready?  Are you ready?  We will begin on your command.
+ I am ready, as are my forces.  Let us end this masquerade!
+
+Reginald Windsor says: Onward!
+The party enters the keep.
+Reginald Windsor says: Majesty, run while you still can. She is not what you think her to be...
+Highlord Bolvar Fordragon says: To the safe hall, your majesty.
+Anduin Wrynn runs to the safe hall and disappears inside.
+Reginald Windsor says: The masquerade is over, Lady Prestor. Or should I call you by your true name... Onyxia...
+Lady Katrana Prestor laughs.
+Lady Katrana Prestor says: You will be incarcerated and tried for treason, Windsor. I shall watch with glee as they hand down a guilty verdict and sentence you to death by hanging...
+Lady Katrana Prestor says: And as your limp body dangles from the rafters, I shall take pleasure in knowing that a mad man has been put to death. After all, what proof do you have? Did you expect to come in here and point your fingers at royalty and leave unscathed?
+Reginald Windsor says: You will not escape your fate, Onyxia. It has been prophesied - a vision resonating from the great halls of Karazhan. It ends now...
+Reginald Windsor says: The Dark Iron's thought these tablets to be encoded. This is not any form of coding, it is the tongue of ancient dragon.
+Reginald Windsor says: Listen, dragon. Let the truth resonate throughout these halls.
+Reginald Windsor reads from the tablets. Unknown, unheard sounds flow through your consciousness.
+Highlord Bolvar Fordragon gasps.
+Prestor sheds her disguise and reveals herself as Lady Onyxia.
+Lady Onyxia says: Curious... Windsor, in this vision, did you survive? I only ask because one thing that I can and will assure is your death. Here and now.
+Highlord Bolvar Fordragon yells: Dragon filth! Guards! Guards! Seize this monster!
+The royal guards reveal themselves to actually be dragonspawn.
+Lady Onyxia laughs.
+Onyxia's Royal Guard hisses.
+Reginald Windsor says: DO NOT LET HER ESCAPE!
+Onyxia lashes out with her claws and mortally wounds Windsor.
+Lady Onyxia says: Was this fated, Windsor? If it was death that you came for, then the prophecy has been fulfilled. May your consciousness rot in the Twisting Nether. Finish the rest of these meddlesome insects, children. Bolvar, you have been a pleasurable puppet.
+Lady Onyxia yells: You have failed him, mortalsss... Farewell!
+Onyxia teleports away and combat is joined with the dragonspawn.
+Highlord Bolvar Fordragon's medallion shatters.
+After the fight:
+
+Highlord Bolvar Fordragon says: Reginald... I... I am sorry.
+Reginald Windsor says: Bol... Bolvar... the medallion... use...
+Reginald Windsor dies.
+
+
+== Progression ==
+ [54] Dragonkin Menace
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54D] Marshal Windsor
+ [54D] Abandoned Hope
+ [58D] A Crumpled Up Note
+ [58D] A Shred of Hope
+ [58D] Jail Break!
+ [60R] Stormwind Rendezvous
+ [60R] The Great Masquerade
+ [60R] The Dragon's Eye
+ [60R] Drakefire Amulet
+
+
+== Patch changes ==
+ Patch 3.0.2 (2008-10-14): Removed.   
+ Patch 1.5.0 (2005-06-07): Highlord Bolvar Fordragon should no longer despawn when "The Great Masquerade" is activated.   
+ Patch 1.2.0 (2004-12-18): Reginald Windsor's yell can be heard during The Great Masquerade.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

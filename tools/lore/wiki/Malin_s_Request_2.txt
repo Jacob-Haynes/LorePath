@@ -1,0 +1,61 @@
+title: Malin's Request (2)
+revision: 6839635
+part: whole
+quest: 697
+url: https://warcraft.wiki.gg/wiki/Malin%27s_Request_%282%29
+
+== Objectives ==
+Take the Sealed Letter to Archmage Malin in the Mage Quarter of Stormwind.
+
+ [Sealed Letter to Archmage Malin] (provided)
+
+
+== Description ==
+Take this letter back to Stormwind and let Malin know that Kryten an' I'll be home soon. He'll reward you well for helping us here, <name>, of that I've no doubt.
+Travel safely.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Vigilant Buckler]
+ [Wingborne Boots]
+You will also receive:
+
+90
+5150 XP (or 31 50 at max level)
++88 reputation with Darnassus
++88 reputation with Exodar
++88 reputation with Gnomeregan
++88 reputation with Ironforge
++88 reputation with Stormwind
+
+
+== Progress ==
+Yes? You look vaguely familiar. I do apologize, but have we met? I get so busy I lose track.
+
+
+== Completion ==
+<Archmage Malin opens the letter, and his eyes grow wide.>
+By the Light, you've done it. How wonderful. Trelane will be so pleased. I'm sure Kryten and Skuerto are just as excited as I am to have them on their way back to Stormwind.
+Thank you, <name>. Please, take this to help you in your journeys.
+
+
+== Progression ==
+ [32] Malin's Request
+ [36] Worth Its Weight in Gold
+ [39] Wand over Fist
+ [39E] Trelane's Defenses
+ [39] An Apprentice's Enchantment
+ [39E] Attack on the Tower
+ [39] Malin's Request
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

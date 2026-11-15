@@ -1,0 +1,6 @@
+title: Kalaran
+revision: 6947739
+part: intro
+url: https://warcraft.wiki.gg/wiki/Kalaran
+
+Kalaran is a black drake of the black dragonflight. His humanoid form is a human male named Kalaran Windblade.

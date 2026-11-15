@@ -1,0 +1,54 @@
+title: Messenger to Stormwind (2)
+revision: 6237766
+part: whole
+quest: 121
+url: https://warcraft.wiki.gg/wiki/Messenger_to_Stormwind_%282%29
+
+Part of the Reinforcing Redridge correspondence quests.
+
+
+== Objectives ==
+Take General Marcus Jonathan's letter of response to Magistrate Solomon in Lakeshire.
+
+ [The General's Response] (provided)
+
+
+== Description ==
+While I wait for a response from the King I want you to carry this letter to Magistrate Solomon.
+Dismissed, <class>!
+
+
+== Rewards ==
+You will receive:
+
+1 50
+250 XP (or 1 50 at max level)
++25 reputation with Stormwind
+
+
+== Progress ==
+Did the General send news? Are reinforcements on the way?
+
+
+== Completion ==
+Thank you for your time, <class>. For your service to Lakeshire and Stormwind I reward you with these coins.
+Now if you'll excuse me, I find this correspondence somewhat of a mystery. Something is amiss in our Kingdom. I fear this is the beginning of conflict, not the end.
+
+
+== Progression ==
+ [14] Messenger to Stormwind
+ [14] Messenger to Stormwind
+ [14] Messenger to Westfall
+ [14] Messenger to Westfall
+ [18] Messenger to Darkshire
+ [18] Messenger to Darkshire
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,29 @@
+title: Durgen Dirgehammer
+revision: 6952362
+part: whole
+url: https://warcraft.wiki.gg/wiki/Durgen_Dirgehammer
+
+Durgen Dirgehammer is the fourth and last boss in the Hall of Thanes instance, found at the Reliquary of Kings. He is accompanied by two Lesser Stone Golems.
+
+
+== Abilities ==
+ Heroic Strike — A strong attack that increases melee damage by 11 and causes a high amount of threat.
+ Intimidating Shout — Shouts at an enemy, paralyzing it with terror for 8 sec. and causing all other nearby enemies to flee in fear.
+ Rend — Inflicts Physical damage to an enemy every 3 sec. for 15 sec.
+
+
+== Drops ==
+
+
+== Objective of ==
+Drops Durgen Dirgehammer's Head for  [16D] Old Ironforge Incursion.
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

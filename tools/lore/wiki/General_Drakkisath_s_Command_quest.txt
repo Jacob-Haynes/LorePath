@@ -1,0 +1,46 @@
+title: General Drakkisath's Command (quest)
+revision: 6501009
+part: whole
+quest: 5089
+url: https://warcraft.wiki.gg/wiki/General_Drakkisath%27s_Command_%28quest%29
+
+== Objectives ==
+Take General Drakkisath's Command to Marshal Maxwell in Burning Steppes.
+
+ [General Drakkisath's Command] (provided)
+
+
+== Description ==
+From the corpse of the defeated serpent you uncover what appears to be a note of some importance: A letter from his superior, General Drakkisath, concerning protocol.
+Your instinct tells you that you should take it to Marshal Maxwell.
+
+
+== Rewards ==
+You will receive:
+
+3 96
+6600 XP (or 39 at max level)
++250 reputation with Stormwind
+
+
+== Progress ==
+What have you got there, <name>?
+
+
+== Completion ==
+The plot thickens...
+
+
+== Progression ==
+ [60] General Drakkisath's Command
+ [60R] General Drakkisath's Demise
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,55 @@
+title: Compendium of the Fallen (Classic)
+revision: 6899798
+part: whole
+quest: 1049
+url: https://warcraft.wiki.gg/wiki/Compendium_of_the_Fallen_%28Classic%29
+
+Compendium of the Fallen is a Horde Scarlet Monastery quest.
+
+
+== Objective ==
+Retrieve the Compendium of the Fallen from the Monastery in Tirisfal Glades and return to Sage Truthseeker in Thunder Bluff.
+
+ [Compendium of the Fallen]
+
+
+== Description ==
+The Earthen Ring had pure intentions towards our plagued brethren. But who is to know the motivations of those whispering in the ears of the Elder Council?
+The Forsaken whom we have allied with have a history wrought with deceit. Too hasty was our pact. Perhaps Cairne would have been wise to heed the warnings from Orgrimmar.
+Deep within the Scarlet Monastery lies the Compendium of the Fallen, guarded by crazed human zealots. Their method is forged from insanity but their research might prove useful.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Vile Protector]
+ [Forcestone Buckler]
+ [Omega Orb]
+5850 XP (or 21 60 at max level)
++500 reputation with Thunder Bluff
+
+
+== Progress ==
+Cairne is a brave and noble leader and I would trust him with my own life. But it is others that I do not trust in this political climate.
+Once I have a chance to gather all the knowledge available I can provide sound council to the Chieftain.
+Have you had a chance to travel to Tirisfal Glades? To the Scarlet Monastery? The Compendium of the Fallen is just one piece in this complicated puzzle...
+
+
+== Completion ==
+The Compendium of the Fallen! I was beginning to wonder if the very book existed!
+You have served the tauren of Thunder Bluff well, <name>. Your dedication shall not be forgotten.
+
+
+== Notes ==
+Because - according to the quest log - the loyalty of the Forsaken is being brought into question, this quest is not available to undead players.
+The Compendium is somewhat hard to find. Enter the Library Wing of the Scarlet Monastery, and as you make the final turn into the Athenaeum. Facing towards Arcanist Doan, there is a bookcase behind you. The Compendium is the black-covered tome sticking out of the bottom-left shelf on that bookcase.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

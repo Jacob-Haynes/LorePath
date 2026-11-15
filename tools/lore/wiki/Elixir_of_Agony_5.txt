@@ -1,0 +1,62 @@
+title: Elixir of Agony (5)
+revision: 5619033
+part: whole
+quest: 524
+url: https://warcraft.wiki.gg/wiki/Elixir_of_Agony_%285%29
+
+Elixir of Agony is the final quest in a Horde quest chain in Hillsbrad Foothills. The players must place a keg of dwarven ale they stole from Dun Garok that has been poisoned by a concoction they helped brew in the holding room of some captured Human farmers. You must have completed the previous quest,  [30] Elixir of Agony.
+
+
+== Objectives ==
+Place the Tainted Keg on the rug for the captured farmers.
+
+ [Tainted Keg] (provided)
+
+
+== Description ==
+Next door the Deathguards are holding a few captured farmers hostage. High Executor Darthalia suspected one of the military strategists from Stormwind to be hiding out amongst them. Apparently the military chap was found dead in the Plaguelands last night. Darthalia, always looking out for me, decided the prisoners would be left to my disposal.
+I think it's time we threw those farmers a party. Sounds like a grand ol' time!
+Place this tainted keg on the rug in their room. Plagued brew for all!
+
+
+== Rewards ==
+You will receive:
+
+3,650 XP
++200 or +500 reputation with Undercity
+
+
+== Progress ==
+A musty smell emanates from the rug.
+
+
+== Completion ==
+You rest the tainted keg on the dusty rug.
+
+
+== Notes ==
+Simply click on the rug in the upstairs room of the inn.
+
+Upon completion
+Captured Farmers approach the keg.
+Captured Farmer says: Finally they show mercy! They've given us something to drink!
+Captured Farmer says: And Shindigger Stout too! Thank the Light! I was parched!
+Captured Farmers drop dead.
+
+
+== Progression ==
+ [28] Elixir of Agony
+ [28] Elixir of Agony
+ [30] Elixir of Agony
+ [30] Elixir of Agony
+ [30] Elixir of Agony
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,100 @@
+title: Torek's Assault
+revision: 5929322
+part: whole
+quest: 6544
+url: https://warcraft.wiki.gg/wiki/Torek%27s_Assault
+
+== Objectives ==
+Escort Torek on his attack against Silverwing Outpost and Duriel Moonfire, then report to Ertog Ragetusk at Splintertree Post.
+
+Take Silverwing Outpost.
+Return to Ertog Ragetusk at Falfarren River in Ashenvale.
+
+
+== Description ==
+Hey! <class>! Come here!
+My raiders and I are about to attack the Silverwing Outpost to the west. Our target is its leader, Duriel Moonfire. Scouts report the outpost is defended heavily with sentinels and warriors. The battle will be glorious!
+Do you want to share in the glory, <name>, and aid us? If so, then when it's over you can report our success to my superior, Ertog Ragetusk in Splintertree.
+What do you say. Are you with us?
+
+
+== Rewards ==
+
+You will also receive:
+
+10 15
+1,250 XP
++350 reputation with Orgrimmar
+
+
+== Progress ==
+Torek was sent on a mission against Silverwing Outpost. Was the attack successful?
+
+
+== Completion ==
+
+So Torek's attack was successful! Well done, <name>. Night elves are decent foes. A little skinny, but strong and fierce! I'm sure the battle was something to see...
+And I hope you gained a scar or two!
+
+
+== Notes ==
+On approach
+Torek says: With luck, we'll gain some good scars today.
+Torek says: Stay calm, people. We don't want to give away our position.
+Torek says: Steady, people. We'll raid soon enough.
+Torek says: These woods make my tusks itch...
+Torek says: They say Duriel is a fierce night elf. It'll be a good fight!
+Upon accept
+Torek says: Everyone ready?
+Torek says: Ok, let's move out!
+Splintertree Raiders cheer and head out.
+Escort Torek into the night elf base.
+
+Torek says: Prepare yourselves.  Silverwing is just around the bend.
+Torek says: For the Horde!
+Defeat Silverwing Sentinels, Silverwing Warriors, and eventually Duriel Moonfire.
+
+Torek says: Silverwing is ours!
+Torek says: Go report that the outpost is taken.  We will remain here.
+
+
+== Progression ==
+ [7-30] To the Rescue! (Completion)
+ [7-30] Blood of the Weak
+ [7-30] Pierce Their Heart!
+ [7-30] Ashenvale Outrunners
+ [7-30] Torek's Assault
+ [7-30] Dead Elves Walking
+ [7-30] Destroy the Legion
+ [7-30] Diabolical Plans (drop-quest)
+ [7-30] Never Again!
+ [7-30] Demon Duty
+ [7-30] Satyr Horns
+ [7-30] Playing With Felfire
+ [7-30] Tell No One!
+ [7-30] Dirty Deeds
+ [7-30] Rain of Destruction
+ [7-30] All Apologies
+ [7-30] Dread Head Redemption
+ [7-30] Mission Improbable
+ [7-30] Making Stumps
+ [7-30] Wet Work
+ [7-30] As Good as it Gets
+ [7-30] Security!
+ [7-30] Sheelah's Last Wish
+ [7-30] Gurtar's Request
+
+
+== Patch changes ==
+ Patch 7.3.5 (2018-01-16):  [Rugged Walking Staff] added as a reward.   
+ Patch 1.0.0 (2004-10-08): Added.   
+
+
+== See also ==
+Torek's Assault, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

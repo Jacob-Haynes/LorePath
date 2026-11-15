@@ -1,0 +1,55 @@
+title: This Is Going to Be Hard (3)
+revision: 6210738
+part: whole
+quest: 778
+url: https://warcraft.wiki.gg/wiki/This_Is_Going_to_Be_Hard_%283%29
+
+== Objectives ==
+Defeat the Fam'retor Guardian and bring Lotwil's Shackles of Elemental Binding back to Lotwil Veriatus.
+
+ [Lotwil's Shackles of Elemental Binding]
+
+
+== Description ==
+Haha! Done! The shackles are done!
+It's time, Lucien. It's time, Servo!
+Are you ready to bear witness to the perfect blend of alchemy, engineering, and the arcane, <name>?
+I shall summon forth a powerful elemental now. This is a groundbreaking day for all of us.
+
+
+== Rewards ==
+You receive:
+
+4850 XP (or 29 40 at level 70)
+ [Nifty Stopwatch]
+
+
+== Progress ==
+Not quite the outcome I was expecting. Could you get my shackles back?
+
+
+== Completion ==
+Thank you, <name>. That was quite an ordeal, wasn't it?
+I'm not sure what could have gone wrong. It was a good thing my magics were here to help send the creature back to its home plane.
+Perhaps a little token of appreciation for all your hard work... 
+
+
+== Progression ==
+ [37] Study of the Elements: Rock
+Required side chain:  [37] Coolant Heads Prevail ->  [37] Gyro... What?
+ [39] Study of the Elements: Rock
+ [42] Study of the Elements: Rock
+ [42] This Is Going to Be Hard
+Side quests:  [37] Liquid Stone,  [42] Stone Is Better than Cloth
+ [42] This Is Going to Be Hard
+ [45] This Is Going to Be Hard
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

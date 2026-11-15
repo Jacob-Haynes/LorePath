@@ -1,0 +1,53 @@
+title: Dukes of the Council
+revision: 6853619
+part: whole
+quest: 8332
+url: https://warcraft.wiki.gg/wiki/Dukes_of_the_Council
+
+== Objectives ==
+Bring 1 Large Brilliant Shard and 3 Abyssal Crests to Aurel Goldleaf in Cenarion Hold.
+
+ [Large Brilliant Shard] (1)
+ [Faded Abyssal Crest] (3)
+
+
+== Description ==
+We think it is possible to use a wind stone to ambush a duke of the Abyssal Council. To do this, however, one must commune through the wind stone, and convince the council you are a middle ranked leader of the Twilight's Hammer.
+Such a gambit requires a replica of the cult's medallion of station. I can create the medallion, but I will need a large brilliant shard, and crests worn by the Abyssal Templar.
+Bring these to me and I will do the rest.
+
+
+== Rewards ==
+You will receive:
+
+6600 XP
+ [Twilight Cultist Medallion of Station]
++150 reputation with Cenarion Circle
+
+
+== Progress ==
+Do you have the shard and the crests, <name>?  I will need them to make the twilight cultist's medallion of station.
+
+
+== Completion ==
+Ah, very good.  I've been working on the medallion - now with these last ingredients, I'll be done in just a few moments...
+There we are.  Here is the medallion, <name>.
+You'll need to wear this when you activate one of the Twilight's Hammer's wind stones.  Put this on, along with the rest of the twilight trappings, and the Abyssal Council will see you as one of their cultist underlings.
+
+
+== Progression ==
+ [60] Aurel Goldleaf
+ [60] Dukes of the Council
+ [60] Bor Wildmane
+ [60G] Signet of the Dukes
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.8.0 (2005-10-10): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

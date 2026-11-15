@@ -1,0 +1,48 @@
+title: The Brokering of Peace (Alliance)
+revision: 6346303
+part: whole
+quest: 8484
+url: https://warcraft.wiki.gg/wiki/The_Brokering_of_Peace_%28Alliance%29
+
+== Objectives ==
+Bring the Timbermaw Offering of Peace to King Magni Bronzebeard in Ironforge.
+
+ [Timbermaw Offering of Peace] (provided)
+Timbermaw Hold (Exalted)
+
+
+== Description ==
+Your deeds go beyond the tale of a simple hero, <name>. If you are a representative of your people, then your people are ones we would work to make peace with.
+Please - take this offering to the dwarven king that resides in a mountain of iron; I believe you call this city Ironforge. In times past, he had tried to make contact with us on behalf of his Alliance. It is now only fitting to acknowledge you as the key in your Alliance's efforts in brokering peace.
+
+
+== Rewards ==
+You will receive:
+
+9950 XP
++500 reputation with the Alliance
+
+
+== Progress ==
+<class>, you are welcomed in my domain. Ironforge should always be considered a home to a hero such as yourself. Now, what business do you have with me?
+
+
+== Completion ==
+Indeed, this is a most fortuitous turn of events. Were a lasting peace to be made with these creatures, this would certainly give us an advantage in the affairs of Kalimdor... one that the Night Elves cannot support on their own. I will notify the other leaders of the Alliance of this immediately, and further diplomats will be dispatched!
+As for you, <name>... you have shown courage in both diplomacy and in action. I thank you, as does the whole of the Alliance.
+
+
+== Notes ==
+After finishing the quest, Magni will yell the following:
+
+King Magni Bronzebeard yells: Let it be known that <name> - Alliance <class> - has earned the undying respect of Ironforge and the Alliance as a whole. <He/She> has engaged in great diplomacy with Timbermaw Hold and performed valiant actions for them on our behalf. <He/She> has gone above and beyond the call of duty. Three cheers for <name> - a true hero of the Alliance!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

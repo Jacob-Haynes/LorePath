@@ -1,0 +1,50 @@
+title: Dalar's Analysis
+revision: 6974982
+part: whole
+quest: 481
+url: https://warcraft.wiki.gg/wiki/Dalar%27s_Analysis
+
+== Objectives ==
+Take the rune-inscribed pendant to Dalar Dawnweaver at the Sepulcher.
+
+ [Rune-inscribed Pendant] (provided)
+
+
+== Description ==
+Take the pendant to Dalar Dawnweaver, perhaps he can shed some light on the wizards' plans.
+
+
+== Rewards ==
+You will receive:
+
+100 XP (or 60 at max level)
++10 reputation with Undercity
+
+
+== Progress ==
+Yes, <class>? What is it?
+
+
+== Completion ==
+Interesting, more machinations of the Kirin Tor, it would seem. This is a powerful artifact. It was used frequently by powerful wizards of the Kirin Tor to channel magical energies.
+That they are delivering so many to Ambermill indicates that they must be undergoing a project of some magnitude.
+I will see if I can pierce their shields and ascertain their intent.
+
+
+== Progression ==
+ [14] Border Crossings
+ [14] Maps and Runes
+ [14] Dalar's Analysis
+ [14] Dalaran's Intentions
+ [16] Ambermill Investigations
+ [22] The Weaver
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

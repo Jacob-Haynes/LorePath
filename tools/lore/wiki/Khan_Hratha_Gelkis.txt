@@ -1,0 +1,74 @@
+title: Khan Hratha (Gelkis)
+revision: 6974682
+part: whole
+quest: 1380
+url: https://warcraft.wiki.gg/wiki/Khan_Hratha_%28Gelkis%29
+
+== Objectives ==
+Maintain your reputation with the Gelkis, and bring the  [Maraudine Key Fragment] to Uthek the Wise in the Gelkis Village. 
+
+ [Maraudine Key Fragment]
+Gelkis Clan Centaur (Friendly)
+ [War Horn Mouthpiece]
+
+
+== Description ==
+<Name>, you helped us against the Magram. Now, help us beat the Maraudine! Kill the head of their clan, Khan Hratha!
+To face him, blow the Maraudine War Horn. It is atop a high bluff in the Valley of Spears.
+But to blow the horn, you must gain a warhorn mouthpiece. These are rare, carried only by trusted Maraudine centaur.
+After the horn is blown, centaur will come. Kill them until Hratha appears.
+Khan Hratha holds the piece of... a key. Bring it to me... 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Gelkis Marauder Chain]
+ [Uthek's Finger]
+You will also receive:
+
+4,300 XP
+
+
+== Progress ==
+Is Khan Hratha dead?  Do you have the key fragment? 
+
+
+== Completion ==
+He is dead!  Khan Hratha is dead! And now the Maraudine will fall! When the Gelkis rule this land, <name>, we will remember you. And the spirits of the earth will sing your name for all time.
+
+
+== Notes ==
+The player first needs to loot a  [War Horn Mouthpiece], which can drop from any of the Maraudine in the Valley of Spears, and then use the Maraudine War Horn overlooking the north end of the valley. Blowing the horn spawns waves of centaur. The first consists of two Maraudine Khan Guards.
+
+Maraudine Khan Guard yells: Intruders at the Horn! Don't let them escape!!
+The second wave consists of another two Khan Guards.
+
+Maraudine Khan Guard yells: Kill the intruders!
+The final wave consists of Khan Hratha himself, another Khan Guard, and a Maraudine Khan Advisor.
+
+Khan Hratha yells: I am here! Come face me, if you dare!
+
+		
+		
+		
+		
+
+
+== Progression ==
+ [35] Strange Alliance /  [33] Gelkis Alliance
+ [32] Raid on the Kolkar
+ [35] Stealing Supplies
+ [37] Ongeku
+ [37] Khan Jehn
+ [42] Khan Hratha
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

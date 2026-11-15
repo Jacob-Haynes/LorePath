@@ -1,0 +1,52 @@
+title: A Friend of the Family (2)
+revision: 6896139
+part: whole
+quest: 98191
+url: https://warcraft.wiki.gg/wiki/A_Friend_of_the_Family_%282%29
+
+== Objectives ==
+Bring the Menethil Statuette to Lord Grayson Shadowbreaker in the Cathedral of Light.
+
+ [Menethil Statuette] (provided)
+
+
+== Description ==
+King Terenas was a good man. A devout man. Beloved by his people, and truly the reason we have this Alliance at all.
+The irony is he was humble--he hated these sorts of memorials, and so precious few exist. And of those, few survived Lordaeron's fall.
+It seems the Light has coalesced in this statuette. It would be best kept in the Cathedral of the Light in Cathdral Square[sic], in the center of the city. Bring it to Lord Grayson Shadowbreaker for safekeeping.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Knight's Lance]
+ [Royal Dagger]
+You will also receive:
+
+200 XP
+
+
+== Progress ==
+...
+
+
+== Completion ==
+...
+
+
+== Notes ==
+...
+
+
+== Progression ==
+...
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

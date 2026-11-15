@@ -1,0 +1,43 @@
+title: Troll Necklace Bounty
+revision: 6971159
+part: whole
+quest: 2880
+url: https://warcraft.wiki.gg/wiki/Troll_Necklace_Bounty
+
+== Objectives ==
+Bring 5 Troll Tribal Necklaces to Fraggar Thundermantle in Aerie Peak.
+
+ [Troll Tribal Necklace] (5)
+
+
+== Description ==
+Get this straight, <race> - we are NOT part of the Alliance! The Wildhammers are independent, relying on deeds and actions to prove one's worth, rather than the blather of those who use jibber-jabber to bolster their do-nothing attitudes!
+If you're looking for friends here, then prove your worth to us first! The foul trolls that choke the hillsides of the Hinterlands sometimes carry tribal necklaces. Bring five of them to me, and we'll mark it down as a step in the right direction for you.
+
+
+== Rewards ==
+You will receive:
+
+65
+5,550 XP
+
+
+== Progress ==
+I want five of those tribal necklaces the trolls carry on them.  If you need it spelled out further, then killing one of them stands you a good chance of getting one!
+Prove your worth to the Wildhammers!
+
+
+== Completion ==
+Now that's what I am talking about!  See - these necklaces prove that you're willing to get your hands dirty.  We Wildhammers value that in those we associate with.
+You keep this up, and you'll be in our good graces yet.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 2.0.3 (2007-01-09): No longer grants reputation to the Wildhammer Clan faction.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

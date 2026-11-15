@@ -1,0 +1,44 @@
+title: Further Corruption
+revision: 6313680
+part: whole
+quest: 4906
+url: https://warcraft.wiki.gg/wiki/Further_Corruption
+
+== Objectives ==
+Eridan Bluewind in Felwood wants you to kill 8 Jadefire Hellcallers, 8 Jadefire Betrayers, 8 Jadefire Tricksters, and Xavaric. Return to Eridan when the task is completed.
+
+Jadefire Trickster (8)
+Jadefire Betrayer (8)
+Jadefire Hellcaller (8)
+Xavaric
+
+
+== Description ==
+A second encampment of satyrs threatens the land of Felwood towards the north, led by the cruel Xavaric. The vile betrayers and tricksters feed upon the corruption of the native creatures of Felwood.
+Xavathras and his minions were only part of a larger plan—to cultivate a corrupted moonwell, and then provide the spoils to Xavaric.
+Now that Xavathras is out of the way, finish this task, <name>. Head to the north and defeat Xavaric.
+
+
+== Rewards ==
+You will receive:
+
+5450 XP (or 33 at max level)
+ [Breezecloud Bracers]
+
+
+== Progress ==
+Please, put and end to the suffering of Felwood's creatures.
+
+
+== Completion ==
+Thank you for all you have done, <name>. May Elune protect you and guide you on the path ahead.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

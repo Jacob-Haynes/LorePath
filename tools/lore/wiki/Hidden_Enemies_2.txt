@@ -1,0 +1,74 @@
+title: Hidden Enemies (2)
+revision: 6176690
+part: whole
+quest: 5727
+url: https://warcraft.wiki.gg/wiki/Hidden_Enemies_%282%29
+
+Hidden Enemies is the part of a small Horde quest chain that involves infiltrating the Burning Blade at the request of Thrall. In this quest, Thrall asks the player to take the Lieutenant's Insignia to Neeru Fireblade to gain his trust and so get further insight into the plans of the Burning Blade.
+
+
+== Objectives ==
+Take the Lieutenant's Insignia to Neeru Fireblade and speak to him. Gauge if he believes you are a member of the Burning Blade and then return to Thrall in Orgrimmar.
+
+Gauge Neeru Fireblade's reaction to you being a member of the Burning Blade
+ [Lieutenant's Insignia] (provided)
+
+
+== Description ==
+Now let us see if this insignia you found is worth the effort.
+There is a warlock within the city who believes he has my trust. He does not know that I realize where his true loyalties lie. He is in fact the leader of the Burning Blade. But do not rush off to do battle with him; he has a purpose, and we shall use him against our enemies.
+Take this insignia to him in the Cleft of Shadow here in Orgrimmar, speak to him and see if he believes you are one of his own, then return to me here.
+
+
+== Rewards ==
+You will receive:
+
+460 XP
+75 reputation with Orgrimmar
+
+
+== Progress ==
+Well, <class>? Does he believe our ploy, or are things worse than I had first estimated?
+Proving valuable to Neeru will make our infiltration of the Shadow Council much easier. He will have plenty of information that we can use to route out those who would destroy all we have built in Durotar.
+
+
+== Completion ==
+Excellent! Most excellent, <class>!
+What you have done this day is only the first step in a much broader foundation--a foundation that we will build the destruction of the Shadow Council on, once and for all.
+Tell me all he said... and leave not one word out--it may be more important than you realize.
+
+
+== Notes ==
+Head to the Cleft of Shadow to find Neeru in his tent next to the entrance to Ragefire Chasm. A new dialogue option will have become available:
+
+ You may speak frankly, Neeru...
+Ah, one of our own. It is good to see our numbers are growing so rapidly that I can no longer keep track of the faces of our members.
+That fool Thrall thinks I am working hard to cleanse the image of warlocks and prove we are his servants. Idiot! The Burning Legion will make ash of this entire world after it drains it completely.
+ It is good to see the Burning Blade is taking over where the Shadow Council once failed.
+Naive fool. The Burning Blade IS the Shadow Council! There are many cults and organizations under the Council's rule, but all of them are just extensions of their will. I may lead the Burning Blade, but I am still just as much a pawn to the Council as you are to me!
+Look at the Searing Blade--most of them think they are becoming the next rising group of powerful warlocks that they will replace the Shadow Council.
+ So the Searing Blade is expendable?
+Haha! Save for their leaders--the satyr, Bazzalan, and the warlock Jergosh--yes, all of them. That is why I constantly send Thrall's worshippers at them. It gives Thrall the impression that I am weeding out the evil in the bowels of his great city. The victory is in reality two-fold: kill Thrall's faithful and test the strength of those in the Searing Blade to see if they are truly worthy of joining me.
+ If there is anything you would have of me...
+I will make it known to you. You are obviously already proving yourself in our ranks to become a lieutenant so quickly. Perhaps you can return to me later and I will have tasks for you. The council adores those skilled in the arcane, but servants of all kinds are always welcome, no matter their profession.
+At this point, you will get a message telling you that your quest is complete. Now return to Thrall and tell him what you've learned from this interesting conversation.
+Neeru offers the quest  [16D] Slaying the Beast that you might want to accept, as it takes you into Ragefire Chasm, where the next step in this quest chain will also take you.
+
+
+== Progression ==
+
+ [12] Hidden Enemies
+ [12] Hidden Enemies
+ [16D] Hidden Enemies
+ [15] Hidden Enemies
+ [16] Hidden Enemies
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,40 @@
+title: Under the Chitin Was...
+revision: 5613469
+part: whole
+quest: 1185
+url: https://warcraft.wiki.gg/wiki/Under_the_Chitin_Was...
+
+== Completion ==
+Hey, it's you again!  Well, I mean you - as in the you that is <name>!  Yes - that you!
+Hey, let me start over!
+That object you found in Silithus - it was in fact a book.  It was a journal written in a very ancient dialect of what we now call the Darnassian tongue.  It'll take a while, but I'm going to go over it very thoroughly.  I thought you should know that what you found was extremely valuable for the Circle.
+The den mother's all excited and everything!
+
+
+== Rewards ==
+You will receive:
+
+4350 XP (or 18 at level 70)
++150 reputation with Cenarion Circle
+
+
+== Progression ==
+ [55] The New Frontier
+ [55] The New Frontier /  [55] The New Frontier
+ [55] Rabine Saturna /  [55] Rabine Saturna
+ [55] Wasteland
+ [55] The Spirits of Southwind
+ [57] Hive in the Tower
+ [57] Umber, Archivist
+ [57] Uncovering Past Secrets
+ [57] Under the Chitin Was...
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

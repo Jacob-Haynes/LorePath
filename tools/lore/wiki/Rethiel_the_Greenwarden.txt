@@ -1,0 +1,6 @@
+title: Rethiel the Greenwarden
+revision: 6945837
+part: intro
+url: https://warcraft.wiki.gg/wiki/Rethiel_the_Greenwarden
+
+Rethiel the Greenwarden is a bog beast quest giver located at Greenwarden's Grove in the Wetlands.

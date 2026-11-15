@@ -1,0 +1,7 @@
+title: Anthion Harmon
+revision: 6572984
+part: intro
+url: https://warcraft.wiki.gg/wiki/Anthion_Harmon
+
+Anthion Harmon is a human ghost quest giver located outside Stratholme in the Eastern Plaguelands.
+Finding him was the objective of the quest  [60] In Search of Anthion, which formerly began the third questline for the 0.5 dungeon set upgrade. To see him, one had to use the  [Extra-Dimensional Ghost Revealer] outside Stratholme to begin the quest  [60D] Dead Man's Plea, or as it is commonly known, the Strat 45. See Baron in 45.

@@ -1,0 +1,47 @@
+title: Land Ho!
+revision: 6841617
+part: whole
+quest: 663
+url: https://warcraft.wiki.gg/wiki/Land_Ho%21
+
+== Objectives ==
+Talk to Captain O'Breen in Faldir's Cove.
+
+
+== Description ==
+Lolo sees a tiny <race>! Always on the lookout, Lolo is!
+Welcome to Faldir's Cove. Captain O'Breen said we'd only be here for a few hours. Just long enough to gather the treasure and get back to Booty Bay.
+But Lolo thinks we're going to be here a lot longer than that. We lost the other two ships from our formation. Poor Spirit of Silverpine and Maiden's Folly. On the bottom of the sea they rest now!
+Lolo suggests you talk to Captain O'Breen if you plan on sticking around here.
+
+
+== Rewards ==
+You will receive:
+
+700 XP
++25 reputation with Booty Bay
++12 reputation with Gadgetzan, Ratchet, and Everlook
+-125 or -25 reputation with Bloodsail Buccaneers
+
+
+== Completion ==
+Ahoy, matey.
+'Twas a horrible mess. Seahorn will have my ship if he finds out what went down.
+One of the Professor's contraptions indicated the lost treasure was near this cove. I brought the Harbinger in to dock and signaled for the Spirit of Silverpine and Maiden's Folly to follow suit.
+Then the sea rumbled. The tides lowered and the two ships crashed into the reef.
+It's not just a reef. Something's down there....
+Help my crew out and you'll be rewarded handsomely.
+
+
+== Notes ==
+Completing this quest opens  [40] Deep Sea Salvage,  [40] Sunken Treasure, and  [40] Drowned Sorrows.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

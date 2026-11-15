@@ -1,0 +1,57 @@
+title: Reclaiming Goods
+revision: 5636171
+part: whole
+quest: 25802
+url: https://warcraft.wiki.gg/wiki/Reclaiming_Goods
+
+== Objectives ==
+Search the crates and barrels at the coastal Murloc camps.
+
+
+== Description ==
+Not long ago a merchant vessel, the Blind Princess, was raided by Murlocs. Although the ship escaped intact, much of its cargo was dragged overboard by the creatures, including a very valuable statuette of Terenas Menethil. We want that statuette recovered.
+Search the coastal Murloc hovels for crates, barrels and other evidence of lost cargo. Find the  [Menethil Statuette] and return it to me.
+
+
+== Rewards ==
+ [Healing Potion] x5
+
+
+== Completion ==
+This crate is covered with clawed scratches, and the marks of water damage.  Prying it open reveals soggy and rotted straw, as if something of value was stored in the crate.  You search through the straw...
+...and find an armload of red-colored bottles. 
+
+
+== Notes ==
+Pick up  [10-30] Claws from the Deep before leaving. The murlocs can be killed while hunting down the statuette.
+
+
+== Progression ==
+ [10-30] Onwards to Menethil (optional breadcrumb from Slabchisel's Survey)
+Complete all of:
+ [10-30] Assault on Menethil Keep
+From Karl Boran and Derina Rumdnul:
+ [10-30] When Life Gives You Crabs
+Side quest:  [10-30] A Mother's Worries
+ [10-30] Reclaiming Goods
+Side quest:  [10-30] Claws from the Deep
+ [10-30] The Search Continues
+ [10-30] Search More Hovels
+ [10-30] Return the Statuette
+From First Mate Fitzsimmons:
+ [10-30] The Third Fleet
+ [10-30] Cursed to Roam
+ [10-30] The Cursed Crew
+ [10-30] Lifting the Curse
+ [10-30] The Eye of Paleth
+ [10-30] Swiftgear Station (optional breadcrumb to Swiftgear Station)
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): New version of quest for Cataclysm.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

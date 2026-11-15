@@ -1,0 +1,49 @@
+title: The Sacred Flame (quest)
+revision: 6823898
+part: whole
+quest: 1195
+url: https://warcraft.wiki.gg/wiki/The_Sacred_Flame_%28quest%29
+
+In The Sacred Flame, you will journey to Ashenvale to steal a vial of water from a moonwell, which is needed to douse a sacred fire of the centaur in Thousand Needles.
+
+
+== Objectives ==
+Return a Filled Etched Phial to Zangen Stonehoof in Thunder Bluff.
+
+ [Filled Etched Phial]
+
+
+== Description ==
+The Galak centaur in the Thousand Needles are protecting an artifact from the time of the centaurs' creation.
+We would like to retrieve it, but we require a phial of water from one of the night elves' moonwells.
+To collect the water, you will first need to obtain one of the phials carried by the dryads near the Raynewood Retreat in the heart of Ashenvale Forest. There is a moonwell near the western bank of the Falfarren River, south of the main road, where you can fill the phial.
+
+
+== Progress ==
+Once we have the filled phial, we can send it along to my associate, Rau, in the Thousand Needles. He was the one who requested the phial of water, so he'll better know how we can make use of it.
+
+
+== Completion ==
+Very good. This should fill Rau's request just fine. Could you deliver this to him? You might enjoy spending some time out in the Needles.
+
+
+== Notes ==
+From Splintertree Post in Ashenvale, head west along the road. When the road splits off to the south, continue on the western fork. When it splits again, this time to the north, take the northern fork. This should bring you to Raynewood Retreat, where many dryads called Laughing Sisters are wandering - around coordinates . Kill the dryads until you find an  [Etched Phial].
+Once you have the empty phial, you need to find the Moonwell. It can be found southwest of the bridge that crosses the Falfarren River - coordinates are . To fill the phial, right click it while standing in the moonwell.
+Take the  [Filled Etched Phial] back to Zangen Stonehoof in Thunder Bluff to turn in the quest.
+
+
+== Progression ==
+ [25] The Sacred Flame
+ [29] The Sacred Flame
+ [29] The Sacred Flame
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,36 @@
+title: Seeping Corruption (3)
+revision: 6708658
+part: whole
+quest: 3570
+url: https://warcraft.wiki.gg/wiki/Seeping_Corruption_%283%29
+
+== Rewards ==
+You will receive:
+
+75
+5100 XP (or 30 at max level)
++100 or +250 reputation with Undercity
+
+
+== Completion ==
+I never dreamed the elixir would take hold that quickly. Thank you, <name>. I will get to work on the rest of these samples right away. I'm sure they'll be usable by the Lady Sylvanas and the Forsaken soon enough.
+
+
+== Notes ==
+Thersa Windsong dies after drinking the provided elixir.
+
+
+== Progression ==
+ [52] Seeping Corruption
+ [52] Seeping Corruption
+ [52] Seeping Corruption
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

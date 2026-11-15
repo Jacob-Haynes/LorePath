@@ -1,0 +1,52 @@
+title: A Hero's Welcome (Classic)
+revision: 6863414
+part: whole
+quest: 4266
+url: https://warcraft.wiki.gg/wiki/A_Hero%27s_Welcome_%28Classic%29
+
+== Objectives ==
+Speak with Shandris Feathermoon in Feathermoon Stronghold.
+
+
+== Description ==
+<Name>, General Shandris Feathermoon would like to speak with you personally. No doubt she wants to thank you for your service to the Stronghold, but I do know that she also wants to talk to you about the insect creatures that you and Raschal faced in southern Feralas. The reports of those Zukk'ash insects are... frightening, to say the least.
+General Feathermoon is waiting for you in the main compound.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Ceremonial Elven Blade]
+ [Sanctimonial Rod]
+You will also receive:
+
+6,050 XP
++200 or +500 reputation with Alliance
+
+
+== Completion ==
+<Name>, I give you my warmest thanks for the aid you've given us. Your bravery in the face of overwhelming odds has warranted a reward worth a thousand times greater. Nevertheless, I hope you accept this on behalf of the entire Stronghold.
+Now, if I may... I'd like to ask for your aid one more time. In light of the discovery of the Zukk'ash hive here in Feralas, I think you're the best choice for this mission. 
+
+
+== Progression ==
+ [43] The Missing Courier
+ [43] The Missing Courier
+ [44] Boat Wreckage
+ [44] The Knife Revealed
+ [44] Psychometric Reading
+ [44] The Woodpaw Gnolls
+ [46] The Writhing Deep &  [44] Thalanaar Delivery
+ [46] Freed from the Hive
+ [46] A Hero's Welcome
+ [46] Rise of the Silithid
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

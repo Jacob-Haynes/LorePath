@@ -1,0 +1,63 @@
+title: Forces of Jaedenar (Classic)
+revision: 6176592
+part: whole
+quest: 5155
+url: https://warcraft.wiki.gg/wiki/Forces_of_Jaedenar_%28Classic%29
+
+== Objectives ==
+Enter Jaedenar and slay 4 Jaedenar Hounds, 4 Jaedenar Guardsmen, 6 Jaedenar Adepts, and 6 Jaedenar Cultists before returning to Greta Mosshoof in Felwood.
+
+Jaedenar Hounds slain (4)
+Jaedenar Guardians slain (4)
+Jaedenar Adepts slain (6)
+Jaedenar Cultists slain (6)
+
+
+== Description ==
+If I am to trust you in this matter, you will first have to prove yourself.
+I must know that you are an enemy of the Shadow Council--the ones responsible for many evils here and abroad.
+Travel deeper into Felwood. To the west you will see a path leading to Jaedenar. It is there that the Council plots with the Burning Legion.
+Enter the depths of one of the corrupted Barrow Dens they inhabit and slay their kind. Return to me after you've done this. Then I will know you truly seek to help us. -- Greta Mosshoof
+
+
+== Rewards ==
+7050 XP
+
+
+== Progress ==
+How goes your fight, <name>? I know the shedding of blood as proof of honor can be disgusting to some, but you must understand that it serves two goals: you make my task easier by hurting their numbers, and we gain a respect for each other that will only make us stronger in times to come.
+I hope you understand.
+
+
+== Completion ==
+Good, <name>! With their numbers weakening, we can further press them.
+How was your first taste of their power? Were they as strong as you thought they would be? Stronger? Or perhaps they were no challenge for you at all. Wouldn't that be something?
+We can discuss the details of your exploits later. There are other things we must focus on now.
+
+
+== Notes ==
+All of the mobs that you are required to kill can be found in Jaedenar which is located North-West from the Emerald Sanctuary. There is a path headed West off of the main road that leads directly there.
+The general co-ordinates for the mob locations are (38, 60). There are also two caves that lead underground in this area, and the lower of the two also houses Adepts, Cultists, Guardians, and Hounds.
+
+
+== Progression ==
+ [51] Forces of Jaedenar
+ [52] Collection of the Corrupt Water
+ [52] Seeking Spiritual Aid
+ [54] Cleansed Water Returns to Felwood
+ [55] Dousing the Flames of Protection
+ [58] A Final Blow
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+Forces of Jaedenar, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

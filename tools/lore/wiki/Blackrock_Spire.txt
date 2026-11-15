@@ -1,0 +1,6 @@
+title: Blackrock Spire
+revision: 6909554
+part: intro
+url: https://warcraft.wiki.gg/wiki/Blackrock_Spire
+
+Blackrock Spire is a Dark Iron fortress located in the upper levels of Blackrock Mountain. It is also a dungeon hub divided into two large sections, Lower and Upper Blackrock Spire. The lower spire is inhabited by the Dark Horde - orcs, ogres and forest trolls and their allies, the black dragonflight led once by the son of Deathwing, Nefarian. The upper spire comprises members from the Ironmarch. The uppermost sections of the Spire lead into Blackwing Lair and Blackwing Descent.

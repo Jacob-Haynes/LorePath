@@ -1,0 +1,50 @@
+title: Looking Further
+revision: 6404319
+part: whole
+quest: 248
+url: https://warcraft.wiki.gg/wiki/Looking_Further
+
+== Objectives ==
+Climb the intact watch tower beside Stonewatch Keep.
+Find a suitable container to place the  [Glyph of Azora].
+
+ [Glyph of Azora] (provided)
+
+
+== Description ==
+I have been watching the Tower of Ilgalar, and can detect that Morganth is in conflict with the Orcs in Stonewatch Keep. I do not know the reason behind their contention, but you may aid me in unraveling this mystery.
+Take another Glyph of Azora, then go to the top of the intact watch tower beside Stonewatch Keep.
+Find a suitable object on which to place the Glyph. A chest or a jar—some place where the glyph will not be noticed—will suit my purpose. 
+
+
+== Rewards ==
+You will receive:
+
+1750 XP
++150 reputation with Stormwind
+
+
+== Progress ==
+This jar once held a foul-smelling liquor, but now lies empty and forgotten on a pair of barrels.
+
+
+== Completion ==
+It is a suitable vessel for the Glyph of Azora, allowing Theocritus to delve into the minds within Stonewatch Keep. 
+
+
+== Progression ==
+ [23] Theocritus' Retrieval
+ [21] A Watchful Eye
+ [22] Looking Further
+ [26] Morganth
+
+
+== Patch changes ==
+ Hotfix (2010-12-07): No longer being offered to players by the Old Lion Statue in Redridge Mountains. 
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

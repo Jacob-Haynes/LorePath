@@ -1,0 +1,184 @@
+title: Dead Man's Plea
+revision: 6544156
+part: whole
+quest: 8945
+url: https://warcraft.wiki.gg/wiki/Dead_Man%27s_Plea
+
+Dead Man's Plea is the second step in the quest chain to upgrade your Dungeon Set 1 Boots, Shoulders, and Pants into Dungeon Set 2, and is commonly known as the "45 minute Baron run". 
+
+
+== Objectives ==
+Go into Stratholme and rescue Ysida Harmon from Baron Rivendare.
+
+Ysida Freed
+
+
+== Description ==
+I'll provide you the information you ask for, <name>. But more pressing matters are at hand.
+My beloved wife has been taken prisoner by Rivendare's undead scum.
+I strongly objected to her joining the Argent Dawn's foolish crusade, yet that's not of importance anymore. You must finish what I attempted to do, you must rescue Ysida from the clutches of the Baron!
+
+
+== Rewards ==
+You will receive:
+
+15800 XP (or 96 at max level)
++500 reputation with Argent Dawn
+ [Ysida's Satchel]
+
+
+== Progress ==
+Tell me, is Ysida alive?
+
+
+== Completion ==
+Thank you for rescuing me... I feared for my life.  Please accept this as a small token of my gratitude.
+Anthion is... no... he can't be...
+
+
+== Details ==
+Getting to the Baron in 45 minutes is one of the toughest objectives in game at level 60. It requires a concentrated group of five working together very well. Everyone should have their Dungeon Set 1 (or equivalent) equipment; there's not much chance you'll succeed with lesser gear.
+
+
+=== Ideal party make-up ===
+Conventionally, your group must have a priest;  [Shackle Undead] is absolutely required. In addition, a tank and a Mage are virtually required as well. A Rogue is a good addition, as is a Warlock, because high DPS is needed to go through Stratholme as fast as possible.  A Druid would be useful for the  [Mark of the Wild] buff, and a Shaman or Paladin would be excellent as an off tank; any of those would also be useful for backup healing and resurrecting, especially Druids with their in-combat resurrecting.)
+You could also make a DPS party, where you substitute out the priest in favor of two healing/DPS hybrid classes (druid, shaman, or paladin).  For example: Warrior, Rogue, Mage, Druid, Shaman would have a good chance of success even without the ability to shackle.
+Keep in mind when creating your party that different classes require different amounts of downtime, which you must strive to avoid. Warriors and rogues make good choices for this encounter because they have no mana. Druids are also an excellent choice. They can regenerate mana while in a feral form, so if you have a balance druid, for example, he can nuke until out of mana, then switch to cat form and melee while his mana regenerates. A druid can also Innervate the healer, further reducing your downtime, or backup heal while the Priest is drinking. There are, however, a few things your party must have:
+
+A tank (obviously). Ideally, this is either a Warrior or a feral Druid. A paladin or shaman may also work, but Paladins use mana to hold aggro, and they may need to drink too often.
+A healer. A Priest is most desired, due to the ability to shackle undead; however, a Druid or healing Paladin/Shaman should also work.
+AoE. You only need this for the rat trap and the skeleton zerg. A Mage or Warlock works, as does a Hunter (volley, if well aimed), Paladin (with retribution/consecrate) or Druid (hurricane, if not interrupted - this can be accomplished using the Barkskin ability).
+Limited crowd control. Ideally the group will focus fire mobs one at a time. A Priest, Mage, Warlock (succubus), Hunter, or Rogue (if he's quick to sap) all fill this slot.
+
+
+=== General points on buffs ===
+The primary casters should stock up on Major Mana Potions.  (Around 10 per caster is a very safe number to have.)
+Everyone should carry about 5Major Healing Potions. Ideally everyone should have their First Aid skill at 300 and be able to create and use Heavy Runecloth Bandages as needed. Use First Aid liberally to save the healer's mana for important heals!
+It might also be worth farming  [Stratholme Holy Water] beforehand if the party's DPS is going to be low.
+Ensure all abilities with cooldowns are available before you start.  (Inner Focus, Innervate, racial abilities, etcetera)  You should rebuff and mana up immediately before opening the gate.
+
+
+=== Normal pulls ===
+
+The biggest challenge in a 45-minute run is that you are constantly pulling mobs. When your current target is between ¼ and ½ life, someone starts to pull the next mob so there is no downtime. The only time you should not do this is when the entire party needs to eat, drink and rebuff. As soon as the first group member is filled up again, start pulling again. It does not really matter who pulls, as long as it is done swiftly. The general policy on eating and drinking is "little and often".  You do not need full health or mana, and it'll slow you down if you try to fully recharge after each fight.
+On all the non-boss mobs, it is recommend that the tank tanks with either a two-handed weapon or dual-wields. This will add more DPS, and only increases damage done to you by a minimal amount. As long as the tank remembers to use a shield on the bosses, there should be no problem. 
+When pulling, use crowd control as usual. Do not use sap unless you have two Rogues, because it will take too much time to stealth around the target. You should always kill the Eyes of Naxxramas first, because they summon assistance. The casters should be silenced as much as possible to decrease damage taken. 
+
+
+=== Using an offtank ===
+If you have an offtank (OT), one DPS should be assigned to assist the MT and one to assist the OT.  When you have multiple mobs attacking, they take different targets.  Whichever group finishes first should move on to another target, the choice of which should be made as follows: highest preference goes to an attacking mob that isn't being burned down by the other group; next is the mob that is being burned down by the other group; last is any shackled or sheeped mobs.
+One strategy has the two DPS's trading off which tank they assist after each kill in order to allow them to drink/eat between each fight.  The DPS assigned to the maintank on a pull moves up to make the next pull and assist the offtank.  The DPS that was on the offtank drinks/eats and then assists the maintank.  You would rotate as follows:
+
+Pull 1: MT pulls, OT pulls, DPS 1 assists OT.
+Pull 2: MT pulls, OT pulls, DPS 1 drinks/eats and assists MT, DPS 2 assists OT.
+Pull 3: MT pulls, OT pulls, DPS 1 assists OT, DPS2 drinks/eats and assists MT.
+Pull 4: same as Pull 2, etc.
+This strategy works based on the presumption that the MT can take more damage than the OT, so he requires less assistance and can withstand having no backup DPS for a while.
+
+
+=== Looting ===
+It's recommended to not loot trash mobs, as that consumes a surprising amount of your very limited time. Only loot the minibosses, and even then need/greed as fast as possible.  (don't pass and wait for the roll!)
+
+
+=== Wipes ===
+Wiping is very painful in a 45-minute run, and more often than not necessitates a reset.  Even so, it's definitely possible to wipe and still finish the run in time.  If it looks like you're going to wipe, do it quickly; trying to grind out the win wastes too much time, and it's quicker to resurrect and rebuff than to drag out a painful fight.
+Of course you really should just avoid wiping in the first place.  The most common wipes are due to accidental proximity pulls, and those are easy to do in a 45-minute run because of the number of mobs left untouched.  Just be aware of your position and surrounding mobs at all times and you should be okay.  (Turning on the mob health bars is a great way to see mobs that you normally wouldn't see until you ran into them.)
+
+
+=== Baroness Anastari ===
+
+Kill all the mobs in the entry courtyard. You can leave the ones to the right of her ziggurat, however the banshee and crypt crawler to her left must be killed. Now, pull her to the courtyard. You should be nuking her down as fast as possible, apart from that it is business as usual. The higher your tank's shadow resistance, the easier it will be. You should aim to have her down within 8 minutes. 
+Afterwards, you can clear the ziggurat with just a Mage—have the Priest throw a shield and a renew on him and he's good to go.  This frees the entire rest of the party to start working on the mobs leading to Nerub'enkan.
+If you have a good Hunter, the Baroness can be soloed at maximum range. Let the hunter engage her at maximum range, and DPS her to death. If everyone else in the party is behind the hunter, she will not move or mind control anyone, making this a very easy fight. The hunter will need heals and shields, but is easily kept up by one priest.
+
+
+=== Nerub'enkan ===
+To reach him, clear all mobs on the right side of the street leading to his ziggurat. Stay on the right side of the street to avoid some mobs. You do not have to kill the mobs directly to the right of his ziggurat though. Kill him as usual, he should be down within 13 minutes of starting. Again, only the mage needs to clear the ziggurat.  Everyone else moves on to clear the rat trap, if the Priest has Holy Nova it's a good AoE attack for this if there aren't any other AoEers in the group. 
+
+
+=== Maleki the Pallid ===
+
+On the other side of the rat trap, pull the human mobs on the right and AoE. You can safely ignore the ghouls on the left. Afterwards, clear out all the patrolling mobs, such as gargoyles, banshees and crypt crawlers. Now, proceed up to the right side of the fountain and clear the space leading to the ziggurat. Be careful not to proximity-pull the ghouls around the corner to the right. You can now AoE the mobs to the left of the steps, and ignore the ones to the right. Then proceed with the ones on the steps. 
+Maleki should be engaged on top of the steps. Move the whole group up there to avoid line of sight issues. Kill Maleki as usual. You should aim to have him down within 23 minutes of starting time. As usual, send in the Mage to clear out the ziggurat while the rest of the party heads to the Gauntlet.
+
+
+=== The Gauntlet ===
+After killing Maleki, fight your way down to the right wall. The ghouls to the left of the gate can be skipped, but take out the ones to the right. Ignore Magistrate Barthilas, he is optional. You can come back and do him after finishing the quest though. As soon as everyone has entered the gates, you start pulling. Do not wait for the mobs to walk to you, but pull them as fast as possible. Start with the mobs to the right and in the center, and kill the ones on the left last. It is recommended to fight the final 4-5 mobs outside the gate, so that you have better visibility. It is essential that the bile adds are dealt with as fast as possible, since they will concentrate on the healer. 
+It's recommended that you kill a Venom Spewer as the final mob. Eat and drink before killing him. Once he is dead, Ramstein the Gorger will come out of the slaughterhouse. When you have killed him, wait until you have killed the wave of skeletons. Loot him as soon as you are going to enter the slaughterhouse to kill the Baron. 
+The five elite Black Guard Sentries can be dealt with in two ways.  If you have two AoE players (mages/warlocks): shield the casters, frost nova, and AoE.  Otherwise, shackle one and focus on MT and OT targets. 
+
+
+=== Baron Rivendare ===
+
+You do not have to kill the Baron in 45 minutes, you only have to engage him in 45 minutes. However, if you wipe after engaging him, you will fail the quest. From this point, it is exactly the same as on a normal Baron run. After you have taken him down, you can talk to Ysida and finish the quest.
+
+
+== Tips ==
+The melee players should get used to using their "assist" keybinding to assist whoever is pulling/tanking.  The "assist" keybinding (and tabbing between mobs) enables faster and more reliable target shifting than clicking does.  (The screen is constantly changing, sometimes making it hard to pick out the right targets.)
+At the Gauntlet, if you have a Shaman in your group, dropping Poison Cleansing totems is advised.
+Paladins' Divine Shields and Mage's Iceblocks will remove the 45 minute timer/debuff, so Paladins and Mages will have to rely on someone else (or mods) to keep track of the time if they use those spells once.
+At Baroness Anastari, do not attempt to conserve mana, energy, or rage, since if you get mind controlled, she'll use it against your party.  Likewise, use your racial and group fearing abilities as soon as possible.
+It is really helpful to do a normal baron run first and check which trash mobs packs can be avoided - which are actually about half of them if everyone in the party pays attention to where they're walking.
+
+
+== Notes ==
+This is the second step in the quest chain to upgrade your Dungeon Set 1 Boots, Shoulders, and Pants into Dungeon Set 2.
+
+
+== Progression ==
+ [60D] An Earnest Proposition
+ [60] A Supernatural Device
+ [60] The Ectoplasmic Distiller
+ [60] Hunting for Ectoplasm
+ [60] A Portable Power Source
+ [60] A Shifty Merchant
+ [60] Return to Deliana /  [60] Return to Mokvar
+ [60D] Just Compensation
+ [60] In Search of Anthion
+ [60D] Dead Man's Plea
+ [60] Proof of Life
+ [60] Anthion's Strange Request
+ [60D] Anthion's Old Friend
+ [60D] Falrin's Vendetta
+ [60D] The Instigator's Enchantment
+ [60D] The Challenge
+ [60D] Anthion's Parting Words
+ [60] Bodley's Unfortunate Fate
+ [60R] Three Kings of Flame
+
+ [60] Components of Importance
+ [60] Components of Importance
+ [60G] Components of Importance
+ [60G] Components of Importance
+
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60G] I See Alcaz Island In Your Future...
+
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60R] Final Preparations
+ [60R] Mea Culpa, Lord Valthalak
+ [60] Return to Bodley
+ [60] Back to the Beginning
+ [60D] Saving the Best for Last
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.10.0 (2006-03-28): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

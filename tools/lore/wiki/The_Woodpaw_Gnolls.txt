@@ -1,0 +1,51 @@
+title: The Woodpaw Gnolls
+revision: 6237760
+part: whole
+quest: 4131
+url: https://warcraft.wiki.gg/wiki/The_Woodpaw_Gnolls
+
+== Objectives ==
+Search the Woodpaw Gnoll camps of southern Feralas for evidence of the courier's belongings or the courier himself.
+
+
+== Description ==
+Our "friends" the Woodpaw might have gotten Raschal in the end, but something tells me that's not what occurred. Still, they're the best place to start looking.
+I wish I had clearer insight as to what to do, but all I have right now is 'Search the Woodpaw camps - go.' I do know that gnolls will keep items they scavenge and fight over them; maybe they ran across the backpacks Quint mentioned. I hadn't risked a head-on fight in past searches, but with Quint's vision on this I say rip into them.
+
+
+== Rewards ==
+You will receive:
+
+3,950 XP
++150 reputation with Darnassus
+
+
+== Completion ==
+Tacked up on a nearby tree are two large leather backpacks. Each bears a small insignia of the Feathermoon Stronghold on the front of the pack...
+
+
+== Notes ==
+Travel to Lower Wilds, you will find lake looking like a hand pointing, the bag is on a tree just south of the "finger". 
+
+
+== Progression ==
+ [43] The Missing Courier
+ [43] The Missing Courier
+ [44] Boat Wreckage
+ [44] The Knife Revealed
+ [44] Psychometric Reading
+ [44] The Woodpaw Gnolls
+ [46] The Writhing Deep &  [44] Thalanaar Delivery
+ [46] Freed from the Hive
+ [46] A Hero's Welcome
+ [46] Rise of the Silithid
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

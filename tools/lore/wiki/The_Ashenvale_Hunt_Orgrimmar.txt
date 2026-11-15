@@ -1,0 +1,45 @@
+title: The Ashenvale Hunt (Orgrimmar)
+revision: 5586749
+part: whole
+quest: 235
+url: https://warcraft.wiki.gg/wiki/The_Ashenvale_Hunt_%28Orgrimmar%29
+
+== Objectives ==
+Speak with Senani Thunderheart at Splintertree Post, Ashenvale.
+
+
+== Description ==
+Attention, young adventurers! The wilds of Ashenvale await you!
+The Horde has established a strong presence in the lands north of the Barrens. Our two outposts - Splintertree Post and the Zoram Strand Outpost - strive to bring glory to the Horde! Those who would prove themselves should seek out guidance there. Of note: Senani Thunderheart in Splintertree Post, directly north of the Barrens, seeks adventurers willing to take part in a great hunt of Ashenvale!
+
+
+== Rewards ==
+You will receive:
+
+395 XP
++10 reputation with Thunder Bluff
+
+
+== Completion ==
+Welcome to the new frontier, <name>. Ashenvale is a land of opportunity, one where a young <class> like yourself is able to find boundless chances to prove their mettle. Look around the outpost here, and be sure to travel out to the Zoram Strand, as the Horde has another outpost there as well.
+Your presence here tells me that you've come to learn more about the hunt. Listen close, and I will gladly share with you what you need to know.
+
+
+== Progression ==
+ [20] The Ashenvale Hunt /  [20] The Ashenvale Hunt /  [20] The Ashenvale Hunt
+ [20] The Ashenvale Hunt
+
+ [24] Ursangous's Paw
+ [27] Shadumbra's Head
+ [30] Sharptalon's Claw
+ [30] The Hunt Completed
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

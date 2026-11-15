@@ -1,0 +1,52 @@
+title: WANTED: Baron Vardus
+revision: 5618985
+part: whole
+quest: 566
+url: https://warcraft.wiki.gg/wiki/WANTED%3A_Baron_Vardus
+
+WANTED: Baron Vardus is a Horde quest in Hillsbrad Foothills that involves killing Baron Vardus, a ranking member of the Syndicate in the Alterac Mountains. You must have completed  [22] WANTED: Syndicate Personnel in order to get this quest.
+
+
+== Objectives ==
+Kill Baron Vardus and deliver his head to High Executor Darthalia in Tarren Mill.
+
+ [Head of Baron Vardus]
+
+
+== Description ==
+By order of High Executor Darthalia, the human known as Baron Vardus is wanted for crimes against the Forsaken. Vardus is known to be a high-ranking member of the organization known as the Syndicate.
+He was last spotted in the Uplands in the Alterac Mountains, north of Tarren Mill.
+He is wanted dead. Bring evidence of his demise to High Executor Darthalia to claim the reward.
+
+
+== Rewards ==
+
+3,150 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+Ah, <name>. Perhaps you've come to collect the bounty on the head of Baron Vardus?
+
+
+== Completion ==
+Productive work you do, <name>. With Baron Vardus dead, the number of Syndicate leaders grows smaller. Their resistance and irritation will be short-lived.
+
+
+== Notes ==
+The Baron can spawn at any of the Syndicate camps in the Uplands, or in the basement of the inn in Strahnbrad, hiding behind one of the large barrels.
+
+
+== Progression ==
+ [22] WANTED: Syndicate Personnel
+ [40] WANTED: Baron Vardus
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

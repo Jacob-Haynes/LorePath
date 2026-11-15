@@ -1,0 +1,51 @@
+title: Messenger to Darkshire
+revision: 6237779
+part: whole
+quest: 145
+url: https://warcraft.wiki.gg/wiki/Messenger_to_Darkshire
+
+Part of the Reinforcing Redridge correspondence quests.
+
+
+== Objectives ==
+Magistrate Solomon wants you to take a letter to Lord Ello Ebonlocke in Darkshire.
+
+ [Solomon's Plea to Darkshire] (provided)
+
+
+== Description ==
+I require your assistance once again. I have written to Lord Ebonlocke, requesting that he sends his trained guards, the Night Watch, to help with Lakeshire's defense. It is imperative this message makes it to him swiftly. You must exercise extreme caution. Ebonlocke is the mayor of Darkshire, in the heart of Duskwood. Do not stray from the roads.
+
+
+== Rewards ==
+You will receive:
+
+1000 XP (or 6 at max level)
++150 reputation with Stormwind
+
+
+== Progress ==
+You appear to have traveled from afar, <class>. What business do you have here in Darkshire?
+
+
+== Completion ==
+Thank you for making the long journey here. This is indeed important information.
+
+
+== Progression ==
+ [14] Messenger to Stormwind
+ [14] Messenger to Stormwind
+ [14] Messenger to Westfall
+ [14] Messenger to Westfall
+ [18] Messenger to Darkshire
+ [18] Messenger to Darkshire
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

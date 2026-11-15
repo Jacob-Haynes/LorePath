@@ -1,0 +1,47 @@
+title: Dark Ceremony
+revision: 6314331
+part: whole
+quest: 2979
+url: https://warcraft.wiki.gg/wiki/Dark_Ceremony
+
+== Objectives ==
+Rok Orhan in Camp Mojache wants you to find a Gordunni Orb. 
+
+ [Gordunni Orb]
+
+
+== Description ==
+These seem to be plans for some sort of dark ceremony, <name>. From what I can make out, this ritual is conducted by the Gordunni mage-lords.
+Find one of these mage-lords, and from him, gather an orb.
+The orb of a mage contains great power, and will help us discover more about this ceremony and the magic that the Gordunni wield.
+
+
+== Rewards ==
+You will receive:
+
+4050 XP (or 24 60 at max level)
++250 reputation with Orgrimmar
+
+
+== Progress ==
+We must discover more about why the Gordunni are here, <name>.
+
+
+== Completion ==
+This orb will provide us with more information about the Gordunni... which we will then use in planning their downfall, <name>.
+
+
+== Progression ==
+ [43] The Gordunni Scroll
+ [46] Dark Ceremony
+ [47] The Gordunni Orb
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

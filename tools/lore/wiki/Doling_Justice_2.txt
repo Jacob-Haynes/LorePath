@@ -1,0 +1,61 @@
+title: Doling Justice (2)
+revision: 6909169
+part: whole
+quest: 2972
+url: https://warcraft.wiki.gg/wiki/Doling_Justice_%282%29
+
+Doling Justice is part of the Freedom for All Creatures quest chain, which will eventually award the player with a baby sprite dragon pet, very cute and highly desired. The chain starts with  [47] Freedom for All Creatures in Feralas. To continue the quest chain, you must return to Feralas and speak with Jer'kai Moonweaver.
+
+
+== Objectives ==
+Take Jer'kai's Signet Ring to High Priestess Tyrande Whisperwind in Darnassus.
+
+ [Jer'kai's Signet Ring] (provided)
+
+
+== Description ==
+Out here in the wilderness, Kindal and I have meager means to reward your help, but we don't want you to feel unappreciated. Take my signet ring. If you ever find yourself in the boughs of Teldrassil, go to the Temple of the Moon in the heart of Darnassus. There you will find my High Priestess Tyrande Whisperwind. The ring will let her know that we are well and give credit to your story.
+We both thank you, <name>.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Firwillow Wristbands]
+ [Nightscale Girdle]
+You will also receive:
+
+5250 XP (or 31 50 at max level)
++150 reputation with Darnassus
+
+
+== Progress ==
+Hello, child. It pleases us to have more powerful adventurers here in the temple. If you have the time, will you share a tale or two with the younger adventurers? I know many of them would benefit from your wisdom.
+I'm sorry, look how rude of me. You've come to the Temple seeking our aid, and I impose on you. Please, forgive me. Tell me what the servants of the Light can do for you.
+
+
+== Completion ==
+That's an amazing story, <name>. It pleases us that you've not only helped dragonkind, but also one of our own priestess. Jer'kai was right to send you to me. I will make sure she has her ring returned to her—I have scouts heading the direction of Feralas soon. This will be one more thing for them to investigate while on their mission.
+Thank you again, and please, make yourself at home while you're here.
+
+
+== Progression ==
+
+ [47] Freedom for All Creatures
+ [47] Doling Justice
+ [47] Doling Justice
+ [47] An Orphan Looking For a Home
+ [47] A Short Incubation
+ [47] The Newest Member of the Family
+ [47] Food for Baby
+ [48] Becoming a Parent
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

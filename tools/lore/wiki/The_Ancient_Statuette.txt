@@ -1,0 +1,59 @@
+title: The Ancient Statuette
+revision: 5578261
+part: whole
+quest: 1007
+url: https://warcraft.wiki.gg/wiki/The_Ancient_Statuette
+
+== Objectives ==
+Bring the Ancient Statuette to Talen, in his camp near the Zoram Strand.
+
+ [Ancient Statuette]
+
+
+== Description ==
+I would charge you with a task, <name>.
+I was on my small vessel, skimming over the submerged ruins of Zoram, when naga attacked me, surging from the water and tearing at me with their claws! I fled, carrying what supplies I could to make this meager camp.
+But when I reached the shore and ran... my prized possession was lost.
+Please, <name>, find the site of my ambush, along the coast to the north, and search for an ancient statuette. It is the reason I have braved the dangers of the Zoram Strand.
+
+
+== Rewards ==
+You will receive:
+
+9
+1150 XP (or 7 20 at level 70)
++150 reputation with Darnassus
+
+
+== Progress ==
+Have you found the statuette, <name>?
+
+
+== Completion ==
+You found it!  Thank you, <name>!
+The old city of Zoram holds many secrets, and this statuette may be the key to many of them.
+
+
+== Notes ==
+On the map, near the word "The" in "The Zoram Strand" is a point of land.  Near that point of land is a small boat on the water. On the shore just north of the boat, near a fallen tree, you will find the  [Ancient Statuette] sticking out of the sand.
+
+Upon completion
+Talen says: This statuette must hold a hidden compartment...
+Talen searches the ancient statuette.
+Talen says: It's locked! NO!!
+Talen says: <name>, I am in need of your help once again.
+
+
+== Progression ==
+ [20] The Ancient Statuette
+ [25] Ruuzel
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

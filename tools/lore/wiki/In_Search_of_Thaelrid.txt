@@ -1,0 +1,47 @@
+title: In Search of Thaelrid
+revision: 6233901
+part: whole
+quest: 1198
+url: https://warcraft.wiki.gg/wiki/In_Search_of_Thaelrid
+
+== Objectives ==
+Seek out Argent Guard Thaelrid in Blackfathom Deeps.
+
+
+== Description ==
+Many rumors circulate these days about the union of the Twilight's Hammer and the naga in Blackfathom Deeps on the coasts of Ashenvale.
+My role here with the Argent Dawn is to collect as much information as I can, so we know when and where help is needed.
+It has been weeks now since I sent a scout to check on the activity at Blackfathom Deeps. Argent Guard Thaelrid has not yet reported back.
+My other scouts are preoccupied with pressing matters.
+Seek out and aid Thaelrid for me, <name>.
+
+
+== Rewards ==
+You will receive:
+
+2900 XP (or 17 40 at max level)
++350 reputation with Argent Dawn
++500 reputation with Darnassus
+
+
+== Completion ==
+Dawnwatcher Shaedlass was good to send you. There is indeed a wicked plot underway in this corrupted place.
+
+
+== Notes ==
+This quest is the first opportunity for Alliance players to gain reputation with the Argent Dawn.  At one point Horde characters could obtain this quest as well if they could make it into Darnassus, but subsequent to patch 3.1 this quest is no longer available to Horde players.
+
+
+== Progression ==
+ [24D] In Search of Thaelrid
+ [27D] Blackfathom Villainy
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed. Replaced by  [25D] In Search of Aluwyn.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

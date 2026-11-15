@@ -1,0 +1,58 @@
+title: Worgen in the Woods (Classic, 4)
+revision: 5587251
+part: whole
+quest: 223
+url: https://warcraft.wiki.gg/wiki/Worgen_in_the_Woods_%28Classic%2C_4%29
+
+This quest concludes the Worgen in the Woods quest chain.
+
+
+== Objectives ==
+Bring Calor's note to Jonathan Carevin.
+
+ [Calor's Note] (provided)
+
+
+== Description ==
+Here you go, <name>. Bring this message to Master Carevin.
+<He quickly removes a piece of faded parchment and offers it to you.>
+A few more like you, and we will outnumber the Night Watch! Perhaps then we could complete the work that we few carry on today.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+3150 XP (or 19 20 at level 70)
++350 reputation with Stormwind
+ [Consecrated Wand]
+And one of:
+
+ [Shield of the Faith]
+ [Cloak of the Faith]
+
+
+== Progress ==
+Yes, what is it? Make it quick, I've pressing matters to attend to.
+
+
+== Completion ==
+Excuse me for my cold reception, <name>, but as I'm sure you can tell, I am an extremely busy man. I see that you have impressed Calor--and I assure you, that is no small feat—and that he has given his recommendation.
+There are unsavory types afoot, <name>, and we can use the help of all who have proven themselves. We battle against demons, the undead, and those who would provide them aid. Be vigilant, be wary, and trust none who would not give aid to our cause.
+Glory under the Light.
+
+
+== Progression ==
+ [28] Worgen in the Woods
+ [29] Worgen in the Woods
+ [31] Worgen in the Woods
+ [31] Worgen in the Woods
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

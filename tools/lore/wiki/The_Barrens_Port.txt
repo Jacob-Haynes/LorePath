@@ -1,0 +1,60 @@
+title: The Barrens Port
+revision: 6230313
+part: whole
+quest: 1039
+url: https://warcraft.wiki.gg/wiki/The_Barrens_Port
+
+This quest is part of the quest chain The Scythe of Elune.
+
+
+== Objectives ==
+Speak with Wharfmaster Dizzywig in Ratchet.
+
+
+== Description ==
+Ratchet is the only port in the Barrens. Most likely Velinde found a trading vessel in Ratchet to take her to Blackwater Cove in Azeroth. We've had limited dealings with the goblins that run the port, but the master of the dock should have information about the comings and goings of ship passengers.
+Follow the road southeast through Ashenvale and you will find yourself in the Barrens. Watch your step, <name>, warriors of the Horde patrol the land. You will be safe at the port, though.
+
+
+== Rewards ==
+You will receive:
+
+1,200 XP (or 7 20 at max level)
++50 or +75 reputation with Darnassus
+
+
+== Completion ==
+<Race>, eh? Must admit, we don't get much of your type out here. Looking for someone, eh? Just give me a moment, I'm sure I have it written in one of my ledgers.
+Lot of people travel through here, though, so just give me a moment.
+
+
+== Notes ==
+There are a couple of routes into the Barrens that the Alliance can safely take.
+First, you can follow the road from Ashenvale south past the Silverwing Grove. This will take you to The Mor'shan Rampart, at the very north end of the Barrens. You do not want to approach the rampart directly, unless you are high enough level to avoid the guards. There is an unguarded passage just to the east of the route the road takes through the rampart. Much easier, and only a little bit off the road itself.
+Second, you go to the border between Ashenvale and Azshara, and swim down the Southfury River to the waterfall where it empties out into the ocean. (There is a flight point just inside Azshara, to the south of the road, so this may be worthwhile just to tag the flight point.)
+Third, you may be able to enter the Barrens via the entrance from Stonetalon Mountains. This entails some risk, as avoiding the guards there is harder than via the Rampart.
+And fourth, you can go to Booty Bay, and simply take the boat to Ratchet, which is where you want to be in the first place. Note that Stranglethorn Vale is a higher level zone, and there is some risk of aggroing critters to the sides of the road.
+Note that there is a flight point in Ratchet that you will want to tag, if you haven't before.
+And of course, fifth, if you've been there before and tagged the aforementioned flight point, simply fly there.
+
+
+== Progression ==
+ [30] The Howling Vale
+ [30] Velinde Starsong
+ [30] Velinde's Effects
+ [30] The Barrens Port
+ [30] Passage to Booty Bay
+ [30] The Caravan Road
+ [30] The Carevin Family
+ [30] The Scythe of Elune
+ [30] Answered Questions
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

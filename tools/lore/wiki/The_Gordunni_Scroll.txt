@@ -1,0 +1,46 @@
+title: The Gordunni Scroll
+revision: 6404329
+part: whole
+quest: 2978
+url: https://warcraft.wiki.gg/wiki/The_Gordunni_Scroll
+
+== Objectives ==
+Bring the Gordunni Scroll to Rok Orhan in Camp Mojache.
+
+ [Gordunni Scroll] (provided)
+
+
+== Description ==
+Picking up the soiled scroll, you notice that it seems to be depicting some sort of meeting or ceremony. Rok Orhan would be interested in this scroll, and what it might mean to the Gordunni.
+
+
+== Rewards ==
+You will receive:
+
+2500 XP
++19 reputation with Horde
+
+
+== Progress ==
+What is this?
+
+
+== Completion ==
+This scroll... You found this in the Gordunni Outpost?
+
+
+== Progression ==
+ [43] The Gordunni Scroll
+ [46] Dark Ceremony
+ [47] The Gordunni Orb
+
+
+== Patch changes ==
+ Hotfix (2010-12-07): It is no longer possible to pick up this deprecated quest in Feralas. 
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

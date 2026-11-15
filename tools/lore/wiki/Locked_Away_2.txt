@@ -1,0 +1,45 @@
+title: Locked Away (2)
+revision: 5638943
+part: whole
+quest: 5060
+url: https://warcraft.wiki.gg/wiki/Locked_Away_%282%29
+
+See Locked Away quest chain for more details.
+
+
+== Progress ==
+An extremely sturdy cabinet stands before you, securely fastened by a built-in lock. The front of the cabinet is deeply scratched and marked. This could be surmised as being from numerous and violent failed attempts to reveal whatever secrets the cabinet currently obfuscates from view.
+If you are going to open this cabinet, you will need to find the key.
+
+ [Dalson Cabinet Key]
+
+
+== Completion ==
+The key taken from Farmer Dalson's ghoulish remains fits the lock perfectly. The doors of the cabinet swing open, revealing several items that remain intact and appear quite valuable.
+
+
+== Rewards ==
+You will receive:
+
+2 50
+10,200 XP
+
+
+== Notes ==
+The  [Dalson Cabinet Key] drops from Farmer Dalson, who spawns after finishing  [55] Locked Away.
+
+
+== Progression ==
+ [55] Mrs. Dalson's Diary
+ [55] Locked Away
+ [55] Locked Away
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,47 @@
+title: Bring the End
+revision: 6230328
+part: whole
+quest: 3341
+url: https://warcraft.wiki.gg/wiki/Bring_the_End
+
+== Objectives ==
+Andrew Brownell wants you to kill Amnennar the Coldbringer and return his skull.
+
+ [Skull of the Coldbringer]
+
+
+== Description ==
+In the Barrens lies a horrid mess of tangled vines called Razorfen Downs. While our first observations of this place revealed little threat, our recent findings are much more serious...
+The quilboar of Razorfen Downs have aligned themselves with the Scourge. A Lich named Amnennar the Coldbringer rules them now, using the power of his massive consciousness to control their every move.
+Amnennar has a direct telepathic link to Ner'zhul; we must sever this bond, <Name>. An end must come to the Coldbringer.
+
+
+== Rewards ==
+You will receive:
+
+4,300 or 7,200 or 5,550 XP
++150 or +500 reputation with Undercity
+ [Vanquisher's Sword]
+ [Amberglow Talisman]
+
+
+== Progress ==
+This matter is of utmost importance, <name>. We must stop any attempt by the Scourge to bolster their ranks.
+
+
+== Completion ==
+The loyalty of a Lich is unswerving, <name>. Let them know that such loyalty will only bring them destruction.
+
+
+== Notes ==
+Oddly enough, the objective location is displayed as being in Tirisfal Glades near Agamand Mills on the world map.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,69 @@
+title: Raptor Mastery
+revision: 5590568
+part: whole
+quest: 197
+url: https://warcraft.wiki.gg/wiki/Raptor_Mastery
+
+== Objectives ==
+Hunt Tethis.
+
+ [Talon of Tethis]
+
+
+== Description ==
+Before returning to Nesingwary's Expedition, you will have to complete the impossible: hunt the raptor that no other hunter has been able to capture. That beast goes by the name of Tethis, and he's been known to terrorize the southeastern corner of Northern Stranglethorn.
+Bringing Tethis' talon back to that dwarf hunter should be proof that you are no ordinary <race>.
+
+
+== Rewards ==
+
+You will also receive:
+
+60
+1,750 XP
+
+
+== Progress ==
+Ah, so you're hunting Tethis?  Tracked her all the way back to camp, did you?
+
+
+== Completion ==
+Master <name>, the raptor slayer!
+Has a nice ring to it, eh?
+
+
+== Progression ==
+
+ [10-30] Welcome to the Jungle
+Complete all of the following:
+
+Panthers:
+ [10-30] Panther Hunting
+ [10-30] Panther Stalking
+ [10-30] Panther Prowess
+ [10-30] Panther Mastery
+
+Raptors:
+ [10-30] Raptor Hunting
+ [10-30] Raptor Stalking
+ [10-30] Raptor Prowess
+ [10-30] Raptor Mastery
+
+Tigers:
+ [10-30] Tiger Hunting
+ [10-30] Tiger Stalking
+ [10-30] Tiger Prowess
+ [10-30] Tiger Mastery
+
+ [10-30] Big Game Hunter
+
+
+== Patch changes ==
+ Patch 7.0.3 (2016-07-19):  [Scale-Cord of the Raptor] added as a reward.   
+ Patch 4.0.3a (2010-11-23): Added, replacing  [43] Raptor Mastery.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

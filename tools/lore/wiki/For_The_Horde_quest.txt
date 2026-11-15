@@ -1,0 +1,88 @@
+title: For The Horde! (quest)
+revision: 6956925
+part: whole
+quest: 4974
+url: https://warcraft.wiki.gg/wiki/For_The_Horde%21_%28quest%29
+
+Travel to Blackrock Spire and slay Warchief Rend Blackhand. Take his head and return to Orgrimmar.
+
+
+== Objectives ==
+Travel to Blackrock Spire and slay Warchief Rend Blackhand. Take his head and return to Orgrimmar.
+
+ [Head of Rend Blackhand]
+
+
+== Description ==
+
+Rend dares make such grand claims because of the protection he is afforded by the black flight.
+You, <name>, will find a way to pass through the Halls of Ascension. You will then find 'Warchief' Rend Blackhand and you will destroy him - FOR THE HORDE!
+<Thrall slams a fist down upon his throne.>
+The next time you return to my chambers, you will hold his head high in triumph and then you shall present it to your Warchief. Do this and be honored as a hero of the Horde. 
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Mark of Tyranny]
+ [Eye of the Beast]
+ [Blackhand's Breadth]
+You will also receive:
+
+2 70
+9950 XP
++200 reputation with Orgrimmar
++200 reputation with Darkspear Trolls
++200 reputation with Undercity
++200 reputation with Thunder Bluff
+
+
+== Progression ==
+<Thrall grunts.> 
+
+
+== Completion ==
+You have dealt a crippling blow to the forces of Blackrock, <name>. With their Warchief slain, the Blackrock legion is once again thrown into the maw of chaos.
+In honor of your heroics, the people of Kalimdor shall be rewarded!
+
+
+== Notes ==
+On completion
+Thrall yells: Honor your heroes! On this day, they have dealt a great blow against one of our most hated enemies! The false Warchief, Rend Blackhand, has fallen!
+Thrall yells: Be bathed in my power! Drink in my might! Battle for the glory of the Horde!
+After turn in, Rend's head will appear on a spike seated near Thrall's throne.
+All players and NPCs in Orgrimmar and the Crossroads also receive  [Warchief's Blessing] when this is turned in, increasing health by 300, 15% haste to melee attacks and 10 mana every 5 secs for 60 mins.
+
+
+== Progression ==
+This quest was a part of the Onyxia's Lair attunement chain.
+
+ [60D] Warlord's Command
+ [60] Eitrigg's Wisdom
+ [60R] For The Horde!
+ [60] What the Wind Carries
+ [60] The Champion of the Horde
+ [60] Mistress of Deception
+ [60R] Oculus Illusions
+ [60R] Emberstrife
+
+ [60] The Test of Skulls, Scryer
+ [60] The Test of Skulls, Somnus
+ [60] The Test of Skulls, Chronalis
+ [60] The Test of Skulls, Axtroz
+ [60] Ascension...
+ [60R] Blood of the Black Dragon Champion
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+For the Horde!, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

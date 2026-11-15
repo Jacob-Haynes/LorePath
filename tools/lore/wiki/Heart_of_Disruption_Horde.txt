@@ -1,0 +1,57 @@
+title: Heart of Disruption (Horde)
+revision: 6911666
+part: whole
+quest: 96984
+url: https://warcraft.wiki.gg/wiki/Heart_of_Disruption_%28Horde%29
+
+== Objectives ==
+Collect the Arcane Mote in the City of Dalaran for Magus Wordeen Voidglare in Tarren Mill.
+
+Arcane Mote
+ [Dalaran Sewer Key] (provided)
+
+
+== Description ==
+You may not have our best interests at heart, but I won't deny an extra pair of hands. And if Dalaran falls, it takes everything with it--including your Undercity.
+So, your benefactor wants in? Fine. I'll imbue your key to work past my wards so you can enter the city. Once you're in, meet me at the Violet Citadel where this all began. With everything going on the Kirin Tor will be too busy to stop you.
+Scavenge what you will, but whatever happens, our first priority is to prevent a catastrophe.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Battle Spaulders]
+ [Enchanted Sandals]
+ [Striking Staff]
+You will also receive:
+
+9,400 XP
+
+
+== Progression ==
+Horde attunement:
+
+ [34] Prison Break In &  [33] Key to the City
+ [35] Dalaran Patrols
+ [34] Blood in the Streets
+ [33D] Heart of Disruption
+ [33] Shrewd Negotiations
+Other dungeon quests:
+
+ [33D] A Green Sample
+ [33] An Alarming Request →  [33D] Heart of Disruption →  [33] Friend of the Kirin Tor
+ [33D] Power Overwhelming
+ [33D] Starving Arcane
+ [33D] Opportunistic Education
+ [33D] Source of Power
+ [33D] The Grave Knight
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

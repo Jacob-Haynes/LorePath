@@ -1,0 +1,48 @@
+title: Watching the Roads
+revision: 6931106
+part: whole
+quest: 95981
+url: https://warcraft.wiki.gg/wiki/Watching_the_Roads
+
+== Objectives ==
+Slay 8 Dalaran Wizards and 8 Dalaran Watchers for Shadow Priest Allister in the Sepulcher.
+
+Dalaran Watcher slain (8)
+Dalaran Wizard slain (8)
+
+
+== Description ==
+Taking away their pendants is just the first step. If the Kirin Tor really are shipping a steady supply of relics from Dalaran, we must stop them at the source.
+Search the roads around Ambermill for Dalaran's wizards and watchers. Their presence has allowed free access across our borders for too long. If we can cull their numbers, that should put a stop to these pendants making it into Silverpine Forest in the first place.
+
+
+== Rewards ==
+You will receive:
+
+12
+1,550 XP
++100 reputation with Undercity
+ [Roadwatcher's Confidence]
+
+
+== Progress ==
+Every moment we delay another shipment arrives on our doorstep. Put them down, <class>!
+
+
+== Completion ==
+Ever since the barrier went down around Dalaran, the Kirin Tor have maintained a death grip on the roads. They're paranoid about something, that much is certain.
+For now, however, the why is irrelevant.
+
+
+== Progression ==
+...
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

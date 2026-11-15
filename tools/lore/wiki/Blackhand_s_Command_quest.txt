@@ -1,0 +1,48 @@
+title: Blackhand's Command (quest)
+revision: 6501000
+part: whole
+quest: 7761
+url: https://warcraft.wiki.gg/wiki/Blackhand%27s_Command_%28quest%29
+
+Blackhand's Command is started from an item of the same name, which is dropped by the Scarshield Quartermaster located to the east of the entrance to Blackrock Spire in Blackrock Mountain. To complete this quest, complete Upper Blackrock Spire and use Drakkisath's Brand, located behind the wall where General Drakkisath stood.
+Upon completion of this quest, players can use the Orb of Command to teleport directly to Blackwing Lair instead of having to traipse through Upper Blackrock Spire.
+
+
+== Objectives ==
+That is one stupid orc. It would appear as if you need to find this brand and gain the Mark of Drakkisath in order to access the Orb of Command.
+The letter indicates that General Drakkisath guards the brand. Perhaps you should investigate. 
+
+
+== Description ==
+Imbecile,
+I hold very little faith in your ability to prevent outsiders from accessing the master's lair. In the very likely event of your death, this orb has its own failsafe built in to prevent outsiders from teleporting directly into Blackwing.
+Only those with the Mark of Drakkisath branded upon their hand may make use of this orb. Thankfully, Drakkisath is not nearly as incompetent as you, Quartermaster. He guards the brand himself!
+-Warchief Rend Blackhand
+P.S. Destroy this letter, idiot. 
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+6600 XP (or 39 at level 70)
+
+
+== Completion ==
+You don't even flinch as the smoldering brand is pressed into your flesh. You are so tough!
+You now hold the Mark of Drakkisath. Have fun storming the castle. 
+
+
+== Trivia ==
+Though Warlords of Draenor removed the need for attunement, the quest could still be obtained. However, due to the revamp of Upper Blackrock Spire, it was impossible to complete. It was finally removed in patch 6.2.2.
+The line "Have fun storming the castle" is from the movie The Princess Bride.
+
+
+== Patch changes ==
+ Patch 6.2.2 (2015-09-01): Removed.   
+ Patch 1.6.0 (2005-07-12): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

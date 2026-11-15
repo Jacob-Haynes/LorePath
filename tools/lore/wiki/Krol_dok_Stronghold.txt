@@ -1,0 +1,56 @@
+title: Krol'dok Stronghold
+revision: 6977896
+part: whole
+url: https://warcraft.wiki.gg/wiki/Krol%27dok_Stronghold
+
+Krol'dok Stronghold is an ogre stronghold serving as a level 40-45 dungeon in the Riverglades in Forever.
+
+
+== History ==
+
+During the siege of Farholde, Fern Crimsonleaf infiltrated the Horde leadership's camp and assassinated its leaders. Her attack left the Horde disorganized when Sir Howard Armstrong and his retinue launched their counterattack.
+Although the Horde rallied and still outnumbered the Brotherhood of the Horse, it was defeated after a costly battle. Without strong leadership, its forces were routed and fled back to their stronghold in Krol'dok, ending the siege.
+
+
+== Development ==
+The idea for the stronghold came from wanting to do an ogre dungeon in Forever; gnolls were the first choice, given how prevalent they were in the original World of Warcraft, but this same reasoning made the developers want to do an ogre dungeon instead, as they were also prevalent in the original game. This in turn led them to making the ogres member of the Twilight's Hammer.
+
+
+== Getting there ==
+The instance line is located at  north of Sunnyglade in the Riverglades, not far from the entrance from the Badlands and Redridge Mountains. The nearest flight path is Rogm'ar for the Horde and Farholde Keep for the Alliance.
+
+
+== Quests ==
+Quests for Krol'dok Stronghold start in the Riverglades. The Alliance also have one quest that starts in Dalaran.
+
+A Token of Vengeance
+ [45D] Eye of Mugg
+ [41] Krol'dok Moulding →  [41] Key Ingredients
+Tome of Twilight
+Twilight Mementos →  [42] Lingering Essence → Curios of Curiosity
+Vengeance of the Highborne
+
+
+== Encounters ==
+Slavecrusher Grox
+Twilight Commander Zarmok
+War Handler Ashka
+Nar'gurk
+Bossman Toof
+Overlord Mugg
+
+
+== Loot ==
+
+
+=== Boss drops ===
+
+
+=== Quest rewards ===
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== References ==

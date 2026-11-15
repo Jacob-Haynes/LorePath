@@ -1,0 +1,60 @@
+title: The Eastern Plagues
+revision: 5747867
+part: whole
+quest: 6185
+url: https://warcraft.wiki.gg/wiki/The_Eastern_Plagues
+
+== Objectives ==
+Scour the Eastern Plaguelands for clues as to the "Blightcaller" and the missing SI:7 agents. If you find any SI:7 Insignias, return them to Flint Shadowmore at Chillwind Camp.
+
+The Blightcaller Uncovered
+ [SI:7 Insignia (Rutger)]
+ [SI:7 Insignia (Fredo)]
+ [SI:7 Insignia (Turyen)]
+
+
+== Description ==
+As I said, your first mission is one of reconnaissance. Nothing fancy, <name>. You must travel to the Eastern Plaguelands and look for any clues as to this Blightcaller.
+Be on the lookout for information about our missing operatives. We have to assume that they are dead and if they are dead, they must have a corpse... somewhere.
+<Flint swallows hard.>
+All SI:7 agents carry this insignia.
+<Flint shows you his SI:7 insignia.>
+Bring any of those that you may find back to me.
+
+
+== Progress ==
+An... Any luck??
+
+
+== Completion ==
+Rutger. Fredo. Turyen. All... dead...
+<Flint clutches the insignias tightly.>
+Where were they? Did you discover any more information about this bastard, the Blightcaller? 
+
+
+== Notes ==
+The three insignias are in the Marris Stead subzone:
+
+Rutger:  (just north of the road)
+Fredo:  (close to the Elite Blighthounds)
+Turyen:  (on top of a hillock)
+You must approach the Blightcaller to get credit for "The Blightcaller Uncovered", but fortunately you do not have to get close enough to aggro him. You will most likely get the completion notice on your way to Fredo's corpse.
+
+
+== Progression ==
+ [60G] The First and the Last
+ [60G] Honor the Dead
+ [60G] Flint Shadowmore
+ [60G] The Eastern Plagues
+ [60G] The Blightcaller Cometh
+ [60R] Order Must Be Restored
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

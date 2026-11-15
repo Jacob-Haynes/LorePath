@@ -1,0 +1,46 @@
+title: Nara Wildmane (quest)
+revision: 6176880
+part: whole
+quest: 1490
+url: https://warcraft.wiki.gg/wiki/Nara_Wildmane_%28quest%29
+
+== Objectives ==
+Speak with Nara Wildmane.
+
+
+== Description ==
+I entered the land of dreams, and dreamed of a cult of druids who dwell in the Wailing Caverns. I saw that their goals were once noble, but they have lost their way. They are now servants of the taint seeping through the Barrens.
+I am old and my strength fails. I could not long dwell in that dreaming place and know little more of the tainted druids. But Nara is young and her spirit is fierce. She remained in the dreaming when I fled.
+Speak with Nara. She is in the tent, over yonder.
+
+
+== Rewards ==
+You will receive:
+
+120 XP
+10 reputation with Thunder Bluff
+
+
+== Completion ==
+Yes, it is true.  I know of the druids in the Wailing Caverns.  I have seen their twisted, scaled faces.  I know their crimes, and I know their plans.
+You must stop them, <name>.
+
+
+== Progression ==
+ [10] The Barrens Oases
+ [13] The Forgotten Pools
+ [16] The Stagnant Oasis
+ [16] Altered Beings
+ [16] Hamuul Runetotem
+ [16] Nara Wildmane
+ [22D] Leaders of the Fang
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,98 @@
+title: Mea Culpa, Lord Valthalak
+revision: 6682699
+part: whole
+quest: 8995
+url: https://warcraft.wiki.gg/wiki/Mea_Culpa%2C_Lord_Valthalak
+
+== Objectives ==
+Use the Brazier of Beckoning to summon Lord Valthalak. Dispatch him, and use Lord Valthalak's Amulet on the corpse. Then, return Lord Valthalak's Amulet to the Spirit of Lord Valthalak.
+
+Lord Valthalak slain
+ [Lord Valthalak's Amulet]
+ [Brazier of Beckoning] (provided)
+
+
+== Description ==
+All is now ready, <name>.
+When alive, Lord Valthalak used to inhabit what is now The Beast's chamber. Go there and use the Brazier of Beckoning to summon forth Lord Valthalak. It will reincorporate him, so he'll have to be killed again. I'd take care of The Beast first, and be sure take enough friends along to survive the upper portion of Blackrock Spire.
+Once you've dispatched Valthalak, use the amulet on his corpse. With his spirit reunified, he'll likely want his amulet back, as well.
+Good luck!
+
+
+== Rewards ==
+You will receive:
+
+14300 XP (or 87 at max level)
+
+
+== Progress ==
+<Class>, you dare disturb my rest!
+
+
+== Completion ==
+How fortunate for you that I know you're not part of the original group that stole this from me.
+I'll take back what is mine now, mortal! Give the amulet to me!
+
+
+== Notes ==
+This is the ninth step in the quest chain to upgrade your Dungeon Set 1 Helm and Chestpiece into Dungeon Set 2.
+Lord Valthalak can be summoned in the chamber where The Beast resides.
+
+
+== Progression ==
+ [60D] An Earnest Proposition
+ [60] A Supernatural Device
+ [60] The Ectoplasmic Distiller
+ [60] Hunting for Ectoplasm
+ [60] A Portable Power Source
+ [60] A Shifty Merchant
+ [60] Return to Deliana /  [60] Return to Mokvar
+ [60D] Just Compensation
+ [60] In Search of Anthion
+ [60D] Dead Man's Plea
+ [60] Proof of Life
+ [60] Anthion's Strange Request
+ [60D] Anthion's Old Friend
+ [60D] Falrin's Vendetta
+ [60D] The Instigator's Enchantment
+ [60D] The Challenge
+ [60D] Anthion's Parting Words
+ [60] Bodley's Unfortunate Fate
+ [60R] Three Kings of Flame
+
+ [60] Components of Importance
+ [60] Components of Importance
+ [60G] Components of Importance
+ [60G] Components of Importance
+
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60G] I See Alcaz Island In Your Future...
+
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60R] Final Preparations
+ [60R] Mea Culpa, Lord Valthalak
+ [60] Return to Bodley
+ [60] Back to the Beginning
+ [60D] Saving the Best for Last
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.10.0 (2006-03-28): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

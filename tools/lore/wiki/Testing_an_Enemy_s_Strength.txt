@@ -1,0 +1,58 @@
+title: Testing an Enemy's Strength
+revision: 6141086
+part: whole
+quest: 5723
+url: https://warcraft.wiki.gg/wiki/Testing_an_Enemy%27s_Strength
+
+Rahauro sends the player to Ragefire Chasm under Orgrimmar to kill a couple of troggs. This quest is loosely related to the Lost Satchel mini quest chain.
+
+
+== Objectives ==
+Search Orgrimmar for Ragefire Chasm, then kill 8 Ragefire Troggs and 8 Ragefire Shaman before returning to Rahauro in Thunder Bluff.
+
+Ragefire Trogg slain (8)
+Ragefire Shaman slain (8)
+
+
+== Description ==
+Beneath the city of Orgrimmar, stout creatures known as troggs started coming to the surface from deep below the lava filled tunnels. In her ever-benevolence, Magatha sought to make peace with the creatures, but they turned on her diplomats, killing them. She will not allow such treatment of the tauren people and now consider the creatures a threat to all of the Horde.
+She asks that you put an end to this trogg threat before it overwhelms the Horde from below. Find Ragefire Chasm and destroy them all.
+
+
+== Rewards ==
+You will receive:
+
+7
+1600 XP
++500 reputation with Thunder Bluff
+
+
+== Progress ==
+How goes your search for the Chasm? And the troggs?
+The threat cannot be allowed to persist—it will only injure our orc brethren if it continues.
+
+
+== Completion ==
+I am glad to see you took Magatha's task seriously. Thank you, <name>. I'm sure the troggs will have a harder time coming to the surface with their numbers so greatly reduced.
+Perhaps in the future we can take time to figure out where such creatures came from, and what they really want.
+
+
+== Notes ==
+This quest is pretty simple. You should come upon the Troggs on your way into the chasm, and they are quite plentiful at that. They stick in groups, but nothing that a five-man group cannot handle.
+Rahauro also offers the quest  [16D] Searching for the Lost Satchel, which runs along the same story line and also leads the player to Ragefire Chasm. Both quests can be done together.
+
+
+== Progression ==
+ [15D] Testing an Enemy's Strength (optional; recommended)
+ [16D] Searching for the Lost Satchel
+ [16D] Returning the Lost Satchel
+
+
+== Patch changes ==
+ Patch 5.0.4 (2012-08-28): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

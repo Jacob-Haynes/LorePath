@@ -1,0 +1,45 @@
+title: The Ogres of Feralas (1)
+revision: 5586946
+part: whole
+quest: 2975
+url: https://warcraft.wiki.gg/wiki/The_Ogres_of_Feralas_%281%29
+
+== Objectives ==
+Rok Orhan in Camp Mojache wants you to kill 10 Gordunni Ogres, 10 Gordunni Ogre-Magi, and 5 Gordunni Brutes.
+
+Gordunni Ogre slain (10)
+Gordunni Ogre Mage slain (10)
+Gordunni Brute slain (5)
+
+
+== Description ==
+The effects of the Gordunni Ogre tribe can hardly go unnoticed in this area. Look around, <name>; their very presence scars this land. We must push them back before they expand even further into Feralas.
+Follow the river north, and you will find their outpost. Decrease their numbers, <name>. We must show them that their kind is not wanted here.
+
+
+== Rewards ==
+You will receive 45.
+
+
+== Progress ==
+Move swiftly, <name>. Or is the task I requested too difficult? 
+
+
+== Completion ==
+Excellent, <name>. In time, the land will heal. We must not give up.
+
+
+== Progression ==
+ [43] A Threat in Feralas
+ [43] The Ogres of Feralas
+ [44] The Ogres of Feralas
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

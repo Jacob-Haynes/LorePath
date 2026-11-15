@@ -1,0 +1,57 @@
+title: A Reliquary of Purity
+revision: 5608058
+part: whole
+quest: 5527
+url: https://warcraft.wiki.gg/wiki/A_Reliquary_of_Purity
+
+To acquire this quest, the player must have entered Dire Maul at least once.
+
+
+== Objectives ==
+Travel to Silithus and search for a Reliquary of Purity within the ruins of Southwind Village. If you are able to find it, return with it to Rabine Saturna in Nighthaven, Moonglade.
+
+ [Reliquary of Purity]
+
+
+== Description ==
+The first step is to find a container capable of holding an extremely corruptible substance without the handler suffering ill effects. There is only one sort device I am aware of that could possibly contain something as vile as the Felvine: a Reliquary of Purity.
+Deep in the wasteland of Silithus is the remnants of the night elf village known as Southwind. I know one was there many, many years ago. If we are to succeed, I need you to scour those ruins in the hopes of reclaiming it.
+
+
+== Rewards ==
+You will receive:
+
+3 96
+6,600 XP
++100 reputation with Cenarion Circle
+
+
+== Progress ==
+A Reliquary of Purity is an artifact unto itself. Few were ever made, and almost all of them were thought to have been lost over time.
+I admit I have known about the one in Southwind for a little while now. Honestly, with the rising turmoil in Silithus, I thought to keep our secrets just that - a secret. To poke and prod would only cause suspicions of our enemies to rise.
+Alas, the time for complacency is at an end, especially with the situation in Eldre'Thalas.
+
+
+== Completion ==
+Indeed, you are as resourceful as many claim. The Cenarion Circle is blessed to have you working in our stead.
+With the Reliquary once more in our hands, my mind is at ease. I feel more comfortable asking you to not only face down a malfeasant demon, but also to bring back a dangerous item in the process...
+
+
+== Notes ==
+The reliquary is located inside a chest in the building that looks similar to the one in Cenarion Hold with Commander Mar'alith stationed.
+
+
+== Progression ==
+ [60] A Reliquary of Purity
+ [60] Shards of the Felvine
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.3.0 (2005-03-07): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

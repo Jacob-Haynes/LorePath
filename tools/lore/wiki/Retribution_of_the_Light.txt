@@ -1,0 +1,55 @@
+title: Retribution of the Light
+revision: 6948174
+part: whole
+quest: 5204
+url: https://warcraft.wiki.gg/wiki/Retribution_of_the_Light
+
+This quest was part of the Rescue From Jaedenar quest chain.  This quest chain started with  [55] Rescue From Jaedenar.
+
+
+== Objectives ==
+Return to Jaedenar and kill the succubus Rakaiah before finding the Remains of Trey Lightforge.
+
+Rakaiah slain
+
+
+== Description ==
+She would like to pretend that she's fine. She'd love for me to think that she's strong enough to deal with all of this on her own, but I know better than that. Trey's death and hearing the torture he was put through is going to haunt her for a long time, and there's nothing we can do to stop that. But we can give her some peace!
+<Name>, return to Shadow Hold, kill Trey's torturer and find his remains. There is no reason we can't tie off all these loose ends while Arko'narin mourns in her own private way.
+
+
+== Rewards ==
+You will receive:
+
+6500 XP
+ [Remains of Trey Lightforge]
+
+
+== Progress ==
+You inspect the body, and there is no doubt that these are the remains of the Knight of the Silver Hand, Trey Lightforge. For a moment you think of Arko'narin and question if anyone in your life meant as much to you as this man meant to the Night elf captive you recently helped escape Shadow Hold.
+After taking another moment to gather your thoughts, you know that you cannot take the paladin's remains back to Jessir without killing his torturer first.
+
+
+== Completion ==
+You gather the paladin's remains as carefully as you can, recalling that at least his spirit has been released from any pain or suffering that might have been forced upon him.
+
+
+== Progression ==
+ [55] A Strange Red Key
+ [55] Rescue From Jaedenar
+ [57] Retribution of the Light
+ [57] The Remains of Trey Lightforge
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== See also ==
+Retribution of the Light, TCG card
+
+
+== External links ==
+
+Wowhead
+WoWDB

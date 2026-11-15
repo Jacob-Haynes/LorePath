@@ -1,0 +1,6 @@
+title: Shadowfang Keep (Classic)
+revision: 6972437
+part: intro
+url: https://warcraft.wiki.gg/wiki/Shadowfang_Keep_%28Classic%29
+
+Shadowfang Keep is a haunted keep in southern Silverpine Forest, near Pyrewood Village.  It is the base of operations for the evil archmage Arugal and his worgen progeny.

@@ -1,0 +1,40 @@
+title: Draenethyst Crystals (Classic)
+revision: 6297600
+part: whole
+quest: 1389
+url: https://warcraft.wiki.gg/wiki/Draenethyst_Crystals_%28Classic%29
+
+== Objectives ==
+Bring 6 Draenethyst crystals to Magtoor at The Harborage in the Swamp of Sorrows.
+
+ [Draenethyst Crystal] (6)
+
+
+== Description ==
+The lost ones who live in the Fallow Sanctuary look as we look, but they are monsters... driven mad by the rigors of our journey to Azeroth. Once our brethren, they now live in the Fallow Sanctuary to the east, catching or killing any who wander near.
+And they have stolen something sacred to us—draenethyst crystals.
+We lack the force to enter the Fallow Sanctuary and reclaim our stolen draenethyst from among their huts and campfires, but without those crystals... we too may lose our way.
+
+
+== Rewards ==
+You will receive:
+
+2200 XP (or 16 80 at max level)
+
+
+== Progress ==
+Do you have the crystals?
+
+
+== Completion ==
+Thank you, <name>.  We,[sic] are in your debt.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

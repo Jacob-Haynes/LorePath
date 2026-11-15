@@ -1,0 +1,47 @@
+title: Blackrock Menace
+revision: 5995262
+part: whole
+quest: 20
+url: https://warcraft.wiki.gg/wiki/Blackrock_Menace
+
+== Objectives ==
+Bring 10 Battleworn Axes to Marshal Marris in Lakeshire. 
+
+ [Battleworn Axe] (10)
+
+
+== Description ==
+The Blackrock orcs have travelled from the Burning Steppes and claimed Stonewatch Keep to the north. From there they maraud the areas north of Lakeshire and keep its citizens in town, penned like cattle.
+Help rid Lakeshire of this menace. Kill these Blackrock orcs and bring me ten of their Battleworn Axes as proof.
+And although Blackrocks threaten us from the north, we've received reports of more in the southeastern pocket of Redridge. If you find any there, then they too should be hunted.
+
+
+== Rewards ==
+You will receive:
+
+1,650 experience
++100 reputation with Stormwind
+13
+
+
+== Progress ==
+Have you been slaying orcs, <name>?  If so, then show me...
+
+
+== Completion ==
+That makes for a lot fewer orcs to worry about, thanks.
+
+
+== Progression ==
+ [21] Blackrock Menace
+ [25] Tharil'zun
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

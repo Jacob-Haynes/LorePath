@@ -1,0 +1,44 @@
+title: Hameya's Plea
+revision: 6961702
+part: whole
+quest: 6024
+url: https://warcraft.wiki.gg/wiki/Hameya%27s_Plea
+
+== Objectives ==
+Kill Infiltrator Hameya. Use his key on the Mound of Dirt behind the Undercroft.
+
+ [Hameya's Key]
+
+
+== Description ==
+Kill me. Before it's too late.
+I am Hameya. While traveling to Zul'Mashar, my brethren and I ate some bad meat... and we changed. We are infected.
+I can feel the lich's words now, urging me to reach Zul'Mashar and infect more of my people. I cannot resist, and so I wrote this scroll before my will left me.
+I buried a chest in dirt next to a wagon behind this crypt, but only my key will open it. I have the key. If you want my treasure, then find me.
+Kill me. Before it's too late.
+
+
+== Rewards ==
+You will receive:
+
+90
+ [Hameya's Slayer]
+ [Hameya's Cloak]
+
+
+== Progress ==
+This chest buried here is securely locked.
+
+
+== Completion ==
+Hameya's chest is opened!!
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

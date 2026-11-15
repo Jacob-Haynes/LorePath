@@ -1,0 +1,55 @@
+title: Power Overwhelming (Forever)
+revision: 6911592
+part: whole
+url: https://warcraft.wiki.gg/wiki/Power_Overwhelming_%28Forever%29
+
+== Objectives ==
+Slay the Mana Elemental in the City of Dalaran for High Sorcerer Andromath in Stormwind City.
+
+Arcanic Enigma slain
+
+
+== Description ==
+The Kirin Tor have long been allies of the Alliance. With the destruction of their city at the hands of the arch demon Archimonde, the once proud city of mages has now become reclusive and distrusting of outsiders.
+In recent years they have begun reconstruction efforts to bring the city of Dalaran back to its former glory. However, reports show they are struggling to contain an outbreak of wayward arcane energies.
+We must help them disperse these attacks lest we lose one of our most powerful allies.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Violet Sash]
+ [Runebound Gloves]
+You will also receive:
+
+1
+9,400 XP
+
+
+== Progression ==
+Horde attunement:
+
+ [34] Prison Break In &  [33] Key to the City
+ [35] Dalaran Patrols
+ [34] Blood in the Streets
+ [33D] Heart of Disruption
+ [33] Shrewd Negotiations
+Other dungeon quests:
+
+ [33D] A Green Sample
+ [33] An Alarming Request →  [33D] Heart of Disruption →  [33] Friend of the Kirin Tor
+ [33D] Power Overwhelming
+ [33D] Starving Arcane
+ [33D] Opportunistic Education
+ [33D] Source of Power
+ [33D] The Grave Knight
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

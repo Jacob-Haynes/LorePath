@@ -1,0 +1,48 @@
+title: The Defense of Grom'gol (2)
+revision: 5639178
+part: whole
+quest: 569
+url: https://warcraft.wiki.gg/wiki/The_Defense_of_Grom%27gol_%282%29
+
+== Objectives ==
+Commander Aggro'gosh of the Grom'gol base camp wants you to kill 10 Ogre Brutes and 5 Ogre Witch Doctors.
+
+Mosh'Ogg Brute slain (10)
+Mosh'Ogg Witch Doctor slain (5)
+
+
+== Description ==
+When we first arrived in this jungle we did not intend to wage war on the local tribes. Our mission to supply Stonard is of the highest priority. But complications have arisen. A local band of ogres has occupied the Mizjah Ruins to the southeast of Grom'gol. Despite warnings, they continue to ambush our supply caravans.
+I am putting you in charge of dealing with these uncooperative ogres.
+Travel to the ruins and attempt to drive them from the area. At the very least it will send a firm message.
+
+
+== Rewards ==
+
+You will receive:
+
+2850 XP (or 17 40 at level 70)
++250 reputation with Orgrimmar
+
+
+== Progress ==
+Have you made any progress with the ogres of the Mizjah Ruins yet, <class>?
+
+
+== Completion ==
+Well done.  You have served the Warchief with honor.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== Progression ==
+ [36] The Defense of Grom'gol
+ [37] The Defense of Grom'gol
+
+
+== External links ==
+
+Wowhead
+WoWDB

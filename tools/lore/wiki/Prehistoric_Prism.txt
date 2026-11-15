@@ -1,0 +1,61 @@
+title: Prehistoric Prism
+revision: 6912147
+part: whole
+quest: 98824
+url: https://warcraft.wiki.gg/wiki/Prehistoric_Prism
+
+== Objectives ==
+Bring the Titan Relic to High Explorer Magellas in Ironforge's Hall of Explorers.
+
+ [Titan Relic] (provided)
+
+
+== Description ==
+With titan-like inscriptions like that on its facets, nothing less than Ironforge's Hall of Explorers is the right place to bring it.
+I'd like to think that you'll be noted in the history for it in the catalogue -- "Recovered by <name>! Authenticated by Prospector Whelgar..." Ah, I'm gettin' meself carried away.
+High Explorer Magellas will receive you, and given the exquisite nature of what you carry, will surely be most generously appreciative should you donate it to the museum.
+Good find!
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Explorer's League Dustcover]
+ [Healer's Staff]
+ [Heavehammer]
+You will also receive:
+
+60
+6,150 XP
+
+
+== Progress ==
+Have a look at our gallery, but please, don't touch the artifacts, unless it's one you're here to donate to the library.
+
+
+== Completion ==
+What's this you've got...
+Woah! Look at this marvel! The light through it dances like nothin' I've seen since my first dig in old Uldaman. The marks of the keepers on this cannot be mistaken.
+You've done the League a great service bringin' this home. A find like this pushes the very boundaries o' the world's wisdom forward.
+We'll be sure to record the details of your contribution! Truly a job well done, adventurer.
+
+
+== Progression ==
+ [21] Daily Delivery →  [22] Young Crocolisk Skins →  [28D] Highland Hides and  [26] Apprentice's Duties
+ [31D] Horrors in the Highland
+ [31D] Seeking Caitlin →  [31D] Lost in the Thicket Things →  [31D] Heartwoven
+ [31D] Lost Relic Carry →  [31D] Prehistoric Prism
+ [31D] Songblade Search →  [31D] Fallen in the Fen
+ [31D] Changing Tastes
+ [31D] Elder Knowledge →  [31D] Earthen Echo
+ [31D] Dragonmaw Rumors →  [31D] Open the Maw
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

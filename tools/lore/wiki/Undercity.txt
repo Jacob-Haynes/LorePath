@@ -1,0 +1,7 @@
+title: Undercity
+revision: 6879062
+part: intro
+url: https://warcraft.wiki.gg/wiki/Undercity
+
+The Undercity, now known as the Ruins of Undercity, was the capital city of the Forsaken kingdom, located beneath the ruins of Capital City in Tirisfal Glades. Originally intended by Arthas Menethil to be the Scourge's seat of power in Lordaeron, the budding "Undercity" was abandoned when the death knight was recalled by the Lich King in the distant Northrend. During the Plaguelands civil war, Sylvanas Windrunner and the Forsaken rebels claimed the Undercity for their own, then spent years completing the twisted maze of catacombs the Scourge had begun constructing. It was much more defensible than the city above it.
+Plagued by the Banshee Queen during the Battle for Lordaeron, its surface has since been cleansed by the efforts of the Desolate Council.

@@ -1,0 +1,49 @@
+title: Encrypted Letter (Hillsbrad Foothills)
+revision: 6404316
+part: whole
+quest: 511
+url: https://warcraft.wiki.gg/wiki/Encrypted_Letter_%28Hillsbrad_Foothills%29
+
+== Objectives ==
+Bring the Encrypted Letter to Loremaster Dibbs in Southshore.
+
+ [Cleverly Encrypted Letter] (provided)
+
+
+== Description ==
+One of the letters on this table is encrypted and inscrutable.
+
+
+== Rewards ==
+You will receive:
+
+1550 XP
++75 reputation with Stormwind
+
+
+== Progress ==
+Yes, sir?  Do you have some business with me?
+
+
+== Completion ==
+What is this?  Hold a moment...let me take a closer look.
+...
+Hm, I have never before seen this form of encryption, but I must admit that my knowledge in that area is by no means complete.
+
+
+== Progression ==
+ [34] Encrypted Letter
+ [34] Letter to Stormpike
+ [34] Further Mysteries
+ [40] Dark Council
+
+
+== Patch changes ==
+ Hotfix (2010-12-07): No longer being offered to players by the Syndicate Documents in Hillsbrad Foothills. 
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

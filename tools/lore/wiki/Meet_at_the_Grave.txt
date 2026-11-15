@@ -1,0 +1,58 @@
+title: Meet at the Grave
+revision: 6188321
+part: whole
+quest: 3912
+url: https://warcraft.wiki.gg/wiki/Meet_at_the_Grave
+
+== Objectives ==
+Go to the graveyard outside Gadgetzan, and use the  [Videre Elixir]. Follow the rest of Donova's instructions to find Gaeriyan.
+
+ [Linken's Tempered Sword] (provided)
+
+
+== Description ==
+This elixir will allow you to speak with one that you would not normally even see...
+Take the Videre elixir, along with Linken's sword, to the graveyard just outside Gadgetzan in Tanaris. Once there, drink the potion. You may be quite surprised at the results, but do not be alarmed.
+In your "other" form, head due north until you reach the mountains. You'll find the one you need to speak with in one of the rocky crevices. His name is Gaeriyan.
+Remember, he will only speak to you in that form...
+
+
+== Rewards ==
+You will receive:
+
+7350 XP
+
+
+== Completion ==
+It has been long since any have come to talk with me...
+
+
+== Trivia ==
+This is a reference to when the Old Woman from The Legend of Zelda tells Link to meet the Old Man at the Graveyard.
+
+
+== Progression ==
+ [52] It's a Secret to Everybody
+ [52] It's a Secret to Everybody
+ [52] It's a Secret to Everybody
+ [52] The Videre Elixir
+Mandatory quest:  [52] The Videre Elixir
+ [52] Meet at the Grave
+ [52] A Grave Situation
+ [52] Linken's Sword
+ [52] A Gnome's Assistance
+ [52] Linken's Memory
+ [54] Silver Heart
+ [54] Aquementas
+ [54] Linken's Adventure
+ [56G] It's Dangerous to Go Alone
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

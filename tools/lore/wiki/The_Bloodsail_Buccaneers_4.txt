@@ -1,0 +1,52 @@
+title: The Bloodsail Buccaneers (4)
+revision: 6387074
+part: whole
+quest: 604
+url: https://warcraft.wiki.gg/wiki/The_Bloodsail_Buccaneers_%284%29
+
+== Objectives ==
+Fleet Master Seahorn in Booty Bay wants you to kill 10 Bloodsail Swashbucklers and bring back the Bloodsail Charts and the Bloodsail Orders.
+
+Bloodsail Swashbuckler slain (10)
+ [Bloodsail Charts]
+ [Bloodsail Orders]
+
+
+== Description ==
+Crazz speaks highly of your dedication to the Blackwater Raiders. I am going to trust you with a mission of extreme importance to the fleet.
+Infiltrate the so-called southern command post the Bloodsail Buccaneers have established on the Wild Shore. Raid the encampment. Bring me their charts along with their written orders. We shall see exactly what those scum are up to.
+
+
+== Rewards ==
+You will receive:
+
+3600 XP (or 21 60 at max level)
+-250 reputation with Bloodsail Buccaneers
++250 reputation with Booty Bay
+
+
+== Progress ==
+Ahoy, <name>. What word do you bring of the Bloodsail encampment to the south?
+
+
+== Completion ==
+Perfect, <name>. Now that we know their plan, it's just a matter of time.
+And to think the fools have dropped anchor just off the cape.... 
+
+
+== Progression ==
+ [41] The Bloodsail Buccaneers
+ [41] The Bloodsail Buccaneers
+ [41] The Bloodsail Buccaneers
+ [42] The Bloodsail Buccaneers
+ [42] The Bloodsail Buccaneers
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,69 @@
+title: The Scarlet Oracle, Demetria
+revision: 6725230
+part: whole
+quest: 6148
+url: https://warcraft.wiki.gg/wiki/The_Scarlet_Oracle%2C_Demetria
+
+This is the final quest in a chain beginning after you complete  [58] To Kill With Purpose,  [58] Un-Life's Little Annoyances, and  [60] The Ranger Lord's Behest.
+
+
+== Objectives ==
+The Scarlet Crusade is on the move. Somewhere along the road from Tyr's Hand to Stratholme you will find the Oracle, Demetria, and her entourage. Hunt her down and slay her. Return to Nathanos Blightcaller should you succeed.
+
+Demetria slain
+
+
+== Description ==
+Demetria is chief advisor to the Grand Crusader. She is called the Oracle due to her 'otherworldly' senses. She has successfully assisted the Crusade in several of their victories against the Scourge.
+While this ruse was successful in exposing her, if she truly does possess psychic powers, she will undoubtedly be expecting some sort of trouble. You are going to provide that 'trouble'.
+Track down the Oracle and terminate her. They should be moving out of Tyr's Hand as we speak. Make me proud, worm.
+
+
+== Reward ==
+
+You will receive:
+
+1 80
+8500 XP
++150 or +350 reputation with Undercity
+
+
+== Progress ==
+What is your status, <name>?
+
+
+== Completion ==
+They will be reeling from this blow for years! Well done, <name>! You have earned not only my respect but also this reward.
+
+
+== Notes ==
+Demetria will spawn at Tyr's Hand, Eastern Plaguelands, upon accepting the quest from Nathanos Blightcaller, and will walk from there to Stratholme. She has many guards with her. These guards aren't elite, but there are 8 of them, and Demetria will resurrect any you kill. At level 60, you will need a full 5-man group to complete this quest - focus on taking down the Oracle first.
+The Alliance have a quest chain ending with the same rewards -  [60R] Order Must Be Restored. However, their final step is killing Nathanos Blightcaller.
+
+
+== Progression ==
+ [56] The Champion of the Banshee Queen
+Complete all of:
+ [58] To Kill With Purpose
+ [58] Un-Life's Little Annoyances
+ [60] The Ranger Lord's Behest
+
+ [60] Duskwing, Oh How I Hate Thee...
+ [60] The Corpulent One
+
+ [60] The Call to Command
+ [60D] Ramstein
+ [60G] The Crimson Courier
+ [60G] Nathanos' Ruse
+ [60G] Return to Nathanos
+ [60G] The Scarlet Oracle, Demetria
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

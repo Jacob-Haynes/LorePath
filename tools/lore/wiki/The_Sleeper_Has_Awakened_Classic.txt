@@ -1,0 +1,89 @@
+title: The Sleeper Has Awakened (Classic)
+revision: 6957930
+part: whole
+quest: 5321
+url: https://warcraft.wiki.gg/wiki/The_Sleeper_Has_Awakened_%28Classic%29
+
+== Objectives ==
+Escort Kerlonian Evershade to Liladris Moonriver at Maestra's Post in Ashenvale.
+
+Escort Kerlonian Evershade to Maestra's Post
+ [Horn of Awakening]
+
+
+== Description ==
+I was on my way to Maestra's Post to meet Liladris Moonriver, but I decided to stop here and take a short nap. Ever since I awoke from the emerald dream, I have been so sleepy...
+<yawn>
+Would you mind showing me the way? I understand that Maestra's Post is south of here, along the road in Ashenvale. It can be dangerous, so I hope you have some friends that will join us.
+Lastly, I may fall asleep so if you ever need to wake me, please use my horn. You'll find it in the chest here.
+
+
+== Rewards ==
+You will be able to choose one of these rewards
+
+ [Owlsight Rifle]
+ [Jadefinger Baton]
+ [Steelcap Shield]
+ [Deerhide Pants] 
+You will also receive:
+
+1550 XP
++100 or +250 reputation with Darnassus
+
+
+== Progress ==
+Has Kerlonian arrived?
+
+
+== Completion ==
+Oh, I am so happy Kerlonian made it! And I'm sure I'll find him sleeping somewhere around here, won't I?
+Thank you for showing him the way, <name>.
+
+
+== Notes ==
+On accept:
+
+Kerlonian Evershade says: Liladris has been waiting for me at Maestra's Post, so we should make haste, <name>.
+Kerlonian will follow the player who started the quest. Every now and then he stops to lay down, with an emote:
+
+Kerlonian Evershade begins to drift off...
+Kerlonian Evershade looks very sleepy...
+Kerlonian Evershade suddenly falls asleep.
+...and a /say line:
+
+Kerlonian Evershade says: Oh, I am so tired...
+Kerlonian Evershade says: This looks like the perfect place for a nap...
+Kerlonian Evershade says: Yaaaaawwwwwnnnn...
+Kerlonian Evershade says: You don't mind if I stop here for a moment, do you?
+Use the  [Horn of Awakening] to rouse him:
+
+Kerlonian Evershade wakes up!
+In the Twilight Vale:
+
+Kerlonian Evershade says: Be on the alert! The Blackwood furbolgs are numerous in this area...
+A Blackwood Shaman and two Blackwood Ursa attack.
+In Ashenvale:
+
+Kerlonian Evershade says: It's quiet... Too quiet...
+A Dark Strand Adept, Dark Strand Cultist, and Dark Strand Excavator attack.
+At Maestra's Post:
+
+Kerlonian Evershade says: Oh, I can see Liladris from here... Tell her I'm here, won't you?
+Kerlonian walks off to the side of the building and disappears.
+Throughout the quest, Kerlonian uses Druid of the Claw voice lines from Warcraft III. These include the following:
+
+On accept: "The sleeper has awakened."
+When awakened: "Anu'dora," "I'd rather be hibernating," "I'm awake... I'm awake," "My path is clear," and "Our time is short."
+In combat: "Bear arms!" and "I'll make short work of them!"
+Because Kerlonian follows the player rather than a preset path, it's possible to avoid the scripted encounters by staying away from the road.
+The Horn of Awakening has a 25 minute time limit before it disappears. This can be an issue if the quest is failed; talking to Kerlonian to start the escort again will not reset the horn's timer, which may unexpectedly doom a second attempt. The timer can be reset by destroying the horn and picking up a new one from the chest.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

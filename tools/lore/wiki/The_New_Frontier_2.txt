@@ -1,0 +1,48 @@
+title: The New Frontier (2)
+revision: 5609752
+part: whole
+quest: 6761
+url: https://warcraft.wiki.gg/wiki/The_New_Frontier_%282%29
+
+== Objectives ==
+Speak with Mathrengyl Bearwalker at the Cenarion Enclave of Darnassus.
+
+
+== Description ==
+I have relegated my second, Mathrengyl Bearwalker, to deal with Moonglade's call for aid. Speak to him on this matter - NOT me.
+Let me give you some... friendly... advice. It is I who led us out of the darkness - NOT the Cenarion Circle in Moonglade - when all was lost for our race. Teldrassil gives us all new life! They would have you believe otherwise, and to believe their propaganda would be a fool's task.
+I'll leave it to you to decide whether or not you're a fool.
+
+
+== Rewards ==
+You will receive:
+
+825 XP (4 80 at max level)
++10 reputation with Darnassus
+
+
+== Completion ==
+Yes <class>, thank you for coming.  I apologize about the misunderstanding... the air is thick with mistrust between the Arch Druid here and Keeper Remulos in Moonglade.  Each suspect the other of chicanery, and the fact that strange corruptions of Teldrassil continue unabated are still an issue here.  It does little to quell mistrust.
+Regardless, our duty to the Cenarion Circle remains... even if those who lead it may disagree with one another.
+
+
+== Progression ==
+ [55] The New Frontier
+ [55] The New Frontier /  [55] The New Frontier
+ [55] Rabine Saturna /  [55] Rabine Saturna
+ [55] Wasteland
+ [55] The Spirits of Southwind
+ [57] Hive in the Tower
+ [57] Umber, Archivist
+ [57] Uncovering Past Secrets
+ [57] Under the Chitin Was...
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

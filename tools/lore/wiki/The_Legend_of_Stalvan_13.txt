@@ -1,0 +1,73 @@
+title: The Legend of Stalvan (13)
+revision: 6959769
+part: whole
+quest: 98
+url: https://warcraft.wiki.gg/wiki/The_Legend_of_Stalvan_%2813%29
+
+This quest concludes the Legend of Stalvan quest chain.
+Commander Althea Ebonlocke has ordered you to deliver Stalvan his death sentence, and deliver his family ring to Madame Eva as a reward for her premonition, and as assurance of her grand daughters survival.
+
+
+== Objectives ==
+Kill Stalvan Mistmantle and show Madame Eva his family ring.
+
+ [Mistmantle Family Ring]
+
+
+== Description ==
+Stalvan Mistmantle led a life of depravity. Innocent victims died by his hand. Undoubtedly he is guilty of countless crimes. Now the lunatic threatens Darkshire. The Light only knows what sordid acts he is plotting. Travel to his cottage just north of town, <class>, and execute Stalvan, once and for all.
+When the deed is done, travel to Madame Eva's and show her his family ring. After all, it was her premonition that led to this gruesome discovery. But Darkshire is safer because of her.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Crescent of Forlorn Spirits]
+ [Ring of Forlorn Spirits]
+ [Ring of Ruin] 
+You will also receive:
+
+4100 XP
++500 reputation with Stormwind
+
+
+== Progress ==
+Yes, <name>?
+
+
+== Completion ==
+I know, <name>: Stalvan is dead.  I sensed a wave of hope ripple through the tainted forest.  Once and for all, Duskwood is free from his blood thirst.  My joy is hampered by thoughts of those who fell prey to the horrible beast.  Nonetheless, you are a brave and cunning <class>.  
+
+
+== Notes ==
+Commander Althea Ebonlocke patrols Duskwood, the town in which this quest starts.
+Stalvan can be found in his house.
+Make sure you have atleast one inventory space free for  [Mistmantle Family Ring].
+Stalvan is a level 32 and the area around his house populated by other level 30ish undeads.
+The quest is level 35 but as Stalvan is a standard level 32 mob it's quite possible to do it earlier than that. This is due to the fact that Stalvan used to be a level 35 elite mob.
+
+
+== Progression ==
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [28] The Legend of Stalvan
+ [35] The Legend of Stalvan
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

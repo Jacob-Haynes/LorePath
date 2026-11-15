@@ -1,0 +1,98 @@
+title: Return to Bodley
+revision: 6682708
+part: whole
+quest: 8996
+url: https://warcraft.wiki.gg/wiki/Return_to_Bodley
+
+== Objectives ==
+Return to Bodley inside Blackrock Mountain and give him the Brazier of Beckoning.
+
+ [Brazier of Beckoning]
+
+
+== Description ==
+I will ignore your impertinence this time, <class>, because you have done a noble thing today; returning the rest of my stolen spirit to me. Despite your obviously weak nature, <race>, you have shown courage where those that stole from me did not, and probably never could!
+Return to them, before I change my mind and slay you where you stand. Go back and tell them that they are safe... for now.
+
+
+== Rewards ==
+You will receive:
+
+39
+955 XP (or 5 70 at max level)
+ [Brazier of Invocation]
+ [Brazier of Invocation: User's Manual]
+
+
+== Progress ==
+<Name>, you're back and still alive! Well, at least that makes one of us.
+You're going to have to tell me all about it!
+
+
+== Completion ==
+He really said all of that? Wow, I can't believe he's going to call off the spectral assassins and stalkers, even if he did hint at causing my living companions further harm in the future.
+This is a great day, <name>! You've accomplished what few ever could, and absolved us, at least in part, of some of our past sins.
+Thank you! As a sign of appreciation, I'd like to give you this. You can use it to summon forth spirits at the same haunted locations that you already have, and a few others, too.
+
+
+== Notes ==
+This is the tenth step in the quest chain to upgrade your Dungeon Set 1 Helm and Chestpiece into Dungeon Set 2.
+
+
+== Progression ==
+ [60D] An Earnest Proposition
+ [60] A Supernatural Device
+ [60] The Ectoplasmic Distiller
+ [60] Hunting for Ectoplasm
+ [60] A Portable Power Source
+ [60] A Shifty Merchant
+ [60] Return to Deliana /  [60] Return to Mokvar
+ [60D] Just Compensation
+ [60] In Search of Anthion
+ [60D] Dead Man's Plea
+ [60] Proof of Life
+ [60] Anthion's Strange Request
+ [60D] Anthion's Old Friend
+ [60D] Falrin's Vendetta
+ [60D] The Instigator's Enchantment
+ [60D] The Challenge
+ [60D] Anthion's Parting Words
+ [60] Bodley's Unfortunate Fate
+ [60R] Three Kings of Flame
+
+ [60] Components of Importance
+ [60] Components of Importance
+ [60G] Components of Importance
+ [60G] Components of Importance
+
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60D] The Left Piece of Lord Valthalak's Amulet
+ [60G] I See Alcaz Island In Your Future...
+
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+ [60G] More Components of Importance
+
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60D] The Right Piece of Lord Valthalak's Amulet
+ [60R] Final Preparations
+ [60R] Mea Culpa, Lord Valthalak
+ [60] Return to Bodley
+ [60] Back to the Beginning
+ [60D] Saving the Best for Last
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.10.0 (2006-03-28): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

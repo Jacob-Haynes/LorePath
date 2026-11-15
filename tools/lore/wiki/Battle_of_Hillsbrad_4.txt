@@ -1,0 +1,61 @@
+title: Battle of Hillsbrad (4)
+revision: 5612678
+part: whole
+quest: 532
+url: https://warcraft.wiki.gg/wiki/Battle_of_Hillsbrad_%284%29
+
+== Objectives ==
+Kill Magistrate Burnside and 5 Hillsbrad Councilmen. Destroy the Hillsbrad Proclamation. Steal the Hillsbrad Town Registry. Report back to Darthalia in Tarren Mill afterwards.
+
+Magistrate Burnside slain
+Hillsbrad Councilmen slain (5)
+Hillsbrad Proclamation destroyed
+ [Hillsbrad Town Registry]
+
+
+== Description ==
+The town of Hillsbrad is in disarray and we believe it will soon fall. We must, however, persist in our ruthlessness until the human scum are wiped from the foothills for eternity.
+Despite their overwhelming losses, the humans rally around their leadership and keep fighting. We must eliminate their leader, Magistrate Burnside, as well as the town council. Destroy their revered political document as well, the Hillsbrad Proclamation. And while you're at it, steal the town registry.
+
+
+== Rewards ==
+You will receive:
+
+20
+2100 XP
++100 or +250 reputation with Undercity
+
+
+== Progress ==
+What news have you?
+
+
+== Completion ==
+News of your glories in Hillsbrad traveled fast.  You have done well, <class>.
+
+
+== Notes ==
+There's a large building which is the Town Hall. Burnside, the Proclamation, and the Registry are all inside. Councilmen are both outside and inside the hall.
+Burnside and the councilmen are all mages so you have to deal with ranged attacks. They will assist each other so you might have to take 2-3 on at once.
+The Proclamation is in front of Burnside.
+The Registry is in the corner by the stairs leading up to Burnside's platform. It looks like a book.
+
+
+== Progression ==
+ [24] Battle of Hillsbrad
+ [25] Battle of Hillsbrad
+ [26] Battle of Hillsbrad
+ [26] Battle of Hillsbrad
+ [28] Battle of Hillsbrad
+ [30] Battle of Hillsbrad
+ [32] Battle of Hillsbrad (Classic) /  [32] Battle of Hillsbrad (WotLK Classic)
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

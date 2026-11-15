@@ -1,0 +1,48 @@
+title: The Lost Caravan
+revision: 6220618
+part: whole
+quest: 1421
+url: https://warcraft.wiki.gg/wiki/The_Lost_Caravan
+
+== Objectives ==
+Find the Caravan Chest in the Fallow Sanctuary, obtain the Wizards' Reagents and bring to Watcher Biggs.
+
+ [Wizards' Reagents]
+
+
+== Description ==
+I was stunned during the attack by the Lost Ones, but before my sight went black I spied one of our wagons being dragged to the Fallow Sanctuary, the lost one village to the north.
+A caravan chest with valuable reagents was in that wagon, reagents vital to the studies of the wizards of Nethergarde Keep. Find the chest and get those reagents, <name>. Get them and bring them to me.
+
+
+== Rewards ==
+You will receive:
+
+1650 XP (or 16 80 at level 70)
++250 reputation with Stormwind
+
+
+== Progress ==
+Do you have the wizard's reagents, <name>?
+
+
+== Completion ==
+Ah, you found them! With these, the wizards in Nethergarde may continue their work. I do not know what it is that they do, but it is linked to the Dark Portal in the Blasted Lands, and is vital to the security of the Alliance.
+
+
+== Progression ==
+ [37] Help Watcher Biggs
+ [37] Encroaching Wildlife
+ [35] The Lost Caravan
+ [42] Driftwood
+ [42] Deliver the Shipment
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

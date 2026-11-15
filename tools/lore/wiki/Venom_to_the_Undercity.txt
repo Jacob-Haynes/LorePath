@@ -1,0 +1,53 @@
+title: Venom to the Undercity
+revision: 6429436
+part: whole
+quest: 2938
+url: https://warcraft.wiki.gg/wiki/Venom_to_the_Undercity
+
+== Objectives ==
+Bring Faranell's Parcel to Master Apothecary Faranell in the Undercity.
+
+ [Faranell's Parcel] (provided)
+
+
+== Description ==
+The venom you gathered from the Witherbark's spider god is quite a find! I've been able to kill nearly two dozen rabbits with just a drop of the stuff. Granted, some of those rabbits were very young and small enough to fit in the palm of one's hand so I'm certain their resistance to toxins was low, but it can't be denied that this poison is powerful!
+I'd like a sample sent to my superior, Apothecary Faranell in the Apothecarium of the Undercity. I am positive he would want to test this himself.
+
+
+== Rewards ==
+
+You will also receive:
+
+2 50
+8,450 XP
++200 reputation with Undercity
+
+
+== Progress ==
+Word was sent of your coming, <name>.  You have a parcel for me?
+
+
+== Completion ==
+Ah, very good.  Lydon mentioned the poison in this parcel is the most potent he has come in contact with, and is busy working on new applications with it.
+With luck, we will find many.
+Thank you, <name>.  Your service to the Royal Apothecary Society is undeniable.
+
+
+== Progression ==
+ [43] Venom Bottles
+ [45] Undamaged Venom Sac
+ [45G] Consult Master Gadrin
+ [45D] The Spider God
+ [55E] Summoning Shadra
+ [55] Venom to the Undercity
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

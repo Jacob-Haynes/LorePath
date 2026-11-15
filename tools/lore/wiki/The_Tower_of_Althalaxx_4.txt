@@ -1,0 +1,72 @@
+title: The Tower of Althalaxx (4)
+revision: 5587052
+part: whole
+quest: 970
+url: https://warcraft.wiki.gg/wiki/The_Tower_of_Althalaxx_%284%29
+
+This quest is part of quest chain The Tower of Althalaxx.
+
+
+== Objectives ==
+Collect a  [Glowing Soul Gem] and return it to Delgren the Purifier at Maestra's Post.
+
+ [Glowing Soul Gem]
+
+
+== Description ==
+Balthule's letter is dire.  This Cult of the Dark Strand is a thorn in my side that must be removed.  I have been dealing with some of the Dark Strand scum northeast of here at Ordil'Aran.  One of their number possesses a soul gem that I believe holds the secret to the cult's power.
+Bring it to me, and I will be able to decipher the secrets held within.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+1650 XP (or 10 20 at level 80)
++250 reputation with Darnassus
+
+
+== Progress ==
+Have you acquired that soul gem?
+
+
+== Completion ==
+Hmm, some dark magic enchants this soulstone.  Let's see what's trapped inside, shall we?
+
+
+== Notes ==
+The soul gem drops only rarely.  You may need to slay every Dark Strand Adept, Cultist, Excavator, Enforcer, or Assassin at Ordil'Aran several times in order to acquire it.  (All of those varieties of Dark Strand follower drop it.  They just drop it rarely.)
+
+On completion
+Delgren the Purifier says: A simple enough task to break this soulstone!
+Glowing Soulgem bursts open!
+The ghost of Sargath appears before Delgren.
+Sargath says: In the throes of the Sundering, Ameth'Aran was at the whim of the terror that gripped the land.  There was little hope for survival.
+Sargath says: Athrikus came to us.  He told us that he could save us from harm.  He cast a spell upon us to protect us from harm.
+Sargath says: When the shaking stopped, his true motives were revealed.  We were trapped, and he was slowly draining our powers.
+Sargath says: There were hundreds imprisoned by his spell.  Now only a few remain in their prisons.  He would speak to us sometimes.
+Sargath says: He worried that his power weakened, that soon even we last of his precious soulgems would fade and die.
+Delgren the Purifier says: Then we must put an end to Athrikus Narassin.  Tell me, spirit, where might we find the other soulgems, to undo his magic?
+Sargath says: His lieutenant, Ilkrud Magthrull possesses a tome which might indicate the location of the remaining soulgems.
+Sargath fades into the mist...
+
+
+== Progression ==
+ [18] The Tower of Althalaxx
+ [18] The Tower of Althalaxx
+ [18] The Tower of Althalaxx
+ [21] The Tower of Althalaxx
+ [24] The Tower of Althalaxx
+ [28] The Tower of Althalaxx
+ [28] The Tower of Althalaxx
+ [31] The Tower of Althalaxx
+ [31] The Tower of Althalaxx
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,70 @@
+title: Ramstein (quest)
+revision: 6874361
+part: whole
+quest: 6163
+url: https://warcraft.wiki.gg/wiki/Ramstein_%28quest%29
+
+== Objectives ==
+Travel to Stratholme and slay Ramstein the Gorger. Take his head as a souvenir for Nathanos.
+
+ [Head of Ramstein the Gorger]
+
+
+== Description ==
+I was overwhelmed. On this very stead, I stood... held my ground in defense of Lordaeron. The farm and all on it were waylaid by a gigantic wave of Scourge.
+The wretch. The filth. It hovered above me, entrails hanging from its gaping chest cavity.
+I woke as Scourge. For so long I was helpless. My mind had coalesced with the Lich King's.
+She came for me... somewhere, somehow, I knew she would. Free.
+And now, I must have my vengeance - my vengeance on that which took from me my life. Destroy it.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Royal Seal of Alexis]
+ [Elemental Circle]
+You will also receive:
+
+1 80
+7050 XP
++100 or +500 reputation with Undercity
+
+
+== Progress ==
+After Sylvanas freed me, I hunted the beast across these wastes for months. It fled to the safety of Stratholme. The bastard...
+
+
+== Completion ==
+I wonder... did it beg for mercy? Could it know what mercy is?
+<Nathanos spits.>
+I will hang this beast's head upon my wall.
+You have earned a spot amongst one of my champions, <name>.
+<Nathanos salutes.>
+
+
+== Progression ==
+ [56] The Champion of the Banshee Queen
+Complete all of:
+ [58] To Kill With Purpose
+ [58] Un-Life's Little Annoyances
+ [60] The Ranger Lord's Behest
+
+ [60] Duskwing, Oh How I Hate Thee...
+ [60] The Corpulent One
+
+ [60] The Call to Command
+ [60D] Ramstein
+ [60G] The Crimson Courier
+ [60G] Nathanos' Ruse
+ [60G] Return to Nathanos
+ [60G] The Scarlet Oracle, Demetria
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,44 @@
+title: The Sunken Temple (Horde)
+revision: 6702271
+part: whole
+quest: 3380
+url: https://warcraft.wiki.gg/wiki/The_Sunken_Temple_%28Horde%29
+
+The Sunken Temple is the first quest in the The Sunken Temple quest chain.
+
+
+== Objectives ==
+Find Marvon Rivetseeker in Tanaris.
+
+
+== Description ==
+There are restless spirits in this world, <name>. There are spirits that have been tainted by their isolation, bound to an ancient evil...
+I have heard of a place that lies deep below the surface of the earth—banished there by powers greater than I have ever seen.
+If you wish to learn more of this place; the Sunken Temple, seek out a goblin named Marvon Rivetseeker. He has studied many ancient areas of the world, and was last known to have left his home in Ratchet to study the troll ruins in Tanaris.
+
+
+== Rewards ==
+You will receive:
+
+5,300 XP (or 31 50 at max level)
+
+
+== Completion ==
+Yes, the Sunken Temple, I can say that I have seen it with my own eyes. Perhaps you'd like to hear more about it?
+You look like the adventurous type—I know things that may intrigue you...
+
+
+== Progression ==
+ [51D] The Sunken Temple
+ [51] The Stone Circle
+ [51D] Into the Depths &  [51D] Secret of the Circle
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

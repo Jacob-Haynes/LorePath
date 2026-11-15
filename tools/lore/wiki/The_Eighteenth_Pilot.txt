@@ -1,0 +1,44 @@
+title: The Eighteenth Pilot
+revision: 6309789
+part: whole
+quest: 1186
+url: https://warcraft.wiki.gg/wiki/The_Eighteenth_Pilot
+
+The Eighteenth Pilot is a neutral quest in the Goblin Sponsorship quest chain in which players are asked to speak with the goblin pilot, Razzeric.
+
+
+== Objectives ==
+Speak with Razzeric on the Shimmering Flats.
+
+
+== Description ==
+I'm going to be busy with working on integrating this new fuel regulator to our racer designs, but if you'd like to help out the team some more, talk to Razzeric. He's our pilot--well, our eighteenth pilot, to be exact--and he likes to add his own little modifications to the racers.
+He's a little off his rocker, though, so try not to act too surprised.
+
+
+== Completion ==
+You're the <race> that's been helping Pozzik out, right? I was like you once, running around the pit area, helping with whatever work the mechanics would let me do.
+Now look at me! The goblin racing team's pilot extraordinaire!
+
+
+== Progression ==
+ [30] Load Lightening
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] The Eighteenth Pilot
+ [41] Razzeric's Tweaking
+ [41] Safety First
+ [41] Safety First
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

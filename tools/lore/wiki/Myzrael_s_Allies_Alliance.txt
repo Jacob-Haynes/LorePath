@@ -1,0 +1,46 @@
+title: Myzrael's Allies (Alliance)
+revision: 5638244
+part: whole
+quest: 653
+url: https://warcraft.wiki.gg/wiki/Myzrael%27s_Allies_%28Alliance%29
+
+== Objectives ==
+Speak with Gerrig Bonegrip in the Forlorn Cavern of Ironforge. 
+
+
+== Description ==
+<Myzrael speaks.>
+Free! I AM FREE! I am free to gather strength, hidden from my captors. For if they faced me now they would surely overpower and again imprison me.
+But in time I will confront the giants, and they will regret their wardship of me!
+You are a noble ally, <name>. I will need your help again in time. When I am ready, I will need you to summon me to the surface.
+Speak with Gerrig Bonegrip. He is in Ironforge, in a shop of the Forlorn Cavern. He knows how I can be summoned.
+
+
+== Rewards ==
+You will receive:
+
+3250 XP (or 19 80 at 70)
+
+
+== Completion ==
+The Lady told me of your coming, <class>. You are welcome in my abode for you, like I, serve a higher cause. 
+
+
+== Progression ==
+ [37] The Princess Trapped
+ [38] Stones of Binding
+ [42] Breaking the Keystone
+ [40] Myzrael's Allies
+ [40] Theldurin the Lost
+ [41] The Lost Fragments
+ [50G2] Summoning the Princess
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,7 @@
+title: Krom'Grul
+revision: 6369400
+part: intro
+url: https://warcraft.wiki.gg/wiki/Krom%27Grul
+
+Krom'Grul is an ogre mage of the Firegut tribe found south at Dreadmaul Rock in the Burning Steppes.
+Krom'Grul tortured and killed Sha'ni Proudtusk, and stole her wedding nose-ring.

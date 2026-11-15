@@ -1,0 +1,52 @@
+title: Goblin Sponsorship
+revision: 6229991
+part: whole
+quest: 1178
+url: https://warcraft.wiki.gg/wiki/Goblin_Sponsorship
+
+Goblin Sponsorship is a neutral quest in the Goblin Sponsorship. In this quest, players must visit Gazlowe in Ratchet to investigate a fuel regulator which was supposedly on its way to the goblin racer team, but has not yet arrived.
+
+
+== Objectives ==
+Speak to Gazlowe in Ratchet.
+
+
+== Description ==
+Our racing team is the pride of goblins everywhere. You'd be surprised at some of the people who contribute in one way or another to our team.
+You know Gazlowe? He tracks down parts from around the world for us. He even came down to work on one of our rigs once!
+A few weeks ago, he said he'd send us a new prototype fuel regulator but it hasn't come yet. He's usually very prompt... Maybe you wouldn't mind going to Ratchet to ask him about it? I wouldn't be so pushy, but the gnomes are gaining on us!
+
+
+== Rewards ==
+You will receive:
+
+710 XP
++25 reputation with Ratchet
+
+
+== Completion ==
+Pozzik sent you, huh? You know, Pozzik was one of the most respected tinkerers in Undermine before he retired to start working on the racers.
+The first thing he did when he joined the team was develop the two engine model racers. Could be that the businesses will suffer without him working with the Tinkers' Union, but who cares, right? There's nothing like the races!
+
+
+== Progression ==
+ [30] Load Lightening
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] Goblin Sponsorship
+ [37] The Eighteenth Pilot
+ [41] Razzeric's Tweaking
+ [41] Safety First
+ [41] Safety First
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

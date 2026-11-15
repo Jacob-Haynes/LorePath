@@ -1,0 +1,67 @@
+title: The Tower of Althalaxx (6)
+revision: 5587054
+part: whole
+quest: 1140
+url: https://warcraft.wiki.gg/wiki/The_Tower_of_Althalaxx_%286%29
+
+This quest is part of quest chain The Tower of Althalaxx.
+
+
+== Objectives ==
+Free the trapped Highborne souls in Night Run and Satyrnaar, then return to Delgren the Purifier at Maestra's Post.
+
+Free the Highborne soul in Night Run
+Free the Highborne soul in Satyrnaar
+
+
+== Description ==
+The writing of the orcs is little better than the scribblings of a child.  Many of my order scoffed when I chose to learn their tongue, but I have found it beneficial to gain further understanding of my enemies.
+From Ilkrud's Scribblings, it appears that Athrikus still possesses two soulgems, and they are being held in Night Run and Satyrnaar, satyr-held areas in northeast Ashenvale.
+Be careful out there, <name>, the satyrs' blood-soaked temples can be unsettling even for a seasoned <class> such as yourself.
+
+
+== Rewards ==
+You will receive:
+
+2300 XP
++250 reputation with Darnassus
+
+
+== Progress ==
+I heard whisper once that the satyrs' history is somehow related to that of the night elves, but I have found my esteemed hosts reticent to speak of the matter.
+
+
+== Completion ==
+Perhaps the satyrs have been allowed to persist in the forest for too long. I will speak with Elissa about it when next I travel to Auberdine.
+Nonetheless, with the soulgems destroyed, Athrikus' power will be greatly diminished.  We must seize on this opportunity to eliminate him and his cult.
+
+
+== Notes ==
+Each objective is a red stone floating above a Circle of Imprisonment inscribed below it.
+
+Both are located in satyr-owned territory
+The first at aprox  in Night Run
+The second at aprox  in Satyrnaar
+Be aware that the satyr rogues will often be in stealth.
+
+
+== Progression ==
+ [18] The Tower of Althalaxx
+ [18] The Tower of Althalaxx
+ [18] The Tower of Althalaxx
+ [21] The Tower of Althalaxx
+ [24] The Tower of Althalaxx
+ [28] The Tower of Althalaxx
+ [28] The Tower of Althalaxx
+ [31] The Tower of Althalaxx
+ [31] The Tower of Althalaxx
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

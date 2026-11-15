@@ -1,0 +1,58 @@
+title: The Doomed Fleet
+revision: 6304393
+part: whole
+quest: 270
+url: https://warcraft.wiki.gg/wiki/The_Doomed_Fleet
+
+This is part of the Morbent Fel quest chain.
+
+
+== Objectives ==
+Go to Menethil Harbor in the Wetlands, and speak with Glorin Steelbrow. 
+
+
+== Description ==
+Years ago, the Third Fleet of Kul Tiras sunk along the coasts of The Wetlands, an expanse of marsh north of the Dwarven kingdom of Ironforge. Aboard one ship was a load of Lightforge Iron.
+This metal is precious to us, for items crafted from it strike with holy truth. If you are to face Morbent Fel, then you will need such a weapon.
+Go to Menethil Harbor and speak with my dwarven colleague Glorin Steelbrow. If that lost metal can be found, he'll know where to look. 
+
+
+== Rewards ==
+You will gain:
+
+1200 XP (or 7 at level 70)
++75 reputation with Stormwind
+
+
+== Completion ==
+Lightforge Iron is a precious metal, but it sounds like your quest is a dire one. You've come a long way, <Brother/Sister>. With luck, you might just find what you seek!
+And if you do get the iron, I know who can fashion it into a weapon against this Necromancer you speak of in Duskwood.
+
+
+== Progression ==
+ [23] Deliveries to Sven (optional)
+ [25] Sven's Revenge
+ [25] Sven's Camp
+ [25] The Shadowy Figure
+ [25] The Shadowy Search Continues
+ [25] Inquire at the Inn
+ [25] Finding the Shadowy Figure
+ [25] Return to Sven
+ [28] Proving Your Worth
+ [29] Seeking Wisdom
+ [29] The Doomed Fleet
+ [29] Lightforge Iron
+ [29] The Lost Ingots
+ [29] Blessed Arm
+ [29] Armed and Ready
+ [32G] Morbent Fel
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

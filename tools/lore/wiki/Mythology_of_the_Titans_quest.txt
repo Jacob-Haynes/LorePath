@@ -1,0 +1,52 @@
+title: Mythology of the Titans (quest)
+revision: 6396538
+part: whole
+quest: 1050
+url: https://warcraft.wiki.gg/wiki/Mythology_of_the_Titans_%28quest%29
+
+== Objectives ==
+Retrieve Mythology of the Titans from the Monastery and bring it to Librarian Mae Paledust in Ironforge.
+
+ [Mythology of the Titans]
+
+
+== Description ==
+The future is inevitable!  We hurl ourselves towards it like falling raindrops to the Great Sea.
+But perhaps, by studying the past, we can know what to expect and be better prepared for the unknown.
+Before dire troubles fell upon Lordaeron, there was a bastion of knowledge tucked away in the Tirisfal Glades.  It is rumored that a book called Mythology of the Titans was housed in the library of the old Monastery.
+Bring it to me and perhaps together we can unlock the secrets of the past!
+
+
+== Rewards ==
+You will receive:
+
+3550 XP (or 21 60 at max level)
++500 reputation with Ironforge
+ [Explorers' League Commendation]
+
+
+== Progress ==
+The Monastery was a seminary for Paladins-in-training.  Once a stronghold of the Light, it fell into the hands of the crazed zealots of the Scarlet Crusade.
+The Crusade believed their goal a noble one: to purify the land of the undead plague.  But insanity tainted their plight and now they stand enemies to all.
+Bring Mythology of the Titans to me so I can study it and house it here in Ironforge.
+The corrupt halls of the Monastery are no place for such a historical treasure.
+
+
+== Completion ==
+You have rescued the sacred text!
+Your journey was long and acquiring the book was undoubtedly no easy task.  But the dwarves of Ironforge stand to benefit from your success.
+Thank you, <name>, on behalf of the Explorers' League.
+
+
+== Notes ==
+This quest objective is in the Library wing of Scarlet Monastery.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

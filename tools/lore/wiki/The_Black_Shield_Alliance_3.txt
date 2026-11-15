@@ -1,0 +1,60 @@
+title: The Black Shield (Alliance 3)
+revision: 5640375
+part: whole
+quest: 1320
+url: https://warcraft.wiki.gg/wiki/The_Black_Shield_%28Alliance_3%29
+
+== Objectives ==
+Speak with Captain Garran Vimes in Theramore.
+
+
+== Description ==
+Ah, I almost missed this... The leather strap on the back must have been burned off, but it seems like it was made to fit a large person. I'd guess a tauren, actually.
+That's about all I can tell you. Tell Captain Vimes I'm sorry I couldn't be of more help.
+
+
+== Completion ==
+That's not much information to work on, but we'll have to keep it in mind. Hopefully some of the other pieces of this mystery will fall into place, and paint a more helpful picture of what happened.
+
+
+== Rewards ==
+You will receive: 8 40
+
+
+== Notes ==
+This quest concludes the Black Shield fork of the chain. Finish the Hoofprints and Theramore Guard Badge forks to have access to the conclusion.
+
+
+== Progression ==
+This is part of The Shady Rest Inn quest chain:
+
+ [15-30] They Call Him Smiling Jim (optional)
+ [15-30] Inspecting the Ruins
+Complete all of:
+ [15-30] Suspicious Hoofprints
+The Black Shield quest chain
+ [15-30] The Black Shield
+ [15-30] The Black Shield
+ [15-30] The Black Shield
+Lieutenant Paval Reethe quest chain
+ [15-30] Lieutenant Paval Reethe
+ [15-30] Lieutenant Paval Reethe
+ [15-30] Daelin's Men
+ [15-30] The Deserters
+ [15-30] The Deserters
+ [15-30] A Grim Connection
+ [15-30] Confirming the Suspicion &  [15-30] Arms of the Grimtotems
+Side chain:
+ [15-30] Raptor Captor
+Side quest:  [15-30] Stinky's Escape
+ [15-30] Unleash the Raptors &  [15-30] Prisoners of the Grimtotems
+ [15-30] Tabetha's Assistance
+ [15-30] Raze Direhorn Post!
+ [15-30] Justice for the Hyals
+ [15-30] Peace at Last
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,63 @@
+title: Sacred Fire
+revision: 6704526
+part: whole
+quest: 5062
+url: https://warcraft.wiki.gg/wiki/Sacred_Fire
+
+Sacred Fire is the third quest in the Arikara quest chain.
+
+
+== Objectives ==
+Gather 10 bushels of Incendia Agave, and then consult Magatha Grimtotem on Elder Rise in Thunder Bluff.
+
+ [Incendia Agave] (10)
+
+
+== Description ==
+Arikara is a deadly creature that must be dealt with swiftly. In order to hunt her down you will need to light the sacred fire of life - this will summon Arikara.
+Go now and harvest the rare Incendia agave plant. Once you have harvested enough agave, seek council with Magatha Grimtotem on Elder Rise in Thunder Bluff. She is a powerful shaman that can enchant the agave plant to create a powder that will light the fire.
+Travel northeast to the Boiling Pool and gather Incendia Agave.
+
+
+== Rewards ==
+You will receive:
+
+22
+2,200 XP
+
+
+== Progress ==
+So, Motega Firemain sends word of Arikara...well now that is grave news.
+<Magatha looks around.>
+Arikara is a deadly creature born only to seek vengeance against those who have committed heinous acts.
+<Magatha smiles.>
+
+
+== Completion ==
+Good, you have gathered the essential amount of Incendia agave. This rare herb found only in Thousand Needles will help light the dormant sacred fire of life.
+<Magatha begins to enchant the Incendia agave.>
+
+
+== Notes ==
+ [Incendia Agave] can be found around and inside the lake near Darkcloud Pinnacle - it looks like a little clump of spiky grass. Most of the plants are actually underwater. Herbalism helps to pinpoint on your mini-map. Steam elementals are scattered through the area. NOTE TO MAGES: these elementals will be much harder for you than for other classes, as they resist all ice and 50% damage from fire. Be prepared to use mainly your costly arcane spells against them, or get someone to help you with this quest. Other classes should have no problem soloing this quest.
+Rough coordinates for the lake: (36,36) - just go to the big lake on the map.
+
+After completion
+Magatha enchants the agave.
+
+
+== Progression ==
+ [26] Alien Egg
+ [26] Serpent Wild
+ [27] Sacred Fire
+ [28] Arikara
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

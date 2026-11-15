@@ -1,0 +1,6 @@
+title: Winterspring
+revision: 6883848
+part: intro
+url: https://warcraft.wiki.gg/wiki/Winterspring
+
+Winterspring (also known as Winterspring Valley) is a snowy valley located in Northern Kalimdor, east of Felwood, northeast of Mount Hyjal, and north of Azshara. It holds the goblin trading post of Everlook, old night elf ruins, and the vast cave Mazthoril, the primary home of the blue dragonflight on Kalimdor. Many wild creatures roam this beautiful landscape.

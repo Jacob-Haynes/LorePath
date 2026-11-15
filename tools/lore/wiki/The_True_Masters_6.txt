@@ -1,0 +1,116 @@
+title: The True Masters (6)
+revision: 6177068
+part: whole
+quest: 4224
+url: https://warcraft.wiki.gg/wiki/The_True_Masters_%286%29
+
+The True Masters is the sixth so-named quest in the Great Masquerade quest chain.
+
+
+== Objectives ==
+Speak with Ragged John to learn of Marshal Windsor's fate and return to Marshal Maxwell when you have completed this task.
+You recall Marshal Maxwell telling you to search for him in a cave to the north. 
+
+Ragged John's Story
+
+
+== Description ==
+What? You thought you were the first? How many soldiers must we lose before Stormwind acts?
+We had accumulated enormous amounts of intelligence pertaining to the Blackrock menace before we lost our commanding officer, Marshal Windsor. With Marshal Windsor went all of our precious information.
+What we need is that documentation. Speak with Ragged John, <name>. He was with Windsor when they were attacked by a Blackrock raiding party.
+He was last seen in a cave to the north. 
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+550 XP (or 3 30 at level 70)
++250 Stormwind reputation
+
+
+== Progress ==
+Have you spoken with John yet?
+
+
+== Completion ==
+I could have warned you, but what fun is that? 
+
+
+== Notes ==
+Ragged John is found at Flame Crest, along the northern border of the Burning Steppes. He will not have a quest indicator over him, as you return to Marshal Maxwell to complete this quest.
+
+Speaking with Ragged John
+What you be wanting? *hic*
+ Official business, John. I need some information about Marshal Windsor. Tell me about he last time you saw him.
+
+Windsor was paticularly ornery that day - and believe me, for Windsor, that's a monumental accomplishment. He kept telling me that 'something feels off.' Well he wasn't kidding!
+We were in the middle of Blackrock Mountain when the filthy animals attacked. I'm talking about the orcs, of course. Pay attention, will ya? All you could hear were the grunts and the clanging of steel as they rushed us.
+ So what did you do?
+
+Me versus fifty orcs? I'm no fool, <name>. My pappy always told me, 'Discreditin' is the better part of a cracker,' or something, and I knew what that meant.
+ Start making sense, dwarf. I don't want to have anything to do with your cracker, your pappy, or any sort of 'discreditin'.'
+
+Alright, alright. Anyhow, so I sorta slipped into the shadows.
+That didn't sit too well with Windsor, seeing as how he was already extra cranky. Well he started spinnin' old  [Ironfoe] around and screaming like a mad man at the orcs.
+ Ironfoe?
+
+Yep. You never heard of Ironfoe? The legendary orc slaying hammer? Yep, yep, that was ol' Windsor's hammer. He told me that Franclorn Forgewright himself made that hammer for his great, great, grand pappy. THE Franclorn Forgewright. The Dark Iron responsible for stonewrought archimetenc... building stuff. He also said the hammer had a twin that Franclorn kept for himself. Think he called it  [Ironfel] or something.
+ Interesting... continue, John.
+
+So where was I? Oh yea, so the orcs rushed Windsor and Windsor? Well, he didn't move an inch. He stood tall as they charged him, ten at a time. All I could see was the glow from Ironfoe and a lot of blood. This went on for hours, maybe days. I don't remember. Anyhow, FINALLY, it stopped.
+ So that's how Windsor died...
+
+Died? Are you cracked, <name>? Excuse me, <Mister/Miss> <name>! Windsor wouldn't have died from no fifty orcs. As sure as Thelsamar blood sausage is the tastiest food in the world may ever know, there he stood: he was covered in orc chunks from head to toe, drenched in about eighteen layers of their blood, but he was definitely alive... and really, really angry.
+ So how did he die?
+
+Why do you keep saying he died? Who told you he died? I never said he died.
+He went missing is all.
+You see, apparently we had gotten into the middle of some big orc versus Dark Iron dwarf battle. The orcs, being the filthy miserable curs that they are, were out early, setting up some traps and other diabolical things you probably wouldn't understand.
+ Ok, so where the hell is he? Wait a minute! Are you drunk?
+
+Dwarves don't get drunk, <mister/missy>. I'm just a little sloppy.
+Anyhow, Windsor? I figure he's somewhere in the Blackrock Depths. That's the Dark Iron City for you unedumecated peoples.
+ WHY is he in Blackrock Depths?
+
+Slow down! I was getting to that!
+So there he was, standing tall with all the blood and guts dripping off him when who shows up?
+The Dark Irons! Didn't you hear a word I said??
+Well, the Dark Irons are a little craftier than those Blackrock Orcs. They came prepared. By prepared I mean there were about 300 of em... *hic* 'scuse me.
+ 300? So the Dark Irons killed him and dragged him into the Depths?
+
+<Mister/Missy>, if I didn't know better, I'd think you were one of those 'special' peoples. We call 'em Troggs.
+Windsor didn't have no beef with the Dark Irons, after all, his great, great, grand pappy's best friend was a Dark Iron. Which is also probably why that army of Dark Irons didn't kill him on sight.
+ Ahhh... Ironfoe.
+
+Finally! Put some fingers in your ears, your brain mighta just grown five sizes and I'm worried it might leak out.
+So the Dark Irons spared his life and took him prisoner. Their leader, some self-important, took Ironfoe for himself. And that was the last I saw of ol' Windsor... *hic* 'scuse me.
+ Thanks, Ragged John. Your story was very uplifting and informative.
+
+
+== Progression ==
+ [54] Dragonkin Menace
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54] The True Masters
+ [54D] Marshal Windsor
+ [54D] Abandoned Hope
+ [58D] A Crumpled Up Note
+ [58D] A Shred of Hope
+ [58D] Jail Break!
+ [60R] Stormwind Rendezvous
+ [60R] The Great Masquerade
+ [60R] The Dragon's Eye
+ [60R] Drakefire Amulet
+
+
+== Patch changes ==
+ Patch 3.0.2 (2008-10-14): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

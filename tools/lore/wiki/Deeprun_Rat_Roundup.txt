@@ -1,0 +1,54 @@
+title: Deeprun Rat Roundup
+revision: 5975122
+part: whole
+quest: 6661
+url: https://warcraft.wiki.gg/wiki/Deeprun_Rat_Roundup
+
+Deeprun Rat Roundup is the first of the two only quests available in the Deeprun Tram, only doable once. And easy to complete whilst waiting for the tram you just missed.
+
+
+== Objectives ==
+Capture 5 Deeprun Rats by using the Rat Catcher's Flute. Lead the rats back to Monty. Don't forget to turn in the flute when you're finished.
+
+Rats Captured (5)
+ [Rat Catcher's Flute] (provided)
+
+
+== Description ==
+Avast ye scallywag. Arrrr... Arrrr ye looking fer work? We gots a serious rat problem down here an' not enough hands on the poop deck.
+What do ye say? All ye needs to do is take this here rat catchin' flute and play the melody around the vermin. They'll follow ye to the ends of the world!
+Just capture five of the little buggers and bring em back here. We needs em alive.
+Arrrrr...
+
+
+== Rewards ==
+You will receive:
+
+90 - 900 XP
+
+
+== Progress ==
+Yarrr... Swabby, what be takin' ye so long?
+
+
+== Completion ==
+These'll werk nicely, matey. Me brother needs em still tickin' and kickin,' else they go sour... Ye don't want to taste no sour rat kabob.
+
+
+== Notes ==
+Deeprun rats can be found near the Ironforge Deeprun Tram Depot, and nowhere else. 
+The mechanics of charming a Deeprun Rat with the flute can be a bit tricky. Left click a Deeprun Rat to select it; if you right click, you will attack the Deeprun Rat and kill it instead. The Rat Catcher's Flute has limited range, you have to be close to the rat while you play the flute to charm it. Using the Rat Catcher's Flute to charm a Deeprun Rat takes a brief time, and the rat can travel out of range while you are playing the flute to cast the enthrallment, causing it to fail, so use the flute on a stopped Deeprun Rat or on a Deeprun Rat that is approaching you. If the Deeprun Rat is running away, you will probably fail to charm it. 
+You have to tame five Deeprun Rats, but you do not have to have five tamed when you turn the quest in. WoW tracks your number of rats tamed, to five, and should you tame a few, get a notion to play with the Rat Catcher's Flute elsewhere, and come back to complete the quest months later, you only have to catch the few more you are missing. You can tame more, and can have many Deeprun Rats following you, but you can only get credit for five, so you gain nothing extra for turning in more.
+The Rat Catcher's Flute is non-functional elsewhere. The Rat Catcher's Flute must be carried in your inventory when you turn in the quest.
+When done the quest tracker will say that Monty is at Lordamere Internment Camp in Alterac Mountains. This isn't correct, Monty is still at the Deeprun Tram.
+
+
+== Progression ==
+ [1-30] Deeprun Rat Roundup
+ [1-30] Me Brother, Nipsy
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,64 @@
+title: Troubled Spirits of Kel'Theril
+revision: 6177090
+part: whole
+quest: 5245
+url: https://warcraft.wiki.gg/wiki/Troubled_Spirits_of_Kel%27Theril
+
+== Objectives ==
+Use Jaron's Pick to find the four Highborne Relic Fragments. Bring them to Aurora Skycaller in Eastern Plaguelands. 
+
+ [First Relic Fragment]
+ [Second Relic Fragment]
+ [Third Relic Fragment]
+ [Fourth Relic Fragment]
+ [Jaron's Pick] (provided)
+
+
+== Description ==
+The highborne spirits are miserable creatures, that's for sure. They are still searching for pieces of the very thing that has cursed them to Kel'Theril forever—the stolen relic.
+If you are that interested, take my pick and go south to the lake, see if you can gather the pieces of it from within the ice.
+Now, I can't tell you a thing about what you find, but I do know of someone who might... Aurora Skycaller; she dwells near the Northpass Tower in the northern part of Eastern Plaguelands.
+
+
+== Rewards ==
+You will gain:
+
+5800 XP (or 34 50 at level 70)
+25 reputation with Darnassus
+25 reputation with Exodar
+25 reputation with Gnomeregan
+25 reputation with Ironforge
+25 reputation with Stormwind
+
+
+== Progress ==
+Why have you come here? 
+
+
+== Completion ==
+The past of the high elves is something that I do not wish to discuss, <name>. Please, it pains me to think of all that has happened... And that there is no way to make things right.
+
+
+== Notes ==
+Jaron's Pick is not an objective of this quest, and so remains in your inventory.
+
+
+== Progression ==
+ [56] To Winterspring!
+ [56] The Ruins of Kel'Theril
+ [56] Troubled Spirits of Kel'Theril
+ [56] Fragments of the Past
+ [57] Fragments of the Past
+ [58] Tormented By the Past
+ [58] Remorseful Highborne
+ [58] The Crystal of Zin-Malor
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,41 @@
+title: Brother Anton (quest)
+revision: 6286515
+part: whole
+quest: 6141
+url: https://warcraft.wiki.gg/wiki/Brother_Anton_%28quest%29
+
+== Objectives ==
+Speak with Brother Anton in Desolace. 
+
+
+== Description ==
+My brother in arms, Brother Anton, heard rumors of an undead infestation in distant Kalimdor, in a land known as Desolace. Anton immediately booked passage to that place, to seek and destroy the undead menace!
+He is looking for those with the bravery and resolve to aid him. If your heart is true, then speak with Anton. He is in Desolace, in the Alliance town of Nijel's Point.
+
+
+== Rewards ==
+Upon completion of this quest you will gain:
+
+410 XP (or 2 40 at level 80)
+
+
+== Completion ==
+I received word of aid arriving from the east.  Are you the source of these rumors?  Have you come here to help the Scarlet Brother in its crusade?
+If so, then listen close...
+
+
+== Progression ==
+ [39] Brother Anton
+ [39] Down the Scarlet Path
+ [40] Down the Scarlet Path
+ [40D] In the Name of the Light
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

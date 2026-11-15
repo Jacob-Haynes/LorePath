@@ -1,0 +1,53 @@
+title: Corruption of Earth and Seed (Horde)
+revision: 6853276
+part: whole
+quest: 7064
+url: https://warcraft.wiki.gg/wiki/Corruption_of_Earth_and_Seed_%28Horde%29
+
+In Corruption of Earth and Seed, Selendra of the Cenarion Circle asks you to defeat Princess Theradras in Maraudon. Note that the rewards for this quest are quite good for this level. Princess Theradras also drops some really good loot.
+This quest can be shared.
+
+
+== Objectives ==
+Slay Princess Theradras and return to Selendra near Shadowprey Village in Desolace.
+
+Princess Theradras slain
+
+
+== Description ==
+Deep in Maraudon lives an evil creature of chaos—Princess Theradras is an elemental force of earth related to the Old Gods. Ages ago, she and Zaetar, first son of Cenarius, began a relationship. The offspring of their time together became known to the people of Kalimdor as centaur. Ever-thankful creatures, the centaur killed Zaetar, and now hold Zaetar's remains. My quest here is to find those powerful enough to slay Theradras so we may recover Zaetar's remains before returning to Stonetalon.
+
+
+== Rewards ==
+You will be able to choose one of these rewards:
+
+ [Thrash Blade]
+ [Resurgence Rod]
+ [Verdant Keeper's Aim]
+You will also receive:
+
+6,100 XP
++150 reputation with Cenarion Circle
+
+
+== Progress ==
+I would prefer to fight this battle on our own, but we are left with no other options—we need those more powerful, and the races of Azeroth have proven without a doubt they can overcome such things when they work together. So it is to you we turn for help.
+I only hope it is enough.
+Zaetar, brother to Remulos, brought many pains to this world, and ultimately it caused his own death. I just hope I have not caused more death by asking you to aid us.
+
+
+== Completion ==
+This is most wonderful news, <name>! Thank you!
+I will speak with Marandis and ask his wisdom on the topic of Zaetar's remains, but at least you have overcome the hardest of the tasks.
+I was told that if we were successful in our mission, I had permission to reward those who aided us. I was given these items as tokens from our people—you may choose one.
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+ Patch 1.2.0 (2004-12-18): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,82 @@
+title: The Missing Diplomat (11)
+revision: 6389820
+part: whole
+quest: 1249
+url: https://warcraft.wiki.gg/wiki/The_Missing_Diplomat_%2811%29
+
+This quest is part of the quest chain The Missing Diplomat.
+
+
+== Objectives ==
+Subdue Tapoke Jahn before he escapes, and then return to Mikhail in Menethil.
+
+Defeat Tapoke Jahn
+
+
+== Description ==
+You say Elling sent you here? Well then, the hospitality I expressed is now tenfold. Anything you need, just ask. I will do my best to aid you.
+Hmm, Slim, you say? Not sure the name sounds familiar, but I'll keep my eyes out for him.
+Don't look now, <name>, but the gentleman over by the exit is looking over here. He's listening to our conversation a little too intently if you catch my meaning? If I were you, I'd do what you can to subdue him before he makes a break for the door.
+
+
+== Rewards ==
+You will receive:
+
+1300 XP (or 7 80 at max level)
++75 reputation with Stormwind
+
+
+== Progress ==
+Did he slip away? He looked a little shady the way he was watching us.
+
+
+== Completion ==
+Caught him, huh? Good for you. I'm surprised that was Slim.
+I'll be honest, I never thought I'd miss the excitement of some of the more devious underground activities. I guess old habits die hard. Don't mention that to Elling—he'd probably try and get me to come back to Stormwind if he heard I missed the action.
+I'm glad I could at least be of a little service to you while you were in Menethil. If you need anything else, just ask.
+
+
+== Notes ==
+When this quest is accepted, Slim attempts to slip out of the inn by Stealth. Once he makes it out, he will set to running away. You will be able to attack him once he is out of the inn, if you can catch him before he runs off. As ususal for this sort of encounter, you only need to get him down to about 20% health before he surrenders.
+Upon entering combat with Slim, Slim's Friend will appear to help him. Note that both Slim and his friend are level 34. Slim's Friend will despawn if brought to low health.
+
+Upon attacking Slim
+Tapoke "Slim" Jahn says: Oh, it's on now! Bet you thought I'd be alone too, huh?!
+Defeating Slim's Friend
+Slim's Friend says: Whoa! This is way more than what I bargained for, you're on your own, Slim!
+After defeating Slim
+Tapoke "Slim" Jahn says: Okay, okay! No need to get all violent. I'll talk. I'll talk!
+Tapoke "Slim" Jahn says: I have a few notes about the job back at my place. I'll get them and then meet you back at the inn.
+Mikhail says: I'm glad the commotions died down some around here. The last thing this place needs is another brawl.
+
+
+== Progression ==
+This is the quest chain The Missing Diplomat.
+
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [30] The Missing Diplomat
+ [30] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [35] The Missing Diplomat
+ [36] The Missing Diplomat
+ [38] The Missing Diplomat
+ [38] The Missing Diplomat
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

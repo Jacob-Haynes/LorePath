@@ -1,0 +1,59 @@
+title: An Unholy Alliance (Classic 2)
+revision: 6873981
+part: whole
+quest: 6521
+url: https://warcraft.wiki.gg/wiki/An_Unholy_Alliance_%28Classic_2%29
+
+== Objectives ==
+Bring Ambassador Malcin's Head to Varimathras in the Undercity.
+
+ [Ambassador Malcin's Head]
+
+
+== Description ==
+Malcin claims he is outside Razorfen Downs. This ambassador must be slain—his mission a failure in the eyes of the Lich King.
+His presence there does explain much of what we've discovered about the area—some of the quilboar have grown frightfully powerful while showing signs of the Plague in their own way. Truly that must be a sign of some sort of deal they've struck.
+Find Malcin and slay him, <name>. Return to me after the deed is done.
+
+
+== Rewards ==
+You will be able to choose one of these rewards: 
+
+ [Skullbreaker]
+ [Nail Spitter]
+ [Zealot's Robe]
+You will also receive:
+
+20
+5,250 XP
+
+
+== Progress ==
+Have you found the Ambassador, <name>? Is he dead?
+We cannot afford to allow the Scourge to take a foothold on Kalimdor. They are enough of a threat to our own borders to have to deal with them on two fronts.
+The only optimistic sign from the events you've told me about is that the crone seemed uncorrupted. She must know deep in her spirit that the Scourge may bring great power, but that the Barrens would not truly be hers if she were to agree to their deal.
+
+
+== Completion ==
+Good. Well done, <class>.
+Now that Malcin is dead, we can at least know that the Scourge's advances will be halted. I thank you for your efforts and wishes to reward you with a gift.
+Although we do not know the extent of the Scourge's influence within the Downs, I am sure we will discover their plots soon enough.
+
+
+== Notes ==
+Malcin is located outside of Razorfen Downs in one of the huts. The huts are located at (48, 90), (48, 91), (46, 90) in The Barrens. He has two mobs that are linked with him, but all the rest can be cleared. They have a quick respawn timer.
+
+
+== Progression ==
+ [36] An Unholy Alliance
+ [36D] An Unholy Alliance
+
+
+== Patch changes ==
+ Patch 3.3.0 (2009-12-08): Bragor Bloodfist replaces Varimathras as the quest giver (possibly internally). Quest removed and replaced by a new version.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

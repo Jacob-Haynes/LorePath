@@ -1,0 +1,82 @@
+title: The Swamp Talker
+revision: 6207148
+part: whole
+quest: 2623
+url: https://warcraft.wiki.gg/wiki/The_Swamp_Talker
+
+== Objectives ==
+Retrieve the Warchief's Orders and return them to the Fallen Hero of the Horde.
+
+ [Warchief's Orders]
+
+
+== Description ==
+Orders were given by the dispatch commander. We took... took orders. On way to Blasted Lands, ambushed.
+Murlocs... Many murlocs... One named Swamp Talker. Took orders from my hands as spear thrust into my skull. East... cave....
+<Bengor passes out.>
+
+
+== Rewards ==
+You will receive:
+
+5650 XP
+
+
+== Progress ==
+Awaiting orders.
+
+
+== Completion ==
+It is worse than I imagined. Nineteen of my men could have been spared from the agony which they faced. If only I had not acted so irrationally.
+You must help them, <name>! I am powerless to act.
+
+
+== Notes ==
+Even though the quest is flagged as a level 55 quest, Swamp Talker is only level 50. Before 2.3, he was level 55.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,58 @@
+title: Explosive Consultation (2)
+revision: 6881846
+part: whole
+quest: 92752
+url: https://warcraft.wiki.gg/wiki/Explosive_Consultation_%282%29
+
+== Objectives ==
+Return to Alba Fairmoon in Westfall.
+
+Extra-Destructive Explosives (provided)
+
+
+== Description ==
+That's it - the bomb's ready to go! Careful with that detonator, now.
+
+
+== Rewards ==
+You will receive:
+
+4
+580 XP
++50 reputation with Stormwind
+
+
+== Progress ==
+...
+
+
+== Completion ==
+...
+
+
+== Notes ==
+...
+
+
+== Progression ==
+ [12] Testing the Wells
+ [12] Murloc Gills
+ [14] The State of the Mines
+ [16] Moonbrook Espionage
+ [16] Explosive Consultation
+ [16] A Dynamite Plan
+ [16] Detonation at a Distance
+ [16] Detonation at a Distance
+ [16] Explosive Consultation
+ [18D] Destruction in Deadmines
+ [18] Destruction in Deadmines
+
+
+== Patch changes ==
+ Patch 1.60.1 (2026-11-04): Added.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

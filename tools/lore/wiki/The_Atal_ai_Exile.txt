@@ -1,0 +1,53 @@
+title: The Atal'ai Exile
+revision: 6876927
+part: whole
+quest: 1429
+url: https://warcraft.wiki.gg/wiki/The_Atal%27ai_Exile
+
+== Objectives ==
+Bring the Bundle of Atal'ai Artifacts to the Atal'ai Exile in the Hinterlands.
+
+ [Bundle of Atal'ai Artifacts] (provided)
+
+
+== Description ==
+While you were braving the dangers of the Pool of Tears, one of my scouts returned with a scroll written in blood on dried flesh. It seems to be a judicial sentence against a priest of the Atal'ai tribe.
+This priest was sentenced to a fate worse than death amongst the Atal'ai.
+He was exiled to live far north in the Hinterlands, with the Witherbark trolls.
+I will bundle these artifacts. You are to seek out the exile and discover their true use. Return to me once your journey is complete.
+
+
+== Rewards ==
+You will receive:
+
+5,300 XP
+
+
+== Progress ==
+You are brave to come here. Brave or foolish...
+
+
+== Completion ==
+You bring me the summoning artifacts of the Atal'ai?
+I see Jammal'an the Prophet is leading the disciples of the Chamber of Blood towards their chosen fate. Has Hakkar returned to the Temple I wonder? Has their fate been met? 
+
+
+== Notes ==
+The Exile has taken refuge with the Witherbark Trolls in the Hinterlands. He can be found at the temple of Shadra'Alor (If you have a addon that displays coordinates, he can be found at 33,75).
+
+
+== Progression ==
+ [43] Pool of Tears
+ [44] The Atal'ai Exile
+ [44] Return to Fel'Zerul
+ [50D] The Temple of Atal'Hakkar
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

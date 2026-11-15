@@ -1,0 +1,68 @@
+title: Breaking the Ward
+revision: 5619904
+part: whole
+quest: 3508
+url: https://warcraft.wiki.gg/wiki/Breaking_the_Ward
+
+This is part of the main Blasted Lands quest chain, although it takes place in Azshara.
+
+
+== Objectives ==
+Wait for Loramus to complete the enlightenment spell.
+
+
+== Description ==
+You are foolhardy, <name>.  It is an admirable quality of your kind - to blindly enter battle when you have little to no chance of success.  I will assist you, if only to see just one of Razelikh's minions fall.
+To break the ward placed over Razelikh's subordinates will take time and require the acquisition of rare artifacts.
+Be still, I must first perform the enlightenment ritual.  The information I gather will assist me in forging weapons of great power.
+
+
+== Completion ==
+The name of the beast must be found.
+
+
+== Progression ==
+This is part of the You Are Rakh'likh, Demon quest chain.
+
+
+=== Horde precursors ===
+ [50] Fall From Grace
+ [50] The Disgraced One
+ [50] The Missing Orders
+ [55] The Swamp Talker
+
+
+=== Alliance precursors ===
+ [57] Petty Squabbles
+ [57] A Tale of Sorrow
+
+
+=== Neutral quests ===
+ [57] The Stones That Bind Us
+A short aside, unlocked by completing the above:
+ [57] Heroes of Old
+ [57] Heroes of Old
+ [58G] Kirith
+ [60] The Cover of Darkness
+ [60] The Demon Hunter
+ [57] Loramus
+ [58] Breaking the Ward
+ [58] The Name of the Beast
+ [58G] The Name of the Beast
+ [58] The Name of the Beast
+ [58G] Azsharite
+ [58] The Formation of Felbane
+ [58] Enchanted Azsharite Fel Weaponry
+ [58] Return to the Blasted Lands
+ [60G] Uniting the Shattered Amulet
+ [60G] You Are Rakh'likh, Demon
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

@@ -1,0 +1,58 @@
+title: Sara Balloo's Plea (quest)
+revision: 6309951
+part: whole
+quest: 683
+url: https://warcraft.wiki.gg/wiki/Sara_Balloo%27s_Plea_%28quest%29
+
+Sara Balloo's Plea is part of the A King's Tribute quest chain.
+
+
+== Objectives ==
+Take Sara Balloo's note to King Magni Bronzebeard of Ironforge.
+
+ [Sara Balloo's Plea] (provided)
+
+
+== Description ==
+<Name>, I have but a small request to ask of you.
+Take this note I have prepared to our great monarch of Ironforge, King Magni Bronzebeard. 'Tis a small task to ask of one such as yourself, someone who has shown great valor to the cause of the Alliance thus far.
+For me to go before the King in my grief-ridden state would not serve the purpose of my cause. Surely you understand.
+
+
+== Rewards ==
+You will receive:
+
+1200 XP (or 7 20 at max level)
++75 reputation with Ironforge
+
+
+== Progress ==
+So you are <name> the <class>? News of your contributions to the Alliance has traveled quite far, you know?
+On what business do you come before me today?
+
+
+== Completion ==
+It will take but a moment for me to peruse this letter...
+
+
+== Notes ==
+On completion
+King Magni Bronzebeard carefully studies Sara Balloo's note and lets out a long, solemn sigh.
+
+
+== Progression ==
+ [30] Sully Balloo's Letter
+ [30] Sara Balloo's Plea
+ [30] A King's Tribute
+ [31] A King's Tribute
+ [31] A King's Tribute
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

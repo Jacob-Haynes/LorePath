@@ -1,0 +1,80 @@
+title: The Missing Diplomat (8)
+revision: 6389808
+part: whole
+quest: 1447
+url: https://warcraft.wiki.gg/wiki/The_Missing_Diplomat_%288%29
+
+This quest is part of the quest chain The Missing Diplomat.
+
+
+== Objectives ==
+Defeat Dashel Stonefist in Stormwind.
+
+Defeat Dashel Stonefist
+
+
+== Description ==
+Yeah, you're obviously not the smartest <class> to come into Stormwind, but you're about to be one of the dumbest to never leave.
+Have you met me friends?
+
+
+== Rewards ==
+You will receive:
+
+1250 XP (or 7 80 at max level)
++75 reputation with Stormwind
+
+
+== Progress ==
+I didn't mean anything by the comment 'bout you being a stupid <class>. We're friends, right? No hard feelings?
+
+
+== Completion ==
+So, you came to me for a reason. What is it you need?
+
+
+== Notes ==
+If for some reason this quest fails, or fails to complete, simply drop it and take it again.
+You do need to defeat him, not kill him.  Once he is down to about 20% health he will call his friends off, and allow you to talk to him again.
+Old Town Thugs also appeared.
+
+Upon accept
+Dashel Stonefist says: Now you're gonna get it good, <name>!
+After defeating Stonefist
+Dashel Stonefist says: Okay, okay! Enough fighting. No one else needs to get hurt.
+Dashel Stonefist says: It's okay, boys. Back off. You've done enough. I'll meet up with you later.
+Old Town Thug says: All right, boss. You sure though? Just seems like a waste of good practice.
+Old Town Thug cracks his knuckles.
+Old Town Thug says: Yeah, okay, boss. No problem.
+
+
+== Progression ==
+This is the quest chain The Missing Diplomat.
+
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [28] The Missing Diplomat
+ [30] The Missing Diplomat
+ [30] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [31] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [33] The Missing Diplomat
+ [35] The Missing Diplomat
+ [36] The Missing Diplomat
+ [38] The Missing Diplomat
+ [38] The Missing Diplomat
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB

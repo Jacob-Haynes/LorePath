@@ -1,0 +1,6 @@
+title: Grim Batol
+revision: 6460973
+part: intro
+url: https://warcraft.wiki.gg/wiki/Grim_Batol
+
+Grim Batol is a mountain fortress located in the western Twilight Highlands (formerly in the eastern Wetlands). It has great walls and spires that reach toward a steel-gray sky, but the stronghold's bulk is underground. It was founded by the Wildhammer dwarves until it was cursed during the War of the Three Hammers. It was later seized by orcs to serve as a prison for the Dragon Aspect Alexstrasza until she was freed during the Battle of Grim Batol. Following the Cataclysm, this place became once more a war area, with the Twilight's Hammer cult using it as a military base.

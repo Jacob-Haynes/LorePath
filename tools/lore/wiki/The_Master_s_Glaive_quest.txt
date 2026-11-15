@@ -1,0 +1,56 @@
+title: The Master's Glaive (quest)
+revision: 5586908
+part: whole
+quest: 944
+url: https://warcraft.wiki.gg/wiki/The_Master%27s_Glaive_%28quest%29
+
+== Objectives ==
+Gather information, then use the Phial of Scrying to create a Scrying Bowl. Use the bowl to speak with Onu. 
+
+Enter the Master's Glaive
+ [Phial of Scrying] (provided)
+
+
+== Description ==
+It is strange that the naga are here, in Darkshore. But stranger still...are the Twilight's Hammer. That cult worships the old, old lords of the earth. Lords defeated long ago.
+The Master's Glaive, to the south, is a place where such an old lord fell.
+Go there and look for more Twilight's Hammer cultists.
+Take this phial of scrying. Use it to create a scrying bowl after searching the Master's Glaive. Then speak to me through the bowl.
+
+
+== Rewards ==
+You will gain:
+
+625 XP (or 3 90 at level 70)
+75 reputation with Darnassus
+
+
+== Progress ==
+The Master's Glaive, <name>.
+Go there, then speak with me again.
+
+
+== Completion ==
+The Twilight's Hammer is at the Master's Glaive?
+Unfortunate.
+The old lord impaled by the glaive is long dead, but that does not mean slivers of his power do not still remain.
+The Twilight's Hammer must be seeking this power.
+
+
+== Progression ==
+ [17] Cave Mushrooms
+ [17] Onu
+ [17] The Master's Glaive
+ [17] The Twilight Camp
+ [17] Return to Onu
+ [20] Mathystra Relics
+
+
+== Patch changes ==
+ Patch 4.0.3a (2010-11-23): Removed.   
+
+
+== External links ==
+
+Wowhead
+WoWDB
