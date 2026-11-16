@@ -1,5 +1,5 @@
 title: Missing In Action
-revision: 6859975
+revision: 6981315
 part: whole
 quest: 219
 url: https://warcraft.wiki.gg/wiki/Missing_In_Action
@@ -18,15 +18,19 @@ I'll need help getting back to town... please... you're my last hope...
 
 
 == Rewards ==
+You will be able to choose one of these rewards:
 
-You will also gain:
+ [Robe of Solomon]
+ [Deputy Chain Coat]
+ [Bone-Studded Leather]
+You will also receive:
 
-2550 XP (or a 15 60 compensation at level 80)
+2550 XP (or 15 60 at max level)
++350 reputation with Stormwind
 +87 reputation with Darnassus
 +87 reputation with Exodar
 +87 reputation with Gnomeregan Exiles
 +87 reputation with Ironforge
-+350 reputation with Stormwind
 
 
 == Progress ==

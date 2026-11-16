@@ -1,11 +1,14 @@
 title: King of the Foulweald (Classic)
-revision: 6978353
+revision: 6982090
 part: whole
 quest: 6621
 url: https://warcraft.wiki.gg/wiki/King_of_the_Foulweald_%28Classic%29
 
 == Objective ==
-Place  [Senani's Banner] on the Foulweald Totem Mound. Do not let the furbolgs destroy the banner. Defeat Chief Murgut and bring  [Murgut's Totem] to Karang Amakkar at Zoram'gar.
+Place Karang's Banner on the Foulweald Totem Mound. Do not let the furbolgs destroy the banner. Defeat Chief Murgut and bring Murgut's Totem to Karang Amakkar at Zoram'gar.
+
+ [Murgut's Totem]
+ [Senani's Banner] (provided)
 
 
 == Description ==
@@ -36,7 +39,7 @@ I don't believe that tribe will be giving us much trouble for a long time.
 
 
 == Notes ==
-The totem mound is located in Greenpaw Village, northeast of Mystral Lake, just south of the main road. Take the path into Greenpaw Village and turn left. You will see a small hill with two large totems near it as well as two furbolg huts. This is the totem mound. You must stand on top of the mound in the center to place the banner.  
+The totem mound is located in Greenpaw Village, northeast of Mystral Lake, just south of the main road. Take the path into Greenpaw Village and turn left. You will see a small hill with two large totems near it as well as two furbolg huts. This is the totem mound. You must stand on top of the mound in the center to place the banner.
 
 
 == Patch changes ==

@@ -1,11 +1,11 @@
 title: Anthion's Strange Request
-revision: 5611050
+revision: 6981350
 part: whole
 quest: 8947
 url: https://warcraft.wiki.gg/wiki/Anthion%27s_Strange_Request
 
 == Objectives ==
-Bring 3  [Dark Iron Bar], 20  [Enchanted Leather], 3  [Mooncloth] and 4  [Cured Rugged Hide] to Anthion Harmon in the Eastern Plaguelands.
+Bring 3 Dark Iron Bar, 20 Enchanted Leather, 3 Mooncloth and 4 Cured Rugged Hide to Anthion Harmon in the Eastern Plaguelands.
 
  [Dark Iron Bar] (3)
  [Enchanted Leather] (20)
@@ -20,9 +20,9 @@ Gather the following materials for me. You're going to need them.
 
 
 == Rewards ==
-Upon completion of this quest you will gain:
+You will receive:
 
-9550 XP (or a 57 compensation at max level)
+9550 XP (or 57 at max level)
 
 
 == Progress ==

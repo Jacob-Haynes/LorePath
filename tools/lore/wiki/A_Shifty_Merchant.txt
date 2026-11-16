@@ -1,5 +1,5 @@
 title: A Shifty Merchant
-revision: 6544153
+revision: 6981948
 part: whole
 quest: 8928
 url: https://warcraft.wiki.gg/wiki/A_Shifty_Merchant
@@ -18,9 +18,9 @@ Make sure he only charges you forty gold; that's the price he quoted me!
 
 
 == Rewards ==
-Upon completion of this quest you will gain:
+You will receive:
 
-4750 XP (or a 28 80 compensation at level 80)
+4750 XP (or 28 80 at max level)
 
 
 == Progress ==
