@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.4.1-beta1
 
 - **Done on another character:** a quest one of your other characters has finished gets a small grey tick on its tile, and its tooltip says who (*Done on Morwenna, Aeris*). Once the current character finishes it too, the tick goes and the tooltip says who else did. Each character counts once it has logged in with this version.
 
