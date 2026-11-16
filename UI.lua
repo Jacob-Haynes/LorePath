@@ -531,6 +531,12 @@ local function ShowQuestTooltip(owner, id, storyline, hints)
             GameTooltip:AddLine("  " .. hint, 0.75, 0.75, 0.75, true)
         end
     end
+    -- Your other characters who have finished it.
+    local others = ns.DoneOnOthers(id)
+    if #others > 0 then
+        GameTooltip:AddLine((ns.IsDone(id) and "Also done on " or "Done on ") .. table.concat(others, ", "),
+            0.6, 0.8, 0.6, true)
+    end
     if q.rw then
         GameTooltip:AddLine(" ")
         GameTooltip:AddLine("Rewards:", 1, 0.82, 0)
@@ -589,6 +595,9 @@ end
 
 local LORE_MARK = "Interface\\Icons\\INV_Misc_Book_09"
 local LORE_MARK_SIZE = 12
+-- A quest another of your characters has finished: a small grey tick.
+local ALT_MARK = "Interface\\Buttons\\UI-CheckBox-Check"
+local ALT_MARK_SIZE = 14
 
 local function AcquireNode(parent)
     used.nodes = used.nodes + 1
@@ -614,6 +623,13 @@ local function AcquireNode(parent)
         node.lore:SetTexCoord(0.08, 0.92, 0.08, 0.92)
         node.lore:SetAlpha(0.85)
         node.lore:Hide()
+        node.alt = node:CreateTexture(nil, "OVERLAY")
+        node.alt:SetSize(ALT_MARK_SIZE, ALT_MARK_SIZE)
+        node.alt:SetTexture(ALT_MARK)
+        node.alt:SetDesaturated(true)
+        node.alt:SetVertexColor(0.75, 0.75, 0.75)
+        node.alt:SetAlpha(0.9)
+        node.alt:Hide()
         node.text = node:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
         node.text:SetPoint("TOPLEFT", node.icon, "TOPRIGHT", 6, -1)
         node.text:SetPoint("RIGHT", -5, 0)
@@ -838,7 +854,14 @@ local function StyleNode(node, id, storyline)
     -- short of it.
     local revealed = ns.RevealedChapter(id) ~= nil
     node.lore:SetShown(revealed)
-    node.text:SetPoint("RIGHT", revealed and -(LORE_MARK_SIZE + 6) or -5, 0)
+    -- Done on another of your characters, but not this one: a grey tick, left
+    -- of the book if both show.
+    local onAlt = not ns.IsDone(id) and #ns.DoneOnOthers(id) > 0
+    node.alt:ClearAllPoints()
+    node.alt:SetPoint("TOPRIGHT", revealed and -(LORE_MARK_SIZE + 5) or -2, -2)
+    node.alt:SetShown(onAlt)
+    local marks = (revealed and LORE_MARK_SIZE + 4 or 0) + (onAlt and ALT_MARK_SIZE + 2 or 0)
+    node.text:SetPoint("RIGHT", marks > 0 and -(marks + 2) or -5, 0)
     SetQuestIcon(node.icon, q)
     node.icon:SetDesaturated(status == S.BLOCKED or status == S.MISSED)
     local mark = STATUS_MARK[status]
