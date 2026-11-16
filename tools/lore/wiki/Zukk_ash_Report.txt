@@ -1,5 +1,5 @@
 title: Zukk'ash Report
-revision: 6308907
+revision: 6981321
 part: whole
 quest: 7732
 url: https://warcraft.wiki.gg/wiki/Zukk%27ash_Report
@@ -16,8 +16,11 @@ This is a document that details all the information we have learned about these 
 
 
 == Rewards ==
+You will be able to choose one of these rewards:
 
-You will also gain:
+ [Emerald Peak Spaulders]
+ [Ring of Subtlety]
+You will also receive:
 
 4400 XP (or 26 40 at max level)
 +75 reputation with Darkspear Trolls

@@ -1,5 +1,5 @@
 title: Timbermaw Ally
-revision: 6947642
+revision: 6981296
 part: whole
 quest: 8460
 url: https://warcraft.wiki.gg/wiki/Timbermaw_Ally
@@ -18,8 +18,11 @@ Are you interested in proving yourself? Drive back the corrupted Deadwood tribe 
 
 
 == Rewards ==
+You will be able to choose one of these rewards:
 
-You will also gain:
+ [Earth Warder's Vest]
+ [Belt of the Den Watcher]
+You will also receive:
 
 4,400 XP
 +1,400 reputation with Timbermaw Hold
