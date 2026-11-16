@@ -34,8 +34,10 @@ LorePath supports English game clients only.
   | Dimmed box, padlock | Needs an earlier quest first |
   | Dimmest box, ✗ | Skipped: a breadcrumb you went past, or a quest your reputation is now too high for |
 
+  A small grey tick in a box's top right corner means another of your characters has finished that quest; hover it to see which. A small book there means the quest unlocked a lore chapter.
+
   Quests you pick up inside a dungeon or raid show its entrance portal, class quests your class icon, profession quests the profession's icon, quests started by an item that item's icon, and breadcrumbs a letter. The "?" button in the footer explains the level colours.
-- **Tooltips:** hover a quest for its level, status, what it needs (earlier quests, reputation, skill), what comes before and after it, where it starts, its item rewards, the lore chapter it revealed (under **Lore**), and AllTheThings' note on it when there is one.
+- **Tooltips:** hover a quest for its level, status, what it needs (earlier quests, reputation, skill), what comes before and after it, where it starts, its item rewards, which of your other characters have finished it (*Done on …*), the lore chapter it revealed (under **Lore**), and AllTheThings' note on it when there is one.
 - **Quest details:** click a quest to open a panel beside the window, and click it again to close it. The panel shows:
   - requirements;
   - where it starts and who gives it, or the item that starts it and what drops or holds that item (click an outdoor one for a waypoint);
@@ -111,6 +113,7 @@ Everything is saved per account in `LorePathDB` (`WTF/Account/<account>/SavedVar
 - **Settings:** the settings above, plus where the minimap button sits and the last page you looked at.
 - **Window layout:** which storylines and headings are collapsed, and whether the zone list is hidden.
 - **Quest text (`questCache`):** what the game shows you, saved as you play: description, objectives, progress and completion text. Your character's name is stored as `$N`. Gold, XP and reputation rewards are saved too, but not shown yet. So is where each quest was offered (`start`): by a creature or object (its ID) or an item, and your map and position, or just the instance when you're inside one.
+- **Quests your characters have finished (`doneOn`):** for each character, the quests in LorePath's data it has finished, updated when it logs in and turns in quests, so your other characters can show them.
 - **Lore unlocked (`loreUnlocks`):** each lore chapter one of your characters has unlocked, with the name of the first to do it, so your other characters can read it too.
 - **Characters (`characters`):** your account's character names, with each one's class and race, so `/lp share` and `tools/merge_quest_text.py` can replace any that slip into quest text with `$N`, `$C` and `$R`.
 

@@ -995,6 +995,42 @@ function ns.RecordLoreUnlocks()
     end
 end
 
+-- Which of LorePath's quests each of your characters has finished, so a quest
+-- can say another character did it (a tick on its tile, names in its tooltip).
+-- Saved per account in LorePathDB.doneOn[name] = { [questID] = true }, rebuilt
+-- for the current character at login and after turn-ins.
+function ns.RecordCompletedQuests()
+    local name = UnitName and UnitName("player")
+    if not LorePathDB or type(name) ~= "string" or name == "" then
+        return
+    end
+    local mine = {}
+    for id in pairs(ns.Quests) do
+        if ns.IsDone(id) then
+            mine[id] = true
+        end
+    end
+    LorePathDB.doneOn = LorePathDB.doneOn or {}
+    LorePathDB.doneOn[name] = mine
+end
+
+-- The names of your other characters who have finished this quest, sorted.
+function ns.DoneOnOthers(questID)
+    local names = {}
+    local doneOn = LorePathDB and LorePathDB.doneOn
+    if not doneOn then
+        return names
+    end
+    local me = UnitName and UnitName("player")
+    for name, quests in pairs(doneOn) do
+        if name ~= me and quests[questID] then
+            names[#names + 1] = name
+        end
+    end
+    table.sort(names)
+    return names
+end
+
 function ns.LoreUnlockedBy(questID)
     local unlocks = LorePathDB and LorePathDB.loreUnlocks
     return unlocks and unlocks[questID] or nil

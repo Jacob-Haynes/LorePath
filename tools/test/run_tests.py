@@ -3352,6 +3352,43 @@ ns.SetSetting("showSpoilers", False)
 tile = lore_tile(96899)
 check(not tile["lore"].IsShown(tile["lore"]), "and turning spoilers off hides it again")
 
+# Quests done on your other characters: a grey tick on the tile, names in the tooltip.
+saved_name = g.UnitName
+g.LorePathDB["doneOn"] = None
+g.UnitName = lua.eval("function() return 'Morwenna' end")
+char["completed"][96899] = True
+ns.RefreshCompleted()
+ns.RecordCompletedQuests()
+check(g.LorePathDB["doneOn"]["Morwenna"][96899] is True and g.LorePathDB["doneOn"]["Morwenna"][96898] is True
+      and g.LorePathDB["doneOn"]["Morwenna"][96896] is None,
+      "a character's finished quests are recorded for the account, under its name")
+check(list(ns.DoneOnOthers(96899).values()) == [], "a character's own finished quests don't count as another's")
+g.LorePathDB["doneOn"]["Aeris"] = lua.table_from({96899: True, 96896: True})
+g.UnitName = lua.eval("function() return 'Thalric' end")
+char["completed"] = lua.table()
+ns.RefreshCompleted()
+ns.RecordCompletedQuests()
+check(g.LorePathDB["doneOn"]["Morwenna"][96899] is True, "another character logging in keeps the others' records")
+check(list(ns.DoneOnOthers(96899).values()) == ["Aeris", "Morwenna"], "and lists, sorted, the others who finished a quest")
+ns.Refresh()
+tile = lore_tile(96899)
+check(tile["alt"].IsShown(tile["alt"]) and tile["alt"]["__desaturated"] is True,
+      "a quest done on another character but not this one gets a grey tick on its tile")
+check("Done on Aeris, Morwenna" in hover_lines(tile), "and its tooltip says which characters")
+tile = lore_tile(96897)
+check(not tile["alt"].IsShown(tile["alt"]) and not any(l.startswith("Done on") for l in hover_lines(tile)),
+      "a quest no other character has done has neither")
+char["completed"][96899] = True
+ns.RefreshCompleted(); ns.Refresh()
+tile = lore_tile(96899)
+check(not tile["alt"].IsShown(tile["alt"]) and "Also done on Aeris, Morwenna" in hover_lines(tile),
+      "once this character finishes it too, the tick goes and the tooltip says who else did")
+char["completed"] = lua.table()
+ns.RefreshCompleted()
+g.LorePathDB["doneOn"] = None
+g.UnitName = saved_name
+ns.Refresh()
+
 # Story so far: the chapter follows the quest that unlocks it, set apart, with its credit.
 # (Remnants of War stands alone in ATT's data; Bandarion Keep leads to A Righteous Cause.)
 char["completed"][96899] = True
