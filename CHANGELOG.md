@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.2
+
+- **Latest AllTheThings data:** 335 more quests, among them 159 in a new zone and 16 in two new dungeons, and updated rewards, prerequisites, factions or start points for 37 more.
+
 ## 1.4.1
 
 - **Done on another character:** a quest one of your other characters has finished gets a small grey tick on its tile, and its tooltip says who (*Done on Morwenna, Aeris*). Once the current character finishes it too, the tick goes and the tooltip says who else did. Each character counts once it has logged in with this version.
