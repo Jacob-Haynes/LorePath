@@ -39,8 +39,12 @@ def load(path):
         raise ValueError(f"{path} does not define ns.Quests and ns.ZoneContinents")
 
     def py(value):
-        if hasattr(value, "values"):
-            return tuple(py(v) for v in value.values())
+        # A table becomes its (key, value) pairs in key order: numbers first, in order, then
+        # names. Each Lua runtime walks a table's named keys in its own order, so the values
+        # alone would make identical records (fv's {[1] = ..., [2] = ...}) look changed.
+        if hasattr(value, "items"):
+            pairs = ((k, py(v)) for k, v in value.items())
+            return tuple(sorted(pairs, key=lambda kv: (isinstance(kv[0], str), kv[0])))
         return value
 
     quests = {int(qid): {k: py(v) for k, v in rec.items()} for qid, rec in ns.Quests.items()}
