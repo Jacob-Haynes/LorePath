@@ -3522,8 +3522,26 @@ g.LorePathDB["questCache"][783] = None
 harness["inCombat"] = False
 ns.Toggle(False)
 
-# --- tools/extract_att.py: chains through quests ATT marks unavailable ---
+# --- tools/diff_quests.py: what the weekly sync PR reports ---
 sys.path.insert(0, os.path.join(ROOT, "tools"))
+import diff_quests
+quests_path = os.path.join(ROOT, "Data", "Quests.lua")
+dq_old, dq_old_zones = diff_quests.load(quests_path)
+dq_new, dq_new_zones = diff_quests.load(quests_path)
+check("0 added, 0 removed, 0 changed" in diff_quests.report(dq_old, dq_new, dq_old_zones, dq_new_zones),
+      "diff_quests: the quest data compared with itself has no changes, faction versions included")
+with open(quests_path, encoding="utf-8") as f:
+    quests_source = f.read()
+fv_quest = re.search(r"^\[(\d+)\]=\{[^\n]*fv=\{\[1\]=\{[^\n]*qg=(\d+)", quests_source, re.M)
+with tempfile.NamedTemporaryFile("w", suffix=".lua", encoding="utf-8", delete=False) as f:
+    f.write(quests_source.replace(fv_quest.group(0), fv_quest.group(0)[:-len(fv_quest.group(2))] + "1", 1))
+dq_edit, dq_edit_zones = diff_quests.load(f.name)
+os.unlink(f.name)
+dq_report = diff_quests.report(dq_old, dq_edit, dq_old_zones, dq_edit_zones)
+check("1 changed" in dq_report and f"{fv_quest.group(1)} (fv)" in dq_report,
+      "diff_quests: a changed quest giver in one faction's version is reported")
+
+# --- tools/extract_att.py: chains through quests ATT marks unavailable ---
 from extract_att import settle_chains
 qs = {
     1: {"z": 1, "si": 500},                 # started by an item only an Alliance vendor sells
